@@ -1,0 +1,61 @@
+# Cappers & Code
+
+NFL touchdown board that updates itself. Weekly research (every team's offseason, offense vs the defense it draws, practice reports) is merged every morning with the live schedule, ESPN's injury feed and prices from The Odds API, then served to an Expo mobile app.
+
+## What is in here
+
+| Path                                  | Purpose                                                                                                                                                                                                                   |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/data/research.json`              | The weekly research: per game offseason notes, matchup notes, top-3 TD scorers with estimated probability, value plays, stacks, cross-game parlays.                                                                       |
+| `scripts/fetch-schedule.mjs`          | Current week schedule, status, scores and consensus line from ESPN's public scoreboard (no key).                                                                                                                          |
+| `scripts/fetch-injuries.mjs`          | League-wide injury feed from ESPN (no key), trimmed to name, position, status, note.                                                                                                                                      |
+| `scripts/fetch-odds.mjs`              | Game lines and `player_anytime_td` props from The Odds API. Writes `data/odds/latest.json` and appends a daily row per player to `data/odds/history.jsonl` for price-movement tracking.                                   |
+| `scripts/build-board.mjs`             | Merges everything into `data/board.json`, the single file the app reads. Adds live consensus/best price, edge (est minus implied), opening price and movement, injury report per team, slate-wide top-20 and value lists. |
+| `.github/workflows/cappers-daily.yml` | Runs the four scripts daily at 11:00 UTC (and Sunday 15:00 UTC) and commits the data.                                                                                                                                     |
+| `app/`, `src/`                        | Expo Router app: Board, Games, Game detail, Stacks, Settings.                                                                                                                                                             |
+
+## Daily update flow
+
+1. GitHub Action runs `fetch-schedule → fetch-injuries → fetch-odds → build-board` and commits `data/`.
+2. The app fetches `board.json` from the raw GitHub URL on launch and on pull-to-refresh, caches it locally, and falls back to the bundled copy offline.
+3. Optional: paste your own Odds API key in Settings and tap **Pull live prices now** for a same-minute refresh on game day.
+
+## Setup
+
+1. Get a free key at https://the-odds-api.com/ (500 credits a month).
+2. Add it as the repository secret `ODDS_API_KEY`.
+3. Enable Actions. Trigger **Cappers & Code daily board** manually once (workflow_dispatch) to seed `data/odds/`.
+4. Update `expo.extra.boardUrl` in `app.json` if you move the data to another branch or host (GitHub Pages, S3, Supabase Storage all work; it just needs to serve JSON).
+
+### Credit budget on the free tier
+
+| Call                                          | Credits                              |
+| --------------------------------------------- | ------------------------------------ |
+| Game lines (h2h, spreads, totals; one region) | 3 per run                            |
+| Props (`player_anytime_td`, one region)       | 1 per game inside `PROPS_DAYS_AHEAD` |
+| Event list                                    | free                                 |
+
+Daily run with a 4-day props window is roughly 3 + 16 on Wednesday through Sunday and 3 on other days, about 420 credits a month. Set `PROPS_DAYS_AHEAD=2` in the workflow to cut it further.
+
+## Run the app
+
+```bash
+pnpm install
+pnpm --filter @cappers/mobile start        # Expo dev server
+pnpm --filter @cappers/mobile typecheck
+pnpm --filter @cappers/mobile test         # odds math and name matching
+pnpm --filter @cappers/mobile update:daily # run the whole pipeline locally
+```
+
+`update:daily` needs `ODDS_API_KEY` in the environment for the odds step; without it the board is built from research prices only.
+
+## Updating the research for a new week
+
+Replace `src/data/research.json` (same shape: `games[]` with `top3`, `value`, `stacks`, `atdBoard`, `sections`, plus `crossStacks` and `upsetLeans`), bump `week` and `researchAsOf`, run `build:board`, commit. The scripts match players to the odds feed by normalized name, so use the same spelling the books use.
+
+## Data notes
+
+- Win probability is vig-removed from the moneyline (median across books when live).
+- Edge is our estimated TD probability minus the implied probability of the consensus price.
+- "Open" is the first price recorded in `history.jsonl`; movement is consensus minus open.
+- Injury statuses kept: Out, Doubtful, Questionable, Injured Reserve, Suspension, PUP.

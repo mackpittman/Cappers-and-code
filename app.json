@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Cappers & Code",
+    "slug": "cappers-and-code",
+    "version": "0.1.0",
+    "scheme": "cappers",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "backgroundColor": "#0E1512",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.cappersandcode.app" },
+    "android": { "package": "com.cappersandcode.app" },
+    "web": { "bundler": "metro", "output": "static" },
+    "plugins": ["expo-router"],
+    "experiments": { "typedRoutes": true },
+    "extra": {
+      "boardUrl": "https://raw.githubusercontent.com/mackpittman/StoryVerse-app/claude/nfl-touchdown-analysis-9fm0yx/apps/cappers-and-code/data/board.json"
+    }
+  }
+}

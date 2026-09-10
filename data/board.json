@@ -1,0 +1,5533 @@
+{
+ "season": 2026,
+ "week": 1,
+ "generatedAt": "2026-09-10T15:24:21.733Z",
+ "researchAsOf": "2026-09-10T14:00:00Z",
+ "oddsFetchedAt": null,
+ "oddsCredits": null,
+ "injuriesFetchedAt": "2026-09-10T15:24:21.630Z",
+ "notes": "Research prepared Thursday Sep 10 before the Melbourne game. Friday injury designations were not yet posted. Prices marked verify or est. should be confirmed at your book; the live odds feed replaces them when available.",
+ "completed": [
+  {
+   "id": "ne-sea",
+   "away": "NE",
+   "home": "SEA",
+   "final": "SEA 13, NE 10",
+   "tds": [
+    "Eli Raridon (NE) 2-yd rec",
+    "Jaxon Smith-Njigba (SEA) 45-yd rec"
+   ]
+  }
+ ],
+ "games": [
+  {
+   "id": "sf-lar",
+   "espnId": "401872657",
+   "kickoff": "2026-09-11T00:35:00Z",
+   "venue": "Melbourne Cricket Ground",
+   "away": {
+    "abbr": "SF",
+    "name": "San Francisco 49ers",
+    "short": "49ers"
+   },
+   "home": {
+    "abbr": "LAR",
+    "name": "Los Angeles Rams",
+    "short": "Rams"
+   },
+   "lines": {
+    "spread": "LAR -3.5",
+    "total": 48.5,
+    "ml": {
+     "away": 170,
+     "home": -205
+    },
+    "winProb": {
+     "away": 0.355,
+     "home": 0.645
+    },
+    "implied": {
+     "away": 22.5,
+     "home": 26
+    }
+   },
+   "sections": {
+    "offseason": "**Rams (30.5 PPG in 2025, MVP Stafford 4,707 yds/46 TD).** Traded Verse + 2027 1st + 2028 2nd for Myles Garrett; traded pick 29 + 3 picks for CB Trent McDuffie; signed CB Jaylen Watson, S Kam Curl; Aaron Donald unretired. Stafford 1-yr/$55M extension. Drafted QB Ty Simpson (13), TE Max Klare (61). Lost RT Havenstein (retired), five CBs. Kingsbury added as asst. HC. Nacua in contract year.\n**49ers (12-5).** DC Saleh left for Titans HC; Raheem Morris now DC. Signed WR Mike Evans (3/$60.4M), WR Christian Kirk, Deebo Samuel (1-yr), LB Greenlaw, CB Nate Hobbs; traded a 3rd for DT Osa Odighizuwa. Lost Jauan Jennings, Bourne, Huff. Drafted WR De'Zhaun Stribling (33). QB Purdy (9 games in 2025, 20 TD/10 INT).",
+    "matchup": "**Rams O vs SF D:** Nacua 36% target rate, 129-1,715-11. Adams 51.9% of Rams end-zone targets (league-high), 14 TD in 14 games. Stafford 2+ TD in 15/17. Rams led NFL with 76 RZ trips, 63.2% TD rate, +141 RZ plus/minus (1st). Kyren Williams 259-1,252-10 + 3 rec TD; Corum 145-746-6 with 25 carries inside the 20 (5 TD). SF D: 13th in points allowed, 24th vs run, allowed 8.36 yds/target to WRs (5th-most); DT depth gutted (Collins, Okuayinonu, Mykel Williams out).\n**49ers O vs LAR D:** McCaffrey 311-1,202-17 rush + 102-924-7 rec (23.3% target share). SF ran for 2.55 YPC vs LAR in 2025. Kittle 7 TD in 11 games. SF +99 RZ plus/minus (2nd). LAR D: 19.9 PPG allowed (7th), 7th vs run, 38% pressure (5th); allowed 38.2 rec yds/g to RBs (5th-most).",
+    "injuries": "**SF:** OUT DT Alfred Collins (patellar tendon, season), DE Okuayinonu (IR), DE Mykel Williams (PUP). Q DT James Thompson. Bosa, Kittle, Greenlaw, Evans active.\n**LAR:** OUT DT Aaron Donald (did not travel, conditioning). Garrett full. CB Watson (toe) limited.",
+    "oddsNotes": "Rams -3.5 | ML LAR -198 / SF +164 | Total 48.5 | Implied LAR 26 / SF 22.5 | De-vigged: Rams 64% / 49ers 36%.",
+    "atdNotes": "| Player | ATD | Implied |\n|---|---|---|\n| McCaffrey | -133 to -155 | 57–61% |\n| Kyren Williams | -130/-135 | 57% |\n| Puka Nacua | +105 to +146 | 41–49% |\n| Davante Adams | +120 to +140 | 42–45% |\n| Blake Corum | +150 to +180 | 36–40% |\n| George Kittle | +155 | 39% |\n| Mike Evans | +300 | 25% |\n| Deebo Samuel | +350 | 22% |\n| Colby Parkinson | +400 | 20% |"
+   },
+   "atdBoard": [
+    {
+     "name": "Christian McCaffrey",
+     "team": "SF",
+     "price": -150,
+     "implied": 0.6,
+     "live": null
+    },
+    {
+     "name": "Kyren Williams",
+     "team": "LAR",
+     "price": -130,
+     "implied": 0.5652,
+     "live": null
+    },
+    {
+     "name": "Puka Nacua",
+     "team": "LAR",
+     "price": 125,
+     "implied": 0.4444,
+     "live": null
+    },
+    {
+     "name": "Davante Adams",
+     "team": "LAR",
+     "price": 125,
+     "implied": 0.4444,
+     "live": null
+    },
+    {
+     "name": "Blake Corum",
+     "team": "LAR",
+     "price": 165,
+     "implied": 0.3774,
+     "live": null
+    },
+    {
+     "name": "George Kittle",
+     "team": "SF",
+     "price": 155,
+     "implied": 0.3922,
+     "live": null
+    },
+    {
+     "name": "Mike Evans",
+     "team": "SF",
+     "price": 300,
+     "implied": 0.25,
+     "live": null
+    },
+    {
+     "name": "Deebo Samuel",
+     "team": "SF",
+     "price": 350,
+     "implied": 0.2222,
+     "live": null
+    },
+    {
+     "name": "Colby Parkinson",
+     "team": "LAR",
+     "price": 400,
+     "implied": 0.2,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Christian McCaffrey",
+     "team": "SF",
+     "pos": "RB",
+     "price": -150,
+     "est": 0.63,
+     "why": "24 TD in 2025, 23% target share; Rams allowed the 5th-most receiving yards to RBs and SF's 22.5 implied points funnel through him.",
+     "implied": 0.6,
+     "live": null,
+     "edge": 0.03
+    },
+    {
+     "name": "Kyren Williams",
+     "team": "LAR",
+     "pos": "RB",
+     "price": -130,
+     "est": 0.6,
+     "why": "Goal-line back for the No. 1 red-zone offense (76 trips) vs a 24th-ranked run D missing three interior linemen.",
+     "implied": 0.5652,
+     "live": null,
+     "edge": 0.035
+    },
+    {
+     "name": "Davante Adams",
+     "team": "LAR",
+     "pos": "WR",
+     "price": 125,
+     "est": 0.5,
+     "why": "51.9% of Rams end-zone targets (league-high), 14 TD in 14 games, vs a SF pass D that allowed the 5th-most yards per target to WRs.",
+     "implied": 0.4444,
+     "live": null,
+     "edge": 0.056
+    }
+   ],
+   "value": [
+    {
+     "name": "Blake Corum",
+     "team": "LAR",
+     "pos": "RB",
+     "price": 165,
+     "est": 0.38,
+     "why": "Goal-line vulture: 25 carries inside the 20, 5 TD, 36% carry share.",
+     "implied": 0.3774,
+     "live": null,
+     "edge": 0.003
+    },
+    {
+     "name": "George Kittle",
+     "team": "SF",
+     "pos": "TE",
+     "price": 155,
+     "est": 0.4,
+     "why": "7 TD in 11 games; Rams' 32% dime usage leaves TEs on safeties.",
+     "implied": 0.3922,
+     "live": null,
+     "edge": 0.008
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Rams ML",
+      "Kyren Williams ATD"
+     ],
+     "why": "Rams' winning script is Williams grinding clock at the goal line.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Stafford 2+ pass TD",
+      "Davante Adams ATD",
+      "Puka Nacua o90.5 rec yds"
+     ],
+     "why": "One air-raid script; Adams owns the end-zone targets, Nacua absorbs volume.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Over 48.5",
+      "McCaffrey ATD",
+      "Nacua ATD"
+     ],
+     "why": "Teams combined for 56 PPG in 2025; a shootout drives both touch leaders to the end zone.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/10 - 8:35 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Alfred Collins",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Collins will miss the entire 2026 season after suffering a torn patellar tendon during Tuesday's practice, Nick Wagoner of ESPN.com reports.",
+      "date": "2026-09-09T21:07Z"
+     },
+     {
+      "name": "Mykel Williams",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "James Thompson Jr.",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-08T23:55Z"
+     },
+     {
+      "name": "Nate Hobbs",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Sam Okuayinonu",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Okuayinonu broke his foot in practice last week and is set to have surgery to repair the issue, Matt Barrows of The Athletic reports.",
+      "date": "2026-09-07T23:14Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Aaron Donald",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Head coach Sean McVay said that Donald won't travel to Melbourne, Australia and will be inactive Thursday for the Rams' season opener versus the 49ers, Stu Jackson of the team's official site reports.",
+      "date": "2026-09-08T20:14Z"
+     },
+     {
+      "name": "Jaylen Watson",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Watson (toe) was a limited participant on the Rams' estimated practice report.",
+      "date": "2026-09-10T01:50Z"
+     },
+     {
+      "name": "Keir Thomas II",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Justin Dedich",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Dedich (undisclosed) was put on injured reserve with a designation to return by the Rams on Sunday, Cameron DaSilva of USA Today reports.",
+      "date": "2026-08-31T23:42Z"
+     },
+     {
+      "name": "Keagen Trost",
+      "pos": "OT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Trost (hamstring) was placed on injured reserve with a designation to return by the Rams on Sunday, Cameron DaSilva of USA Today reports.",
+      "date": "2026-08-31T23:31Z"
+     },
+     {
+      "name": "Matthew Caldwell",
+      "pos": "QB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Rams placed Caldwell (undisclosed) on injured reserve Saturday, Aaron Wilson of KPRC 2 Houston reports.",
+      "date": "2026-08-29T22:20Z"
+     },
+     {
+      "name": "Daniel Rickert",
+      "pos": "DE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Rickert (knee) reverted to the Rams' injured reserve Tuesday, per the NFL's transaction log.",
+      "date": "2026-08-26T00:54Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "atl-pit",
+   "espnId": "401872658",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "venue": "Acrisure Stadium",
+   "away": {
+    "abbr": "ATL",
+    "name": "Atlanta Falcons",
+    "short": "Falcons"
+   },
+   "home": {
+    "abbr": "PIT",
+    "name": "Pittsburgh Steelers",
+    "short": "Steelers"
+   },
+   "lines": {
+    "spread": "PIT -3.5",
+    "total": 41.5,
+    "ml": {
+     "away": 155,
+     "home": -185
+    },
+    "winProb": {
+     "away": 0.377,
+     "home": 0.623
+    },
+    "implied": {
+     "away": 19,
+     "home": 22.5
+    }
+   },
+   "sections": {
+    "offseason": "**Steelers:** Tomlin stepped down; Mike McCarthy HC (Jan 27). OC Brian Angelichio, DC Patrick Graham. Rodgers (42) back for final season. Traded for WR Michael Pittman Jr.; traded Pickens to DAL. FA: CB Jamel Dean, RB Rico Dowdle, DT Joseph-Day, S Brisker. Draft: OT Iheanachor (21), WR Germie Bernard (R2), QB Drew Allar (R3). Depth: Warren > Dowdle > K. Johnson; Freiermuth > D. Washington.\n**Falcons:** Fired Morris/Fontenot; HC Kevin Stefanski, GM Cunningham, OC Tommy Rees, DC Ulbrich retained, OL coach Callahan (run-first). Released Cousins, Mooney; signed QB Tua Tagovailoa (Week 1 starter; Penix not ready post-knee), RB Brian Robinson Jr., WR Dotson. Pitts extended (3y/$54M). No R1; drafted CB Terrell (48), WR Zachariah Branch (79).",
+    "matchup": "**ATL O vs PIT D:** Bijan led NFC with 1,478 rush yds + 79 rec/820; sat entire preseason. ATL 126.1 rush ypg (7th) but 20.8 ppg (24th). Tua 26th in EPA/play, struggled in preseason. PIT D: 4.3 YPC allowed, 10 rush TD allowed (0.6/g, 4th), but pass D 261.2 ypg (30th), 26 pass TD allowed; 48 sacks.\n**PIT O vs ATL D:** Rodgers 22nd EPA/play; McCarthy passes in RZ (57.9% inside the 10 with DAL 2024). Metcalf 6 rec TD, 11 end-zone targets; Freiermuth 4 TD, 8 inside-20 targets. ATL D: 57 sacks (2nd), 19 pass TD allowed, 4.6 YPC allowed, 59.4% single-high. Edge gutted: Jalon Walker (ACL), James Pearce Jr. (8-game susp.), Z. Smith/Dorlus limited.",
+    "injuries": "**PIT:** CB Porter Jr. limited (back). SS Elliott IR. Otherwise \"healthy.\"\n**ATL:** Penix inactive; LIMITED CB Bowman (Q), WR Branch, DL Dorlus, DE Z. Smith, OL Hinton. OUT Pearce (susp.), Walker (ACL).",
+    "oddsNotes": "PIT -3.5 | ML PIT -185 / ATL +154 | Total 42.5 (41.5 some books) | Implied PIT 23 / ATL 19.5 | De-vigged: PIT 62% / ATL 38%. 94% of total money on Under.",
+    "atdNotes": "Bijan -155 (61%, unverified at book); Metcalf +210 (32%, verified); Freiermuth +1900; Warren/Dowdle/Pittman/London/Pitts not retrievable."
+   },
+   "atdBoard": [
+    {
+     "name": "Bijan Robinson",
+     "team": "ATL",
+     "price": -155,
+     "implied": 0.6078,
+     "live": null
+    },
+    {
+     "name": "DK Metcalf",
+     "team": "PIT",
+     "price": 210,
+     "implied": 0.3226,
+     "live": null
+    },
+    {
+     "name": "Jaylen Warren",
+     "team": "PIT",
+     "price": 125,
+     "implied": 0.4444,
+     "live": null
+    },
+    {
+     "name": "Pat Freiermuth",
+     "team": "PIT",
+     "price": 1900,
+     "implied": 0.05,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Bijan Robinson",
+     "team": "ATL",
+     "pos": "RB",
+     "price": -155,
+     "est": 0.63,
+     "why": "Run-first Stefanski/Callahan scheme with a shaky Tua means 20+ touches; PIT allowed 9 different rushing-TD scorers last year.",
+     "priceNote": "verify",
+     "implied": 0.6078,
+     "live": null,
+     "edge": 0.022
+    },
+    {
+     "name": "DK Metcalf",
+     "team": "PIT",
+     "pos": "WR",
+     "price": 210,
+     "est": 0.37,
+     "why": "Team-high 11 end-zone targets; McCarthy passes in the red zone; ATL plays 59% single-high and lost Walker and Pearce off the edge.",
+     "implied": 0.3226,
+     "live": null,
+     "edge": 0.047
+    },
+    {
+     "name": "Jaylen Warren",
+     "team": "PIT",
+     "pos": "RB",
+     "price": 125,
+     "est": 0.42,
+     "why": "RB1 on a 23-point implied total; Dowdle caps the ceiling but the pass-game role adds a second path.",
+     "priceNote": "est.",
+     "implied": 0.4444,
+     "live": null,
+     "edge": -0.024
+    }
+   ],
+   "value": [
+    {
+     "name": "Pat Freiermuth",
+     "team": "PIT",
+     "pos": "TE",
+     "price": 1900,
+     "est": 0.09,
+     "why": "8 red-zone targets, 4 TD; new OC Angelichio is TE-centric.",
+     "implied": 0.05,
+     "live": null,
+     "edge": 0.04
+    },
+    {
+     "name": "Kyle Pitts",
+     "team": "ATL",
+     "pos": "TE",
+     "price": 350,
+     "est": 0.24,
+     "why": "Tua's historical TE reliance; fresh $54M extension.",
+     "priceNote": "est.",
+     "implied": 0.2222,
+     "live": null,
+     "edge": 0.018
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Steelers ML",
+      "Metcalf ATD"
+     ],
+     "why": "PIT wins via Rodgers red-zone passing.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Rodgers 1.5+ pass TD",
+      "Freiermuth ATD"
+     ],
+     "why": "TE red-zone tendency under McCarthy and Angelichio.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Falcons +3.5",
+      "Bijan ATD",
+      "Under 41.5"
+     ],
+     "why": "Ground-heavy, clock-chewing cover script; 94% of Under money agrees.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 1:00 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Storm Norton",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Michael Penix Jr.",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Falcons head coach Kevin Stefanski said that Penix (knee) will be inactive for Sunday's season opener in Pittsburgh, Marc Raimondi of ESPN.com reports.",
+      "date": "2026-09-07T15:00Z"
+     },
+     {
+      "name": "Anterio Thompson",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Falcons moved Thompson (undisclosed) to the reserve/non-football injury list Sunday, Will McFadden of the team's official site reports.",
+      "date": "2026-08-31T22:48Z"
+     },
+     {
+      "name": "Billy Bowman Jr.",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Bowman (Achilles) was a limited participant in Wednesday's practice, Will McFadden of the Falcons' official site reports.",
+      "date": "2026-09-10T00:05Z"
+     },
+     {
+      "name": "Za'Darius Smith",
+      "pos": "DE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T23:44Z"
+     },
+     {
+      "name": "Kyle Hinton",
+      "pos": "G",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T23:44Z"
+     },
+     {
+      "name": "Brandon Dorlus",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T23:43Z"
+     },
+     {
+      "name": "Zachariah Branch",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Branch (hamstring) was limited in Wednesday's practice, Daniel Flick of The Atlanta Journal-Constitution reports.",
+      "date": "2026-09-09T20:22Z"
+     },
+     {
+      "name": "James Pearce Jr.",
+      "pos": "LB",
+      "status": "Suspension",
+      "type": "Suspension",
+      "detail": "reserve-sus",
+      "date": "2026-08-19T12:07Z"
+     },
+     {
+      "name": "Trey Sermon",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "JD Bertrand",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Falcons placed Bertrand (undisclosed) on injured reserve Monday, Will McFadden of the team's official site reports.",
+      "date": "2026-08-31T23:31Z"
+     },
+     {
+      "name": "Beaux Collins",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Falcons placed Collins (undisclosed) on injured reserve Sunday with a designation to return during the season, Will McFadden of the team's official site reports.",
+      "date": "2026-08-31T04:00Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Donte Kent",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Steelers placed Kent (undisclosed) on the reserve/PUP list Monday, Teresa Varley of the team's official site reports.",
+      "date": "2026-09-01T00:02Z"
+     },
+     {
+      "name": "Joey Porter Jr.",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Porter (back) was a limited participant in Wednesday's practice, Mike DeFabo of The Athletic reports.",
+      "date": "2026-09-10T00:07Z"
+     },
+     {
+      "name": "DeShon Elliott",
+      "pos": "S",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Jack Driscoll",
+      "pos": "OT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Steelers placed Driscoll (undisclosed) on injured reserve Monday with a designation to return, Teresa Varley of the team's official site reports.",
+      "date": "2026-09-01T00:04Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "bal-ind",
+   "espnId": "401872659",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "venue": "Lucas Oil Stadium",
+   "away": {
+    "abbr": "BAL",
+    "name": "Baltimore Ravens",
+    "short": "Ravens"
+   },
+   "home": {
+    "abbr": "IND",
+    "name": "Indianapolis Colts",
+    "short": "Colts"
+   },
+   "lines": {
+    "spread": "BAL -3.5",
+    "total": 47.5,
+    "ml": {
+     "away": -175,
+     "home": 145
+    },
+    "winProb": {
+     "away": 0.609,
+     "home": 0.391
+    },
+    "implied": {
+     "away": 25.5,
+     "home": 22
+    }
+   },
+   "sections": {
+    "offseason": "**Ravens:** Harbaugh fired; Jesse Minter HC (Weaver DC, Declan Doyle OC). Signed EDGE Trey Hendrickson (4yr/$112M) after rescinded Crosby trade. Lost C Linderbaum (LV), TEs Likely (NYG) and Kolar (LAC), EDGE Dre'Mont Jones, S Gilman, RB Keaton Mitchell. Draft: G Vega Ioane (14), OLB Zion Young, WR Ja'Kobi Lane. Rookie-level C Jovaughn Gwyn starts. Lamar Jackson QB. 2025: 8-9, 30th vs pass, 10th vs run.\n**Colts:** Steichen/Ballard retained; Lou Anarumo DC. Daniel Jones re-signed (2yr/$88M) after Nov Achilles tear; Pierce extended. Traded WR Pittman (PIT) and LB Zaire Franklin (to BAL). Signed WR Keenan Allen, EDGE Arden Key, DT Nnadi, CB Taylor-Britt. Lost RT Braden Smith, Kwity Paye, S Nick Cross. No 1st-rounder. 2025: 8-9, lost final 7 after Jones injury.",
+    "matchup": "**BAL O vs IND D:** Ravens led NFL in rushing (157.7 ypg, 5.47 ypc). Henry 1,595 yds/16 TD, 88.1% of snaps inside the 5, 34 TD in 34 games. Colts run D 3rd in ypc but allowed 16 rush TD. New interior OL is the concern. Flowers/Andrews absorb targets with Likely/Kolar gone.\n**IND O vs BAL D:** With Jones, IND scored 27.4 ppg (8th), 57.6% RZ TD rate. Taylor: 20 total TD (led NFL), 19 carries inside the 5 (2nd), scored in 6 of 8 home games. Warren: team-high 112 targets, 26 RZ targets, 5.8 xTD vs 4 actual. BAL D 30th vs pass, 31st sack rate before Hendrickson.",
+    "injuries": "**BAL limited:** WR Zay Flowers (hamstring, says ready), DT Madubuike (neck), ILB Buchanan (knee), WR Walker (groin).\n**IND limited:** WR Alec Pierce (heel, on track), S AJ Haulcy (ankle), TE Ogletree (neck). Jones fully healthy.",
+    "oddsNotes": "BAL -3.5 | ML BAL -175 / IND +145 | Total 47.5 | Implied BAL 25.5 / IND 22 | De-vigged: BAL 61% / IND 39%.",
+    "atdNotes": "| Player | ATD | Implied |\n|---|---|---|\n| Derrick Henry | -225 (Bet365 -185) | 69% |\n| Jonathan Taylor | -190 | 66% |\n| Zay Flowers | +175 | 36% |\n| Tyler Warren | +195/+230 | 30–34% |\n| Mark Andrews | +210 | 32% |\n| Lamar Jackson | +235 | 30% |\n| Josh Downs | +235 | 30% |\n| Alec Pierce | +235 | 30% |"
+   },
+   "atdBoard": [
+    {
+     "name": "Derrick Henry",
+     "team": "BAL",
+     "price": -225,
+     "implied": 0.6923,
+     "live": null
+    },
+    {
+     "name": "Jonathan Taylor",
+     "team": "IND",
+     "price": -190,
+     "implied": 0.6552,
+     "live": null
+    },
+    {
+     "name": "Zay Flowers",
+     "team": "BAL",
+     "price": 175,
+     "implied": 0.3636,
+     "live": null
+    },
+    {
+     "name": "Tyler Warren",
+     "team": "IND",
+     "price": 210,
+     "implied": 0.3226,
+     "live": null
+    },
+    {
+     "name": "Mark Andrews",
+     "team": "BAL",
+     "price": 210,
+     "implied": 0.3226,
+     "live": null
+    },
+    {
+     "name": "Lamar Jackson",
+     "team": "BAL",
+     "price": 235,
+     "implied": 0.2985,
+     "live": null
+    },
+    {
+     "name": "Josh Downs",
+     "team": "IND",
+     "price": 235,
+     "implied": 0.2985,
+     "live": null
+    },
+    {
+     "name": "Alec Pierce",
+     "team": "IND",
+     "price": 235,
+     "implied": 0.2985,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Jonathan Taylor",
+     "team": "IND",
+     "pos": "RB",
+     "price": -190,
+     "est": 0.68,
+     "why": "NFL-high 20 TD, 19 carries inside the 5, TD in 6 of 8 home games; BAL allowed 23 rushing TD in 2025 and swapped out Franklin.",
+     "implied": 0.6552,
+     "live": null,
+     "edge": 0.025
+    },
+    {
+     "name": "Derrick Henry",
+     "team": "BAL",
+     "pos": "RB",
+     "price": -225,
+     "est": 0.68,
+     "why": "Near-monopoly on goal-line work (88% of snaps inside the 5); IND allowed 16 rushing TD. Better at bet365's -185.",
+     "implied": 0.6923,
+     "live": null,
+     "edge": -0.012
+    },
+    {
+     "name": "Tyler Warren",
+     "team": "IND",
+     "pos": "TE",
+     "price": 210,
+     "est": 0.38,
+     "why": "26 red-zone targets and 5.8 expected TD vs 4 actual; Pittman is gone and BAL was 30th vs the pass.",
+     "implied": 0.3226,
+     "live": null,
+     "edge": 0.057
+    }
+   ],
+   "value": [
+    {
+     "name": "Mark Andrews",
+     "team": "BAL",
+     "pos": "TE",
+     "price": 210,
+     "est": 0.36,
+     "why": "Likely and Kolar left; he is the only red-zone TE.",
+     "implied": 0.3226,
+     "live": null,
+     "edge": 0.037
+    },
+    {
+     "name": "Lamar Jackson",
+     "team": "BAL",
+     "pos": "QB",
+     "price": 235,
+     "est": 0.33,
+     "why": "Designed QB runs near the goal line behind a new interior.",
+     "implied": 0.2985,
+     "live": null,
+     "edge": 0.032
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Colts ML",
+      "Taylor ATD"
+     ],
+     "why": "A Colts upset runs through Taylor at home.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Daniel Jones 1+ pass TD",
+      "Warren ATD",
+      "Over 47.5"
+     ],
+     "why": "Jones' red-zone throws go to Warren first; a shootout keeps IND throwing.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Ravens -3.5",
+      "Henry ATD",
+      "Lamar 250+ pass yds"
+     ],
+     "why": "A Ravens cover means fourth-quarter Henry goal-line volume.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 1:00 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Teddye Buchanan",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Buchanan (knee) was a limited participant at practice Wednesday, Ryan Mink of the Ravens' official site reports.",
+      "date": "2026-09-10T00:01Z"
+     },
+     {
+      "name": "Devontez Walker",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Walker (groin) was limited at practice Wednesday.",
+      "date": "2026-09-09T22:03Z"
+     },
+     {
+      "name": "Zay Flowers",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "The Ravens listed Flowers as a limited participant in Wednesday's practice due to a hamstring injury.",
+      "date": "2026-09-09T21:02Z"
+     },
+     {
+      "name": "Nnamdi Madubuike",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Bilhal Kone",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Adam Randall",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Randall (undisclosed) was placed on injured reserve by the Ravens on Sunday with a designation to return, Ryan Mink of the team's official website reports.",
+      "date": "2026-08-31T03:52Z"
+     },
+     {
+      "name": "Danny Pinter",
+      "pos": "C",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Pinter (knee) was placed on injured reserve by the Ravens on Wednesday, Clifton Brown of the team's official website reports.",
+      "date": "2026-08-26T23:36Z"
+     },
+     {
+      "name": "Jahquez Robinson",
+      "pos": "S",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Robinson (undisclosed) reverted to the Ravens' injured reserve list Wednesday, Aaron Wilson of KPRC 2 Houston reports.",
+      "date": "2026-08-20T00:15Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Drew Ogletree",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Ogletree (neck) was limited at Wednesday's practice.",
+      "date": "2026-09-09T22:25Z"
+     },
+     {
+      "name": "Alec Pierce",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Pierce was a limited participant in Wednesday's practice due to a heel injury.",
+      "date": "2026-09-09T20:48Z"
+     },
+     {
+      "name": "Sedrick Van Pran-Granger",
+      "pos": "C",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T20:42Z"
+     },
+     {
+      "name": "Sean McKeon",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "A.J. Haulcy",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Cam Taylor-Britt",
+      "pos": "CB",
+      "status": "Suspension",
+      "type": "Suspension",
+      "detail": "reserve-sus",
+      "date": "2026-08-19T12:07Z"
+     },
+     {
+      "name": "Carson Towt",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "D.J. Montgomery",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Montgomery (abdomen) was placed on injured reserve by the Colts on Sunday, JJ Stankevitz of the team's official website reports.",
+      "date": "2026-08-31T17:16Z"
+     },
+     {
+      "name": "Will Mallory",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Mallory (thumb) was placed on injured reserve by the Colts on Sunday with a designation to return, JJ Stankevitz of the team's official website reports.",
+      "date": "2026-08-31T17:12Z"
+     },
+     {
+      "name": "Cameron Mitchell",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "buf-hou",
+   "espnId": "401872660",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "venue": "NRG Stadium",
+   "away": {
+    "abbr": "BUF",
+    "name": "Buffalo Bills",
+    "short": "Bills"
+   },
+   "home": {
+    "abbr": "HOU",
+    "name": "Houston Texans",
+    "short": "Texans"
+   },
+   "lines": {
+    "spread": "BUF -1.5",
+    "total": 44.5,
+    "ml": {
+     "away": -118,
+     "home": -102
+    },
+    "winProb": {
+     "away": 0.517,
+     "home": 0.483
+    },
+    "implied": {
+     "away": 23,
+     "home": 21.5
+    }
+   },
+   "sections": {
+    "offseason": "**Bills:** McDermott fired; Joe Brady HC (Carmichael runs offense; Leonhard DC, 3-4). Traded 2nd to CHI for WR DJ Moore. Signed CB Alford, OLB Chubb, S Gardner-Johnson, LB Shaq Thompson; re-signed McGovern, Knox. Drafted EDGE T.J. Parker (35). No fullback for first time in Allen's career. Preseason 3-0.\n**Texans:** Ryans/Caley/Burke continuity. Traded for RB David Montgomery; released Mixon; Kirk left for SF. Signed S Blankenship, OL Braden Smith (now IR), Trent Brown, Teller, Evan Brown, DE Clowney, TE Moreau. Drafted G Rutledge (26), DT McDonald (36), TE Klein (59). Stroud unextended (3,041/19 TD in 2025). Preseason 0-3.",
+    "matchup": "**BUF O vs HOU D:** Bills 28.3 PPG (4th), NFL-best 2,714 rush yds/30 rush TD; Cook 1,621/12 TD; Allen franchise-record 14 rush TD. HOU D: 277 yds/g (1st), 17.4 PPG (2nd), 4.0 YPC/13 rush TD allowed, 47 sacks. Allen 1-4 vs Ryans' Texans (72.7 rating; 8 sacks in last year's 23-19 loss).\n**HOU O vs BUF D:** Texans 23.8 PPG, 3.9 YPC (27th), only 21 carries inside the 5. Collins 121 tgts/1,117; Schultz 106; Higgins (68 tgt/6 TD) vacated. Bills D: NFL-best pass yds allowed but bottom-5 run D (5.1 YPC, 24 rush TD allowed). Montgomery 61.5% of DET short-yardage carries (8 TD); Marks pass-down back.",
+    "injuries": "**BUF:** RB Ty Johnson DNP (likely out); DB Hancock DNP; DL Sanders LP. Shakir, Moore, Cook, McGovern off report. DT Mathis suspended.\n**HOU:** DT McDonald LP; OT Trent Brown FP. Out: WR Higgins (ACL), WR Dell (IR), RT Braden Smith (IR), LB Speed. WR depth: Collins, Hutchinson, Noel, Boutte.",
+    "oddsNotes": "BUF -1.5 (coin flip; some books HOU -1.5) | ML BUF -118 / HOU -102 (DK) | Total 44.5 | Implied BUF 23 / HOU 21.5 | De-vigged: BUF 51% / HOU 49%.",
+    "atdNotes": "Cook -105 / +100 (50–51%) · Allen +115 DK / +125 FD, bet365 (42–47%) · Collins +150 bet365 / +170 DK (37–40%). Estimates: Montgomery ~+140, Moore ~+220, Kincaid ~+280, Schultz ~+300."
+   },
+   "atdBoard": [
+    {
+     "name": "James Cook",
+     "team": "BUF",
+     "price": -105,
+     "implied": 0.5122,
+     "live": null
+    },
+    {
+     "name": "Josh Allen",
+     "team": "BUF",
+     "price": 125,
+     "implied": 0.4444,
+     "live": null
+    },
+    {
+     "name": "Nico Collins",
+     "team": "HOU",
+     "price": 170,
+     "implied": 0.3704,
+     "live": null
+    },
+    {
+     "name": "David Montgomery",
+     "team": "HOU",
+     "price": 140,
+     "implied": 0.4167,
+     "live": null
+    },
+    {
+     "name": "DJ Moore",
+     "team": "BUF",
+     "price": 220,
+     "implied": 0.3125,
+     "live": null
+    },
+    {
+     "name": "Dalton Kincaid",
+     "team": "BUF",
+     "price": 280,
+     "implied": 0.2632,
+     "live": null
+    },
+    {
+     "name": "Dalton Schultz",
+     "team": "HOU",
+     "price": 300,
+     "implied": 0.25,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "James Cook",
+     "team": "BUF",
+     "pos": "RB",
+     "price": -105,
+     "est": 0.56,
+     "why": "12 rushing TD on a team with 30; no fullback means more Cook touches; Houston's run D is its softer unit.",
+     "implied": 0.5122,
+     "live": null,
+     "edge": 0.048
+    },
+    {
+     "name": "Josh Allen",
+     "team": "BUF",
+     "pos": "QB",
+     "price": 125,
+     "est": 0.5,
+     "why": "14 rushing TD in 2025; Houston's pass rush forces scrambles and the QB sneak is Buffalo's default inside the 5.",
+     "implied": 0.4444,
+     "live": null,
+     "edge": 0.056
+    },
+    {
+     "name": "Nico Collins",
+     "team": "HOU",
+     "pos": "WR",
+     "price": 170,
+     "est": 0.42,
+     "why": "Higgins' 6 TD and Kirk's targets are vacated; projects for a 25-30% target share.",
+     "implied": 0.3704,
+     "live": null,
+     "edge": 0.05
+    }
+   ],
+   "value": [
+    {
+     "name": "David Montgomery",
+     "team": "HOU",
+     "pos": "RB",
+     "price": 140,
+     "est": 0.4,
+     "why": "61.5% short-yardage share in Detroit, facing a run D that allowed 5.1 YPC and 24 rushing TD.",
+     "priceNote": "est.",
+     "implied": 0.4167,
+     "live": null,
+     "edge": -0.017
+    },
+    {
+     "name": "Dalton Kincaid",
+     "team": "BUF",
+     "pos": "TE",
+     "price": 280,
+     "est": 0.3,
+     "why": "106-target role in a Carmichael scheme; Allen's red-zone security blanket.",
+     "priceNote": "est.",
+     "implied": 0.2632,
+     "live": null,
+     "edge": 0.037
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Bills ML",
+      "Cook ATD",
+      "Allen ATD"
+     ],
+     "why": "Buffalo wins on the ground; both scorers are the engine of a clock-control win.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Allen 1.5+ pass TD",
+      "Moore or Kincaid ATD",
+      "Over 44.5"
+     ],
+     "why": "If the new staff pushes the ball downfield, passing TDs and the total rise together.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Texans ML",
+      "Collins ATD",
+      "Montgomery ATD",
+      "Under 44.5"
+     ],
+     "why": "Houston's upset path: Collins outside, Montgomery finishing vs a weak run D; Under is 7-3 in the last 10 meetings.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 1:00 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Tyrell Shavers",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Dorian Strong",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "nfi-r",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "T.J. Sanders",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T23:52Z"
+     },
+     {
+      "name": "Jordan Hancock",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T23:52Z"
+     },
+     {
+      "name": "Ty Johnson",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Johnson (lower leg) isn't participating in Wednesday's practice, Joe Buscaglia of The Athletic reports.",
+      "date": "2026-09-09T18:50Z"
+     },
+     {
+      "name": "Jedrick Wills Jr.",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Jude Bowry",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Bowry (foot) did not participate at the Bills' training camp practice Monday, Alaina Getzenberg of ESPN.com reports.",
+      "date": "2026-08-25T02:33Z"
+     },
+     {
+      "name": "Phidarian Mathis",
+      "pos": "DT",
+      "status": "Suspension",
+      "type": "Suspension",
+      "detail": "reserve-sus",
+      "date": "2026-08-19T12:07Z"
+     },
+     {
+      "name": "Zane Durant",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "M.J. Stewart",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "Stewart (quadriceps) was moved to the reserve/PUP list by the Texans on Sunday.",
+      "date": "2026-08-31T17:06Z"
+     },
+     {
+      "name": "E.J. Speed",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Speed (quadriceps) was moved to the reserve/PUP list by the Texans on Sunday.",
+      "date": "2026-08-31T17:01Z"
+     },
+     {
+      "name": "Kayden McDonald",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T23:55Z"
+     },
+     {
+      "name": "Jayden Higgins",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Tank Dell",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Dell (knee) agreed to take a pay cut from the Texans on Friday, Aaron Wilson of KPRC 2 Houston reports.",
+      "date": "2026-09-04T15:55Z"
+     },
+     {
+      "name": "Sam Hagen",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Texans placed Hagen (undisclosed) on injured reserve Tuesday, Greg Auman of Fox Sports reports.",
+      "date": "2026-09-02T00:13Z"
+     },
+     {
+      "name": "Braden Smith",
+      "pos": "OT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Texans placed Smith (foot) on injured reserve Tuesday, Greg Auman of Fox Sports reports.",
+      "date": "2026-09-02T00:10Z"
+     },
+     {
+      "name": "Solomon Byrd",
+      "pos": "DE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Byrd (ankle) reverted to the Texans' injured-reserve list Monday, per the NFL's transaction log.",
+      "date": "2026-09-01T01:08Z"
+     },
+     {
+      "name": "Ali Gaye",
+      "pos": "DE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Texans placed Gaye (knee) on injured reserve Sunday.",
+      "date": "2026-08-31T23:16Z"
+     },
+     {
+      "name": "Ja'Marcus Ingram",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Texans placed Ingram (shoulder) on injured reserve Sunday with a designation to return, Aaron Wilson of KPRC 2 Houston reports.",
+      "date": "2026-08-30T23:17Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "chi-car",
+   "espnId": "401872661",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "venue": "Bank of America Stadium",
+   "away": {
+    "abbr": "CHI",
+    "name": "Chicago Bears",
+    "short": "Bears"
+   },
+   "home": {
+    "abbr": "CAR",
+    "name": "Carolina Panthers",
+    "short": "Panthers"
+   },
+   "lines": {
+    "spread": "CHI -3",
+    "total": 46.5,
+    "ml": {
+     "away": -148,
+     "home": 124
+    },
+    "winProb": {
+     "away": 0.572,
+     "home": 0.428
+    },
+    "implied": {
+     "away": 24.75,
+     "home": 21.75
+    }
+   },
+   "sections": {
+    "offseason": "**Bears (11-6, NFC North champs):** Ben Johnson calls plays; OC Doyle left for BAL, Press Taylor promoted; DC Dennis Allen retained. DJ Moore reportedly traded to BUF for a 2nd (ESPN report); C Bradbury acquired after Dalman retired. FA: S Coby Bryant, LB Bush, WR/KR Raymond. Draft: S Thieneman (25), C Logan Jones (57), TE Roush (69), WR Zavion Thomas (89). Caleb Williams (3,942 yds, 27/7) Year 3 in Johnson's system.\n**Panthers (8-9, NFC South champs):** Canales hands play-calling to OC Brad Idzik; DC Evero retained. FA: EDGE Jaelan Phillips (4y/$120M), LB Devin Lloyd, LT Rasheed Walker, RB AJ Dillon, WR Metchie, TE Waller. Lost RB Dowdle (PIT), OL Corbett, LB Rozeboom. Draft: OT Freeling (19), DT Lee Hunter (49, starter). Bryce Young (6.2 Y/A).",
+    "matchup": "**CHI O vs CAR D:** Bears 25.7 ppg (9th), No. 1 rush success. Extreme run-first inside the 20 (PROE -12% inside the 10, 31st). Swift: 24 inside-10 carries, 5-for-5 inside the 5, 9 rush TD; Monangai 19 inside-10, 4 TD on 5 inside-5. Loveland team-high 16 inside-20 targets, 6 TD; Odunze 21.9% target share. CAR D: 20th vs run, 31st pressure rate, 30th DVOA vs TE, 2nd-most rec yds to TEs, 24 pass TD allowed. CAR OL: Ekwonu (PUP), Moton (NFI) out.\n**CAR O vs CHI D:** Panthers 19.0 ppg (27th). CHI D 24.3 pa (23rd), 5.9 yds/play (29th), 6.3% TD rate allowed (30th), 5.2 YPC allowed, 28 pass TD allowed; secondary depleted (Gordon PUP). McMillan (70-1,014-7, OROY), Coker (3 TD in last 5, team-high end-zone targets in that span). Hubbard (missed preseason, hamstring) 1A/1B with Brooks (groin, limited); Dillon power back.",
+    "injuries": "**CHI:** Bagent DNP; Odunze limited (calf, trending to play); OT Trapilo expected out. Monangai (knee), Burden (groin) practicing, expected to play. PUP: Gordon, Sewell, Turner.\n**CAR:** OLB Patrick Jones II OUT; Brooks, DT Bobby Brown limited. PUP: Ekwonu, Wharton. NFI: Moton. IR: Scourton (ACL), Brazzell, Trevor Etienne.",
+    "oddsNotes": "DK: CHI -3 (-102), ML -148 / +124, total 46.5. FD: CHI -2.5, -158/+134, 47.5. Implied CHI 24.75 / CAR 21.75. De-vigged: CHI 57–59% / CAR 41–43%. CAR 6-2 ATS as home dog.",
+    "atdNotes": "Swift -175 · Burden +130 · Odunze +180 · Coker +285 · Hubbard +320 · Brooks +800 · Monangai +900 · Loveland +1000 (looks mispriced; verify, likely +150 to +200) · McMillan +1000 to +1300 (verify)."
+   },
+   "atdBoard": [
+    {
+     "name": "D'Andre Swift",
+     "team": "CHI",
+     "price": -175,
+     "implied": 0.6364,
+     "live": null
+    },
+    {
+     "name": "Luther Burden III",
+     "team": "CHI",
+     "price": 130,
+     "implied": 0.4348,
+     "live": null
+    },
+    {
+     "name": "Rome Odunze",
+     "team": "CHI",
+     "price": 180,
+     "implied": 0.3571,
+     "live": null
+    },
+    {
+     "name": "Jalen Coker",
+     "team": "CAR",
+     "price": 285,
+     "implied": 0.2597,
+     "live": null
+    },
+    {
+     "name": "Chuba Hubbard",
+     "team": "CAR",
+     "price": 320,
+     "implied": 0.2381,
+     "live": null
+    },
+    {
+     "name": "Jonathon Brooks",
+     "team": "CAR",
+     "price": 800,
+     "implied": 0.1111,
+     "live": null
+    },
+    {
+     "name": "Kyle Monangai",
+     "team": "CHI",
+     "price": 900,
+     "implied": 0.1,
+     "live": null
+    },
+    {
+     "name": "Colston Loveland",
+     "team": "CHI",
+     "price": 1000,
+     "implied": 0.0909,
+     "live": null
+    },
+    {
+     "name": "Tetairoa McMillan",
+     "team": "CAR",
+     "price": 1000,
+     "implied": 0.0909,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "D'Andre Swift",
+     "team": "CHI",
+     "pos": "RB",
+     "price": -175,
+     "est": 0.6,
+     "why": "24 carries inside the 10 and 9 rushing TD in the league's most run-heavy red-zone offense vs a bottom-third run D.",
+     "implied": 0.6364,
+     "live": null,
+     "edge": -0.036
+    },
+    {
+     "name": "Colston Loveland",
+     "team": "CHI",
+     "pos": "TE",
+     "price": 1000,
+     "est": 0.38,
+     "why": "Team-high 16 targets inside the 20 vs a D ranked 30th in DVOA vs TEs. The scraped +1000 looks like a first-TD price; anything above +150 is value.",
+     "priceNote": "verify",
+     "implied": 0.0909,
+     "live": null,
+     "edge": 0.289
+    },
+    {
+     "name": "Rome Odunze",
+     "team": "CHI",
+     "pos": "WR",
+     "price": 180,
+     "est": 0.38,
+     "why": "21.9% target share on a 25-point implied total vs a D that allowed 24 passing TD; calf trending fine.",
+     "implied": 0.3571,
+     "live": null,
+     "edge": 0.023
+    }
+   ],
+   "value": [
+    {
+     "name": "Kyle Monangai",
+     "team": "CHI",
+     "pos": "RB",
+     "price": 900,
+     "est": 0.25,
+     "why": "4 TD on 5 carries inside the 5; the goal-line vulture priced like a longshot because of the knee.",
+     "implied": 0.1,
+     "live": null,
+     "edge": 0.15
+    },
+    {
+     "name": "Jalen Coker",
+     "team": "CAR",
+     "pos": "WR",
+     "price": 285,
+     "est": 0.24,
+     "why": "Led CAR in end-zone targets over the final five games vs a gutted CHI secondary.",
+     "implied": 0.2597,
+     "live": null,
+     "edge": -0.02
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Bears ML",
+      "Swift ATD"
+     ],
+     "why": "A Bears lead means a run-out script funneling goal-line work to Swift.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Caleb Williams 2+ pass TD",
+      "Odunze ATD",
+      "Loveland ATD"
+     ],
+     "why": "CHI passing TDs concentrate in the top-2 target shares; Loveland is the top red-zone read.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Over 46.5",
+      "McMillan ATD",
+      "Swift ATD"
+     ],
+     "why": "Shootout script: CHI D allows a 6.3% TD rate; CAR catches up through McMillan.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 1:00 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Kyler Gordon",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Gordon (calf) is away from the Bears and working with his own trainer to accelerate his recovery, Ian Rapoport of ESPN and NFL Network reports.",
+      "date": "2026-09-08T23:35Z"
+     },
+     {
+      "name": "Shemar Turner",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Rome Odunze",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Odunze (calf) was limited in Wednesday's practice.",
+      "date": "2026-09-09T20:29Z"
+     },
+     {
+      "name": "Ozzy Trapilo",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T20:17Z"
+     },
+     {
+      "name": "Tyson Bagent",
+      "pos": "QB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T20:17Z"
+     },
+     {
+      "name": "Dallis Flowers",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Jonathan Garvin",
+      "pos": "DE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Hayden Large",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Bears placed Large (undisclosed) on injured reserve Tuesday.",
+      "date": "2026-09-01T23:40Z"
+     },
+     {
+      "name": "Coby Bryant",
+      "pos": "S",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Bears placed Bryant (knee) on injured reserve Tuesday.",
+      "date": "2026-09-01T23:35Z"
+     },
+     {
+      "name": "Ruben Hyppolite II",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Hyppolite (shoulder) reverted to Chicago's injured reserve Monday, per the NFL's transaction log.",
+      "date": "2026-09-01T00:58Z"
+     },
+     {
+      "name": "Tony Fields II",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Bears placed Fields (undisclosed) on injured reserve Sunday with a designation to return.",
+      "date": "2026-08-31T23:12Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Taylor Moton",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Panthers transferred Moton to the reserve/non-football illness list Sunday, Darin Gantt of the team's official site reports.",
+      "date": "2026-08-31T23:00Z"
+     },
+     {
+      "name": "Ikem Ekwonu",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Ekwonu (knee) was moved to the Panthers' reserve/PUP list Sunday, Darin Gantt of the team's official site reports.",
+      "date": "2026-08-31T22:52Z"
+     },
+     {
+      "name": "Tershawn Wharton",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Wharton (neck) was moved to the reserve/PUP list by the Panthers on Sunday, Darin Gantt of the team's official website reports.",
+      "date": "2026-08-31T16:12Z"
+     },
+     {
+      "name": "Bobby Brown III",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T19:45Z"
+     },
+     {
+      "name": "Patrick Jones II",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T19:44Z"
+     },
+     {
+      "name": "Jonathon Brooks",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Brooks (groin) was listed as a limited participant in Wednesday's practice.",
+      "date": "2026-09-09T19:39Z"
+     },
+     {
+      "name": "Trevor Etienne",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Brady Christensen",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Panthers placed Christensen (hamstring) on injured reserve Tuesday, Darin Gantt of the team's official site reports.",
+      "date": "2026-09-01T23:48Z"
+     },
+     {
+      "name": "Bam Martin-Scott",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Panthers placed Martin-Scott (hamstring) on injured reserve with a designation to return Sunday, Darin Gantt of the team's official site reports.",
+      "date": "2026-08-31T23:05Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "cle-jax",
+   "espnId": "401872922",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "venue": "EverBank Stadium",
+   "away": {
+    "abbr": "CLE",
+    "name": "Cleveland Browns",
+    "short": "Browns"
+   },
+   "home": {
+    "abbr": "JAX",
+    "name": "Jacksonville Jaguars",
+    "short": "Jaguars"
+   },
+   "lines": {
+    "spread": "JAX -8.5",
+    "total": 40.5,
+    "ml": {
+     "away": 340,
+     "home": -440
+    },
+    "winProb": {
+     "away": 0.218,
+     "home": 0.782
+    },
+    "implied": {
+     "away": 16,
+     "home": 24.5
+    }
+   },
+   "sections": {
+    "offseason": "**Browns:** New HC Todd Monken (ex-Ravens OC), DC Mike Rutenberg. Traded Myles Garrett to LAR for EDGE Jared Verse. FA: DT Kalia Davis, LB Quincy Williams, three new starting OL; RB Jerome Ford left. Draft: OT Spencer Fano (R1, LT), WR KC Concepcion (R1), G Austin Barber. QB Deshaun Watson starts, first game in ~23 months post-Achilles (preseason 0 TD). Gabriel on IR. O-line projected worst in league.\n**Jaguars (13-4, AFC South champs):** Coen Year 2. Only outside FA add RB Chris Rodriguez Jr. Lost Etienne (NO), LB Lloyd, CB Newsome, S Wingard. No R1 pick; drafted TE Boerkircher (56), DT Regis, G Pregnon. Lawrence 18 TD/4 INT over final 7 games, career-high 9 rush TD.",
+    "matchup": "**JAX O vs CLE D:** Jags 27.7 ppg (6th), 7-2 ATS at home. Lawrence 8.2 Y/A vs man (5th); CLE played league-high 43.4% man. Parker Washington led JAX in end-zone targets (15), inside-20 targets (15), xTD 6.5, 6 rec TD + 2 PR TD. Strange 11 inside-20 targets, 3/3 end-zone conversions. WRs scored 10 of JAX's first TDs. RB: Rodriguez expected to out-snap Tuten; Allen (hip) likely out. CLE D: 6th in pass pts/g but reportedly last in RZ TD% allowed late 2025 (80%); loses Garrett.\n**CLE O vs JAX D:** Browns 16.4 ppg (31st), 4.3 Y/play (32nd), 1.5 TD/g. Judkins 66% rush share, 5 TD on 11 RZ carries, all goal-line work. JAX D 3rd in EPA/play, 6.3 Y/A allowed (3rd), weak pass rush (30th sack rate).",
+    "injuries": "**CLE:** G Jenkins LTD (back), DT Collins LTD, C Brailsford LTD; WR Bond Q; QB Gabriel IR.\n**JAX:** RB LeQuint Allen DNP (trending out); WR Meyers LTD (thumb, will play); RT Van Lanen GTD. OL Mekari, Mustipher, DiGiorgio IR.",
+    "oddsNotes": "JAX -8.5 | ML JAX -440 / CLE +340 | Total 40.5 | Implied JAX 24.5 / CLE 16 | De-vigged: JAX 78% / CLE 22%.",
+    "atdNotes": "Verified: Parker Washington +200 (33%). First-TD (DK): Washington +850, Strange +1100, Fannin +1700. Other ATD unverified: Tuten ~+110, Judkins ~+150, Rodriguez, Thomas, Meyers."
+   },
+   "atdBoard": [
+    {
+     "name": "Parker Washington",
+     "team": "JAX",
+     "price": 200,
+     "implied": 0.3333,
+     "live": null
+    },
+    {
+     "name": "Bhayshul Tuten",
+     "team": "JAX",
+     "price": 110,
+     "implied": 0.4762,
+     "live": null
+    },
+    {
+     "name": "Quinshon Judkins",
+     "team": "CLE",
+     "price": 150,
+     "implied": 0.4,
+     "live": null
+    },
+    {
+     "name": "Brian Thomas Jr.",
+     "team": "JAX",
+     "price": 160,
+     "implied": 0.3846,
+     "live": null
+    },
+    {
+     "name": "Brenton Strange",
+     "team": "JAX",
+     "price": 330,
+     "implied": 0.2326,
+     "live": null
+    },
+    {
+     "name": "Chris Rodriguez Jr.",
+     "team": "JAX",
+     "price": 300,
+     "implied": 0.25,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Parker Washington",
+     "team": "JAX",
+     "pos": "WR",
+     "price": 200,
+     "est": 0.4,
+     "why": "Led JAX in end-zone targets (15) and expected TD; Ward shadows Thomas, leaving the slot matchup; punt-return equity too.",
+     "implied": 0.3333,
+     "live": null,
+     "edge": 0.067
+    },
+    {
+     "name": "Bhayshul Tuten",
+     "team": "JAX",
+     "pos": "RB",
+     "price": 110,
+     "est": 0.45,
+     "why": "Highest implied team total at home; Etienne's goal-line carries are vacated.",
+     "priceNote": "est.",
+     "implied": 0.4762,
+     "live": null,
+     "edge": -0.026
+    },
+    {
+     "name": "Quinshon Judkins",
+     "team": "CLE",
+     "pos": "RB",
+     "price": 150,
+     "est": 0.38,
+     "why": "Only goal-line back on the roster (5 TD on 11 red-zone carries), 66% rush share; the 16-point implied total is the drag.",
+     "priceNote": "est.",
+     "implied": 0.4,
+     "live": null,
+     "edge": -0.02
+    }
+   ],
+   "value": [
+    {
+     "name": "Brenton Strange",
+     "team": "JAX",
+     "pos": "TE",
+     "price": 330,
+     "est": 0.25,
+     "why": "Second in inside-20 targets, 3 for 3 on end-zone targets.",
+     "priceNote": "est.",
+     "implied": 0.2326,
+     "live": null,
+     "edge": 0.017
+    },
+    {
+     "name": "Chris Rodriguez Jr.",
+     "team": "JAX",
+     "pos": "RB",
+     "price": 300,
+     "est": 0.22,
+     "why": "Could take goal-line work with Allen out.",
+     "priceNote": "est.",
+     "implied": 0.25,
+     "live": null,
+     "edge": -0.03
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Jaguars ML",
+      "Under 40.5",
+      "Washington ATD"
+     ],
+     "why": "Jags-control script; JAX TDs come through the air near the goal line.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Lawrence 2+ pass TD",
+      "Washington ATD",
+      "Strange ATD"
+     ],
+     "why": "Coen threw for 10 WR first-TDs last year; Strange is efficient in the end zone.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Browns +8.5",
+      "Judkins ATD"
+     ],
+     "why": "The Browns' most plausible cover comes via a Judkins ground score.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 1:00 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Jeremiah Owusu-Koramoah",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Joe Royer",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Browns placed Royer (personal) on the reserve/non-football illness list Sunday, Scott Petrak of the Elyria Chronicle-Telegram reports.",
+      "date": "2026-08-30T21:32Z"
+     },
+     {
+      "name": "Teven Jenkins",
+      "pos": "G",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T20:34Z"
+     },
+     {
+      "name": "Maliek Collins",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T20:33Z"
+     },
+     {
+      "name": "Dillon Gabriel",
+      "pos": "QB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Kendrick Green",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Kalia Davis",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Browns placed Davis on injured reserve Tuesday due to a quadriceps injury.",
+      "date": "2026-09-01T23:39Z"
+     },
+     {
+      "name": "Edefuan Ulofoshio",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Ulofoshio (biceps) reverted to the Browns' IR on Monday, per the NFL's transaction log.",
+      "date": "2026-09-01T01:08Z"
+     },
+     {
+      "name": "Elijah Chatman",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Browns reverted Chatman (quadriceps) to IR on Monday, per the NFL's transaction log.",
+      "date": "2026-09-01T01:04Z"
+     },
+     {
+      "name": "Travis Bell",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Bell (eye) reverted to Cleveland's injured reserve Monday, per the NFL's transaction log.",
+      "date": "2026-09-01T00:57Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Cole Van Lanen",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Van Lanen (knee) was a limited participant in Wednesday's practice.",
+      "date": "2026-09-10T00:28Z"
+     },
+     {
+      "name": "LeQuint Allen Jr.",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Allen was present for Wednesday's practice but was a non-participant due to a hip injury, Ryan O'Halloran of The Florida Times-Union reports.",
+      "date": "2026-09-09T16:42Z"
+     },
+     {
+      "name": "Jakobi Meyers",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Meyers (hand) was spotted practicing Wednesday while wearing a non-contact jersey, Ryan O'Halloran of The Florida Times-Union reports.",
+      "date": "2026-09-09T16:28Z"
+     },
+     {
+      "name": "Sam Mustipher",
+      "pos": "C",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Jaguars placed Mustipher (undisclosed) on injured reserve Sunday.",
+      "date": "2026-08-31T23:25Z"
+     },
+     {
+      "name": "Patrick Mekari",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Jaguars placed Mekari (back) on injured reserve with a designation to return Sunday.",
+      "date": "2026-08-31T23:21Z"
+     },
+     {
+      "name": "Zach Durfee",
+      "pos": "DE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Jaguars placed Durfee (upper body) on injured reserve Sunday with a designation to return, Matt Zenitz of CBSSports.com reports.",
+      "date": "2026-08-30T23:11Z"
+     },
+     {
+      "name": "Parker Hughes",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     },
+     {
+      "name": "Jared Bartlett",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     },
+     {
+      "name": "Garrett DiGiorgio",
+      "pos": "OT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "no-det",
+   "espnId": "401872923",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "venue": "Ford Field",
+   "away": {
+    "abbr": "NO",
+    "name": "New Orleans Saints",
+    "short": "Saints"
+   },
+   "home": {
+    "abbr": "DET",
+    "name": "Detroit Lions",
+    "short": "Lions"
+   },
+   "lines": {
+    "spread": "DET -7",
+    "total": 49.5,
+    "ml": {
+     "away": 250,
+     "home": -310
+    },
+    "winProb": {
+     "away": 0.274,
+     "home": 0.726
+    },
+    "implied": {
+     "away": 21.25,
+     "home": 28.25
+    }
+   },
+   "sections": {
+    "offseason": "**Lions (9-8, missed playoffs):** OC Morton out, Drew Petzing in; Kafka pass-game coordinator; DC Sheppard Year 2. Traded David Montgomery; signed RB Isiah Pacheco (now IR), TE Conklin, WR Dortch, CB McCreary. Released LT Decker and CB Terrion Arnold. Sewell moved to LT; R1 OT Blake Miller starts at RT. Draft: R2 EDGE Derrick Moore. Goff (4,564 yds, 34 TD, 8 INT).\n**Saints (6-11, 5-3 down the stretch):** Kellen Moore/Nussmeier/Staley Year 2. Signed RB Travis Etienne (4yr/$48M), TE Noah Fant; extended Olave (4yr/$132M), Chase Young. Lost Demario Davis, Taysom Hill, Moreau. Draft: R1 (8) WR Jordyn Tyson (IR ~8 wks). QB Tyler Shough Year 2 (5-4 as starter, 99.1 rating last 5).",
+    "matchup": "**DET O vs NO D:** Lions 28.3 PPG (5th), 6.05 YPP. Gibbs 1,223 rush/13 TD + 616 rec/5 TD; 110.8 rush yds/g in 6 games without Montgomery (7 TD). St. Brown 117-1,401-11; J. Williams 65-1,117-7; LaPorta back from back surgery. Goff pressured 24.2% (25th). Saints D: 4.98 YPP allowed (6th), 4th vs pass yards, RZ TD% allowed 53.2% (10th), but 24.3 PPA (22nd). Cam Jordan OUT.\n**NO O vs DET D:** Saints 18.0 PPG (28th), 3.77 YPC (31st), RZ TD% 44.4% (last) but top-10 RZ with Shough. Olave 26.2% target share, 6 rec TD. Etienne projected 16–20 touches; Kamara (knee) limited. Lions D: 49 sacks (4th), but secondary gutted: Branch and Joseph on PUP, Arnold released.",
+    "injuries": "**NO:** DE Cam Jordan OUT; TE Delp DNP; RB Estimé DNP; Kamara LP. IR: Tyson, Ford, Styles.\n**DET:** DB Izien Q; Moore, Wingo LP. IR/PUP: Pacheco, Branch, Joseph, Mays. LaPorta not on report. Saylors is RB2.",
+    "oddsNotes": "DET -7 (DK) / -6.5 (FD) | ML DET -310 / NO +250 | Total 49.5 | Implied DET 28.3 / NO 21.3 | De-vigged: DET 73% / NO 27%.",
+    "atdNotes": "Gibbs -330 (77%); Etienne +105 (49%); Olave +145 (41%). St. Brown/Williams/LaPorta unverified (typical ~-130 / +130 / +170)."
+   },
+   "atdBoard": [
+    {
+     "name": "Jahmyr Gibbs",
+     "team": "DET",
+     "price": -330,
+     "implied": 0.7674,
+     "live": null
+    },
+    {
+     "name": "Amon-Ra St. Brown",
+     "team": "DET",
+     "price": -130,
+     "implied": 0.5652,
+     "live": null
+    },
+    {
+     "name": "Jameson Williams",
+     "team": "DET",
+     "price": 130,
+     "implied": 0.4348,
+     "live": null
+    },
+    {
+     "name": "Travis Etienne",
+     "team": "NO",
+     "price": 105,
+     "implied": 0.4878,
+     "live": null
+    },
+    {
+     "name": "Chris Olave",
+     "team": "NO",
+     "price": 145,
+     "implied": 0.4082,
+     "live": null
+    },
+    {
+     "name": "Sam LaPorta",
+     "team": "DET",
+     "price": 170,
+     "implied": 0.3704,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Jahmyr Gibbs",
+     "team": "DET",
+     "pos": "RB",
+     "price": -330,
+     "est": 0.78,
+     "why": "Bell-cow with Montgomery traded and Pacheco on IR; 7 TD in 6 Montgomery-less games; 28-point implied total at home.",
+     "implied": 0.7674,
+     "live": null,
+     "edge": 0.013
+    },
+    {
+     "name": "Amon-Ra St. Brown",
+     "team": "DET",
+     "pos": "WR",
+     "price": -130,
+     "est": 0.55,
+     "why": "11 TD and 117 catches; the Lions' primary red-zone target vs a Saints D missing Cam Jordan.",
+     "priceNote": "verify",
+     "implied": 0.5652,
+     "live": null,
+     "edge": -0.015
+    },
+    {
+     "name": "Chris Olave",
+     "team": "NO",
+     "pos": "WR",
+     "price": 145,
+     "est": 0.45,
+     "why": "26% target share, 6 red-zone targets under Shough; Tyson out consolidates targets vs a DET secondary missing both safeties.",
+     "implied": 0.4082,
+     "live": null,
+     "edge": 0.042
+    }
+   ],
+   "value": [
+    {
+     "name": "Travis Etienne",
+     "team": "NO",
+     "pos": "RB",
+     "price": 105,
+     "est": 0.47,
+     "why": "Fair-priced volume back if Kamara is limited.",
+     "implied": 0.4878,
+     "live": null,
+     "edge": -0.018
+    },
+    {
+     "name": "Jacob Saylors",
+     "team": "DET",
+     "pos": "RB",
+     "price": 400,
+     "est": 0.15,
+     "why": "DET RB2 for a garbage-time or goal-line touch in a projected blowout.",
+     "priceNote": "est.",
+     "implied": 0.2,
+     "live": null,
+     "edge": -0.05
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Lions ML",
+      "Gibbs ATD",
+      "Over 49.5"
+     ],
+     "why": "Lions winning big runs through Gibbs; a scripted lead means more carries.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Goff 2+ pass TD",
+      "St. Brown ATD",
+      "Jameson Williams ATD"
+     ],
+     "why": "Goff threw 34 TD; DET's air attack vs a Jordan-less pass rush.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Saints +7",
+      "Olave ATD",
+      "Over 49.5"
+     ],
+     "why": "Saints keeping it close means Shough throwing against a depleted secondary; Olave is the target hog.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 1:00 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Cameron Jordan",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Coach Kellen Moore said Wednesday that Jordan (hamstring) will not play Sunday against the Lions, Katherine Terrell of ESPN.com reports.",
+      "date": "2026-09-09T23:28Z"
+     },
+     {
+      "name": "Mason Tipton",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Tipton (leg) was moved to the reserve/PUP list by the Saints on Sunday.",
+      "date": "2026-08-31T18:40Z"
+     },
+     {
+      "name": "Oscar Delp",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Delp (hamstring) did not participate in Wednesday's practice.",
+      "date": "2026-09-09T23:24Z"
+     },
+     {
+      "name": "Audric Estime",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Estime (thigh) did not participate in Wednesday's practice.",
+      "date": "2026-09-09T23:20Z"
+     },
+     {
+      "name": "Alvin Kamara",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Kamara (knee) returned to practice Wednesday, Mike Triplett of NewOrleans.Football reports.",
+      "date": "2026-09-09T20:54Z"
+     },
+     {
+      "name": "Lorenzo Styles Jr.",
+      "pos": "S",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Dillon Radunz",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Jaylan Ford",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Ford (undisclosed) was placed on New Orleans' injured reserve Sunday with a designation to return.",
+      "date": "2026-08-31T23:48Z"
+     },
+     {
+      "name": "David Long Jr.",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Saints placed Long (undisclosed) on injured reserve Sunday.",
+      "date": "2026-08-31T23:41Z"
+     },
+     {
+      "name": "Jordyn Tyson",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Tyson (hamstring) was placed on injured reserve with a designation to return by New Orleans on Sunday.",
+      "date": "2026-08-30T22:30Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Giovanni Manu",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Lions moved Manu (knee) to the reserve/non-football injury list Sunday.",
+      "date": "2026-08-31T23:13Z"
+     },
+     {
+      "name": "Kerby Joseph",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Lions placed Joseph (knee) on the reserve/PUP list Sunday, Tom Pelissero of Netflix reports.",
+      "date": "2026-08-31T01:16Z"
+     },
+     {
+      "name": "Brian Branch",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Lions placed Branch (Achilles) on the reserve/PUP list Sunday, Tom Pelissero of Netflix reports.",
+      "date": "2026-08-31T01:09Z"
+     },
+     {
+      "name": "Christian Izien",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T01:07Z"
+     },
+     {
+      "name": "Derrick Moore",
+      "pos": "DE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Cade Mays",
+      "pos": "C",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Mays (wrist) is looking to return from injured reserve by mid-October, Dave Birkett of the Detroit Free Press reports.",
+      "date": "2026-09-09T23:49Z"
+     },
+     {
+      "name": "Payton Turner",
+      "pos": "DE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Isiah Pacheco",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Lions GM Brad Holmes said Wednesday that Pacheco (back) doesn't have a clear timetable for return, Colton Pouncy of The Athletic reports.",
+      "date": "2026-09-02T15:10Z"
+     },
+     {
+      "name": "Damone Clark",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Detroit placed Clark (undisclosed) on its injured reserve list Tuesday.",
+      "date": "2026-08-26T00:11Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "nyj-ten",
+   "espnId": "401872924",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "venue": "Nissan Stadium",
+   "away": {
+    "abbr": "NYJ",
+    "name": "New York Jets",
+    "short": "Jets"
+   },
+   "home": {
+    "abbr": "TEN",
+    "name": "Tennessee Titans",
+    "short": "Titans"
+   },
+   "lines": {
+    "spread": "TEN -1.5",
+    "total": 39.5,
+    "ml": {
+     "away": 105,
+     "home": -125
+    },
+    "winProb": {
+     "away": 0.468,
+     "home": 0.532
+    },
+    "implied": {
+     "away": 19,
+     "home": 20.5
+    }
+   },
+   "sections": {
+    "offseason": "**Jets:** Glenn retained, calls defense; Frank Reich OC. Traded for QB Geno Smith (LV) and S Minkah Fitzpatrick; signed EDGE Ossai, LB Demario Davis; acquired DT Sweat for Jermaine Johnson. Draft: EDGE David Bailey (2), TE Kenyon Sadiq (16), WR Omar Cooper Jr. (30), CB Ponds (50), QB Klubnik (110). 2025: NFL-worst 503 pts allowed, 0 INT, 32nd pass offense.\n**Titans:** Robert Saleh HC, Brian Daboll OC, Gus Bradley DC. ~9 new starters: WR Wan'Dale Robinson, DL JFM, EDGE Jermaine Johnson, DL Solomon Thomas, CBs Alontae Taylor and Flott, C Schlottmann, S Tony Adams. Lost TE Okonkwo, C Cushenberry, Sweat. Draft: WR Carnell Tate (4), EDGE Faulk (31), LB Hill (60), RB Singleton. Cam Ward Yr 2 (15 TD/7 INT, 55 sacks).",
+    "matchup": "**NYJ O vs TEN D:** Reich run-heavy; Jets last in PROE. Hall (61% snaps, 1,065 yds, 5 TD) lead back but Reich splits down-roles; Geno's RB target rate 17.6%. Wilson 31.2% target share pre-injury. Reich uses TEs heavily (Taylor/Sadiq). TEN D: 28.1 ppg allowed (28th), 114.6 rush ypg, 14 takeaways.\n**TEN O vs NYJ D:** Pollard workhorse (5 TD, RB29 in 2025); Spears change-of-pace. Robinson slot (26.8% tgt share) vs NYJ nickel Brownlee (108.9 rating allowed; 6th-most yds/target to slot WRs). Tate outside. TEN LT Dan Moore 48 pressures. NYJ D: 139.5 rush ypg allowed (29th). Preseason: Ward 46th YPA; Tate 0-for-6; Hall missed final 2 (groin).",
+    "injuries": "**NYJ:** DNP EDGE Ossai (foot, likely out), WR Patrick; LP CB Ponds; FP Hall, Davis, Sadiq. Braelon Allen back from knee.\n**TEN:** DNP LB Cedric Gray (concussion); FP Faulk.",
+    "oddsNotes": "TEN -1.5 | ML TEN -125 / NYJ +105 | Total 38.5–39.5 (lowest of week) | Implied TEN 20.3 / NYJ 18.8 | De-vigged: TEN 53% / NYJ 47%. 64% ML money on NYJ.",
+    "atdNotes": "Hall +100 (50%) · Pollard +130 (43%) · Braelon Allen +130 to +215 · Wilson +850 (suspect; Dimers 32%) · Spears +650/+1100 · Tate +1000/+1900 (Dimers 27%) · Mitchell +420 (SFA)."
+   },
+   "atdBoard": [
+    {
+     "name": "Breece Hall",
+     "team": "NYJ",
+     "price": 100,
+     "implied": 0.5,
+     "live": null
+    },
+    {
+     "name": "Tony Pollard",
+     "team": "TEN",
+     "price": 130,
+     "implied": 0.4348,
+     "live": null
+    },
+    {
+     "name": "Braelon Allen",
+     "team": "NYJ",
+     "price": 175,
+     "implied": 0.3636,
+     "live": null
+    },
+    {
+     "name": "Garrett Wilson",
+     "team": "NYJ",
+     "price": 200,
+     "implied": 0.3333,
+     "live": null
+    },
+    {
+     "name": "Adonai Mitchell",
+     "team": "NYJ",
+     "price": 420,
+     "implied": 0.1923,
+     "live": null
+    },
+    {
+     "name": "Tyjae Spears",
+     "team": "TEN",
+     "price": 650,
+     "implied": 0.1333,
+     "live": null
+    },
+    {
+     "name": "Carnell Tate",
+     "team": "TEN",
+     "price": 1000,
+     "implied": 0.0909,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Breece Hall",
+     "team": "NYJ",
+     "pos": "RB",
+     "price": 100,
+     "est": 0.46,
+     "why": "Lead back behind a top-7 yards-before-contact line vs a 28th-ranked scoring D; Reich committee and Allen goal-line risk cap it.",
+     "implied": 0.5,
+     "live": null,
+     "edge": -0.04
+    },
+    {
+     "name": "Tony Pollard",
+     "team": "TEN",
+     "pos": "RB",
+     "price": 130,
+     "est": 0.4,
+     "why": "Daboll workhorse vs the Jets' 29th-ranked run D with Ossai out; TEN has the higher implied total.",
+     "implied": 0.4348,
+     "live": null,
+     "edge": -0.035
+    },
+    {
+     "name": "Garrett Wilson",
+     "team": "NYJ",
+     "pos": "WR",
+     "price": 200,
+     "est": 0.3,
+     "why": "31% target share and 46% first-read share pre-injury; a scraped +850 print is almost certainly first-TD, so verify.",
+     "priceNote": "verify",
+     "implied": 0.3333,
+     "live": null,
+     "edge": -0.033
+    }
+   ],
+   "value": [
+    {
+     "name": "Carnell Tate",
+     "team": "TEN",
+     "pos": "WR",
+     "price": 1000,
+     "est": 0.27,
+     "why": "No. 4 overall pick vs soft outside corners; model has him near 27%.",
+     "implied": 0.0909,
+     "live": null,
+     "edge": 0.179
+    },
+    {
+     "name": "Mason Taylor",
+     "team": "NYJ",
+     "pos": "TE",
+     "price": 350,
+     "est": 0.22,
+     "why": "Reich TE usage and Geno Smith's TE-friendly history.",
+     "priceNote": "est.",
+     "implied": 0.2222,
+     "live": null,
+     "edge": -0.002
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Jets ML",
+      "Hall ATD"
+     ],
+     "why": "A Jets win comes via a Reich ground script with Hall finishing drives.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Titans ML",
+      "Pollard ATD",
+      "Under 39.5"
+     ],
+     "why": "Titans control means Pollard volume in a low-possession game.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Cam Ward 1+ pass TD",
+      "Wan'Dale Robinson ATD"
+     ],
+     "why": "Robinson's slot matchup vs Brownlee is Tennessee's softest edge.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 1:00 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Tyler Baron",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Jets moved Baron (knee) to the reserve/PUP list Sunday, Eric Allen and Amanda Vogt of the team's official site report.",
+      "date": "2026-08-31T23:53Z"
+     },
+     {
+      "name": "Tim Patrick",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Patrick (groin) did not practice Wednesday, Rich Cimini of ESPN.com reports.",
+      "date": "2026-09-09T23:03Z"
+     },
+     {
+      "name": "Joseph Ossai",
+      "pos": "DE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "D'Angelo Ponds",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Head coach Aaron Glenn said Monday that Ponds (calf) is on track to play against the Titans in Week 1, Zack Rosenblatt of The Athletic reports.",
+      "date": "2026-08-31T21:46Z"
+     },
+     {
+      "name": "VJ Payne",
+      "pos": "S",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Kingsley Jonathan",
+      "pos": "DE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Tre Brown",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Brown (undisclosed) was placed on the Jets' injured reserve Sunday, Amanda Vogt and Eric Allen of the team's official site report.",
+      "date": "2026-08-31T23:57Z"
+     },
+     {
+      "name": "Chip Trayanum",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Trayanum (neck) was placed on injured reserve by the Jets on Sunday, Eric Allen &amp; Amanda Vogt of the team's official website report.",
+      "date": "2026-08-31T18:44Z"
+     },
+     {
+      "name": "Anez Cooper",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Jets placed Cooper (shoulder) on injured reserve Sunday with a designation to return, Al Iannazzone of Newsday reports.",
+      "date": "2026-08-31T01:38Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Cedric Gray",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Gray got in a UTV accident over the weekend and had to enter the NFL's concussion protocol, Turron Davenport of ESPN.com reports.",
+      "date": "2026-09-07T23:52Z"
+     },
+     {
+      "name": "Andre James",
+      "pos": "C",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "The Titans placed James (undisclosed) on injured reserve Monday, Jim Wyatt of the team's official site reports.",
+      "date": "2026-09-01T00:29Z"
+     },
+     {
+      "name": "Milo Eifler",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Kendell Brooks",
+      "pos": "S",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Brooks (undisclosed) reverted to Tennessee's injured reserve Monday, per the NFL's transaction log.",
+      "date": "2026-09-01T03:56Z"
+     },
+     {
+      "name": "Tanoh Kpassagnon",
+      "pos": "DE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Titans placed Kpassagnon (undisclosed) on injured reserve Monday, Jim Wyatt of the team's official site reports.",
+      "date": "2026-09-01T00:25Z"
+     },
+     {
+      "name": "Dorian Mausi",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Titans placed Mausi (undisclosed) on injured reserve Monday with a designation to return, Jim Wyatt of the team's official site reports.",
+      "date": "2026-09-01T00:21Z"
+     },
+     {
+      "name": "Joshua Williams",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Titans placed Williams (pectoral) on injured reserve Monday with a designation to return, Jim Wyatt of the team's official site reports.",
+      "date": "2026-09-01T00:19Z"
+     },
+     {
+      "name": "Jaylen Harrell",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     },
+     {
+      "name": "Jaren Kanak",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "tb-cin",
+   "espnId": "401872925",
+   "kickoff": "2026-09-13T17:00:00Z",
+   "venue": "Paycor Stadium",
+   "away": {
+    "abbr": "TB",
+    "name": "Tampa Bay Buccaneers",
+    "short": "Buccaneers"
+   },
+   "home": {
+    "abbr": "CIN",
+    "name": "Cincinnati Bengals",
+    "short": "Bengals"
+   },
+   "lines": {
+    "spread": "CIN -3.5",
+    "total": 50.5,
+    "ml": {
+     "away": 168,
+     "home": -200
+    },
+    "winProb": {
+     "away": 0.359,
+     "home": 0.641
+    },
+    "implied": {
+     "away": 23.5,
+     "home": 27
+    }
+   },
+   "sections": {
+    "offseason": "**Bengals:** Taylor/Golden retained. Traded No. 10 pick to NYG for DT Dexter Lawrence. Signed EDGE Boye Mafe, DT Jonathan Allen, S Bryan Cook, S Kyle Dugger; Flacco backup. Lost Hendrickson (BAL), TE Fant (NO). Draft: DE Cashius Howell (41), CB Tacario Davis (72). All 5 OL starters return. Burrow healthy after 8-game 2025. Preseason 3-0.\n**Buccaneers:** New OC Zac Robinson, new DC Christian Parker. Lost WR Mike Evans (SF), LB Lavonte David (retired), RB Rachaad White (WAS). Added LB Anzalone, DL A'Shawn Robinson, EDGE Muhammad, RB Kenneth Gainwell. Draft: OLB Rueben Bain Jr. (15), LB Josiah Trotter (R2), both starting. Mayfield returns (26 TD/11 INT, NFL-most turnover-worthy plays).",
+    "matchup": "**CIN O vs TB D:** 26.8 ppg in Burrow's 8 starts. Chase: 125/1,412/8, league-high 185 targets, 22 targets inside the 20. Higgins 11 TD in 15 games. Chase Brown 11 total TD, 14 goal-line carries, Perine only backup. TB D: 32nd in RZ TD% allowed (69.8%), 27th vs pass, 5th vs run; blitz-heavy but Burrow 115.8 rating vs blitz. CB Parrish allowed 671 yds.\n**TB O vs CIN D:** Bucs 22.4 ppg (18th). Egbuka (63/938/6) is WR1; Godwin slot, McMillan (knee). Otton 59/572/1. Irving 3.1 ypc, 6 GL carries; Gainwell pass-down back. CIN D: 28.9 ppg allowed, 32nd vs run, ~68% RZ TD allowed, NFL-worst vs TEs (16 TD). DL improved 30th to 8th per PFF after additions.",
+    "injuries": "**CIN:** Chase (knee), Higgins (foot), Stewart (knee) all FULL.\n**TB:** RB Sean Tucker DNP (hamstring, GTD); limited Bain, McMillan, Rozeboom, Skule; Egbuka full.",
+    "oddsNotes": "CIN -3.5 | ML CIN -200 / TB +168 | Total 50.5 (highest of week) | Implied CIN 27 / TB 23.5 | De-vigged: CIN 64% / TB 36%.",
+    "atdNotes": "Chase -126 (BetMGM); Otton +330. Model probs: Chase Brown 52%, Chase 51%, Higgins 44%, Irving 40%, Egbuka 34%, Gainwell 31%."
+   },
+   "atdBoard": [
+    {
+     "name": "Ja'Marr Chase",
+     "team": "CIN",
+     "price": -126,
+     "implied": 0.5575,
+     "live": null
+    },
+    {
+     "name": "Chase Brown",
+     "team": "CIN",
+     "price": -140,
+     "implied": 0.5833,
+     "live": null
+    },
+    {
+     "name": "Tee Higgins",
+     "team": "CIN",
+     "price": 130,
+     "implied": 0.4348,
+     "live": null
+    },
+    {
+     "name": "Bucky Irving",
+     "team": "TB",
+     "price": 150,
+     "implied": 0.4,
+     "live": null
+    },
+    {
+     "name": "Emeka Egbuka",
+     "team": "TB",
+     "price": 190,
+     "implied": 0.3448,
+     "live": null
+    },
+    {
+     "name": "Kenneth Gainwell",
+     "team": "TB",
+     "price": 260,
+     "implied": 0.2778,
+     "live": null
+    },
+    {
+     "name": "Cade Otton",
+     "team": "TB",
+     "price": 330,
+     "implied": 0.2326,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Chase Brown",
+     "team": "CIN",
+     "pos": "RB",
+     "price": -140,
+     "est": 0.56,
+     "why": "14 goal-line carries plus 69 receptions, no backup threat, vs a Bucs D ranked 32nd in red-zone TD rate allowed.",
+     "priceNote": "est.",
+     "implied": 0.5833,
+     "live": null,
+     "edge": -0.023
+    },
+    {
+     "name": "Ja'Marr Chase",
+     "team": "CIN",
+     "pos": "WR",
+     "price": -126,
+     "est": 0.57,
+     "why": "22 targets inside the 20 and 8.8 expected TD; TB was 27th vs the pass and CB Parrish allowed 671 yards.",
+     "implied": 0.5575,
+     "live": null,
+     "edge": 0.012
+    },
+    {
+     "name": "Tee Higgins",
+     "team": "CIN",
+     "pos": "WR",
+     "price": 130,
+     "est": 0.45,
+     "why": "11 TD in 15 games; big-body target vs a secondary starting three rookies in nickel.",
+     "priceNote": "est.",
+     "implied": 0.4348,
+     "live": null,
+     "edge": 0.015
+    }
+   ],
+   "value": [
+    {
+     "name": "Cade Otton",
+     "team": "TB",
+     "pos": "TE",
+     "price": 330,
+     "est": 0.28,
+     "why": "CIN allowed an NFL-high 16 TE touchdowns in 2025.",
+     "implied": 0.2326,
+     "live": null,
+     "edge": 0.047
+    },
+    {
+     "name": "Kenneth Gainwell",
+     "team": "TB",
+     "pos": "RB",
+     "price": 260,
+     "est": 0.3,
+     "why": "Tucker likely out, Irving averaged 3.1 YPC, CIN was 32nd vs the run.",
+     "priceNote": "est.",
+     "implied": 0.2778,
+     "live": null,
+     "edge": 0.022
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Bengals ML",
+      "Chase Brown ATD"
+     ],
+     "why": "Bengals leading late means more Brown carries and goal-line work.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Burrow 2+ pass TD",
+      "Chase ATD",
+      "Higgins ATD"
+     ],
+     "why": "TB is 32nd in red-zone D; Burrow's red-zone TDs flow through these two.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Over 50.5",
+      "Otton ATD",
+      "Egbuka ATD"
+     ],
+     "why": "The week's highest total; CIN was worst vs TEs.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 1:00 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Rueben Bain Jr.",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Bain (shoulder) was a limited participant in Wednesday's practice, Brianna Dix of the Buccaneers' official site reports.",
+      "date": "2026-09-10T01:29Z"
+     },
+     {
+      "name": "Christian Rozeboom",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Rozeboom (foot) was a limited participant in Wednesday's practice, Brianna Dix of the Buccaneers' official site reports.",
+      "date": "2026-09-10T01:25Z"
+     },
+     {
+      "name": "Justin Skule",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T01:17Z"
+     },
+     {
+      "name": "Sean Tucker",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Tucker (hamstring) did not practice Wednesday.",
+      "date": "2026-09-09T21:05Z"
+     },
+     {
+      "name": "Jalen McMillan",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "McMillan (knee) practiced in a limited capacity Wednesday.",
+      "date": "2026-09-09T21:00Z"
+     },
+     {
+      "name": "Josh Hayes",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Mohamed Kamara",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Kamara (knee) reverted to the Buccaneers' injured reserve list Monday, per the NFL's transaction log.",
+      "date": "2026-09-01T03:50Z"
+     },
+     {
+      "name": "David Sills V",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Sills (undisclosed) was placed on injured reserve by the Buccaneers on Sunday with a designation to return, Scott Smith of the team's official website reports.",
+      "date": "2026-08-31T21:46Z"
+     },
+     {
+      "name": "Deshawn McKnight",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Buccaneers placed McKnight (hamstring) on injured reserve Tuesday, Scott Smith of the team's official site reports.",
+      "date": "2026-08-25T23:41Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Brian Parker II",
+      "pos": "OT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Ja'Sir Taylor",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Bengals placed Taylor (undisclosed) on injured reserve Sunday with a designation to return, Geoff Hobson of the team's official site reports.",
+      "date": "2026-08-31T22:51Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "ari-lac",
+   "espnId": "401872926",
+   "kickoff": "2026-09-13T20:25:00Z",
+   "venue": "SoFi Stadium",
+   "away": {
+    "abbr": "ARI",
+    "name": "Arizona Cardinals",
+    "short": "Cardinals"
+   },
+   "home": {
+    "abbr": "LAC",
+    "name": "Los Angeles Chargers",
+    "short": "Chargers"
+   },
+   "lines": {
+    "spread": "LAC -9.5",
+    "total": 47.5,
+    "ml": {
+     "away": 410,
+     "home": -550
+    },
+    "winProb": {
+     "away": 0.188,
+     "home": 0.812
+    },
+    "implied": {
+     "away": 19,
+     "home": 28.5
+    }
+   },
+   "sections": {
+    "offseason": "**Cardinals (3-14):** Fired Gannon; HC Mike LaFleur, OC Hackett, DC Rallis retained. Kyler Murray released. Jacoby Brissett Week 1 starter (3,366/23/8 in 2025); Minshew, R3 Carson Beck behind. FA: LG Seumalo, RB Tyler Allgeier, WR Bourne. Lost Campbell, Tomlinson (LAC), J. Thompson. Draft: RB Jeremiyah Love (#3 overall), G Bisontis (R2, out MCL). Conner on IR. OL 26th.\n**Chargers (11-6):** Harbaugh Year 3. New OC Mike McDaniel; DC Minter left for BAL, Chris O'Leary in. Re-signed Mack, Tart; James extension. Adds: C Biadasz (now out for season), G Cole Strange, FB Ingold, TE Kolar, RB Keaton Mitchell, DT Tomlinson. Lost Oweh (WAS), Zion Johnson (CLE), Becton. Draft: EDGE Mesidor (22), C Slaughter (R2).",
+    "matchup": "**LAC O vs ARI D:** ARI allowed 28.7 PPG (29th), 126.9 rush yds/g, 31 pass TD, 44.8% 3rd-down (29th). LAC 21.6 PPG in 2025 (Herbert sacked 60x) but Alt/Slater healthy + McDaniel scheme drive 28.75 implied. Hampton \"clear bet for goal-line work\"; 9 games 2025: 124-545-4 rush, 32-192-1 rec.\n**ARI O vs LAC D:** LAC allowed 20.0 PPG (9th), 179.9 pass yds/g (5th), 19 INT, but 27th DVOA vs TE. McBride TE-record 126 catches, 11 TD. ARI 256 pass yds/g (5th) but 93 rush (31st). Love/Allgeier 1A/1B; Love's goal-line role unclear off injury.",
+    "injuries": "**ARI:** DNP OL Adams, Sweat (rest). Limited RB Love (high-ankle, first practice in a month), CB G. Williams, S Taylor-Demerson. Bisontis out; Conner IR.\n**LAC:** DNP CB Leonard, Mack (rest). Limited Tuipulotu, Mitchell (expected to play), Thompson, Mickens. Slater expected to play. C Biadasz out for season.",
+    "oddsNotes": "LAC -9.5 (FD) / -10 (DK) / -10.5 (MGM) | ML LAC -550 / ARI +410 | Total 46.5–47.5 | Implied LAC 28.75 / ARI 18.75 | De-vigged: LAC 81% / ARI 19%. 96% of total money on under.",
+    "atdNotes": "Verified: Hampton -160 (Fanatics), -175 (MGM/bet365), -180 (DK/FD). Unverified ESPN snippet: Johnston +130, McBride +145, McConkey +750(?), Love +800, Allgeier +950, Mitchell +950, Harris +1100. Dimers: Hampton 52%, Johnston 36%, McConkey 36%, Love 35%, McBride 30%, Allgeier 28%."
+   },
+   "atdBoard": [
+    {
+     "name": "Omarion Hampton",
+     "team": "LAC",
+     "price": -175,
+     "implied": 0.6364,
+     "live": null
+    },
+    {
+     "name": "Quentin Johnston",
+     "team": "LAC",
+     "price": 130,
+     "implied": 0.4348,
+     "live": null
+    },
+    {
+     "name": "Trey McBride",
+     "team": "ARI",
+     "price": 145,
+     "implied": 0.4082,
+     "live": null
+    },
+    {
+     "name": "Ladd McConkey",
+     "team": "LAC",
+     "price": 140,
+     "implied": 0.4167,
+     "live": null
+    },
+    {
+     "name": "Jeremiyah Love",
+     "team": "ARI",
+     "price": 200,
+     "implied": 0.3333,
+     "live": null
+    },
+    {
+     "name": "Tyler Allgeier",
+     "team": "ARI",
+     "price": 950,
+     "implied": 0.0952,
+     "live": null
+    },
+    {
+     "name": "Keaton Mitchell",
+     "team": "LAC",
+     "price": 950,
+     "implied": 0.0952,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Omarion Hampton",
+     "team": "LAC",
+     "pos": "RB",
+     "price": -175,
+     "est": 0.6,
+     "why": "Goal-line back on the week's highest implied total (28.75) vs a D that gave up 126.9 rush yards per game and 28.7 PPG.",
+     "implied": 0.6364,
+     "live": null,
+     "edge": -0.036
+    },
+    {
+     "name": "Trey McBride",
+     "team": "ARI",
+     "pos": "TE",
+     "price": 145,
+     "est": 0.4,
+     "why": "TE-record 126 catches and 11 TD; Brissett's security blanket vs the 27th-ranked TE defense; garbage-time volume.",
+     "priceNote": "verify",
+     "implied": 0.4082,
+     "live": null,
+     "edge": -0.008
+    },
+    {
+     "name": "Quentin Johnston",
+     "team": "LAC",
+     "pos": "WR",
+     "price": 130,
+     "est": 0.38,
+     "why": "Herbert's red-zone size target; Arizona allowed 31 passing TD. If McConkey is +300 or longer anywhere, he is the better play.",
+     "priceNote": "verify",
+     "implied": 0.4348,
+     "live": null,
+     "edge": -0.055
+    }
+   ],
+   "value": [
+    {
+     "name": "Ladd McConkey",
+     "team": "LAC",
+     "pos": "WR",
+     "price": 140,
+     "est": 0.36,
+     "why": "Model 36%; strong value at +300 or longer.",
+     "priceNote": "verify",
+     "implied": 0.4167,
+     "live": null,
+     "edge": -0.057
+    },
+    {
+     "name": "Tyler Allgeier",
+     "team": "ARI",
+     "pos": "RB",
+     "price": 950,
+     "est": 0.28,
+     "why": "If Love is limited on a bad ankle, Allgeier inherits short-yardage work.",
+     "implied": 0.0952,
+     "live": null,
+     "edge": 0.185
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Chargers -9.5",
+      "Hampton ATD",
+      "Under 47.5"
+     ],
+     "why": "Blowout script: run-heavy second half; 96% of total money is on the Under.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Herbert o233.5 pass yds",
+      "Johnston ATD",
+      "McConkey ATD"
+     ],
+     "why": "Volume vs a secondary that allowed 31 passing TD means his primary targets score.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Over 47.5",
+      "McBride ATD",
+      "Brissett o1.5 pass TD",
+      "Cardinals +9.5"
+     ],
+     "why": "Backdoor and garbage-time correlation; McBride is the funnel target.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 4:25 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Tip Reiman",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Cardinals moved Reiman (ankle) from the active/PUP list to the reserve/PUP list Sunday, Darren Urban of the team's official site reports.",
+      "date": "2026-08-31T03:56Z"
+     },
+     {
+      "name": "Garrett Williams",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T00:28Z"
+     },
+     {
+      "name": "Isaiah Adams",
+      "pos": "G",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T00:28Z"
+     },
+     {
+      "name": "Jeremiyah Love",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Love (ankle) was a limited practice participant Wednesday, Bo Brack of GoPHNX.com reports.",
+      "date": "2026-09-10T00:23Z"
+     },
+     {
+      "name": "Dadrion Taylor-Demerson",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Taylor-Demerson is questionable to return to Saturday's preseason game against the Cowboys due to a rib injury.",
+      "date": "2026-08-23T02:45Z"
+     },
+     {
+      "name": "Kaleb Proctor",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Zachary Carter",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Cardinals placed Carter (knee) on injured reserve Sunday with a designation to return, Darren Urban of the team's official site reports.",
+      "date": "2026-08-31T22:42Z"
+     },
+     {
+      "name": "James Conner",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Cardinals are placing Conner (foot) on injured reserve with a designation to return, John Gambadoro of Arizona Sports 98.7 FM Phoenix reports.",
+      "date": "2026-08-30T21:50Z"
+     },
+     {
+      "name": "Trey Benson",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Benson (knee) reverted to the Cardinals' injured reserve list Tuesday, David Furones of the South Florida Sun Sentinel reports.",
+      "date": "2026-08-25T23:07Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Isaiah World",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "nfi-r",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Tuli Tuipulotu",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Tuipulotu (hip) was a limited participant in Wednesday's practice.",
+      "date": "2026-09-09T23:43Z"
+     },
+     {
+      "name": "Brenen Thompson",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Thompson (undisclosed) was a limited participant in Wednesday's practice.",
+      "date": "2026-09-09T23:38Z"
+     },
+     {
+      "name": "Deane Leonard",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T23:27Z"
+     },
+     {
+      "name": "RJ Mickens",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-09T23:27Z"
+     },
+     {
+      "name": "Keaton Mitchell",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Mitchell (hamstring) was limited in Wednesday's practice.",
+      "date": "2026-09-09T21:58Z"
+     },
+     {
+      "name": "Denzel Perryman",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Scott Matlock",
+      "pos": "FB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Matlock (undisclosed) was placed on injured reserve by the Chargers on Sunday with a designation to return.",
+      "date": "2026-08-31T17:56Z"
+     },
+     {
+      "name": "Branson Taylor",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Chargers placed Taylor (undisclosed) on injured reserve Sunday with a designation to return, Ian Rapoport of ESPN and NFL Network reports.",
+      "date": "2026-08-30T22:49Z"
+     },
+     {
+      "name": "Tyler Biadasz",
+      "pos": "C",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Chargers placed Biadasz (knee) on injured reserve Sunday.",
+      "date": "2026-08-23T16:55Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "gb-min",
+   "espnId": "401872927",
+   "kickoff": "2026-09-13T20:25:00Z",
+   "venue": "U.S. Bank Stadium",
+   "away": {
+    "abbr": "GB",
+    "name": "Green Bay Packers",
+    "short": "Packers"
+   },
+   "home": {
+    "abbr": "MIN",
+    "name": "Minnesota Vikings",
+    "short": "Vikings"
+   },
+   "lines": {
+    "spread": "MIN -1.5",
+    "total": 46.5,
+    "ml": {
+     "away": 104,
+     "home": -120
+    },
+    "winProb": {
+     "away": 0.473,
+     "home": 0.527
+    },
+    "implied": {
+     "away": 22.5,
+     "home": 24
+    }
+   },
+   "sections": {
+    "offseason": "**Packers:** New DC Jonathan Gannon. Traded Rashan Gary to DAL; lost Malik Willis (MIA), Doubs, Quay Walker (LV), Rasheed Walker (CAR). Added DT Hargrave, LB Zaire Franklin (trade), CB St-Juste, WR/KR Skyy Moore; re-signed C Rhyan. Draft: CB Cisse (52), DT McClellan (77). Watson extended. Jordan Love QB. RB Josh Jacobs on Commissioner's Exempt List (battery charges; 13 rush TD in 2025); Kaleb Johnson acquired from PIT.\n**Vikings:** New GM Teasley; new OC Frank Smith (wide-zone). Kyler Murray signed after ARI release and beat out J.J. McCarthy (Aug 11); Wentz backup. Traded Greenard (PHI); cut Jonathan Allen, Hargrave; re-signed Harrison Smith. Added WR Jauan Jennings, CB Pierre, OLB Van Noy; lost Nailor. Draft: DT Caleb Banks (18), LB Golday (51).",
+    "matchup": "**GB O vs MIN D:** GB 6th in off DVOA, 0.22 EPA/dropback (2nd), 48.8% 3rd-down (2nd). Love 41.6% comp under pressure; pressured 39.5%. MIN blitzed 48% (next-best 33%), allowed 4.7 Y/play (3rd), 42.9% RZ-TD allowed (2nd), 14.9 PPG at home; weakness vs run (24th). GB OL problem: Rhyan, rookie RG Belton (9.5% pressure). RB split: K. Johnson ~32%, Lloyd ~30%, Brooks short-yardage 11%. Kraft, Reed, Watson, Golden all healthy.\n**MIN O vs GB D:** MIN 20.2 PPG (26th), league-worst 31.8% 3rd-down in 2025. Murray 8.8% scramble rate; in O'Connell play-action 8.5 Y/A, 5.8% TD rate. Mason led with 758 yds/6 TD, 40% carry share inside the 5 vs Jones 20%. GB D 21.2 PPG (11th) but 28th EPA/play from Wk 13 on; without Parsons allowed 67% comp; \"weak corner group.\"",
+    "injuries": "**GB:** DNP DT Brinson, LB Hopper. Limited RT Bako-Bewele, LG Banks, LT Morgan (knees), Hargrave, Wyatt, Sorrell. PUP: Micah Parsons (4+ games), TE Musgrave. Exempt: Jacobs.\n**MIN:** DNP S Jakobe Thomas (illness); limited S Jacob Thomas, T Tiernan. OL healthy. Jefferson back from hamstring.",
+    "oddsNotes": "MIN -1.5 (-108) (opened GB -1.5) | Total 46.5 | ML MIN -120 / GB +104 | Implied MIN 24 / GB 22.5 | De-vigged: MIN 53% / GB 47%. 89% of money on MIN.",
+    "atdNotes": "Mason +135 · Kraft +150 · Aaron Jones +150 (FD, verified) · Lloyd +550 · Murray +800 · Jefferson +950 (looks like first-TD) · Addison +950 · Watson +1000."
+   },
+   "atdBoard": [
+    {
+     "name": "Jordan Mason",
+     "team": "MIN",
+     "price": 135,
+     "implied": 0.4255,
+     "live": null
+    },
+    {
+     "name": "Tucker Kraft",
+     "team": "GB",
+     "price": 150,
+     "implied": 0.4,
+     "live": null
+    },
+    {
+     "name": "Aaron Jones",
+     "team": "MIN",
+     "price": 150,
+     "implied": 0.4,
+     "live": null
+    },
+    {
+     "name": "Justin Jefferson",
+     "team": "MIN",
+     "price": 130,
+     "implied": 0.4348,
+     "live": null
+    },
+    {
+     "name": "Christian Watson",
+     "team": "GB",
+     "price": 230,
+     "implied": 0.303,
+     "live": null
+    },
+    {
+     "name": "MarShawn Lloyd",
+     "team": "GB",
+     "price": 250,
+     "implied": 0.2857,
+     "live": null
+    },
+    {
+     "name": "Kyler Murray",
+     "team": "MIN",
+     "price": 800,
+     "implied": 0.1111,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Jordan Mason",
+     "team": "MIN",
+     "pos": "RB",
+     "price": 135,
+     "est": 0.44,
+     "why": "40% share of carries inside the 5 in a run-first home script vs a GB front missing Parsons with Brinson, Wyatt and Hargrave banged up.",
+     "implied": 0.4255,
+     "live": null,
+     "edge": 0.015
+    },
+    {
+     "name": "Justin Jefferson",
+     "team": "MIN",
+     "pos": "WR",
+     "price": 130,
+     "est": 0.45,
+     "why": "GB's corners are the weak unit; rookie Cisse likely in coverage; Murray targets alphas. A scraped +950 is a first-TD print.",
+     "priceNote": "verify",
+     "implied": 0.4348,
+     "live": null,
+     "edge": 0.015
+    },
+    {
+     "name": "Tucker Kraft",
+     "team": "GB",
+     "pos": "TE",
+     "price": 150,
+     "est": 0.38,
+     "why": "Hot-read outlet vs a 48% blitz rate; GB's best path to TDs is the quick pass with Jacobs out. Take only at +165 or better.",
+     "implied": 0.4,
+     "live": null,
+     "edge": -0.02
+    }
+   ],
+   "value": [
+    {
+     "name": "Matthew Golden",
+     "team": "GB",
+     "pos": "WR",
+     "price": 250,
+     "est": 0.3,
+     "why": "Projected 2nd in targets; MIN corner room is the defense's vulnerability.",
+     "priceNote": "est.",
+     "implied": 0.2857,
+     "live": null,
+     "edge": 0.014
+    },
+    {
+     "name": "Kyler Murray",
+     "team": "MIN",
+     "pos": "QB",
+     "price": 800,
+     "est": 0.14,
+     "why": "Designed red-zone runs and an 8.8% scramble rate.",
+     "implied": 0.1111,
+     "live": null,
+     "edge": 0.029
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Vikings ML",
+      "Mason ATD"
+     ],
+     "why": "Vikings win by running and leading late; Mason gets the goal-line volume.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Love o1.5 pass TD",
+      "Kraft ATD",
+      "Watson ATD"
+     ],
+     "why": "GB can only score through the air with Jacobs out.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Under 46.5",
+      "Mason ATD",
+      "Love u241.5 pass yds"
+     ],
+     "why": "Blitz-driven low total, ground-controlled Vikings game.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 4:25 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Jordon Riley",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Josh Jacobs",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Jacobs' next court date has been moved up from Nov. 17 to Sept. 10, Michael Gross of Fox 11 Green Bay reports. Jacobs is expected to be represented by his attorney and won't personally appear at the hearing.",
+      "date": "2026-09-04T18:34Z"
+     },
+     {
+      "name": "Luke Musgrave",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Packers general manager Brian Gutekunst said Tuesday that he's \"really hopeful\" Musgrave (neck) will be able to play at some point during the 2026 season, Ryan Wood of USA Today reports.",
+      "date": "2026-09-01T15:24Z"
+     },
+     {
+      "name": "Micah Parsons",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Packers general manager Brian Gutekunst said Tuesday that Parsons (knee) could return from the PUP list when first eligible in Week 5, Ryan Wood of USA Today reports. \"We have a pretty good idea once we get out of that four-game window we're going to be pretty close,\" Gutekunst said.",
+      "date": "2026-09-01T14:45Z"
+     },
+     {
+      "name": "Devonte Wyatt",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T00:49Z"
+     },
+     {
+      "name": "Barryn Sorrell",
+      "pos": "DE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T00:49Z"
+     },
+     {
+      "name": "Javon Hargrave",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T00:48Z"
+     },
+     {
+      "name": "Ty'Ron Hopper",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T00:48Z"
+     },
+     {
+      "name": "Jordan Morgan",
+      "pos": "G",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T00:48Z"
+     },
+     {
+      "name": "Aaron Banks",
+      "pos": "G",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Banks (knee) was limited during Wednesday's practice, Ryan Wood of USA Today reports.",
+      "date": "2026-09-10T00:10Z"
+     },
+     {
+      "name": "Zach Bako-Bewele",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Bako-Bewele (knee) was a limited participant in Wednesday's practice, Ryan Wood of USA Today reports.",
+      "date": "2026-09-09T23:57Z"
+     },
+     {
+      "name": "Savion Williams",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Jakobe Thomas",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Jacob Thomas",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Thomas suffered an ankle sprain during Friday night's preseason finale against the Broncos, Kevin Seifert of ESPN.com reports.",
+      "date": "2026-08-29T15:21Z"
+     },
+     {
+      "name": "Caleb Tiernan",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-08-19T12:07Z"
+     },
+     {
+      "name": "Jeshaun Jones",
+      "pos": "WR",
+      "status": "Suspension",
+      "type": "Suspension",
+      "detail": "The NFL suspended Jones three games Tuesday for violating the league's substance-abuse policy, Mike Garafolo of NFL Network reports.",
+      "date": "2026-08-26T01:45Z"
+     },
+     {
+      "name": "Ben Yurosek",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Minnesota placed Yurosek on injured reserve Tuesday due to an undisclosed injury.",
+      "date": "2026-09-08T23:56Z"
+     },
+     {
+      "name": "Jermar Jefferson",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Jefferson (undisclosed) reverted to the Vikings' injured reserve Monday, per the NFL's transaction log.",
+      "date": "2026-09-01T02:45Z"
+     },
+     {
+      "name": "Michael Jurgens",
+      "pos": "C",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Vikings placed Jurgens (undisclosed) on injured reserve with a designation to return Sunday, Rob Kleifield of the team's official site reports.",
+      "date": "2026-08-31T23:36Z"
+     },
+     {
+      "name": "Tyler Batty",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Vikings placed Batty (knee) on injured reserve Sunday, Tom Pelissero of Netflix reports.",
+      "date": "2026-08-30T22:59Z"
+     },
+     {
+      "name": "Jamal Adams",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "mia-lv",
+   "espnId": "401872928",
+   "kickoff": "2026-09-13T20:25:00Z",
+   "venue": "Allegiant Stadium",
+   "away": {
+    "abbr": "MIA",
+    "name": "Miami Dolphins",
+    "short": "Dolphins"
+   },
+   "home": {
+    "abbr": "LV",
+    "name": "Las Vegas Raiders",
+    "short": "Raiders"
+   },
+   "lines": {
+    "spread": "LV -3",
+    "total": 40.5,
+    "ml": {
+     "away": 140,
+     "home": -166
+    },
+    "winProb": {
+     "away": 0.4,
+     "home": 0.6
+    },
+    "implied": {
+     "away": 18.75,
+     "home": 21.75
+    }
+   },
+   "sections": {
+    "offseason": "**Dolphins (7-10):** Full reset. New GM Sullivan, HC Jeff Hafley (ex-GB DC). Tua out; Malik Willis signed 3yr/$67.5M as starter (league-high 14.5% scramble rate in GB). Moved Hill, Waddle (to DEN), Waller, Chubb, Fitzpatrick. 13-man draft: CB Chris Johnson (#2), G Kadyn Proctor (#12). PFF: \"worst receiving corps in football.\" Youngest roster in NFL. Expect run-heavy, defense-first.\n**Raiders (14.2 PPG, 32nd):** New HC Klint Kubiak, DC Rob Leonard. Kirk Cousins acquired, Week 1 starter; Fernando Mendoza drafted #1 overall. FA: C Linderbaum, LBs Quay Walker/Nakobe Dean, DE Paye, WR Nailor, CB Taron Johnson; Crosby retained.",
+    "matchup": "**MIA O vs LV D:** Miami 20.4 PPG (25th), league-low pace. De'Von Achane (1,350 rush yds) is the engine; Willis adds designed rushing. LV D: 25.4 PPA (25th), 69.3% comp allowed (31st), RZ TD% allowed 58.7% (T-19th).\n**LV O vs MIA D:** Jeanty (975 yds, 5 TD as rookie) is the goal-line back; Bowers OUT so Michael Mayer lead TE. MIA D: 71.8% comp allowed (league-high), 5.7% TD rate allowed (27th), RZ TD% allowed 60.9% (22nd), allowed most pass TDs in NFL; 3 rookie starters.",
+    "injuries": "**LV:** TE Brock Bowers OUT (meniscus). RB Jeanty (ankle) full, plays.\n**MIA:** ILB Harrison limited; TE Kacmarek limited.",
+    "oddsNotes": "LV -3 to -3.5 (moved down after Bowers) | ML LV -166 to -185 / MIA +140 to +154 | Total 39.5–40.5 | Implied LV 22 / MIA 18.5 | De-vigged: LV 60% / MIA 40%.",
+    "atdNotes": "Jeanty 50–53% (~-110) · Achane 42–46% (~+130) · M. Washington (LV RB) 25–40% · Tucker 28% (+260) · Willis 23–25% (+310) · Malik Washington (MIA WR) 17–19% (+450)."
+   },
+   "atdBoard": [
+    {
+     "name": "Ashton Jeanty",
+     "team": "LV",
+     "price": -110,
+     "implied": 0.5238,
+     "live": null
+    },
+    {
+     "name": "De'Von Achane",
+     "team": "MIA",
+     "price": 130,
+     "implied": 0.4348,
+     "live": null
+    },
+    {
+     "name": "Tre Tucker",
+     "team": "LV",
+     "price": 260,
+     "implied": 0.2778,
+     "live": null
+    },
+    {
+     "name": "Malik Willis",
+     "team": "MIA",
+     "price": 310,
+     "implied": 0.2439,
+     "live": null
+    },
+    {
+     "name": "Michael Mayer",
+     "team": "LV",
+     "price": 350,
+     "implied": 0.2222,
+     "live": null
+    },
+    {
+     "name": "Malik Washington",
+     "team": "MIA",
+     "price": 450,
+     "implied": 0.1818,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Ashton Jeanty",
+     "team": "LV",
+     "pos": "RB",
+     "price": -110,
+     "est": 0.5,
+     "why": "Lone goal-line back in a Kubiak run-first scheme vs a Miami D that allowed a 60.9% red-zone TD rate; Bowers out funnels touches to the run.",
+     "priceNote": "est.",
+     "implied": 0.5238,
+     "live": null,
+     "edge": -0.024
+    },
+    {
+     "name": "De'Von Achane",
+     "team": "MIA",
+     "pos": "RB",
+     "price": 130,
+     "est": 0.42,
+     "why": "Sole focal point of a gutted offense with rushing and receiving paths; Willis' scrambling caps the goal-line share.",
+     "priceNote": "est.",
+     "implied": 0.4348,
+     "live": null,
+     "edge": -0.015
+    },
+    {
+     "name": "Malik Willis",
+     "team": "MIA",
+     "pos": "QB",
+     "price": 310,
+     "est": 0.26,
+     "why": "League-high scramble rate; the QB keeper is Miami's most credible goal-line answer.",
+     "priceNote": "est.",
+     "implied": 0.2439,
+     "live": null,
+     "edge": 0.016
+    }
+   ],
+   "value": [
+    {
+     "name": "Michael Mayer",
+     "team": "LV",
+     "pos": "TE",
+     "price": 350,
+     "est": 0.24,
+     "why": "Lead TE with Bowers out vs a D that allowed the most passing TD in the NFL.",
+     "priceNote": "est.",
+     "implied": 0.2222,
+     "live": null,
+     "edge": 0.018
+    },
+    {
+     "name": "Tre Tucker",
+     "team": "LV",
+     "pos": "WR",
+     "price": 260,
+     "est": 0.28,
+     "why": "Target-share leader with Bowers out.",
+     "priceNote": "est.",
+     "implied": 0.2778,
+     "live": null,
+     "edge": 0.002
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Raiders ML",
+      "Jeanty ATD"
+     ],
+     "why": "Raiders win via ground control.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Cousins 1+ pass TD",
+      "Mayer ATD",
+      "Under 40.5"
+     ],
+     "why": "Low-pace, Bowers-less game where Cousins' scarce TD throws flow to the TE.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Dolphins +3.5",
+      "Achane ATD",
+      "Willis 30+ rush yds"
+     ],
+     "why": "Miami's cover path runs through Achane and Willis' legs.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 4:25 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Storm Duck",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Duck (knee) was moved to the reserve/PUP list by Miami on Sunday.",
+      "date": "2026-08-31T18:22Z"
+     },
+     {
+      "name": "Darrell Baker Jr.",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Baker (undisclosed) was moved to the reserve/PUP list by the Dolphins on Sunday.",
+      "date": "2026-08-31T18:10Z"
+     },
+     {
+      "name": "Will Kacmarek",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Kacmarek (calf) was limited during Wednesday's practice, David Furones of the South Florida Sun Sentinel reports.",
+      "date": "2026-09-10T01:16Z"
+     },
+     {
+      "name": "Ronnie Harrison Jr.",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T00:55Z"
+     },
+     {
+      "name": "Trey Moore",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Kenneth Grant",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Ben Sims",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Sims (undisclosed) reverted to the Dolphins' injured reserve Tuesday, per the NFL's transaction log.",
+      "date": "2026-09-01T23:44Z"
+     },
+     {
+      "name": "Cole Turner",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Turner (undisclosed) reverted to the Dolphins' injured-reserve list Thursday, Aaron Wilson of KPRC 2 Houston reports.",
+      "date": "2026-08-27T23:35Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Brock Bowers",
+      "pos": "TE",
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Bowers underwent a meniscus trim procedure Tuesday and is expected to miss \"a game or two,\" Adam Schefter of ESPN reports.",
+      "date": "2026-09-09T20:04Z"
+     },
+     {
+      "name": "Dont'e Thornton Jr.",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Carter Runyon",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Runyon (undisclosed) was placed on injured reserve by the Raiders on Sunday with a designation to return.",
+      "date": "2026-08-31T17:52Z"
+     },
+     {
+      "name": "Keyron Crawford",
+      "pos": "DE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Raiders placed Crawford (ankle) on injured reserve Sunday, Sam Warren of The Athletic reports.",
+      "date": "2026-08-31T00:50Z"
+     },
+     {
+      "name": "Chigozie Anusiem",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Raiders placed Anusiem (knee) on injured reserve Saturday, Adam Schefter of ESPN reports.",
+      "date": "2026-08-22T20:31Z"
+     },
+     {
+      "name": "Justin Pickett",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     },
+     {
+      "name": "Brennan Jackson",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     },
+     {
+      "name": "Chris Collier",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Collier (undisclosed) reverted to injured reserve with the Raiders on Sunday, Sam Warren of The Athletic reports.",
+      "date": "2026-08-02T23:52Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "wsh-phi",
+   "espnId": "401872929",
+   "kickoff": "2026-09-13T20:25:00Z",
+   "venue": "Lincoln Financial Field",
+   "away": {
+    "abbr": "WSH",
+    "name": "Washington Commanders",
+    "short": "Commanders"
+   },
+   "home": {
+    "abbr": "PHI",
+    "name": "Philadelphia Eagles",
+    "short": "Eagles"
+   },
+   "lines": {
+    "spread": "PHI -5.5",
+    "total": 44.5,
+    "ml": {
+     "away": 194,
+     "home": -235
+    },
+    "winProb": {
+     "away": 0.327,
+     "home": 0.673
+    },
+    "implied": {
+     "away": 19.5,
+     "home": 25
+    }
+   },
+   "sections": {
+    "offseason": "**Eagles (11-6, WC loss to SF):** OC Patullo out; Sean Mannion OC (5th OC in 5 years); Fangio retained. A.J. Brown traded to NE (June 1) for 2027 5th + 2028 1st. Acquired EDGE Jonathan Greenard (MIN), WR Dontayvion Wicks, QB Dalton. FA: CB Riq Woolen, WR Marquise Brown, EDGE Ebiketie; re-signed Goedert. Lost Jaelan Phillips, Blankenship, Nakobe Dean, Dotson. Draft: R1 WR Makai Lemon, R2 TE Eli Stowers. Hurts (3,224 yds, 25 pass TD, 8 rush TD).\n**Commanders (5-12, last in yards):** Kingsbury and Whitt fired. David Blough OC (first-time play-caller); Daronte Jones DC, switching to 3-4 with 5-6 new starters. FA: EDGE Oweh (4yr/$100M), Chenal, Chaisson, Omenihu, S Cross, TE Okonkwo, RB Rachaad White, RB Jerome Ford. Traded for LT Tunsil (now out, triceps). Draft: LB Sonny Styles (7). Daniels healthy after dislocated elbow (7 games in 2025).",
+    "matchup": "**PHI O vs WSH D:** PFF ranks PHI OL 2nd. WSH allowed 18 rush TD, 4.8 YPC, last in rush yards allowed, 33 pass TD allowed, 26.5 PPG (26th). Barkley 120+ in every game vs WSH as an Eagle; PHI 29.3 PPG in last three meetings. Goedert team-high 11 TD on 82 targets; Smith 113 tgts/4 TD; Hurts 8 rush TD (tush push). Without Brown, targets consolidate to Smith/Goedert/Barkley.\n**WSH O vs PHI D:** PHI 19.1 PPG allowed (5th), 14 pass TD allowed, 75.4 opp rating, but 20 rush TD allowed. WSH OL 32nd without Tunsil. Daniels pressured 28.2% at the Linc last time. Croskey-Merritt (175 car/805/8 TD) is the goal-line back. McLaurin, Deebo Samuel (99 tgt, 6 TD), Okonkwo.",
+    "injuries": "**WSH:** Limited RB Croskey-Merritt (groin), OLB Oweh (calf), Chaisson (knee). OUT: LT Tunsil, CB Amos (IR), DL Newton (IR), DE Wise (PUP), EDGE Armstrong (susp.).\n**PHI:** Limited EDGE Greenard (pec, first practice in 42 days), TE Stowers. No IR/PUP.",
+    "oddsNotes": "PHI -5.5 (FD/DK) / -4.5 (MGM) | ML PHI -235 / WSH +194 (FD) | Total 44.5 (dropped from 47.5) | Implied PHI 25 / WSH 19.5 | De-vigged: PHI 67% / WSH 33%.",
+    "atdNotes": "Barkley -135 (57%) · Hurts +115 (47%) · Goedert +145 (41%) · Croskey-Merritt +220 (31%) · Smith +650 (anomalous, likely first-TD) · Daniels +800 · R. White +1000 · Wicks +1000."
+   },
+   "atdBoard": [
+    {
+     "name": "Saquon Barkley",
+     "team": "PHI",
+     "price": -135,
+     "implied": 0.5745,
+     "live": null
+    },
+    {
+     "name": "Jalen Hurts",
+     "team": "PHI",
+     "price": 115,
+     "implied": 0.4651,
+     "live": null
+    },
+    {
+     "name": "Dallas Goedert",
+     "team": "PHI",
+     "price": 145,
+     "implied": 0.4082,
+     "live": null
+    },
+    {
+     "name": "Jacory Croskey-Merritt",
+     "team": "WSH",
+     "price": 220,
+     "implied": 0.3125,
+     "live": null
+    },
+    {
+     "name": "DeVonta Smith",
+     "team": "PHI",
+     "price": 160,
+     "implied": 0.3846,
+     "live": null
+    },
+    {
+     "name": "Jayden Daniels",
+     "team": "WSH",
+     "price": 800,
+     "implied": 0.1111,
+     "live": null
+    },
+    {
+     "name": "Rachaad White",
+     "team": "WSH",
+     "price": 1000,
+     "implied": 0.0909,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Saquon Barkley",
+     "team": "PHI",
+     "pos": "RB",
+     "price": -135,
+     "est": 0.62,
+     "why": "25-point implied total vs the league-worst run D (18 rushing TD, 4.8 YPC allowed); 120+ yards in every meeting as an Eagle.",
+     "priceNote": "verify",
+     "implied": 0.5745,
+     "live": null,
+     "edge": 0.045
+    },
+    {
+     "name": "Jalen Hurts",
+     "team": "PHI",
+     "pos": "QB",
+     "price": 115,
+     "est": 0.5,
+     "why": "8 rushing TD on the tush push; Washington is a 3-4 rebuild with no proven short-yardage stopper.",
+     "priceNote": "verify",
+     "implied": 0.4651,
+     "live": null,
+     "edge": 0.035
+    },
+    {
+     "name": "Dallas Goedert",
+     "team": "PHI",
+     "pos": "TE",
+     "price": 145,
+     "est": 0.42,
+     "why": "11 TD in 15 games; the primary red-zone target with Brown gone vs a D that allowed 33 passing TD.",
+     "priceNote": "verify",
+     "implied": 0.4082,
+     "live": null,
+     "edge": 0.012
+    }
+   ],
+   "value": [
+    {
+     "name": "Jacory Croskey-Merritt",
+     "team": "WSH",
+     "pos": "RB",
+     "price": 220,
+     "est": 0.33,
+     "why": "Sole goal-line back; PHI allowed 20 rushing TD. Monitor the groin Friday.",
+     "implied": 0.3125,
+     "live": null,
+     "edge": 0.018
+    },
+    {
+     "name": "Chig Okonkwo",
+     "team": "WSH",
+     "pos": "TE",
+     "price": 400,
+     "est": 0.2,
+     "why": "Daniels' short aDOT at the Linc funnels throws to the TE.",
+     "priceNote": "est.",
+     "implied": 0.2,
+     "live": null,
+     "edge": 0
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Eagles -5.5",
+      "Barkley ATD",
+      "Hurts ATD"
+     ],
+     "why": "A cover requires about 25 points; both goal-line scorers drive that.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Hurts 2+ pass TD",
+      "Goedert ATD",
+      "Under 44.5"
+     ],
+     "why": "Brown-less PHI throws to Goedert in the red zone; Fangio keeps WSH low.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "WSH team total o19.5",
+      "Croskey-Merritt ATD",
+      "Daniels 30+ rush yds"
+     ],
+     "why": "If WSH keeps pace it is via Daniels' legs and JCM at the goal line.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 4:25 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Deatrich Wise Jr.",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Wise (undisclosed) was placed on the reserve/PUP list on Sunday.",
+      "date": "2026-08-31T15:19Z"
+     },
+     {
+      "name": "K'Lavon Chaisson",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T01:21Z"
+     },
+     {
+      "name": "Jacory Croskey-Merritt",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Croskey-Merritt practiced in a limited capacity Wednesday due to a groin injury.",
+      "date": "2026-09-09T21:45Z"
+     },
+     {
+      "name": "Odafe Oweh",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Oweh (calf) took part in the Commanders' walk-through session Monday, JP Finlay of NBC Sports Washington reports.",
+      "date": "2026-09-07T23:27Z"
+     },
+     {
+      "name": "Jer'Zhan Newton",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Commanders placed Newton (pectoral) on injured reserve Monday.",
+      "date": "2026-08-31T22:29Z"
+     },
+     {
+      "name": "Laremy Tunsil",
+      "pos": "OT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Commanders placed Tunsil (triceps) on injured reserve Monday.",
+      "date": "2026-08-31T22:24Z"
+     },
+     {
+      "name": "Trey Amos",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Amos (ankle) was placed on injured reserve Sunday with a designation to return.",
+      "date": "2026-08-31T15:09Z"
+     },
+     {
+      "name": "Jeremy McNichols",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Commanders placed McNichols (quadriceps) on injured reserve with a designation to return Sunday, Zach Selby of the team's official site reports.",
+      "date": "2026-08-31T14:31Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Jonathan Greenard",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Greenard (pectoral) was limited during Wednesday's practice, Tim McManus of ESPN.com reports.",
+      "date": "2026-09-10T00:34Z"
+     },
+     {
+      "name": "Eli Stowers",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Stowers (hamstring) was a limited participant in Wednesday's practice.",
+      "date": "2026-09-09T23:09Z"
+     },
+     {
+      "name": "Andre' Sam",
+      "pos": "S",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Sam (foot) reverted to the Eagles' injured-reserve list Monday, Andrew DiCecco of InsideTheBirds.com reports.",
+      "date": "2026-09-01T03:46Z"
+     },
+     {
+      "name": "Jakorian Bennett",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Bennett (knee) was placed on injured reserve with a designation to return by the Eagles on Sunday.",
+      "date": "2026-08-31T23:57Z"
+     },
+     {
+      "name": "Grant Calcaterra",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Calcaterra (back) was placed on injured reserve by the Eagles on Sunday with a designation to return.",
+      "date": "2026-08-31T18:50Z"
+     },
+     {
+      "name": "Johnny Wilson",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Wilson (knee) reverted to Philadelphia's injured reserve Saturday, per the NFL's transaction log.",
+      "date": "2026-08-22T21:59Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "dal-nyg",
+   "espnId": "401872930",
+   "kickoff": "2026-09-14T00:20:00Z",
+   "venue": "MetLife Stadium",
+   "away": {
+    "abbr": "DAL",
+    "name": "Dallas Cowboys",
+    "short": "Cowboys"
+   },
+   "home": {
+    "abbr": "NYG",
+    "name": "New York Giants",
+    "short": "Giants"
+   },
+   "lines": {
+    "spread": "DAL -2.5",
+    "total": 48.5,
+    "ml": {
+     "away": -155,
+     "home": 130
+    },
+    "winProb": {
+     "away": 0.583,
+     "home": 0.417
+    },
+    "implied": {
+     "away": 25.5,
+     "home": 23
+    }
+   },
+   "sections": {
+    "offseason": "**Cowboys (7-9-1):** Fired DC Eberflus (NFL-worst 30.1 PPG allowed); hired Christian Parker. Traded for EDGE Rashan Gary; signed S Jalen Thompson, CB Durant, S Locke, QB Howell; re-signed RB Javonte Williams (3yr/$24M). Lost Odighizuwa (SF), Solomon Thomas (TEN), Logan Wilson. Draft: S Caleb Downs (11), EDGE Malachi Lawrence (23). Dak (4,552/30/10).\n**Giants (4-13):** John Harbaugh HC; OC Matt Nagy, Greg Roman (12-personnel power run), DC Dennard Wilson. Traded DT Dexter Lawrence to CIN for No. 10. Signed TE Likely, RB Najee Harris, WR Mooney, FB Ricard, OL Faalele/Eluemunor, LB Edmunds, CB Newsome. Released Okereke, Slayton. Draft: LB Reese (5), OT Mauigoa (10), CB Hood (37), WR Fields (74). QB Jaxson Dart Year 2.",
+    "matchup": "**DAL O vs NYG D:** Dallas 27.7 PPG (5th), 5.9 yds/play (3rd). Pickens 137 targets (93-1,429-9); Lamb 117 targets (3 TD); Ferguson 102 targets, 8 TD. Javonte Williams 287 touches, 13 TD, 82.4% RZ snap rate. LG Tyler Smith IR. Giants D allowed 25.8 PPG (26th), league-worst 5.5 YPC.\n**NYG O vs DAL D:** Giants 22.4 PPG, 47.1% rush rate. Skattebo (pre-injury): 7 TD, 86.4% RZ snap rate, 73% backfield share; Harris/Tracy behind. Nabers 9-167-2 vs DAL Wk 1 2025. Dallas D 32nd PPG, league-high 60 TD allowed incl. 24 rushing, but highest pressure rate in 2025.",
+    "injuries": "**DAL:** OL Cornelius limited; IR Tyler Smith (DTR), Liufau, Devin Moore.\n**NYG:** All FULL: Nabers (ACL return, likely snap-managed), Theo Johnson, A. Thomas, Shelby Harris. Skattebo back from hamstring. Season-ending: WR Calvin Austin III.",
+    "oddsNotes": "DAL -2.5/-3 | ML DAL -155 / NYG +130 | Total 48.5 | Implied DAL 25.75 / NYG 22.75 | De-vigged: DAL 58% / NYG 42%.",
+    "atdNotes": "Javonte Williams -145 (59%) · Skattebo -110 (52%) · Lamb +130 (43%) · Pickens +150 (40%) · Nabers +160 (38%) · Ferguson +160 (38%) · Dart +200 (33%) · Najee Harris +200 (33%)."
+   },
+   "atdBoard": [
+    {
+     "name": "Javonte Williams",
+     "team": "DAL",
+     "price": -145,
+     "implied": 0.5918,
+     "live": null
+    },
+    {
+     "name": "Cam Skattebo",
+     "team": "NYG",
+     "price": -110,
+     "implied": 0.5238,
+     "live": null
+    },
+    {
+     "name": "CeeDee Lamb",
+     "team": "DAL",
+     "price": 130,
+     "implied": 0.4348,
+     "live": null
+    },
+    {
+     "name": "George Pickens",
+     "team": "DAL",
+     "price": 150,
+     "implied": 0.4,
+     "live": null
+    },
+    {
+     "name": "Malik Nabers",
+     "team": "NYG",
+     "price": 160,
+     "implied": 0.3846,
+     "live": null
+    },
+    {
+     "name": "Jake Ferguson",
+     "team": "DAL",
+     "price": 160,
+     "implied": 0.3846,
+     "live": null
+    },
+    {
+     "name": "Jaxson Dart",
+     "team": "NYG",
+     "price": 200,
+     "implied": 0.3333,
+     "live": null
+    },
+    {
+     "name": "Najee Harris",
+     "team": "NYG",
+     "price": 200,
+     "implied": 0.3333,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Javonte Williams",
+     "team": "DAL",
+     "pos": "RB",
+     "price": -145,
+     "est": 0.62,
+     "why": "82% red-zone snap share on a 25.75-point implied team vs a run D that allowed a league-worst 5.5 YPC.",
+     "implied": 0.5918,
+     "live": null,
+     "edge": 0.028
+    },
+    {
+     "name": "Cam Skattebo",
+     "team": "NYG",
+     "pos": "RB",
+     "price": -110,
+     "est": 0.52,
+     "why": "86% red-zone snap rate in Roman's power scheme vs a D that allowed 24 rushing TD; Najee Harris is the vulture risk.",
+     "implied": 0.5238,
+     "live": null,
+     "edge": -0.004
+    },
+    {
+     "name": "George Pickens",
+     "team": "DAL",
+     "pos": "WR",
+     "price": 150,
+     "est": 0.43,
+     "why": "Team-high targets and 9 TD vs a Newsome/Adebo secondary; better price than Lamb (3 TD in 2025).",
+     "implied": 0.4,
+     "live": null,
+     "edge": 0.03
+    }
+   ],
+   "value": [
+    {
+     "name": "Jaxson Dart",
+     "team": "NYG",
+     "pos": "QB",
+     "price": 200,
+     "est": 0.3,
+     "why": "Designed QB runs in Roman's scheme.",
+     "implied": 0.3333,
+     "live": null,
+     "edge": -0.033
+    },
+    {
+     "name": "Jake Ferguson",
+     "team": "DAL",
+     "pos": "TE",
+     "price": 160,
+     "est": 0.36,
+     "why": "6 TD in the first 7 games last season; soft NYG secondary.",
+     "implied": 0.3846,
+     "live": null,
+     "edge": -0.025
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Cowboys ML",
+      "Javonte Williams ATD"
+     ],
+     "why": "Dallas leading means a run-heavy second half and more red-zone carries.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Prescott 2+ pass TD",
+      "Pickens ATD",
+      "Ferguson ATD"
+     ],
+     "why": "Direct correlation; Ferguson's early-season TD spike vs a soft secondary.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Over 48.5",
+      "Skattebo ATD",
+      "Javonte Williams ATD"
+     ],
+     "why": "Both backs own their red-zone snaps; two bottom-7 scoring defenses; alt Over 56.5 (+226) is SportsLine's model play.",
+     "type": "sgp"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/13 - 8:20 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Ajani Cornelius",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-10T00:35Z"
+     },
+     {
+      "name": "Tyler Smith",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Cowboys placed Smith (thumb) on injured reserve Wednesday.",
+      "date": "2026-09-09T21:23Z"
+     },
+     {
+      "name": "Devin Moore",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Matt Hennessy",
+      "pos": "C",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "DJ Rogers",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Rogers (knee) reverted to the Cowboys' injured-reserve list Monday, Joe Hoyt of The Dallas Morning News reports.",
+      "date": "2026-08-31T22:59Z"
+     },
+     {
+      "name": "Marist Liufau",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Liufau (forearm) was placed on injured reserve by the Cowboys on Sunday with a designation to return, Nick Eatman of the team's official website reports.",
+      "date": "2026-08-31T16:40Z"
+     },
+     {
+      "name": "Kelvin Gilliam Jr.",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Gilliam (triceps) reverted to Dallas' injured reserve Tuesday, Tommy Yarrish of the team's official site reports.",
+      "date": "2026-08-26T00:19Z"
+     },
+     {
+      "name": "Princeton Fant",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Malik Nabers",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Nabers (knee) participated in drills at Wednesday's practice, Connor Hughes of SNY.tv reports.",
+      "date": "2026-09-09T17:51Z"
+     },
+     {
+      "name": "Roy Robertson-Harris",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Korie Black",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Black (undisclosed) was placed on injured reserve with a designation to return by the Giants on Monday, Dan Salomone and Matt Citak of the team's official site report.",
+      "date": "2026-08-31T23:50Z"
+     },
+     {
+      "name": "Calvin Austin III",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Giants placed Austin (knee) on injured reserve Thursday, Patricia Traina of SI.com reports.",
+      "date": "2026-08-27T22:48Z"
+     },
+     {
+      "name": "Jarrick Bernard-Converse",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  },
+  {
+   "id": "den-kc",
+   "espnId": "401872931",
+   "kickoff": "2026-09-15T00:15:00Z",
+   "venue": "Arrowhead Stadium",
+   "away": {
+    "abbr": "DEN",
+    "name": "Denver Broncos",
+    "short": "Broncos"
+   },
+   "home": {
+    "abbr": "KC",
+    "name": "Kansas City Chiefs",
+    "short": "Chiefs"
+   },
+   "lines": {
+    "spread": "KC -2.5",
+    "total": 42.5,
+    "ml": {
+     "away": 124,
+     "home": -148
+    },
+    "winProb": {
+     "away": 0.428,
+     "home": 0.572
+    },
+    "implied": {
+     "away": 20,
+     "home": 22.5
+    }
+   },
+   "sections": {
+    "offseason": "**Chiefs (6-11, 1-9 in one-score games):** Mahomes tore ACL/LCL Dec 14, 2025; full camp participant, sat preseason; Reid: \"pretty good chance\" he starts, formal clearance pending as of 9/10. Justin Fields backup. Adds: RB Kenneth Walker III (3yr/$43M, Super Bowl MVP), Kelce back (1yr/$12M), S Gilman, DT Tonga, CB Kohou. Lost McDuffie/Watson (LAR), Cook (CIN), Chenal/Omenihu (WAS), Pacheco (DET), Hollywood Brown (PHI). Draft: CB Delane (6), DT Woods (29), EDGE R Mason Thomas (40). OC Bieniemy back. 2025 O: 21.3 PPG (20th).\n**Broncos (15-4 incl. playoffs, AFC West champs, NFL-record 12 comeback wins):** Bo Nix back from ankle fracture, no setbacks. Traded for WR Jaylen Waddle. Re-signed Dobbins, Singleton. Lost JFM (TEN), Locke (DAL), Greenlaw. OC Davis Webb, DC Vance Joseph. Payton 7-5 vs Reid. Swept KC in 2025.",
+    "matchup": "**KC O vs DEN D:** Denver 3rd in yards allowed, 91.2 rush ypg allowed (2nd), 4.0 sacks/g (1st), 18.3 PPG allowed. KC LT Josh Simmons likely out; UDFA Benson vs Bonitto/Elliss. Walker \"focal point.\" 2025 KC TD leaders: Hunt 9 (gone), Rice 6, Kelce 5, Mahomes 5 rush.\n**DEN O vs KC D:** KC allowed 14 rush TD, 18 pass TD, 15.6 PPG at home. Secondary rebuilt (rookie Delane, Kohou, Sneed); S Conner out. DEN TD leaders: RJ Harvey 12 (7 rush/5 rec), Sutton 7, Franklin 6, Nix 5 rush, Dobbins 4. Dobbins RB1, Harvey scoring/pass-down back; WR Sutton/Waddle/Bryant, TE Engram.",
+    "injuries": "**DEN:** Everyone practiced Wed. Mims (foot), Moss (ribs) listed Q by NBC but practiced.\n**KC:** LT Simmons (back) probably out; S Conner (knee) unlikely; DE R Mason Thomas (hamstring). Mahomes expected to start.",
+    "oddsNotes": "KC -2.5/-3 | ML KC -148 / DEN +124 | Total 42.5 | Implied KC 22.75 / DEN 19.75 | De-vigged: KC 57% / DEN 43%. KC 13-4 to the under; last six meetings all under; DEN 5-0-1 ATS as road dog.",
+    "atdNotes": "Verified: Walker -120 (Sports Interaction). Dimers: Walker 48%, Dobbins 36%, Rice 36%, Harvey 31%, Waddle 30%, Kelce 29%. ESPN snippet prices inconsistent, do not trust."
+   },
+   "atdBoard": [
+    {
+     "name": "Kenneth Walker III",
+     "team": "KC",
+     "price": -120,
+     "implied": 0.5455,
+     "live": null
+    },
+    {
+     "name": "Rashee Rice",
+     "team": "KC",
+     "price": 130,
+     "implied": 0.4348,
+     "live": null
+    },
+    {
+     "name": "J.K. Dobbins",
+     "team": "DEN",
+     "price": 170,
+     "implied": 0.3704,
+     "live": null
+    },
+    {
+     "name": "RJ Harvey",
+     "team": "DEN",
+     "price": 200,
+     "implied": 0.3333,
+     "live": null
+    },
+    {
+     "name": "Jaylen Waddle",
+     "team": "DEN",
+     "price": 230,
+     "implied": 0.303,
+     "live": null
+    },
+    {
+     "name": "Travis Kelce",
+     "team": "KC",
+     "price": 250,
+     "implied": 0.2857,
+     "live": null
+    },
+    {
+     "name": "Courtland Sutton",
+     "team": "DEN",
+     "price": 260,
+     "implied": 0.2778,
+     "live": null
+    },
+    {
+     "name": "Bo Nix",
+     "team": "DEN",
+     "price": 400,
+     "implied": 0.2,
+     "live": null
+    }
+   ],
+   "top3": [
+    {
+     "name": "Kenneth Walker III",
+     "team": "KC",
+     "pos": "RB",
+     "price": -120,
+     "est": 0.5,
+     "why": "Three-down workhorse with Pacheco and Hunt gone; KC needs a ground game to protect a rusty Mahomes. Fine at even or better.",
+     "implied": 0.5455,
+     "live": null,
+     "edge": -0.045
+    },
+    {
+     "name": "Rashee Rice",
+     "team": "KC",
+     "pos": "WR",
+     "price": 130,
+     "est": 0.38,
+     "why": "Top target with 6 TD in a partial 2025; Surtain likely on outside speed while Rice works the short game Mahomes leans on.",
+     "priceNote": "est.",
+     "implied": 0.4348,
+     "live": null,
+     "edge": -0.055
+    },
+    {
+     "name": "RJ Harvey",
+     "team": "DEN",
+     "pos": "RB",
+     "price": 200,
+     "est": 0.34,
+     "why": "12 TD as a rookie despite Dobbins being RB1; KC allowed 14 rushing TD. Best value if priced off the depth chart.",
+     "priceNote": "est.",
+     "implied": 0.3333,
+     "live": null,
+     "edge": 0.007
+    }
+   ],
+   "value": [
+    {
+     "name": "Evan Engram",
+     "team": "DEN",
+     "pos": "TE",
+     "price": 330,
+     "est": 0.22,
+     "why": "KC lost Chenal and Cook; S Conner is out.",
+     "priceNote": "est.",
+     "implied": 0.2326,
+     "live": null,
+     "edge": -0.013
+    },
+    {
+     "name": "Bo Nix",
+     "team": "DEN",
+     "pos": "QB",
+     "price": 400,
+     "est": 0.2,
+     "why": "5 rushing TD in 2025; a late scramble is live.",
+     "priceNote": "est.",
+     "implied": 0.2,
+     "live": null,
+     "edge": 0
+    }
+   ],
+   "stacks": [
+    {
+     "legs": [
+      "Chiefs ML",
+      "Walker ATD"
+     ],
+     "why": "KC wins by running Walker and shortening the game.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Under 42.5",
+      "Walker ATD",
+      "Harvey ATD"
+     ],
+     "why": "Six straight Unders in the series; RBs still take the few TDs.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Mahomes 1+ pass TD",
+      "Rice ATD",
+      "Chiefs -3"
+     ],
+     "why": "If Mahomes is himself, Rice is the first read; a KC cover almost requires a Mahomes TD pass.",
+     "type": "sgp"
+    },
+    {
+     "legs": [
+      "Broncos ML",
+      "Harvey ATD",
+      "Nix u1.5 pass TD"
+     ],
+     "why": "Denver's road-dog script is run, defense and short fields.",
+     "type": "contrarian"
+    }
+   ],
+   "status": {
+    "state": "STATUS_SCHEDULED",
+    "detail": "9/14 - 8:15 PM EDT",
+    "score": {
+     "away": 0,
+     "home": 0
+    }
+   },
+   "live": null,
+   "liveBoard": [],
+   "injuryReport": {
+    "away": [
+     {
+      "name": "Jonathon Cooper",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Cooper pleaded not guilty to five charges of domestic violence in a Douglas County (Colo.) courtroom Monday, Jeff Legwold of ESPN.com reports.",
+      "date": "2026-08-31T23:50Z"
+     },
+     {
+      "name": "Nick Gargiulo",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "Gargiulo (knee) was moved to the reserve/PUP list by the Broncos on Sunday, Aric DiLalla of the team's official site reports.",
+      "date": "2026-08-31T23:24Z"
+     },
+     {
+      "name": "Riley Moss",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Moss (ribs) was back at practice with the Broncos on Monday, Zac Stevens of TheDNVR.com reports.",
+      "date": "2026-08-31T22:29Z"
+     },
+     {
+      "name": "Marvin Mims Jr.",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Mims (foot) was not spotted at the Broncos' practice Monday, Parker Gabriel of The Denver Post reports.",
+      "date": "2026-08-31T22:10Z"
+     },
+     {
+      "name": "Luke Wattenberg",
+      "pos": "C",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-08-19T12:07Z"
+     },
+     {
+      "name": "Frank Crum",
+      "pos": "OT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Crum (undisclosed) was placed on injured reserve with a designation to return by the Broncos on Sunday, Aric DiLalla of the team's official site reports.",
+      "date": "2026-08-31T23:20Z"
+     },
+     {
+      "name": "Caleb Lohner",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Lohner (lower body) was placed on injured reserve by the Broncos on Sunday with a designation to return, Aric DiLalla of the team's official website reports.",
+      "date": "2026-08-31T16:50Z"
+     },
+     {
+      "name": "Levelle Bailey",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Bailey (leg) reverted to the Broncos' injured-reserve list Friday, Parker Gabriel of The Denver Post reports.",
+      "date": "2026-08-22T00:29Z"
+     },
+     {
+      "name": "Matt Henningsen",
+      "pos": "DE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     },
+     {
+      "name": "Michael Deiter",
+      "pos": "C",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-08-19T12:07Z"
+     }
+    ],
+    "home": [
+     {
+      "name": "Omarr Norman-Lott",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Norman-Lott (knee) was moved to the reserve/PUP list by the Chiefs on Sunday.",
+      "date": "2026-08-31T17:45Z"
+     },
+     {
+      "name": "Josh Simmons",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Simmons (back) is in danger of missing Kansas City's matchup versus the Broncos on Monday, Matt McMullen of the team's official site reports.",
+      "date": "2026-09-09T00:44Z"
+     },
+     {
+      "name": "Chamarri Conner",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Conner (knee) is not expected to be available for Monday night's contest against the Broncos, Charles Goldman of AtoZSports.com reports.",
+      "date": "2026-09-08T23:27Z"
+     },
+     {
+      "name": "Trey Smith",
+      "pos": "G",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-08T20:42Z"
+     },
+     {
+      "name": "Patrick Mahomes",
+      "pos": "QB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Kansas City head coach Andy Reid said Tuesday that Mahomes (knee) has a \"pretty good chance\" to start next Monday's season opener versus the Broncos, Sam McDowell of The Kansas City Star reports.",
+      "date": "2026-09-08T17:14Z"
+     },
+     {
+      "name": "R Mason Thomas",
+      "pos": "DE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Thomas (hamstring) did not participate at practice Thursday, Pete Sweeney of The Kansas City Star reports.",
+      "date": "2026-09-04T01:39Z"
+     },
+     {
+      "name": "Alohi Gilman",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Gilman has been ruled out for the rest of Saturday's preseason game against the Buccaneers due to a back injury.",
+      "date": "2026-08-22T23:54Z"
+     },
+     {
+      "name": "Ashton Gillotte",
+      "pos": "DE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Gillotte has a ruptured plantar fascia, but the injury is not considered serious, Matt Derrick of ChiefsDigest.com reports.",
+      "date": "2026-08-21T01:43Z"
+     },
+     {
+      "name": "Jimmy Holiday",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Holiday (undisclosed) was placed on injured reserve by the Chiefs on Sunday.",
+      "date": "2026-08-31T17:40Z"
+     },
+     {
+      "name": "Jeff Caldwell",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Caldwell (knee) reverted to the Chiefs' injured reserve list Tuesday, Charles Goldman of AtoZSports.com reports.",
+      "date": "2026-08-25T23:12Z"
+     },
+     {
+      "name": "Matt Waletzko",
+      "pos": "OT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Waletzko (undisclosed) reverted from waivers to Kansas City's injured reserve list Friday, Aaron Wilson of KPRC 2 Houston reports.",
+      "date": "2026-08-22T00:32Z"
+     }
+    ],
+    "fetchedAt": "2026-09-10T15:24:21.630Z"
+   }
+  }
+ ],
+ "slateTop": [
+  {
+   "name": "Jahmyr Gibbs",
+   "team": "DET",
+   "pos": "RB",
+   "price": -330,
+   "est": 0.78,
+   "why": "Bell-cow with Montgomery traded and Pacheco on IR; 7 TD in 6 Montgomery-less games; 28-point implied total at home.",
+   "implied": 0.7674,
+   "live": null,
+   "edge": 0.013,
+   "gameId": "no-det",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Jonathan Taylor",
+   "team": "IND",
+   "pos": "RB",
+   "price": -190,
+   "est": 0.68,
+   "why": "NFL-high 20 TD, 19 carries inside the 5, TD in 6 of 8 home games; BAL allowed 23 rushing TD in 2025 and swapped out Franklin.",
+   "implied": 0.6552,
+   "live": null,
+   "edge": 0.025,
+   "gameId": "bal-ind",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Derrick Henry",
+   "team": "BAL",
+   "pos": "RB",
+   "price": -225,
+   "est": 0.68,
+   "why": "Near-monopoly on goal-line work (88% of snaps inside the 5); IND allowed 16 rushing TD. Better at bet365's -185.",
+   "implied": 0.6923,
+   "live": null,
+   "edge": -0.012,
+   "gameId": "bal-ind",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Christian McCaffrey",
+   "team": "SF",
+   "pos": "RB",
+   "price": -150,
+   "est": 0.63,
+   "why": "24 TD in 2025, 23% target share; Rams allowed the 5th-most receiving yards to RBs and SF's 22.5 implied points funnel through him.",
+   "implied": 0.6,
+   "live": null,
+   "edge": 0.03,
+   "gameId": "sf-lar",
+   "kickoff": "2026-09-11T00:35:00Z"
+  },
+  {
+   "name": "Bijan Robinson",
+   "team": "ATL",
+   "pos": "RB",
+   "price": -155,
+   "est": 0.63,
+   "why": "Run-first Stefanski/Callahan scheme with a shaky Tua means 20+ touches; PIT allowed 9 different rushing-TD scorers last year.",
+   "priceNote": "verify",
+   "implied": 0.6078,
+   "live": null,
+   "edge": 0.022,
+   "gameId": "atl-pit",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Saquon Barkley",
+   "team": "PHI",
+   "pos": "RB",
+   "price": -135,
+   "est": 0.62,
+   "why": "25-point implied total vs the league-worst run D (18 rushing TD, 4.8 YPC allowed); 120+ yards in every meeting as an Eagle.",
+   "priceNote": "verify",
+   "implied": 0.5745,
+   "live": null,
+   "edge": 0.045,
+   "gameId": "wsh-phi",
+   "kickoff": "2026-09-13T20:25:00Z"
+  },
+  {
+   "name": "Javonte Williams",
+   "team": "DAL",
+   "pos": "RB",
+   "price": -145,
+   "est": 0.62,
+   "why": "82% red-zone snap share on a 25.75-point implied team vs a run D that allowed a league-worst 5.5 YPC.",
+   "implied": 0.5918,
+   "live": null,
+   "edge": 0.028,
+   "gameId": "dal-nyg",
+   "kickoff": "2026-09-14T00:20:00Z"
+  },
+  {
+   "name": "Kyren Williams",
+   "team": "LAR",
+   "pos": "RB",
+   "price": -130,
+   "est": 0.6,
+   "why": "Goal-line back for the No. 1 red-zone offense (76 trips) vs a 24th-ranked run D missing three interior linemen.",
+   "implied": 0.5652,
+   "live": null,
+   "edge": 0.035,
+   "gameId": "sf-lar",
+   "kickoff": "2026-09-11T00:35:00Z"
+  },
+  {
+   "name": "D'Andre Swift",
+   "team": "CHI",
+   "pos": "RB",
+   "price": -175,
+   "est": 0.6,
+   "why": "24 carries inside the 10 and 9 rushing TD in the league's most run-heavy red-zone offense vs a bottom-third run D.",
+   "implied": 0.6364,
+   "live": null,
+   "edge": -0.036,
+   "gameId": "chi-car",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Omarion Hampton",
+   "team": "LAC",
+   "pos": "RB",
+   "price": -175,
+   "est": 0.6,
+   "why": "Goal-line back on the week's highest implied total (28.75) vs a D that gave up 126.9 rush yards per game and 28.7 PPG.",
+   "implied": 0.6364,
+   "live": null,
+   "edge": -0.036,
+   "gameId": "ari-lac",
+   "kickoff": "2026-09-13T20:25:00Z"
+  },
+  {
+   "name": "Ja'Marr Chase",
+   "team": "CIN",
+   "pos": "WR",
+   "price": -126,
+   "est": 0.57,
+   "why": "22 targets inside the 20 and 8.8 expected TD; TB was 27th vs the pass and CB Parrish allowed 671 yards.",
+   "implied": 0.5575,
+   "live": null,
+   "edge": 0.012,
+   "gameId": "tb-cin",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "James Cook",
+   "team": "BUF",
+   "pos": "RB",
+   "price": -105,
+   "est": 0.56,
+   "why": "12 rushing TD on a team with 30; no fullback means more Cook touches; Houston's run D is its softer unit.",
+   "implied": 0.5122,
+   "live": null,
+   "edge": 0.048,
+   "gameId": "buf-hou",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Chase Brown",
+   "team": "CIN",
+   "pos": "RB",
+   "price": -140,
+   "est": 0.56,
+   "why": "14 goal-line carries plus 69 receptions, no backup threat, vs a Bucs D ranked 32nd in red-zone TD rate allowed.",
+   "priceNote": "est.",
+   "implied": 0.5833,
+   "live": null,
+   "edge": -0.023,
+   "gameId": "tb-cin",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Amon-Ra St. Brown",
+   "team": "DET",
+   "pos": "WR",
+   "price": -130,
+   "est": 0.55,
+   "why": "11 TD and 117 catches; the Lions' primary red-zone target vs a Saints D missing Cam Jordan.",
+   "priceNote": "verify",
+   "implied": 0.5652,
+   "live": null,
+   "edge": -0.015,
+   "gameId": "no-det",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Cam Skattebo",
+   "team": "NYG",
+   "pos": "RB",
+   "price": -110,
+   "est": 0.52,
+   "why": "86% red-zone snap rate in Roman's power scheme vs a D that allowed 24 rushing TD; Najee Harris is the vulture risk.",
+   "implied": 0.5238,
+   "live": null,
+   "edge": -0.004,
+   "gameId": "dal-nyg",
+   "kickoff": "2026-09-14T00:20:00Z"
+  },
+  {
+   "name": "Davante Adams",
+   "team": "LAR",
+   "pos": "WR",
+   "price": 125,
+   "est": 0.5,
+   "why": "51.9% of Rams end-zone targets (league-high), 14 TD in 14 games, vs a SF pass D that allowed the 5th-most yards per target to WRs.",
+   "implied": 0.4444,
+   "live": null,
+   "edge": 0.056,
+   "gameId": "sf-lar",
+   "kickoff": "2026-09-11T00:35:00Z"
+  },
+  {
+   "name": "Josh Allen",
+   "team": "BUF",
+   "pos": "QB",
+   "price": 125,
+   "est": 0.5,
+   "why": "14 rushing TD in 2025; Houston's pass rush forces scrambles and the QB sneak is Buffalo's default inside the 5.",
+   "implied": 0.4444,
+   "live": null,
+   "edge": 0.056,
+   "gameId": "buf-hou",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Ashton Jeanty",
+   "team": "LV",
+   "pos": "RB",
+   "price": -110,
+   "est": 0.5,
+   "why": "Lone goal-line back in a Kubiak run-first scheme vs a Miami D that allowed a 60.9% red-zone TD rate; Bowers out funnels touches to the run.",
+   "priceNote": "est.",
+   "implied": 0.5238,
+   "live": null,
+   "edge": -0.024,
+   "gameId": "mia-lv",
+   "kickoff": "2026-09-13T20:25:00Z"
+  },
+  {
+   "name": "Jalen Hurts",
+   "team": "PHI",
+   "pos": "QB",
+   "price": 115,
+   "est": 0.5,
+   "why": "8 rushing TD on the tush push; Washington is a 3-4 rebuild with no proven short-yardage stopper.",
+   "priceNote": "verify",
+   "implied": 0.4651,
+   "live": null,
+   "edge": 0.035,
+   "gameId": "wsh-phi",
+   "kickoff": "2026-09-13T20:25:00Z"
+  },
+  {
+   "name": "Kenneth Walker III",
+   "team": "KC",
+   "pos": "RB",
+   "price": -120,
+   "est": 0.5,
+   "why": "Three-down workhorse with Pacheco and Hunt gone; KC needs a ground game to protect a rusty Mahomes. Fine at even or better.",
+   "implied": 0.5455,
+   "live": null,
+   "edge": -0.045,
+   "gameId": "den-kc",
+   "kickoff": "2026-09-15T00:15:00Z"
+  }
+ ],
+ "slateValue": [
+  {
+   "name": "Colston Loveland",
+   "team": "CHI",
+   "pos": "TE",
+   "price": 1000,
+   "est": 0.38,
+   "why": "Team-high 16 targets inside the 20 vs a D ranked 30th in DVOA vs TEs. The scraped +1000 looks like a first-TD price; anything above +150 is value.",
+   "priceNote": "verify",
+   "implied": 0.0909,
+   "live": null,
+   "edge": 0.289,
+   "gameId": "chi-car",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Tyler Allgeier",
+   "team": "ARI",
+   "pos": "RB",
+   "price": 950,
+   "est": 0.28,
+   "why": "If Love is limited on a bad ankle, Allgeier inherits short-yardage work.",
+   "implied": 0.0952,
+   "live": null,
+   "edge": 0.185,
+   "gameId": "ari-lac",
+   "kickoff": "2026-09-13T20:25:00Z"
+  },
+  {
+   "name": "Carnell Tate",
+   "team": "TEN",
+   "pos": "WR",
+   "price": 1000,
+   "est": 0.27,
+   "why": "No. 4 overall pick vs soft outside corners; model has him near 27%.",
+   "implied": 0.0909,
+   "live": null,
+   "edge": 0.179,
+   "gameId": "nyj-ten",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Kyle Monangai",
+   "team": "CHI",
+   "pos": "RB",
+   "price": 900,
+   "est": 0.25,
+   "why": "4 TD on 5 carries inside the 5; the goal-line vulture priced like a longshot because of the knee.",
+   "implied": 0.1,
+   "live": null,
+   "edge": 0.15,
+   "gameId": "chi-car",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Parker Washington",
+   "team": "JAX",
+   "pos": "WR",
+   "price": 200,
+   "est": 0.4,
+   "why": "Led JAX in end-zone targets (15) and expected TD; Ward shadows Thomas, leaving the slot matchup; punt-return equity too.",
+   "implied": 0.3333,
+   "live": null,
+   "edge": 0.067,
+   "gameId": "cle-jax",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Tyler Warren",
+   "team": "IND",
+   "pos": "TE",
+   "price": 210,
+   "est": 0.38,
+   "why": "26 red-zone targets and 5.8 expected TD vs 4 actual; Pittman is gone and BAL was 30th vs the pass.",
+   "implied": 0.3226,
+   "live": null,
+   "edge": 0.057,
+   "gameId": "bal-ind",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Davante Adams",
+   "team": "LAR",
+   "pos": "WR",
+   "price": 125,
+   "est": 0.5,
+   "why": "51.9% of Rams end-zone targets (league-high), 14 TD in 14 games, vs a SF pass D that allowed the 5th-most yards per target to WRs.",
+   "implied": 0.4444,
+   "live": null,
+   "edge": 0.056,
+   "gameId": "sf-lar",
+   "kickoff": "2026-09-11T00:35:00Z"
+  },
+  {
+   "name": "Josh Allen",
+   "team": "BUF",
+   "pos": "QB",
+   "price": 125,
+   "est": 0.5,
+   "why": "14 rushing TD in 2025; Houston's pass rush forces scrambles and the QB sneak is Buffalo's default inside the 5.",
+   "implied": 0.4444,
+   "live": null,
+   "edge": 0.056,
+   "gameId": "buf-hou",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Nico Collins",
+   "team": "HOU",
+   "pos": "WR",
+   "price": 170,
+   "est": 0.42,
+   "why": "Higgins' 6 TD and Kirk's targets are vacated; projects for a 25-30% target share.",
+   "implied": 0.3704,
+   "live": null,
+   "edge": 0.05,
+   "gameId": "buf-hou",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "James Cook",
+   "team": "BUF",
+   "pos": "RB",
+   "price": -105,
+   "est": 0.56,
+   "why": "12 rushing TD on a team with 30; no fullback means more Cook touches; Houston's run D is its softer unit.",
+   "implied": 0.5122,
+   "live": null,
+   "edge": 0.048,
+   "gameId": "buf-hou",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "DK Metcalf",
+   "team": "PIT",
+   "pos": "WR",
+   "price": 210,
+   "est": 0.37,
+   "why": "Team-high 11 end-zone targets; McCarthy passes in the red zone; ATL plays 59% single-high and lost Walker and Pearce off the edge.",
+   "implied": 0.3226,
+   "live": null,
+   "edge": 0.047,
+   "gameId": "atl-pit",
+   "kickoff": "2026-09-13T17:00:00Z"
+  },
+  {
+   "name": "Cade Otton",
+   "team": "TB",
+   "pos": "TE",
+   "price": 330,
+   "est": 0.28,
+   "why": "CIN allowed an NFL-high 16 TE touchdowns in 2025.",
+   "implied": 0.2326,
+   "live": null,
+   "edge": 0.047,
+   "gameId": "tb-cin",
+   "kickoff": "2026-09-13T17:00:00Z"
+  }
+ ],
+ "crossStacks": [
+  {
+   "legs": [
+    "Gibbs ATD (-330)",
+    "Taylor ATD (-190)",
+    "Henry ATD (-185 bet365)"
+   ],
+   "why": "RB hammer: three highest-share goal-line backs on 22+ implied totals. About +180; estimated 36%.",
+   "type": "cross"
+  },
+  {
+   "legs": [
+    "Lions ML",
+    "Jaguars ML",
+    "Chargers ML",
+    "Eagles ML"
+   ],
+   "why": "Favorites moneyline: 73% x 77% x 80% x 66% is about 30% true probability, pays about +235.",
+   "type": "cross"
+  },
+  {
+   "legs": [
+    "Lions ML + Gibbs ATD + St. Brown ATD"
+   ],
+   "why": "Max-confidence SGP for the 1:00 window; est. about 40%.",
+   "type": "cross"
+  },
+  {
+   "legs": [
+    "Eagles ML + Barkley ATD + Hurts ATD"
+   ],
+   "why": "Max-confidence SGP for the 4:25 window; est. about 25% (Hurts vultures Barkley, so the two scorers are mildly negatively correlated).",
+   "type": "cross"
+  },
+  {
+   "legs": [
+    "Cowboys ML + Javonte Williams ATD + Pickens ATD"
+   ],
+   "why": "SNF SGP; est. about 20%.",
+   "type": "cross"
+  },
+  {
+   "legs": [
+    "Chiefs ML + Walker ATD"
+   ],
+   "why": "MNF SGP; est. about 33%.",
+   "type": "cross"
+  }
+ ],
+ "upsetLeans": [
+  {
+   "team": "IND",
+   "price": 145,
+   "winProb": 0.39,
+   "why": "Home, Jones fully healthy, Taylor vs a Ravens D that allowed 23 rushing TD with a rookie-level interior OL and a first-time OC."
+  },
+  {
+   "team": "DEN",
+   "price": 124,
+   "winProb": 0.43,
+   "why": "Swept KC last year, 5-0-1 ATS as a road dog, Mahomes not yet at contact, KC LT Simmons likely out vs the NFL sack leaders."
+  },
+  {
+   "team": "HOU",
+   "price": 100,
+   "winProb": 0.49,
+   "why": "Allen is 1-4 vs Ryans' Texans; Bills have no fullback and a new HC/OC."
+  }
+ ]
+}
