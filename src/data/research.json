@@ -173,7 +173,41 @@
           "why": "Teams combined for 56 PPG in 2025; a shootout drives both touch leaders to the end zone.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 23,
+          "home": 26
+        },
+        "side": "SF +3.5",
+        "sideConf": 2,
+        "total": "Over 48.5",
+        "totalConf": 2,
+        "why": "McVay is 8-11 vs Shanahan with only 4 wins by 4+; the two teams combined for 56 PPG in 2025 and SF went 6-1 to the Over in division games. Rams missing Donald; SF missing three interior DL, which favors points.",
+        "propLeans": [
+          {
+            "player": "Puka Nacua",
+            "market": "player_reception_yds",
+            "side": "over",
+            "line": 90.5,
+            "why": "36% target rate, 10.4 targets a game; SF allowed the 5th-most yards per target to WRs."
+          },
+          {
+            "player": "Matthew Stafford",
+            "market": "player_pass_tds",
+            "side": "over",
+            "line": 1.5,
+            "why": "2+ TD in 15 of 17 games last year."
+          },
+          {
+            "player": "Christian McCaffrey",
+            "market": "player_reception_yds",
+            "side": "over",
+            "line": 39.5,
+            "why": "Rams allowed the 5th-most receiving yards to RBs; 82 and 66 in the two 2025 meetings."
+          }
+        ]
+      }
     },
     {
       "id": "atl-pit",
@@ -307,7 +341,34 @@
           "why": "Ground-heavy, clock-chewing cover script; 94% of Under money agrees.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 18,
+          "home": 22
+        },
+        "side": "PIT -3.5",
+        "sideConf": 2,
+        "total": "Under 41.5",
+        "totalConf": 3,
+        "why": "Tua was 26th in EPA/play and struggled in camp; ATL is run-first by design and lost both edge rushers. 94% of total money is on the Under.",
+        "propLeans": [
+          {
+            "player": "Aaron Rodgers",
+            "market": "player_pass_tds",
+            "side": "over",
+            "line": 1.5,
+            "why": "McCarthy passes 58% of the time inside the 10; Metcalf and Freiermuth own the end-zone targets."
+          },
+          {
+            "player": "Bijan Robinson",
+            "market": "player_rush_yds",
+            "side": "over",
+            "line": 79.5,
+            "why": "PIT allowed five 100-yard rushers in 2025; run-first script."
+          }
+        ]
+      }
     },
     {
       "id": "bal-ind",
@@ -462,7 +523,34 @@
           "why": "A Ravens cover means fourth-quarter Henry goal-line volume.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 24,
+          "home": 24
+        },
+        "side": "IND +3.5",
+        "sideConf": 3,
+        "total": "Over 47.5",
+        "totalConf": 2,
+        "why": "Jones is fully healthy, IND scored 27.4 PPG with him, and Baltimore starts a rookie-level center behind a first-time OC against a D that was 30th vs the pass. Colts home dog is the best side value of the 1:00 window.",
+        "propLeans": [
+          {
+            "player": "Tyler Warren",
+            "market": "player_receptions",
+            "side": "over",
+            "line": 4.5,
+            "why": "Team-high 112 targets; Pittman gone; BAL 30th vs pass."
+          },
+          {
+            "player": "Lamar Jackson",
+            "market": "player_pass_yds",
+            "side": "over",
+            "line": 224.5,
+            "why": "IND secondary lost Cross; Flowers back; Likely and Kolar targets consolidate to Flowers and Andrews."
+          }
+        ]
+      }
     },
     {
       "id": "buf-hou",
@@ -613,7 +701,34 @@
           "why": "Houston's upset path: Collins outside, Montgomery finishing vs a weak run D; Under is 7-3 in the last 10 meetings.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 23,
+          "home": 21
+        },
+        "side": "HOU +1.5",
+        "sideConf": 2,
+        "total": "Under 44.5",
+        "totalConf": 2,
+        "why": "Allen is 1-4 vs Ryans with a 72.7 rating and 17 sacks; Houston allowed 17.4 PPG. Buffalo has a first-time HC/OC pair and no fullback. Under is 7-3 in the last 10 meetings.",
+        "propLeans": [
+          {
+            "player": "James Cook",
+            "market": "player_rush_yds",
+            "side": "over",
+            "line": 75.5,
+            "why": "75+ in five of six recent road games; Houston run D is its softer unit."
+          },
+          {
+            "player": "Nico Collins",
+            "market": "player_reception_yds",
+            "side": "over",
+            "line": 74.5,
+            "why": "Higgins and Kirk targets vacated; 25-30% target share vs a Bills D elite on yards but middling in the red zone."
+          }
+        ]
+      }
     },
     {
       "id": "chi-car",
@@ -775,7 +890,34 @@
           "why": "Shootout script: CHI D allows a 6.3% TD rate; CAR catches up through McMillan.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 26,
+          "home": 22
+        },
+        "side": "CHI -3",
+        "sideConf": 2,
+        "total": "Over 46.5",
+        "totalConf": 3,
+        "why": "Bears road games went 6-2-1 to the Over; the Bears D allowed 5.9 yards per play (29th) and 6.3% TD rate; Carolina cannot pressure (31st) and is 30th vs TEs.",
+        "propLeans": [
+          {
+            "player": "Colston Loveland",
+            "market": "player_receptions",
+            "side": "over",
+            "line": 4.5,
+            "why": "Team-high inside-20 targets; CAR 30th in DVOA vs TE."
+          },
+          {
+            "player": "Rome Odunze",
+            "market": "player_reception_yds",
+            "side": "over",
+            "line": 64.5,
+            "why": "21.9% target share; CAR allowed 24 pass TD."
+          }
+        ]
+      }
     },
     {
       "id": "cle-jax",
@@ -922,7 +1064,34 @@
           "why": "The Browns' most plausible cover comes via a Judkins ground score.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 14,
+          "home": 24
+        },
+        "side": "JAX -8.5",
+        "sideConf": 3,
+        "total": "",
+        "totalConf": 0,
+        "why": "Watson's first game in 23 months behind the projected worst OL in the league vs a top-3 EPA defense; JAX covered 78% at home in 2025 and Coen's offense feasts on man coverage (CLE plays league-high 43% man). No total lean: the model likes the Over 63% but the Browns' offense caps it.",
+        "propLeans": [
+          {
+            "player": "Trevor Lawrence",
+            "market": "player_pass_tds",
+            "side": "over",
+            "line": 1.5,
+            "why": "Coen threw for 10 WR first-TDs; CLE was last in RZ TD% allowed late 2025."
+          },
+          {
+            "player": "Quinshon Judkins",
+            "market": "player_rush_yds",
+            "side": "under",
+            "line": 59.5,
+            "why": "JAX allowed 6.3 Y/A and 3rd in EPA; Browns implied 16 points."
+          }
+        ]
+      }
     },
     {
       "id": "no-det",
@@ -1067,7 +1236,41 @@
           "why": "Saints keeping it close means Shough throwing against a depleted secondary; Olave is the target hog.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 20,
+          "home": 30
+        },
+        "side": "",
+        "sideConf": 1,
+        "total": "Over 49.5",
+        "totalConf": 3,
+        "why": "Detroit has 28 implied points and a gutted Saints edge to run at; the Lions secondary is missing both starting safeties and Arnold, so Shough can keep pace enough for the Over. Side is a pass: -7 is fair for a Lions team with a new OC and rookie RT.",
+        "propLeans": [
+          {
+            "player": "Jared Goff",
+            "market": "player_pass_tds",
+            "side": "over",
+            "line": 1.5,
+            "why": "34 TD in 2025; Saints edge missing Cam Jordan."
+          },
+          {
+            "player": "Jahmyr Gibbs",
+            "market": "player_rush_yds",
+            "side": "over",
+            "line": 89.5,
+            "why": "110.8 rush yards a game in six Montgomery-less games."
+          },
+          {
+            "player": "Chris Olave",
+            "market": "player_receptions",
+            "side": "over",
+            "line": 5.5,
+            "why": "26% target share; Tyson out; DET secondary depleted."
+          }
+        ]
+      }
     },
     {
       "id": "nyj-ten",
@@ -1218,7 +1421,34 @@
           "why": "Robinson's slot matchup vs Brownlee is Tennessee's softest edge.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 18,
+          "home": 20
+        },
+        "side": "TEN -1.5",
+        "sideConf": 2,
+        "total": "Under 39.5",
+        "totalConf": 2,
+        "why": "Two run-first offenses with new play-callers and the lowest total on the board; the Titans have the better line and pass rush. 64% of ML money is on NYJ, so the number is not moving toward Tennessee.",
+        "propLeans": [
+          {
+            "player": "Breece Hall",
+            "market": "player_rush_yds",
+            "side": "over",
+            "line": 69.5,
+            "why": "Top-7 yards-before-contact line vs 28th-ranked scoring D."
+          },
+          {
+            "player": "Wan'Dale Robinson",
+            "market": "player_receptions",
+            "side": "over",
+            "line": 5.5,
+            "why": "26.8% target share in the slot vs Brownlee (108.9 rating allowed)."
+          }
+        ]
+      }
     },
     {
       "id": "tb-cin",
@@ -1370,7 +1600,34 @@
           "why": "The week's highest total; CIN was worst vs TEs.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 24,
+          "home": 28
+        },
+        "side": "CIN -3.5",
+        "sideConf": 2,
+        "total": "Over 50.5",
+        "totalConf": 2,
+        "why": "Burrow is healthy behind the same five linemen against a Bucs D that was 32nd in red-zone TD rate allowed; the highest total on the board still has room because CIN was worst vs TEs and 32nd vs the run.",
+        "propLeans": [
+          {
+            "player": "Ja'Marr Chase",
+            "market": "player_reception_yds",
+            "side": "over",
+            "line": 89.5,
+            "why": "League-high 185 targets; TB 27th vs pass; CB Parrish allowed 671 yards."
+          },
+          {
+            "player": "Joe Burrow",
+            "market": "player_pass_tds",
+            "side": "over",
+            "line": 2.5,
+            "why": "Only QB with a 2.5 line; 17 TD in 8 games last year and TB is last in RZ D."
+          }
+        ]
+      }
     },
     {
       "id": "ari-lac",
@@ -1522,7 +1779,34 @@
           "why": "Backdoor and garbage-time correlation; McBride is the funnel target.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 17,
+          "home": 27
+        },
+        "side": "",
+        "sideConf": 1,
+        "total": "Under 47.5",
+        "totalConf": 3,
+        "why": "96% of total money is on the Under: Arizona rushed for 93 yards a game (31st) with a journeyman QB, and the Chargers allowed 20 PPG (9th). The side is a pass because the line has dropped from -11.5 to -9.5 with 64% of money on Arizona.",
+        "propLeans": [
+          {
+            "player": "Justin Herbert",
+            "market": "player_pass_yds",
+            "side": "over",
+            "line": 233.5,
+            "why": "Arizona allowed 31 pass TD and a 44.8% third-down rate; Alt and Slater healthy."
+          },
+          {
+            "player": "Trey McBride",
+            "market": "player_receptions",
+            "side": "over",
+            "line": 6.5,
+            "why": "126 catches in 2025; LAC 27th in DVOA vs TE; garbage-time volume."
+          }
+        ]
+      }
     },
     {
       "id": "gb-min",
@@ -1673,7 +1957,34 @@
           "why": "Blitz-driven low total, ground-controlled Vikings game.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 21,
+          "home": 23
+        },
+        "side": "MIN -1.5",
+        "sideConf": 2,
+        "total": "Under 46.5",
+        "totalConf": 2,
+        "why": "Minnesota blitzed 48% and allowed 14.9 PPG at home; Green Bay has an interior OL problem, no Parsons, and no Jacobs. 89% of money moved this line from GB -1.5 to MIN -1.5.",
+        "propLeans": [
+          {
+            "player": "Jordan Love",
+            "market": "player_pass_yds",
+            "side": "under",
+            "line": 241.5,
+            "why": "41.6% completion under pressure; pressured 39.5%; MIN allowed the fewest 20+ yard passes."
+          },
+          {
+            "player": "Jordan Mason",
+            "market": "player_rush_yds",
+            "side": "over",
+            "line": 64.5,
+            "why": "40% inside-5 share; GB D 28th in EPA/play late and missing Parsons, Brinson, Wyatt at various levels."
+          }
+        ]
+      }
     },
     {
       "id": "mia-lv",
@@ -1821,7 +2132,34 @@
           "why": "Miami's cover path runs through Achane and Willis' legs.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 16,
+          "home": 21
+        },
+        "side": "LV -3",
+        "sideConf": 2,
+        "total": "Under 40.5",
+        "totalConf": 3,
+        "why": "Miami is the youngest roster in the league with the worst receiving corps and a run-first plan; Las Vegas lost Bowers and has the league-best three-and-out defense. The lowest-scoring game on the board.",
+        "propLeans": [
+          {
+            "player": "Ashton Jeanty",
+            "market": "player_rush_yds",
+            "side": "over",
+            "line": 69.5,
+            "why": "Kubiak run-first scheme; Miami run D improved late but starts three rookies."
+          },
+          {
+            "player": "Michael Mayer",
+            "market": "player_reception_yds",
+            "side": "over",
+            "line": 40.5,
+            "why": "Lead TE with Bowers out vs the D that allowed the most pass TD in the NFL."
+          }
+        ]
+      }
     },
     {
       "id": "wsh-phi",
@@ -1974,7 +2312,34 @@
           "why": "If WSH keeps pace it is via Daniels' legs and JCM at the goal line.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 17,
+          "home": 27
+        },
+        "side": "PHI -5.5",
+        "sideConf": 3,
+        "total": "Under 44.5",
+        "totalConf": 2,
+        "why": "Philadelphia won 8 of 9 vs Washington with Hurts starting and finishing, the model covers 60%, and Washington starts a 32nd-ranked OL without Tunsil. PHI went 8-2 to the Under in its last 10.",
+        "propLeans": [
+          {
+            "player": "Saquon Barkley",
+            "market": "player_rush_yds",
+            "side": "over",
+            "line": 94.5,
+            "why": "120+ in every meeting as an Eagle vs the league-worst run D."
+          },
+          {
+            "player": "Jayden Daniels",
+            "market": "player_rush_yds",
+            "side": "over",
+            "line": 29.5,
+            "why": "Pressured 28% at the Linc last time; scrambles are his release valve."
+          }
+        ]
+      }
     },
     {
       "id": "dal-nyg",
@@ -2129,7 +2494,34 @@
           "why": "Both backs own their red-zone snaps; two bottom-7 scoring defenses; alt Over 56.5 (+226) is SportsLine's model play.",
           "type": "sgp"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 30,
+          "home": 27
+        },
+        "side": "DAL -2.5",
+        "sideConf": 2,
+        "total": "Over 48.5",
+        "totalConf": 4,
+        "why": "The SportsLine model has the Over at nearly 70% and projects 59 points; the last six meetings in New York averaged 62.2. Both defenses ranked bottom-7 in scoring and Dallas has a fourth DC in four years. Highest-confidence total on the board.",
+        "propLeans": [
+          {
+            "player": "Dak Prescott",
+            "market": "player_pass_tds",
+            "side": "over",
+            "line": 1.5,
+            "why": "30 TD in 2025; Pickens and Ferguson vs a soft Giants secondary."
+          },
+          {
+            "player": "Cam Skattebo",
+            "market": "player_rush_yds",
+            "side": "over",
+            "line": 64.5,
+            "why": "73% backfield share in Roman's power scheme vs a D that allowed 24 rush TD."
+          }
+        ]
+      }
     },
     {
       "id": "den-kc",
@@ -2293,7 +2685,34 @@
           "why": "Denver's road-dog script is run, defense and short fields.",
           "type": "contrarian"
         }
-      ]
+      ],
+      "market": {
+        "projected": {
+          "away": 21,
+          "home": 20
+        },
+        "side": "DEN +2.5",
+        "sideConf": 3,
+        "total": "Under 42.5",
+        "totalConf": 3,
+        "why": "Denver swept KC, went 5-0-1 ATS as a road dog, and leads the NFL in sacks against a Chiefs line that will start a UDFA at left tackle in front of a QB nine months off ACL surgery. Six straight Unders in the series and KC was 13-4 to the Under.",
+        "propLeans": [
+          {
+            "player": "Bo Nix",
+            "market": "player_pass_tds",
+            "side": "under",
+            "line": 1.5,
+            "why": "Denver road-dog script is run, defense and short fields."
+          },
+          {
+            "player": "Kenneth Walker III",
+            "market": "player_rush_yds",
+            "side": "over",
+            "line": 59.5,
+            "why": "Three-down workhorse; KC needs a ground game to protect Mahomes."
+          }
+        ]
+      }
     }
   ],
   "crossStacks": [
@@ -2347,5 +2766,113 @@
       "winProb": 0.49,
       "why": "Allen is 1-4 vs Ryans' Texans; Bills have no fullback and a new HC/OC."
     }
-  ]
+  ],
+  "bestBets": [
+    {
+      "game": "dal-nyg",
+      "bet": "Over 48.5",
+      "conf": 4,
+      "why": "Model 70% Over, 62.2 avg in the last six meetings in NY, two bottom-7 defenses."
+    },
+    {
+      "game": "den-kc",
+      "bet": "DEN +2.5",
+      "conf": 3,
+      "why": "Swept KC, 5-0-1 ATS as road dog, KC LT out vs the NFL sack leaders, Mahomes rust."
+    },
+    {
+      "game": "wsh-phi",
+      "bet": "PHI -5.5",
+      "conf": 3,
+      "why": "8 of 9 vs WSH with Hurts; WSH OL 32nd without Tunsil; model covers 60%."
+    },
+    {
+      "game": "bal-ind",
+      "bet": "IND +3.5",
+      "conf": 3,
+      "why": "Healthy Jones, 27.4 PPG with him; BAL new interior OL and first-time OC; BAL 30th vs pass."
+    },
+    {
+      "game": "cle-jax",
+      "bet": "JAX -8.5",
+      "conf": 3,
+      "why": "Watson first game in 23 months behind the worst OL vs a top-3 EPA defense."
+    },
+    {
+      "game": "atl-pit",
+      "bet": "Under 41.5",
+      "conf": 3,
+      "why": "Run-first ATL with a shaky Tua; 94% of total money on the Under."
+    },
+    {
+      "game": "ari-lac",
+      "bet": "Under 47.5",
+      "conf": 3,
+      "why": "ARI 31st rushing with Brissett; LAC 9th in PPG allowed; 96% of total money Under."
+    },
+    {
+      "game": "mia-lv",
+      "bet": "Under 40.5",
+      "conf": 3,
+      "why": "Youngest roster, worst WR room, Bowers out, league-best three-and-out D."
+    },
+    {
+      "game": "den-kc",
+      "bet": "Under 42.5",
+      "conf": 3,
+      "why": "Six straight Unders in the series; KC 13-4 to the Under."
+    },
+    {
+      "game": "no-det",
+      "bet": "Over 49.5",
+      "conf": 3,
+      "why": "DET 28 implied points; both secondaries and edges depleted."
+    },
+    {
+      "game": "chi-car",
+      "bet": "Over 46.5",
+      "conf": 3,
+      "why": "CHI road 6-2-1 to the Over; CHI D 29th in yards per play; CAR cannot pressure."
+    },
+    {
+      "game": "no-det",
+      "bet": "Jahmyr Gibbs ATD -330",
+      "conf": 4,
+      "why": "78% estimate; bell-cow with Montgomery and Pacheco gone."
+    },
+    {
+      "game": "bal-ind",
+      "bet": "Jonathan Taylor ATD -190",
+      "conf": 4,
+      "why": "NFL-high 20 TD; 19 carries inside the 5; BAL allowed 23 rush TD."
+    },
+    {
+      "game": "bal-ind",
+      "bet": "Tyler Warren ATD +195 or better",
+      "conf": 3,
+      "why": "26 red-zone targets and 5.8 expected TD vs 4 scored."
+    },
+    {
+      "game": "sf-lar",
+      "bet": "Davante Adams ATD +125",
+      "conf": 3,
+      "why": "51.9% of Rams end-zone targets."
+    },
+    {
+      "game": "buf-hou",
+      "bet": "Josh Allen ATD +125",
+      "conf": 3,
+      "why": "14 rush TD; QB sneak is the default inside the 5."
+    }
+  ],
+  "creditPlan": {
+    "monthly": 500,
+    "phases": {
+      "open": ["player_anytime_td"],
+      "desig": ["player_anytime_td", "player_pass_yds", "player_rush_yds", "player_reception_yds"],
+      "prekick": ["player_anytime_td"]
+    },
+    "reserve": 40,
+    "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
+  }
 }

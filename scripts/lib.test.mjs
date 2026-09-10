@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { impliedProb, devig, decimalToAmerican, normName } from './lib.mjs';
+import { impliedProb, devig, decimalToAmerican, normName, decidePhase } from './lib.mjs';
 
 test('implied probability from American odds', () => {
   assert.ok(Math.abs(impliedProb(-150) - 0.6) < 1e-9);
@@ -20,4 +20,28 @@ test('name normalization matches feeds', () => {
   assert.equal(normName("Ja'Marr Chase"), normName('Jamarr Chase'));
   assert.equal(normName('Brian Thomas Jr.'), normName('Brian Thomas'));
   assert.equal(normName('Kenneth Walker III'), 'kenneth walker');
+});
+test('props phases: at most open, desig, prekick per event', () => {
+  const kick = '2026-09-13T17:00:00Z'; // Sunday 1pm ET
+  const tue = new Date('2026-09-08T16:00:00Z');
+  assert.equal(decidePhase(kick, {}, tue), 'open');
+  assert.equal(decidePhase(kick, { open: 'x' }, tue), null, 'no second opener pull');
+  const wed = new Date('2026-09-09T16:00:00Z');
+  assert.equal(decidePhase(kick, { open: 'x' }, wed), null);
+  const friEarly = new Date('2026-09-11T15:00:00Z');
+  assert.equal(decidePhase(kick, { open: 'x' }, friEarly), null, 'designations not out yet');
+  const friLate = new Date('2026-09-11T23:30:00Z');
+  assert.equal(decidePhase(kick, { open: 'x' }, friLate), 'desig');
+  assert.equal(decidePhase(kick, { open: 'x', desig: 'y' }, friLate), null);
+  const sunMorning = new Date('2026-09-13T16:30:00Z');
+  assert.equal(decidePhase(kick, { open: 'x', desig: 'y' }, sunMorning), 'prekick');
+  assert.equal(decidePhase(kick, { open: 'x', desig: 'y', prekick: 'z' }, sunMorning), null);
+  const after = new Date('2026-09-13T19:00:00Z');
+  assert.equal(decidePhase(kick, {}, after), null, 'never pull a game that already kicked off');
+  // Thursday game: opener Tuesday, pre-kick Thursday evening, no designations pull (Friday is after kickoff)
+  const thu = '2026-09-11T00:35:00Z';
+  assert.equal(decidePhase(thu, {}, tue), 'open');
+  assert.equal(decidePhase(thu, { open: 'x' }, new Date('2026-09-10T22:30:00Z')), 'prekick');
+  // Far-future event (next week) is not pulled yet
+  assert.equal(decidePhase('2026-09-20T17:00:00Z', {}, tue), null);
 });

@@ -8,8 +8,16 @@ import { space, type, useTheme } from '@/theme';
 
 export default function SettingsScreen() {
   const t = useTheme();
-  const { settings, saveSettings, refreshBoard, refreshPrices, board, loading, lastSync } =
-    useBoard();
+  const {
+    settings,
+    saveSettings,
+    refreshBoard,
+    refreshLines,
+    refreshPrices,
+    board,
+    loading,
+    lastSync,
+  } = useBoard();
   const [key, setKey] = useState(settings.oddsApiKey);
   const [url, setUrl] = useState(settings.boardUrl);
   const [token, setToken] = useState(settings.boardToken);
@@ -103,6 +111,18 @@ export default function SettingsScreen() {
           {new Date(board.researchAsOf).toLocaleString()} · last sync {ago(lastSync)}
         </Body>
       </Card>
+      <H2>Game lines (free)</H2>
+      <Card>
+        <Body small muted>
+          Spread, total, moneyline, scores and status come from ESPN's public scoreboard and cost
+          nothing. Refresh as often as you like.
+        </Body>
+        <View style={{ height: space.sm }} />
+        {button('Refresh lines and scores', async () => {
+          await refreshLines();
+          setMsg('Lines refreshed from ESPN.');
+        })}
+      </Card>
       <H2>Live prices (The Odds API)</H2>
       <Card>
         <Label>API key</Label>
@@ -131,26 +151,30 @@ export default function SettingsScreen() {
           </View>
         </View>
         <View style={{ height: space.sm }} />
-        <Label>Props window (days ahead)</Label>
+        <Label>Manual pull window (hours before kickoff)</Label>
+        <Body small muted>
+          A manual pull refreshes anytime-TD prices only for games kicking off inside this window, 1
+          credit per game, never below the reserve.
+        </Body>
         <View style={{ flexDirection: 'row', gap: 8, marginTop: 6 }}>
-          {[2, 4, 7].map((d) => (
+          {[3, 8, 24].map((d) => (
             <Pressable
               key={d}
-              onPress={() => saveSettings({ daysAhead: d })}
+              onPress={() => saveSettings({ hoursAhead: d })}
               style={{
                 paddingHorizontal: 12,
                 paddingVertical: 6,
                 borderRadius: 4,
-                backgroundColor: settings.daysAhead === d ? t.turf : t.surface2,
+                backgroundColor: settings.hoursAhead === d ? t.turf : t.surface2,
               }}
             >
               <Text
                 style={[
                   type.small,
-                  { color: settings.daysAhead === d ? t.onAccent : t.ink, fontWeight: '700' },
+                  { color: settings.hoursAhead === d ? t.onAccent : t.ink, fontWeight: '700' },
                 ]}
               >
-                {d}
+                {d}h
               </Text>
             </Pressable>
           ))}

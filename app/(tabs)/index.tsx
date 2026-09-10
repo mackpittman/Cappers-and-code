@@ -1,13 +1,15 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
+import { type, useTheme } from '@/theme';
 import { useRouter } from 'expo-router';
 import { Screen } from '@/components/Screen';
-import { Body, Card, H2, Label, PlayerRow } from '@/components/ui';
+import { Body, Card, H2, Label, Pill, PlayerRow } from '@/components/ui';
 import { useBoard } from '@/lib/store';
 
 export default function BoardScreen() {
   const { board } = useBoard();
   const router = useRouter();
+  const t = useTheme();
   const gameLabel = (id?: string) => {
     const g = board.games.find((x) => x.id === id);
     return g ? `${g.away.abbr}@${g.home.abbr}` : '';
@@ -26,7 +28,25 @@ export default function BoardScreen() {
           number is worth playing; a negative edge means the book is ahead of us.
         </Body>
       </Card>
-      <H2>Top 20 by probability</H2>
+      {!!board.bestBets?.length && (
+        <>
+          <H2>Best bets this week</H2>
+          {board.bestBets.map((b, i) => (
+            <Card key={i} accent={b.conf >= 4 ? 'turf' : undefined}>
+              <Label>{b.gameLabel ?? b.game}</Label>
+              <Text style={[type.h2, { color: t.ink, marginBottom: 6 }]}>{b.bet}</Text>
+              <Pill
+                text={`confidence ${b.conf}/5`}
+                tone={b.conf >= 4 ? 'good' : b.conf === 3 ? 'neutral' : 'warn'}
+              />
+              <Body small muted>
+                {b.why}
+              </Body>
+            </Card>
+          ))}
+        </>
+      )}
+      <H2>Top 20 TD scorers by probability</H2>
       <View>
         {board.slateTop.map((p, i) => (
           <PlayerRow

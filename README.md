@@ -16,7 +16,7 @@ NFL touchdown board that updates itself. Weekly research (every team's offseason
 
 ## Daily update flow
 
-1. GitHub Action runs `fetch-schedule → fetch-injuries → fetch-odds → build-board` and commits `data/`.
+1. A scheduler runs `fetch-schedule → fetch-injuries → fetch-odds → build-board` and commits `data/`. Two schedulers are supported and can coexist safely (the pull log prevents double spending): the GitHub Action in `.github/workflows/cappers-daily.yml` (needs the `ODDS_API_KEY` repository secret) and a Claude Code Routine that runs the same commands in a fresh session once a day at 16:30 UTC.
 2. The app fetches `board.json` from the raw GitHub URL on launch and on pull-to-refresh, caches it locally, and falls back to the bundled copy offline.
 3. Optional: paste your own Odds API key in Settings and tap **Pull live prices now** for a same-minute refresh on game day.
 

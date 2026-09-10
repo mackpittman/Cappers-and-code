@@ -94,3 +94,29 @@ export async function getJson(url, { timeoutMs = 60000, headers = {} } = {}) {
   }
 }
 export const nowIso = () => new Date().toISOString();
+
+/**
+ * Credit-aware props scheduling. Each event gets at most three anytime-TD pulls per week:
+ *  - open:    first look once the event is inside the 7-day window (books post ATD props Tue/Wed)
+ *  - desig:   after Friday injury designations (Fri 20:00 UTC onward, or Saturday), kickoff within 3 days
+ *  - prekick: inside the pre-kick window (default 8 hours)
+ * Returns the phase to pull now, or null. `pulls` is the per-event log { open, desig, prekick }.
+ */
+export function decidePhase(commenceIso, pulls = {}, now = new Date(), opts = {}) {
+  const prekickHours = opts.prekickHours ?? 8;
+  const t = Date.parse(commenceIso);
+  const ms = t - now.getTime();
+  if (ms < -60 * 60000) return null; // already kicked off
+  const h = ms / 3600000;
+  if (h <= prekickHours && !pulls.prekick) return 'prekick';
+  const dow = now.getUTCDay(); // 0 Sun ... 5 Fri, 6 Sat
+  const afterDesignations = (dow === 5 && now.getUTCHours() >= 20) || dow === 6;
+  if (afterDesignations && h <= 72 && !pulls.desig && !pulls.prekick) return 'desig';
+  if (h <= 7 * 24 && !pulls.open && !pulls.desig && !pulls.prekick) return 'open';
+  return null;
+}
+
+/** Order candidate events so the soonest kickoffs spend credits first. */
+export function prioritize(events, now = new Date()) {
+  return [...events].sort((a, b) => Date.parse(a.commence) - Date.parse(b.commence));
+}

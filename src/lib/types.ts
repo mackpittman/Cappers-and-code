@@ -7,6 +7,7 @@ export type LivePlayer = {
   implied: number;
   open?: number | null;
   move?: number | null;
+  fetchedAt?: string;
 };
 export type Pick = {
   name: string;
@@ -22,6 +23,37 @@ export type Pick = {
   gameId?: string;
   kickoff?: string;
 };
+export type PropLean = {
+  player: string;
+  market: string;
+  side: 'over' | 'under';
+  line: number;
+  why: string;
+};
+export type MarketLean = {
+  projected: { away: number; home: number };
+  side: string;
+  sideConf: number;
+  total: string;
+  totalConf: number;
+  why: string;
+  propLeans: PropLean[];
+};
+export type PropLine = {
+  market: string;
+  label: string;
+  name: string;
+  line: number | null;
+  over: number | null;
+  under: number | null;
+  bestOver: number | null;
+  bestUnder: number | null;
+  lineLow: number | null;
+  lineHigh: number | null;
+  fetchedAt: string;
+  lean: { side: 'over' | 'under'; line: number; why: string; delta: number | null } | null;
+};
+export type BestBet = { game: string; gameLabel?: string; bet: string; conf: number; why: string };
 export type Stack = { legs: string[]; why: string; type: 'sgp' | 'cross' | 'contrarian' };
 export type InjuryEntry = {
   name: string;
@@ -39,12 +71,15 @@ export type Lines = {
   implied: { away: number; home: number };
 };
 export type LiveLines = {
+  source?: string;
   fetchedAt: string;
   ml: {
     home: number | null;
     away: number | null;
     bestHome: number | null;
     bestAway: number | null;
+    openHome?: number | null;
+    openAway?: number | null;
   };
   spread: { homePoint: number | null; homePrice: number | null; awayPrice: number | null };
   total: { point: number | null; over: number | null; under: number | null };
@@ -75,6 +110,9 @@ export type Game = {
   top3: Pick[];
   value: Pick[];
   stacks: Stack[];
+  market?: MarketLean;
+  propLines?: PropLine[];
+  pulls?: Record<string, string>;
   status?: { state: string; detail: string; score: { away: number; home: number } } | null;
   live?: LiveLines | null;
   liveBoard?: {
@@ -92,13 +130,27 @@ export type Board = {
   generatedAt: string;
   researchAsOf: string;
   oddsFetchedAt?: string | null;
-  oddsCredits?: { remaining: number | null; used: number | null } | null;
+  oddsCredits?: {
+    remaining: number | null;
+    used: number | null;
+    spent7d?: number;
+    spent30d?: number;
+    reserve?: number | null;
+  } | null;
+  creditPlan?: {
+    monthly: number;
+    phases: Record<string, string[]>;
+    reserve: number;
+    note: string;
+  } | null;
+  linesSource?: string | null;
   injuriesFetchedAt?: string | null;
   notes: string;
   completed: { id: string; away: string; home: string; final: string; tds: string[] }[];
   games: Game[];
   slateTop: Pick[];
   slateValue: Pick[];
+  bestBets?: BestBet[];
   crossStacks: Stack[];
   upsetLeans: { team: string; price: number; winProb: number; why: string }[];
 };

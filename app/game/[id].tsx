@@ -19,6 +19,7 @@ import {
 import { useBoard } from '@/lib/store';
 import { kickoffLabel } from '@/lib/format';
 import { fmtAmerican, pct } from '@/lib/odds';
+import { ago } from '@/lib/format';
 import { space, type, useTheme } from '@/theme';
 
 export default function GameScreen() {
@@ -103,6 +104,57 @@ export default function GameScreen() {
           )}
         </Card>
 
+        {g.market && (
+          <>
+            <H2>Market leans</H2>
+            <Card
+              accent={Math.max(g.market.sideConf, g.market.totalConf) >= 3 ? 'turf' : undefined}
+            >
+              <View style={{ flexDirection: 'row', gap: 16, flexWrap: 'wrap' }}>
+                <Stat
+                  label="Projected"
+                  value={`${g.away.abbr} ${g.market.projected.away} · ${g.home.abbr} ${g.market.projected.home}`}
+                />
+                <Stat
+                  label="Side"
+                  value={g.market.side || 'Pass'}
+                  sub={g.market.side ? `confidence ${g.market.sideConf}/5` : ''}
+                />
+                <Stat
+                  label="Total"
+                  value={g.market.total || 'Pass'}
+                  sub={g.market.total ? `confidence ${g.market.totalConf}/5` : ''}
+                />
+              </View>
+              <Text style={[type.body, { color: t.ink2, marginTop: space.sm }]}>
+                {g.market.why}
+              </Text>
+              {g.market.propLeans.length > 0 && (
+                <View style={{ marginTop: space.md, gap: 8 }}>
+                  <Label>Prop leans</Label>
+                  {g.market.propLeans.map((l, i) => {
+                    const live = g.propLines?.find(
+                      (p) =>
+                        p.market === l.market && p.name.toLowerCase() === l.player.toLowerCase(),
+                    );
+                    return (
+                      <View key={i}>
+                        <Text style={[type.body, { color: t.ink, fontWeight: '700' }]}>
+                          {l.player} {l.side} {l.line} {marketLabel(l.market)}
+                          {live?.line != null && live.line !== l.line
+                            ? `  (now ${live.line}, ${fmtAmerican(l.side === 'over' ? live.over : live.under)})`
+                            : ''}
+                        </Text>
+                        <Text style={[type.small, { color: t.ink2 }]}>{l.why}</Text>
+                      </View>
+                    );
+                  })}
+                </View>
+              )}
+            </Card>
+          </>
+        )}
+
         <H2>Max-confidence TD scorers</H2>
         {g.top3.map((p, i) => (
           <PickCard key={p.name} p={p} rank={i + 1} />
@@ -160,6 +212,68 @@ export default function GameScreen() {
           )}
         </Card>
 
+        {!!g.propLines?.length && (
+          <>
+            <H2>Player prop lines</H2>
+            <Card>
+              {g.propLines.map((p, i) => (
+                <View
+                  key={i}
+                  style={{
+                    paddingVertical: 6,
+                    borderBottomWidth: i === g.propLines!.length - 1 ? 0 : 1,
+                    borderColor: t.line,
+                  }}
+                >
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      gap: 8,
+                    }}
+                  >
+                    <Text style={[type.body, { color: t.ink, flex: 1 }]}>{p.name}</Text>
+                    <Text style={[type.small, { color: t.mute, width: 78 }]}>{p.label}</Text>
+                    <Text
+                      style={[
+                        type.mono,
+                        { color: t.ink, fontWeight: '700', width: 52, textAlign: 'right' },
+                      ]}
+                    >
+                      {p.line ?? '—'}
+                    </Text>
+                    <Text style={[type.mono, { color: t.mute, width: 96, textAlign: 'right' }]}>
+                      o{fmtAmerican(p.over)} u{fmtAmerican(p.under)}
+                    </Text>
+                  </View>
+                  {p.lineLow != null && p.lineHigh != null && p.lineLow !== p.lineHigh && (
+                    <Text style={[type.small, { color: t.mute }]}>
+                      Books range {p.lineLow} to {p.lineHigh}; best over {fmtAmerican(p.bestOver)},
+                      best under {fmtAmerican(p.bestUnder)}
+                    </Text>
+                  )}
+                  {p.lean && (
+                    <Pill
+                      text={`Lean ${p.lean.side} ${p.lean.line}${p.lean.delta ? ` · line moved ${p.lean.delta > 0 ? '+' : ''}${p.lean.delta}` : ''}`}
+                      tone={
+                        p.lean.delta != null &&
+                        ((p.lean.side === 'over' && p.lean.delta > 0) ||
+                          (p.lean.side === 'under' && p.lean.delta < 0))
+                          ? 'warn'
+                          : 'good'
+                      }
+                    />
+                  )}
+                </View>
+              ))}
+              <Body small muted>
+                Consensus line and prices across books; pulled {ago(g.propLines[0].fetchedAt)}.
+              </Body>
+            </Card>
+          </>
+        )}
+
         <H2>Stacks</H2>
         {g.stacks.map((s, i) => (
           <StackCard key={i} legs={s.legs} why={s.why} kind={s.type} />
@@ -191,6 +305,17 @@ export default function GameScreen() {
       </Screen>
     </>
   );
+}
+const MARKET_LABELS: Record<string, string> = {
+  player_pass_yds: 'pass yds',
+  player_rush_yds: 'rush yds',
+  player_reception_yds: 'rec yds',
+  player_receptions: 'receptions',
+  player_pass_tds: 'pass TD',
+  player_anytime_td: 'anytime TD',
+};
+function marketLabel(k: string) {
+  return MARKET_LABELS[k] ?? k;
 }
 function Stat({ label, value, sub }: { label: string; value: string; sub?: string }) {
   const t = useTheme();

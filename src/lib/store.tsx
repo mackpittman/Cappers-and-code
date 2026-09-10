@@ -3,7 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Constants from 'expo-constants';
 import bundled from '../../data/board.json';
 import type { Board } from './types';
-import { refreshFromOddsApi } from './odds';
+import { refreshFromOddsApi, refreshLinesFromEspn } from './odds';
 
 const KEY_BOARD = 'cappers.board.v1';
 const KEY_SETTINGS = 'cappers.settings.v1';
@@ -14,7 +14,7 @@ export type Settings = {
   boardToken: string;
   oddsApiKey: string;
   region: string;
-  daysAhead: number;
+  hoursAhead: number;
 };
 type Ctx = {
   board: Board;
@@ -25,6 +25,7 @@ type Ctx = {
   settings: Settings;
   saveSettings: (s: Partial<Settings>) => Promise<void>;
   refreshBoard: () => Promise<void>;
+  refreshLines: () => Promise<void>;
   refreshPrices: () => Promise<{
     creditsRemaining: number | null;
     propsFetched: number;
@@ -44,7 +45,7 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
     boardToken: '',
     oddsApiKey: '',
     region: 'us',
-    daysAhead: 4,
+    hoursAhead: 8,
   });
 
   const refreshBoard = useCallback(async () => {
@@ -88,7 +89,7 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
     try {
       const r = await refreshFromOddsApi(board, settings.oddsApiKey.trim(), {
         region: settings.region,
-        daysAhead: settings.daysAhead,
+        hoursAhead: settings.hoursAhead,
       });
       setBoard(r.board);
       setSource('live');
@@ -106,6 +107,21 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
       setLoading(false);
     }
   }, [board, settings]);
+
+  const refreshLines = useCallback(async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      const next = await refreshLinesFromEspn(board);
+      setBoard(next);
+      setLastSync(new Date().toISOString());
+      await AsyncStorage.setItem(KEY_BOARD, JSON.stringify(next));
+    } catch (e: any) {
+      setError(`Could not refresh lines: ${e.message ?? String(e)}`);
+    } finally {
+      setLoading(false);
+    }
+  }, [board]);
 
   const saveSettings = useCallback(
     async (s: Partial<Settings>) => {
@@ -152,9 +168,21 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
       settings,
       saveSettings,
       refreshBoard,
+      refreshLines,
       refreshPrices,
     }),
-    [board, source, loading, error, lastSync, settings, saveSettings, refreshBoard, refreshPrices],
+    [
+      board,
+      source,
+      loading,
+      error,
+      lastSync,
+      settings,
+      saveSettings,
+      refreshBoard,
+      refreshLines,
+      refreshPrices,
+    ],
   );
   return <BoardContext.Provider value={value}>{children}</BoardContext.Provider>;
 }
