@@ -9,7 +9,13 @@ const KEY_BOARD = 'cappers.board.v1';
 const KEY_SETTINGS = 'cappers.settings.v1';
 const DEFAULT_URL: string = (Constants.expoConfig?.extra as any)?.boardUrl ?? '';
 
-export type Settings = { boardUrl: string; oddsApiKey: string; region: string; daysAhead: number };
+export type Settings = {
+  boardUrl: string;
+  boardToken: string;
+  oddsApiKey: string;
+  region: string;
+  daysAhead: number;
+};
 type Ctx = {
   board: Board;
   source: 'bundled' | 'cache' | 'remote' | 'live';
@@ -35,6 +41,7 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
   const [lastSync, setLastSync] = useState<string | null>(null);
   const [settings, setSettings] = useState<Settings>({
     boardUrl: DEFAULT_URL,
+    boardToken: '',
     oddsApiKey: '',
     region: 'us',
     daysAhead: 4,
@@ -45,9 +52,12 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
     setLoading(true);
     setError(null);
     try {
+      const headers: Record<string, string> = { 'Cache-Control': 'no-cache' };
+      if (/api\.github\.com/.test(settings.boardUrl)) headers.Accept = 'application/vnd.github.raw';
+      if (settings.boardToken) headers.Authorization = `Bearer ${settings.boardToken.trim()}`;
       const res = await fetch(
         `${settings.boardUrl}${settings.boardUrl.includes('?') ? '&' : '?'}t=${Date.now()}`,
-        { headers: { 'Cache-Control': 'no-cache' } },
+        { headers },
       );
       if (!res.ok) throw new Error(`Board fetch failed (${res.status})`);
       const json = (await res.json()) as Board;
@@ -69,7 +79,7 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
     } finally {
       setLoading(false);
     }
-  }, [settings.boardUrl, board.generatedAt, source]);
+  }, [settings.boardUrl, settings.boardToken, board.generatedAt, source]);
 
   const refreshPrices = useCallback(async () => {
     if (!settings.oddsApiKey) throw new Error('Add your Odds API key in Settings first.');

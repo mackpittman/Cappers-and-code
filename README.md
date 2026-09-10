@@ -25,7 +25,10 @@ NFL touchdown board that updates itself. Weekly research (every team's offseason
 1. Get a free key at https://the-odds-api.com/ (500 credits a month).
 2. Add it as the repository secret `ODDS_API_KEY`.
 3. Enable Actions. Trigger **Cappers & Code daily board** manually once (workflow_dispatch) to seed `data/odds/`.
-4. Update `expo.extra.boardUrl` in `app.json` if you move the data to another branch or host (GitHub Pages, S3, Supabase Storage all work; it just needs to serve JSON).
+4. Point the app at the board. The default `expo.extra.boardUrl` in `app.json` is the GitHub API contents URL for `data/board.json` on this branch.
+   - **Private repo (current state):** in the app's Settings, paste a fine-grained GitHub token with read access to Contents. The app sends it as a bearer token.
+   - **Keyless option:** create a public Gist with a `board.json` file, add secrets `BOARD_GIST_ID` and `GIST_TOKEN` (a token with the gist scope). The workflow then publishes the board there every run; set the app's Board URL to the Gist's raw URL (`https://gist.githubusercontent.com/<user>/<id>/raw/board.json`) and leave the token blank.
+   - Any other JSON host (GitHub Pages, S3, Supabase Storage) works too.
 
 ### Credit budget on the free tier
 

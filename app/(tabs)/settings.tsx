@@ -12,6 +12,7 @@ export default function SettingsScreen() {
     useBoard();
   const [key, setKey] = useState(settings.oddsApiKey);
   const [url, setUrl] = useState(settings.boardUrl);
+  const [token, setToken] = useState(settings.boardToken);
   const [msg, setMsg] = useState<string | null>(null);
   const input = {
     borderWidth: 1,
@@ -74,8 +75,26 @@ export default function SettingsScreen() {
           placeholderTextColor={t.mute}
         />
         <View style={{ height: space.sm }} />
+        <Label>GitHub token (only if the repo is private)</Label>
+        <Body small muted>
+          A fine-grained token with read access to Contents lets the app pull board.json from a
+          private repo. Leave blank for a public repo or a public Gist/Pages URL.
+        </Body>
+        <View style={{ height: space.sm }} />
+        <TextInput
+          id="boardToken"
+          value={token}
+          onChangeText={setToken}
+          autoCapitalize="none"
+          autoCorrect={false}
+          secureTextEntry
+          style={input}
+          placeholder="github_pat_..."
+          placeholderTextColor={t.mute}
+        />
+        <View style={{ height: space.sm }} />
         {button('Save and refresh board', async () => {
-          await saveSettings({ boardUrl: url.trim() });
+          await saveSettings({ boardUrl: url.trim(), boardToken: token.trim() });
           await refreshBoard();
           setMsg('Board refreshed.');
         })}
