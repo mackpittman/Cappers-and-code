@@ -1,0 +1,66 @@
+name: Cappers & Code daily board
+
+on:
+  schedule:
+    # Free feeds (ESPN schedule, lines, injuries) every day at 11:00 UTC (7am ET).
+    - cron: '0 11 * * *'
+    # Props runs, timed to when prices matter. The script decides per game what phase applies,
+    # so extra runs cost nothing when nothing is due.
+    - cron: '0 16 * * 2' # Tue 12pm ET: ATD openers
+    - cron: '0 16 * * 3' # Wed 12pm ET: late openers only
+    - cron: '30 23 * * 5' # Fri 7:30pm ET: post-designations full bundle
+    - cron: '30 22 * * 4' # Thu 6:30pm ET: TNF pre-kick
+    - cron: '30 16 * * 0' # Sun 12:30pm ET: pre-kick for the whole Sunday slate
+    - cron: '30 22 * * 1' # Mon 6:30pm ET: MNF pre-kick
+  workflow_dispatch:
+    inputs:
+      force_phase:
+        description: 'Force a props phase for every upcoming game (open, desig, prekick). Leave blank for the normal calendar.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fetch schedule, injuries and props, rebuild board
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          FORCE_PHASE: ${{ github.event.inputs.force_phase }}
+          CREDIT_RESERVE: '40'
+          MAX_CREDITS_PER_RUN: '80'
+        run: |
+          node scripts/fetch-schedule.mjs
+          node scripts/fetch-injuries.mjs
+          node scripts/fetch-odds.mjs
+          node scripts/build-board.mjs
+      - name: Commit updated data
+        run: |
+          git config user.name "cappers-bot"
+          git config user.email "cappers-bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "data: board update $(date -u +%FT%H:%MZ)"
+          git pull --rebase
+          git push
+      - name: Publish board.json to a public Gist (optional, gives the app a keyless URL)
+        if: ${{ env.GIST_ID != '' && env.GIST_TOKEN != '' }}
+        env:
+          GIST_ID: ${{ secrets.BOARD_GIST_ID }}
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+        run: |
+          node -e '
+            const fs = require("fs");
+            const body = { files: { "board.json": { content: fs.readFileSync("data/board.json", "utf8") } } };
+            fetch(`https://api.github.com/gists/${process.env.GIST_ID}`, {
+              method: "PATCH",
+              headers: { Authorization: `Bearer ${process.env.GIST_TOKEN}`, Accept: "application/vnd.github+json", "Content-Type": "application/json" },
+              body: JSON.stringify(body),
+            }).then(async (r) => { console.log("gist", r.status); if (!r.ok) { console.log(await r.text()); process.exit(1); } });
+          '
