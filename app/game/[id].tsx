@@ -108,7 +108,7 @@ export default function GameScreen() {
           <>
             <H2>Market leans</H2>
             <Card
-              accent={Math.max(g.market.sideConf, g.market.totalConf) >= 3 ? 'turf' : undefined}
+              accent={Math.max(g.market.sideConf, g.market.totalConf) >= 3 ? 'green' : undefined}
             >
               <View style={{ flexDirection: 'row', gap: 16, flexWrap: 'wrap' }}>
                 <Stat

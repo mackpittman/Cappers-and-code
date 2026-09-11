@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Pressable, StyleSheet, Text, View, ViewStyle } from 'react-native';
-import { space, type, useTheme } from '@/theme';
+import { fonts, radius, space, type, useTheme } from '@/theme';
 import { fmtAmerican, pct } from '@/lib/odds';
 import type { InjuryEntry, Pick } from '@/lib/types';
 
@@ -15,29 +15,35 @@ export function H1({ children }: { children: React.ReactNode }) {
 export function H2({ children, style }: { children: React.ReactNode; style?: ViewStyle }) {
   const t = useTheme();
   return (
-    <Text
-      style={[type.h2, { color: t.ink, marginTop: space.xl, marginBottom: space.sm }, style as any]}
-    >
-      {children}
-    </Text>
+    <View style={[s.h2wrap, { borderColor: t.green }, style]}>
+      <Text style={[type.h2, { color: t.ink }]}>{children}</Text>
+    </View>
   );
 }
 export function Body({
   children,
   muted,
   small,
+  bold,
 }: {
   children: React.ReactNode;
   muted?: boolean;
   small?: boolean;
+  bold?: boolean;
 }) {
   const t = useTheme();
   return (
-    <Text style={[small ? type.small : type.body, { color: muted ? t.ink2 : t.ink }]}>
+    <Text
+      style={[
+        small ? type.small : bold ? type.bodyBold : type.body,
+        { color: muted ? t.ink2 : t.ink },
+      ]}
+    >
       {children}
     </Text>
   );
 }
+/** Panel. `accent="green"` draws the brand's electric-green panel border for the one thing that matters. */
 export function Card({
   children,
   style,
@@ -45,7 +51,7 @@ export function Card({
 }: {
   children: React.ReactNode;
   style?: ViewStyle;
-  accent?: 'gold' | 'turf';
+  accent?: 'green' | 'contrarian';
 }) {
   const t = useTheme();
   return (
@@ -53,8 +59,14 @@ export function Card({
       style={[
         s.card,
         { backgroundColor: t.surface, borderColor: t.line },
-        accent === 'gold' && { borderLeftColor: t.gold, borderLeftWidth: 3 },
-        accent === 'turf' && { borderLeftColor: t.turf, borderLeftWidth: 3 },
+        accent === 'green' && {
+          borderColor: t.lineGreen,
+          shadowColor: t.green,
+          shadowOpacity: 0.25,
+          shadowRadius: 16,
+          shadowOffset: { width: 0, height: 0 },
+        },
+        accent === 'contrarian' && { borderLeftColor: t.green2, borderLeftWidth: 3 },
         style,
       ]}
     >
@@ -72,21 +84,28 @@ export function Pill({
   const t = useTheme();
   const bg = {
     neutral: t.surface2,
-    good: t.turfSoft,
-    warn: t.goldSoft,
-    bad: '#F3DCD8',
-    accent: t.turf,
+    good: t.greenSoft,
+    warn: t.surface2,
+    bad: 'rgba(224,112,90,0.16)',
+    accent: t.green,
   }[tone];
-  const fg = { neutral: t.ink2, good: t.turf, warn: t.gold, bad: '#8C2E1F', accent: t.onAccent }[
+  const fg = { neutral: t.ink2, good: t.green, warn: t.mute, bad: t.danger, accent: t.onGreen }[
     tone
   ];
+  const border = {
+    neutral: t.line,
+    good: t.lineGreen,
+    warn: t.line,
+    bad: 'rgba(224,112,90,0.4)',
+    accent: t.green,
+  }[tone];
   return (
-    <View style={[s.pill, { backgroundColor: bg }]}>
-      <Text style={[type.small, { color: fg, fontWeight: '700' }]}>{text}</Text>
+    <View style={[s.pill, { backgroundColor: bg, borderColor: border }]}>
+      <Text style={[type.label, { color: fg, letterSpacing: 1 }]}>{text}</Text>
     </View>
   );
 }
-/** Two-team win probability bar. */
+/** Two-team win probability bar: white track, electric-green fill for the away share. */
 export function WinBar({
   away,
   home,
@@ -102,13 +121,13 @@ export function WinBar({
 }) {
   const t = useTheme();
   return (
-    <View style={{ gap: 4 }}>
+    <View style={{ gap: 5 }}>
       <View style={s.row}>
-        <Text style={[type.small, { color: t.ink, fontWeight: '700' }]}>
+        <Text style={[type.h2, { color: t.ink, fontSize: 16, lineHeight: 18 }]}>
           {away} {pct(pa)}
         </Text>
-        <Text style={[type.small, { color: t.mute }]}>{live ? 'live' : 'research'}</Text>
-        <Text style={[type.small, { color: t.ink, fontWeight: '700' }]}>
+        <Text style={[type.label, { color: t.mute }]}>{live ? 'live' : 'model'}</Text>
+        <Text style={[type.h2, { color: t.ink, fontSize: 16, lineHeight: 18 }]}>
           {home} {pct(ph)}
         </Text>
       </View>
@@ -120,7 +139,6 @@ export function WinBar({
     </View>
   );
 }
-/** Price cell: shows live consensus/best when available, otherwise the research price. */
 export function Price({ p }: { p: Pick }) {
   const t = useTheme();
   const live = p.live;
@@ -128,7 +146,7 @@ export function Price({ p }: { p: Pick }) {
     const move = live.move ?? 0;
     return (
       <View style={{ alignItems: 'flex-end' }}>
-        <Text style={[type.mono, { color: t.ink, fontWeight: '700', fontSize: 16 }]}>
+        <Text style={[type.mono, { fontFamily: fonts.dataBold, color: t.green, fontSize: 17 }]}>
           {fmtAmerican(live.consensus)}
         </Text>
         <Text style={[type.small, { color: t.mute }]}>
@@ -145,7 +163,7 @@ export function Price({ p }: { p: Pick }) {
   }
   return (
     <View style={{ alignItems: 'flex-end' }}>
-      <Text style={[type.mono, { color: t.ink, fontWeight: '700', fontSize: 16 }]}>
+      <Text style={[type.mono, { fontFamily: fonts.dataBold, color: t.ink, fontSize: 17 }]}>
         {fmtAmerican(p.price)}
       </Text>
       <Text style={[type.small, { color: t.mute }]}>{p.priceNote ?? 'research'}</Text>
@@ -180,10 +198,14 @@ export function PlayerRow({
       onPress={onPress}
       style={({ pressed }) => [s.prow, { borderColor: t.line, opacity: pressed ? 0.7 : 1 }]}
     >
-      {rank != null && <Text style={[type.mono, { color: t.mute, width: 24 }]}>{rank}</Text>}
+      {rank != null && (
+        <Text style={[type.mono, { color: t.green, width: 26 }]}>
+          {String(rank).padStart(2, '0')}
+        </Text>
+      )}
       <View style={{ flex: 1, gap: 4 }}>
-        <Text style={[type.body, { color: t.ink, fontWeight: '700' }]}>{p.name}</Text>
-        <Text style={[type.small, { color: t.ink2 }]}>
+        <Text style={[type.bodyBold, { color: t.ink }]}>{p.name}</Text>
+        <Text style={[type.small, { color: t.mute }]}>
           {p.team} · {p.pos}
           {game ? ` · ${game}` : ''}
         </Text>
@@ -196,12 +218,14 @@ export function PlayerRow({
 export function PickCard({ p, rank }: { p: Pick; rank: number }) {
   const t = useTheme();
   return (
-    <Card accent={rank === 1 ? 'turf' : undefined}>
+    <Card accent={rank === 1 ? 'green' : undefined}>
       <View style={[s.row, { alignItems: 'flex-start' }]}>
         <View style={{ flex: 1, gap: 4 }}>
-          <Label>{rank === 1 ? 'Top play' : `Pick ${rank}`}</Label>
+          <Label color={rank === 1 ? t.green : undefined}>
+            {rank === 1 ? 'Top play' : `Pick ${rank}`}
+          </Label>
           <Text style={[type.h2, { color: t.ink }]}>{p.name}</Text>
-          <Text style={[type.small, { color: t.ink2 }]}>
+          <Text style={[type.small, { color: t.mute }]}>
             {p.team} · {p.pos}
           </Text>
         </View>
@@ -217,12 +241,12 @@ export function PickCard({ p, rank }: { p: Pick; rank: number }) {
 export function StackCard({ legs, why, kind }: { legs: string[]; why: string; kind?: string }) {
   const t = useTheme();
   return (
-    <Card accent={kind === 'contrarian' ? 'gold' : undefined}>
+    <Card accent={kind === 'contrarian' ? 'contrarian' : undefined}>
       <View style={{ gap: 6 }}>
         {legs.map((l, i) => (
-          <View key={i} style={s.row}>
-            <View style={[s.dot, { backgroundColor: t.turf }]} />
-            <Text style={[type.body, { color: t.ink, fontWeight: '600', flex: 1 }]}>{l}</Text>
+          <View key={i} style={[s.row, { justifyContent: 'flex-start' }]}>
+            <Text style={[type.mono, { color: t.green }]}>{'〉'}</Text>
+            <Text style={[type.bodyBold, { color: t.ink, flex: 1 }]}>{l}</Text>
           </View>
         ))}
       </View>
@@ -241,18 +265,16 @@ export function InjuryList({ items, team }: { items: InjuryEntry[]; team: string
   const tone = (st: string) =>
     st === 'Out' || st === 'Injured Reserve' || st === 'Suspension'
       ? 'bad'
-      : st === 'Doubtful'
+      : st === 'Doubtful' || st === 'Questionable'
         ? 'warn'
-        : st === 'Questionable'
-          ? 'warn'
-          : 'neutral';
+        : 'neutral';
   return (
     <View style={{ gap: 6 }}>
       {items.map((i, idx) => (
         <View key={idx} style={{ gap: 2 }}>
           <View style={[s.row, { justifyContent: 'flex-start', gap: 8 }]}>
             <Pill text={i.status} tone={tone(i.status)} />
-            <Text style={[type.body, { color: t.ink, fontWeight: '600' }]}>{i.name}</Text>
+            <Text style={[type.bodyBold, { color: t.ink }]}>{i.name}</Text>
             <Text style={[type.small, { color: t.mute }]}>{i.pos}</Text>
           </View>
           {!!i.detail && i.detail !== 'ir' && (
@@ -263,7 +285,6 @@ export function InjuryList({ items, team }: { items: InjuryEntry[]; team: string
     </View>
   );
 }
-/** Minimal markdown: paragraphs, **bold**, "- " bullets. */
 export function Markdown({ text }: { text: string }) {
   const t = useTheme();
   const blocks = text.split(/\n\s*\n/);
@@ -279,7 +300,7 @@ export function Markdown({ text }: { text: string }) {
                   key={j}
                   style={[s.row, { justifyContent: 'flex-start', alignItems: 'flex-start' }]}
                 >
-                  <Text style={[type.body, { color: t.mute }]}>•</Text>
+                  <Text style={[type.body, { color: t.green }]}>•</Text>
                   <Text style={[type.body, { color: t.ink, flex: 1 }]}>
                     {rich(l.replace(/^\s*[-*]\s+/, ''), t.ink)}
                   </Text>
@@ -297,11 +318,11 @@ export function Markdown({ text }: { text: string }) {
     </View>
   );
 }
-function rich(s: string, color: string) {
-  const parts = s.split(/(\*\*[^*]+\*\*)/g);
+function rich(sx: string, color: string) {
+  const parts = sx.split(/(\*\*[^*]+\*\*)/g);
   return parts.map((p, i) =>
     p.startsWith('**') ? (
-      <Text key={i} style={{ fontWeight: '700', color }}>
+      <Text key={i} style={{ fontFamily: fonts.bodyBold, color }}>
         {p.slice(2, -2)}
       </Text>
     ) : (
@@ -329,7 +350,7 @@ export function Expandable({
         accessibilityState={{ expanded: isOpen }}
       >
         <Text style={[type.h2, { color: t.ink }]}>{title}</Text>
-        <Text style={[type.body, { color: t.mute }]}>{isOpen ? '−' : '+'}</Text>
+        <Text style={[type.mono, { color: t.green }]}>{isOpen ? '−' : '+'}</Text>
       </Pressable>
       {isOpen && (
         <View style={{ paddingHorizontal: space.md, paddingBottom: space.md }}>{children}</View>
@@ -338,8 +359,14 @@ export function Expandable({
   );
 }
 const s = StyleSheet.create({
-  card: { borderWidth: 1, borderRadius: 8, padding: space.md, marginBottom: space.sm },
-  pill: { alignSelf: 'flex-start', paddingHorizontal: 8, paddingVertical: 3, borderRadius: 4 },
+  card: { borderWidth: 1, borderRadius: radius.sm, padding: space.md, marginBottom: space.sm },
+  pill: {
+    alignSelf: 'flex-start',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 4,
+    borderWidth: 1,
+  },
   row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 8 },
   bar: { height: 8, borderRadius: 4, overflow: 'hidden' },
   prow: {
@@ -349,6 +376,6 @@ const s = StyleSheet.create({
     paddingVertical: 10,
     borderBottomWidth: 1,
   },
-  dot: { width: 6, height: 6, borderRadius: 3 },
-  expand: { borderWidth: 1, borderRadius: 8, marginBottom: space.sm },
+  h2wrap: { borderLeftWidth: 3, paddingLeft: 10, marginTop: space.xl, marginBottom: space.sm },
+  expand: { borderWidth: 1, borderRadius: radius.sm, marginBottom: space.sm },
 });

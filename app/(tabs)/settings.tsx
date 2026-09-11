@@ -36,14 +36,14 @@ export default function SettingsScreen() {
       onPress={onPress}
       disabled={loading}
       style={({ pressed }) => ({
-        backgroundColor: primary ? t.turf : t.surface2,
+        backgroundColor: primary ? t.green : t.surface2,
         padding: 12,
         borderRadius: 6,
         alignItems: 'center',
         opacity: pressed || loading ? 0.6 : 1,
       })}
     >
-      <Text style={[type.body, { color: primary ? t.onAccent : t.ink, fontWeight: '700' }]}>
+      <Text style={[type.body, { color: primary ? t.onGreen : t.ink, fontWeight: '700' }]}>
         {label}
       </Text>
     </Pressable>
@@ -165,13 +165,13 @@ export default function SettingsScreen() {
                 paddingHorizontal: 12,
                 paddingVertical: 6,
                 borderRadius: 4,
-                backgroundColor: settings.hoursAhead === d ? t.turf : t.surface2,
+                backgroundColor: settings.hoursAhead === d ? t.green : t.surface2,
               }}
             >
               <Text
                 style={[
                   type.small,
-                  { color: settings.hoursAhead === d ? t.onAccent : t.ink, fontWeight: '700' },
+                  { color: settings.hoursAhead === d ? t.onGreen : t.ink, fontWeight: '700' },
                 ]}
               >
                 {d}h

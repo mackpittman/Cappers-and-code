@@ -2,17 +2,23 @@
 
 NFL touchdown board that updates itself. Weekly research (every team's offseason, offense vs the defense it draws, practice reports) is merged every morning with the live schedule, ESPN's injury feed and prices from The Odds API, then served to an Expo mobile app.
 
+## Brand
+
+The visual system lives in `brand/` (guide, tokens, logos, the two locked characters, campaign references, production prompts). `brand/tokens.json` is the machine-readable source for the app theme (`src/theme.ts`), the board web page, and Discord embed colors. Rules that matter in code: near-black grounds, white carries information, electric green `#B6FF00` is a signal (data, key words, calls to action), never wallpaper; no red/gold; keep the CC marks exact; the two characters are never merged.
+
+Discord: `brand/discord/SERVER_BLUEPRINT.md` has the server structure, role colors, channel copy, welcome and rules posts, plus rendered assets (server icon, banner, invite splash, embed thumbnail, emoji). `scripts/post-discord.mjs` posts the daily digest as brand-aligned embeds when `DISCORD_WEBHOOK_URL` is set (it runs at the end of `update:daily` and the workflow).
+
 ## What is in here
 
-| Path                                  | Purpose                                                                                                                                                                                                                   |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `src/data/research.json`              | The weekly research: per game offseason notes, matchup notes, top-3 TD scorers with estimated probability, value plays, stacks, cross-game parlays.                                                                       |
-| `scripts/fetch-schedule.mjs`          | Current week schedule, status, scores and consensus line from ESPN's public scoreboard (no key).                                                                                                                          |
-| `scripts/fetch-injuries.mjs`          | League-wide injury feed from ESPN (no key), trimmed to name, position, status, note.                                                                                                                                      |
-| `scripts/fetch-odds.mjs`              | Game lines and `player_anytime_td` props from The Odds API. Writes `data/odds/latest.json` and appends a daily row per player to `data/odds/history.jsonl` for price-movement tracking.                                   |
-| `scripts/build-board.mjs`             | Merges everything into `data/board.json`, the single file the app reads. Adds live consensus/best price, edge (est minus implied), opening price and movement, injury report per team, slate-wide top-20 and value lists. |
+| Path                                | Purpose                                                                                                                                                                                                                   |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/data/research.json`            | The weekly research: per game offseason notes, matchup notes, top-3 TD scorers with estimated probability, value plays, stacks, cross-game parlays.                                                                       |
+| `scripts/fetch-schedule.mjs`        | Current week schedule, status, scores and consensus line from ESPN's public scoreboard (no key).                                                                                                                          |
+| `scripts/fetch-injuries.mjs`        | League-wide injury feed from ESPN (no key), trimmed to name, position, status, note.                                                                                                                                      |
+| `scripts/fetch-odds.mjs`            | Game lines and `player_anytime_td` props from The Odds API. Writes `data/odds/latest.json` and appends a daily row per player to `data/odds/history.jsonl` for price-movement tracking.                                   |
+| `scripts/build-board.mjs`           | Merges everything into `data/board.json`, the single file the app reads. Adds live consensus/best price, edge (est minus implied), opening price and movement, injury report per team, slate-wide top-20 and value lists. |
 | `.github/workflows/daily-board.yml` | Runs the four scripts daily at 11:00 UTC (and Sunday 15:00 UTC) and commits the data.                                                                                                                                     |
-| `app/`, `src/`                        | Expo Router app: Board, Games, Game detail, Stacks, Settings.                                                                                                                                                             |
+| `app/`, `src/`                      | Expo Router app: Board, Games, Game detail, Stacks, Settings.                                                                                                                                                             |
 
 ## Daily update flow
 

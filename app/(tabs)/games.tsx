@@ -16,7 +16,7 @@ export default function GamesScreen() {
   return (
     <Screen
       title="Games"
-      subtitle="Every game on the slate with spread, total and vig-free win probability. Tap for the full breakdown."
+      subtitle="Every game on the slate: spread, total, vig-free win probability. Tap a game for the full model."
     >
       {days.map((day) => (
         <View key={day}>

@@ -9,7 +9,7 @@ export default function StacksScreen() {
   return (
     <Screen
       title="Stacks"
-      subtitle="Correlated legs: cross-game parlays first, then the same-game stacks for every matchup."
+      subtitle="Correlated legs only. Cross-game builds first, then same-game stacks for every matchup. The code wins together."
     >
       <H2>Cross-game parlays</H2>
       {board.crossStacks.map((s, i) => (
@@ -17,7 +17,7 @@ export default function StacksScreen() {
       ))}
       <H2>Upset leans</H2>
       {board.upsetLeans.map((u) => (
-        <Card key={u.team} accent="gold">
+        <Card key={u.team} accent="contrarian">
           <Label>
             {u.team} ML {fmtAmerican(u.price)} · {pct(u.winProb)} win prob
           </Label>

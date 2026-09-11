@@ -1,10 +1,9 @@
 import React from 'react';
 import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
-import { useTheme } from '@/theme';
+import { fonts, palette } from '@/theme';
 
 export default function TabLayout() {
-  const t = useTheme();
   const icon =
     (name: React.ComponentProps<typeof Ionicons>['name']) =>
     ({ color }: { color: string }) => <Ionicons name={name} size={22} color={color} />;
@@ -12,12 +11,18 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: t.turf,
-        tabBarInactiveTintColor: t.mute,
-        tabBarStyle: { backgroundColor: t.surface, borderTopColor: t.line },
+        tabBarActiveTintColor: palette.green,
+        tabBarInactiveTintColor: palette.mute,
+        tabBarStyle: { backgroundColor: palette.surface, borderTopColor: palette.line },
+        tabBarLabelStyle: {
+          fontFamily: fonts.displayMed,
+          fontSize: 12,
+          letterSpacing: 0.8,
+          textTransform: 'uppercase',
+        },
       }}
     >
-      <Tabs.Screen name="index" options={{ title: 'Board', tabBarIcon: icon('podium-outline') }} />
+      <Tabs.Screen name="index" options={{ title: 'Edge', tabBarIcon: icon('flash-outline') }} />
       <Tabs.Screen
         name="games"
         options={{ title: 'Games', tabBarIcon: icon('american-football-outline') }}
