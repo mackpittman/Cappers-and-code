@@ -54,3 +54,20 @@ export async function fetchBoardPreview(): Promise<unknown | null> {
   if (error) throw error;
   return data ?? null;
 }
+
+/** Starts Stripe Checkout for the signed-in user and returns the URL to open in the browser. */
+export async function startCheckout(plan: 'monthly' | 'founder_season'): Promise<string> {
+  const { data, error } = await supabase.functions.invoke('stripe-checkout', { body: { plan } });
+  if (error)
+    throw new Error((await error.context?.json?.().catch(() => null))?.error ?? error.message);
+  if (!data?.url) throw new Error(data?.error ?? 'Checkout unavailable');
+  return data.url as string;
+}
+/** Returns the Stripe Customer Portal URL (cancel, update card, receipts). */
+export async function openPortal(): Promise<string> {
+  const { data, error } = await supabase.functions.invoke('stripe-portal', { body: {} });
+  if (error)
+    throw new Error((await error.context?.json?.().catch(() => null))?.error ?? error.message);
+  if (!data?.url) throw new Error(data?.error ?? 'Portal unavailable');
+  return data.url as string;
+}

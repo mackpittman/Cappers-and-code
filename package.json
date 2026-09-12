@@ -19,7 +19,8 @@
     "post:discord": "node scripts/post-discord.mjs",
     "publish:board": "node scripts/publish-board.mjs",
     "grade": "node scripts/grade-results.mjs",
-    "validate:research": "node scripts/validate-research.mjs"
+    "validate:research": "node scripts/validate-research.mjs",
+    "stripe:setup": "node scripts/stripe-setup.mjs"
   },
   "dependencies": {
     "@expo-google-fonts/barlow-condensed": "^0.4.1",

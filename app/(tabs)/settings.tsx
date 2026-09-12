@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Alert, Linking, Pressable, Text, TextInput, View } from 'react-native';
 import { Screen } from '@/components/Screen';
+import { openPortal } from '@/lib/supabase';
+import { LegalLinks } from '@/components/LegalLinks';
+import { SITE_URL } from '@/lib/site';
 import { Body, Card, H2, Label } from '@/components/ui';
 import { useBoard } from '@/lib/store';
 import { ago } from '@/lib/format';
@@ -88,6 +91,9 @@ export default function SettingsScreen() {
             Not signed in. Open the Edge tab to sign in with your email.
           </Body>
         )}
+        <View style={{ height: space.sm }} />
+        {button('Membership on the web', () => Linking.openURL(SITE_URL))}
+        <LegalLinks />
       </Card>
       <H2>Daily board</H2>
       <Card>

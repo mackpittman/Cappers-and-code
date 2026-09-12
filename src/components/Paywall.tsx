@@ -3,6 +3,8 @@ import { Linking, Pressable, Text, TextInput, View } from 'react-native';
 import { copy, fonts, palette, radius, space, type } from '@/theme';
 import { useBoard } from '@/lib/store';
 import { Card, Label, Pill } from './ui';
+import { startCheckout } from '@/lib/supabase';
+import { LegalLinks } from './LegalLinks';
 
 /** Sign-in and membership gate. Shown on the Edge tab to anyone who is not an active member. */
 export function Paywall() {
@@ -213,6 +215,7 @@ export function Paywall() {
             By continuing you confirm you are of legal age in your jurisdiction and understand this
             is analysis, not financial advice. Units, not dollars.
           </Text>
+          <LegalLinks />
         </Card>
       ) : (
         <Card>
@@ -226,21 +229,26 @@ export function Paywall() {
                 No active membership on this account yet.
               </Text>
               <View style={{ height: space.sm }} />
-              {checkoutUrl ? (
-                <Button
-                  label="Start membership · $10/mo"
-                  primary
-                  onPress={() =>
-                    Linking.openURL(
-                      `${checkoutUrl}${checkoutUrl.includes('?') ? '&' : '?'}email=${encodeURIComponent(session.user.email ?? '')}`,
-                    )
-                  }
-                />
-              ) : (
-                <Text style={[type.small, { color: palette.mute }]}>
-                  Checkout opens with the next release. Founders are being added by hand until then.
-                </Text>
-              )}
+              <Button
+                label="Start membership · $10/mo"
+                primary
+                onPress={() =>
+                  run(async () => {
+                    const url = await startCheckout('monthly');
+                    await Linking.openURL(url);
+                  }, 'Opening secure checkout…')
+                }
+              />
+              <View style={{ height: space.xs }} />
+              <Button
+                label="Founder season pass · $20"
+                onPress={() =>
+                  run(async () => {
+                    const url = await startCheckout('founder_season');
+                    await Linking.openURL(url);
+                  }, 'Opening secure checkout…')
+                }
+              />
               <View style={{ height: space.xs }} />
               <Button
                 label="I already paid, refresh"
@@ -250,6 +258,7 @@ export function Paywall() {
           )}
           <View style={{ height: space.xs }} />
           <Button label="Sign out" onPress={() => run(signOut, 'Signed out.')} />
+          <LegalLinks />
         </Card>
       )}
       {!!msg && <Text style={[type.small, { color: palette.ink2 }]}>{msg}</Text>}

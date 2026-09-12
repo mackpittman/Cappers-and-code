@@ -10,15 +10,15 @@ Supabase holds accounts and entitlements. Stripe takes the money on the web (Che
 
 ## Checkpoint 0 — Decisions (Mack, 15 minutes)
 
-| Decision | Recommendation |
-|---|---|
-| Price | $10/month recurring. Keep the brand's founder offer as a second product: $20 for the football season, first 100 only, grandfathered through NBA. |
-| Free tier | Discord free channels (#welcome, #general, #model-talk) and a locked app that shows yesterday's Locked In list as a teaser. Everything else is Member-only. |
-| Where money is taken | Web (Stripe Checkout) first. App links out to it. In-app purchase deferred to Checkpoint 8. |
-| Sports scope on the paywall page | NFL now; CFB and NBA as "coming" per the brand bio. |
-| Domain | Needed for checkout, legal pages, and Discord return links. Suggest cappersandcode.com or .co. |
-| Supabase project | A new project named cappers-and-code (do not reuse the golf projects). |
-| Legal entity for Stripe | Which name, address, and bank account Stripe should pay out to. |
+| Decision                         | Recommendation                                                                                                                                              |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Price                            | $10/month recurring. Keep the brand's founder offer as a second product: $20 for the football season, first 100 only, grandfathered through NBA.            |
+| Free tier                        | Discord free channels (#welcome, #general, #model-talk) and a locked app that shows yesterday's Locked In list as a teaser. Everything else is Member-only. |
+| Where money is taken             | Web (Stripe Checkout) first. App links out to it. In-app purchase deferred to Checkpoint 8.                                                                 |
+| Sports scope on the paywall page | NFL now; CFB and NBA as "coming" per the brand bio.                                                                                                         |
+| Domain                           | Needed for checkout, legal pages, and Discord return links. Suggest cappersandcode.com or .co.                                                              |
+| Supabase project                 | A new project named cappers-and-code (do not reuse the golf projects).                                                                                      |
+| Legal entity for Stripe          | Which name, address, and bank account Stripe should pay out to.                                                                                             |
 
 Done when: answers are in this file.
 
@@ -34,23 +34,26 @@ Status: Supabase project `cappers-and-code` (Roomrush org, free tier) holds the 
 Sign-in is email + password (no email delivery needed). Needs from Mack: in Supabase → Authentication → Providers → Email, turn **Confirm email** off until custom SMTP exists (free plan cannot edit email templates without it). Later: Resend SMTP with the brand domain, then re-enable confirmation and the email-code flow. Apple Developer account for Sign in with Apple.
 Done when: a test user with a manually set entitlement sees the live board on the phone with no token pasted anywhere; a user without it sees the paywall.
 
-## Checkpoint 2 — Stripe (Claude builds, Mack activates)
+## Checkpoint 2 — Stripe (Claude builds, Mack activates) — BUILT 2026-09-12, dormant until the Stripe key
 
 - Products: Membership $10/month; Founder Season Pass $20 one-time with entitlement through a fixed date; coupon support.
 - Edge Functions: `checkout` (creates a Checkout Session for the signed-in user), `portal` (Customer Portal link), `stripe-webhook` (checkout completed, invoice paid, subscription updated and deleted, charge refunded) writing `subscriptions` and entitlements.
 - Customer Portal configured for cancel, update card, and receipts. Automatic tax on if selling outside one state.
 - Test mode end to end with Stripe test cards, including failed payment and cancel-at-period-end.
 
+Status: edge functions `stripe-checkout`, `stripe-portal`, `stripe-webhook` are deployed (source in `supabase/functions/`), the `stripe_events` idempotency table and `profiles.stripe_customer_id` exist, and `scripts/stripe-setup.mjs` creates both products, the webhook endpoint, and stores every id and secret in `pipeline_config` through the `set_config` RPC. Until the key is set, checkout returns "Checkout is not open yet" and founders are granted by hand with `grant_manual_access`.
+Activate: paste the `sk_test_` key in chat, Claude runs `pnpm stripe:setup` with it in the process environment only (never written to a file), then a test-card purchase is run end to end. Repeat with the live key before launch.
 Needs from Mack: Stripe account activated with the business details, and a confirmation from Stripe support that "sports betting analysis membership" is an accepted information-service business on the account.
 Done when: test card checkout unlocks the board within 10 seconds; cancel locks it at period end; refund locks it immediately.
 
-## Checkpoint 3 — Paywall and membership UX in the app (Claude)
+## Checkpoint 3 — Paywall and membership UX in the app (Claude) — DONE 2026-09-12 (Discord link waits on Checkpoint 4)
 
 - Branded Welcome, Sign in, and Paywall screens (near-black, CC lockup, one green CTA, the offer, what members get, disclaimers).
 - Locked state: teaser board with blur, "Unlock the Edge" button that opens web checkout in the browser and returns to the app through the `cappers://` scheme.
 - Settings: membership status, Manage subscription (portal), Sign out, Link Discord.
 - Free preview refreshes daily so the teaser is never stale.
 
+Status: paywall shows two checkout buttons (monthly, founder pass) that open Stripe Checkout in the browser; Settings shows membership status, Manage subscription (Customer Portal), the web membership page, legal links, and Sign out. Free preview refreshes with the daily pipeline. Link Discord arrives with Checkpoint 4.
 Done when: install fresh, sign up, hit paywall, pay with a test card in the browser, return to the app, board unlocked; sign out and back in keeps access.
 
 ## Checkpoint 4 — Discord gating (Claude, needs the bot token)
@@ -64,24 +67,26 @@ Done when: install fresh, sign up, hit paywall, pay with a test card in the brow
 Needs from Mack: bot token and the bot authorized into the server.
 Done when: a test account pays, links, and gets the Member role in under a minute; cancelling removes it on the nightly run.
 
-## Checkpoint 5 — Web landing and checkout page (Claude, needs the domain)
+## Checkpoint 5 — Web landing and checkout page (Claude, needs the domain) — LIVE 2026-09-12 on the Supabase URL
 
 - One-page site on brand: hero with the Core Robot, "AI Models. Human Insight. One Edge.", what you get (daily board, TD board, props, Discord), the $10 CTA and founder offer, FAQ, responsible-gambling and no-guarantee language, footer with @cappersandcode.
 - Sign up and pay without the app; success page with "Open the app" and "Join the Discord" buttons.
 - Hosted on Vercel or Netlify with the domain; legal pages linked.
 
+Status: the `site` edge function serves the landing page (hero, what members get, both passes, sign in / create account, FAQ, disclaimers), `/success`, and the four legal pages at `https://vcduwtgbclkwcxquqicl.supabase.co/functions/v1/site`. Screenshots in `docs/site-landing.png`, `docs/site-success.png`, `docs/site-terms.png`. When the domain exists, point it at the function (or move the same HTML to Vercel) and update `site_url` in `pipeline_config` plus `extra.siteUrl` in `app.json`; every link follows. The Core Robot hero art is not on the page yet: it needs a public image host (Supabase Storage bucket or the domain host), tracked as a placeholder.
 Needs from Mack: domain pointed at the host.
 Done when: someone with only the link can pay and land in Discord with the Member role.
 
-## Checkpoint 6 — Legal and compliance (Claude drafts, Mack approves)
+## Checkpoint 6 — Legal and compliance (Claude drafts, Mack approves) — DRAFTS LIVE 2026-09-12, awaiting approval
 
 - Terms of Service, Privacy Policy, Refund Policy, Responsible Gambling page, "not financial advice / no guaranteed results" disclosure, 21+ (or 18+ by jurisdiction) notice at signup and on the site.
 - Stripe descriptor and receipt text.
 - Data retention: what is stored (email, Discord id, subscription state), nothing about bets placed.
 
+Status: Terms, Privacy, Refunds, and Responsible Gambling are live as v0.1 drafts (marked "pending founder review" on the page), linked from the site footer, the sign-up form, the app paywall, and Settings. The 21+ acknowledgement is required on web sign-up and stated on the app paywall. Stripe descriptor and receipt text are set by `stripe-setup` when the key arrives. Not yet: legal review by a person, the Discord #rules post (Checkpoint 4).
 Done when: pages are live and linked from the app Settings, the paywall, checkout, and the Discord #rules post.
 
-## Checkpoint 7 — Weekly research automation (Claude)
+## Checkpoint 7 — Weekly research automation (Claude) — DONE 2026-09-12
 
 The model currently holds Week 1. The season needs a Tuesday refresh.
 
