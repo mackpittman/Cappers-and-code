@@ -20,7 +20,8 @@
     "publish:board": "node scripts/publish-board.mjs",
     "grade": "node scripts/grade-results.mjs",
     "validate:research": "node scripts/validate-research.mjs",
-    "stripe:setup": "node scripts/stripe-setup.mjs"
+    "stripe:setup": "node scripts/stripe-setup.mjs",
+    "build:web": "expo export --platform web && node scripts/postbuild-web.mjs dist"
   },
   "dependencies": {
     "@expo-google-fonts/barlow-condensed": "^0.4.1",

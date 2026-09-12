@@ -3,12 +3,14 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import * as SplashScreen from 'expo-splash-screen';
 import { useFonts } from 'expo-font';
-import {
-  BarlowCondensed_600SemiBold,
-  BarlowCondensed_700Bold,
-} from '@expo-google-fonts/barlow-condensed';
-import { Manrope_500Medium, Manrope_700Bold } from '@expo-google-fonts/manrope';
-import { JetBrainsMono_500Medium, JetBrainsMono_700Bold } from '@expo-google-fonts/jetbrains-mono';
+// Per-weight imports: the package index re-exports every weight, which drags all 36 .ttf files
+// into the web bundle. These paths pull only the six faces the theme uses.
+import { BarlowCondensed_600SemiBold } from '@expo-google-fonts/barlow-condensed/600SemiBold';
+import { BarlowCondensed_700Bold } from '@expo-google-fonts/barlow-condensed/700Bold';
+import { Manrope_500Medium } from '@expo-google-fonts/manrope/500Medium';
+import { Manrope_700Bold } from '@expo-google-fonts/manrope/700Bold';
+import { JetBrainsMono_500Medium } from '@expo-google-fonts/jetbrains-mono/500Medium';
+import { JetBrainsMono_700Bold } from '@expo-google-fonts/jetbrains-mono/700Bold';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { BoardProvider } from '@/lib/store';
