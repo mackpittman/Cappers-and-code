@@ -6,6 +6,7 @@ import { Screen } from '@/components/Screen';
 import { Body, Card, H2, Label, Pill, PlayerRow } from '@/components/ui';
 import { useBoard } from '@/lib/store';
 import { Paywall } from '@/components/Paywall';
+import { RecordCard } from '@/components/Record';
 import { supabaseConfigured } from '@/lib/supabase';
 
 export default function BoardScreen() {
@@ -54,6 +55,8 @@ export default function BoardScreen() {
               ))}
             </>
           )}
+          <H2>Record</H2>
+          <RecordCard board={board} />
           <H2>TD Board</H2>
           <View>
             {board.slateTop.map((p, i) => (

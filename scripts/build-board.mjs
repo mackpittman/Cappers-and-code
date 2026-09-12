@@ -9,6 +9,11 @@ const injuries = readJson(path.join(DATA, 'injuries.json'), { teams: {} });
 const odds = readJson(path.join(DATA, 'odds', 'latest.json'), { events: [] });
 const history = readLines(path.join(DATA, 'odds', 'history.jsonl'));
 const credits = readLines(path.join(DATA, 'odds', 'credits.jsonl'));
+const weekResults = readJson(
+  path.join(DATA, 'results', `${research.season}-w${String(research.week).padStart(2, '0')}.json`),
+  null,
+);
+const record = readJson(path.join(DATA, 'results', 'record.json'), null);
 function readLines(file) {
   try {
     return fs

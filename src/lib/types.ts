@@ -124,6 +124,19 @@ export type Game = {
   }[];
   injuryReport?: { away: InjuryEntry[]; home: InjuryEntry[]; fetchedAt: string | null };
 };
+export type Tally = { wins: number; losses: number; pushes: number; pending: number };
+export type ResultItem = {
+  game: string;
+  gameLabel: string;
+  final: string | null;
+  type: 'side' | 'total' | 'atd' | 'prop';
+  label: string;
+  bucket: string;
+  result: 'win' | 'loss' | 'push' | 'pending' | 'ungraded';
+  conf?: number;
+  est?: number;
+  actual?: number | null;
+};
 export type Board = {
   season: number;
   week: number;
@@ -151,6 +164,18 @@ export type Board = {
   slateTop: Pick[];
   slateValue: Pick[];
   bestBets?: BestBet[];
+  results?: {
+    gradedAt: string;
+    finals: number;
+    games: number;
+    summary: Record<string, Tally>;
+    items: ResultItem[];
+  } | null;
+  record?: {
+    updatedAt: string;
+    season_totals: Record<string, Tally>;
+    weeks: { week: number; finals: number; games: number; summary: Record<string, Tally> }[];
+  } | null;
   crossStacks: Stack[];
   upsetLeans: { team: string; price: number; winProb: number; why: string }[];
 };

@@ -32,6 +32,11 @@ const td = (board.slateTop || []).slice(0, maxTd).map((p, i) => {
   const edge = p.edge != null ? `${p.edge >= 0 ? '+' : ''}${Math.round(p.edge * 100)}` : '—';
   return `\`${String(i + 1).padStart(2)}\` **${p.name}** ${p.team} · ${price} · est ${pct(p.est)} · edge ${edge}`;
 });
+const rec = board.record?.season_totals?.lockedIn;
+const recLine =
+  rec && rec.wins + rec.losses > 0
+    ? `Locked In record: **${rec.wins}-${rec.losses}${rec.pushes ? `-${rec.pushes}` : ''}** this season (graded from final box scores, nothing else).`
+    : 'Record starts when the first games go final. Real results only.';
 const fresh = `Prices ${board.oddsFetchedAt ? new Date(board.oddsFetchedAt).toUTCString().replace(' GMT', ' UTC') : 'research only'} · lines ${board.linesSource || 'research'}`;
 
 const payload = {
@@ -47,7 +52,7 @@ const payload = {
     { title: 'TD BOARD', description: td.join('\n') || 'No TD board yet.', color: GREEN },
     {
       title: 'TRUST THE CODE',
-      description: `${fresh}\nUnits, not dollars. Real data, real wins, no fluff.`,
+      description: `${recLine}\n${fresh}\nUnits, not dollars. Real data, real wins, no fluff.`,
       color: GREEN,
       footer: { text: `Cappers & Code · @cappersandcode` },
     },

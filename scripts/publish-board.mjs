@@ -24,13 +24,11 @@ const preview = {
   week: board.week,
   generatedAt: board.generatedAt,
   oddsFetchedAt: board.oddsFetchedAt,
-  lockedIn: (board.bestBets || [])
-    .slice(0, 5)
-    .map((b) => ({
-      gameLabel: b.gameLabel,
-      market: /over|under/i.test(b.bet) ? 'Total' : /ATD/.test(b.bet) ? 'Anytime TD' : 'Side',
-      conf: b.conf,
-    })),
+  lockedIn: (board.bestBets || []).slice(0, 5).map((b) => ({
+    gameLabel: b.gameLabel,
+    market: /over|under/i.test(b.bet) ? 'Total' : /ATD/.test(b.bet) ? 'Anytime TD' : 'Side',
+    conf: b.conf,
+  })),
   tdBoard: (board.slateTop || [])
     .slice(0, 10)
     .map((p) => ({ name: p.name, team: p.team, pos: p.pos })),
@@ -40,6 +38,8 @@ const preview = {
     home: g.home.abbr,
     kickoff: g.kickoff,
   })),
+  record: board.record ? board.record.season_totals : null,
+  lastWeek: board.results ? board.results.summary : null,
   memberCount: {
     games: (board.games || []).length,
     picks: (board.games || []).reduce((n, g) => n + g.top3.length + g.value.length, 0),

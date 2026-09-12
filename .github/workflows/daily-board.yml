@@ -44,6 +44,7 @@ jobs:
           node scripts/fetch-schedule.mjs
           node scripts/fetch-injuries.mjs
           node scripts/fetch-odds.mjs
+          node scripts/grade-results.mjs
           node scripts/build-board.mjs
           node scripts/publish-board.mjs
           node scripts/post-discord.mjs
