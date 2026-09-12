@@ -14,7 +14,10 @@
     },
     "newArchEnabled": true,
     "backgroundColor": "#050608",
-    "ios": { "supportsTablet": true, "bundleIdentifier": "com.cappersandcode.app" },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cappersandcode.app"
+    },
     "android": {
       "package": "com.cappersandcode.app",
       "adaptiveIcon": {
@@ -22,9 +25,15 @@
         "backgroundColor": "#050608"
       }
     },
-    "web": { "bundler": "metro", "output": "static", "favicon": "./assets/favicon.png" },
-    "plugins": ["expo-router"],
-    "experiments": { "typedRoutes": true },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": ["expo-router", "expo-font", "expo-splash-screen"],
+    "experiments": {
+      "typedRoutes": true
+    },
     "extra": {
       "supabaseUrl": "https://vcduwtgbclkwcxquqicl.supabase.co",
       "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZjZHV3dGdiY2xrd2N4cXVxaWNsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODkxNjM4MzksImV4cCI6MjEwNDczOTgzOX0.0IpR2TAP0Cn_fo8aDLCSbMRRUIJcHqPV7ajB0ASuk-k",

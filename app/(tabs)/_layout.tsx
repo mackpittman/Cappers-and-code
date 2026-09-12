@@ -6,7 +6,9 @@ import { fonts, palette } from '@/theme';
 export default function TabLayout() {
   const icon =
     (name: React.ComponentProps<typeof Ionicons>['name']) =>
-    ({ color }: { color: string }) => <Ionicons name={name} size={22} color={color} />;
+    ({ color }: { color: import('react-native').ColorValue }) => (
+      <Ionicons name={name} size={22} color={color as string} />
+    );
   return (
     <Tabs
       screenOptions={{
