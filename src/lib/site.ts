@@ -1,10 +1,10 @@
-// Public web pages served by the `site` edge function (landing, checkout, legal drafts).
+// Public site on GitHub Pages (landing, checkout, legal drafts, and the web build of this app).
 // The URL moves to the custom domain later by changing app.json extra.siteUrl only.
 import Constants from 'expo-constants';
 
 const extra = (Constants.expoConfig?.extra ?? {}) as { siteUrl?: string };
 export const SITE_URL = (
-  extra.siteUrl ?? 'https://vcduwtgbclkwcxquqicl.supabase.co/functions/v1/site'
+  extra.siteUrl ?? 'https://mackpittman.github.io/Cappers-and-code'
 ).replace(/\/+$/, '');
 
 export type LegalPage = 'terms' | 'privacy' | 'refunds' | 'responsible-gambling';

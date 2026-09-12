@@ -95,7 +95,20 @@ The model currently holds Week 1. The season needs a Tuesday refresh.
 
 Done when: Week 2 board appears on Tuesday without anyone touching it, and Week 1 has a graded record in the app.
 
-## Checkpoint 8 — App distribution (Claude configures, Mack owns the accounts)
+## Checkpoint 8 — App distribution (Claude configures, Mack owns the accounts) — WEB APP READY 2026-09-12, Pages switch pending
+
+Web first, stores later. The app ships as a web app on GitHub Pages: members open a link in Safari or Chrome and add it to the home screen (PWA manifest, icons, dark standalone shell). No Apple review.
+
+- `pnpm build:site` renders the public site (landing, /success, /legal/*) from `site/pages.mjs` and exports the Expo web build into `dist/app` (`scripts/build-site.mjs`, `scripts/postbuild-web.mjs`).
+- `.github/workflows/deploy-web.yml` publishes `dist` to GitHub Pages on every push that touches the app or site. Deep links survive a refresh through the root 404 bounce.
+- Supabase cannot serve HTML on the default domain (it rewrites `text/html` to `text/plain`), so the `site` edge function now only redirects old links to the Pages URL; `site_url` in `pipeline_config` and `extra.siteUrl` in `app.json` point at `https://mackpittman.github.io/Cappers-and-code`.
+- Screenshots: `docs/site-landing-phone.png`, `docs/web-app-phone.png`, `docs/web-app-games.png`, `docs/web-app-settings.png`.
+
+Needs from Mack (one click): repo Settings → Pages → Build and deployment → Source: **GitHub Actions**. Then re-run "Deploy site and web app" (or push anything). Later: a custom domain in the same Pages settings.
+Done when: the Pages URL loads the landing page, `/app/` signs in and shows the board, and Add to Home Screen installs it with the CC icon.
+
+### Native builds (later)
+
 
 - EAS project, build profiles, TestFlight internal group, Google Play internal track.
 - App Store notes: gambling-related content requires a 17+ rating; because purchases happen on the web and the app only signs existing members in, no in-app purchase is required for the first submission. If Apple asks for IAP, add Checkpoint 8b: StoreKit subscription mirrored into `subscriptions` through App Store Server Notifications.

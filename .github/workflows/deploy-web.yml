@@ -1,13 +1,15 @@
-name: Deploy web app
+name: Deploy site and web app
 
-# Publishes the Expo web build to GitHub Pages so members can use the app from a link
-# (and add it to their home screen) without an app store.
+# Publishes the public site (landing, legal pages) and the Expo web app to GitHub Pages so members
+# use the app from a link and add it to their home screen. No app store involved.
+# One-time setup: repo Settings -> Pages -> Build and deployment -> Source: "GitHub Actions".
 on:
   push:
     branches: [main]
     paths:
       - 'app/**'
       - 'src/**'
+      - 'site/**'
       - 'brand/**'
       - 'assets/**'
       - 'public/**'
@@ -15,6 +17,7 @@ on:
       - 'app.config.js'
       - 'package.json'
       - 'pnpm-lock.yaml'
+      - 'scripts/build-site.mjs'
       - 'scripts/postbuild-web.mjs'
       - '.github/workflows/deploy-web.yml'
   workflow_dispatch:
@@ -44,11 +47,13 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           enablement: true
-      - name: Export web build
+      - name: Build site and web app
         env:
-          EXPO_WEB_BASE_URL: ${{ steps.pages.outputs.base_path }}
+          SITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          EXPO_WEB_BASE_URL: ${{ steps.pages.outputs.base_path }}/app
+          WEB_APP_URL: ${{ steps.pages.outputs.origin }}${{ steps.pages.outputs.base_path }}/app
           CI: '1'
-        run: pnpm exec expo export --platform web && node scripts/postbuild-web.mjs dist
+        run: pnpm build:site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
