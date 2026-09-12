@@ -31,7 +31,7 @@ Done when: answers are in this file.
 - App: Supabase client, sign-in screen, board fetched from the `board` function with the session token; unauthenticated or unentitled users see the paywall screen.
 
 Status: Supabase project `cappers-and-code` (Roomrush org, free tier) holds the schema, the publish function and the gated readers; the pipeline publishes after every run; the app signs in with an email code and shows the paywall to non-members.
-Needs from Mack: in Supabase → Authentication → Email Templates → Magic Link, add `{{ .Token }}` to the body so the 6-digit code is emailed (the default template only sends a link); later, custom SMTP (Resend) because the built-in mailer allows only a few emails per hour. Apple Developer account for Sign in with Apple.
+Sign-in is email + password (no email delivery needed). Needs from Mack: in Supabase → Authentication → Providers → Email, turn **Confirm email** off until custom SMTP exists (free plan cannot edit email templates without it). Later: Resend SMTP with the brand domain, then re-enable confirmation and the email-code flow. Apple Developer account for Sign in with Apple.
 Done when: a test user with a manually set entitlement sees the live board on the phone with no token pasted anywhere; a user without it sees the paywall.
 
 ## Checkpoint 2 — Stripe (Claude builds, Mack activates)

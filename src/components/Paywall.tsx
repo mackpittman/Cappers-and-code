@@ -11,11 +11,15 @@ export function Paywall() {
     entitlement,
     preview,
     signInWithEmail,
+    signInWithPassword,
+    signUpWithPassword,
     verifyCode,
     signOut,
     checkoutUrl,
     refreshBoard,
   } = useBoard();
+  const [mode, setMode] = useState<'signin' | 'signup' | 'code'>('signin');
+  const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
   const [code, setCode] = useState('');
   const [sent, setSent] = useState(false);
@@ -92,37 +96,95 @@ export function Paywall() {
 
       {!session ? (
         <Card>
-          <Label>
-            {sent
-              ? 'Step 2 of 2: enter the code from your email'
-              : 'Step 1 of 2: sign in with email'}
-          </Label>
+          <View style={{ flexDirection: 'row', gap: 8, marginBottom: space.sm }}>
+            {(['signin', 'signup', 'code'] as const).map((m) => (
+              <Pressable
+                key={m}
+                onPress={() => {
+                  setMode(m);
+                  setSent(false);
+                  setMsg(null);
+                }}
+                style={{
+                  paddingHorizontal: 12,
+                  paddingVertical: 6,
+                  borderRadius: 4,
+                  backgroundColor: mode === m ? palette.green : palette.surface2,
+                }}
+              >
+                <Text
+                  style={[
+                    type.label,
+                    { color: mode === m ? palette.onGreen : palette.ink, letterSpacing: 1 },
+                  ]}
+                >
+                  {m === 'signin' ? 'Sign in' : m === 'signup' ? 'Create account' : 'Email code'}
+                </Text>
+              </Pressable>
+            ))}
+          </View>
+          <TextInput
+            id="email"
+            value={email}
+            onChangeText={setEmail}
+            autoCapitalize="none"
+            autoCorrect={false}
+            keyboardType="email-address"
+            placeholder="you@email.com"
+            placeholderTextColor={palette.mute}
+            style={input}
+          />
           <View style={{ height: space.sm }} />
-          {!sent ? (
+          {mode !== 'code' ? (
             <>
               <TextInput
-                id="email"
-                value={email}
-                onChangeText={setEmail}
+                id="password"
+                value={password}
+                onChangeText={setPassword}
+                secureTextEntry
                 autoCapitalize="none"
-                autoCorrect={false}
-                keyboardType="email-address"
-                placeholder="you@email.com"
+                placeholder={mode === 'signup' ? 'Choose a password (8+ characters)' : 'Password'}
                 placeholderTextColor={palette.mute}
                 style={input}
               />
               <View style={{ height: space.sm }} />
-              <Button
-                label="Send code"
-                primary
-                onPress={() =>
-                  run(async () => {
-                    await signInWithEmail(email);
-                    setSent(true);
-                  }, 'Code sent. Check your inbox.')
-                }
-              />
+              {mode === 'signin' ? (
+                <Button
+                  label="Sign in"
+                  primary
+                  onPress={() =>
+                    run(async () => {
+                      await signInWithPassword(email, password);
+                      await refreshBoard();
+                    }, 'Signed in.')
+                  }
+                />
+              ) : (
+                <Button
+                  label="Create account"
+                  primary
+                  onPress={() =>
+                    run(async () => {
+                      const r = await signUpWithPassword(email, password);
+                      if (r === 'signed_in') await refreshBoard();
+                      else
+                        throw new Error('Check your email to confirm the account, then sign in.');
+                    }, 'Account created. You are signed in.')
+                  }
+                />
+              )}
             </>
+          ) : !sent ? (
+            <Button
+              label="Send code"
+              primary
+              onPress={() =>
+                run(async () => {
+                  await signInWithEmail(email);
+                  setSent(true);
+                }, 'Code sent. Check your inbox.')
+              }
+            />
           ) : (
             <>
               <TextInput
@@ -144,14 +206,6 @@ export function Paywall() {
                     await refreshBoard();
                   }, 'Signed in.')
                 }
-              />
-              <View style={{ height: space.xs }} />
-              <Button
-                label="Use a different email"
-                onPress={() => {
-                  setSent(false);
-                  setCode('');
-                }}
               />
             </>
           )}

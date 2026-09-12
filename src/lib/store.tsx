@@ -56,6 +56,8 @@ type Ctx = {
     errors: string[];
   }>;
   signInWithEmail: (email: string) => Promise<void>;
+  signInWithPassword: (email: string, password: string) => Promise<void>;
+  signUpWithPassword: (email: string, password: string) => Promise<'signed_in' | 'confirm_email'>;
   verifyCode: (email: string, code: string) => Promise<void>;
   signOut: () => Promise<void>;
   refreshEntitlement: () => Promise<void>;
@@ -197,6 +199,21 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
     });
     if (error) throw error;
   }, []);
+  const signInWithPassword = useCallback(async (email: string, password: string) => {
+    const { error } = await supabase.auth.signInWithPassword({
+      email: email.trim().toLowerCase(),
+      password,
+    });
+    if (error) throw error;
+  }, []);
+  const signUpWithPassword = useCallback(async (email: string, password: string) => {
+    const { data, error } = await supabase.auth.signUp({
+      email: email.trim().toLowerCase(),
+      password,
+    });
+    if (error) throw error;
+    return data.session ? ('signed_in' as const) : ('confirm_email' as const);
+  }, []);
   const verifyCode = useCallback(async (email: string, code: string) => {
     const { error } = await supabase.auth.verifyOtp({
       email: email.trim().toLowerCase(),
@@ -263,6 +280,8 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
       refreshLines,
       refreshPrices,
       signInWithEmail,
+      signInWithPassword,
+      signUpWithPassword,
       verifyCode,
       signOut,
       refreshEntitlement,
@@ -283,6 +302,8 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
       refreshLines,
       refreshPrices,
       signInWithEmail,
+      signInWithPassword,
+      signUpWithPassword,
       verifyCode,
       signOut,
       refreshEntitlement,
