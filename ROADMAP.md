@@ -22,7 +22,7 @@ Supabase holds accounts and entitlements. Stripe takes the money on the web (Che
 
 Done when: answers are in this file.
 
-## Checkpoint 1 — Accounts and entitled board (Claude)
+## Checkpoint 1 — Accounts and entitled board (Claude) — BACKEND DONE 2026-09-12, app in test
 
 - Supabase project: tables `profiles`, `subscriptions` (stripe ids, status, current_period_end, plan), `discord_links`, `entitlements` view; row-level security so a user can only read their own rows.
 - Auth: email one-time code plus Sign in with Apple. Age and responsible-gambling acknowledgement stored on the profile at signup.
@@ -30,7 +30,8 @@ Done when: answers are in this file.
 - Routine updated to upload after each run (service key lives in the Routine, never in the repo).
 - App: Supabase client, sign-in screen, board fetched from the `board` function with the session token; unauthenticated or unentitled users see the paywall screen.
 
-Needs from Mack: Supabase project created (or permission to create it from this session), Apple Developer account for Sign in with Apple.
+Status: Supabase project `cappers-and-code` (Roomrush org, free tier) holds the schema, the publish function and the gated readers; the pipeline publishes after every run; the app signs in with an email code and shows the paywall to non-members.
+Needs from Mack: in Supabase → Authentication → Email Templates → Magic Link, add `{{ .Token }}` to the body so the 6-digit code is emailed (the default template only sends a link); later, custom SMTP (Resend) because the built-in mailer allows only a few emails per hour. Apple Developer account for Sign in with Apple.
 Done when: a test user with a manually set entitlement sees the live board on the phone with no token pasted anywhere; a user without it sees the paywall.
 
 ## Checkpoint 2 — Stripe (Claude builds, Mack activates)

@@ -34,6 +34,9 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          BOARD_PUBLISH_SECRET: ${{ secrets.BOARD_PUBLISH_SECRET }}
           FORCE_PHASE: ${{ github.event.inputs.force_phase }}
           CREDIT_RESERVE: '40'
           MAX_CREDITS_PER_RUN: '80'
@@ -42,6 +45,7 @@ jobs:
           node scripts/fetch-injuries.mjs
           node scripts/fetch-odds.mjs
           node scripts/build-board.mjs
+          node scripts/publish-board.mjs
           node scripts/post-discord.mjs
       - name: Commit updated data
         run: |

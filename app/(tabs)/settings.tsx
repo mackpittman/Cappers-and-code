@@ -17,6 +17,9 @@ export default function SettingsScreen() {
     board,
     loading,
     lastSync,
+    session,
+    entitlement,
+    signOut,
   } = useBoard();
   const [key, setKey] = useState(settings.oddsApiKey);
   const [url, setUrl] = useState(settings.boardUrl);
@@ -64,6 +67,28 @@ export default function SettingsScreen() {
       title="Settings"
       subtitle="Where the daily board comes from and how live prices are pulled."
     >
+      <H2>Membership</H2>
+      <Card>
+        {session ? (
+          <>
+            <Label>{session.user.email}</Label>
+            <Body small muted>
+              {entitlement?.active
+                ? `Active · ${entitlement.plan}${entitlement.current_period_end ? ` · renews ${new Date(entitlement.current_period_end).toLocaleDateString()}` : ''}`
+                : 'No active membership. Open the Edge tab to start one.'}
+            </Body>
+            <View style={{ height: space.sm }} />
+            {button('Sign out', async () => {
+              await signOut();
+              setMsg('Signed out.');
+            })}
+          </>
+        ) : (
+          <Body small muted>
+            Not signed in. Open the Edge tab to sign in with your email.
+          </Body>
+        )}
+      </Card>
       <H2>Daily board</H2>
       <Card>
         <Label>Board URL</Label>
