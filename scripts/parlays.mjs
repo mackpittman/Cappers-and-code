@@ -352,7 +352,9 @@ export function buildParlays(board, opts = {}) {
       {
         key: 'twoPlus',
         title: '2+ TD props',
-        note: 'Model probability and fair price. No API market: confirm the FD/DK price before betting.',
+        note: twoPlus.some((t) => t.price != null)
+          ? 'Real FD/DK 2+ TD prices vs the model fair price. Unpriced players show fair and minimum playable price.'
+          : 'Model probability and fair price. No 2+ TD market pulled yet: confirm the FD/DK price before betting.',
         parlays: twoPlus,
       },
       {
