@@ -39,7 +39,7 @@ test('builder ranks cross-game TD parlays by expected value', () => {
   });
   const game = (id, away, home, top3, side, total, proj) => ({
     id,
-    kickoff: '2026-09-13T17:00:00Z',
+    kickoff: new Date(Date.now() + 3 * 3600000).toISOString(),
     away: { abbr: away },
     home: { abbr: home },
     top3,

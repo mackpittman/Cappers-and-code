@@ -34,7 +34,9 @@ export function twoPlusProb(pAny) {
   return 1 - Math.exp(-lambda) * (1 + lambda);
 }
 
-const isFinal = (g) => /FINAL/i.test(g.status?.state ?? '');
+// Final or already kicked off: no new tickets on a game in progress.
+const isFinal = (g) =>
+  /FINAL/i.test(g.status?.state ?? '') || (!!g.kickoff && Date.parse(g.kickoff) < Date.now());
 const gameLabel = (g) => `${g.away.abbr}@${g.home.abbr}`;
 const round = (x, d = 3) => +x.toFixed(d);
 

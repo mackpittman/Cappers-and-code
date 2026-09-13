@@ -40,6 +40,18 @@ const MARKETS = {
 // EXTRA_PULL=player_tds_over pulls that market once for every game inside the pre-kick window that
 // does not have it yet, whatever the phase log says (used when a market is added mid-week).
 const EXTRA_PULL = (process.env.EXTRA_PULL || '').split(',').filter(Boolean);
+// REPULL=1 prices a game's pre-kick markets again when the last pre-kick pull is older than
+// REPULL_MIN minutes (default 60) and the game is inside the pre-kick window: line moves before a
+// late-window slate, at the normal pre-kick cost per game.
+const REPULL = process.env.REPULL === '1';
+const REPULL_MIN = Number(process.env.REPULL_MIN ?? 60);
+function repullPhase(ev, now) {
+  if (!REPULL) return null;
+  const h = (Date.parse(ev.commence) - now.getTime()) / 3600000;
+  if (h < -0.5 || h > PREKICK_HOURS) return null;
+  const last = ev.pulls?.prekick;
+  return !last || now.getTime() - Date.parse(last) > REPULL_MIN * 60000 ? 'prekick' : null;
+}
 // Yes/No style markets: one price per player. player_tds_over is kept at the 1.5 line only (2+ TDs).
 const YESNO = new Set(['player_anytime_td', 'player_1st_td', 'player_last_td', 'player_tds_over']);
 const SPORT = 'americanfootball_nfl';
@@ -141,7 +153,10 @@ const now = new Date();
 const candidates = prioritize(events, now)
   .map((ev) => ({
     ev,
-    phase: FORCE_PHASE || decidePhase(ev.commence, ev.pulls, now, { prekickHours: PREKICK_HOURS }),
+    phase:
+      FORCE_PHASE ||
+      decidePhase(ev.commence, ev.pulls, now, { prekickHours: PREKICK_HOURS }) ||
+      repullPhase(ev, now),
   }))
   .filter((c) => c.phase);
 let spent = 0;

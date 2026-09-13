@@ -40,16 +40,27 @@ function finalScore(g) {
   };
 }
 function tdScorers(g) {
+  return new Set(tdCounts(g).keys());
+}
+/** Touchdowns per player from the scoring summary (offensive TDs credited to the scorer). */
+function tdCounts(g) {
   const s = summaries[g.id];
-  const out = new Set();
+  const out = new Map();
   for (const p of s?.scoringPlays || []) {
     if (p.scoringType?.name !== 'touchdown') continue;
     // "Kyren Williams 5 Yd Rush (...)" or "Mike Evans 2 Yd pass from Brock Purdy (...)"
     const m = /^(.+?)\s+\d+\s+Yd\s/i.exec(p.text || '');
-    if (m) out.add(normName(m[1]));
+    if (m) out.set(normName(m[1]), (out.get(normName(m[1])) ?? 0) + 1);
   }
   return out;
 }
+function gradeTd2(g, player) {
+  return (tdCounts(g).get(normName(player)) ?? 0) >= 2 ? 'win' : 'loss';
+}
+const twoPlusProb = (p) => {
+  const l = -Math.log(1 - Math.min(0.999, Math.max(0, p)));
+  return 1 - Math.exp(-l) * (1 + l);
+};
 function stat(g, player, market) {
   const s = summaries[g.id];
   const cat = {
@@ -163,6 +174,18 @@ for (const g of research.games) {
           result: gradeAtd(g, p.name),
         })
       : pending('atd', `${p.name} ATD`, { est: p.est, bucket: 'top3' });
+  // 2+ TD calls on the max-confidence scorers (the 2+ TD board is built from these)
+  for (const p of g.top3)
+    sc
+      ? items.push({
+          ...base,
+          type: 'td2',
+          label: `${p.name} 2+ TD`,
+          est: twoPlusProb(p.est ?? 0),
+          bucket: 'td2',
+          result: gradeTd2(g, p.name),
+        })
+      : pending('td2', `${p.name} 2+ TD`, { est: twoPlusProb(p.est ?? 0), bucket: 'td2' });
   for (const p of g.value)
     sc
       ? items.push({
@@ -208,7 +231,7 @@ function tally(list) {
   return t;
 }
 const byBucket = {};
-for (const b of ['lockedIn', 'lean', 'top3', 'value', 'prop'])
+for (const b of ['lockedIn', 'lean', 'top3', 'td2', 'value', 'prop'])
   byBucket[b] = tally(items.filter((i) => i.bucket === b));
 const week_result = {
   season,
@@ -232,7 +255,7 @@ const record = {
   weeks: weeks.map((w) => ({ week: w.week, finals: w.finals, games: w.games, summary: w.summary })),
   season_totals: {},
 };
-for (const b of ['all', 'lockedIn', 'lean', 'top3', 'value', 'prop']) {
+for (const b of ['all', 'lockedIn', 'lean', 'top3', 'td2', 'value', 'prop']) {
   record.season_totals[b] = weeks.reduce(
     (acc, w) => {
       const s = w.summary[b] || {};
@@ -245,5 +268,5 @@ for (const b of ['all', 'lockedIn', 'lean', 'top3', 'value', 'prop']) {
 writeJson(recordFile, record);
 const s = week_result.summary;
 console.log(
-  `graded week ${week}: ${week_result.finals}/${week_result.games} finals · locked in ${s.lockedIn.wins}-${s.lockedIn.losses}-${s.lockedIn.pushes} · top3 ATD ${s.top3.wins}-${s.top3.losses} · leans ${s.lean.wins}-${s.lean.losses}-${s.lean.pushes} · props ${s.prop.wins}-${s.prop.losses}-${s.prop.pushes} · pending ${s.all.pending}`,
+  `graded week ${week}: ${week_result.finals}/${week_result.games} finals · locked in ${s.lockedIn.wins}-${s.lockedIn.losses}-${s.lockedIn.pushes} · top3 ATD ${s.top3.wins}-${s.top3.losses} · 2+ TD ${s.td2.wins}-${s.td2.losses} · leans ${s.lean.wins}-${s.lean.losses}-${s.lean.pushes} · props ${s.prop.wins}-${s.prop.losses}-${s.prop.pushes} · pending ${s.all.pending}`,
 );

@@ -8,6 +8,7 @@ const fmt = (t?: Tally) => (t ? `${t.wins}-${t.losses}${t.pushes ? `-${t.pushes}
 const BUCKETS: [string, string][] = [
   ['lockedIn', 'Locked In'],
   ['top3', 'Top-3 TD calls'],
+  ['td2', '2+ TD calls'],
   ['lean', 'Side and total leans'],
   ['prop', 'Prop leans'],
   ['value', 'Value TD calls'],
@@ -50,7 +51,7 @@ export function RecordCard({ board }: { board: Board }) {
         <View style={{ marginTop: space.sm, gap: 4 }}>
           <Label>This week, graded</Label>
           {week.items
-            .filter((i) => i.bucket === 'lockedIn' || i.bucket === 'top3')
+            .filter((i) => i.bucket === 'lockedIn' || i.bucket === 'top3' || i.bucket === 'td2')
             .slice(0, 12)
             .map((i, idx) => (
               <View
