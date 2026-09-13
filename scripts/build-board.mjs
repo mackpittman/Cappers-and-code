@@ -238,6 +238,18 @@ const board = {
   })),
   crossStacks: research.crossStacks,
   upsetLeans: research.upsetLeans,
+  // Graded results (scripts/grade-results.mjs) and the season record; both were read but never
+  // attached, so the app and the preview showed no record.
+  results: weekResults
+    ? {
+        gradedAt: weekResults.gradedAt,
+        finals: weekResults.finals,
+        games: weekResults.games,
+        summary: weekResults.summary,
+        items: weekResults.items,
+      }
+    : null,
+  record,
 };
 // Ranked parlays per category from FanDuel / DraftKings prices and the model numbers above.
 board.parlays = buildParlays(board);
