@@ -124,6 +124,47 @@ export type Game = {
   }[];
   injuryReport?: { away: InjuryEntry[]; home: InjuryEntry[]; fetchedAt: string | null };
 };
+export type ParlayLeg = {
+  type: 'atd' | 'td2' | 'side' | 'total' | 'text';
+  label: string;
+  player?: string;
+  team?: string;
+  game?: string;
+  gameLabel?: string;
+  kickoff?: string;
+  prob: number | null;
+  price: number | null;
+  book: string;
+  implied?: number;
+  edge?: number;
+  conf?: number;
+  moved?: string | null;
+  why?: string;
+};
+export type Parlay = {
+  rank: number;
+  legs: ParlayLeg[];
+  price: number | null;
+  decimal: number | null;
+  prob: number | null;
+  ev: number | null;
+  fairPrice?: number;
+  minPrice?: number;
+  why: string;
+};
+export type ParlayCategory = {
+  key: 'anytime' | 'twoPlus' | 'sides' | 'totals' | 'sameGame' | 'model';
+  title: string;
+  note: string;
+  parlays: Parlay[];
+};
+export type Parlays = {
+  builtAt: string;
+  books: string[];
+  oddsFetchedAt: string | null;
+  note: string;
+  categories: ParlayCategory[];
+};
 export type Tally = { wins: number; losses: number; pushes: number; pending: number };
 export type ResultItem = {
   game: string;
@@ -177,5 +218,6 @@ export type Board = {
     weeks: { week: number; finals: number; games: number; summary: Record<string, Tally> }[];
   } | null;
   crossStacks: Stack[];
+  parlays?: Parlays | null;
   upsetLeans: { team: string; price: number; winProb: number; why: string }[];
 };

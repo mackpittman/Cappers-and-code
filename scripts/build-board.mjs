@@ -2,6 +2,7 @@
 import path from 'node:path';
 import fs from 'node:fs';
 import { DATA, ROOT, readJson, writeJson, nowIso, normName, impliedProb, devig } from './lib.mjs';
+import { buildParlays } from './parlays.mjs';
 
 const research = readJson(path.join(ROOT, 'src', 'data', 'research.json'));
 const schedule = readJson(path.join(DATA, 'schedule.json'), { games: [] });
@@ -206,7 +207,7 @@ const since = (days) =>
     .filter((c) => Date.parse(c.t) > Date.now() - days * 86400000)
     .reduce((n, c) => n + (c.spent || 0), 0);
 
-writeJson(path.join(DATA, 'board.json'), {
+const board = {
   season: research.season,
   week: schedule.week ?? research.week,
   generatedAt: nowIso(),
@@ -237,7 +238,10 @@ writeJson(path.join(DATA, 'board.json'), {
   })),
   crossStacks: research.crossStacks,
   upsetLeans: research.upsetLeans,
-});
+};
+// Ranked parlays per category from FanDuel / DraftKings prices and the model numbers above.
+board.parlays = buildParlays(board);
+writeJson(path.join(DATA, 'board.json'), board);
 console.log(
   `board: ${games.length} games, ${games.filter((g) => g.live).length} with live lines (${games.find((g) => g.live)?.live?.source || 'none'}), ${games.filter((g) => g.liveBoard.length).length} with live ATD, ${games.filter((g) => g.propLines.length).length} with prop lines`,
 );

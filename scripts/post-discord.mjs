@@ -39,6 +39,23 @@ const recLine =
     : 'Record starts when the first games go final. Real results only.';
 const fresh = `Prices ${board.oddsFetchedAt ? new Date(board.oddsFetchedAt).toUTCString().replace(' GMT', ' UTC') : 'research only'} · lines ${board.linesSource || 'research'}`;
 
+// Parlay board: the number one ticket in each category (built by scripts/parlays.mjs, FD/DK prices).
+const parlayLines = (board.parlays?.categories || [])
+  .filter((c) => c.parlays.length)
+  .map((c) => {
+    const p = c.parlays[0];
+    const legs = p.legs
+      .map((l) => `${l.label}${l.price != null ? ` (${am(l.price)} ${l.book})` : ''}`)
+      .join(' + ');
+    const tail =
+      c.key === 'twoPlus'
+        ? `fair ${am(p.fairPrice)}, play ${am(p.minPrice)} or better`
+        : p.price != null
+          ? `${am(p.price)} · ${pct(p.prob)} model`
+          : '';
+    return `**${c.title}** · ${legs}${tail ? `\n${tail}` : ''}`;
+  });
+
 const payload = {
   username: 'CC Core',
   content: `**TODAY'S EDGE · NFL WEEK ${board.week}**\nAI Models. Human Insight. One Edge.`,
@@ -50,6 +67,15 @@ const payload = {
       thumbnail: undefined,
     },
     { title: 'TD BOARD', description: td.join('\n') || 'No TD board yet.', color: GREEN },
+    ...(parlayLines.length
+      ? [
+          {
+            title: 'PARLAY BOARD',
+            description: `${parlayLines.join('\n\n')}\nFull top-five per category in the app.`,
+            color: GREEN,
+          },
+        ]
+      : []),
     {
       title: 'TRUST THE CODE',
       description: `${recLine}\n${fresh}\nUnits, not dollars. Real data, real wins, no fluff.`,

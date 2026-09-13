@@ -30,6 +30,10 @@ export default function TabLayout() {
         options={{ title: 'Games', tabBarIcon: icon('american-football-outline') }}
       />
       <Tabs.Screen
+        name="parlays"
+        options={{ title: 'Parlays', tabBarIcon: icon('git-merge-outline') }}
+      />
+      <Tabs.Screen
         name="stacks"
         options={{ title: 'Stacks', tabBarIcon: icon('layers-outline') }}
       />
