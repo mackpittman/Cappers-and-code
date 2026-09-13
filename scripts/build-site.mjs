@@ -52,5 +52,13 @@ const notFound = p(
   '<div class="hero"><h1>404</h1><p class="lead">That page is not on the board. <a href="./">Back to the site</a>.</p></div>',
 );
 write('404.html', notFound.replace('<body>', `<body>${bounce}`));
+// Play-sheet graphics (site/sheets/*.png) are published as-is so Discord embeds can link to them.
+const sheets = path.join(root, 'site/sheets');
+if (fs.existsSync(sheets))
+  for (const f of fs.readdirSync(sheets))
+    if (f.endsWith('.png')) {
+      fs.mkdirSync(path.join(dist, 'sheets'), { recursive: true });
+      fs.copyFileSync(path.join(sheets, f), path.join(dist, 'sheets', f));
+    }
 fs.writeFileSync(path.join(dist, '.nojekyll'), '');
 console.log(`site rendered to ${dist} with base "${base || '/'}"`);
