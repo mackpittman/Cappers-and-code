@@ -15,7 +15,6 @@ export function Paywall() {
     signInWithEmail,
     signInWithPassword,
     signUpWithPassword,
-    verifyCode,
     signOut,
     checkoutUrl,
     refreshBoard,
@@ -23,7 +22,6 @@ export function Paywall() {
   const [mode, setMode] = useState<'signin' | 'signup' | 'code'>('signin');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
-  const [code, setCode] = useState('');
   const [sent, setSent] = useState(false);
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
@@ -120,7 +118,7 @@ export function Paywall() {
                     { color: mode === m ? palette.onGreen : palette.ink, letterSpacing: 1 },
                   ]}
                 >
-                  {m === 'signin' ? 'Sign in' : m === 'signup' ? 'Create account' : 'Email code'}
+                  {m === 'signin' ? 'Sign in' : m === 'signup' ? 'Create account' : 'Email link'}
                 </Text>
               </Pressable>
             ))}
@@ -178,38 +176,21 @@ export function Paywall() {
             </>
           ) : !sent ? (
             <Button
-              label="Send code"
+              label="Email me a sign-in link"
               primary
               onPress={() =>
                 run(async () => {
                   await signInWithEmail(email);
                   setSent(true);
-                }, 'Code sent. Check your inbox.')
+                }, 'Link sent. Open it on this device and you land here signed in.')
               }
             />
           ) : (
-            <>
-              <TextInput
-                id="code"
-                value={code}
-                onChangeText={setCode}
-                keyboardType="number-pad"
-                placeholder="6-digit code"
-                placeholderTextColor={palette.mute}
-                style={input}
-              />
-              <View style={{ height: space.sm }} />
-              <Button
-                label="Verify and sign in"
-                primary
-                onPress={() =>
-                  run(async () => {
-                    await verifyCode(email, code);
-                    await refreshBoard();
-                  }, 'Signed in.')
-                }
-              />
-            </>
+            <Text style={[type.body, { color: palette.ink2 }]}>
+              Check your inbox for &ldquo;Your sign-in link&rdquo; and tap Sign in on this device.
+              The link works once and opens the app already signed in. No link within a minute?
+              Check spam, or use Create account with a password instead.
+            </Text>
           )}
           <Text style={[type.small, { color: palette.mute, marginTop: space.sm }]}>
             By continuing you confirm you are of legal age in your jurisdiction and understand this

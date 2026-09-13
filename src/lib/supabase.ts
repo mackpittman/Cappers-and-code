@@ -1,6 +1,7 @@
 import 'react-native-url-polyfill/auto';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Constants from 'expo-constants';
+import { Platform } from 'react-native';
 import { createClient } from '@supabase/supabase-js';
 
 const extra = (Constants.expoConfig?.extra ?? {}) as {
@@ -17,7 +18,8 @@ export const supabase = createClient(
       storage: AsyncStorage,
       autoRefreshToken: true,
       persistSession: true,
-      detectSessionInUrl: false,
+      // On the web build a magic link lands on the app URL with the session in the hash.
+      detectSessionInUrl: Platform.OS === 'web',
     },
   },
 );

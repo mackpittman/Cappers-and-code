@@ -1,6 +1,7 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Constants from 'expo-constants';
+import { Platform } from 'react-native';
 import type { Session } from '@supabase/supabase-js';
 import bundled from '../../data/board.json';
 import type { Board } from './types';
@@ -193,9 +194,15 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
   );
 
   const signInWithEmail = useCallback(async (email: string) => {
+    // The free plan sends a link, not a code. Point the link back at this app: the web build's own
+    // URL (sign-in completes there), or the native scheme.
+    const emailRedirectTo =
+      Platform.OS === 'web' && typeof window !== 'undefined'
+        ? `${window.location.origin}${window.location.pathname}`
+        : 'cappers://';
     const { error } = await supabase.auth.signInWithOtp({
       email: email.trim().toLowerCase(),
-      options: { shouldCreateUser: true },
+      options: { shouldCreateUser: true, emailRedirectTo },
     });
     if (error) throw error;
   }, []);
