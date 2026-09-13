@@ -99,7 +99,7 @@ Done when: Week 2 board appears on Tuesday without anyone touching it, and Week 
 
 Web first, stores later. The app ships as a web app on GitHub Pages: members open a link in Safari or Chrome and add it to the home screen (PWA manifest, icons, dark standalone shell). No Apple review.
 
-- `pnpm build:site` renders the public site (landing, /success, /legal/*) from `site/pages.mjs` and exports the Expo web build into `dist/app` (`scripts/build-site.mjs`, `scripts/postbuild-web.mjs`).
+- `pnpm build:site` renders the public site (landing, /success, /legal/\*) from `site/pages.mjs` and exports the Expo web build into `dist/app` (`scripts/build-site.mjs`, `scripts/postbuild-web.mjs`).
 - `.github/workflows/deploy-web.yml` publishes `dist` to GitHub Pages on every push that touches the app or site. Deep links survive a refresh through the root 404 bounce.
 - Supabase cannot serve HTML on the default domain (it rewrites `text/html` to `text/plain`), so the `site` edge function now only redirects old links to the Pages URL; `site_url` in `pipeline_config` and `extra.siteUrl` in `app.json` point at `https://mackpittman.github.io/Cappers-and-code`.
 - Screenshots: `docs/site-landing-phone.png`, `docs/web-app-phone.png`, `docs/web-app-games.png`, `docs/web-app-settings.png`.
@@ -109,14 +109,15 @@ Done when: the Pages URL loads the landing page, `/app/` signs in and shows the 
 
 ### Native builds (later)
 
-
 - EAS project, build profiles, TestFlight internal group, Google Play internal track.
 - App Store notes: gambling-related content requires a 17+ rating; because purchases happen on the web and the app only signs existing members in, no in-app purchase is required for the first submission. If Apple asks for IAP, add Checkpoint 8b: StoreKit subscription mirrored into `subscriptions` through App Store Server Notifications.
 
 Needs from Mack: Apple Developer Program and Google Play Console memberships, Expo account.
 Done when: TestFlight build installs and the full paywall loop works on a real phone.
 
-## Checkpoint 9 — Ops hardening (Claude)
+## Checkpoint 9 — Ops hardening (Claude) — IN PROGRESS
+
+Done 2026-09-13: pipeline state (odds pulls, credit ledger, graded results) is mirrored to Supabase after every publish (`scripts/state-sync.mjs`) and restored at the start of every run, and `scripts/recover-odds.mjs` can rebuild the odds snapshot from the last published board, so a failed git push from the runner never costs credits twice. The daily Routine verifies its push and reports the commit hash. Parlay board (`scripts/parlays.mjs`) ships in the app's Parlays tab and the Discord digest.
 
 - Rotate the Odds API key and the Discord webhook (both passed through chat); move all secrets into GitHub Actions secrets and Supabase secrets; retire the Routine-embedded values.
 - Failure alerts to #ops: pipeline errors, credits below 60, board older than 30 hours.
