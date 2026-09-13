@@ -3,6 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Constants from 'expo-constants';
 import { Platform } from 'react-native';
 import { createClient } from '@supabase/supabase-js';
+import type { FeedPost } from './types';
 
 const extra = (Constants.expoConfig?.extra ?? {}) as {
   supabaseUrl?: string;
@@ -55,6 +56,26 @@ export async function fetchBoardPreview(): Promise<unknown | null> {
   const { data, error } = await supabase.rpc('get_board_preview');
   if (error) throw error;
   return data ?? null;
+}
+
+/** Members-only Discord mirror: newest first; pass `before` (posted_at) to page older posts. */
+export async function fetchFeed(pageSize = 50, before?: string): Promise<FeedPost[]> {
+  const { data, error } = await supabase.rpc('get_feed', {
+    page_size: pageSize,
+    before: before ?? null,
+  });
+  if (error) throw error;
+  return (data ?? []) as FeedPost[];
+}
+/** Calls `onChange` whenever a post is inserted or updated; returns the unsubscribe function. */
+export function subscribeFeed(onChange: () => void): () => void {
+  const channel = supabase
+    .channel('feed_posts')
+    .on('postgres_changes', { event: '*', schema: 'public', table: 'feed_posts' }, () => onChange())
+    .subscribe();
+  return () => {
+    supabase.removeChannel(channel);
+  };
 }
 
 /** Starts Stripe Checkout for the signed-in user and returns the URL to open in the browser. */

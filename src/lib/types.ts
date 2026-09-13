@@ -165,6 +165,34 @@ export type Parlays = {
   note: string;
   categories: ParlayCategory[];
 };
+export type FeedAttachment = {
+  name: string;
+  url: string;
+  type: string | null;
+  width: number | null;
+  height: number | null;
+  size: number | null;
+};
+export type FeedEmbed = {
+  title: string | null;
+  description: string | null;
+  url: string | null;
+  image: string | null;
+};
+export type FeedPost = {
+  id: string;
+  channel_id: string;
+  channel_name: string;
+  capper: string | null;
+  author_id: string;
+  author_name: string;
+  author_avatar: string | null;
+  content: string;
+  attachments: FeedAttachment[];
+  embeds: FeedEmbed[];
+  posted_at: string;
+  edited_at: string | null;
+};
 export type Tally = { wins: number; losses: number; pushes: number; pending: number };
 export type ResultItem = {
   game: string;

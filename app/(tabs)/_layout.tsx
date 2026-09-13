@@ -34,6 +34,10 @@ export default function TabLayout() {
         options={{ title: 'Parlays', tabBarIcon: icon('git-merge-outline') }}
       />
       <Tabs.Screen
+        name="feed"
+        options={{ title: 'Feed', tabBarIcon: icon('chatbubbles-outline') }}
+      />
+      <Tabs.Screen
         name="stacks"
         options={{ title: 'Stacks', tabBarIcon: icon('layers-outline') }}
       />
