@@ -6,6 +6,8 @@ import { useBoard } from '@/lib/store';
 import { fmtAmerican, pct } from '@/lib/odds';
 import { space, type, useTheme } from '@/theme';
 import type { Parlay, ParlayCategory } from '@/lib/types';
+import { AddToSlip, parlayToSlip } from '@/components/Slip';
+import { StackCard } from '@/components/ui';
 
 const CATEGORY_ORDER: ParlayCategory['key'][] = [
   'twoPlus',
@@ -68,6 +70,11 @@ function ParlayCard({ p, category }: { p: Parlay; category: ParlayCategory['key'
         </Text>
       )}
       <Text style={[type.small, { color: t.ink2, marginTop: space.sm }]}>{p.why}</Text>
+      {category !== 'model' && (
+        <View style={{ marginTop: space.sm }}>
+          <AddToSlip item={parlayToSlip(p, category)} compact />
+        </View>
+      )}
     </Card>
   );
 }
@@ -124,6 +131,57 @@ export default function ParlaysScreen() {
               </React.Fragment>
             );
           })}
+          <H2>Upset leans</H2>
+          {board.upsetLeans.map((u) => (
+            <Card key={u.team} accent="contrarian">
+              <Label>
+                {u.team} ML {fmtAmerican(u.price)} · {pct(u.winProb)} win prob
+              </Label>
+              <Body small>{u.why}</Body>
+              <View style={{ marginTop: space.sm }}>
+                <AddToSlip
+                  item={{
+                    kind: 'ml',
+                    label: `${u.team} ML`,
+                    price: u.price,
+                    book: 'research',
+                    model_prob: u.winProb,
+                    source: 'parlays',
+                  }}
+                  compact
+                />
+              </View>
+            </Card>
+          ))}
+          <H2>Same-game stacks by matchup</H2>
+          {board.games.map((g) =>
+            g.stacks.length ? (
+              <React.Fragment key={g.id}>
+                <Label>
+                  {g.away.short} at {g.home.short}
+                </Label>
+                {g.stacks.map((s, i) => (
+                  <StackCard
+                    key={i}
+                    legs={s.legs}
+                    why={s.why}
+                    kind={s.type}
+                    slip={{
+                      kind: 'stack',
+                      label: s.legs.join(' + '),
+                      detail: s.type === 'sgp' ? 'same-game stack' : s.type,
+                      game_id: g.id,
+                      game_label: `${g.away.abbr}@${g.home.abbr}`,
+                      price: null,
+                      book: null,
+                      legs: s.legs.map((l) => ({ label: l, price: null })),
+                      source: 'parlays',
+                    }}
+                  />
+                ))}
+              </React.Fragment>
+            ) : null,
+          )}
           <Body small muted>
             Expected value uses model probabilities, not guarantees. Cross-game legs are treated as
             independent; same-game tickets carry a correlation factor and books price them

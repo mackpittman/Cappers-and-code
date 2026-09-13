@@ -14,6 +14,7 @@ import { JetBrainsMono_700Bold } from '@expo-google-fonts/jetbrains-mono/700Bold
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { BoardProvider } from '@/lib/store';
+import { SlipProvider } from '@/lib/slip';
 import { palette, fonts } from '@/theme';
 
 SplashScreen.preventAutoHideAsync().catch(() => {});
@@ -35,19 +36,21 @@ export default function RootLayout() {
     <GestureHandlerRootView style={{ flex: 1, backgroundColor: palette.bg }}>
       <SafeAreaProvider>
         <BoardProvider>
-          <StatusBar style="light" />
-          <Stack
-            screenOptions={{
-              headerStyle: { backgroundColor: palette.surface },
-              headerTintColor: palette.ink,
-              headerTitleStyle: { fontFamily: fonts.display, fontSize: 20 },
-              headerShadowVisible: false,
-              contentStyle: { backgroundColor: palette.bg },
-            }}
-          >
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-            <Stack.Screen name="game/[id]" options={{ title: 'Game' }} />
-          </Stack>
+          <SlipProvider>
+            <StatusBar style="light" />
+            <Stack
+              screenOptions={{
+                headerStyle: { backgroundColor: palette.surface },
+                headerTintColor: palette.ink,
+                headerTitleStyle: { fontFamily: fonts.display, fontSize: 20 },
+                headerShadowVisible: false,
+                contentStyle: { backgroundColor: palette.bg },
+              }}
+            >
+              <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+              <Stack.Screen name="game/[id]" options={{ title: 'Game' }} />
+            </Stack>
+          </SlipProvider>
         </BoardProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>

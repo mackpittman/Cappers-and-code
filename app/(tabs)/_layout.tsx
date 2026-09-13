@@ -2,8 +2,10 @@ import React from 'react';
 import { Tabs } from 'expo-router';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { fonts, palette } from '@/theme';
+import { useSlip } from '@/lib/slip';
 
 export default function TabLayout() {
+  const { todays } = useSlip();
   const icon =
     (name: React.ComponentProps<typeof Ionicons>['name']) =>
     ({ color }: { color: import('react-native').ColorValue }) => (
@@ -38,8 +40,18 @@ export default function TabLayout() {
         options={{ title: 'Feed', tabBarIcon: icon('chatbubbles-outline') }}
       />
       <Tabs.Screen
-        name="stacks"
-        options={{ title: 'Stacks', tabBarIcon: icon('layers-outline') }}
+        name="slip"
+        options={{
+          title: 'Slip',
+          tabBarIcon: icon('receipt-outline'),
+          tabBarBadge: todays.length ? todays.length : undefined,
+          tabBarBadgeStyle: {
+            backgroundColor: palette.green,
+            color: palette.onGreen,
+            fontFamily: fonts.dataBold,
+            fontSize: 11,
+          },
+        }}
       />
       <Tabs.Screen
         name="settings"

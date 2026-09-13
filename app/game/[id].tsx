@@ -21,6 +21,7 @@ import { kickoffLabel } from '@/lib/format';
 import { fmtAmerican, pct } from '@/lib/odds';
 import { ago } from '@/lib/format';
 import { space, type, useTheme } from '@/theme';
+import { AddToSlip, pickToSlip } from '@/components/Slip';
 
 export default function GameScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -126,6 +127,36 @@ export default function GameScreen() {
                   sub={g.market.total ? `confidence ${g.market.totalConf}/5` : ''}
                 />
               </View>
+              <View style={{ flexDirection: 'row', gap: 8, marginTop: space.sm, flexWrap: 'wrap' }}>
+                {!!g.market.side && (
+                  <AddToSlip
+                    item={{
+                      kind: 'side',
+                      label: g.market.side,
+                      detail: `confidence ${g.market.sideConf}/5`,
+                      game_id: g.id,
+                      game_label: `${g.away.abbr}@${g.home.abbr}`,
+                      price: -110,
+                      book: 'FD/DK',
+                      source: 'game',
+                    }}
+                  />
+                )}
+                {!!g.market.total && (
+                  <AddToSlip
+                    item={{
+                      kind: 'total',
+                      label: `${g.market.total} ${g.away.abbr}@${g.home.abbr}`,
+                      detail: `confidence ${g.market.totalConf}/5`,
+                      game_id: g.id,
+                      game_label: `${g.away.abbr}@${g.home.abbr}`,
+                      price: -110,
+                      book: 'FD/DK',
+                      source: 'game',
+                    }}
+                  />
+                )}
+              </View>
               <Text style={[type.body, { color: t.ink2, marginTop: space.sm }]}>
                 {g.market.why}
               </Text>
@@ -157,11 +188,20 @@ export default function GameScreen() {
 
         <H2>Max-confidence TD scorers</H2>
         {g.top3.map((p, i) => (
-          <PickCard key={p.name} p={p} rank={i + 1} />
+          <PickCard
+            key={p.name}
+            p={p}
+            rank={i + 1}
+            slip={pickToSlip({ ...p, gameId: g.id }, `${g.away.abbr}@${g.home.abbr}`, 'game')}
+          />
         ))}
         <H2>Value and longshots</H2>
         {g.value.map((p) => (
-          <PlayerRow key={p.name} p={p} />
+          <PlayerRow
+            key={p.name}
+            p={p}
+            slip={pickToSlip({ ...p, gameId: g.id }, `${g.away.abbr}@${g.home.abbr}`, 'game')}
+          />
         ))}
 
         <H2>
@@ -276,7 +316,23 @@ export default function GameScreen() {
 
         <H2>Stacks</H2>
         {g.stacks.map((s, i) => (
-          <StackCard key={i} legs={s.legs} why={s.why} kind={s.type} />
+          <StackCard
+            key={i}
+            legs={s.legs}
+            why={s.why}
+            kind={s.type}
+            slip={{
+              kind: 'stack',
+              label: s.legs.join(' + '),
+              detail: s.type === 'sgp' ? 'same-game stack' : s.type,
+              game_id: g.id,
+              game_label: `${g.away.abbr}@${g.home.abbr}`,
+              price: null,
+              book: null,
+              legs: s.legs.map((l) => ({ label: l, price: null })),
+              source: 'game',
+            }}
+          />
         ))}
 
         <H2>Injuries</H2>

@@ -8,6 +8,7 @@ import { useBoard } from '@/lib/store';
 import { Paywall } from '@/components/Paywall';
 import { RecordCard } from '@/components/Record';
 import { supabaseConfigured } from '@/lib/supabase';
+import { AddToSlip, betToSlip, pickToSlip } from '@/components/Slip';
 
 export default function BoardScreen() {
   const { board, entitlement, authReady } = useBoard();
@@ -44,10 +45,15 @@ export default function BoardScreen() {
                 <Card key={i} accent={b.conf >= 4 ? 'green' : undefined}>
                   <Label>{b.gameLabel ?? b.game}</Label>
                   <Text style={[type.h2, { color: t.ink, marginBottom: 6 }]}>{b.bet}</Text>
-                  <Pill
-                    text={`confidence ${b.conf}/5`}
-                    tone={b.conf >= 4 ? 'good' : b.conf === 3 ? 'neutral' : 'warn'}
-                  />
+                  <View
+                    style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}
+                  >
+                    <Pill
+                      text={`confidence ${b.conf}/5`}
+                      tone={b.conf >= 4 ? 'good' : b.conf === 3 ? 'neutral' : 'warn'}
+                    />
+                    <AddToSlip item={betToSlip(b.bet, b.game, b.gameLabel, b.conf)} compact />
+                  </View>
                   <Body small muted>
                     {b.why}
                   </Body>
@@ -66,6 +72,7 @@ export default function BoardScreen() {
                 rank={i + 1}
                 game={gameLabel(p.gameId)}
                 onPress={() => open(p.gameId)}
+                slip={pickToSlip(p, gameLabel(p.gameId), 'td-board')}
               />
             ))}
           </View>
@@ -77,6 +84,7 @@ export default function BoardScreen() {
                 p={p}
                 game={gameLabel(p.gameId)}
                 onPress={() => open(p.gameId)}
+                slip={pickToSlip(p, gameLabel(p.gameId), 'value')}
               />
             ))}
           </View>

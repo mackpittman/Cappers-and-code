@@ -3,6 +3,8 @@ import { Pressable, StyleSheet, Text, View, ViewStyle } from 'react-native';
 import { fonts, radius, space, type, useTheme } from '@/theme';
 import { fmtAmerican, pct } from '@/lib/odds';
 import type { InjuryEntry, Pick } from '@/lib/types';
+import { AddToSlip } from './Slip';
+import type { SlipInput } from '@/lib/slip';
 
 export function Label({ children, color }: { children: React.ReactNode; color?: string }) {
   const t = useTheme();
@@ -186,11 +188,13 @@ export function PlayerRow({
   rank,
   game,
   onPress,
+  slip,
 }: {
   p: Pick;
   rank?: number;
   game?: string;
   onPress?: () => void;
+  slip?: SlipInput;
 }) {
   const t = useTheme();
   return (
@@ -209,13 +213,16 @@ export function PlayerRow({
           {p.team} · {p.pos}
           {game ? ` · ${game}` : ''}
         </Text>
-        <EdgeChip p={p} />
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+          <EdgeChip p={p} />
+          {slip && <AddToSlip item={slip} compact />}
+        </View>
       </View>
       <Price p={p} />
     </Pressable>
   );
 }
-export function PickCard({ p, rank }: { p: Pick; rank: number }) {
+export function PickCard({ p, rank, slip }: { p: Pick; rank: number; slip?: SlipInput }) {
   const t = useTheme();
   return (
     <Card accent={rank === 1 ? 'green' : undefined}>
@@ -231,14 +238,33 @@ export function PickCard({ p, rank }: { p: Pick; rank: number }) {
         </View>
         <Price p={p} />
       </View>
-      <View style={{ marginTop: space.sm }}>
+      <View
+        style={{
+          marginTop: space.sm,
+          flexDirection: 'row',
+          alignItems: 'center',
+          gap: 8,
+          flexWrap: 'wrap',
+        }}
+      >
         <EdgeChip p={p} />
+        {slip && <AddToSlip item={slip} compact />}
       </View>
       <Text style={[type.body, { color: t.ink2, marginTop: space.sm }]}>{p.why}</Text>
     </Card>
   );
 }
-export function StackCard({ legs, why, kind }: { legs: string[]; why: string; kind?: string }) {
+export function StackCard({
+  legs,
+  why,
+  kind,
+  slip,
+}: {
+  legs: string[];
+  why: string;
+  kind?: string;
+  slip?: SlipInput;
+}) {
   const t = useTheme();
   return (
     <Card accent={kind === 'contrarian' ? 'contrarian' : undefined}>
@@ -251,6 +277,11 @@ export function StackCard({ legs, why, kind }: { legs: string[]; why: string; ki
         ))}
       </View>
       <Text style={[type.small, { color: t.ink2, marginTop: space.sm }]}>{why}</Text>
+      {slip && (
+        <View style={{ marginTop: space.sm }}>
+          <AddToSlip item={slip} compact />
+        </View>
+      )}
     </Card>
   );
 }
