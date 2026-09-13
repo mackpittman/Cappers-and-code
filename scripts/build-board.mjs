@@ -104,6 +104,7 @@ const games = research.games.map((g) => {
             bestBook: l2.bestBook,
             consensus: l2.consensus,
             books: l2.books,
+            links: l2.links ?? null,
             implied: +impliedProb(l2.consensus).toFixed(4),
             fetchedAt: ev.markets.player_tds_over.fetchedAt,
           }
@@ -114,6 +115,7 @@ const games = research.games.map((g) => {
             bestBook: lp.bestBook,
             consensus: lp.consensus,
             books: lp.books,
+            links: lp.links ?? null,
             implied: +impliedProb(lp.consensus).toFixed(4),
             open,
             move: open != null ? lp.consensus - open : null,

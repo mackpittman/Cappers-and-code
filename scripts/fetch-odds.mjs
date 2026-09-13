@@ -160,7 +160,7 @@ for (const { ev, phase } of candidates) {
     break;
   }
   const r = await getJson(
-    `${BASE}/sports/${SPORT}/events/${ev.id}/odds?apiKey=${KEY}&regions=${REGION}&markets=${markets.join(',')}&oddsFormat=american`,
+    `${BASE}/sports/${SPORT}/events/${ev.id}/odds?apiKey=${KEY}&regions=${REGION}&markets=${markets.join(',')}&oddsFormat=american&includeLinks=true`,
   );
   if (!r.ok) {
     console.error(
@@ -186,7 +186,7 @@ for (const ev of EXTRA_PULL.length ? prioritize(events, now) : []) {
   if (spent + cost > MAX_CREDITS_PER_RUN) break;
   if (usage.remaining != null && usage.remaining - cost < CREDIT_RESERVE) break;
   const r = await getJson(
-    `${BASE}/sports/${SPORT}/events/${ev.id}/odds?apiKey=${KEY}&regions=${REGION}&markets=${need.join(',')}&oddsFormat=american`,
+    `${BASE}/sports/${SPORT}/events/${ev.id}/odds?apiKey=${KEY}&regions=${REGION}&markets=${need.join(',')}&oddsFormat=american&includeLinks=true`,
   );
   if (!r.ok) {
     console.error(`extra ${ev.away}@${ev.home} failed (${r.status})`);
@@ -208,10 +208,18 @@ function ingest(ev, body, phase) {
       for (const o of m.outcomes || []) {
         const k = normName(o.description || o.name);
         const p = (mk[k] ||= { name: o.description || o.name, books: {} });
+        // Deep link: bet slip link when the book gives one, else the market page, else the event page.
+        const link = o.link || m.link || b.link || null;
         if (m.key === 'player_tds_over') {
-          if (o.name === 'Over' && Number(o.point) === 1.5) p.books[b.key] = o.price;
+          if (o.name === 'Over' && Number(o.point) === 1.5) {
+            p.books[b.key] = o.price;
+            if (link) (p.links ||= {})[b.key] = link;
+          }
         } else if (YESNO.has(m.key)) {
-          if (o.name === 'Yes') p.books[b.key] = o.price;
+          if (o.name === 'Yes') {
+            p.books[b.key] = o.price;
+            if (link) (p.links ||= {})[b.key] = link;
+          }
         } else {
           const side = o.name === 'Over' ? 'over' : 'under';
           (p.books[b.key] ||= {})[side] = { price: o.price, point: o.point };

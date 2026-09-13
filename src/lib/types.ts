@@ -4,6 +4,8 @@ export type LivePlayer = {
   bestBook?: string;
   consensus: number;
   books?: Record<string, number>;
+  /** Per-book deep links (bet slip when the book supports it, else market or event page). */
+  links?: Record<string, string> | null;
   implied: number;
   open?: number | null;
   move?: number | null;

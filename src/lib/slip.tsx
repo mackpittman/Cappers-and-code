@@ -20,6 +20,7 @@ export type SlipInput = {
   model_prob?: number | null;
   legs?: SlipLeg[] | null;
   source?: string;
+  link?: string | null;
 };
 export type SlipItem = SlipInput & {
   id: string;
@@ -121,32 +122,32 @@ export function SlipProvider({ children }: { children: React.ReactNode }) {
         units,
         status,
         note,
+        link,
       } = row;
-      await supabase
-        .from('slip_items')
-        .upsert(
-          {
-            id,
-            user_id: userId,
-            day,
-            key,
-            kind,
-            label,
-            detail,
-            game_id,
-            game_label,
-            price,
-            book,
-            model_prob,
-            legs,
-            source,
-            units,
-            status,
-            note,
-            updated_at: new Date().toISOString(),
-          },
-          { onConflict: 'user_id,day,key' },
-        );
+      await supabase.from('slip_items').upsert(
+        {
+          id,
+          user_id: userId,
+          day,
+          key,
+          kind,
+          label,
+          detail,
+          game_id,
+          game_label,
+          price,
+          book,
+          model_prob,
+          legs,
+          source,
+          units,
+          status,
+          note,
+          link,
+          updated_at: new Date().toISOString(),
+        },
+        { onConflict: 'user_id,day,key' },
+      );
     },
     [userId],
   );

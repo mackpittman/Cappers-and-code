@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Pressable, StyleSheet, Text, View, ViewStyle } from 'react-native';
+import { Linking, Pressable, StyleSheet, Text, View, ViewStyle } from 'react-native';
 import { fonts, radius, space, type, useTheme } from '@/theme';
 import { fmtAmerican, pct } from '@/lib/odds';
 import type { InjuryEntry, Pick } from '@/lib/types';
@@ -166,6 +166,7 @@ export function Price({ p }: { p: Pick }) {
             {p.live2.bestBook ? ` · ${p.live2.bestBook}` : ''}
           </Text>
         )}
+        <BookLinks links={live.links} books={live.books} />
       </View>
     );
   }
@@ -175,6 +176,42 @@ export function Price({ p }: { p: Pick }) {
         {fmtAmerican(p.price)}
       </Text>
       <Text style={[type.small, { color: t.mute }]}>{p.priceNote ?? 'research'}</Text>
+    </View>
+  );
+}
+/** "FD -125" / "DK -120" buttons that open the book with the bet loaded (or the event page). */
+export function BookLinks({
+  links,
+  books,
+}: {
+  links?: Record<string, string> | null;
+  books?: Record<string, number>;
+}) {
+  const t = useTheme();
+  if (!links) return null;
+  const show = (['fanduel', 'draftkings'] as const).filter((k) => links[k]);
+  if (!show.length) return null;
+  return (
+    <View style={{ flexDirection: 'row', gap: 6, marginTop: 4 }}>
+      {show.map((k) => (
+        <Pressable
+          key={k}
+          onPress={() => Linking.openURL(links[k])}
+          hitSlop={6}
+          style={{
+            paddingHorizontal: 8,
+            paddingVertical: 3,
+            borderRadius: 4,
+            borderWidth: 1,
+            borderColor: t.lineGreen,
+          }}
+        >
+          <Text style={[type.label, { color: t.green, letterSpacing: 1 }]}>
+            {k === 'fanduel' ? 'FD' : 'DK'}
+            {books?.[k] != null ? ` ${fmtAmerican(books[k])}` : ''} ↗
+          </Text>
+        </Pressable>
+      ))}
     </View>
   );
 }

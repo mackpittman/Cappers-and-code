@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Platform, Pressable, Share, Text, TextInput, View } from 'react-native';
+import { Linking, Platform, Pressable, Share, Text, TextInput, View } from 'react-native';
 import { Screen } from '@/components/Screen';
 import { Body, Card, H2, Label, Pill } from '@/components/ui';
 import {
@@ -58,9 +58,27 @@ function Row({ i }: { i: SlipItem }) {
             </View>
           )}
         </View>
-        <Pressable onPress={() => remove(i.id)} hitSlop={10}>
-          <Text style={[type.label, { color: t.mute }]}>REMOVE</Text>
-        </Pressable>
+        <View style={{ alignItems: 'flex-end', gap: 8 }}>
+          <Pressable onPress={() => remove(i.id)} hitSlop={10}>
+            <Text style={[type.label, { color: t.mute }]}>REMOVE</Text>
+          </Pressable>
+          {!!i.link && (
+            <Pressable
+              onPress={() => Linking.openURL(i.link as string)}
+              hitSlop={8}
+              style={{
+                paddingHorizontal: 10,
+                paddingVertical: 5,
+                borderRadius: 6,
+                backgroundColor: t.green,
+              }}
+            >
+              <Text style={[type.label, { color: t.onGreen, letterSpacing: 1 }]}>
+                BET {i.book ?? ''} ↗
+              </Text>
+            </Pressable>
+          )}
+        </View>
       </View>
       <View
         style={{

@@ -44,21 +44,33 @@ export function AddToSlip({ item, compact }: { item: SlipInput; compact?: boolea
 }
 
 /** Better of FanDuel and DraftKings, then the best book, then the research price. */
-export function pickPrice(p: Pick): { price: number | null; book: string | null } {
+export function pickPrice(p: Pick): {
+  price: number | null;
+  book: string | null;
+  link: string | null;
+} {
   const books = p.live?.books ?? {};
+  const links = p.live?.links ?? {};
   const fd = books.fanduel;
   const dk = books.draftkings;
   if (typeof fd === 'number' || typeof dk === 'number') {
     const best = Math.max(...[fd, dk].filter((x): x is number => typeof x === 'number'));
-    return { price: best, book: best === fd ? 'FD' : 'DK' };
+    const key = best === fd ? 'fanduel' : 'draftkings';
+    return { price: best, book: key === 'fanduel' ? 'FD' : 'DK', link: links[key] ?? null };
   }
-  if (p.live) return { price: p.live.best, book: p.live.bestBook ?? null };
-  return { price: p.price, book: p.price != null ? 'research' : null };
+  if (p.live)
+    return {
+      price: p.live.best,
+      book: p.live.bestBook ?? null,
+      link: p.live.bestBook ? (links[p.live.bestBook] ?? null) : null,
+    };
+  return { price: p.price, book: p.price != null ? 'research' : null, link: null };
 }
 export function pickToSlip(p: Pick, gameLabel?: string, source = 'td-board'): SlipInput {
-  const { price, book } = pickPrice(p);
+  const { price, book, link } = pickPrice(p);
   return {
     kind: 'atd',
+    link,
     label: `${p.name} anytime TD`,
     detail: `${p.team} · ${p.pos}`,
     game_id: p.gameId ?? null,
