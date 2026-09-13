@@ -1,40 +1,8 @@
 {
- "fetchedAt": "2026-09-12T13:57:10.247Z",
+ "fetchedAt": "2026-09-13T14:52:36.658Z",
  "season": 2026,
  "week": 1,
  "games": [
-  {
-   "espnId": "401872656",
-   "kickoff": "2026-09-10T00:20Z",
-   "name": "NE @ SEA",
-   "status": "STATUS_FINAL",
-   "statusDetail": "Final",
-   "home": {
-    "abbr": "SEA",
-    "score": 13
-   },
-   "away": {
-    "abbr": "NE",
-    "score": 10
-   },
-   "espnLine": null
-  },
-  {
-   "espnId": "401872657",
-   "kickoff": "2026-09-11T00:35Z",
-   "name": "SF VS LAR",
-   "status": "STATUS_FINAL",
-   "statusDetail": "Final",
-   "home": {
-    "abbr": "LAR",
-    "score": 7
-   },
-   "away": {
-    "abbr": "SF",
-    "score": 27
-   },
-   "espnLine": null
-  },
   {
    "espnId": "401872925",
    "kickoff": "2026-09-13T17:00Z",
@@ -82,8 +50,8 @@
     "spreadHome": -7,
     "total": 49.5,
     "ml": {
-     "home": -340,
-     "away": 270,
+     "home": -325,
+     "away": 260,
      "openHome": -325,
      "openAway": 260
     }
@@ -109,8 +77,8 @@
     "spreadHome": -1.5,
     "total": 38.5,
     "ml": {
-     "home": -122,
-     "away": 102,
+     "home": -118,
+     "away": -102,
      "openHome": -170,
      "openAway": 142
     }
@@ -134,7 +102,7 @@
     "provider": null,
     "details": "BAL -3.5",
     "spreadHome": 3.5,
-    "total": 47.5,
+    "total": 48.5,
     "ml": {
      "home": 145,
      "away": -175,
@@ -159,12 +127,12 @@
    },
    "espnLine": {
     "provider": null,
-    "details": "PIT -6",
-    "spreadHome": -6,
-    "total": 41.5,
+    "details": "PIT -6.5",
+    "spreadHome": -6.5,
+    "total": 40.5,
     "ml": {
-     "home": -270,
-     "away": 220,
+     "home": -298,
+     "away": 240,
      "openHome": -175,
      "openAway": 145
     }
@@ -190,8 +158,8 @@
     "spreadHome": 3,
     "total": 47.5,
     "ml": {
-     "home": 140,
-     "away": -166,
+     "home": 142,
+     "away": -170,
      "openHome": 114,
      "openAway": -135
     }
@@ -215,10 +183,10 @@
     "provider": null,
     "details": "JAX -8.5",
     "spreadHome": -8.5,
-    "total": 39.5,
+    "total": 40.5,
     "ml": {
-     "home": -455,
-     "away": 350,
+     "home": -470,
+     "away": 360,
      "openHome": -285,
      "openAway": 230
     }
@@ -244,8 +212,8 @@
     "spreadHome": 1.5,
     "total": 44.5,
     "ml": {
-     "home": -102,
-     "away": -118,
+     "home": -108,
+     "away": -112,
      "openHome": -108,
      "openAway": -112
     }
@@ -298,8 +266,8 @@
     "spreadHome": -1.5,
     "total": 46.5,
     "ml": {
-     "home": -125,
-     "away": 105,
+     "home": -130,
+     "away": 110,
      "openHome": 105,
      "openAway": -125
     }
@@ -325,8 +293,8 @@
     "spreadHome": -6,
     "total": 44.5,
     "ml": {
-     "home": -250,
-     "away": 205,
+     "home": -265,
+     "away": 215,
      "openHome": -238,
      "openAway": 195
     }
@@ -352,8 +320,8 @@
     "spreadHome": -9.5,
     "total": 47.5,
     "ml": {
-     "home": -500,
-     "away": 380,
+     "home": -520,
+     "away": 390,
      "openHome": -625,
      "openAway": 470
     }
@@ -377,7 +345,7 @@
     "provider": null,
     "details": "DAL -3",
     "spreadHome": 3,
-    "total": 48.5,
+    "total": 47.5,
     "ml": {
      "home": 136,
      "away": -162,
@@ -385,6 +353,38 @@
      "openAway": -130
     }
    }
+  },
+  {
+   "espnId": "401872656",
+   "kickoff": "2026-09-10T00:20Z",
+   "name": "NE @ SEA",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
+   "home": {
+    "abbr": "SEA",
+    "score": 13
+   },
+   "away": {
+    "abbr": "NE",
+    "score": 10
+   },
+   "espnLine": null
+  },
+  {
+   "espnId": "401872657",
+   "kickoff": "2026-09-11T00:35Z",
+   "name": "SF VS LAR",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
+   "home": {
+    "abbr": "LAR",
+    "score": 7
+   },
+   "away": {
+    "abbr": "SF",
+    "score": 27
+   },
+   "espnLine": null
   },
   {
    "espnId": "401872931",
@@ -406,8 +406,8 @@
     "spreadHome": -2.5,
     "total": 43.5,
     "ml": {
-     "home": -142,
-     "away": 120,
+     "home": -135,
+     "away": 114,
      "openHome": -155,
      "openAway": 130
     }
