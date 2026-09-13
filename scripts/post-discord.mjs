@@ -99,10 +99,29 @@ const payload = parlaysOnly
         },
       ],
     };
-if (process.env.DISCORD_DRY_RUN === '1' || !url) {
+// Preferred route: the discord-post edge function posts as the CC Core bot into the configured channel
+// (pipeline_config.discord_post_channel_id) and needs only the publish secret. The webhook is the fallback.
+const fnUrl = process.env.SUPABASE_URL;
+const fnSecret = process.env.BOARD_PUBLISH_SECRET;
+if (process.env.DISCORD_DRY_RUN === '1' || (!url && !(fnUrl && fnSecret))) {
   console.log(JSON.stringify(payload, null, 1));
-  if (!url) console.error('DISCORD_WEBHOOK_URL not set; printed payload only.');
+  if (!url && !(fnUrl && fnSecret))
+    console.error(
+      'Neither SUPABASE_URL+BOARD_PUBLISH_SECRET nor DISCORD_WEBHOOK_URL set; printed payload only.',
+    );
   process.exit(0);
+}
+if (fnUrl && fnSecret) {
+  const res = await fetch(`${fnUrl}/functions/v1/discord-post`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'x-sync-secret': fnSecret },
+    body: JSON.stringify(payload),
+  });
+  const text = await res.text();
+  console.log(`discord (bot): ${res.status} ${text.slice(0, 120)}`);
+  if (res.ok) process.exit(0);
+  if (!url) process.exit(1);
+  console.error('bot post failed; trying the webhook');
 }
 const res = await fetch(url, {
   method: 'POST',
