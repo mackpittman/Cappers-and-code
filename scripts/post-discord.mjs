@@ -56,34 +56,49 @@ const parlayLines = (board.parlays?.categories || [])
     return `**${c.title}** · ${legs}${tail ? `\n${tail}` : ''}`;
   });
 
-const payload = {
-  username: 'CC Core',
-  content: `**TODAY'S EDGE · NFL WEEK ${board.week}**\nAI Models. Human Insight. One Edge.`,
-  embeds: [
-    {
-      title: 'LOCKED IN',
-      description: bets.join('\n\n') || 'No confidence 3+ plays posted yet.',
-      color: GREEN,
-      thumbnail: undefined,
-    },
-    { title: 'TD BOARD', description: td.join('\n') || 'No TD board yet.', color: GREEN },
-    ...(parlayLines.length
-      ? [
-          {
-            title: 'PARLAY BOARD',
-            description: `${parlayLines.join('\n\n')}\nFull top-five per category in the app.`,
-            color: GREEN,
-          },
-        ]
-      : []),
-    {
-      title: 'TRUST THE CODE',
-      description: `${recLine}\n${fresh}\nUnits, not dollars. Real data, real wins, no fluff.`,
-      color: GREEN,
-      footer: { text: `Cappers & Code · @cappersandcode` },
-    },
-  ],
-};
+// DISCORD_PARLAYS_ONLY=1 posts just the parlay board (used when the digest already went out today).
+const parlaysOnly = process.env.DISCORD_PARLAYS_ONLY === '1';
+const payload = parlaysOnly
+  ? {
+      username: 'CC Core',
+      content: `**PARLAY BOARD · NFL WEEK ${board.week}**\nRanked one to five per category in the app. FanDuel and DraftKings prices.`,
+      embeds: [
+        {
+          title: 'PARLAY BOARD',
+          description: `${parlayLines.join('\n\n') || 'No parlays qualified.'}\nUnits, not dollars. Model probabilities, not guarantees.`,
+          color: GREEN,
+          footer: { text: 'Cappers & Code · @cappersandcode' },
+        },
+      ],
+    }
+  : {
+      username: 'CC Core',
+      content: `**TODAY'S EDGE · NFL WEEK ${board.week}**\nAI Models. Human Insight. One Edge.`,
+      embeds: [
+        {
+          title: 'LOCKED IN',
+          description: bets.join('\n\n') || 'No confidence 3+ plays posted yet.',
+          color: GREEN,
+          thumbnail: undefined,
+        },
+        { title: 'TD BOARD', description: td.join('\n') || 'No TD board yet.', color: GREEN },
+        ...(parlayLines.length
+          ? [
+              {
+                title: 'PARLAY BOARD',
+                description: `${parlayLines.join('\n\n')}\nFull top-five per category in the app.`,
+                color: GREEN,
+              },
+            ]
+          : []),
+        {
+          title: 'TRUST THE CODE',
+          description: `${recLine}\n${fresh}\nUnits, not dollars. Real data, real wins, no fluff.`,
+          color: GREEN,
+          footer: { text: `Cappers & Code · @cappersandcode` },
+        },
+      ],
+    };
 if (process.env.DISCORD_DRY_RUN === '1' || !url) {
   console.log(JSON.stringify(payload, null, 1));
   if (!url) console.error('DISCORD_WEBHOOK_URL not set; printed payload only.');
