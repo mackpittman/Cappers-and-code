@@ -56,7 +56,7 @@ write('404.html', notFound.replace('<body>', `<body>${bounce}`));
 const sheets = path.join(root, 'site/sheets');
 if (fs.existsSync(sheets))
   for (const f of fs.readdirSync(sheets))
-    if (f.endsWith('.png')) {
+    if (f.endsWith('.png') || f.endsWith('.json')) {
       fs.mkdirSync(path.join(dist, 'sheets'), { recursive: true });
       fs.copyFileSync(path.join(sheets, f), path.join(dist, 'sheets', f));
     }

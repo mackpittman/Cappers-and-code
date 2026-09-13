@@ -8,6 +8,7 @@ import type { BestBet, Board, Pick } from '@/lib/types';
 import { useBoard } from '@/lib/store';
 import { Paywall } from '@/components/Paywall';
 import { RecordCard } from '@/components/Record';
+import { PlaySheets } from '@/components/Sheets';
 import { supabaseConfigured } from '@/lib/supabase';
 import { AddToSlip, betToSlip, pickToSlip } from '@/components/Slip';
 
@@ -40,6 +41,7 @@ export default function BoardScreen() {
               Green means the number is worth playing. Units, not dollars.
             </Body>
           </Card>
+          <PlaySheets />
           {windows.map((w) => (
             <React.Fragment key={w.key}>
               <H2>{w.title}</H2>
