@@ -49,7 +49,9 @@ const parlayLines = (board.parlays?.categories || [])
       .join(' + ');
     const tail =
       c.key === 'twoPlus'
-        ? `fair ${am(p.fairPrice)}, play ${am(p.minPrice)} or better`
+        ? p.price != null
+          ? `${am(p.price)} ${p.legs[0].book} · fair ${am(p.fairPrice)} · ${pct(p.prob)} model`
+          : `fair ${am(p.fairPrice)}, play ${am(p.minPrice)} or better`
         : p.price != null
           ? `${am(p.price)} · ${pct(p.prob)} model`
           : '';

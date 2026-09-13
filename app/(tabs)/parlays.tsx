@@ -22,7 +22,9 @@ function ParlayCard({ p, category }: { p: Parlay; category: ParlayCategory['key'
   const t = useTheme();
   const headline =
     category === 'twoPlus'
-      ? `fair ${fmtAmerican(p.fairPrice)} · play ${fmtAmerican(p.minPrice)} or better`
+      ? p.price != null
+        ? `${fmtAmerican(p.price)} · fair ${fmtAmerican(p.fairPrice)}`
+        : `fair ${fmtAmerican(p.fairPrice)} · play ${fmtAmerican(p.minPrice)} or better`
       : p.price != null
         ? fmtAmerican(p.price)
         : '';

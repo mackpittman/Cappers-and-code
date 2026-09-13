@@ -19,6 +19,8 @@ export type Pick = {
   est: number;
   why: string;
   live?: LivePlayer | null;
+  /** 2+ touchdowns (player_tds_over at 1.5), better of the books, when posted. */
+  live2?: LivePlayer | null;
   edge?: number | null;
   gameId?: string;
   kickoff?: string;

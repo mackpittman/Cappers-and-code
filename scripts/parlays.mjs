@@ -108,8 +108,10 @@ export function atdLegs(board) {
       seen.add(p.name);
       const bp = bookPrice(p.live?.books);
       if (!bp || typeof p.est !== 'number') continue;
+      const td2 = bookPrice(p.live2?.books);
       legs.push({
         type: 'atd',
+        td2,
         label: `${p.name} anytime TD`,
         player: p.name,
         team: p.team,
@@ -224,37 +226,52 @@ export function buildParlays(board, opts = {}) {
     n,
   );
 
-  const twoPlus = rank(
-    atd
-      .map((l) => {
-        const prob = round(twoPlusProb(l.prob));
-        const fair = fairAmerican(prob);
-        const minPrice = toAmerican(1.05 / prob); // +5% EV floor
-        return {
-          legs: [
-            {
-              ...l,
-              type: 'td2',
-              label: `${l.player} 2+ TDs`,
-              price: null,
-              book: 'check FD/DK',
-              prob,
-            },
-          ],
-          price: null,
-          decimal: null,
-          prob,
-          fairPrice: fair,
-          minPrice,
-          ev: prob, // ranked by probability; the book price is verified by hand
-          why: `${Math.round(l.prob * 100)}% anytime estimate gives ${Math.round(prob * 100)}% for two or more (Poisson). Fair ${fair > 0 ? '+' : ''}${fair}; play at ${minPrice > 0 ? '+' : ''}${minPrice} or better on FD/DK. ${l.why}`,
-        };
-      })
-      .filter((p) => p.prob >= 0.08),
+  // 2+ TD props: real FanDuel/DraftKings price when the books post one (player_tds_over at 1.5),
+  // otherwise the model's fair price and the minimum playable number.
+  const twoPlusAll = atd
+    .map((l) => {
+      const prob = round(twoPlusProb(l.prob));
+      const fair = fairAmerican(prob);
+      const minPrice = toAmerican(1.05 / prob); // +5% EV floor
+      const book = l.td2 ?? null;
+      const priced = !!book;
+      const dec = priced ? toDecimal(book.price) : null;
+      const ev = priced ? round(prob * dec - 1) : null;
+      return {
+        legs: [
+          {
+            ...l,
+            type: 'td2',
+            label: `${l.player} 2+ TDs`,
+            price: priced ? book.price : null,
+            book: priced ? book.book : 'check FD/DK',
+            prob,
+            implied: priced ? round(impliedFromAmerican(book.price)) : undefined,
+            edge: priced ? round(prob - impliedFromAmerican(book.price)) : undefined,
+          },
+        ],
+        price: priced ? book.price : null,
+        decimal: dec,
+        prob,
+        fairPrice: fair,
+        minPrice,
+        ev,
+        why: priced
+          ? `${book.book} ${book.price > 0 ? '+' : ''}${book.price} vs fair ${fair > 0 ? '+' : ''}${fair} (${Math.round(prob * 100)}% for two or more from a ${Math.round(l.prob * 100)}% anytime estimate). ${ev >= 0 ? 'Priced with edge.' : 'Book price is short of the model; pass or wait for a better number.'} ${l.why}`
+          : `${Math.round(l.prob * 100)}% anytime estimate gives ${Math.round(prob * 100)}% for two or more (Poisson). Fair ${fair > 0 ? '+' : ''}${fair}; play at ${minPrice > 0 ? '+' : ''}${minPrice} or better on FD/DK. ${l.why}`,
+      };
+    })
+    .filter((p) => p.prob >= 0.08);
+  const twoPlusPriced = rank(
+    twoPlusAll.filter((p) => p.price != null && p.ev >= 0),
     n,
     1,
-    (p) => p.prob,
-  ).map((p) => ({ ...p, ev: null }));
+  );
+  const twoPlusRest = twoPlusAll
+    .filter((p) => p.price == null)
+    .sort((a, b) => b.prob - a.prob)
+    .slice(0, Math.max(0, n - twoPlusPriced.length));
+  const twoPlus = [...twoPlusPriced, ...twoPlusRest].map((p, i) => ({ ...p, rank: i + 1 }));
 
   const sideParlays = rank(
     crossGameCombos(sides, [2, 3], 0.1).map((p) => ({

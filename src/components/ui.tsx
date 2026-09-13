@@ -160,6 +160,12 @@ export function Price({ p }: { p: Pick }) {
             {move > 0 ? '▲' : '▼'} {Math.abs(move)} since open
           </Text>
         )}
+        {p.live2 && (
+          <Text style={[type.small, { color: t.green }]}>
+            2+ TD {fmtAmerican(p.live2.best)}
+            {p.live2.bestBook ? ` · ${p.live2.bestBook}` : ''}
+          </Text>
+        )}
       </View>
     );
   }

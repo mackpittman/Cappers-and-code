@@ -20,7 +20,7 @@ test('book price uses only FanDuel and DraftKings', () => {
   assert.equal(bookPrice({ betmgm: 200 }), null);
 });
 test('builder ranks cross-game TD parlays by expected value', () => {
-  const pick = (name, team, est, dk, fd) => ({
+  const pick = (name, team, est, dk, fd, td2) => ({
     name,
     team,
     pos: 'RB',
@@ -28,6 +28,14 @@ test('builder ranks cross-game TD parlays by expected value', () => {
     est,
     why: 'w',
     live: { books: { draftkings: dk, fanduel: fd } },
+    live2: td2
+      ? {
+          books: td2,
+          best: Math.max(...Object.values(td2)),
+          consensus: Math.max(...Object.values(td2)),
+          implied: 0,
+        }
+      : null,
   });
   const game = (id, away, home, top3, side, total, proj) => ({
     id,
@@ -57,7 +65,7 @@ test('builder ranks cross-game TD parlays by expected value', () => {
         'b',
         'NO',
         'DET',
-        [pick('Jahmyr Gibbs', 'DET', 0.78, -320, -330)],
+        [pick('Jahmyr Gibbs', 'DET', 0.78, -320, -330, { fanduel: 140, draftkings: 135 })],
         'DET -7',
         'Over 49.5',
         { away: 20, home: 31 },
@@ -80,6 +88,10 @@ test('builder ranks cross-game TD parlays by expected value', () => {
   assert.ok(anytime[0].ev >= anytime[anytime.length - 1].ev);
   const two = p.categories.find((c) => c.key === 'twoPlus').parlays;
   assert.equal(two[0].legs[0].label, 'Jahmyr Gibbs 2+ TDs');
+  assert.equal(two[0].price, 140);
+  assert.equal(two[0].legs[0].book, 'FD');
+  assert.ok(two[0].ev > 0);
+  assert.equal(two[1].price, null);
   assert.ok(two[0].fairPrice > 0 && two[0].minPrice > two[0].fairPrice);
   const sides = p.categories.find((c) => c.key === 'sides').parlays;
   assert.ok(sides.length >= 1 && sides[0].legs.every((l) => l.price === -110));

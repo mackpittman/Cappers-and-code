@@ -35,8 +35,13 @@ const MARKETS = {
     process.env.MARKETS_DESIG ||
     'player_anytime_td,player_pass_yds,player_rush_yds,player_reception_yds'
   ).split(','),
-  prekick: (process.env.MARKETS_PREKICK || 'player_anytime_td').split(','),
+  prekick: (process.env.MARKETS_PREKICK || 'player_anytime_td,player_tds_over').split(','),
 };
+// EXTRA_PULL=player_tds_over pulls that market once for every game inside the pre-kick window that
+// does not have it yet, whatever the phase log says (used when a market is added mid-week).
+const EXTRA_PULL = (process.env.EXTRA_PULL || '').split(',').filter(Boolean);
+// Yes/No style markets: one price per player. player_tds_over is kept at the 1.5 line only (2+ TDs).
+const YESNO = new Set(['player_anytime_td', 'player_1st_td', 'player_last_td', 'player_tds_over']);
 const SPORT = 'americanfootball_nfl';
 const BASE = 'https://api.the-odds-api.com/v4';
 const latestFile = path.join(DATA, 'odds', 'latest.json');
@@ -166,18 +171,46 @@ for (const { ev, phase } of candidates) {
   }
   noteUsage(r.headers);
   spent += cost;
+  const byMarket = ingest(ev, r.body, phase);
+  ev.pulls = { ...ev.pulls, [phase]: nowIso() };
+  pulled.push(`${ev.away}@${ev.home}:${phase}:${Object.keys(byMarket).join('+') || 'empty'}`);
+}
+
+// 3b) Extra one-off market pulls inside the pre-kick window (see EXTRA_PULL above).
+for (const ev of EXTRA_PULL.length ? prioritize(events, now) : []) {
+  const h = (Date.parse(ev.commence) - now.getTime()) / 3600000;
+  if (h < -1 || h > PREKICK_HOURS) continue;
+  const need = EXTRA_PULL.filter((mk) => !ev.markets[mk]);
+  if (!need.length) continue;
+  const cost = need.length;
+  if (spent + cost > MAX_CREDITS_PER_RUN) break;
+  if (usage.remaining != null && usage.remaining - cost < CREDIT_RESERVE) break;
+  const r = await getJson(
+    `${BASE}/sports/${SPORT}/events/${ev.id}/odds?apiKey=${KEY}&regions=${REGION}&markets=${need.join(',')}&oddsFormat=american`,
+  );
+  if (!r.ok) {
+    console.error(`extra ${ev.away}@${ev.home} failed (${r.status})`);
+    continue;
+  }
+  noteUsage(r.headers);
+  spent += cost;
+  const byMarket = ingest(ev, r.body, 'extra');
+  for (const mk of need) ev.pulls = { ...ev.pulls, [`extra:${mk}`]: nowIso() };
+  pulled.push(`${ev.away}@${ev.home}:extra:${Object.keys(byMarket).join('+') || 'empty'}`);
+}
+
+/** Parse one /events/{id}/odds body into ev.markets; returns the per-market player maps. */
+function ingest(ev, body, phase) {
   const byMarket = {};
-  for (const b of r.body.bookmakers || [])
+  for (const b of body.bookmakers || [])
     for (const m of b.markets || []) {
       const mk = (byMarket[m.key] ||= {});
       for (const o of m.outcomes || []) {
         const k = normName(o.description || o.name);
         const p = (mk[k] ||= { name: o.description || o.name, books: {} });
-        if (
-          m.key === 'player_anytime_td' ||
-          m.key === 'player_1st_td' ||
-          m.key === 'player_last_td'
-        ) {
+        if (m.key === 'player_tds_over') {
+          if (o.name === 'Over' && Number(o.point) === 1.5) p.books[b.key] = o.price;
+        } else if (YESNO.has(m.key)) {
           if (o.name === 'Yes') p.books[b.key] = o.price;
         } else {
           const side = o.name === 'Over' ? 'over' : 'under';
@@ -186,9 +219,13 @@ for (const { ev, phase } of candidates) {
       }
     }
   for (const [mkKey, players] of Object.entries(byMarket)) {
-    for (const p of Object.values(players)) {
-      if (mkKey.endsWith('_td')) {
+    for (const [k, p] of Object.entries(players)) {
+      if (YESNO.has(mkKey)) {
         const prices = Object.values(p.books);
+        if (!prices.length) {
+          delete players[k];
+          continue;
+        }
         p.best = Math.max(...prices);
         p.bestBook = Object.entries(p.books).find(([, v]) => v === p.best)?.[0];
         p.consensus = median(prices);
@@ -210,8 +247,7 @@ for (const { ev, phase } of candidates) {
     }
     if (Object.keys(players).length) ev.markets[mkKey] = { fetchedAt: nowIso(), phase, players };
   }
-  ev.pulls = { ...ev.pulls, [phase]: nowIso() };
-  pulled.push(`${ev.away}@${ev.home}:${phase}:${Object.keys(byMarket).join('+') || 'empty'}`);
+  return byMarket;
 }
 
 const snapshot = {
@@ -237,7 +273,7 @@ for (const ev of events) {
     for (const [k, p] of Object.entries(m.players))
       rows.push(
         JSON.stringify(
-          mk.endsWith('_td')
+          YESNO.has(mk)
             ? {
                 d: day,
                 ev: ev.id,

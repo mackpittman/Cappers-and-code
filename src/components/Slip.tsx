@@ -87,9 +87,11 @@ export function parlayToSlip(p: Parlay, category: string): SlipInput {
             .map((l) => l.gameLabel)
             .filter(Boolean)
             .join(', ') || null,
-    price: twoPlus ? (p.minPrice ?? null) : p.price,
+    price: twoPlus ? (p.price ?? p.minPrice ?? null) : p.price,
     book: twoPlus
-      ? 'check FD/DK'
+      ? p.price != null
+        ? (p.legs[0].book ?? 'FD/DK')
+        : 'check FD/DK'
       : p.legs.every((l) => l.book === p.legs[0].book)
         ? (p.legs[0].book ?? null)
         : 'FD/DK',

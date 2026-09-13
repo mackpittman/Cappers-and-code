@@ -51,6 +51,7 @@ const games = research.games.map((g) => {
     (s) => s.espnId === g.espnId || (s.home.abbr === g.home.abbr && s.away.abbr === g.away.abbr),
   );
   const atd = ev?.markets?.player_anytime_td?.players || {};
+  const td2 = ev?.markets?.player_tds_over?.players || {}; // 2+ TDs (over 1.5)
   const evRows = ev
     ? history.filter((h) => h.ev === ev.id && (h.m || 'player_anytime_td') === 'player_anytime_td')
     : [];
@@ -93,9 +94,20 @@ const games = research.games.map((g) => {
   const attach = (p) => {
     const k = normName(p.name);
     const lp = atd[k];
+    const l2 = td2[k];
     const open = firstPrice(k);
     return {
       ...p,
+      live2: l2
+        ? {
+            best: l2.best,
+            bestBook: l2.bestBook,
+            consensus: l2.consensus,
+            books: l2.books,
+            implied: +impliedProb(l2.consensus).toFixed(4),
+            fetchedAt: ev.markets.player_tds_over.fetchedAt,
+          }
+        : null,
       live: lp
         ? {
             best: lp.best,
@@ -118,7 +130,7 @@ const games = research.games.map((g) => {
   // Player prop lines for every non-TD market pulled, flagged with our lean when we have one.
   const propLines = [];
   for (const [mk, m] of Object.entries(ev?.markets || {})) {
-    if (mk.endsWith('_td')) continue;
+    if (mk.endsWith('_td') || mk === 'player_tds_over') continue;
     for (const p of Object.values(m.players)) {
       const lean = (g.market?.propLeans || []).find(
         (l) => l.market === mk && normName(l.player) === normName(p.name),
