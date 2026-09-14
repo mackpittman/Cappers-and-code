@@ -42,6 +42,17 @@ test('props phases: at most open, desig, prekick per event', () => {
   const thu = '2026-09-11T00:35:00Z';
   assert.equal(decidePhase(thu, {}, tue), 'open');
   assert.equal(decidePhase(thu, { open: 'x' }, new Date('2026-09-10T22:30:00Z')), 'prekick');
+  // Regression: a Sunday or Monday run must not spend credits on NEXT week's games. Books have
+  // not posted player markets a week out, so those pulls came back empty and cost a credit each.
+  const nextWeekSunday = '2026-09-20T17:00:00Z';
+  const thisSunday = new Date('2026-09-13T19:00:00Z'); // mid-slate, ~166h before next week
+  assert.equal(decidePhase(nextWeekSunday, {}, thisSunday), null, 'no opener a full week out');
+  const monday = new Date('2026-09-14T16:32:00Z'); // ~144h out
+  assert.equal(decidePhase(nextWeekSunday, {}, monday), null, 'no opener six days out');
+  // The Tuesday opener, about 121 hours out, still fires.
+  const nextTuesday = new Date('2026-09-15T16:00:00Z');
+  assert.equal(decidePhase(nextWeekSunday, {}, nextTuesday), 'open', 'Tuesday opener survives');
+
   // Far-future event (next week) is not pulled yet
   assert.equal(decidePhase('2026-09-20T17:00:00Z', {}, tue), null);
 });

@@ -29,6 +29,7 @@ const PREKICK_HOURS = Number(process.env.PREKICK_HOURS ?? 8);
 const CREDIT_RESERVE = Number(process.env.CREDIT_RESERVE ?? 40);
 const MAX_CREDITS_PER_RUN = Number(process.env.MAX_CREDITS_PER_RUN ?? 80);
 const FORCE_PHASE = process.env.FORCE_PHASE || null; // 'open' | 'desig' | 'prekick' overrides the calendar
+const OPEN_HOURS = Number(process.env.OPEN_HOURS || 132); // how far out an opener pull is allowed
 const MARKETS = {
   open: (process.env.MARKETS_OPEN || 'player_anytime_td').split(','),
   desig: (
@@ -155,7 +156,10 @@ const candidates = prioritize(events, now)
     ev,
     phase:
       FORCE_PHASE ||
-      decidePhase(ev.commence, ev.pulls, now, { prekickHours: PREKICK_HOURS }) ||
+      decidePhase(ev.commence, ev.pulls, now, {
+        prekickHours: PREKICK_HOURS,
+        openHours: OPEN_HOURS,
+      }) ||
       repullPhase(ev, now),
   }))
   .filter((c) => c.phase);

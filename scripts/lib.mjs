@@ -104,6 +104,10 @@ export const nowIso = () => new Date().toISOString();
  */
 export function decidePhase(commenceIso, pulls = {}, now = new Date(), opts = {}) {
   const prekickHours = opts.prekickHours ?? 8;
+  // How far out an opener pull is allowed. The Tuesday opener for a Sunday game is about 121
+  // hours, so 132 keeps it while excluding games a full week away. Pulling those costs a credit
+  // and returns nothing, because books have not posted player markets that early.
+  const openHours = opts.openHours ?? 132;
   const t = Date.parse(commenceIso);
   const ms = t - now.getTime();
   if (ms < -60 * 60000) return null; // already kicked off
@@ -112,7 +116,7 @@ export function decidePhase(commenceIso, pulls = {}, now = new Date(), opts = {}
   const dow = now.getUTCDay(); // 0 Sun ... 5 Fri, 6 Sat
   const afterDesignations = (dow === 5 && now.getUTCHours() >= 20) || dow === 6;
   if (afterDesignations && h <= 72 && !pulls.desig && !pulls.prekick) return 'desig';
-  if (h <= 7 * 24 && !pulls.open && !pulls.desig && !pulls.prekick) return 'open';
+  if (h <= openHours && !pulls.open && !pulls.desig && !pulls.prekick) return 'open';
   return null;
 }
 
