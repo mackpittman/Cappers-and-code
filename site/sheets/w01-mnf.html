@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Cappers & Code · Week 1 MNF sheet</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #050608; color: #F5F7F2; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .card { width: 1200px; min-height: 1150px; padding: 56px 64px 48px; background: #050608; position: relative; overflow: hidden; }
+  body.only .card { display: none; }
+  body.only .card:target { display: block; }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 6px; background: #B6FF00; }
+  .brand { display: flex; justify-content: space-between; align-items: baseline; letter-spacing: 3px; font-size: 18px; color: #C8CFC8; font-weight: 700; }
+  .brand b { color: #B6FF00; }
+  h1 { font-size: 54px; margin: 18px 0 4px; letter-spacing: -1px; line-height: 1.05; }
+  h1 span { color: #B6FF00; }
+  .sub { color: #C8CFC8; font-size: 22px; margin: 0 0 26px; }
+  .ticket { border: 1px solid #23282A; border-left: 5px solid #B6FF00; border-radius: 10px; padding: 18px 24px; margin-bottom: 14px; display: grid; grid-template-columns: 64px 1fr 220px; gap: 18px; align-items: center; background: #0B0E10; }
+  .n { font-size: 38px; font-weight: 800; color: #B6FF00; font-variant-numeric: tabular-nums; }
+  .legs { font-size: 25px; line-height: 1.35; }
+  .legs small { color: #C8CFC8; font-size: 19px; display: block; margin-top: 4px; }
+  .pay { text-align: right; }
+  .pay .odds { font-size: 38px; font-weight: 800; color: #B6FF00; font-variant-numeric: tabular-nums; }
+  .pay .hit { color: #C8CFC8; font-size: 19px; }
+  .note { margin-top: 18px; color: #C8CFC8; font-size: 20px; line-height: 1.4; }
+  .foot { margin-top: 26px; display: flex; justify-content: space-between; color: #79E000; font-size: 18px; letter-spacing: 2px; font-weight: 700; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .three { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .box { border: 1px solid #23282A; border-radius: 10px; padding: 20px 24px; background: #0B0E10; }
+  .box h2 { margin: 0 0 8px; font-size: 21px; letter-spacing: 3px; color: #B6FF00; }
+  .box .big { font-size: 30px; font-weight: 800; line-height: 1.25; }
+  .box .why { color: #C8CFC8; font-size: 19px; margin-top: 8px; line-height: 1.35; }
+  ul.bets { list-style: none; padding: 0; margin: 0; font-size: 25px; line-height: 1.45; }
+  ul.bets li b { color: #B6FF00; }
+  table.td { width: 100%; border-collapse: collapse; font-size: 25px; }
+  table.td th { text-align: left; color: #B6FF00; letter-spacing: 2px; font-size: 17px; padding: 0 12px 10px; border-bottom: 1px solid #23282A; }
+  table.td td { padding: 11px 12px; border-bottom: 1px solid #16191B; }
+  table.td td.r { text-align: right; font-variant-numeric: tabular-nums; }
+  table.td td.p { color: #B6FF00; font-weight: 800; }
+  table.td td.e { color: #79E000; font-weight: 700; }
+  table.td td.neg { color: #C8CFC8; font-weight: 700; }
+  table.td small { color: #C8CFC8; font-size: 18px; }
+</style>
+</head>
+<body>
+<script>if (location.hash) document.body.classList.add('only');</script>
+
+<section class="card" id="plan">
+  <div class="brand"><span>CAPPERS <b>&amp;</b> CODE</span><span>WEEK 1 · MONDAY NIGHT · DEN @ KC · 8:15 ET</span></div>
+  <h1>Monday night <span>game plan</span></h1>
+  <p class="sub">Chiefs -2.5 · total 43.5 · KC -135 / DEN +114. Model projects Denver 21, Kansas City 20. Arrowhead, 85° and windy: gusts to 27 mph. Line has moved toward Denver since open.</p>
+
+  <div class="three">
+    <div class="box"><h2>LOCKED IN · 1u</h2><div class="big">Broncos +2.5</div><div class="why">Confidence 3 of 5 and the model's strongest side of the week. Denver swept KC last year, 5-0-1 ATS as a road dog, leads the NFL in sacks. KC starts a UDFA at left tackle in front of a quarterback nine months off ACL surgery. Get +3 if it shows.</div></div>
+    <div class="box"><h2>LOCKED IN · 1u</h2><div class="big">Under 43.5</div><div class="why">Six straight Unders in the series, KC 13-4 to the Under last year, Denver allowed 18.3 a game. Our number was 42.5; the market gave us a point. 27 mph gusts help.</div></div>
+    <div class="box"><h2>MONEYLINE · 0.5u</h2><div class="big">Broncos +114</div><div class="why">The model has Denver winning outright in a 21-20 game. Plus money on the projected winner. Already on the alt teaser too: JAX -2.5 cashed, DEN +8.5 is the live leg.</div></div>
+  </div>
+
+  <div class="box" style="margin-top:16px"><h2>THE SCRIPT</h2>
+    <ul class="bets">
+      <li><b>Denver's front vs KC's patched line.</b> Josh Simmons is OUT. Bonitto and Elliss against a rookie free agent tackle. Chamarri Conner is out at safety too.</li>
+      <li><b>Mahomes, first game back.</b> Cleared to start, sat the preseason. Reid protects him with Kenneth Walker: 3-year, $43M, the focal point. That is a run-heavy, low-possession script.</li>
+      <li><b>Denver on offense.</b> Bo Nix healthy, Waddle added. Dobbins is RB1, RJ Harvey takes the scoring and passing-down work: 12 TD as a rookie on a committee.</li>
+      <li><b>Payton is 7-5 against Reid.</b> The Broncos' 12 comeback wins last year were built on defense and short fields, which is exactly the Under script.</li>
+    </ul>
+  </div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>PRICES REFRESH MONDAY 5:30 ET</span></div>
+</section>
+
+<section class="card" id="td">
+  <div class="brand"><span>CAPPERS <b>&amp;</b> CODE</span><span>WEEK 1 · MONDAY NIGHT · DEN @ KC · 8:15 ET</span></div>
+  <h1>Touchdowns, props <span>and builds</span></h1>
+  <p class="sub">Anytime prices are Thursday's open. 2+ TD, yardage and fresh anytime numbers land on the Monday 5:30 ET refresh. Play now only where the number is already inside our fair price.</p>
+  <table class="td">
+    <tr><th>#</th><th>Player</th><th style="text-align:right">Anytime</th><th style="text-align:right">Est</th><th style="text-align:right">Edge</th><th style="text-align:right">Play 2+ TD at</th></tr>
+    <tr><td class="p">1</td><td>RJ Harvey <small>RB · scoring back</small></td><td class="r p">+280 FD</td><td class="r">34%</td><td class="r e">+7.7</td><td class="r">+1000 or better</td></tr>
+    <tr><td class="p">2</td><td>Kenneth Walker III <small>RB · workhorse</small></td><td class="r p">-120 FD</td><td class="r">50%</td><td class="r neg">-4.5</td><td class="r">+400 or better</td></tr>
+    <tr><td class="p">3</td><td>Bo Nix <small>QB · 5 rush TD in 2025</small></td><td class="r p">+600 FD</td><td class="r">20%</td><td class="r e">+5.7</td><td class="r">—</td></tr>
+    <tr><td class="p">4</td><td>Evan Engram <small>TE · Conner out</small></td><td class="r p">+470 FD</td><td class="r">22%</td><td class="r e">+4.5</td><td class="r">—</td></tr>
+    <tr><td class="p">5</td><td>Rashee Rice <small>WR · first read</small></td><td class="r p">+145 FD</td><td class="r">38%</td><td class="r neg">-2.8</td><td class="r">+1000 or better</td></tr>
+    <tr><td class="p">6</td><td>J.K. Dobbins <small>RB1 by snaps</small></td><td class="r p">+180</td><td class="r">36%</td><td class="r e">+0.3</td><td class="r">—</td></tr>
+  </table>
+
+  <div class="two" style="margin-top:18px">
+    <div class="box"><h2>PROPS · 1u</h2>
+      <ul class="bets">
+        <li><b>Bo Nix under 1.5 pass TD</b> · run, defense, short fields</li>
+        <li><b>Kenneth Walker over 59.5 rush</b> · three-down role, KC needs the ground game</li>
+        <li><b>Mahomes under his pass yards line</b> · first game back, wind, six straight Unders. Number posts Monday</li>
+      </ul>
+    </div>
+    <div class="box"><h2>SAME-GAME BUILDS · 0.25u</h2>
+      <ul class="bets">
+        <li><b>Broncos ML · Harvey ATD · Nix u1.5 pass TD</b> · the road-dog script, about +900</li>
+        <li><b>Under 43.5 · Walker ATD · Harvey ATD</b> · RBs take the few scores, about +500</li>
+        <li><b>Chiefs ML · Walker ATD</b> · the KC path, about +150</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="ticket" style="margin-top:16px"><div class="n">M1</div><div class="legs">RJ Harvey ATD +280 FD · Bo Nix ATD +600 FD<small>Same game, same script: Denver scores on the ground. Book SGP pricing will differ.</small></div><div class="pay"><div class="odds">≈ +2500</div><div class="hit">model 7%</div></div></div>
+  <div class="ticket"><div class="n">M2</div><div class="legs">Broncos +2.5 · Under 43.5 · Harvey ATD<small>Everything the model believes about this game on one ticket.</small></div><div class="pay"><div class="odds">≈ +1100</div><div class="hit">0.25u</div></div></div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>LOCKED IN. TRUST THE CODE.</span></div>
+</section>
+
+</body>
+</html>
