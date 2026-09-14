@@ -22,8 +22,11 @@
   .box { border: 1px solid #23282A; border-radius: 10px; padding: 20px 24px; background: #0B0E10; margin-bottom: 16px; }
   .box h2 { margin: 0 0 8px; font-size: 21px; letter-spacing: 3px; color: #B6FF00; }
   ul.bets { list-style: none; padding: 0; margin: 0; font-size: 25px; line-height: 1.5; }
+  ul.bets li { overflow: hidden; }
   ul.bets li b { color: #B6FF00; }
-  ul.bets li span.u { color: #79E000; font-weight: 800; float: right; font-variant-numeric: tabular-nums; }
+  ul.bets li span.u { color: #79E000; font-weight: 800; float: right; font-variant-numeric: tabular-nums; white-space: nowrap; padding-left: 24px; }
+  .money { border: 1px solid #23282A; border-radius: 10px; padding: 16px 22px; background: #0B0E10; margin-bottom: 16px; color: #C8CFC8; font-size: 22px; line-height: 1.45; }
+  .money b { color: #B6FF00; }
   .foot { margin-top: 20px; display: flex; justify-content: space-between; color: #79E000; font-size: 18px; letter-spacing: 2px; font-weight: 700; }
 </style>
 </head>
@@ -41,6 +44,8 @@
     <div class="stat"><div class="l">RECORD</div><div class="v">37-52</div></div>
     <div class="stat"><div class="l">LIVE</div><div class="v">2</div></div>
   </div>
+
+  <div class="money"><b>What that is in money.</b> 39.95 units risked at the stakes printed on each sheet. $3 units: <b>+$72</b>. $10 units: <b>+$240</b>. $25 units: <b>+$599</b>. $100 units: <b>+$2,397</b>. Flat 1u on all 89 plays instead: <b>+82.71u, 93% ROI</b>. Set your own unit size on the results page in the app.</div>
 
   <div class="box"><h2>THE CASHES</h2>
     <ul class="bets">
