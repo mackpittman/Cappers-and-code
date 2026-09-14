@@ -1,7 +1,10 @@
 // Posts a message to the members' Discord as the CC Core bot. Replaces the channel-bound webhook so
 // the board can move channels by changing pipeline_config.discord_post_channel_id, and no webhook
 // URL has to live in any runner. Auth: x-sync-secret must equal pipeline_config.publish_secret.
-// Body: { content?: string, embeds?: object[], username?: string, channel_id?: string }
+// Body: { content?: string, embeds?: object[], username?: string, channel_id?: string,
+//         ping?: 'board'|'live'|'primetime'|'results'|'free' }
+// `ping` prepends the matching opt-in role mention, so only members who asked for that kind of
+// drop get alerted. Unknown or unconfigured keys post without a mention rather than failing.
 import { createClient } from 'npm:@supabase/supabase-js@2';
 
 const admin = createClient(
@@ -28,7 +31,17 @@ Deno.serve(async (req) => {
   if (!secret || req.headers.get('x-sync-secret') !== secret)
     return json({ error: 'unauthorized' }, 401);
   const body = await req.json().catch(() => ({}));
-  const payload = { content: body.content ?? '', embeds: body.embeds ?? [] };
+  // Opt-in role ping. Only the role we name is allowed to notify: never @everyone, never @here.
+  let content = body.content ?? '';
+  let allowed: Record<string, unknown> = { parse: [] };
+  if (body.ping) {
+    const roleId = await cfg(`discord_role_${String(body.ping).replace(/[^a-z]/g, '')}`);
+    if (roleId) {
+      content = `<@&${roleId}>\n${content}`;
+      allowed = { parse: [], roles: [roleId] };
+    }
+  }
+  const payload = { content, embeds: body.embeds ?? [], allowed_mentions: allowed };
   const channel = body.channel_id ?? defaultChannel;
 
   // Preferred: post as the bot into the configured channel.

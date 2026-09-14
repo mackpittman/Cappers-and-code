@@ -60,9 +60,13 @@ const parlayLines = (board.parlays?.categories || [])
 
 // DISCORD_PARLAYS_ONLY=1 posts just the parlay board (used when the digest already went out today).
 const parlaysOnly = process.env.DISCORD_PARLAYS_ONLY === '1';
+// Which opt-in role this drop alerts. DISCORD_PING overrides for one-off posts (a live card,
+// a results card); empty string posts silently. Members who never took the role get no ping.
+const ping = process.env.DISCORD_PING ?? 'board';
 const payload = parlaysOnly
   ? {
       username: 'CC Core',
+      ping,
       content: `**PARLAY BOARD · NFL WEEK ${board.week}**\nRanked one to five per category in the app. FanDuel and DraftKings prices.`,
       embeds: [
         {
@@ -75,6 +79,7 @@ const payload = parlaysOnly
     }
   : {
       username: 'CC Core',
+      ping,
       content: `**TODAY'S EDGE · NFL WEEK ${board.week}**\nAI Models. Human Insight. One Edge.`,
       embeds: [
         {
