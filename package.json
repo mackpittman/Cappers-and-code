@@ -14,7 +14,7 @@
     "update:schedule": "node scripts/fetch-schedule.mjs",
     "build:board": "node scripts/build-board.mjs",
     "update:daily": "node scripts/fetch-schedule.mjs && node scripts/fetch-injuries.mjs && node scripts/fetch-odds.mjs && node scripts/grade-results.mjs && node scripts/build-board.mjs && node scripts/publish-board.mjs && node scripts/post-discord.mjs",
-    "test": "node --test scripts/*.test.mjs",
+    "test": "node --experimental-strip-types --test scripts/*.test.mjs",
     "format": "prettier --write \"**/*.{ts,tsx,mjs,json,md,yml}\"",
     "post:discord": "node scripts/post-discord.mjs",
     "publish:board": "node scripts/publish-board.mjs",

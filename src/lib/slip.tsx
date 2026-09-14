@@ -3,6 +3,7 @@
 // being offline. Signed-out users keep a local-only slip.
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { fmtPrice, toAmerican, toDecimal } from './price';
 import { supabase } from './supabase';
 import { useBoard } from './store';
 
@@ -50,9 +51,7 @@ const uuid = () =>
     const r = (Math.random() * 16) | 0;
     return (c === 'x' ? r : (r & 0x3) | 0x8).toString(16);
   });
-export const toDecimal = (a: number) => (a > 0 ? 1 + a / 100 : 1 + 100 / -a);
-export const toAmerican = (d: number) =>
-  d >= 2 ? Math.round((d - 1) * 100) : Math.round(-100 / (d - 1));
+export { fmtPrice, toAmerican, toDecimal, toWin } from './price';
 
 type Ctx = {
   items: SlipItem[];
@@ -249,8 +248,6 @@ export function slipSummary(list: SlipItem[]) {
     parlayProb: probs.length > 1 && probs.length === list.length ? prob : null,
   };
 }
-export const fmtPrice = (n: number | null | undefined) =>
-  n == null ? '—' : n > 0 ? `+${n}` : `${n}`;
 /** Plain-text slip for pasting into a book or Discord. */
 export function slipText(day: string, list: SlipItem[]) {
   const s = slipSummary(list);

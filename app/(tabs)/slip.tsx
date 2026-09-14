@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Linking, Platform, Pressable, Share, Text, TextInput, View } from 'react-native';
+import { router } from 'expo-router';
 import { Screen } from '@/components/Screen';
 import { Body, Card, H2, Label, Pill } from '@/components/ui';
 import {
@@ -188,6 +189,11 @@ export default function SlipScreen() {
             primary
             disabled={!todays.length}
             onPress={async () => setMsg(await copyOrShare(slipText(today, todays)))}
+          />
+          <Btn
+            label="Send to book"
+            disabled={!todays.length}
+            onPress={() => router.push('/send')}
           />
           <Btn label="Clear today" disabled={!todays.length} onPress={() => clearDay(today)} />
         </View>
