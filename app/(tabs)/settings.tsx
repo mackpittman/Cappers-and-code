@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Alert, Linking, Pressable, Text, TextInput, View } from 'react-native';
+import { router } from 'expo-router';
 import { Screen } from '@/components/Screen';
 import { openPortal } from '@/lib/supabase';
 import { LegalLinks } from '@/components/LegalLinks';
@@ -91,6 +92,8 @@ export default function SettingsScreen() {
             Not signed in. Open the Edge tab to sign in with your email.
           </Body>
         )}
+        <View style={{ height: space.sm }} />
+        {button('Get my Discord invite', () => router.push('/discord'))}
         <View style={{ height: space.sm }} />
         {button('Membership on the web', () => Linking.openURL(SITE_URL))}
         <LegalLinks />

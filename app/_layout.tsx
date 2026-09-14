@@ -52,6 +52,8 @@ export default function RootLayout() {
               <Stack.Screen name="results" options={{ title: 'Results' }} />
               <Stack.Screen name="send" options={{ title: 'Send to book' }} />
               <Stack.Screen name="s/[id]" options={{ title: 'Shared slip' }} />
+              <Stack.Screen name="discord" options={{ title: 'The Discord' }} />
+              <Stack.Screen name="join" options={{ title: 'Join the Discord' }} />
             </Stack>
           </SlipProvider>
         </BoardProvider>

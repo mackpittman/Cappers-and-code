@@ -94,3 +94,24 @@ export async function openPortal(): Promise<string> {
   if (!data?.url) throw new Error(data?.error ?? 'Portal unavailable');
   return data.url as string;
 }
+
+/** The members' Discord is invite-only. Entitled members get a standing single-use invite. */
+export async function myDiscordInvite(): Promise<{ url: string; expires_at: string }> {
+  const { data, error } = await supabase.functions.invoke('discord-invite', {
+    body: { action: 'me' },
+  });
+  if (error)
+    throw new Error((await error.context?.json?.().catch(() => null))?.error ?? error.message);
+  if (!data?.url) throw new Error(data?.error ?? 'Invite unavailable');
+  return data as { url: string; expires_at: string };
+}
+/** Redeem a handed-out code. Works signed out: the code is the credential. */
+export async function redeemInviteCode(code: string): Promise<{ url: string; expires_at: string }> {
+  const { data, error } = await supabase.functions.invoke('discord-invite', {
+    body: { action: 'redeem', code },
+  });
+  if (error)
+    throw new Error((await error.context?.json?.().catch(() => null))?.error ?? error.message);
+  if (!data?.url) throw new Error(data?.error ?? 'That code is not valid.');
+  return data as { url: string; expires_at: string };
+}
