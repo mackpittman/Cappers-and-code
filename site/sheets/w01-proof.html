@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Cappers &amp; Code · Week 1 Sunday proof cards</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #050608; color: #F5F7F2;
+         font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  body.only .card { display: none; }
+  body.only .card:target { display: flex; }
+  .card { width: 1080px; height: 1350px; padding: 72px 72px 140px; background: #050608;
+          position: relative; overflow: hidden; display: flex; flex-direction: column; }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 10px; background: #B6FF00; }
+  .card::after { content: ""; position: absolute; right: -300px; bottom: -300px; width: 820px; height: 820px;
+                 border-radius: 50%; background: radial-gradient(circle, rgba(182,255,0,0.13) 0%, rgba(182,255,0,0) 68%); }
+  .top, .mid, .foot { position: relative; z-index: 1; }
+  .brand { display: flex; justify-content: space-between; letter-spacing: 4px; font-size: 21px;
+           color: #C8CFC8; font-weight: 800; }
+  .brand b { color: #B6FF00; }
+  .kicker { color: #B6FF00; letter-spacing: 6px; font-size: 23px; font-weight: 800; margin-top: 52px; }
+  h1 { font-size: 104px; margin: 10px 0 0; letter-spacing: -4px; line-height: 0.94; font-weight: 900; }
+  h1 span { color: #B6FF00; }
+  h1.sm { font-size: 78px; letter-spacing: -3px; }
+  .odds { font-size: 168px; font-weight: 900; color: #B6FF00; letter-spacing: -7px; line-height: 0.9; margin: 6px 0 0; }
+  .sub { color: #C8CFC8; font-size: 27px; margin: 22px 0 0; line-height: 1.4; }
+  .sub b { color: #F5F7F2; }
+
+  .legs { margin-top: 52px; border-top: 1px solid #23282A; }
+  .leg { display: flex; justify-content: space-between; align-items: baseline;
+         padding: 26px 0; border-bottom: 1px solid #16191B; }
+  .legs.tight .leg { padding: 18px 0; }
+  .legs.tight .leg .l b { font-size: 33px; }
+  .leg .l b { font-size: 36px; display: block; font-weight: 800; }
+  .leg .l small { display: block; color: #C8CFC8; font-size: 22px; margin-top: 6px; }
+  .leg .p { color: #B6FF00; font-size: 38px; font-weight: 900;
+            font-variant-numeric: tabular-nums; white-space: nowrap; padding-left: 28px; }
+
+  .payout { margin-top: 44px; border: 1px solid #23282A; border-radius: 14px;
+            background: #0B0E10; padding: 28px 32px; display: flex; justify-content: space-between; align-items: center; }
+  .payout .l { color: #C8CFC8; font-size: 24px; letter-spacing: 3px; font-weight: 800; }
+  .payout .v { color: #B6FF00; font-size: 56px; font-weight: 900; font-variant-numeric: tabular-nums; }
+
+  .kpis { display: flex; gap: 20px; margin-top: 48px; }
+  .kpi { flex: 1; border: 1px solid #23282A; border-radius: 14px; background: #0B0E10; padding: 24px 26px; }
+  .kpi .l { color: #C8CFC8; letter-spacing: 3px; font-size: 18px; font-weight: 800; }
+  .kpi .v { color: #B6FF00; font-size: 58px; font-weight: 900; line-height: 1.1;
+            font-variant-numeric: tabular-nums; margin-top: 6px; }
+  .kpi .v.ink { color: #F5F7F2; }
+
+  /* One measure, two conditions: one hue, direct-labelled, no legend needed. */
+  .bars { margin-top: 56px; }
+  .bar { margin-bottom: 34px; }
+  .bar .cap { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+  .bar .cap .n { font-size: 27px; font-weight: 800; }
+  .bar .cap .n small { display: block; color: #C8CFC8; font-size: 20px; font-weight: 600; margin-top: 4px; }
+  .bar .cap .v { color: #B6FF00; font-size: 50px; font-weight: 900; font-variant-numeric: tabular-nums; }
+  .track { height: 34px; background: #14181A; border-radius: 4px; overflow: hidden; }
+  .fill { height: 100%; background: #B6FF00; border-radius: 0 4px 4px 0; }
+  .fill.dim { background: #5E7A12; }
+
+  .foot { margin-top: auto; padding-top: 40px; display: flex; justify-content: space-between;
+          color: #79E000; font-size: 21px; letter-spacing: 3px; font-weight: 800; }
+  .note { color: #C8CFC8; font-size: 24px; line-height: 1.5; margin-top: 40px; }
+  .note b { color: #F5F7F2; }
+</style>
+</head>
+<body>
+<script>if (location.hash) document.body.classList.add('only');</script>
+
+<!-- 1 · the day -->
+<section class="card" id="day">
+  <div class="top">
+    <div class="brand"><span>CAPPERS <b>&amp;</b> CODE</span><span>NFL WEEK 1 · SUNDAY</span></div>
+    <div class="kicker">NUCLEAR SUNDAY</div>
+    <h1><span>+26.49</span><br/>units</h1>
+    <p class="sub"><b>66% ROI</b> on every ticket we posted, graded against the final box scores.</p>
+    <div class="kpis">
+      <div class="kpi"><div class="l">PLAYS GRADED</div><div class="v ink">92</div></div>
+      <div class="kpi"><div class="l">RECORD</div><div class="v ink">38-54</div></div>
+      <div class="kpi"><div class="l">RISKED</div><div class="v ink">40.2u</div></div>
+    </div>
+  </div>
+  <div class="mid">
+    <div class="legs" style="margin-top:0">
+      <div class="leg"><div class="l"><b>Goedert 2+ TD · Taylor ATD</b><small>parlay at +3011</small></div><div class="p">+7.53u</div></div>
+      <div class="leg"><div class="l"><b>Dallas Goedert 2+ TD</b><small>+1900 · 4 for 77, two scores</small></div><div class="p">+4.75u</div></div>
+      <div class="leg"><div class="l"><b>Justin Jefferson 2+ TD</b><small>+1400 · 8 for 92, two scores</small></div><div class="p">+3.50u</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>LOCKED IN. TRUST THE CODE.</span></div>
+</section>
+
+<!-- 2 · the +3011 -->
+<section class="card" id="p3011">
+  <div class="top">
+    <div class="brand"><span>CAPPERS <b>&amp;</b> CODE</span><span>WEEK 1 · THE BIG ONE</span></div>
+    <div class="kicker">CASHED</div>
+    <div class="odds">+3011</div>
+    <p class="sub">Two legs. Both had to score twice or not at all. <b>Both did.</b></p>
+  </div>
+  <div class="mid">
+    <div class="legs">
+      <div class="leg"><div class="l"><b>Dallas Goedert 2+ TD</b><small>FanDuel · 4 catches, 77 yards, two touchdowns</small></div><div class="p">+1900</div></div>
+      <div class="leg"><div class="l"><b>Jonathan Taylor anytime TD</b><small>DraftKings · he went for two</small></div><div class="p">-180</div></div>
+    </div>
+    <div class="payout"><div class="l">0.25 UNITS RETURNED</div><div class="v">+7.53u</div></div>
+    <div class="note">At <b>$100 units</b> that is a $25 ticket paying <b>$753</b>.</div>
+  </div>
+  <div class="foot"><span>POSTED 12:21 ET, BEFORE KICKOFF</span><span>TRUST THE CODE.</span></div>
+</section>
+
+<!-- 3 · the +1100 -->
+<section class="card" id="p1100">
+  <div class="top">
+    <div class="brand"><span>CAPPERS <b>&amp;</b> CODE</span><span>WEEK 1 · SUNDAY</span></div>
+    <div class="kicker">CASHED</div>
+    <div class="odds">+1100</div>
+    <p class="sub">Two backs, two games, both asked to find the end zone twice.</p>
+  </div>
+  <div class="mid">
+    <div class="legs">
+      <div class="leg"><div class="l"><b>Derrick Henry 2+ TD</b><small>he went for three</small></div><div class="p">2 TD</div></div>
+      <div class="leg"><div class="l"><b>Jahmyr Gibbs 2+ TD</b><small>29 carries, 156 yards, two touchdowns</small></div><div class="p">2 TD</div></div>
+    </div>
+    <div class="payout"><div class="l">0.25 UNITS RETURNED</div><div class="v">+2.75u</div></div>
+    <div class="note">A <b>$100</b> ticket on this pays <b>$1,100</b>.</div>
+  </div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>TRUST THE CODE.</span></div>
+</section>
+
+<!-- 4 · the +1007 -->
+<section class="card" id="p1007">
+  <div class="top">
+    <div class="brand"><span>CAPPERS <b>&amp;</b> CODE</span><span>WEEK 1 · SUNDAY NIGHT</span></div>
+    <div class="kicker">CASHED</div>
+    <div class="odds">+1007</div>
+    <p class="sub">Ticket S2 off the Sunday night sheet. Both goal-line backs, one ticket.</p>
+  </div>
+  <div class="mid">
+    <div class="legs">
+      <div class="leg"><div class="l"><b>Javonte Williams 2+ TD</b><small>FanDuel · a 1-yard run and a 17-yard catch</small></div><div class="p">+440</div></div>
+      <div class="leg"><div class="l"><b>Cam Skattebo anytime TD</b><small>scored in the first half</small></div><div class="p">+105</div></div>
+    </div>
+    <div class="payout"><div class="l">0.25 UNITS RETURNED</div><div class="v">+2.52u</div></div>
+    <div class="note">Posted on the Sunday night card hours before kickoff.</div>
+  </div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>TRUST THE CODE.</span></div>
+</section>
+
+<!-- 5 · the 2+ TD board -->
+<section class="card" id="td2">
+  <div class="top">
+    <div class="brand"><span>CAPPERS <b>&amp;</b> CODE</span><span>WEEK 1 · SUNDAY</span></div>
+    <div class="kicker">THE 2+ TD BOARD</div>
+    <h1 class="sm">Twelve calls.<br/><span>Five cashed.</span></h1>
+    <p class="sub">The hardest market on the sheet. Seven missed and it still returned
+      <b>288%</b>, because five of these paid like this.</p>
+  </div>
+  <div class="mid">
+    <div class="legs tight" style="margin-top:0">
+      <div class="leg"><div class="l"><b>Dallas Goedert</b><small>+1900 · 2 TD</small></div><div class="p">+4.75u</div></div>
+      <div class="leg"><div class="l"><b>Justin Jefferson</b><small>+1400 · 2 TD</small></div><div class="p">+3.50u</div></div>
+      <div class="leg"><div class="l"><b>Josh Allen</b><small>+1000 · two rushing TD</small></div><div class="p">+2.50u</div></div>
+      <div class="leg"><div class="l"><b>Javonte Williams</b><small>+440 · 2 TD</small></div><div class="p">+1.10u</div></div>
+      <div class="leg"><div class="l"><b>Jahmyr Gibbs</b><small>+195 · 2 TD</small></div><div class="p">+0.49u</div></div>
+    </div>
+    <div class="payout"><div class="l">5-7 · 3.5 UNITS RISKED · NET</div><div class="v">+10.09u</div></div>
+  </div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>TRUST THE CODE.</span></div>
+</section>
+
+<!-- 6 · bet everything -->
+<section class="card" id="all">
+  <div class="top">
+    <div class="brand"><span>CAPPERS <b>&amp;</b> CODE</span><span>WEEK 1 · THE RECEIPTS</span></div>
+    <div class="kicker">NO CHERRY PICKING</div>
+    <h1 class="sm">Bet <span>every single</span><br/>play we posted.</h1>
+    <p class="sub">All <b>92</b> graded tickets. Every winner, every loser, nothing left out.</p>
+    <div class="bars">
+      <div class="bar">
+        <div class="cap"><div class="n">One flat unit on all 92<small>99% return on 92 units risked</small></div><div class="v">+90.78u</div></div>
+        <div class="track"><div class="fill" style="width:100%"></div></div>
+      </div>
+      <div class="bar">
+        <div class="cap"><div class="n">At the stakes we printed<small>66% return on 40.2 units risked</small></div><div class="v">+26.49u</div></div>
+        <div class="track"><div class="fill dim" style="width:29.2%"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="mid">
+    <div class="note">We went <b>38-54</b>. We lost more bets than we won and still cleared it by a mile,
+      because the number we took was better than the number that should have been there. <b>That is the whole business.</b></div>
+    <div class="kpis">
+      <div class="kpi"><div class="l">RECORD</div><div class="v ink">38-54</div></div>
+      <div class="kpi"><div class="l">BIGGEST TICKET</div><div class="v">+3011</div></div>
+      <div class="kpi"><div class="l">2+ TD HITS</div><div class="v ink">5</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>TRUST THE CODE.</span></div>
+</section>
+
+</body>
+</html>
