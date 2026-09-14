@@ -49,6 +49,7 @@ export default function RootLayout() {
             >
               <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
               <Stack.Screen name="game/[id]" options={{ title: 'Game' }} />
+              <Stack.Screen name="results" options={{ title: 'Results' }} />
             </Stack>
           </SlipProvider>
         </BoardProvider>

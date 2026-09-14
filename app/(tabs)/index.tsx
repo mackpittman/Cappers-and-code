@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
 import { type, useTheme } from '@/theme';
 import { useRouter } from 'expo-router';
 import { Screen } from '@/components/Screen';
@@ -41,6 +41,17 @@ export default function BoardScreen() {
               Green means the number is worth playing. Units, not dollars.
             </Body>
           </Card>
+          <Pressable onPress={() => router.push('/results')}>
+            <Card accent="green">
+              <Label color={t.green}>Results</Label>
+              <Text style={[type.h2, { color: t.ink, marginBottom: 4 }]}>
+                Every ticket we posted, graded
+              </Text>
+              <Body small muted>
+                Record, net units and ROI by slate, plus the model's own tracker. Tap to open.
+              </Body>
+            </Card>
+          </Pressable>
           <PlaySheets />
           {windows.map((w) => (
             <React.Fragment key={w.key}>
