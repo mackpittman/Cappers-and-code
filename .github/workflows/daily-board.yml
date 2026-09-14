@@ -1,17 +1,21 @@
 name: Cappers & Code daily board
 
+# The schedule is OFF. This workflow has no secrets set, so every scheduled run rebuilt the board
+# from whatever stale snapshot happened to be in the repo and pushed it over main, while reporting
+# success. The Claude Routine is the live scheduler and it has the real keys.
+#
+# To make this the scheduler instead: add ODDS_API_KEY, SUPABASE_URL, SUPABASE_ANON_KEY and
+# BOARD_PUBLISH_SECRET as repository secrets, uncomment the schedule below, and disable the
+# Routine so two schedulers are never spending the same credit budget.
 on:
-  schedule:
-    # Free feeds (ESPN schedule, lines, injuries) every day at 11:00 UTC (7am ET).
-    - cron: '0 11 * * *'
-    # Props runs, timed to when prices matter. The script decides per game what phase applies,
-    # so extra runs cost nothing when nothing is due.
-    - cron: '0 16 * * 2' # Tue 12pm ET: ATD openers
-    - cron: '0 16 * * 3' # Wed 12pm ET: late openers only
-    - cron: '30 23 * * 5' # Fri 7:30pm ET: post-designations full bundle
-    - cron: '30 22 * * 4' # Thu 6:30pm ET: TNF pre-kick
-    - cron: '30 16 * * 0' # Sun 12:30pm ET: pre-kick for the whole Sunday slate
-    - cron: '30 22 * * 1' # Mon 6:30pm ET: MNF pre-kick
+  # schedule:
+  #   - cron: '0 11 * * *'   # daily 7am ET: free feeds
+  #   - cron: '0 16 * * 2'   # Tue 12pm ET: ATD openers
+  #   - cron: '0 16 * * 3'   # Wed 12pm ET: late openers
+  #   - cron: '30 23 * * 5'  # Fri 7:30pm ET: post-designations
+  #   - cron: '30 22 * * 4'  # Thu 6:30pm ET: TNF pre-kick
+  #   - cron: '30 16 * * 0'  # Sun 12:30pm ET: Sunday slate
+  #   - cron: '30 22 * * 1'  # Mon 6:30pm ET: MNF pre-kick
   workflow_dispatch:
     inputs:
       force_phase:
@@ -30,6 +34,32 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      # Refuse to run without inputs. Without this the scripts no-op, the board is rebuilt from a
+      # stale snapshot, and the commit step pushes it over main with a green check.
+      - name: Require the secrets this pipeline actually needs
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          BOARD_PUBLISH_SECRET: ${{ secrets.BOARD_PUBLISH_SECRET }}
+        run: |
+          missing=""
+          for v in ODDS_API_KEY SUPABASE_URL SUPABASE_ANON_KEY BOARD_PUBLISH_SECRET; do
+            [ -n "${!v}" ] || missing="$missing $v"
+          done
+          if [ -n "$missing" ]; then
+            echo "::error::Refusing to run: missing repository secrets:$missing"
+            echo "Set them in Settings > Secrets and variables > Actions, or leave this workflow off."
+            exit 1
+          fi
+
+      - name: Restore pipeline state so credits are never spent twice
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          BOARD_PUBLISH_SECRET: ${{ secrets.BOARD_PUBLISH_SECRET }}
+        run: node scripts/state-sync.mjs pull
+
       - name: Fetch schedule, injuries and props, rebuild board
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
@@ -47,6 +77,7 @@ jobs:
           node scripts/grade-results.mjs
           node scripts/build-board.mjs
           node scripts/publish-board.mjs
+          node scripts/state-sync.mjs push
           node scripts/post-discord.mjs
       - name: Commit updated data
         run: |
