@@ -4,11 +4,30 @@
 import path from 'node:path';
 import { DATA, getJson, writeJson, nowIso } from './lib.mjs';
 
-const url = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard';
-const { ok, status, body } = await getJson(url);
+const base = 'https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard';
+const weekUrl = (year, week) => `${base}?year=${year}&seasontype=2&week=${week}`;
+let { ok, status, body } = await getJson(
+  process.env.NFL_WEEK
+    ? weekUrl(process.env.NFL_SEASON || new Date().getUTCFullYear(), process.env.NFL_WEEK)
+    : base,
+);
 if (!ok || !body?.events) {
   console.error(`ESPN scoreboard failed (${status}); keeping previous schedule.json`);
   process.exit(0);
+}
+// ESPN's default scoreboard lags a day or so after Monday night: when every game in the week it
+// returns is already final, roll forward to the next week so Tuesday runs research the right slate.
+const allFinal = (b) =>
+  b.events.length > 0 &&
+  b.events.every((e) => e.competitions[0].status?.type?.name === 'STATUS_FINAL');
+if (!process.env.NFL_WEEK && allFinal(body) && body.week?.number) {
+  const next = await getJson(weekUrl(body.season?.year, body.week.number + 1));
+  if (next.ok && next.body?.events?.length) {
+    console.log(
+      `schedule: week ${body.week.number} is complete, rolling to week ${body.week.number + 1}`,
+    );
+    body = next.body;
+  }
 }
 const num = (v) => (v == null || v === '' ? null : Number(String(v).replace('+', '')));
 const games = body.events.map((e) => {
