@@ -1,51 +1,113 @@
 {
  "season": 2026,
  "week": 1,
- "gradedAt": "2026-09-14T16:54:10.624Z",
- "finals": 14,
+ "gradedAt": "2026-09-15T04:13:41.544Z",
+ "finals": 15,
  "games": 15,
  "summary": {
   "all": {
-   "wins": 79,
-   "losses": 102,
+   "wins": 87,
+   "losses": 108,
    "pushes": 0,
-   "pending": 14
+   "pending": 0
   },
   "lockedIn": {
-   "wins": 10,
-   "losses": 4,
+   "wins": 11,
+   "losses": 5,
    "pushes": 0,
-   "pending": 2
+   "pending": 0
   },
   "lean": {
-   "wins": 15,
-   "losses": 10,
+   "wins": 16,
+   "losses": 11,
    "pushes": 0,
-   "pending": 2
+   "pending": 0
   },
   "top3": {
-   "wins": 22,
-   "losses": 20,
+   "wins": 24,
+   "losses": 21,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "td2": {
-   "wins": 10,
-   "losses": 32,
+   "wins": 11,
+   "losses": 34,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "value": {
-   "wins": 8,
-   "losses": 20,
+   "wins": 9,
+   "losses": 21,
    "pushes": 0,
-   "pending": 2
+   "pending": 0
   },
   "prop": {
-   "wins": 14,
+   "wins": 16,
    "losses": 16,
    "pushes": 0,
-   "pending": 2
+   "pending": 0
+  },
+  "calibration": {
+   "td2": [
+    {
+     "band": "0-8%",
+     "n": 4,
+     "model": 0.058,
+     "actual": 0,
+     "wins": 0
+    },
+    {
+     "band": "8-15%",
+     "n": 21,
+     "model": 0.101,
+     "actual": 0.095,
+     "wins": 2
+    },
+    {
+     "band": "15-25%",
+     "n": 7,
+     "model": 0.209,
+     "actual": 0.571,
+     "wins": 4
+    },
+    {
+     "band": "25-100%",
+     "n": 13,
+     "model": 0.341,
+     "actual": 0.385,
+     "wins": 5
+    }
+   ],
+   "top3": [
+    {
+     "band": "0-40%",
+     "n": 11,
+     "model": 0.357,
+     "actual": 0.273,
+     "wins": 3
+    },
+    {
+     "band": "40-50%",
+     "n": 14,
+     "model": 0.429,
+     "actual": 0.5,
+     "wins": 7
+    },
+    {
+     "band": "50-60%",
+     "n": 10,
+     "model": 0.526,
+     "actual": 0.6,
+     "wins": 6
+    },
+    {
+     "band": "60-100%",
+     "n": 10,
+     "model": 0.644,
+     "actual": 0.8,
+     "wins": 8
+    }
+   ]
   }
  },
  "items": [
@@ -115,7 +177,7 @@
    "final": "SF 27, LAR 7",
    "type": "td2",
    "label": "Christian McCaffrey 2+ TD",
-   "est": 0.2621266588627692,
+   "est": 0.3407646565216,
    "bucket": "td2",
    "result": "loss"
   },
@@ -125,7 +187,7 @@
    "final": "SF 27, LAR 7",
    "type": "td2",
    "label": "Kyren Williams 2+ TD",
-   "est": 0.23348370725033796,
+   "est": 0.30352881942543936,
    "bucket": "td2",
    "result": "loss"
   },
@@ -135,7 +197,7 @@
    "final": "SF 27, LAR 7",
    "type": "td2",
    "label": "Davante Adams 2+ TD",
-   "est": 0.1534264097200273,
+   "est": 0.1994543326360355,
    "bucket": "td2",
    "result": "loss"
   },
@@ -255,7 +317,7 @@
    "final": "ATL 13, PIT 20",
    "type": "td2",
    "label": "Bijan Robinson 2+ TD",
-   "est": 0.2621266588627692,
+   "est": 0.3407646565216,
    "bucket": "td2",
    "result": "loss"
   },
@@ -405,7 +467,7 @@
    "final": "BAL 41, IND 23",
    "type": "td2",
    "label": "Jonathan Taylor 2+ TD",
-   "est": 0.31538102937972334,
+   "est": 0.40999533819364037,
    "bucket": "td2",
    "result": "win"
   },
@@ -415,7 +477,7 @@
    "final": "BAL 41, IND 23",
    "type": "td2",
    "label": "Derrick Henry 2+ TD",
-   "est": 0.31538102937972334,
+   "est": 0.40999533819364037,
    "bucket": "td2",
    "result": "win"
   },
@@ -535,7 +597,7 @@
    "final": "BUF 36, HOU 31",
    "type": "td2",
    "label": "James Cook 2+ TD",
-   "est": 0.19876855708927477,
+   "est": 0.2583991242160572,
    "bucket": "td2",
    "result": "loss"
   },
@@ -545,7 +607,7 @@
    "final": "BUF 36, HOU 31",
    "type": "td2",
    "label": "Josh Allen 2+ TD",
-   "est": 0.1534264097200273,
+   "est": 0.1994543326360355,
    "bucket": "td2",
    "result": "win"
   },
@@ -665,7 +727,7 @@
    "final": "CHI 59, CAR 37",
    "type": "td2",
    "label": "D'Andre Swift 2+ TD",
-   "est": 0.23348370725033796,
+   "est": 0.30352881942543936,
    "bucket": "td2",
    "result": "win"
   },
@@ -915,7 +977,7 @@
    "final": "NO 30, DET 31",
    "type": "td2",
    "label": "Jahmyr Gibbs 2+ TD",
-   "est": 0.44689189882144953,
+   "est": 0.5809594684678844,
    "bucket": "td2",
    "result": "win"
   },
@@ -925,7 +987,7 @@
    "final": "NO 30, DET 31",
    "type": "td2",
    "label": "Amon-Ra St. Brown 2+ TD",
-   "est": 0.19067153670200276,
+   "est": 0.2478729977126036,
    "bucket": "td2",
    "result": "win"
   },
@@ -1165,7 +1227,7 @@
    "final": "TB 27, CIN 33",
    "type": "td2",
    "label": "Chase Brown 2+ TD",
-   "est": 0.19876855708927477,
+   "est": 0.2583991242160572,
    "bucket": "td2",
    "result": "loss"
   },
@@ -1175,7 +1237,7 @@
    "final": "TB 27, CIN 33",
    "type": "td2",
    "label": "Ja'Marr Chase 2+ TD",
-   "est": 0.2070928697733525,
+   "est": 0.2692207307053583,
    "bucket": "td2",
    "result": "loss"
   },
@@ -1285,7 +1347,7 @@
    "final": "ARI 26, LAC 14",
    "type": "td2",
    "label": "Omarion Hampton 2+ TD",
-   "est": 0.23348370725033796,
+   "est": 0.30352881942543936,
    "bucket": "td2",
    "result": "loss"
   },
@@ -1535,7 +1597,7 @@
    "final": "MIA 13, LV 27",
    "type": "td2",
    "label": "Ashton Jeanty 2+ TD",
-   "est": 0.1534264097200273,
+   "est": 0.1994543326360355,
    "bucket": "td2",
    "result": "win"
   },
@@ -1665,7 +1727,7 @@
    "final": "WSH 22, PHI 24",
    "type": "td2",
    "label": "Saquon Barkley 2+ TD",
-   "est": 0.25231807002055184,
+   "est": 0.3280134910267174,
    "bucket": "td2",
    "result": "loss"
   },
@@ -1675,7 +1737,7 @@
    "final": "WSH 22, PHI 24",
    "type": "td2",
    "label": "Jalen Hurts 2+ TD",
-   "est": 0.1534264097200273,
+   "est": 0.1994543326360355,
    "bucket": "td2",
    "result": "loss"
   },
@@ -1795,7 +1857,7 @@
    "final": "DAL 20, NYG 28",
    "type": "td2",
    "label": "Javonte Williams 2+ TD",
-   "est": 0.25231807002055184,
+   "est": 0.3280134910267174,
    "bucket": "td2",
    "result": "win"
   },
@@ -1805,7 +1867,7 @@
    "final": "DAL 20, NYG 28",
    "type": "td2",
    "label": "Cam Skattebo 2+ TD",
-   "est": 0.16769479596150383,
+   "est": 0.21800323474995498,
    "bucket": "td2",
    "result": "loss"
   },
@@ -1862,140 +1924,142 @@
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "side",
    "label": "DEN +2.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "loss"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "total",
    "label": "Under 42.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "win"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "side",
    "label": "DEN +2.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "total",
    "label": "Under 42.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "win"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "atd",
    "label": "Kenneth Walker III ATD",
-   "result": "pending",
    "est": 0.5,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "atd",
    "label": "Rashee Rice ATD",
-   "result": "pending",
    "est": 0.38,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "atd",
    "label": "RJ Harvey ATD",
-   "result": "pending",
    "est": 0.34,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "td2",
    "label": "Kenneth Walker III 2+ TD",
-   "result": "pending",
-   "est": 0.1534264097200273,
-   "bucket": "td2"
+   "est": 0.1994543326360355,
+   "bucket": "td2",
+   "result": "win"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "td2",
    "label": "Rashee Rice 2+ TD",
-   "result": "pending",
    "est": 0.0836178034153402,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "td2",
    "label": "RJ Harvey 2+ TD",
-   "result": "pending",
    "est": 0.0657598069853006,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "atd",
    "label": "Evan Engram ATD",
-   "result": "pending",
    "est": 0.22,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "win"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "atd",
    "label": "Bo Nix ATD",
-   "result": "pending",
    "est": 0.2,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "prop",
    "label": "Bo Nix under 1.5 pass tds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 1,
+   "result": "win"
   },
   {
    "game": "den-kc",
    "gameLabel": "DEN@KC",
-   "final": null,
+   "final": "DEN 10, KC 31",
    "type": "prop",
    "label": "Kenneth Walker III over 59.5 rush yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 173,
+   "result": "win"
   }
  ]
 }

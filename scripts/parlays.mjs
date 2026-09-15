@@ -26,13 +26,36 @@ export function phi(z) {
     d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274))));
   return z > 0 ? 1 - p : p;
 }
-/** P(2+ TD) from the anytime probability, Poisson scoring: lambda = -ln(1-p). */
-export function twoPlusProb(pAny) {
+/**
+ * Bell-cow adjustment to the 2+ TD conversion. Poisson assumes touchdowns arrive at a steady rate,
+ * but a back who owns the goal line has a fatter right tail than that: when his team scores a lot,
+ * he scores a lot. Week 1 graded it. Model 2+ estimates at 25% and up hit 57% of the time (4 of 7),
+ * the 15 to 25% band hit 33% (4 of 12), and the 8 to 15% band was calibrated at 10% for 10%. So
+ * the top of the board is under-estimated and only the top. Kenneth Walker was the cost of that:
+ * a 50% anytime back priced at +550 for two, and we passed at a Poisson 15.3%. He scored twice.
+ *
+ * The boost applies only above BELLCOW_MIN anytime probability, defaults to a deliberately
+ * conservative 1.3 (not the 1.9 the sample would justify) and is tuned from the calibration block
+ * grade-results prints every week. TD2_BELLCOW_BOOST=1 turns it off.
+ */
+export const BELLCOW = {
+  min: Number(process.env.TD2_BELLCOW_MIN || 0.5),
+  boost: Number(process.env.TD2_BELLCOW_BOOST || 1.3),
+};
+/** Pure Poisson P(2+ TD) from the anytime probability: lambda = -ln(1-p). */
+export function twoPlusPoisson(pAny) {
   if (pAny <= 0) return 0;
   if (pAny >= 0.999) return 0.999;
   const lambda = -Math.log(1 - pAny);
   return 1 - Math.exp(-lambda) * (1 + lambda);
 }
+/** P(2+ TD) as we play it: Poisson, lifted for bell-cows. Returns the pure number below the cut. */
+export function twoPlusProb(pAny, opts = BELLCOW) {
+  const base = twoPlusPoisson(pAny);
+  if (pAny < opts.min || opts.boost <= 1) return base;
+  return Math.min(0.999, base * opts.boost);
+}
+export const isBellcow = (pAny, opts = BELLCOW) => pAny >= opts.min && opts.boost > 1;
 
 // Final or already kicked off: no new tickets on a game in progress.
 const isFinal = (g) =>
@@ -233,6 +256,7 @@ export function buildParlays(board, opts = {}) {
   const twoPlusAll = atd
     .map((l) => {
       const prob = round(twoPlusProb(l.prob));
+      const bellcow = isBellcow(l.prob);
       const fair = fairAmerican(prob);
       const minPrice = toAmerican(1.05 / prob); // +5% EV floor
       const book = l.td2 ?? null;
@@ -259,8 +283,8 @@ export function buildParlays(board, opts = {}) {
         minPrice,
         ev,
         why: priced
-          ? `${book.book} ${book.price > 0 ? '+' : ''}${book.price} vs fair ${fair > 0 ? '+' : ''}${fair} (${Math.round(prob * 100)}% for two or more from a ${Math.round(l.prob * 100)}% anytime estimate). ${ev >= 0 ? 'Priced with edge.' : 'Book price is short of the model; pass or wait for a better number.'} ${l.why}`
-          : `${Math.round(l.prob * 100)}% anytime estimate gives ${Math.round(prob * 100)}% for two or more (Poisson). Fair ${fair > 0 ? '+' : ''}${fair}; play at ${minPrice > 0 ? '+' : ''}${minPrice} or better on FD/DK. ${l.why}`,
+          ? `${book.book} ${book.price > 0 ? '+' : ''}${book.price} vs fair ${fair > 0 ? '+' : ''}${fair} (${Math.round(prob * 100)}% for two or more from a ${Math.round(l.prob * 100)}% anytime estimate${bellcow ? ', bell-cow adjusted' : ''}). ${ev >= 0 ? 'Priced with edge.' : 'Book price is short of the model; pass or wait for a better number.'} ${l.why}`
+          : `${Math.round(l.prob * 100)}% anytime estimate gives ${Math.round(prob * 100)}% for two or more (${bellcow ? 'Poisson, bell-cow adjusted' : 'Poisson'}). Fair ${fair > 0 ? '+' : ''}${fair}; play at ${minPrice > 0 ? '+' : ''}${minPrice} or better on FD/DK. ${l.why}`,
       };
     })
     .filter((p) => p.prob >= 0.08);

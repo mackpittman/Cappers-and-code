@@ -4,6 +4,7 @@
 import path from 'node:path';
 import fs from 'node:fs';
 import { DATA, ROOT, readJson, writeJson, getJson, normName, nowIso } from './lib.mjs';
+import { twoPlusProb } from './parlays.mjs';
 
 const research = readJson(path.join(ROOT, 'src', 'data', 'research.json'));
 const season = research.season,
@@ -57,10 +58,7 @@ function tdCounts(g) {
 function gradeTd2(g, player) {
   return (tdCounts(g).get(normName(player)) ?? 0) >= 2 ? 'win' : 'loss';
 }
-const twoPlusProb = (p) => {
-  const l = -Math.log(1 - Math.min(0.999, Math.max(0, p)));
-  return 1 - Math.exp(-l) * (1 + l);
-};
+// Same 2+ conversion we post with, so the graded estimate is the number we actually played.
 function stat(g, player, market) {
   const s = summaries[g.id];
   const cat = {
@@ -233,13 +231,50 @@ function tally(list) {
 const byBucket = {};
 for (const b of ['lockedIn', 'lean', 'top3', 'td2', 'value', 'prop'])
   byBucket[b] = tally(items.filter((i) => i.bucket === b));
+
+/**
+ * Calibration: for every bucket that carries a model estimate, how often did the calls in each
+ * estimate band actually hit? This is what tunes the bell-cow boost and any other haircut. A band
+ * where actual runs well above the model average is under-estimated; below is over-estimated.
+ */
+export function calibrate(rows, edges) {
+  const graded = rows.filter(
+    (i) => (i.result === 'win' || i.result === 'loss') && typeof i.est === 'number',
+  );
+  const bands = [];
+  for (let k = 0; k < edges.length; k++) {
+    const lo = edges[k],
+      hi = edges[k + 1] ?? 1.01;
+    const inBand = graded.filter((i) => i.est >= lo && i.est < hi);
+    if (!inBand.length) continue;
+    const wins = inBand.filter((i) => i.result === 'win').length;
+    bands.push({
+      band: `${Math.round(lo * 100)}-${hi > 1 ? '100' : Math.round(hi * 100)}%`,
+      n: inBand.length,
+      model: +(inBand.reduce((a, i) => a + i.est, 0) / inBand.length).toFixed(3),
+      actual: +(wins / inBand.length).toFixed(3),
+      wins,
+    });
+  }
+  return bands;
+}
+const calibration = {
+  td2: calibrate(
+    items.filter((i) => i.bucket === 'td2'),
+    [0, 0.08, 0.15, 0.25],
+  ),
+  top3: calibrate(
+    items.filter((i) => i.bucket === 'top3'),
+    [0, 0.4, 0.5, 0.6],
+  ),
+};
 const week_result = {
   season,
   week,
   gradedAt: nowIso(),
   finals: research.games.filter((g) => finalScore(g)).length,
   games: research.games.length,
-  summary: { all: tally(items), ...byBucket },
+  summary: { all: tally(items), ...byBucket, calibration },
   items,
 };
 writeJson(outFile, week_result);
@@ -267,6 +302,15 @@ for (const b of ['all', 'lockedIn', 'lean', 'top3', 'td2', 'value', 'prop']) {
 }
 writeJson(recordFile, record);
 const s = week_result.summary;
+for (const [k, bands] of Object.entries(calibration)) {
+  const line = bands
+    .map(
+      (b) =>
+        `${b.band} n=${b.n} model ${Math.round(b.model * 100)}% actual ${Math.round(b.actual * 100)}%`,
+    )
+    .join(' · ');
+  if (line) console.log(`calibration ${k}: ${line}`);
+}
 console.log(
   `graded week ${week}: ${week_result.finals}/${week_result.games} finals · locked in ${s.lockedIn.wins}-${s.lockedIn.losses}-${s.lockedIn.pushes} · top3 ATD ${s.top3.wins}-${s.top3.losses} · 2+ TD ${s.td2.wins}-${s.td2.losses} · leans ${s.lean.wins}-${s.lean.losses}-${s.lean.pushes} · props ${s.prop.wins}-${s.prop.losses}-${s.prop.pushes} · pending ${s.all.pending}`,
 );

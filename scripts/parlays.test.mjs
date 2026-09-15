@@ -1,10 +1,20 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { twoPlusProb, toAmerican, toDecimal, bookPrice, buildParlays, phi } from './parlays.mjs';
+import {
+  twoPlusProb,
+  twoPlusPoisson,
+  isBellcow,
+  toAmerican,
+  toDecimal,
+  bookPrice,
+  buildParlays,
+  phi,
+} from './parlays.mjs';
 
-test('two-plus TD probability from the anytime estimate', () => {
-  assert.ok(Math.abs(twoPlusProb(0.5) - 0.153) < 0.005); // lambda 0.693 -> 15.3%
-  assert.ok(twoPlusProb(0.78) > 0.4 && twoPlusProb(0.78) < 0.5);
+test('two-plus TD probability from the anytime estimate (pure Poisson)', () => {
+  assert.ok(Math.abs(twoPlusPoisson(0.5) - 0.153) < 0.005); // lambda 0.693 -> 15.3%
+  assert.ok(twoPlusPoisson(0.78) > 0.4 && twoPlusPoisson(0.78) < 0.5);
+  assert.equal(twoPlusPoisson(0), 0);
   assert.equal(twoPlusProb(0), 0);
 });
 test('odds conversions round-trip', () => {
@@ -92,8 +102,26 @@ test('builder ranks cross-game TD parlays by expected value', () => {
   assert.equal(two[0].legs[0].book, 'FD');
   assert.ok(two[0].ev > 0);
   assert.equal(two[1].price, null);
-  assert.ok(two[0].fairPrice > 0 && two[0].minPrice > two[0].fairPrice);
+  // bell-cow lift can push a 78% anytime back to a minus fair price; the floor must still sit above fair
+  assert.ok(toDecimal(two[0].minPrice) > toDecimal(two[0].fairPrice));
   const sides = p.categories.find((c) => c.key === 'sides').parlays;
   assert.ok(sides.length >= 1 && sides[0].legs.every((l) => l.price === -110));
   assert.equal(p.categories.find((c) => c.key === 'model').parlays[0].legs[0].label, 'A');
+});
+
+test('2+ TD conversion: Poisson below the bell-cow cut, lifted above it', () => {
+  // Below the cut the two functions agree exactly.
+  assert.equal(twoPlusProb(0.34, { min: 0.5, boost: 1.3 }), twoPlusPoisson(0.34));
+  assert.equal(isBellcow(0.34, { min: 0.5, boost: 1.3 }), false);
+  // A 50% anytime back is a bell-cow: Poisson 15.3% becomes about 20%.
+  const pure = twoPlusPoisson(0.5);
+  const lifted = twoPlusProb(0.5, { min: 0.5, boost: 1.3 });
+  assert.ok(Math.abs(pure - 0.1534) < 0.001, 'pure Poisson at 50% is 15.3%');
+  assert.ok(Math.abs(lifted - pure * 1.3) < 1e-9, 'lift is exactly the boost');
+  assert.equal(isBellcow(0.5, { min: 0.5, boost: 1.3 }), true);
+  // Turning the boost off restores pure Poisson everywhere.
+  assert.equal(twoPlusProb(0.7, { min: 0.5, boost: 1 }), twoPlusPoisson(0.7));
+  assert.equal(isBellcow(0.7, { min: 0.5, boost: 1 }), false);
+  // Never a probability above one, however big the boost.
+  assert.ok(twoPlusProb(0.95, { min: 0.5, boost: 10 }) <= 0.999);
 });
