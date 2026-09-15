@@ -1,7 +1,8 @@
 // Publishes data/board.json to Supabase so the app can read it through an entitlement check.
 // Needs SUPABASE_URL, SUPABASE_ANON_KEY and BOARD_PUBLISH_SECRET (the value stored in pipeline_config).
+import fs from 'node:fs';
 import path from 'node:path';
-import { DATA, readJson } from './lib.mjs';
+import { DATA, ROOT, readJson } from './lib.mjs';
 
 const url = process.env.SUPABASE_URL;
 const anon = process.env.SUPABASE_ANON_KEY;
@@ -48,6 +49,25 @@ const preview = {
       (board.crossStacks || []).length,
   },
 };
+// Handoff: a Routine session that cannot push to git can ride named repo files along on the
+// preview (HANDOFF_FILES=src/data/research.json,docs/week-02-2026-report.md); the next session with
+// git access runs scripts/handoff-pull.mjs to write them back and commit. The following normal
+// publish drops the payload again.
+if (process.env.HANDOFF_FILES) {
+  const files = {};
+  for (const rel of process.env.HANDOFF_FILES.split(',')
+    .map((x) => x.trim())
+    .filter(Boolean)) {
+    const abs = path.resolve(ROOT, rel);
+    if (!abs.startsWith(ROOT + path.sep) || !fs.existsSync(abs)) {
+      console.error(`handoff: skipping ${rel} (missing or outside the repo)`);
+      continue;
+    }
+    files[rel] = fs.readFileSync(abs, 'utf8');
+  }
+  preview.handoff = { savedAt: new Date().toISOString(), files };
+  console.log(`handoff: ${Object.keys(files).length} files attached to the preview`);
+}
 const res = await fetch(`${url}/rest/v1/rpc/publish_board`, {
   method: 'POST',
   headers: { 'Content-Type': 'application/json', apikey: anon, Authorization: `Bearer ${anon}` },
