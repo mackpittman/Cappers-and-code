@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Cappers & Code · Week 2 max confidence</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #050608; color: #F5F7F2; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .card { width: 1200px; min-height: 0; padding: 56px 64px 140px; background: #050608; position: relative; overflow: hidden; display: flex; flex-direction: column; }
+  body.only .card { display: none; }
+  body.only .card:target { display: flex; }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 6px; background: #B6FF00; }
+  .brand { display: flex; justify-content: space-between; align-items: baseline; letter-spacing: 3px; font-size: 18px; color: #C8CFC8; font-weight: 700; }
+  .brand b { color: #B6FF00; }
+  h1 { font-size: 54px; margin: 18px 0 4px; letter-spacing: -1px; line-height: 1.05; }
+  h1 span { color: #B6FF00; }
+  .sub { color: #C8CFC8; font-size: 22px; margin: 0 0 26px; line-height: 1.35; }
+  .ticket { border: 1px solid #23282A; border-left: 5px solid #B6FF00; border-radius: 10px; padding: 16px 24px; margin-bottom: 12px; display: grid; grid-template-columns: 150px 1fr 200px; gap: 18px; align-items: center; background: #0B0E10; }
+  .tag { font-size: 17px; font-weight: 800; color: #B6FF00; letter-spacing: 2px; }
+  .legs { font-size: 25px; line-height: 1.3; }
+  .legs small { color: #C8CFC8; font-size: 18px; display: block; margin-top: 3px; }
+  .pay { text-align: right; }
+  .pay .odds { font-size: 34px; font-weight: 800; color: #B6FF00; font-variant-numeric: tabular-nums; }
+  .pay .hit { color: #C8CFC8; font-size: 18px; }
+  .foot { margin-top: auto; padding-top: 26px; display: flex; justify-content: space-between; color: #79E000; font-size: 18px; letter-spacing: 2px; font-weight: 700; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .three { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .box { border: 1px solid #23282A; border-radius: 10px; padding: 20px 24px; background: #0B0E10; }
+  .box h2 { margin: 0 0 8px; font-size: 20px; letter-spacing: 3px; color: #B6FF00; }
+  .box .big { font-size: 30px; font-weight: 800; line-height: 1.25; }
+  .box .why { color: #C8CFC8; font-size: 18px; margin-top: 8px; line-height: 1.35; }
+  .banner { border: 1px solid rgba(182,255,0,.45); border-radius: 10px; padding: 16px 24px; background: #0B0E10; display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+  .banner .k { font-size: 17px; letter-spacing: 3px; color: #B6FF00; font-weight: 800; }
+  .banner .v { font-size: 34px; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .banner .v small { font-size: 18px; color: #C8CFC8; font-weight: 600; margin-left: 10px; }
+  table.td { width: 100%; border-collapse: collapse; font-size: 25px; }
+  table.td th { text-align: left; color: #B6FF00; letter-spacing: 2px; font-size: 17px; padding: 0 12px 10px; border-bottom: 1px solid #23282A; }
+  table.td td { padding: 12px 12px; border-bottom: 1px solid #16191B; }
+  table.td td.r { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  table.td td.p { color: #B6FF00; font-weight: 800; }
+  table.td td.e { color: #79E000; font-weight: 700; }
+  table.td small { color: #C8CFC8; font-size: 18px; }
+</style>
+</head>
+<body>
+<script>if (location.hash) document.body.classList.add('only');</script>
+
+<section class="card" id="max">
+  <div class="brand"><span>CAPPERS <b>&amp;</b> CODE</span><span>WEEK 2 · MAX CONFIDENCE · SIDES AND TOTALS</span></div>
+  <h1>Week 2 <span>max confidence</span></h1>
+  <p class="sub">The short list. Seven sides and totals the model likes most, posted Tuesday at the opener and held through the week. Units, not dollars. Play the number shown or better.</p>
+  <div class="banner"><span class="k">WEEK 1, GRADED</span><span class="v">+23.90u <small>Locked In 11-5 · 105 tickets posted, every one graded</small></span></div>
+
+  <div class="ticket"><div class="tag">TOTAL · 4/5</div><div class="legs">Saints at Ravens <b>Over 46.5</b><small>Both offenses scored freely in Week 1 against replacement-level defenses; sharp money has pushed the number up all week.</small></div><div class="pay"><div class="odds">-110</div><div class="hit">highest-conf total</div></div></div>
+  <div class="ticket"><div class="tag">TOTAL · 3/5</div><div class="legs">Lions at Bills <b>Over 54.5</b><small>Both teams topped 30 and allowed 30+; Detroit is missing both safeties, Buffalo's scheme is new. Model 26-30.</small></div><div class="pay"><div class="odds">-110</div><div class="hit">Thursday night</div></div></div>
+  <div class="ticket"><div class="tag">SIDE · 3/5</div><div class="legs">Eagles <b>-7</b> at Titans<small>Fangio's front pressured Washington on half its dropbacks; Ward managed 4.4 yards an attempt. Model covers 60%.</small></div><div class="pay"><div class="odds">-110</div><div class="hit">pairs with Under 39.5</div></div></div>
+  <div class="ticket"><div class="tag">SIDE · 3/5</div><div class="legs">Ravens <b>-8.5</b> vs Saints<small>Baltimore's new staff dismantled Indianapolis in all three phases; New Orleans is mid-rebuild. Lay it before double digits.</small></div><div class="pay"><div class="odds">-110</div><div class="hit">early window</div></div></div>
+  <div class="ticket"><div class="tag">SIDE · 3/5</div><div class="legs">Chiefs <b>-6.5</b> vs Colts<small>Indianapolis just allowed 41 at home; Walker ran for 173 behind a downhill scheme against a front that cannot set the edge.</small></div><div class="pay"><div class="odds">-110</div><div class="hit">Sunday night</div></div></div>
+  <div class="ticket"><div class="tag">SIDE · 3/5</div><div class="legs">Bills <b>-4.5</b> or better vs Lions<small>Posted Wednesday at -4.5; the market has run to -5.5 with three Lions linemen out. Play -4.5 or -5 where it is still up, pass at -6.</small></div><div class="pay"><div class="odds">-110</div><div class="hit">Thursday night</div></div></div>
+  <div class="ticket"><div class="tag">TOTAL · 3/5</div><div class="legs">Eagles at Titans <b>Under 39.5</b><small>Both offenses were inefficient in Week 1 and Philadelphia's clock-control script keeps possessions down.</small></div><div class="pay"><div class="odds">-110</div><div class="hit">early window</div></div></div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>CAPPERSANDCODE · THE APP HAS LIVE PRICES</span></div>
+</section>
+
+<section class="card" id="td">
+  <div class="brand"><span>CAPPERS <b>&amp;</b> CODE</span><span>WEEK 2 · MAX CONFIDENCE · TOUCHDOWNS</span></div>
+  <h1>The top band, <span>five scorers</span></h1>
+  <p class="sub">Our 60%+ anytime calls. In Week 1 this band hit 80% of the time against a model number of 64%, so it is the strongest thing we post. Est is the model; implied is the price.</p>
+  <table class="td">
+    <tr><th>#</th><th>Player</th><th style="text-align:right">Anytime</th><th style="text-align:right">Est</th><th style="text-align:right">Implied</th><th style="text-align:right">Game</th></tr>
+    <tr><td class="p">1</td><td>Derrick Henry <small>BAL RB · near-monopoly on goal-line work</small></td><td class="r p">-225</td><td class="r e">68%</td><td class="r">69%</td><td class="r">NO @ BAL</td></tr>
+    <tr><td class="p">2</td><td>Jonathan Taylor <small>IND RB · 19 carries inside the 5 last year</small></td><td class="r p">-175</td><td class="r e">62%</td><td class="r">64%</td><td class="r">IND @ KC</td></tr>
+    <tr><td class="p">3</td><td>Bijan Robinson <small>ATL RB · the whole offense with Rush at QB</small></td><td class="r p">at the book</td><td class="r e">62%</td><td class="r">—</td><td class="r">CAR @ ATL</td></tr>
+    <tr><td class="p">4</td><td>Kenneth Walker III <small>KC RB · 173 yards, two scores in Week 1</small></td><td class="r p">-135</td><td class="r e">60%</td><td class="r">57%</td><td class="r">IND @ KC</td></tr>
+    <tr><td class="p">5</td><td>Omarion Hampton <small>LAC RB · lead back, goal-line score in Week 1</small></td><td class="r p">-150 DK</td><td class="r e">58%</td><td class="r">60%</td><td class="r">LV @ LAC</td></tr>
+  </table>
+  <div class="two" style="margin-top:18px">
+    <div class="box"><h2>BUILD · RB HAMMER</h2><div class="big">Hampton + Walker + Irving</div><div class="why">Three lead backs with the clearest goal-line roles on the slate. About +330 when all three are posted; roughly 20% blended.</div></div>
+    <div class="box"><h2>BUILD · FAVORITES ML</h2><div class="big">49ers + Bucs + Ravens + Rams</div><div class="why">Four favorites the model has at 75% or better each. About 39% true probability for a price near +120.</div></div>
+  </div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>PRICES RE-PULLED SATURDAY AND AGAIN PRE-KICK</span></div>
+</section>
+
+<section class="card" id="tnf">
+  <div class="brand"><span>CAPPERS <b>&amp;</b> CODE</span><span>WEEK 2 · THURSDAY NIGHT · DET @ BUF · 8:15 ET</span></div>
+  <h1>Thursday night <span>tickets</span></h1>
+  <p class="sub">Bills -5.5 · total 54.5 · BUF -250. Lions RT Miller and LG Mahogany out, three starting linemen missing; both Lions safeties on PUP. Posted prices from FanDuel and Courtside Wednesday night.</p>
+  <div class="three">
+    <div class="box"><h2>LOCKED IN</h2><div class="big">Bills -4.5 or better</div><div class="why">Posted at -4.5; the market ran to -5.5 on the line news. Lay -5 at most, never the moneyline at -250.</div></div>
+    <div class="box"><h2>LOCKED IN</h2><div class="big">Over 54.5</div><div class="why">Both offenses topped 30 in Week 1 and neither secondary is ready. Model 26-30. Take 53.5 anywhere it is still up.</div></div>
+    <div class="box"><h2>ANYTIME</h2><div class="big">St. Brown +105</div><div class="why">Goff's outlet behind the patched line; model 48% against 46.5% implied. The one anytime price on this board at value.</div></div>
+  </div>
+  <div style="height:16px"></div>
+  <div class="ticket"><div class="tag">2+ TD</div><div class="legs">Josh Allen <b>2+ touchdowns</b><small>Two rushing scores in Week 1, QB sneak the default inside the 5, no Lions safeties. Play +339 or longer.</small></div><div class="pay"><div class="odds">+470 FD</div><div class="hit">24% blended</div></div></div>
+  <div class="ticket"><div class="tag">PAIR</div><div class="legs">St. Brown + DJ Moore <b>anytime</b><small>The only anytime pair priced at or above our numbers: both are their quarterback's red-zone outlet.</small></div><div class="pay"><div class="odds">+405 FD</div><div class="hit">20% blended</div></div></div>
+  <div class="ticket"><div class="tag">SGP</div><div class="legs">Bills -4.5 + Allen anytime + Moore anytime<small>If Buffalo controls the script at home, Allen scores near the goal line and Moore cashes a red-zone shot. Price it at the book; +350 or better.</small></div><div class="pay"><div class="odds">+350+</div><div class="hit">22% blended</div></div></div>
+  <div class="ticket"><div class="tag">LONG SHOT</div><div class="legs">Checkdown city <b>Courtside</b><small>St. Brown 9+ catches and 100+ yards, Gibbs 5+ catches and 30+ yards. Three linemen out means the quick game; one script, four legs.</small></div><div class="pay"><div class="odds">+2901</div><div class="hit">6% blended</div></div></div>
+  <div class="ticket"><div class="tag">LONG SHOT</div><div class="legs">Allen does it all <b>FanDuel</b><small>Allen 2+ TDs, over 31.5 rushing, Moore anytime. The Week 1 version of him against a Lions defense missing both safeties.</small></div><div class="pay"><div class="odds">+2586</div><div class="hit">6% blended</div></div></div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>TWELVE LONG SHOTS AND NINE TICKETS ON THE THURSDAY TAB</span></div>
+</section>
+</body>
+</html>

@@ -6,7 +6,7 @@ import { Body, Card, H2, Label } from '@/components/ui';
 import { SITE_URL } from '@/lib/site';
 import { space, type, useTheme } from '@/theme';
 
-type SheetImage = { title: string; file: string };
+type SheetImage = { title: string; file: string; h?: number };
 type Sheet = {
   id: string;
   week?: number;
@@ -94,7 +94,7 @@ export function PlaySheets({
             resizeMode="contain"
             style={{
               width: w,
-              height: (w * 1150) / 1200,
+              height: (w * (img.h ?? 1150)) / 1200,
               borderRadius: 10,
               marginBottom: space.sm,
               backgroundColor: t.surface2,
