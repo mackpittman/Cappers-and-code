@@ -69,6 +69,24 @@ for (const g of r?.games || []) {
   }
   need(Array.isArray(g.atdBoard) && g.atdBoard.length >= 4, `${tag}: atdBoard needs 4+ entries`);
   need(Array.isArray(g.stacks) && g.stacks.length >= 2, `${tag}: stacks needs 2+`);
+  for (const tk of g.tickets || []) {
+    need(
+      ['anytime', 'twoPlus', 'sgp', 'cross', 'contrarian', 'side', 'total'].includes(tk.kind),
+      `${tag}: ticket kind ${tk.kind}`,
+    );
+    need(
+      Array.isArray(tk.legs) &&
+        tk.legs.length >= 1 &&
+        tk.legs.every((l) => l.label && (l.price === null || typeof l.price === 'number')),
+      `${tag}: ticket needs legs with label and price (number or null)`,
+    );
+    need(tk.price === null || typeof tk.price === 'number', `${tag}: ticket price number or null`);
+    need(
+      tk.prob === null || (typeof tk.prob === 'number' && tk.prob > 0 && tk.prob < 1),
+      `${tag}: ticket prob 0-1 or null`,
+    );
+    need(typeof tk.why === 'string' && tk.why.length > 10, `${tag}: ticket needs why`);
+  }
   for (const s of g.stacks || [])
     need(
       Array.isArray(s.legs) && s.legs.length >= 2 && s.why,

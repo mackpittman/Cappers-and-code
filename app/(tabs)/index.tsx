@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Pressable, Text, View } from 'react-native';
 import { type, useTheme } from '@/theme';
 import { useRouter } from 'expo-router';
@@ -11,6 +11,9 @@ import { RecordCard } from '@/components/Record';
 import { PlaySheets } from '@/components/Sheets';
 import { supabaseConfigured } from '@/lib/supabase';
 import { AddToSlip, betToSlip, pickToSlip } from '@/components/Slip';
+import { Primetime } from '@/components/Primetime';
+import { primetimeGame } from '@/lib/primetime';
+import { fonts, space } from '@/theme';
 
 export default function BoardScreen() {
   const { board, entitlement, authReady } = useBoard();
@@ -23,6 +26,15 @@ export default function BoardScreen() {
   };
   const open = (id?: string) => id && router.push({ pathname: '/game/[id]', params: { id } });
   const windows = slateWindows(board);
+  const pt = primetimeGame(board);
+  const [tab, setTab] = useState<'edge' | 'primetime'>('edge');
+  const showPrimetime = tab === 'primetime' && pt;
+  const tabs = pt
+    ? [
+        { key: 'edge' as const, label: 'Edge' },
+        { key: 'primetime' as const, label: pt.title },
+      ]
+    : [];
   return (
     <Screen
       hero
@@ -33,131 +45,172 @@ export default function BoardScreen() {
         <Paywall />
       ) : (
         <>
-          <Card accent="green">
-            <Label color={t.green}>How to read this</Label>
-            <Body small muted>
-              Est is the model's probability from goal-line share, end-zone targets, implied team
-              totals and the opposing defense. Edge is est minus the price's implied probability.
-              Green means the number is worth playing. Units, not dollars.
-            </Body>
-          </Card>
-          <Pressable onPress={() => router.push('/results')}>
-            <Card accent="green">
-              <Label color={t.green}>Results</Label>
-              <Text style={[type.h2, { color: t.ink, marginBottom: 4 }]}>
-                Every ticket we posted, graded
-              </Text>
-              <Body small muted>
-                Record, net units and ROI by slate, plus the model's own tracker. Tap to open.
-              </Body>
-            </Card>
-          </Pressable>
-          <PlaySheets />
-          {windows.map((w) => (
-            <React.Fragment key={w.key}>
-              <H2>{w.title}</H2>
-              {w.bets.length === 0 ? (
-                <Card>
-                  <Body small muted>
-                    No Locked In side or total in this window. Scorers and props live on the Games
-                    tab.
-                  </Body>
-                </Card>
-              ) : (
-                w.bets.map((b, i) => (
-                  <Card key={i} accent={b.conf >= 4 ? 'green' : undefined}>
-                    <Label>{b.gameLabel ?? b.game}</Label>
-                    <Text style={[type.h2, { color: t.ink, marginBottom: 6 }]}>{b.bet}</Text>
-                    <View
-                      style={{
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                        gap: 8,
-                        flexWrap: 'wrap',
-                      }}
+          {tabs.length > 0 && (
+            <View style={{ flexDirection: 'row', gap: space.sm, marginBottom: space.md }}>
+              {tabs.map((x) => {
+                const on = tab === x.key;
+                return (
+                  <Pressable
+                    key={x.key}
+                    onPress={() => setTab(x.key)}
+                    style={{
+                      flex: 1,
+                      paddingVertical: 10,
+                      borderRadius: 8,
+                      borderWidth: 1,
+                      alignItems: 'center',
+                      borderColor: on ? t.green : t.line,
+                      backgroundColor: on ? t.green : t.surface,
+                    }}
+                  >
+                    <Text
+                      style={[
+                        type.label,
+                        {
+                          color: on ? t.onGreen : t.ink2,
+                          fontFamily: fonts.dataBold,
+                          letterSpacing: 1,
+                        },
+                      ]}
                     >
-                      <Pill
-                        text={`confidence ${b.conf}/5`}
-                        tone={b.conf >= 4 ? 'good' : b.conf === 3 ? 'neutral' : 'warn'}
-                      />
-                      {w.started && <Pill text="kicked off" tone="warn" />}
-                      <AddToSlip item={betToSlip(b.bet, b.game, b.gameLabel, b.conf)} compact />
-                    </View>
-                    <Body small muted>
-                      {b.why}
-                    </Body>
-                  </Card>
-                ))
-              )}
-              {w.scorers.length > 0 && (
-                <Card>
-                  <Label>Top scorers this window</Label>
-                  <Body small>
-                    {w.scorers
-                      .map((p) => `${p.name} ${p.live?.best != null ? fmtAm(p.live.best) : ''}`)
-                      .join(' · ')}
-                  </Body>
-                </Card>
-              )}
-            </React.Fragment>
-          ))}
-          {!!board.crossStacks?.length && (
-            <>
-              <H2>Cross-slate builds</H2>
-              <Body small muted>
-                The research desk's cross-game tickets. Ranked, priced parlays by category are on
-                the Parlays tab.
-              </Body>
-              {board.crossStacks.map((st, i) => (
-                <StackCard key={i} legs={st.legs} why={st.why} kind={st.type} />
-              ))}
-            </>
+                      {x.label.toUpperCase()}
+                    </Text>
+                  </Pressable>
+                );
+              })}
+            </View>
           )}
-          <H2>Record</H2>
-          <RecordCard board={board} />
-          <H2>TD Board</H2>
-          <View>
-            {board.slateTop.map((p, i) => (
-              <PlayerRow
-                key={`${p.name}-${i}`}
-                p={p}
-                rank={i + 1}
-                game={gameLabel(p.gameId)}
-                onPress={() => open(p.gameId)}
-                slip={pickToSlip(p, gameLabel(p.gameId), 'td-board')}
-              />
-            ))}
-          </View>
-          <H2>Value vs Market</H2>
-          <View>
-            {board.slateValue.map((p, i) => (
-              <PlayerRow
-                key={`${p.name}-v${i}`}
-                p={p}
-                game={gameLabel(p.gameId)}
-                onPress={() => open(p.gameId)}
-                slip={pickToSlip(p, gameLabel(p.gameId), 'value')}
-              />
-            ))}
-          </View>
-          {board.completed.length > 0 && (
+          {showPrimetime && pt ? (
+            <Primetime board={board} pt={pt} />
+          ) : (
             <>
-              <H2>Already final</H2>
-              {board.completed.map((c) => (
-                <Card key={c.id}>
-                  <Body>{c.final}</Body>
+              <Card accent="green">
+                <Label color={t.green}>How to read this</Label>
+                <Body small muted>
+                  Est is the model's probability from goal-line share, end-zone targets, implied
+                  team totals and the opposing defense. Edge is est minus the price's implied
+                  probability. Green means the number is worth playing. Units, not dollars.
+                </Body>
+              </Card>
+              <Pressable onPress={() => router.push('/results')}>
+                <Card accent="green">
+                  <Label color={t.green}>Results</Label>
+                  <Text style={[type.h2, { color: t.ink, marginBottom: 4 }]}>
+                    Every ticket we posted, graded
+                  </Text>
                   <Body small muted>
-                    TDs: {c.tds.join('; ')}
+                    Record, net units and ROI by slate, plus the model's own tracker. Tap to open.
                   </Body>
                 </Card>
+              </Pressable>
+              <PlaySheets />
+              {windows.map((w) => (
+                <React.Fragment key={w.key}>
+                  <H2>{w.title}</H2>
+                  {w.bets.length === 0 ? (
+                    <Card>
+                      <Body small muted>
+                        No Locked In side or total in this window. Scorers and props live on the
+                        Games tab.
+                      </Body>
+                    </Card>
+                  ) : (
+                    w.bets.map((b, i) => (
+                      <Card key={i} accent={b.conf >= 4 ? 'green' : undefined}>
+                        <Label>{b.gameLabel ?? b.game}</Label>
+                        <Text style={[type.h2, { color: t.ink, marginBottom: 6 }]}>{b.bet}</Text>
+                        <View
+                          style={{
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            gap: 8,
+                            flexWrap: 'wrap',
+                          }}
+                        >
+                          <Pill
+                            text={`confidence ${b.conf}/5`}
+                            tone={b.conf >= 4 ? 'good' : b.conf === 3 ? 'neutral' : 'warn'}
+                          />
+                          {w.started && <Pill text="kicked off" tone="warn" />}
+                          <AddToSlip item={betToSlip(b.bet, b.game, b.gameLabel, b.conf)} compact />
+                        </View>
+                        <Body small muted>
+                          {b.why}
+                        </Body>
+                      </Card>
+                    ))
+                  )}
+                  {w.scorers.length > 0 && (
+                    <Card>
+                      <Label>Top scorers this window</Label>
+                      <Body small>
+                        {w.scorers
+                          .map((p) => `${p.name} ${p.live?.best != null ? fmtAm(p.live.best) : ''}`)
+                          .join(' · ')}
+                      </Body>
+                    </Card>
+                  )}
+                </React.Fragment>
               ))}
+              {!!board.crossStacks?.length && (
+                <>
+                  <H2>Cross-slate builds</H2>
+                  <Body small muted>
+                    The research desk's cross-game tickets. Ranked, priced parlays by category are
+                    on the Parlays tab.
+                  </Body>
+                  {board.crossStacks.map((st, i) => (
+                    <StackCard key={i} legs={st.legs} why={st.why} kind={st.type} />
+                  ))}
+                </>
+              )}
+              <H2>Record</H2>
+              <RecordCard board={board} />
+              <H2>TD Board</H2>
+              <View>
+                {board.slateTop.map((p, i) => (
+                  <PlayerRow
+                    key={`${p.name}-${i}`}
+                    p={p}
+                    rank={i + 1}
+                    game={gameLabel(p.gameId)}
+                    onPress={() => open(p.gameId)}
+                    slip={pickToSlip(p, gameLabel(p.gameId), 'td-board')}
+                  />
+                ))}
+              </View>
+              <H2>Value vs Market</H2>
+              <View>
+                {board.slateValue.map((p, i) => (
+                  <PlayerRow
+                    key={`${p.name}-v${i}`}
+                    p={p}
+                    game={gameLabel(p.gameId)}
+                    onPress={() => open(p.gameId)}
+                    slip={pickToSlip(p, gameLabel(p.gameId), 'value')}
+                  />
+                ))}
+              </View>
+              {board.completed.length > 0 && (
+                <>
+                  <H2>Already final</H2>
+                  {board.completed.map((c) => (
+                    <Card key={c.id}>
+                      <Body>{c.final}</Body>
+                      <Body small muted>
+                        TDs: {c.tds.join('; ')}
+                      </Body>
+                    </Card>
+                  ))}
+                </>
+              )}
+              <Card>
+                <Body small muted>
+                  {board.notes}
+                </Body>
+              </Card>
             </>
           )}
-          <Card>
-            <Body small muted>
-              {board.notes}
-            </Body>
-          </Card>
         </>
       )}
     </Screen>

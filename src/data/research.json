@@ -228,7 +228,188 @@
             "why": "Goff's outlet under duress (10-of-14 in Week 1); the patched line means quick game and volume to the slot."
           }
         ]
-      }
+      },
+      "tickets": [
+        {
+          "kind": "twoPlus",
+          "label": "Gibbs for two",
+          "legs": [
+            {
+              "label": "Jahmyr Gibbs 2+ TDs",
+              "price": null,
+              "book": "check FD/DK"
+            }
+          ],
+          "price": null,
+          "minPrice": 188,
+          "prob": 0.365,
+          "why": "The Walker setup: the bell-cow at a plus price for two. Gibbs -295 anytime is the market saying 75% and we do not lay that, but 29 carries and two scores last week against a front that just allowed 124 rush yards makes the second one live. Blended estimate 36%; pass at anything shorter than +188."
+        },
+        {
+          "kind": "twoPlus",
+          "label": "Allen for two",
+          "legs": [
+            {
+              "label": "Josh Allen 2+ TDs",
+              "price": null,
+              "book": "check FD/DK"
+            }
+          ],
+          "price": null,
+          "minPrice": 339,
+          "prob": 0.24,
+          "why": "Two rushing scores in Week 1, QB sneak the default inside the 5, and a Lions defense with both safeties on PUP. About 24% blended; the price has to be +339 or longer."
+        },
+        {
+          "kind": "anytime",
+          "label": "The value pair",
+          "legs": [
+            {
+              "label": "Amon-Ra St. Brown anytime TD",
+              "price": 115,
+              "book": "BetMGM"
+            },
+            {
+              "label": "DJ Moore anytime TD",
+              "price": 135,
+              "book": "BetMGM"
+            }
+          ],
+          "price": 405,
+          "prob": 0.2,
+          "book": "BetMGM",
+          "why": "The only anytime pair priced at or above our numbers: St. Brown 48% vs 46.5% implied, Moore 42% vs 42.6%. Both are their quarterback's red-zone outlet. About 20% for +405."
+        },
+        {
+          "kind": "anytime",
+          "label": "QB and the alpha",
+          "legs": [
+            {
+              "label": "Josh Allen anytime TD",
+              "price": -140,
+              "book": "BetMGM"
+            },
+            {
+              "label": "Amon-Ra St. Brown anytime TD",
+              "price": 115,
+              "book": "BetMGM"
+            }
+          ],
+          "price": 269,
+          "prob": 0.26,
+          "book": "BetMGM",
+          "why": "Allen scores near the goal line in the Bills script and St. Brown is where Goff goes when the patched line breaks down. About 26% for +269, priced fair."
+        },
+        {
+          "kind": "anytime",
+          "label": "Both bell-cows",
+          "legs": [
+            {
+              "label": "Jahmyr Gibbs anytime TD",
+              "price": -295,
+              "book": "BetMGM"
+            },
+            {
+              "label": "Amon-Ra St. Brown anytime TD",
+              "price": 115,
+              "book": "BetMGM"
+            }
+          ],
+          "price": 188,
+          "prob": 0.31,
+          "book": "BetMGM",
+          "why": "Highest-probability plus-money pair on the board: Detroit's two touchdown engines in a game with a 54.5 total. About 31% for +188."
+        },
+        {
+          "kind": "anytime",
+          "label": "The $10 shot",
+          "legs": [
+            {
+              "label": "Jahmyr Gibbs anytime TD",
+              "price": -295,
+              "book": "BetMGM"
+            },
+            {
+              "label": "Amon-Ra St. Brown anytime TD",
+              "price": 115,
+              "book": "BetMGM"
+            },
+            {
+              "label": "DJ Moore anytime TD",
+              "price": 135,
+              "book": "BetMGM"
+            }
+          ],
+          "price": 577,
+          "prob": 0.13,
+          "book": "BetMGM",
+          "why": "Three of the four likeliest scorers in a shootout. About 13% for +577; a small-stake ticket, not a unit play."
+        },
+        {
+          "kind": "sgp",
+          "label": "Bills pull away",
+          "legs": [
+            {
+              "label": "BUF -4.5",
+              "price": -110,
+              "book": "FD/DK"
+            },
+            {
+              "label": "Josh Allen anytime TD",
+              "price": -140,
+              "book": "BetMGM"
+            },
+            {
+              "label": "DJ Moore anytime TD",
+              "price": 135,
+              "book": "BetMGM"
+            }
+          ],
+          "price": null,
+          "prob": 0.22,
+          "why": "If Buffalo controls the script at home, Allen scores near the goal line and Moore cashes a red-zone shot as the Bills pull away. About 22% blended; the book prices the SGP, and it should land north of +350 to play."
+        },
+        {
+          "kind": "sgp",
+          "label": "Game script",
+          "legs": [
+            {
+              "label": "BUF -4.5",
+              "price": -110,
+              "book": "FD/DK"
+            },
+            {
+              "label": "Over 54.5",
+              "price": -110,
+              "book": "FD/DK"
+            }
+          ],
+          "price": 264,
+          "prob": 0.3,
+          "book": "FD/DK",
+          "why": "Our two locked-in sides on the game as one ticket: Buffalo covering in a shootout. The legs are mildly correlated (a Bills blowout scores points), so about 30% for +264."
+        },
+        {
+          "kind": "contrarian",
+          "label": "Road dog",
+          "legs": [
+            {
+              "label": "Jahmyr Gibbs anytime TD",
+              "price": -295,
+              "book": "BetMGM"
+            },
+            {
+              "label": "DET +4.5",
+              "price": -110,
+              "book": "FD/DK"
+            }
+          ],
+          "price": 156,
+          "prob": 0.26,
+          "book": "FD/DK",
+          "why": "The other script: Detroit shortens the game on the ground behind the patched line, Gibbs scores, and the Lions stay inside the number. 74% of tickets are here and the line still moved away from them, so this is the small side of the split, not the lean."
+        }
+      ]
     },
     {
       "id": "car-atl",

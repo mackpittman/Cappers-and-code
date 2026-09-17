@@ -59,6 +59,20 @@ export type PropLine = {
 };
 export type BestBet = { game: string; gameLabel?: string; bet: string; conf: number; why: string };
 export type Stack = { legs: string[]; why: string; type: 'sgp' | 'cross' | 'contrarian' };
+/** A priced ticket the desk curates for a standalone game (Thursday, Sunday and Monday night). */
+export type TicketLeg = { label: string; price: number | null; book?: string | null };
+export type Ticket = {
+  kind: 'anytime' | 'twoPlus' | 'sgp' | 'cross' | 'contrarian' | 'side' | 'total';
+  label?: string;
+  legs: TicketLeg[];
+  /** Parlay price at the book the legs were priced on; null when the book prices the SGP itself. */
+  price: number | null;
+  /** For 2+ TD singles: the price to play at or better. */
+  minPrice?: number | null;
+  prob: number | null;
+  why: string;
+  book?: string | null;
+};
 export type InjuryEntry = {
   name: string;
   pos?: string;
@@ -114,6 +128,7 @@ export type Game = {
   top3: Pick[];
   value: Pick[];
   stacks: Stack[];
+  tickets?: Ticket[];
   market?: MarketLean;
   propLines?: PropLine[];
   pulls?: Record<string, string>;
