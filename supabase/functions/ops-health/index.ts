@@ -93,7 +93,10 @@ Deno.serve(async (req) => {
     !/state push: \d+ files/i.test(report)
   )
     issues.push('Last run could not push to the repo and the Supabase mirror failed too.');
-  if (/publish-board: (?!200)/.test(report)) issues.push('Last run failed to publish the board.');
+  // The run report prints the script's own line, e.g. `publish-board: publish: 200 "2026-w02"`,
+  // so look for the status code anywhere on that line rather than right after the label.
+  const publishLine = report.match(/publish-board:[^\n]*/i)?.[0];
+  if (publishLine && !/\b200\b/.test(publishLine)) issues.push('Last run failed to publish the board.');
 
   const fingerprint = issues.slice().sort().join(' | ');
   const { data: prev } = await admin
