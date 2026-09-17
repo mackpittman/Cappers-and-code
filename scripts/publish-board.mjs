@@ -53,11 +53,17 @@ const preview = {
 // preview (HANDOFF_FILES=src/data/research.json,docs/week-02-2026-report.md); the next session with
 // git access runs scripts/handoff-pull.mjs to write them back and commit. The following normal
 // publish drops the payload again.
-if (process.env.HANDOFF_FILES) {
+// A committed data/handoff.json ({ files: [...], until: ISO }) does the same from a Routine session
+// that cannot take environment overrides; it stops attaching once `until` has passed.
+const handoffCfg = readJson(path.join(DATA, 'handoff.json'), null);
+const handoffList = process.env.HANDOFF_FILES
+  ? process.env.HANDOFF_FILES.split(',')
+  : handoffCfg?.files && Date.parse(handoffCfg.until || 0) > Date.now()
+    ? handoffCfg.files
+    : [];
+if (handoffList.length) {
   const files = {};
-  for (const rel of process.env.HANDOFF_FILES.split(',')
-    .map((x) => x.trim())
-    .filter(Boolean)) {
+  for (const rel of handoffList.map((x) => String(x).trim()).filter(Boolean)) {
     const abs = path.resolve(ROOT, rel);
     if (!abs.startsWith(ROOT + path.sep) || !fs.existsSync(abs)) {
       console.error(`handoff: skipping ${rel} (missing or outside the repo)`);
