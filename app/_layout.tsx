@@ -50,6 +50,7 @@ export default function RootLayout() {
               <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
               <Stack.Screen name="game/[id]" options={{ title: 'Game' }} />
               <Stack.Screen name="results" options={{ title: 'Results' }} />
+              <Stack.Screen name="archive" options={{ title: 'Archive' }} />
               <Stack.Screen name="send" options={{ title: 'Send to book' }} />
               <Stack.Screen name="s/[id]" options={{ title: 'Shared slip' }} />
               <Stack.Screen name="discord" options={{ title: 'The Discord' }} />

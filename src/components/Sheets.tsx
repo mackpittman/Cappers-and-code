@@ -9,6 +9,8 @@ import { space, type, useTheme } from '@/theme';
 type SheetImage = { title: string; file: string };
 type Sheet = {
   id: string;
+  week?: number;
+  season?: number;
   title: string;
   subtitle?: string;
   postedAt: string;
@@ -17,7 +19,19 @@ type Sheet = {
 
 const url = (file: string) => `${SITE_URL}/sheets/${file}`;
 
-export function PlaySheets() {
+/**
+ * `week` shows only that week's sheets (the front page passes the board's week); `archive` shows
+ * every week that is not the current one, grouped and labeled, for the Archive screen.
+ */
+export function PlaySheets({
+  week,
+  archive,
+  currentWeek,
+}: {
+  week?: number;
+  archive?: boolean;
+  currentWeek?: number;
+}) {
   const t = useTheme();
   const { width } = useWindowDimensions();
   const [sheets, setSheets] = useState<Sheet[] | null>(null);
@@ -32,17 +46,20 @@ export function PlaySheets() {
       live = false;
     };
   }, []);
-  if (!sheets?.length) return null;
-  const latest = sheets[0];
+  const list = (sheets ?? []).filter((s) =>
+    archive ? s.week != null && s.week !== currentWeek : week == null || s.week === week,
+  );
+  if (!list.length) return null;
+  const latest = list[0];
   const shown = open ?? latest.id;
-  const sheet = sheets.find((s) => s.id === shown) ?? latest;
+  const sheet = list.find((s) => s.id === shown) ?? latest;
   // Cards are rendered at 1200x1150; keep the aspect ratio inside the screen's content width.
   const w = Math.min(width - 2 * space.md, 1200);
   return (
     <>
-      <H2>Play sheets</H2>
+      <H2>{archive ? 'Archived play sheets' : 'Play sheets'}</H2>
       <View style={{ flexDirection: 'row', gap: 8, flexWrap: 'wrap', marginBottom: space.sm }}>
-        {sheets.map((s) => (
+        {list.map((s) => (
           <Pressable
             key={s.id}
             onPress={() => setOpen(s.id)}
@@ -56,7 +73,7 @@ export function PlaySheets() {
             }}
           >
             <Text style={[type.label, { color: s.id === shown ? t.onGreen : t.green }]}>
-              {s.title.toUpperCase()}
+              {(s.week != null && archive ? `WK ${s.week} · ` : '') + s.title.toUpperCase()}
             </Text>
           </Pressable>
         ))}

@@ -252,6 +252,13 @@ const board = {
   })),
   crossStacks: research.crossStacks,
   upsetLeans: research.upsetLeans,
+  maxConfidence: (research.maxConfidence || []).map((m) => ({
+    ...m,
+    gameLabel: (() => {
+      const g = games.find((x) => x.id === m.game);
+      return g ? `${g.away.abbr}@${g.home.abbr}` : m.game;
+    })(),
+  })),
   // Graded results (scripts/grade-results.mjs) and the season record; both were read but never
   // attached, so the app and the preview showed no record.
   results: weekResults

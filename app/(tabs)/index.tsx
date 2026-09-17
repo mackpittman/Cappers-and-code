@@ -4,7 +4,7 @@ import { type, useTheme } from '@/theme';
 import { useRouter } from 'expo-router';
 import { Screen } from '@/components/Screen';
 import { Body, Card, H2, Label, Pill, PlayerRow, StackCard } from '@/components/ui';
-import type { BestBet, Board, Pick } from '@/lib/types';
+import type { BestBet, Board, MaxPlay, Pick } from '@/lib/types';
 import { useBoard } from '@/lib/store';
 import { Paywall } from '@/components/Paywall';
 import { RecordCard } from '@/components/Record';
@@ -84,6 +84,19 @@ export default function BoardScreen() {
             <Primetime board={board} pt={pt} />
           ) : (
             <>
+              {!!board.maxConfidence?.length && (
+                <>
+                  <H2>Max confidence · Week {board.week}</H2>
+                  <Body small muted>
+                    The short list. Sides and totals the model likes most, the anytime scorers in
+                    our top band, and the two builds we would fire first.
+                  </Body>
+                  <View style={{ height: space.sm }} />
+                  {board.maxConfidence.map((m, i) => (
+                    <MaxCard key={i} m={m} />
+                  ))}
+                </>
+              )}
               <Card accent="green">
                 <Label color={t.green}>How to read this</Label>
                 <Body small muted>
@@ -103,7 +116,15 @@ export default function BoardScreen() {
                   </Body>
                 </Card>
               </Pressable>
-              <PlaySheets />
+              <Pressable onPress={() => router.push('/archive')}>
+                <Card>
+                  <Label>Archive</Label>
+                  <Body small muted>
+                    Past weeks, graded, with every play sheet. Week 1 closed at +23.90 units.
+                  </Body>
+                </Card>
+              </Pressable>
+              <PlaySheets week={board.week} />
               {windows.map((w) => (
                 <React.Fragment key={w.key}>
                   <H2>{w.title}</H2>
@@ -218,6 +239,56 @@ export default function BoardScreen() {
 }
 
 const fmtAm = (n: number) => (n > 0 ? `+${n}` : `${n}`);
+function MaxCard({ m }: { m: MaxPlay }) {
+  const t = useTheme();
+  const slip =
+    m.kind === 'parlay'
+      ? {
+          kind: 'parlay' as const,
+          label: m.bet,
+          detail: 'max confidence build',
+          game_id: m.game,
+          game_label: m.gameLabel ?? null,
+          price: m.price ?? null,
+          book: m.book ?? null,
+          model_prob: null,
+          legs: (m.legs ?? []).map((l) => ({ label: l.label, price: l.price, book: l.book })),
+          source: 'max',
+        }
+      : {
+          ...betToSlip(
+            m.kind === 'atd' && m.price != null ? `${m.bet} ${fmtAm(m.price)}` : m.bet,
+            m.game,
+            m.gameLabel,
+            5,
+          ),
+          price: m.price ?? null,
+          book: m.book ?? 'FD/DK',
+          source: 'max',
+        };
+  return (
+    <Card accent="green">
+      <Label>{m.gameLabel ?? m.game}</Label>
+      <Text style={[type.h2, { color: t.ink, marginBottom: 6 }]}>{m.bet}</Text>
+      <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+        <Pill text="max confidence" tone="accent" />
+        {m.price != null && <Pill text={`${fmtAm(m.price)} ${m.book ?? ''}`.trim()} tone="good" />}
+        {m.price == null && !!m.book && <Pill text={m.book} tone="neutral" />}
+        <AddToSlip item={slip} compact />
+      </View>
+      {!!m.legs?.length && (
+        <Text style={[type.small, { color: t.ink2, marginTop: 6 }]}>
+          {m.legs
+            .map((l) => `${l.label}${l.price != null ? ` ${fmtAm(l.price)}` : ''}`)
+            .join(' · ')}
+        </Text>
+      )}
+      <Body small muted>
+        {m.why}
+      </Body>
+    </Card>
+  );
+}
 /** Kickoff window in US Eastern: the Sunday 1:00 slate, the 4:05/4:25 slate, and primetime. */
 function windowKey(kickoffIso?: string): { key: string; title: string; order: number } {
   if (!kickoffIso) return { key: 'other', title: 'Other games', order: 9 };

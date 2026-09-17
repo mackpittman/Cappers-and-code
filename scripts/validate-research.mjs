@@ -134,6 +134,12 @@ for (const g of r?.games || []) {
       `${tag}: propLean ${l.player || '?'} malformed`,
     );
 }
+for (const m of r?.maxConfidence || []) {
+  need(ids.has(m.game), `maxConfidence "${m.bet}": game ${m.game} not in games`);
+  need(['side', 'total', 'atd', 'parlay'].includes(m.kind), `maxConfidence "${m.bet}": kind`);
+  need(typeof m.why === 'string' && m.why.length > 10, `maxConfidence "${m.bet}": why`);
+  need(m.price == null || typeof m.price === 'number', `maxConfidence "${m.bet}": price`);
+}
 for (const b of r?.bestBets || []) {
   need(ids.has(b.game), `bestBet "${b.bet}": game ${b.game} not in games`);
   need(Number.isInteger(b.conf) && b.conf >= 1 && b.conf <= 5, `bestBet "${b.bet}": conf 1-5`);

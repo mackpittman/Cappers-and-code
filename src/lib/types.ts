@@ -225,6 +225,17 @@ export type ResultItem = {
   est?: number;
   actual?: number | null;
 };
+/** The desk's max-confidence plays for the week: the short list the marketing push points at. */
+export type MaxPlay = {
+  game: string;
+  gameLabel?: string;
+  bet: string;
+  kind: 'side' | 'total' | 'atd' | 'parlay';
+  price?: number | null;
+  book?: string | null;
+  why: string;
+  legs?: TicketLeg[];
+};
 export type Board = {
   season: number;
   week: number;
@@ -267,4 +278,5 @@ export type Board = {
   crossStacks: Stack[];
   parlays?: Parlays | null;
   upsetLeans: { team: string; price: number; winProb: number; why: string }[];
+  maxConfidence?: MaxPlay[];
 };
