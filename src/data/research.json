@@ -3,7 +3,7 @@
   "week": 2,
   "researchAsOf": "2026-09-15T15:00:00Z",
   "generatedAt": "2026-09-15T15:00:00Z",
-  "notes": "Research prepared Tuesday Sep 15 from Week 1 finals, current injury reports, and Tuesday-morning market lines. Anytime-TD prices marked \"verify\" or \"est.\" could not be confirmed at a live sportsbook during research and should be checked before betting; the live odds feed replaces them once fetch-odds runs.",
+  "notes": "Research prepared Tuesday Sep 15 from Week 1 finals, current injury reports, and Tuesday-morning market lines. Anytime-TD prices marked \"verify\" or \"est.\" could not be confirmed at a live sportsbook during research and should be checked before betting; the live odds feed replaces them once fetch-odds runs. Thursday night (DET @ BUF) updated Wednesday 9:30 PM ET: final injury designations, line movement, BetMGM anytime prices, corrected James Cook estimate, and the TNF plays.",
   "completed": [],
   "games": [
     {
@@ -23,75 +23,83 @@
       },
       "lines": {
         "spread": "BUF -4.5",
-        "total": 53.5,
+        "total": 54.5,
         "ml": {
-          "away": 180,
-          "home": -218
+          "away": 195,
+          "home": -238
         },
         "winProb": {
-          "away": 0.343,
-          "home": 0.657
+          "away": 0.325,
+          "home": 0.675
         },
         "implied": {
-          "away": 29,
-          "home": 24.5
+          "away": 25,
+          "home": 29.5
         }
       },
       "sections": {
         "offseason": "**Buffalo:** fired Sean McDermott in January, promoted OC Joe Brady to head coach, hired Pete Carmichael as OC (keeps the downfield-passing identity) and Jim Leonhard (ex-Broncos) as DC, who is converting a defense that ranked 30th vs. the run in 2025 (5.14 YPC) from a 4-2-5 into a multiple, attacking 3-4.\n- **Detroit:** kept DC Kelvin Sheppard, but he's expanding nickel usage and blending 4-3/3-4 fronts after the defense was exploitable on early downs in 2025.\n- **Detroit roster hit:** lost RB David Montgomery to Houston in free agency; his replacement Isiah Pacheco just had back surgery and is out for a significant stretch, and CB Terrion Arnold was released — leaving Jahmyr Gibbs a true workhorse and the secondary thin.\n- **Week 1 changed the picture:** Detroit's safety-less secondary (Brian Branch and Kerby Joseph both start the year on PUP) got carved up after halftime by New Orleans (31-30 OT loss allowed); Buffalo's new Leonhard defense gave up 124 rush yards (3.9 YPC) and a big day to ex-Lion Montgomery in a 36-31 shootout win over Houston.",
         "matchup": "**DET offense vs. BUF defense:** Jahmyr Gibbs (29 att/156 yds/2 TD, 5 catches Week 1) is the focal point and profiles as a plus matchup vs. a Bills front still installing Leonhard's 3-4 that just allowed 124 rush yards/3.9 YPC. Amon-Ra St. Brown is Detroit's high-volume red-zone/possession piece (10-of-14, 2 TD) while Jameson Williams remains boom-or-bust downfield (4-of-9, 45 yds) and Sam LaPorta is a steady 6-8 target TE who could find seams if Buffalo's retooled LB corps struggles in coverage the way Detroit's did against Kincaid.\n- **BUF offense vs. DET defense:** Josh Allen (20-of-29, 334 yds, 2 pass TD, 2 rush TD Week 1) faces a Lions secondary without both starting safeties and now without Arnold at corner; expect heavy volume again for Dalton Kincaid (130 yds Week 1, most by a Bills TE since 1967) and DJ Moore (100 yds, TD). Detroit's pass rush (5 sacks on Tyler Shough, led by a healthy Aidan Hutchinson) is the counterpunch against a Bills O-line adjusting to a new staff.",
-        "injuries": "**Detroit (short week):** Questionable — Christian Mahogany (knee/hip; pulled from Week 1, Campbell said \"not out of the woods\"), Blake Miller (OT, DNP Monday), Juice Scruggs (C, limited) — three O-line starters banged up. Christian Izien (S, groin) was a full practice participant and trends toward playing. Brian Branch (Achilles) and Kerby Joseph (knee) remain on PUP; Cade Mays (wrist) and Payton Turner on IR.\n- **Buffalo:** Out — Ty Johnson (hamstring), T.J. Sanders (DT, knee), Tyrell Shavers (WR, ACL), Dorian Strong (CB, NFI). Newly added but expected to play — Cole Bishop (knee/groin) and Terrel Bernard (calf), both finished Week 1. DJ Moore was NOT added to the injury report — clean bill of health entering Thursday.",
-        "oddsNotes": "**Spread:** BUF -4.5 | **ML:** DET +180 / BUF -218 | **Total:** 53.5 | **Implied:** DET 29.0 – BUF 24.5 | **De-vigged (approx.):** DET ~35.7% / BUF ~64.3%. Line opened BUF -3/-3.5 with a 51.5 total and has moved to -4.5/53.5 per Covers.com — both spread and total moved toward Buffalo/the Over during the week, consistent with the JSON's current figures.",
-        "atdNotes": "Could not confirm live ATD prices at a real book via search/fetch this week (sportsbook prop pages were blocked or had no player tables) — all figures below are my own estimated implied probabilities, clearly marked, not real market prices."
+        "injuries": "**Detroit (final, short week):** Out — RT Blake Miller (knee), LG Christian Mahogany (hip). With C Cade Mays (wrist, IR) already gone, that is three starting offensive linemen out. Questionable — CB D.J. Reed (foot). Brian Branch (Achilles) and Kerby Joseph (knee) remain on PUP; Payton Turner on IR. Christian Izien (S) trends toward playing.\n- **Buffalo (final):** Questionable — RB Ty Johnson (hamstring), S Cole Bishop (groin), DT T.J. Sanders (knee/illness). Out — WR Tyrell Shavers (ACL). DJ Moore, James Cook, Dalton Kincaid and Josh Allen are not on the report.",
+        "oddsNotes": "**Spread:** BUF -4.5 (opened -3) | **ML:** DET +195 / BUF -238 (opened -162) | **Total:** 54.5 (opened 51.5) | **Implied:** DET 25.0 – BUF 29.5 | **De-vigged:** DET 32.5% / BUF 67.5%. Every number moved toward Buffalo during the week while 74% of tickets sat on Detroit; the move followed the Lions ruling out two more linemen. Updated Wednesday 9:30 PM ET from the ESPN/DraftKings feed.",
+        "atdNotes": "Anytime prices from BetMGM, Wednesday night: Gibbs -295, Cook -145, Allen -140, St. Brown +115, Moore +135, Kincaid +140, Jameson Williams +175, Shakir +195, LaPorta +200, Knox +450, Coleman +500. Model versus market: St. Brown (48% vs 46.5%) and Moore (42% vs 42.6%) are at fair value; Gibbs, Cook, Allen and Kincaid are priced above our estimates, so the plays there are the 2+ TD markets on Gibbs and Allen at plus prices, not the anytime chalk. The pre-kick pull Thursday afternoon replaces these with FanDuel and DraftKings prices in the app."
       },
       "atdBoard": [
         {
           "name": "Jahmyr Gibbs",
           "team": "DET",
-          "price": null,
-          "implied": 0.55
+          "price": -295,
+          "implied": 0.747,
+          "priceNote": "BetMGM 9/16"
         },
         {
           "name": "Josh Allen",
           "team": "BUF",
-          "price": null,
-          "implied": 0.5
+          "price": -140,
+          "implied": 0.583,
+          "priceNote": "BetMGM 9/16"
         },
         {
           "name": "Amon-Ra St. Brown",
           "team": "DET",
-          "price": null,
-          "implied": 0.48
+          "price": 115,
+          "implied": 0.465,
+          "priceNote": "BetMGM 9/16"
         },
         {
           "name": "DJ Moore",
           "team": "BUF",
-          "price": null,
-          "implied": 0.42
+          "price": 135,
+          "implied": 0.426,
+          "priceNote": "BetMGM 9/16"
         },
         {
           "name": "James Cook III",
           "team": "BUF",
-          "price": null,
-          "implied": 0.3
+          "price": -145,
+          "implied": 0.592,
+          "priceNote": "BetMGM 9/16"
         },
         {
           "name": "Dalton Kincaid",
           "team": "BUF",
-          "price": null,
-          "implied": 0.28
+          "price": 140,
+          "implied": 0.417,
+          "priceNote": "BetMGM 9/16"
         },
         {
           "name": "Jameson Williams",
           "team": "DET",
-          "price": null,
-          "implied": 0.24
+          "price": 175,
+          "implied": 0.364,
+          "priceNote": "BetMGM 9/16"
         },
         {
           "name": "Sam LaPorta",
           "team": "DET",
-          "price": null,
-          "implied": 0.2
+          "price": 200,
+          "implied": 0.333,
+          "priceNote": "BetMGM 9/16"
         }
       ],
       "top3": [
@@ -99,9 +107,9 @@
           "name": "Jahmyr Gibbs",
           "team": "DET",
           "pos": "RB",
-          "price": null,
-          "priceNote": "est.",
-          "implied": 0.55,
+          "price": -295,
+          "priceNote": "BetMGM 9/16",
+          "implied": 0.747,
           "est": 0.55,
           "why": "Now DET's clear workhorse after Montgomery's exit, facing a BUF front that just allowed 124 rush yds/3.9 YPC to Montgomery himself."
         },
@@ -109,9 +117,9 @@
           "name": "Josh Allen",
           "team": "BUF",
           "pos": "QB",
-          "price": null,
-          "priceNote": "est.",
-          "implied": 0.5,
+          "price": -140,
+          "priceNote": "BetMGM 9/16",
+          "implied": 0.583,
           "est": 0.5,
           "why": "Two rushing TDs in Week 1 and a Lions defense missing both starting safeties makes goal-line/scramble scores very likely."
         },
@@ -119,9 +127,9 @@
           "name": "Amon-Ra St. Brown",
           "team": "DET",
           "pos": "WR",
-          "price": null,
-          "priceNote": "est.",
-          "implied": 0.48,
+          "price": 115,
+          "priceNote": "BetMGM 9/16",
+          "implied": 0.465,
           "est": 0.48,
           "why": "Detroit's clear red-zone alpha target (10-of-14, 2 TD Week 1) with a 14-target workload floor."
         }
@@ -131,9 +139,9 @@
           "name": "Dalton Kincaid",
           "team": "BUF",
           "pos": "TE",
-          "price": null,
-          "priceNote": "est.",
-          "implied": 0.28,
+          "price": 140,
+          "priceNote": "BetMGM 9/16",
+          "implied": 0.417,
           "est": 0.22,
           "why": "Coming off a 130-yard, historic-usage game for a Bills TE; DET's LB/nickel coverage is thin behind two PUP safeties."
         },
@@ -141,32 +149,43 @@
           "name": "Jameson Williams",
           "team": "DET",
           "pos": "WR",
-          "price": null,
-          "priceNote": "est.",
-          "implied": 0.24,
+          "price": 175,
+          "priceNote": "BetMGM 9/16",
+          "implied": 0.364,
           "est": 0.18,
           "why": "Low-target boom/bust deep threat (4-of-9 Week 1) who only needs one shot vs. a BUF secondary still installing a new scheme."
+        },
+        {
+          "name": "James Cook III",
+          "team": "BUF",
+          "pos": "RB",
+          "price": -145,
+          "priceNote": "BetMGM 9/16",
+          "implied": 0.592,
+          "est": 0.5,
+          "why": "Corrected Wednesday: the Tuesday file had Cook at 30% against a market near 59%; the OC has promised more touches and the Lions front just allowed 5.4 YPC. No value at -145, but not a fade either."
         }
       ],
       "stacks": [
         {
-          "legs": ["Josh Allen anytime TD (rush)", "DJ Moore anytime TD", "BUF -4.5"],
-          "why": "If Buffalo controls the game script at home in the new stadium, Allen scores near the goal line and Moore cashes on a red-zone shot as BUF pulls away.",
-          "type": "sgp"
+          "type": "sgp",
+          "legs": ["BUF -4.5", "Josh Allen anytime TD", "DJ Moore anytime TD"],
+          "why": "If Buffalo controls the script at home, Allen scores near the goal line and Moore cashes a red-zone shot as the Bills pull away. About 22% blended."
         },
         {
-          "legs": [
-            "Jahmyr Gibbs anytime TD",
-            "Under BUF team passing TDs 1.5",
-            "DET +180 moneyline"
-          ],
-          "why": "Contrarian angle: DET leans on Gibbs and the ground game to control clock against a leaky BUF run defense, keeping Allen's TD passes capped and pulling the road upset.",
-          "type": "contrarian"
+          "type": "sgp",
+          "legs": ["Jahmyr Gibbs 2+ TDs (+188 or better)", "Josh Allen 2+ TDs (+339 or better)"],
+          "why": "Play each as a single, not together. Gibbs at -295 anytime is the market saying 75%; we do not lay that, but the bell-cow at a plus price for two is the Walker setup. Blended 2+ estimate about 36% for Gibbs and 24% for Allen; pass at shorter prices."
         },
         {
-          "legs": ["Sam LaPorta anytime TD", "Jameson Williams anytime TD", "Over 53.5"],
-          "why": "Both defenses are compromised (DET missing both safeties, BUF's scheme still new); a shootout that clears the raised total likely needs multiple different DET pass-catchers finding the end zone.",
-          "type": "sgp"
+          "type": "sgp",
+          "legs": ["Amon-Ra St. Brown anytime TD (+115)", "DJ Moore anytime TD (+135)"],
+          "why": "The one anytime pair priced at or above our numbers: +405 for about a 20% pair. St. Brown +115 is also the single anytime play at value (model 48% vs 46.5% implied)."
+        },
+        {
+          "type": "contrarian",
+          "legs": ["Jahmyr Gibbs anytime TD", "DET +4.5"],
+          "why": "The road-dog script: Detroit shortens the game on the ground behind a patched line and Gibbs scores, keeping the Bills inside the number. 74% of tickets are here; the line says otherwise."
         }
       ],
       "market": {
@@ -175,31 +194,38 @@
           "home": 30
         },
         "side": "BUF -4.5",
-        "sideConf": 2,
-        "total": "Over 53.5",
+        "sideConf": 3,
+        "total": "Over 54.5",
         "totalConf": 3,
-        "why": "Both offenses topped 30 points in Week 1 while both defenses allowed 30+, and the market has already pushed the total from 51.5 to 53.5 and the spread from -3/-3.5 to -4.5 — sharp and public money agree this trends toward Buffalo and the Over. Detroit's banged-up O-line (three starters questionable) and depleted secondary (both safeties on PUP, Arnold released) are real short-week liabilities on a road trip to a loud stadium opener, supporting a modest lean to Buffalo, though not a heavy one given Detroit just won a shootout of its own and gets a plus matchup on the ground. The total lean is stronger: neither defense looks ready to slow a competent passing attack yet, and with Gibbs, Allen, Kincaid, Moore and St. Brown all trending toward volume, 54+ points is a reasonable expectation.",
+        "why": "Wednesday night update: the line has run to Buffalo (BUF -3 to -4.5, ML -162 to -238, total 51.5 to 54.5) with 74% of tickets on Detroit, so the sharp side is the Bills. The reason is the Lions line: RT Blake Miller (knee) and LG Christian Mahogany (hip) are out, and with C Cade Mays already on IR that is three starting linemen missing on a short week against a pass rush that had three sacks in Week 1. Both Lions safeties remain on PUP and CB D.J. Reed (foot) is questionable. BUF -4.5 stays the play; the moneyline is too rich at -238. The total moved through our 53.5 to 54.5, so the Over edge is one point smaller: model 26-30 (56), still a lean, no longer a max play. Both offenses topped 30 in Week 1 and neither secondary is ready to slow a competent passing game.",
         "propLeans": [
           {
             "player": "Josh Allen",
             "market": "player_pass_yds",
             "side": "over",
             "line": 249.5,
-            "why": "Faces a DET secondary missing both starting safeties after throwing for 334 yards in Week 1; consensus market number sits near 249.5."
+            "why": "Faces a DET secondary missing both starting safeties after throwing for 334 yards in Week 1; consensus number sits near 249.5."
           },
           {
             "player": "Jahmyr Gibbs",
-            "market": "player_rush_yds",
+            "market": "player_reception_yds",
             "side": "over",
-            "line": 79.5,
-            "why": "Sole lead back now that Montgomery is gone and Pacheco is on IR, against a BUF front that just allowed 124 rush yards on 32 carries."
+            "line": 30.5,
+            "why": "With three Lions linemen out, Goff checks down; Gibbs is the primary outlet (5 catches Week 1). Rushing over 79.5 is downgraded behind the patched line."
           },
           {
             "player": "DJ Moore",
             "market": "player_reception_yds",
             "side": "over",
             "line": 69.5,
-            "why": "Coming off a 100-yard, 1-TD game; DET's corner room (post-Arnold) and missing safeties reduce over-the-top help."
+            "why": "Coming off a 100-yard, 1-TD game; DET corner room post-Arnold and missing safeties reduce over-the-top help. Not on the injury report."
+          },
+          {
+            "player": "Amon-Ra St. Brown",
+            "market": "player_receptions",
+            "side": "over",
+            "line": 6.5,
+            "why": "Goff's outlet under duress (10-of-14 in Week 1); the patched line means quick game and volume to the slot."
           }
         ]
       }
@@ -3251,15 +3277,21 @@
   "bestBets": [
     {
       "game": "det-buf",
-      "bet": "Over 53.5",
-      "conf": 4,
-      "why": "Both offenses topped 30 points in Week 1 and both defenses allowed 30+; neither secondary (DET missing both safeties, BUF's scheme still new) looks ready to slow a competent passing attack."
+      "bet": "Over 54.5",
+      "conf": 3,
+      "why": "Both offenses topped 30 in Week 1 and both defenses allowed 30+; model 26-30. The number moved through our 53.5 so the edge is a point smaller: a lean now, not a max play. Take 53.5 anywhere it is still posted."
+    },
+    {
+      "game": "det-buf",
+      "bet": "Amon-Ra St. Brown ATD +115",
+      "conf": 3,
+      "why": "Detroit's red-zone alpha (10-of-14, 2 TD in Week 1) and Goff's outlet behind a line missing three starters; model 48% against 46.5% implied, the only anytime price on this board at or above our number."
     },
     {
       "game": "det-buf",
       "bet": "BUF -4.5",
       "conf": 3,
-      "why": "Line moved from -3.5 to -4.5 with the total up to 53.5; Buffalo's pass rush (3 sacks Wk1) is further along than Detroit's O-line, which enters banged up on a short week."
+      "why": "Line moved -3 to -4.5 with the Lions ruling out RT Miller and LG Mahogany, three starting linemen out on a short week against a pass rush with three Week 1 sacks; 74% of tickets on Detroit and the line still went to Buffalo. Lay the points, not -238 on the moneyline."
     },
     {
       "game": "car-atl",
