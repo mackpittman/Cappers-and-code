@@ -71,7 +71,9 @@ for (const g of r?.games || []) {
   need(Array.isArray(g.stacks) && g.stacks.length >= 2, `${tag}: stacks needs 2+`);
   for (const tk of g.tickets || []) {
     need(
-      ['anytime', 'twoPlus', 'sgp', 'cross', 'contrarian', 'side', 'total'].includes(tk.kind),
+      ['anytime', 'twoPlus', 'sgp', 'cross', 'contrarian', 'side', 'total', 'longshot'].includes(
+        tk.kind,
+      ),
       `${tag}: ticket kind ${tk.kind}`,
     );
     need(

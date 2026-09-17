@@ -18,6 +18,7 @@ const KIND_TITLE: Record<Ticket['kind'], string> = {
   contrarian: 'Contrarian',
   side: 'Side',
   total: 'Total',
+  longshot: 'Long shots, +2000 and up',
 };
 const KIND_ORDER: Ticket['kind'][] = [
   'twoPlus',
@@ -27,6 +28,7 @@ const KIND_ORDER: Ticket['kind'][] = [
   'total',
   'contrarian',
   'cross',
+  'longshot',
 ];
 
 function TicketCard({ tk, pt, first }: { tk: Ticket; pt: PrimetimeGame; first: boolean }) {

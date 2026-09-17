@@ -62,7 +62,7 @@ export type Stack = { legs: string[]; why: string; type: 'sgp' | 'cross' | 'cont
 /** A priced ticket the desk curates for a standalone game (Thursday, Sunday and Monday night). */
 export type TicketLeg = { label: string; price: number | null; book?: string | null };
 export type Ticket = {
-  kind: 'anytime' | 'twoPlus' | 'sgp' | 'cross' | 'contrarian' | 'side' | 'total';
+  kind: 'anytime' | 'twoPlus' | 'sgp' | 'cross' | 'contrarian' | 'side' | 'total' | 'longshot';
   label?: string;
   legs: TicketLeg[];
   /** Parlay price at the book the legs were priced on; null when the book prices the SGP itself. */
