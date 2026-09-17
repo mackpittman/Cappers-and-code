@@ -1,0 +1,61 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Cappers & Code · TNF static</title>
+<style>
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 900; src: url(assets/fonts/BarlowCondensed_900Black.ttf); }
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 800; src: url(assets/fonts/BarlowCondensed_800ExtraBold.ttf); }
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 900; font-style: italic; src: url(assets/fonts/BarlowCondensed_900Black_Italic.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 700; src: url(assets/fonts/Manrope_700Bold.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 700; src: url(assets/fonts/JetBrainsMono_700Bold.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url(assets/fonts/JetBrainsMono_500Medium.ttf); }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html,body { width:1080px; height:1350px; overflow:hidden; background:#050608; color:#F5F7F2; font-family:'Manrope',sans-serif; }
+  #stage { position:relative; width:1080px; height:1350px; overflow:hidden; }
+  .carbon { position:absolute; inset:0; background:repeating-linear-gradient(0deg, rgba(255,255,255,.028) 0 1px, transparent 1px 28px),repeating-linear-gradient(90deg, rgba(255,255,255,.028) 0 1px, transparent 1px 28px); }
+  .glow { position:absolute; left:72%; top:64%; width:1300px; height:1300px; transform:translate(-50%,-50%); background:radial-gradient(circle, rgba(182,255,0,.30) 0%, rgba(182,255,0,.08) 30%, transparent 62%); }
+  .smoke { position:absolute; width:900px; height:600px; border-radius:50%; filter:blur(90px); background:radial-gradient(circle, rgba(121,224,0,.35), rgba(182,255,0,.06) 55%, transparent 70%); }
+  .scan { position:absolute; inset:0; background:repeating-linear-gradient(0deg, rgba(0,0,0,.35) 0 2px, transparent 2px 5px); mix-blend-mode:multiply; }
+  .vig { position:absolute; inset:0; background:radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,.8) 100%); }
+  .confetti { position:absolute; width:12px; height:22px; background:#B6FF00; }
+  .logo { position:absolute; left:64px; top:56px; width:360px; }
+  .kicker { position:absolute; right:64px; top:78px; font-family:'JetBrains Mono'; font-weight:700; font-size:22px; letter-spacing:5px; color:#B6FF00; text-align:right; line-height:1.6; }
+  .robot { position:absolute; right:-150px; bottom:-30px; width:820px; filter:drop-shadow(0 0 40px rgba(182,255,0,.55)) drop-shadow(0 0 120px rgba(182,255,0,.25)); }
+  .head { position:absolute; left:64px; top:250px; font-family:'Barlow Condensed'; font-weight:900; text-transform:uppercase; line-height:.88; font-size:150px; letter-spacing:1px; text-shadow:0 8px 30px rgba(0,0,0,.8); }
+  .energy { font-family:'Barlow Condensed'; font-weight:900; font-style:italic; color:#B6FF00; display:inline-block; transform:skew(-6deg); text-shadow:0 0 36px rgba(182,255,0,.7); }
+  .panel { position:absolute; border:1px solid rgba(182,255,0,.45); border-radius:14px; background:rgba(11,14,12,.86); box-shadow:0 0 24px rgba(182,255,0,.22); padding:18px 22px; }
+  .panel .k { font-family:'JetBrains Mono'; font-weight:700; font-size:18px; letter-spacing:4px; color:#B6FF00; }
+  .panel .v { font-family:'Barlow Condensed'; font-weight:800; font-size:50px; line-height:1; margin-top:6px; text-transform:uppercase; }
+  .panel .v small { font-family:'JetBrains Mono'; font-weight:500; font-size:20px; color:#9DA59D; display:block; margin-top:5px; text-transform:none; letter-spacing:0; }
+  .plays { position:absolute; left:64px; top:640px; width:600px; }
+  .row { display:flex; justify-content:space-between; align-items:center; border-left:10px solid #B6FF00; background:rgba(11,14,12,.9); border:1px solid rgba(182,255,0,.35); border-left-width:10px; border-radius:10px; padding:14px 20px; margin-bottom:10px; }
+  .row .t { font-family:'Barlow Condensed'; font-weight:800; font-size:44px; text-transform:uppercase; }
+  .row .p { font-family:'JetBrains Mono'; font-weight:700; font-size:34px; color:#B6FF00; }
+  .offer { position:absolute; left:64px; right:64px; bottom:110px; display:flex; align-items:center; gap:28px; }
+  .offer .price { font-family:'Barlow Condensed'; font-weight:900; font-style:italic; font-size:150px; color:#B6FF00; line-height:1; transform:skew(-6deg); text-shadow:0 0 36px rgba(182,255,0,.6); }
+  .offer .txt { font-family:'Barlow Condensed'; font-weight:800; font-size:54px; text-transform:uppercase; line-height:.95; }
+  .offer .txt small { display:block; font-family:'JetBrains Mono'; font-weight:500; font-size:20px; color:#9DA59D; letter-spacing:2px; margin-top:10px; text-transform:none; }
+  .cta { margin-left:auto; background:#B6FF00; color:#050608; font-family:'Barlow Condensed'; font-weight:900; font-size:40px; letter-spacing:2px; text-transform:uppercase; padding:18px 30px; border-radius:10px; box-shadow:0 0 40px rgba(182,255,0,.5); white-space:nowrap; }
+  .foot { position:absolute; bottom:40px; left:0; right:0; text-align:center; font-family:'JetBrains Mono'; font-weight:700; font-size:22px; letter-spacing:6px; color:#79E000; }
+</style></head>
+<body><div id="stage">
+  <div class="carbon"></div><div class="glow"></div>
+  <div class="smoke" style="left:420px;top:780px"></div><div class="smoke" style="left:-200px;top:1000px;opacity:.6"></div>
+  <div id="cf"></div>
+  <img class="robot" src="assets/robot.png">
+  <div class="scan"></div>
+  <img class="logo" src="assets/lockup.png">
+  <div class="kicker">WEEK 2 · THURSDAY NIGHT<br>8:15 ET · ORCHARD PARK</div>
+  <div class="head">LIONS<br>AT <span class="energy">BILLS</span></div>
+  <div class="panel" style="left:64px;top:560px;width:290px"><div class="k">LINE</div><div class="v">BUF -5.5<small>O/U 54.5</small></div></div>
+  <div class="panel" style="left:374px;top:560px;width:290px"><div class="k">WEEK 1</div><div class="v">+23.90u<small>Locked In 11-5</small></div></div>
+  <div class="plays" style="top:700px">
+    <div class="row"><div class="t">Bills -4.5 or better</div><div class="p">-110</div></div>
+    <div class="row"><div class="t">Over 54.5</div><div class="p">-110</div></div>
+    <div class="row"><div class="t">St. Brown anytime</div><div class="p">+105</div></div>
+    <div class="row"><div class="t">Allen 2+ TDs</div><div class="p">+470</div></div>
+  </div>
+  <div class="vig"></div>
+  <div class="offer"><div class="price">$20</div><div class="txt">The entire<br>football season<small>FOUNDING 100 · NBA INCLUDED</small></div><div class="cta">Link in bio</div></div>
+  <div class="foot">AI MODELS · HUMAN INSIGHT · ONE EDGE</div>
+</div>
+<script>const cf=document.getElementById('cf');for(let i=0;i<26;i++){const s=Math.sin(i*12.9898)*43758.5453;const r=s-Math.floor(s);const r2=(r*7.31)%1;const d=document.createElement('div');d.className='confetti';d.style.transform=`translate(${r*1080}px,${r2*1350}px) rotate(${r*360}deg)`;d.style.opacity=(.25+r2*.4).toFixed(2);cf.appendChild(d);}</script>
+</body></html>
