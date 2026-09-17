@@ -85,8 +85,14 @@ Deno.serve(async (req) => {
 
   // The runner writes its own failures into the report; surface them rather than re-deriving.
   if (/Script errors: (?!no)/i.test(report)) issues.push('Last run reported script errors.');
-  if (/push to origin main was rejected|access denied by the git proxy/i.test(report))
-    issues.push('Last run could not push to the repo; data is only in Supabase.');
+  // Routine sessions run without git credentials by design; the data mirror in Supabase is the
+  // system of record and the handoff brings files back to the repo. Only alert when that mirror
+  // failed too, which is the case that actually loses work.
+  if (
+    /push to origin main was rejected|access denied by the git proxy/i.test(report) &&
+    !/state push: \d+ files/i.test(report)
+  )
+    issues.push('Last run could not push to the repo and the Supabase mirror failed too.');
   if (/publish-board: (?!200)/.test(report)) issues.push('Last run failed to publish the board.');
 
   const fingerprint = issues.slice().sort().join(' | ');
