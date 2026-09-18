@@ -103,6 +103,12 @@ function gradeAtd(g, player) {
   return tdScorers(g).has(normName(player)) ? 'win' : 'loss';
 }
 
+// Gradings that exist only so a member's slip can settle itself: every player named in a ticket
+// leg, whether or not the desk published that player as a pick. They are deliberately NOT part of
+// `items`, because summary.all counts items and the desk's record must not move because somebody
+// happened to build a parlay around a fourth receiver.
+const legItems = [];
+
 for (const g of research.games) {
   const sc = finalScore(g);
   const base = {
@@ -195,6 +201,29 @@ for (const g of research.games) {
           result: gradeAtd(g, p.name),
         })
       : pending('atd', `${p.name} ATD`, { est: p.est, bucket: 'value' });
+  // Ticket legs. A ticket is a parlay the desk published, and the slip settles one by grading each
+  // leg, so every player named in a leg needs an outcome even when they were never a headline pick.
+  if (sc) {
+    const seen = new Set();
+    for (const tk of m.tickets || [])
+      for (const leg of tk.legs || []) {
+        const atd = /^(.+?)\s+anytime TD$/i.exec(leg.label ?? '');
+        const td2 = /^(.+?)\s+2\+\s*TDs?$/i.exec(leg.label ?? '');
+        const who = (atd || td2)?.[1];
+        if (!who) continue;
+        const label = atd ? `${who} ATD` : `${who} 2+ TD`;
+        if (seen.has(label)) continue;
+        seen.add(label);
+        legItems.push({
+          ...base,
+          type: atd ? 'atd' : 'td2',
+          label,
+          bucket: 'ticketLeg',
+          result: atd ? gradeAtd(g, who) : gradeTd2(g, who),
+        });
+      }
+  }
+
   // Prop leans
   for (const l of m.propLeans || []) {
     const label = `${l.player} ${l.side} ${l.line} ${l.market.replace('player_', '').replace(/_/g, ' ')}`;
@@ -276,6 +305,7 @@ const week_result = {
   games: research.games.length,
   summary: { all: tally(items), ...byBucket, calibration },
   items,
+  legs: legItems,
 };
 writeJson(outFile, week_result);
 // Season record: one entry per week, recomputed from files so re-grading is idempotent.

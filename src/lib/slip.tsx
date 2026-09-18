@@ -6,6 +6,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { fmtPrice, toAmerican, toDecimal } from './price';
 import { supabase } from './supabase';
 import { useBoard } from './store';
+import { isSettleable, pendingSettlements } from './settle';
 
 export type SlipKind = 'side' | 'total' | 'ml' | 'atd' | 'td2' | 'prop' | 'parlay' | 'stack';
 export type SlipStatus = 'queued' | 'placed' | 'won' | 'lost' | 'push';
@@ -67,13 +68,16 @@ type Ctx = {
   ) => Promise<void>;
   clearDay: (day: string) => Promise<void>;
   synced: boolean;
+  /** How many rows the graded board settled on its own, for this session. */
+  autoSettled: number;
 };
 const SlipContext = createContext<Ctx | null>(null);
 
 export function SlipProvider({ children }: { children: React.ReactNode }) {
-  const { session } = useBoard();
+  const { session, board } = useBoard();
   const [items, setItems] = useState<SlipItem[]>([]);
   const [synced, setSynced] = useState(false);
+  const [autoSettled, setAutoSettled] = useState(0);
   const today = slateDay();
   const userId = session?.user?.id ?? null;
 
@@ -151,6 +155,28 @@ export function SlipProvider({ children }: { children: React.ReactNode }) {
     [userId],
   );
 
+  // Settle from the graded board. grade-results already decided these outcomes from the final box
+  // score; without this the member has to re-enter the same verdict by hand and the tracker's
+  // record only counts what they remembered to tap. Rows they judged themselves are left alone.
+  useEffect(() => {
+    const due = pendingSettlements(items, board);
+    if (!due.length) return;
+    const byId = new Map(due.map((d) => [d.id, d.status]));
+    // Resolve the rows before touching state: doing this inside the updater would run twice under
+    // StrictMode and double the count.
+    const settled = items
+      .filter((i) => byId.has(i.id) && isSettleable(i))
+      .map((i) => ({ ...i, status: byId.get(i.id)! }));
+    if (!settled.length) return;
+    const patched = new Map(settled.map((i) => [i.id, i]));
+    setItems((prev) => prev.map((i) => patched.get(i.id) ?? i));
+    setAutoSettled((n) => n + settled.length);
+    // Push each settled row so the verdict survives a reload and reaches their other devices.
+    settled.forEach((row) => {
+      persist(row).catch(() => {});
+    });
+  }, [items, board, persist]);
+
   const has = useCallback(
     (input: SlipInput) => items.some((i) => i.day === today && i.key === slipKey(input)),
     [items, today],
@@ -222,6 +248,7 @@ export function SlipProvider({ children }: { children: React.ReactNode }) {
       update,
       clearDay,
       synced,
+      autoSettled,
     }),
     [items, today, has, add, toggle, remove, update, clearDay, synced],
   );

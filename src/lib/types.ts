@@ -269,6 +269,9 @@ export type Board = {
     games: number;
     summary: Record<string, Tally>;
     items: ResultItem[];
+    /** Extra gradings for settling member slips (every player named in a ticket leg). Deliberately
+     *  outside `items` so they never move the desk's published record. */
+    legs?: ResultItem[];
   } | null;
   record?: {
     updatedAt: string;
