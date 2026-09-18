@@ -117,7 +117,10 @@ Deno.serve(async (req) => {
     );
 
   try {
-    const live = secret.startsWith('sk_live');
+    // Stripe issues a restricted key (rk_) rather than a standard secret key (sk_) whenever the
+    // key is scoped to a permission set, so both prefixes are valid here. What decides live vs
+    // test is the _live_ / _test_ segment, not the prefix.
+    const live = /^(sk|rk)_live_/.test(secret);
     const monthly = await ensureProduct(
       secret,
       'Cappers & Code Membership',
@@ -166,6 +169,7 @@ Deno.serve(async (req) => {
     return json({
       ok: true,
       mode: live ? 'live' : 'test',
+      key_type: secret.startsWith('rk_') ? 'restricted' : 'standard',
       live_warning: live ? null : 'This is a TEST key. No real money can be taken until a live key is stored.',
       monthly: { product: monthly.product.id, price: monthly.price.id, amount: '$10.00/month', created: monthly.created },
       founder: { product: founder.product.id, price: founder.price.id, amount: '$20.00 once', created: founder.created },
