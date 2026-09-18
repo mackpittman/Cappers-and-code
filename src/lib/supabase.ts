@@ -105,6 +105,46 @@ export async function myDiscordInvite(): Promise<{ url: string; expires_at: stri
   if (!data?.url) throw new Error(data?.error ?? 'Invite unavailable');
   return data as { url: string; expires_at: string };
 }
+export type DiscordLink = {
+  linked: boolean;
+  discord_username: string | null;
+  linked_at: string | null;
+  role_granted: boolean;
+  entitled: boolean;
+  configured: boolean;
+  last_error: string | null;
+};
+/** Where this account stands with Discord: connected, and does it hold the members role. */
+export async function myDiscordLink(): Promise<DiscordLink> {
+  const { data, error } = await supabase.functions.invoke('discord-access', {
+    body: { action: 'me' },
+  });
+  if (error)
+    throw new Error((await error.context?.json?.().catch(() => null))?.error ?? error.message);
+  return data as DiscordLink;
+}
+/**
+ * Begin the Discord connection. Returns the authorize URL to send the member to; Discord hands
+ * them back to the edge function, which stores the link and grants the role in one step.
+ */
+export async function startDiscordLink(redirectTo?: string): Promise<string> {
+  const { data, error } = await supabase.functions.invoke('discord-access', {
+    body: { action: 'start', redirect_to: redirectTo ?? null },
+  });
+  if (error)
+    throw new Error((await error.context?.json?.().catch(() => null))?.error ?? error.message);
+  if (!data?.url) throw new Error(data?.error ?? 'Discord linking is unavailable right now.');
+  return data.url as string;
+}
+/** Disconnect Discord and drop the role. */
+export async function unlinkDiscord(): Promise<void> {
+  const { error } = await supabase.functions.invoke('discord-access', {
+    body: { action: 'unlink' },
+  });
+  if (error)
+    throw new Error((await error.context?.json?.().catch(() => null))?.error ?? error.message);
+}
+
 /** Redeem a handed-out code. Works signed out: the code is the credential. */
 export async function redeemInviteCode(code: string): Promise<{ url: string; expires_at: string }> {
   const { data, error } = await supabase.functions.invoke('discord-invite', {

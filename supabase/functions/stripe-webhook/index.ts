@@ -34,6 +34,27 @@ async function userIdForCustomer(customerId: string, fallbackUserId?: string | n
   const { data } = await sb.from('profiles').select('id').eq('stripe_customer_id', customerId).maybeSingle();
   return data?.id ?? null;
 }
+/**
+ * Billing just changed for this account, so its Discord standing may be stale. discord-access
+ * owns the role itself; we only tell it whose to re-check. Deliberately swallows its own errors:
+ * a Discord outage must not make us return non-200 and have Stripe retry a payment event we
+ * already recorded. The hourly reconcile picks up anything missed here.
+ */
+async function syncDiscord(userId: string) {
+  try {
+    const secret = await cfg('publish_secret');
+    if (!secret) return;
+    const r = await fetch(`${Deno.env.get('SUPABASE_URL')}/functions/v1/discord-access`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-sync-secret': secret },
+      body: JSON.stringify({ action: 'apply', user_id: userId }),
+    });
+    if (!r.ok) console.error('discord-access apply', r.status, (await r.text()).slice(0, 200));
+  } catch (e) {
+    console.error('discord-access apply failed', e);
+  }
+}
+
 async function upsertSubscription(sub: any, userId: string) {
   const item = sub.items?.data?.[0];
   const row = {
@@ -72,6 +93,7 @@ Deno.serve(async (req) => {
         } else if (obj.mode === 'payment' && obj.metadata?.plan === 'founder_season') {
           await sb.from('subscriptions').insert({ user_id: userId, provider: 'stripe', stripe_customer_id: customerId, stripe_subscription_id: `pi_${obj.payment_intent}`, plan: 'founder_season', status: 'active', current_period_end: founderEnd ?? '2027-06-30T23:59:59Z' });
         }
+        await syncDiscord(userId);
         break;
       }
       case 'customer.subscription.created':
@@ -79,15 +101,24 @@ Deno.serve(async (req) => {
       case 'customer.subscription.deleted': {
         const customerId = typeof obj.customer === 'string' ? obj.customer : obj.customer?.id;
         const userId = await userIdForCustomer(customerId, obj.metadata?.user_id);
-        if (userId) await upsertSubscription(obj, userId);
+        if (userId) {
+          await upsertSubscription(obj, userId);
+          await syncDiscord(userId);
+        }
         break;
       }
       case 'invoice.payment_failed': {
-        if (obj.subscription) await sb.from('subscriptions').update({ status: 'past_due', updated_at: new Date().toISOString() }).eq('stripe_subscription_id', obj.subscription);
+        if (obj.subscription) {
+          const { data } = await sb.from('subscriptions').update({ status: 'past_due', updated_at: new Date().toISOString() }).eq('stripe_subscription_id', obj.subscription).select('user_id').maybeSingle();
+          if (data?.user_id) await syncDiscord(data.user_id);
+        }
         break;
       }
       case 'charge.refunded': {
-        if (obj.payment_intent) await sb.from('subscriptions').update({ status: 'expired', updated_at: new Date().toISOString() }).eq('stripe_subscription_id', `pi_${obj.payment_intent}`);
+        if (obj.payment_intent) {
+          const { data } = await sb.from('subscriptions').update({ status: 'expired', updated_at: new Date().toISOString() }).eq('stripe_subscription_id', `pi_${obj.payment_intent}`).select('user_id').maybeSingle();
+          if (data?.user_id) await syncDiscord(data.user_id);
+        }
         break;
       }
     }
