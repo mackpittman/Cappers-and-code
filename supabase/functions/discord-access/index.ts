@@ -295,9 +295,23 @@ Deno.serve(async (req) => {
       const roles = await bot(`/guilds/${guildId}/roles`, token);
       const botMember = await bot(`/guilds/${guildId}/members/${me.id}`, token, {}, [404]);
       if (!botMember) return json({ ...report, ready: false, blocked_on: 'bot is not in the guild' });
+      // @everyone carries the guild's own id and is NOT listed in a member's roles array, but its
+      // permissions apply to every member including the bot. Leaving it out of the union made this
+      // check read false while the bot could in fact manage roles, so fold it in.
+      const everyone = roles.find((r: any) => r.id === guildId);
       const mine = roles.filter((r: any) => (botMember.roles ?? []).includes(r.id));
-      const perms = mine.reduce((a: bigint, r: any) => a | BigInt(r.permissions ?? '0'), 0n);
+      const perms = [...mine, ...(everyone ? [everyone] : [])].reduce(
+        (a: bigint, r: any) => a | BigInt(r.permissions ?? '0'),
+        0n,
+      );
+      // Hierarchy comes only from the bot's own roles; @everyone always sits at the bottom.
       const botTop = Math.max(0, ...mine.map((r: any) => r.position));
+      const everyonePerms = BigInt(everyone?.permissions ?? '0');
+      report.everyone_can_manage_roles =
+        (everyonePerms & MANAGE_ROLES) !== 0n || (everyonePerms & ADMINISTRATOR) !== 0n;
+      if (report.everyone_can_manage_roles)
+        report.warning =
+          'SECURITY: @everyone holds Manage Roles, so every member of the server can edit roles and channel permissions. Turn it off on @everyone and grant it to the bot role instead.';
       const target = roles.find((r: any) => r.id === roleId);
       report.bot_top_role_position = botTop;
       report.can_manage_roles = (perms & MANAGE_ROLES) !== 0n || (perms & ADMINISTRATOR) !== 0n;
