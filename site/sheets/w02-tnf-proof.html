@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Cappers &amp; Code · Thursday night proof</title>
+<style>
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 900; src: url(../promo/assets/fonts/BarlowCondensed_900Black.ttf); }
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 800; src: url(../promo/assets/fonts/BarlowCondensed_800ExtraBold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 700; src: url(../promo/assets/fonts/Manrope_700Bold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 500; src: url(../promo/assets/fonts/Manrope_500Medium.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 700; src: url(../promo/assets/fonts/JetBrainsMono_700Bold.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url(../promo/assets/fonts/JetBrainsMono_500Medium.ttf); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #050608; color: #F5F7F2; font-family: 'Manrope', sans-serif; }
+  .card { background: #050608 radial-gradient(ellipse at 50% 0%, rgba(182,255,0,.12), transparent 58%); position: relative; overflow: hidden; display: flex; flex-direction: column; }
+  body.only .card { display: none; }
+  body.only .card:target { display: flex; }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 6px; background: #B6FF00; }
+
+  .brand { display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono'; letter-spacing: 3px; color: #B6FF00; font-weight: 700; }
+  .brand img { display: block; }
+
+  h1 { font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; margin: 0; letter-spacing: 1px; line-height: .90; }
+  h1 span { color: #B6FF00; }
+  .sub { color: #C8CFC8; line-height: 1.4; font-weight: 500; }
+
+  /* A winning ticket: header line, then every leg with what it needed and what it did. */
+  .tk { border: 1px solid rgba(182,255,0,.40); box-shadow: 0 0 26px rgba(182,255,0,.13); border-left: 5px solid #B6FF00; border-radius: 12px; background: #0B0E10; overflow: hidden; }
+  .tk .hd { display: flex; align-items: baseline; gap: 14px; border-bottom: 1px solid #1B2022; }
+  .tk .nm { font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; line-height: 1; }
+  .tk .bk { font-family: 'JetBrains Mono'; font-weight: 700; color: #9DA59D; letter-spacing: 2px; }
+  .tk .od { margin-left: auto; font-family: 'JetBrains Mono'; font-weight: 700; color: #B6FF00; }
+  .won { font-family: 'JetBrains Mono'; font-weight: 700; color: #050608; background: #B6FF00; letter-spacing: 3px; border-radius: 4px; }
+
+  table.legs { width: 100%; border-collapse: collapse; }
+  table.legs th { text-align: left; font-family: 'JetBrains Mono'; color: #79E000; letter-spacing: 3px; font-weight: 700; border-bottom: 1px solid #23282A; }
+  table.legs td { border-bottom: 1px solid #14181A; font-weight: 500; }
+  table.legs tr:last-child td { border-bottom: 0; }
+  table.legs .leg { font-family: 'Barlow Condensed'; font-weight: 800; text-transform: uppercase; }
+  table.legs .num { font-family: 'JetBrains Mono'; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+  table.legs .got { color: #B6FF00; }
+  table.legs .hit { font-family: 'JetBrains Mono'; font-weight: 700; color: #B6FF00; text-align: right; letter-spacing: 2px; }
+
+  .banner { border: 1px solid rgba(182,255,0,.45); border-radius: 12px; background: #0B0E10; display: flex; justify-content: space-between; align-items: center; }
+  .banner .k { font-family: 'JetBrains Mono'; letter-spacing: 3px; color: #B6FF00; font-weight: 700; }
+  .banner .v { font-family: 'JetBrains Mono'; font-weight: 700; }
+  .foot { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; font-family: 'JetBrains Mono'; color: #79E000; font-weight: 700; letter-spacing: 4px; }
+  .foot .price { color: #F5F7F2; text-align: right; letter-spacing: 1px; }
+  .foot .price b { color: #B6FF00; display: block; font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
+
+
+  /* Same-night supporting winners: fills the social card and makes the point that the two long
+     shots were not a lone lucky ticket. */
+  .more { border: 1px solid rgba(182,255,0,.22); border-radius: 12px; background: #0B0E10; }
+  .more h3 { margin: 0 0 14px; font-family: 'JetBrains Mono'; font-weight: 700; color: #B6FF00; letter-spacing: 3px; }
+  .more .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .more .chip { border: 1px solid #23282A; border-radius: 7px; background: #0E1214; font-family: 'Barlow Condensed'; font-weight: 800; text-transform: uppercase; display: flex; align-items: baseline; gap: 9px; }
+  .more .chip b { font-family: 'JetBrains Mono'; font-weight: 700; color: #B6FF00; }
+  #social .more { padding: 20px 24px; margin-top: 18px; }
+  #social .more h3 { font-size: 15px; }
+  #social .more .chip { padding: 9px 13px; font-size: 25px; }
+  #social .more .chip b { font-size: 19px; }
+
+  /* ---- landscape card, for the app sheet shelf ---- */
+  #proof { width: 1200px; padding: 44px 60px 54px; }
+  #proof .brand { font-size: 17px; }
+  #proof .brand img { width: 220px; }
+  #proof h1 { font-size: 86px; margin: 20px 0 8px; }
+  #proof .sub { font-size: 21px; margin: 0 0 26px; }
+  #proof .tk { margin-bottom: 16px; }
+  #proof .tk .hd { padding: 16px 26px; }
+  #proof .tk .nm { font-size: 44px; }
+  #proof .tk .bk { font-size: 15px; }
+  #proof .tk .od { font-size: 40px; }
+  #proof .won { font-size: 15px; padding: 6px 12px; margin-left: 14px; }
+  #proof table.legs { font-size: 20px; }
+  #proof table.legs th { font-size: 14px; padding: 12px 26px 9px; }
+  #proof table.legs td { padding: 11px 26px; }
+  #proof table.legs .leg { font-size: 30px; }
+  #proof table.legs .num, #proof table.legs .hit { font-size: 22px; }
+  #proof .banner { padding: 18px 26px; margin: 4px 0 22px; }
+  #proof .banner .k { font-size: 16px; }
+  #proof .banner .v { font-size: 34px; }
+  #proof .foot { font-size: 16px; }
+  #proof .foot .price { font-size: 14px; }
+  #proof .foot .price b { font-size: 30px; }
+
+  /* ---- 4:5 social post ---- */
+  #social { width: 1080px; height: 1350px; padding: 56px 56px 48px; }
+  #social .brand { font-size: 16px; }
+  #social .brand img { width: 210px; }
+  #social h1 { font-size: 74px; margin: 24px 0 8px; }
+  #social .sub { font-size: 21px; margin: 0 0 22px; }
+  #social .tk { margin-bottom: 14px; }
+  #social .tk .hd { padding: 16px 24px; }
+  #social .tk .nm { font-size: 42px; }
+  #social .tk .bk { font-size: 14px; }
+  #social .tk .od { font-size: 40px; }
+  #social .won { font-size: 14px; padding: 6px 11px; margin-left: 12px; }
+  #social table.legs { font-size: 19px; }
+  #social table.legs th { font-size: 13px; padding: 11px 24px 8px; }
+  #social table.legs td { padding: 10px 24px; }
+  #social table.legs .leg { font-size: 28px; }
+  #social table.legs .num, #social table.legs .hit { font-size: 21px; }
+  #social .banner { padding: 16px 24px; margin: 2px 0 0; }
+  #social .banner .k { font-size: 15px; }
+  #social .banner .v { font-size: 34px; }
+  #social .foot { font-size: 15px; }
+  #social .foot .price { font-size: 13px; }
+  #social .foot .price b { font-size: 32px; }
+</style>
+</head>
+<body>
+<script>if (location.hash) document.body.classList.add('only');</script>
+
+<section class="card" id="proof">
+  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code" /><span>WEEK 2 · THURSDAY NIGHT</span></div>
+  <h1>Two long shots. <span>Both home.</span></h1>
+  <p class="sub">Posted on the board before kickoff, not after. Buffalo 41, Detroit 31.</p>
+
+  <div class="tk">
+    <div class="hd">
+      <span class="nm">Checkdown city</span><span class="bk">COURTSIDE</span>
+      <span class="od">+2901</span><span class="won">WON</span>
+    </div>
+    <table class="legs">
+      <tr><th>LEG</th><th class="num">NEEDED</th><th class="num">FINAL</th><th class="hit">&nbsp;</th></tr>
+      <tr><td class="leg">St. Brown receptions</td><td class="num">9+</td><td class="num got">9</td><td class="hit">HIT</td></tr>
+      <tr><td class="leg">St. Brown receiving yards</td><td class="num">100+</td><td class="num got">142</td><td class="hit">HIT</td></tr>
+      <tr><td class="leg">Gibbs receptions</td><td class="num">5+</td><td class="num got">6</td><td class="hit">HIT</td></tr>
+      <tr><td class="leg">Gibbs receiving yards</td><td class="num">30+</td><td class="num got">61</td><td class="hit">HIT</td></tr>
+    </table>
+  </div>
+
+  <div class="tk">
+    <div class="hd">
+      <span class="nm">St. Brown feast</span><span class="bk">FANDUEL</span>
+      <span class="od">+2831</span><span class="won">WON</span>
+    </div>
+    <table class="legs">
+      <tr><th>LEG</th><th class="num">NEEDED</th><th class="num">FINAL</th><th class="hit">&nbsp;</th></tr>
+      <tr><td class="leg">St. Brown touchdowns</td><td class="num">2+</td><td class="num got">2</td><td class="hit">HIT</td></tr>
+      <tr><td class="leg">St. Brown receptions</td><td class="num">8+</td><td class="num got">9</td><td class="hit">HIT</td></tr>
+      <tr><td class="leg">Goff passing yards</td><td class="num">267+</td><td class="num got">327</td><td class="hit">HIT</td></tr>
+    </table>
+  </div>
+
+  <div class="banner">
+    <span class="k">TWENTY DOLLARS ON EACH RETURNED</span>
+    <span class="v">$1,186</span>
+  </div>
+
+  <div class="foot">
+    <span>AI MODELS. HUMAN INSIGHT. ONE EDGE.</span>
+    <span class="price">THE INAUGURAL SEASON<b>$20 · ALL FOOTBALL</b></span>
+  </div>
+</section>
+
+<section class="card" id="social">
+  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code" /><span>THURSDAY NIGHT</span></div>
+  <h1>Two long shots.<br /><span>Both home.</span></h1>
+  <p class="sub">Both posted on the board before kickoff. Buffalo 41, Detroit 31.</p>
+
+  <div class="tk">
+    <div class="hd">
+      <span class="nm">Checkdown city</span><span class="bk">COURTSIDE</span>
+      <span class="od">+2901</span><span class="won">WON</span>
+    </div>
+    <table class="legs">
+      <tr><td class="leg">St. Brown receptions</td><td class="num">9+</td><td class="num got">9</td><td class="hit">HIT</td></tr>
+      <tr><td class="leg">St. Brown rec. yards</td><td class="num">100+</td><td class="num got">142</td><td class="hit">HIT</td></tr>
+      <tr><td class="leg">Gibbs receptions</td><td class="num">5+</td><td class="num got">6</td><td class="hit">HIT</td></tr>
+      <tr><td class="leg">Gibbs rec. yards</td><td class="num">30+</td><td class="num got">61</td><td class="hit">HIT</td></tr>
+    </table>
+  </div>
+
+  <div class="tk">
+    <div class="hd">
+      <span class="nm">St. Brown feast</span><span class="bk">FANDUEL</span>
+      <span class="od">+2831</span><span class="won">WON</span>
+    </div>
+    <table class="legs">
+      <tr><td class="leg">St. Brown touchdowns</td><td class="num">2+</td><td class="num got">2</td><td class="hit">HIT</td></tr>
+      <tr><td class="leg">St. Brown receptions</td><td class="num">8+</td><td class="num got">9</td><td class="hit">HIT</td></tr>
+      <tr><td class="leg">Goff passing yards</td><td class="num">267+</td><td class="num got">327</td><td class="hit">HIT</td></tr>
+    </table>
+  </div>
+
+  <div class="banner">
+    <span class="k">$20 ON EACH RETURNED</span>
+    <span class="v">$1,186</span>
+  </div>
+
+  <div class="more">
+    <h3>SAME BOARD, SAME NIGHT</h3>
+    <div class="chips">
+      <span class="chip">Allen 2+ TDs <b>+460</b></span>
+      <span class="chip">Game script <b>+264</b></span>
+      <span class="chip">QB and the alpha <b>+269</b></span>
+      <span class="chip">Both bell-cows <b>+192</b></span>
+      <span class="chip">Kincaid anytime <b>+170</b></span>
+      <span class="chip">Top 3 scorers <b>3 / 3</b></span>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>@CAPPERSANDCODE</span>
+    <span class="price">THE INAUGURAL SEASON<b>$20 · ALL FOOTBALL</b></span>
+  </div>
+</section>
+</body>
+</html>
