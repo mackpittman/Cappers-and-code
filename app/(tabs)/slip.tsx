@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Linking, Platform, Pressable, Share, Text, TextInput, View } from 'react-native';
 import { router } from 'expo-router';
 import { Screen } from '@/components/Screen';
@@ -12,8 +12,10 @@ import {
   type SlipStatus,
 } from '@/lib/slip';
 import { useBoard } from '@/lib/store';
+import { GAMBLY_WARNING, discordChannelUrl, gamblyLines, gamblyMessage } from '@/lib/gambly';
+import { DISCORD_GUILD_ID, GAMBLY_CHANNEL_ID, gamblyConfigured } from '@/lib/site';
 import { pct } from '@/lib/odds';
-import { fonts, space, type, useTheme } from '@/theme';
+import { fonts, radius, space, type, useTheme } from '@/theme';
 
 const STATUSES: SlipStatus[] = ['queued', 'placed', 'won', 'lost', 'push'];
 
@@ -26,7 +28,44 @@ async function copyOrShare(text: string): Promise<string> {
   return 'Slip shared.';
 }
 
-function Row({ i }: { i: SlipItem }) {
+/** A square that reads as on or off at a glance, and is big enough to hit while walking. */
+function SelectBox({ on, onPress }: { on: boolean; onPress: () => void }) {
+  const t = useTheme();
+  return (
+    <Pressable
+      onPress={onPress}
+      hitSlop={12}
+      accessibilityRole="checkbox"
+      accessibilityState={{ checked: on }}
+      accessibilityLabel={on ? 'Included in the Gambly slip' : 'Not included in the Gambly slip'}
+      style={{
+        width: 26,
+        height: 26,
+        borderRadius: 7,
+        borderWidth: 2,
+        borderColor: on ? t.green : t.line,
+        backgroundColor: on ? t.green : 'transparent',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 2,
+      }}
+    >
+      {on && <Text style={{ color: t.onGreen, fontSize: 15, lineHeight: 17, fontWeight: '900' }}>✓</Text>}
+    </Pressable>
+  );
+}
+
+function Row({
+  i,
+  selectable,
+  selected,
+  onToggle,
+}: {
+  i: SlipItem;
+  selectable?: boolean;
+  selected?: boolean;
+  onToggle?: () => void;
+}) {
   const t = useTheme();
   const { update, remove } = useSlip();
   const [price, setPrice] = useState(i.price != null ? String(i.price) : '');
@@ -41,6 +80,7 @@ function Row({ i }: { i: SlipItem }) {
   return (
     <Card accent={i.status === 'won' ? 'green' : undefined}>
       <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: space.sm }}>
+        {selectable && <SelectBox on={!!selected} onPress={onToggle ?? (() => {})} />}
         <View style={{ flex: 1 }}>
           <Text style={[type.bodyBold, { color: t.ink }]}>{i.label}</Text>
           <Text style={[type.small, { color: t.mute }]}>
@@ -152,7 +192,36 @@ export default function SlipScreen() {
   const { items, today, todays, clearDay, synced } = useSlip();
   const { session } = useBoard();
   const [msg, setMsg] = useState<string | null>(null);
+  // Excluded rather than included: a pick tapped onto the slip is in the send by default, so the
+  // common case of "send everything" costs no taps at all.
+  const [sendMsg, setSendMsg] = useState<string | null>(null);
+  const [excluded, setExcluded] = useState<Record<string, boolean>>({});
+  const picked = useMemo(() => todays.filter((i) => !excluded[i.id]), [todays, excluded]);
   const s = slipSummary(todays);
+  const sel = slipSummary(picked);
+  const legCount = useMemo(() => gamblyLines(picked).length, [picked]);
+  const allOn = picked.length === todays.length;
+  const toggle = (id: string) => setExcluded((p) => ({ ...p, [id]: !p[id] }));
+  const setAll = (on: boolean) =>
+    setExcluded(on ? {} : Object.fromEntries(todays.map((i) => [i.id, true])));
+
+  const sendToGambly = async () => {
+    const text = gamblyMessage(picked);
+    if (!text) return setSendMsg('Pick at least one before sending.');
+    try {
+      if (Platform.OS === 'web' && typeof navigator !== 'undefined' && navigator.clipboard)
+        await navigator.clipboard.writeText(text);
+      else await Share.share({ message: text });
+      const appUrl = discordChannelUrl(DISCORD_GUILD_ID, GAMBLY_CHANNEL_ID, true);
+      const webUrl = discordChannelUrl(DISCORD_GUILD_ID, GAMBLY_CHANNEL_ID);
+      const useApp =
+        Platform.OS !== 'web' && (await Linking.canOpenURL(appUrl).catch(() => false));
+      await Linking.openURL(useApp ? appUrl : webUrl);
+      setSendMsg('Copied. Paste it in the channel and send.');
+    } catch (e: any) {
+      setSendMsg(e?.message ?? String(e));
+    }
+  };
   const pastDays = Array.from(new Set(items.filter((i) => i.day !== today).map((i) => i.day)))
     .sort()
     .reverse();
@@ -167,6 +236,65 @@ export default function SlipScreen() {
       title="My Slip"
       subtitle="Everything you tapped + SLIP on today. Set units, mark placed, grade it after the games. Units, not dollars."
     >
+      {gamblyConfigured && todays.length > 0 && (
+        <Card accent="green">
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: space.sm,
+            }}
+          >
+            <Label color={t.green}>Send to Gambly</Label>
+            <Pressable onPress={() => setAll(!allOn)} hitSlop={10}>
+              <Text style={[type.label, { color: t.mute }]}>{allOn ? 'CLEAR ALL' : 'SELECT ALL'}</Text>
+            </Pressable>
+          </View>
+
+          {/* The count is the whole point of the card: it says exactly what is about to be sent. */}
+          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: space.md, marginTop: space.sm }}>
+            <Stat label="Selected" value={`${picked.length} of ${todays.length}`} />
+            <Stat label="Legs" value={String(legCount)} />
+            {sel.parlayPrice != null && <Stat label="Parlayed" value={fmtPrice(sel.parlayPrice)} />}
+          </View>
+
+          <Pressable
+            onPress={sendToGambly}
+            disabled={picked.length === 0}
+            style={({ pressed }) => ({
+              marginTop: space.md,
+              paddingVertical: 15,
+              borderRadius: radius.sm,
+              backgroundColor: picked.length === 0 ? t.surface2 : t.green,
+              opacity: pressed ? 0.7 : 1,
+              alignItems: 'center',
+            })}
+          >
+            <Text
+              style={[
+                type.label,
+                { color: picked.length === 0 ? t.mute : t.onGreen, letterSpacing: 1 },
+              ]}
+            >
+              {picked.length === 0
+                ? 'SELECT A PICK'
+                : `SEND ${picked.length} TO GAMBLY`}
+            </Text>
+          </Pressable>
+          <Body small muted>
+            Copies your picks and opens the Discord. Paste, send, and GamblyBot replies with a
+            betslip that opens in your book. The reply lands on the Feed tab here too.
+          </Body>
+          {!!sendMsg && (
+            <Text style={[type.small, { color: t.green, marginTop: space.sm }]}>{sendMsg}</Text>
+          )}
+          <Text style={[type.small, { color: t.mute, marginTop: 6, lineHeight: 18 }]}>
+            {GAMBLY_WARNING}
+          </Text>
+        </Card>
+      )}
+
       <Card accent="green">
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: space.md }}>
           <Stat label="Picks" value={String(s.count)} />
@@ -209,7 +337,15 @@ export default function SlipScreen() {
           </Body>
         </Card>
       ) : (
-        todays.map((i) => <Row key={i.id} i={i} />)
+        todays.map((i) => (
+          <Row
+            key={i.id}
+            i={i}
+            selectable={gamblyConfigured}
+            selected={!excluded[i.id]}
+            onToggle={() => toggle(i.id)}
+          />
+        ))
       )}
 
       {pastDays.length > 0 && (

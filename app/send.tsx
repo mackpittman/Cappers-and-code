@@ -8,8 +8,6 @@ import { Body, Card, H2, Label, Pill } from '@/components/ui';
 import { BOOKS, deepLink, importText, tapOrder, type BookKey } from '@/lib/books';
 import { fmtPrice, slipSummary, slipText, useSlip } from '@/lib/slip';
 import { publishSlip } from '@/lib/share';
-import { GAMBLY_WARNING, discordChannelUrl, gamblyMessage } from '@/lib/gambly';
-import { DISCORD_GUILD_ID, GAMBLY_CHANNEL_ID, gamblyConfigured } from '@/lib/site';
 import { fonts, radius, space, type, useTheme } from '@/theme';
 
 const BOOK_KEY = 'cappers.sendbook.v1';
@@ -86,47 +84,6 @@ export default function SendScreen() {
         </Card>
       ) : (
         <>
-          {gamblyConfigured && (
-            <Card>
-              <Label color={t.green}>One click, every book</Label>
-              <Body small muted>
-                Copies your picks and opens the members' Discord. Paste and send, and GamblyBot
-                replies with a betslip that opens straight in your book. The reply shows up on the
-                Feed tab here too.
-              </Body>
-              <Pressable
-                onPress={() =>
-                  run(async () => {
-                    const text = gamblyMessage(todays);
-                    if (!text) return 'Nothing on the slip yet.';
-                    await handOff(text, 'Slip for GamblyBot');
-                    // Try the app first so a phone lands in Discord rather than a browser tab.
-                    const app = discordChannelUrl(DISCORD_GUILD_ID, GAMBLY_CHANNEL_ID, true);
-                    const web = discordChannelUrl(DISCORD_GUILD_ID, GAMBLY_CHANNEL_ID);
-                    const ok = Platform.OS !== 'web' && (await Linking.canOpenURL(app).catch(() => false));
-                    await Linking.openURL(ok ? app : web);
-                    return 'Copied. Paste it in the channel and send.';
-                  })
-                }
-                style={({ pressed }) => ({
-                  marginTop: space.md,
-                  paddingVertical: 14,
-                  borderRadius: radius.sm,
-                  backgroundColor: t.green,
-                  opacity: pressed ? 0.7 : 1,
-                  alignItems: 'center',
-                })}
-              >
-                <Text style={[type.label, { color: t.onGreen, letterSpacing: 1 }]}>
-                  SEND TO GAMBLY
-                </Text>
-              </Pressable>
-              <Text style={[type.small, { color: t.mute, marginTop: space.sm, lineHeight: 18 }]}>
-                {GAMBLY_WARNING}
-              </Text>
-            </Card>
-          )}
-
           <Card accent="green">
             <Label color={t.green}>Where are you betting</Label>
             <View
