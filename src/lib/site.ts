@@ -4,7 +4,7 @@ import Constants from 'expo-constants';
 
 const extra = (Constants.expoConfig?.extra ?? {}) as { siteUrl?: string };
 export const SITE_URL = (
-  extra.siteUrl ?? 'https://mackpittman.github.io/Cappers-and-code'
+  extra.siteUrl ?? 'https://cappersandcode.com'
 ).replace(/\/+$/, '');
 
 export type LegalPage = 'terms' | 'privacy' | 'refunds' | 'responsible-gambling';

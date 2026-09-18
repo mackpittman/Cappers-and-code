@@ -61,4 +61,7 @@ if (fs.existsSync(sheets))
       fs.copyFileSync(path.join(sheets, f), path.join(dist, 'sheets', f));
     }
 fs.writeFileSync(path.join(dist, '.nojekyll'), '');
+// GitHub Pages keeps the custom domain in repo settings, but a CNAME in the artifact means the
+// domain is restored by a deploy rather than lost if that setting is ever cleared.
+if (process.env.SITE_DOMAIN) fs.writeFileSync(path.join(dist, 'CNAME'), `${process.env.SITE_DOMAIN}\n`);
 console.log(`site rendered to ${dist} with base "${base || '/'}"`);

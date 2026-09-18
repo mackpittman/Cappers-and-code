@@ -50,6 +50,7 @@ jobs:
       - name: Build site and web app
         env:
           SITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          SITE_DOMAIN: cappersandcode.com
           EXPO_WEB_BASE_URL: ${{ steps.pages.outputs.base_path }}/app
           WEB_APP_URL: ${{ steps.pages.outputs.origin }}${{ steps.pages.outputs.base_path }}/app
           CI: '1'
