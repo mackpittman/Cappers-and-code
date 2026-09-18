@@ -4,6 +4,7 @@
 import path from 'node:path';
 import fs from 'node:fs';
 import { DATA, ROOT, readJson, writeJson, getJson, normName, nowIso } from './lib.mjs';
+import { parseStatLeg, gradeStatLeg } from './leg-grade.mjs';
 import { twoPlusProb } from './parlays.mjs';
 
 const research = readJson(path.join(ROOT, 'src', 'data', 'research.json'));
@@ -207,20 +208,31 @@ for (const g of research.games) {
     const seen = new Set();
     for (const tk of m.tickets || [])
       for (const leg of tk.legs || []) {
-        const atd = /^(.+?)\s+anytime TD$/i.exec(leg.label ?? '');
-        const td2 = /^(.+?)\s+2\+\s*TDs?$/i.exec(leg.label ?? '');
+        const raw = leg.label ?? '';
+        const atd = /^(.+?)\s+anytime TD$/i.exec(raw);
+        const td2 = /^(.+?)\s+2\+\s*TDs?$/i.exec(raw);
         const who = (atd || td2)?.[1];
-        if (!who) continue;
-        const label = atd ? `${who} ATD` : `${who} 2+ TD`;
-        if (seen.has(label)) continue;
-        seen.add(label);
-        legItems.push({
-          ...base,
-          type: atd ? 'atd' : 'td2',
-          label,
-          bucket: 'ticketLeg',
-          result: atd ? gradeAtd(g, who) : gradeTd2(g, who),
-        });
+        if (who) {
+          const label = atd ? `${who} ATD` : `${who} 2+ TD`;
+          if (seen.has(label)) continue;
+          seen.add(label);
+          legItems.push({
+            ...base,
+            type: atd ? 'atd' : 'td2',
+            label,
+            bucket: 'ticketLeg',
+            result: atd ? gradeAtd(g, who) : gradeTd2(g, who),
+          });
+          continue;
+        }
+        // Yardage and reception legs. The label is kept verbatim so the slip matches it exactly
+        // rather than relying on both sides spelling the market the same way.
+        const parsed = parseStatLeg(raw);
+        if (!parsed || seen.has(raw)) continue;
+        const result = gradeStatLeg(parsed, stat(g, parsed.player, parsed.market));
+        if (!result) continue;
+        seen.add(raw);
+        legItems.push({ ...base, type: 'prop', label: raw, bucket: 'ticketLeg', result });
       }
   }
 
