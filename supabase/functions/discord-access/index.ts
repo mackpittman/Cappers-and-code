@@ -27,8 +27,16 @@ const UA = 'CappersAndCode (https://mackpittman.github.io/Cappers-and-code, 1.0)
 const MANAGE_ROLES = 1n << 28n;
 const ADMINISTRATOR = 1n << 3n;
 
+// The app calls this from a browser on another origin, so every JSON reply needs CORS headers
+// and the preflight needs answering. Without them the browser blocks the request before it
+// reaches us and the client only sees "Failed to send a request to the Edge Function".
+const CORS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type, x-sync-secret',
+  'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+};
 const json = (b: unknown, status = 200) =>
-  new Response(JSON.stringify(b), { status, headers: { 'Content-Type': 'application/json' } });
+  new Response(JSON.stringify(b), { status, headers: { ...CORS, 'Content-Type': 'application/json' } });
 
 async function cfg(key: string): Promise<string | null> {
   const { data } = await admin.from('pipeline_config').select('value').eq('key', key).maybeSingle();
@@ -176,6 +184,7 @@ async function applyOne(
 // ---------------------------------------------------------------- handler
 
 Deno.serve(async (req) => {
+  if (req.method === 'OPTIONS') return new Response('ok', { headers: CORS });
   const c = await cfgAll([
     'publish_secret',
     'discord_bot_token',

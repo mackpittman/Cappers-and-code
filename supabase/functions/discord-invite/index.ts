@@ -20,8 +20,14 @@ const API = 'https://discord.com/api/v10';
 /** Single-use, and short-lived so a screenshot goes stale. */
 const INVITE_MAX_AGE = 24 * 3600;
 
+// Called from the browser on another origin; see discord-access for why this is required.
+const CORS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type, x-sync-secret',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+};
 const json = (b: unknown, status = 200) =>
-  new Response(JSON.stringify(b), { status, headers: { 'Content-Type': 'application/json' } });
+  new Response(JSON.stringify(b), { status, headers: { ...CORS, 'Content-Type': 'application/json' } });
 
 async function cfg(key: string): Promise<string | null> {
   const { data } = await admin.from('pipeline_config').select('value').eq('key', key).maybeSingle();
@@ -55,6 +61,7 @@ async function mintDiscordInvite(token: string, channelId: string) {
 }
 
 Deno.serve(async (req) => {
+  if (req.method === 'OPTIONS') return new Response('ok', { headers: CORS });
   if (req.method !== 'POST') return json({ error: 'POST only' }, 405);
   const [secret, token, channelId] = await Promise.all([
     cfg('publish_secret'),
