@@ -2,7 +2,7 @@
 // the board can move channels by changing pipeline_config.discord_post_channel_id, and no webhook
 // URL has to live in any runner. Auth: x-sync-secret must equal pipeline_config.publish_secret.
 // Body: { content?: string, embeds?: object[], username?: string, channel_id?: string,
-//         mention_users?: string[],
+//         mention_users?: string[], reply_to?: string,
 //         ping?: 'board'|'live'|'primetime'|'results'|'free' }
 // `ping` prepends the matching opt-in role mention, so only members who asked for that kind of
 // drop get alerted. Unknown or unconfigured keys post without a mention rather than failing.
@@ -49,7 +49,15 @@ Deno.serve(async (req) => {
     const users = body.mention_users.map((u: unknown) => String(u)).filter((u) => /^\d{17,20}$/.test(u));
     if (users.length) allowed = { ...allowed, users };
   }
-  const payload = { content, embeds: body.embeds ?? [], allowed_mentions: allowed };
+  const payload: Record<string, unknown> = {
+    content,
+    embeds: body.embeds ?? [],
+    allowed_mentions: allowed,
+  };
+  // Replying to an existing message, which is how some bots expect to be handed the thing to act
+  // on. fail_if_not_exists false so a deleted target posts as a normal message instead of erroring.
+  if (body.reply_to)
+    payload.message_reference = { message_id: String(body.reply_to), fail_if_not_exists: false };
   const channel = body.channel_id ?? defaultChannel;
 
   // Preferred: post as the bot into the configured channel.
@@ -59,7 +67,10 @@ Deno.serve(async (req) => {
       headers: { Authorization: `Bot ${token}`, 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     });
-    if (r.ok) return json({ via: 'bot', channel, status: r.status });
+    if (r.ok) {
+      const sent = await r.json().catch(() => ({}));
+      return json({ via: 'bot', channel, status: r.status, message_id: sent?.id ?? null });
+    }
     const err = await r.text();
     if (!webhook || body.no_fallback)
       return json({ via: 'bot', channel, status: r.status, error: err.slice(0, 300) }, 502);
