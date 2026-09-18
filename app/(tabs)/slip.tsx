@@ -1,5 +1,17 @@
 import React, { useMemo, useState } from 'react';
-import { Linking, Platform, Pressable, Share, Text, TextInput, View } from 'react-native';
+import {
+  Image,
+  Linking,
+  Modal,
+  Platform,
+  Pressable,
+  ScrollView,
+  Share,
+  Text,
+  TextInput,
+  View,
+  useWindowDimensions,
+} from 'react-native';
 import { router } from 'expo-router';
 import { Screen } from '@/components/Screen';
 import { Body, Card, H2, Label, Pill } from '@/components/ui';
@@ -13,7 +25,7 @@ import {
 } from '@/lib/slip';
 import { useBoard } from '@/lib/store';
 import { GAMBLY_WARNING, discordChannelUrl, gamblyLines, gamblyMessage } from '@/lib/gambly';
-import { DISCORD_GUILD_ID, GAMBLY_CHANNEL_ID, gamblyConfigured } from '@/lib/site';
+import { DISCORD_GUILD_ID, GAMBLY_CHANNEL_ID, SITE_URL, gamblyConfigured } from '@/lib/site';
 import { pct } from '@/lib/odds';
 import { fonts, radius, space, type, useTheme } from '@/theme';
 
@@ -26,6 +38,59 @@ async function copyOrShare(text: string): Promise<string> {
   }
   await Share.share({ message: text });
   return 'Slip shared.';
+}
+
+
+/** The graphic pinned in the members' channel, shown in place so nobody has to go looking for it. */
+const HOWTO_URL = `${SITE_URL}/sheets/gambly-howto.png`;
+const HOWTO_RATIO = 1200 / 1360;
+
+function HowToModal({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const t = useTheme();
+  const { width, height } = useWindowDimensions();
+  // Fit the sheet to whichever dimension runs out first, so it is never cropped and never
+  // overflows on a short screen.
+  const w = Math.min(width - space.md * 2, 640);
+  const h = Math.min(w / HOWTO_RATIO, height * 0.78);
+  return (
+    <Modal visible={open} transparent animationType="fade" onRequestClose={onClose}>
+      <Pressable
+        onPress={onClose}
+        accessibilityLabel="Close"
+        style={{
+          flex: 1,
+          backgroundColor: 'rgba(5,6,8,0.92)',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: space.md,
+        }}
+      >
+        {/* Stop a tap on the sheet itself from closing it. */}
+        <Pressable onPress={() => {}} style={{ maxHeight: '90%' }}>
+          <ScrollView bounces={false} showsVerticalScrollIndicator={false}>
+            <Image
+              source={{ uri: HOWTO_URL }}
+              style={{ width: w, height: h, borderRadius: radius.sm }}
+              resizeMode="contain"
+              accessibilityLabel="How to send your slip to your sportsbook, in five steps"
+            />
+          </ScrollView>
+          <Pressable
+            onPress={onClose}
+            style={{
+              marginTop: space.md,
+              paddingVertical: 13,
+              borderRadius: radius.sm,
+              backgroundColor: t.green,
+              alignItems: 'center',
+            }}
+          >
+            <Text style={[type.label, { color: t.onGreen, letterSpacing: 1 }]}>GOT IT</Text>
+          </Pressable>
+        </Pressable>
+      </Pressable>
+    </Modal>
+  );
 }
 
 /** A square that reads as on or off at a glance, and is big enough to hit while walking. */
@@ -194,6 +259,7 @@ export default function SlipScreen() {
   const [msg, setMsg] = useState<string | null>(null);
   // Excluded rather than included: a pick tapped onto the slip is in the send by default, so the
   // common case of "send everything" costs no taps at all.
+  const [howto, setHowto] = useState(false);
   const [sendMsg, setSendMsg] = useState<string | null>(null);
   const [excluded, setExcluded] = useState<Record<string, boolean>>({});
   const picked = useMemo(() => todays.filter((i) => !excluded[i.id]), [todays, excluded]);
@@ -236,6 +302,25 @@ export default function SlipScreen() {
       title="My Slip"
       subtitle="Everything you tapped + SLIP on today. Set units, mark placed, grade it after the games. Units, not dollars."
     >
+      {gamblyConfigured && (
+        <Pressable
+          onPress={() => setHowto(true)}
+          hitSlop={10}
+          accessibilityRole="button"
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 6,
+            paddingVertical: space.xs,
+          }}
+        >
+          <Text style={[type.small, { color: t.mute }]}>New to this?</Text>
+          <Text style={[type.label, { color: t.green }]}>HOW IT WORKS</Text>
+        </Pressable>
+      )}
+      <HowToModal open={howto} onClose={() => setHowto(false)} />
+
       {gamblyConfigured && todays.length > 0 && (
         <Card accent="green">
           <View

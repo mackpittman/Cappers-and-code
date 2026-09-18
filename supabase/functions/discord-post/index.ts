@@ -49,6 +49,19 @@ Deno.serve(async (req) => {
     }
     return json({ deleted: out });
   }
+  // Pinning, so an instruction sheet stays at the top of a channel instead of scrolling away.
+  // Needs Manage Messages, which the bot does not otherwise require; the status is returned rather
+  // than swallowed so a missing permission is visible instead of looking like a silent success.
+  if (body.action === 'pin' || body.action === 'unpin') {
+    if (!token) return json({ error: 'no bot token' }, 503);
+    const ch = body.channel_id ?? defaultChannel;
+    const r = await fetch(`${API}/channels/${ch}/pins/${String(body.message_id)}`, {
+      method: body.action === 'pin' ? 'PUT' : 'DELETE',
+      headers: { Authorization: `Bot ${token}` },
+    });
+    const detail = r.ok ? null : (await r.text()).slice(0, 300);
+    return json({ action: body.action, status: r.status, ok: r.ok, error: detail });
+  }
   // Opt-in role ping. Only the role we name is allowed to notify: never @everyone, never @here.
   let content = body.content ?? '';
   let allowed: Record<string, unknown> = { parse: [] };
