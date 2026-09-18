@@ -104,7 +104,8 @@ Deno.serve(async (req) => {
     mode: c.stripe_mode,
   };
   if (action === 'status') return json(status);
-  if (action !== 'setup') return json({ error: `unknown action: ${action}` }, 400);
+  if (action !== 'setup' && action !== 'selftest' && action !== 'taxcodes')
+    return json({ error: `unknown action: ${action}` }, 400);
 
   const secret = c.stripe_secret_key;
   if (!secret)
@@ -115,6 +116,59 @@ Deno.serve(async (req) => {
       },
       503,
     );
+
+  // Managed Payments requires every product to carry a tax code. Rather than guess one, list the
+  // eligible codes from Stripe and pick from the real set.
+  if (action === 'taxcodes') {
+    const all = await stripe('tax_codes?limit=100', secret, null, 'GET');
+    const q = String(body.q ?? 'software').toLowerCase();
+    return json({
+      matches: all.data
+        .filter((t: any) => `${t.name} ${t.description}`.toLowerCase().includes(q))
+        .map((t: any) => ({ id: t.id, name: t.name, description: String(t.description).slice(0, 150) })),
+    });
+  }
+
+  if (action === 'selftest') {
+    const out: Record<string, unknown> = { mode: /^(sk|rk)_live_/.test(secret) ? 'live' : 'test' };
+    let customerId: string | null = null;
+    try {
+      const cust = await stripe('customers', secret, {
+        email: 'selftest@cappersandcode.invalid',
+        'metadata[selftest]': '1',
+      });
+      customerId = cust.id;
+      out.create_customer = 'ok';
+    } catch (e) {
+      out.create_customer = String((e as Error).message);
+      return json({ ok: false, ...out }, 502);
+    }
+    try {
+      const site = (await cfgAll(['site_url'])).site_url ?? 'https://example.com';
+      const session = await stripe('checkout/sessions', secret, {
+        customer: customerId!,
+        mode: 'payment',
+        'line_items[0][price]': c.stripe_price_founder ?? '',
+        'line_items[0][quantity]': '1',
+        success_url: `${site}/success?session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `${site}/?canceled=1`,
+      });
+      out.create_checkout_session = 'ok';
+      out.session_url_host = new URL(session.url).host;
+      // Leave nothing behind that a stray click could pay for.
+      await stripe(`checkout/sessions/${session.id}/expire`, secret, {});
+      out.expire_session = 'ok';
+    } catch (e) {
+      out.create_checkout_session = String((e as Error).message);
+    }
+    try {
+      await stripe(`customers/${customerId}`, secret, null, 'DELETE');
+      out.cleanup = 'ok';
+    } catch (e) {
+      out.cleanup = String((e as Error).message);
+    }
+    return json({ ok: out.create_checkout_session === 'ok', ...out });
+  }
 
   try {
     // Stripe issues a restricted key (rk_) rather than a standard secret key (sk_) whenever the
