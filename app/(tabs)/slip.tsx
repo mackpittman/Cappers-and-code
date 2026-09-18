@@ -274,36 +274,20 @@ export default function SlipScreen() {
   const sendToGambly = async () => {
     const text = gamblyMessage(picked);
     if (!text) return setSendMsg('Pick at least one before sending.');
-    const webUrl = discordChannelUrl(DISCORD_GUILD_ID, GAMBLY_CHANNEL_ID);
     try {
-      // The share sheet is the only way the text arrives already in Discord's box. Discord has no
-      // URL parameter for prefilling a message, so opening the channel directly always ends in a
-      // paste. Handing the text to the OS instead lets the member pick Discord, pick the channel,
-      // and find the slip written for them.
-      if (Platform.OS !== 'web') {
-        await Share.share({ message: text });
-        setSendMsg('Pick Discord, then the channel. Your slip is already in the box.');
-        return;
-      }
-      // Mobile browsers have the same share sheet; this app is served on the web, so most phones
-      // land here rather than in the branch above.
-      const nav = typeof navigator !== 'undefined' ? (navigator as Navigator) : undefined;
-      if (nav?.share) {
-        await nav.share({ text });
-        setSendMsg('Pick Discord, then the channel. Your slip is already in the box.');
-        return;
-      }
-      // Desktop has no share sheet, so this is the one case that really does need a paste.
-      if (nav?.clipboard) await nav.clipboard.writeText(text);
-      await Linking.openURL(webUrl);
+      if (Platform.OS === 'web' && typeof navigator !== 'undefined' && navigator.clipboard)
+        await navigator.clipboard.writeText(text);
+      else await Share.share({ message: text });
+      const appUrl = discordChannelUrl(DISCORD_GUILD_ID, GAMBLY_CHANNEL_ID, true);
+      const webUrl = discordChannelUrl(DISCORD_GUILD_ID, GAMBLY_CHANNEL_ID);
+      const useApp =
+        Platform.OS !== 'web' && (await Linking.canOpenURL(appUrl).catch(() => false));
+      await Linking.openURL(useApp ? appUrl : webUrl);
       setSendMsg('Copied. Paste it in the channel and send.');
     } catch (e: any) {
-      // Dismissing the share sheet raises AbortError; that is a choice, not a failure.
-      if (e?.name === 'AbortError') return;
       setSendMsg(e?.message ?? String(e));
     }
   };
-
   const pastDays = Array.from(new Set(items.filter((i) => i.day !== today).map((i) => i.day)))
     .sort()
     .reverse();
@@ -313,7 +297,6 @@ export default function SlipScreen() {
     lost: record.filter((i) => i.status === 'lost').length,
     push: record.filter((i) => i.status === 'push').length,
   };
-
   return (
     <Screen
       title="My Slip"
