@@ -2,6 +2,7 @@
 // the board can move channels by changing pipeline_config.discord_post_channel_id, and no webhook
 // URL has to live in any runner. Auth: x-sync-secret must equal pipeline_config.publish_secret.
 // Body: { content?: string, embeds?: object[], username?: string, channel_id?: string,
+//         mention_users?: string[],
 //         ping?: 'board'|'live'|'primetime'|'results'|'free' }
 // `ping` prepends the matching opt-in role mention, so only members who asked for that kind of
 // drop get alerted. Unknown or unconfigured keys post without a mention rather than failing.
@@ -40,6 +41,13 @@ Deno.serve(async (req) => {
       content = `<@&${roleId}>\n${content}`;
       allowed = { parse: [], roles: [roleId] };
     }
+  }
+  // Naming specific users, which is how another bot is handed a message to act on. A mention that
+  // is not listed here still renders as text but reaches nobody, so tagging without this is a
+  // message that looks right and does nothing.
+  if (Array.isArray(body.mention_users) && body.mention_users.length) {
+    const users = body.mention_users.map((u: unknown) => String(u)).filter((u) => /^\d{17,20}$/.test(u));
+    if (users.length) allowed = { ...allowed, users };
   }
   const payload = { content, embeds: body.embeds ?? [], allowed_mentions: allowed };
   const channel = body.channel_id ?? defaultChannel;
