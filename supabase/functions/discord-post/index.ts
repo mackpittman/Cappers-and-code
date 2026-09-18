@@ -32,6 +32,23 @@ Deno.serve(async (req) => {
   if (!secret || req.headers.get('x-sync-secret') !== secret)
     return json({ error: 'unauthorized' }, 401);
   const body = await req.json().catch(() => ({}));
+
+  // Cleaning up after ourselves. Only ever used to remove messages this bot posted; Discord
+  // refuses anything else unless the bot holds Manage Messages, which it does not need here.
+  if (body.action === 'delete') {
+    if (!token) return json({ error: 'no bot token' }, 503);
+    const ch = body.channel_id ?? defaultChannel;
+    const ids: string[] = Array.isArray(body.message_ids) ? body.message_ids.map(String) : [];
+    const out: Record<string, number> = {};
+    for (const id of ids) {
+      const d = await fetch(`${API}/channels/${ch}/messages/${id}`, {
+        method: 'DELETE',
+        headers: { Authorization: `Bot ${token}` },
+      });
+      out[id] = d.status;
+    }
+    return json({ deleted: out });
+  }
   // Opt-in role ping. Only the role we name is allowed to notify: never @everyone, never @here.
   let content = body.content ?? '';
   let allowed: Record<string, unknown> = { parse: [] };
