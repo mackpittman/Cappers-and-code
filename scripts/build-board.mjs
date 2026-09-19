@@ -168,6 +168,27 @@ const games = research.games.map((g) => {
   );
   const teamInj = (abbr) =>
     (injuries.teams[abbr] || []).filter((i) => STATUS_KEEP.has(i.status)).slice(0, 12);
+
+  // A player's designation, from either roster. The research was written on Tuesday and the
+  // designations land on Friday and Saturday, so a scorer the desk liked can be ruled out while
+  // his price is still sitting on the board. Every player row carries its status from here on, and
+  // a player who cannot play is not a price we show: leaving Michael Pittman Jr. priced at +355 on
+  // the Pittsburgh board an hour after he was ruled out is not a stale number, it is a wrong one.
+  const designations = new Map(
+    [g.away.abbr, g.home.abbr].flatMap((abbr) =>
+      (injuries.teams[abbr] || []).map((i) => [normName(i.name), i.status]),
+    ),
+  );
+  const RULED_OUT = new Set(['Out', 'Doubtful', 'Injured Reserve', 'Suspension']);
+  // ESPN reports a cleared player as "Active", which is not a designation and would put a badge on
+  // most of the board. Only the statuses that change how a bet should be read survive.
+  const statusOf = (name) => {
+    const st = designations.get(normName(name)) ?? null;
+    return st && STATUS_KEEP.has(st) ? st : null;
+  };
+  const playable = (p) => !RULED_OUT.has(statusOf(p.name) ?? '');
+  const tag = (p) => ({ ...p, status: statusOf(p.name) });
+
   return {
     ...g,
     status: sched
@@ -178,12 +199,22 @@ const games = research.games.map((g) => {
         }
       : null,
     live,
-    top3: g.top3.map(attach),
-    value: g.value.map(attach),
-    atdBoard: g.atdBoard.map((b) => {
+    top3: g.top3.filter(playable).map(attach).map(tag),
+    value: g.value.filter(playable).map(attach).map(tag),
+    // Anyone the desk wrote up who has since been ruled out, kept so the app can say why a name
+    // people were expecting is gone rather than silently dropping it.
+    scratched: [
+      ...new Map(
+        [...g.top3, ...g.value, ...g.atdBoard]
+          .filter((p) => !playable(p))
+          .map((p) => [p.name, { name: p.name, team: p.team ?? null, status: statusOf(p.name) }]),
+      ).values(),
+    ],
+    atdBoard: g.atdBoard.filter(playable).map((b) => {
       const lp = atd[normName(b.name)];
       return {
         ...b,
+        status: statusOf(b.name),
         live: lp ? { best: lp.best, bestBook: lp.bestBook, consensus: lp.consensus } : null,
       };
     }),

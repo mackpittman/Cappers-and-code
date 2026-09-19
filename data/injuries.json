@@ -1,6 +1,6 @@
 {
- "fetchedAt": "2026-09-19T12:14:43.916Z",
- "sourceTimestamp": "2026-09-19T12:14:40Z",
+ "fetchedAt": "2026-09-19T18:01:20.637Z",
+ "sourceTimestamp": "2026-09-19T18:01:10Z",
  "teams": {
   "ARI": [
    {
@@ -710,7 +710,7 @@
     "pos": "LB",
     "status": "Active",
     "type": "active",
-    "detail": "Rousseau logged three solo tackles for two sacks in Thursday night's 41-31 win over the Lions.",
+    "detail": "Rousseau logged three solo tackles, including 2.0 sacks, in Thursday night's 41-31 win over the Lions.",
     "date": "2026-09-19T03:09Z"
    },
    {
@@ -1016,10 +1016,10 @@
    {
     "name": "Anthony Johnson Jr.",
     "pos": "S",
-    "status": "Out",
-    "type": "out",
-    "detail": "out",
-    "date": "2026-09-19T12:01Z"
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "ir",
+    "date": "2026-09-19T17:36Z"
    },
    {
     "name": "Ozzy Trapilo",
@@ -1434,6 +1434,14 @@
     "date": "2026-09-08T20:42Z"
    },
    {
+    "name": "Noah Igbinoghene",
+    "pos": "CB",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "questionable",
+    "date": "2026-09-19T16:36Z"
+   },
+   {
     "name": "Tyson Campbell",
     "pos": "CB",
     "status": "Questionable",
@@ -1548,14 +1556,6 @@
    {
     "name": "Daniel Thomas",
     "pos": "S",
-    "status": "Active",
-    "type": "active",
-    "detail": "",
-    "date": "2026-09-14T15:12Z"
-   },
-   {
-    "name": "Noah Igbinoghene",
-    "pos": "CB",
     "status": "Active",
     "type": "active",
     "detail": "",
@@ -2108,7 +2108,7 @@
     "pos": "RB",
     "status": "Active",
     "type": "active",
-    "detail": "Saylors logged one tackle on kick coverage and two kick returns for 58 yards during Thursday night's 41-31 loss to the Bills.",
+    "detail": "Saylors logged one tackle on kick coverage and recorded two kickoff returns for 58 yards during Thursday night's 41-31 loss to the Bills.",
     "date": "2026-09-19T00:49Z"
    },
    {
@@ -2670,12 +2670,12 @@
     "date": "2026-08-31T17:16Z"
    },
    {
-    "name": "Will Mallory",
-    "pos": "TE",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "Mallory (thumb) was placed on injured reserve by the Colts on Sunday with a designation to return, JJ Stankevitz of the team's official website reports.",
-    "date": "2026-08-31T17:12Z"
+    "name": "Anthony Gould",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "The Colts elevated Gould from the practice squad to the active roster Saturday.",
+    "date": "2026-09-19T16:37Z"
    },
    {
     "name": "Alec Pierce",
@@ -4852,6 +4852,14 @@
   ],
   "NYJ": [
    {
+    "name": "Omar Cooper Jr.",
+    "pos": "WR",
+    "status": "Out",
+    "type": "out",
+    "detail": "The Jets are expected to place Cooper (ankle) on injured reserve, Ian Rapoport of NFL Network reports.",
+    "date": "2026-09-19T16:24Z"
+   },
+   {
     "name": "Joseph Ossai",
     "pos": "DE",
     "status": "Out",
@@ -4874,14 +4882,6 @@
     "type": "out",
     "detail": "Fitzpatrick (groin) will not play in Sunday's game versus Green Bay, Zack Rosenblatt of The Athletic reports.",
     "date": "2026-09-18T21:21Z"
-   },
-   {
-    "name": "Omar Cooper Jr.",
-    "pos": "WR",
-    "status": "Out",
-    "type": "out",
-    "detail": "Cooper (ankle) will not play Sunday against the Packers, Zack Rosenblatt of The Athletic reports.",
-    "date": "2026-09-18T14:51Z"
    },
    {
     "name": "Will McDonald IV",
@@ -5260,8 +5260,16 @@
     "pos": "CB",
     "status": "Out",
     "type": "out",
-    "detail": "Porter (back) is officially listed as out for Sunday's game against the Patriots, Brooke Pryor of ESPN.com reports.",
-    "date": "2026-09-18T23:33Z"
+    "detail": "Porter (back) wants a long-term contract, regardless of where he will play it out, Jonathan Jones of the Athletic reports.",
+    "date": "2026-09-19T17:37Z"
+   },
+   {
+    "name": "Michael Pittman Jr.",
+    "pos": "WR",
+    "status": "Out",
+    "type": "out",
+    "detail": "Pittman (foot) has been ruled out for Sunday's game at New England, Burt Lauten of the Steelers' official site reports.",
+    "date": "2026-09-19T17:09Z"
    },
    {
     "name": "Troy Fautanu",
@@ -5272,20 +5280,28 @@
     "date": "2026-09-19T01:20Z"
    },
    {
-    "name": "Michael Pittman Jr.",
-    "pos": "WR",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Pittman (foot) is listed as questionable for Sunday's game against the Patriots, Brooke Pryor of ESPN.com reports.",
-    "date": "2026-09-18T19:47Z"
-   },
-   {
     "name": "DeShon Elliott",
     "pos": "S",
     "status": "Injured Reserve",
     "type": "Injured Reserve",
     "detail": "ir",
     "date": "2026-09-08T20:42Z"
+   },
+   {
+    "name": "Roman Wilson",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "Wilson is set to see more snaps as an outside receiver during Sunday's game against the Patriots, Mike DeFabo of The Athletic reports.",
+    "date": "2026-09-19T17:28Z"
+   },
+   {
+    "name": "Germie Bernard",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "Bernard is set to be the No. 3 option at wide receiver in Sunday's game against the Patriots, Mike DeFabo of The Athletic reports.",
+    "date": "2026-09-19T17:19Z"
    },
    {
     "name": "Jaquan Brisker",
@@ -5302,22 +5318,6 @@
     "type": "active",
     "detail": "Wilson recorded 13 tackles (five solo) during Sunday's 20-13 win versus the Falcons.",
     "date": "2026-09-16T01:14Z"
-   },
-   {
-    "name": "Germie Bernard",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Bernard played three of Pittsburgh's 67 offensive snaps during Sunday's 20-13 win versus the Falcons.",
-    "date": "2026-09-15T01:26Z"
-   },
-   {
-    "name": "Roman Wilson",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Wilson grabbed three passes for 26 yards and no touchdowns in Sunday's 20-13 win over the Falcons.",
-    "date": "2026-09-15T01:22Z"
    },
    {
     "name": "T.J. Watt",
@@ -6072,19 +6072,11 @@
     "date": "2026-09-19T00:05Z"
    },
    {
-    "name": "Cedric Gray",
-    "pos": "LB",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Gray (concussion) was a full participant in Friday's practice but is listed as questionable for Sunday's game against the Eagles, Paul Kuharsky of PaulKuharsky.com reports.",
-    "date": "2026-09-19T00:03Z"
-   },
-   {
     "name": "Cor'Dale Flott",
     "pos": "CB",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "Flott did not participate in Friday's practice due to a quadriceps injury and is listed as questionable for Sunday's game against the Titans, Paul Kuharsky of PaulKuharsky.com reports.",
+    "detail": "Flott did not participate in Friday's practice due to a quadriceps injury and is listed as questionable for Sunday's game against the Eagles, Paul Kuharsky of PaulKuharsky.com reports.",
     "date": "2026-09-18T23:57Z"
    },
    {
@@ -6094,6 +6086,14 @@
     "type": "Injured Reserve",
     "detail": "ir",
     "date": "2026-09-08T20:42Z"
+   },
+   {
+    "name": "Cedric Gray",
+    "pos": "LB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Gray (concussion) does not have an injury designation ahead of Sunday's game against the Eagles.",
+    "date": "2026-09-19T17:42Z"
    },
    {
     "name": "Kevin Winston Jr.",

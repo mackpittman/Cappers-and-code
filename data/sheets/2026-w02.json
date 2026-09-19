@@ -1,5 +1,5 @@
 {
- "builtAt": "2026-09-19T12:19:44.877Z",
+ "builtAt": "2026-09-19T18:02:48.207Z",
  "week": 2,
  "season": 2026,
  "oddsFetchedAt": "2026-09-19T12:12:27.157Z",
@@ -159,18 +159,18 @@
      "legs": [
       {
        "type": "side",
-       "label": "KC -6.5",
+       "label": "KC -6",
        "team": "KC",
        "game": "ind-kc",
        "gameLabel": "IND@KC",
        "kickoff": "2026-09-21T00:20:00Z",
-       "prob": 0.577,
+       "prob": 0.584,
        "price": -110,
        "book": "FD/DK",
        "implied": 0.524,
-       "edge": 0.053,
+       "edge": 0.06,
        "conf": 3,
-       "moved": null,
+       "moved": "model liked -6.5",
        "why": "KC's offense faces a Colts defense that just allowed 41 points and struggled versus both the run and explosive pass plays, while Indianapolis's offense gets a Chiefs secondary that traded McDuffie, lost Watson/Cook in free agency, and plays Week 2 without CB Mansoor Delane. That mismatch supports a comfortable Chiefs cover and a game that clears the total. Confidence sits at a moderate 3/5 on each side because Indy gets a full week to self-scout its Week 1 issues and KC's own O-line/red-zone execution was inconsistent versus Denver."
       },
       {
@@ -207,28 +207,27 @@
      ],
      "decimal": 6.958,
      "price": 596,
-     "prob": 0.196,
-     "ev": 0.365,
+     "prob": 0.198,
+     "ev": 0.381,
      "implied": 0.1437
     },
     {
      "rank": 5,
      "legs": [
       {
-       "type": "side",
-       "label": "CAR -2.5",
-       "team": "CAR",
-       "game": "car-atl",
-       "gameLabel": "CAR@ATL",
+       "type": "total",
+       "label": "Over 47.5 MIN@CHI",
+       "game": "min-chi",
+       "gameLabel": "MIN@CHI",
        "kickoff": "2026-09-20T17:00:00Z",
-       "prob": 0.562,
+       "prob": 0.577,
        "price": -110,
        "book": "FD/DK",
        "implied": 0.524,
-       "edge": 0.038,
+       "edge": 0.053,
        "conf": 3,
-       "moved": "model liked -1.5",
-       "why": "Carolina gets the lean because Atlanta is starting its third-string QB (Cooper Rush, 2 INT in Wk1) behind a banged-up line (Bergeron out, Lindstrom/Harrison/Dorlus questionable), while Bryce Young just authored a 361-yard, 3-TD outing and Carolina's defensive investment (Phillips, Lloyd, Rozeboom) should eventually show even after a rough Wk1. The total lean is softer: CAR's defense allowing 59 points to Chicago argues for Over, but Rush's limited passing ceiling and ATL's shaky O-line make sustained scoring drives harder to trust, and the market itself has already drifted the total down half a point to 43.5, which aligns with a modest Under lean."
+       "moved": "model liked 49.5",
+       "why": "The line moved from CHI -3.5/45.5 to -5.5/49.5 purely on Chicago's 59-point explosion against a weak Panthers defense, while Minnesota's own 39-point, 17-point win at Green Bay (with a backup QB for three-plus quarters) is being undervalued; take the extra points with Minnesota given Flores' 82%-blitz-rate defense and a Bears O-line missing RT Trapilo, but only at low-moderate confidence given the Murray uncertainty. The total lean is Over: both offenses are hyper-efficient in the red zone and both defenses are shorthanded, so game script points to another 45+ combined-point affair even if the final margin tightens."
       },
       {
        "type": "total",
@@ -263,8 +262,8 @@
      ],
      "decimal": 6.958,
      "price": 596,
-     "prob": 0.187,
-     "ev": 0.3,
+     "prob": 0.192,
+     "ev": 0.334,
      "implied": 0.1437
     }
    ]
