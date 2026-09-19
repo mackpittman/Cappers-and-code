@@ -66,6 +66,19 @@ jobs:
             echo "restored=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          # Copying a secret out of a SQL result and into the GitHub form picks up a trailing
+          # newline or a stray space more often than not, and the RPC compares the string exactly:
+          # one invisible character reads as "unauthorized" and looks like a wrong secret.
+          BOARD_PUBLISH_SECRET="$(printf '%s' "$BOARD_PUBLISH_SECRET" | tr -d '[:space:]')"
+          export BOARD_PUBLISH_SECRET
+          # The length is safe to print and is the whole diagnosis: a good secret is 48 characters,
+          # so a different number means the paste was truncated or carried extra text. The value
+          # itself is never echoed.
+          len=${#BOARD_PUBLISH_SECRET}
+          if [ "$len" -ne 48 ]; then
+            echo "::error::BOARD_PUBLISH_SECRET is $len characters after trimming whitespace, expected 48. The stored secret was not pasted whole. Re-copy it from Supabase (pipeline_config, key 'publish_secret') and re-save the repository secret."
+            exit 1
+          fi
           node scripts/state-sync.mjs pull
           echo "restored=true" >> "$GITHUB_OUTPUT"
 
