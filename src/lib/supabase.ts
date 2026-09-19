@@ -47,6 +47,17 @@ export async function fetchEntitlement(): Promise<Entitlement> {
     }
   );
 }
+/**
+ * Whether the signed-in account may see the operator controls. The answer comes from the server
+ * because the list of operators is not something the client should carry: a bundled list ships to
+ * every browser and names the operators, and changing it would mean a rebuild and a redeploy. Any
+ * failure is read as "not an admin", which is the safe direction for a gate.
+ */
+export async function fetchIsAdmin(): Promise<boolean> {
+  const { data, error } = await supabase.rpc('is_admin');
+  if (error) return false;
+  return data === true;
+}
 export async function fetchBoard(): Promise<unknown | null> {
   const { data, error } = await supabase.rpc('get_board');
   if (error) throw error;

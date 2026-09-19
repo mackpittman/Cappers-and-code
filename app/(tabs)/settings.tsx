@@ -23,6 +23,7 @@ export default function SettingsScreen() {
     lastSync,
     session,
     entitlement,
+    isAdmin,
     signOut,
   } = useBoard();
   const [key, setKey] = useState(settings.oddsApiKey);
@@ -98,53 +99,6 @@ export default function SettingsScreen() {
         {button('Membership on the web', () => Linking.openURL(SITE_URL))}
         <LegalLinks />
       </Card>
-      <H2>Daily board</H2>
-      <Card>
-        <Label>Board URL</Label>
-        <Body small muted>
-          The daily GitHub Action rebuilds board.json every morning (schedule, injuries, odds,
-          research). The app pulls it on launch and on pull-to-refresh.
-        </Body>
-        <View style={{ height: space.sm }} />
-        <TextInput
-          id="boardUrl"
-          value={url}
-          onChangeText={setUrl}
-          autoCapitalize="none"
-          autoCorrect={false}
-          style={input}
-          placeholder="https://.../board.json"
-          placeholderTextColor={t.mute}
-        />
-        <View style={{ height: space.sm }} />
-        <Label>GitHub token (only if the repo is private)</Label>
-        <Body small muted>
-          A fine-grained token with read access to Contents lets the app pull board.json from a
-          private repo. Leave blank for a public repo or a public Gist/Pages URL.
-        </Body>
-        <View style={{ height: space.sm }} />
-        <TextInput
-          id="boardToken"
-          value={token}
-          onChangeText={setToken}
-          autoCapitalize="none"
-          autoCorrect={false}
-          secureTextEntry
-          style={input}
-          placeholder="github_pat_..."
-          placeholderTextColor={t.mute}
-        />
-        <View style={{ height: space.sm }} />
-        {button('Save and refresh board', async () => {
-          await saveSettings({ boardUrl: url.trim(), boardToken: token.trim() });
-          await refreshBoard();
-          setMsg('Board refreshed.');
-        })}
-        <Body small muted>
-          Board generated {ago(board.generatedAt)} · research as of{' '}
-          {new Date(board.researchAsOf).toLocaleString()} · last sync {ago(lastSync)}
-        </Body>
-      </Card>
       <H2>Game lines (free)</H2>
       <Card>
         <Body small muted>
@@ -156,70 +110,127 @@ export default function SettingsScreen() {
           await refreshLines();
           setMsg('Lines refreshed from ESPN.');
         })}
-      </Card>
-      <H2>Live prices (The Odds API)</H2>
-      <Card>
-        <Label>API key</Label>
         <Body small muted>
-          Free tier is 500 credits a month. One pull here costs about 3 credits for game lines plus
-          1 per game inside the props window. The daily Action spends roughly 16 a day, so keep
-          manual pulls for game day.
+          Board generated {ago(board.generatedAt)} · research as of{' '}
+          {new Date(board.researchAsOf).toLocaleString()} · last sync {ago(lastSync)}
         </Body>
-        <View style={{ height: space.sm }} />
-        <TextInput
-          id="oddsApiKey"
-          value={key}
-          onChangeText={setKey}
-          autoCapitalize="none"
-          autoCorrect={false}
-          secureTextEntry
-          style={input}
-          placeholder="paste key"
-          placeholderTextColor={t.mute}
-        />
-        <View style={{ height: space.sm }} />
-        <View style={{ flexDirection: 'row', gap: 8 }}>
-          <View style={{ flex: 1 }}>{button('Pull live prices now', pull, true)}</View>
-          <View style={{ flex: 1 }}>
-            {button('Get a free key', () => Linking.openURL('https://the-odds-api.com/'))}
-          </View>
-        </View>
-        <View style={{ height: space.sm }} />
-        <Label>Manual pull window (hours before kickoff)</Label>
-        <Body small muted>
-          A manual pull refreshes anytime-TD prices only for games kicking off inside this window, 1
-          credit per game, never below the reserve.
-        </Body>
-        <View style={{ flexDirection: 'row', gap: 8, marginTop: 6 }}>
-          {[3, 8, 24].map((d) => (
-            <Pressable
-              key={d}
-              onPress={() => saveSettings({ hoursAhead: d })}
-              style={{
-                paddingHorizontal: 12,
-                paddingVertical: 6,
-                borderRadius: 4,
-                backgroundColor: settings.hoursAhead === d ? t.green : t.surface2,
-              }}
-            >
-              <Text
-                style={[
-                  type.small,
-                  { color: settings.hoursAhead === d ? t.onGreen : t.ink, fontWeight: '700' },
-                ]}
-              >
-                {d}h
-              </Text>
-            </Pressable>
-          ))}
-        </View>
-        {board.oddsCredits?.remaining != null && (
-          <Body small muted>
-            Credits remaining after last pull: {board.oddsCredits.remaining}
-          </Body>
-        )}
         {!!msg && <Body small>{msg}</Body>}
       </Card>
+      {/*
+        Everything below is operator plumbing: where the board comes from, the token that reads it,
+        our Odds API key and our remaining credit balance. A member has no use for any of it, and
+        showing it invites them to buy an API key to run machinery we already run for them. The
+        answer comes from the server (is_admin), never from comparing an email in the client.
+      */}
+      {isAdmin && (
+        <>
+          <H2>Daily board</H2>
+          <Card>
+            <Label>Board URL</Label>
+            <Body small muted>
+              The daily GitHub Action rebuilds board.json every morning (schedule, injuries, odds,
+              research). The app pulls it on launch and on pull-to-refresh.
+            </Body>
+            <View style={{ height: space.sm }} />
+            <TextInput
+              id="boardUrl"
+              value={url}
+              onChangeText={setUrl}
+              autoCapitalize="none"
+              autoCorrect={false}
+              style={input}
+              placeholder="https://.../board.json"
+              placeholderTextColor={t.mute}
+            />
+            <View style={{ height: space.sm }} />
+            <Label>GitHub token (only if the repo is private)</Label>
+            <Body small muted>
+              A fine-grained token with read access to Contents lets the app pull board.json from a
+              private repo. Leave blank for a public repo or a public Gist/Pages URL.
+            </Body>
+            <View style={{ height: space.sm }} />
+            <TextInput
+              id="boardToken"
+              value={token}
+              onChangeText={setToken}
+              autoCapitalize="none"
+              autoCorrect={false}
+              secureTextEntry
+              style={input}
+              placeholder="github_pat_..."
+              placeholderTextColor={t.mute}
+            />
+            <View style={{ height: space.sm }} />
+            {button('Save and refresh board', async () => {
+              await saveSettings({ boardUrl: url.trim(), boardToken: token.trim() });
+              await refreshBoard();
+              setMsg('Board refreshed.');
+            })}
+          </Card>
+          <H2>Live prices (The Odds API)</H2>
+          <Card>
+            <Label>API key</Label>
+            <Body small muted>
+              Free tier is 500 credits a month. One pull here costs about 3 credits for game lines
+              plus 1 per game inside the props window. The daily Action spends roughly 16 a day, so
+              keep manual pulls for game day.
+            </Body>
+            <View style={{ height: space.sm }} />
+            <TextInput
+              id="oddsApiKey"
+              value={key}
+              onChangeText={setKey}
+              autoCapitalize="none"
+              autoCorrect={false}
+              secureTextEntry
+              style={input}
+              placeholder="paste key"
+              placeholderTextColor={t.mute}
+            />
+            <View style={{ height: space.sm }} />
+            <View style={{ flexDirection: 'row', gap: 8 }}>
+              <View style={{ flex: 1 }}>{button('Pull live prices now', pull, true)}</View>
+              <View style={{ flex: 1 }}>
+                {button('Get a free key', () => Linking.openURL('https://the-odds-api.com/'))}
+              </View>
+            </View>
+            <View style={{ height: space.sm }} />
+            <Label>Manual pull window (hours before kickoff)</Label>
+            <Body small muted>
+              A manual pull refreshes anytime-TD prices only for games kicking off inside this
+              window, 1 credit per game, never below the reserve.
+            </Body>
+            <View style={{ flexDirection: 'row', gap: 8, marginTop: 6 }}>
+              {[3, 8, 24].map((d) => (
+                <Pressable
+                  key={d}
+                  onPress={() => saveSettings({ hoursAhead: d })}
+                  style={{
+                    paddingHorizontal: 12,
+                    paddingVertical: 6,
+                    borderRadius: 4,
+                    backgroundColor: settings.hoursAhead === d ? t.green : t.surface2,
+                  }}
+                >
+                  <Text
+                    style={[
+                      type.small,
+                      { color: settings.hoursAhead === d ? t.onGreen : t.ink, fontWeight: '700' },
+                    ]}
+                  >
+                    {d}h
+                  </Text>
+                </Pressable>
+              ))}
+            </View>
+            {board.oddsCredits?.remaining != null && (
+              <Body small muted>
+                Credits remaining after last pull: {board.oddsCredits.remaining}
+              </Body>
+            )}
+          </Card>
+        </>
+      )}
       <H2>About</H2>
       <Card>
         <Body small muted>

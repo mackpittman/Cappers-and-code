@@ -10,6 +10,7 @@ import {
   supabase,
   supabaseConfigured,
   fetchEntitlement,
+  fetchIsAdmin,
   fetchBoard,
   fetchBoardPreview,
   type Entitlement,
@@ -45,6 +46,8 @@ type Ctx = {
   lastSync: string | null;
   session: Session | null;
   entitlement: Entitlement | null;
+  /** Server-answered: may this account see the operator controls. Never inferred from the email. */
+  isAdmin: boolean;
   authReady: boolean;
   checkoutUrl: string;
   settings: Settings;
@@ -74,6 +77,7 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
   const [lastSync, setLastSync] = useState<string | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [entitlement, setEntitlement] = useState<Entitlement | null>(null);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [authReady, setAuthReady] = useState(!supabaseConfigured);
   const [settings, setSettings] = useState<Settings>({
     boardUrl: extra.boardUrl ?? '',
@@ -268,6 +272,21 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (authReady) refreshBoard(); /* eslint-disable-next-line react-hooks/exhaustive-deps */
   }, [authReady, session?.user?.id]);
+  // Admin status rides on the session rather than on either place that sets the entitlement, so
+  // signing out always clears it and no path can leave a stale yes behind.
+  useEffect(() => {
+    let live = true;
+    if (!supabaseConfigured || !session) {
+      setIsAdmin(false);
+      return;
+    }
+    fetchIsAdmin().then((ok) => {
+      if (live) setIsAdmin(ok);
+    });
+    return () => {
+      live = false;
+    };
+  }, [session?.user?.id]);
 
   const value = useMemo(
     () => ({
@@ -279,6 +298,7 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
       lastSync,
       session,
       entitlement,
+      isAdmin,
       authReady,
       checkoutUrl: extra.checkoutUrl ?? '',
       settings,
@@ -302,6 +322,7 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
       lastSync,
       session,
       entitlement,
+      isAdmin,
       authReady,
       settings,
       saveSettings,
