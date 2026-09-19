@@ -75,7 +75,7 @@ export function bookPrice(books) {
   return best;
 }
 
-function combos(items, k) {
+export function combos(items, k) {
   const out = [];
   const rec = (start, acc) => {
     if (acc.length === k) return void out.push(acc);
@@ -84,7 +84,7 @@ function combos(items, k) {
   rec(0, []);
   return out;
 }
-function priceParlay(legs, corr = 1) {
+export function priceParlay(legs, corr = 1) {
   const dec = legs.reduce((d, l) => d * toDecimal(l.price), 1);
   const prob = Math.min(0.99, legs.reduce((p, l) => p * l.prob, 1) * corr);
   return {
@@ -110,7 +110,7 @@ function rank(list, n = 5, maxPerLeg = 2, score = (p) => p.ev * Math.sqrt(p.prob
   }
   return out.map((p, i) => ({ rank: i + 1, ...p }));
 }
-function crossGameCombos(legs, sizes, minProb) {
+export function crossGameCombos(legs, sizes, minProb) {
   const out = [];
   for (const k of sizes)
     for (const c of combos(legs, k)) {
@@ -123,6 +123,16 @@ function crossGameCombos(legs, sizes, minProb) {
 }
 
 // ---------- leg extraction ----------
+/** Designations that end a player's week. Anything else is a note on the leg, not a veto. */
+const RULED_OUT = new Set(['Out', 'Doubtful', 'Injured Reserve', 'Suspension']);
+/** Latest designation for a player from the game's injury report, or null when he carries none. */
+export function designation(g, name) {
+  const report = g.injuryReport ?? {};
+  const rows = Array.isArray(report) ? report : [...(report.away ?? []), ...(report.home ?? [])];
+  const row = rows.find((r) => r.name === name);
+  return row?.status ?? null;
+}
+
 export function atdLegs(board) {
   const legs = [];
   for (const g of board.games) {
@@ -131,15 +141,21 @@ export function atdLegs(board) {
     for (const p of [...(g.top3 ?? []), ...(g.value ?? [])]) {
       if (seen.has(p.name)) continue;
       seen.add(p.name);
+      // The research desk wrote the estimate before Friday's designations. A player ruled out
+      // since is not a 0% scorer, he is not a leg at all.
+      const status = designation(g, p.name);
+      if (status && RULED_OUT.has(status)) continue;
       const bp = bookPrice(p.live?.books);
       if (!bp || typeof p.est !== 'number') continue;
       const td2 = bookPrice(p.live2?.books);
       legs.push({
         type: 'atd',
         td2,
+        status,
         label: `${p.name} anytime TD`,
         player: p.name,
         team: p.team,
+        pos: p.pos ?? null,
         game: g.id,
         gameLabel: gameLabel(g),
         kickoff: g.kickoff,
