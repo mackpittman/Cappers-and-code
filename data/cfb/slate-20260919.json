@@ -1,0 +1,5590 @@
+{
+ "fetchedAt": "2026-09-19T00:11:45.813Z",
+ "season": 2026,
+ "slate": "20260919",
+ "fit": {
+  "finals": 186,
+  "pricedFinals": 186,
+  "weeks": [
+   1,
+   2,
+   3
+  ],
+  "mu": 26.71,
+  "hfa": 2.4,
+  "sigma": 16,
+  "formWeight": 1,
+  "fitRmseVsPostedSpread": 4.7
+ },
+ "ratings": {
+  "USC": {
+   "off": 13.32,
+   "def": 6.62,
+   "net": 19.94,
+   "games": 4,
+   "sos": -2.74,
+   "form": {
+    "games": 3,
+    "offResid": -0.07,
+    "defResid": -2.14,
+    "rawOff": -0.17,
+    "rawDef": -5
+   }
+  },
+  "SJSU": {
+   "off": -2.91,
+   "def": -4.21,
+   "net": -7.12,
+   "games": 4,
+   "sos": -4.35,
+   "form": {
+    "games": 3,
+    "offResid": 0.64,
+    "defResid": 1.86,
+    "rawOff": 1.5,
+    "rawDef": 4.33
+   }
+  },
+  "TCU": {
+   "off": 3.97,
+   "def": 5.33,
+   "net": 9.3,
+   "games": 3,
+   "sos": -11.48,
+   "form": {
+    "games": 2,
+    "offResid": -0.75,
+    "defResid": 0.58,
+    "rawOff": -2.25,
+    "rawDef": 1.75
+   }
+  },
+  "UNC": {
+   "off": -3.05,
+   "def": 7.88,
+   "net": 4.83,
+   "games": 3,
+   "sos": -4.83,
+   "form": {
+    "games": 2,
+    "offResid": -2.58,
+    "defResid": 3.92,
+    "rawOff": -7.75,
+    "rawDef": 11.75
+   }
+  },
+  "UVA": {
+   "off": 7.56,
+   "def": 7.91,
+   "net": 15.47,
+   "games": 3,
+   "sos": -7.64,
+   "form": {
+    "games": 2,
+    "offResid": 2.29,
+    "defResid": 2.79,
+    "rawOff": 6.88,
+    "rawDef": 8.38
+   }
+  },
+  "NCSU": {
+   "off": 2.33,
+   "def": 3.77,
+   "net": 6.1,
+   "games": 3,
+   "sos": -6.13,
+   "form": {
+    "games": 2,
+    "offResid": 2.63,
+    "defResid": 0.29,
+    "rawOff": 7.88,
+    "rawDef": 0.88
+   }
+  },
+  "NDSU": {
+   "off": 3.08,
+   "def": 6,
+   "net": 9.08,
+   "games": 4,
+   "sos": -12.64,
+   "form": {
+    "games": 3,
+    "offResid": 1.36,
+    "defResid": 1.57,
+    "rawOff": 3.17,
+    "rawDef": 3.67
+   }
+  },
+  "JXST": {
+   "off": -4.53,
+   "def": -2.32,
+   "net": -6.85,
+   "games": 4,
+   "sos": -11.79,
+   "form": {
+    "games": 3,
+    "offResid": 0.36,
+    "defResid": -0.43,
+    "rawOff": 0.83,
+    "rawDef": -1
+   }
+  },
+  "EMU": {
+   "off": -8.04,
+   "def": -3.62,
+   "net": -11.66,
+   "games": 4,
+   "sos": -2.51,
+   "form": {
+    "games": 3,
+    "offResid": -2.71,
+    "defResid": 0.36,
+    "rawOff": -6.33,
+    "rawDef": 0.83
+   }
+  },
+  "SAC": {
+   "off": -7.5,
+   "def": -6.35,
+   "net": -13.85,
+   "games": 4,
+   "sos": -8.35,
+   "form": {
+    "games": 3,
+    "offResid": -1.43,
+    "defResid": -0.93,
+    "rawOff": -3.33,
+    "rawDef": -2.17
+   }
+  },
+  "STAN": {
+   "off": -4.52,
+   "def": -1.89,
+   "net": -6.41,
+   "games": 3,
+   "sos": 5.39,
+   "form": {
+    "games": 2,
+    "offResid": 0.92,
+    "defResid": -2.42,
+    "rawOff": 2.75,
+    "rawDef": -7.25
+   }
+  },
+  "HAW": {
+   "off": -5.4,
+   "def": -2.9,
+   "net": -8.3,
+   "games": 3,
+   "sos": -6.07,
+   "form": {
+    "games": 3,
+    "offResid": -2.21,
+    "defResid": 0,
+    "rawOff": -5.17,
+    "rawDef": 0
+   }
+  },
+  "FSU": {
+   "off": 0.36,
+   "def": 1.58,
+   "net": 1.94,
+   "games": 3,
+   "sos": 2.75,
+   "form": {
+    "games": 2,
+    "offResid": -1.46,
+    "defResid": -0.79,
+    "rawOff": -4.38,
+    "rawDef": -2.38
+   }
+  },
+  "NMSU": {
+   "off": -5.09,
+   "def": -4.38,
+   "net": -9.47,
+   "games": 3,
+   "sos": -11.31,
+   "form": {
+    "games": 3,
+    "offResid": 1.86,
+    "defResid": 0.79,
+    "rawOff": 4.33,
+    "rawDef": 1.83
+   }
+  },
+  "UNLV": {
+   "off": -5.1,
+   "def": -1.64,
+   "net": -6.74,
+   "games": 3,
+   "sos": -5.42,
+   "form": {
+    "games": 3,
+    "offResid": -5.96,
+    "defResid": 0.39,
+    "rawOff": -13.92,
+    "rawDef": 0.92
+   }
+  },
+  "MEM": {
+   "off": 0.25,
+   "def": -0.72,
+   "net": -0.47,
+   "games": 4,
+   "sos": -9.72,
+   "form": {
+    "games": 3,
+    "offResid": 1.36,
+    "defResid": 0,
+    "rawOff": 3.17,
+    "rawDef": 0
+   }
+  },
+  "UTAH": {
+   "off": 8.24,
+   "def": 4.04,
+   "net": 12.28,
+   "games": 3,
+   "sos": -16.65,
+   "form": {
+    "games": 2,
+    "offResid": 4.17,
+    "defResid": 1.33,
+    "rawOff": 12.5,
+    "rawDef": 4
+   }
+  },
+  "FCS": {
+   "off": -15.8,
+   "def": -21.07,
+   "net": -36.87,
+   "games": 102,
+   "sos": -1.76,
+   "form": {
+    "games": 85,
+    "offResid": -1.24,
+    "defResid": -3.6,
+    "rawOff": -1.3,
+    "rawDef": -3.77
+   }
+  },
+  "MIZ": {
+   "off": 9.44,
+   "def": 5.98,
+   "net": 15.42,
+   "games": 3,
+   "sos": -10.79,
+   "form": {
+    "games": 2,
+    "offResid": 0.88,
+    "defResid": -1.29,
+    "rawOff": 2.63,
+    "rawDef": -3.88
+   }
+  },
+  "RUTG": {
+   "off": -0.53,
+   "def": -2.5,
+   "net": -3.03,
+   "games": 3,
+   "sos": 4.87,
+   "form": {
+    "games": 2,
+    "offResid": -4.29,
+    "defResid": -3.96,
+    "rawOff": -12.88,
+    "rawDef": -11.88
+   }
+  },
+  "MASS": {
+   "off": -3.16,
+   "def": 0.51,
+   "net": -2.65,
+   "games": 3,
+   "sos": -19.61,
+   "form": {
+    "games": 2,
+    "offResid": 3.75,
+    "defResid": 4.42,
+    "rawOff": 11.25,
+    "rawDef": 13.25
+   }
+  },
+  "UCF": {
+   "off": 3.73,
+   "def": 6.73,
+   "net": 10.46,
+   "games": 3,
+   "sos": -10.29,
+   "form": {
+    "games": 2,
+    "offResid": 0.83,
+    "defResid": 3.5,
+    "rawOff": 2.5,
+    "rawDef": 10.5
+   }
+  },
+  "WAKE": {
+   "off": 6.28,
+   "def": 1.48,
+   "net": 7.76,
+   "games": 2,
+   "sos": -4.93,
+   "form": {
+    "games": 2,
+    "offResid": 1.67,
+    "defResid": -2.67,
+    "rawOff": 5,
+    "rawDef": -8
+   }
+  },
+  "AKR": {
+   "off": -6.25,
+   "def": -3.24,
+   "net": -9.49,
+   "games": 3,
+   "sos": -5.64,
+   "form": {
+    "games": 2,
+    "offResid": 2.25,
+    "defResid": 0.08,
+    "rawOff": 6.75,
+    "rawDef": 0.25
+   }
+  },
+  "DEL": {
+   "off": -1.44,
+   "def": -2.34,
+   "net": -3.78,
+   "games": 3,
+   "sos": -11.61,
+   "form": {
+    "games": 2,
+    "offResid": 1.17,
+    "defResid": 1.33,
+    "rawOff": 3.5,
+    "rawDef": 4
+   }
+  },
+  "KENN": {
+   "off": -6.06,
+   "def": -3.11,
+   "net": -9.17,
+   "games": 3,
+   "sos": -8,
+   "form": {
+    "games": 2,
+    "offResid": -0.67,
+    "defResid": 1.17,
+    "rawOff": -2,
+    "rawDef": 3.5
+   }
+  },
+  "BUFF": {
+   "off": -13.02,
+   "def": -6.47,
+   "net": -19.49,
+   "games": 3,
+   "sos": -8.59,
+   "form": {
+    "games": 2,
+    "offResid": -1.92,
+    "defResid": -1.25,
+    "rawOff": -5.75,
+    "rawDef": -3.75
+   }
+  },
+  "GT": {
+   "off": -1.48,
+   "def": 1.51,
+   "net": 0.03,
+   "games": 3,
+   "sos": -5.8,
+   "form": {
+    "games": 2,
+    "offResid": -2.42,
+    "defResid": -0.25,
+    "rawOff": -7.25,
+    "rawDef": -0.75
+   }
+  },
+  "COLO": {
+   "off": -1.82,
+   "def": -0.56,
+   "net": -2.38,
+   "games": 3,
+   "sos": -12.92,
+   "form": {
+    "games": 2,
+    "offResid": -0.92,
+    "defResid": 0.92,
+    "rawOff": -2.75,
+    "rawDef": 2.75
+   }
+  },
+  "MINN": {
+   "off": 1.88,
+   "def": 2.14,
+   "net": 4.02,
+   "games": 3,
+   "sos": -12.12,
+   "form": {
+    "games": 2,
+    "offResid": -0.25,
+    "defResid": -2.08,
+    "rawOff": -0.75,
+    "rawDef": -6.25
+   }
+  },
+  "ILL": {
+   "off": 2,
+   "def": 1.23,
+   "net": 3.23,
+   "games": 3,
+   "sos": -14.36,
+   "form": {
+    "games": 2,
+    "offResid": 0.13,
+    "defResid": -2.88,
+    "rawOff": 0.38,
+    "rawDef": -8.63
+   }
+  },
+  "UAB": {
+   "off": -4.1,
+   "def": -8.25,
+   "net": -12.35,
+   "games": 3,
+   "sos": -7.11,
+   "form": {
+    "games": 2,
+    "offResid": 0.58,
+    "defResid": -0.08,
+    "rawOff": 1.75,
+    "rawDef": -0.25
+   }
+  },
+  "MIA": {
+   "off": 16.15,
+   "def": 8.48,
+   "net": 24.63,
+   "games": 2,
+   "sos": -18.47,
+   "form": {
+    "games": 2,
+    "offResid": 3.92,
+    "defResid": 0.25,
+    "rawOff": 11.75,
+    "rawDef": 0.75
+   }
+  },
+  "OU": {
+   "off": 7.41,
+   "def": 14.47,
+   "net": 21.88,
+   "games": 3,
+   "sos": 2.74,
+   "form": {
+    "games": 2,
+    "offResid": -1.58,
+    "defResid": 1.25,
+    "rawOff": -4.75,
+    "rawDef": 3.75
+   }
+  },
+  "UTEP": {
+   "off": -5.27,
+   "def": -5.79,
+   "net": -11.06,
+   "games": 3,
+   "sos": 2.32,
+   "form": {
+    "games": 2,
+    "offResid": 0.83,
+    "defResid": -0.33,
+    "rawOff": 2.5,
+    "rawDef": -1
+   }
+  },
+  "FRES": {
+   "off": -1.9,
+   "def": 5.53,
+   "net": 3.63,
+   "games": 3,
+   "sos": 0.35,
+   "form": {
+    "games": 2,
+    "offResid": 0.58,
+    "defResid": 1.25,
+    "rawOff": 1.75,
+    "rawDef": 3.75
+   }
+  },
+  "PUR": {
+   "off": 2.28,
+   "def": -1.97,
+   "net": 0.31,
+   "games": 3,
+   "sos": -3.37,
+   "form": {
+    "games": 2,
+    "offResid": 1.67,
+    "defResid": -3.33,
+    "rawOff": 5,
+    "rawDef": -10
+   }
+  },
+  "GAST": {
+   "off": -0.48,
+   "def": -1.51,
+   "net": -1.99,
+   "games": 3,
+   "sos": -11.85,
+   "form": {
+    "games": 2,
+    "offResid": 3.75,
+    "defResid": 3.25,
+    "rawOff": 11.25,
+    "rawDef": 9.75
+   }
+  },
+  "KU": {
+   "off": 2.34,
+   "def": 2.04,
+   "net": 4.38,
+   "games": 3,
+   "sos": -2.95,
+   "form": {
+    "games": 2,
+    "offResid": -0.46,
+    "defResid": -1.63,
+    "rawOff": -1.38,
+    "rawDef": -4.88
+   }
+  },
+  "MSU": {
+   "off": 0.52,
+   "def": 4.24,
+   "net": 4.76,
+   "games": 3,
+   "sos": 4.76,
+   "form": {
+    "games": 2,
+    "offResid": 0.38,
+    "defResid": 1.38,
+    "rawOff": 1.13,
+    "rawDef": 4.13
+   }
+  },
+  "TOL": {
+   "off": 0.61,
+   "def": -1.02,
+   "net": -0.41,
+   "games": 3,
+   "sos": -13.51,
+   "form": {
+    "games": 2,
+    "offResid": 3.21,
+    "defResid": -0.46,
+    "rawOff": 9.63,
+    "rawDef": -1.38
+   }
+  },
+  "OSU": {
+   "off": 13.96,
+   "def": 9.94,
+   "net": 23.9,
+   "games": 3,
+   "sos": -7.14,
+   "form": {
+    "games": 2,
+    "offResid": 0.33,
+    "defResid": 0.33,
+    "rawOff": 1,
+    "rawDef": 1
+   }
+  },
+  "BALL": {
+   "off": -9.24,
+   "def": -7.97,
+   "net": -17.21,
+   "games": 3,
+   "sos": -4.04,
+   "form": {
+    "games": 2,
+    "offResid": 1.42,
+    "defResid": -0.08,
+    "rawOff": 4.25,
+    "rawDef": -0.25
+   }
+  },
+  "ORE": {
+   "off": 9.53,
+   "def": 8.63,
+   "net": 18.16,
+   "games": 2,
+   "sos": 5.96,
+   "form": {
+    "games": 2,
+    "offResid": -2.33,
+    "defResid": -6,
+    "rawOff": -7,
+    "rawDef": -18
+   }
+  },
+  "BOIS": {
+   "off": 3.87,
+   "def": 0.69,
+   "net": 4.56,
+   "games": 3,
+   "sos": -2.45,
+   "form": {
+    "games": 2,
+    "offResid": 3.08,
+    "defResid": 1.25,
+    "rawOff": 9.25,
+    "rawDef": 3.75
+   }
+  },
+  "UGA": {
+   "off": 14.35,
+   "def": 7.53,
+   "net": 21.88,
+   "games": 3,
+   "sos": -16.97,
+   "form": {
+    "games": 2,
+    "offResid": 5.42,
+    "defResid": -2.08,
+    "rawOff": 16.25,
+    "rawDef": -6.25
+   }
+  },
+  "TEX": {
+   "off": 10.9,
+   "def": 12.59,
+   "net": 23.49,
+   "games": 3,
+   "sos": 3.56,
+   "form": {
+    "games": 2,
+    "offResid": 1.83,
+    "defResid": 1.67,
+    "rawOff": 5.5,
+    "rawDef": 5
+   }
+  },
+  "TXST": {
+   "off": -2.03,
+   "def": -9.37,
+   "net": -11.4,
+   "games": 3,
+   "sos": 1.9,
+   "form": {
+    "games": 2,
+    "offResid": -2.75,
+    "defResid": -2.08,
+    "rawOff": -8.25,
+    "rawDef": -6.25
+   }
+  },
+  "IU": {
+   "off": 14.09,
+   "def": 8.26,
+   "net": 22.35,
+   "games": 3,
+   "sos": -19.08,
+   "form": {
+    "games": 2,
+    "offResid": -0.67,
+    "defResid": -0.33,
+    "rawOff": -2,
+    "rawDef": -1
+   }
+  },
+  "UNT": {
+   "off": -0.11,
+   "def": -0.8,
+   "net": -0.91,
+   "games": 3,
+   "sos": 5.2,
+   "form": {
+    "games": 2,
+    "offResid": 3.88,
+    "defResid": 3.54,
+    "rawOff": 11.63,
+    "rawDef": 10.63
+   }
+  },
+  "TA&M": {
+   "off": 10.79,
+   "def": 9.45,
+   "net": 20.24,
+   "games": 3,
+   "sos": -3.24,
+   "form": {
+    "games": 2,
+    "offResid": 3.08,
+    "defResid": 0.92,
+    "rawOff": 9.25,
+    "rawDef": 2.75
+   }
+  },
+  "MOST": {
+   "off": -7.23,
+   "def": -7.18,
+   "net": -14.41,
+   "games": 3,
+   "sos": -7.49,
+   "form": {
+    "games": 2,
+    "offResid": 0.92,
+    "defResid": 0.08,
+    "rawOff": 2.75,
+    "rawDef": 0.25
+   }
+  },
+  "LSU": {
+   "off": 13.46,
+   "def": 10.34,
+   "net": 23.8,
+   "games": 3,
+   "sos": 6.09,
+   "form": {
+    "games": 2,
+    "offResid": 3.71,
+    "defResid": 0.88,
+    "rawOff": 11.13,
+    "rawDef": 2.63
+   }
+  },
+  "CLEM": {
+   "off": -1.63,
+   "def": 3.59,
+   "net": 1.96,
+   "games": 3,
+   "sos": 5.16,
+   "form": {
+    "games": 2,
+    "offResid": -4.13,
+    "defResid": -1.96,
+    "rawOff": -12.38,
+    "rawDef": -5.88
+   }
+  },
+  "TTU": {
+   "off": 3.4,
+   "def": 1.85,
+   "net": 5.25,
+   "games": 2,
+   "sos": -22.38,
+   "form": {
+    "games": 2,
+    "offResid": -4.08,
+    "defResid": -2.08,
+    "rawOff": -12.25,
+    "rawDef": -6.25
+   }
+  },
+  "ALA": {
+   "off": 10.34,
+   "def": 10.61,
+   "net": 20.95,
+   "games": 3,
+   "sos": -0.47,
+   "form": {
+    "games": 2,
+    "offResid": 4,
+    "defResid": 0.67,
+    "rawOff": 12,
+    "rawDef": 2
+   }
+  },
+  "ECU": {
+   "off": -2.62,
+   "def": -4.51,
+   "net": -7.13,
+   "games": 3,
+   "sos": 3.18,
+   "form": {
+    "games": 2,
+    "offResid": -1.5,
+    "defResid": -1.67,
+    "rawOff": -4.5,
+    "rawDef": -5
+   }
+  },
+  "BYU": {
+   "off": 6.02,
+   "def": 5.51,
+   "net": 11.53,
+   "games": 3,
+   "sos": -13.19,
+   "form": {
+    "games": 2,
+    "offResid": 1.17,
+    "defResid": 0.5,
+    "rawOff": 3.5,
+    "rawDef": 1.5
+   }
+  },
+  "MICH": {
+   "off": 2.03,
+   "def": 12.39,
+   "net": 14.42,
+   "games": 3,
+   "sos": 2,
+   "form": {
+    "games": 2,
+    "offResid": -4.67,
+    "defResid": 2.33,
+    "rawOff": -14,
+    "rawDef": 7
+   }
+  },
+  "WMU": {
+   "off": -1.99,
+   "def": 2.67,
+   "net": 0.68,
+   "games": 3,
+   "sos": -9.41,
+   "form": {
+    "games": 2,
+    "offResid": 1.25,
+    "defResid": 4.08,
+    "rawOff": 3.75,
+    "rawDef": 12.25
+   }
+  },
+  "PSU": {
+   "off": 7.29,
+   "def": 10.85,
+   "net": 18.14,
+   "games": 3,
+   "sos": -11.5,
+   "form": {
+    "games": 2,
+    "offResid": -0.58,
+    "defResid": 3.08,
+    "rawOff": -1.75,
+    "rawDef": 9.25
+   }
+  },
+  "MRSH": {
+   "off": -6.31,
+   "def": -5.53,
+   "net": -11.84,
+   "games": 3,
+   "sos": -5.47,
+   "form": {
+    "games": 2,
+    "offResid": -3.5,
+    "defResid": -1.67,
+    "rawOff": -10.5,
+    "rawDef": -5
+   }
+  },
+  "TENN": {
+   "off": 13.22,
+   "def": 4.78,
+   "net": 18,
+   "games": 3,
+   "sos": -13,
+   "form": {
+    "games": 2,
+    "offResid": 1.5,
+    "defResid": -0.5,
+    "rawOff": 4.5,
+    "rawDef": -1.5
+   }
+  },
+  "IOWA": {
+   "off": -2.59,
+   "def": 5.68,
+   "net": 3.09,
+   "games": 3,
+   "sos": -21.75,
+   "form": {
+    "games": 2,
+    "offResid": -1.71,
+    "defResid": 1.29,
+    "rawOff": -5.13,
+    "rawDef": 3.88
+   }
+  },
+  "NIU": {
+   "off": -17.03,
+   "def": -12.24,
+   "net": -29.27,
+   "games": 3,
+   "sos": -8.66,
+   "form": {
+    "games": 2,
+    "offResid": -0.83,
+    "defResid": -0.83,
+    "rawOff": -2.5,
+    "rawDef": -2.5
+   }
+  },
+  "HOU": {
+   "off": 9.28,
+   "def": 2.61,
+   "net": 11.89,
+   "games": 2,
+   "sos": -22.38,
+   "form": {
+    "games": 2,
+    "offResid": 2.96,
+    "defResid": -1.04,
+    "rawOff": 8.88,
+    "rawDef": -3.13
+   }
+  },
+  "ORST": {
+   "off": -5.69,
+   "def": -3.28,
+   "net": -8.97,
+   "games": 3,
+   "sos": -3.55,
+   "form": {
+    "games": 2,
+    "offResid": 2.63,
+    "defResid": 1.13,
+    "rawOff": 7.88,
+    "rawDef": 3.38
+   }
+  },
+  "WVU": {
+   "off": 2.54,
+   "def": 1.62,
+   "net": 4.16,
+   "games": 3,
+   "sos": -9.23,
+   "form": {
+    "games": 2,
+    "offResid": -0.71,
+    "defResid": -1.04,
+    "rawOff": -2.13,
+    "rawDef": -3.13
+   }
+  },
+  "CCU": {
+   "off": -1.8,
+   "def": -1.67,
+   "net": -3.47,
+   "games": 3,
+   "sos": -10.8,
+   "form": {
+    "games": 2,
+    "offResid": 1.13,
+    "defResid": 1.46,
+    "rawOff": 3.38,
+    "rawDef": 4.38
+   }
+  },
+  "SYR": {
+   "off": 1.74,
+   "def": 5.37,
+   "net": 7.11,
+   "games": 3,
+   "sos": -3.72,
+   "form": {
+    "games": 3,
+    "offResid": 0.04,
+    "defResid": 2.39,
+    "rawOff": 0.08,
+    "rawDef": 5.58
+   }
+  },
+  "NEB": {
+   "off": 3.77,
+   "def": -0.06,
+   "net": 3.71,
+   "games": 3,
+   "sos": -24.23,
+   "form": {
+    "games": 2,
+    "offResid": 5,
+    "defResid": -1.17,
+    "rawOff": 15,
+    "rawDef": -3.5
+   }
+  },
+  "OHIO": {
+   "off": -6.09,
+   "def": -8.63,
+   "net": -14.72,
+   "games": 3,
+   "sos": -6.76,
+   "form": {
+    "games": 2,
+    "offResid": 2.17,
+    "defResid": -2.83,
+    "rawOff": 6.5,
+    "rawDef": -8.5
+   }
+  },
+  "CONN": {
+   "off": -2.56,
+   "def": -3.17,
+   "net": -5.73,
+   "games": 3,
+   "sos": -12.59,
+   "form": {
+    "games": 2,
+    "offResid": 2.17,
+    "defResid": 0.33,
+    "rawOff": 6.5,
+    "rawDef": 1
+   }
+  },
+  "ARMY": {
+   "off": 0.67,
+   "def": 3.73,
+   "net": 4.4,
+   "games": 2,
+   "sos": -15,
+   "form": {
+    "games": 2,
+    "offResid": 2.38,
+    "defResid": -0.46,
+    "rawOff": 7.13,
+    "rawDef": -1.38
+   }
+  },
+  "BGSU": {
+   "off": -17.98,
+   "def": -13.15,
+   "net": -31.13,
+   "games": 3,
+   "sos": -12.59,
+   "form": {
+    "games": 2,
+    "offResid": -2.42,
+    "defResid": -2.08,
+    "rawOff": -7.25,
+    "rawDef": -6.25
+   }
+  },
+  "JMU": {
+   "off": 5.49,
+   "def": 5.88,
+   "net": 11.37,
+   "games": 3,
+   "sos": -10.76,
+   "form": {
+    "games": 2,
+    "offResid": 4.54,
+    "defResid": 1.88,
+    "rawOff": 13.63,
+    "rawDef": 5.63
+   }
+  },
+  "LIB": {
+   "off": -6.5,
+   "def": -1.6,
+   "net": -8.1,
+   "games": 3,
+   "sos": -15.21,
+   "form": {
+    "games": 2,
+    "offResid": -4.54,
+    "defResid": -0.21,
+    "rawOff": -13.63,
+    "rawDef": -0.63
+   }
+  },
+  "PITT": {
+   "off": 6.01,
+   "def": 8.33,
+   "net": 14.34,
+   "games": 3,
+   "sos": 2.05,
+   "form": {
+    "games": 3,
+    "offResid": 0.5,
+    "defResid": 3.71,
+    "rawOff": 1.17,
+    "rawDef": 8.67
+   }
+  },
+  "M-OH": {
+   "off": -5.05,
+   "def": -3.11,
+   "net": -8.16,
+   "games": 3,
+   "sos": -5.44,
+   "form": {
+    "games": 2,
+    "offResid": 0.83,
+    "defResid": -4.33,
+    "rawOff": 2.5,
+    "rawDef": -13
+   }
+  },
+  "SC": {
+   "off": 6.44,
+   "def": 4.64,
+   "net": 11.08,
+   "games": 3,
+   "sos": -15.8,
+   "form": {
+    "games": 2,
+    "offResid": 1.17,
+    "defResid": 1,
+    "rawOff": 3.5,
+    "rawDef": 3
+   }
+  },
+  "KENT": {
+   "off": -13.2,
+   "def": -11.42,
+   "net": -24.62,
+   "games": 3,
+   "sos": 0.04,
+   "form": {
+    "games": 2,
+    "offResid": -0.04,
+    "defResid": -1.71,
+    "rawOff": -0.13,
+    "rawDef": -5.13
+   }
+  },
+  "UK": {
+   "off": -0.69,
+   "def": -2.45,
+   "net": -3.14,
+   "games": 3,
+   "sos": 0.16,
+   "form": {
+    "games": 2,
+    "offResid": 0.17,
+    "defResid": -1.67,
+    "rawOff": 0.5,
+    "rawDef": -5
+   }
+  },
+  "ISU": {
+   "off": -5.78,
+   "def": 1.74,
+   "net": -4.04,
+   "games": 3,
+   "sos": -18.38,
+   "form": {
+    "games": 2,
+    "offResid": -0.71,
+    "defResid": 2.29,
+    "rawOff": -2.13,
+    "rawDef": 6.88
+   }
+  },
+  "AFA": {
+   "off": -0.98,
+   "def": 0.35,
+   "net": -0.63,
+   "games": 2,
+   "sos": -12.94,
+   "form": {
+    "games": 2,
+    "offResid": -0.17,
+    "defResid": -0.17,
+    "rawOff": -0.5,
+    "rawDef": -0.5
+   }
+  },
+  "TEM": {
+   "off": -7.13,
+   "def": -1.7,
+   "net": -8.83,
+   "games": 3,
+   "sos": -6.51,
+   "form": {
+    "games": 2,
+    "offResid": 0.25,
+    "defResid": 2.42,
+    "rawOff": 0.75,
+    "rawDef": 7.25
+   }
+  },
+  "AUB": {
+   "off": 4.29,
+   "def": 7.49,
+   "net": 11.78,
+   "games": 3,
+   "sos": 2.94,
+   "form": {
+    "games": 2,
+    "offResid": -2.83,
+    "defResid": 2.33,
+    "rawOff": -8.5,
+    "rawDef": 7
+   }
+  },
+  "BAY": {
+   "off": 1.24,
+   "def": 7.15,
+   "net": 8.39,
+   "games": 3,
+   "sos": -8,
+   "form": {
+    "games": 2,
+    "offResid": -2.08,
+    "defResid": 3.58,
+    "rawOff": -6.25,
+    "rawDef": 10.75
+   }
+  },
+  "CIN": {
+   "off": 7.17,
+   "def": 3,
+   "net": 10.17,
+   "games": 3,
+   "sos": -11.13,
+   "form": {
+    "games": 2,
+    "offResid": 2.96,
+    "defResid": 1.63,
+    "rawOff": 8.88,
+    "rawDef": 4.88
+   }
+  },
+  "BC": {
+   "off": -1.09,
+   "def": 3.06,
+   "net": 1.97,
+   "games": 3,
+   "sos": -7.08,
+   "form": {
+    "games": 2,
+    "offResid": -1.25,
+    "defResid": -0.08,
+    "rawOff": -3.75,
+    "rawDef": -0.25
+   }
+  },
+  "DUKE": {
+   "off": 0.62,
+   "def": 3.6,
+   "net": 4.22,
+   "games": 3,
+   "sos": -1.71,
+   "form": {
+    "games": 2,
+    "offResid": -0.88,
+    "defResid": 3.29,
+    "rawOff": -2.63,
+    "rawDef": 9.88
+   }
+  },
+  "TULN": {
+   "off": -7.52,
+   "def": -0.34,
+   "net": -7.86,
+   "games": 3,
+   "sos": -0.79,
+   "form": {
+    "games": 2,
+    "offResid": -3.17,
+    "defResid": 1.5,
+    "rawOff": -9.5,
+    "rawDef": 4.5
+   }
+  },
+  "CLT": {
+   "off": -9.32,
+   "def": -11.89,
+   "net": -21.21,
+   "games": 3,
+   "sos": -8.46,
+   "form": {
+    "games": 2,
+    "offResid": 1.25,
+    "defResid": -2.92,
+    "rawOff": 3.75,
+    "rawDef": -8.75
+   }
+  },
+  "NAVY": {
+   "off": -2.06,
+   "def": -1.92,
+   "net": -3.98,
+   "games": 2,
+   "sos": -19.3,
+   "form": {
+    "games": 2,
+    "offResid": -0.17,
+    "defResid": -2.67,
+    "rawOff": -0.5,
+    "rawDef": -8
+   }
+  },
+  "UTSA": {
+   "off": -0.84,
+   "def": -3.96,
+   "net": -4.8,
+   "games": 3,
+   "sos": -6.2,
+   "form": {
+    "games": 2,
+    "offResid": 0,
+    "defResid": 1.17,
+    "rawOff": 0,
+    "rawDef": 3.5
+   }
+  },
+  "APP": {
+   "off": -0.82,
+   "def": -0.27,
+   "net": -1.09,
+   "games": 3,
+   "sos": -18.51,
+   "form": {
+    "games": 2,
+    "offResid": 3.38,
+    "defResid": 3.38,
+    "rawOff": 10.13,
+    "rawDef": 10.13
+   }
+  },
+  "TLSA": {
+   "off": -0.91,
+   "def": 5.44,
+   "net": 4.53,
+   "games": 3,
+   "sos": -11.89,
+   "form": {
+    "games": 2,
+    "offResid": -1.17,
+    "defResid": 4.67,
+    "rawOff": -3.5,
+    "rawDef": 14
+   }
+  },
+  "OKST": {
+   "off": 9.09,
+   "def": 3.45,
+   "net": 12.54,
+   "games": 3,
+   "sos": -1.5,
+   "form": {
+    "games": 2,
+    "offResid": -0.33,
+    "defResid": 1.17,
+    "rawOff": -1,
+    "rawDef": 3.5
+   }
+  },
+  "ARK": {
+   "off": -4.87,
+   "def": -4.29,
+   "net": -9.16,
+   "games": 3,
+   "sos": -2.23,
+   "form": {
+    "games": 2,
+    "offResid": -5.33,
+    "defResid": -1.83,
+    "rawOff": -16,
+    "rawDef": -5.5
+   }
+  },
+  "USM": {
+   "off": -5.59,
+   "def": -4.33,
+   "net": -9.92,
+   "games": 3,
+   "sos": -9.32,
+   "form": {
+    "games": 2,
+    "offResid": 1.5,
+    "defResid": 2.33,
+    "rawOff": 4.5,
+    "rawDef": 7
+   }
+  },
+  "CSU": {
+   "off": 0.27,
+   "def": -4.67,
+   "net": -4.4,
+   "games": 3,
+   "sos": -10.17,
+   "form": {
+    "games": 2,
+    "offResid": 5.08,
+    "defResid": 0.58,
+    "rawOff": 15.25,
+    "rawDef": 1.75
+   }
+  },
+  "WYO": {
+   "off": -12.26,
+   "def": -1.92,
+   "net": -14.18,
+   "games": 3,
+   "sos": -17.49,
+   "form": {
+    "games": 2,
+    "offResid": -3.58,
+    "defResid": -2.25,
+    "rawOff": -10.75,
+    "rawDef": -6.75
+   }
+  },
+  "ODU": {
+   "off": -3.78,
+   "def": 0.55,
+   "net": -3.23,
+   "games": 3,
+   "sos": -6.97,
+   "form": {
+    "games": 2,
+    "offResid": -1.67,
+    "defResid": -2.67,
+    "rawOff": -5,
+    "rawDef": -8
+   }
+  },
+  "VAN": {
+   "off": -1.08,
+   "def": 0.64,
+   "net": -0.44,
+   "games": 3,
+   "sos": -11.71,
+   "form": {
+    "games": 2,
+    "offResid": -3,
+    "defResid": -0.67,
+    "rawOff": -9,
+    "rawDef": -2
+   }
+  },
+  "KSU": {
+   "off": 7.85,
+   "def": 7.37,
+   "net": 15.22,
+   "games": 3,
+   "sos": -13.96,
+   "form": {
+    "games": 2,
+    "offResid": 3.92,
+    "defResid": 2.08,
+    "rawOff": 11.75,
+    "rawDef": 6.25
+   }
+  },
+  "USU": {
+   "off": -10.33,
+   "def": -5.74,
+   "net": -16.07,
+   "games": 3,
+   "sos": -4.81,
+   "form": {
+    "games": 2,
+    "offResid": -3.33,
+    "defResid": 3.17,
+    "rawOff": -10,
+    "rawDef": 9.5
+   }
+  },
+  "ARST": {
+   "off": -0.71,
+   "def": -4.19,
+   "net": -4.9,
+   "games": 3,
+   "sos": -8.12,
+   "form": {
+    "games": 2,
+    "offResid": 1.83,
+    "defResid": -0.83,
+    "rawOff": 5.5,
+    "rawDef": -2.5
+   }
+  },
+  "RICE": {
+   "off": -10.63,
+   "def": -2.67,
+   "net": -13.3,
+   "games": 3,
+   "sos": -3.3,
+   "form": {
+    "games": 2,
+    "offResid": -1.5,
+    "defResid": 1.17,
+    "rawOff": -4.5,
+    "rawDef": 3.5
+   }
+  },
+  "USF": {
+   "off": 0.02,
+   "def": 2.41,
+   "net": 2.43,
+   "games": 3,
+   "sos": -12.98,
+   "form": {
+    "games": 2,
+    "offResid": -1.38,
+    "defResid": 1.79,
+    "rawOff": -4.13,
+    "rawDef": 5.38
+   }
+  },
+  "FIU": {
+   "off": -5.31,
+   "def": -2.58,
+   "net": -7.89,
+   "games": 3,
+   "sos": -6.96,
+   "form": {
+    "games": 2,
+    "offResid": -0.92,
+    "defResid": 2.42,
+    "rawOff": -2.75,
+    "rawDef": 7.25
+   }
+  },
+  "GASO": {
+   "off": -6.58,
+   "def": 0.68,
+   "net": -5.9,
+   "games": 3,
+   "sos": -10.25,
+   "form": {
+    "games": 2,
+    "offResid": -3.17,
+    "defResid": 4.5,
+    "rawOff": -9.5,
+    "rawDef": 13.5
+   }
+  },
+  "USA": {
+   "off": -6.19,
+   "def": -4.35,
+   "net": -10.54,
+   "games": 3,
+   "sos": -17.43,
+   "form": {
+    "games": 2,
+    "offResid": 1.67,
+    "defResid": 1.17,
+    "rawOff": 5,
+    "rawDef": 3.5
+   }
+  },
+  "TROY": {
+   "off": -6.76,
+   "def": -3.2,
+   "net": -9.96,
+   "games": 3,
+   "sos": -10.52,
+   "form": {
+    "games": 2,
+    "offResid": -2.33,
+    "defResid": -0.83,
+    "rawOff": -7,
+    "rawDef": -2.5
+   }
+  },
+  "SHSU": {
+   "off": -8.76,
+   "def": -3.43,
+   "net": -12.19,
+   "games": 3,
+   "sos": -12.6,
+   "form": {
+    "games": 2,
+    "offResid": 0,
+    "defResid": 3.17,
+    "rawOff": 0,
+    "rawDef": 9.5
+   }
+  },
+  "MSST": {
+   "off": 10.59,
+   "def": 4.24,
+   "net": 14.83,
+   "games": 3,
+   "sos": -1.22,
+   "form": {
+    "games": 2,
+    "offResid": 5.17,
+    "defResid": 2.17,
+    "rawOff": 15.5,
+    "rawDef": 6.5
+   }
+  },
+  "ULM": {
+   "off": -12,
+   "def": -9.76,
+   "net": -21.76,
+   "games": 3,
+   "sos": -12.46,
+   "form": {
+    "games": 2,
+    "offResid": -0.33,
+    "defResid": -2.5,
+    "rawOff": -1,
+    "rawDef": -7.5
+   }
+  },
+  "VT": {
+   "off": 12.61,
+   "def": 5.95,
+   "net": 18.56,
+   "games": 3,
+   "sos": -7.63,
+   "form": {
+    "games": 2,
+    "offResid": 4.5,
+    "defResid": -1,
+    "rawOff": 13.5,
+    "rawDef": -3
+   }
+  },
+  "LT": {
+   "off": 3.04,
+   "def": -1.79,
+   "net": 1.25,
+   "games": 3,
+   "sos": -1.98,
+   "form": {
+    "games": 2,
+    "offResid": 5.58,
+    "defResid": -0.08,
+    "rawOff": 16.75,
+    "rawDef": -0.25
+   }
+  },
+  "FLA": {
+   "off": 11.73,
+   "def": 6.63,
+   "net": 18.36,
+   "games": 3,
+   "sos": -8.78,
+   "form": {
+    "games": 2,
+    "offResid": 2.67,
+    "defResid": 0,
+    "rawOff": 8,
+    "rawDef": 0
+   }
+  },
+  "FAU": {
+   "off": 2.36,
+   "def": -9.95,
+   "net": -7.59,
+   "games": 3,
+   "sos": 1.72,
+   "form": {
+    "games": 2,
+    "offResid": 2.5,
+    "defResid": -3.5,
+    "rawOff": 7.5,
+    "rawDef": -10.5
+   }
+  },
+  "MTSU": {
+   "off": -7.62,
+   "def": -7.19,
+   "net": -14.81,
+   "games": 3,
+   "sos": -20.02,
+   "form": {
+    "games": 2,
+    "offResid": 0.42,
+    "defResid": 1.42,
+    "rawOff": 1.25,
+    "rawDef": 4.25
+   }
+  },
+  "MD": {
+   "off": 6.74,
+   "def": 6.1,
+   "net": 12.84,
+   "games": 3,
+   "sos": -8.4,
+   "form": {
+    "games": 2,
+    "offResid": 2.83,
+    "defResid": 2,
+    "rawOff": 8.5,
+    "rawDef": 6
+   }
+  },
+  "NU": {
+   "off": -7.17,
+   "def": -1.86,
+   "net": -9.03,
+   "games": 2,
+   "sos": -17.2,
+   "form": {
+    "games": 1,
+    "offResid": 0.45,
+    "defResid": -0.05,
+    "rawOff": 2.25,
+    "rawDef": -0.25
+   }
+  },
+  "UL": {
+   "off": -2.27,
+   "def": -2.43,
+   "net": -4.7,
+   "games": 3,
+   "sos": -7.58,
+   "form": {
+    "games": 2,
+    "offResid": 3.25,
+    "defResid": 0.42,
+    "rawOff": 9.75,
+    "rawDef": 1.25
+   }
+  },
+  "ARIZ": {
+   "off": -1.22,
+   "def": 2.07,
+   "net": 0.85,
+   "games": 3,
+   "sos": -16.59,
+   "form": {
+    "games": 2,
+    "offResid": -2.67,
+    "defResid": 1,
+    "rawOff": -8,
+    "rawDef": 3
+   }
+  },
+  "SDSU": {
+   "off": 0.83,
+   "def": 0.58,
+   "net": 1.41,
+   "games": 3,
+   "sos": -4.64,
+   "form": {
+    "games": 2,
+    "offResid": -1.17,
+    "defResid": -0.5,
+    "rawOff": -3.5,
+    "rawDef": -1.5
+   }
+  },
+  "ASU": {
+   "off": 6.6,
+   "def": 1.9,
+   "net": 8.5,
+   "games": 3,
+   "sos": -3.11,
+   "form": {
+    "games": 2,
+    "offResid": 4,
+    "defResid": -2.83,
+    "rawOff": 12,
+    "rawDef": -8.5
+   }
+  },
+  "UNM": {
+   "off": 5.58,
+   "def": 4.09,
+   "net": 9.67,
+   "games": 3,
+   "sos": -6.73,
+   "form": {
+    "games": 2,
+    "offResid": 5,
+    "defResid": 1.67,
+    "rawOff": 15,
+    "rawDef": 5
+   }
+  },
+  "CMU": {
+   "off": -13.15,
+   "def": -3.07,
+   "net": -16.22,
+   "games": 3,
+   "sos": -12.46,
+   "form": {
+    "games": 2,
+    "offResid": -5.25,
+    "defResid": -0.58,
+    "rawOff": -15.75,
+    "rawDef": -1.75
+   }
+  },
+  "CAL": {
+   "off": 6.55,
+   "def": 2.26,
+   "net": 8.81,
+   "games": 3,
+   "sos": -4.73,
+   "form": {
+    "games": 2,
+    "offResid": -1.13,
+    "defResid": -0.79,
+    "rawOff": -3.38,
+    "rawDef": -2.38
+   }
+  },
+  "UCLA": {
+   "off": 7.65,
+   "def": 9.34,
+   "net": 16.99,
+   "games": 3,
+   "sos": 5.26,
+   "form": {
+    "games": 2,
+    "offResid": 1.92,
+    "defResid": 1.92,
+    "rawOff": 5.75,
+    "rawDef": 5.75
+   }
+  },
+  "NEV": {
+   "off": -11.23,
+   "def": -5.46,
+   "net": -16.69,
+   "games": 3,
+   "sos": -21.86,
+   "form": {
+    "games": 2,
+    "offResid": 1.25,
+    "defResid": 3.42,
+    "rawOff": 3.75,
+    "rawDef": 10.25
+   }
+  },
+  "WKU": {
+   "off": -7.64,
+   "def": -16.92,
+   "net": -24.56,
+   "games": 3,
+   "sos": 6.85,
+   "form": {
+    "games": 2,
+    "offResid": 0,
+    "defResid": -7.67,
+    "rawOff": 0,
+    "rawDef": -23
+   }
+  },
+  "ND": {
+   "off": 15.89,
+   "def": 13.29,
+   "net": 29.18,
+   "games": 3,
+   "sos": -0.64,
+   "form": {
+    "games": 2,
+    "offResid": 1.71,
+    "defResid": 0.71,
+    "rawOff": 5.13,
+    "rawDef": 2.13
+   }
+  },
+  "WIS": {
+   "off": -0.95,
+   "def": 5.1,
+   "net": 4.15,
+   "games": 3,
+   "sos": -4.86,
+   "form": {
+    "games": 2,
+    "offResid": -1.96,
+    "defResid": -1.96,
+    "rawOff": -5.88,
+    "rawDef": -5.88
+   }
+  },
+  "MISS": {
+   "off": 9.22,
+   "def": 2.61,
+   "net": 11.83,
+   "games": 3,
+   "sos": 1.53,
+   "form": {
+    "games": 2,
+    "offResid": -0.08,
+    "defResid": -2.58,
+    "rawOff": -0.25,
+    "rawDef": -7.75
+   }
+  },
+  "LOU": {
+   "off": 6.6,
+   "def": -0.01,
+   "net": 6.59,
+   "games": 3,
+   "sos": -4.48,
+   "form": {
+    "games": 2,
+    "offResid": 4.17,
+    "defResid": -2.5,
+    "rawOff": 12.5,
+    "rawDef": -7.5
+   }
+  },
+  "WASH": {
+   "off": -0.85,
+   "def": 5.67,
+   "net": 4.82,
+   "games": 3,
+   "sos": -17.2,
+   "form": {
+    "games": 2,
+    "offResid": -6.58,
+    "defResid": 0.58,
+    "rawOff": -19.75,
+    "rawDef": 1.75
+   }
+  },
+  "WSU": {
+   "off": -5.27,
+   "def": 1.61,
+   "net": -3.66,
+   "games": 3,
+   "sos": -3.99,
+   "form": {
+    "games": 2,
+    "offResid": -2.08,
+    "defResid": 2.08,
+    "rawOff": -6.25,
+    "rawDef": 6.25
+   }
+  },
+  "SMU": {
+   "off": 4.78,
+   "def": 1.56,
+   "net": 6.34,
+   "games": 3,
+   "sos": -7.63,
+   "form": {
+    "games": 2,
+    "offResid": 1.54,
+    "defResid": 0.71,
+    "rawOff": 4.63,
+    "rawDef": 2.13
+   }
+  }
+ },
+ "games": [
+  {
+   "espnId": "401869940",
+   "kickoff": "2026-09-19T15:30Z",
+   "name": "CCU @ DEL",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 11:30 AM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "DEL",
+    "rated": "DEL",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "CCU",
+    "rated": "CCU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": "DraftKings",
+    "spreadHome": -5.5,
+    "total": 56.5,
+    "mlHome": -205,
+    "mlAway": 170
+   },
+   "marketFit": {
+    "homePts": 28.4,
+    "awayPts": 26.3,
+    "margin": 2.2,
+    "spreadHome": -2.2,
+    "total": 54.7,
+    "homeWinProb": 0.554
+   },
+   "model": {
+    "homePts": 28.1,
+    "awayPts": 26.1,
+    "margin": 2.1,
+    "spreadHome": -2.1,
+    "total": 54.2,
+    "homeWinProb": 0.552
+   },
+   "edge": {
+    "spreadEdge": -3.4,
+    "totalEdge": -2.3,
+    "side": "away",
+    "sideCoverProb": 0.584
+   },
+   "fitGap": -3.3,
+   "formGap": -0.1
+  },
+  {
+   "espnId": "401856686",
+   "kickoff": "2026-09-19T16:00Z",
+   "name": "UGA @ ARK",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "ARK",
+    "rated": "ARK",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "UGA",
+    "rated": "UGA",
+    "rank": 2,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 24.5,
+    "total": 54.5,
+    "mlHome": 1300,
+    "mlAway": -2800
+   },
+   "marketFit": {
+    "homePts": 18.8,
+    "awayPts": 36.9,
+    "margin": -18.1,
+    "spreadHome": 18.1,
+    "total": 55.7,
+    "homeWinProb": 0.128
+   },
+   "model": {
+    "homePts": 15.5,
+    "awayPts": 44.1,
+    "margin": -28.6,
+    "spreadHome": 28.6,
+    "total": 59.7,
+    "homeWinProb": 0.037
+   },
+   "edge": {
+    "spreadEdge": -4.1,
+    "totalEdge": 5.2,
+    "side": "away",
+    "sideCoverProb": 0.601
+   },
+   "fitGap": 6.4,
+   "formGap": -10.5
+  },
+  {
+   "espnId": "401858454",
+   "kickoff": "2026-09-19T16:00Z",
+   "name": "KENT @ OSU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "OSU",
+    "rated": "OSU",
+    "rank": 6,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "KENT",
+    "rated": "KENT",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -52.5,
+    "total": 59.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 51.3,
+    "awayPts": 2.7,
+    "margin": 48.5,
+    "spreadHome": -48.5,
+    "total": 54,
+    "homeWinProb": 0.999
+   },
+   "model": {
+    "homePts": 53.3,
+    "awayPts": 2.4,
+    "margin": 50.9,
+    "spreadHome": -50.9,
+    "total": 55.7,
+    "homeWinProb": 0.999
+   },
+   "edge": {
+    "spreadEdge": -1.6,
+    "totalEdge": -3.8,
+    "side": "away",
+    "sideCoverProb": 0.54
+   },
+   "fitGap": -4,
+   "formGap": 2.4
+  },
+  {
+   "espnId": "401858456",
+   "kickoff": "2026-09-19T16:00Z",
+   "name": "BUFF @ PSU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "PSU",
+    "rated": "PSU",
+    "rank": 14,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "BUFF",
+    "rated": "BUFF",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -40.5,
+    "total": 49.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 41,
+    "awayPts": 6.6,
+    "margin": 34.4,
+    "spreadHome": -34.4,
+    "total": 47.6,
+    "homeWinProb": 0.984
+   },
+   "model": {
+    "homePts": 41.7,
+    "awayPts": 1.6,
+    "margin": 40,
+    "spreadHome": -40,
+    "total": 43.3,
+    "homeWinProb": 0.994
+   },
+   "edge": {
+    "spreadEdge": -0.5,
+    "totalEdge": -6.2,
+    "side": "away",
+    "sideCoverProb": 0.512
+   },
+   "fitGap": -6.1,
+   "formGap": 5.6
+  },
+  {
+   "espnId": "401856792",
+   "kickoff": "2026-09-19T16:00Z",
+   "name": "TULN @ KSU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "KSU",
+    "rated": "KSU",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "TULN",
+    "rated": "TULN",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -20.5,
+    "total": 49.5,
+    "mlHome": -1450,
+    "mlAway": 850
+   },
+   "marketFit": {
+    "homePts": 33.7,
+    "awayPts": 15.9,
+    "margin": 17.8,
+    "spreadHome": -17.8,
+    "total": 49.6,
+    "homeWinProb": 0.867
+   },
+   "model": {
+    "homePts": 36.1,
+    "awayPts": 10.6,
+    "margin": 25.5,
+    "spreadHome": -25.5,
+    "total": 46.7,
+    "homeWinProb": 0.944
+   },
+   "edge": {
+    "spreadEdge": 5,
+    "totalEdge": -2.8,
+    "side": "home",
+    "sideCoverProb": 0.623
+   },
+   "fitGap": -2.7,
+   "formGap": 7.7
+  },
+  {
+   "espnId": "401856798",
+   "kickoff": "2026-09-19T16:00Z",
+   "name": "BGSU @ ISU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "ISU",
+    "rated": "ISU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "BGSU",
+    "rated": "BGSU",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -23.5,
+    "total": 43.5,
+    "mlHome": -2400,
+    "mlAway": 1200
+   },
+   "marketFit": {
+    "homePts": 33.9,
+    "awayPts": 10.5,
+    "margin": 23.4,
+    "spreadHome": -23.4,
+    "total": 44.4,
+    "homeWinProb": 0.928
+   },
+   "model": {
+    "homePts": 35.3,
+    "awayPts": 5.8,
+    "margin": 29.5,
+    "spreadHome": -29.5,
+    "total": 41.1,
+    "homeWinProb": 0.967
+   },
+   "edge": {
+    "spreadEdge": 6,
+    "totalEdge": -2.4,
+    "side": "home",
+    "sideCoverProb": 0.646
+   },
+   "fitGap": -0.1,
+   "formGap": 6.1
+  },
+  {
+   "espnId": "401856812",
+   "kickoff": "2026-09-19T16:00Z",
+   "name": "ASU VS KU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:00 PM EDT",
+   "neutral": true,
+   "home": {
+    "abbr": "KU",
+    "rated": "KU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "ASU",
+    "rated": "ASU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 5.5,
+    "total": 50.5,
+    "mlHome": 170,
+    "mlAway": -205
+   },
+   "marketFit": {
+    "homePts": 24.8,
+    "awayPts": 25.6,
+    "margin": -0.9,
+    "spreadHome": 0.9,
+    "total": 50.4,
+    "homeWinProb": 0.479
+   },
+   "model": {
+    "homePts": 27.2,
+    "awayPts": 31.3,
+    "margin": -4.1,
+    "spreadHome": 4.1,
+    "total": 58.4,
+    "homeWinProb": 0.398
+   },
+   "edge": {
+    "spreadEdge": 1.4,
+    "totalEdge": 7.9,
+    "side": "home",
+    "sideCoverProb": 0.535
+   },
+   "fitGap": 4.6,
+   "formGap": -3.2
+  },
+  {
+   "espnId": "401858228",
+   "kickoff": "2026-09-19T16:00Z",
+   "name": "MER @ GT",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "GT",
+    "rated": "GT",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "away": {
+    "abbr": "MER",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "2-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -39.5,
+    "total": 58.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 46.3,
+    "awayPts": 9.2,
+    "margin": 37.1,
+    "spreadHome": -37.1,
+    "total": 55.5,
+    "homeWinProb": 0.99
+   },
+   "model": {
+    "homePts": 47.5,
+    "awayPts": 8.2,
+    "margin": 39.3,
+    "spreadHome": -39.3,
+    "total": 55.7,
+    "homeWinProb": 0.993
+   },
+   "edge": {
+    "spreadEdge": -0.2,
+    "totalEdge": -2.8,
+    "side": "away",
+    "sideCoverProb": 0.505
+   },
+   "fitGap": -2.4,
+   "formGap": 2.2
+  },
+  {
+   "espnId": "401858229",
+   "kickoff": "2026-09-19T16:00Z",
+   "name": "UNC @ CLEM",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "CLEM",
+    "rated": "CLEM",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "UNC",
+    "rated": "UNC",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -3,
+    "total": 43.5,
+    "mlHome": -166,
+    "mlAway": 140
+   },
+   "marketFit": {
+    "homePts": 26.4,
+    "awayPts": 19.5,
+    "margin": 7,
+    "spreadHome": -7,
+    "total": 45.9,
+    "homeWinProb": 0.668
+   },
+   "model": {
+    "homePts": 18.4,
+    "awayPts": 18.9,
+    "margin": -0.5,
+    "spreadHome": 0.5,
+    "total": 37.3,
+    "homeWinProb": 0.488
+   },
+   "edge": {
+    "spreadEdge": -3.5,
+    "totalEdge": -6.2,
+    "side": "away",
+    "sideCoverProb": 0.587
+   },
+   "fitGap": 4,
+   "formGap": -7.5
+  },
+  {
+   "espnId": "401858451",
+   "kickoff": "2026-09-19T16:00Z",
+   "name": "AKR @ MINN",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "MINN",
+    "rated": "MINN",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "AKR",
+    "rated": "AKR",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -23.5,
+    "total": 48.5,
+    "mlHome": -3200,
+    "mlAway": 1400
+   },
+   "marketFit": {
+    "homePts": 33.4,
+    "awayPts": 12.8,
+    "margin": 20.6,
+    "spreadHome": -20.6,
+    "total": 46.2,
+    "homeWinProb": 0.901
+   },
+   "model": {
+    "homePts": 33,
+    "awayPts": 17.1,
+    "margin": 15.9,
+    "spreadHome": -15.9,
+    "total": 50.2,
+    "homeWinProb": 0.84
+   },
+   "edge": {
+    "spreadEdge": -7.6,
+    "totalEdge": 1.7,
+    "side": "away",
+    "sideCoverProb": 0.683
+   },
+   "fitGap": -2.9,
+   "formGap": -4.7
+  },
+  {
+   "espnId": "401860889",
+   "kickoff": "2026-09-19T16:00Z",
+   "name": "UNT @ TXST",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "TXST",
+    "rated": "TXST",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "away": {
+    "abbr": "UNT",
+    "rated": "UNT",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -3,
+    "total": 62.5,
+    "mlHome": -142,
+    "mlAway": 120
+   },
+   "marketFit": {
+    "homePts": 33,
+    "awayPts": 28.8,
+    "margin": 4.2,
+    "spreadHome": -4.2,
+    "total": 61.8,
+    "homeWinProb": 0.603
+   },
+   "model": {
+    "homePts": 26.7,
+    "awayPts": 34.8,
+    "margin": -8.1,
+    "spreadHome": 8.1,
+    "total": 61.4,
+    "homeWinProb": 0.307
+   },
+   "edge": {
+    "spreadEdge": -11.1,
+    "totalEdge": -1.1,
+    "side": "away",
+    "sideCoverProb": 0.756
+   },
+   "fitGap": 1.2,
+   "formGap": -12.3
+  },
+  {
+   "espnId": "401858460",
+   "kickoff": "2026-09-19T16:30Z",
+   "name": "EMU @ WIS",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "WIS",
+    "rated": "WIS",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "EMU",
+    "rated": "EMU",
+    "rank": 99,
+    "record": "1-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -23.5,
+    "total": 44.5,
+    "mlHome": -2400,
+    "mlAway": 1200
+   },
+   "marketFit": {
+    "homePts": 32.9,
+    "awayPts": 13.1,
+    "margin": 19.8,
+    "spreadHome": -19.8,
+    "total": 46,
+    "homeWinProb": 0.892
+   },
+   "model": {
+    "homePts": 30.6,
+    "awayPts": 12.4,
+    "margin": 18.2,
+    "spreadHome": -18.2,
+    "total": 43,
+    "homeWinProb": 0.872
+   },
+   "edge": {
+    "spreadEdge": -5.3,
+    "totalEdge": -1.5,
+    "side": "away",
+    "sideCoverProb": 0.63
+   },
+   "fitGap": -3.7,
+   "formGap": -1.6
+  },
+  {
+   "espnId": "401856695",
+   "kickoff": "2026-09-19T16:45Z",
+   "name": "NCSU @ VAN",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 12:45 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "VAN",
+    "rated": "VAN",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "NCSU",
+    "rated": "NCSU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -3,
+    "total": 50.5,
+    "mlHome": -162,
+    "mlAway": 136
+   },
+   "marketFit": {
+    "homePts": 26.4,
+    "awayPts": 23.9,
+    "margin": 2.4,
+    "spreadHome": -2.4,
+    "total": 50.3,
+    "homeWinProb": 0.561
+   },
+   "model": {
+    "homePts": 23.1,
+    "awayPts": 27.2,
+    "margin": -4.1,
+    "spreadHome": 4.1,
+    "total": 50.3,
+    "homeWinProb": 0.398
+   },
+   "edge": {
+    "spreadEdge": -7.1,
+    "totalEdge": -0.2,
+    "side": "away",
+    "sideCoverProb": 0.671
+   },
+   "fitGap": -0.6,
+   "formGap": -6.5
+  },
+  {
+   "espnId": "401864508",
+   "kickoff": "2026-09-19T17:00Z",
+   "name": "WYO @ CMU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 1:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "CMU",
+    "rated": "CMU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "WYO",
+    "rated": "WYO",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 1.5,
+    "total": 38.5,
+    "mlHome": -108,
+    "mlAway": -112
+   },
+   "marketFit": {
+    "homePts": 19.7,
+    "awayPts": 19.3,
+    "margin": 0.4,
+    "spreadHome": -0.4,
+    "total": 39,
+    "homeWinProb": 0.509
+   },
+   "model": {
+    "homePts": 16.7,
+    "awayPts": 16.3,
+    "margin": 0.4,
+    "spreadHome": -0.4,
+    "total": 33,
+    "homeWinProb": 0.509
+   },
+   "edge": {
+    "spreadEdge": 1.9,
+    "totalEdge": -5.5,
+    "side": "home",
+    "sideCoverProb": 0.547
+   },
+   "fitGap": 1.9,
+   "formGap": 0
+  },
+  {
+   "espnId": "401858227",
+   "kickoff": "2026-09-19T18:00Z",
+   "name": "ME @ BC",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 2:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "BC",
+    "rated": "BC",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "ME",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "1-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -38.5,
+    "total": 53.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 45.5,
+    "awayPts": 7.8,
+    "margin": 37.7,
+    "spreadHome": -37.7,
+    "total": 53.4,
+    "homeWinProb": 0.991
+   },
+   "model": {
+    "homePts": 47.9,
+    "awayPts": 6.6,
+    "margin": 41.2,
+    "spreadHome": -41.2,
+    "total": 54.5,
+    "homeWinProb": 0.995
+   },
+   "edge": {
+    "spreadEdge": 2.7,
+    "totalEdge": 1,
+    "side": "home",
+    "sideCoverProb": 0.567
+   },
+   "fitGap": -0.8,
+   "formGap": 3.5
+  },
+  {
+   "espnId": "401858448",
+   "kickoff": "2026-09-19T18:00Z",
+   "name": "SIU @ ILL",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 2:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "ILL",
+    "rated": "ILL",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "SIU",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "2-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -38.5,
+    "total": 55.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 47.3,
+    "awayPts": 6.8,
+    "margin": 40.4,
+    "spreadHome": -40.4,
+    "total": 54.1,
+    "homeWinProb": 0.994
+   },
+   "model": {
+    "homePts": 51,
+    "awayPts": 8.5,
+    "margin": 42.5,
+    "spreadHome": -42.5,
+    "total": 59.5,
+    "homeWinProb": 0.996
+   },
+   "edge": {
+    "spreadEdge": 4,
+    "totalEdge": 4,
+    "side": "home",
+    "sideCoverProb": 0.599
+   },
+   "fitGap": 1.9,
+   "formGap": 2.1
+  },
+  {
+   "espnId": "401862774",
+   "kickoff": "2026-09-19T19:00Z",
+   "name": "TEM @ TOL",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 3:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "TOL",
+    "rated": "TOL",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "TEM",
+    "rated": "TEM",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -6,
+    "total": 49.5,
+    "mlHome": -230,
+    "mlAway": 190
+   },
+   "marketFit": {
+    "homePts": 29.4,
+    "awayPts": 18.7,
+    "margin": 10.7,
+    "spreadHome": -10.7,
+    "total": 48.1,
+    "homeWinProb": 0.749
+   },
+   "model": {
+    "homePts": 30.2,
+    "awayPts": 19.4,
+    "margin": 10.8,
+    "spreadHome": -10.8,
+    "total": 49.6,
+    "homeWinProb": 0.751
+   },
+   "edge": {
+    "spreadEdge": 4.8,
+    "totalEdge": 0.1,
+    "side": "home",
+    "sideCoverProb": 0.618
+   },
+   "fitGap": 4.7,
+   "formGap": 0.1
+  },
+  {
+   "espnId": "401856694",
+   "kickoff": "2026-09-19T19:30Z",
+   "name": "UK @ TA&M",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 3:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "TA&M",
+    "rated": "TA&M",
+    "rank": 9,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "UK",
+    "rated": "UK",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -16.5,
+    "total": 49.5,
+    "mlHome": -850,
+    "mlAway": 575
+   },
+   "marketFit": {
+    "homePts": 36.4,
+    "awayPts": 16.1,
+    "margin": 20.3,
+    "spreadHome": -20.3,
+    "total": 52.5,
+    "homeWinProb": 0.898
+   },
+   "model": {
+    "homePts": 41.2,
+    "awayPts": 15.4,
+    "margin": 25.8,
+    "spreadHome": -25.8,
+    "total": 56.5,
+    "homeWinProb": 0.946
+   },
+   "edge": {
+    "spreadEdge": 9.3,
+    "totalEdge": 7,
+    "side": "home",
+    "sideCoverProb": 0.719
+   },
+   "fitGap": 3.8,
+   "formGap": 5.5
+  },
+  {
+   "espnId": "401856685",
+   "kickoff": "2026-09-19T19:30Z",
+   "name": "FSU @ ALA",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 3:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "ALA",
+    "rated": "ALA",
+    "rank": 10,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "FSU",
+    "rated": "FSU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -19.5,
+    "total": 49.5,
+    "mlHome": -1350,
+    "mlAway": 800
+   },
+   "marketFit": {
+    "homePts": 31.9,
+    "awayPts": 17.4,
+    "margin": 14.5,
+    "spreadHome": -14.5,
+    "total": 49.3,
+    "homeWinProb": 0.817
+   },
+   "model": {
+    "homePts": 36.7,
+    "awayPts": 15.3,
+    "margin": 21.4,
+    "spreadHome": -21.4,
+    "total": 51.9,
+    "homeWinProb": 0.91
+   },
+   "edge": {
+    "spreadEdge": 1.9,
+    "totalEdge": 2.4,
+    "side": "home",
+    "sideCoverProb": 0.547
+   },
+   "fitGap": -5,
+   "formGap": 6.9
+  },
+  {
+   "espnId": "401858457",
+   "kickoff": "2026-09-19T19:30Z",
+   "name": "USC @ RUTG",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 3:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "RUTG",
+    "rated": "RUTG",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "away": {
+    "abbr": "USC",
+    "rated": "USC",
+    "rank": 12,
+    "record": "3-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 21.5,
+    "total": 57.5,
+    "mlHome": 1100,
+    "mlAway": -2100
+   },
+   "marketFit": {
+    "homePts": 22.9,
+    "awayPts": 37.4,
+    "margin": -14.5,
+    "spreadHome": 14.5,
+    "total": 60.3,
+    "homeWinProb": 0.182
+   },
+   "model": {
+    "homePts": 20.8,
+    "awayPts": 41.3,
+    "margin": -20.6,
+    "spreadHome": 20.6,
+    "total": 62.1,
+    "homeWinProb": 0.099
+   },
+   "edge": {
+    "spreadEdge": 0.9,
+    "totalEdge": 4.6,
+    "side": "home",
+    "sideCoverProb": 0.522
+   },
+   "fitGap": 7,
+   "formGap": -6.1
+  },
+  {
+   "espnId": "401858230",
+   "kickoff": "2026-09-19T19:30Z",
+   "name": "SMU @ LOU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 3:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "LOU",
+    "rated": "LOU",
+    "rank": 23,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "SMU",
+    "rated": "SMU",
+    "rank": 16,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -1.5,
+    "total": 58.5,
+    "mlHome": -118,
+    "mlAway": -102
+   },
+   "marketFit": {
+    "homePts": 29.5,
+    "awayPts": 26.3,
+    "margin": 3.2,
+    "spreadHome": -3.2,
+    "total": 55.8,
+    "homeWinProb": 0.58
+   },
+   "model": {
+    "homePts": 33,
+    "awayPts": 30.3,
+    "margin": 2.6,
+    "spreadHome": -2.6,
+    "total": 63.3,
+    "homeWinProb": 0.566
+   },
+   "edge": {
+    "spreadEdge": 1.1,
+    "totalEdge": 4.8,
+    "side": "home",
+    "sideCoverProb": 0.527
+   },
+   "fitGap": 1.7,
+   "formGap": -0.6
+  },
+  {
+   "espnId": "401856801",
+   "kickoff": "2026-09-19T19:30Z",
+   "name": "USU @ UTAH",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 3:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "UTAH",
+    "rated": "UTAH",
+    "rank": 17,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "USU",
+    "rated": "USU",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -27.5,
+    "total": 56.5,
+    "mlHome": -5000,
+    "mlAway": 1800
+   },
+   "marketFit": {
+    "homePts": 40.9,
+    "awayPts": 15.8,
+    "margin": 25.1,
+    "spreadHome": -25.1,
+    "total": 56.7,
+    "homeWinProb": 0.942
+   },
+   "model": {
+    "homePts": 41.9,
+    "awayPts": 11.1,
+    "margin": 30.8,
+    "spreadHome": -30.8,
+    "total": 53,
+    "homeWinProb": 0.973
+   },
+   "edge": {
+    "spreadEdge": 3.3,
+    "totalEdge": -3.5,
+    "side": "home",
+    "sideCoverProb": 0.582
+   },
+   "fitGap": -2.4,
+   "formGap": 5.7
+  },
+  {
+   "espnId": "401858450",
+   "kickoff": "2026-09-19T19:30Z",
+   "name": "UTEP @ MICH",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 3:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "MICH",
+    "rated": "MICH",
+    "rank": 19,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "UTEP",
+    "rated": "UTEP",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -34.5,
+    "total": 48.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 40.1,
+    "awayPts": 9.3,
+    "margin": 30.7,
+    "spreadHome": -30.7,
+    "total": 49.4,
+    "homeWinProb": 0.973
+   },
+   "model": {
+    "homePts": 35.7,
+    "awayPts": 7.9,
+    "margin": 27.9,
+    "spreadHome": -27.9,
+    "total": 43.6,
+    "homeWinProb": 0.959
+   },
+   "edge": {
+    "spreadEdge": -6.6,
+    "totalEdge": -4.9,
+    "side": "away",
+    "sideCoverProb": 0.66
+   },
+   "fitGap": -3.8,
+   "formGap": -2.8
+  },
+  {
+   "espnId": "401856797",
+   "kickoff": "2026-09-19T19:30Z",
+   "name": "M-OH @ CIN",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 3:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "CIN",
+    "rated": "CIN",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "M-OH",
+    "rated": "M-OH",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -15.5,
+    "total": 49.5,
+    "mlHome": -750,
+    "mlAway": 525
+   },
+   "marketFit": {
+    "homePts": 30.9,
+    "awayPts": 18.3,
+    "margin": 12.6,
+    "spreadHome": -12.6,
+    "total": 49.2,
+    "homeWinProb": 0.785
+   },
+   "model": {
+    "homePts": 38.2,
+    "awayPts": 17.5,
+    "margin": 20.7,
+    "spreadHome": -20.7,
+    "total": 55.7,
+    "homeWinProb": 0.902
+   },
+   "edge": {
+    "spreadEdge": 5.2,
+    "totalEdge": 6.2,
+    "side": "home",
+    "sideCoverProb": 0.627
+   },
+   "fitGap": -2.9,
+   "formGap": 8.1
+  },
+  {
+   "espnId": "401858233",
+   "kickoff": "2026-09-19T19:30Z",
+   "name": "WAG @ CAL",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 3:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "CAL",
+    "rated": "CAL",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "WAG",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "1-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -58.5,
+    "total": 65.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 53.1,
+    "awayPts": 7.9,
+    "margin": 45.2,
+    "spreadHome": -45.2,
+    "total": 61,
+    "homeWinProb": 0.998
+   },
+   "model": {
+    "homePts": 55.5,
+    "awayPts": 7.5,
+    "margin": 48.1,
+    "spreadHome": -48.1,
+    "total": 63,
+    "homeWinProb": 0.999
+   },
+   "edge": {
+    "spreadEdge": -10.4,
+    "totalEdge": -2.5,
+    "side": "away",
+    "sideCoverProb": 0.742
+   },
+   "fitGap": -13.3,
+   "formGap": 2.9
+  },
+  {
+   "espnId": "401860890",
+   "kickoff": "2026-09-19T19:30Z",
+   "name": "DUQ @ WSU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 3:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "WSU",
+    "rated": "WSU",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "away": {
+    "abbr": "DUQ",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -38.5,
+    "total": 53.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 42.2,
+    "awayPts": 11.4,
+    "margin": 30.8,
+    "spreadHome": -30.8,
+    "total": 53.6,
+    "homeWinProb": 0.973
+   },
+   "model": {
+    "homePts": 43.7,
+    "awayPts": 8.1,
+    "margin": 35.6,
+    "spreadHome": -35.6,
+    "total": 51.8,
+    "homeWinProb": 0.987
+   },
+   "edge": {
+    "spreadEdge": -2.9,
+    "totalEdge": -1.7,
+    "side": "away",
+    "sideCoverProb": 0.572
+   },
+   "fitGap": -7.7,
+   "formGap": 4.8
+  },
+  {
+   "espnId": "401866424",
+   "kickoff": "2026-09-19T19:30Z",
+   "name": "STO @ MASS",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 3:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "MASS",
+    "rated": "MASS",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "STO",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "1-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -31.5,
+    "total": 49.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 38.5,
+    "awayPts": 14.9,
+    "margin": 23.6,
+    "spreadHome": -23.6,
+    "total": 53.3,
+    "homeWinProb": 0.93
+   },
+   "model": {
+    "homePts": 45.8,
+    "awayPts": 9.2,
+    "margin": 36.6,
+    "spreadHome": -36.6,
+    "total": 55,
+    "homeWinProb": 0.989
+   },
+   "edge": {
+    "spreadEdge": 5.1,
+    "totalEdge": 5.5,
+    "side": "home",
+    "sideCoverProb": 0.625
+   },
+   "fitGap": -7.9,
+   "formGap": 13
+  },
+  {
+   "espnId": "401858449",
+   "kickoff": "2026-09-19T20:00Z",
+   "name": "WKU @ IU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 4:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "IU",
+    "rated": "IU",
+    "rank": 4,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "WKU",
+    "rated": "WKU",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -44.5,
+    "total": 60.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 51.9,
+    "awayPts": 9.3,
+    "margin": 42.6,
+    "spreadHome": -42.6,
+    "total": 61.2,
+    "homeWinProb": 0.996
+   },
+   "model": {
+    "homePts": 58.9,
+    "awayPts": 9.6,
+    "margin": 49.3,
+    "spreadHome": -49.3,
+    "total": 68.5,
+    "homeWinProb": 0.999
+   },
+   "edge": {
+    "spreadEdge": 4.8,
+    "totalEdge": 8,
+    "side": "home",
+    "sideCoverProb": 0.618
+   },
+   "fitGap": -1.9,
+   "formGap": 6.7
+  },
+  {
+   "espnId": "401858471",
+   "kickoff": "2026-09-19T20:00Z",
+   "name": "UNI @ IOWA",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 4:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "IOWA",
+    "rated": "IOWA",
+    "rank": 18,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "UNI",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -38.5,
+    "total": 49.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 44.5,
+    "awayPts": 6.6,
+    "margin": 37.9,
+    "spreadHome": -37.9,
+    "total": 51.1,
+    "homeWinProb": 0.991
+   },
+   "model": {
+    "homePts": 46.4,
+    "awayPts": 4,
+    "margin": 42.4,
+    "spreadHome": -42.4,
+    "total": 50.4,
+    "homeWinProb": 0.996
+   },
+   "edge": {
+    "spreadEdge": 3.9,
+    "totalEdge": 0.9,
+    "side": "home",
+    "sideCoverProb": 0.596
+   },
+   "fitGap": -0.6,
+   "formGap": 4.5
+  },
+  {
+   "espnId": "401858231",
+   "kickoff": "2026-09-19T20:00Z",
+   "name": "STAN @ DUKE",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 4:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "DUKE",
+    "rated": "DUKE",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "STAN",
+    "rated": "STAN",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -10,
+    "total": 50.5,
+    "mlHome": -395,
+    "mlAway": 310
+   },
+   "marketFit": {
+    "homePts": 28.9,
+    "awayPts": 19.8,
+    "margin": 9.1,
+    "spreadHome": -9.1,
+    "total": 48.6,
+    "homeWinProb": 0.716
+   },
+   "model": {
+    "homePts": 30.4,
+    "awayPts": 17.4,
+    "margin": 13,
+    "spreadHome": -13,
+    "total": 47.8,
+    "homeWinProb": 0.792
+   },
+   "edge": {
+    "spreadEdge": 3,
+    "totalEdge": -2.7,
+    "side": "home",
+    "sideCoverProb": 0.574
+   },
+   "fitGap": -0.9,
+   "formGap": 3.9
+  },
+  {
+   "espnId": "401866422",
+   "kickoff": "2026-09-19T20:00Z",
+   "name": "BALL @ LIB",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 4:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "LIB",
+    "rated": "LIB",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "BALL",
+    "rated": "BALL",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -14.5,
+    "total": 49.5,
+    "mlHome": -650,
+    "mlAway": 470
+   },
+   "marketFit": {
+    "homePts": 33.8,
+    "awayPts": 16.2,
+    "margin": 17.6,
+    "spreadHome": -17.6,
+    "total": 50.1,
+    "homeWinProb": 0.864
+   },
+   "model": {
+    "homePts": 29.4,
+    "awayPts": 17.9,
+    "margin": 11.5,
+    "spreadHome": -11.5,
+    "total": 47.3,
+    "homeWinProb": 0.764
+   },
+   "edge": {
+    "spreadEdge": -3,
+    "totalEdge": -2.2,
+    "side": "away",
+    "sideCoverProb": 0.574
+   },
+   "fitGap": 3.1,
+   "formGap": -6.1
+  },
+  {
+   "espnId": "401867804",
+   "kickoff": "2026-09-19T20:00Z",
+   "name": "LT @ BAY",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 4:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "BAY",
+    "rated": "BAY",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "LT",
+    "rated": "LT",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -20.5,
+    "total": 49.5,
+    "mlHome": -1350,
+    "mlAway": 800
+   },
+   "marketFit": {
+    "homePts": 32.9,
+    "awayPts": 19.4,
+    "margin": 13.5,
+    "spreadHome": -13.5,
+    "total": 52.3,
+    "homeWinProb": 0.801
+   },
+   "model": {
+    "homePts": 30.9,
+    "awayPts": 21.4,
+    "margin": 9.5,
+    "spreadHome": -9.5,
+    "total": 52.3,
+    "homeWinProb": 0.724
+   },
+   "edge": {
+    "spreadEdge": -11,
+    "totalEdge": 2.8,
+    "side": "away",
+    "sideCoverProb": 0.754
+   },
+   "fitGap": -7,
+   "formGap": -4
+  },
+  {
+   "espnId": "401856691",
+   "kickoff": "2026-09-19T20:15Z",
+   "name": "MSST @ SC",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 4:15 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "SC",
+    "rated": "SC",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "MSST",
+    "rated": "MSST",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -4,
+    "total": 58.5,
+    "mlHome": -180,
+    "mlAway": 150
+   },
+   "marketFit": {
+    "homePts": 31.1,
+    "awayPts": 27.3,
+    "margin": 3.8,
+    "spreadHome": -3.8,
+    "total": 58.4,
+    "homeWinProb": 0.594
+   },
+   "model": {
+    "homePts": 30.1,
+    "awayPts": 31.5,
+    "margin": -1.4,
+    "spreadHome": 1.4,
+    "total": 61.6,
+    "homeWinProb": 0.466
+   },
+   "edge": {
+    "spreadEdge": -5.4,
+    "totalEdge": 3.1,
+    "side": "away",
+    "sideCoverProb": 0.632
+   },
+   "fitGap": -0.2,
+   "formGap": -5.2
+  },
+  {
+   "espnId": "401868317",
+   "kickoff": "2026-09-19T20:30Z",
+   "name": "SELA @ ULM",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 4:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "ULM",
+    "rated": "ULM",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "away": {
+    "abbr": "SELA",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "1-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -10.5,
+    "total": 47.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 33.7,
+    "awayPts": 18.2,
+    "margin": 15.5,
+    "spreadHome": -15.5,
+    "total": 51.9,
+    "homeWinProb": 0.834
+   },
+   "model": {
+    "homePts": 37,
+    "awayPts": 19.5,
+    "margin": 17.5,
+    "spreadHome": -17.5,
+    "total": 56.5,
+    "homeWinProb": 0.863
+   },
+   "edge": {
+    "spreadEdge": 7,
+    "totalEdge": 9,
+    "side": "home",
+    "sideCoverProb": 0.669
+   },
+   "fitGap": 5,
+   "formGap": 2
+  },
+  {
+   "espnId": "401862710",
+   "kickoff": "2026-09-19T22:00Z",
+   "name": "ECU @ ODU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 6:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "ODU",
+    "rated": "ODU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "ECU",
+    "rated": "ECU",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -3,
+    "total": 48.5,
+    "mlHome": -148,
+    "mlAway": 124
+   },
+   "marketFit": {
+    "homePts": 28.6,
+    "awayPts": 21.2,
+    "margin": 7.5,
+    "spreadHome": -7.5,
+    "total": 49.8,
+    "homeWinProb": 0.68
+   },
+   "model": {
+    "homePts": 28.6,
+    "awayPts": 22.3,
+    "margin": 6.3,
+    "spreadHome": -6.3,
+    "total": 51,
+    "homeWinProb": 0.653
+   },
+   "edge": {
+    "spreadEdge": 3.3,
+    "totalEdge": 2.5,
+    "side": "home",
+    "sideCoverProb": 0.582
+   },
+   "fitGap": 4.5,
+   "formGap": -1.2
+  },
+  {
+   "espnId": "401862771",
+   "kickoff": "2026-09-19T22:00Z",
+   "name": "FIU @ FAU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 6:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "FAU",
+    "rated": "FAU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "FIU",
+    "rated": "FIU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -6.5,
+    "total": 62.5,
+    "mlHome": -245,
+    "mlAway": 200
+   },
+   "marketFit": {
+    "homePts": 32.8,
+    "awayPts": 27.6,
+    "margin": 5.2,
+    "spreadHome": -5.2,
+    "total": 60.3,
+    "homeWinProb": 0.627
+   },
+   "model": {
+    "homePts": 32.9,
+    "awayPts": 30.2,
+    "margin": 2.7,
+    "spreadHome": -2.7,
+    "total": 63,
+    "homeWinProb": 0.567
+   },
+   "edge": {
+    "spreadEdge": -3.8,
+    "totalEdge": 0.5,
+    "side": "away",
+    "sideCoverProb": 0.594
+   },
+   "fitGap": -1.3,
+   "formGap": -2.5
+  },
+  {
+   "espnId": "401864574",
+   "kickoff": "2026-09-19T22:00Z",
+   "name": "CLT @ APP",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 6:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "APP",
+    "rated": "APP",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "CLT",
+    "rated": "CLT",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -17.5,
+    "total": 52.5,
+    "mlHome": -1100,
+    "mlAway": 700
+   },
+   "marketFit": {
+    "homePts": 32.7,
+    "awayPts": 18.6,
+    "margin": 14.1,
+    "spreadHome": -14.1,
+    "total": 51.3,
+    "homeWinProb": 0.811
+   },
+   "model": {
+    "homePts": 39,
+    "awayPts": 16.5,
+    "margin": 22.5,
+    "spreadHome": -22.5,
+    "total": 55.4,
+    "homeWinProb": 0.92
+   },
+   "edge": {
+    "spreadEdge": 5,
+    "totalEdge": 2.9,
+    "side": "home",
+    "sideCoverProb": 0.623
+   },
+   "fitGap": -3.4,
+   "formGap": 8.4
+  },
+  {
+   "espnId": "401871047",
+   "kickoff": "2026-09-19T22:30Z",
+   "name": "MRSH @ MOST",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 6:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "MOST",
+    "rated": "MOST",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "MRSH",
+    "rated": "MRSH",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 4,
+    "total": 53.5,
+    "mlHome": 160,
+    "mlAway": -192
+   },
+   "marketFit": {
+    "homePts": 23.6,
+    "awayPts": 30,
+    "margin": -6.3,
+    "spreadHome": 6.3,
+    "total": 53.6,
+    "homeWinProb": 0.346
+   },
+   "model": {
+    "homePts": 26.2,
+    "awayPts": 26.4,
+    "margin": -0.2,
+    "spreadHome": 0.2,
+    "total": 52.6,
+    "homeWinProb": 0.496
+   },
+   "edge": {
+    "spreadEdge": 3.8,
+    "totalEdge": -0.9,
+    "side": "home",
+    "sideCoverProb": 0.594
+   },
+   "fitGap": -2.3,
+   "formGap": 6.1
+  },
+  {
+   "espnId": "401856689",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "TROY @ MIZ",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "MIZ",
+    "rated": "MIZ",
+    "rank": 20,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "TROY",
+    "rated": "TROY",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -27.5,
+    "total": 50.5,
+    "mlHome": -4500,
+    "mlAway": 1700
+   },
+   "marketFit": {
+    "homePts": 38.8,
+    "awayPts": 13.8,
+    "margin": 25,
+    "spreadHome": -25,
+    "total": 52.7,
+    "homeWinProb": 0.941
+   },
+   "model": {
+    "homePts": 40.6,
+    "awayPts": 12.8,
+    "margin": 27.8,
+    "spreadHome": -27.8,
+    "total": 53.3,
+    "homeWinProb": 0.959
+   },
+   "edge": {
+    "spreadEdge": 0.3,
+    "totalEdge": 2.8,
+    "side": "home",
+    "sideCoverProb": 0.507
+   },
+   "fitGap": -2.5,
+   "formGap": 2.8
+  },
+  {
+   "espnId": "401856687",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "FLA @ AUB",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "AUB",
+    "rated": "AUB",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "FLA",
+    "rated": "FLA",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 2.5,
+    "total": 53.5,
+    "mlHome": 110,
+    "mlAway": -130
+   },
+   "marketFit": {
+    "homePts": 28.4,
+    "awayPts": 29.4,
+    "margin": -1,
+    "spreadHome": 1,
+    "total": 57.8,
+    "homeWinProb": 0.475
+   },
+   "model": {
+    "homePts": 25.6,
+    "awayPts": 29.7,
+    "margin": -4.2,
+    "spreadHome": 4.2,
+    "total": 55.3,
+    "homeWinProb": 0.397
+   },
+   "edge": {
+    "spreadEdge": -1.7,
+    "totalEdge": 1.8,
+    "side": "away",
+    "sideCoverProb": 0.542
+   },
+   "fitGap": 1.5,
+   "formGap": -3.2
+  },
+  {
+   "espnId": "401856800",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "GAST @ UCF",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "UCF",
+    "rated": "UCF",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "GAST",
+    "rated": "GAST",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -17.5,
+    "total": 49.5,
+    "mlHome": -1050,
+    "mlAway": 675
+   },
+   "marketFit": {
+    "homePts": 35.6,
+    "awayPts": 18.1,
+    "margin": 17.5,
+    "spreadHome": -17.5,
+    "total": 53.6,
+    "homeWinProb": 0.863
+   },
+   "model": {
+    "homePts": 33.2,
+    "awayPts": 18.3,
+    "margin": 14.9,
+    "spreadHome": -14.9,
+    "total": 51.5,
+    "homeWinProb": 0.823
+   },
+   "edge": {
+    "spreadEdge": -2.6,
+    "totalEdge": 2,
+    "side": "away",
+    "sideCoverProb": 0.565
+   },
+   "fitGap": 0,
+   "formGap": -2.6
+  },
+  {
+   "espnId": "401856803",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "MUR @ OKST",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "OKST",
+    "rated": "OKST",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "MUR",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "1-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -56.5,
+    "total": 70.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 54.8,
+    "awayPts": 8.7,
+    "margin": 46.1,
+    "spreadHome": -46.1,
+    "total": 63.5,
+    "homeWinProb": 0.998
+   },
+   "model": {
+    "homePts": 58.1,
+    "awayPts": 6.3,
+    "margin": 51.8,
+    "spreadHome": -51.8,
+    "total": 64.3,
+    "homeWinProb": 0.999
+   },
+   "edge": {
+    "spreadEdge": -4.7,
+    "totalEdge": -6.2,
+    "side": "away",
+    "sideCoverProb": 0.616
+   },
+   "fitGap": -10.4,
+   "formGap": 5.7
+  },
+  {
+   "espnId": "401861963",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "CONN @ USM",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "USM",
+    "rated": "USM",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "CONN",
+    "rated": "CONN",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 3,
+    "total": 54.5,
+    "mlHome": 136,
+    "mlAway": -162
+   },
+   "marketFit": {
+    "homePts": 24.3,
+    "awayPts": 27.4,
+    "margin": -3.1,
+    "spreadHome": 3.1,
+    "total": 51.8,
+    "homeWinProb": 0.423
+   },
+   "model": {
+    "homePts": 25.5,
+    "awayPts": 27.3,
+    "margin": -1.8,
+    "spreadHome": 1.8,
+    "total": 52.8,
+    "homeWinProb": 0.455
+   },
+   "edge": {
+    "spreadEdge": 1.2,
+    "totalEdge": -1.7,
+    "side": "home",
+    "sideCoverProb": 0.53
+   },
+   "fitGap": -0.1,
+   "formGap": 1.3
+  },
+  {
+   "espnId": "401862772",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "UTM @ MEM",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "MEM",
+    "rated": "MEM",
+    "rank": 99,
+    "record": "2-1"
+   },
+   "away": {
+    "abbr": "UTM",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "1-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -34.5,
+    "total": 57.5,
+    "mlHome": -50000,
+    "mlAway": 4000
+   },
+   "marketFit": {
+    "homePts": 44.3,
+    "awayPts": 11.7,
+    "margin": 32.6,
+    "spreadHome": -32.6,
+    "total": 55.9,
+    "homeWinProb": 0.979
+   },
+   "model": {
+    "homePts": 49.2,
+    "awayPts": 10.4,
+    "margin": 38.8,
+    "spreadHome": -38.8,
+    "total": 59.7,
+    "homeWinProb": 0.992
+   },
+   "edge": {
+    "spreadEdge": 4.3,
+    "totalEdge": 2.2,
+    "side": "home",
+    "sideCoverProb": 0.606
+   },
+   "fitGap": -1.9,
+   "formGap": 6.2
+  },
+  {
+   "espnId": "401862773",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "WMU @ RICE",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "RICE",
+    "rated": "RICE",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "WMU",
+    "rated": "WMU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 8.5,
+    "total": 43.5,
+    "mlHome": 285,
+    "mlAway": -360
+   },
+   "marketFit": {
+    "homePts": 20.2,
+    "awayPts": 26.1,
+    "margin": -5.9,
+    "spreadHome": 5.9,
+    "total": 46.3,
+    "homeWinProb": 0.356
+   },
+   "model": {
+    "homePts": 14.6,
+    "awayPts": 26.2,
+    "margin": -11.6,
+    "spreadHome": 11.6,
+    "total": 40.8,
+    "homeWinProb": 0.235
+   },
+   "edge": {
+    "spreadEdge": -3.1,
+    "totalEdge": -2.7,
+    "side": "away",
+    "sideCoverProb": 0.577
+   },
+   "fitGap": 2.6,
+   "formGap": -5.7
+  },
+  {
+   "espnId": "401862777",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "DSU @ USF",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "USF",
+    "rated": "USF",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "DSU",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "2-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -36.5,
+    "total": 61.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 46.8,
+    "awayPts": 10.3,
+    "margin": 36.5,
+    "spreadHome": -36.5,
+    "total": 57.1,
+    "homeWinProb": 0.989
+   },
+   "model": {
+    "homePts": 49,
+    "awayPts": 7.3,
+    "margin": 41.7,
+    "spreadHome": -41.7,
+    "total": 56.3,
+    "homeWinProb": 0.995
+   },
+   "edge": {
+    "spreadEdge": 5.2,
+    "totalEdge": -5.2,
+    "side": "home",
+    "sideCoverProb": 0.627
+   },
+   "fitGap": 0,
+   "formGap": 5.2
+  },
+  {
+   "espnId": "401864443",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "NEV @ MTSU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "MTSU",
+    "rated": "MTSU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "NEV",
+    "rated": "NEV",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 3.5,
+    "total": 50.5,
+    "mlHome": 150,
+    "mlAway": -180
+   },
+   "marketFit": {
+    "homePts": 28.8,
+    "awayPts": 21.6,
+    "margin": 7.1,
+    "spreadHome": -7.1,
+    "total": 50.4,
+    "homeWinProb": 0.672
+   },
+   "model": {
+    "homePts": 25.8,
+    "awayPts": 21.5,
+    "margin": 4.3,
+    "spreadHome": -4.3,
+    "total": 47.2,
+    "homeWinProb": 0.605
+   },
+   "edge": {
+    "spreadEdge": 7.8,
+    "totalEdge": -3.3,
+    "side": "home",
+    "sideCoverProb": 0.687
+   },
+   "fitGap": 10.6,
+   "formGap": -2.8
+  },
+  {
+   "espnId": "401866423",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "OHIO @ USA",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "USA",
+    "rated": "USA",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "OHIO",
+    "rated": "OHIO",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -6.5,
+    "total": 48.5,
+    "mlHome": -258,
+    "mlAway": 210
+   },
+   "marketFit": {
+    "homePts": 25.9,
+    "awayPts": 22.8,
+    "margin": 3.1,
+    "spreadHome": -3.1,
+    "total": 48.6,
+    "homeWinProb": 0.576
+   },
+   "model": {
+    "homePts": 30.3,
+    "awayPts": 23.8,
+    "margin": 6.6,
+    "spreadHome": -6.6,
+    "total": 54.1,
+    "homeWinProb": 0.66
+   },
+   "edge": {
+    "spreadEdge": 0.1,
+    "totalEdge": 5.6,
+    "side": "home",
+    "sideCoverProb": 0.502
+   },
+   "fitGap": -3.4,
+   "formGap": 3.5
+  },
+  {
+   "espnId": "401869948",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "GASO @ JXST",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "JXST",
+    "rated": "JXST",
+    "rank": 99,
+    "record": "1-2"
+   },
+   "away": {
+    "abbr": "GASO",
+    "rated": "GASO",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -3.5,
+    "total": 52.5,
+    "mlHome": -166,
+    "mlAway": 140
+   },
+   "marketFit": {
+    "homePts": 26.8,
+    "awayPts": 24,
+    "margin": 2.8,
+    "spreadHome": -2.8,
+    "total": 50.8,
+    "homeWinProb": 0.571
+   },
+   "model": {
+    "homePts": 22.7,
+    "awayPts": 21.3,
+    "margin": 1.4,
+    "spreadHome": -1.4,
+    "total": 44,
+    "homeWinProb": 0.536
+   },
+   "edge": {
+    "spreadEdge": -2.1,
+    "totalEdge": -8.5,
+    "side": "away",
+    "sideCoverProb": 0.552
+   },
+   "fitGap": -0.7,
+   "formGap": -1.4
+  },
+  {
+   "espnId": "401870764",
+   "kickoff": "2026-09-19T23:00Z",
+   "name": "NICH @ SHSU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "SHSU",
+    "rated": "SHSU",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "away": {
+    "abbr": "NICH",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "2-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -17.5,
+    "total": 49.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 36.6,
+    "awayPts": 17.6,
+    "margin": 19.1,
+    "spreadHome": -19.1,
+    "total": 54.2,
+    "homeWinProb": 0.883
+   },
+   "model": {
+    "homePts": 40.2,
+    "awayPts": 13.1,
+    "margin": 27.1,
+    "spreadHome": -27.1,
+    "total": 53.4,
+    "homeWinProb": 0.955
+   },
+   "edge": {
+    "spreadEdge": 9.6,
+    "totalEdge": 3.9,
+    "side": "home",
+    "sideCoverProb": 0.726
+   },
+   "fitGap": 1.6,
+   "formGap": 8
+  },
+  {
+   "espnId": "401858452",
+   "kickoff": "2026-09-19T23:15Z",
+   "name": "UND @ NEB",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:15 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "NEB",
+    "rated": "NEB",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "UND",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "3-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -25.5,
+    "total": 52.5,
+    "mlHome": -2400,
+    "mlAway": 1200
+   },
+   "marketFit": {
+    "homePts": 44.2,
+    "awayPts": 9.8,
+    "margin": 34.3,
+    "spreadHome": -34.3,
+    "total": 54,
+    "homeWinProb": 0.984
+   },
+   "model": {
+    "homePts": 52.8,
+    "awayPts": 9.8,
+    "margin": 43,
+    "spreadHome": -43,
+    "total": 62.5,
+    "homeWinProb": 0.996
+   },
+   "edge": {
+    "spreadEdge": 17.5,
+    "totalEdge": 10,
+    "side": "home",
+    "sideCoverProb": 0.863
+   },
+   "fitGap": 8.8,
+   "formGap": 8.7
+  },
+  {
+   "espnId": "401858459",
+   "kickoff": "2026-09-19T23:15Z",
+   "name": "EWU @ WASH",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:15 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "WASH",
+    "rated": "WASH",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "EWU",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "1-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -42.5,
+    "total": 57.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 51.1,
+    "awayPts": 5.9,
+    "margin": 45.3,
+    "spreadHome": -45.3,
+    "total": 57,
+    "homeWinProb": 0.998
+   },
+   "model": {
+    "homePts": 48.1,
+    "awayPts": 4,
+    "margin": 44.1,
+    "spreadHome": -44.1,
+    "total": 52.2,
+    "homeWinProb": 0.997
+   },
+   "edge": {
+    "spreadEdge": 1.6,
+    "totalEdge": -5.3,
+    "side": "home",
+    "sideCoverProb": 0.54
+   },
+   "fitGap": 2.8,
+   "formGap": -1.2
+  },
+  {
+   "espnId": "401858453",
+   "kickoff": "2026-09-19T23:30Z",
+   "name": "MSU @ ND",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "ND",
+    "rated": "ND",
+    "rank": 3,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "MSU",
+    "rated": "MSU",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -29.5,
+    "total": 51.5,
+    "mlHome": -5000,
+    "mlAway": 1800
+   },
+   "marketFit": {
+    "homePts": 39.2,
+    "awayPts": 13.1,
+    "margin": 26.2,
+    "spreadHome": -26.2,
+    "total": 52.3,
+    "homeWinProb": 0.949
+   },
+   "model": {
+    "homePts": 39.6,
+    "awayPts": 12.7,
+    "margin": 26.8,
+    "spreadHome": -26.8,
+    "total": 52.3,
+    "homeWinProb": 0.953
+   },
+   "edge": {
+    "spreadEdge": -2.7,
+    "totalEdge": 0.8,
+    "side": "away",
+    "sideCoverProb": 0.567
+   },
+   "fitGap": -3.3,
+   "formGap": 0.6
+  },
+  {
+   "espnId": "401856688",
+   "kickoff": "2026-09-19T23:30Z",
+   "name": "LSU @ MISS",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "MISS",
+    "rated": "MISS",
+    "rank": 8,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "LSU",
+    "rated": "LSU",
+    "rank": 7,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 3,
+    "total": 58.5,
+    "mlHome": 130,
+    "mlAway": -155
+   },
+   "marketFit": {
+    "homePts": 27.8,
+    "awayPts": 30.1,
+    "margin": -2.3,
+    "spreadHome": 2.3,
+    "total": 57.8,
+    "homeWinProb": 0.442
+   },
+   "model": {
+    "homePts": 26.8,
+    "awayPts": 36.4,
+    "margin": -9.6,
+    "spreadHome": 9.6,
+    "total": 63.1,
+    "homeWinProb": 0.275
+   },
+   "edge": {
+    "spreadEdge": -6.6,
+    "totalEdge": 4.6,
+    "side": "away",
+    "sideCoverProb": 0.66
+   },
+   "fitGap": 0.7,
+   "formGap": -7.3
+  },
+  {
+   "espnId": "401856795",
+   "kickoff": "2026-09-19T23:30Z",
+   "name": "BYU @ CSU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "CSU",
+    "rated": "CSU",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "BYU",
+    "rated": "BYU",
+    "rank": 11,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 17.5,
+    "total": 52.5,
+    "mlHome": 675,
+    "mlAway": -1050
+   },
+   "marketFit": {
+    "homePts": 18.1,
+    "awayPts": 35.6,
+    "margin": -17.5,
+    "spreadHome": 17.5,
+    "total": 53.7,
+    "homeWinProb": 0.137
+   },
+   "model": {
+    "homePts": 22.7,
+    "awayPts": 36.2,
+    "margin": -13.5,
+    "spreadHome": 13.5,
+    "total": 58.9,
+    "homeWinProb": 0.199
+   },
+   "edge": {
+    "spreadEdge": 4,
+    "totalEdge": 6.4,
+    "side": "home",
+    "sideCoverProb": 0.599
+   },
+   "fitGap": 0,
+   "formGap": 4
+  },
+  {
+   "espnId": "401856690",
+   "kickoff": "2026-09-19T23:30Z",
+   "name": "UNM @ OU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "OU",
+    "rated": "OU",
+    "rank": 24,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "UNM",
+    "rated": "UNM",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -21.5,
+    "total": 45.5,
+    "mlHome": -2100,
+    "mlAway": 1100
+   },
+   "marketFit": {
+    "homePts": 34.5,
+    "awayPts": 12.9,
+    "margin": 21.6,
+    "spreadHome": -21.6,
+    "total": 47.4,
+    "homeWinProb": 0.912
+   },
+   "model": {
+    "homePts": 31.2,
+    "awayPts": 16.6,
+    "margin": 14.6,
+    "spreadHome": -14.6,
+    "total": 47.9,
+    "homeWinProb": 0.819
+   },
+   "edge": {
+    "spreadEdge": -6.9,
+    "totalEdge": 2.4,
+    "side": "away",
+    "sideCoverProb": 0.667
+   },
+   "fitGap": 0.1,
+   "formGap": -7
+  },
+  {
+   "espnId": "401856802",
+   "kickoff": "2026-09-19T23:30Z",
+   "name": "WVU VS UVA",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:30 PM EDT",
+   "neutral": true,
+   "home": {
+    "abbr": "UVA",
+    "rated": "UVA",
+    "rank": 25,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "WVU",
+    "rated": "WVU",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -10.5,
+    "total": 53.5,
+    "mlHome": -410,
+    "mlAway": 320
+   },
+   "marketFit": {
+    "homePts": 29.3,
+    "awayPts": 24.8,
+    "margin": 4.5,
+    "spreadHome": -4.5,
+    "total": 54.2,
+    "homeWinProb": 0.61
+   },
+   "model": {
+    "homePts": 32.7,
+    "awayPts": 21.3,
+    "margin": 11.3,
+    "spreadHome": -11.3,
+    "total": 54,
+    "homeWinProb": 0.76
+   },
+   "edge": {
+    "spreadEdge": 0.8,
+    "totalEdge": 0.5,
+    "side": "home",
+    "sideCoverProb": 0.52
+   },
+   "fitGap": -6,
+   "formGap": 6.8
+  },
+  {
+   "espnId": "401856796",
+   "kickoff": "2026-09-19T23:30Z",
+   "name": "COLO @ NU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "NU",
+    "rated": "NU",
+    "rank": 99,
+    "record": "1-0"
+   },
+   "away": {
+    "abbr": "COLO",
+    "rated": "COLO",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -3.5,
+    "total": 47.5,
+    "mlHome": -175,
+    "mlAway": 145
+   },
+   "marketFit": {
+    "homePts": 21.8,
+    "awayPts": 26.4,
+    "margin": -4.7,
+    "spreadHome": 4.7,
+    "total": 48.2,
+    "homeWinProb": 0.386
+   },
+   "model": {
+    "homePts": 21.3,
+    "awayPts": 25.6,
+    "margin": -4.3,
+    "spreadHome": 4.3,
+    "total": 46.8,
+    "homeWinProb": 0.395
+   },
+   "edge": {
+    "spreadEdge": -7.8,
+    "totalEdge": -0.7,
+    "side": "away",
+    "sideCoverProb": 0.687
+   },
+   "fitGap": -8.2,
+   "formGap": 0.4
+  },
+  {
+   "espnId": "401858232",
+   "kickoff": "2026-09-19T23:30Z",
+   "name": "VT @ MD",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "MD",
+    "rated": "MD",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "VT",
+    "rated": "VT",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 3,
+    "total": 53.5,
+    "mlHome": 120,
+    "mlAway": -142
+   },
+   "marketFit": {
+    "homePts": 24.9,
+    "awayPts": 29.5,
+    "margin": -4.6,
+    "spreadHome": 4.6,
+    "total": 54.4,
+    "homeWinProb": 0.386
+   },
+   "model": {
+    "homePts": 28.7,
+    "awayPts": 32,
+    "margin": -3.3,
+    "spreadHome": 3.3,
+    "total": 60.7,
+    "homeWinProb": 0.418
+   },
+   "edge": {
+    "spreadEdge": -0.3,
+    "totalEdge": 7.2,
+    "side": "away",
+    "sideCoverProb": 0.507
+   },
+   "fitGap": -1.6,
+   "formGap": 1.3
+  },
+  {
+   "espnId": "401856692",
+   "kickoff": "2026-09-19T23:45Z",
+   "name": "KENN @ TENN",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 7:45 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "TENN",
+    "rated": "TENN",
+    "rank": 15,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "KENN",
+    "rated": "KENN",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -35.5,
+    "total": 60.5,
+    "mlHome": -8000,
+    "mlAway": 2200
+   },
+   "marketFit": {
+    "homePts": 43.9,
+    "awayPts": 14.8,
+    "margin": 29.1,
+    "spreadHome": -29.1,
+    "total": 58.8,
+    "homeWinProb": 0.965
+   },
+   "model": {
+    "homePts": 44.2,
+    "awayPts": 14.7,
+    "margin": 29.6,
+    "spreadHome": -29.6,
+    "total": 58.9,
+    "homeWinProb": 0.968
+   },
+   "edge": {
+    "spreadEdge": -5.9,
+    "totalEdge": -1.6,
+    "side": "away",
+    "sideCoverProb": 0.644
+   },
+   "fitGap": -6.4,
+   "formGap": 0.5
+  },
+  {
+   "espnId": "401856693",
+   "kickoff": "2026-09-20T00:00Z",
+   "name": "UTSA @ TEX",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 8:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "TEX",
+    "rated": "TEX",
+    "rank": 1,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "UTSA",
+    "rated": "UTSA",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -30.5,
+    "total": 58.5,
+    "mlHome": -5000,
+    "mlAway": 1800
+   },
+   "marketFit": {
+    "homePts": 42.1,
+    "awayPts": 13.8,
+    "margin": 28.4,
+    "spreadHome": -28.4,
+    "total": 55.9,
+    "homeWinProb": 0.962
+   },
+   "model": {
+    "homePts": 42.8,
+    "awayPts": 12.1,
+    "margin": 30.7,
+    "spreadHome": -30.7,
+    "total": 54.9,
+    "homeWinProb": 0.972
+   },
+   "edge": {
+    "spreadEdge": 0.2,
+    "totalEdge": -3.6,
+    "side": "home",
+    "sideCoverProb": 0.505
+   },
+   "fitGap": -2.1,
+   "formGap": 2.3
+  },
+  {
+   "espnId": "401856799",
+   "kickoff": "2026-09-20T00:00Z",
+   "name": "ARST @ TCU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 8:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "TCU",
+    "rated": "TCU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "ARST",
+    "rated": "ARST",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -18.5,
+    "total": 56.5,
+    "mlHome": -1350,
+    "mlAway": 800
+   },
+   "marketFit": {
+    "homePts": 36,
+    "awayPts": 18.2,
+    "margin": 17.8,
+    "spreadHome": -17.8,
+    "total": 54.2,
+    "homeWinProb": 0.867
+   },
+   "model": {
+    "homePts": 36.1,
+    "awayPts": 19.5,
+    "margin": 16.6,
+    "spreadHome": -16.6,
+    "total": 55.5,
+    "homeWinProb": 0.85
+   },
+   "edge": {
+    "spreadEdge": -1.9,
+    "totalEdge": -1,
+    "side": "away",
+    "sideCoverProb": 0.547
+   },
+   "fitGap": -0.7,
+   "formGap": -1.2
+  },
+  {
+   "espnId": "401862775",
+   "kickoff": "2026-09-20T00:00Z",
+   "name": "ETAM @ TLSA",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 8:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "TLSA",
+    "rated": "TLSA",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "ETAM",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "1-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -42.5,
+    "total": 57.5,
+    "mlHome": null,
+    "mlAway": null
+   },
+   "marketFit": {
+    "homePts": 45.6,
+    "awayPts": 10.2,
+    "margin": 35.5,
+    "spreadHome": -35.5,
+    "total": 55.8,
+    "homeWinProb": 0.987
+   },
+   "model": {
+    "homePts": 48.1,
+    "awayPts": 4.3,
+    "margin": 43.8,
+    "spreadHome": -43.8,
+    "total": 52.3,
+    "homeWinProb": 0.997
+   },
+   "edge": {
+    "spreadEdge": 1.3,
+    "totalEdge": -5.2,
+    "side": "home",
+    "sideCoverProb": 0.532
+   },
+   "fitGap": -7,
+   "formGap": 8.3
+  },
+  {
+   "espnId": "401862776",
+   "kickoff": "2026-09-20T00:00Z",
+   "name": "UAB @ UL",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 8:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "UL",
+    "rated": "UL",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "UAB",
+    "rated": "UAB",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -7.5,
+    "total": 55.5,
+    "mlHome": -310,
+    "mlAway": 250
+   },
+   "marketFit": {
+    "homePts": 30.6,
+    "awayPts": 23.7,
+    "margin": 6.9,
+    "spreadHome": -6.9,
+    "total": 54.2,
+    "homeWinProb": 0.666
+   },
+   "model": {
+    "homePts": 33.9,
+    "awayPts": 23.8,
+    "margin": 10.1,
+    "spreadHome": -10.1,
+    "total": 57.7,
+    "homeWinProb": 0.735
+   },
+   "edge": {
+    "spreadEdge": 2.6,
+    "totalEdge": 2.2,
+    "side": "home",
+    "sideCoverProb": 0.565
+   },
+   "fitGap": -0.6,
+   "formGap": 3.2
+  },
+  {
+   "espnId": "401860885",
+   "kickoff": "2026-09-20T02:00Z",
+   "name": "SDAK @ BOIS",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 10:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "BOIS",
+    "rated": "BOIS",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "SDAK",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "3-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -25.5,
+    "total": 56.5,
+    "mlHome": -2400,
+    "mlAway": 1200
+   },
+   "marketFit": {
+    "homePts": 46.2,
+    "awayPts": 11.5,
+    "margin": 34.7,
+    "spreadHome": -34.7,
+    "total": 57.7,
+    "homeWinProb": 0.985
+   },
+   "model": {
+    "homePts": 52.9,
+    "awayPts": 9,
+    "margin": 43.8,
+    "spreadHome": -43.8,
+    "total": 61.9,
+    "homeWinProb": 0.997
+   },
+   "edge": {
+    "spreadEdge": 18.3,
+    "totalEdge": 5.4,
+    "side": "home",
+    "sideCoverProb": 0.874
+   },
+   "fitGap": 9.2,
+   "formGap": 9.1
+  },
+  {
+   "espnId": "401860887",
+   "kickoff": "2026-09-20T02:00Z",
+   "name": "JMU @ SDSU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 10:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "SDSU",
+    "rated": "SDSU",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "JMU",
+    "rated": "JMU",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -1.5,
+    "total": 46.5,
+    "mlHome": -120,
+    "mlAway": 100
+   },
+   "marketFit": {
+    "homePts": 25.9,
+    "awayPts": 25.4,
+    "margin": 0.5,
+    "spreadHome": -0.5,
+    "total": 51.3,
+    "homeWinProb": 0.513
+   },
+   "model": {
+    "homePts": 22.9,
+    "awayPts": 30.4,
+    "margin": -7.6,
+    "spreadHome": 7.6,
+    "total": 53.3,
+    "homeWinProb": 0.318
+   },
+   "edge": {
+    "spreadEdge": -9.1,
+    "totalEdge": 6.8,
+    "side": "away",
+    "sideCoverProb": 0.715
+   },
+   "fitGap": -1,
+   "formGap": -8.1
+  },
+  {
+   "espnId": "401856793",
+   "kickoff": "2026-09-20T02:30Z",
+   "name": "NIU @ ARIZ",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 10:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "ARIZ",
+    "rated": "ARIZ",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "away": {
+    "abbr": "NIU",
+    "rated": "NIU",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -33.5,
+    "total": 50.5,
+    "mlHome": -6500,
+    "mlAway": 2000
+   },
+   "marketFit": {
+    "homePts": 40.8,
+    "awayPts": 8.2,
+    "margin": 32.5,
+    "spreadHome": -32.5,
+    "total": 49,
+    "homeWinProb": 0.979
+   },
+   "model": {
+    "homePts": 38.9,
+    "awayPts": 6.4,
+    "margin": 32.5,
+    "spreadHome": -32.5,
+    "total": 45.3,
+    "homeWinProb": 0.979
+   },
+   "edge": {
+    "spreadEdge": -1,
+    "totalEdge": -5.2,
+    "side": "away",
+    "sideCoverProb": 0.525
+   },
+   "fitGap": -1,
+   "formGap": 0
+  },
+  {
+   "espnId": "401864507",
+   "kickoff": "2026-09-20T02:30Z",
+   "name": "NDSU @ SAC",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 10:30 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "SAC",
+    "rated": "SAC",
+    "rank": 99,
+    "record": "1-2"
+   },
+   "away": {
+    "abbr": "NDSU",
+    "rated": "NDSU",
+    "rank": 99,
+    "record": "3-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 27.5,
+    "total": 50.5,
+    "mlHome": 2000,
+    "mlAway": -6500
+   },
+   "marketFit": {
+    "homePts": 17.4,
+    "awayPts": 32.6,
+    "margin": -15.2,
+    "spreadHome": 15.2,
+    "total": 50.1,
+    "homeWinProb": 0.17
+   },
+   "model": {
+    "homePts": 14.4,
+    "awayPts": 34.9,
+    "margin": -20.5,
+    "spreadHome": 20.5,
+    "total": 49.3,
+    "homeWinProb": 0.1
+   },
+   "edge": {
+    "spreadEdge": 7,
+    "totalEdge": -1.2,
+    "side": "home",
+    "sideCoverProb": 0.669
+   },
+   "fitGap": 12.3,
+   "formGap": -5.3
+  },
+  {
+   "espnId": "401858458",
+   "kickoff": "2026-09-20T03:00Z",
+   "name": "PUR @ UCLA",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 11:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "UCLA",
+    "rated": "UCLA",
+    "rank": 99,
+    "record": "2-0"
+   },
+   "away": {
+    "abbr": "PUR",
+    "rated": "PUR",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -14,
+    "total": 52.5,
+    "mlHome": -650,
+    "mlAway": 470
+   },
+   "marketFit": {
+    "homePts": 32.3,
+    "awayPts": 18.7,
+    "margin": 13.6,
+    "spreadHome": -13.6,
+    "total": 51,
+    "homeWinProb": 0.802
+   },
+   "model": {
+    "homePts": 37.5,
+    "awayPts": 18.5,
+    "margin": 19.1,
+    "spreadHome": -19.1,
+    "total": 56,
+    "homeWinProb": 0.883
+   },
+   "edge": {
+    "spreadEdge": 5.1,
+    "totalEdge": 3.5,
+    "side": "home",
+    "sideCoverProb": 0.625
+   },
+   "fitGap": -0.4,
+   "formGap": 5.5
+  },
+  {
+   "espnId": "401860886",
+   "kickoff": "2026-09-20T03:00Z",
+   "name": "MONT @ ORST",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 11:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "ORST",
+    "rated": "ORST",
+    "rank": 99,
+    "record": "0-2"
+   },
+   "away": {
+    "abbr": "MONT",
+    "rated": "FCS",
+    "rank": 99,
+    "record": "3-0"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -17.5,
+    "total": 53.5,
+    "mlHome": -900,
+    "mlAway": 600
+   },
+   "marketFit": {
+    "homePts": 37.1,
+    "awayPts": 15.4,
+    "margin": 21.7,
+    "spreadHome": -21.7,
+    "total": 52.4,
+    "homeWinProb": 0.912
+   },
+   "model": {
+    "homePts": 43.3,
+    "awayPts": 13,
+    "margin": 30.3,
+    "spreadHome": -30.3,
+    "total": 56.3,
+    "homeWinProb": 0.971
+   },
+   "edge": {
+    "spreadEdge": 12.8,
+    "totalEdge": 2.8,
+    "side": "home",
+    "sideCoverProb": 0.788
+   },
+   "fitGap": 4.2,
+   "formGap": 8.6
+  },
+  {
+   "espnId": "401860888",
+   "kickoff": "2026-09-20T03:00Z",
+   "name": "FRES @ SJSU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/19 - 11:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "SJSU",
+    "rated": "SJSU",
+    "rank": 99,
+    "record": "2-1"
+   },
+   "away": {
+    "abbr": "FRES",
+    "rated": "FRES",
+    "rank": 99,
+    "record": "1-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": 6.5,
+    "total": 49.5,
+    "mlHome": 190,
+    "mlAway": -230
+   },
+   "marketFit": {
+    "homePts": 20.1,
+    "awayPts": 29.1,
+    "margin": -9,
+    "spreadHome": 9,
+    "total": 49.2,
+    "homeWinProb": 0.286
+   },
+   "model": {
+    "homePts": 19.5,
+    "awayPts": 27.8,
+    "margin": -8.4,
+    "spreadHome": 8.4,
+    "total": 47.3,
+    "homeWinProb": 0.301
+   },
+   "edge": {
+    "spreadEdge": -1.9,
+    "totalEdge": -2.2,
+    "side": "away",
+    "sideCoverProb": 0.547
+   },
+   "fitGap": -2.5,
+   "formGap": 0.6
+  }
+ ]
+}

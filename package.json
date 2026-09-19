@@ -13,6 +13,7 @@
     "update:injuries": "node scripts/fetch-injuries.mjs",
     "update:schedule": "node scripts/fetch-schedule.mjs",
     "build:board": "node scripts/build-board.mjs",
+    "cfb": "node scripts/fetch-cfb.mjs",
     "update:daily": "node scripts/fetch-schedule.mjs && node scripts/fetch-injuries.mjs && node scripts/fetch-odds.mjs && node scripts/grade-results.mjs && node scripts/build-board.mjs && node scripts/publish-board.mjs && node scripts/post-discord.mjs",
     "test": "node --experimental-strip-types --test scripts/*.test.mjs",
     "format": "prettier --write \"**/*.{ts,tsx,mjs,json,md,yml}\"",
