@@ -1,10 +1,11 @@
 // Admin account tools: create a member, comp them a period, or look one up. Used for testers and
 // founder comps, where no Stripe subscription exists. Auth: x-sync-secret = publish_secret.
 //
-// POST { action: 'create',  email, password, display_name?, days? }
-// POST { action: 'comp',    email, days }
-// POST { action: 'lookup',  email }
-// POST { action: 'revoke',  email }
+// POST { action: 'create',   email, password, display_name?, days? }
+// POST { action: 'comp',     email, days }
+// POST { action: 'password', email, password }
+// POST { action: 'lookup',   email }
+// POST { action: 'revoke',   email }
 //
 // A comp writes a subscriptions row with provider and plan 'manual' and status 'trialing', which is
 // what public.is_entitled() already accepts. Nothing here touches Stripe.
@@ -128,6 +129,17 @@ Deno.serve(async (req) => {
         .eq('user_id', user.id);
       if (error) return json({ error: error.message }, 502);
       return json({ user: user.id, email, revoked: true });
+    }
+
+    if (action === 'password') {
+      const password = String(body.password ?? '');
+      if (password.length < 8) return json({ error: 'password must be 8+ characters' }, 400);
+      // Set through the Auth admin API rather than writing auth.users.encrypted_password by hand:
+      // Supabase owns that column's hashing scheme, and a row updated behind its back is a sign-in
+      // that fails for reasons nothing in the logs explains.
+      const { error } = await admin.auth.admin.updateUserById(user.id, { password });
+      if (error) return json({ error: error.message }, 502);
+      return json({ user: user.id, email, password_set: true });
     }
 
     if (action === 'lookup') {
