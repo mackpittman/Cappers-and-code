@@ -1,6 +1,6 @@
 {
  "season": 2026,
- "updatedAt": "2026-09-18T20:21:18.910Z",
+ "updatedAt": "2026-09-19T10:11:42.751Z",
  "weeks": [
   {
    "week": 1,
@@ -115,100 +115,130 @@
   },
   {
    "week": 2,
-   "finals": 0,
+   "finals": 1,
    "games": 16,
    "summary": {
     "all": {
-     "wins": 0,
-     "losses": 0,
+     "wins": 14,
+     "losses": 4,
      "pushes": 0,
-     "pending": 229
+     "pending": 211
     },
     "lockedIn": {
-     "wins": 0,
+     "wins": 3,
      "losses": 0,
      "pushes": 0,
-     "pending": 19
+     "pending": 16
     },
     "lean": {
-     "wins": 0,
+     "wins": 2,
      "losses": 0,
      "pushes": 0,
-     "pending": 32
+     "pending": 30
     },
     "top3": {
-     "wins": 0,
+     "wins": 3,
      "losses": 0,
      "pushes": 0,
-     "pending": 48
+     "pending": 45
     },
     "td2": {
-     "wins": 0,
-     "losses": 0,
+     "wins": 2,
+     "losses": 1,
      "pushes": 0,
-     "pending": 48
+     "pending": 45
     },
     "value": {
-     "wins": 0,
-     "losses": 0,
+     "wins": 2,
+     "losses": 1,
      "pushes": 0,
-     "pending": 33
+     "pending": 30
     },
     "prop": {
-     "wins": 0,
-     "losses": 0,
+     "wins": 2,
+     "losses": 2,
      "pushes": 0,
-     "pending": 49
+     "pending": 45
     },
     "calibration": {
-     "td2": [],
-     "top3": []
+     "td2": [
+      {
+       "band": "8-15%",
+       "n": 1,
+       "model": 0.14,
+       "actual": 1,
+       "wins": 1
+      },
+      {
+       "band": "15-25%",
+       "n": 2,
+       "model": 0.224,
+       "actual": 0.5,
+       "wins": 1
+      }
+     ],
+     "top3": [
+      {
+       "band": "40-50%",
+       "n": 1,
+       "model": 0.48,
+       "actual": 1,
+       "wins": 1
+      },
+      {
+       "band": "50-60%",
+       "n": 2,
+       "model": 0.525,
+       "actual": 1,
+       "wins": 2
+      }
+     ]
     }
    }
   }
  ],
  "season_totals": {
   "all": {
-   "wins": 87,
-   "losses": 108,
+   "wins": 101,
+   "losses": 112,
    "pushes": 0,
-   "pending": 229
+   "pending": 211
   },
   "lockedIn": {
-   "wins": 11,
+   "wins": 14,
    "losses": 5,
    "pushes": 0,
-   "pending": 19
+   "pending": 16
   },
   "lean": {
-   "wins": 16,
+   "wins": 18,
    "losses": 11,
    "pushes": 0,
-   "pending": 32
+   "pending": 30
   },
   "top3": {
-   "wins": 24,
+   "wins": 27,
    "losses": 21,
    "pushes": 0,
-   "pending": 48
+   "pending": 45
   },
   "td2": {
-   "wins": 11,
-   "losses": 34,
+   "wins": 13,
+   "losses": 35,
    "pushes": 0,
-   "pending": 48
+   "pending": 45
   },
   "value": {
-   "wins": 9,
-   "losses": 21,
+   "wins": 11,
+   "losses": 22,
    "pushes": 0,
-   "pending": 33
+   "pending": 30
   },
   "prop": {
-   "wins": 16,
-   "losses": 16,
+   "wins": 18,
+   "losses": 18,
    "pushes": 0,
-   "pending": 49
+   "pending": 45
   }
  }
 }

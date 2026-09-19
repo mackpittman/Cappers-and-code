@@ -1,233 +1,267 @@
 {
  "season": 2026,
  "week": 2,
- "gradedAt": "2026-09-18T20:21:18.907Z",
- "finals": 0,
+ "gradedAt": "2026-09-19T10:11:42.673Z",
+ "finals": 1,
  "games": 16,
  "summary": {
   "all": {
-   "wins": 0,
-   "losses": 0,
+   "wins": 14,
+   "losses": 4,
    "pushes": 0,
-   "pending": 229
+   "pending": 211
   },
   "lockedIn": {
-   "wins": 0,
+   "wins": 3,
    "losses": 0,
    "pushes": 0,
-   "pending": 19
+   "pending": 16
   },
   "lean": {
-   "wins": 0,
+   "wins": 2,
    "losses": 0,
    "pushes": 0,
-   "pending": 32
+   "pending": 30
   },
   "top3": {
-   "wins": 0,
+   "wins": 3,
    "losses": 0,
    "pushes": 0,
-   "pending": 48
+   "pending": 45
   },
   "td2": {
-   "wins": 0,
-   "losses": 0,
+   "wins": 2,
+   "losses": 1,
    "pushes": 0,
-   "pending": 48
+   "pending": 45
   },
   "value": {
-   "wins": 0,
-   "losses": 0,
+   "wins": 2,
+   "losses": 1,
    "pushes": 0,
-   "pending": 33
+   "pending": 30
   },
   "prop": {
-   "wins": 0,
-   "losses": 0,
+   "wins": 2,
+   "losses": 2,
    "pushes": 0,
-   "pending": 49
+   "pending": 45
   },
   "calibration": {
-   "td2": [],
-   "top3": []
+   "td2": [
+    {
+     "band": "8-15%",
+     "n": 1,
+     "model": 0.14,
+     "actual": 1,
+     "wins": 1
+    },
+    {
+     "band": "15-25%",
+     "n": 2,
+     "model": 0.224,
+     "actual": 0.5,
+     "wins": 1
+    }
+   ],
+   "top3": [
+    {
+     "band": "40-50%",
+     "n": 1,
+     "model": 0.48,
+     "actual": 1,
+     "wins": 1
+    },
+    {
+     "band": "50-60%",
+     "n": 2,
+     "model": 0.525,
+     "actual": 1,
+     "wins": 2
+    }
+   ]
   }
  },
  "items": [
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "total",
    "label": "Over 54.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "atd",
    "label": "Amon-Ra St. Brown ATD +115",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "side",
    "label": "BUF -4.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "side",
    "label": "BUF -4.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "total",
    "label": "Over 54.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "atd",
    "label": "Jahmyr Gibbs ATD",
-   "result": "pending",
    "est": 0.55,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "atd",
    "label": "Josh Allen ATD",
-   "result": "pending",
    "est": 0.5,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "atd",
    "label": "Amon-Ra St. Brown ATD",
-   "result": "pending",
    "est": 0.48,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "td2",
    "label": "Jahmyr Gibbs 2+ TD",
-   "result": "pending",
    "est": 0.2478729977126036,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "td2",
    "label": "Josh Allen 2+ TD",
-   "result": "pending",
    "est": 0.1994543326360355,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "td2",
    "label": "Amon-Ra St. Brown 2+ TD",
-   "result": "pending",
    "est": 0.13995823694853482,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "atd",
    "label": "Dalton Kincaid ATD",
-   "result": "pending",
    "est": 0.22,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "atd",
    "label": "Jameson Williams ATD",
-   "result": "pending",
    "est": 0.18,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "atd",
    "label": "James Cook III ATD",
-   "result": "pending",
    "est": 0.5,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "prop",
    "label": "Josh Allen over 249.5 pass yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 248,
+   "result": "loss"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "prop",
    "label": "Jahmyr Gibbs over 30.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 61,
+   "result": "win"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "prop",
    "label": "DJ Moore over 69.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 0,
+   "result": "loss"
   },
   {
    "game": "det-buf",
    "gameLabel": "DET@BUF",
-   "final": null,
+   "final": "DET 31, BUF 41",
    "type": "prop",
    "label": "Amon-Ra St. Brown over 6.5 receptions",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 9,
+   "result": "win"
   },
   {
    "game": "car-atl",
