@@ -1,0 +1,104 @@
+name: Sync data from Supabase
+
+# Why this exists.
+#
+# The Claude Routine runs the live pipeline: it spends the odds credits, grades, rebuilds the board,
+# publishes it and mirrors data/ into Supabase. The one thing it cannot do is commit: its sessions
+# are created fresh on each firing with no repository attached and no push credentials, so
+# `git push origin main` comes back 403 every run. That is a property of the session, not something
+# a prompt can talk its way out of, which is why data/ in this repo sat untouched from 10 September
+# while Supabase carried the truth.
+#
+# GitHub Actions already has the push right the Routine lacks (GITHUB_TOKEN plus contents: write),
+# so the commit belongs here. This workflow does not touch The Odds API and cannot spend a credit:
+# it pulls the state the Routine already paid for out of Supabase, refreshes the free ESPN feeds,
+# and commits whatever changed.
+#
+# Note on layering: a push made with GITHUB_TOKEN deliberately does not trigger other workflows, so
+# this never starts a deploy and cannot loop. The bundled data/board.json that the app falls back to
+# before sign-in therefore refreshes on the next ordinary push, not on this one. Members read the
+# live board from Supabase, so that fallback is cosmetic.
+
+on:
+  schedule:
+    # The daily board Routine fires at 16:30 UTC; this lands after it has published and mirrored.
+    - cron: '15 17 * * *'
+    # A second pass late enough to pick up the Sunday and Monday night re-prices and the grading.
+    - cron: '45 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # The Supabase URL and anon key are public by design: both already ship inside the web bundle
+      # from app.json, so reading them from there keeps one source of truth and leaves exactly one
+      # real secret for this workflow to need.
+      - name: Read the public Supabase config from app.json
+        id: cfg
+        run: |
+          echo "url=$(node -p "require('./app.json').expo.extra.supabaseUrl")" >> "$GITHUB_OUTPUT"
+          echo "anon=$(node -p "require('./app.json').expo.extra.supabaseAnonKey")" >> "$GITHUB_OUTPUT"
+
+      # state-sync restores odds/latest.json, the credit ledger and the graded results: the files
+      # that cost money to produce and cannot be rebuilt from a free feed.
+      - name: Restore pipeline state from Supabase
+        id: state
+        env:
+          SUPABASE_URL: ${{ steps.cfg.outputs.url }}
+          SUPABASE_ANON_KEY: ${{ steps.cfg.outputs.anon }}
+          BOARD_PUBLISH_SECRET: ${{ secrets.BOARD_PUBLISH_SECRET }}
+        run: |
+          if [ -z "$BOARD_PUBLISH_SECRET" ]; then
+            echo "::warning::BOARD_PUBLISH_SECRET is not set, so the paid state (odds prices, credit ledger, graded results) cannot be restored. Refreshing the free feeds only. Add the secret under Settings > Secrets and variables > Actions to sync everything."
+            echo "restored=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          node scripts/state-sync.mjs pull
+          echo "restored=true" >> "$GITHUB_OUTPUT"
+
+      # Free: no key, no credits.
+      - name: Refresh the free feeds and grade finished games
+        run: |
+          node scripts/fetch-schedule.mjs
+          node scripts/fetch-injuries.mjs
+          node scripts/grade-results.mjs
+
+      # Only with the real prices underneath. Rebuilding the board on top of a stale odds snapshot
+      # would overwrite a good board.json with worse numbers and report success doing it.
+      - name: Rebuild the board
+        if: steps.state.outputs.restored == 'true'
+        run: node scripts/build-board.mjs
+
+      - name: Commit whatever moved
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Stage first, then test the index rather than the working tree: a new week's results file
+          # arrives untracked, and `git diff --quiet -- data` would call that "nothing changed" and
+          # skip the very commit that first carries it.
+          git add data
+          if git diff --cached --quiet; then
+            echo "data/ is already current; nothing to commit."
+            exit 0
+          fi
+          git commit -m "data: sync from Supabase $(date -u +%FT%H:%MZ)"
+          # Another run, or a person, may have pushed while this one was working.
+          for i in 1 2 3; do
+            git push origin HEAD:main && exit 0
+            git pull --rebase origin main || exit 1
+          done
+          echo "::error::Could not push after three attempts."
+          exit 1
