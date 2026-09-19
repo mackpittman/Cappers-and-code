@@ -41,7 +41,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       # The Supabase URL and anon key are public by design: both already ship inside the web bundle
       # from app.json, so reading them from there keeps one source of truth and leaves exactly one
