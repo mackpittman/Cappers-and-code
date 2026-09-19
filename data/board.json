@@ -1,14 +1,14 @@
 {
  "season": 2026,
  "week": 2,
- "generatedAt": "2026-09-19T12:01:33.744Z",
+ "generatedAt": "2026-09-19T12:14:45.424Z",
  "researchAsOf": "2026-09-15T15:00:00Z",
- "oddsFetchedAt": "2026-09-19T10:18:29.893Z",
+ "oddsFetchedAt": "2026-09-19T12:12:27.157Z",
  "oddsCredits": {
-  "remaining": 288,
-  "used": 212,
-  "spent7d": 85,
-  "spent30d": 100,
+  "remaining": 260,
+  "used": 240,
+  "spent7d": 113,
+  "spent30d": 128,
   "reserve": 40
  },
  "creditPlan": {
@@ -31,7 +31,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": "ESPN/Draft Kings",
- "injuriesFetchedAt": "2026-09-19T12:01:32.367Z",
+ "injuriesFetchedAt": "2026-09-19T12:14:43.916Z",
  "notes": "Research prepared Tuesday Sep 15 from Week 1 finals, current injury reports, and Tuesday-morning market lines. Anytime-TD prices marked \"verify\" or \"est.\" could not be confirmed at a live sportsbook during research and should be checked before betting; the live odds feed replaces them once fetch-odds runs. Thursday night (DET @ BUF) updated Wednesday 9:30 PM ET: final injury designations, line movement, BetMGM anytime prices, corrected James Cook estimate, and the TNF plays.",
  "completed": [],
  "games": [
@@ -958,7 +958,7 @@
       "date": "2026-09-18T12:26Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -1107,7 +1107,27 @@
      "implied": 0.62,
      "est": 0.62,
      "why": "Workhorse role (31 of 65 team touches Wk1) vs a CAR run D that just allowed 552 yards, plus expanded goal-line share with Allgeier gone.",
-     "live2": null,
+     "live2": {
+      "best": 280,
+      "bestBook": "fanduel",
+      "consensus": 265,
+      "books": {
+       "draftkings": 265,
+       "betonlineag": 200,
+       "fanduel": 280,
+       "betrivers": 220,
+       "betmgm": 270
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370685638%232287987841_13L88808Q1-1354855512Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117897",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608603063&selectionId=38093938",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811618?coupon={pickType}|4339551418|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43374-3606822-5706240&type=Single"
+      },
+      "implied": 0.274,
+      "fetchedAt": "2026-09-19T12:12:26.038Z"
+     },
      "live": {
       "best": -185,
       "bestBook": "betmgm",
@@ -1131,7 +1151,7 @@
       "implied": 0.6774,
       "open": -215,
       "move": 5,
-      "fetchedAt": "2026-09-19T10:15:10.520Z"
+      "fetchedAt": "2026-09-19T12:12:26.038Z"
      },
      "edge": -0.057
     },
@@ -1144,7 +1164,27 @@
      "implied": 0.55,
      "est": 0.55,
      "why": "Scored both a rushing and receiving TD Wk1 and is the clear early-down/goal-line back in Canales's run-first red-zone scheme vs a thin ATL front seven.",
-     "live2": null,
+     "live2": {
+      "best": 550,
+      "bestBook": "draftkings",
+      "consensus": 550,
+      "books": {
+       "draftkings": 550,
+       "betonlineag": 400,
+       "fanduel": 550,
+       "betrivers": 550,
+       "betmgm": 500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370685638%232287987847_13L88808Q1-2084365438Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117897",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608603063&selectionId=22502305",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811618?coupon={pickType}|4339551468|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43374-3606803-5706202&type=Single"
+      },
+      "implied": 0.1538,
+      "fetchedAt": "2026-09-19T12:12:26.038Z"
+     },
      "live": {
       "best": -105,
       "bestBook": "betmgm",
@@ -1168,7 +1208,7 @@
       "implied": 0.5283,
       "open": -125,
       "move": 13,
-      "fetchedAt": "2026-09-19T10:15:10.520Z"
+      "fetchedAt": "2026-09-19T12:12:26.038Z"
      },
      "edge": 0.022
     },
@@ -1181,7 +1221,27 @@
      "implied": 0.42,
      "est": 0.42,
      "why": "8 targets and alpha role Wk1 against an ATL secondary allowing 7.1 YPA with limited depth beyond Terrell/Bates.",
-     "live2": null,
+     "live2": {
+      "best": 1500,
+      "bestBook": "draftkings",
+      "consensus": 1200,
+      "books": {
+       "draftkings": 1500,
+       "betonlineag": 900,
+       "fanduel": 1400,
+       "betrivers": 1200,
+       "betmgm": 950
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370685638%232287987848_13L88808Q11934492119Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117897",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608603063&selectionId=48313333",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811618?coupon={pickType}|4339551434|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43374-3606798-5706192&type=Single"
+      },
+      "implied": 0.0769,
+      "fetchedAt": "2026-09-19T12:12:26.038Z"
+     },
      "live": {
       "best": 175,
       "bestBook": "draftkings",
@@ -1205,7 +1265,7 @@
       "implied": 0.3663,
       "open": 180,
       "move": -7,
-      "fetchedAt": "2026-09-19T10:15:10.520Z"
+      "fetchedAt": "2026-09-19T12:12:26.038Z"
      },
      "edge": 0.054
     }
@@ -1220,7 +1280,27 @@
      "implied": 0.16,
      "est": 0.16,
      "why": "Change-of-pace role showed a 48-yard catch Wk1; a soft ATL run defense could mean more Brooks work if Hubbard is spelled or the game flow favors tempo.",
-     "live2": null,
+     "live2": {
+      "best": 3500,
+      "bestBook": "fanduel",
+      "consensus": 2400,
+      "books": {
+       "draftkings": 3000,
+       "betonlineag": 2400,
+       "fanduel": 3500,
+       "betrivers": 2400,
+       "betmgm": 1900
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370685638%232287987850_13L88808Q11060508884Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117897",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608603063&selectionId=49330542",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811618?coupon={pickType}|4339548259|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43374-3606807-5706210&type=Single"
+      },
+      "implied": 0.04,
+      "fetchedAt": "2026-09-19T12:12:26.038Z"
+     },
      "live": {
       "best": 350,
       "bestBook": "draftkings",
@@ -1244,7 +1324,7 @@
       "implied": 0.2353,
       "open": 300,
       "move": 25,
-      "fetchedAt": "2026-09-19T10:15:10.520Z"
+      "fetchedAt": "2026-09-19T12:12:26.038Z"
      },
      "edge": -0.075
     },
@@ -1257,7 +1337,27 @@
      "implied": 0.18,
      "est": 0.18,
      "why": "Bounce-back candidate after a zero-target Wk1; size mismatch vs CAR linebackers in scoring range if Rush leans on quick, safe throws.",
-     "live2": null,
+     "live2": {
+      "best": 5000,
+      "bestBook": "draftkings",
+      "consensus": 4500,
+      "books": {
+       "draftkings": 5000,
+       "betonlineag": 2900,
+       "fanduel": 5000,
+       "betrivers": 4500,
+       "betmgm": 2800
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370685638%232287987844_13L88808Q1-703917339Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117897",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608603063&selectionId=36287746",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811618?coupon={pickType}|4339551426|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43374-3606827-5706250&type=Single"
+      },
+      "implied": 0.0217,
+      "fetchedAt": "2026-09-19T12:12:26.038Z"
+     },
      "live": {
       "best": 430,
       "bestBook": "fanduel",
@@ -1281,7 +1381,7 @@
       "implied": 0.2,
       "open": 325,
       "move": 75,
-      "fetchedAt": "2026-09-19T10:15:10.520Z"
+      "fetchedAt": "2026-09-19T12:12:26.038Z"
      },
      "edge": -0.02
     }
@@ -1359,7 +1459,7 @@
    },
    "live": {
     "source": "ESPN/Draft Kings",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": 130,
      "away": -155,
@@ -1772,7 +1872,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:21.222Z",
-    "desig": "2026-09-19T10:15:10.520Z"
+    "desig": "2026-09-19T10:15:10.520Z",
+    "prekick": "2026-09-19T12:12:26.038Z"
    },
    "injuryReport": {
     "away": [
@@ -1851,7 +1952,7 @@
       "date": "2026-09-12T20:59Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -1982,7 +2083,29 @@
      "implied": 0.444,
      "est": 0.42,
      "why": "Alpha target hog (28-32% share, 8-92-2 Wk1) who remains the top red-zone look regardless of which Vikings QB starts.",
-     "live2": null,
+     "live2": {
+      "best": 1200,
+      "bestBook": "fanduel",
+      "consensus": 1000,
+      "books": {
+       "draftkings": 1000,
+       "betonlineag": 700,
+       "fanduel": 1200,
+       "betrivers": 1050,
+       "betmgm": 725,
+       "bovada": 1000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370416546%232286962881_13L88808Q1-515645446Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117899",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608562551&selectionId=26809167",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811612?coupon={pickType}|4339045652|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43369-3607363-5709823&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/minnesota-vikings-chicago-bears-202609201300"
+      },
+      "implied": 0.0909,
+      "fetchedAt": "2026-09-19T12:12:26.205Z"
+     },
      "live": {
       "best": 155,
       "bestBook": "fanduel",
@@ -2006,7 +2129,7 @@
       "implied": 0.4082,
       "open": 150,
       "move": -5,
-      "fetchedAt": "2026-09-19T10:15:10.716Z"
+      "fetchedAt": "2026-09-19T12:12:26.205Z"
      },
      "edge": 0.012
     },
@@ -2019,7 +2142,29 @@
      "implied": 0.392,
      "est": 0.4,
      "why": "Bears' lead zone-run back scored 3 TDs Wk1 and gets first crack at goal-to-go carries in Ben Johnson's run-heavy red-zone plan.",
-     "live2": null,
+     "live2": {
+      "best": 420,
+      "bestBook": "fanduel",
+      "consensus": 390,
+      "books": {
+       "draftkings": 390,
+       "betonlineag": 300,
+       "fanduel": 420,
+       "betrivers": 420,
+       "betmgm": 380,
+       "bovada": 390
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370416546%232286962788_13L88808Q1-1008695778Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117899",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608562551&selectionId=16602381",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811612?coupon={pickType}|4339033856|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43369-3607379-5709859&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/minnesota-vikings-chicago-bears-202609201300"
+      },
+      "implied": 0.2041,
+      "fetchedAt": "2026-09-19T12:12:26.205Z"
+     },
      "live": {
       "best": -135,
       "bestBook": "betmgm",
@@ -2043,7 +2188,7 @@
       "implied": 0.5935,
       "open": -143,
       "move": -3,
-      "fetchedAt": "2026-09-19T10:15:10.716Z"
+      "fetchedAt": "2026-09-19T12:12:26.205Z"
      },
      "edge": -0.193
     },
@@ -2056,7 +2201,29 @@
      "implied": 0.3,
      "est": 0.3,
      "why": "Reliable underneath/red-zone target (4-36-1 Wk1) who profiles as the safety-valve TD look for either Wentz or Murray.",
-     "live2": null,
+     "live2": {
+      "best": 3500,
+      "bestBook": "fanduel",
+      "consensus": 3000,
+      "books": {
+       "draftkings": 3000,
+       "betonlineag": 2400,
+       "fanduel": 3500,
+       "betrivers": 3400,
+       "betmgm": 2800,
+       "bovada": 3000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370416546%232286962883_13L88808Q11811847572Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117899",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608562551&selectionId=25935770",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811612?coupon={pickType}|4338991106|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43369-3607413-5709925&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/minnesota-vikings-chicago-bears-202609201300"
+      },
+      "implied": 0.0323,
+      "fetchedAt": "2026-09-19T12:12:26.205Z"
+     },
      "live": {
       "best": 333,
       "bestBook": "betmgm",
@@ -2080,7 +2247,7 @@
       "implied": 0.2381,
       "open": 360,
       "move": -40,
-      "fetchedAt": "2026-09-19T10:15:10.716Z"
+      "fetchedAt": "2026-09-19T12:12:26.205Z"
      },
      "edge": 0.062
     }
@@ -2095,7 +2262,29 @@
      "implied": 0.28,
      "est": 0.28,
      "why": "Scored on 2-of-3 targets Wk1 and should see more red-zone volume if Loveland stays quiet.",
-     "live2": null,
+     "live2": {
+      "best": 6000,
+      "bestBook": "fanduel",
+      "consensus": 5500,
+      "books": {
+       "draftkings": 5500,
+       "betonlineag": 3400,
+       "fanduel": 6000,
+       "betrivers": 6000,
+       "betmgm": 4000,
+       "bovada": 5500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370416546%232286962794_13L88808Q1-2114998825Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117899",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608562551&selectionId=26920153",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811612?coupon={pickType}|4338991083|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43369-3607376-5709851&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/minnesota-vikings-chicago-bears-202609201300"
+      },
+      "implied": 0.0179,
+      "fetchedAt": "2026-09-19T12:12:26.205Z"
+     },
      "live": {
       "best": 540,
       "bestBook": "betrivers",
@@ -2119,7 +2308,7 @@
       "implied": 0.1835,
       "open": 460,
       "move": -15,
-      "fetchedAt": "2026-09-19T10:15:10.716Z"
+      "fetchedAt": "2026-09-19T12:12:26.205Z"
      },
      "edge": 0.097
     },
@@ -2209,7 +2398,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": -218,
      "away": 180,
@@ -2622,7 +2811,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:21.525Z",
-    "desig": "2026-09-19T10:15:10.716Z"
+    "desig": "2026-09-19T10:15:10.716Z",
+    "prekick": "2026-09-19T12:12:26.205Z"
    },
    "injuryReport": {
     "away": [
@@ -2666,10 +2856,10 @@
       "status": "Out",
       "type": "out",
       "detail": "out",
-      "date": "2026-09-19T11:00Z"
+      "date": "2026-09-19T12:01Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -2810,7 +3000,29 @@
      "implied": 0.55,
      "est": 0.55,
      "why": "Tush-push staple near the goal line vs. a Titans front still installing a brand-new 4-3 scheme.",
-     "live2": null,
+     "live2": {
+      "best": 1100,
+      "bestBook": "fanduel",
+      "consensus": 950,
+      "books": {
+       "draftkings": 1000,
+       "betonlineag": 700,
+       "fanduel": 1100,
+       "betrivers": 900,
+       "betmgm": 825,
+       "bovada": 1000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370783818%232288401909_13L88808Q12010829453Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117894",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608694704&selectionId=12142119",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811615?coupon={pickType}|4339127780|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43372-3607320-5709343&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-tennessee-titans-202609201300"
+      },
+      "implied": 0.0952,
+      "fetchedAt": "2026-09-19T12:12:26.631Z"
+     },
      "live": {
       "best": 150,
       "bestBook": "fanduel",
@@ -2834,7 +3046,7 @@
       "implied": 0.4115,
       "open": 140,
       "move": 3,
-      "fetchedAt": "2026-09-19T10:15:11.224Z"
+      "fetchedAt": "2026-09-19T12:12:26.630Z"
      },
      "edge": 0.138
     },
@@ -2847,7 +3059,29 @@
      "implied": 0.5,
      "est": 0.5,
      "why": "Scored 10 of 11 2025 TDs in the red zone, already has 2 this year, and inherits A.J. Brown's vacated red-zone share.",
-     "live2": null,
+     "live2": {
+      "best": 1900,
+      "bestBook": "fanduel",
+      "consensus": 1700,
+      "books": {
+       "draftkings": 1700,
+       "betonlineag": 1100,
+       "fanduel": 1900,
+       "betrivers": 1800,
+       "betmgm": 1500,
+       "bovada": 1700
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370783818%232288401911_13L88808Q1-1781882123Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117894",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608694704&selectionId=18545062",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811615?coupon={pickType}|4339136019|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43372-3607278-5709009&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-tennessee-titans-202609201300"
+      },
+      "implied": 0.0556,
+      "fetchedAt": "2026-09-19T12:12:26.631Z"
+     },
      "live": {
       "best": 210,
       "bestBook": "draftkings",
@@ -2871,7 +3105,7 @@
       "implied": 0.3247,
       "open": 210,
       "move": -2,
-      "fetchedAt": "2026-09-19T10:15:11.224Z"
+      "fetchedAt": "2026-09-19T12:12:26.630Z"
      },
      "edge": 0.175
     },
@@ -2884,7 +3118,29 @@
      "implied": 0.42,
      "est": 0.42,
      "why": "Bell-cow workload against a run defense that just allowed 152 yards and a 12-minute drive to the Jets.",
-     "live2": null,
+     "live2": {
+      "best": 650,
+      "bestBook": "fanduel",
+      "consensus": 500,
+      "books": {
+       "draftkings": 500,
+       "betonlineag": 400,
+       "fanduel": 650,
+       "betrivers": 550,
+       "betmgm": 425,
+       "bovada": 500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370783818%232288401908_13L88808Q113349962Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117894",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608694704&selectionId=11054733",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811615?coupon={pickType}|4339127752|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43372-3607317-5709318&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-tennessee-titans-202609201300"
+      },
+      "implied": 0.1667,
+      "fetchedAt": "2026-09-19T12:12:26.631Z"
+     },
      "live": {
       "best": -105,
       "bestBook": "fanduel",
@@ -2908,7 +3164,7 @@
       "implied": 0.5455,
       "open": -124,
       "move": 4,
-      "fetchedAt": "2026-09-19T10:15:11.224Z"
+      "fetchedAt": "2026-09-19T12:12:26.630Z"
      },
      "edge": -0.125
     }
@@ -2923,7 +3179,29 @@
      "implied": 0.2,
      "est": 0.2,
      "why": "Already has a Week 1 TD and steps into a bigger route share with Brown gone.",
-     "live2": null,
+     "live2": {
+      "best": 3000,
+      "bestBook": "draftkings",
+      "consensus": 3000,
+      "books": {
+       "draftkings": 3000,
+       "betonlineag": 2400,
+       "fanduel": 3000,
+       "betrivers": 3000,
+       "betmgm": 2200,
+       "bovada": 3000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370783818%232288401912_13L88808Q128617589Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117894",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608694704&selectionId=48683410",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811615?coupon={pickType}|4339127758|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43372-3607271-5708964&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-tennessee-titans-202609201300"
+      },
+      "implied": 0.0323,
+      "fetchedAt": "2026-09-19T12:12:26.631Z"
+     },
      "live": {
       "best": 330,
       "bestBook": "draftkings",
@@ -2947,7 +3225,7 @@
       "implied": 0.2439,
       "open": 310,
       "move": 0,
-      "fetchedAt": "2026-09-19T10:15:11.224Z"
+      "fetchedAt": "2026-09-19T12:12:26.630Z"
      },
      "edge": -0.044
     },
@@ -2960,7 +3238,29 @@
      "implied": 0.16,
      "est": 0.16,
      "why": "Scored Tennessee's only Week 1 TD and profiles as Ward's boundary shot-play target.",
-     "live2": null,
+     "live2": {
+      "best": 17500,
+      "bestBook": "fanduel",
+      "consensus": 10500,
+      "books": {
+       "draftkings": 11000,
+       "betonlineag": 6900,
+       "fanduel": 17500,
+       "betrivers": 14000,
+       "betmgm": 6000,
+       "bovada": 10000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370783818%232288401904_13L88808Q1-1792365548Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117894",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608694704&selectionId=60247592",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811615?coupon={pickType}|4339130496|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43372-3607312-5709308&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-tennessee-titans-202609201300"
+      },
+      "implied": 0.0094,
+      "fetchedAt": "2026-09-19T12:12:26.631Z"
+     },
      "live": {
       "best": 1100,
       "bestBook": "betrivers",
@@ -2984,7 +3284,7 @@
       "implied": 0.1111,
       "open": 850,
       "move": -50,
-      "fetchedAt": "2026-09-19T10:15:11.224Z"
+      "fetchedAt": "2026-09-19T12:12:26.630Z"
      },
      "edge": 0.049
     }
@@ -3061,7 +3361,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": 260,
      "away": -325,
@@ -3465,7 +3765,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:22.338Z",
-    "desig": "2026-09-19T10:15:11.224Z"
+    "desig": "2026-09-19T10:15:11.224Z",
+    "prekick": "2026-09-19T12:12:26.631Z"
    },
    "injuryReport": {
     "away": [
@@ -3536,7 +3837,7 @@
       "date": "2026-09-08T20:42Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -3650,9 +3951,9 @@
      "price": null,
      "implied": 0.16,
      "live": {
-      "best": 450,
+      "best": 400,
       "bestBook": "betonlineag",
-      "consensus": 380
+      "consensus": 355
      }
     },
     {
@@ -3688,7 +3989,29 @@
      "implied": 0.28,
      "est": 0.28,
      "why": "Rodgers' security-blanket TE scored last week on a perfect 5-of-5 target night and should see similar red-zone trust vs. NE's linebackers.",
-     "live2": null,
+     "live2": {
+      "best": 6000,
+      "bestBook": "fanduel",
+      "consensus": 4750,
+      "books": {
+       "draftkings": 5500,
+       "betonlineag": 3600,
+       "fanduel": 6000,
+       "betrivers": 4000,
+       "betmgm": 3300,
+       "bovada": 5500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376118%232286787204_13L88808Q1-162258478Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117895",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608552731&selectionId=26812199",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811611?coupon={pickType}|4339090852|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43370-3606980-5707488&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/pittsburgh-steelers-new-england-patriots-202609201300"
+      },
+      "implied": 0.0206,
+      "fetchedAt": "2026-09-19T12:12:26.531Z"
+     },
      "live": {
       "best": 500,
       "bestBook": "fanduel",
@@ -3712,7 +4035,7 @@
       "implied": 0.1802,
       "open": 500,
       "move": -45,
-      "fetchedAt": "2026-09-19T10:15:11.123Z"
+      "fetchedAt": "2026-09-19T12:12:26.531Z"
      },
      "edge": 0.1
     },
@@ -3725,7 +4048,29 @@
      "implied": 0.3,
      "est": 0.3,
      "why": "Bell-cow workload (18 touches Wk1) plus likely goal-line role with Henderson banged up makes him NE's clearest touchdown equity.",
-     "live2": null,
+     "live2": {
+      "best": 700,
+      "bestBook": "draftkings",
+      "consensus": 638,
+      "books": {
+       "draftkings": 700,
+       "betonlineag": 500,
+       "fanduel": 700,
+       "betrivers": 575,
+       "betmgm": 475,
+       "bovada": 700
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376118%232286787082_13L88808Q1-1063669179Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117895",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608552731&selectionId=26919640",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811611?coupon={pickType}|4339076236|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43370-3606942-5707412&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/pittsburgh-steelers-new-england-patriots-202609201300"
+      },
+      "implied": 0.1355,
+      "fetchedAt": "2026-09-19T12:12:26.531Z"
+     },
      "live": {
       "best": 110,
       "bestBook": "draftkings",
@@ -3749,7 +4094,7 @@
       "implied": 0.4926,
       "open": -109,
       "move": 212,
-      "fetchedAt": "2026-09-19T10:15:11.123Z"
+      "fetchedAt": "2026-09-19T12:12:26.531Z"
      },
      "edge": -0.193
     },
@@ -3762,7 +4107,29 @@
      "implied": 0.32,
      "est": 0.32,
      "why": "Led the team with 10 targets in Week 1; even against Gonzalez, his size gives Rodgers a boundary red-zone/jump-ball option.",
-     "live2": null,
+     "live2": {
+      "best": 2500,
+      "bestBook": "fanduel",
+      "consensus": 2100,
+      "books": {
+       "draftkings": 2200,
+       "betonlineag": 1700,
+       "fanduel": 2500,
+       "betrivers": 2000,
+       "betmgm": 1450,
+       "bovada": 2200
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376118%232286787170_13L88808Q1-2121935466Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117895",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608552731&selectionId=23735963",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811611?coupon={pickType}|4339090951|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43370-3606989-5707506&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/pittsburgh-steelers-new-england-patriots-202609201300"
+      },
+      "implied": 0.0455,
+      "fetchedAt": "2026-09-19T12:12:26.531Z"
+     },
      "live": {
       "best": 260,
       "bestBook": "fanduel",
@@ -3786,7 +4153,7 @@
       "implied": 0.2833,
       "open": 250,
       "move": 3,
-      "fetchedAt": "2026-09-19T10:15:11.123Z"
+      "fetchedAt": "2026-09-19T12:12:26.531Z"
      },
      "edge": 0.037
     }
@@ -3801,7 +4168,29 @@
      "implied": 0.15,
      "est": 0.15,
      "why": "Change-of-pace back who could vulture a short-yardage/goal-line carry if Warren is used more as a receiver.",
-     "live2": null,
+     "live2": {
+      "best": 1400,
+      "bestBook": "draftkings",
+      "consensus": 1300,
+      "books": {
+       "draftkings": 1400,
+       "betonlineag": 900,
+       "fanduel": 1300,
+       "betrivers": 1300,
+       "betmgm": 950,
+       "bovada": 1400
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376118%232286787168_13L88808Q1-1538892294Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117895",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608552731&selectionId=35949997",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811611?coupon={pickType}|4339091021|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43370-3606969-5707466&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/pittsburgh-steelers-new-england-patriots-202609201300"
+      },
+      "implied": 0.0714,
+      "fetchedAt": "2026-09-19T12:12:26.531Z"
+     },
      "live": {
       "best": 180,
       "bestBook": "draftkings",
@@ -3825,7 +4214,7 @@
       "implied": 0.3704,
       "open": 160,
       "move": 10,
-      "fetchedAt": "2026-09-19T10:15:11.123Z"
+      "fetchedAt": "2026-09-19T12:12:26.531Z"
      },
      "edge": -0.22
     },
@@ -3838,7 +4227,29 @@
      "implied": 0.16,
      "est": 0.16,
      "why": "Contested-catch/big-body specialist stepping into more red-zone snaps with A.J. Brown on IR.",
-     "live2": null,
+     "live2": {
+      "best": 2500,
+      "bestBook": "draftkings",
+      "consensus": 2200,
+      "books": {
+       "draftkings": 2500,
+       "betonlineag": 1800,
+       "fanduel": 2200,
+       "betrivers": 2200,
+       "betmgm": 2200,
+       "bovada": 2500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376118%232286787193_13L88808Q1-1861138499Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117895",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608552731&selectionId=14153656",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811611?coupon={pickType}|4339076226|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43370-3606960-5707448&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/pittsburgh-steelers-new-england-patriots-202609201300"
+      },
+      "implied": 0.0435,
+      "fetchedAt": "2026-09-19T12:12:26.531Z"
+     },
      "live": {
       "best": 280,
       "bestBook": "betmgm",
@@ -3862,7 +4273,7 @@
       "implied": 0.2778,
       "open": 260,
       "move": 0,
-      "fetchedAt": "2026-09-19T10:15:11.123Z"
+      "fetchedAt": "2026-09-19T12:12:26.531Z"
      },
      "edge": -0.118
     }
@@ -3939,7 +4350,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": -225,
      "away": 185,
@@ -4036,10 +4447,10 @@
     },
     {
      "name": "Michael Pittman Jr.",
-     "best": 450,
+     "best": 400,
      "bestBook": "betonlineag",
-     "consensus": 380,
-     "implied": 0.2083
+     "consensus": 355,
+     "implied": 0.2198
     },
     {
      "name": "Roman Wilson",
@@ -4385,7 +4796,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:22.179Z",
-    "desig": "2026-09-19T10:15:11.123Z"
+    "desig": "2026-09-19T10:15:11.123Z",
+    "prekick": "2026-09-19T12:12:26.531Z"
    },
    "injuryReport": {
     "away": [
@@ -4464,7 +4876,7 @@
       "date": "2026-09-13T13:52Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -4613,7 +5025,29 @@
      "implied": 0.55,
      "est": 0.55,
      "why": "Bell-cow workload (22 touches Wk1) vs. a GB front missing both Micah Parsons and Jordon Riley to PUP.",
-     "live2": null,
+     "live2": {
+      "best": 600,
+      "bestBook": "fanduel",
+      "consensus": 525,
+      "books": {
+       "draftkings": 550,
+       "betonlineag": 400,
+       "fanduel": 600,
+       "betrivers": 500,
+       "betmgm": 425,
+       "bovada": 550
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369987475%232285300737_13L88808Q1827256908Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117890",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608713661&selectionId=36935933",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811617?coupon={pickType}|4339181377|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43368-3607221-5708850&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/green-bay-packers-new-york-jets-202609201300"
+      },
+      "implied": 0.16,
+      "fetchedAt": "2026-09-19T12:12:26.452Z"
+     },
      "live": {
       "best": -105,
       "bestBook": "draftkings",
@@ -4637,7 +5071,7 @@
       "implied": 0.5349,
       "open": -125,
       "move": 10,
-      "fetchedAt": "2026-09-19T10:15:11.013Z"
+      "fetchedAt": "2026-09-19T12:12:26.452Z"
      },
      "edge": 0.015
     },
@@ -4650,7 +5084,29 @@
      "implied": 0.45,
      "est": 0.45,
      "why": "Love's clear WR1 after Doubs/Wicks exits, coming off a 2-TD, 147-yard outburst.",
-     "live2": null,
+     "live2": {
+      "best": 1600,
+      "bestBook": "betrivers",
+      "consensus": 1300,
+      "books": {
+       "draftkings": 1300,
+       "betonlineag": 900,
+       "fanduel": 1400,
+       "betrivers": 1600,
+       "betmgm": 850,
+       "bovada": 1300
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369987475%232285300751_13L88808Q1-1356601652Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117890",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608713661&selectionId=43162285",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811617?coupon={pickType}|4339181400|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43368-3607198-5708804&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/green-bay-packers-new-york-jets-202609201300"
+      },
+      "implied": 0.0714,
+      "fetchedAt": "2026-09-19T12:12:26.452Z"
+     },
      "live": {
       "best": 190,
       "bestBook": "betrivers",
@@ -4674,7 +5130,7 @@
       "implied": 0.3704,
       "open": 170,
       "move": 0,
-      "fetchedAt": "2026-09-19T10:15:11.013Z"
+      "fetchedAt": "2026-09-19T12:12:26.452Z"
      },
      "edge": 0.08
     },
@@ -4687,7 +5143,29 @@
      "implied": 0.33,
      "est": 0.33,
      "why": "Target hog (6/7 Wk1) in a Reich offense that scripted a TD on its opening drive.",
-     "live2": null,
+     "live2": {
+      "best": 1800,
+      "bestBook": "fanduel",
+      "consensus": 1400,
+      "books": {
+       "draftkings": 1500,
+       "betonlineag": 1000,
+       "fanduel": 1800,
+       "betrivers": 1300,
+       "betmgm": 1100,
+       "bovada": 1500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369987475%232285300668_13L88808Q180415155Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117890",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608713661&selectionId=26999346",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811617?coupon={pickType}|4339190449|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43368-3607238-5708884&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/green-bay-packers-new-york-jets-202609201300"
+      },
+      "implied": 0.0667,
+      "fetchedAt": "2026-09-19T12:12:26.452Z"
+     },
      "live": {
       "best": 200,
       "bestBook": "fanduel",
@@ -4711,7 +5189,7 @@
       "implied": 0.3534,
       "open": 180,
       "move": 3,
-      "fetchedAt": "2026-09-19T10:15:11.013Z"
+      "fetchedAt": "2026-09-19T12:12:26.452Z"
      },
      "edge": -0.023
     }
@@ -4726,7 +5204,29 @@
      "implied": 0.15,
      "est": 0.16,
      "why": "Reich already schemed him a gadget end-around score; distinct goal-line package role.",
-     "live2": null,
+     "live2": {
+      "best": 7500,
+      "bestBook": "fanduel",
+      "consensus": 5250,
+      "books": {
+       "draftkings": 6000,
+       "betonlineag": 3600,
+       "fanduel": 7500,
+       "betrivers": 4500,
+       "betmgm": 3500,
+       "bovada": 6000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369987475%232285300744_13L88808Q11676927646Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117890",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608713661&selectionId=78488496",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811617?coupon={pickType}|4339181413|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43368-3607230-5708868&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/green-bay-packers-new-york-jets-202609201300"
+      },
+      "implied": 0.0187,
+      "fetchedAt": "2026-09-19T12:12:26.452Z"
+     },
      "live": {
       "best": 550,
       "bestBook": "fanduel",
@@ -4750,7 +5250,7 @@
       "implied": 0.1739,
       "open": 475,
       "move": 0,
-      "fetchedAt": "2026-09-19T10:15:11.013Z"
+      "fetchedAt": "2026-09-19T12:12:26.452Z"
      },
      "edge": -0.014
     },
@@ -4763,7 +5263,29 @@
      "implied": 0.16,
      "est": 0.16,
      "why": "Led Packers with 12 targets Wk1 without a TD — regression-to-mean candidate with an expanded role.",
-     "live2": null,
+     "live2": {
+      "best": 2200,
+      "bestBook": "draftkings",
+      "consensus": 1900,
+      "books": {
+       "draftkings": 2200,
+       "betonlineag": 1500,
+       "fanduel": 2200,
+       "betrivers": 1600,
+       "betmgm": 1250,
+       "bovada": 2200
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369987475%232285300756_13L88808Q1905210328Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117890",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608713661&selectionId=48301335",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811617?coupon={pickType}|4339190419|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43368-3607202-5708812&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/green-bay-packers-new-york-jets-202609201300"
+      },
+      "implied": 0.05,
+      "fetchedAt": "2026-09-19T12:12:26.452Z"
+     },
      "live": {
       "best": 230,
       "bestBook": "draftkings",
@@ -4787,7 +5309,7 @@
       "implied": 0.303,
       "open": 225,
       "move": 5,
-      "fetchedAt": "2026-09-19T10:15:11.013Z"
+      "fetchedAt": "2026-09-19T12:12:26.452Z"
      },
      "edge": -0.143
     }
@@ -4865,7 +5387,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": 170,
      "away": -205,
@@ -5297,7 +5819,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:22.018Z",
-    "desig": "2026-09-19T10:15:11.013Z"
+    "desig": "2026-09-19T10:15:11.013Z",
+    "prekick": "2026-09-19T12:12:26.452Z"
    },
    "injuryReport": {
     "away": [
@@ -5400,7 +5923,7 @@
       "date": "2026-09-12T18:56Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -5537,7 +6060,27 @@
      "implied": 0.535,
      "est": 0.55,
      "why": "Bell-cow role (7 targets + 8 carries Wk1, scored) vs a CLE defense down three defensive starters.",
-     "live2": null,
+     "live2": {
+      "best": 500,
+      "bestBook": "draftkings",
+      "consensus": 500,
+      "books": {
+       "draftkings": 500,
+       "betonlineag": 350,
+       "fanduel": 500,
+       "betrivers": 500,
+       "betmgm": 390
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370734131%232288205847_13L88808Q1-416383636Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117896",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608810204&selectionId=58495722",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811613?coupon={pickType}|4339176925|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43373-3606872-5706338&type=Single"
+      },
+      "implied": 0.1667,
+      "fetchedAt": "2026-09-19T12:12:26.364Z"
+     },
      "live": {
       "best": -120,
       "bestBook": "draftkings",
@@ -5561,7 +6104,7 @@
       "implied": 0.5575,
       "open": -130,
       "move": 4,
-      "fetchedAt": "2026-09-19T10:15:10.914Z"
+      "fetchedAt": "2026-09-19T12:12:26.364Z"
      },
      "edge": -0.008
     },
@@ -5574,7 +6117,27 @@
      "implied": 0.32,
      "est": 0.35,
      "why": "Only healthy early-down back with Sampson out, and TB allowed a league-worst 69.8% red-zone TD rate in 2025.",
-     "live2": null,
+     "live2": {
+      "best": 1000,
+      "bestBook": "fanduel",
+      "consensus": 900,
+      "books": {
+       "draftkings": 900,
+       "betonlineag": 650,
+       "fanduel": 1000,
+       "betrivers": 750,
+       "betmgm": 950
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370734131%232288205861_13L88808Q1-681441441Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117896",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608810204&selectionId=48514528",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811613?coupon={pickType}|4339188950|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43373-3606880-5706354&type=Single"
+      },
+      "implied": 0.1,
+      "fetchedAt": "2026-09-19T12:12:26.364Z"
+     },
      "live": {
       "best": 155,
       "bestBook": "betmgm",
@@ -5598,7 +6161,7 @@
       "implied": 0.4348,
       "open": 135,
       "move": -5,
-      "fetchedAt": "2026-09-19T10:15:10.914Z"
+      "fetchedAt": "2026-09-19T12:12:26.364Z"
      },
      "edge": -0.085
     },
@@ -5611,7 +6174,27 @@
      "implied": 0.28,
      "est": 0.3,
      "why": "Leading target earner (6 targets Wk1) against a CLE secondary that just lost its starting safety for the year.",
-     "live2": null,
+     "live2": {
+      "best": 1300,
+      "bestBook": "draftkings",
+      "consensus": 1200,
+      "books": {
+       "draftkings": 1300,
+       "betonlineag": 800,
+       "fanduel": 1200,
+       "betrivers": 1300,
+       "betmgm": 900
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370734131%232288205848_13L88808Q11465714566Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117896",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608810204&selectionId=42217794",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811613?coupon={pickType}|4339188714|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43373-3606849-5706292&type=Single"
+      },
+      "implied": 0.0769,
+      "fetchedAt": "2026-09-19T12:12:26.364Z"
+     },
      "live": {
       "best": 170,
       "bestBook": "draftkings",
@@ -5635,7 +6218,7 @@
       "implied": 0.3802,
       "open": 150,
       "move": 13,
-      "fetchedAt": "2026-09-19T10:15:10.914Z"
+      "fetchedAt": "2026-09-19T12:12:26.364Z"
      },
      "edge": -0.08
     }
@@ -5650,7 +6233,27 @@
      "implied": 0.13,
      "est": 0.14,
      "why": "Rookie TE seeing early red-zone-adjacent looks (3 targets Wk1) as Watson's underneath option if the run game stalls.",
-     "live2": null,
+     "live2": {
+      "best": 3500,
+      "bestBook": "fanduel",
+      "consensus": 3000,
+      "books": {
+       "draftkings": 3000,
+       "betonlineag": 2600,
+       "fanduel": 3500,
+       "betrivers": 3500,
+       "betmgm": 2200
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370734131%232288205862_13L88808Q1-862670716Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117896",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608810204&selectionId=49937738",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811613?coupon={pickType}|4339180117|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43373-3606887-5706366&type=Single"
+      },
+      "implied": 0.0323,
+      "fetchedAt": "2026-09-19T12:12:26.364Z"
+     },
      "live": {
       "best": 360,
       "bestBook": "fanduel",
@@ -5674,7 +6277,7 @@
       "implied": 0.2273,
       "open": 350,
       "move": -10,
-      "fetchedAt": "2026-09-19T10:15:10.914Z"
+      "fetchedAt": "2026-09-19T12:12:26.364Z"
      },
      "edge": -0.087
     },
@@ -5687,7 +6290,25 @@
      "implied": 0.08,
      "est": 0.09,
      "why": "Clean Week 1 outing in a leaky-TE/slot-vulnerable CLE coverage, cheap TD longshot in an expected blowout script.",
-     "live2": null,
+     "live2": {
+      "best": 11000,
+      "bestBook": "betrivers",
+      "consensus": 9000,
+      "books": {
+       "draftkings": 8000,
+       "betonlineag": 5900,
+       "fanduel": 10000,
+       "betrivers": 11000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370734131%232288205855_13L88808Q1997600299Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117896",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608810204&selectionId=49561844",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811613?coupon={pickType}|4339179935|{wagerAmount}"
+      },
+      "implied": 0.011,
+      "fetchedAt": "2026-09-19T12:12:26.364Z"
+     },
      "live": {
       "best": 1000,
       "bestBook": "betrivers",
@@ -5709,7 +6330,7 @@
       "implied": 0.1081,
       "open": 700,
       "move": 125,
-      "fetchedAt": "2026-09-19T10:15:10.914Z"
+      "fetchedAt": "2026-09-19T12:12:26.364Z"
      },
      "edge": -0.018
     }
@@ -5787,7 +6408,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": -455,
      "away": 350,
@@ -6205,7 +6826,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:21.856Z",
-    "desig": "2026-09-19T10:15:10.914Z"
+    "desig": "2026-09-19T10:15:10.914Z",
+    "prekick": "2026-09-19T12:12:26.364Z"
    },
    "injuryReport": {
     "away": [
@@ -6308,7 +6930,7 @@
       "date": "2026-08-31T21:46Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -6445,7 +7067,29 @@
      "implied": 0.68,
      "est": 0.68,
      "why": "Bell-cow back exploits a Saints front that just allowed 5.4 YPC and two short-yardage scores to Detroit, with Cam Jordan's return still unconfirmed.",
-     "live2": null,
+     "live2": {
+      "best": 210,
+      "bestBook": "fanduel",
+      "consensus": 198,
+      "books": {
+       "draftkings": 195,
+       "betonlineag": 150,
+       "fanduel": 210,
+       "betrivers": 210,
+       "betmgm": 200,
+       "bovada": 195
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370453448%232287144223_13L88808Q11746484724Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117893",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608568149&selectionId=8776315",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811616?coupon={pickType}|4339137401|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43367-3608475-5713377&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/new-orleans-saints-baltimore-ravens-202609201300"
+      },
+      "implied": 0.3356,
+      "fetchedAt": "2026-09-19T12:12:26.125Z"
+     },
      "live": {
       "best": -225,
       "bestBook": "betmgm",
@@ -6469,7 +7113,7 @@
       "implied": 0.7312,
       "open": -290,
       "move": 18,
-      "fetchedAt": "2026-09-19T10:15:10.622Z"
+      "fetchedAt": "2026-09-19T12:12:26.124Z"
      },
      "edge": -0.051
     },
@@ -6482,14 +7126,36 @@
      "implied": 0.4,
      "est": 0.4,
      "why": "Dual-threat QB already scored a rushing TD in Week 1 and Baltimore projects to control multiple red-zone possessions.",
-     "live2": null,
+     "live2": {
+      "best": 1600,
+      "bestBook": "fanduel",
+      "consensus": 1500,
+      "books": {
+       "draftkings": 1500,
+       "betonlineag": 1100,
+       "fanduel": 1600,
+       "betrivers": 1500,
+       "betmgm": 1300,
+       "bovada": 1500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370453448%232287144224_13L88808Q1-1605206671Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117893",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608568149&selectionId=11054746",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811616?coupon={pickType}|4339137423|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43367-3608459-5713345&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/new-orleans-saints-baltimore-ravens-202609201300"
+      },
+      "implied": 0.0625,
+      "fetchedAt": "2026-09-19T12:12:26.125Z"
+     },
      "live": {
       "best": 200,
       "bestBook": "betmgm",
       "consensus": 195,
       "books": {
        "draftkings": 195,
-       "betonlineag": 180,
+       "betonlineag": 190,
        "fanduel": 195,
        "betrivers": 188,
        "betmgm": 200,
@@ -6506,7 +7172,7 @@
       "implied": 0.339,
       "open": 170,
       "move": 25,
-      "fetchedAt": "2026-09-19T10:15:10.622Z"
+      "fetchedAt": "2026-09-19T12:12:26.124Z"
      },
      "edge": 0.061
     },
@@ -6519,7 +7185,29 @@
      "implied": 0.3,
      "est": 0.3,
      "why": "Established red-zone target for Jackson in a game Baltimore should dominate time of possession and red-zone trips.",
-     "live2": null,
+     "live2": {
+      "best": 1150,
+      "bestBook": "betrivers",
+      "consensus": 850,
+      "books": {
+       "draftkings": 850,
+       "betonlineag": 550,
+       "fanduel": 850,
+       "betrivers": 1150,
+       "betmgm": 825,
+       "bovada": 850
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370453448%232287144300_13L88808Q11399276375Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117893",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608568149&selectionId=10676533",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811616?coupon={pickType}|4339131489|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43367-3608479-5713387&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/new-orleans-saints-baltimore-ravens-202609201300"
+      },
+      "implied": 0.1053,
+      "fetchedAt": "2026-09-19T12:12:26.125Z"
+     },
      "live": {
       "best": 150,
       "bestBook": "betrivers",
@@ -6543,7 +7231,7 @@
       "implied": 0.4545,
       "open": 125,
       "move": -5,
-      "fetchedAt": "2026-09-19T10:15:10.622Z"
+      "fetchedAt": "2026-09-19T12:12:26.124Z"
      },
      "edge": -0.155
     }
@@ -6558,7 +7246,29 @@
      "implied": 0.22,
      "est": 0.22,
      "why": "Scored in Week 1 and remains Shough's goal-line security blanket even as a heavy underdog.",
-     "live2": null,
+     "live2": {
+      "best": 4000,
+      "bestBook": "fanduel",
+      "consensus": 3400,
+      "books": {
+       "draftkings": 3500,
+       "betonlineag": 2600,
+       "fanduel": 4000,
+       "betrivers": 3300,
+       "betmgm": 2000,
+       "bovada": 3500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370453448%232287144313_13L88808Q1-1463828113Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117893",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608568149&selectionId=16580192",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811616?coupon={pickType}|4339137399|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43367-3608451-5713331&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/new-orleans-saints-baltimore-ravens-202609201300"
+      },
+      "implied": 0.0286,
+      "fetchedAt": "2026-09-19T12:12:26.125Z"
+     },
      "live": {
       "best": 380,
       "bestBook": "fanduel",
@@ -6582,7 +7292,7 @@
       "implied": 0.2309,
       "open": 310,
       "move": 23,
-      "fetchedAt": "2026-09-19T10:15:10.622Z"
+      "fetchedAt": "2026-09-19T12:12:26.124Z"
      },
      "edge": -0.011
     },
@@ -6595,7 +7305,29 @@
      "implied": 0.2,
      "est": 0.2,
      "why": "New lead back could inherit early goal-line work while Kamara eases back from his MCL sprain.",
-     "live2": null,
+     "live2": {
+      "best": 1400,
+      "bestBook": "fanduel",
+      "consensus": 1125,
+      "books": {
+       "draftkings": 1300,
+       "betonlineag": 650,
+       "fanduel": 1400,
+       "betrivers": 850,
+       "betmgm": 950,
+       "bovada": 1300
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370453448%232287144225_13L88808Q1-845714904Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117893",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608568149&selectionId=16602534",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811616?coupon={pickType}|4339137415|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43367-3608502-5713433&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/new-orleans-saints-baltimore-ravens-202609201300"
+      },
+      "implied": 0.0816,
+      "fetchedAt": "2026-09-19T12:12:26.125Z"
+     },
      "live": {
       "best": 175,
       "bestBook": "draftkings",
@@ -6619,7 +7351,7 @@
       "implied": 0.3774,
       "open": 135,
       "move": 30,
-      "fetchedAt": "2026-09-19T10:15:10.622Z"
+      "fetchedAt": "2026-09-19T12:12:26.124Z"
      },
      "edge": -0.177
     }
@@ -6697,7 +7429,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": -395,
      "away": 310,
@@ -6803,8 +7535,8 @@
      "name": "Justice Hill",
      "best": 500,
      "bestBook": "draftkings",
-     "consensus": 450,
-     "implied": 0.1818
+     "consensus": 455,
+     "implied": 0.1802
     },
     {
      "name": "Tyler Shough",
@@ -7110,7 +7842,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:21.370Z",
-    "desig": "2026-09-19T10:15:10.622Z"
+    "desig": "2026-09-19T10:15:10.622Z",
+    "prekick": "2026-09-19T12:12:26.125Z"
    },
    "injuryReport": {
     "away": [
@@ -7229,7 +7962,7 @@
       "date": "2026-09-16T19:07Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -7348,7 +8081,7 @@
      "live": {
       "best": 250,
       "bestBook": "fanduel",
-      "consensus": 225
+      "consensus": 230
      }
     },
     {
@@ -7374,7 +8107,29 @@
      "implied": 0.42,
      "est": 0.42,
      "why": "Bell-cow goal-line role (20 carries, 2 rush TD + a receiving TD in Wk1) in a Caley scheme built around heavy personnel near the end zone.",
-     "live2": null,
+     "live2": {
+      "best": 440,
+      "bestBook": "fanduel",
+      "consensus": 390,
+      "books": {
+       "draftkings": 390,
+       "betonlineag": 300,
+       "fanduel": 440,
+       "betrivers": 420,
+       "betmgm": 375,
+       "bovada": 390
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369954377%232285163323_13L88808Q1498526184Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117898",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608520316&selectionId=16579799",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811614?coupon={pickType}|4339061635|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43371-3607111-5708340&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/cincinnati-bengals-houston-texans-202609201300"
+      },
+      "implied": 0.2041,
+      "fetchedAt": "2026-09-19T12:12:26.279Z"
+     },
      "live": {
       "best": -135,
       "bestBook": "betmgm",
@@ -7398,7 +8153,7 @@
       "implied": 0.5935,
       "open": -145,
       "move": -1,
-      "fetchedAt": "2026-09-19T10:15:10.815Z"
+      "fetchedAt": "2026-09-19T12:12:26.279Z"
      },
      "edge": -0.173
     },
@@ -7411,7 +8166,29 @@
      "implied": 0.4,
      "est": 0.4,
      "why": "Bengals' clear lead back with goal-line volume and 6 pass targets, facing a Houston front that just lost DT Kayden McDonald to IR.",
-     "live2": null,
+     "live2": {
+      "best": 750,
+      "bestBook": "fanduel",
+      "consensus": 600,
+      "books": {
+       "draftkings": 600,
+       "betonlineag": 500,
+       "fanduel": 750,
+       "betrivers": 750,
+       "betmgm": 500,
+       "bovada": 600
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369954377%232285163405_13L88808Q11277985563Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117898",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608520316&selectionId=48289051",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811614?coupon={pickType}|4339026760|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43371-3607112-5708342&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/cincinnati-bengals-houston-texans-202609201300"
+      },
+      "implied": 0.1429,
+      "fetchedAt": "2026-09-19T12:12:26.279Z"
+     },
      "live": {
       "best": 116,
       "bestBook": "betrivers",
@@ -7435,7 +8212,7 @@
       "implied": 0.4878,
       "open": 100,
       "move": 5,
-      "fetchedAt": "2026-09-19T10:15:10.815Z"
+      "fetchedAt": "2026-09-19T12:12:26.279Z"
      },
      "edge": -0.088
     },
@@ -7448,7 +8225,29 @@
      "implied": 0.42,
      "est": 0.42,
      "why": "Elite target-share/red-zone gravity due for positive regression after an uncharacteristically quiet 2-catch Week 1.",
-     "live2": null,
+     "live2": {
+      "best": 850,
+      "bestBook": "fanduel",
+      "consensus": 750,
+      "books": {
+       "draftkings": 750,
+       "betonlineag": 550,
+       "fanduel": 850,
+       "betrivers": 850,
+       "betmgm": 750,
+       "bovada": 750
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369954377%232285163406_13L88808Q11526916627Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117898",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608520316&selectionId=26809165",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811614?coupon={pickType}|4339064183|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43371-3607165-5708450&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/cincinnati-bengals-houston-texans-202609201300"
+      },
+      "implied": 0.1176,
+      "fetchedAt": "2026-09-19T12:12:26.279Z"
+     },
      "live": {
       "best": 130,
       "bestBook": "betmgm",
@@ -7472,7 +8271,7 @@
       "implied": 0.4651,
       "open": 120,
       "move": -5,
-      "fetchedAt": "2026-09-19T10:15:10.815Z"
+      "fetchedAt": "2026-09-19T12:12:26.279Z"
      },
      "edge": -0.045
     }
@@ -7487,7 +8286,29 @@
      "implied": 0.28,
      "est": 0.28,
      "why": "Seam/red-zone TE (7 targets, TD in Wk1) lines up against a Houston LB corps decimated by injury.",
-     "live2": null,
+     "live2": {
+      "best": 3500,
+      "bestBook": "draftkings",
+      "consensus": 3300,
+      "books": {
+       "draftkings": 3500,
+       "betonlineag": 2400,
+       "fanduel": 3300,
+       "betrivers": 3300,
+       "betmgm": 3000,
+       "bovada": 3500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369954377%232285163408_13L88808Q1-1016060448Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117898",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608520316&selectionId=16580193",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811614?coupon={pickType}|4339061756|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43371-3607145-5708410&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/cincinnati-bengals-houston-texans-202609201300"
+      },
+      "implied": 0.0294,
+      "fetchedAt": "2026-09-19T12:12:26.279Z"
+     },
      "live": {
       "best": 350,
       "bestBook": "betmgm",
@@ -7511,7 +8332,7 @@
       "implied": 0.2336,
       "open": 300,
       "move": 28,
-      "fetchedAt": "2026-09-19T10:15:10.815Z"
+      "fetchedAt": "2026-09-19T12:12:26.279Z"
      },
      "edge": 0.046
     },
@@ -7524,7 +8345,29 @@
      "implied": 0.12,
      "est": 0.12,
      "why": "Change-of-pace/passing-down back who could vulture a goal-to-go snap or two if Montgomery is used more as a between-the-tackles hammer.",
-     "live2": null,
+     "live2": {
+      "best": 1800,
+      "bestBook": "fanduel",
+      "consensus": 1600,
+      "books": {
+       "draftkings": 1600,
+       "betonlineag": 1300,
+       "fanduel": 1800,
+       "betrivers": 1600,
+       "betmgm": 1700,
+       "bovada": 1600
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369954377%232285163394_13L88808Q1-1684897682Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117898",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608520316&selectionId=80633759",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811614?coupon={pickType}|4339026764|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43371-3607159-5708438&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/cincinnati-bengals-houston-texans-202609201300"
+      },
+      "implied": 0.0588,
+      "fetchedAt": "2026-09-19T12:12:26.279Z"
+     },
      "live": {
       "best": 240,
       "bestBook": "betmgm",
@@ -7548,7 +8391,7 @@
       "implied": 0.3195,
       "open": 220,
       "move": -7,
-      "fetchedAt": "2026-09-19T10:15:10.815Z"
+      "fetchedAt": "2026-09-19T12:12:26.279Z"
      },
      "edge": -0.199
     }
@@ -7626,7 +8469,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": -135,
      "away": 114,
@@ -7690,8 +8533,8 @@
      "name": "Dalton Schultz",
      "best": 250,
      "bestBook": "fanduel",
-     "consensus": 225,
-     "implied": 0.3077
+     "consensus": 230,
+     "implied": 0.303
     },
     {
      "name": "Kayshon Boutte",
@@ -7704,15 +8547,15 @@
      "name": "Xavier Hutchinson",
      "best": 310,
      "bestBook": "betrivers",
-     "consensus": 270,
-     "implied": 0.2703
+     "consensus": 275,
+     "implied": 0.2667
     },
     {
      "name": "Jaylin Noel",
      "best": 310,
      "bestBook": "fanduel",
-     "consensus": 300,
-     "implied": 0.25
+     "consensus": 290,
+     "implied": 0.2564
     },
     {
      "name": "Mike Gesicki",
@@ -8058,7 +8901,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:21.695Z",
-    "desig": "2026-09-19T10:15:10.815Z"
+    "desig": "2026-09-19T10:15:10.815Z",
+    "prekick": "2026-09-19T12:12:26.279Z"
    },
    "injuryReport": {
     "away": [
@@ -8145,7 +8989,7 @@
       "date": "2026-09-12T00:15Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -8282,7 +9126,29 @@
      "implied": 0.31,
      "est": 0.42,
      "why": "Led JAX in red-zone targets in 2025 and already has a Week 1 TD - clear top red-zone look for a hot Lawrence.",
-     "live2": null,
+     "live2": {
+      "best": 3300,
+      "bestBook": "betrivers",
+      "consensus": 3000,
+      "books": {
+       "draftkings": 3000,
+       "betonlineag": 2100,
+       "fanduel": 3000,
+       "betrivers": 3300,
+       "betmgm": 2200,
+       "bovada": 3000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376532%232286789007_13L88808Q1-1682061720Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117888",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608537882&selectionId=42217310",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811642?coupon={pickType}|4338403058|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43377-3612056-5722636&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/jacksonville-jaguars-denver-broncos-202609201605"
+      },
+      "implied": 0.0323,
+      "fetchedAt": "2026-09-19T12:12:26.728Z"
+     },
      "live": {
       "best": 325,
       "bestBook": "betrivers",
@@ -8306,7 +9172,7 @@
       "implied": 0.2469,
       "open": 278,
       "move": 27,
-      "fetchedAt": "2026-09-19T10:15:11.324Z"
+      "fetchedAt": "2026-09-19T12:12:26.728Z"
      },
      "edge": 0.173
     },
@@ -8319,7 +9185,29 @@
      "implied": 0.29,
      "est": 0.4,
      "why": "Bounce-back volume expected as DEN's X/contested-catch option after a quiet, script-driven Week 1.",
-     "live2": null,
+     "live2": {
+      "best": 2000,
+      "bestBook": "draftkings",
+      "consensus": 2000,
+      "books": {
+       "draftkings": 2000,
+       "betonlineag": 1200,
+       "fanduel": 1900,
+       "betrivers": 2000,
+       "betmgm": 2000,
+       "bovada": 2000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376532%232286788996_13L88808Q1630325894Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117888",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608537882&selectionId=16489948",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811642?coupon={pickType}|4338397622|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43377-3612029-5722582&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/jacksonville-jaguars-denver-broncos-202609201605"
+      },
+      "implied": 0.0476,
+      "fetchedAt": "2026-09-19T12:12:26.728Z"
+     },
      "live": {
       "best": 250,
       "bestBook": "betmgm",
@@ -8343,7 +9231,7 @@
       "implied": 0.2985,
       "open": 233,
       "move": 2,
-      "fetchedAt": "2026-09-19T10:15:11.324Z"
+      "fetchedAt": "2026-09-19T12:12:26.728Z"
      },
      "edge": 0.101
     },
@@ -8356,7 +9244,29 @@
      "implied": 0.28,
      "est": 0.38,
      "why": "Lawrence's trusted possession/red-zone target, scored Week 1 in an offense projected for 23+ points.",
-     "live2": null,
+     "live2": {
+      "best": 2500,
+      "bestBook": "draftkings",
+      "consensus": 2500,
+      "books": {
+       "draftkings": 2500,
+       "betonlineag": 1800,
+       "fanduel": 2500,
+       "betrivers": 2500,
+       "betmgm": 2000,
+       "bovada": 2500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376532%232286789006_13L88808Q1-1246069346Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117888",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608537882&selectionId=25672272",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811642?coupon={pickType}|4338402940|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43377-3612105-5723032&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/jacksonville-jaguars-denver-broncos-202609201605"
+      },
+      "implied": 0.0385,
+      "fetchedAt": "2026-09-19T12:12:26.728Z"
+     },
      "live": {
       "best": 300,
       "bestBook": "betmgm",
@@ -8380,7 +9290,7 @@
       "implied": 0.274,
       "open": 260,
       "move": 5,
-      "fetchedAt": "2026-09-19T10:15:11.324Z"
+      "fetchedAt": "2026-09-19T12:12:26.728Z"
      },
      "edge": 0.106
     }
@@ -8395,7 +9305,27 @@
      "implied": 0.15,
      "est": 0.16,
      "why": "Rookie already has a Week 1 TD and a role in a run-away-favorite game script that could produce garbage-time/clean-up scores.",
-     "live2": null,
+     "live2": {
+      "best": 16000,
+      "bestBook": "draftkings",
+      "consensus": 15000,
+      "books": {
+       "draftkings": 16000,
+       "betonlineag": 8900,
+       "betrivers": 15000,
+       "betmgm": 8000,
+       "bovada": 15000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376532%232286789014_13L88808Q1-1585722573Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117888",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811642?coupon={pickType}|4338402932|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43377-3612041-5722606&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/jacksonville-jaguars-denver-broncos-202609201605"
+      },
+      "implied": 0.0066,
+      "fetchedAt": "2026-09-19T12:12:26.728Z"
+     },
      "live": {
       "best": 1500,
       "bestBook": "draftkings",
@@ -8419,7 +9349,7 @@
       "implied": 0.069,
       "open": 1250,
       "move": 100,
-      "fetchedAt": "2026-09-19T10:15:11.324Z"
+      "fetchedAt": "2026-09-19T12:12:26.728Z"
      },
      "edge": 0.091
     },
@@ -8432,7 +9362,27 @@
      "implied": 0.23,
      "est": 0.15,
      "why": "Pass-game role (4-of-4 targets Week 1) gives him check-down/screen TD equity even if Dobbins gets goal-line work.",
-     "live2": null,
+     "live2": {
+      "best": 2500,
+      "bestBook": "betrivers",
+      "consensus": 2200,
+      "books": {
+       "draftkings": 2200,
+       "betonlineag": 1700,
+       "betrivers": 2500,
+       "betmgm": 1300,
+       "bovada": 2200
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376532%232286788997_13L88808Q11266037842Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117888",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811642?coupon={pickType}|4338403064|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43377-3612084-5722692&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/jacksonville-jaguars-denver-broncos-202609201605"
+      },
+      "implied": 0.0435,
+      "fetchedAt": "2026-09-19T12:12:26.728Z"
+     },
      "live": {
       "best": 275,
       "bestBook": "betrivers",
@@ -8454,7 +9404,7 @@
       "implied": 0.2857,
       "open": 250,
       "move": 0,
-      "fetchedAt": "2026-09-19T10:15:11.324Z"
+      "fetchedAt": "2026-09-19T12:12:26.728Z"
      },
      "edge": -0.136
     }
@@ -8532,7 +9482,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": -148,
      "away": 124,
@@ -8922,7 +9872,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:22.431Z",
-    "desig": "2026-09-19T10:15:11.324Z"
+    "desig": "2026-09-19T10:15:11.324Z",
+    "prekick": "2026-09-19T12:12:26.728Z"
    },
    "injuryReport": {
     "away": [
@@ -8993,7 +9944,7 @@
       "date": "2026-08-22T00:29Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -9117,7 +10068,29 @@
      "implied": 0.55,
      "est": 0.55,
      "why": "29 touches and all 6 targets caught in Week 1, including both Raiders' non-Bech TDs - a true bell-cow funneled the ball near the goal line.",
-     "live2": null,
+     "live2": {
+      "best": 650,
+      "bestBook": "fanduel",
+      "consensus": 475,
+      "books": {
+       "draftkings": 475,
+       "betonlineag": 400,
+       "fanduel": 650,
+       "betrivers": 430,
+       "betmgm": 500,
+       "bovada": 475
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370938820%232289015772_13L88808Q11479143646Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117892",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608610397&selectionId=48895943",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811643?coupon={pickType}|4339193453|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43378-3608409-5713196&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/las-vegas-raiders-los-angeles-chargers-202609201605"
+      },
+      "implied": 0.1739,
+      "fetchedAt": "2026-09-19T12:12:26.826Z"
+     },
      "live": {
       "best": -110,
       "bestBook": "fanduel",
@@ -9141,7 +10114,7 @@
       "implied": 0.5475,
       "open": -141,
       "move": 20,
-      "fetchedAt": "2026-09-19T10:15:11.430Z"
+      "fetchedAt": "2026-09-19T12:12:26.826Z"
      },
      "edge": 0.002
     },
@@ -9154,7 +10127,29 @@
      "implied": 0.6,
      "est": 0.58,
      "why": "Led LAC in carries/rush yards Week 1 with the goal-line TD; -150 DraftKings price implies clear lead-back role again vs a thin LV front seven.",
-     "live2": null,
+     "live2": {
+      "best": 410,
+      "bestBook": "betrivers",
+      "consensus": 330,
+      "books": {
+       "draftkings": 320,
+       "betonlineag": 250,
+       "fanduel": 390,
+       "betrivers": 410,
+       "betmgm": 340,
+       "bovada": 320
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370938820%232289015761_13L88808Q1-1556602657Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117892",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608610397&selectionId=48700658",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811643?coupon={pickType}|4339226597|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43378-3608391-5713160&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/las-vegas-raiders-los-angeles-chargers-202609201605"
+      },
+      "implied": 0.2326,
+      "fetchedAt": "2026-09-19T12:12:26.826Z"
+     },
      "live": {
       "best": -141,
       "bestBook": "betrivers",
@@ -9178,7 +10173,7 @@
       "implied": 0.6255,
       "open": -145,
       "move": -22,
-      "fetchedAt": "2026-09-19T10:15:11.430Z"
+      "fetchedAt": "2026-09-19T12:12:26.826Z"
      },
      "edge": -0.045
     },
@@ -9191,7 +10186,29 @@
      "implied": 0.35,
      "est": 0.35,
      "why": "Went 5-for-5 targets Week 1 and profiles as McDaniel's top red-zone safety valve with McConkey banged up.",
-     "live2": null,
+     "live2": {
+      "best": 4500,
+      "bestBook": "betrivers",
+      "consensus": 2500,
+      "books": {
+       "draftkings": 2500,
+       "betonlineag": 1900,
+       "fanduel": 2500,
+       "betrivers": 4500,
+       "betmgm": 2800,
+       "bovada": 2500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370938820%232289015764_13L88808Q1843120611Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117892",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608610397&selectionId=14033053",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811643?coupon={pickType}|4339226472|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43378-3608345-5712771&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/las-vegas-raiders-los-angeles-chargers-202609201605"
+      },
+      "implied": 0.0385,
+      "fetchedAt": "2026-09-19T12:12:26.826Z"
+     },
      "live": {
       "best": 400,
       "bestBook": "betrivers",
@@ -9215,7 +10232,7 @@
       "implied": 0.2646,
       "open": 340,
       "move": -62,
-      "fetchedAt": "2026-09-19T10:15:11.430Z"
+      "fetchedAt": "2026-09-19T12:12:26.826Z"
      },
      "edge": 0.085
     }
@@ -9230,7 +10247,29 @@
      "implied": 0.18,
      "est": 0.18,
      "why": "Already has a Week 1 red-zone TD from Cousins and could see more high-leverage targets if Bowers is snap-limited.",
-     "live2": null,
+     "live2": {
+      "best": 10000,
+      "bestBook": "draftkings",
+      "consensus": 7750,
+      "books": {
+       "draftkings": 10000,
+       "betonlineag": 3600,
+       "fanduel": 10000,
+       "betrivers": 5500,
+       "betmgm": 4500,
+       "bovada": 10000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370938820%232289015777_13L88808Q1-488560338Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117892",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608610397&selectionId=48141856",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811643?coupon={pickType}|4339193432|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43378-3608403-5713184&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/las-vegas-raiders-los-angeles-chargers-202609201605"
+      },
+      "implied": 0.0127,
+      "fetchedAt": "2026-09-19T12:12:26.826Z"
+     },
      "live": {
       "best": 700,
       "bestBook": "draftkings",
@@ -9254,7 +10293,7 @@
       "implied": 0.1403,
       "open": 475,
       "move": 138,
-      "fetchedAt": "2026-09-19T10:15:11.430Z"
+      "fetchedAt": "2026-09-19T12:12:26.826Z"
      },
      "edge": 0.04
     },
@@ -9267,7 +10306,29 @@
      "implied": 0.15,
      "est": 0.15,
      "why": "Big-slot mismatch geared for red-zone work behind Njoku, and he was 2-for-2 targets Week 1.",
-     "live2": null,
+     "live2": {
+      "best": 6600,
+      "bestBook": "betrivers",
+      "consensus": 6000,
+      "books": {
+       "draftkings": 6500,
+       "betonlineag": 3600,
+       "fanduel": 5500,
+       "betrivers": 6600,
+       "betmgm": 3300,
+       "bovada": 6500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370938820%232289015768_13L88808Q1-519441527Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117892",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608610397&selectionId=87677021",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811643?coupon={pickType}|4339226613|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43378-3608368-5712931&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/las-vegas-raiders-los-angeles-chargers-202609201605"
+      },
+      "implied": 0.0164,
+      "fetchedAt": "2026-09-19T12:12:26.826Z"
+     },
      "live": {
       "best": 550,
       "bestBook": "draftkings",
@@ -9291,7 +10352,7 @@
       "implied": 0.1701,
       "open": 510,
       "move": -22,
-      "fetchedAt": "2026-09-19T10:15:11.430Z"
+      "fetchedAt": "2026-09-19T12:12:26.826Z"
      },
      "edge": -0.02
     }
@@ -9369,7 +10430,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": -305,
      "away": 245,
@@ -9703,7 +10764,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:22.540Z",
-    "desig": "2026-09-19T10:15:11.431Z"
+    "desig": "2026-09-19T10:15:11.431Z",
+    "prekick": "2026-09-19T12:12:26.826Z"
    },
    "injuryReport": {
     "away": [
@@ -9774,7 +10836,7 @@
       "date": "2026-09-15T23:20Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -9911,7 +10973,29 @@
      "implied": 0.42,
      "est": 0.42,
      "why": "Bell-cow/goal-line back who scored and caught a TD last week; Dallas likely trails again, boosting his check-down/red-zone work.",
-     "live2": null,
+     "live2": {
+      "best": 320,
+      "bestBook": "fanduel",
+      "consensus": 298,
+      "books": {
+       "draftkings": 300,
+       "betonlineag": 250,
+       "fanduel": 320,
+       "betrivers": 295,
+       "betmgm": 270,
+       "bovada": 300
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370413872%232286953022_13L88808Q12056061885Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117900",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608506537&selectionId=37101846",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811644?coupon={pickType}|4338331710|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43379-3607018-5707564&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/washington-commanders-dallas-cowboys-202609201625"
+      },
+      "implied": 0.2513,
+      "fetchedAt": "2026-09-19T12:12:27.000Z"
+     },
      "live": {
       "best": -175,
       "bestBook": "betmgm",
@@ -9935,7 +11019,7 @@
       "implied": 0.6491,
       "open": -185,
       "move": 0,
-      "fetchedAt": "2026-09-19T10:15:11.618Z"
+      "fetchedAt": "2026-09-19T12:12:26.999Z"
      },
      "edge": -0.229
     },
@@ -9948,7 +11032,29 @@
      "implied": 0.4,
      "est": 0.4,
      "why": "Confirmed short-yardage/goal-line role (TD, 7 first-down runs Wk1) against a DAL run defense that just allowed 165 yards.",
-     "live2": null,
+     "live2": {
+      "best": 800,
+      "bestBook": "betrivers",
+      "consensus": 700,
+      "books": {
+       "draftkings": 700,
+       "betonlineag": 500,
+       "fanduel": 700,
+       "betrivers": 800,
+       "betmgm": 600,
+       "bovada": 700
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370413872%232286953035_13L88808Q1739390840Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117900",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608506537&selectionId=87409614",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811644?coupon={pickType}|4338331692|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43379-3607023-5707574&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/washington-commanders-dallas-cowboys-202609201625"
+      },
+      "implied": 0.125,
+      "fetchedAt": "2026-09-19T12:12:27.000Z"
+     },
      "live": {
       "best": 120,
       "bestBook": "betrivers",
@@ -9972,7 +11078,7 @@
       "implied": 0.4695,
       "open": 105,
       "move": 8,
-      "fetchedAt": "2026-09-19T10:15:11.618Z"
+      "fetchedAt": "2026-09-19T12:12:26.999Z"
      },
      "edge": -0.069
     },
@@ -9985,7 +11091,29 @@
      "implied": 0.35,
      "est": 0.35,
      "why": "Target hog (8 looks, scored Wk1) who draws top coverage away from a WSH defense focused on stopping the run.",
-     "live2": null,
+     "live2": {
+      "best": 800,
+      "bestBook": "draftkings",
+      "consensus": 800,
+      "books": {
+       "draftkings": 800,
+       "betonlineag": 550,
+       "fanduel": 800,
+       "betrivers": 800,
+       "betmgm": 575,
+       "bovada": 800
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370413872%232286953023_13L88808Q1-1472312629Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117900",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608506537&selectionId=16602369",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811644?coupon={pickType}|4338331730|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43379-3606999-5707526&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/washington-commanders-dallas-cowboys-202609201625"
+      },
+      "implied": 0.1111,
+      "fetchedAt": "2026-09-19T12:12:27.000Z"
+     },
      "live": {
       "best": 120,
       "bestBook": "draftkings",
@@ -10009,7 +11137,7 @@
       "implied": 0.4673,
       "open": 105,
       "move": 9,
-      "fetchedAt": "2026-09-19T10:15:11.618Z"
+      "fetchedAt": "2026-09-19T12:12:26.999Z"
      },
      "edge": -0.117
     }
@@ -10024,7 +11152,29 @@
      "implied": 0.16,
      "est": 0.16,
      "why": "Dak's traditional red-zone security blanket was quiet (2 targets) Wk1, setting up positive regression near the goal line.",
-     "live2": null,
+     "live2": {
+      "best": 2700,
+      "bestBook": "fanduel",
+      "consensus": 2200,
+      "books": {
+       "draftkings": 2200,
+       "betonlineag": 1800,
+       "fanduel": 2700,
+       "betrivers": 2200,
+       "betmgm": 1650,
+       "bovada": 2200
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370413872%232286953025_13L88808Q1-691724415Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117900",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608506537&selectionId=27163247",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811644?coupon={pickType}|4338331727|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43379-3607069-5707666&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/washington-commanders-dallas-cowboys-202609201625"
+      },
+      "implied": 0.0435,
+      "fetchedAt": "2026-09-19T12:12:27.000Z"
+     },
      "live": {
       "best": 260,
       "bestBook": "draftkings",
@@ -10048,7 +11198,7 @@
       "implied": 0.2778,
       "open": 250,
       "move": 10,
-      "fetchedAt": "2026-09-19T10:15:11.618Z"
+      "fetchedAt": "2026-09-19T12:12:26.999Z"
      },
      "edge": -0.118
     },
@@ -10061,7 +11211,29 @@
      "implied": 0.2,
      "est": 0.2,
      "why": "Bounces back vs. a Dallas secondary already exposed for coverage busts.",
-     "live2": null,
+     "live2": {
+      "best": 1900,
+      "bestBook": "betrivers",
+      "consensus": 1700,
+      "books": {
+       "draftkings": 1700,
+       "betonlineag": 1200,
+       "fanduel": 1700,
+       "betrivers": 1900,
+       "betmgm": 1250,
+       "bovada": 1700
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370413872%232286953037_13L88808Q1-1359965836Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117900",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608506537&selectionId=12302590",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811644?coupon={pickType}|4338339707|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43379-3607057-5707642&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/washington-commanders-dallas-cowboys-202609201625"
+      },
+      "implied": 0.0556,
+      "fetchedAt": "2026-09-19T12:12:27.000Z"
+     },
      "live": {
       "best": 220,
       "bestBook": "betrivers",
@@ -10085,7 +11257,7 @@
       "implied": 0.3333,
       "open": 195,
       "move": 5,
-      "fetchedAt": "2026-09-19T10:15:11.618Z"
+      "fetchedAt": "2026-09-19T12:12:26.999Z"
      },
      "edge": -0.133
     }
@@ -10162,7 +11334,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": -218,
      "away": 180,
@@ -10552,7 +11724,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:22.875Z",
-    "desig": "2026-09-19T10:15:11.618Z"
+    "desig": "2026-09-19T10:15:11.618Z",
+    "prekick": "2026-09-19T12:12:27.000Z"
    },
    "injuryReport": {
     "away": [
@@ -10615,7 +11788,7 @@
       "date": "2026-09-12T18:20Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -10745,7 +11918,29 @@
      "implied": 0.55,
      "est": 0.55,
      "why": "12 targets in the opener and Arizona's clear #1 read with Conner off the field to soak up check-downs.",
-     "live2": null,
+     "live2": {
+      "best": 1700,
+      "bestBook": "fanduel",
+      "consensus": 1500,
+      "books": {
+       "draftkings": 1500,
+       "betonlineag": 1000,
+       "fanduel": 1700,
+       "betrivers": 1700,
+       "betmgm": 1200,
+       "bovada": 1500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370660208%232287899376_13L88808Q1-793431613Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117891",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608756229&selectionId=43845465",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811645?coupon={pickType}|4339471963|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43381-3619837-5740624&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/seattle-seahawks-arizona-cardinals-202609201625"
+      },
+      "implied": 0.0625,
+      "fetchedAt": "2026-09-19T12:12:26.911Z"
+     },
      "live": {
       "best": 195,
       "bestBook": "fanduel",
@@ -10769,7 +11964,7 @@
       "implied": 0.3509,
       "open": 190,
       "move": -5,
-      "fetchedAt": "2026-09-19T10:15:11.528Z"
+      "fetchedAt": "2026-09-19T12:12:26.911Z"
      },
      "edge": 0.199
     },
@@ -10782,7 +11977,29 @@
      "implied": 0.42,
      "est": 0.42,
      "why": "Rookie already scored in Week 1 and is the de facto goal-line back with Conner on IR.",
-     "live2": null,
+     "live2": {
+      "best": 1600,
+      "bestBook": "fanduel",
+      "consensus": 1325,
+      "books": {
+       "draftkings": 1500,
+       "betonlineag": 850,
+       "fanduel": 1600,
+       "betrivers": 1150,
+       "betmgm": 1050,
+       "bovada": 1500
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370660208%232287899374_13L88808Q1-2078816456Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117891",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608756229&selectionId=60542609",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811645?coupon={pickType}|4339463241|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43381-3619847-5740644&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/seattle-seahawks-arizona-cardinals-202609201625"
+      },
+      "implied": 0.0702,
+      "fetchedAt": "2026-09-19T12:12:26.911Z"
+     },
      "live": {
       "best": 195,
       "bestBook": "draftkings",
@@ -10806,7 +12023,7 @@
       "implied": 0.3597,
       "open": 170,
       "move": 8,
-      "fetchedAt": "2026-09-19T10:15:11.528Z"
+      "fetchedAt": "2026-09-19T12:12:26.911Z"
      },
      "edge": 0.06
     },
@@ -10819,7 +12036,29 @@
      "implied": 0.4,
      "est": 0.4,
      "why": "Remains the clear high-volume WR1 even with Lock at QB, and Arizona's secondary is down a corner and a safety.",
-     "live2": null,
+     "live2": {
+      "best": 1000,
+      "bestBook": "draftkings",
+      "consensus": 950,
+      "books": {
+       "draftkings": 1000,
+       "betonlineag": 600,
+       "fanduel": 1000,
+       "betrivers": 900,
+       "betmgm": 750,
+       "bovada": 1000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370660208%232287899447_13L88808Q1491696445Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117891",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608756229&selectionId=36914881",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811645?coupon={pickType}|4339486666|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43381-3619824-5740596&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/seattle-seahawks-arizona-cardinals-202609201625"
+      },
+      "implied": 0.0952,
+      "fetchedAt": "2026-09-19T12:12:26.911Z"
+     },
      "live": {
       "best": 140,
       "bestBook": "draftkings",
@@ -10843,7 +12082,7 @@
       "implied": 0.4292,
       "open": 128,
       "move": 5,
-      "fetchedAt": "2026-09-19T10:15:11.528Z"
+      "fetchedAt": "2026-09-19T12:12:26.911Z"
      },
      "edge": -0.029
     }
@@ -10858,7 +12097,29 @@
      "implied": 0.2,
      "est": 0.2,
      "why": "Goal-line vulture risk alongside Love as the early-down complement piece.",
-     "live2": null,
+     "live2": {
+      "best": 1800,
+      "bestBook": "fanduel",
+      "consensus": 1450,
+      "books": {
+       "draftkings": 1600,
+       "betonlineag": 1200,
+       "fanduel": 1800,
+       "betrivers": 1300,
+       "betmgm": 1300,
+       "bovada": 1600
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370660208%232287899375_13L88808Q11518276393Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117891",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608756229&selectionId=37746758",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811645?coupon={pickType}|4339463263|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43381-3619864-5740678&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/seattle-seahawks-arizona-cardinals-202609201625"
+      },
+      "implied": 0.0645,
+      "fetchedAt": "2026-09-19T12:12:26.911Z"
+     },
      "live": {
       "best": 210,
       "bestBook": "fanduel",
@@ -10882,7 +12143,7 @@
       "implied": 0.33,
       "open": 210,
       "move": -7,
-      "fetchedAt": "2026-09-19T10:15:11.528Z"
+      "fetchedAt": "2026-09-19T12:12:26.911Z"
      },
      "edge": -0.13
     },
@@ -10895,7 +12156,29 @@
      "implied": 0.16,
      "est": 0.16,
      "why": "A likely red-zone safety-valve for Lock in his first start since 2024.",
-     "live2": null,
+     "live2": {
+      "best": 3000,
+      "bestBook": "fanduel",
+      "consensus": 2800,
+      "books": {
+       "draftkings": 2800,
+       "betonlineag": 2400,
+       "fanduel": 3000,
+       "betrivers": 3000,
+       "betmgm": 2200,
+       "bovada": 2800
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370660208%232287899449_13L88808Q1-1777293312Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117891",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608756229&selectionId=48504871",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811645?coupon={pickType}|4339486746|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43381-3619819-5740588&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/seattle-seahawks-arizona-cardinals-202609201625"
+      },
+      "implied": 0.0345,
+      "fetchedAt": "2026-09-19T12:12:26.911Z"
+     },
      "live": {
       "best": 310,
       "bestBook": "fanduel",
@@ -10919,7 +12202,7 @@
       "implied": 0.2469,
       "open": 290,
       "move": 15,
-      "fetchedAt": "2026-09-19T10:15:11.528Z"
+      "fetchedAt": "2026-09-19T12:12:26.911Z"
      },
      "edge": -0.087
     }
@@ -10997,7 +12280,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": 170,
      "away": -205,
@@ -11401,7 +12684,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:22.696Z",
-    "desig": "2026-09-19T10:15:11.529Z"
+    "desig": "2026-09-19T10:15:11.529Z",
+    "prekick": "2026-09-19T12:12:26.911Z"
    },
    "injuryReport": {
     "away": [
@@ -11520,7 +12804,7 @@
       "date": "2026-09-08T20:42Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -11570,7 +12854,7 @@
      "live": {
       "best": -220,
       "bestBook": "betmgm",
-      "consensus": -242
+      "consensus": -247
      }
     },
     {
@@ -11591,8 +12875,8 @@
      "implied": 0.35,
      "live": {
       "best": 190,
-      "bestBook": "fanduel",
-      "consensus": 185
+      "bestBook": "draftkings",
+      "consensus": 190
      }
     },
     {
@@ -11601,9 +12885,9 @@
      "price": null,
      "implied": 0.3,
      "live": {
-      "best": 210,
-      "bestBook": "fanduel",
-      "consensus": 200
+      "best": 215,
+      "bestBook": "draftkings",
+      "consensus": 210
      }
     },
     {
@@ -11614,7 +12898,7 @@
      "live": {
       "best": 320,
       "bestBook": "betrivers",
-      "consensus": 305
+      "consensus": 300
      }
     },
     {
@@ -11650,18 +12934,40 @@
      "implied": 0.55,
      "est": 0.55,
      "why": "Workhorse red-zone role plus a likely blowout script means heavy high-value touches near the goal line.",
-     "live2": null,
+     "live2": {
+      "best": 240,
+      "bestBook": "fanduel",
+      "consensus": 235,
+      "books": {
+       "draftkings": 235,
+       "betonlineag": 200,
+       "fanduel": 240,
+       "betrivers": 240,
+       "betmgm": 210,
+       "bovada": 235
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370776420%232288373326_13L88808Q1-1442390665Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117887",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608753343&selectionId=10609932",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811646?coupon={pickType}|4339380754|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43380-3612025-5722575&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/miami-dolphins-san-francisco-49ers-202609201625"
+      },
+      "implied": 0.2985,
+      "fetchedAt": "2026-09-19T12:12:27.081Z"
+     },
      "live": {
       "best": -220,
       "bestBook": "betmgm",
-      "consensus": -242,
+      "consensus": -247,
       "books": {
-       "draftkings": -240,
+       "draftkings": -245,
        "betonlineag": -250,
        "fanduel": -240,
        "betrivers": -250,
        "betmgm": -220,
-       "bovada": -245
+       "bovada": -250
       },
       "links": {
        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369881274%232284858220_13L88808Q1-1377627368Q20",
@@ -11671,12 +12977,12 @@
        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43380-3612000-5722525&type=Single",
        "bovada": "https://www.bovada.lv/sports/football/nfl/miami-dolphins-san-francisco-49ers-202609201625"
       },
-      "implied": 0.7076,
+      "implied": 0.7118,
       "open": -250,
-      "move": 8,
-      "fetchedAt": "2026-09-19T10:15:11.724Z"
+      "move": 3,
+      "fetchedAt": "2026-09-19T12:12:27.080Z"
      },
-     "edge": -0.158
+     "edge": -0.162
     },
     {
      "name": "Mike Evans",
@@ -11687,7 +12993,29 @@
      "implied": 0.45,
      "est": 0.45,
      "why": "Elite go/fade red-zone weapon (34 TD catches on such routes since 2018) vs. a Miami secondary breaking in inexperienced corners.",
-     "live2": null,
+     "live2": {
+      "best": 1000,
+      "bestBook": "draftkings",
+      "consensus": 975,
+      "books": {
+       "draftkings": 1000,
+       "betonlineag": 600,
+       "fanduel": 1000,
+       "betrivers": 950,
+       "betmgm": 950,
+       "bovada": 1000
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370776420%232288373328_13L88808Q1-1809939904Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117887",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608753343&selectionId=48244063",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811646?coupon={pickType}|4339383449|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43380-3611997-5722519&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/miami-dolphins-san-francisco-49ers-202609201625"
+      },
+      "implied": 0.093,
+      "fetchedAt": "2026-09-19T12:12:27.081Z"
+     },
      "live": {
       "best": 155,
       "bestBook": "betmgm",
@@ -11711,7 +13039,7 @@
       "implied": 0.4255,
       "open": 135,
       "move": 0,
-      "fetchedAt": "2026-09-19T10:15:11.724Z"
+      "fetchedAt": "2026-09-19T12:12:27.080Z"
      },
      "edge": 0.024
     },
@@ -11724,18 +13052,40 @@
      "implied": 0.35,
      "est": 0.35,
      "why": "Shanahan leans on Kittle in the red zone; due for positive regression after only 2 targets in Week 1.",
-     "live2": null,
+     "live2": {
+      "best": 1600,
+      "bestBook": "draftkings",
+      "consensus": 1500,
+      "books": {
+       "draftkings": 1600,
+       "betonlineag": 1100,
+       "fanduel": 1500,
+       "betrivers": 1500,
+       "betmgm": 1100,
+       "bovada": 1600
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370776420%232288373330_13L88808Q11108077714Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117887",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608753343&selectionId=10680468",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811646?coupon={pickType}|4339383443|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43380-3611969-5722463&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/miami-dolphins-san-francisco-49ers-202609201625"
+      },
+      "implied": 0.0625,
+      "fetchedAt": "2026-09-19T12:12:27.081Z"
+     },
      "live": {
       "best": 190,
-      "bestBook": "fanduel",
-      "consensus": 185,
+      "bestBook": "draftkings",
+      "consensus": 190,
       "books": {
-       "draftkings": 185,
-       "betonlineag": 180,
+       "draftkings": 190,
+       "betonlineag": 190,
        "fanduel": 190,
        "betrivers": 185,
        "betmgm": 165,
-       "bovada": 185
+       "bovada": 190
       },
       "links": {
        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369881274%232284858222_13L88808Q1-2099105975Q20",
@@ -11745,12 +13095,12 @@
        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43380-3611967-5722459&type=Single",
        "bovada": "https://www.bovada.lv/sports/football/nfl/miami-dolphins-san-francisco-49ers-202609201625"
       },
-      "implied": 0.3509,
+      "implied": 0.3448,
       "open": 175,
-      "move": 10,
-      "fetchedAt": "2026-09-19T10:15:11.724Z"
+      "move": 15,
+      "fetchedAt": "2026-09-19T12:12:27.080Z"
      },
-     "edge": -0.001
+     "edge": 0.005
     }
    ],
    "value": [
@@ -11763,18 +13113,40 @@
      "implied": 0.18,
      "est": 0.18,
      "why": "Already scored in Week 1 as the rotational X/Z piece; a lopsided script should add extra red-zone snaps.",
-     "live2": null,
+     "live2": {
+      "best": 3300,
+      "bestBook": "betrivers",
+      "consensus": 2800,
+      "books": {
+       "draftkings": 2800,
+       "betonlineag": 1800,
+       "fanduel": 3000,
+       "betrivers": 3300,
+       "betmgm": 2200,
+       "bovada": 2800
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370776420%232288373331_13L88808Q1754038044Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117887",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608753343&selectionId=41139680",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811646?coupon={pickType}|4339383477|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43380-3611962-5722449&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/miami-dolphins-san-francisco-49ers-202609201625"
+      },
+      "implied": 0.0345,
+      "fetchedAt": "2026-09-19T12:12:27.081Z"
+     },
      "live": {
       "best": 320,
       "bestBook": "betrivers",
-      "consensus": 305,
+      "consensus": 300,
       "books": {
-       "draftkings": 310,
+       "draftkings": 300,
        "betonlineag": 260,
        "fanduel": 300,
        "betrivers": 320,
        "betmgm": 300,
-       "bovada": 310
+       "bovada": 300
       },
       "links": {
        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369881274%232284858226_13L88808Q1785301666Q20",
@@ -11784,12 +13156,12 @@
        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43380-3611968-5722461&type=Single",
        "bovada": "https://www.bovada.lv/sports/football/nfl/miami-dolphins-san-francisco-49ers-202609201625"
       },
-      "implied": 0.2469,
+      "implied": 0.25,
       "open": 310,
-      "move": -5,
-      "fetchedAt": "2026-09-19T10:15:11.724Z"
+      "move": -10,
+      "fetchedAt": "2026-09-19T12:12:27.080Z"
      },
-     "edge": -0.067
+     "edge": -0.07
     },
     {
      "name": "De'Von Achane",
@@ -11800,7 +13172,29 @@
      "implied": 0.2,
      "est": 0.2,
      "why": "Miami's only proven explosive-play threat and likeliest scoring outlet even while trailing big.",
-     "live2": null,
+     "live2": {
+      "best": 1000,
+      "bestBook": "fanduel",
+      "consensus": 800,
+      "books": {
+       "draftkings": 850,
+       "betonlineag": 650,
+       "fanduel": 1000,
+       "betrivers": 750,
+       "betmgm": 525,
+       "bovada": 850
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370776420%232288373336_13L88808Q11304800960Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117887",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608753343&selectionId=60160115",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811646?coupon={pickType}|4339383450|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43380-3612004-5722533&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/miami-dolphins-san-francisco-49ers-202609201625"
+      },
+      "implied": 0.1111,
+      "fetchedAt": "2026-09-19T12:12:27.081Z"
+     },
      "live": {
       "best": 135,
       "bestBook": "fanduel",
@@ -11824,7 +13218,7 @@
       "implied": 0.4348,
       "open": 120,
       "move": 10,
-      "fetchedAt": "2026-09-19T10:15:11.724Z"
+      "fetchedAt": "2026-09-19T12:12:27.080Z"
      },
      "edge": -0.235
     }
@@ -11902,7 +13296,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": -900,
      "away": 600,
@@ -11931,8 +13325,8 @@
      "name": "Christian McCaffrey",
      "best": -220,
      "bestBook": "betmgm",
-     "consensus": -242,
-     "implied": 0.7076
+     "consensus": -247,
+     "implied": 0.7118
     },
     {
      "name": "De'Von Achane",
@@ -11951,9 +13345,9 @@
     {
      "name": "George Kittle",
      "best": 190,
-     "bestBook": "fanduel",
-     "consensus": 185,
-     "implied": 0.3509
+     "bestBook": "draftkings",
+     "consensus": 190,
+     "implied": 0.3448
     },
     {
      "name": "Kaelon Black",
@@ -11964,10 +13358,10 @@
     },
     {
      "name": "Deebo Samuel",
-     "best": 210,
-     "bestBook": "fanduel",
-     "consensus": 200,
-     "implied": 0.3333
+     "best": 215,
+     "bestBook": "draftkings",
+     "consensus": 210,
+     "implied": 0.3226
     },
     {
      "name": "Brock Purdy",
@@ -11987,8 +13381,8 @@
      "name": "Demarcus Robinson",
      "best": 320,
      "bestBook": "betrivers",
-     "consensus": 305,
-     "implied": 0.2469
+     "consensus": 300,
+     "implied": 0.25
     },
     {
      "name": "Caleb Douglas",
@@ -12311,7 +13705,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:22.956Z",
-    "desig": "2026-09-19T10:15:11.724Z"
+    "desig": "2026-09-19T10:15:11.724Z",
+    "prekick": "2026-09-19T12:12:27.081Z"
    },
    "injuryReport": {
     "away": [
@@ -12382,7 +13777,7 @@
       "date": "2026-09-16T20:04Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -12519,7 +13914,29 @@
      "implied": 0.574,
      "est": 0.6,
      "why": "Bell-cow work (23-173-1 rush) behind a downhill scheme vs. a Colts front that just allowed 5.1 YPC to Jonathan Taylor.",
-     "live2": null,
+     "live2": {
+      "best": 300,
+      "bestBook": "betrivers",
+      "consensus": 255,
+      "books": {
+       "draftkings": 260,
+       "betonlineag": 200,
+       "fanduel": 250,
+       "betrivers": 300,
+       "betmgm": 210,
+       "bovada": 260
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370409970%232286939209_13L88808Q1917552914Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117889",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608488352&selectionId=40845134",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811657?coupon={pickType}|4338197134|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43382-3611802-5721676&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/indianapolis-colts-kansas-city-chiefs-202609202020"
+      },
+      "implied": 0.2817,
+      "fetchedAt": "2026-09-19T12:12:27.157Z"
+     },
      "live": {
       "best": -195,
       "bestBook": "betrivers",
@@ -12543,7 +13960,7 @@
       "implied": 0.6835,
       "open": -220,
       "move": 4,
-      "fetchedAt": "2026-09-19T10:15:11.824Z"
+      "fetchedAt": "2026-09-19T12:12:27.157Z"
      },
      "edge": -0.084
     },
@@ -12556,7 +13973,29 @@
      "implied": 0.338,
      "est": 0.42,
      "why": "KC's revamped, thinned secondary is Colts' problem, not Kelce's — he's Mahomes' top red-zone read against a shaky Colts LB/S room.",
-     "live2": null,
+     "live2": {
+      "best": 1500,
+      "bestBook": "fanduel",
+      "consensus": 1300,
+      "books": {
+       "draftkings": 1400,
+       "betonlineag": 1000,
+       "fanduel": 1500,
+       "betrivers": 1200,
+       "betmgm": 1200,
+       "bovada": 1400
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370409970%232286939212_13L88808Q1321951862Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117889",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608488352&selectionId=8874189",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811657?coupon={pickType}|4338197128|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43382-3611765-5721495&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/indianapolis-colts-kansas-city-chiefs-202609202020"
+      },
+      "implied": 0.0714,
+      "fetchedAt": "2026-09-19T12:12:27.157Z"
+     },
      "live": {
       "best": 180,
       "bestBook": "draftkings",
@@ -12580,7 +14019,7 @@
       "implied": 0.3571,
       "open": 175,
       "move": 5,
-      "fetchedAt": "2026-09-19T10:15:11.824Z"
+      "fetchedAt": "2026-09-19T12:12:27.157Z"
      },
      "edge": 0.063
     },
@@ -12593,7 +14032,29 @@
      "implied": 0.636,
      "est": 0.62,
      "why": "Two-TD workhorse in Week 1 stays central to the game plan even on the road as Indy tries to keep pace; Week 1 grading showed the model under-calling its highest-implied plays, so this stays close to the market number rather than below it.",
-     "live2": null,
+     "live2": {
+      "best": 430,
+      "bestBook": "fanduel",
+      "consensus": 338,
+      "books": {
+       "draftkings": 350,
+       "betonlineag": 300,
+       "fanduel": 430,
+       "betrivers": 325,
+       "betmgm": 310,
+       "bovada": 350
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370409970%232286939224_13L88808Q1282689831Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117889",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608488352&selectionId=16195884",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811657?coupon={pickType}|4338241602|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43382-3611790-5721652&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/indianapolis-colts-kansas-city-chiefs-202609202020"
+      },
+      "implied": 0.2283,
+      "fetchedAt": "2026-09-19T12:12:27.157Z"
+     },
      "live": {
       "best": -150,
       "bestBook": "draftkings",
@@ -12617,7 +14078,7 @@
       "implied": 0.6078,
       "open": -160,
       "move": 5,
-      "fetchedAt": "2026-09-19T10:15:11.824Z"
+      "fetchedAt": "2026-09-19T12:12:27.157Z"
      },
      "edge": 0.012
     }
@@ -12632,7 +14093,29 @@
      "implied": 0.227,
      "est": 0.28,
      "why": "Quiet Week 1 (3-18) but explosive speed vs. a Colts secondary that just got torched for chunk plays by Baltimore.",
-     "live2": null,
+     "live2": {
+      "best": 2000,
+      "bestBook": "fanduel",
+      "consensus": 1700,
+      "books": {
+       "draftkings": 1700,
+       "betonlineag": 1200,
+       "fanduel": 2000,
+       "betrivers": 1800,
+       "betmgm": 1450,
+       "bovada": 1700
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370409970%232286939211_13L88808Q12124117791Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117889",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608488352&selectionId=42323715",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811657?coupon={pickType}|4338197132|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43382-3611803-5721678&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/indianapolis-colts-kansas-city-chiefs-202609202020"
+      },
+      "implied": 0.0556,
+      "fetchedAt": "2026-09-19T12:12:27.157Z"
+     },
      "live": {
       "best": 220,
       "bestBook": "fanduel",
@@ -12656,7 +14139,7 @@
       "implied": 0.3247,
       "open": 210,
       "move": -2,
-      "fetchedAt": "2026-09-19T10:15:11.824Z"
+      "fetchedAt": "2026-09-19T12:12:27.157Z"
      },
      "edge": -0.045
     },
@@ -12669,7 +14152,29 @@
      "implied": 0.25,
      "est": 0.25,
      "why": "Already has a red-zone rapport with Jones (Week 1 TD) and should see leverage looks vs. KC's thinned-out DB room.",
-     "live2": null,
+     "live2": {
+      "best": 2500,
+      "bestBook": "fanduel",
+      "consensus": 2200,
+      "books": {
+       "draftkings": 2200,
+       "betonlineag": 1500,
+       "fanduel": 2500,
+       "betrivers": 2400,
+       "betmgm": 1650,
+       "bovada": 2200
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370409970%232286939225_13L88808Q11041398384Q20",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117889",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608488352&selectionId=60010430",
+       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811657?coupon={pickType}|4338229870|{wagerAmount}",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43382-3611801-5721674&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/indianapolis-colts-kansas-city-chiefs-202609202020"
+      },
+      "implied": 0.0435,
+      "fetchedAt": "2026-09-19T12:12:27.157Z"
+     },
      "live": {
       "best": 250,
       "bestBook": "fanduel",
@@ -12693,7 +14198,7 @@
       "implied": 0.2985,
       "open": 240,
       "move": -5,
-      "fetchedAt": "2026-09-19T10:15:11.824Z"
+      "fetchedAt": "2026-09-19T12:12:27.157Z"
      },
      "edge": -0.049
     }
@@ -12771,7 +14276,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": -285,
      "away": 230,
@@ -13189,7 +14694,8 @@
    ],
    "pulls": {
     "open": "2026-09-17T03:09:23.126Z",
-    "desig": "2026-09-19T10:15:11.825Z"
+    "desig": "2026-09-19T10:15:11.825Z",
+    "prekick": "2026-09-19T12:12:27.157Z"
    },
    "injuryReport": {
     "away": [
@@ -13284,7 +14790,7 @@
       "date": "2026-08-31T17:40Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   },
   {
@@ -13664,7 +15170,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-19T12:01:32.062Z",
+    "fetchedAt": "2026-09-19T12:14:43.619Z",
     "ml": {
      "home": -360,
      "away": 285,
@@ -14131,7 +15637,7 @@
       "date": "2026-09-17T18:49Z"
      }
     ],
-    "fetchedAt": "2026-09-19T12:01:32.367Z"
+    "fetchedAt": "2026-09-19T12:14:43.916Z"
    }
   }
  ],
@@ -14145,7 +15651,29 @@
    "implied": 0.68,
    "est": 0.68,
    "why": "Bell-cow back exploits a Saints front that just allowed 5.4 YPC and two short-yardage scores to Detroit, with Cam Jordan's return still unconfirmed.",
-   "live2": null,
+   "live2": {
+    "best": 210,
+    "bestBook": "fanduel",
+    "consensus": 198,
+    "books": {
+     "draftkings": 195,
+     "betonlineag": 150,
+     "fanduel": 210,
+     "betrivers": 210,
+     "betmgm": 200,
+     "bovada": 195
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370453448%232287144223_13L88808Q11746484724Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117893",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608568149&selectionId=8776315",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811616?coupon={pickType}|4339137401|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43367-3608475-5713377&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/new-orleans-saints-baltimore-ravens-202609201300"
+    },
+    "implied": 0.3356,
+    "fetchedAt": "2026-09-19T12:12:26.125Z"
+   },
    "live": {
     "best": -225,
     "bestBook": "betmgm",
@@ -14169,7 +15697,7 @@
     "implied": 0.7312,
     "open": -290,
     "move": 18,
-    "fetchedAt": "2026-09-19T10:15:10.622Z"
+    "fetchedAt": "2026-09-19T12:12:26.124Z"
    },
    "edge": -0.051,
    "gameId": "no-bal",
@@ -14184,7 +15712,27 @@
    "implied": 0.62,
    "est": 0.62,
    "why": "Workhorse role (31 of 65 team touches Wk1) vs a CAR run D that just allowed 552 yards, plus expanded goal-line share with Allgeier gone.",
-   "live2": null,
+   "live2": {
+    "best": 280,
+    "bestBook": "fanduel",
+    "consensus": 265,
+    "books": {
+     "draftkings": 265,
+     "betonlineag": 200,
+     "fanduel": 280,
+     "betrivers": 220,
+     "betmgm": 270
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370685638%232287987841_13L88808Q1-1354855512Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117897",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608603063&selectionId=38093938",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811618?coupon={pickType}|4339551418|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43374-3606822-5706240&type=Single"
+    },
+    "implied": 0.274,
+    "fetchedAt": "2026-09-19T12:12:26.038Z"
+   },
    "live": {
     "best": -185,
     "bestBook": "betmgm",
@@ -14208,7 +15756,7 @@
     "implied": 0.6774,
     "open": -215,
     "move": 5,
-    "fetchedAt": "2026-09-19T10:15:10.520Z"
+    "fetchedAt": "2026-09-19T12:12:26.038Z"
    },
    "edge": -0.057,
    "gameId": "car-atl",
@@ -14223,7 +15771,29 @@
    "implied": 0.636,
    "est": 0.62,
    "why": "Two-TD workhorse in Week 1 stays central to the game plan even on the road as Indy tries to keep pace; Week 1 grading showed the model under-calling its highest-implied plays, so this stays close to the market number rather than below it.",
-   "live2": null,
+   "live2": {
+    "best": 430,
+    "bestBook": "fanduel",
+    "consensus": 338,
+    "books": {
+     "draftkings": 350,
+     "betonlineag": 300,
+     "fanduel": 430,
+     "betrivers": 325,
+     "betmgm": 310,
+     "bovada": 350
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370409970%232286939224_13L88808Q1282689831Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117889",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608488352&selectionId=16195884",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811657?coupon={pickType}|4338241602|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43382-3611790-5721652&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/indianapolis-colts-kansas-city-chiefs-202609202020"
+    },
+    "implied": 0.2283,
+    "fetchedAt": "2026-09-19T12:12:27.157Z"
+   },
    "live": {
     "best": -150,
     "bestBook": "draftkings",
@@ -14247,7 +15817,7 @@
     "implied": 0.6078,
     "open": -160,
     "move": 5,
-    "fetchedAt": "2026-09-19T10:15:11.824Z"
+    "fetchedAt": "2026-09-19T12:12:27.157Z"
    },
    "edge": 0.012,
    "gameId": "ind-kc",
@@ -14262,7 +15832,29 @@
    "implied": 0.574,
    "est": 0.6,
    "why": "Bell-cow work (23-173-1 rush) behind a downhill scheme vs. a Colts front that just allowed 5.1 YPC to Jonathan Taylor.",
-   "live2": null,
+   "live2": {
+    "best": 300,
+    "bestBook": "betrivers",
+    "consensus": 255,
+    "books": {
+     "draftkings": 260,
+     "betonlineag": 200,
+     "fanduel": 250,
+     "betrivers": 300,
+     "betmgm": 210,
+     "bovada": 260
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370409970%232286939209_13L88808Q1917552914Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117889",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608488352&selectionId=40845134",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811657?coupon={pickType}|4338197134|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43382-3611802-5721676&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/indianapolis-colts-kansas-city-chiefs-202609202020"
+    },
+    "implied": 0.2817,
+    "fetchedAt": "2026-09-19T12:12:27.157Z"
+   },
    "live": {
     "best": -195,
     "bestBook": "betrivers",
@@ -14286,7 +15878,7 @@
     "implied": 0.6835,
     "open": -220,
     "move": 4,
-    "fetchedAt": "2026-09-19T10:15:11.824Z"
+    "fetchedAt": "2026-09-19T12:12:27.157Z"
    },
    "edge": -0.084,
    "gameId": "ind-kc",
@@ -14301,7 +15893,29 @@
    "implied": 0.6,
    "est": 0.58,
    "why": "Led LAC in carries/rush yards Week 1 with the goal-line TD; -150 DraftKings price implies clear lead-back role again vs a thin LV front seven.",
-   "live2": null,
+   "live2": {
+    "best": 410,
+    "bestBook": "betrivers",
+    "consensus": 330,
+    "books": {
+     "draftkings": 320,
+     "betonlineag": 250,
+     "fanduel": 390,
+     "betrivers": 410,
+     "betmgm": 340,
+     "bovada": 320
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370938820%232289015761_13L88808Q1-1556602657Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117892",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608610397&selectionId=48700658",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811643?coupon={pickType}|4339226597|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43378-3608391-5713160&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/las-vegas-raiders-los-angeles-chargers-202609201605"
+    },
+    "implied": 0.2326,
+    "fetchedAt": "2026-09-19T12:12:26.826Z"
+   },
    "live": {
     "best": -141,
     "bestBook": "betrivers",
@@ -14325,7 +15939,7 @@
     "implied": 0.6255,
     "open": -145,
     "move": -22,
-    "fetchedAt": "2026-09-19T10:15:11.430Z"
+    "fetchedAt": "2026-09-19T12:12:26.826Z"
    },
    "edge": -0.045,
    "gameId": "lv-lac",
@@ -14355,7 +15969,27 @@
    "implied": 0.55,
    "est": 0.55,
    "why": "Scored both a rushing and receiving TD Wk1 and is the clear early-down/goal-line back in Canales's run-first red-zone scheme vs a thin ATL front seven.",
-   "live2": null,
+   "live2": {
+    "best": 550,
+    "bestBook": "draftkings",
+    "consensus": 550,
+    "books": {
+     "draftkings": 550,
+     "betonlineag": 400,
+     "fanduel": 550,
+     "betrivers": 550,
+     "betmgm": 500
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370685638%232287987847_13L88808Q1-2084365438Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117897",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608603063&selectionId=22502305",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811618?coupon={pickType}|4339551468|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43374-3606803-5706202&type=Single"
+    },
+    "implied": 0.1538,
+    "fetchedAt": "2026-09-19T12:12:26.038Z"
+   },
    "live": {
     "best": -105,
     "bestBook": "betmgm",
@@ -14379,7 +16013,7 @@
     "implied": 0.5283,
     "open": -125,
     "move": 13,
-    "fetchedAt": "2026-09-19T10:15:10.520Z"
+    "fetchedAt": "2026-09-19T12:12:26.038Z"
    },
    "edge": 0.022,
    "gameId": "car-atl",
@@ -14394,7 +16028,29 @@
    "implied": 0.55,
    "est": 0.55,
    "why": "Tush-push staple near the goal line vs. a Titans front still installing a brand-new 4-3 scheme.",
-   "live2": null,
+   "live2": {
+    "best": 1100,
+    "bestBook": "fanduel",
+    "consensus": 950,
+    "books": {
+     "draftkings": 1000,
+     "betonlineag": 700,
+     "fanduel": 1100,
+     "betrivers": 900,
+     "betmgm": 825,
+     "bovada": 1000
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370783818%232288401909_13L88808Q12010829453Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117894",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608694704&selectionId=12142119",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811615?coupon={pickType}|4339127780|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43372-3607320-5709343&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-tennessee-titans-202609201300"
+    },
+    "implied": 0.0952,
+    "fetchedAt": "2026-09-19T12:12:26.631Z"
+   },
    "live": {
     "best": 150,
     "bestBook": "fanduel",
@@ -14418,7 +16074,7 @@
     "implied": 0.4115,
     "open": 140,
     "move": 3,
-    "fetchedAt": "2026-09-19T10:15:11.224Z"
+    "fetchedAt": "2026-09-19T12:12:26.630Z"
    },
    "edge": 0.138,
    "gameId": "phi-ten",
@@ -14433,7 +16089,29 @@
    "implied": 0.55,
    "est": 0.55,
    "why": "Bell-cow workload (22 touches Wk1) vs. a GB front missing both Micah Parsons and Jordon Riley to PUP.",
-   "live2": null,
+   "live2": {
+    "best": 600,
+    "bestBook": "fanduel",
+    "consensus": 525,
+    "books": {
+     "draftkings": 550,
+     "betonlineag": 400,
+     "fanduel": 600,
+     "betrivers": 500,
+     "betmgm": 425,
+     "bovada": 550
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369987475%232285300737_13L88808Q1827256908Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117890",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608713661&selectionId=36935933",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811617?coupon={pickType}|4339181377|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43368-3607221-5708850&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/green-bay-packers-new-york-jets-202609201300"
+    },
+    "implied": 0.16,
+    "fetchedAt": "2026-09-19T12:12:26.452Z"
+   },
    "live": {
     "best": -105,
     "bestBook": "draftkings",
@@ -14457,7 +16135,7 @@
     "implied": 0.5349,
     "open": -125,
     "move": 10,
-    "fetchedAt": "2026-09-19T10:15:11.013Z"
+    "fetchedAt": "2026-09-19T12:12:26.452Z"
    },
    "edge": 0.015,
    "gameId": "gb-nyj",
@@ -14472,7 +16150,27 @@
    "implied": 0.535,
    "est": 0.55,
    "why": "Bell-cow role (7 targets + 8 carries Wk1, scored) vs a CLE defense down three defensive starters.",
-   "live2": null,
+   "live2": {
+    "best": 500,
+    "bestBook": "draftkings",
+    "consensus": 500,
+    "books": {
+     "draftkings": 500,
+     "betonlineag": 350,
+     "fanduel": 500,
+     "betrivers": 500,
+     "betmgm": 390
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370734131%232288205847_13L88808Q1-416383636Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117896",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608810204&selectionId=58495722",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811613?coupon={pickType}|4339176925|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43373-3606872-5706338&type=Single"
+    },
+    "implied": 0.1667,
+    "fetchedAt": "2026-09-19T12:12:26.364Z"
+   },
    "live": {
     "best": -120,
     "bestBook": "draftkings",
@@ -14496,7 +16194,7 @@
     "implied": 0.5575,
     "open": -130,
     "move": 4,
-    "fetchedAt": "2026-09-19T10:15:10.914Z"
+    "fetchedAt": "2026-09-19T12:12:26.364Z"
    },
    "edge": -0.008,
    "gameId": "cle-tb",
@@ -14511,7 +16209,29 @@
    "implied": 0.55,
    "est": 0.55,
    "why": "29 touches and all 6 targets caught in Week 1, including both Raiders' non-Bech TDs - a true bell-cow funneled the ball near the goal line.",
-   "live2": null,
+   "live2": {
+    "best": 650,
+    "bestBook": "fanduel",
+    "consensus": 475,
+    "books": {
+     "draftkings": 475,
+     "betonlineag": 400,
+     "fanduel": 650,
+     "betrivers": 430,
+     "betmgm": 500,
+     "bovada": 475
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370938820%232289015772_13L88808Q11479143646Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117892",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608610397&selectionId=48895943",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811643?coupon={pickType}|4339193453|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43378-3608409-5713196&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/las-vegas-raiders-los-angeles-chargers-202609201605"
+    },
+    "implied": 0.1739,
+    "fetchedAt": "2026-09-19T12:12:26.826Z"
+   },
    "live": {
     "best": -110,
     "bestBook": "fanduel",
@@ -14535,7 +16255,7 @@
     "implied": 0.5475,
     "open": -141,
     "move": 20,
-    "fetchedAt": "2026-09-19T10:15:11.430Z"
+    "fetchedAt": "2026-09-19T12:12:26.826Z"
    },
    "edge": 0.002,
    "gameId": "lv-lac",
@@ -14550,7 +16270,29 @@
    "implied": 0.55,
    "est": 0.55,
    "why": "12 targets in the opener and Arizona's clear #1 read with Conner off the field to soak up check-downs.",
-   "live2": null,
+   "live2": {
+    "best": 1700,
+    "bestBook": "fanduel",
+    "consensus": 1500,
+    "books": {
+     "draftkings": 1500,
+     "betonlineag": 1000,
+     "fanduel": 1700,
+     "betrivers": 1700,
+     "betmgm": 1200,
+     "bovada": 1500
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370660208%232287899376_13L88808Q1-793431613Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117891",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608756229&selectionId=43845465",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811645?coupon={pickType}|4339471963|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43381-3619837-5740624&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/seattle-seahawks-arizona-cardinals-202609201625"
+    },
+    "implied": 0.0625,
+    "fetchedAt": "2026-09-19T12:12:26.911Z"
+   },
    "live": {
     "best": 195,
     "bestBook": "fanduel",
@@ -14574,7 +16316,7 @@
     "implied": 0.3509,
     "open": 190,
     "move": -5,
-    "fetchedAt": "2026-09-19T10:15:11.528Z"
+    "fetchedAt": "2026-09-19T12:12:26.911Z"
    },
    "edge": 0.199,
    "gameId": "sea-ari",
@@ -14589,18 +16331,40 @@
    "implied": 0.55,
    "est": 0.55,
    "why": "Workhorse red-zone role plus a likely blowout script means heavy high-value touches near the goal line.",
-   "live2": null,
+   "live2": {
+    "best": 240,
+    "bestBook": "fanduel",
+    "consensus": 235,
+    "books": {
+     "draftkings": 235,
+     "betonlineag": 200,
+     "fanduel": 240,
+     "betrivers": 240,
+     "betmgm": 210,
+     "bovada": 235
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370776420%232288373326_13L88808Q1-1442390665Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117887",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608753343&selectionId=10609932",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811646?coupon={pickType}|4339380754|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43380-3612025-5722575&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/miami-dolphins-san-francisco-49ers-202609201625"
+    },
+    "implied": 0.2985,
+    "fetchedAt": "2026-09-19T12:12:27.081Z"
+   },
    "live": {
     "best": -220,
     "bestBook": "betmgm",
-    "consensus": -242,
+    "consensus": -247,
     "books": {
-     "draftkings": -240,
+     "draftkings": -245,
      "betonlineag": -250,
      "fanduel": -240,
      "betrivers": -250,
      "betmgm": -220,
-     "bovada": -245
+     "bovada": -250
     },
     "links": {
      "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369881274%232284858220_13L88808Q1-1377627368Q20",
@@ -14610,12 +16374,12 @@
      "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43380-3612000-5722525&type=Single",
      "bovada": "https://www.bovada.lv/sports/football/nfl/miami-dolphins-san-francisco-49ers-202609201625"
     },
-    "implied": 0.7076,
+    "implied": 0.7118,
     "open": -250,
-    "move": 8,
-    "fetchedAt": "2026-09-19T10:15:11.724Z"
+    "move": 3,
+    "fetchedAt": "2026-09-19T12:12:27.080Z"
    },
-   "edge": -0.158,
+   "edge": -0.162,
    "gameId": "mia-sf",
    "kickoff": "2026-09-20T20:25:00Z"
   },
@@ -14658,7 +16422,29 @@
    "implied": 0.5,
    "est": 0.5,
    "why": "Scored 10 of 11 2025 TDs in the red zone, already has 2 this year, and inherits A.J. Brown's vacated red-zone share.",
-   "live2": null,
+   "live2": {
+    "best": 1900,
+    "bestBook": "fanduel",
+    "consensus": 1700,
+    "books": {
+     "draftkings": 1700,
+     "betonlineag": 1100,
+     "fanduel": 1900,
+     "betrivers": 1800,
+     "betmgm": 1500,
+     "bovada": 1700
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370783818%232288401911_13L88808Q1-1781882123Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117894",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608694704&selectionId=18545062",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811615?coupon={pickType}|4339136019|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43372-3607278-5709009&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-tennessee-titans-202609201300"
+    },
+    "implied": 0.0556,
+    "fetchedAt": "2026-09-19T12:12:26.631Z"
+   },
    "live": {
     "best": 210,
     "bestBook": "draftkings",
@@ -14682,7 +16468,7 @@
     "implied": 0.3247,
     "open": 210,
     "move": -2,
-    "fetchedAt": "2026-09-19T10:15:11.224Z"
+    "fetchedAt": "2026-09-19T12:12:26.630Z"
    },
    "edge": 0.175,
    "gameId": "phi-ten",
@@ -14751,7 +16537,29 @@
    "implied": 0.45,
    "est": 0.45,
    "why": "Love's clear WR1 after Doubs/Wicks exits, coming off a 2-TD, 147-yard outburst.",
-   "live2": null,
+   "live2": {
+    "best": 1600,
+    "bestBook": "betrivers",
+    "consensus": 1300,
+    "books": {
+     "draftkings": 1300,
+     "betonlineag": 900,
+     "fanduel": 1400,
+     "betrivers": 1600,
+     "betmgm": 850,
+     "bovada": 1300
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369987475%232285300751_13L88808Q1-1356601652Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117890",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608713661&selectionId=43162285",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811617?coupon={pickType}|4339181400|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43368-3607198-5708804&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/green-bay-packers-new-york-jets-202609201300"
+    },
+    "implied": 0.0714,
+    "fetchedAt": "2026-09-19T12:12:26.452Z"
+   },
    "live": {
     "best": 190,
     "bestBook": "betrivers",
@@ -14775,7 +16583,7 @@
     "implied": 0.3704,
     "open": 170,
     "move": 0,
-    "fetchedAt": "2026-09-19T10:15:11.013Z"
+    "fetchedAt": "2026-09-19T12:12:26.452Z"
    },
    "edge": 0.08,
    "gameId": "gb-nyj",
@@ -14790,7 +16598,29 @@
    "implied": 0.45,
    "est": 0.45,
    "why": "Elite go/fade red-zone weapon (34 TD catches on such routes since 2018) vs. a Miami secondary breaking in inexperienced corners.",
-   "live2": null,
+   "live2": {
+    "best": 1000,
+    "bestBook": "draftkings",
+    "consensus": 975,
+    "books": {
+     "draftkings": 1000,
+     "betonlineag": 600,
+     "fanduel": 1000,
+     "betrivers": 950,
+     "betmgm": 950,
+     "bovada": 1000
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370776420%232288373328_13L88808Q1-1809939904Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117887",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608753343&selectionId=48244063",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811646?coupon={pickType}|4339383449|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43380-3611997-5722519&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/miami-dolphins-san-francisco-49ers-202609201625"
+    },
+    "implied": 0.093,
+    "fetchedAt": "2026-09-19T12:12:27.081Z"
+   },
    "live": {
     "best": 155,
     "bestBook": "betmgm",
@@ -14814,7 +16644,7 @@
     "implied": 0.4255,
     "open": 135,
     "move": 0,
-    "fetchedAt": "2026-09-19T10:15:11.724Z"
+    "fetchedAt": "2026-09-19T12:12:27.080Z"
    },
    "edge": 0.024,
    "gameId": "mia-sf",
@@ -14831,7 +16661,29 @@
    "implied": 0.55,
    "est": 0.55,
    "why": "12 targets in the opener and Arizona's clear #1 read with Conner off the field to soak up check-downs.",
-   "live2": null,
+   "live2": {
+    "best": 1700,
+    "bestBook": "fanduel",
+    "consensus": 1500,
+    "books": {
+     "draftkings": 1500,
+     "betonlineag": 1000,
+     "fanduel": 1700,
+     "betrivers": 1700,
+     "betmgm": 1200,
+     "bovada": 1500
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370660208%232287899376_13L88808Q1-793431613Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117891",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608756229&selectionId=43845465",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811645?coupon={pickType}|4339471963|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43381-3619837-5740624&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/seattle-seahawks-arizona-cardinals-202609201625"
+    },
+    "implied": 0.0625,
+    "fetchedAt": "2026-09-19T12:12:26.911Z"
+   },
    "live": {
     "best": 195,
     "bestBook": "fanduel",
@@ -14855,7 +16707,7 @@
     "implied": 0.3509,
     "open": 190,
     "move": -5,
-    "fetchedAt": "2026-09-19T10:15:11.528Z"
+    "fetchedAt": "2026-09-19T12:12:26.911Z"
    },
    "edge": 0.199,
    "gameId": "sea-ari",
@@ -14870,7 +16722,29 @@
    "implied": 0.5,
    "est": 0.5,
    "why": "Scored 10 of 11 2025 TDs in the red zone, already has 2 this year, and inherits A.J. Brown's vacated red-zone share.",
-   "live2": null,
+   "live2": {
+    "best": 1900,
+    "bestBook": "fanduel",
+    "consensus": 1700,
+    "books": {
+     "draftkings": 1700,
+     "betonlineag": 1100,
+     "fanduel": 1900,
+     "betrivers": 1800,
+     "betmgm": 1500,
+     "bovada": 1700
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370783818%232288401911_13L88808Q1-1781882123Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117894",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608694704&selectionId=18545062",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811615?coupon={pickType}|4339136019|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43372-3607278-5709009&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-tennessee-titans-202609201300"
+    },
+    "implied": 0.0556,
+    "fetchedAt": "2026-09-19T12:12:26.631Z"
+   },
    "live": {
     "best": 210,
     "bestBook": "draftkings",
@@ -14894,7 +16768,7 @@
     "implied": 0.3247,
     "open": 210,
     "move": -2,
-    "fetchedAt": "2026-09-19T10:15:11.224Z"
+    "fetchedAt": "2026-09-19T12:12:26.630Z"
    },
    "edge": 0.175,
    "gameId": "phi-ten",
@@ -14909,7 +16783,29 @@
    "implied": 0.31,
    "est": 0.42,
    "why": "Led JAX in red-zone targets in 2025 and already has a Week 1 TD - clear top red-zone look for a hot Lawrence.",
-   "live2": null,
+   "live2": {
+    "best": 3300,
+    "bestBook": "betrivers",
+    "consensus": 3000,
+    "books": {
+     "draftkings": 3000,
+     "betonlineag": 2100,
+     "fanduel": 3000,
+     "betrivers": 3300,
+     "betmgm": 2200,
+     "bovada": 3000
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376532%232286789007_13L88808Q1-1682061720Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117888",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608537882&selectionId=42217310",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811642?coupon={pickType}|4338403058|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43377-3612056-5722636&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/jacksonville-jaguars-denver-broncos-202609201605"
+    },
+    "implied": 0.0323,
+    "fetchedAt": "2026-09-19T12:12:26.728Z"
+   },
    "live": {
     "best": 325,
     "bestBook": "betrivers",
@@ -14933,7 +16829,7 @@
     "implied": 0.2469,
     "open": 278,
     "move": 27,
-    "fetchedAt": "2026-09-19T10:15:11.324Z"
+    "fetchedAt": "2026-09-19T12:12:26.728Z"
    },
    "edge": 0.173,
    "gameId": "jax-den",
@@ -14948,7 +16844,29 @@
    "implied": 0.55,
    "est": 0.55,
    "why": "Tush-push staple near the goal line vs. a Titans front still installing a brand-new 4-3 scheme.",
-   "live2": null,
+   "live2": {
+    "best": 1100,
+    "bestBook": "fanduel",
+    "consensus": 950,
+    "books": {
+     "draftkings": 1000,
+     "betonlineag": 700,
+     "fanduel": 1100,
+     "betrivers": 900,
+     "betmgm": 825,
+     "bovada": 1000
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370783818%232288401909_13L88808Q12010829453Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117894",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608694704&selectionId=12142119",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811615?coupon={pickType}|4339127780|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43372-3607320-5709343&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-tennessee-titans-202609201300"
+    },
+    "implied": 0.0952,
+    "fetchedAt": "2026-09-19T12:12:26.631Z"
+   },
    "live": {
     "best": 150,
     "bestBook": "fanduel",
@@ -14972,7 +16890,7 @@
     "implied": 0.4115,
     "open": 140,
     "move": 3,
-    "fetchedAt": "2026-09-19T10:15:11.224Z"
+    "fetchedAt": "2026-09-19T12:12:26.630Z"
    },
    "edge": 0.138,
    "gameId": "phi-ten",
@@ -14987,7 +16905,29 @@
    "implied": 0.28,
    "est": 0.38,
    "why": "Lawrence's trusted possession/red-zone target, scored Week 1 in an offense projected for 23+ points.",
-   "live2": null,
+   "live2": {
+    "best": 2500,
+    "bestBook": "draftkings",
+    "consensus": 2500,
+    "books": {
+     "draftkings": 2500,
+     "betonlineag": 1800,
+     "fanduel": 2500,
+     "betrivers": 2500,
+     "betmgm": 2000,
+     "bovada": 2500
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376532%232286789006_13L88808Q1-1246069346Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117888",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608537882&selectionId=25672272",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811642?coupon={pickType}|4338402940|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43377-3612105-5723032&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/jacksonville-jaguars-denver-broncos-202609201605"
+    },
+    "implied": 0.0385,
+    "fetchedAt": "2026-09-19T12:12:26.728Z"
+   },
    "live": {
     "best": 300,
     "bestBook": "betmgm",
@@ -15011,7 +16951,7 @@
     "implied": 0.274,
     "open": 260,
     "move": 5,
-    "fetchedAt": "2026-09-19T10:15:11.324Z"
+    "fetchedAt": "2026-09-19T12:12:26.728Z"
    },
    "edge": 0.106,
    "gameId": "jax-den",
@@ -15026,7 +16966,29 @@
    "implied": 0.29,
    "est": 0.4,
    "why": "Bounce-back volume expected as DEN's X/contested-catch option after a quiet, script-driven Week 1.",
-   "live2": null,
+   "live2": {
+    "best": 2000,
+    "bestBook": "draftkings",
+    "consensus": 2000,
+    "books": {
+     "draftkings": 2000,
+     "betonlineag": 1200,
+     "fanduel": 1900,
+     "betrivers": 2000,
+     "betmgm": 2000,
+     "bovada": 2000
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376532%232286788996_13L88808Q1630325894Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117888",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608537882&selectionId=16489948",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811642?coupon={pickType}|4338397622|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43377-3612029-5722582&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/jacksonville-jaguars-denver-broncos-202609201605"
+    },
+    "implied": 0.0476,
+    "fetchedAt": "2026-09-19T12:12:26.728Z"
+   },
    "live": {
     "best": 250,
     "bestBook": "betmgm",
@@ -15050,7 +17012,7 @@
     "implied": 0.2985,
     "open": 233,
     "move": 2,
-    "fetchedAt": "2026-09-19T10:15:11.324Z"
+    "fetchedAt": "2026-09-19T12:12:26.728Z"
    },
    "edge": 0.101,
    "gameId": "jax-den",
@@ -15065,7 +17027,29 @@
    "implied": 0.28,
    "est": 0.28,
    "why": "Rodgers' security-blanket TE scored last week on a perfect 5-of-5 target night and should see similar red-zone trust vs. NE's linebackers.",
-   "live2": null,
+   "live2": {
+    "best": 6000,
+    "bestBook": "fanduel",
+    "consensus": 4750,
+    "books": {
+     "draftkings": 5500,
+     "betonlineag": 3600,
+     "fanduel": 6000,
+     "betrivers": 4000,
+     "betmgm": 3300,
+     "bovada": 5500
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376118%232286787204_13L88808Q1-162258478Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117895",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608552731&selectionId=26812199",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811611?coupon={pickType}|4339090852|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43370-3606980-5707488&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/pittsburgh-steelers-new-england-patriots-202609201300"
+    },
+    "implied": 0.0206,
+    "fetchedAt": "2026-09-19T12:12:26.531Z"
+   },
    "live": {
     "best": 500,
     "bestBook": "fanduel",
@@ -15089,7 +17073,7 @@
     "implied": 0.1802,
     "open": 500,
     "move": -45,
-    "fetchedAt": "2026-09-19T10:15:11.123Z"
+    "fetchedAt": "2026-09-19T12:12:26.531Z"
    },
    "edge": 0.1,
    "gameId": "pit-ne",
@@ -15104,7 +17088,29 @@
    "implied": 0.28,
    "est": 0.28,
    "why": "Scored on 2-of-3 targets Wk1 and should see more red-zone volume if Loveland stays quiet.",
-   "live2": null,
+   "live2": {
+    "best": 6000,
+    "bestBook": "fanduel",
+    "consensus": 5500,
+    "books": {
+     "draftkings": 5500,
+     "betonlineag": 3400,
+     "fanduel": 6000,
+     "betrivers": 6000,
+     "betmgm": 4000,
+     "bovada": 5500
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370416546%232286962794_13L88808Q1-2114998825Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117899",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608562551&selectionId=26920153",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811612?coupon={pickType}|4338991083|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43369-3607376-5709851&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/minnesota-vikings-chicago-bears-202609201300"
+    },
+    "implied": 0.0179,
+    "fetchedAt": "2026-09-19T12:12:26.205Z"
+   },
    "live": {
     "best": 540,
     "bestBook": "betrivers",
@@ -15128,7 +17134,7 @@
     "implied": 0.1835,
     "open": 460,
     "move": -15,
-    "fetchedAt": "2026-09-19T10:15:10.716Z"
+    "fetchedAt": "2026-09-19T12:12:26.205Z"
    },
    "edge": 0.097,
    "gameId": "min-chi",
@@ -15143,7 +17149,27 @@
    "implied": 0.15,
    "est": 0.16,
    "why": "Rookie already has a Week 1 TD and a role in a run-away-favorite game script that could produce garbage-time/clean-up scores.",
-   "live2": null,
+   "live2": {
+    "best": 16000,
+    "bestBook": "draftkings",
+    "consensus": 15000,
+    "books": {
+     "draftkings": 16000,
+     "betonlineag": 8900,
+     "betrivers": 15000,
+     "betmgm": 8000,
+     "bovada": 15000
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370376532%232286789014_13L88808Q1-1585722573Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117888",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811642?coupon={pickType}|4338402932|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43377-3612041-5722606&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/jacksonville-jaguars-denver-broncos-202609201605"
+    },
+    "implied": 0.0066,
+    "fetchedAt": "2026-09-19T12:12:26.728Z"
+   },
    "live": {
     "best": 1500,
     "bestBook": "draftkings",
@@ -15167,7 +17193,7 @@
     "implied": 0.069,
     "open": 1250,
     "move": 100,
-    "fetchedAt": "2026-09-19T10:15:11.324Z"
+    "fetchedAt": "2026-09-19T12:12:26.728Z"
    },
    "edge": 0.091,
    "gameId": "jax-den",
@@ -15182,7 +17208,29 @@
    "implied": 0.35,
    "est": 0.35,
    "why": "Went 5-for-5 targets Week 1 and profiles as McDaniel's top red-zone safety valve with McConkey banged up.",
-   "live2": null,
+   "live2": {
+    "best": 4500,
+    "bestBook": "betrivers",
+    "consensus": 2500,
+    "books": {
+     "draftkings": 2500,
+     "betonlineag": 1900,
+     "fanduel": 2500,
+     "betrivers": 4500,
+     "betmgm": 2800,
+     "bovada": 2500
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA370938820%232289015764_13L88808Q1843120611Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117892",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608610397&selectionId=14033053",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811643?coupon={pickType}|4339226472|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43378-3608345-5712771&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/las-vegas-raiders-los-angeles-chargers-202609201605"
+    },
+    "implied": 0.0385,
+    "fetchedAt": "2026-09-19T12:12:26.826Z"
+   },
    "live": {
     "best": 400,
     "bestBook": "betrivers",
@@ -15206,7 +17254,7 @@
     "implied": 0.2646,
     "open": 340,
     "move": -62,
-    "fetchedAt": "2026-09-19T10:15:11.430Z"
+    "fetchedAt": "2026-09-19T12:12:26.826Z"
    },
    "edge": 0.085,
    "gameId": "lv-lac",
@@ -15221,7 +17269,29 @@
    "implied": 0.45,
    "est": 0.45,
    "why": "Love's clear WR1 after Doubs/Wicks exits, coming off a 2-TD, 147-yard outburst.",
-   "live2": null,
+   "live2": {
+    "best": 1600,
+    "bestBook": "betrivers",
+    "consensus": 1300,
+    "books": {
+     "draftkings": 1300,
+     "betonlineag": 900,
+     "fanduel": 1400,
+     "betrivers": 1600,
+     "betmgm": 850,
+     "bovada": 1300
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA369987475%232285300751_13L88808Q1-1356601652Q20",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491117890",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.608713661&selectionId=43162285",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811617?coupon={pickType}|4339181400|{wagerAmount}",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43368-3607198-5708804&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/green-bay-packers-new-york-jets-202609201300"
+    },
+    "implied": 0.0714,
+    "fetchedAt": "2026-09-19T12:12:26.452Z"
+   },
    "live": {
     "best": 190,
     "bestBook": "betrivers",
@@ -15245,7 +17315,7 @@
     "implied": 0.3704,
     "open": 170,
     "move": 0,
-    "fetchedAt": "2026-09-19T10:15:11.013Z"
+    "fetchedAt": "2026-09-19T12:12:26.452Z"
    },
    "edge": 0.08,
    "gameId": "gb-nyj",
@@ -15680,7 +17750,7 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-09-19T12:01:33.670Z",
+  "gradedAt": "2026-09-19T12:14:45.351Z",
   "finals": 1,
   "games": 16,
   "summary": {
@@ -18011,7 +20081,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-09-19T12:01:33.673Z",
+  "updatedAt": "2026-09-19T12:14:45.352Z",
   "weeks": [
    {
     "week": 1,
@@ -18254,12 +20324,12 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-09-19T12:01:33.756Z",
+  "builtAt": "2026-09-19T12:14:45.436Z",
   "books": [
    "FD",
    "DK"
   ],
-  "oddsFetchedAt": "2026-09-19T10:18:29.893Z",
+  "oddsFetchedAt": "2026-09-19T12:12:27.157Z",
   "note": "Prices are the better of FanDuel and DraftKings at the last pull.",
   "categories": [
    {
@@ -18272,7 +20342,10 @@
       "legs": [
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 1700,
+         "book": "FD"
+        },
         "label": "Trey McBride anytime TD",
         "player": "Trey McBride",
         "team": "ARI",
@@ -18288,7 +20361,10 @@
        },
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 3000,
+         "book": "FD"
+        },
         "label": "Brenton Strange anytime TD",
         "player": "Brenton Strange",
         "team": "JAX",
@@ -18304,7 +20380,10 @@
        },
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 1100,
+         "book": "FD"
+        },
         "label": "Jalen Hurts anytime TD",
         "player": "Jalen Hurts",
         "team": "PHI",
@@ -18331,7 +20410,10 @@
       "legs": [
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 1700,
+         "book": "FD"
+        },
         "label": "Trey McBride anytime TD",
         "player": "Trey McBride",
         "team": "ARI",
@@ -18347,7 +20429,10 @@
        },
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 3000,
+         "book": "FD"
+        },
         "label": "Brenton Strange anytime TD",
         "player": "Brenton Strange",
         "team": "JAX",
@@ -18374,7 +20459,10 @@
       "legs": [
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 1900,
+         "book": "FD"
+        },
         "label": "Dallas Goedert anytime TD",
         "player": "Dallas Goedert",
         "team": "PHI",
@@ -18390,7 +20478,10 @@
        },
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 2500,
+         "book": "FD"
+        },
         "label": "Jakobi Meyers anytime TD",
         "player": "Jakobi Meyers",
         "team": "JAX",
@@ -18417,7 +20508,10 @@
       "legs": [
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 1900,
+         "book": "FD"
+        },
         "label": "Dallas Goedert anytime TD",
         "player": "Dallas Goedert",
         "team": "PHI",
@@ -18433,7 +20527,10 @@
        },
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 2000,
+         "book": "DK"
+        },
         "label": "Courtland Sutton anytime TD",
         "player": "Courtland Sutton",
         "team": "DEN",
@@ -18460,7 +20557,10 @@
       "legs": [
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 1100,
+         "book": "FD"
+        },
         "label": "Jalen Hurts anytime TD",
         "player": "Jalen Hurts",
         "team": "PHI",
@@ -18476,7 +20576,10 @@
        },
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 2500,
+         "book": "FD"
+        },
         "label": "Jakobi Meyers anytime TD",
         "player": "Jakobi Meyers",
         "team": "JAX",
@@ -18503,65 +20606,81 @@
    {
     "key": "twoPlus",
     "title": "2+ TD props",
-    "note": "Model probability and fair price. No 2+ TD market pulled yet: confirm the FD/DK price before betting.",
+    "note": "Real FD/DK 2+ TD prices vs the model fair price. Unpriced players show fair and minimum playable price.",
     "parlays": [
      {
+      "rank": 1,
       "legs": [
        {
         "type": "td2",
-        "td2": null,
-        "label": "Jonathan Taylor 2+ TDs",
-        "player": "Jonathan Taylor",
-        "team": "IND",
-        "game": "ind-kc",
-        "gameLabel": "IND@KC",
-        "kickoff": "2026-09-21T00:20:00Z",
-        "prob": 0.328,
-        "price": null,
-        "book": "check FD/DK",
-        "why": "Two-TD workhorse in Week 1 stays central to the game plan even on the road as Indy tries to keep pace; Week 1 grading showed the model under-calling its highest-implied plays, so this stays close to the market number rather than below it."
-       }
-      ],
-      "price": null,
-      "decimal": null,
-      "prob": 0.328,
-      "fairPrice": 205,
-      "minPrice": 220,
-      "ev": null,
-      "why": "62% anytime estimate gives 33% for two or more (Poisson, bell-cow adjusted). Fair +205; play at +220 or better on FD/DK. Two-TD workhorse in Week 1 stays central to the game plan even on the road as Indy tries to keep pace; Week 1 grading showed the model under-calling its highest-implied plays, so this stays close to the market number rather than below it.",
-      "rank": 1
-     },
-     {
-      "legs": [
-       {
-        "type": "td2",
-        "td2": null,
-        "label": "Chuba Hubbard 2+ TDs",
-        "player": "Chuba Hubbard",
-        "team": "CAR",
-        "game": "car-atl",
-        "gameLabel": "CAR@ATL",
-        "kickoff": "2026-09-20T17:00:00Z",
+        "td2": {
+         "price": 1700,
+         "book": "FD"
+        },
+        "label": "Trey McBride 2+ TDs",
+        "player": "Trey McBride",
+        "team": "ARI",
+        "game": "sea-ari",
+        "gameLabel": "SEA@ARI",
+        "kickoff": "2026-09-20T20:25:00Z",
         "prob": 0.248,
-        "price": null,
-        "book": "check FD/DK",
-        "why": "Scored both a rushing and receiving TD Wk1 and is the clear early-down/goal-line back in Canales's run-first red-zone scheme vs a thin ATL front seven."
+        "price": 1700,
+        "book": "FD",
+        "implied": 0.056,
+        "edge": 0.192,
+        "why": "12 targets in the opener and Arizona's clear #1 read with Conner off the field to soak up check-downs."
        }
       ],
-      "price": null,
-      "decimal": null,
+      "price": 1700,
+      "decimal": 18,
       "prob": 0.248,
       "fairPrice": 303,
       "minPrice": 323,
-      "ev": null,
-      "why": "55% anytime estimate gives 25% for two or more (Poisson, bell-cow adjusted). Fair +303; play at +323 or better on FD/DK. Scored both a rushing and receiving TD Wk1 and is the clear early-down/goal-line back in Canales's run-first red-zone scheme vs a thin ATL front seven.",
-      "rank": 2
+      "ev": 3.464,
+      "why": "FD +1700 vs fair +303 (25% for two or more from a 55% anytime estimate, bell-cow adjusted). Priced with edge. 12 targets in the opener and Arizona's clear #1 read with Conner off the field to soak up check-downs.",
+      "score": 1.725
      },
      {
+      "rank": 2,
       "legs": [
        {
         "type": "td2",
-        "td2": null,
+        "td2": {
+         "price": 1900,
+         "book": "FD"
+        },
+        "label": "Dallas Goedert 2+ TDs",
+        "player": "Dallas Goedert",
+        "team": "PHI",
+        "game": "phi-ten",
+        "gameLabel": "PHI@TEN",
+        "kickoff": "2026-09-20T17:00:00Z",
+        "prob": 0.199,
+        "price": 1900,
+        "book": "FD",
+        "implied": 0.05,
+        "edge": 0.149,
+        "why": "Scored 10 of 11 2025 TDs in the red zone, already has 2 this year, and inherits A.J. Brown's vacated red-zone share."
+       }
+      ],
+      "price": 1900,
+      "decimal": 20,
+      "prob": 0.199,
+      "fairPrice": 403,
+      "minPrice": 428,
+      "ev": 2.98,
+      "why": "FD +1900 vs fair +403 (20% for two or more from a 50% anytime estimate, bell-cow adjusted). Priced with edge. Scored 10 of 11 2025 TDs in the red zone, already has 2 this year, and inherits A.J. Brown's vacated red-zone share.",
+      "score": 1.329
+     },
+     {
+      "rank": 3,
+      "legs": [
+       {
+        "type": "td2",
+        "td2": {
+         "price": 1100,
+         "book": "FD"
+        },
         "label": "Jalen Hurts 2+ TDs",
         "player": "Jalen Hurts",
         "team": "PHI",
@@ -18569,71 +20688,85 @@
         "gameLabel": "PHI@TEN",
         "kickoff": "2026-09-20T17:00:00Z",
         "prob": 0.248,
-        "price": null,
-        "book": "check FD/DK",
+        "price": 1100,
+        "book": "FD",
+        "implied": 0.083,
+        "edge": 0.165,
         "why": "Tush-push staple near the goal line vs. a Titans front still installing a brand-new 4-3 scheme."
        }
       ],
-      "price": null,
-      "decimal": null,
+      "price": 1100,
+      "decimal": 12,
       "prob": 0.248,
       "fairPrice": 303,
       "minPrice": 323,
-      "ev": null,
-      "why": "55% anytime estimate gives 25% for two or more (Poisson, bell-cow adjusted). Fair +303; play at +323 or better on FD/DK. Tush-push staple near the goal line vs. a Titans front still installing a brand-new 4-3 scheme.",
-      "rank": 3
+      "ev": 1.976,
+      "why": "FD +1100 vs fair +303 (25% for two or more from a 55% anytime estimate, bell-cow adjusted). Priced with edge. Tush-push staple near the goal line vs. a Titans front still installing a brand-new 4-3 scheme.",
+      "score": 0.984
      },
      {
+      "rank": 4,
       "legs": [
        {
         "type": "td2",
-        "td2": null,
-        "label": "Breece Hall 2+ TDs",
-        "player": "Breece Hall",
-        "team": "NYJ",
-        "game": "gb-nyj",
-        "gameLabel": "GB@NYJ",
-        "kickoff": "2026-09-20T17:00:00Z",
-        "prob": 0.248,
-        "price": null,
-        "book": "check FD/DK",
-        "why": "Bell-cow workload (22 touches Wk1) vs. a GB front missing both Micah Parsons and Jordon Riley to PUP."
+        "td2": {
+         "price": 3000,
+         "book": "FD"
+        },
+        "label": "Brenton Strange 2+ TDs",
+        "player": "Brenton Strange",
+        "team": "JAX",
+        "game": "jax-den",
+        "gameLabel": "JAX@DEN",
+        "kickoff": "2026-09-20T20:05:00Z",
+        "prob": 0.104,
+        "price": 3000,
+        "book": "FD",
+        "implied": 0.032,
+        "edge": 0.072,
+        "why": "Led JAX in red-zone targets in 2025 and already has a Week 1 TD - clear top red-zone look for a hot Lawrence."
        }
       ],
-      "price": null,
-      "decimal": null,
-      "prob": 0.248,
-      "fairPrice": 303,
-      "minPrice": 323,
-      "ev": null,
-      "why": "55% anytime estimate gives 25% for two or more (Poisson, bell-cow adjusted). Fair +303; play at +323 or better on FD/DK. Bell-cow workload (22 touches Wk1) vs. a GB front missing both Micah Parsons and Jordon Riley to PUP.",
-      "rank": 4
+      "price": 3000,
+      "decimal": 31,
+      "prob": 0.104,
+      "fairPrice": 862,
+      "minPrice": 910,
+      "ev": 2.224,
+      "why": "FD +3000 vs fair +862 (10% for two or more from a 42% anytime estimate). Priced with edge. Led JAX in red-zone targets in 2025 and already has a Week 1 TD - clear top red-zone look for a hot Lawrence.",
+      "score": 0.717
      },
      {
+      "rank": 5,
       "legs": [
        {
         "type": "td2",
-        "td2": null,
-        "label": "Bucky Irving 2+ TDs",
-        "player": "Bucky Irving",
-        "team": "TB",
-        "game": "cle-tb",
-        "gameLabel": "CLE@TB",
-        "kickoff": "2026-09-20T17:00:00Z",
+        "td2": {
+         "price": 650,
+         "book": "FD"
+        },
+        "label": "Ashton Jeanty 2+ TDs",
+        "player": "Ashton Jeanty",
+        "team": "LV",
+        "game": "lv-lac",
+        "gameLabel": "LV@LAC",
+        "kickoff": "2026-09-20T20:05:00Z",
         "prob": 0.248,
-        "price": null,
-        "book": "check FD/DK",
-        "why": "Bell-cow role (7 targets + 8 carries Wk1, scored) vs a CLE defense down three defensive starters."
+        "price": 650,
+        "book": "FD",
+        "implied": 0.133,
+        "edge": 0.115,
+        "why": "29 touches and all 6 targets caught in Week 1, including both Raiders' non-Bech TDs - a true bell-cow funneled the ball near the goal line."
        }
       ],
-      "price": null,
-      "decimal": null,
+      "price": 650,
+      "decimal": 7.5,
       "prob": 0.248,
       "fairPrice": 303,
       "minPrice": 323,
-      "ev": null,
-      "why": "55% anytime estimate gives 25% for two or more (Poisson, bell-cow adjusted). Fair +303; play at +323 or better on FD/DK. Bell-cow role (7 targets + 8 carries Wk1, scored) vs a CLE defense down three defensive starters.",
-      "rank": 5
+      "ev": 0.86,
+      "why": "FD +650 vs fair +303 (25% for two or more from a 55% anytime estimate, bell-cow adjusted). Priced with edge. 29 touches and all 6 targets caught in Week 1, including both Raiders' non-Bech TDs - a true bell-cow funneled the ball near the goal line.",
+      "score": 0.428
      }
     ]
    },
@@ -19252,7 +21385,10 @@
        },
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 3000,
+         "book": "FD"
+        },
         "label": "Brenton Strange anytime TD",
         "player": "Brenton Strange",
         "team": "JAX",
@@ -19295,7 +21431,10 @@
        },
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 1900,
+         "book": "FD"
+        },
         "label": "Dallas Goedert anytime TD",
         "player": "Dallas Goedert",
         "team": "PHI",
@@ -19338,7 +21477,10 @@
        },
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 1100,
+         "book": "FD"
+        },
         "label": "Jalen Hurts anytime TD",
         "player": "Jalen Hurts",
         "team": "PHI",
@@ -19381,7 +21523,10 @@
        },
        {
         "type": "atd",
-        "td2": null,
+        "td2": {
+         "price": 1700,
+         "book": "FD"
+        },
         "label": "Trey McBride anytime TD",
         "player": "Trey McBride",
         "team": "ARI",
