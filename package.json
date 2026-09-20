@@ -16,6 +16,7 @@
     "cfb": "node scripts/fetch-cfb.mjs",
     "sheets": "node scripts/build-sheets.mjs",
     "sunday": "node scripts/build-sunday.mjs",
+    "positions": "node scripts/build-positions.mjs",
     "update:daily": "node scripts/fetch-schedule.mjs && node scripts/fetch-injuries.mjs && node scripts/fetch-odds.mjs && node scripts/grade-results.mjs && node scripts/build-board.mjs && node scripts/publish-board.mjs && node scripts/post-discord.mjs",
     "test": "node --experimental-strip-types --test scripts/*.test.mjs",
     "format": "prettier --write \"**/*.{ts,tsx,mjs,json,md,yml}\"",
