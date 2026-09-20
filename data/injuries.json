@@ -1,6 +1,6 @@
 {
- "fetchedAt": "2026-09-19T19:18:20.064Z",
- "sourceTimestamp": "2026-09-19T19:18:11Z",
+ "fetchedAt": "2026-09-20T10:04:57.048Z",
+ "sourceTimestamp": "2026-09-20T10:04:51Z",
  "teams": {
   "ARI": [
    {
@@ -408,12 +408,12 @@
   ],
   "BAL": [
    {
-    "name": "T.J. Tampa",
-    "pos": "CB",
+    "name": "Zay Flowers",
+    "pos": "WR",
     "status": "Out",
     "type": "out",
-    "detail": "Tampa (knee) is out for Sunday's game versus New Orleans, Cordell Woodland of 105.7 The Fan Baltimore reports.",
-    "date": "2026-09-19T00:55Z"
+    "detail": "Flowers (hamstring) has been downgraded to out for Sunday's game against the Saints.",
+    "date": "2026-09-19T20:10Z"
    },
    {
     "name": "Teddye Buchanan",
@@ -430,14 +430,6 @@
     "type": "out",
     "detail": "Madubuike (neck) has been ruled out ahead of Sunday's game against the Saints.",
     "date": "2026-09-18T23:10Z"
-   },
-   {
-    "name": "Zay Flowers",
-    "pos": "WR",
-    "status": "Doubtful",
-    "type": "doubtful",
-    "detail": "Flowers (hamstring) is listed as doubtful for Sunday's game against New Orleans.",
-    "date": "2026-09-18T19:25Z"
    },
    {
     "name": "Trey Hendrickson",
@@ -462,6 +454,14 @@
     "type": "questionable",
     "detail": "Stanley (toe) is listed as questionable for Sunday's game against the Saints.",
     "date": "2026-09-19T01:02Z"
+   },
+   {
+    "name": "T.J. Tampa",
+    "pos": "CB",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "The Ravens placed Tampa (knee) on injured reserve Saturday.",
+    "date": "2026-09-19T21:26Z"
    },
    {
     "name": "Ja'Kobi Lane",
@@ -1016,10 +1016,10 @@
    {
     "name": "Anthony Johnson Jr.",
     "pos": "S",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "ir",
-    "date": "2026-09-19T19:10Z"
+    "status": "Out",
+    "type": "out",
+    "detail": "out",
+    "date": "2026-09-20T09:00Z"
    },
    {
     "name": "Ozzy Trapilo",
@@ -1248,6 +1248,14 @@
     "date": "2026-08-31T22:51Z"
    },
    {
+    "name": "Josh Johnson",
+    "pos": "QB",
+    "status": "Active",
+    "type": "active",
+    "detail": "The Bengals elevated Johnson from the practice squad to the active roster Saturday.",
+    "date": "2026-09-19T20:42Z"
+   },
+   {
     "name": "Samaje Perine",
     "pos": "RB",
     "status": "Active",
@@ -1406,14 +1414,6 @@
     "type": "active",
     "detail": "Hill (hamstring) is not listed on the injury report ahead of Sunday's game versus Tampa Bay.",
     "date": "2026-09-09T21:40Z"
-   },
-   {
-    "name": "Dohnte Meyers",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Meyers has made the Bengals' initial 53-man roster, Charlie Clifford of NBC 5 Cincinnati reports.",
-    "date": "2026-08-30T17:00Z"
    }
   ],
   "CLE": [
@@ -2428,6 +2428,14 @@
   ],
   "HOU": [
    {
+    "name": "Nico Collins",
+    "pos": "WR",
+    "status": "Out",
+    "type": "out",
+    "detail": "Collins may miss two games due to a hamstring injury, Aaron Wilson of KPRC 2 Houston reports.",
+    "date": "2026-09-19T19:55Z"
+   },
+   {
     "name": "Ed Ingram",
     "pos": "G",
     "status": "Out",
@@ -2452,14 +2460,6 @@
     "date": "2026-09-18T23:49Z"
    },
    {
-    "name": "Nico Collins",
-    "pos": "WR",
-    "status": "Out",
-    "type": "out",
-    "detail": "Collins (hamstring) will not play Sunday against the Bengals.",
-    "date": "2026-09-18T20:11Z"
-   },
-   {
     "name": "Henry To'oTo'o",
     "pos": "LB",
     "status": "Injured Reserve",
@@ -2474,6 +2474,14 @@
     "type": "Injured Reserve",
     "detail": "The Texans placed McDonald (ankle) on injured reserve Friday.",
     "date": "2026-09-12T00:15Z"
+   },
+   {
+    "name": "Lewis Bond",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "The Texans elevated Bond from the practice squad to the active roster Saturday.",
+    "date": "2026-09-19T20:14Z"
    },
    {
     "name": "Xavier Hutchinson",
@@ -2618,14 +2626,6 @@
     "type": "active",
     "detail": "Hansen (ankle) was a full participant in Wednesday's practice.",
     "date": "2026-09-10T00:44Z"
-   },
-   {
-    "name": "Wade Woodaz",
-    "pos": "LB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Woodaz (thumb) was a full participant at practice Wednesday.",
-    "date": "2026-09-10T00:19Z"
    }
   ],
   "IND": [
@@ -3236,6 +3236,14 @@
   ],
   "LV": [
    {
+    "name": "Aidan O'Connell",
+    "pos": "QB",
+    "status": "Out",
+    "type": "out",
+    "detail": "O'Connell (personal) has been ruled out ahead of Sunday's game against the Chargers, Paul Gutierrez of Raiders.com reports.",
+    "date": "2026-09-19T21:35Z"
+   },
+   {
     "name": "Darien Porter",
     "pos": "CB",
     "status": "Out",
@@ -3252,12 +3260,20 @@
     "date": "2026-09-18T18:55Z"
    },
    {
-    "name": "Aidan O'Connell",
-    "pos": "QB",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "O'Connell is listed as questionable for Sunday's game against the Chargers due to personal reasons.",
-    "date": "2026-09-19T03:33Z"
+    "name": "Cody White",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "The Raiders elevated White from the practice squad to the active roster Saturday.",
+    "date": "2026-09-19T20:37Z"
+   },
+   {
+    "name": "Chris Myarick",
+    "pos": "TE",
+    "status": "Active",
+    "type": "active",
+    "detail": "The Raiders elevated Myarick from the practice squad to the active roster Saturday.",
+    "date": "2026-09-19T20:30Z"
    },
    {
     "name": "Nakobe Dean",
@@ -3418,22 +3434,6 @@
     "type": "active",
     "detail": "Washington rushed seven times for 41 yards in the Raiders' 27-13 win over the Dolphins on Sunday.",
     "date": "2026-09-14T02:29Z"
-   },
-   {
-    "name": "Kirk Cousins",
-    "pos": "QB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Cousins completed 21 of 30 passes for 160 yards with three touchdowns and two interceptions and rushed five times for minus-6 yards in the Raiders' 27-13 win over the Dolphins on Sunday.",
-    "date": "2026-09-14T02:02Z"
-   },
-   {
-    "name": "Ashton Jeanty",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Jeanty rushed 23 times for 102 yards and secured all six targets for 45 yards and two touchdowns in the Raiders' 27-13 win over the Dolphins on Sunday.",
-    "date": "2026-09-14T01:35Z"
    }
   ],
   "LAC": [
@@ -3644,8 +3644,8 @@
     "pos": "S",
     "status": "Out",
     "type": "out",
-    "detail": "out",
-    "date": "2026-09-19T18:45Z"
+    "detail": "Kinchens (hamstring) has been ruled out ahead of Monday's game against the Giants, Benjamin Royer of The Orange County Register reports.",
+    "date": "2026-09-19T21:07Z"
    },
    {
     "name": "Jordan Whittington",
@@ -3664,30 +3664,6 @@
     "date": "2026-09-19T18:41Z"
    },
    {
-    "name": "Omar Speights",
-    "pos": "LB",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Speights (hip) was a limited participant at practice Thursday, Sarah Barshop of ESPN.com reports.",
-    "date": "2026-09-18T01:12Z"
-   },
-   {
-    "name": "Nate Landman",
-    "pos": "LB",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Landman (shoulder) was a limited participant at practice Thursday, Sarah Barshop of ESPN.com reports.",
-    "date": "2026-09-18T01:09Z"
-   },
-   {
-    "name": "Kam Curl",
-    "pos": "S",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Curl (ankle) was a limited participant at practice Thursday, Sarah Barshop of ESPN.com reports.",
-    "date": "2026-09-18T01:00Z"
-   },
-   {
     "name": "Myles Garrett",
     "pos": "DE",
     "status": "Injured Reserve",
@@ -3696,12 +3672,36 @@
     "date": "2026-09-17T18:49Z"
    },
    {
+    "name": "Omar Speights",
+    "pos": "LB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Speights (hip) does not have any injury designation ahead of Monday night's game against the Giants, Benjamin Royer of The Orange County Register reports.",
+    "date": "2026-09-19T21:03Z"
+   },
+   {
+    "name": "Kam Curl",
+    "pos": "S",
+    "status": "Active",
+    "type": "active",
+    "detail": "Curl (ankle) does not have any injury designation ahead of Monday night's game against the Giants, Benjamin Royer of The Orange County Register reports.",
+    "date": "2026-09-19T20:57Z"
+   },
+   {
+    "name": "Nate Landman",
+    "pos": "LB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Landman (shoulder) does not have any injury designation ahead of Monday night's game against the Giants, Benjamin Royer of The Orange County Register reports.",
+    "date": "2026-09-19T20:51Z"
+   },
+   {
     "name": "Aaron Donald",
     "pos": "DT",
     "status": "Active",
     "type": "active",
-    "detail": "Donald told Lindsey Thiry of ESPN.com on Friday, \"That's the plan,\" when asked if he'll play Monday against the Giants.",
-    "date": "2026-09-18T22:11Z"
+    "detail": "Coach Sean McVay confirmed Saturday that Donald is expected to play Monday versus the Giants, Nate Atkins of The Athletic reports. \"If he said it, he's going,\" McVay noted. \"Whatever Aaron says, I support.\"",
+    "date": "2026-09-19T19:05Z"
    },
    {
     "name": "Davis Allen",
@@ -3842,14 +3842,6 @@
   ],
   "MIA": [
    {
-    "name": "Ronnie Harrison Jr.",
-    "pos": "LB",
-    "status": "Out",
-    "type": "out",
-    "detail": "Harrison (hamstring) has been ruled out ahead of Sunday's game against the 49ers, Travis Wingfield of the Dolphins' official site reports.",
-    "date": "2026-09-19T00:45Z"
-   },
-   {
     "name": "Chop Robinson",
     "pos": "LB",
     "status": "Out",
@@ -3864,6 +3856,14 @@
     "type": "questionable",
     "detail": "questionable",
     "date": "2026-09-16T23:11Z"
+   },
+   {
+    "name": "Ronnie Harrison Jr.",
+    "pos": "LB",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "The Dolphins placed Harrison (hamstring) on injured reserve Saturday.",
+    "date": "2026-09-19T21:21Z"
    },
    {
     "name": "Kyle Louis",
@@ -4076,6 +4076,22 @@
     "date": "2026-09-16T18:55Z"
    },
    {
+    "name": "Kyle Van Noy",
+    "pos": "LB",
+    "status": "Active",
+    "type": "active",
+    "detail": "The Vikings elevated Van Noy from the practice squad to the active roster Saturday ahead of Sunday's game against the Bears.",
+    "date": "2026-09-19T21:17Z"
+   },
+   {
+    "name": "Dillon Bell",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "The Vikings elevated Bell from the practice squad to the active roster Saturday ahead of Sunday's game against the Bears.",
+    "date": "2026-09-19T21:12Z"
+   },
+   {
     "name": "Andrew Van Ginkel",
     "pos": "LB",
     "status": "Active",
@@ -4226,22 +4242,6 @@
     "type": "active",
     "detail": "The Vikings converted Rodgers' $1.5 million in playtime incentives to a signing bonus Saturday, Jeremy Fowler of ESPN.com reports.",
     "date": "2026-09-12T17:05Z"
-   },
-   {
-    "name": "Jacob Thomas",
-    "pos": "S",
-    "status": "Active",
-    "type": "active",
-    "detail": "Thomas (ankle) does not carry an injury designation ahead of Sunday's game versus the Packers, Craig Peters of the Vikings' official site reports.",
-    "date": "2026-09-12T00:37Z"
-   },
-   {
-    "name": "Harrison Smith",
-    "pos": "S",
-    "status": "Active",
-    "type": "active",
-    "detail": "Smith is set to suit up Sunday, but his role has not yet been decided, Kevin Seifert of ESPN.com reports.",
-    "date": "2026-09-11T23:36Z"
    }
   ],
   "NE": [
@@ -4650,36 +4650,12 @@
   ],
   "NYG": [
    {
-    "name": "Francis Mauigoa",
-    "pos": "OT",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Mauigoa was a limited participant in Friday's practice due to a shoulder injury, Dan Salomone of the Giants' official site reports.",
-    "date": "2026-09-19T01:43Z"
-   },
-   {
-    "name": "Andrew Thomas",
-    "pos": "OT",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Thomas was a limited participant in Friday's practice due to an ankle injury, Dan Salomone of the Giants' official site reports.",
-    "date": "2026-09-19T01:39Z"
-   },
-   {
-    "name": "Greg Newsome II",
-    "pos": "CB",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Newsome (ribs) was a limited participant at practice Thursday, Dan Salomone of the Giants' official site reports.",
-    "date": "2026-09-17T23:58Z"
-   },
-   {
     "name": "Deonte Banks",
     "pos": "CB",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "Banks (calf) was a limited participant at practice Thursday, Dan Salomone of the Giants' official site reports.",
-    "date": "2026-09-17T23:55Z"
+    "detail": "Banks (calf) is listed as questionable ahead of Monday night's game against the Rams, Dan Salomone of the Giants' official site reports.",
+    "date": "2026-09-19T19:44Z"
    },
    {
     "name": "Micah McFadden",
@@ -4690,20 +4666,44 @@
     "date": "2026-09-17T21:35Z"
    },
    {
-    "name": "Chauncey Golston",
-    "pos": "DE",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-17T21:34Z"
-   },
-   {
     "name": "Paulson Adebo",
     "pos": "CB",
     "status": "Injured Reserve",
     "type": "Injured Reserve",
     "detail": "The Giants placed Adebo (knee) on injured reserve Friday, Dan Salomone of the team's official site reports.",
     "date": "2026-09-19T00:15Z"
+   },
+   {
+    "name": "Andrew Thomas",
+    "pos": "OT",
+    "status": "Active",
+    "type": "active",
+    "detail": "Thomas (ankle) does not have any injury designation ahead of Monday's game against the Rams.",
+    "date": "2026-09-19T20:05Z"
+   },
+   {
+    "name": "Francis Mauigoa",
+    "pos": "OT",
+    "status": "Active",
+    "type": "active",
+    "detail": "Mauigoa (shoulder) does not have any injury designation ahead of Monday's game against the Rams.",
+    "date": "2026-09-19T20:03Z"
+   },
+   {
+    "name": "Greg Newsome II",
+    "pos": "CB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Newsome (ribs) does not have any injury designation ahead of Monday night's game against the Rams, Dan Salomone of the Giants' official site reports.",
+    "date": "2026-09-19T19:49Z"
+   },
+   {
+    "name": "Chauncey Golston",
+    "pos": "DE",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-19T19:35Z"
    },
    {
     "name": "Tyrone Tracy Jr.",
@@ -4852,14 +4852,6 @@
   ],
   "NYJ": [
    {
-    "name": "Omar Cooper Jr.",
-    "pos": "WR",
-    "status": "Out",
-    "type": "out",
-    "detail": "The Jets are expected to place Cooper (ankle) on injured reserve, Ian Rapoport of NFL Network reports.",
-    "date": "2026-09-19T16:24Z"
-   },
-   {
     "name": "Joseph Ossai",
     "pos": "DE",
     "status": "Out",
@@ -4892,6 +4884,14 @@
     "date": "2026-09-18T23:18Z"
    },
    {
+    "name": "Omar Cooper Jr.",
+    "pos": "WR",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "The Jets are expected to place Cooper (ankle) on injured reserve, Ian Rapoport of NFL Network reports.",
+    "date": "2026-09-19T16:24Z"
+   },
+   {
     "name": "Tim Patrick",
     "pos": "WR",
     "status": "Injured Reserve",
@@ -4904,8 +4904,8 @@
     "pos": "PK",
     "status": "Active",
     "type": "active",
-    "detail": "Sanders will remain the Jets' kicker for Sunday's game against the Packers, Zack Rosenblatt of The Athletic reports.",
-    "date": "2026-09-18T14:57Z"
+    "detail": "The Jets elevated Sanders from the practice squad to the active roster Saturday, Amanda Vogt of the team's official site reports.",
+    "date": "2026-09-19T20:25Z"
    },
    {
     "name": "D'Angelo Ponds",
@@ -5280,12 +5280,12 @@
     "date": "2026-09-19T01:20Z"
    },
    {
-    "name": "DeShon Elliott",
-    "pos": "S",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "ir",
-    "date": "2026-09-08T20:42Z"
+    "name": "Travis Homer",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "The Steelers elevated Homer from the practice squad to the active roster Saturday, Teresa Varley of the team's official site reports.",
+    "date": "2026-09-19T19:16Z"
    },
    {
     "name": "Roman Wilson",
@@ -5458,20 +5458,12 @@
   ],
   "SF": [
    {
-    "name": "De'Zhaun Stribling",
-    "pos": "WR",
-    "status": "Out",
-    "type": "out",
-    "detail": "The 49ers are expected to place Stribling (ankle) on injured reserve, Adam Schefter of ESPN.com reports.",
-    "date": "2026-09-16T16:36Z"
-   },
-   {
     "name": "Eddy Pineiro",
     "pos": "PK",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "Pineiro (illness) is listed as questionable for Sunday's game against the Dolphins, Cam Inman of The San Jose Mercury News reports.",
-    "date": "2026-09-18T21:18Z"
+    "detail": "Pineiro (illness) is expected to be active Sunday against the Dolphins, Matt Maiocco of NBC Sports Bay Area reports.",
+    "date": "2026-09-19T20:05Z"
    },
    {
     "name": "Kaelon Black",
@@ -5480,6 +5472,14 @@
     "type": "questionable",
     "detail": "Black (groin) is listed as questionable for Sunday's game against the Dolphins, Cam Inman of The San Jose Mercury News reports.",
     "date": "2026-09-18T21:05Z"
+   },
+   {
+    "name": "De'Zhaun Stribling",
+    "pos": "WR",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "The 49ers placed Stribling (ankle) on injured reserve Saturday.",
+    "date": "2026-09-19T21:14Z"
    },
    {
     "name": "Jake Tonges",
@@ -5660,6 +5660,14 @@
   ],
   "SEA": [
    {
+    "name": "Anthony Bradford",
+    "pos": "G",
+    "status": "Out",
+    "type": "out",
+    "detail": "Bradford (knee) has been ruled out ahead of Sunday's game against the Cardinals, John Boyle of the Seahawks' official site reports.",
+    "date": "2026-09-19T21:32Z"
+   },
+   {
     "name": "Ty Okada",
     "pos": "S",
     "status": "Out",
@@ -5682,14 +5690,6 @@
     "type": "out",
     "detail": "Coach Mike Macdonald said Darnold (glute) won't play in Sunday's game at Arizona, Curtis Crabtree of Fox 13 Seattle reports.",
     "date": "2026-09-16T19:25Z"
-   },
-   {
-    "name": "Anthony Bradford",
-    "pos": "G",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Bradford (knee) is listed as questionable for Sunday's game against the Cardinals, John Boyle of the Seahawks' official site reports.",
-    "date": "2026-09-19T01:57Z"
    },
    {
     "name": "Nick Emmanwori",
@@ -6434,6 +6434,14 @@
     "date": "2026-09-14T15:24Z"
    },
    {
+    "name": "Ricky Barber",
+    "pos": "DT",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-14T15:24Z"
+   },
+   {
     "name": "Stefon Diggs",
     "pos": "WR",
     "status": "Active",
@@ -6456,14 +6464,6 @@
     "type": "active",
     "detail": "White rushed seven times for 22 yards and caught two of three targets for five yards in Sunday's loss to Dallas in Week 1.",
     "date": "2026-09-14T01:03Z"
-   },
-   {
-    "name": "Jacory Croskey-Merritt",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Croskey-Merritt rushed 16 times for 63 yards and a touchdown while catching his only target for a seven-yard loss in a defeat to the Eagles on Sunday.",
-    "date": "2026-09-14T00:53Z"
    }
   ]
  }
