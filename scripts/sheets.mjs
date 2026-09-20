@@ -121,6 +121,94 @@ export function twoPlusLegs(atd) {
 
 /** Edge a leg needs, in probability points, to be trusted on a ticket of that length. */
 export const EDGE_FLOOR = { short: 0.03, long: 0.05 };
+/**
+ * The most of his own team's touchdowns a scorer estimate may demand. Backed out of the model's
+ * own game projection: P(scores) = 1 - (1 - share)^n for n projected team touchdowns. A tight end
+ * whose 55% needs 30% of every Arizona score, in a game the model projects Arizona for 17 points,
+ * is the player call and the game call contradicting each other, and it does not go on a ticket.
+ */
+export const MAX_TEAM_TD_SHARE = { RB: 0.4, QB: 0.4, default: 0.25 };
+/** Ceiling for a leg's position: a goal-line back legitimately owns a third of his team's scores. */
+export const shareCeiling = (pos) => MAX_TEAM_TD_SHARE[pos] ?? MAX_TEAM_TD_SHARE.default;
+/** Projected touchdowns for a team from the model's score: a field goal or two out, the rest TDs. */
+export function teamTouchdowns(game, abbr) {
+  const p = game?.market?.projected;
+  if (!p) return null;
+  const pts = abbr === game.home.abbr ? p.home : p.away;
+  return Math.max(0.5, (pts - 1.5) / 7);
+}
+/** The share of team touchdowns a scorer's anytime estimate implies. */
+export function impliedShare(game, leg) {
+  const n = teamTouchdowns(game, leg.team);
+  if (!n) return null;
+  return 1 - Math.pow(1 - leg.prob, 1 / n);
+}
+
+/** Standard six-point teaser: sides and totals move six points in the bettor's favour. */
+export const TEASER_POINTS = 6;
+const SIGMA = 13.5;
+/**
+ * Six-point teaser legs from the model's sides and totals, priced by the model's own projection
+ * moved the six points. A teaser is only worth its price when the six points cross the numbers
+ * football games actually land on, so a leg that crosses both 3 and 7 is marked as such.
+ */
+export function teaserLegs(board, sides, totals) {
+  const out = [];
+  const crosses = (from, to) => {
+    const lo = Math.min(Math.abs(from), Math.abs(to));
+    const hi = Math.max(Math.abs(from), Math.abs(to));
+    return [3, 7].filter((k) => k > lo && k < hi).length;
+  };
+  for (const l of sides) {
+    const g = board.games.find((x) => x.id === l.game);
+    const p = g?.market?.projected;
+    if (!p) continue;
+    const num = Number(l.label.split(' ').pop());
+    const projMargin = l.team === g.home.abbr ? p.home - p.away : p.away - p.home;
+    const teased = +(num + TEASER_POINTS).toFixed(1);
+    const prob = normCdf((projMargin + teased) / SIGMA);
+    out.push({
+      ...l,
+      type: 'tease-side',
+      label: `${l.team} ${teased > 0 ? '+' : ''}${teased}`,
+      from: `${l.team} ${num > 0 ? '+' : ''}${num}`,
+      prob: +prob.toFixed(3),
+      keys: crosses(num, teased),
+    });
+  }
+  for (const l of totals) {
+    const g = board.games.find((x) => x.id === l.game);
+    const p = g?.market?.projected;
+    if (!p) continue;
+    const m = /^(Over|Under)\s+([\d.]+)/.exec(l.label);
+    if (!m) continue;
+    const dir = m[1];
+    const num = Number(m[2]);
+    const projTotal = p.home + p.away;
+    const teased = dir === 'Over' ? num - TEASER_POINTS : num + TEASER_POINTS;
+    const prob =
+      dir === 'Over'
+        ? normCdf((projTotal - teased) / SIGMA)
+        : normCdf((teased - projTotal) / SIGMA);
+    out.push({
+      ...l,
+      type: 'tease-total',
+      label: `${dir} ${teased} ${l.gameLabel}`,
+      from: `${dir} ${num}`,
+      prob: +prob.toFixed(3),
+      keys: 0,
+    });
+  }
+  return out;
+}
+function normCdf(z) {
+  const t = 1 / (1 + 0.2316419 * Math.abs(z));
+  const d = 0.3989423 * Math.exp((-z * z) / 2);
+  const p =
+    d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274))));
+  return z > 0 ? 1 - p : p;
+}
+
 /** Positions the 2+ TD sheet is written for: the ones the conversion was graded on. */
 export const TD2_POSITIONS = new Set(['RB', 'QB']);
 /** Anytime sheet ceiling: above this a ticket belongs on a long-shot sheet, not here. */
@@ -128,10 +216,18 @@ export const ANYTIME_MAX_PRICE = 1500;
 
 export function buildSheets(board, opts = {}) {
   const n = opts.perSheet ?? 5;
+  // Optionally restrict to a set of games (a Sunday sheet leaves Monday night off).
+  const inScope = (l) => !opts.games || opts.games.has(l.game);
+  const gameOf = (id) => board.games.find((x) => x.id === id);
 
   // Leg pools. Positive edge is the entry ticket; a long ticket asks for more of it, because a
   // near-coin-flip favourite added to a three-leg ticket does nothing but push it into a band.
-  const scorers = atdLegs(board);
+  // A scorer whose estimate demands more of his team's touchdowns than the ceiling allows is out
+  // of every parlay pool: that is the model disagreeing with itself, not an edge.
+  const scorers = atdLegs(board)
+    .filter(inScope)
+    .map((l) => ({ ...l, share: impliedShare(gameOf(l.game), l) }))
+    .filter((l) => l.share == null || l.share <= shareCeiling(l.pos));
   const atdAll = scorers.filter((l) => l.edge >= EDGE_FLOOR.short && l.prob >= 0.35);
   const atdLong = atdAll.filter((l) => !l.status && l.edge >= EDGE_FLOOR.long);
   // The 2+ market is its own market. A back priced -225 to score once carries no anytime edge and
@@ -141,8 +237,27 @@ export function buildSheets(board, opts = {}) {
     (l) => l.edge >= EDGE_FLOOR.short,
   );
   const td2Long = td2All.filter((l) => !l.status && l.edge >= EDGE_FLOOR.long);
-  const sides = sideLegs(board).filter((l) => l.conf >= 2 && l.edge > 0);
-  const totals = totalLegs(board).filter((l) => l.conf >= 2 && l.edge > 0);
+  const sides = sideLegs(board)
+    .filter(inScope)
+    .filter((l) => l.conf >= 2 && l.edge > 0);
+  const totals = totalLegs(board)
+    .filter(inScope)
+    .filter((l) => l.conf >= 2 && l.edge > 0);
+
+  // Six-point teaser: the five legs with the highest teased cover probability, one per game, a
+  // side or a total from each. Priced from the model's projection; the sheet also shows the
+  // conservative read, since a five-leg teaser is where a hopeful number costs the most.
+  const teaserPool = teaserLegs(board, sides, totals).sort(
+    (a, b) => b.prob - a.prob || b.keys - a.keys,
+  );
+  const teaser = [];
+  const teaserGames = new Set();
+  for (const l of teaserPool) {
+    if (teaser.length === 5) break;
+    if (teaserGames.has(l.game)) continue;
+    teaserGames.add(l.game);
+    teaser.push(l);
+  }
 
   // Locked In: two doubles, then three triples, no leg twice. Sides and totals together, one leg
   // per game so a side never rides with its own total. The doubles exist because a reader who
@@ -231,6 +346,14 @@ export function buildSheets(board, opts = {}) {
       twoPlusPriced: td2All.length,
       sides: sides.length,
       totals: totals.length,
+    },
+    teaser: {
+      points: TEASER_POINTS,
+      legs: teaser,
+      prob: +teaser.reduce((p, l) => p * l.prob, 1).toFixed(3),
+      // A six-point move on a fair line is worth about phi(6/13.5) = 67% a leg before any key
+      // numbers; 70% is the honest floor for legs chosen for their key numbers.
+      conservative: +Math.pow(0.7, teaser.length).toFixed(3),
     },
     sheets: [
       { key: 'lockedIn', title: 'Locked In', tickets: lockedIn },

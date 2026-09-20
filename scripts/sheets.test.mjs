@@ -179,3 +179,132 @@ test('no leg repeats on the Locked In or Anytime sheets', () => {
     assert.equal(new Set(labels).size, labels.length, `${key} reused a leg`);
   }
 });
+
+test('a scorer whose estimate demands too much of his team is off every parlay pool', () => {
+  // Home projected for 17 points, about 2.2 touchdowns. A 55% scorer would need to take 30% of
+  // them; a 35% scorer needs 18% and stays.
+  const g = {
+    id: 'lo',
+    kickoff: new Date(Date.now() + 6 * 3600000).toISOString(),
+    away: { abbr: 'A' },
+    home: { abbr: 'H' },
+    status: { state: 'pre' },
+    top3: [
+      { name: 'Hog', team: 'H', pos: 'TE', est: 0.55, live: { books: { fanduel: 195 } } },
+      { name: 'Fair', team: 'H', pos: 'WR', est: 0.35, live: { books: { fanduel: 280 } } },
+    ],
+    value: [],
+    market: {
+      side: 'A -3',
+      sideConf: 3,
+      total: 'Under 41.5',
+      totalConf: 3,
+      projected: { away: 24, home: 17 },
+      why: '',
+    },
+    injuryReport: { away: [], home: [] },
+  };
+  const other = {
+    ...g,
+    id: 'hi',
+    away: { abbr: 'B' },
+    home: { abbr: 'C' },
+    top3: [
+      { name: 'Elsewhere', team: 'C', pos: 'RB', est: 0.5, live: { books: { fanduel: 150 } } },
+    ],
+    market: { ...g.market, projected: { away: 20, home: 27 } },
+  };
+  const s = buildSheets({ games: [g, other], week: 2, season: 2026 });
+  const names = s.sheets.flatMap((x) => x.tickets.flatMap((t) => t.legs.map((l) => l.player)));
+  assert.ok(!names.includes('Hog'), 'Hog demanded 30% of team TDs and should be out');
+  assert.ok(names.includes('Fair'), 'Fair needs 18% and should stay');
+});
+
+test('teaser legs move six points and know when they cross 3 and 7', () => {
+  const soonIso = new Date(Date.now() + 6 * 3600000).toISOString();
+  // Two games: one carries the side (home projected to win by ten, laying 8.5), one the total
+  // (projected 38, under 41.5). Team codes are two letters because that is what parseSide reads.
+  const board = {
+    games: [
+      {
+        id: 's',
+        kickoff: soonIso,
+        away: { abbr: 'AA' },
+        home: { abbr: 'HH' },
+        status: { state: 'pre' },
+        top3: [],
+        value: [],
+        market: {
+          side: 'HH -8.5',
+          sideConf: 3,
+          total: 'Over 44.5',
+          totalConf: 1,
+          projected: { away: 17, home: 27 },
+          why: '',
+        },
+      },
+      {
+        id: 't',
+        kickoff: soonIso,
+        away: { abbr: 'BB' },
+        home: { abbr: 'CC' },
+        status: { state: 'pre' },
+        top3: [],
+        value: [],
+        market: {
+          side: 'CC -3',
+          sideConf: 1,
+          total: 'Under 41.5',
+          totalConf: 3,
+          projected: { away: 17, home: 21 },
+          why: '',
+        },
+      },
+    ],
+    week: 2,
+    season: 2026,
+  };
+  const s = buildSheets(board);
+  const side = s.teaser.legs.find((l) => l.type === 'tease-side');
+  const total = s.teaser.legs.find((l) => l.type === 'tease-total');
+  assert.equal(side.label, 'HH -2.5'); // -8.5 teased six points
+  assert.equal(side.keys, 2); // crosses both 7 and 3: the classic
+  assert.ok(side.prob > 0.7);
+  assert.equal(total.label, 'Under 47.5 BB@CC');
+  assert.ok(total.prob > 0.7);
+  assert.equal(s.teaser.conservative, +Math.pow(0.7, 2).toFixed(3));
+});
+
+test('the share ceiling is looser for backs than for pass-catchers', () => {
+  // Same 55% estimate on a team projected for 20 points (about 2.6 touchdowns) demands 26% of
+  // them. That is over the line for a tight end and inside it for a running back.
+  const mk = (pos) => ({
+    id: 'g' + pos,
+    kickoff: new Date(Date.now() + 6 * 3600000).toISOString(),
+    away: { abbr: 'A' + pos },
+    home: { abbr: 'H' + pos },
+    status: { state: 'pre' },
+    top3: [{ name: 'P' + pos, team: 'H' + pos, pos, est: 0.55, live: { books: { fanduel: 150 } } }],
+    value: [],
+    market: {
+      side: `H${pos} -3`,
+      sideConf: 3,
+      total: 'Under 41.5',
+      totalConf: 3,
+      projected: { away: 17, home: 20 },
+      why: '',
+    },
+    injuryReport: { away: [], home: [] },
+  });
+  // A third, clean scorer in a third game, so whoever survives the ceiling has a partner: an
+  // anytime ticket needs two legs from two games, and a pool of one builds nothing.
+  const partner = mk('WR');
+  partner.top3[0].est = 0.35;
+  partner.top3[0].live = { books: { fanduel: 280 } }; // 35% against 26% implied: a real leg
+  const s = buildSheets({ games: [mk('TE'), mk('RB'), partner], week: 2, season: 2026 });
+  const names = new Set(
+    s.sheets.flatMap((x) => x.tickets.flatMap((t) => t.legs.map((l) => l.player))),
+  );
+  assert.ok(!names.has('PTE'), 'a tight end needing 25% of team TDs is over the line');
+  assert.ok(names.has('PRB'), 'a back needing 25% is inside it');
+});
