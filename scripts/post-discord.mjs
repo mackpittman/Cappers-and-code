@@ -1,6 +1,10 @@
 // Posts the daily board digest to Discord as brand-aligned embeds.
 // Requires DISCORD_WEBHOOK_URL (create a webhook on #daily-board, name it "CC Core", avatar brand/discord/server-icon.png).
 // Optional: DISCORD_MAX_BETS (default 8), DISCORD_MAX_TD (default 8), DISCORD_DRY_RUN=1 prints the payload instead of posting.
+// The full digest goes out at most once per UTC day. That is enforced here, in code, because the
+// Routine that runs this script has posted the digest twice on hand-fired days: it does a standard
+// pass before it reads the override message, and a prompt line saying "once per day" did not stop
+// it. DISCORD_FORCE=1 posts a second digest on purpose; parlay-only posts are never gated.
 import path from 'node:path';
 import { DATA, ROOT, readJson, impliedProb } from './lib.mjs';
 
@@ -60,6 +64,58 @@ const parlayLines = (board.parlays?.categories || [])
 
 // DISCORD_PARLAYS_ONLY=1 posts just the parlay board (used when the digest already went out today).
 const parlaysOnly = process.env.DISCORD_PARLAYS_ONLY === '1';
+const force = process.env.DISCORD_FORCE === '1';
+const DIGEST_KEY = 'discord-digest';
+const today = new Date().toISOString().slice(0, 10);
+// The once-a-day record lives in pipeline_state next to the odds pulls, so every session that can
+// post can also see what already went out. Without the state credentials the guard cannot run and
+// says so rather than silently posting.
+const stateReady = !!(
+  process.env.SUPABASE_URL &&
+  process.env.SUPABASE_ANON_KEY &&
+  process.env.BOARD_PUBLISH_SECRET
+);
+async function stateRpc(fn, body) {
+  const r = await fetch(`${process.env.SUPABASE_URL}/rest/v1/rpc/${fn}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      apikey: process.env.SUPABASE_ANON_KEY,
+      Authorization: `Bearer ${process.env.SUPABASE_ANON_KEY}`,
+    },
+    body: JSON.stringify({ secret: process.env.BOARD_PUBLISH_SECRET, ...body }),
+  });
+  const text = await r.text();
+  if (!r.ok) throw new Error(`${fn}: ${r.status} ${text.slice(0, 200)}`);
+  return text ? JSON.parse(text) : null;
+}
+if (!parlaysOnly && !force && process.env.DISCORD_DRY_RUN !== '1') {
+  if (!stateReady) {
+    console.error(
+      'discord: cannot check whether the digest already went out today (state credentials missing); not posting. Set DISCORD_FORCE=1 to post anyway.',
+    );
+    process.exit(0);
+  }
+  const prior = await stateRpc('get_pipeline_state', { state_key: DIGEST_KEY }).catch(() => null);
+  if (prior?.value?.date === today) {
+    console.log(
+      `discord: digest already posted today at ${prior.value.at} (message ${prior.value.message_id ?? '?'}); skipping. DISCORD_FORCE=1 overrides.`,
+    );
+    process.exit(0);
+  }
+}
+async function recordDigest(messageId) {
+  if (parlaysOnly || !stateReady) return;
+  await stateRpc('set_pipeline_state', {
+    state_key: DIGEST_KEY,
+    state_value: {
+      date: today,
+      at: new Date().toISOString(),
+      message_id: messageId ?? null,
+      week: board.week,
+    },
+  }).catch((e) => console.error(`discord: could not record the digest post: ${e.message}`));
+}
 // Which opt-in role this drop alerts. DISCORD_PING overrides for one-off posts (a live card,
 // a results card); empty string posts silently. Members who never took the role get no ping.
 const ping = process.env.DISCORD_PING ?? 'board';
@@ -126,7 +182,16 @@ if (fnUrl && fnSecret) {
   });
   const text = await res.text();
   console.log(`discord (bot): ${res.status} ${text.slice(0, 120)}`);
-  if (res.ok) process.exit(0);
+  if (res.ok) {
+    let id = null;
+    try {
+      id = JSON.parse(text)?.message_id ?? null;
+    } catch {
+      /* the function may answer with plain text */
+    }
+    await recordDigest(id);
+    process.exit(0);
+  }
   if (!url) process.exit(1);
   console.error('bot post failed; trying the webhook');
 }
@@ -140,3 +205,4 @@ if (!res.ok) {
   console.error(await res.text());
   process.exit(1);
 }
+await recordDigest(null);
