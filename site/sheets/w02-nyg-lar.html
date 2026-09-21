@@ -1,0 +1,138 @@
+<!doctype html>
+<html><head><meta charset="utf-8" /><title>Cappers &amp; Code · NYG @ LAR</title>
+<style>
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 900; src: url(../promo/assets/fonts/BarlowCondensed_900Black.ttf); }
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 800; src: url(../promo/assets/fonts/BarlowCondensed_800ExtraBold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 700; src: url(../promo/assets/fonts/Manrope_700Bold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 500; src: url(../promo/assets/fonts/Manrope_500Medium.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 700; src: url(../promo/assets/fonts/JetBrainsMono_700Bold.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url(../promo/assets/fonts/JetBrainsMono_500Medium.ttf); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #050608; color: #F5F7F2; font-family: 'Manrope', sans-serif; }
+  .card { width: 1200px; padding: 48px 64px 64px; background: #050608 radial-gradient(ellipse at 50% 0%, rgba(182,255,0,.10), transparent 40%); position: relative; overflow: hidden; }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 6px; background: #B6FF00; }
+  .brand { display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono'; letter-spacing: 3px; font-size: 17px; color: #B6FF00; font-weight: 700; }
+  .brand img { width: 220px; display: block; }
+  h1 { font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; font-size: 84px; margin: 22px 0 6px; letter-spacing: 1px; line-height: .92; }
+  h1 span { color: #B6FF00; }
+  .sub { color: #C8CFC8; font-size: 20px; margin: 0 0 8px; line-height: 1.4; font-weight: 500; }
+  h2 { font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; font-size: 44px; margin: 40px 0 6px; letter-spacing: 1px; line-height: 1; display: flex; align-items: baseline; gap: 16px; }
+  h2 small { font-family: 'JetBrains Mono'; font-size: 14px; letter-spacing: 3px; color: #79E000; font-weight: 700; text-transform: uppercase; }
+  .rule { color: #9DA59D; font-size: 17px; margin: 0 0 16px; line-height: 1.4; }
+
+  table.board { width: 100%; border-collapse: collapse; }
+  table.board th { text-align: left; font-family: 'JetBrains Mono'; color: #B6FF00; letter-spacing: 3px; font-size: 13px; padding: 0 12px 10px; border-bottom: 1px solid #23282A; }
+  table.board td { padding: 10px 12px; border-bottom: 1px solid #14181A; vertical-align: top; }
+  table.board td.g { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 28px; text-transform: uppercase; white-space: nowrap; width: 190px; }
+  table.board td small { display: block; font-family: 'JetBrains Mono'; font-weight: 500; font-size: 12px; color: #9DA59D; letter-spacing: 1px; margin-top: 3px; text-transform: uppercase; }
+  table.board td.pick { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; color: #F5F7F2; }
+  table.board td.pick.hot { color: #B6FF00; }
+  table.board td.pick.muted { color: #3A4040; }
+
+  .tk { border: 1px solid rgba(182,255,0,.35); border-left: 5px solid #B6FF00; border-radius: 10px; background: #0B0E10; margin-bottom: 10px; }
+  .tk .hd { display: grid; grid-template-columns: 56px 1fr 150px; align-items: center; gap: 14px; padding: 12px 20px; }
+  .tk .tag { font-family: 'JetBrains Mono'; font-size: 16px; font-weight: 700; color: #B6FF00; letter-spacing: 2px; }
+  .tk .legs { display: flex; flex-direction: column; gap: 6px; }
+  .tk .leg { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; line-height: 1; display: flex; align-items: baseline; gap: 12px; }
+  .tk .leg b { font-family: 'JetBrains Mono'; font-size: 19px; color: #F5F7F2; }
+  .tk .leg i { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 500; font-size: 12px; color: #9DA59D; letter-spacing: 1px; text-transform: uppercase; }
+  .tk .odds { font-family: 'JetBrains Mono'; font-size: 34px; font-weight: 700; color: #B6FF00; text-align: right; }
+  .tk .ft { display: flex; gap: 30px; padding: 8px 20px 11px; border-top: 1px solid #1B2022; font-family: 'JetBrains Mono'; font-size: 12px; letter-spacing: 2px; color: #9DA59D; }
+  .tk .ft b { font-size: 20px; color: #F5F7F2; margin-right: 8px; letter-spacing: 0; }
+  .tk .ft .ev b { color: #B6FF00; }
+  .tk .ft .m b { color: #C8CFC8; }
+
+  table.td { width: 100%; border-collapse: collapse; }
+  table.td th { text-align: left; font-family: 'JetBrains Mono'; color: #B6FF00; letter-spacing: 3px; font-size: 13px; padding: 0 12px 10px; border-bottom: 1px solid #23282A; }
+  table.td th.r { text-align: right; }
+  table.td td { padding: 11px 12px; border-bottom: 1px solid #16191B; }
+  table.td td.n { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; }
+  table.td td.n small { display: block; font-family: 'JetBrains Mono'; font-weight: 500; font-size: 12px; color: #9DA59D; letter-spacing: 1px; margin-top: 3px; text-transform: uppercase; }
+  table.td td.r { text-align: right; font-family: 'JetBrains Mono'; font-weight: 700; font-size: 21px; white-space: nowrap; }
+  table.td td.p { color: #B6FF00; }
+  table.td td.e { color: #79E000; }
+
+  .teaser { border: 1px solid rgba(182,255,0,.45); box-shadow: 0 0 22px rgba(182,255,0,.12); border-radius: 12px; background: #0B0E10; padding: 20px 24px; }
+  .teaser .top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .teaser .top .k { font-family: 'JetBrains Mono'; letter-spacing: 3px; color: #B6FF00; font-weight: 700; font-size: 15px; }
+  .teaser .top .v { font-family: 'JetBrains Mono'; font-weight: 700; font-size: 22px; }
+  .teaser .top .v i { font-style: normal; color: #9DA59D; font-size: 15px; font-weight: 500; margin-left: 12px; }
+  .foot { margin-top: 30px; display: flex; justify-content: space-between; font-family: 'JetBrains Mono'; color: #79E000; font-size: 15px; letter-spacing: 4px; font-weight: 700; }
+</style>
+<style>
+  .tk .ft .why { flex: 1; color: #9DA59D; letter-spacing: 0; font-family: 'Manrope'; font-size: 13.5px; font-weight: 500; text-transform: none; text-align: right; line-height: 1.45; }
+  .tk .hd { grid-template-columns: 92px 1fr 160px; }
+  .line { display: flex; gap: 40px; margin: 14px 0 0; font-family: 'JetBrains Mono'; font-size: 15px; letter-spacing: 2px; color: #9DA59D; }
+  .line b { color: #B6FF00; font-size: 22px; margin-right: 8px; }
+  .read { border-left: 4px solid #B6FF00; background: #0B0E10; padding: 16px 22px; margin: 18px 0 0; color: #C8CFC8; font-size: 16px; line-height: 1.55; }
+  table.td td.bad { color: #E06060; }
+  table.td td.warn { color: #E0C040; }
+  table.td td.w { font-size: 13.5px; color: #9DA59D; line-height: 1.45; padding-left: 18px; }
+</style></head>
+<body>
+<section class="card" id="game">
+  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code"><span>WEEK 2 · MONDAY NIGHT</span></div>
+  <h1>NYG @ LAR, <span>the whole sheet</span></h1>
+  <p class="sub">Every play we have on the last game of the week: the board, the anytime board, the 2+ list, 3 stacks and the long-shot band. Player prices are FanDuel/DraftKings as of MON 5:43 PM ET. A same-game parlay engine reprices a stack; the model numbers hold. Units, not dollars.</p>
+  <div class="line"><span><b>NYG +6.5</b> SIDE 3/5</span><span><b>Under 47.5</b> TOTAL 3/5</span><span><b>LAR 27</b> · <b>NYG 20.5</b> IMPLIED</span></div>
+  <div class="read">The Rams are the better roster and get extra rest before Monday, so LAR winning outright at home is very plausible and the -355 price is fair. But covering -7 is a different question: Garrett is gone for months, Donald's snaps are uncertain, and LAR mustered only two total QB hits in Week 1, while the Giants' O-line just protected Dart cleanly for 3 TDs and no sacks. The total lean follows the same logic: neither offense was explosive in Week 1, and a game plan built around Giants ball control plus a Rams offense still finding its footing under a new OC argues for fewer possessions than the 48.5 number assumes.</div>
+
+  <h2>Anytime TD <small>top 12 · model against the price</small></h2>
+  <p class="rule">"Model" is our own number where the desk wrote one, and the book price with the hold stripped where it did not. Edge is the gap. A negative edge is a name the market likes more than we do.</p>
+  <table class="td">
+    <tr><th>#</th><th>Player</th><th class="r">Anytime</th><th class="r">Model</th><th class="r">Implied</th><th class="r">Edge</th></tr>
+    <tr><td class="p">1</td><td class="n">Kyren Williams<small>LAR · RB · model</small></td><td class="r p">-180 DK</td><td class="r e">48%</td><td class="r">64%</td><td class="r bad">-16%</td></tr>
+<tr><td class="p">2</td><td class="n">Davante Adams<small>— · — · market</small></td><td class="r p">-105 betmgm</td><td class="r e">48%</td><td class="r">51%</td><td class="r bad">-4%</td></tr>
+<tr><td class="p">3</td><td class="n">Cam Skattebo<small>NYG · RB · model</small></td><td class="r p">+125 betmgm</td><td class="r e">42%</td><td class="r">44%</td><td class="r bad">-2%</td></tr>
+<tr><td class="p">4</td><td class="n">Isaiah Likely<small>NYG · TE · model</small></td><td class="r p">+290 DK</td><td class="r e">34%</td><td class="r">26%</td><td class="r e">+8%</td></tr>
+<tr><td class="p">5</td><td class="n">Malik Nabers<small>— · — · market</small></td><td class="r p">+205 DK</td><td class="r e">30%</td><td class="r">33%</td><td class="r bad">-2%</td></tr>
+<tr><td class="p">6</td><td class="n">Terrance Ferguson<small>— · — · market</small></td><td class="r p">+260 betrivers</td><td class="r e">26%</td><td class="r">28%</td><td class="r bad">-2%</td></tr>
+<tr><td class="p">7</td><td class="n">Jaxson Dart<small>— · — · market</small></td><td class="r p">+265 DK</td><td class="r e">25%</td><td class="r">27%</td><td class="r bad">-2%</td></tr>
+<tr><td class="p">8</td><td class="n">Colby Parkinson<small>— · — · market</small></td><td class="r p">+295 betrivers</td><td class="r e">24%</td><td class="r">25%</td><td class="r bad">-2%</td></tr>
+<tr><td class="p">9</td><td class="n">Devin Singletary<small>NYG · RB · model</small></td><td class="r p">+550 DK</td><td class="r e">16%</td><td class="r">15%</td><td class="r e">+1%</td></tr>
+<tr><td class="p">10</td><td class="n">Malachi Fields<small>— · — · market</small></td><td class="r p">+500 DK</td><td class="r e">16%</td><td class="r">17%</td><td class="r bad">-1%</td></tr>
+<tr><td class="p">11</td><td class="n">Tyler Higbee<small>— · — · market</small></td><td class="r p">+510 betrivers</td><td class="r e">15%</td><td class="r">16%</td><td class="r bad">-1%</td></tr>
+<tr><td class="p">12</td><td class="n">Konata Mumpfield<small>— · — · market</small></td><td class="r p">+550 DK</td><td class="r e">14%</td><td class="r">15%</td><td class="r bad">-1%</td></tr>
+  </table>
+
+  <h2>2+ touchdowns <small>backs and quarterbacks · with the cushion</small></h2>
+  <p class="rule">Break-even is what the price needs to be worth playing. Cushion is how many points of model edge sit above it. The 2+ model is 5-34 on the season and 0 for 3 in its top band, so a thin cushion is a pass, not a coin flip.</p>
+  <table class="td">
+    <tr><th>#</th><th>Player</th><th class="r">2+ price</th><th class="r">Model</th><th class="r">Break-even</th><th class="r">Cushion</th><th class="r">EV</th></tr>
+    <tr><td class="p">1</td><td class="n">Devin Singletary<small>NYG · RB · anytime +550</small></td><td class="r p">+6500 FD</td><td class="r e">1.4%</td><td class="r">1.5%</td><td class="r bad">0 pts</td><td class="r bad">-8%</td></tr>
+<tr><td class="p">2</td><td class="n">Cam Skattebo<small>NYG · RB · anytime +125</small></td><td class="r p">+750 FD</td><td class="r e">10%</td><td class="r">12%</td><td class="r bad">-1 pts</td><td class="r bad">-12%</td></tr>
+<tr><td class="p">3</td><td class="n">Blake Corum<small>LAR · RB · anytime +215</small></td><td class="r p">+1600 FD</td><td class="r e">0.9%</td><td class="r">5.9%</td><td class="r bad">-5 pts</td><td class="r bad">-85%</td></tr>
+<tr><td class="p">4</td><td class="n">Kyren Williams<small>LAR · RB · anytime -180</small></td><td class="r p">+320 FD</td><td class="r e">14%</td><td class="r">24%</td><td class="r bad">-10 pts</td><td class="r bad">-41%</td></tr>
+  </table>
+
+  <h2>The stacks <small>3 · correlated by design</small></h2>
+  <p class="rule">Each one is a single idea about how this game goes, bet more than once. Priced as if the legs were independent, which is the honest floor: a positively correlated stack hits more often than the number below and your book will shorten the payout to match.</p>
+  <div class="tk"><div class="hd"><span class="tag">THE MODEL STACK</span><span class="legs"><span class="leg">NYG +6.5 <b>-110</b><i>FD/DK · 58% model vs 52%</i></span><span class="leg">Under 47.5 <b>-110</b><i>FD/DK · 59% model vs 52%</i></span></span><span class="odds">+264</span></div><div class="ft"><span><b>34%</b> MODEL HIT</span><span class="m"><b>27%</b> BOOK</span><span class="ev"><b>+24%</b> EV</span><span class="why">Both of the desk’s own calls on this game, at confidence 3. They pull the same way: the Giants covering almost always means a slower, shorter game, so the side and the total are one idea bet twice.</span></div></div>
+<div class="tk"><div class="hd"><span class="tag">BALL CONTROL</span><span class="legs"><span class="leg">NYG +6.5 <b>-110</b><i>FD/DK · 58% model vs 52%</i></span><span class="leg">Under 47.5 <b>-110</b><i>FD/DK · 59% model vs 52%</i></span><span class="leg">Cam Skattebo anytime TD <b>+125</b><i>betmgm · 42% model vs 44%</i></span></span><span class="odds">+720</span></div><div class="ft"><span><b>14%</b> MODEL HIT</span><span class="m"><b>12%</b> BOOK</span><span class="ev"><b>+17%</b> EV</span><span class="why">The same script with the Giants’ goal-line back attached. If New York is keeping this close and shortening the game, Skattebo is the one carrying it in.</span></div></div>
+<div class="tk"><div class="hd"><span class="tag">DART IN THE RED ZONE</span><span class="legs"><span class="leg">Jaxson Dart Over 1.5 <b>+180</b><i>FD/DK · 33% market vs 36%</i></span><span class="leg">Isaiah Likely anytime TD <b>+290</b><i>DK · 34% model vs 26%</i></span><span class="leg">NYG +6.5 <b>-110</b><i>FD/DK · 58% model vs 52%</i></span></span><span class="odds">+1985</span></div><div class="ft"><span><b>6.5%</b> MODEL HIT</span><span class="m"><b>4.8%</b> BOOK</span><span class="ev"><b>+36%</b> EV</span><span class="why">Los Angeles got two QB hits all of Week 1 and Garrett is gone for months. A clean pocket let Dart throw three touchdowns in the opener; Likely is the body he looks for inside the 20.</span></div></div>
+
+  <h2>Long shots <small>3 tickets · +3000 to +6000</small></h2>
+  <p class="rule">Three legs each, drawn from the lists above, ranked by how often the model hits them. No player carries more than three tickets.</p>
+  <div class="tk"><div class="hd"><span class="tag">#1</span><span class="legs"><span class="leg">Cam Skattebo anytime TD <b>+125</b><i>betmgm · 42% model vs 44%</i></span><span class="leg">Isaiah Likely anytime TD <b>+290</b><i>DK · 34% model vs 26%</i></span><span class="leg">Terrance Ferguson anytime TD <b>+260</b><i>betrivers · 26% market vs 28%</i></span></span><span class="odds">+3059</span></div><div class="ft"><span><b>3.7%</b> MODEL HIT</span><span class="m"><b>3.2%</b> BOOK</span><span class="ev"><b>+17%</b> EV</span></div></div>
+<div class="tk"><div class="hd"><span class="tag">#2</span><span class="legs"><span class="leg">Cam Skattebo anytime TD <b>+125</b><i>betmgm · 42% model vs 44%</i></span><span class="leg">Isaiah Likely anytime TD <b>+290</b><i>DK · 34% model vs 26%</i></span><span class="leg">Jaxson Dart anytime TD <b>+265</b><i>DK · 25% market vs 27%</i></span></span><span class="odds">+3103</span></div><div class="ft"><span><b>3.6%</b> MODEL HIT</span><span class="m"><b>3.1%</b> BOOK</span><span class="ev"><b>+17%</b> EV</span></div></div>
+<div class="tk"><div class="hd"><span class="tag">#3</span><span class="legs"><span class="leg">Cam Skattebo anytime TD <b>+125</b><i>betmgm · 42% model vs 44%</i></span><span class="leg">Isaiah Likely anytime TD <b>+290</b><i>DK · 34% model vs 26%</i></span><span class="leg">Colby Parkinson anytime TD <b>+295</b><i>betrivers · 24% market vs 25%</i></span></span><span class="odds">+3366</span></div><div class="ft"><span><b>3.4%</b> MODEL HIT</span><span class="m"><b>2.9%</b> BOOK</span><span class="ev"><b>+17%</b> EV</span></div></div>
+
+  <h2>What we are off <small>the desk is well under the market here</small></h2>
+  <p class="rule">These carry a real desk number and the market is pricing them well above it. They are not plays to fade outright at these prices, they are names to leave out of a stack.</p>
+  <table class="td">
+    <tr><th>Player</th><th class="r">Anytime</th><th class="r">Model</th><th class="r">Implied</th><th class="r">Gap</th></tr>
+    <tr><td class="n">Blake Corum<small>LAR · RB</small></td><td class="r p">+215 betrivers</td><td class="r">13%</td><td class="r">32%</td><td class="r bad">-19%</td></tr>
+<tr><td class="n">Kyren Williams<small>LAR · RB</small></td><td class="r p">-180 DK</td><td class="r">48%</td><td class="r">64%</td><td class="r bad">-16%</td></tr>
+  </table>
+
+  <h2>Props <small>the desk's written leans</small></h2>
+  <table class="td">
+    <tr><th>Prop</th><th class="r">Price</th><th>Why</th></tr>
+    <tr><td class="n">Jaxson Dart Over 213.5<small>Pass yds · desk wrote 215.5</small></td><td class="r p">-114</td><td class="w">Threw for 230 in the opener behind a clean pocket, and LAR's pass rush offers little reason for regression.</td></tr>
+<tr><td class="n">Malik Nabers Over 5.5<small>Receptions · desk wrote 6.5</small></td><td class="r p">-106</td><td class="w">Drew 9 targets in his return from ACL surgery and remains Dart's clear WR1.</td></tr>
+<tr><td class="n">Kyren Williams Under 61.5<small>Rush yds · desk wrote 68.5</small></td><td class="r p">-115</td><td class="w">Managed only 41 yards on 11 carries in Week 1 and now faces a Giants front that ranked 5th against the run.</td></tr>
+  </table>
+
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>PRICED MON 5:43 PM ET · CAPPERSANDCODE.COM</span></div>
+</section>
+</body></html>
