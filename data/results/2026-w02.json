@@ -1,66 +1,66 @@
 {
  "season": 2026,
  "week": 2,
- "gradedAt": "2026-09-20T23:21:53.697Z",
- "finals": 13,
+ "gradedAt": "2026-09-21T11:05:12.640Z",
+ "finals": 15,
  "games": 16,
  "summary": {
   "all": {
-   "wins": 61,
-   "losses": 126,
+   "wins": 75,
+   "losses": 140,
    "pushes": 0,
-   "pending": 42
+   "pending": 14
   },
   "lockedIn": {
    "wins": 9,
-   "losses": 7,
+   "losses": 9,
+   "pushes": 0,
+   "pending": 1
+  },
+  "lean": {
+   "wins": 16,
+   "losses": 14,
+   "pushes": 0,
+   "pending": 2
+  },
+  "top3": {
+   "wins": 17,
+   "losses": 28,
    "pushes": 0,
    "pending": 3
   },
-  "lean": {
-   "wins": 15,
-   "losses": 11,
-   "pushes": 0,
-   "pending": 6
-  },
-  "top3": {
-   "wins": 14,
-   "losses": 25,
-   "pushes": 0,
-   "pending": 9
-  },
   "td2": {
-   "wins": 5,
-   "losses": 34,
+   "wins": 7,
+   "losses": 38,
    "pushes": 0,
-   "pending": 9
+   "pending": 3
   },
   "value": {
-   "wins": 4,
-   "losses": 23,
+   "wins": 7,
+   "losses": 24,
    "pushes": 0,
-   "pending": 6
+   "pending": 2
   },
   "prop": {
-   "wins": 14,
-   "losses": 26,
+   "wins": 19,
+   "losses": 27,
    "pushes": 0,
-   "pending": 9
+   "pending": 3
   },
   "calibration": {
    "td2": [
     {
      "band": "0-8%",
-     "n": 10,
-     "model": 0.057,
-     "actual": 0,
-     "wins": 0
+     "n": 11,
+     "model": 0.059,
+     "actual": 0.091,
+     "wins": 1
     },
     {
      "band": "8-15%",
-     "n": 16,
-     "model": 0.104,
-     "actual": 0.188,
+     "n": 19,
+     "model": 0.103,
+     "actual": 0.158,
      "wins": 3
     },
     {
@@ -72,26 +72,26 @@
     },
     {
      "band": "25-100%",
-     "n": 3,
-     "model": 0.339,
-     "actual": 0,
-     "wins": 0
+     "n": 5,
+     "model": 0.33,
+     "actual": 0.2,
+     "wins": 1
     }
    ],
    "top3": [
     {
      "band": "0-40%",
-     "n": 11,
-     "model": 0.324,
-     "actual": 0.273,
-     "wins": 3
+     "n": 12,
+     "model": 0.326,
+     "actual": 0.333,
+     "wins": 4
     },
     {
      "band": "40-50%",
-     "n": 15,
-     "model": 0.421,
-     "actual": 0.267,
-     "wins": 4
+     "n": 18,
+     "model": 0.42,
+     "actual": 0.278,
+     "wins": 5
     },
     {
      "band": "50-60%",
@@ -102,10 +102,10 @@
     },
     {
      "band": "60-100%",
-     "n": 2,
-     "model": 0.65,
+     "n": 4,
+     "model": 0.63,
      "actual": 0.5,
-     "wins": 1
+     "wins": 2
     }
    ]
   }
@@ -1694,129 +1694,132 @@
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "side",
    "label": "WSH +3.5",
-   "result": "pending",
    "conf": 2,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "total",
    "label": "Under 50.5",
-   "result": "pending",
    "conf": 2,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "atd",
    "label": "Javonte Williams ATD",
-   "result": "pending",
    "est": 0.42,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "atd",
    "label": "Jacory Croskey-Merritt ATD",
-   "result": "pending",
    "est": 0.4,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "atd",
    "label": "CeeDee Lamb ATD",
-   "result": "pending",
    "est": 0.35,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "td2",
    "label": "Javonte Williams 2+ TD",
-   "result": "pending",
    "est": 0.1040582382438302,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "td2",
    "label": "Jacory Croskey-Merritt 2+ TD",
-   "result": "pending",
    "est": 0.09350462574040563,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "td2",
    "label": "CeeDee Lamb 2+ TD",
-   "result": "pending",
    "est": 0.06999110453990476,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "win"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "atd",
    "label": "Jake Ferguson ATD",
-   "result": "pending",
    "est": 0.16,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "win"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "atd",
    "label": "Terry McLaurin ATD",
-   "result": "pending",
    "est": 0.2,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "prop",
    "label": "Terry McLaurin over 54.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 50,
+   "result": "loss"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "prop",
    "label": "CeeDee Lamb over 5.5 receptions",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 8,
+   "result": "win"
   },
   {
    "game": "wsh-dal",
    "gameLabel": "WSH@DAL",
-   "final": null,
+   "final": "WSH 20, DAL 37",
    "type": "prop",
    "label": "Jayden Daniels over 29.5 rush yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 69,
+   "result": "win"
   },
   {
    "game": "sea-ari",
@@ -2111,149 +2114,152 @@
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "side",
    "label": "KC -6.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "loss"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "atd",
    "label": "Kenneth Walker III ATD -135",
-   "result": "pending",
    "conf": 4,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "loss"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "side",
    "label": "KC -6.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "total",
    "label": "Over 47.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "win"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "atd",
    "label": "Kenneth Walker III ATD",
-   "result": "pending",
    "est": 0.6,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "atd",
    "label": "Travis Kelce ATD",
-   "result": "pending",
    "est": 0.42,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "atd",
    "label": "Jonathan Taylor ATD",
-   "result": "pending",
    "est": 0.62,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "td2",
    "label": "Kenneth Walker III 2+ TD",
-   "result": "pending",
    "est": 0.30352881942543936,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "td2",
    "label": "Travis Kelce 2+ TD",
-   "result": "pending",
    "est": 0.1040582382438302,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "td2",
    "label": "Jonathan Taylor 2+ TD",
-   "result": "pending",
    "est": 0.3280134910267174,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "win"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "atd",
    "label": "Xavier Worthy ATD",
-   "result": "pending",
    "est": 0.28,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "win"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "atd",
    "label": "Tyler Warren ATD",
-   "result": "pending",
    "est": 0.25,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "win"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "prop",
    "label": "Jonathan Taylor over 74.5 rush yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 92,
+   "result": "win"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "prop",
    "label": "Travis Kelce over 54.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 101,
+   "result": "win"
   },
   {
    "game": "ind-kc",
    "gameLabel": "IND@KC",
-   "final": null,
+   "final": "IND 30, KC 33",
    "type": "prop",
    "label": "Daniel Jones under 1.5 pass tds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 1,
+   "result": "win"
   },
   {
    "game": "nyg-lar",

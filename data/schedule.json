@@ -1,69 +1,48 @@
 {
- "fetchedAt": "2026-09-20T23:21:52.585Z",
+ "fetchedAt": "2026-09-21T11:05:11.727Z",
  "season": 2026,
  "week": 2,
  "games": [
   {
-   "espnId": "401872941",
-   "kickoff": "2026-09-20T20:05Z",
-   "name": "LV @ LAC",
+   "espnId": "401872947",
+   "kickoff": "2026-09-22T00:15Z",
+   "name": "NYG @ LAR",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "9/21 - 8:15 PM EDT",
+   "home": {
+    "abbr": "LAR",
+    "score": 0
+   },
+   "away": {
+    "abbr": "NYG",
+    "score": 0
+   },
+   "espnLine": {
+    "provider": "Draft Kings",
+    "details": "LAR -7",
+    "spreadHome": -7,
+    "total": 47.5,
+    "ml": {
+     "home": -290,
+     "away": 235,
+     "openHome": -375,
+     "openAway": 295
+    }
+   }
+  },
+  {
+   "espnId": "401872932",
+   "kickoff": "2026-09-18T00:15Z",
+   "name": "DET @ BUF",
    "status": "STATUS_FINAL",
    "statusDetail": "Final",
    "home": {
-    "abbr": "LAC",
-    "score": 14
+    "abbr": "BUF",
+    "score": 41
    },
    "away": {
-    "abbr": "LV",
-    "score": 26
-   },
-   "espnLine": null
-  },
-  {
-   "espnId": "401872944",
-   "kickoff": "2026-09-20T20:25Z",
-   "name": "WSH @ DAL",
-   "status": "STATUS_IN_PROGRESS",
-   "statusDetail": "3:54 - 4th",
-   "home": {
-    "abbr": "DAL",
-    "score": 30
-   },
-   "away": {
-    "abbr": "WSH",
-    "score": 20
-   },
-   "espnLine": null
-  },
-  {
-   "espnId": "401872943",
-   "kickoff": "2026-09-20T20:25Z",
-   "name": "SEA @ ARI",
-   "status": "STATUS_FINAL",
-   "statusDetail": "Final",
-   "home": {
-    "abbr": "ARI",
-    "score": 7
-   },
-   "away": {
-    "abbr": "SEA",
+    "abbr": "DET",
     "score": 31
-   },
-   "espnLine": null
-  },
-  {
-   "espnId": "401872942",
-   "kickoff": "2026-09-20T20:25Z",
-   "name": "MIA @ SF",
-   "status": "STATUS_FINAL",
-   "statusDetail": "Final",
-   "home": {
-    "abbr": "SF",
-    "score": 35
-   },
-   "away": {
-    "abbr": "MIA",
-    "score": 13
    },
    "espnLine": null
   },
@@ -212,74 +191,84 @@
    "espnLine": null
   },
   {
-   "espnId": "401872945",
-   "kickoff": "2026-09-21T00:20Z",
-   "name": "IND @ KC",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "9/20 - 8:20 PM EDT",
-   "home": {
-    "abbr": "KC",
-    "score": 0
-   },
-   "away": {
-    "abbr": "IND",
-    "score": 0
-   },
-   "espnLine": {
-    "provider": "DraftKings",
-    "details": "KC -6",
-    "spreadHome": -6,
-    "total": 46.5,
-    "ml": {
-     "home": -265,
-     "away": 215,
-     "openHome": -250,
-     "openAway": 205
-    }
-   }
-  },
-  {
-   "espnId": "401872932",
-   "kickoff": "2026-09-18T00:15Z",
-   "name": "DET @ BUF",
+   "espnId": "401872941",
+   "kickoff": "2026-09-20T20:05Z",
+   "name": "LV @ LAC",
    "status": "STATUS_FINAL",
    "statusDetail": "Final",
    "home": {
-    "abbr": "BUF",
-    "score": 41
+    "abbr": "LAC",
+    "score": 14
    },
    "away": {
-    "abbr": "DET",
+    "abbr": "LV",
+    "score": 26
+   },
+   "espnLine": null
+  },
+  {
+   "espnId": "401872944",
+   "kickoff": "2026-09-20T20:25Z",
+   "name": "WSH @ DAL",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
+   "home": {
+    "abbr": "DAL",
+    "score": 37
+   },
+   "away": {
+    "abbr": "WSH",
+    "score": 20
+   },
+   "espnLine": null
+  },
+  {
+   "espnId": "401872943",
+   "kickoff": "2026-09-20T20:25Z",
+   "name": "SEA @ ARI",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
+   "home": {
+    "abbr": "ARI",
+    "score": 7
+   },
+   "away": {
+    "abbr": "SEA",
     "score": 31
    },
    "espnLine": null
   },
   {
-   "espnId": "401872947",
-   "kickoff": "2026-09-22T00:15Z",
-   "name": "NYG @ LAR",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "9/21 - 8:15 PM EDT",
+   "espnId": "401872942",
+   "kickoff": "2026-09-20T20:25Z",
+   "name": "MIA @ SF",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
    "home": {
-    "abbr": "LAR",
-    "score": 0
+    "abbr": "SF",
+    "score": 35
    },
    "away": {
-    "abbr": "NYG",
-    "score": 0
+    "abbr": "MIA",
+    "score": 13
    },
-   "espnLine": {
-    "provider": null,
-    "details": "LAR -6.5",
-    "spreadHome": -6.5,
-    "total": 47.5,
-    "ml": {
-     "home": -285,
-     "away": 230,
-     "openHome": -375,
-     "openAway": 295
-    }
-   }
+   "espnLine": null
+  },
+  {
+   "espnId": "401872945",
+   "kickoff": "2026-09-21T00:20Z",
+   "name": "IND @ KC",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final/OT",
+   "home": {
+    "abbr": "KC",
+    "score": 33
+   },
+   "away": {
+    "abbr": "IND",
+    "score": 30
+   },
+   "espnLine": null
   }
  ]
 }
