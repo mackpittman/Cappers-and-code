@@ -55,6 +55,11 @@ const SD_MARGIN = Number(process.env.SD_MARGIN ?? 13.4);
 const SD_TOTAL = Number(process.env.SD_TOTAL ?? 10.6);
 const rawProj = game.market.projected; // { away, home }
 const proj = { ...rawProj };
+// PROJ_HOME / PROJ_AWAY replace the desk's projected score outright. This is how a read that
+// disagrees with the model gets priced properly: shift the script and let every leg reprice off
+// it, rather than hand-picking the legs that suit the view and leaving the rest inconsistent.
+if (process.env.PROJ_HOME) proj.home = Number(process.env.PROJ_HOME);
+if (process.env.PROJ_AWAY) proj.away = Number(process.env.PROJ_AWAY);
 if (SCRATCH_PTS && SCRATCH_TEAM) {
   if (SCRATCH_TEAM === game.home.abbr) proj.home = +(proj.home - SCRATCH_PTS).toFixed(2);
   else proj.away = +(proj.away - SCRATCH_PTS).toFixed(2);
