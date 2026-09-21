@@ -19,6 +19,11 @@ import { impliedFromAmerican } from './parlays.mjs';
 const GAME = process.env.GAME || 'nyg-lar';
 // Players ruled out after the last odds pull. Their legs are dropped and their share of the team's
 // touchdowns redistributes across whoever is left, because shares are normalised per team.
+const BAN = (process.env.BAN ?? '')
+  .split('||')
+  .map((x) => x.trim())
+  .filter(Boolean);
+const banned = (label) => BAN.some((b) => label.includes(b));
 const SCRATCH = new Set(
   (process.env.SCRATCH ?? '')
     .split(',')
@@ -90,6 +95,50 @@ function rng(seed) {
 }
 
 const pctf = (x) => `${(x * 100).toFixed(1)}%`;
+/**
+ * Survival inside a slice of the sims rather than across all of them. A ticket that hits 10% of
+ * the time can be one that hits 25% in a close game and never in a blowout, and the headline
+ * number does not say which.
+ */
+/**
+ * The same legs inside each kind of game. A blowout column is the honest answer to "what if they
+ * get run over", which a single headline percentage cannot give.
+ */
+function scriptReport(legs) {
+  const HOME = TEAMS.home;
+  const AWAY = TEAMS.away;
+  const h = base.scoreOf[HOME];
+  const a = base.scoreOf[AWAY];
+  const buckets = [
+    [`${HOME} by 14+`, (i) => h[i] - a[i] >= 14],
+    [`${HOME} by 7-13`, (i) => h[i] - a[i] >= 7 && h[i] - a[i] < 14],
+    ['within a TD', (i) => Math.abs(h[i] - a[i]) < 7],
+    [`${AWAY} wins by 7+`, (i) => a[i] - h[i] >= 7],
+  ];
+  console.log('  How it holds up by script:');
+  for (const [name, keep] of buckets) {
+    const c = conditional(legs, keep);
+    const share = ((c.n / SIMS) * 100).toFixed(0);
+    console.log(`    ${name.padEnd(16)} ${share.padStart(3)}% of sims   slip hits ${pctf(c.p)}`);
+  }
+  console.log('  Per leg in a blowout:');
+  for (const l of legs) {
+    const c = conditional([l], (i) => h[i] - a[i] >= 14);
+    console.log(
+      `    ${l.label.padEnd(38)} ${pctf(l.p).padStart(6)} overall -> ${pctf(c.p).padStart(6)} if ${HOME} wins big`,
+    );
+  }
+}
+function conditional(legs, keep) {
+  let n = 0;
+  let hit = 0;
+  for (let i = 0; i < SIMS; i++) {
+    if (!keep(i)) continue;
+    n++;
+    if (legs.every((l) => l.arr[i])) hit++;
+  }
+  return { n, p: n ? hit / n : 0 };
+}
 const normCdf = (z) => {
   const t = 1 / (1 + 0.2316419 * Math.abs(z));
   const d = 0.3989423 * Math.exp((-z * z) / 2);
@@ -412,7 +461,9 @@ function ladder(line, market) {
 // ---- run ----
 const base = simulate(12345);
 const rate = (arr) => arr.reduce((a, b) => a + b, 0) / SIMS;
-const all = [...base.legs.entries()].map(([label, arr]) => ({ label, arr, p: rate(arr) }));
+const all = [...base.legs.entries()]
+  .filter(([label]) => !banned(label))
+  .map(([label, arr]) => ({ label, arr, p: rate(arr) }));
 const survivors = all.filter((l) => l.p >= FLOOR).sort((a, b) => b.p - a.p);
 
 // The recommended set. Two things have to be true at once and neither alone is enough.
@@ -540,11 +591,42 @@ if (process.env.TARGET) {
     [0.75, 0.85],
     [0.85, 0.93],
   ];
+  // MIN_BLOWOUT keeps out legs that die when the favourite runs away with it. Banning one spread
+  // is not enough: the search simply picks the next spread along, and the ticket still needs the
+  // game to stay close. This filters on the outcome instead of on the label.
+  const MIN_BLOWOUT = Number(process.env.MIN_BLOWOUT ?? 0);
+  const bh = base.scoreOf[TEAMS.home];
+  const ba = base.scoreOf[TEAMS.away];
+  const blowoutIdx = [];
+  for (let i = 0; i < SIMS; i++) if (bh[i] - ba[i] >= 14) blowoutIdx.push(i);
+  const survivesBlowout = (l) =>
+    !blowoutIdx.length ||
+    blowoutIdx.reduce((a, i) => a + l.arr[i], 0) / blowoutIdx.length >= MIN_BLOWOUT;
+  // MIN_SCRIPT is the stronger version: a leg has to hold up in EVERY kind of game, not just the
+  // blowout. It buys a ticket that does not care who wins, and it costs price to have it.
+  const MIN_SCRIPT = Number(process.env.MIN_SCRIPT ?? 0);
+  const SCRIPTS = [
+    (i) => bh[i] - ba[i] >= 14,
+    (i) => bh[i] - ba[i] >= 7 && bh[i] - ba[i] < 14,
+    (i) => Math.abs(bh[i] - ba[i]) < 7,
+    (i) => ba[i] - bh[i] >= 7,
+  ].map((keep) => {
+    const idx = [];
+    for (let i = 0; i < SIMS; i++) if (keep(i)) idx.push(i);
+    return idx;
+  });
+  const scriptNeutral = (l) =>
+    MIN_SCRIPT <= 0 ||
+    SCRIPTS.every(
+      (idx) => !idx.length || idx.reduce((a, i) => a + l.arr[i], 0) / idx.length >= MIN_SCRIPT,
+    );
   const wide = [];
   const seen = new Map();
   for (const [lo, hi] of BANDS) {
     let taken = 0;
-    for (const l of all.filter((x) => x.p >= lo && x.p < hi).sort((a, b) => b.p - a.p)) {
+    for (const l of all
+      .filter((x) => x.p >= lo && x.p < hi && survivesBlowout(x) && scriptNeutral(x))
+      .sort((a, b) => b.p - a.p)) {
       const f = family(l.label);
       if ((seen.get(f) ?? 0) >= 2) continue;
       seen.set(f, (seen.get(f) ?? 0) + 1);
@@ -632,6 +714,7 @@ if (process.env.TARGET) {
     console.log(
       `  A same-game engine that prices the correlation will shade it toward ${toAmer(1 / bestSlip.joint) > 0 ? '+' : ''}${toAmer(1 / bestSlip.joint)}; below that it stops being a bet.`,
     );
+    scriptReport(legs);
     writeJson(
       path.join(
         DATA,
@@ -727,6 +810,7 @@ for (const l of best.legs)
 console.log(
   `  JOINT ${pctf(best.p)} of ${SIMS} sims. Multiplying the five as if independent would say ${pctf(indep)}, so these legs ${best.p >= indep ? 'agree with each other' : 'fight each other'}.`,
 );
+scriptReport(best.legs);
 console.log(
   `  Fair price for the five: ${toAmer(1 / best.p) > 0 ? '+' : ''}${toAmer(1 / best.p)}. Do not take less.`,
 );
