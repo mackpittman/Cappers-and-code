@@ -14,10 +14,81 @@ type Sheet = {
   title: string;
   subtitle?: string;
   postedAt: string;
+  featured?: boolean;
   images: SheetImage[];
 };
 
 const url = (file: string) => `${SITE_URL}/sheets/${file}`;
+
+/** Shared fetch: the index is small, cached for five minutes, and every sheet view reads it. */
+function useSheets() {
+  const [sheets, setSheets] = useState<Sheet[] | null>(null);
+  useEffect(() => {
+    let live = true;
+    fetch(`${SITE_URL}/sheets/index.json?t=${Math.floor(Date.now() / 300000)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => live && setSheets(j?.sheets ?? []))
+      .catch(() => live && setSheets([]));
+    return () => {
+      live = false;
+    };
+  }, []);
+  return sheets;
+}
+
+/**
+ * The one sheet that leads the Edge tab. A play sheet is tall by design, so the front page shows
+ * the top of it at a readable width and sends anyone who wants the rest to the full image: the
+ * headline and the first section are what decide whether you open it. Which sheet appears here is
+ * a flag in the index, not a build, so featuring tonight's game is a data change.
+ */
+export function FeaturedSheet({ week }: { week?: number }) {
+  const t = useTheme();
+  const { width } = useWindowDimensions();
+  const sheets = useSheets();
+  if (!sheets?.length) return null;
+  const inWeek = sheets.filter((s) => week == null || s.week === week);
+  const sheet = inWeek.find((s) => s.featured) ?? sheets.find((s) => s.featured);
+  if (!sheet?.images?.length) return null;
+  const img = sheet.images[0];
+  const w = Math.min(width - 2 * space.md, 1200);
+  const full = (w * (img.h ?? 1150)) / 1200;
+  // Show the masthead and the first block, never less than a readable slab of the card.
+  const preview = Math.min(full, Math.max(320, Math.round(w * 0.95)));
+  return (
+    <Pressable onPress={() => Linking.openURL(url(img.file))} accessibilityRole="button">
+      <Card accent="green">
+        <Label color={t.green}>Tonight&rsquo;s sheet</Label>
+        <Text style={[type.h2, { color: t.ink, marginBottom: 4 }]}>{sheet.title}</Text>
+        {!!sheet.subtitle && (
+          <Body small muted>
+            {sheet.subtitle}
+          </Body>
+        )}
+        <View
+          style={{
+            height: preview,
+            overflow: 'hidden',
+            borderRadius: 10,
+            marginTop: space.sm,
+            backgroundColor: t.surface2,
+          }}
+        >
+          <Image
+            source={{ uri: url(img.file) }}
+            accessibilityLabel={img.title}
+            resizeMode="cover"
+            style={{ width: w, height: full }}
+          />
+        </View>
+        <View style={{ height: space.sm }} />
+        <Label color={t.green}>
+          {full > preview ? 'Tap to open the full sheet' : 'Tap to open full size'}
+        </Label>
+      </Card>
+    </Pressable>
+  );
+}
 
 /**
  * `week` shows only that week's sheets (the front page passes the board's week); `archive` shows
@@ -34,18 +105,8 @@ export function PlaySheets({
 }) {
   const t = useTheme();
   const { width } = useWindowDimensions();
-  const [sheets, setSheets] = useState<Sheet[] | null>(null);
+  const sheets = useSheets();
   const [open, setOpen] = useState<string | null>(null);
-  useEffect(() => {
-    let live = true;
-    fetch(`${SITE_URL}/sheets/index.json?t=${Math.floor(Date.now() / 300000)}`)
-      .then((r) => (r.ok ? r.json() : null))
-      .then((j) => live && setSheets(j?.sheets ?? []))
-      .catch(() => live && setSheets([]));
-    return () => {
-      live = false;
-    };
-  }, []);
   const list = (sheets ?? []).filter((s) =>
     archive ? s.week != null && s.week !== currentWeek : week == null || s.week === week,
   );

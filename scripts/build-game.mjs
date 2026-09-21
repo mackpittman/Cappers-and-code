@@ -398,18 +398,26 @@ cut = min(h, b + 40); im.crop((0, 0, w, cut)).save(${JSON.stringify(png)}); prin
 const indexFile = path.join(SHEETS, 'index.json');
 const index = readJson(indexFile, { updatedAt: null, sheets: [] });
 const id = `${board.season}-w${week}-${GAME}`;
+// A night sheet is the whole slate, so it leads the Edge tab by default. Exactly one sheet may
+// carry the flag, or the front page shows whichever the index happens to list first.
+const feature = process.env.FEATURED !== '0';
 index.sheets = [
   {
     id,
     week: board.week,
     season: board.season,
     title: `Week ${board.week}: ${game.away.abbr} @ ${game.home.abbr}, the whole sheet`,
-    subtitle: 'The board, the anytime board, the 2+ list, four stacks and the long-shot band.',
+    subtitle: `The board, the anytime board, the 2+ list, ${stacks.length} stack${stacks.length === 1 ? '' : 's'} and the long-shot band.`,
     postedAt: nowIso(),
+    ...(feature ? { featured: true } : {}),
     images: [{ title: `${game.away.abbr} @ ${game.home.abbr}`, file: `${stem}.png`, h: height }],
     tags: ['game', 'stacks', 'td2', 'longshot'],
   },
-  ...index.sheets.filter((s) => s.id !== id),
+  ...index.sheets
+    .filter((s) => s.id !== id)
+    .map(({ featured, ...rest }) =>
+      feature ? rest : { ...rest, ...(featured ? { featured } : {}) },
+    ),
 ];
 index.updatedAt = nowIso();
 writeJson(indexFile, index);

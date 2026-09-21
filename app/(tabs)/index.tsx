@@ -8,7 +8,7 @@ import type { BestBet, Board, MaxPlay, Pick } from '@/lib/types';
 import { useBoard } from '@/lib/store';
 import { Paywall } from '@/components/Paywall';
 import { RecordCard } from '@/components/Record';
-import { PlaySheets } from '@/components/Sheets';
+import { FeaturedSheet, PlaySheets } from '@/components/Sheets';
 import { supabaseConfigured } from '@/lib/supabase';
 import { AddToSlip, betToSlip, pickToSlip } from '@/components/Slip';
 import { Primetime } from '@/components/Primetime';
@@ -84,6 +84,7 @@ export default function BoardScreen() {
             <Primetime board={board} pt={pt} />
           ) : (
             <>
+              <FeaturedSheet week={board.week} />
               {!!board.maxConfidence?.length && (
                 <>
                   <H2>Max confidence · Week {board.week}</H2>
