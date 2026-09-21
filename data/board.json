@@ -1,9 +1,9 @@
 {
  "season": 2026,
  "week": 2,
- "generatedAt": "2026-09-21T21:02:12.515Z",
+ "generatedAt": "2026-09-21T21:40:03.046Z",
  "researchAsOf": "2026-09-15T15:00:00Z",
- "oddsFetchedAt": "2026-09-21T16:33:47.890Z",
+ "oddsFetchedAt": "2026-09-21T21:38:41.302Z",
  "oddsCredits": {
   "remaining": 214,
   "used": 286,
@@ -31,7 +31,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": "ESPN/DraftKings",
- "injuriesFetchedAt": "2026-09-21T21:02:10.727Z",
+ "injuriesFetchedAt": "2026-09-21T21:40:01.009Z",
  "notes": "Research prepared Tuesday Sep 15 from Week 1 finals, current injury reports, and Tuesday-morning market lines. Anytime-TD prices marked \"verify\" or \"est.\" could not be confirmed at a live sportsbook during research and should be checked before betting; the live odds feed replaces them once fetch-odds runs. Thursday night (DET @ BUF) updated Wednesday 9:30 PM ET: final injury designations, line movement, BetMGM anytime prices, corrected James Cook estimate, and the TNF plays.",
  "completed": [],
  "games": [
@@ -843,6 +843,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Avonte Maddox",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Maddox will undergo season-ending surgery for a left foot injury that he sustained during the Lions' 41-31 loss to the Bills on Thursday, Dave Birkett of the Detroit Free Press reports.",
+      "date": "2026-09-21T21:07Z"
+     },
+     {
       "name": "Christian Mahogany",
       "pos": "G",
       "status": "Out",
@@ -857,14 +865,6 @@
       "type": "out",
       "detail": "out",
       "date": "2026-09-21T18:05Z"
-     },
-     {
-      "name": "Avonte Maddox",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-21T16:11Z"
      }
     ],
     "home": [
@@ -901,7 +901,7 @@
       "date": "2026-09-20T14:08Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -1003,7 +1003,7 @@
      "price": null,
      "implied": 0.12,
      "priceNote": "est.",
-     "status": null,
+     "status": "Questionable",
      "live": null
     }
    ],
@@ -1202,20 +1202,12 @@
     ],
     "home": [
      {
-      "name": "Michael Penix Jr.",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "The Falcons announced that Penix (knee) has been named the team's starting quarterback for Thursday's game against the Packers, Tori McElhaney of the team's official site reports.",
-      "date": "2026-09-21T20:39Z"
-     },
-     {
       "name": "Tua Tagovailoa",
       "pos": "QB",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-09-21T18:13Z"
+      "detail": "Tagovailoa (ankle) was listed as a limited participant on Monday's estimated injury report, Marc Raimondi of ESPN.com reports.",
+      "date": "2026-09-21T21:08Z"
      },
      {
       "name": "Billy Bowman Jr.",
@@ -1224,6 +1216,22 @@
       "type": "out",
       "detail": "out",
       "date": "2026-09-21T18:13Z"
+     },
+     {
+      "name": "Brian Robinson Jr.",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Robinson was listed as limited on Monday's practice estimate due to an ankle injury, Marc Raimondi of ESPN.com reports.",
+      "date": "2026-09-21T21:05Z"
+     },
+     {
+      "name": "Nick Muse",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-21T21:02Z"
      },
      {
       "name": "Jawaan Taylor",
@@ -1266,7 +1274,7 @@
       "date": "2026-09-17T00:21Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -1527,6 +1535,14 @@
     ],
     "home": [
      {
+      "name": "Anthony Johnson Jr.",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-21T21:23Z"
+     },
+     {
       "name": "Caleb Williams",
       "pos": "QB",
       "status": "Doubtful",
@@ -1541,17 +1557,9 @@
       "type": "questionable",
       "detail": "Stevenson suffered a hamstring injury during Sunday's 9-3 loss to the Vikings.",
       "date": "2026-09-20T20:08Z"
-     },
-     {
-      "name": "Anthony Johnson Jr.",
-      "pos": "S",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-09-21T20:47Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -1599,14 +1607,6 @@
      "price": null,
      "implied": 0.55,
      "status": null,
-     "live": null
-    },
-    {
-     "name": "Dallas Goedert",
-     "team": "PHI",
-     "price": null,
-     "implied": 0.5,
-     "status": "Questionable",
      "live": null
     },
     {
@@ -1672,20 +1672,6 @@
      "live": null,
      "edge": 0,
      "status": null
-    },
-    {
-     "name": "Dallas Goedert",
-     "team": "PHI",
-     "pos": "TE",
-     "price": null,
-     "priceNote": "est.",
-     "implied": 0.5,
-     "est": 0.5,
-     "why": "Scored 10 of 11 2025 TDs in the red zone, already has 2 this year, and inherits A.J. Brown's vacated red-zone share.",
-     "live2": null,
-     "live": null,
-     "edge": 0,
-     "status": "Questionable"
     },
     {
      "name": "Saquon Barkley",
@@ -1803,7 +1789,13 @@
     }
    },
    "live": null,
-   "scratched": [],
+   "scratched": [
+    {
+     "name": "Dallas Goedert",
+     "team": "PHI",
+     "status": "Doubtful"
+    }
+   ],
    "liveBoard": [],
    "propLines": [],
    "pulls": {},
@@ -1820,10 +1812,10 @@
      {
       "name": "Dallas Goedert",
       "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Goedert (knee) is slated to undergo an MRI on Monday after exiting Sunday's 24-20 win over the Titans, Ian Rapoport of NFL Network reports.",
-      "date": "2026-09-21T13:28Z"
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Goedert (knee) was diagnosed Monday with a sprained MCL and is expected to miss a few weeks, Ian Rapoport and Adam Schefter of ESPN report.",
+      "date": "2026-09-21T21:10Z"
      },
      {
       "name": "Saquon Barkley",
@@ -1876,7 +1868,7 @@
       "date": "2026-09-20T20:21Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -2231,7 +2223,7 @@
       "date": "2026-09-13T13:52Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -2499,14 +2491,6 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Benjamin St-Juste",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-21T18:15Z"
-     },
-     {
       "name": "Javon Hargrave",
       "pos": "DT",
       "status": "Out",
@@ -2521,6 +2505,22 @@
       "type": "out",
       "detail": "out",
       "date": "2026-09-21T18:15Z"
+     },
+     {
+      "name": "Brandon Cisse",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-21T21:12Z"
+     },
+     {
+      "name": "Edgerrin Cooper",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-21T21:11Z"
      },
      {
       "name": "Jayden Reed",
@@ -2545,14 +2545,6 @@
       "type": "questionable",
       "detail": "Banks (toe) has been ruled out for the remainder of Sunday's game against the Jets.",
       "date": "2026-09-20T20:07Z"
-     },
-     {
-      "name": "Bo Melton",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Melton is questionable to return to Sunday's game against the Jets due to a stinger.",
-      "date": "2026-09-20T19:48Z"
      },
      {
       "name": "Donovan Jennings",
@@ -2637,7 +2629,7 @@
       "date": "2026-09-19T16:24Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -2962,7 +2954,7 @@
       "date": "2026-08-31T21:46Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -3220,6 +3212,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Kelvin Banks Jr.",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Banks is expected to undergo surgery for a high-ankle sprain and is out indefinitely, Ian Rapoport of NFL Network reports.",
+      "date": "2026-09-21T21:21Z"
+     },
+     {
       "name": "Isaiah Stalbird",
       "pos": "LB",
       "status": "Out",
@@ -3234,14 +3234,6 @@
       "type": "out",
       "detail": "out",
       "date": "2026-09-21T18:19Z"
-     },
-     {
-      "name": "Kelvin Banks Jr.",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "Banks is believed to have suffered a high-ankle sprain in Sunday's win over the Ravens, Ian Rapoport of NFL Network reports.",
-      "date": "2026-09-21T15:44Z"
      },
      {
       "name": "Martin Emerson Jr.",
@@ -3310,7 +3302,7 @@
       "date": "2026-09-16T19:07Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -3649,7 +3641,7 @@
       "date": "2026-09-12T00:15Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -3965,7 +3957,7 @@
       "date": "2026-08-31T16:50Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -4043,15 +4035,6 @@
      "live": null
     },
     {
-     "name": "David Njoku",
-     "team": "LAC",
-     "price": null,
-     "implied": 0.35,
-     "priceNote": "est.",
-     "status": "Questionable",
-     "live": null
-    },
-    {
      "name": "Jack Bech",
      "team": "LV",
      "price": null,
@@ -4089,20 +4072,6 @@
      "live": null,
      "edge": -0.02,
      "status": null
-    },
-    {
-     "name": "David Njoku",
-     "team": "LAC",
-     "pos": "TE",
-     "price": null,
-     "priceNote": "est.",
-     "implied": 0.35,
-     "est": 0.35,
-     "why": "Went 5-for-5 targets Week 1 and profiles as McDaniel's top red-zone safety valve with McConkey banged up.",
-     "live2": null,
-     "live": null,
-     "edge": 0,
-     "status": "Questionable"
     }
    ],
    "value": [
@@ -4207,7 +4176,13 @@
     }
    },
    "live": null,
-   "scratched": [],
+   "scratched": [
+    {
+     "name": "David Njoku",
+     "team": "LAC",
+     "status": "Doubtful"
+    }
+   ],
    "liveBoard": [],
    "propLines": [],
    "pulls": {},
@@ -4282,10 +4257,18 @@
      {
       "name": "Charlie Kolar",
       "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Kolar (forearm) was spotted with his left arm in a sling following Sunday's 26-14 loss to the Raiders, Kris Rhim of ESPN.com reports.",
-      "date": "2026-09-21T16:27Z"
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "doubtful",
+      "date": "2026-09-21T21:32Z"
+     },
+     {
+      "name": "David Njoku",
+      "pos": "TE",
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "doubtful",
+      "date": "2026-09-21T21:32Z"
      },
      {
       "name": "Kayode Awosika",
@@ -4304,14 +4287,6 @@
       "date": "2026-09-20T22:38Z"
      },
      {
-      "name": "David Njoku",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Njoku (knee) won't return to Sunday's game against the Raiders.",
-      "date": "2026-09-20T21:58Z"
-     },
-     {
       "name": "Derwin James Jr.",
       "pos": "S",
       "status": "Questionable",
@@ -4328,7 +4303,7 @@
       "date": "2026-09-15T23:20Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -4614,16 +4589,16 @@
       "pos": "S",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-21T19:19Z"
+      "detail": "Cross (undisclosed) stayed in Dallas overnight Sunday for an internal injury, and his status for Week 3 against the Seahawks is up in the air, Ben Standig of Big 100 Washington D.C. reports.",
+      "date": "2026-09-21T21:33Z"
      },
      {
       "name": "Javon Kinlaw",
       "pos": "DT",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-21T19:18Z"
+      "detail": "Head coach Dan Quinn told reporters Monday that Kinlaw will have an MRI for a shoulder injury, JP Finlay of NBC Sports Washington reports.",
+      "date": "2026-09-21T21:29Z"
      },
      {
       "name": "Sam Cosmi",
@@ -4676,7 +4651,7 @@
       "date": "2026-09-20T22:24Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -5018,7 +4993,7 @@
       "date": "2026-09-17T00:16Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -5266,8 +5241,8 @@
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Douglas (ankle) is questionable to return to Sunday's game against the 49ers.",
-      "date": "2026-09-20T23:03Z"
+      "detail": "Dolphins head coach Jeff Hafley said Monday that it's \"too early to tell\" the severity of the ankle injury Douglas sustained in Sunday's 35-13 loss to the 49ers, C. Isaiah Smalls II of the Miami Herald reports.",
+      "date": "2026-09-21T20:56Z"
      },
      {
       "name": "Robert Beal Jr.",
@@ -5368,7 +5343,7 @@
       "date": "2026-09-16T20:04Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -5709,7 +5684,7 @@
       "date": "2026-08-31T17:40Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   },
   {
@@ -6207,10 +6182,10 @@
    },
    "live": {
     "source": "ESPN/DraftKings",
-    "fetchedAt": "2026-09-21T21:02:10.388Z",
+    "fetchedAt": "2026-09-21T21:40:00.706Z",
     "ml": {
-     "home": -305,
-     "away": 245,
+     "home": -298,
+     "away": 240,
      "bestHome": null,
      "bestAway": null,
      "openHome": -375,
@@ -6227,8 +6202,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.278,
-     "home": 0.722
+     "away": 0.282,
+     "home": 0.718
     }
    },
    "scratched": [],
@@ -6620,7 +6595,7 @@
       "date": "2026-09-17T18:49Z"
      }
     ],
-    "fetchedAt": "2026-09-21T21:02:10.727Z"
+    "fetchedAt": "2026-09-21T21:40:01.009Z"
    }
   }
  ],
@@ -6866,22 +6841,6 @@
    "kickoff": "2026-09-18T00:15:00Z"
   },
   {
-   "name": "Dallas Goedert",
-   "team": "PHI",
-   "pos": "TE",
-   "price": null,
-   "priceNote": "est.",
-   "implied": 0.5,
-   "est": 0.5,
-   "why": "Scored 10 of 11 2025 TDs in the red zone, already has 2 this year, and inherits A.J. Brown's vacated red-zone share.",
-   "live2": null,
-   "live": null,
-   "edge": 0,
-   "status": "Questionable",
-   "gameId": "phi-ten",
-   "kickoff": "2026-09-20T17:00:00Z"
-  },
-  {
    "name": "Amon-Ra St. Brown",
    "team": "DET",
    "pos": "WR",
@@ -6990,6 +6949,22 @@
    "status": "Questionable",
    "gameId": "mia-sf",
    "kickoff": "2026-09-20T20:25:00Z"
+  },
+  {
+   "name": "Tetairoa McMillan",
+   "team": "CAR",
+   "pos": "WR",
+   "price": null,
+   "priceNote": "est.",
+   "implied": 0.42,
+   "est": 0.42,
+   "why": "8 targets and alpha role Wk1 against an ATL secondary allowing 7.1 YPA with limited depth beyond Terrell/Bates.",
+   "live2": null,
+   "live": null,
+   "edge": 0,
+   "status": null,
+   "gameId": "car-atl",
+   "kickoff": "2026-09-20T17:00:00Z"
   }
  ],
  "slateValue": [
@@ -7621,7 +7596,7 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-09-21T21:02:12.441Z",
+  "gradedAt": "2026-09-21T21:40:02.960Z",
   "finals": 15,
   "games": 16,
   "summary": {
@@ -10022,7 +9997,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-09-21T21:02:12.442Z",
+  "updatedAt": "2026-09-21T21:40:02.962Z",
   "weeks": [
    {
     "week": 1,
@@ -10293,12 +10268,12 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-09-21T21:02:12.518Z",
+  "builtAt": "2026-09-21T21:40:03.049Z",
   "books": [
    "FD",
    "DK"
   ],
-  "oddsFetchedAt": "2026-09-21T16:33:47.890Z",
+  "oddsFetchedAt": "2026-09-21T21:38:41.302Z",
   "note": "Prices are the better of FanDuel and DraftKings at the last pull.",
   "categories": [
    {
