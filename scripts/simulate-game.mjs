@@ -160,6 +160,12 @@ const LOG_SIGMA = { player_pass_yds: 0.3, player_rush_yds: 0.62, player_receptio
 // what a number one receiver generates simply does not happen when he is not on the field.
 const REDIST = Number(process.env.REDIST ?? 0.8);
 const ROSTER0 = readJson(path.join(DATA, `rosters-${GAME}.json`), {});
+const BOOK = readJson(path.join(DATA, `prices-${GAME}.json`), null);
+/** Thresholds the book actually posts for this player and market, as Over x.5 rungs. */
+const bookRungs = (name, kind) =>
+  Object.keys(BOOK?.[kind]?.[name] ?? {}).map((k) => Number(k) - 0.5);
+const bookPrice = (name, kind, rung) =>
+  BOOK?.[kind]?.[name]?.[String(Math.round(rung + 0.5))] ?? null;
 const rosterTeamRaw = (name) => ROSTER0[name] ?? null;
 const props = (game.propLines ?? []).filter(
   (p) => LOG_SIGMA[p.market] || p.market === 'player_receptions',
@@ -390,7 +396,7 @@ function simulate(seed) {
     }
 
     // touchdowns
-    const scored = new Set();
+    const scored = new Map();
     for (const side of ['away', 'home']) {
       const abbr = TEAMS[side];
       const pts = side === 'home' ? homePts : awayPts;
@@ -403,14 +409,22 @@ function simulate(seed) {
         for (const pl of pool.players) {
           x -= pl.q * pool.scale;
           if (x <= 0) {
-            scored.add(pl.name);
+            scored.set(pl.name, (scored.get(pl.name) ?? 0) + 1);
             break;
           }
         }
         // anything left over is a scorer the board does not price
       }
     }
-    for (const s of scorers) mark(`${s.name} anytime TD`, i, scored.has(s.name));
+    for (const s of scorers) {
+      const n = scored.get(s.name) ?? 0;
+      mark(`${s.name} anytime TD`, i, n >= 1);
+      mark(`${s.name} 2+ TD`, i, n >= 2);
+      mark(`${s.name} 3+ TD`, i, n >= 3);
+    }
+    // Who wins, which every pre-built combo on a board hangs off.
+    mark(`${TEAMS.home} to win`, i, realMargin > 0);
+    mark(`${TEAMS.away} to win`, i, realMargin < 0);
 
     // Yardage and receptions, nudged by the script this sim produced: passing and receiving rise
     // with a team's own points, rushing rises with its margin. Both factors average one.
@@ -426,15 +440,21 @@ function simulate(seed) {
         1 + 0.16 * ((rosterTeam(y.name) === TEAMS.home ? realMargin : -realMargin) / 14);
       const scale = y.market === 'player_rush_yds' ? ground : air;
       const val = y.median * Math.exp(y.sigma * r.normal()) * Math.max(0.35, scale);
-      for (const n of ladder(y.line, y.market))
+      for (const n of ladder(y.line, y.market, y.name))
         mark(`${y.name} Over ${n} ${short(y.market)}`, i, val > n);
     }
     for (const c of counts) {
+      // real receptions rungs from the board as well as the default ladder
       const mine = ptsFor(c.name);
       const scale = Math.max(0.4, 1 + 0.18 * ((mine - expPts) / Math.max(8, expPts)));
       const val = r.poisson(c.mean * scale);
-      for (let n = 0.5; n <= Math.ceil(c.line) + 0.5; n += 1)
-        mark(`${c.name} Over ${n} rec`, i, val > n);
+      const recRungs = [
+        ...new Set([
+          ...Array.from({ length: Math.ceil(c.line) + 1 }, (_, k) => k + 0.5),
+          ...bookRungs(c.name, 'rec'),
+        ]),
+      ];
+      for (const n of recRungs) mark(`${c.name} Over ${n} rec`, i, val > n);
     }
   }
   return { legs, scoreOf };
@@ -446,13 +466,20 @@ const short = (m) =>
 // made of. A ladder that only went down could not even look up a "60+ yards" leg.
 const ALT = {
   'pass yds': [
-    24.5, 49.5, 74.5, 99.5, 124.5, 149.5, 174.5, 199.5, 224.5, 249.5, 274.5, 299.5, 324.5,
+    24.5, 49.5, 74.5, 99.5, 124.5, 149.5, 174.5, 199.5, 214.5, 224.5, 234.5, 249.5, 250.5, 264.5,
+    274.5, 289.5, 299.5, 309.5, 324.5, 349.5,
   ],
-  'rush yds': [4.5, 9.5, 14.5, 19.5, 24.5, 29.5, 34.5, 39.5, 49.5, 59.5, 69.5, 79.5, 89.5, 99.5],
-  'rec yds': [4.5, 9.5, 14.5, 19.5, 24.5, 29.5, 39.5, 49.5, 59.5, 69.5, 79.5, 89.5, 99.5],
+  'rush yds': [
+    4.5, 9.5, 14.5, 19.5, 24.5, 29.5, 34.5, 39.5, 44.5, 49.5, 54.5, 59.5, 64.5, 69.5, 74.5, 79.5,
+    84.5, 89.5, 94.5, 99.5,
+  ],
+  'rec yds': [
+    4.5, 9.5, 14.5, 19.5, 24.5, 29.5, 34.5, 39.5, 44.5, 49.5, 54.5, 59.5, 64.5, 69.5, 74.5, 79.5,
+    84.5, 89.5, 94.5, 99.5,
+  ],
 };
 function ladder(line, market) {
-  const rungs = ALT[short(market)] ?? [];
+  const rungs = [...(ALT[short(market)] ?? []), ...bookRungs(arguments[2] ?? '', short(market))];
   return [...new Set([...rungs.filter((n) => n >= line * 0.2 && n <= line * 2.6), line])].sort(
     (a, b) => a - b,
   );
@@ -504,10 +531,52 @@ for (const pl of game.propLines ?? []) {
   if (pl.over != null) KNOWN.set(`${pl.name} Over ${pl.line} ${tag}`, pl.over);
 }
 for (const a of sheet.anytime) KNOWN.set(`${a.name} anytime TD`, a.price);
+if (BOOK) {
+  for (const [name, rungs] of Object.entries(BOOK['rec yds'] ?? {}))
+    for (const [k, price] of Object.entries(rungs))
+      KNOWN.set(`${name} Over ${Number(k) - 0.5} rec yds`, price);
+  for (const [name, rungs] of Object.entries(BOOK.rec ?? {}))
+    for (const [k, price] of Object.entries(rungs))
+      KNOWN.set(`${name} Over ${Number(k) - 0.5} rec`, price);
+  for (const [name, rungs] of Object.entries(BOOK.td ?? {}))
+    for (const [k, price] of Object.entries(rungs))
+      KNOWN.set(k === '1' ? `${name} anytime TD` : `${name} ${k}+ TD`, price);
+  for (const [label, price] of Object.entries(BOOK.game ?? {})) KNOWN.set(label, price);
+  console.log(`loaded ${KNOWN.size} real prices from the ${BOOK.book} board`);
+}
+// Every leg that carries a real price, ranked by what the model makes of it.
+const edgeReport = () => {
+  const rows = all
+    .filter((l) => KNOWN.has(l.label))
+    .map((l) => {
+      const price = KNOWN.get(l.label);
+      return {
+        label: l.label,
+        p: l.p,
+        price,
+        implied: impliedFromAmerican(price),
+        ev: l.p * dec(price) - 1,
+      };
+    })
+    .filter((r) => r.p >= 0.08)
+    .sort((a, b) => b.ev - a.ev);
+  console.log(`\nREAL PRICES: every ${BOOK.book} leg the sim can grade, best first`);
+  for (const r of rows.slice(0, 14))
+    console.log(
+      `  ${r.ev >= 0 ? '+' : ''}${(r.ev * 100).toFixed(0)}% EV  ${r.label.padEnd(36)} ${r.price > 0 ? '+' : ''}${r.price}  sim ${pctf(r.p)} vs ${pctf(r.implied)}`,
+    );
+  const bad = rows.slice(-6).reverse();
+  console.log(`  worst on the board:`);
+  for (const r of bad)
+    console.log(
+      `  ${(r.ev * 100).toFixed(0)}% EV  ${r.label.padEnd(36)} ${r.price > 0 ? '+' : ''}${r.price}  sim ${pctf(r.p)} vs ${pctf(r.implied)}`,
+    );
+};
 const dec = (american) => (american > 0 ? 1 + american / 100 : 1 + 100 / -american);
 const fairDec = (p) => 1 / p;
 const toAmer = (d) => (d >= 2 ? Math.round((d - 1) * 100) : Math.round(-100 / (d - 1)));
 
+if (BOOK) edgeReport();
 const pool = [];
 const seenFamily = new Map();
 for (const l of survivors.filter((x) => x.p <= CEIL).sort((a, b) => a.p - b.p)) {
@@ -625,7 +694,17 @@ if (process.env.TARGET) {
   for (const [lo, hi] of BANDS) {
     let taken = 0;
     for (const l of all
-      .filter((x) => x.p >= lo && x.p < hi && survivesBlowout(x) && scriptNeutral(x))
+      .filter(
+        (x) =>
+          x.p >= lo &&
+          x.p < hi &&
+          survivesBlowout(x) &&
+          scriptNeutral(x) &&
+          // With a board loaded, only legs it actually prices. An unpriced leg falls back to a
+          // fair price derived from the sim, so it can never show a loss, and a slip built from
+          // those reports an edge that is the de-vig constant rather than anything real.
+          (!BOOK || KNOWN.has(x.label)),
+      )
       .sort((a, b) => b.p - a.p)) {
       const f = family(l.label);
       if ((seen.get(f) ?? 0) >= 2) continue;
@@ -666,9 +745,15 @@ if (process.env.TARGET) {
         if (joint <= 0) continue;
         const pay = st.pay * (cand.price != null ? dec(cand.price) : fairDec(cand.p));
         if (pay > HI) continue; // already too long; adding legs only lengthens it
-        const state = { idx: [...st.idx, i], bits, pay, joint };
+        const state = { idx: [...st.idx, i], bits, pay, joint, ev: joint * pay - 1 };
         next.push(state);
-        if (pay >= LO && (!bestSlip || joint > bestSlip.joint)) bestSlip = state;
+        // With a real board loaded the objective is expected value, not raw hit rate. Maximising
+        // hit rate alone finds the likeliest cluster in the game, which here is the favourite
+        // running away with it, and that is precisely where the model has no edge.
+        const better = BOOK
+          ? state.ev > (bestSlip?.ev ?? -Infinity)
+          : joint > (bestSlip?.joint ?? -1);
+        if (pay >= LO && better) bestSlip = state;
       }
     }
     if (!next.length) break;
