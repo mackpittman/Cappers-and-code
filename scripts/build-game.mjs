@@ -22,6 +22,15 @@ import {
 const board = readJson(path.join(DATA, 'board.json'));
 const odds = readJson(path.join(DATA, 'odds', 'latest.json'));
 const GAME = process.env.GAME || 'nyg-lar';
+// Players ruled out after the last odds pull. The feed's injury report lags the beat reporters by
+// hours on a night game, so this is the manual override: their legs come off every list and the
+// sheet says who is out rather than quietly dropping them.
+const SCRATCH = new Set(
+  (process.env.SCRATCH ?? '')
+    .split(',')
+    .map((x) => x.trim())
+    .filter(Boolean),
+);
 const game = board?.games.find((g) => g.id === GAME);
 const evt = odds?.events.find((e) => `${e.away}-${e.home}`.toLowerCase() === GAME);
 if (!game || !evt) {
@@ -72,6 +81,7 @@ const modelBy = Object.fromEntries(
 const anytime = Object.values(evt.markets.player_anytime_td?.players ?? {})
   .map((p) => p.name)
   .filter((n) => !/D\/ST|Defense/.test(n))
+  .filter((n) => !SCRATCH.has(n))
   .map((name) => {
     const b = bestOf(bookOf('player_anytime_td', name));
     if (!b) return null;
@@ -96,7 +106,7 @@ const anytime = Object.values(evt.markets.player_anytime_td?.players ?? {})
   .sort((a, b) => b.prob - a.prob);
 const A = Object.fromEntries(anytime.map((l) => [l.name, l]));
 
-const twoPlus = twoPlusLegs(atdLegs(board).filter((l) => l.game === GAME))
+const twoPlus = twoPlusLegs(atdLegs(board).filter((l) => l.game === GAME && !SCRATCH.has(l.player)))
   .filter((l) => TD2_POSITIONS.has(l.pos))
   .map((l) => ({
     kind: 'td2',
@@ -138,6 +148,7 @@ const total = {
 
 // Props the desk wrote a lean on, priced where the market carries that line.
 const props = (game.propLines ?? [])
+  .filter((p) => !SCRATCH.has(p.name))
   .map((p) => {
     const lean =
       p.lean ??
@@ -303,6 +314,8 @@ ${css}
   .tk .hd { grid-template-columns: 92px 1fr 160px; }
   .line { display: flex; gap: 40px; margin: 14px 0 0; font-family: 'JetBrains Mono'; font-size: 15px; letter-spacing: 2px; color: #9DA59D; }
   .line b { color: #B6FF00; font-size: 22px; margin-right: 8px; }
+  .out { border-left: 4px solid #E06060; background: #170D0D; padding: 12px 20px; margin: 16px 0 0; color: #E8C8C8; font-size: 15px; line-height: 1.5; font-family: 'Manrope'; }
+  .out b { font-family: 'JetBrains Mono'; color: #E06060; letter-spacing: 2px; margin-right: 10px; }
   .read { border-left: 4px solid #B6FF00; background: #0B0E10; padding: 16px 22px; margin: 18px 0 0; color: #C8CFC8; font-size: 16px; line-height: 1.55; }
   table.td td.bad { color: #E06060; }
   table.td td.warn { color: #E0C040; }
@@ -313,6 +326,7 @@ ${css}
   <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code"><span>WEEK ${board.week} · MONDAY NIGHT</span></div>
   <h1>${esc(game.away.abbr)} @ ${esc(game.home.abbr)}, <span>the whole sheet</span></h1>
   <p class="sub">Every play we have on the last game of the week: the board, the anytime board, the 2+ list, ${stacks.length} stack${stacks.length === 1 ? '' : 's'} and the long-shot band. Player prices are FanDuel/DraftKings as of ${pulledAt} ET${staleMin > 90 ? `, the last time this game's props were pulled; the line and total are current to ${linesAt} ET` : ''}. A same-game parlay engine reprices a stack; the model numbers hold. Units, not dollars.</p>
+  ${SCRATCH.size ? `<div class="out"><b>OUT</b> ${esc([...SCRATCH].join(', '))} &mdash; removed from every list below. Prices for his team-mates are the book's pre-news numbers, so they understate the players absorbing the work.</div>` : ''}
   <div class="line"><span><b>${esc(spreadNow.label)}</b> SIDE ${spreadNow.conf}/5</span><span><b>${esc(total.label)}</b> TOTAL ${totalNow.conf}/5</span><span><b>${esc(favAbbr)} ${favPts}</b> · <b>${esc(dogAbbr)} ${dogPts}</b> IMPLIED</span></div>
   <div class="read">${esc(game.market.why)}</div>
 

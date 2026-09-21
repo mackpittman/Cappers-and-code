@@ -17,6 +17,17 @@ import { DATA, readJson, writeJson, nowIso } from './lib.mjs';
 import { impliedFromAmerican } from './parlays.mjs';
 
 const GAME = process.env.GAME || 'nyg-lar';
+// Players ruled out after the last odds pull. Their legs are dropped and their share of the team's
+// touchdowns redistributes across whoever is left, because shares are normalised per team.
+const SCRATCH = new Set(
+  (process.env.SCRATCH ?? '')
+    .split(',')
+    .map((x) => x.trim())
+    .filter(Boolean),
+);
+// Losing a front-line receiver costs a team points the stale market line has not taken out yet.
+const SCRATCH_PTS = Number(process.env.SCRATCH_PTS ?? 0);
+const SCRATCH_TEAM = process.env.SCRATCH_TEAM ?? null;
 const SIMS = Number(process.env.SIMS ?? 1000);
 const SEEDS = Number(process.env.SEEDS ?? 1);
 const FLOOR = Number(process.env.FLOOR ?? 0.7);
@@ -37,7 +48,12 @@ if (!game || !sheet) {
 // numbers so the gap is visible rather than buried.
 const SD_MARGIN = Number(process.env.SD_MARGIN ?? 13.4);
 const SD_TOTAL = Number(process.env.SD_TOTAL ?? 10.6);
-const proj = game.market.projected; // { away, home }
+const rawProj = game.market.projected; // { away, home }
+const proj = { ...rawProj };
+if (SCRATCH_PTS && SCRATCH_TEAM) {
+  if (SCRATCH_TEAM === game.home.abbr) proj.home = +(proj.home - SCRATCH_PTS).toFixed(2);
+  else proj.away = +(proj.away - SCRATCH_PTS).toFixed(2);
+}
 const muTotal = proj.away + proj.home;
 const muMargin = proj.home - proj.away; // positive: home favoured
 
@@ -73,6 +89,7 @@ function rng(seed) {
   return next;
 }
 
+const pctf = (x) => `${(x * 100).toFixed(1)}%`;
 const normCdf = (z) => {
   const t = 1 / (1 + 0.2316419 * Math.abs(z));
   const d = 0.3989423 * Math.exp((-z * z) / 2);
@@ -90,6 +107,11 @@ const devig = (over, under) => {
 // ---- player distributions, each fitted to its own de-vigged price ----
 // Yardage is lognormal: non-negative and right-skewed, which is how a receiving line behaves.
 const LOG_SIGMA = { player_pass_yds: 0.3, player_rush_yds: 0.62, player_reception_yds: 0.72 };
+// How much of a scratched player's volume his team-mates actually absorb. Not all of it: some of
+// what a number one receiver generates simply does not happen when he is not on the field.
+const REDIST = Number(process.env.REDIST ?? 0.8);
+const ROSTER0 = readJson(path.join(DATA, `rosters-${GAME}.json`), {});
+const rosterTeamRaw = (name) => ROSTER0[name] ?? null;
 const props = (game.propLines ?? []).filter(
   (p) => LOG_SIGMA[p.market] || p.market === 'player_receptions',
 );
@@ -161,29 +183,124 @@ function inverseNorm(p) {
   );
 }
 
+// Hand the scratched players' volume to their team-mates in the same market, damped by REDIST.
+// Their own entries are dropped afterwards.
+for (const bucket of [yardage, counts]) {
+  const key = bucket === yardage ? 'median' : 'mean';
+  const markets = new Set(bucket.map((x) => x.market));
+  for (const m of markets) {
+    for (const abbr of [game.away.abbr, game.home.abbr]) {
+      const mine = bucket.filter((x) => x.market === m && rosterTeamRaw(x.name) === abbr);
+      const gone = mine.filter((x) => SCRATCH.has(x.name));
+      const left = mine.filter((x) => !SCRATCH.has(x.name));
+      if (!gone.length || !left.length) continue;
+      const freed = gone.reduce((a, x) => a + x[key], 0) * REDIST;
+      // Spread the vacated volume over the whole offence, not just the team-mates who happen to
+      // carry a posted line. Using the priced players as the denominator gave Davante Adams and
+      // Kyren Williams a 119% raise between them, because they are the only two Rams with a
+      // receiving line on the board. The quarterback's passing number is the real pie.
+      const qb = (game.propLines ?? []).find(
+        (x) => x.market === 'player_pass_yds' && rosterTeamRaw(x.name) === abbr,
+      );
+      const priced = left.reduce((a, x) => a + x[key], 0);
+      const whole =
+        m === 'player_reception_yds' && qb
+          ? Math.max(priced, qb.line - gone.reduce((a, x) => a + x[key], 0))
+          : priced;
+      if (whole <= 0) continue;
+      const lift = Math.min(0.35, freed / whole); // a team-mate's number does not double
+      for (const x of left) x[key] = x[key] * (1 + lift);
+      console.log(
+        `redistributed ${gone.map((g) => g.name).join(', ')} (${m}) across ${left.length} team-mates: +${Math.round(lift * 100)}%`,
+      );
+    }
+  }
+}
+for (const bucket of [yardage, counts]) {
+  for (let i = bucket.length - 1; i >= 0; i--) if (SCRATCH.has(bucket[i].name)) bucket.splice(i, 1);
+}
+
 // ---- touchdown shares ----
 // Expected touchdowns from an anytime price, then a share of the team's simulated scores. The
 // residual bucket is everything the board does not price: defensive and special-teams scores and
 // the third-string body who gets one carry on the goal line.
 const TEAMS = { away: game.away.abbr, home: game.home.abbr };
+// Most names on a props board arrive without a team, and a sim that cannot tell whose offence a
+// player belongs to cannot correlate him with anything. The rosters are a free ESPN pull.
+const ROSTER = readJson(path.join(DATA, `rosters-${GAME}.json`), {});
 const rosterTeam = (name) => {
+  if (ROSTER[name]) return ROSTER[name];
   const hit = sheet.anytime.find((a) => a.name === name);
   if (hit?.team) return hit.team;
-  const fromBoard = (game.atdBoard ?? []).find((p) => p.name === name)?.team;
-  return fromBoard ?? null;
+  return (game.atdBoard ?? []).find((p) => p.name === name)?.team ?? null;
 };
-const scorers = sheet.anytime.map((a) => ({
-  name: a.name,
-  team: rosterTeam(a.name),
-  exp: -Math.log(1 - Math.min(0.95, a.prob)),
-}));
+const scorers = sheet.anytime
+  .filter((a) => !SCRATCH.has(a.name))
+  .map((a) => ({
+    name: a.name,
+    team: rosterTeam(a.name),
+    exp: -Math.log(1 - Math.min(0.95, a.prob)),
+  }));
 const unknown = scorers.filter((s) => !s.team);
 const byTeam = {};
 for (const side of ['away', 'home']) {
   const abbr = TEAMS[side];
-  const mine = scorers.filter((s) => s.team === abbr);
-  const sum = mine.reduce((x, s) => x + s.exp, 0);
-  byTeam[abbr] = { players: mine, sum };
+  byTeam[abbr] = { players: scorers.filter((s) => s.team === abbr) };
+}
+
+// Calibrating the touchdown allocation.
+//
+// Tying team touchdowns to the simulated score is right, but on its own it does not reproduce the
+// board: capping touchdowns at what the points allow truncates the draw, and every scorer came out
+// well under his own market number (Davante Adams at 37% against a board price implying 48%). A leg
+// cannot be judged against a market the sim does not reproduce.
+//
+// So: draw the distribution of team touchdowns first, then solve each player's per-touchdown share
+// q so that 1 - E[(1-q)^T] equals his market probability. Each touchdown is then handed out
+// independently at those shares, with the remainder going to whoever the board does not price.
+function teamTdDistribution(side, seed) {
+  const r = rng(seed);
+  const counts = [];
+  for (let i = 0; i < 4000; i++) {
+    const margin = muMargin + SD_MARGIN * r.normal();
+    const total = Math.max(6, muTotal + SD_TOTAL * r.normal());
+    const pts = Math.max(0, Math.round((side === 'home' ? total + margin : total - margin) / 2));
+    counts.push(Math.min(r.poisson(Math.max(0.2, (pts - 1.5) / 7)), Math.floor(pts / 6)));
+  }
+  const dist = new Map();
+  for (const c of counts) dist.set(c, (dist.get(c) ?? 0) + 1 / counts.length);
+  return dist;
+}
+/** Solve q with 1 - sum_t P(T=t) (1-q)^t = target. */
+function solveShare(dist, target) {
+  let lo = 0;
+  let hi = 1;
+  for (let it = 0; it < 80; it++) {
+    const q = (lo + hi) / 2;
+    let miss = 0;
+    for (const [t, w] of dist) miss += w * Math.pow(1 - q, t);
+    if (1 - miss > target) hi = q;
+    else lo = q;
+  }
+  return (lo + hi) / 2;
+}
+for (const side of ['away', 'home']) {
+  const abbr = TEAMS[side];
+  const dist = teamTdDistribution(side, side === 'home' ? 777 : 991);
+  const pool = byTeam[abbr];
+  for (const pl of pool.players) pl.q = solveShare(dist, 1 - Math.exp(-pl.exp));
+  const sum = pool.players.reduce((a, x) => a + x.q, 0);
+  // More than the whole pie means the board's anytime prices imply more scorers than the score
+  // supports. Scale back rather than silently double-count, and say so.
+  // TD_FULL=1 keeps the board's anytime prices at face value even when they sum past the score,
+  // which is the market's own view of the touchdown legs. Useful for grading a ticket the way the
+  // book priced it rather than the way our projection sees it.
+  pool.scale = process.env.TD_FULL === '1' ? 1 : sum > 0.95 ? 0.95 / sum : 1;
+  if (pool.scale < 1)
+    console.log(
+      `${abbr}: priced anytime board sums to ${(sum * 100).toFixed(0)}% of its touchdowns; scaled to 95%`,
+    );
+  pool.sum = Math.min(0.95, sum);
 }
 
 function simulate(seed) {
@@ -229,21 +346,19 @@ function simulate(seed) {
       const abbr = TEAMS[side];
       const pts = side === 'home' ? homePts : awayPts;
       const lam = Math.max(0.2, (pts - 1.5) / 7);
-      let tds = Math.min(r.poisson(lam), Math.floor(pts / 6));
+      const tds = Math.min(r.poisson(lam), Math.floor(pts / 6));
       const pool = byTeam[abbr];
-      if (!pool || !pool.sum) continue;
-      // Everything the board does not price shares the rest of the team's scores.
-      const priced = Math.min(0.9, pool.sum / Math.max(pool.sum, lam));
+      if (!pool?.players.length) continue;
       for (let k = 0; k < tds; k++) {
-        if (r() > priced) continue; // a score the board does not name
-        let x = r() * pool.sum;
-        for (const p of pool.players) {
-          x -= p.exp;
+        let x = r();
+        for (const pl of pool.players) {
+          x -= pl.q * pool.scale;
           if (x <= 0) {
-            scored.add(p.name);
+            scored.add(pl.name);
             break;
           }
         }
+        // anything left over is a scorer the board does not price
       }
     }
     for (const s of scorers) mark(`${s.name} anytime TD`, i, scored.has(s.name));
@@ -262,7 +377,8 @@ function simulate(seed) {
         1 + 0.16 * ((rosterTeam(y.name) === TEAMS.home ? realMargin : -realMargin) / 14);
       const scale = y.market === 'player_rush_yds' ? ground : air;
       const val = y.median * Math.exp(y.sigma * r.normal()) * Math.max(0.35, scale);
-      for (const n of ladder(y.line)) mark(`${y.name} Over ${n} ${short(y.market)}`, i, val > n);
+      for (const n of ladder(y.line, y.market))
+        mark(`${y.name} Over ${n} ${short(y.market)}`, i, val > n);
     }
     for (const c of counts) {
       const mine = ptsFor(c.name);
@@ -276,13 +392,21 @@ function simulate(seed) {
 }
 const short = (m) =>
   m === 'player_pass_yds' ? 'pass yds' : m === 'player_rush_yds' ? 'rush yds' : 'rec yds';
-function ladder(line) {
-  const out = [];
-  const step = line > 150 ? 25 : line > 60 ? 10 : 5;
-  for (let n = Math.max(4.5, Math.round((line * 0.25) / step) * step + 0.5); n < line; n += step)
-    out.push(+n.toFixed(1));
-  out.push(line);
-  return out;
+// Books post alternates on fixed numbers, and they post them ABOVE the main line as well as
+// below. The short rungs are where a 70% leg lives; the long ones are what a long-odds slip is
+// made of. A ladder that only went down could not even look up a "60+ yards" leg.
+const ALT = {
+  'pass yds': [
+    24.5, 49.5, 74.5, 99.5, 124.5, 149.5, 174.5, 199.5, 224.5, 249.5, 274.5, 299.5, 324.5,
+  ],
+  'rush yds': [4.5, 9.5, 14.5, 19.5, 24.5, 29.5, 34.5, 39.5, 49.5, 59.5, 69.5, 79.5, 89.5, 99.5],
+  'rec yds': [4.5, 9.5, 14.5, 19.5, 24.5, 29.5, 39.5, 49.5, 59.5, 69.5, 79.5, 89.5, 99.5],
+};
+function ladder(line, market) {
+  const rungs = ALT[short(market)] ?? [];
+  return [...new Set([...rungs.filter((n) => n >= line * 0.2 && n <= line * 2.6), line])].sort(
+    (a, b) => a - b,
+  );
 }
 
 // ---- run ----
@@ -388,6 +512,151 @@ if (!best) {
 }
 const joint = (set) => jointBits(set);
 
+// TARGET=11 builds a slip that PRICES near a number (11.0 decimal is +1000) and, among everything
+// that prices there, survives the most sims. This is a different question from the five above: it
+// fixes the payout and buys back as much hit rate as the correlation allows, rather than fixing
+// the hit rate and taking what it pays.
+//
+// The search is a beam over set size, scored by joint x payout. That product is the ticket's return
+// at fair prices: it sits at 1.0 for independent legs and rises above it exactly when the legs lean
+// the same way, so the beam naturally walks toward sets that agree with each other. Sets are kept
+// whenever their price lands in the band and the best joint wins.
+if (process.env.TARGET) {
+  const TARGET = Number(process.env.TARGET);
+  const LO = Number(process.env.TARGET_LO ?? TARGET * 0.9);
+  const HI = Number(process.env.TARGET_HI ?? TARGET * 1.3);
+  const BEAM = Number(process.env.BEAM ?? 400);
+  const MAXLEGS = Number(process.env.MAXLEGS ?? 9);
+  // A wider pool than the five-leg search, and deliberately spread across the probability range.
+  // Taking the most likely legs first fills the pool with 90% legs that pay nothing, and no
+  // combination of them ever reaches a long price; taking the longest first throws away the short
+  // legs that hold the joint up. So sample every band.
+  const POOL_LO = Number(process.env.POOL_LO ?? 0.42);
+  const BANDS = [
+    [POOL_LO, 0.42],
+    [0.42, 0.55],
+    [0.55, 0.65],
+    [0.65, 0.75],
+    [0.75, 0.85],
+    [0.85, 0.93],
+  ];
+  const wide = [];
+  const seen = new Map();
+  for (const [lo, hi] of BANDS) {
+    let taken = 0;
+    for (const l of all.filter((x) => x.p >= lo && x.p < hi).sort((a, b) => b.p - a.p)) {
+      const f = family(l.label);
+      if ((seen.get(f) ?? 0) >= 2) continue;
+      seen.set(f, (seen.get(f) ?? 0) + 1);
+      wide.push({ ...l, bits: packed(l.arr), price: KNOWN.get(l.label) ?? null });
+      if (++taken >= 10) break;
+    }
+  }
+  const andBits = (a, b) => {
+    const out = new Uint32Array(WORDS);
+    for (let w = 0; w < WORDS; w++) out[w] = a[w] & b[w];
+    return out;
+  };
+  const count = (bits) => {
+    let c = 0;
+    for (let w = 0; w < WORDS; w++) {
+      let v = bits[w];
+      v = v - ((v >> 1) & 0x55555555);
+      v = (v & 0x33333333) + ((v >> 2) & 0x33333333);
+      c += (((v + (v >> 4)) & 0x0f0f0f0f) * 0x01010101) >> 24;
+    }
+    return c;
+  };
+  const ones = new Uint32Array(WORDS).fill(0xffffffff);
+  if (SIMS % 32) ones[WORDS - 1] = (1 << SIMS % 32) - 1;
+  let beam = [{ idx: [], bits: ones, pay: 1 }];
+  let bestSlip = null;
+  for (let depth = 1; depth <= MAXLEGS; depth++) {
+    const next = [];
+    for (const st of beam) {
+      const last = st.idx.length ? st.idx[st.idx.length - 1] : -1;
+      for (let i = last + 1; i < wide.length; i++) {
+        const cand = wide[i];
+        if (st.idx.some((j) => person(wide[j].label) === person(cand.label))) continue;
+        if (st.idx.filter((j) => kind(wide[j].label) === kind(cand.label)).length >= 2) continue;
+        const bits = andBits(st.bits, cand.bits);
+        const joint = count(bits) / SIMS;
+        if (joint <= 0) continue;
+        const pay = st.pay * (cand.price != null ? dec(cand.price) : fairDec(cand.p));
+        if (pay > HI) continue; // already too long; adding legs only lengthens it
+        const state = { idx: [...st.idx, i], bits, pay, joint };
+        next.push(state);
+        if (pay >= LO && (!bestSlip || joint > bestSlip.joint)) bestSlip = state;
+      }
+    }
+    if (!next.length) break;
+    // Keep the best states at every price level, not just the best overall: a slip on its way to
+    // +1000 looks worse than a short one at every depth until the moment it arrives.
+    const BUCKETS = 12;
+    const lane = (pay) =>
+      Math.min(BUCKETS - 1, Math.max(0, Math.floor((Math.log(pay) / Math.log(HI)) * BUCKETS)));
+    const lanes = new Map();
+    for (const st of next) {
+      const k = lane(st.pay);
+      if (!lanes.has(k)) lanes.set(k, []);
+      lanes.get(k).push(st);
+    }
+    beam = [];
+    const per = Math.max(20, Math.floor(BEAM / Math.max(1, lanes.size)));
+    for (const arr of lanes.values()) {
+      arr.sort((a, b) => b.joint * b.pay - a.joint * a.pay);
+      beam.push(...arr.slice(0, per));
+    }
+  }
+  if (!bestSlip) {
+    console.log(`\nNo slip prices between ${toAmer(LO)} and ${toAmer(HI)} from this pool.`);
+  } else {
+    const legs = bestSlip.idx.map((i) => wide[i]);
+    const ind = legs.reduce((a, l) => a * l.p, 1);
+    console.log(
+      `\nSlip built to price near ${toAmer(TARGET) > 0 ? '+' : ''}${toAmer(TARGET)} (${legs.length} legs):`,
+    );
+    for (const l of legs)
+      console.log(
+        `  ${pctf(l.p).padStart(6)}  ${l.label.padEnd(38)} ${l.price != null ? `book ${l.price > 0 ? '+' : ''}${l.price}` : `fair ${toAmer(fairDec(l.p)) > 0 ? '+' : ''}${toAmer(fairDec(l.p))}`}`,
+      );
+    console.log(
+      `  PRICE  ${toAmer(bestSlip.pay) > 0 ? '+' : ''}${toAmer(bestSlip.pay)} if the book treats the legs as independent`,
+    );
+    console.log(
+      `  JOINT  ${pctf(bestSlip.joint)} of ${SIMS} sims, against ${pctf(ind)} if you multiplied them`,
+    );
+    console.log(
+      `  Break-even at that price is ${pctf(1 / bestSlip.pay)}, so the ticket returns ${((bestSlip.joint * bestSlip.pay - 1) * 100).toFixed(0)}% at fair legs.`,
+    );
+    console.log(
+      `  A same-game engine that prices the correlation will shade it toward ${toAmer(1 / bestSlip.joint) > 0 ? '+' : ''}${toAmer(1 / bestSlip.joint)}; below that it stops being a bet.`,
+    );
+    writeJson(
+      path.join(
+        DATA,
+        'sheets',
+        `${board.season}-w${String(board.week).padStart(2, '0')}-${GAME}-slip.json`,
+      ),
+      {
+        builtAt: nowIso(),
+        game: GAME,
+        sims: SIMS,
+        target: TARGET,
+        price: toAmer(bestSlip.pay),
+        joint: bestSlip.joint,
+        independent: ind,
+        shadeFloor: toAmer(1 / bestSlip.joint),
+        legs: legs.map((l) => ({
+          label: l.label,
+          p: +l.p.toFixed(4),
+          price: l.price ?? null,
+          fair: toAmer(fairDec(l.p)),
+        })),
+      },
+    );
+  }
+}
 // LEGS="a || b || c" scores a set you name instead of the one the search picked, so a leg can be
 // swapped by hand (a fringe receiver the sim likes but a human would not write down) and the cost
 // of the swap read off the same run.
@@ -434,7 +703,6 @@ writeJson(
   out,
 );
 
-const pctf = (x) => `${(x * 100).toFixed(1)}%`;
 console.log(
   `${GAME}: ${SIMS} sims, projected ${TEAMS.away} ${proj.away} / ${TEAMS.home} ${proj.home}, margin SD ${SD_MARGIN}, total SD ${SD_TOTAL}`,
 );
