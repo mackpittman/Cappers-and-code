@@ -1,0 +1,574 @@
+{
+ "builtAt": "2026-09-21T00:05:35.744Z",
+ "game": "ind-kc",
+ "oddsFetchedAt": "2026-09-20T23:20:05.936Z",
+ "twoPlus": [
+  {
+   "type": "td2",
+   "name": "Jonathan Taylor",
+   "team": "IND",
+   "pos": "RB",
+   "price": 440,
+   "book": "FD",
+   "implied": 0.185,
+   "prob": 0.328,
+   "source": "model",
+   "ev": 0.7712000000000001,
+   "fair": 205
+  },
+  {
+   "type": "td2",
+   "name": "Kenneth Walker III",
+   "team": "KC",
+   "pos": "RB",
+   "price": 280,
+   "book": "FD",
+   "implied": 0.263,
+   "prob": 0.304,
+   "source": "model",
+   "ev": 0.1552,
+   "fair": 229
+  }
+ ],
+ "stack": {
+  "legs": [
+   {
+    "type": "atd",
+    "name": "Jonathan Taylor",
+    "team": "IND",
+    "pos": "RB",
+    "price": -145,
+    "book": "FD",
+    "implied": 0.5918367346938775,
+    "prob": 0.62,
+    "source": "model",
+    "best": -145
+   },
+   {
+    "type": "atd",
+    "name": "Kenneth Walker III",
+    "team": "KC",
+    "pos": "RB",
+    "price": -210,
+    "book": "FD",
+    "implied": 0.6774193548387096,
+    "prob": 0.6,
+    "source": "model",
+    "best": -205
+   },
+   {
+    "type": "atd",
+    "name": "Travis Kelce",
+    "team": "KC",
+    "pos": "TE",
+    "price": 190,
+    "book": "DK",
+    "implied": 0.3448275862068966,
+    "prob": 0.42,
+    "source": "model",
+    "best": 195
+   }
+  ],
+  "why": "The three most likely scorers on the field. Hit rate over payout: the model gives this stack a real chance, not an edge.",
+  "price": 623,
+  "dec": 7.233333333333333,
+  "prob": 0.15624,
+  "implied": 0.1382488479262673,
+  "ev": 0.13013600000000003
+ },
+ "longs": [
+  {
+   "legs": [
+    {
+     "type": "td2",
+     "name": "Jonathan Taylor",
+     "team": "IND",
+     "pos": "RB",
+     "price": 440,
+     "book": "FD",
+     "implied": 0.185,
+     "prob": 0.328,
+     "source": "model",
+     "ev": 0.7712000000000001,
+     "fair": 205
+    },
+    {
+     "type": "td2",
+     "name": "Kenneth Walker III",
+     "team": "KC",
+     "pos": "RB",
+     "price": 280,
+     "book": "FD",
+     "implied": 0.263,
+     "prob": 0.304,
+     "source": "model",
+     "ev": 0.1552,
+     "fair": 229
+    },
+    {
+     "type": "total",
+     "name": "Over 47.5",
+     "price": -110,
+     "book": "FD/DK",
+     "implied": 0.5238095238095238,
+     "prob": 0.58,
+     "source": "model"
+    }
+   ],
+   "price": 3817,
+   "dec": 39.17454545454545,
+   "prob": 0.057832959999999996,
+   "implied": 0.025526779912744827,
+   "ev": 1.2655799202909086
+  },
+  {
+   "legs": [
+    {
+     "type": "td2",
+     "name": "Jonathan Taylor",
+     "team": "IND",
+     "pos": "RB",
+     "price": 440,
+     "book": "FD",
+     "implied": 0.185,
+     "prob": 0.328,
+     "source": "model",
+     "ev": 0.7712000000000001,
+     "fair": 205
+    },
+    {
+     "type": "atd",
+     "name": "Xavier Worthy",
+     "team": "KC",
+     "pos": "WR",
+     "price": 240,
+     "book": "DK",
+     "implied": 0.29411764705882354,
+     "prob": 0.28,
+     "source": "model",
+     "best": 250
+    },
+    {
+     "type": "total",
+     "name": "Over 47.5",
+     "price": -110,
+     "book": "FD/DK",
+     "implied": 0.5238095238095238,
+     "prob": 0.58,
+     "source": "model"
+    }
+   ],
+   "price": 3405,
+   "dec": 35.050909090909094,
+   "prob": 0.05326720000000001,
+   "implied": 0.0285299304907148,
+   "ev": 0.8670637847272731
+  },
+  {
+   "legs": [
+    {
+     "type": "td2",
+     "name": "Jonathan Taylor",
+     "team": "IND",
+     "pos": "RB",
+     "price": 440,
+     "book": "FD",
+     "implied": 0.185,
+     "prob": 0.328,
+     "source": "model",
+     "ev": 0.7712000000000001,
+     "fair": 205
+    },
+    {
+     "type": "atd",
+     "name": "Travis Kelce",
+     "team": "KC",
+     "pos": "TE",
+     "price": 190,
+     "book": "DK",
+     "implied": 0.3448275862068966,
+     "prob": 0.42,
+     "source": "model",
+     "best": 195
+    },
+    {
+     "type": "atd",
+     "name": "Rashee Rice",
+     "team": null,
+     "pos": null,
+     "price": 155,
+     "book": "DK",
+     "implied": 0.39215686274509803,
+     "prob": 0.3647058823529412,
+     "source": "market",
+     "best": 160
+    }
+   ],
+   "price": 3893,
+   "dec": 39.933,
+   "prob": 0.05024188235294118,
+   "implied": 0.025041945258307666,
+   "ev": 1.006309088
+  },
+  {
+   "legs": [
+    {
+     "type": "td2",
+     "name": "Kenneth Walker III",
+     "team": "KC",
+     "pos": "RB",
+     "price": 280,
+     "book": "FD",
+     "implied": 0.263,
+     "prob": 0.304,
+     "source": "model",
+     "ev": 0.1552,
+     "fair": 229
+    },
+    {
+     "type": "atd",
+     "name": "Travis Kelce",
+     "team": "KC",
+     "pos": "TE",
+     "price": 190,
+     "book": "DK",
+     "implied": 0.3448275862068966,
+     "prob": 0.42,
+     "source": "model",
+     "best": 195
+    },
+    {
+     "type": "atd",
+     "name": "Xavier Worthy",
+     "team": "KC",
+     "pos": "WR",
+     "price": 240,
+     "book": "DK",
+     "implied": 0.29411764705882354,
+     "prob": 0.28,
+     "source": "model",
+     "best": 250
+    }
+   ],
+   "price": 3647,
+   "dec": 37.467999999999996,
+   "prob": 0.0357504,
+   "implied": 0.02668944165688054,
+   "ev": 0.33949598719999985
+  }
+ ],
+ "anytime": [
+  {
+   "type": "atd",
+   "name": "Jonathan Taylor",
+   "team": "IND",
+   "pos": "RB",
+   "price": -145,
+   "book": "FD",
+   "implied": 0.5918367346938775,
+   "prob": 0.62,
+   "source": "model",
+   "best": -145
+  },
+  {
+   "type": "atd",
+   "name": "Kenneth Walker III",
+   "team": "KC",
+   "pos": "RB",
+   "price": -210,
+   "book": "FD",
+   "implied": 0.6774193548387096,
+   "prob": 0.6,
+   "source": "model",
+   "best": -205
+  },
+  {
+   "type": "atd",
+   "name": "Travis Kelce",
+   "team": "KC",
+   "pos": "TE",
+   "price": 190,
+   "book": "DK",
+   "implied": 0.3448275862068966,
+   "prob": 0.42,
+   "source": "model",
+   "best": 195
+  },
+  {
+   "type": "atd",
+   "name": "Rashee Rice",
+   "team": null,
+   "pos": null,
+   "price": 155,
+   "book": "DK",
+   "implied": 0.39215686274509803,
+   "prob": 0.3647058823529412,
+   "source": "market",
+   "best": 160
+  },
+  {
+   "type": "atd",
+   "name": "Xavier Worthy",
+   "team": "KC",
+   "pos": "WR",
+   "price": 240,
+   "book": "DK",
+   "implied": 0.29411764705882354,
+   "prob": 0.28,
+   "source": "model",
+   "best": 250
+  },
+  {
+   "type": "atd",
+   "name": "Tyler Warren",
+   "team": "IND",
+   "pos": "TE",
+   "price": 250,
+   "book": "FD",
+   "implied": 0.2857142857142857,
+   "prob": 0.25,
+   "source": "model",
+   "best": 265
+  },
+  {
+   "type": "atd",
+   "name": "Alec Pierce",
+   "team": null,
+   "pos": null,
+   "price": 275,
+   "book": "DK",
+   "implied": 0.26666666666666666,
+   "prob": 0.248,
+   "source": "market",
+   "best": 275
+  },
+  {
+   "type": "atd",
+   "name": "Patrick Mahomes",
+   "team": null,
+   "pos": null,
+   "price": 330,
+   "book": "FD",
+   "implied": 0.23255813953488372,
+   "prob": 0.21627906976744188,
+   "source": "market",
+   "best": 370
+  },
+  {
+   "type": "atd",
+   "name": "Josh Downs",
+   "team": null,
+   "pos": null,
+   "price": 390,
+   "book": "FD",
+   "implied": 0.20408163265306123,
+   "prob": 0.18979591836734697,
+   "source": "market",
+   "best": 390
+  },
+  {
+   "type": "atd",
+   "name": "Keenan Allen",
+   "team": null,
+   "pos": null,
+   "price": 425,
+   "book": "DK",
+   "implied": 0.19047619047619047,
+   "prob": 0.17714285714285713,
+   "source": "market",
+   "best": 425
+  },
+  {
+   "type": "atd",
+   "name": "Emmett Johnson",
+   "team": null,
+   "pos": null,
+   "price": 500,
+   "book": "FD",
+   "implied": 0.16666666666666666,
+   "prob": 0.155,
+   "source": "market",
+   "best": 500
+  },
+  {
+   "type": "atd",
+   "name": "Daniel Jones",
+   "team": null,
+   "pos": null,
+   "price": 550,
+   "book": "FD",
+   "implied": 0.15384615384615385,
+   "prob": 0.1430769230769231,
+   "source": "market",
+   "best": 600
+  },
+  {
+   "type": "atd",
+   "name": "Tyquan Thornton",
+   "team": null,
+   "pos": null,
+   "price": 600,
+   "book": "DK",
+   "implied": 0.14285714285714285,
+   "prob": 0.13285714285714287,
+   "source": "market",
+   "best": 600
+  },
+  {
+   "type": "atd",
+   "name": "Noah Gray",
+   "team": null,
+   "pos": null,
+   "price": 700,
+   "book": "FD",
+   "implied": 0.125,
+   "prob": 0.11625,
+   "source": "market",
+   "best": 700
+  },
+  {
+   "type": "atd",
+   "name": "Mo Alie-Cox",
+   "team": null,
+   "pos": null,
+   "price": 950,
+   "book": "DK",
+   "implied": 0.09523809523809523,
+   "prob": 0.08857142857142856,
+   "source": "market",
+   "best": 1400
+  },
+  {
+   "type": "atd",
+   "name": "Seth McGowan",
+   "team": null,
+   "pos": null,
+   "price": 1300,
+   "book": "DK",
+   "implied": 0.07142857142857142,
+   "prob": 0.06642857142857143,
+   "source": "market",
+   "best": 1300
+  },
+  {
+   "type": "atd",
+   "name": "Laquon Treadwell",
+   "team": null,
+   "pos": null,
+   "price": 1600,
+   "book": "FD",
+   "implied": 0.058823529411764705,
+   "prob": 0.05470588235294118,
+   "source": "market",
+   "best": 1900
+  },
+  {
+   "type": "atd",
+   "name": "Jake Briningstool",
+   "team": null,
+   "pos": null,
+   "price": 1600,
+   "book": "DK",
+   "implied": 0.058823529411764705,
+   "prob": 0.05470588235294118,
+   "source": "market",
+   "best": 1600
+  },
+  {
+   "type": "atd",
+   "name": "Brashard Smith",
+   "team": null,
+   "pos": null,
+   "price": 2200,
+   "book": "FD",
+   "implied": 0.043478260869565216,
+   "prob": 0.04043478260869565,
+   "source": "market",
+   "best": 2200
+  },
+  {
+   "type": "atd",
+   "name": "Cyrus Allen",
+   "team": null,
+   "pos": null,
+   "price": 2200,
+   "book": "FD",
+   "implied": 0.043478260869565216,
+   "prob": 0.04043478260869565,
+   "source": "market",
+   "best": 2200
+  },
+  {
+   "type": "atd",
+   "name": "Nikko Remigio",
+   "team": null,
+   "pos": null,
+   "price": 2200,
+   "book": "FD",
+   "implied": 0.043478260869565216,
+   "prob": 0.04043478260869565,
+   "source": "market",
+   "best": 2800
+  },
+  {
+   "type": "atd",
+   "name": "Jalen Royals",
+   "team": null,
+   "pos": null,
+   "price": 3000,
+   "book": "FD",
+   "implied": 0.03225806451612903,
+   "prob": 0.030000000000000002,
+   "source": "market",
+   "best": 3000
+  },
+  {
+   "type": "atd",
+   "name": "Drew Ogletree",
+   "team": null,
+   "pos": null,
+   "price": 3000,
+   "book": "FD",
+   "implied": 0.03225806451612903,
+   "prob": 0.030000000000000002,
+   "source": "market",
+   "best": 3300
+  },
+  {
+   "type": "atd",
+   "name": "Anthony Gould",
+   "team": null,
+   "pos": null,
+   "price": 4500,
+   "book": "DK",
+   "implied": 0.021739130434782608,
+   "prob": 0.020217391304347826,
+   "source": "market",
+   "best": 4500
+  },
+  {
+   "type": "atd",
+   "name": "Deion Burks",
+   "team": null,
+   "pos": null,
+   "price": 5000,
+   "book": "FD",
+   "implied": 0.0196078431372549,
+   "prob": 0.018235294117647058,
+   "source": "market",
+   "best": 5000
+  },
+  {
+   "type": "atd",
+   "name": "Ben VanSumeren",
+   "team": null,
+   "pos": null,
+   "price": 7500,
+   "book": "DK",
+   "implied": 0.013157894736842105,
+   "prob": 0.012236842105263157,
+   "source": "market",
+   "best": 7500
+  }
+ ]
+}

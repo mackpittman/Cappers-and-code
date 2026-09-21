@@ -1,0 +1,94 @@
+<!doctype html>
+<html><head><meta charset="utf-8" /><title>Cappers &amp; Code · Week 2 SNF</title>
+<style>
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 900; src: url(../promo/assets/fonts/BarlowCondensed_900Black.ttf); }
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 800; src: url(../promo/assets/fonts/BarlowCondensed_800ExtraBold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 700; src: url(../promo/assets/fonts/Manrope_700Bold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 500; src: url(../promo/assets/fonts/Manrope_500Medium.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 700; src: url(../promo/assets/fonts/JetBrainsMono_700Bold.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url(../promo/assets/fonts/JetBrainsMono_500Medium.ttf); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #050608; color: #F5F7F2; font-family: 'Manrope', sans-serif; }
+  .card { width: 1200px; padding: 48px 64px 64px; background: #050608 radial-gradient(ellipse at 50% 0%, rgba(182,255,0,.10), transparent 40%); position: relative; overflow: hidden; }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 6px; background: #B6FF00; }
+  .brand { display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono'; letter-spacing: 3px; font-size: 17px; color: #B6FF00; font-weight: 700; }
+  .brand img { width: 220px; display: block; }
+  h1 { font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; font-size: 84px; margin: 22px 0 6px; letter-spacing: 1px; line-height: .92; }
+  h1 span { color: #B6FF00; }
+  .sub { color: #C8CFC8; font-size: 20px; margin: 0 0 8px; line-height: 1.4; font-weight: 500; }
+  h2 { font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; font-size: 44px; margin: 40px 0 6px; letter-spacing: 1px; line-height: 1; display: flex; align-items: baseline; gap: 16px; }
+  h2 small { font-family: 'JetBrains Mono'; font-size: 14px; letter-spacing: 3px; color: #79E000; font-weight: 700; text-transform: uppercase; }
+  .rule { color: #9DA59D; font-size: 17px; margin: 0 0 16px; line-height: 1.4; }
+
+  table.board { width: 100%; border-collapse: collapse; }
+  table.board th { text-align: left; font-family: 'JetBrains Mono'; color: #B6FF00; letter-spacing: 3px; font-size: 13px; padding: 0 12px 10px; border-bottom: 1px solid #23282A; }
+  table.board td { padding: 10px 12px; border-bottom: 1px solid #14181A; vertical-align: top; }
+  table.board td.g { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 28px; text-transform: uppercase; white-space: nowrap; width: 190px; }
+  table.board td small { display: block; font-family: 'JetBrains Mono'; font-weight: 500; font-size: 12px; color: #9DA59D; letter-spacing: 1px; margin-top: 3px; text-transform: uppercase; }
+  table.board td.pick { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; color: #F5F7F2; }
+  table.board td.pick.hot { color: #B6FF00; }
+  table.board td.pick.muted { color: #3A4040; }
+
+  .tk { border: 1px solid rgba(182,255,0,.35); border-left: 5px solid #B6FF00; border-radius: 10px; background: #0B0E10; margin-bottom: 10px; }
+  .tk .hd { display: grid; grid-template-columns: 56px 1fr 150px; align-items: center; gap: 14px; padding: 12px 20px; }
+  .tk .tag { font-family: 'JetBrains Mono'; font-size: 16px; font-weight: 700; color: #B6FF00; letter-spacing: 2px; }
+  .tk .legs { display: flex; flex-direction: column; gap: 6px; }
+  .tk .leg { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; line-height: 1; display: flex; align-items: baseline; gap: 12px; }
+  .tk .leg b { font-family: 'JetBrains Mono'; font-size: 19px; color: #F5F7F2; }
+  .tk .leg i { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 500; font-size: 12px; color: #9DA59D; letter-spacing: 1px; text-transform: uppercase; }
+  .tk .odds { font-family: 'JetBrains Mono'; font-size: 34px; font-weight: 700; color: #B6FF00; text-align: right; }
+  .tk .ft { display: flex; gap: 30px; padding: 8px 20px 11px; border-top: 1px solid #1B2022; font-family: 'JetBrains Mono'; font-size: 12px; letter-spacing: 2px; color: #9DA59D; }
+  .tk .ft b { font-size: 20px; color: #F5F7F2; margin-right: 8px; letter-spacing: 0; }
+  .tk .ft .ev b { color: #B6FF00; }
+  .tk .ft .m b { color: #C8CFC8; }
+
+  table.td { width: 100%; border-collapse: collapse; }
+  table.td th { text-align: left; font-family: 'JetBrains Mono'; color: #B6FF00; letter-spacing: 3px; font-size: 13px; padding: 0 12px 10px; border-bottom: 1px solid #23282A; }
+  table.td th.r { text-align: right; }
+  table.td td { padding: 11px 12px; border-bottom: 1px solid #16191B; }
+  table.td td.n { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; }
+  table.td td.n small { display: block; font-family: 'JetBrains Mono'; font-weight: 500; font-size: 12px; color: #9DA59D; letter-spacing: 1px; margin-top: 3px; text-transform: uppercase; }
+  table.td td.r { text-align: right; font-family: 'JetBrains Mono'; font-weight: 700; font-size: 21px; white-space: nowrap; }
+  table.td td.p { color: #B6FF00; }
+  table.td td.e { color: #79E000; }
+
+  .teaser { border: 1px solid rgba(182,255,0,.45); box-shadow: 0 0 22px rgba(182,255,0,.12); border-radius: 12px; background: #0B0E10; padding: 20px 24px; }
+  .teaser .top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .teaser .top .k { font-family: 'JetBrains Mono'; letter-spacing: 3px; color: #B6FF00; font-weight: 700; font-size: 15px; }
+  .teaser .top .v { font-family: 'JetBrains Mono'; font-weight: 700; font-size: 22px; }
+  .teaser .top .v i { font-style: normal; color: #9DA59D; font-size: 15px; font-weight: 500; margin-left: 12px; }
+  .foot { margin-top: 30px; display: flex; justify-content: space-between; font-family: 'JetBrains Mono'; color: #79E000; font-size: 15px; letter-spacing: 4px; font-weight: 700; }
+</style>
+<style>
+  .tk .ft .why { flex: 1; color: #9DA59D; letter-spacing: 0; font-family: 'Manrope'; font-size: 14px; font-weight: 500; text-transform: none; text-align: right; }
+  .line { display: flex; gap: 40px; margin: 14px 0 0; font-family: 'JetBrains Mono'; font-size: 15px; letter-spacing: 2px; color: #9DA59D; }
+  .line b { color: #B6FF00; font-size: 22px; margin-right: 8px; }
+</style></head>
+<body>
+<section class="card" id="snf">
+  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code"><span>WEEK 2 · SUNDAY NIGHT</span></div>
+  <h1>IND @ KC, <span>under the lights</span></h1>
+  <p class="sub">The 2+ TD plays, the three-scorer stack and four +3000 to +4000 same-game tickets. FanDuel/DraftKings prices from the 7:20 PM ET pull. A same-game parlay engine will shade these payouts; the model numbers hold. Units, not dollars.</p>
+  <div class="line"><span><b>KC -6.5</b> SIDE</span><span><b>Over 47.5</b> TOTAL</span><span><b>KC 27</b> · <b>IND 20.5</b> IMPLIED</span></div>
+
+  <h2>2+ touchdowns <small>backs and quarterbacks · the model's own list</small></h2>
+  <p class="rule">Real FanDuel/DraftKings 2+ prices against the model's number for two or more. Fair is what the model would charge; play the book price or longer.</p>
+  <table class="td">
+    <tr><th>#</th><th>Player</th><th class="r">2+ price</th><th class="r">Model</th><th class="r">Implied</th><th class="r">Fair</th><th class="r">EV</th></tr>
+    <tr><td class="p">1</td><td class="n">Jonathan Taylor<small>IND · RB · anytime -145</small></td><td class="r p">+440 FD</td><td class="r e">33%</td><td class="r">19%</td><td class="r">+205</td><td class="r e">+77%</td></tr>
+<tr><td class="p">2</td><td class="n">Kenneth Walker III<small>KC · RB · anytime -210</small></td><td class="r p">+280 FD</td><td class="r e">30%</td><td class="r">26%</td><td class="r">+229</td><td class="r e">+16%</td></tr>
+  </table>
+
+  <h2>Three-scorer stack <small>one ticket · highest hit rate</small></h2>
+  <div class="tk"><div class="hd"><span class="tag">STACK</span><span class="legs"><span class="leg">Jonathan Taylor <b>-145</b><i>FD · 62% model vs 59%</i></span><span class="leg">Kenneth Walker III <b>-210</b><i>FD · 60% model vs 68%</i></span><span class="leg">Travis Kelce <b>+190</b><i>DK · 42% model vs 34%</i></span></span><span class="odds">+623</span></div><div class="ft"><span><b>16%</b> MODEL HIT</span><span class="m"><b>14%</b> BOOK</span><span class="ev"><b>+13%</b> EV</span><span class="why">The three most likely scorers on the field. Hit rate over payout: the model gives this stack a real chance, not an edge.</span></div></div>
+
+  <h2>+3000 to +4000 <small>4 tickets · ranked by model hit rate</small></h2>
+  <p class="rule">Three legs each, built from the 2+ and anytime legs above and the total. No player carries more than three tickets. "Market" legs are priced off the book with the hold removed; the model has no separate number on them.</p>
+  <div class="tk"><div class="hd"><span class="tag">#1</span><span class="legs"><span class="leg">Jonathan Taylor 2+ <b>+440</b><i>FD · 33% model vs 19%</i></span><span class="leg">Kenneth Walker III 2+ <b>+280</b><i>FD · 30% model vs 26%</i></span><span class="leg">Over 47.5 <b>-110</b><i>FD/DK · 58% model vs 52%</i></span></span><span class="odds">+3817</span></div><div class="ft"><span><b>5.8%</b> MODEL HIT</span><span class="m"><b>2.6%</b> BOOK</span><span class="ev"><b>+127%</b> EV</span></div></div>
+<div class="tk"><div class="hd"><span class="tag">#2</span><span class="legs"><span class="leg">Jonathan Taylor 2+ <b>+440</b><i>FD · 33% model vs 19%</i></span><span class="leg">Xavier Worthy <b>+240</b><i>DK · 28% model vs 29%</i></span><span class="leg">Over 47.5 <b>-110</b><i>FD/DK · 58% model vs 52%</i></span></span><span class="odds">+3405</span></div><div class="ft"><span><b>5.3%</b> MODEL HIT</span><span class="m"><b>2.9%</b> BOOK</span><span class="ev"><b>+87%</b> EV</span></div></div>
+<div class="tk"><div class="hd"><span class="tag">#3</span><span class="legs"><span class="leg">Jonathan Taylor 2+ <b>+440</b><i>FD · 33% model vs 19%</i></span><span class="leg">Travis Kelce <b>+190</b><i>DK · 42% model vs 34%</i></span><span class="leg">Rashee Rice <b>+155</b><i>DK · 36% market vs 39%</i></span></span><span class="odds">+3893</span></div><div class="ft"><span><b>5.0%</b> MODEL HIT</span><span class="m"><b>2.5%</b> BOOK</span><span class="ev"><b>+101%</b> EV</span></div></div>
+<div class="tk"><div class="hd"><span class="tag">#4</span><span class="legs"><span class="leg">Kenneth Walker III 2+ <b>+280</b><i>FD · 30% model vs 26%</i></span><span class="leg">Travis Kelce <b>+190</b><i>DK · 42% model vs 34%</i></span><span class="leg">Xavier Worthy <b>+240</b><i>DK · 28% model vs 29%</i></span></span><span class="odds">+3647</span></div><div class="ft"><span><b>3.6%</b> MODEL HIT</span><span class="m"><b>2.7%</b> BOOK</span><span class="ev"><b>+34%</b> EV</span></div></div>
+
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>PRICED 7:20 PM ET · CAPPERSANDCODE.COM</span></div>
+</section>
+</body></html>
