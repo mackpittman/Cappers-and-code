@@ -102,7 +102,10 @@ jobs:
           # Stage first, then test the index rather than the working tree: a new week's results file
           # arrives untracked, and `git diff --quiet -- data` would call that "nothing changed" and
           # skip the very commit that first carries it.
-          git add data
+          #
+          # src/data/research.json is staged too. The weekly research Routine cannot push either,
+          # so the new week's model travels through Supabase with everything else and lands here.
+          git add data src/data/research.json
           if git diff --cached --quiet; then
             echo "data/ is already current; nothing to commit."
             exit 0

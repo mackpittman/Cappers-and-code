@@ -4,7 +4,7 @@
 // Needs SUPABASE_URL, SUPABASE_ANON_KEY, BOARD_PUBLISH_SECRET (never written to disk).
 import fs from 'node:fs';
 import path from 'node:path';
-import { DATA } from './lib.mjs';
+import { DATA, ROOT } from './lib.mjs';
 
 const mode = process.argv[2];
 const { SUPABASE_URL, SUPABASE_ANON_KEY, BOARD_PUBLISH_SECRET } = process.env;
@@ -19,13 +19,23 @@ if (!SUPABASE_URL || !SUPABASE_ANON_KEY || !BOARD_PUBLISH_SECRET) {
   process.exit(0);
 }
 const KEY = 'data-files';
+// Paths are relative to data/ unless they start with "repo:", which means relative to the
+// repository root. The weekly research lives outside data/ but has to travel the same way: a
+// Routine session cannot push, so anything it produces reaches main only by going through
+// Supabase and being committed by the sync workflow. Two Tuesdays in a row the research run did
+// all the work, committed locally, failed to push, and reported success with nothing shipped.
+const REPO_FILES = ['src/data/research.json'];
 const FILES = () => {
   const list = ['odds/latest.json', 'odds/credits.jsonl', 'odds/history.jsonl'];
   const results = path.join(DATA, 'results');
   if (fs.existsSync(results))
     for (const f of fs.readdirSync(results)) if (f.endsWith('.json')) list.push(`results/${f}`);
+  for (const rel of REPO_FILES) if (fs.existsSync(path.join(ROOT, rel))) list.push(`repo:${rel}`);
   return list;
 };
+/** Where a stored key lands on disk. */
+const target = (rel) =>
+  rel.startsWith('repo:') ? path.join(ROOT, rel.slice(5)) : path.join(DATA, rel);
 const headers = {
   'Content-Type': 'application/json',
   apikey: SUPABASE_ANON_KEY,
@@ -54,7 +64,7 @@ const localOddsAt = () => {
 if (mode === 'push') {
   const files = {};
   for (const rel of FILES()) {
-    const f = path.join(DATA, rel);
+    const f = target(rel);
     if (fs.existsSync(f)) files[rel] = fs.readFileSync(f, 'utf8');
   }
   const value = { savedAt: new Date().toISOString(), oddsFetchedAt: localOddsAt(), files };
@@ -83,7 +93,7 @@ if (mode === 'push') {
   }
   let n = 0;
   for (const [rel, content] of Object.entries(remote.value.files)) {
-    const f = path.join(DATA, rel);
+    const f = target(rel);
     fs.mkdirSync(path.dirname(f), { recursive: true });
     fs.writeFileSync(f, content);
     n++;
