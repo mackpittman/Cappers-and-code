@@ -48,6 +48,13 @@ const marketAt = evt.markets.player_anytime_td?.fetchedAt ?? board.oddsFetchedAt
 const stamp = (iso) =>
   et(iso, { weekday: 'short', hour: 'numeric', minute: '2-digit' }).toUpperCase();
 const pulledAt = stamp(marketAt);
+// Which window this game sits in, from its own kickoff. Hard-coding it meant a Thursday sheet
+// carried a MONDAY NIGHT banner.
+const kickEt = new Date(game.kickoff);
+const kickDay = et(game.kickoff, { weekday: 'long' }).toUpperCase();
+const kickHour = Number(et(game.kickoff, { hour: 'numeric', hour12: false }));
+const slot = kickHour >= 19 ? `${kickDay} NIGHT` : kickHour >= 16 ? `${kickDay} LATE` : kickDay;
+const soloNight = kickHour >= 19 && /THURSDAY|SUNDAY|MONDAY/.test(kickDay);
 const linesAt = stamp(board.oddsFetchedAt);
 const staleMin = Math.round((Date.parse(board.oddsFetchedAt) - Date.parse(marketAt)) / 60000);
 const evPct = (x) => `${x >= 0 ? '+' : ''}${Math.round(x * 100)}%`;
@@ -58,9 +65,18 @@ const VIG = 0.93; // a lone anytime price carries roughly 7% hold once the book'
 const spreadNow = sideLegs(board).find((l) => l.game === GAME);
 const totalNow = totalLegs(board).find((l) => l.game === GAME);
 const totalNum = Number(/([\d.]+)/.exec(totalNow.label)[1]);
-const sideNum = Math.abs(Number(spreadNow.label.split(' ').pop()));
-const favAbbr = spreadNow.team === game.home.abbr ? game.away.abbr : game.home.abbr;
-const dogAbbr = spreadNow.team;
+const sideRaw = Number(spreadNow.label.split(' ').pop());
+const sideNum = Math.abs(sideRaw);
+// Who is favoured comes from the sign on the number, not from which side the desk took. Reading it
+// off spreadNow.team assumed the desk is always on the dog, so on a game where we lay the points
+// the implied split printed backwards — GB -6 came out as ATL 25.25 / GB 19.25.
+const favAbbr =
+  sideRaw < 0
+    ? spreadNow.team
+    : spreadNow.team === game.home.abbr
+      ? game.away.abbr
+      : game.home.abbr;
+const dogAbbr = favAbbr === game.home.abbr ? game.away.abbr : game.home.abbr;
 const favPts = (totalNum + sideNum) / 2;
 const dogPts = (totalNum - sideNum) / 2;
 
@@ -78,6 +94,13 @@ const modelBy = Object.fromEntries(
     .filter((l) => l.game === GAME)
     .map((l) => [l.player, l]),
 );
+// modelBy only covers the players the desk wrote an estimate for. Everyone else on the book's board
+// still has a team on the research board, and "— · —" under a name reads like missing data rather
+// than a name we simply did not write a number on.
+const teamBy = Object.fromEntries((game.atdBoard ?? []).map((p) => [p.name, p.team]));
+const posBy = Object.fromEntries(
+  [...(game.top3 ?? []), ...(game.value ?? [])].filter((p) => p.pos).map((p) => [p.name, p.pos]),
+);
 const anytime = Object.values(evt.markets.player_anytime_td?.players ?? {})
   .map((p) => p.name)
   .filter((n) => !/D\/ST|Defense/.test(n))
@@ -92,8 +115,8 @@ const anytime = Object.values(evt.markets.player_anytime_td?.players ?? {})
       kind: 'atd',
       label: `${name} anytime TD`,
       name,
-      team: m?.team ?? null,
-      pos: m?.pos ?? null,
+      team: m?.team ?? teamBy[name] ?? null,
+      pos: m?.pos ?? posBy[name] ?? null,
       price: b.price,
       book: b.book,
       implied,
@@ -164,6 +187,11 @@ const props = (game.propLines ?? [])
       label: `${p.name} ${over ? 'Over' : 'Under'} ${p.line}`,
       price: over ? p.over : p.under,
       book: 'FD/DK',
+      // A prop that ends up inside a stack needs a probability like any other leg. Without one the
+      // stack's hit rate and EV both came out NaN and printed that way.
+      implied: over ? impliedFromAmerican(p.over) : impliedFromAmerican(p.under),
+      prob: (over ? impliedFromAmerican(p.over) : impliedFromAmerican(p.under)) * VIG,
+      source: 'market',
       why: lean.why,
       deskLine: lean.line ?? null,
     };
@@ -194,47 +222,104 @@ const priceStack = (legs) => {
   const prob = legs.reduce((p, l) => p * l.prob, 1);
   return { legs, dec, price: toAmerican(dec), prob, implied: 1 / dec, ev: prob * dec - 1 };
 };
+// Stacks come from the game's own research rather than a hand-written list. The first version of
+// this file carried four stacks named for one specific game ("Dart in the red zone", "Rams
+// script"); pointed at any other game they resolved to nothing and the sheet printed no stacks at
+// all while reporting success. So each researched stack's legs are resolved against the legs this
+// sheet actually prices, and a stack whose legs cannot all be resolved is named in the log with the
+// leg that failed, rather than dropped as "a leg has no price".
+const TOTAL_RE = /^(over|under)\s+([\d.]+)/i;
+const resolveLeg = (text) => {
+  const t = String(text).trim();
+
+  // "Under 44.5" / "Over 44.5 total points" — only the side the desk is actually on.
+  const tm = TOTAL_RE.exec(t);
+  if (tm) {
+    const want = tm[1].toLowerCase();
+    const have = /under/i.test(total.label) ? 'under' : 'over';
+    return want === have ? total : { fail: `${t} is the other side of ${total.label}` };
+  }
+
+  // "Packers -6", "Bengals -3.5", "GB -6" — again only the side the desk is on.
+  if (/[+-]\d/.test(t) && !/\b(yards?|receptions?|touchdowns?)\b/i.test(t)) {
+    const teams = [game.away, game.home];
+    const named = teams.find(
+      (x) => t.startsWith(`${x.abbr} `) || new RegExp(`\\b${x.short}\\b`, 'i').test(t),
+    );
+    if (named)
+      return named.abbr === side.label.split(' ')[0] ? side : { fail: `${t} is not our side` };
+  }
+
+  // "Bijan Robinson anytime TD" / "Tucker Kraft anytime touchdown" — match on the player name.
+  const hit = anytime.find((l) => t.toLowerCase().startsWith(l.name.toLowerCase()));
+  if (hit) {
+    if (/\b2\+|two\b/i.test(t)) {
+      const two = twoPlus.find((l) => l.name === hit.name);
+      return two ?? { fail: `no 2+ price for ${hit.name}` };
+    }
+    if (/anytime|touchdown|\bTD\b/i.test(t)) return hit;
+  }
+
+  // "Chris Olave over receiving yards", "Cade Otton over 3.5 receptions" — the desk's own props.
+  const prop = props.find((x) => t.toLowerCase().startsWith(x.name.toLowerCase()));
+  if (prop && prop.price != null) return prop;
+
+  return { fail: `could not resolve "${t}"` };
+};
+
 const DEFS = [
   {
     name: 'The model stack',
     corr: 'positive',
-    why: 'Both of the desk’s own calls on this game, at confidence 3. They pull the same way: the Giants covering almost always means a slower, shorter game, so the side and the total are one idea bet twice.',
+    why: `Both of the desk's own calls on this game, at confidence ${spreadNow.conf} and ${totalNow.conf}. ${game.market.why.split('. ').slice(-1)[0]}`,
     legs: () => [side, total],
   },
-  {
-    name: 'Ball control',
-    corr: 'positive',
-    why: 'The same script with the Giants’ goal-line back attached. If New York is keeping this close and shortening the game, Skattebo is the one carrying it in.',
-    legs: () => [side, total, A['Cam Skattebo']],
-  },
-  {
-    name: 'Dart in the red zone',
-    corr: 'positive',
-    why: 'Los Angeles got two QB hits all of Week 1 and Garrett is gone for months. A clean pocket let Dart throw three touchdowns in the opener; Likely is the body he looks for inside the 20.',
-    legs: () => [propLeg('Jaxson Dart', 'player_pass_tds', 'over'), A['Isaiah Likely'], side],
-  },
-  {
-    name: 'Rams script',
-    corr: 'mixed',
-    why: 'The counter, for anyone who wants Los Angeles. The Rams win the way the model expects this game to go: on the ground, low-scoring, with Kyren Williams finishing drives.',
-    legs: () => [A['Kyren Williams'], total],
-  },
+  ...(game.stacks ?? []).map((st) => ({
+    name: null, // derived from the resolved legs below; the research text is a full sentence
+
+    corr: st.type === 'sgp' ? 'positive' : 'mixed',
+    why: st.why,
+    legs: () => st.legs.map(resolveLeg),
+  })),
 ];
+// The label beside a stack is a narrow column, so it gets last names and the bare side, not the
+// researcher's full leg sentence ("CHRISTIAN WATSON ANYTIME TD + PACKERS -6" wrapped to six lines).
+// Surname, ignoring a generational suffix: the naive last word turned "Michael Penix Jr." into
+// "Jr." and the stack read "Kraft + Jr. un".
+const surname = (full) => {
+  const parts = String(full)
+    .split(' ')
+    .filter((w) => !/^(jr|sr|ii|iii|iv|v)\.?$/i.test(w));
+  return parts[parts.length - 1] ?? full;
+};
+const shortLeg = (l) =>
+  l.kind === 'atd'
+    ? surname(l.name)
+    : l.kind === 'td2'
+      ? `${surname(l.name)} 2+`
+      : l.kind === 'prop'
+        ? `${surname(l.name)} ${l.side === 'over' ? 'ov' : 'un'}`
+        : l.label;
+
 const stacks = [];
 for (const d of DEFS) {
   const legs = d.legs();
-  if (legs.some((l) => !l || l.price == null)) {
-    console.log(`skipped stack "${d.name}": a leg has no price`);
-    continue;
-  }
-  const t = priceStack(legs);
-  if (t.ev <= 0) {
+  const bad = legs.find((l) => !l || l.fail || l.price == null);
+  if (bad) {
     console.log(
-      `skipped stack "${d.name}": ${Math.round(t.ev * 100)}% EV, the market prices its legs above our number`,
+      `skipped stack "${d.name ?? d.why.slice(0, 60)}": ${bad?.fail ?? 'a leg has no price'}`,
     );
     continue;
   }
-  stacks.push({ ...d, ...t });
+  const name = d.name ?? legs.map(shortLeg).join(' + ');
+  const t = priceStack(legs);
+  if (t.ev <= 0) {
+    console.log(
+      `skipped stack "${name}": ${Math.round(t.ev * 100)}% EV, the market prices its legs above our number`,
+    );
+    continue;
+  }
+  stacks.push({ ...d, ...t, name });
 }
 
 // ---------- the long-shot band ----------
@@ -303,9 +388,24 @@ const propRows = props
       `<tr><td class="n">${esc(p.label)}<small>${esc(p.market)}${p.deskLine && p.deskLine !== p.line ? ` · desk wrote ${p.deskLine}` : ''}</small></td><td class="r p">${p.price != null ? fmtPrice(p.price) : '—'}</td><td class="w">${esc(p.why)}</td></tr>`,
   )
   .join('\n');
-const css = fs
-  .readFileSync(path.join(SHEETS, `w${week}-sunday.html`), 'utf8')
-  .match(/<style>[\s\S]*?<\/style>/)[0];
+// Styles are borrowed from an existing sheet so every card in a week looks identical. This used to
+// read w<week>-sunday.html unconditionally, which does not exist on a Thursday — the first sheet of
+// a week crashed on its own stylesheet. Prefer that file, then the newest sheet of any week.
+const cssSource =
+  [`w${week}-sunday.html`, `w${week}-mnf.html`]
+    .map((f) => path.join(SHEETS, f))
+    .find((f) => fs.existsSync(f)) ??
+  fs
+    .readdirSync(SHEETS)
+    .filter((f) => f.endsWith('.html'))
+    .map((f) => path.join(SHEETS, f))
+    .sort((a, b) => fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs)
+    .find((f) => /<style>/.test(fs.readFileSync(f, 'utf8')));
+if (!cssSource) {
+  console.error('no existing sheet to take the stylesheet from');
+  process.exit(1);
+}
+const css = fs.readFileSync(cssSource, 'utf8').match(/<style>[\s\S]*?<\/style>/)[0];
 const html = `<!doctype html>
 <html><head><meta charset="utf-8" /><title>Cappers &amp; Code · ${esc(game.away.abbr)} @ ${esc(game.home.abbr)}</title>
 ${css}
@@ -323,9 +423,21 @@ ${css}
 </style></head>
 <body>
 <section class="card" id="game">
-  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code"><span>WEEK ${board.week} · MONDAY NIGHT</span></div>
+  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code"><span>WEEK ${board.week} · ${slot}</span></div>
   <h1>${esc(game.away.abbr)} @ ${esc(game.home.abbr)}, <span>the whole sheet</span></h1>
-  <p class="sub">Every play we have on the last game of the week: the board, the anytime board, the 2+ list, ${stacks.length} stack${stacks.length === 1 ? '' : 's'} and the long-shot band. Player prices are FanDuel/DraftKings as of ${pulledAt} ET${staleMin > 90 ? `, the last time this game's props were pulled; the line and total are current to ${linesAt} ET` : ''}. A same-game parlay engine reprices a stack; the model numbers hold. Units, not dollars.</p>
+  <p class="sub">Every play we have on ${soloNight ? "tonight's only game" : 'this game'}: ${[
+    `the board`,
+    `the anytime board`,
+    twoPlus.length ? `the 2+ list` : null,
+    stacks.length ? `${stacks.length} stack${stacks.length === 1 ? '' : 's'}` : null,
+    longs.length ? `the long-shot band` : null,
+  ]
+    .filter(Boolean)
+    .join(', ')
+    .replace(
+      /, ([^,]*)$/,
+      ' and $1',
+    )}. Player prices are FanDuel/DraftKings as of ${pulledAt} ET${staleMin > 90 ? `, the last time this game's props were pulled; the line and total are current to ${linesAt} ET` : ''}. A same-game parlay engine reprices a stack; the model numbers hold. Units, not dollars.</p>
   ${SCRATCH.size ? `<div class="out"><b>OUT</b> ${esc([...SCRATCH].join(', '))} &mdash; removed from every list below. Prices for his team-mates are the book's pre-news numbers, so they understate the players absorbing the work.</div>` : ''}
   <div class="line"><span><b>${esc(spreadNow.label)}</b> SIDE ${spreadNow.conf}/5</span><span><b>${esc(total.label)}</b> TOTAL ${totalNow.conf}/5</span><span><b>${esc(favAbbr)} ${favPts}</b> · <b>${esc(dogAbbr)} ${dogPts}</b> IMPLIED</span></div>
   <div class="read">${esc(game.market.why)}</div>
@@ -337,20 +449,28 @@ ${css}
     ${atdRows}
   </table>
 
-  <h2>2+ touchdowns <small>backs and quarterbacks · with the cushion</small></h2>
+  ${
+    td2Rows
+      ? `<h2>2+ touchdowns <small>backs and quarterbacks · with the cushion</small></h2>
   <p class="rule">Break-even is what the price needs to be worth playing. Cushion is how many points of model edge sit above it. The 2+ model is 5-34 on the season and 0 for 3 in its top band, so a thin cushion is a pass, not a coin flip.</p>
   <table class="td">
     <tr><th>#</th><th>Player</th><th class="r">2+ price</th><th class="r">Model</th><th class="r">Break-even</th><th class="r">Cushion</th><th class="r">EV</th></tr>
     ${td2Rows}
-  </table>
+  </table>`
+      : ''
+  }
 
   <h2>The stacks <small>${stacks.length} · correlated by design</small></h2>
   <p class="rule">Each one is a single idea about how this game goes, bet more than once. Priced as if the legs were independent, which is the honest floor: a positively correlated stack hits more often than the number below and your book will shorten the payout to match.</p>
   ${stacks.map((t) => stackHtml(t, t.name.toUpperCase())).join('\n')}
 
-  <h2>Long shots <small>${longs.length} tickets · ${fmtPrice(BAND[0])} to ${fmtPrice(BAND[1])}</small></h2>
+  ${
+    longs.length
+      ? `<h2>Long shots <small>${longs.length} tickets · ${fmtPrice(BAND[0])} to ${fmtPrice(BAND[1])}</small></h2>
   <p class="rule">Three legs each, drawn from the lists above, ranked by how often the model hits them. No player carries more than three tickets.</p>
-  ${longs.map((t, i) => stackHtml(t, `#${i + 1}`)).join('\n')}
+  ${longs.map((t, i) => stackHtml(t, `#${i + 1}`)).join('\n')}`
+      : ''
+  }
 
   ${
     fades.length
