@@ -263,16 +263,38 @@ for (const bucket of [yardage, counts]) {
         (x) => x.market === 'player_pass_yds' && rosterTeamRaw(x.name) === abbr,
       );
       const priced = left.reduce((a, x) => a + x[key], 0);
-      const whole =
+      const goneTotal = gone.reduce((a, x) => a + x[key], 0);
+      const pie =
         m === 'player_reception_yds' && qb
-          ? Math.max(priced, qb.line - gone.reduce((a, x) => a + x[key], 0))
-          : priced;
-      if (whole <= 0) continue;
-      const lift = Math.min(0.35, freed / whole); // a team-mate's number does not double
-      for (const x of left) x[key] = x[key] * (1 + lift);
-      console.log(
-        `redistributed ${gone.map((g) => g.name).join(', ')} (${m}) across ${left.length} team-mates: +${Math.round(lift * 100)}%`,
-      );
+          ? Math.max(priced + goneTotal, qb.line)
+          : priced + goneTotal;
+      if (pie <= 0) continue;
+
+      // Share renormalisation, not a flat percentage with a cap on it.
+      //
+      // The old version raised every remaining team-mate by the same capped percentage. The cap was
+      // 35% and it was there to stop the output looking silly. It cost us Davante Adams on the
+      // night Puka Nacua sat: Nacua was 35% of the Rams' passing pie, Adams inherited the number
+      // one role outright, and the model had him at 44.5 yards while he put up 195. A ceiling that
+      // exists to make a number look sensible is not a model.
+      //
+      // What actually happens: the departed player's share redistributes, and it does NOT go
+      // evenly. The next man in the order inherits the alpha role, the coverage rolls to him, and
+      // he takes more than his proportional cut. So weight the reallocation by each survivor's
+      // existing share raised to CONCENTRATE, which hands the top remaining option the biggest
+      // piece, and let the total land where the arithmetic puts it.
+      const CONCENTRATE = Number(process.env.CONCENTRATE ?? 1.6);
+      const weights = left.map((x) => Math.pow(Math.max(x[key], 0.01) / pie, CONCENTRATE));
+      const wsum = weights.reduce((a, w) => a + w, 0);
+      if (wsum <= 0) continue;
+      const before = left.map((x) => x[key]);
+      left.forEach((x, i) => {
+        x[key] = x[key] + (freed * weights[i]) / wsum;
+      });
+      const moves = left
+        .map((x, i) => `${x.name} ${Math.round(before[i])}->${Math.round(x[key])}`)
+        .join(', ');
+      console.log(`redistributed ${gone.map((g) => g.name).join(', ')} (${m}): ${moves}`);
     }
   }
 }
@@ -294,13 +316,51 @@ const rosterTeam = (name) => {
   if (hit?.team) return hit.team;
   return (game.atdBoard ?? []).find((p) => p.name === name)?.team ?? null;
 };
-const scorers = sheet.anytime
-  .filter((a) => !SCRATCH.has(a.name))
-  .map((a) => ({
-    name: a.name,
-    team: rosterTeam(a.name),
-    exp: -Math.log(1 - Math.min(0.95, a.prob)),
-  }));
+const expTds = (p) => -Math.log(1 - Math.min(0.95, p));
+const allScorers = sheet.anytime.map((a) => ({
+  name: a.name,
+  team: rosterTeam(a.name),
+  exp: expTds(a.prob),
+}));
+
+// A scratched player's touchdowns redistribute too, and this is the half of it that cost us most.
+//
+// Calibrating every player to his own posted anytime price is right when the board is current. It
+// is wrong the moment someone is ruled out, because the board has not repriced yet and calibrating
+// to it means inheriting the market's stale number. On the night Nacua sat, Adams was still -120
+// hours after the news, our model dutifully reproduced that, and he scored twice.
+//
+// So the vacated expected touchdowns are reallocated across the same side before any calibration
+// runs, weighted the same way as the yardage: the next man in the order takes the largest share.
+const scorers = (() => {
+  const out = allScorers.filter((a) => !SCRATCH.has(a.name));
+  if (!SCRATCH.size) return out;
+  const CONCENTRATE = Number(process.env.CONCENTRATE ?? 1.6);
+  for (const abbr of [game.away.abbr, game.home.abbr]) {
+    const gone = allScorers.filter((a) => SCRATCH.has(a.name) && a.team === abbr);
+    const left = out.filter((a) => a.team === abbr);
+    if (!gone.length || !left.length) continue;
+    const freed = gone.reduce((x, a) => x + a.exp, 0) * Number(process.env.REDIST ?? 0.8);
+    const total = left.reduce((x, a) => x + a.exp, 0) + freed;
+    const w = left.map((a) => Math.pow(Math.max(a.exp, 0.001) / total, CONCENTRATE));
+    const wsum = w.reduce((x, y) => x + y, 0);
+    if (wsum <= 0) continue;
+    const before = left.map((a) => a.exp);
+    left.forEach((a, i) => {
+      a.exp += (freed * w[i]) / wsum;
+    });
+    const moves = left
+      .map(
+        (a, i) =>
+          `${a.name} ${(100 * (1 - Math.exp(-before[i]))).toFixed(0)}%->${(100 * (1 - Math.exp(-a.exp))).toFixed(0)}%`,
+      )
+      .filter((_, i) => left[i].exp - before[i] > 0.01)
+      .join(', ');
+    if (moves)
+      console.log(`touchdowns reallocated from ${gone.map((g) => g.name).join(', ')}: ${moves}`);
+  }
+  return out;
+})();
 const unknown = scorers.filter((s) => !s.team);
 const byTeam = {};
 for (const side of ['away', 'home']) {
