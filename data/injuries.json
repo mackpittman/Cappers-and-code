@@ -1,6 +1,6 @@
 {
- "fetchedAt": "2026-09-22T18:58:47.047Z",
- "sourceTimestamp": "2026-09-22T18:58:36Z",
+ "fetchedAt": "2026-09-22T20:10:55.522Z",
+ "sourceTimestamp": "2026-09-22T20:10:53Z",
  "teams": {
   "ARI": [
    {
@@ -238,14 +238,6 @@
     "date": "2026-09-21T23:21Z"
    },
    {
-    "name": "Brandon Dorlus",
-    "pos": "DT",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Dorlus (thumb) was a limited participant in Monday's estimated practice, Tori McElhaney of the Falcons' official site reports.",
-    "date": "2026-09-21T23:15Z"
-   },
-   {
     "name": "Brian Robinson Jr.",
     "pos": "RB",
     "status": "Questionable",
@@ -308,6 +300,14 @@
     "type": "active",
     "detail": "Folk made one of his two field-goal attempts in Sunday's 34-3 loss to the Panthers.",
     "date": "2026-09-22T00:20Z"
+   },
+   {
+    "name": "Brandon Dorlus",
+    "pos": "DT",
+    "status": "Active",
+    "type": "active",
+    "detail": "Dorlus (thumb) was a limited participant in Monday's estimated practice, Tori McElhaney of the Falcons' official site reports.",
+    "date": "2026-09-21T23:15Z"
    },
    {
     "name": "Michael Penix Jr.",
@@ -448,14 +448,6 @@
     "date": "2026-09-19T21:26Z"
    },
    {
-    "name": "Ja'Kobi Lane",
-    "pos": "WR",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "Coach Jesse Minter said Lane underwent wrist surgery Wednesday, and the Ravens placed the rookie wide receiver on injured reserve, Brian Wacker of The Baltimore Sun reports.",
-    "date": "2026-09-16T19:07Z"
-   },
-   {
     "name": "Elijah Sarratt",
     "pos": "WR",
     "status": "Active",
@@ -582,6 +574,14 @@
     "type": "active",
     "detail": "Moore was signed to the Ravens' active roster Wednesday, Brian Wacker of The Baltimore Sun reports.",
     "date": "2026-09-16T22:20Z"
+   },
+   {
+    "name": "Ja'Kobi Lane",
+    "pos": "WR",
+    "status": "IR",
+    "type": "injury reserve",
+    "detail": "Coach Jesse Minter said Lane underwent wrist surgery Wednesday, and the Ravens placed the rookie wide receiver on injured reserve, Brian Wacker of The Baltimore Sun reports.",
+    "date": "2026-09-16T19:07Z"
    },
    {
     "name": "Kyle Hamilton",
@@ -771,7 +771,7 @@
    },
    {
     "name": "Tyler Bass",
-    "pos": "PK",
+    "pos": "K",
     "status": "Active",
     "type": "active",
     "detail": "Bates hit five of his six extra-point attempts in Thursday's 41-31 win over the Lions.",
@@ -1040,14 +1040,22 @@
    {
     "name": "Anthony Johnson Jr.",
     "pos": "S",
-    "status": "IR",
-    "type": "injury reserve",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
     "detail": "ir",
-    "date": "2026-09-22T18:27Z"
+    "date": "2026-09-22T20:00Z"
+   },
+   {
+    "name": "Case Keenum",
+    "pos": "QB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Keenum could be in line to start Monday's game against the Eagles with both Caleb Williams (hamstring) and Tyson Bagent (concussion) uncertain to be available, Courtney Cronin of ESPN.com reports.",
+    "date": "2026-09-22T19:20Z"
    },
    {
     "name": "Cairo Santos",
-    "pos": "K",
+    "pos": "PK",
     "status": "Active",
     "type": "active",
     "detail": "Santos made one of his two field-goal attempts in the Bears' 9-3 loss to the Vikings on Sunday.",
@@ -1096,14 +1104,6 @@
    {
     "name": "Jamree Kromah",
     "pos": "DE",
-    "status": "Active",
-    "type": "active",
-    "detail": "",
-    "date": "2026-09-21T18:25Z"
-   },
-   {
-    "name": "Case Keenum",
-    "pos": "QB",
     "status": "Active",
     "type": "active",
     "detail": "",
@@ -1222,14 +1222,6 @@
     "type": "out",
     "detail": "out",
     "date": "2026-09-21T18:26Z"
-   },
-   {
-    "name": "Ja'Sir Taylor",
-    "pos": "CB",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "The Bengals placed Taylor (undisclosed) on injured reserve Sunday with a designation to return, Geoff Hobson of the team's official site reports.",
-    "date": "2026-08-31T22:51Z"
    },
    {
     "name": "Andrei Iosivas",
@@ -1408,6 +1400,14 @@
     "date": "2026-09-08T20:42Z"
    },
    {
+    "name": "Ja'Sir Taylor",
+    "pos": "CB",
+    "status": "IR",
+    "type": "injury reserve",
+    "detail": "The Bengals placed Taylor (undisclosed) on injured reserve Sunday with a designation to return, Geoff Hobson of the team's official site reports.",
+    "date": "2026-08-31T22:51Z"
+   },
+   {
     "name": "Dohnte Meyers",
     "pos": "WR",
     "status": "Active",
@@ -1417,6 +1417,14 @@
    }
   ],
   "CLE": [
+   {
+    "name": "Nathaniel Watson",
+    "pos": "LB",
+    "status": "Out",
+    "type": "out",
+    "detail": "out",
+    "date": "2026-09-22T19:55Z"
+   },
    {
     "name": "Teven Jenkins",
     "pos": "G",
@@ -1440,14 +1448,6 @@
     "type": "questionable",
     "detail": "questionable",
     "date": "2026-09-22T16:58Z"
-   },
-   {
-    "name": "Dylan Sampson",
-    "pos": "RB",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "Sampson (knee) was placed on injured reserve Tuesday.",
-    "date": "2026-09-15T19:33Z"
    },
    {
     "name": "Jerry Jeudy",
@@ -1515,7 +1515,7 @@
    },
    {
     "name": "Andre Szmyt",
-    "pos": "PK",
+    "pos": "K",
     "status": "Active",
     "type": "active",
     "detail": "Szmyt made all three of his field-goal attempts and both of his extra-point tries during the Browns' 23-19 win over the Buccaneers on Sunday.",
@@ -1602,20 +1602,20 @@
     "date": "2026-09-15T19:58Z"
    },
    {
+    "name": "Dylan Sampson",
+    "pos": "RB",
+    "status": "IR",
+    "type": "injury reserve",
+    "detail": "Sampson (knee) was placed on injured reserve Tuesday.",
+    "date": "2026-09-15T19:33Z"
+   },
+   {
     "name": "Carson Schwesinger",
     "pos": "LB",
     "status": "Active",
     "type": "active",
     "detail": "Schwesinger finished with 10 tackles (three solo), including one for a loss, in Sunday's 34-10 loss to the Jaguars.",
     "date": "2026-09-15T04:05Z"
-   },
-   {
-    "name": "Dillon Gabriel",
-    "pos": "QB",
-    "status": "IR",
-    "type": "injury reserve",
-    "detail": "ir",
-    "date": "2026-09-08T20:42Z"
    }
   ],
   "DAL": [
@@ -1887,7 +1887,7 @@
    },
    {
     "name": "Wil Lutz",
-    "pos": "PK",
+    "pos": "K",
     "status": "Active",
     "type": "active",
     "detail": "Lutz made both of his field-goal attempts and both PATs in Sunday's 20-13 win over the Jaguars.",
@@ -2355,7 +2355,7 @@
    },
    {
     "name": "Trey Smack",
-    "pos": "K",
+    "pos": "PK",
     "status": "Active",
     "type": "active",
     "detail": "Smack made both of his field-goal attempts and went 2-for-2 on extra-point tries during the Packers' 20-17 overtime win over the Jets on Sunday.",
@@ -2460,12 +2460,12 @@
     "date": "2026-09-21T18:29Z"
    },
    {
-    "name": "Henry To'oTo'o",
-    "pos": "LB",
+    "name": "Kayden McDonald",
+    "pos": "DT",
     "status": "Injured Reserve",
     "type": "Injured Reserve",
-    "detail": "To'oTo'o (shoulder) is expected to miss more than four games, Mike Garafolo of NFL Network reports.",
-    "date": "2026-09-16T21:25Z"
+    "detail": "The Texans placed McDonald (ankle) on injured reserve Friday.",
+    "date": "2026-09-12T00:15Z"
    },
    {
     "name": "Kayshon Boutte",
@@ -2556,6 +2556,14 @@
     "date": "2026-09-18T22:29Z"
    },
    {
+    "name": "Henry To'oTo'o",
+    "pos": "LB",
+    "status": "IR",
+    "type": "injury reserve",
+    "detail": "To'oTo'o (shoulder) is expected to miss more than four games, Mike Garafolo of NFL Network reports.",
+    "date": "2026-09-16T21:25Z"
+   },
+   {
     "name": "Will Anderson Jr.",
     "pos": "DE",
     "status": "Active",
@@ -2594,14 +2602,6 @@
     "type": "active",
     "detail": "",
     "date": "2026-09-14T15:14Z"
-   },
-   {
-    "name": "Kayden McDonald",
-    "pos": "DT",
-    "status": "IR",
-    "type": "injury reserve",
-    "detail": "The Texans placed McDonald (ankle) on injured reserve Friday.",
-    "date": "2026-09-12T00:15Z"
    },
    {
     "name": "Dominique Robinson",
@@ -2662,20 +2662,20 @@
     "date": "2026-09-21T23:27Z"
    },
    {
-    "name": "Micheal Clemons",
-    "pos": "DE",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Clemons (toe) is questionable to return to Sunday night's contest against Kansas City.",
-    "date": "2026-09-21T02:47Z"
-   },
-   {
     "name": "Sean McKeon",
     "pos": "TE",
     "status": "Questionable",
     "type": "questionable",
     "detail": "questionable",
     "date": "2026-09-08T20:42Z"
+   },
+   {
+    "name": "Micheal Clemons",
+    "pos": "DE",
+    "status": "IR",
+    "type": "injury reserve",
+    "detail": "ir",
+    "date": "2026-09-22T19:40Z"
    },
    {
     "name": "Seth McGowan",
@@ -2687,7 +2687,7 @@
    },
    {
     "name": "Spencer Shrader",
-    "pos": "K",
+    "pos": "PK",
     "status": "Active",
     "type": "active",
     "detail": "Shrader made all three of his field-goal attempts and PATs in Sunday night's 33-30 overtime loss to the Chiefs.",
@@ -3042,6 +3042,14 @@
     "date": "2026-08-31T17:45Z"
    },
    {
+    "name": "Jimmy Holiday",
+    "pos": "WR",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "Holiday (undisclosed) was placed on injured reserve by the Chiefs on Sunday.",
+    "date": "2026-08-31T17:40Z"
+   },
+   {
     "name": "Noah Gray",
     "pos": "TE",
     "status": "Active",
@@ -3224,14 +3232,6 @@
     "type": "active",
     "detail": "Gilman (back) is not on the Chiefs' Thursday injury report ahead of the team's Monday night Week 1 clash with the Broncos.",
     "date": "2026-09-10T23:28Z"
-   },
-   {
-    "name": "Jimmy Holiday",
-    "pos": "WR",
-    "status": "IR",
-    "type": "injury reserve",
-    "detail": "Holiday (undisclosed) was placed on injured reserve by the Chiefs on Sunday.",
-    "date": "2026-08-31T17:40Z"
    }
   ],
   "LV": [
@@ -3551,7 +3551,7 @@
    },
    {
     "name": "Cameron Dicker",
-    "pos": "PK",
+    "pos": "K",
     "status": "Active",
     "type": "active",
     "detail": "Dicker missed his lone field-goal attempt but made both PATs in Sunday's 26-14 loss to the Raiders.",
@@ -3648,14 +3648,6 @@
     "date": "2026-09-22T15:38Z"
    },
    {
-    "name": "Ty Simpson",
-    "pos": "QB",
-    "status": "Out",
-    "type": "out",
-    "detail": "Simpson (coach's decision) is inactive but will serve as the Rams' emergency third quarterback for Monday's game against the Giants.",
-    "date": "2026-09-21T23:03Z"
-   },
-   {
     "name": "Jordan Whittington",
     "pos": "WR",
     "status": "Out",
@@ -3664,36 +3656,12 @@
     "date": "2026-09-21T22:59Z"
    },
    {
-    "name": "Bill Murray",
-    "pos": "G",
-    "status": "Out",
-    "type": "out",
-    "detail": "inactive",
-    "date": "2026-09-21T22:56Z"
-   },
-   {
-    "name": "Kamren Kinchens",
-    "pos": "S",
-    "status": "Out",
-    "type": "out",
-    "detail": "inactive",
-    "date": "2026-09-21T22:56Z"
-   },
-   {
     "name": "Ronnie Rivers",
     "pos": "RB",
     "status": "Questionable",
     "type": "questionable",
     "detail": "Rivers has been ruled out for the remainder of Monday's game against the Giants due to a calf injury.",
     "date": "2026-09-22T02:16Z"
-   },
-   {
-    "name": "Myles Garrett",
-    "pos": "DE",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "Garrett (knee) was placed on injured reserve Thursday and will miss at least four games, Adam Schefter of ESPN reports.",
-    "date": "2026-09-17T18:49Z"
    },
    {
     "name": "Terrance Ferguson",
@@ -3752,6 +3720,30 @@
     "date": "2026-09-21T23:13Z"
    },
    {
+    "name": "Ty Simpson",
+    "pos": "QB",
+    "status": "Inactive",
+    "type": "out",
+    "detail": "Simpson (coach's decision) is inactive but will serve as the Rams' emergency third quarterback for Monday's game against the Giants.",
+    "date": "2026-09-21T23:03Z"
+   },
+   {
+    "name": "Bill Murray",
+    "pos": "G",
+    "status": "Inactive",
+    "type": "out",
+    "detail": "inactive",
+    "date": "2026-09-21T22:56Z"
+   },
+   {
+    "name": "Kamren Kinchens",
+    "pos": "S",
+    "status": "Inactive",
+    "type": "out",
+    "detail": "inactive",
+    "date": "2026-09-21T22:56Z"
+   },
+   {
     "name": "CJ Daniels",
     "pos": "WR",
     "status": "Inactive",
@@ -3782,6 +3774,14 @@
     "type": "active",
     "detail": "Landman (shoulder) does not have any injury designation ahead of Monday night's game against the Giants, Benjamin Royer of The Orange County Register reports.",
     "date": "2026-09-19T20:51Z"
+   },
+   {
+    "name": "Myles Garrett",
+    "pos": "DE",
+    "status": "IR",
+    "type": "injury reserve",
+    "detail": "Garrett (knee) was placed on injured reserve Thursday and will miss at least four games, Adam Schefter of ESPN reports.",
+    "date": "2026-09-17T18:49Z"
    },
    {
     "name": "Davis Allen",
@@ -3874,14 +3874,6 @@
     "date": "2026-09-20T21:50Z"
    },
    {
-    "name": "Ronnie Harrison Jr.",
-    "pos": "LB",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "The Dolphins placed Harrison (hamstring) on injured reserve Saturday.",
-    "date": "2026-09-19T21:21Z"
-   },
-   {
     "name": "Kyle Louis",
     "pos": "LB",
     "status": "Injured Reserve",
@@ -3907,7 +3899,7 @@
    },
    {
     "name": "Riley Patterson",
-    "pos": "PK",
+    "pos": "K",
     "status": "Active",
     "type": "active",
     "detail": "Patterson converted two of his three field-goal attempts and his sole extra-point try during the Dolphins' 35-13 loss to the 49ers.",
@@ -3984,6 +3976,14 @@
     "type": "active",
     "detail": "",
     "date": "2026-09-20T19:01Z"
+   },
+   {
+    "name": "Ronnie Harrison Jr.",
+    "pos": "LB",
+    "status": "IR",
+    "type": "injury reserve",
+    "detail": "The Dolphins placed Harrison (hamstring) on injured reserve Saturday.",
+    "date": "2026-09-19T21:21Z"
    },
    {
     "name": "Seydou Traore",
@@ -4359,7 +4359,7 @@
    },
    {
     "name": "Andy Borregales",
-    "pos": "PK",
+    "pos": "K",
     "status": "Active",
     "type": "active",
     "detail": "Borregales went 2-for-3 on field-goal tries and made both of his extra-point attempts during the Patriots' 20-3 win over the Steelers on Sunday.",
@@ -4480,8 +4480,16 @@
     "date": "2026-09-22T00:34Z"
    },
    {
+    "name": "Zach Wood",
+    "pos": "LS",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "The Saints placed Wood (calf) on injured reserve Friday.",
+    "date": "2026-09-19T03:01Z"
+   },
+   {
     "name": "Daniel Carlson",
-    "pos": "PK",
+    "pos": "K",
     "status": "Active",
     "type": "active",
     "detail": "Carlson went 3-for-3 on field-goal attempts and made his only extra-point try during Sunday's 24-17 win over Baltimore.",
@@ -4584,14 +4592,6 @@
     "date": "2026-09-20T16:10Z"
    },
    {
-    "name": "Zach Wood",
-    "pos": "LS",
-    "status": "IR",
-    "type": "injury reserve",
-    "detail": "The Saints placed Wood (calf) on injured reserve Friday.",
-    "date": "2026-09-19T03:01Z"
-   },
-   {
     "name": "CJ Donaldson",
     "pos": "RB",
     "status": "Active",
@@ -4650,12 +4650,12 @@
   ],
   "NYG": [
    {
-    "name": "Jason Pinnock",
-    "pos": "S",
+    "name": "Deonte Banks",
+    "pos": "CB",
     "status": "Out",
     "type": "out",
-    "detail": "inactive",
-    "date": "2026-09-21T22:59Z"
+    "detail": "Banks (calf) is inactive for Monday's game against the Rams, Dan Salomone of the Giants' official site reports.",
+    "date": "2026-09-21T23:05Z"
    },
    {
     "name": "Bobby Jamison-Travis",
@@ -4674,12 +4674,20 @@
     "date": "2026-09-21T22:59Z"
    },
    {
+    "name": "Thomas Fidone II",
+    "pos": "TE",
+    "status": "Out",
+    "type": "out",
+    "detail": "inactive",
+    "date": "2026-09-21T22:59Z"
+   },
+   {
     "name": "Jaxson Dart",
     "pos": "QB",
     "status": "Doubtful",
     "type": "doubtful",
-    "detail": "Dart is believed to have suffered a sprained MCL in his left knee during Monday's 28-6 loss to the Rams, Ian Rapoport of NFL Network reports.",
-    "date": "2026-09-22T03:19Z"
+    "detail": "Dart is facing the possibility of season-ending surgery after further testing Tuesday revealed that the left knee injury he sustained in Monday's 28-6 loss to the Rams is worse than originally anticipated, Adam Schefter of ESPN reports.",
+    "date": "2026-09-22T18:50Z"
    },
    {
     "name": "Brian Burns",
@@ -4706,12 +4714,12 @@
     "date": "2026-09-22T00:58Z"
    },
    {
-    "name": "Paulson Adebo",
-    "pos": "CB",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "The Giants placed Adebo (knee) on injured reserve Friday, Dan Salomone of the team's official site reports.",
-    "date": "2026-09-19T00:15Z"
+    "name": "Jameis Winston",
+    "pos": "QB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Winston could be in line for an extended run as the Giants' starting quarterback after Jaxson Dart sustained a more serious knee injury than anticipated in Monday's 28-6 loss to the Rams, Ian Rapoport and Mike Garafolo of NFL Network report.",
+    "date": "2026-09-22T19:08Z"
    },
    {
     "name": "Malachi Fields",
@@ -4730,14 +4738,6 @@
     "date": "2026-09-22T04:10Z"
    },
    {
-    "name": "Jameis Winston",
-    "pos": "QB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Winston replaced Jaxson Dart (knee) with 9:51 remaining in the first quarter of Monday night's 28-6 loss to the Rams and completed 11 of 27 passes for 111 yards with no touchdowns and one interception while rushing twice for one yard.",
-    "date": "2026-09-22T04:04Z"
-   },
-   {
     "name": "Cam Skattebo",
     "pos": "RB",
     "status": "Active",
@@ -4754,24 +4754,16 @@
     "date": "2026-09-21T23:17Z"
    },
    {
-    "name": "Deonte Banks",
-    "pos": "CB",
-    "status": "Inactive",
-    "type": "out",
-    "detail": "Banks (calf) is inactive for Monday's game against the Rams, Dan Salomone of the Giants' official site reports.",
-    "date": "2026-09-21T23:05Z"
-   },
-   {
-    "name": "Darius Alexander",
-    "pos": "DT",
+    "name": "Jason Pinnock",
+    "pos": "S",
     "status": "Inactive",
     "type": "out",
     "detail": "inactive",
     "date": "2026-09-21T22:59Z"
    },
    {
-    "name": "Thomas Fidone II",
-    "pos": "TE",
+    "name": "Darius Alexander",
+    "pos": "DT",
     "status": "Inactive",
     "type": "out",
     "detail": "inactive",
@@ -4816,6 +4808,14 @@
     "type": "active",
     "detail": "",
     "date": "2026-09-19T19:35Z"
+   },
+   {
+    "name": "Paulson Adebo",
+    "pos": "CB",
+    "status": "IR",
+    "type": "injury reserve",
+    "detail": "The Giants placed Adebo (knee) on injured reserve Friday, Dan Salomone of the team's official site reports.",
+    "date": "2026-09-19T00:15Z"
    },
    {
     "name": "Tyrone Tracy Jr.",
@@ -4933,7 +4933,7 @@
    },
    {
     "name": "Jason Sanders",
-    "pos": "PK",
+    "pos": "K",
     "status": "Active",
     "type": "active",
     "detail": "Sanders reverted to the Jets' practice squad Monday, per the NFL's official transaction log.",
@@ -4965,7 +4965,7 @@
    },
    {
     "name": "Blake Grupe",
-    "pos": "PK",
+    "pos": "K",
     "status": "Active",
     "type": "active",
     "detail": "",
@@ -5079,7 +5079,7 @@
    },
    {
     "name": "Jake Elliott",
-    "pos": "PK",
+    "pos": "K",
     "status": "Active",
     "type": "active",
     "detail": "Elliott converted his only field-goal attempt and made all three of his PATs in Sunday's 24-20 win over the Titans.",
@@ -5506,6 +5506,14 @@
     "date": "2026-09-20T22:00Z"
    },
    {
+    "name": "De'Zhaun Stribling",
+    "pos": "WR",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "The 49ers placed Stribling (ankle) on injured reserve Saturday.",
+    "date": "2026-09-19T21:14Z"
+   },
+   {
     "name": "Jordan James",
     "pos": "RB",
     "status": "Active",
@@ -5600,14 +5608,6 @@
     "type": "active",
     "detail": "Rourke (coach's decision) is inactive for Sunday's game against the Dolphins but will serve as the emergency third quarterback.",
     "date": "2026-09-20T19:42Z"
-   },
-   {
-    "name": "De'Zhaun Stribling",
-    "pos": "WR",
-    "status": "IR",
-    "type": "injury reserve",
-    "detail": "The 49ers placed Stribling (ankle) on injured reserve Saturday.",
-    "date": "2026-09-19T21:14Z"
    },
    {
     "name": "Keion White",
@@ -5870,14 +5870,6 @@
     "date": "2026-09-21T18:45Z"
    },
    {
-    "name": "Josh Hayes",
-    "pos": "CB",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "ir",
-    "date": "2026-09-08T20:42Z"
-   },
-   {
     "name": "David Sills V",
     "pos": "WR",
     "status": "Injured Reserve",
@@ -6046,6 +6038,14 @@
     "date": "2026-09-11T23:39Z"
    },
    {
+    "name": "Josh Hayes",
+    "pos": "CB",
+    "status": "IR",
+    "type": "injury reserve",
+    "detail": "ir",
+    "date": "2026-09-08T20:42Z"
+   },
+   {
     "name": "Keionte Scott",
     "pos": "CB",
     "status": "Active",
@@ -6177,7 +6177,7 @@
    },
    {
     "name": "Joey Slye",
-    "pos": "PK",
+    "pos": "K",
     "status": "Active",
     "type": "active",
     "detail": "Slye made both of his field-goal attempts and each of his two extra-point tries during the Titans' 24-20 loss to the Eagles on Sunday.",
