@@ -38,11 +38,23 @@ async function findByEmail(email: string) {
   return null;
 }
 
-/** Grant or extend a comp. Extends from whichever is later: now, or the current period end. */
+/**
+ * Grant or extend a comp. Extends from whichever is later: now, or the current period end.
+ *
+ * A comp must never overwrite a paying subscription. The first version selected the newest
+ * subscription row and UPDATED it with provider 'manual', plan 'manual', status 'trialing' and
+ * cancel_at_period_end true. Run that against a Stripe customer and their billing record is gone:
+ * the provider, the plan they actually bought, and the fact that they paid at all. A founder who
+ * bought the season pass and was then comped three months would have come out the other side
+ * looking like a free trial that is set to cancel.
+ *
+ * So a row that came from Stripe is extended in place, keeping provider, plan and status exactly
+ * as the webhook wrote them. Only a manual row, or no row at all, gets the manual shape.
+ */
 async function comp(userId: string, days: number) {
   const { data: existing } = await admin
     .from('subscriptions')
-    .select('id, current_period_end')
+    .select('id, provider, plan, status, current_period_end, cancel_at_period_end')
     .eq('user_id', userId)
     .order('current_period_end', { ascending: false, nullsFirst: false })
     .limit(1)
@@ -52,6 +64,17 @@ async function comp(userId: string, days: number) {
       ? new Date(existing.current_period_end)
       : new Date();
   const end = new Date(base.getTime() + days * 86400000).toISOString();
+
+  if (existing?.id && existing.provider && existing.provider !== 'manual') {
+    // Paid subscription: move the end date out and touch nothing else.
+    const { error } = await admin
+      .from('subscriptions')
+      .update({ current_period_end: end, updated_at: new Date().toISOString() })
+      .eq('id', existing.id);
+    if (error) throw new Error(error.message);
+    return end;
+  }
+
   const row = {
     user_id: userId,
     provider: 'manual',
