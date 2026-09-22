@@ -1,66 +1,66 @@
 {
  "season": 2026,
  "week": 2,
- "gradedAt": "2026-09-21T21:48:14.480Z",
- "finals": 15,
+ "gradedAt": "2026-09-22T10:18:24.578Z",
+ "finals": 16,
  "games": 16,
  "summary": {
   "all": {
-   "wins": 75,
-   "losses": 140,
+   "wins": 77,
+   "losses": 152,
    "pushes": 0,
-   "pending": 14
+   "pending": 0
   },
   "lockedIn": {
    "wins": 9,
-   "losses": 9,
+   "losses": 10,
    "pushes": 0,
-   "pending": 1
+   "pending": 0
   },
   "lean": {
-   "wins": 16,
-   "losses": 14,
+   "wins": 17,
+   "losses": 15,
    "pushes": 0,
-   "pending": 2
+   "pending": 0
   },
   "top3": {
-   "wins": 17,
-   "losses": 28,
+   "wins": 18,
+   "losses": 30,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "td2": {
    "wins": 7,
-   "losses": 38,
+   "losses": 41,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "value": {
    "wins": 7,
-   "losses": 24,
+   "losses": 26,
    "pushes": 0,
-   "pending": 2
+   "pending": 0
   },
   "prop": {
    "wins": 19,
-   "losses": 27,
+   "losses": 30,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "calibration": {
    "td2": [
     {
      "band": "0-8%",
-     "n": 11,
+     "n": 12,
      "model": 0.059,
-     "actual": 0.091,
+     "actual": 0.083,
      "wins": 1
     },
     {
      "band": "8-15%",
-     "n": 19,
-     "model": 0.103,
-     "actual": 0.158,
+     "n": 21,
+     "model": 0.105,
+     "actual": 0.143,
      "wins": 3
     },
     {
@@ -81,17 +81,17 @@
    "top3": [
     {
      "band": "0-40%",
-     "n": 12,
-     "model": 0.326,
-     "actual": 0.333,
+     "n": 13,
+     "model": 0.327,
+     "actual": 0.308,
      "wins": 4
     },
     {
      "band": "40-50%",
-     "n": 18,
-     "model": 0.42,
-     "actual": 0.278,
-     "wins": 5
+     "n": 20,
+     "model": 0.423,
+     "actual": 0.3,
+     "wins": 6
     },
     {
      "band": "50-60%",
@@ -2264,139 +2264,142 @@
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "side",
    "label": "NYG +7",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "loss"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "side",
    "label": "NYG +7",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "total",
    "label": "Under 48.5",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "win"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "atd",
    "label": "Kyren Williams ATD",
-   "result": "pending",
    "est": 0.48,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "atd",
    "label": "Cam Skattebo ATD",
-   "result": "pending",
    "est": 0.42,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "atd",
    "label": "Isaiah Likely ATD",
-   "result": "pending",
    "est": 0.34,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "td2",
    "label": "Kyren Williams 2+ TD",
-   "result": "pending",
    "est": 0.13995823694853482,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "td2",
    "label": "Cam Skattebo 2+ TD",
-   "result": "pending",
    "est": 0.1040582382438302,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "td2",
    "label": "Isaiah Likely 2+ TD",
-   "result": "pending",
    "est": 0.0657598069853006,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "atd",
    "label": "Devin Singletary ATD",
-   "result": "pending",
    "est": 0.16,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "atd",
    "label": "Blake Corum ATD",
-   "result": "pending",
    "est": 0.13,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "prop",
    "label": "Jaxson Dart over 215.5 pass yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 20,
+   "result": "loss"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "prop",
    "label": "Kyren Williams under 68.5 rush yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 85,
+   "result": "loss"
   },
   {
    "game": "nyg-lar",
    "gameLabel": "NYG@LAR",
-   "final": null,
+   "final": "NYG 6, LAR 28",
    "type": "prop",
    "label": "Malik Nabers over 6.5 receptions",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 1,
+   "result": "loss"
   }
  ],
  "legs": []
