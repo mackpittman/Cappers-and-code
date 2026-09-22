@@ -302,6 +302,63 @@ for (const bucket of [yardage, counts]) {
   for (let i = bucket.length - 1; i >= 0; i--) if (SCRATCH.has(bucket[i].name)) bucket.splice(i, 1);
 }
 
+// ---- stale survivor check ----
+//
+// The single most expensive miss of the week. When a team loses its number one and the book pulls
+// him from the touchdown market, the survivors' prices often do not move for hours. Calibrating to
+// those prices means reproducing the market's oversight and calling the resulting bet a loser.
+//
+// So when someone is scratched, derive each surviving team-mate's touchdown rate from his ROLE -
+// his share of the passing game after redistribution, against the team total the market itself is
+// posting - and compare that with what his price implies. A wide gap is not a modelling nicety, it
+// is the board telling you it has not caught up yet.
+function staleSurvivorCheck() {
+  if (!SCRATCH.size) return;
+  const out = [];
+  for (const abbr of [game.away.abbr, game.home.abbr]) {
+    const qb = (game.propLines ?? []).find(
+      (x) => x.market === 'player_pass_yds' && rosterTeamRaw(x.name) === abbr,
+    );
+    if (!qb) continue;
+    const teamPts = abbr === game.home.abbr ? proj.home : proj.away;
+    const marketPts = BOOK?.game?.[`${abbr} team total Over 26.5`] != null ? 26.5 : teamPts;
+    const pts = Math.max(teamPts, marketPts);
+    const teamTds = Math.max(0.3, (pts - 1.5) / 7);
+    const PASS_SHARE = 0.65; // share of a team's touchdowns that come through the air
+    for (const y of yardage.filter(
+      (x) => x.market === 'player_reception_yds' && rosterTeamRaw(x.name) === abbr,
+    )) {
+      const share = y.median / qb.line;
+      const roleExp = teamTds * PASS_SHARE * share;
+      const roleP = 1 - Math.exp(-roleExp);
+      const priced = sheet.anytime.find((a) => a.name === y.name);
+      if (!priced?.price) continue;
+      const implied = impliedFromAmerican(priced.price);
+      if (roleP - implied < 0.08) continue;
+      out.push({
+        name: y.name,
+        roleP,
+        implied,
+        price: priced.price,
+        two: 1 - Math.exp(-roleExp) * (1 + roleExp),
+      });
+    }
+  }
+  if (!out.length) return;
+  console.log(
+    `\n*** STALE PRICE: ${[...SCRATCH].join(', ')} is out and these team-mates have not been repriced ***`,
+  );
+  for (const r of out.sort((a, b) => b.roleP - b.implied - (a.roleP - a.implied))) {
+    console.log(
+      `  ${r.name.padEnd(20)} priced ${r.price > 0 ? '+' : ''}${r.price} = ${pctf(r.implied)} to score, his role says ${pctf(r.roleP)}   2+ by role ${pctf(r.two)}`,
+    );
+  }
+  console.log(
+    '  Treat the role number as the play, not the price. The board is behind the news.\n',
+  );
+}
+staleSurvivorCheck();
+
 // ---- touchdown shares ----
 // Expected touchdowns from an anytime price, then a share of the team's simulated scores. The
 // residual bucket is everything the board does not price: defensive and special-teams scores and
