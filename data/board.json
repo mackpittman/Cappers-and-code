@@ -1,14 +1,14 @@
 {
  "season": 2026,
  "week": 3,
- "generatedAt": "2026-09-23T10:16:14.122Z",
+ "generatedAt": "2026-09-23T20:18:37.551Z",
  "researchAsOf": "2026-09-22T22:35:26.342Z",
- "oddsFetchedAt": "2026-09-22T22:45:09.830Z",
+ "oddsFetchedAt": "2026-09-23T16:40:21.694Z",
  "oddsCredits": {
-  "remaining": 183,
-  "used": 317,
-  "spent7d": 189,
-  "spent30d": 204,
+  "remaining": 182,
+  "used": 318,
+  "spent7d": 190,
+  "spent30d": 205,
   "reserve": 40
  },
  "creditPlan": {
@@ -30,8 +30,8 @@
   "reserve": 40,
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
- "linesSource": "ESPN/Draft Kings",
- "injuriesFetchedAt": "2026-09-23T10:16:12.364Z",
+ "linesSource": "ESPN/DraftKings",
+ "injuriesFetchedAt": "2026-09-23T20:18:36.740Z",
  "notes": "Research prepared Tuesday Sep 22 from Week 2 finals, current injury reports and Tuesday-evening market lines. Anytime-TD prices marked \"verify\" could not be confirmed at a live sportsbook and must be checked before they are played. Sixteen games researched independently and validated for de-vigged win probability and implied team points before assembly.",
  "completed": [],
  "games": [
@@ -541,29 +541,29 @@
     }
    },
    "live": {
-    "source": "ESPN/Draft Kings",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "source": "ESPN/DraftKings",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
-     "home": -265,
-     "away": 215,
+     "home": -230,
+     "away": 190,
      "bestHome": null,
      "bestAway": null,
      "openHome": -360,
      "openAway": 285
     },
     "spread": {
-     "homePoint": -5.5,
+     "homePoint": -4.5,
      "homePrice": null,
      "awayPrice": null
     },
     "total": {
-     "point": 43.5,
+     "point": 42.5,
      "over": null,
      "under": null
     },
     "winProb": {
-     "away": 0.304,
-     "home": 0.696
+     "away": 0.331,
+     "home": 0.669
     }
    },
    "scratched": [],
@@ -947,20 +947,20 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Samson Ebukam",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-23T19:58Z"
+     },
+     {
       "name": "Billy Bowman Jr.",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-09-22T20:56Z"
-     },
-     {
-      "name": "Samson Ebukam",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Ebukam (hamstring) is questionable to return to Sunday's game against the Panthers, Marc Raimondi of ESPN.com reports.",
-      "date": "2026-09-20T18:30Z"
      },
      {
       "name": "A.J. Terrell Jr.",
@@ -973,20 +973,36 @@
     ],
     "home": [
      {
+      "name": "Jayden Reed",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Reed (neck) has been ruled out for Thursday's game against the Falcons, Wes Hodkiewicz of the Packers' official site reports.",
+      "date": "2026-09-23T20:13Z"
+     },
+     {
+      "name": "Aaron Banks",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-23T20:04Z"
+     },
+     {
+      "name": "Warren Brinson",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-23T20:04Z"
+     },
+     {
       "name": "Zach Bako-Bewele",
       "pos": "OT",
       "status": "Out",
       "type": "out",
       "detail": "Bako-Bewele said he sustained a complete tear of his right patellar tendon in Sunday's 20-17 overtime win over the Jets and will undergo season-ending surgery Thursday, Matt Schneidman of The Athletic reports.",
       "date": "2026-09-22T18:32Z"
-     },
-     {
-      "name": "Jayden Reed",
-      "pos": "WR",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Packers head coach Matt LaFleur said Tuesday that Reed has returned to Green Bay to undergo further testing and consultations with doctors for his neck injury, Ryan Wood of USA Today. The wide receiver remains without a timeline for a return.",
-      "date": "2026-09-22T22:16Z"
      },
      {
       "name": "Javon Hargrave",
@@ -997,55 +1013,15 @@
       "date": "2026-09-22T20:56Z"
      },
      {
-      "name": "Warren Brinson",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
-     },
-     {
-      "name": "Anthony Belton",
-      "pos": "OT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:32Z"
-     },
-     {
       "name": "Anthony Campbell",
       "pos": "DT",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Campbell (ankle) was listed as a non-participant in Monday's estimated practice report, Tom Silverstein of the Milwaukee Journal Sentinel reports.",
       "date": "2026-09-22T01:07Z"
-     },
-     {
-      "name": "Donovan Jennings",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Jennings (hand) did not participate in Monday's estimated practice, Tom Silverstein of the Milwaukee Journal Sentinel reports.",
-      "date": "2026-09-22T01:00Z"
-     },
-     {
-      "name": "Edgerrin Cooper",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Cooper (shoulder) was listed as a limited participant on the Packers' estimated injury report Monday.",
-      "date": "2026-09-21T23:30Z"
-     },
-     {
-      "name": "Brandon Cisse",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-21T21:12Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -1542,10 +1518,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
-     "home": -345,
-     "away": 275,
+     "home": -340,
+     "away": 270,
      "bestHome": null,
      "bestAway": null,
      "openHome": -142,
@@ -1562,8 +1538,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.256,
-     "home": 0.744
+     "away": 0.259,
+     "home": 0.741
     }
    },
    "scratched": [],
@@ -1692,16 +1668,16 @@
       "pos": "TE",
       "status": "Out",
       "type": "out",
-      "detail": "Kolar plans to undergo surgery to repair a broken forearm and is hopeful to return from injured reserve when first eligible for the Chargers' No. 1 game against the Rams, Jeremy Fowler of ESPN.com reports.",
-      "date": "2026-09-22T21:50Z"
+      "detail": "Chargers head coach Jim Harbaugh said Wednesday that Kolar (forearm) won't play Sunday in Buffalo but is expected to avoid placement on injured reserve, Kris Rhim of ESPN.com reports.",
+      "date": "2026-09-23T18:46Z"
      },
      {
-      "name": "David Njoku",
-      "pos": "TE",
-      "status": "Out",
-      "type": "out",
-      "detail": "Head coach Jim Harbaugh told reporters Monday that Njoku (fibula) and Charlie Kolar (forearm) will both go on injured reserve, Kris Rhim of ESPN.com reports.",
-      "date": "2026-09-21T21:46Z"
+      "name": "Kayode Awosika",
+      "pos": "G",
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "doubtful",
+      "date": "2026-09-23T19:11Z"
      },
      {
       "name": "Dalvin Tomlinson",
@@ -1710,6 +1686,14 @@
       "type": "doubtful",
       "detail": "Tomlinson is in line to miss time after sustaining a hamstring injury during Sunday's game versus the Raiders, Noah Furtado of The Athletic reports.",
       "date": "2026-09-22T01:20Z"
+     },
+     {
+      "name": "Brenen Thompson",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-23T19:20Z"
      },
      {
       "name": "Deane Leonard",
@@ -1736,23 +1720,31 @@
       "date": "2026-09-22T20:56Z"
      },
      {
-      "name": "Kayode Awosika",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Awosika is expected to miss time after injuring his fibula during Sunday's game versus the Raiders, Noah Furtado of The Athletic reports.",
-      "date": "2026-09-22T01:15Z"
-     },
-     {
       "name": "Derwin James Jr.",
       "pos": "S",
       "status": "Questionable",
       "type": "questionable",
       "detail": "James (hand) is questionable to return to Sunday's contest against the Raiders.",
       "date": "2026-09-20T20:42Z"
+     },
+     {
+      "name": "David Njoku",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Chargers placed Njoku (fibula) on injured reserve Wednesday.",
+      "date": "2026-09-23T19:36Z"
      }
     ],
     "home": [
+     {
+      "name": "DJ Moore",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Moore (shoulder) was spotted participating in Wednesday's practice while wearing a red non-contact jersey, Katherine Fitzgerald of The Buffalo News reports.",
+      "date": "2026-09-23T18:31Z"
+     },
      {
       "name": "T.J. Sanders",
       "pos": "DT",
@@ -1776,17 +1768,9 @@
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-09-22T20:56Z"
-     },
-     {
-      "name": "DJ Moore",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "The Bills are treating Moore as day-to-day after he was diagnosed with an AC joint sprain in his shoulder after exiting Thursday's 41-31 win over the Lions, Ian Rapoport of NFL Network reports.",
-      "date": "2026-09-20T14:08Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -1869,7 +1853,7 @@
      "team": "CAR",
      "price": 200,
      "implied": 0.333,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 235,
       "bestBook": "draftkings",
@@ -2230,7 +2214,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
      "home": 124,
      "away": -148,
@@ -2376,36 +2360,28 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Jonathon Brooks",
-      "pos": "RB",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Brooks is considered week-to-week while he receives further medical opinions on the groin injury he sustained in Sunday's 34-3 win over the Falcons, Tom Pelissero of Netflix reports.",
-      "date": "2026-09-21T20:47Z"
-     },
-     {
-      "name": "Patrick Jones II",
+      "name": "Jaelan Phillips",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
+      "date": "2026-09-23T19:49Z"
      },
      {
-      "name": "Bobby Brown III",
-      "pos": "DT",
+      "name": "Jalen Coker",
+      "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
+      "detail": "Coker (ankle) was limited in Wednesday's practice, Joe Person of The Athletic reports.",
+      "date": "2026-09-23T19:41Z"
      },
      {
-      "name": "Trevis Gipson",
+      "name": "Devin Lloyd",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Gipson is being evaluated for a possible concussion and is questionable to return to Sunday's game against the Falcons, Sheena Quick of Fox Sports Radio 1340 reports.",
-      "date": "2026-09-20T19:53Z"
+      "detail": "Lloyd recorded nine tackles (seven solo), including 1.0 sack, and three pass breakups, including a pair of interceptions, in Sunday's 34-3 win over the Falcons.",
+      "date": "2026-09-23T01:31Z"
      },
      {
       "name": "Claudin Cherelus",
@@ -2422,16 +2398,48 @@
       "type": "questionable",
       "detail": "Scott has been ruled out for the remainder of Sunday's game against the Falcons due to an abdominal injury, Mike Kaye of ESPN.com reports.",
       "date": "2026-09-20T17:53Z"
+     },
+     {
+      "name": "Jonathon Brooks",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Panthers placed Brooks (core) on injured reserve Wednesday, Darin Gantt of the team's official site reports.",
+      "date": "2026-09-23T13:48Z"
      }
     ],
     "home": [
      {
-      "name": "Jeremiah Owusu-Koramoah",
+      "name": "Quincy Williams",
       "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-08T20:42Z"
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-23T19:52Z"
+     },
+     {
+      "name": "Tytus Howard",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-23T19:52Z"
+     },
+     {
+      "name": "Mason Graham",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-23T19:51Z"
+     },
+     {
+      "name": "Grant Delpit",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-23T19:51Z"
      },
      {
       "name": "Tyson Campbell",
@@ -2448,17 +2456,9 @@
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-09-22T20:56Z"
-     },
-     {
-      "name": "Dylan Sampson",
-      "pos": "RB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Sampson (knee) was placed on injured reserve Tuesday.",
-      "date": "2026-09-15T19:33Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -2881,10 +2881,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
-     "home": -305,
-     "away": 245,
+     "home": -285,
+     "away": 230,
      "bestHome": null,
      "bestAway": null,
      "openHome": -440,
@@ -2901,8 +2901,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.278,
-     "home": 0.722
+     "away": 0.29,
+     "home": 0.71
     }
    },
    "scratched": [
@@ -3037,8 +3037,16 @@
       "pos": "TE",
       "status": "Doubtful",
       "type": "doubtful",
-      "detail": "Taylor (thumb) is considered week-to-week and will likely miss Sunday's game against the Lions, Ian Rapoport of NFL Network reports.",
-      "date": "2026-09-22T22:08Z"
+      "detail": "Jets head coach Aaron Glenn said that Taylor (thumb) won't participate in Wednesday's practice, Rich Cimini of ESPN.com reports.",
+      "date": "2026-09-23T17:42Z"
+     },
+     {
+      "name": "David Bailey",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-23T17:13Z"
      },
      {
       "name": "Kene Nwangwu",
@@ -3123,7 +3131,7 @@
       "date": "2026-09-23T00:33Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -3432,17 +3440,17 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
-     "home": 124,
-     "away": -148,
+     "home": 120,
+     "away": -142,
      "bestHome": null,
      "bestAway": null,
      "openHome": 110,
      "openAway": -130
     },
     "spread": {
-     "homePoint": 3,
+     "homePoint": 2.5,
      "homePrice": null,
      "awayPrice": null
     },
@@ -3452,8 +3460,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.572,
-     "home": 0.428
+     "away": 0.563,
+     "home": 0.437
     }
    },
    "scratched": [],
@@ -3464,6 +3472,14 @@
    },
    "injuryReport": {
     "away": [
+     {
+      "name": "Nico Collins",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Collins (hamstring) wasn't spotted at the media-access portion of Wednesday's practice, DJ Bien-Aime of ESPN.com reports.",
+      "date": "2026-09-23T18:05Z"
+     },
      {
       "name": "Jake Hummel",
       "pos": "LB",
@@ -3483,14 +3499,6 @@
      {
       "name": "Jadeveon Clowney",
       "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
-     },
-     {
-      "name": "Nico Collins",
-      "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
@@ -3517,22 +3525,14 @@
      {
       "name": "Alec Pierce",
       "pos": "WR",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Pierce will try to rehab his injured left heel without surgery and is expected to miss several weeks before potentially returning around midseason if all goes well, Ian Rapoport of NFL Network reports.",
-      "date": "2026-09-22T01:03Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Colts head coach Shane Steichen said Wednesday that Pierce (heel) will be placed on injured reserve and is without a timeline for a return, Kevin Bowen of 107.5 The Fan Indianapolis reports.",
+      "date": "2026-09-23T15:37Z"
      },
      {
       "name": "Ashton Dulin",
       "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
-     },
-     {
-      "name": "DJ Giddens",
-      "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
@@ -3555,7 +3555,7 @@
       "date": "2026-09-23T00:30Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -4031,10 +4031,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
-     "home": 600,
-     "away": -900,
+     "home": 500,
+     "away": -700,
      "bestHome": null,
      "bestAway": null,
      "openHome": 270,
@@ -4046,13 +4046,13 @@
      "awayPrice": null
     },
     "total": {
-     "point": 45.5,
+     "point": 46.5,
      "over": null,
      "under": null
     },
     "winProb": {
-     "away": 0.863,
-     "home": 0.137
+     "away": 0.84,
+     "home": 0.16
     }
    },
    "scratched": [],
@@ -4187,6 +4187,14 @@
     ],
     "home": [
      {
+      "name": "Caleb Douglas",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Dolphins head coach Jeff Hafley said that Douglas (ankle) won't practice Wednesday, C. Isaiah Smalls II of the Miami Herald reports.",
+      "date": "2026-09-23T16:44Z"
+     },
+     {
       "name": "Chop Robinson",
       "pos": "LB",
       "status": "Questionable",
@@ -4201,14 +4209,6 @@
       "type": "questionable",
       "detail": "Wright (neck) is day-to-day heading into Week 3, David Furones of the South Florida Sun Sentinel reports.",
       "date": "2026-09-21T23:07Z"
-     },
-     {
-      "name": "Caleb Douglas",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Dolphins head coach Jeff Hafley said Monday that it's \"too early to tell\" the severity of the ankle injury Douglas sustained in Sunday's 35-13 loss to the 49ers, C. Isaiah Smalls II of the Miami Herald reports.",
-      "date": "2026-09-21T20:56Z"
      },
      {
       "name": "Robert Beal Jr.",
@@ -4235,7 +4235,7 @@
       "date": "2026-09-17T00:25Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -4346,7 +4346,7 @@
      "price": null,
      "implied": null,
      "priceNote": "verify",
-     "status": null,
+     "status": "Questionable",
      "live": null
     },
     {
@@ -4373,7 +4373,7 @@
      "price": null,
      "implied": null,
      "priceNote": "verify",
-     "status": null,
+     "status": "Questionable",
      "live": null
     },
     {
@@ -4445,7 +4445,7 @@
      "live2": null,
      "live": null,
      "edge": null,
-     "status": null
+     "status": "Questionable"
     }
    ],
    "value": [
@@ -4562,10 +4562,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
-     "home": -135,
-     "away": 114,
+     "home": -142,
+     "away": 120,
      "bestHome": null,
      "bestAway": null,
      "openHome": -175,
@@ -4582,8 +4582,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.449,
-     "home": 0.551
+     "away": 0.437,
+     "home": 0.563
     }
    },
    "scratched": [],
@@ -4595,12 +4595,20 @@
    "injuryReport": {
     "away": [
      {
-      "name": "James Williams Sr.",
-      "pos": "LB",
+      "name": "Tyjae Spears",
+      "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
+      "detail": "Titans head coach Robert Saleh said that Spears won't practice Wednesday due to unspecified soreness, Turron Davenport of ESPN.com reports.",
+      "date": "2026-09-23T16:37Z"
+     },
+     {
+      "name": "Tony Pollard",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Titans head coach Robert Saleh said that Pollard won't practice Wednesday due to unspecified soreness, Turron Davenport of ESPN.com reports.",
+      "date": "2026-09-23T16:32Z"
      },
      {
       "name": "Cor'Dale Flott",
@@ -4609,24 +4617,16 @@
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-09-22T20:56Z"
-     },
-     {
-      "name": "Fernando Carmona",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Carmona suffered a shoulder injury during Sunday's 24-20 loss to the Eagles, Terry McCormick of TitanInsider.com reports.",
-      "date": "2026-09-20T20:21Z"
      }
     ],
     "home": [
      {
       "name": "Jaxson Dart",
       "pos": "QB",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Dart is facing the possibility of season-ending surgery after further testing Tuesday revealed that the left knee injury he sustained in Monday's 28-6 loss to the Rams is worse than originally anticipated, Adam Schefter of ESPN reports.",
-      "date": "2026-09-22T18:50Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Dart is expected to undergo knee surgery that will end his 2026 season but lead to a full recovery heading into 2027, Ian Rapoport and Mike Garafolo of NFL Network report.",
+      "date": "2026-09-23T16:04Z"
      },
      {
       "name": "Brian Burns",
@@ -4669,7 +4669,7 @@
       "date": "2026-09-21T23:05Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -4730,7 +4730,7 @@
      "price": 105,
      "implied": 0.488,
      "book": "BetMGM",
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 115,
       "bestBook": "betmgm",
@@ -4852,19 +4852,6 @@
       "best": 750,
       "bestBook": "betonlineag",
       "consensus": 663
-     }
-    },
-    {
-     "name": "Andrei Iosivas",
-     "team": "CIN",
-     "price": 575,
-     "implied": 0.148,
-     "book": "BetMGM",
-     "status": null,
-     "live": {
-      "best": 575,
-      "bestBook": "betmgm",
-      "consensus": 513
      }
     },
     {
@@ -5176,10 +5163,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
-     "home": 160,
-     "away": -192,
+     "home": 154,
+     "away": -185,
      "bestHome": null,
      "bestAway": null,
      "openHome": -105,
@@ -5196,11 +5183,17 @@
      "under": null
     },
     "winProb": {
-     "away": 0.631,
-     "home": 0.369
+     "away": 0.622,
+     "home": 0.378
     }
    },
-   "scratched": [],
+   "scratched": [
+    {
+     "name": "Andrei Iosivas",
+     "team": "CIN",
+     "status": "Out"
+    }
+   ],
    "liveBoard": [
     {
      "name": "Chase Brown",
@@ -5322,6 +5315,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Andrei Iosivas",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Bengals head coach Zac Taylor said Wednesday that Iosivas tore a ligament in his thumb and will be placed on injured reserve, Ben Baby of ESPN.com reports.",
+      "date": "2026-09-23T17:29Z"
+     },
+     {
       "name": "B.J. Hill",
       "pos": "DT",
       "status": "Questionable",
@@ -5344,16 +5345,24 @@
       "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Dowdle \"checked out relatively OK\" after undergoing testing on his toe injury Tuesday and is considered day-to-day, Ian Rapoport of NFL Network reports.",
-      "date": "2026-09-22T21:43Z"
+      "detail": "Dowdle (toe) isn't participating in practice Wednesday and was seen wearing a boot on his right foot, Mike DeFabo of The Athletic reports.",
+      "date": "2026-09-23T17:17Z"
+     },
+     {
+      "name": "Jaylen Warren",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Warren wasn't involved in the open portion of Wednesday's practice and appears likely to be listed as a non-participant on the Steelers' first Week 3 injury report, Brooke Pryor of ESPN.com reports.",
+      "date": "2026-09-23T17:01Z"
      },
      {
       "name": "Michael Pittman Jr.",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
+      "detail": "Steelers head coach Mike McCarthy said Pittman (foot) will practice Wednesday and is likely to be a limited participant, Brooke Pryor of ESPN.com reports.",
+      "date": "2026-09-23T15:50Z"
      },
      {
       "name": "Joey Porter Jr.",
@@ -5364,7 +5373,7 @@
       "date": "2026-09-21T21:42Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -5719,10 +5728,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
-     "home": 240,
-     "away": -298,
+     "home": 250,
+     "away": -310,
      "bestHome": null,
      "bestAway": null,
      "openHome": 164,
@@ -5739,8 +5748,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.718,
-     "home": 0.282
+     "away": 0.726,
+     "home": 0.274
     }
    },
    "scratched": [],
@@ -5756,8 +5765,16 @@
       "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "Coach Mike Macdonald said Friday that the Seahawks are drawing closer to setting a date for Charbonnet (knee) to resume practicing, Gregg Bell of The Tacoma News Tribune reports.",
-      "date": "2026-09-18T20:50Z"
+      "detail": "Head coach Mike Macdonald said Wednesday that the Seahawks won't open Charbonnet's (knee) practice window this week, John Boyle of the team's official site reports.",
+      "date": "2026-09-23T19:41Z"
+     },
+     {
+      "name": "Jadarian Price",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Price (shoulder) will practice this week, though coach Mike Macdonald said Wednesday, Curtis Crabtree of Fox 13 Seattle reports.",
+      "date": "2026-09-23T19:34Z"
      },
      {
       "name": "Sam Darnold",
@@ -5776,50 +5793,50 @@
       "date": "2026-09-22T20:56Z"
      },
      {
-      "name": "Anthony Bradford",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
-     },
-     {
-      "name": "Jadarian Price",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Coach Mike Macdonald said Monday that Price suffered a shoulder injury during Sunday's win at Arizona, but \"it's intact and nothing serious, it seems like,\" Brady Henderson of ESPN.com reports.",
-      "date": "2026-09-21T17:38Z"
-     },
-     {
       "name": "Brandon Pili",
       "pos": "DT",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Pili (concussion) has been ruled out for the remainder of Sunday's game against the Cardinals, John Boyle of the Seahawks' official site reports.",
       "date": "2026-09-20T22:11Z"
+     },
+     {
+      "name": "Anthony Bradford",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-23T19:07Z"
      }
     ],
     "home": [
      {
-      "name": "Jayden Daniels",
-      "pos": "QB",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Daniels (elbow) underwent imaging Monday and will consult with multiple experts over the next few days, Ian Rapoport of NFL Network reports.",
-      "date": "2026-09-21T19:15Z"
+      "name": "Nick Cross",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-23T16:56Z"
      },
      {
-      "name": "Frankie Luvu",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
+      "name": "Jayden Daniels",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Commanders head coach Dan Quinn confirmed that Daniels will be out for Sunday's game against the Seahawks, but the quarterback remains without a precise timeline for a return while he continues to receive more medical opinions on his left elbow injury, Ben Standig of The Team 980 Washington D.C. reports.",
+      "date": "2026-09-23T16:55Z"
      },
      {
       "name": "Chig Okonkwo",
       "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Commanders head coach Dan Quinn implied that Okonkwo (hamstring) will be a non-participant for Wednesday's practice, Tashan Reed of The Washington Post reports.",
+      "date": "2026-09-23T18:08Z"
+     },
+     {
+      "name": "Frankie Luvu",
+      "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
@@ -5842,14 +5859,6 @@
       "date": "2026-09-22T00:25Z"
      },
      {
-      "name": "Nick Cross",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Cross (undisclosed) stayed in Dallas overnight Sunday due to an internal injury, and his status for Week 3 against the Seahawks is up in the air, Ben Standig of Big 100 Washington D.C. reports.",
-      "date": "2026-09-21T21:33Z"
-     },
-     {
       "name": "Javon Kinlaw",
       "pos": "DT",
       "status": "Questionable",
@@ -5858,7 +5867,7 @@
       "date": "2026-09-21T21:29Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -6325,7 +6334,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
      "home": -155,
      "away": 130,
@@ -6545,7 +6554,7 @@
       "date": "2026-09-17T00:17Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -6912,10 +6921,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
-     "home": -485,
-     "away": 370,
+     "home": -455,
+     "away": 350,
      "bestHome": null,
      "bestAway": null,
      "openHome": -650,
@@ -6932,8 +6941,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.204,
-     "home": 0.796
+     "away": 0.213,
+     "home": 0.787
     }
    },
    "scratched": [],
@@ -7058,14 +7067,6 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Will Johnson",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Johnson (neck) may be forced to miss the remainder of the 2026 season, Darren Urban of the Cardinals' official site reports.",
-      "date": "2026-09-21T23:17Z"
-     },
-     {
       "name": "Garrett Williams",
       "pos": "CB",
       "status": "Questionable",
@@ -7088,6 +7089,14 @@
       "type": "questionable",
       "detail": "Melton (toe) is considered to be day-to-day ahead of Week 3, Howard Balzer of USA Today reports.",
       "date": "2026-09-21T23:20Z"
+     },
+     {
+      "name": "Will Johnson",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-23T17:08Z"
      },
      {
       "name": "Kitan Crawford",
@@ -7124,20 +7133,20 @@
       "date": "2026-09-21T23:34Z"
      },
      {
+      "name": "Mike Evans",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Evans (hip) won't practice Wednesday, Vic Tafur of The Athletic reports.",
+      "date": "2026-09-23T19:49Z"
+     },
+     {
       "name": "Romello Height",
       "pos": "DE",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Height will undergo hand surgery Tuesday, David Lombardi of SFStandard.com reported Monday.",
       "date": "2026-09-22T00:47Z"
-     },
-     {
-      "name": "Mike Evans",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "San Francisco head coach Kyle Shanahan said that Evans (hip) will \"have to be managed this week\" leading up to Sunday's game against the Cardinals, Nick Wagoner of ESPN.com reports.",
-      "date": "2026-09-21T20:33Z"
      },
      {
       "name": "Jack Jones",
@@ -7148,6 +7157,14 @@
       "date": "2026-09-20T22:00Z"
      },
      {
+      "name": "C.J. West",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-23T19:23Z"
+     },
+     {
       "name": "De'Zhaun Stribling",
       "pos": "WR",
       "status": "Injured Reserve",
@@ -7156,7 +7173,7 @@
       "date": "2026-09-19T21:14Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -7215,7 +7232,7 @@
      "team": "MIN",
      "price": -110,
      "implied": 0.524,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": -125,
       "bestBook": "betonlineag",
@@ -7452,7 +7469,7 @@
       "fetchedAt": "2026-09-22T13:30:20.491Z"
      },
      "edge": -0.136,
-     "status": null
+     "status": "Questionable"
     },
     {
      "name": "Justin Jefferson",
@@ -7621,10 +7638,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
-     "home": 100,
-     "away": -120,
+     "home": 102,
+     "away": -122,
      "bestHome": null,
      "bestAway": null,
      "openHome": -125,
@@ -7641,8 +7658,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.522,
-     "home": 0.478
+     "away": 0.526,
+     "home": 0.474
     }
    },
    "scratched": [],
@@ -7767,6 +7784,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Aaron Jones Sr.",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Jones (undisclosed) won't participate in Wednesday's practice, Alec Lewis of The Athletic reports.",
+      "date": "2026-09-23T18:41Z"
+     },
+     {
       "name": "Jauan Jennings",
       "pos": "WR",
       "status": "Questionable",
@@ -7817,7 +7842,7 @@
       "date": "2026-09-08T20:42Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -8333,7 +8358,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
      "home": 150,
      "away": -180,
@@ -8479,16 +8504,16 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Nnamdi Madubuike",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
-     },
-     {
       "name": "Zay Flowers",
       "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Flowers (hamstring) isn't participating in Wednesday's practice, Jamison Hensley of ESPN.com reports.",
+      "date": "2026-09-23T17:24Z"
+     },
+     {
+      "name": "Nnamdi Madubuike",
+      "pos": "DT",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
@@ -8561,7 +8586,7 @@
       "date": "2026-09-22T20:56Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -9046,7 +9071,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
      "home": -185,
      "away": 154,
@@ -9061,7 +9086,7 @@
      "awayPrice": null
     },
     "total": {
-     "point": 44.5,
+     "point": 43.5,
      "over": null,
      "under": null
     },
@@ -9192,6 +9217,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Brock Bowers",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Head coach Klint Kubiak said Bowers (knee) will practice Wednesday and termed the tight end \"day-to-day,\" Ryan McFadden of ESPN.com reports.",
+      "date": "2026-09-23T18:00Z"
+     },
+     {
       "name": "Darien Porter",
       "pos": "CB",
       "status": "Questionable",
@@ -9202,14 +9235,6 @@
      {
       "name": "Aidan O'Connell",
       "pos": "QB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
-     },
-     {
-      "name": "Brock Bowers",
-      "pos": "TE",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
@@ -9233,14 +9258,6 @@
      }
     ],
     "home": [
-     {
-      "name": "Kelvin Banks Jr.",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "Banks is expected to undergo surgery for a high-ankle sprain and is out indefinitely, Ian Rapoport of NFL Network reports.",
-      "date": "2026-09-21T21:21Z"
-     },
      {
       "name": "Isaiah Stalbird",
       "pos": "LB",
@@ -9266,6 +9283,14 @@
       "date": "2026-09-22T00:34Z"
      },
      {
+      "name": "Kelvin Banks Jr.",
+      "pos": "OT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-23T17:36Z"
+     },
+     {
       "name": "Zach Wood",
       "pos": "LS",
       "status": "Injured Reserve",
@@ -9274,7 +9299,7 @@
       "date": "2026-09-19T03:01Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -9353,7 +9378,7 @@
      "team": "DEN",
      "price": 135,
      "implied": 0.426,
-     "status": null,
+     "status": "Questionable",
      "live": null
     },
     {
@@ -9597,7 +9622,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
      "home": 120,
      "away": -142,
@@ -9688,28 +9713,36 @@
       "date": "2026-08-31T23:24Z"
      },
      {
-      "name": "Marvin Mims Jr.",
-      "pos": "WR",
+      "name": "J.K. Dobbins",
+      "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
+      "detail": "Dobbins, who exited Sunday's 20-13 win over the Jaguars due to a hamstring injury, is expected to practice this week, Adam Schefter of ESPN reports.",
+      "date": "2026-09-23T19:01Z"
      },
      {
       "name": "RJ Harvey",
       "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
+      "detail": "Harvey is continuing to make progress in his recovery from the hamstring injury that sidelined him for the Broncos' Week 2 win over the Jaguars, Adam Schefter of ESPN reports.",
+      "date": "2026-09-23T18:57Z"
      },
      {
-      "name": "J.K. Dobbins",
+      "name": "Jonah Coleman",
       "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "The Broncos believe that Dobbins' injured hamstring is \"good\" heading into next Sunday's game against the Rams, Tom Pelissero of Netflix reports.",
-      "date": "2026-09-21T17:00Z"
+      "detail": "Coleman is tending to a sprained ankle, which he sustained in Sunday's 20-13 win over Jacksonville, Adam Schefter of ESPN reports.",
+      "date": "2026-09-23T18:53Z"
+     },
+     {
+      "name": "Marvin Mims Jr.",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-22T20:56Z"
      },
      {
       "name": "Frank Crum",
@@ -9720,7 +9753,7 @@
       "date": "2026-08-31T23:20Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   },
   {
@@ -9768,7 +9801,11 @@
      "price": -120,
      "implied": 0.545,
      "status": "Questionable",
-     "live": null
+     "live": {
+      "best": -115,
+      "bestBook": "draftkings",
+      "consensus": -120
+     }
     },
     {
      "name": "Jalen Hurts",
@@ -9776,7 +9813,11 @@
      "price": 140,
      "implied": 0.417,
      "status": null,
-     "live": null
+     "live": {
+      "best": 145,
+      "bestBook": "fanduel",
+      "consensus": 135
+     }
     },
     {
      "name": "DeVonta Smith",
@@ -9784,7 +9825,11 @@
      "price": 175,
      "implied": 0.364,
      "status": null,
-     "live": null
+     "live": {
+      "best": 175,
+      "bestBook": "fanduel",
+      "consensus": 155
+     }
     },
     {
      "name": "Tank Bigsby",
@@ -9792,7 +9837,11 @@
      "price": 105,
      "implied": 0.488,
      "status": null,
-     "live": null
+     "live": {
+      "best": 300,
+      "bestBook": "betmgm",
+      "consensus": 295
+     }
     },
     {
      "name": "Dontayvion Wicks",
@@ -9800,7 +9849,11 @@
      "price": 285,
      "implied": 0.26,
      "status": null,
-     "live": null
+     "live": {
+      "best": 330,
+      "bestBook": "fanduel",
+      "consensus": 320
+     }
     },
     {
      "name": "Makai Lemon",
@@ -9808,7 +9861,11 @@
      "price": 460,
      "implied": 0.179,
      "status": null,
-     "live": null
+     "live": {
+      "best": 475,
+      "bestBook": "draftkings",
+      "consensus": 460
+     }
     },
     {
      "name": "Johnny Mundt",
@@ -9816,7 +9873,11 @@
      "price": 650,
      "implied": 0.133,
      "status": null,
-     "live": null
+     "live": {
+      "best": 750,
+      "bestBook": "draftkings",
+      "consensus": 650
+     }
     },
     {
      "name": "Marquise Brown",
@@ -9832,7 +9893,11 @@
      "price": 105,
      "implied": 0.488,
      "status": null,
-     "live": null
+     "live": {
+      "best": 110,
+      "bestBook": "draftkings",
+      "consensus": 110
+     }
     },
     {
      "name": "Kyle Monangai",
@@ -9840,7 +9905,11 @@
      "price": 180,
      "implied": 0.357,
      "status": null,
-     "live": null
+     "live": {
+      "best": 200,
+      "bestBook": "draftkings",
+      "consensus": 195
+     }
     },
     {
      "name": "Luther Burden III",
@@ -9848,7 +9917,11 @@
      "price": 330,
      "implied": 0.233,
      "status": null,
-     "live": null
+     "live": {
+      "best": 360,
+      "bestBook": "betmgm",
+      "consensus": 340
+     }
     },
     {
      "name": "Colston Loveland",
@@ -9856,7 +9929,11 @@
      "price": 390,
      "implied": 0.204,
      "status": null,
-     "live": null
+     "live": {
+      "best": 400,
+      "bestBook": "fanduel",
+      "consensus": 390
+     }
     },
     {
      "name": "Rome Odunze",
@@ -9864,7 +9941,11 @@
      "price": 450,
      "implied": 0.182,
      "status": null,
-     "live": null
+     "live": {
+      "best": 470,
+      "bestBook": "fanduel",
+      "consensus": 425
+     }
     },
     {
      "name": "Cole Kmet",
@@ -9872,7 +9953,11 @@
      "price": 650,
      "implied": 0.133,
      "status": null,
-     "live": null
+     "live": {
+      "best": 825,
+      "bestBook": "betmgm",
+      "consensus": 700
+     }
     },
     {
      "name": "Roschon Johnson",
@@ -9880,7 +9965,11 @@
      "price": 2700,
      "implied": 0.036,
      "status": null,
-     "live": null
+     "live": {
+      "best": 3500,
+      "bestBook": "draftkings",
+      "consensus": 3300
+     }
     }
    ],
    "top3": [
@@ -9893,7 +9982,29 @@
      "est": 0.45,
      "why": "Books still price him as the featured back with a 77.5-yard rushing line, and Philadelphia's 23-point implied total in a lead script funnels goal-line work his way, though the stinger keeps the estimate under the market number.",
      "live2": null,
-     "live": null,
+     "live": {
+      "best": -115,
+      "bestBook": "draftkings",
+      "consensus": -120,
+      "books": {
+       "draftkings": -115,
+       "fanduel": -120,
+       "betonlineag": -125,
+       "betmgm": -135,
+       "bovada": -117
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372263_13L88808Q11750821948Q20",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=11054733",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687043-5849390&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+      },
+      "implied": 0.5455,
+      "open": -120,
+      "move": 0,
+      "fetchedAt": "2026-09-23T16:40:21.694Z"
+     },
      "edge": -0.095,
      "status": "Questionable"
     },
@@ -9906,8 +10017,30 @@
      "est": 0.44,
      "why": "The sneak package remains Philadelphia's most reliable short-yardage answer and matters more with Dallas Goedert out and the backs averaging under three yards a carry.",
      "live2": null,
-     "live": null,
-     "edge": 0.023,
+     "live": {
+      "best": 145,
+      "bestBook": "fanduel",
+      "consensus": 135,
+      "books": {
+       "draftkings": 135,
+       "fanduel": 145,
+       "betonlineag": 130,
+       "betmgm": 140,
+       "bovada": 135
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372359_13L88808Q1-879129836Q20",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=12142119",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687046-5849394&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+      },
+      "implied": 0.4255,
+      "open": 135,
+      "move": 0,
+      "fetchedAt": "2026-09-23T16:40:21.694Z"
+     },
+     "edge": 0.014,
      "status": null
     },
     {
@@ -9919,8 +10052,30 @@
      "est": 0.42,
      "why": "Swift handled the goal-line work in a six-rushing-touchdown Week 1 and Chicago will lean on the ground game to protect whichever backup quarterback starts, but Philadelphia's front and the 18.5 implied total cap the upside.",
      "live2": null,
-     "live": null,
-     "edge": -0.068,
+     "live": {
+      "best": 110,
+      "bestBook": "draftkings",
+      "consensus": 110,
+      "books": {
+       "draftkings": 110,
+       "fanduel": 110,
+       "betonlineag": 110,
+       "betmgm": 100,
+       "bovada": 110
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372346_13L88808Q151577722Q20",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=16602381",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687057-5849418&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+      },
+      "implied": 0.4762,
+      "open": 110,
+      "move": 0,
+      "fetchedAt": "2026-09-23T16:40:21.694Z"
+     },
+     "edge": -0.056,
      "status": null
     }
    ],
@@ -9934,8 +10089,30 @@
      "est": 0.21,
      "why": "Chicago's biggest boundary receiver is the natural red-zone fade target in a game plan built around fewer, higher-leverage throws, and his price drifted with the quarterback news rather than with his role.",
      "live2": null,
-     "live": null,
-     "edge": 0.028,
+     "live": {
+      "best": 470,
+      "bestBook": "fanduel",
+      "consensus": 425,
+      "books": {
+       "draftkings": 425,
+       "fanduel": 470,
+       "betonlineag": 400,
+       "betmgm": 425,
+       "bovada": 420
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372350_13L88808Q1-848465730Q20",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=48504773",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687080-5849464&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+      },
+      "implied": 0.1905,
+      "open": 425,
+      "move": 0,
+      "fetchedAt": "2026-09-23T16:40:21.694Z"
+     },
+     "edge": 0.02,
      "status": null
     },
     {
@@ -9947,7 +10124,29 @@
      "est": 0.15,
      "why": "Goedert's MCL sprain vacates the tight end red-zone role that produced two touchdowns in Week 1, and FanDuel's +650 is 200 points longer than Caesars on the same player.",
      "live2": null,
-     "live": null,
+     "live": {
+      "best": 750,
+      "bestBook": "draftkings",
+      "consensus": 650,
+      "books": {
+       "draftkings": 750,
+       "fanduel": 650,
+       "betonlineag": 290,
+       "betmgm": 625,
+       "bovada": 725
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372365_13L88808Q1880735665Q20",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=9147098",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687079-5849462&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+      },
+      "implied": 0.1333,
+      "open": 650,
+      "move": 0,
+      "fetchedAt": "2026-09-23T16:40:21.694Z"
+     },
      "edge": 0.017,
      "status": null
     },
@@ -9960,8 +10159,30 @@
      "est": 0.05,
      "why": "A deep dart on Chicago's third back, who has historically been used near the stripe and could see short-yardage snaps if the Swift goal-line fumble changes the call sheet.",
      "live2": null,
-     "live": null,
-     "edge": 0.014,
+     "live": {
+      "best": 3500,
+      "bestBook": "draftkings",
+      "consensus": 3300,
+      "books": {
+       "draftkings": 3500,
+       "fanduel": 3500,
+       "betonlineag": 1900,
+       "betmgm": 2200,
+       "bovada": 3300
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372355_13L88808Q11750193742Q20",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=48274474",
+       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687047-5849396&type=Single",
+       "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+      },
+      "implied": 0.0294,
+      "open": 3300,
+      "move": 0,
+      "fetchedAt": "2026-09-23T16:40:21.694Z"
+     },
+     "edge": 0.021,
      "status": null
     }
    ],
@@ -10035,7 +10256,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-23T10:16:12.112Z",
+    "fetchedAt": "2026-09-23T20:18:36.519Z",
     "ml": {
      "home": 185,
      "away": -225,
@@ -10060,9 +10281,124 @@
     }
    },
    "scratched": [],
-   "liveBoard": [],
+   "liveBoard": [
+    {
+     "name": "Saquon Barkley",
+     "best": -115,
+     "bestBook": "draftkings",
+     "consensus": -120,
+     "implied": 0.5455
+    },
+    {
+     "name": "D'Andre Swift",
+     "best": 110,
+     "bestBook": "draftkings",
+     "consensus": 110,
+     "implied": 0.4762
+    },
+    {
+     "name": "Jalen Hurts",
+     "best": 145,
+     "bestBook": "fanduel",
+     "consensus": 135,
+     "implied": 0.4255
+    },
+    {
+     "name": "DeVonta Smith",
+     "best": 175,
+     "bestBook": "fanduel",
+     "consensus": 155,
+     "implied": 0.3922
+    },
+    {
+     "name": "Kyle Monangai",
+     "best": 200,
+     "bestBook": "draftkings",
+     "consensus": 195,
+     "implied": 0.339
+    },
+    {
+     "name": "Dallas Goedert",
+     "best": 200,
+     "bestBook": "betonlineag",
+     "consensus": 200,
+     "implied": 0.3333
+    },
+    {
+     "name": "Tank Bigsby",
+     "best": 300,
+     "bestBook": "betmgm",
+     "consensus": 295,
+     "implied": 0.2532
+    },
+    {
+     "name": "Dontayvion Wicks",
+     "best": 330,
+     "bestBook": "fanduel",
+     "consensus": 320,
+     "implied": 0.2381
+    },
+    {
+     "name": "Luther Burden III",
+     "best": 360,
+     "bestBook": "betmgm",
+     "consensus": 340,
+     "implied": 0.2273
+    },
+    {
+     "name": "Colston Loveland",
+     "best": 400,
+     "bestBook": "fanduel",
+     "consensus": 390,
+     "implied": 0.2041
+    },
+    {
+     "name": "Rome Odunze",
+     "best": 470,
+     "bestBook": "fanduel",
+     "consensus": 425,
+     "implied": 0.1905
+    },
+    {
+     "name": "Makai Lemon",
+     "best": 475,
+     "bestBook": "draftkings",
+     "consensus": 460,
+     "implied": 0.1786
+    },
+    {
+     "name": "Tyson Bagent",
+     "best": 500,
+     "bestBook": "betonlineag",
+     "consensus": 488,
+     "implied": 0.1701
+    },
+    {
+     "name": "Kalif Raymond",
+     "best": 550,
+     "bestBook": "draftkings",
+     "consensus": 525,
+     "implied": 0.16
+    },
+    {
+     "name": "Philadelphia Eagles D/ST",
+     "best": 600,
+     "bestBook": "draftkings",
+     "consensus": 600,
+     "implied": 0.1429
+    },
+    {
+     "name": "Will Shipley",
+     "best": 800,
+     "bestBook": "betonlineag",
+     "consensus": 638,
+     "implied": 0.1355
+    }
+   ],
    "propLines": [],
-   "pulls": {},
+   "pulls": {
+    "open": "2026-09-23T16:40:21.694Z"
+   },
    "injuryReport": {
     "away": [
      {
@@ -10100,28 +10436,20 @@
     ],
     "home": [
      {
-      "name": "Anthony Johnson Jr.",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-23T10:01Z"
-     },
-     {
       "name": "Caleb Williams",
       "pos": "QB",
       "status": "Doubtful",
       "type": "doubtful",
-      "detail": "Bears head coach Ben Johnson said that he doesn't anticipate Williams (hamstring) practicing in Week 3, though Johnson was unwilling to officially rule out the quarterback from playing Monday against the Eagles, Sean Hammond of the Chicago Tribune reports.",
-      "date": "2026-09-21T20:18Z"
+      "detail": "Coach Ben Johnson said Williams (hamstring) won't take part in Wednesday's practice, Courtney Cronin of ESPN reports.",
+      "date": "2026-09-23T17:17Z"
      },
      {
       "name": "Tyson Bagent",
       "pos": "QB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Bagent was diagnosed with a concussion and placed in the five-step protocol Tuesday, Ian Rapoport of NFL Network reports.",
-      "date": "2026-09-22T18:18Z"
+      "detail": "Coach Ben Johnson said Bagent (concussion) won't practice Wednesday, Kevin Fishbain of The Athletic reports.",
+      "date": "2026-09-23T17:46Z"
      },
      {
       "name": "Tyrique Stevenson Sr.",
@@ -10130,9 +10458,17 @@
       "type": "questionable",
       "detail": "Stevenson suffered a hamstring injury during Sunday's 9-3 loss to the Vikings.",
       "date": "2026-09-20T20:08Z"
+     },
+     {
+      "name": "Anthony Johnson Jr.",
+      "pos": "S",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-23T20:05Z"
      }
     ],
-    "fetchedAt": "2026-09-23T10:16:12.364Z"
+    "fetchedAt": "2026-09-23T20:18:36.740Z"
    }
   }
  ],
@@ -11389,7 +11725,7 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-09-23T10:16:13.896Z",
+  "gradedAt": "2026-09-23T20:18:37.480Z",
   "finals": 0,
   "games": 16,
   "summary": {
@@ -13769,7 +14105,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-09-23T10:16:13.898Z",
+  "updatedAt": "2026-09-23T20:18:37.481Z",
   "weeks": [
    {
     "week": 1,
@@ -14093,12 +14429,12 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-09-23T10:16:14.133Z",
+  "builtAt": "2026-09-23T20:18:37.562Z",
   "books": [
    "FD",
    "DK"
   ],
-  "oddsFetchedAt": "2026-09-22T22:45:09.830Z",
+  "oddsFetchedAt": "2026-09-23T16:40:21.694Z",
   "note": "Prices are the better of FanDuel and DraftKings at the last pull.",
   "categories": [
    {
@@ -14254,6 +14590,24 @@
         "type": "atd",
         "td2": null,
         "status": null,
+        "label": "Jalen Hurts anytime TD",
+        "player": "Jalen Hurts",
+        "team": "PHI",
+        "pos": "QB",
+        "game": "phi-chi",
+        "gameLabel": "PHI@CHI",
+        "kickoff": "2026-09-29T00:15:00Z",
+        "prob": 0.44,
+        "price": 145,
+        "book": "FD",
+        "implied": 0.408,
+        "edge": 0.032,
+        "why": "The sneak package remains Philadelphia's most reliable short-yardage answer and matters more with Dallas Goedert out and the backs averaging under three yards a carry."
+       },
+       {
+        "type": "atd",
+        "td2": null,
+        "status": null,
         "label": "Ashton Jeanty anytime TD",
         "player": "Ashton Jeanty",
         "team": "LV",
@@ -14267,6 +14621,35 @@
         "implied": 0.524,
         "edge": 0.026,
         "why": "He is on 81% of the snaps with 28 intended touches in Week 2 and draws a Saints front allowing 136.5 rushing yards per game and the sixth-most fantasy points to running backs."
+       }
+      ],
+      "decimal": 4.677,
+      "price": 368,
+      "prob": 0.242,
+      "ev": 0.132,
+      "why": "Model 24% vs 21% implied at +368. Jalen Hurts: 44% model, +145 FD; Ashton Jeanty: 55% model, -110 DK.",
+      "score": 0.065
+     },
+     {
+      "rank": 5,
+      "legs": [
+       {
+        "type": "atd",
+        "td2": null,
+        "status": null,
+        "label": "Jalen Hurts anytime TD",
+        "player": "Jalen Hurts",
+        "team": "PHI",
+        "pos": "QB",
+        "game": "phi-chi",
+        "gameLabel": "PHI@CHI",
+        "kickoff": "2026-09-29T00:15:00Z",
+        "prob": 0.44,
+        "price": 145,
+        "book": "FD",
+        "implied": 0.408,
+        "edge": 0.032,
+        "why": "The sneak package remains Philadelphia's most reliable short-yardage answer and matters more with Dallas Goedert out and the backs averaging under three yards a carry."
        },
        {
         "type": "atd",
@@ -14287,59 +14670,12 @@
         "why": "Baltimore is 27th against the pass and 26th in opponent red-zone scoring, and Lamb caught the opening touchdown last week from a quarterback with six scoring throws in two games."
        }
       ],
-      "decimal": 4.2,
-      "price": 320,
-      "prob": 0.259,
-      "ev": 0.086,
-      "why": "Model 26% vs 24% implied at +320. Ashton Jeanty: 55% model, -110 DK; CeeDee Lamb: 47% model, +120 DK.",
-      "score": 0.044
-     },
-     {
-      "rank": 5,
-      "legs": [
-       {
-        "type": "atd",
-        "td2": null,
-        "status": null,
-        "label": "Ashton Jeanty anytime TD",
-        "player": "Ashton Jeanty",
-        "team": "LV",
-        "pos": "RB",
-        "game": "lv-no",
-        "gameLabel": "LV@NO",
-        "kickoff": "2026-09-27T20:25:00Z",
-        "prob": 0.55,
-        "price": -110,
-        "book": "DK",
-        "implied": 0.524,
-        "edge": 0.026,
-        "why": "He is on 81% of the snaps with 28 intended touches in Week 2 and draws a Saints front allowing 136.5 rushing yards per game and the sixth-most fantasy points to running backs."
-       },
-       {
-        "type": "atd",
-        "td2": null,
-        "status": null,
-        "label": "Tee Higgins anytime TD",
-        "player": "Tee Higgins",
-        "team": "CIN",
-        "pos": "WR",
-        "game": "cin-pit",
-        "gameLabel": "CIN@PIT",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.36,
-        "price": 190,
-        "book": "DK",
-        "implied": 0.345,
-        "edge": 0.015,
-        "why": "Team-high 95 yards in Week 2 and the biggest red-zone body on the field in an offense throwing short and fast, which concentrates scoring into contested 50-50 throws."
-       }
-      ],
-      "decimal": 5.536,
-      "price": 454,
-      "prob": 0.198,
-      "ev": 0.096,
-      "why": "Model 20% vs 18% implied at +454. Ashton Jeanty: 55% model, -110 DK; Tee Higgins: 36% model, +190 DK.",
-      "score": 0.043
+      "decimal": 5.39,
+      "price": 439,
+      "prob": 0.207,
+      "ev": 0.115,
+      "why": "Model 21% vs 19% implied at +439. Jalen Hurts: 44% model, +145 FD; CeeDee Lamb: 47% model, +120 DK.",
+      "score": 0.052
      }
     ]
    },
@@ -14500,6 +14836,65 @@
       "legs": [
        {
         "type": "side",
+        "label": "GB -4.5",
+        "team": "GB",
+        "game": "atl-gb",
+        "gameLabel": "ATL@GB",
+        "kickoff": "2026-09-25T00:15:00Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": "model liked -6",
+        "why": "Atlanta is starting a quarterback who has not taken a competitive snap in ten months, on three days' rest, on the road at night, behind an offense with a league-worst -53.1 EPA and zero red-zone snaps, and without A.J. Terrell Jr. That is enough to stay on Green Bay, but only barely: the Packers lost their right tackle for the season, have two more interior linemen banged up, and Jordan Love completes 33.3% of his passes under pressure against a Falcons front that ranks third in pressure rate without blitzing. The total is the cleaner read, since Green Bay converts 19% of third downs and fails to make a first down on 45.8% of its drives while Atlanta has not snapped the ball inside the 20 all season. The number projects closer to 39 than 44.5, and the under has cashed in both Falcons games."
+       },
+       {
+        "type": "side",
+        "label": "BUF -7",
+        "team": "BUF",
+        "game": "lac-buf",
+        "gameLabel": "LAC@BUF",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.569,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.045,
+        "conf": 3,
+        "moved": null,
+        "why": "Buffalo is 2-0 averaging 38.5 points and 7.1 yards per play while the Chargers sit 28th in points per drive and have scored exactly 14 in each loss. The personnel gap is concrete this week: Los Angeles has both starting tight ends on IR, its starting left guard and starting defensive tackle expected out, and Derwin James Jr. in a cast, all on a 10am body-clock road trip against a Bills team on extra rest that led the NFL with 14 pressures in Week 2 against an offensive line that put the ball on the ground six times. The total is the softer call: Buffalo has allowed 31 points in both games and 300.5 pass yards per game with no interceptions, which is enough to lift a bad Chargers offense, but 14 points per game is a real drag and models lean marginally under. I make it Bills by nine with the total landing just above the number."
+       },
+       {
+        "type": "side",
+        "label": "CIN -3.5",
+        "team": "CIN",
+        "game": "cin-pit",
+        "gameLabel": "CIN@PIT",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.576,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.052,
+        "conf": 2,
+        "moved": null,
+        "why": "Pittsburgh ranks 31st in offensive EPA at -42.9 and converts just 20% of third downs, and Rodgers has not completed a pass over 20 air yards all season, which caps the Steelers' realistic ceiling against a Cincinnati defense that has not allowed a passing touchdown. That supports the Under strongly, and the total's move from 47.5 to 42.5 confirms the direction rather than contradicting it. The side is a thinner call: Cincinnati's edge is real, but the number has already run from -1.5 to -3.5, and laying points on the road into a Steelers defense that leads the league in defensive EPA with a league-high 13.7% sack rate is uncomfortable with Burrow nursing ribs after five sacks in Week 2. Pittsburgh +3.5 at home in a division game has legitimate merit, so the lean on the side is small and the Under is where the stronger case sits."
+       }
+      ],
+      "decimal": 6.958,
+      "price": 596,
+      "prob": 0.184,
+      "ev": 0.282,
+      "why": "Model 18% vs 14% implied at +596. GB -4.5: 56% model, -110 FD/DK; BUF -7: 57% model, -110 FD/DK; CIN -3.5: 58% model, -110 FD/DK. Line moved since the model call: GB -4.5 (model liked -6).",
+      "score": 0.121
+     },
+     {
+      "rank": 2,
+      "legs": [
+       {
+        "type": "side",
         "label": "BUF -7",
         "team": "BUF",
         "game": "lac-buf",
@@ -14555,7 +14950,7 @@
       "score": 0.121
      },
      {
-      "rank": 2,
+      "rank": 3,
       "legs": [
        {
         "type": "side",
@@ -14614,67 +15009,24 @@
       "score": 0.121
      },
      {
-      "rank": 3,
+      "rank": 4,
       "legs": [
        {
         "type": "side",
-        "label": "BUF -7",
-        "team": "BUF",
-        "game": "lac-buf",
-        "gameLabel": "LAC@BUF",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.569,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.045,
-        "conf": 3,
-        "moved": null,
-        "why": "Buffalo is 2-0 averaging 38.5 points and 7.1 yards per play while the Chargers sit 28th in points per drive and have scored exactly 14 in each loss. The personnel gap is concrete this week: Los Angeles has both starting tight ends on IR, its starting left guard and starting defensive tackle expected out, and Derwin James Jr. in a cast, all on a 10am body-clock road trip against a Bills team on extra rest that led the NFL with 14 pressures in Week 2 against an offensive line that put the ball on the ground six times. The total is the softer call: Buffalo has allowed 31 points in both games and 300.5 pass yards per game with no interceptions, which is enough to lift a bad Chargers offense, but 14 points per game is a real drag and models lean marginally under. I make it Bills by nine with the total landing just above the number."
-       },
-       {
-        "type": "side",
-        "label": "CIN -3.5",
-        "team": "CIN",
-        "game": "cin-pit",
-        "gameLabel": "CIN@PIT",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.576,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.052,
-        "conf": 2,
-        "moved": null,
-        "why": "Pittsburgh ranks 31st in offensive EPA at -42.9 and converts just 20% of third downs, and Rodgers has not completed a pass over 20 air yards all season, which caps the Steelers' realistic ceiling against a Cincinnati defense that has not allowed a passing touchdown. That supports the Under strongly, and the total's move from 47.5 to 42.5 confirms the direction rather than contradicting it. The side is a thinner call: Cincinnati's edge is real, but the number has already run from -1.5 to -3.5, and laying points on the road into a Steelers defense that leads the league in defensive EPA with a league-high 13.7% sack rate is uncomfortable with Burrow nursing ribs after five sacks in Week 2. Pittsburgh +3.5 at home in a division game has legitimate merit, so the lean on the side is small and the Under is where the stronger case sits."
-       },
-       {
-        "type": "side",
-        "label": "MIN -1.5",
-        "team": "MIN",
-        "game": "min-tb",
-        "gameLabel": "MIN@TB",
-        "kickoff": "2026-09-27T20:05:00Z",
+        "label": "GB -4.5",
+        "team": "GB",
+        "game": "atl-gb",
+        "gameLabel": "ATL@GB",
+        "kickoff": "2026-09-25T00:15:00Z",
         "prob": 0.562,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
         "edge": 0.038,
-        "conf": 3,
-        "moved": null,
-        "why": "Minnesota's defence is the clearest edge on the field: a league-best 33.6% pressure rate and the heaviest blitz rate in the NFL against a Baker Mayfield offence that has already taken seven sacks and produced three offensive touchdowns in two games. Tampa Bay is 0-2 and kicked four field goals in a home loss to Cleveland, which is the profile of a team that moves the ball and then stalls. The under is the softer of the two positions because Minnesota's own Week 1 game went 61 points and Kyler Murray's return could raise the Vikings' explosiveness, so it sits at a lower confidence. Getting Minnesota at only -1.5 on the road with the defence travelling better than the offence is the reason for a 3 on the side."
-       }
-      ],
-      "decimal": 6.958,
-      "price": 596,
-      "prob": 0.184,
-      "ev": 0.282,
-      "why": "Model 18% vs 14% implied at +596. BUF -7: 57% model, -110 FD/DK; CIN -3.5: 58% model, -110 FD/DK; MIN -1.5: 56% model, -110 FD/DK.",
-      "score": 0.121
-     },
-     {
-      "rank": 4,
-      "legs": [
+        "conf": 2,
+        "moved": "model liked -6",
+        "why": "Atlanta is starting a quarterback who has not taken a competitive snap in ten months, on three days' rest, on the road at night, behind an offense with a league-worst -53.1 EPA and zero red-zone snaps, and without A.J. Terrell Jr. That is enough to stay on Green Bay, but only barely: the Packers lost their right tackle for the season, have two more interior linemen banged up, and Jordan Love completes 33.3% of his passes under pressure against a Falcons front that ranks third in pressure rate without blitzing. The total is the cleaner read, since Green Bay converts 19% of third downs and fails to make a first down on 45.8% of its drives while Atlanta has not snapped the ball inside the 20 all season. The number projects closer to 39 than 44.5, and the under has cashed in both Falcons games."
+       },
        {
         "type": "side",
         "label": "CAR -2.5",
@@ -14706,29 +15058,13 @@
         "conf": 3,
         "moved": null,
         "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low."
-       },
-       {
-        "type": "side",
-        "label": "MIN -1.5",
-        "team": "MIN",
-        "game": "min-tb",
-        "gameLabel": "MIN@TB",
-        "kickoff": "2026-09-27T20:05:00Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
-        "conf": 3,
-        "moved": null,
-        "why": "Minnesota's defence is the clearest edge on the field: a league-best 33.6% pressure rate and the heaviest blitz rate in the NFL against a Baker Mayfield offence that has already taken seven sacks and produced three offensive touchdowns in two games. Tampa Bay is 0-2 and kicked four field goals in a home loss to Cleveland, which is the profile of a team that moves the ball and then stalls. The under is the softer of the two positions because Minnesota's own Week 1 game went 61 points and Kyler Murray's return could raise the Vikings' explosiveness, so it sits at a lower confidence. Getting Minnesota at only -1.5 on the road with the defence travelling better than the offence is the reason for a 3 on the side."
        }
       ],
       "decimal": 6.958,
       "price": 596,
       "prob": 0.178,
       "ev": 0.235,
-      "why": "Model 18% vs 14% implied at +596. CAR -2.5: 56% model, -110 FD/DK; SF -8.5: 56% model, -110 FD/DK; MIN -1.5: 56% model, -110 FD/DK.",
+      "why": "Model 18% vs 14% implied at +596. GB -4.5: 56% model, -110 FD/DK; CAR -2.5: 56% model, -110 FD/DK; SF -8.5: 56% model, -110 FD/DK. Line moved since the model call: GB -4.5 (model liked -6).",
       "score": 0.099
      },
      {
@@ -14736,6 +15072,22 @@
       "legs": [
        {
         "type": "side",
+        "label": "GB -4.5",
+        "team": "GB",
+        "game": "atl-gb",
+        "gameLabel": "ATL@GB",
+        "kickoff": "2026-09-25T00:15:00Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": "model liked -6",
+        "why": "Atlanta is starting a quarterback who has not taken a competitive snap in ten months, on three days' rest, on the road at night, behind an offense with a league-worst -53.1 EPA and zero red-zone snaps, and without A.J. Terrell Jr. That is enough to stay on Green Bay, but only barely: the Packers lost their right tackle for the season, have two more interior linemen banged up, and Jordan Love completes 33.3% of his passes under pressure against a Falcons front that ranks third in pressure rate without blitzing. The total is the cleaner read, since Green Bay converts 19% of third downs and fails to make a first down on 45.8% of its drives while Atlanta has not snapped the ball inside the 20 all season. The number projects closer to 39 than 44.5, and the under has cashed in both Falcons games."
+       },
+       {
+        "type": "side",
         "label": "CAR -2.5",
         "team": "CAR",
         "game": "car-cle",
@@ -14752,10 +15104,10 @@
        },
        {
         "type": "side",
-        "label": "SF -8.5",
-        "team": "SF",
-        "game": "ari-sf",
-        "gameLabel": "ARI@SF",
+        "label": "MIN -1.5",
+        "team": "MIN",
+        "game": "min-tb",
+        "gameLabel": "MIN@TB",
         "kickoff": "2026-09-27T20:05:00Z",
         "prob": 0.562,
         "price": -110,
@@ -14764,30 +15116,14 @@
         "edge": 0.038,
         "conf": 3,
         "moved": null,
-        "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low."
-       },
-       {
-        "type": "side",
-        "label": "LAR -2.5",
-        "team": "LAR",
-        "game": "lar-den",
-        "gameLabel": "LAR@DEN",
-        "kickoff": "2026-09-28T00:20:00Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
-        "conf": 3,
-        "moved": null,
-        "why": "Denver is last in EPA allowed per carry and is giving up 157.5 rushing yards per game, while the Rams average 142.5 on a near-even Williams/Corum split, which is the cleanest structural edge in the game. The Broncos' own offense has converted 26.1 percent of third downs and only 42.9 percent of red-zone trips into touchdowns, and Bo Nix has thrown an interception in each of his two starts. On the total, all four games these teams have played in 2026 finished at 41 points or fewer, and the Rams defense is allowing 281 total yards and 16.5 points per game. The main things arguing the other way are altitude, a Sunday night home crowd and the fact that a Nacua absence would let Surtain II devote full attention to Adams, which is why I am not going higher than a 3 on either side."
+        "why": "Minnesota's defence is the clearest edge on the field: a league-best 33.6% pressure rate and the heaviest blitz rate in the NFL against a Baker Mayfield offence that has already taken seven sacks and produced three offensive touchdowns in two games. Tampa Bay is 0-2 and kicked four field goals in a home loss to Cleveland, which is the profile of a team that moves the ball and then stalls. The under is the softer of the two positions because Minnesota's own Week 1 game went 61 points and Kyler Murray's return could raise the Vikings' explosiveness, so it sits at a lower confidence. Getting Minnesota at only -1.5 on the road with the defence travelling better than the offence is the reason for a 3 on the side."
        }
       ],
       "decimal": 6.958,
       "price": 596,
       "prob": 0.178,
       "ev": 0.235,
-      "why": "Model 18% vs 14% implied at +596. CAR -2.5: 56% model, -110 FD/DK; SF -8.5: 56% model, -110 FD/DK; LAR -2.5: 56% model, -110 FD/DK.",
+      "why": "Model 18% vs 14% implied at +596. GB -4.5: 56% model, -110 FD/DK; CAR -2.5: 56% model, -110 FD/DK; MIN -1.5: 56% model, -110 FD/DK. Line moved since the model call: GB -4.5 (model liked -6).",
       "score": 0.099
      }
     ]
@@ -14802,15 +15138,15 @@
       "legs": [
        {
         "type": "total",
-        "label": "Under 43.5 ATL@GB",
+        "label": "Under 42.5 ATL@GB",
         "game": "atl-gb",
         "gameLabel": "ATL@GB",
         "kickoff": "2026-09-25T00:15:00Z",
-        "prob": 0.605,
+        "prob": 0.591,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.081,
+        "edge": 0.067,
         "conf": 3,
         "moved": "model liked 44.5",
         "why": "Atlanta is starting a quarterback who has not taken a competitive snap in ten months, on three days' rest, on the road at night, behind an offense with a league-worst -53.1 EPA and zero red-zone snaps, and without A.J. Terrell Jr. That is enough to stay on Green Bay, but only barely: the Packers lost their right tackle for the season, have two more interior linemen banged up, and Jordan Love completes 33.3% of his passes under pressure against a Falcons front that ranks third in pressure rate without blitzing. The total is the cleaner read, since Green Bay converts 19% of third downs and fails to make a first down on 45.8% of its drives while Atlanta has not snapped the ball inside the 20 all season. The number projects closer to 39 than 44.5, and the under has cashed in both Falcons games."
@@ -14848,25 +15184,25 @@
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.211,
-      "ev": 0.47,
-      "why": "Model 21% vs 14% implied at +596. Under 43.5 ATL@GB: 61% model, -110 FD/DK; Under 39.5 TEN@NYG: 59% model, -110 FD/DK; Under 42.5 CIN@PIT: 59% model, -110 FD/DK.",
-      "score": 0.216
+      "prob": 0.206,
+      "ev": 0.436,
+      "why": "Model 21% vs 14% implied at +596. Under 42.5 ATL@GB: 59% model, -110 FD/DK; Under 39.5 TEN@NYG: 59% model, -110 FD/DK; Under 42.5 CIN@PIT: 59% model, -110 FD/DK.",
+      "score": 0.198
      },
      {
       "rank": 2,
       "legs": [
        {
         "type": "total",
-        "label": "Under 43.5 ATL@GB",
+        "label": "Under 42.5 ATL@GB",
         "game": "atl-gb",
         "gameLabel": "ATL@GB",
         "kickoff": "2026-09-25T00:15:00Z",
-        "prob": 0.605,
+        "prob": 0.591,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.081,
+        "edge": 0.067,
         "conf": 3,
         "moved": "model liked 44.5",
         "why": "Atlanta is starting a quarterback who has not taken a competitive snap in ten months, on three days' rest, on the road at night, behind an offense with a league-worst -53.1 EPA and zero red-zone snaps, and without A.J. Terrell Jr. That is enough to stay on Green Bay, but only barely: the Packers lost their right tackle for the season, have two more interior linemen banged up, and Jordan Love completes 33.3% of his passes under pressure against a Falcons front that ranks third in pressure rate without blitzing. The total is the cleaner read, since Green Bay converts 19% of third downs and fails to make a first down on 45.8% of its drives while Atlanta has not snapped the ball inside the 20 all season. The number projects closer to 39 than 44.5, and the under has cashed in both Falcons games."
@@ -14904,29 +15240,70 @@
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.206,
-      "ev": 0.435,
-      "why": "Model 21% vs 14% implied at +596. Under 43.5 ATL@GB: 61% model, -110 FD/DK; Under 39.5 TEN@NYG: 59% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK.",
-      "score": 0.197
+      "prob": 0.202,
+      "ev": 0.402,
+      "why": "Model 20% vs 14% implied at +596. Under 42.5 ATL@GB: 59% model, -110 FD/DK; Under 39.5 TEN@NYG: 59% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK.",
+      "score": 0.181
      },
      {
       "rank": 3,
       "legs": [
        {
         "type": "total",
-        "label": "Under 43.5 ATL@GB",
+        "label": "Under 42.5 ATL@GB",
         "game": "atl-gb",
         "gameLabel": "ATL@GB",
         "kickoff": "2026-09-25T00:15:00Z",
-        "prob": 0.605,
+        "prob": 0.591,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.081,
+        "edge": 0.067,
         "conf": 3,
         "moved": "model liked 44.5",
         "why": "Atlanta is starting a quarterback who has not taken a competitive snap in ten months, on three days' rest, on the road at night, behind an offense with a league-worst -53.1 EPA and zero red-zone snaps, and without A.J. Terrell Jr. That is enough to stay on Green Bay, but only barely: the Packers lost their right tackle for the season, have two more interior linemen banged up, and Jordan Love completes 33.3% of his passes under pressure against a Falcons front that ranks third in pressure rate without blitzing. The total is the cleaner read, since Green Bay converts 19% of third downs and fails to make a first down on 45.8% of its drives while Atlanta has not snapped the ball inside the 20 all season. The number projects closer to 39 than 44.5, and the under has cashed in both Falcons games."
        },
+       {
+        "type": "total",
+        "label": "Under 42.5 CIN@PIT",
+        "game": "cin-pit",
+        "gameLabel": "CIN@PIT",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.591,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.067,
+        "conf": 3,
+        "moved": null,
+        "why": "Pittsburgh ranks 31st in offensive EPA at -42.9 and converts just 20% of third downs, and Rodgers has not completed a pass over 20 air yards all season, which caps the Steelers' realistic ceiling against a Cincinnati defense that has not allowed a passing touchdown. That supports the Under strongly, and the total's move from 47.5 to 42.5 confirms the direction rather than contradicting it. The side is a thinner call: Cincinnati's edge is real, but the number has already run from -1.5 to -3.5, and laying points on the road into a Steelers defense that leads the league in defensive EPA with a league-high 13.7% sack rate is uncomfortable with Burrow nursing ribs after five sacks in Week 2. Pittsburgh +3.5 at home in a division game has legitimate merit, so the lean on the side is small and the Under is where the stronger case sits."
+       },
+       {
+        "type": "total",
+        "label": "Under 45.5 NE@JAX",
+        "game": "ne-jax",
+        "gameLabel": "NE@JAX",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.577,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.053,
+        "conf": 3,
+        "moved": null,
+        "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
+       }
+      ],
+      "decimal": 6.958,
+      "price": 596,
+      "prob": 0.202,
+      "ev": 0.402,
+      "why": "Model 20% vs 14% implied at +596. Under 42.5 ATL@GB: 59% model, -110 FD/DK; Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK.",
+      "score": 0.181
+     },
+     {
+      "rank": 4,
+      "legs": [
        {
         "type": "total",
         "label": "Under 39.5 TEN@NYG",
@@ -14944,32 +15321,6 @@
        },
        {
         "type": "total",
-        "label": "Under 41.5 PHI@CHI",
-        "game": "phi-chi",
-        "gameLabel": "PHI@CHI",
-        "kickoff": "2026-09-29T00:15:00Z",
-        "prob": 0.576,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.052,
-        "conf": 2,
-        "moved": null,
-        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
-       }
-      ],
-      "decimal": 6.958,
-      "price": 596,
-      "prob": 0.206,
-      "ev": 0.433,
-      "why": "Model 21% vs 14% implied at +596. Under 43.5 ATL@GB: 61% model, -110 FD/DK; Under 39.5 TEN@NYG: 59% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK.",
-      "score": 0.197
-     },
-     {
-      "rank": 4,
-      "legs": [
-       {
-        "type": "total",
         "label": "Under 42.5 CIN@PIT",
         "game": "cin-pit",
         "gameLabel": "CIN@PIT",
@@ -14997,63 +15348,18 @@
         "conf": 3,
         "moved": null,
         "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
-       },
-       {
-        "type": "total",
-        "label": "Under 41.5 PHI@CHI",
-        "game": "phi-chi",
-        "gameLabel": "PHI@CHI",
-        "kickoff": "2026-09-29T00:15:00Z",
-        "prob": 0.576,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.052,
-        "conf": 2,
-        "moved": null,
-        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
        }
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.196,
-      "ev": 0.367,
-      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK.",
-      "score": 0.162
+      "prob": 0.202,
+      "ev": 0.402,
+      "why": "Model 20% vs 14% implied at +596. Under 39.5 TEN@NYG: 59% model, -110 FD/DK; Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK.",
+      "score": 0.181
      },
      {
       "rank": 5,
       "legs": [
-       {
-        "type": "total",
-        "label": "Under 42.5 CIN@PIT",
-        "game": "cin-pit",
-        "gameLabel": "CIN@PIT",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.591,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.067,
-        "conf": 3,
-        "moved": null,
-        "why": "Pittsburgh ranks 31st in offensive EPA at -42.9 and converts just 20% of third downs, and Rodgers has not completed a pass over 20 air yards all season, which caps the Steelers' realistic ceiling against a Cincinnati defense that has not allowed a passing touchdown. That supports the Under strongly, and the total's move from 47.5 to 42.5 confirms the direction rather than contradicting it. The side is a thinner call: Cincinnati's edge is real, but the number has already run from -1.5 to -3.5, and laying points on the road into a Steelers defense that leads the league in defensive EPA with a league-high 13.7% sack rate is uncomfortable with Burrow nursing ribs after five sacks in Week 2. Pittsburgh +3.5 at home in a division game has legitimate merit, so the lean on the side is small and the Under is where the stronger case sits."
-       },
-       {
-        "type": "total",
-        "label": "Under 45.5 NE@JAX",
-        "game": "ne-jax",
-        "gameLabel": "NE@JAX",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.577,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.053,
-        "conf": 3,
-        "moved": null,
-        "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
-       },
        {
         "type": "total",
         "label": "Under 45.5 LAR@DEN",
@@ -15068,14 +15374,29 @@
         "conf": 3,
         "moved": null,
         "why": "Denver is last in EPA allowed per carry and is giving up 157.5 rushing yards per game, while the Rams average 142.5 on a near-even Williams/Corum split, which is the cleanest structural edge in the game. The Broncos' own offense has converted 26.1 percent of third downs and only 42.9 percent of red-zone trips into touchdowns, and Bo Nix has thrown an interception in each of his two starts. On the total, all four games these teams have played in 2026 finished at 41 points or fewer, and the Rams defense is allowing 281 total yards and 16.5 points per game. The main things arguing the other way are altitude, a Sunday night home crowd and the fact that a Nacua absence would let Surtain II devote full attention to Adams, which is why I am not going higher than a 3 on either side."
+       },
+       {
+        "type": "total",
+        "label": "Under 41.5 PHI@CHI",
+        "game": "phi-chi",
+        "gameLabel": "PHI@CHI",
+        "kickoff": "2026-09-29T00:15:00Z",
+        "prob": 0.576,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.052,
+        "conf": 2,
+        "moved": null,
+        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
        }
       ],
-      "decimal": 6.958,
-      "price": 596,
-      "prob": 0.192,
-      "ev": 0.333,
-      "why": "Model 19% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK; Under 45.5 LAR@DEN: 56% model, -110 FD/DK.",
-      "score": 0.146
+      "decimal": 3.645,
+      "price": 264,
+      "prob": 0.324,
+      "ev": 0.18,
+      "why": "Model 32% vs 27% implied at +264. Under 45.5 LAR@DEN: 56% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK.",
+      "score": 0.102
      }
     ]
    },
@@ -15224,61 +15545,16 @@
       "legs": [
        {
         "type": "side",
-        "label": "BUF -7",
-        "team": "BUF",
-        "game": "lac-buf",
-        "gameLabel": "LAC@BUF",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.569,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.045,
-        "conf": 3,
-        "moved": null,
-        "why": "Buffalo is 2-0 averaging 38.5 points and 7.1 yards per play while the Chargers sit 28th in points per drive and have scored exactly 14 in each loss. The personnel gap is concrete this week: Los Angeles has both starting tight ends on IR, its starting left guard and starting defensive tackle expected out, and Derwin James Jr. in a cast, all on a 10am body-clock road trip against a Bills team on extra rest that led the NFL with 14 pressures in Week 2 against an offensive line that put the ball on the ground six times. The total is the softer call: Buffalo has allowed 31 points in both games and 300.5 pass yards per game with no interceptions, which is enough to lift a bad Chargers offense, but 14 points per game is a real drag and models lean marginally under. I make it Bills by nine with the total landing just above the number."
-       },
-       {
-        "type": "atd",
-        "td2": null,
-        "status": null,
-        "label": "Josh Allen anytime TD",
-        "player": "Josh Allen",
-        "team": "BUF",
-        "pos": "QB",
-        "game": "lac-buf",
-        "gameLabel": "LAC@BUF",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.57,
-        "price": -150,
-        "book": "FD",
-        "implied": 0.6,
-        "edge": -0.03,
-        "why": "Four rushing touchdowns in two games and a designed goal-line runner's role on an offense with a 28.75-point implied total."
-       }
-      ],
-      "decimal": 3.182,
-      "price": 218,
-      "prob": 0.363,
-      "ev": 0.156,
-      "why": "Model 36% vs 31% implied at +218. BUF -7: 57% model, -110 FD/DK; Josh Allen: 57% model, -150 FD. Correlated: the side and the scorer ride the same script. Straight multiplication; FD/DK same-game pricing will differ. Research stack: A 28.75-point implied total usually means three or more red-zone trips, and these two have taken nearly all of Buffalo's short-yardage work.",
-      "score": 0.094
-     },
-     {
-      "rank": 5,
-      "legs": [
-       {
-        "type": "side",
-        "label": "GB -5.5",
+        "label": "GB -4.5",
         "team": "GB",
         "game": "atl-gb",
         "gameLabel": "ATL@GB",
         "kickoff": "2026-09-25T00:15:00Z",
-        "prob": 0.547,
+        "prob": 0.562,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.023,
+        "edge": 0.038,
         "conf": 2,
         "moved": "model liked -6",
         "why": "Atlanta is starting a quarterback who has not taken a competitive snap in ten months, on three days' rest, on the road at night, behind an offense with a league-worst -53.1 EPA and zero red-zone snaps, and without A.J. Terrell Jr. That is enough to stay on Green Bay, but only barely: the Packers lost their right tackle for the season, have two more interior linemen banged up, and Jordan Love completes 33.3% of his passes under pressure against a Falcons front that ranks third in pressure rate without blitzing. The total is the cleaner read, since Green Bay converts 19% of third downs and fails to make a first down on 45.8% of its drives while Atlanta has not snapped the ball inside the 20 all season. The number projects closer to 39 than 44.5, and the under has cashed in both Falcons games."
@@ -15304,10 +15580,55 @@
       ],
       "decimal": 4.582,
       "price": 358,
-      "prob": 0.257,
-      "ev": 0.179,
-      "why": "Model 26% vs 22% implied at +358. GB -5.5: 55% model, -110 FD/DK; Christian Watson: 42% model, +140 FD. Correlated: the side and the scorer ride the same script. Straight multiplication; FD/DK same-game pricing will differ. Research stack: If Atlanta scores at all it very likely runs through Robinson, and pairing him with the under does not fight the game script that both bottom-five offenses have shown.",
-      "score": 0.091
+      "prob": 0.264,
+      "ev": 0.211,
+      "why": "Model 26% vs 22% implied at +358. GB -4.5: 56% model, -110 FD/DK; Christian Watson: 42% model, +140 FD. Correlated: the side and the scorer ride the same script. Straight multiplication; FD/DK same-game pricing will differ. Research stack: If Atlanta scores at all it very likely runs through Robinson, and pairing him with the under does not fight the game script that both bottom-five offenses have shown.",
+      "score": 0.108
+     },
+     {
+      "rank": 5,
+      "legs": [
+       {
+        "type": "side",
+        "label": "GB -4.5",
+        "team": "GB",
+        "game": "atl-gb",
+        "gameLabel": "ATL@GB",
+        "kickoff": "2026-09-25T00:15:00Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": "model liked -6",
+        "why": "Atlanta is starting a quarterback who has not taken a competitive snap in ten months, on three days' rest, on the road at night, behind an offense with a league-worst -53.1 EPA and zero red-zone snaps, and without A.J. Terrell Jr. That is enough to stay on Green Bay, but only barely: the Packers lost their right tackle for the season, have two more interior linemen banged up, and Jordan Love completes 33.3% of his passes under pressure against a Falcons front that ranks third in pressure rate without blitzing. The total is the cleaner read, since Green Bay converts 19% of third downs and fails to make a first down on 45.8% of its drives while Atlanta has not snapped the ball inside the 20 all season. The number projects closer to 39 than 44.5, and the under has cashed in both Falcons games."
+       },
+       {
+        "type": "atd",
+        "td2": null,
+        "status": null,
+        "label": "Tucker Kraft anytime TD",
+        "player": "Tucker Kraft",
+        "team": "GB",
+        "pos": "TE",
+        "game": "atl-gb",
+        "gameLabel": "ATL@GB",
+        "kickoff": "2026-09-25T00:15:00Z",
+        "prob": 0.37,
+        "price": 175,
+        "book": "FD",
+        "implied": 0.364,
+        "edge": 0.006,
+        "why": "Kraft played 98.3% of snaps and ran routes on 84.4% of dropbacks in Week 2 and now faces a Falcons defense that sits in single-high on 64.6% of snaps."
+       }
+      ],
+      "decimal": 5.25,
+      "price": 425,
+      "prob": 0.233,
+      "ev": 0.223,
+      "why": "Model 23% vs 19% implied at +425. GB -4.5: 56% model, -110 FD/DK; Tucker Kraft: 37% model, +175 FD. Correlated: the side and the scorer ride the same script. Straight multiplication; FD/DK same-game pricing will differ. Research stack: If Atlanta scores at all it very likely runs through Robinson, and pairing him with the under does not fight the game script that both bottom-five offenses have shown.",
+      "score": 0.108
      }
     ]
    },

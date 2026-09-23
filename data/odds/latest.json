@@ -1,14 +1,14 @@
 {
- "fetchedAt": "2026-09-22T22:45:09.830Z",
+ "fetchedAt": "2026-09-23T16:40:21.694Z",
  "region": "us",
  "usage": {
-  "remaining": 183,
-  "used": 317
+  "remaining": 182,
+  "used": 318
  },
  "policy": {
   "prekickHours": 9,
   "reserve": 40,
-  "maxPerRun": 8,
+  "maxPerRun": 80,
   "markets": {
    "open": [
     "player_anytime_td"
@@ -6241,8 +6241,555 @@
    "home": "CHI",
    "away": "PHI",
    "lines": null,
-   "markets": {},
-   "pulls": {}
+   "markets": {
+    "player_anytime_td": {
+     "fetchedAt": "2026-09-23T16:40:21.694Z",
+     "phase": "open",
+     "players": {
+      "saquon barkley": {
+       "name": "Saquon Barkley",
+       "books": {
+        "draftkings": -115,
+        "fanduel": -120,
+        "betonlineag": -125,
+        "betmgm": -135,
+        "bovada": -117
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372263_13L88808Q11750821948Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=11054733",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687043-5849390&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": -115,
+       "bestBook": "draftkings",
+       "consensus": -120
+      },
+      "dandre swift": {
+       "name": "D'Andre Swift",
+       "books": {
+        "draftkings": 110,
+        "fanduel": 110,
+        "betonlineag": 110,
+        "betmgm": 100,
+        "bovada": 110
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372346_13L88808Q151577722Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=16602381",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687057-5849418&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 110,
+       "bestBook": "draftkings",
+       "consensus": 110
+      },
+      "jalen hurts": {
+       "name": "Jalen Hurts",
+       "books": {
+        "draftkings": 135,
+        "fanduel": 145,
+        "betonlineag": 130,
+        "betmgm": 140,
+        "bovada": 135
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372359_13L88808Q1-879129836Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=12142119",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687046-5849394&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 145,
+       "bestBook": "fanduel",
+       "consensus": 135
+      },
+      "devonta smith": {
+       "name": "DeVonta Smith",
+       "books": {
+        "draftkings": 155,
+        "fanduel": 175,
+        "betonlineag": 130,
+        "betmgm": 160,
+        "bovada": 155
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372358_13L88808Q1-911882280Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=16602548",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687042-5849388&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 175,
+       "bestBook": "fanduel",
+       "consensus": 155
+      },
+      "kyle monangai": {
+       "name": "Kyle Monangai",
+       "books": {
+        "draftkings": 200,
+        "fanduel": 185,
+        "betonlineag": 180,
+        "betmgm": 195,
+        "bovada": 200
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372347_13L88808Q1655740791Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=49106540",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687074-5849452&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 200,
+       "bestBook": "draftkings",
+       "consensus": 195
+      },
+      "dontayvion wicks": {
+       "name": "Dontayvion Wicks",
+       "books": {
+        "draftkings": 320,
+        "fanduel": 330,
+        "betonlineag": 230,
+        "betmgm": 300,
+        "bovada": 320
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372361_13L88808Q11963211643Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=48683410",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687083-5849470&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 330,
+       "bestBook": "fanduel",
+       "consensus": 320
+      },
+      "luther burden": {
+       "name": "Luther Burden III",
+       "books": {
+        "draftkings": 340,
+        "fanduel": 350,
+        "betonlineag": 325,
+        "betmgm": 360,
+        "bovada": 340
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372349_13L88808Q12086988331Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=48308855",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687033-5849370&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 360,
+       "bestBook": "betmgm",
+       "consensus": 340
+      },
+      "colston loveland": {
+       "name": "Colston Loveland",
+       "books": {
+        "draftkings": 390,
+        "fanduel": 400,
+        "betonlineag": 350,
+        "betmgm": 340,
+        "bovada": 390
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372348_13L88808Q1-2109230062Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=50526288",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687082-5849468&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 400,
+       "bestBook": "fanduel",
+       "consensus": 390
+      },
+      "rome odunze": {
+       "name": "Rome Odunze",
+       "books": {
+        "draftkings": 425,
+        "fanduel": 470,
+        "betonlineag": 400,
+        "betmgm": 425,
+        "bovada": 420
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372350_13L88808Q1-848465730Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=48504773",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687080-5849464&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 470,
+       "bestBook": "fanduel",
+       "consensus": 425
+      },
+      "makai lemon": {
+       "name": "Makai Lemon",
+       "books": {
+        "draftkings": 475,
+        "fanduel": 470,
+        "betonlineag": 450,
+        "betmgm": 375,
+        "bovada": 460
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372363_13L88808Q11792281206Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=82342249",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687067-5849438&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 475,
+       "bestBook": "draftkings",
+       "consensus": 460
+      },
+      "kalif raymond": {
+       "name": "Kalif Raymond",
+       "books": {
+        "draftkings": 550,
+        "fanduel": 500,
+        "betonlineag": 400,
+        "betmgm": 525,
+        "bovada": 525
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372352_13L88808Q1633357284Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=14783655",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687090-5849488&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 550,
+       "bestBook": "draftkings",
+       "consensus": 525
+      },
+      "philadelphia eagles dst": {
+       "name": "Philadelphia Eagles D/ST",
+       "books": {
+        "draftkings": 600,
+        "bovada": 600
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372370_14L88808Q11573612678Q20",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 600,
+       "bestBook": "draftkings",
+       "consensus": 600
+      },
+      "cole kmet": {
+       "name": "Cole Kmet",
+       "books": {
+        "draftkings": 700,
+        "fanduel": 700,
+        "betonlineag": 700,
+        "betmgm": 825,
+        "bovada": 700
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372353_13L88808Q1-1982448170Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=26920153",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687051-5849408&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 825,
+       "bestBook": "betmgm",
+       "consensus": 700
+      },
+      "johnny mundt": {
+       "name": "Johnny Mundt",
+       "books": {
+        "draftkings": 750,
+        "fanduel": 650,
+        "betonlineag": 290,
+        "betmgm": 625,
+        "bovada": 725
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372365_13L88808Q1880735665Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=9147098",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687079-5849462&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 750,
+       "bestBook": "draftkings",
+       "consensus": 650
+      },
+      "chicago bears dst": {
+       "name": "Chicago Bears D/ST",
+       "books": {
+        "draftkings": 750,
+        "bovada": 725
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372369_13L88808Q11487075913Q20",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 750,
+       "bestBook": "draftkings",
+       "consensus": 738
+      },
+      "darius cooper": {
+       "name": "Darius Cooper",
+       "books": {
+        "draftkings": 1400,
+        "fanduel": 1100,
+        "betonlineag": 1100,
+        "betmgm": 1550,
+        "bovada": 1400
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372368_13L88808Q11627968604Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=88027551",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687097-5849498&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 1550,
+       "bestBook": "betmgm",
+       "consensus": 1400
+      },
+      "elijah moore": {
+       "name": "Elijah Moore",
+       "books": {
+        "draftkings": 1700,
+        "fanduel": 1500,
+        "betonlineag": 1400,
+        "bovada": 1700
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232295617852_13L88808Q1278563167Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=39323492",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 1700,
+       "bestBook": "draftkings",
+       "consensus": 1600
+      },
+      "jahdae walker": {
+       "name": "Jahdae Walker",
+       "books": {
+        "draftkings": 1800,
+        "fanduel": 2200,
+        "betonlineag": 1700,
+        "betmgm": 2800,
+        "bovada": 1800
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372354_13L88808Q1-1770507643Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=72056132",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687086-5849476&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 2800,
+       "bestBook": "betmgm",
+       "consensus": 1800
+      },
+      "ej jenkins": {
+       "name": "E.J. Jenkins",
+       "books": {
+        "draftkings": 2200,
+        "fanduel": 2000,
+        "betonlineag": 900,
+        "betmgm": 2800,
+        "bovada": 2200
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372367_13L88808Q166034305Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=48233799",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687065-5849434&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 2800,
+       "bestBook": "betmgm",
+       "consensus": 2200
+      },
+      "britain covey": {
+       "name": "Britain Covey",
+       "books": {
+        "draftkings": 2200,
+        "fanduel": 2200,
+        "betonlineag": 1900,
+        "betmgm": 4500,
+        "bovada": 2200
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232295557644_13L88808Q11205947555Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=41915986",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687050-5849404&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 4500,
+       "bestBook": "betmgm",
+       "consensus": 2200
+      },
+      "roschon johnson": {
+       "name": "Roschon Johnson",
+       "books": {
+        "draftkings": 3500,
+        "fanduel": 3500,
+        "betonlineag": 1900,
+        "betmgm": 2200,
+        "bovada": 3300
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372355_13L88808Q11750193742Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=48274474",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687047-5849396&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 3500,
+       "bestBook": "draftkings",
+       "consensus": 3300
+      },
+      "zavion thomas": {
+       "name": "Zavion Thomas",
+       "books": {
+        "draftkings": 3500,
+        "fanduel": 4500,
+        "betonlineag": 3400,
+        "betmgm": 6000,
+        "bovada": 3300
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372356_13L88808Q1266242460Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=60265436",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687055-5849414&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 6000,
+       "bestBook": "betmgm",
+       "consensus": 3500
+      },
+      "sam roush": {
+       "name": "Sam Roush",
+       "books": {
+        "draftkings": 3500,
+        "fanduel": 2700,
+        "betonlineag": 1700,
+        "betmgm": 2200,
+        "bovada": 3300
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372357_13L88808Q1519659230Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=48333013",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687088-5849480&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+       },
+       "best": 3500,
+       "bestBook": "draftkings",
+       "consensus": 2700
+      },
+      "philadelphia eagles defense": {
+       "name": "Philadelphia Eagles Defense",
+       "books": {
+        "fanduel": 750
+       },
+       "links": {
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=48074615"
+       },
+       "best": 750,
+       "bestBook": "fanduel",
+       "consensus": 750
+      },
+      "chicago bears defense": {
+       "name": "Chicago Bears Defense",
+       "books": {
+        "fanduel": 800
+       },
+       "links": {
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=48074768"
+       },
+       "best": 800,
+       "bestBook": "fanduel",
+       "consensus": 800
+      },
+      "dallas goedert": {
+       "name": "Dallas Goedert",
+       "books": {
+        "betonlineag": 200
+       },
+       "links": {
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558"
+       },
+       "best": 200,
+       "bestBook": "betonlineag",
+       "consensus": 200
+      },
+      "tyson bagent": {
+       "name": "Tyson Bagent",
+       "books": {
+        "betonlineag": 500,
+        "betmgm": 475
+       },
+       "links": {
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687069-5849442&type=Single"
+       },
+       "best": 500,
+       "bestBook": "betonlineag",
+       "consensus": 488
+      },
+      "will shipley": {
+       "name": "Will Shipley",
+       "books": {
+        "betonlineag": 800,
+        "betmgm": 475
+       },
+       "links": {
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687096-5849496&type=Single"
+       },
+       "best": 800,
+       "bestBook": "betonlineag",
+       "consensus": 638
+      },
+      "tank bigsby": {
+       "name": "Tank Bigsby",
+       "books": {
+        "betonlineag": 290,
+        "betmgm": 300
+       },
+       "links": {
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687052-5849406&type=Single"
+       },
+       "best": 300,
+       "bestBook": "betmgm",
+       "consensus": 295
+      },
+      "hollywood brown": {
+       "name": "Hollywood Brown",
+       "books": {
+        "betonlineag": 800,
+        "betmgm": 950
+       },
+       "links": {
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687061-5849426&type=Single"
+       },
+       "best": 950,
+       "bestBook": "betmgm",
+       "consensus": 875
+      }
+     }
+    }
+   },
+   "pulls": {
+    "open": "2026-09-23T16:40:21.694Z"
+   }
   },
   {
    "id": "d55cb69fed50a09170560b5b75d8de86",

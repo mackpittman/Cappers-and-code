@@ -1,16 +1,8 @@
 {
- "fetchedAt": "2026-09-23T10:16:12.364Z",
- "sourceTimestamp": "2026-09-23T10:16:10Z",
+ "fetchedAt": "2026-09-23T20:18:36.740Z",
+ "sourceTimestamp": "2026-09-23T20:18:33Z",
  "teams": {
   "ARI": [
-   {
-    "name": "Will Johnson",
-    "pos": "CB",
-    "status": "Out",
-    "type": "out",
-    "detail": "Johnson (neck) may be forced to miss the remainder of the 2026 season, Darren Urban of the Cardinals' official site reports.",
-    "date": "2026-09-21T23:17Z"
-   },
    {
     "name": "Garrett Williams",
     "pos": "CB",
@@ -34,6 +26,14 @@
     "type": "questionable",
     "detail": "Melton (toe) is considered to be day-to-day ahead of Week 3, Howard Balzer of USA Today reports.",
     "date": "2026-09-21T23:20Z"
+   },
+   {
+    "name": "Will Johnson",
+    "pos": "CB",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "ir",
+    "date": "2026-09-23T17:08Z"
    },
    {
     "name": "Kitan Crawford",
@@ -206,20 +206,20 @@
   ],
   "ATL": [
    {
+    "name": "Samson Ebukam",
+    "pos": "DE",
+    "status": "Out",
+    "type": "out",
+    "detail": "out",
+    "date": "2026-09-23T19:58Z"
+   },
+   {
     "name": "Billy Bowman Jr.",
     "pos": "CB",
     "status": "Questionable",
     "type": "questionable",
     "detail": "questionable",
     "date": "2026-09-22T20:56Z"
-   },
-   {
-    "name": "Samson Ebukam",
-    "pos": "DE",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Ebukam (hamstring) is questionable to return to Sunday's game against the Panthers, Marc Raimondi of ESPN.com reports.",
-    "date": "2026-09-20T18:30Z"
    },
    {
     "name": "A.J. Terrell Jr.",
@@ -408,16 +408,16 @@
   ],
   "BAL": [
    {
-    "name": "Nnamdi Madubuike",
-    "pos": "DT",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
-   },
-   {
     "name": "Zay Flowers",
     "pos": "WR",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Flowers (hamstring) isn't participating in Wednesday's practice, Jamison Hensley of ESPN.com reports.",
+    "date": "2026-09-23T17:24Z"
+   },
+   {
+    "name": "Nnamdi Madubuike",
+    "pos": "DT",
     "status": "Questionable",
     "type": "questionable",
     "detail": "questionable",
@@ -610,6 +610,14 @@
   ],
   "BUF": [
    {
+    "name": "DJ Moore",
+    "pos": "WR",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Moore (shoulder) was spotted participating in Wednesday's practice while wearing a red non-contact jersey, Katherine Fitzgerald of The Buffalo News reports.",
+    "date": "2026-09-23T18:31Z"
+   },
+   {
     "name": "T.J. Sanders",
     "pos": "DT",
     "status": "Questionable",
@@ -632,14 +640,6 @@
     "type": "questionable",
     "detail": "questionable",
     "date": "2026-09-22T20:56Z"
-   },
-   {
-    "name": "DJ Moore",
-    "pos": "WR",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "The Bills are treating Moore as day-to-day after he was diagnosed with an AC joint sprain in his shoulder after exiting Thursday's 41-31 win over the Lions, Ian Rapoport of NFL Network reports.",
-    "date": "2026-09-20T14:08Z"
    },
    {
     "name": "Jude Bowry",
@@ -812,36 +812,28 @@
   ],
   "CAR": [
    {
-    "name": "Jonathon Brooks",
-    "pos": "RB",
-    "status": "Doubtful",
-    "type": "doubtful",
-    "detail": "Brooks is considered week-to-week while he receives further medical opinions on the groin injury he sustained in Sunday's 34-3 win over the Falcons, Tom Pelissero of Netflix reports.",
-    "date": "2026-09-21T20:47Z"
-   },
-   {
-    "name": "Patrick Jones II",
+    "name": "Jaelan Phillips",
     "pos": "LB",
     "status": "Questionable",
     "type": "questionable",
     "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
+    "date": "2026-09-23T19:49Z"
    },
    {
-    "name": "Bobby Brown III",
-    "pos": "DT",
+    "name": "Jalen Coker",
+    "pos": "WR",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
+    "detail": "Coker (ankle) was limited in Wednesday's practice, Joe Person of The Athletic reports.",
+    "date": "2026-09-23T19:41Z"
    },
    {
-    "name": "Trevis Gipson",
+    "name": "Devin Lloyd",
     "pos": "LB",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "Gipson is being evaluated for a possible concussion and is questionable to return to Sunday's game against the Falcons, Sheena Quick of Fox Sports Radio 1340 reports.",
-    "date": "2026-09-20T19:53Z"
+    "detail": "Lloyd recorded nine tackles (seven solo), including 1.0 sack, and three pass breakups, including a pair of interceptions, in Sunday's 34-3 win over the Falcons.",
+    "date": "2026-09-23T01:31Z"
    },
    {
     "name": "Claudin Cherelus",
@@ -860,6 +852,46 @@
     "date": "2026-09-20T17:53Z"
    },
    {
+    "name": "Jonathon Brooks",
+    "pos": "RB",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "The Panthers placed Brooks (core) on injured reserve Wednesday, Darin Gantt of the team's official site reports.",
+    "date": "2026-09-23T13:48Z"
+   },
+   {
+    "name": "AJ Dillon",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Panthers head coach Dave Canales said Wednesday that Dillon will have a \"great opportunity\" to serve as the top backup to Chuba Hubbard after Jonathon Brooks (core) was placed on injured reserve, Joe Person of The Athletic reports.",
+    "date": "2026-09-23T20:03Z"
+   },
+   {
+    "name": "Trevis Gipson",
+    "pos": "LB",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-23T19:48Z"
+   },
+   {
+    "name": "Patrick Jones II",
+    "pos": "LB",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-23T19:48Z"
+   },
+   {
+    "name": "Bobby Brown III",
+    "pos": "DT",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-23T19:48Z"
+   },
+   {
     "name": "Xavier Legette",
     "pos": "WR",
     "status": "Active",
@@ -868,28 +900,12 @@
     "date": "2026-09-23T02:31Z"
    },
    {
-    "name": "AJ Dillon",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Dillon handled three carries for minus-3 yards during Sunday's 34-3 win at Atlanta. He also recorded a tackle in punt coverage.",
-    "date": "2026-09-23T01:50Z"
-   },
-   {
     "name": "Bobby Okereke",
     "pos": "LB",
     "status": "Active",
     "type": "active",
     "detail": "Okereke recorded nine tackles (six solo) and an interception in Sunday's 34-3 win over the Falcons.",
     "date": "2026-09-23T01:44Z"
-   },
-   {
-    "name": "Devin Lloyd",
-    "pos": "LB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Lloyd recorded nine tackles (seven solo), including 1.0 sacks, and three pass breakups, including a pair of interceptions, in Sunday's 34-3 win over the Falcons.",
-    "date": "2026-09-23T01:31Z"
    },
    {
     "name": "Haynes King",
@@ -930,14 +946,6 @@
     "type": "active",
     "detail": "",
     "date": "2026-09-21T18:10Z"
-   },
-   {
-    "name": "Jalen Coker",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Coach Dave Canales said Monday that Coker will remain the team's punt returner moving forward, Kassidy Hill of the Panthers' official site reports.",
-    "date": "2026-09-21T17:57Z"
    },
    {
     "name": "Darren Waller",
@@ -1002,40 +1010,24 @@
     "type": "active",
     "detail": "Evans caught one of two targets for nine yards in Sunday's 59-37 loss to the Bears.",
     "date": "2026-09-15T00:06Z"
-   },
-   {
-    "name": "Tommy Tremble",
-    "pos": "TE",
-    "status": "Active",
-    "type": "active",
-    "detail": "Tremble caught three of his five targets for 25 yards in Sunday's 59-37 loss to the Bears.",
-    "date": "2026-09-15T00:05Z"
    }
   ],
   "CHI": [
-   {
-    "name": "Anthony Johnson Jr.",
-    "pos": "S",
-    "status": "Out",
-    "type": "out",
-    "detail": "out",
-    "date": "2026-09-23T10:01Z"
-   },
    {
     "name": "Caleb Williams",
     "pos": "QB",
     "status": "Doubtful",
     "type": "doubtful",
-    "detail": "Bears head coach Ben Johnson said that he doesn't anticipate Williams (hamstring) practicing in Week 3, though Johnson was unwilling to officially rule out the quarterback from playing Monday against the Eagles, Sean Hammond of the Chicago Tribune reports.",
-    "date": "2026-09-21T20:18Z"
+    "detail": "Coach Ben Johnson said Williams (hamstring) won't take part in Wednesday's practice, Courtney Cronin of ESPN reports.",
+    "date": "2026-09-23T17:17Z"
    },
    {
     "name": "Tyson Bagent",
     "pos": "QB",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "Bagent was diagnosed with a concussion and placed in the five-step protocol Tuesday, Ian Rapoport of NFL Network reports.",
-    "date": "2026-09-22T18:18Z"
+    "detail": "Coach Ben Johnson said Bagent (concussion) won't practice Wednesday, Kevin Fishbain of The Athletic reports.",
+    "date": "2026-09-23T17:46Z"
    },
    {
     "name": "Tyrique Stevenson Sr.",
@@ -1044,6 +1036,22 @@
     "type": "questionable",
     "detail": "Stevenson suffered a hamstring injury during Sunday's 9-3 loss to the Vikings.",
     "date": "2026-09-20T20:08Z"
+   },
+   {
+    "name": "Anthony Johnson Jr.",
+    "pos": "S",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "ir",
+    "date": "2026-09-23T20:05Z"
+   },
+   {
+    "name": "Case Keenum",
+    "pos": "QB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Keenum will work with the first-team offense at Wednesday's practice, Brad Biggs of the Chicago Tribune reports.",
+    "date": "2026-09-23T17:25Z"
    },
    {
     "name": "Sam Roush",
@@ -1068,14 +1076,6 @@
     "type": "active",
     "detail": "Edwards recorded four tackles (two solo) during Sunday's 9-3 loss versus the Vikings.",
     "date": "2026-09-23T01:39Z"
-   },
-   {
-    "name": "Case Keenum",
-    "pos": "QB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Keenum could be in line to start Monday's game against the Eagles with both Caleb Williams (hamstring) and Tyson Bagent (concussion) uncertain to be available, Courtney Cronin of ESPN.com reports.",
-    "date": "2026-09-22T19:20Z"
    },
    {
     "name": "Cairo Santos",
@@ -1216,6 +1216,14 @@
   ],
   "CIN": [
    {
+    "name": "Andrei Iosivas",
+    "pos": "WR",
+    "status": "Out",
+    "type": "out",
+    "detail": "Bengals head coach Zac Taylor said Wednesday that Iosivas tore a ligament in his thumb and will be placed on injured reserve, Ben Baby of ESPN.com reports.",
+    "date": "2026-09-23T17:29Z"
+   },
+   {
     "name": "B.J. Hill",
     "pos": "DT",
     "status": "Questionable",
@@ -1278,14 +1286,6 @@
     "type": "active",
     "detail": "Knight recorded 12 total tackles (four solo) during Sunday's 20-6 win over Houston.",
     "date": "2026-09-23T01:53Z"
-   },
-   {
-    "name": "Andrei Iosivas",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Iosivas caught his lone target for seven yards during the Bengals' 20-6 win over the Texans on Sunday.",
-    "date": "2026-09-21T22:01Z"
    },
    {
     "name": "Samaje Perine",
@@ -1418,12 +1418,36 @@
   ],
   "CLE": [
    {
-    "name": "Jeremiah Owusu-Koramoah",
+    "name": "Quincy Williams",
     "pos": "LB",
-    "status": "Out",
-    "type": "out",
-    "detail": "out",
-    "date": "2026-09-08T20:42Z"
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "questionable",
+    "date": "2026-09-23T19:52Z"
+   },
+   {
+    "name": "Tytus Howard",
+    "pos": "OT",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "questionable",
+    "date": "2026-09-23T19:52Z"
+   },
+   {
+    "name": "Mason Graham",
+    "pos": "DT",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "questionable",
+    "date": "2026-09-23T19:51Z"
+   },
+   {
+    "name": "Grant Delpit",
+    "pos": "S",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "questionable",
+    "date": "2026-09-23T19:51Z"
    },
    {
     "name": "Tyson Campbell",
@@ -1440,14 +1464,6 @@
     "type": "questionable",
     "detail": "questionable",
     "date": "2026-09-22T20:56Z"
-   },
-   {
-    "name": "Dylan Sampson",
-    "pos": "RB",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "Sampson (knee) was placed on injured reserve Tuesday.",
-    "date": "2026-09-15T19:33Z"
    },
    {
     "name": "Blake Whiteheart",
@@ -1600,22 +1616,6 @@
     "type": "active",
     "detail": "Jenkins (back) does not carry an injury designation into Sunday's game against the Buccaneers.",
     "date": "2026-09-19T01:26Z"
-   },
-   {
-    "name": "Maliek Collins",
-    "pos": "DT",
-    "status": "Active",
-    "type": "active",
-    "detail": "",
-    "date": "2026-09-18T20:07Z"
-   },
-   {
-    "name": "Dawand Jones",
-    "pos": "OT",
-    "status": "Active",
-    "type": "active",
-    "detail": "",
-    "date": "2026-09-17T20:08Z"
    }
   ],
   "DAL": [
@@ -1838,28 +1838,36 @@
     "date": "2026-08-31T23:24Z"
    },
    {
-    "name": "Marvin Mims Jr.",
-    "pos": "WR",
+    "name": "J.K. Dobbins",
+    "pos": "RB",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
+    "detail": "Dobbins, who exited Sunday's 20-13 win over the Jaguars due to a hamstring injury, is expected to practice this week, Adam Schefter of ESPN reports.",
+    "date": "2026-09-23T19:01Z"
    },
    {
     "name": "RJ Harvey",
     "pos": "RB",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
+    "detail": "Harvey is continuing to make progress in his recovery from the hamstring injury that sidelined him for the Broncos' Week 2 win over the Jaguars, Adam Schefter of ESPN reports.",
+    "date": "2026-09-23T18:57Z"
    },
    {
-    "name": "J.K. Dobbins",
+    "name": "Jonah Coleman",
     "pos": "RB",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "The Broncos believe that Dobbins' injured hamstring is \"good\" heading into next Sunday's game against the Rams, Tom Pelissero of Netflix reports.",
-    "date": "2026-09-21T17:00Z"
+    "detail": "Coleman is tending to a sprained ankle, which he sustained in Sunday's 20-13 win over Jacksonville, Adam Schefter of ESPN reports.",
+    "date": "2026-09-23T18:53Z"
+   },
+   {
+    "name": "Marvin Mims Jr.",
+    "pos": "WR",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "questionable",
+    "date": "2026-09-22T20:56Z"
    },
    {
     "name": "Frank Crum",
@@ -1924,14 +1932,6 @@
     "type": "active",
     "detail": "Lutz made both of his field-goal attempts and both PATs in Sunday's 20-13 win over the Jaguars.",
     "date": "2026-09-21T23:53Z"
-   },
-   {
-    "name": "Jonah Coleman",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Coleman rushed 10 times for 39 yards and a touchdown and brought in all three targets for 19 yards in the Broncos' 20-13 win over the Jaguars on Sunday.",
-    "date": "2026-09-21T03:29Z"
    },
    {
     "name": "Bo Nix",
@@ -2226,20 +2226,36 @@
   ],
   "GB": [
    {
+    "name": "Jayden Reed",
+    "pos": "WR",
+    "status": "Out",
+    "type": "out",
+    "detail": "Reed (neck) has been ruled out for Thursday's game against the Falcons, Wes Hodkiewicz of the Packers' official site reports.",
+    "date": "2026-09-23T20:13Z"
+   },
+   {
+    "name": "Aaron Banks",
+    "pos": "G",
+    "status": "Out",
+    "type": "out",
+    "detail": "out",
+    "date": "2026-09-23T20:04Z"
+   },
+   {
+    "name": "Warren Brinson",
+    "pos": "DT",
+    "status": "Out",
+    "type": "out",
+    "detail": "out",
+    "date": "2026-09-23T20:04Z"
+   },
+   {
     "name": "Zach Bako-Bewele",
     "pos": "OT",
     "status": "Out",
     "type": "out",
     "detail": "Bako-Bewele said he sustained a complete tear of his right patellar tendon in Sunday's 20-17 overtime win over the Jets and will undergo season-ending surgery Thursday, Matt Schneidman of The Athletic reports.",
     "date": "2026-09-22T18:32Z"
-   },
-   {
-    "name": "Jayden Reed",
-    "pos": "WR",
-    "status": "Doubtful",
-    "type": "doubtful",
-    "detail": "Packers head coach Matt LaFleur said Tuesday that Reed has returned to Green Bay to undergo further testing and consultations with doctors for his neck injury, Ryan Wood of USA Today. The wide receiver remains without a timeline for a return.",
-    "date": "2026-09-22T22:16Z"
    },
    {
     "name": "Javon Hargrave",
@@ -2250,22 +2266,6 @@
     "date": "2026-09-22T20:56Z"
    },
    {
-    "name": "Warren Brinson",
-    "pos": "DT",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
-   },
-   {
-    "name": "Anthony Belton",
-    "pos": "OT",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:32Z"
-   },
-   {
     "name": "Anthony Campbell",
     "pos": "DT",
     "status": "Questionable",
@@ -2274,28 +2274,36 @@
     "date": "2026-09-22T01:07Z"
    },
    {
-    "name": "Donovan Jennings",
-    "pos": "G",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Jennings (hand) did not participate in Monday's estimated practice, Tom Silverstein of the Milwaukee Journal Sentinel reports.",
-    "date": "2026-09-22T01:00Z"
+    "name": "Anthony Belton",
+    "pos": "OT",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-23T20:05Z"
    },
    {
-    "name": "Edgerrin Cooper",
-    "pos": "LB",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Cooper (shoulder) was listed as a limited participant on the Packers' estimated injury report Monday.",
-    "date": "2026-09-21T23:30Z"
+    "name": "Donovan Jennings",
+    "pos": "G",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-23T20:05Z"
    },
    {
     "name": "Brandon Cisse",
     "pos": "CB",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-21T21:12Z"
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-23T20:05Z"
+   },
+   {
+    "name": "Edgerrin Cooper",
+    "pos": "LB",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-23T20:04Z"
    },
    {
     "name": "Skyy Moore",
@@ -2416,17 +2424,17 @@
     "type": "active",
     "detail": "Watson caught four of 11 targets for 41 yards and a touchdown in Sunday's 20-17 overtime win over the Jets.",
     "date": "2026-09-20T22:51Z"
-   },
-   {
-    "name": "Jordan Love",
-    "pos": "QB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Love completed 16 of 29 passes for 145 yards and two touchdowns in Sunday's 20-17 overtime win over the Jets.",
-    "date": "2026-09-20T22:49Z"
    }
   ],
   "HOU": [
+   {
+    "name": "Nico Collins",
+    "pos": "WR",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Collins (hamstring) wasn't spotted at the media-access portion of Wednesday's practice, DJ Bien-Aime of ESPN.com reports.",
+    "date": "2026-09-23T18:05Z"
+   },
    {
     "name": "Jake Hummel",
     "pos": "LB",
@@ -2446,14 +2454,6 @@
    {
     "name": "Jadeveon Clowney",
     "pos": "DE",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
-   },
-   {
-    "name": "Nico Collins",
-    "pos": "WR",
     "status": "Questionable",
     "type": "questionable",
     "detail": "questionable",
@@ -2488,7 +2488,7 @@
     "pos": "WR",
     "status": "Active",
     "type": "active",
-    "detail": "Noel caught one pass on five targets and added a 13-yard carry during the Texans' 20-6 loss to the Bengals on Sunday. He also returned three punts for 32 yards and one kickoff for 31 yards.",
+    "detail": "Noel caught one pass on five targets for 31 yards and added a 13-yard carry during the Texans' 20-6 loss to the Bengals on Sunday. He also returned three punts for 32 yards and one kickoff for 31 yards.",
     "date": "2026-09-23T02:40Z"
    },
    {
@@ -2632,22 +2632,14 @@
    {
     "name": "Alec Pierce",
     "pos": "WR",
-    "status": "Doubtful",
-    "type": "doubtful",
-    "detail": "Pierce will try to rehab his injured left heel without surgery and is expected to miss several weeks before potentially returning around midseason if all goes well, Ian Rapoport of NFL Network reports.",
-    "date": "2026-09-22T01:03Z"
+    "status": "Out",
+    "type": "out",
+    "detail": "Colts head coach Shane Steichen said Wednesday that Pierce (heel) will be placed on injured reserve and is without a timeline for a return, Kevin Bowen of 107.5 The Fan Indianapolis reports.",
+    "date": "2026-09-23T15:37Z"
    },
    {
     "name": "Ashton Dulin",
     "pos": "WR",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
-   },
-   {
-    "name": "DJ Giddens",
-    "pos": "RB",
     "status": "Questionable",
     "type": "questionable",
     "detail": "questionable",
@@ -2668,6 +2660,14 @@
     "type": "Injured Reserve",
     "detail": "Clemons (toe) was placed on injured reserve by the Colts on Tuesday.",
     "date": "2026-09-23T00:30Z"
+   },
+   {
+    "name": "DJ Giddens",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-23T19:54Z"
    },
    {
     "name": "Laquon Treadwell",
@@ -2852,7 +2852,7 @@
     "pos": "RB",
     "status": "Active",
     "type": "active",
-    "detail": "Abdullah posted three rushes for 11 yards and caught his only target for two yards during Sunday's 20-13 defeat versus the Broncos.",
+    "detail": "Abdullah carried the ball three times for 11 yards and caught his only target for two yards during Sunday's 20-13 loss to the Broncos.",
     "date": "2026-09-23T03:47Z"
    },
    {
@@ -3236,6 +3236,14 @@
   ],
   "LV": [
    {
+    "name": "Brock Bowers",
+    "pos": "TE",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Head coach Klint Kubiak said Bowers (knee) will practice Wednesday and termed the tight end \"day-to-day,\" Ryan McFadden of ESPN.com reports.",
+    "date": "2026-09-23T18:00Z"
+   },
+   {
     "name": "Darien Porter",
     "pos": "CB",
     "status": "Questionable",
@@ -3246,14 +3254,6 @@
    {
     "name": "Aidan O'Connell",
     "pos": "QB",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
-   },
-   {
-    "name": "Brock Bowers",
-    "pos": "TE",
     "status": "Questionable",
     "type": "questionable",
     "detail": "questionable",
@@ -3288,7 +3288,7 @@
     "pos": "CB",
     "status": "Active",
     "type": "active",
-    "detail": "Masses made five tackles (four solo) and had two passes defensed for two interceptions in Sunday's 26-14 win over the Chargers.",
+    "detail": "Masses recorded five tackles (four solo) and two interceptions in Sunday's 26-14 win over the Chargers.",
     "date": "2026-09-23T01:30Z"
    },
    {
@@ -3442,16 +3442,16 @@
     "pos": "TE",
     "status": "Out",
     "type": "out",
-    "detail": "Kolar plans to undergo surgery to repair a broken forearm and is hopeful to return from injured reserve when first eligible for the Chargers' No. 1 game against the Rams, Jeremy Fowler of ESPN.com reports.",
-    "date": "2026-09-22T21:50Z"
+    "detail": "Chargers head coach Jim Harbaugh said Wednesday that Kolar (forearm) won't play Sunday in Buffalo but is expected to avoid placement on injured reserve, Kris Rhim of ESPN.com reports.",
+    "date": "2026-09-23T18:46Z"
    },
    {
-    "name": "David Njoku",
-    "pos": "TE",
-    "status": "Out",
-    "type": "out",
-    "detail": "Head coach Jim Harbaugh told reporters Monday that Njoku (fibula) and Charlie Kolar (forearm) will both go on injured reserve, Kris Rhim of ESPN.com reports.",
-    "date": "2026-09-21T21:46Z"
+    "name": "Kayode Awosika",
+    "pos": "G",
+    "status": "Doubtful",
+    "type": "doubtful",
+    "detail": "doubtful",
+    "date": "2026-09-23T19:11Z"
    },
    {
     "name": "Dalvin Tomlinson",
@@ -3460,6 +3460,14 @@
     "type": "doubtful",
     "detail": "Tomlinson is in line to miss time after sustaining a hamstring injury during Sunday's game versus the Raiders, Noah Furtado of The Athletic reports.",
     "date": "2026-09-22T01:20Z"
+   },
+   {
+    "name": "Brenen Thompson",
+    "pos": "WR",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "questionable",
+    "date": "2026-09-23T19:20Z"
    },
    {
     "name": "Deane Leonard",
@@ -3486,14 +3494,6 @@
     "date": "2026-09-22T20:56Z"
    },
    {
-    "name": "Kayode Awosika",
-    "pos": "G",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Awosika is expected to miss time after injuring his fibula during Sunday's game versus the Raiders, Noah Furtado of The Athletic reports.",
-    "date": "2026-09-22T01:15Z"
-   },
-   {
     "name": "Derwin James Jr.",
     "pos": "S",
     "status": "Questionable",
@@ -3502,20 +3502,20 @@
     "date": "2026-09-20T20:42Z"
    },
    {
+    "name": "David Njoku",
+    "pos": "TE",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "The Chargers placed Njoku (fibula) on injured reserve Wednesday.",
+    "date": "2026-09-23T19:36Z"
+   },
+   {
     "name": "Kimani Vidal",
     "pos": "RB",
     "status": "Active",
     "type": "active",
-    "detail": "Vidal had zero rushes during Sunday's 26-14 defeat against Las Vegas.",
+    "detail": "Vidal didn't get a touch during Sunday's 26-14 loss to Las Vegas.",
     "date": "2026-09-23T04:15Z"
-   },
-   {
-    "name": "Brenen Thompson",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Thompson caught one of his three targets for 13 yards in Sunday's 26-14 loss to the Raiders.",
-    "date": "2026-09-23T03:54Z"
    },
    {
     "name": "Daiyan Henley",
@@ -3842,6 +3842,14 @@
   ],
   "MIA": [
    {
+    "name": "Caleb Douglas",
+    "pos": "WR",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Dolphins head coach Jeff Hafley said that Douglas (ankle) won't practice Wednesday, C. Isaiah Smalls II of the Miami Herald reports.",
+    "date": "2026-09-23T16:44Z"
+   },
+   {
     "name": "Chop Robinson",
     "pos": "LB",
     "status": "Questionable",
@@ -3856,14 +3864,6 @@
     "type": "questionable",
     "detail": "Wright (neck) is day-to-day heading into Week 3, David Furones of the South Florida Sun Sentinel reports.",
     "date": "2026-09-21T23:07Z"
-   },
-   {
-    "name": "Caleb Douglas",
-    "pos": "WR",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Dolphins head coach Jeff Hafley said Monday that it's \"too early to tell\" the severity of the ankle injury Douglas sustained in Sunday's 35-13 loss to the 49ers, C. Isaiah Smalls II of the Miami Herald reports.",
-    "date": "2026-09-21T20:56Z"
    },
    {
     "name": "Robert Beal Jr.",
@@ -4044,6 +4044,14 @@
   ],
   "MIN": [
    {
+    "name": "Aaron Jones Sr.",
+    "pos": "RB",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Jones (undisclosed) won't participate in Wednesday's practice, Alec Lewis of The Athletic reports.",
+    "date": "2026-09-23T18:41Z"
+   },
+   {
     "name": "Jauan Jennings",
     "pos": "WR",
     "status": "Questionable",
@@ -4202,14 +4210,6 @@
     "type": "active",
     "detail": "Reichard made all three of his field-goal attempts during the Vikings' 9-3 win over the Bears on Sunday.",
     "date": "2026-09-20T23:53Z"
-   },
-   {
-    "name": "Aaron Jones Sr.",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Jones carried the ball 23 times for 105 yards in Sunday's 9-3 win over the Bears.",
-    "date": "2026-09-20T21:34Z"
    },
    {
     "name": "Justin Jefferson",
@@ -4448,14 +4448,6 @@
   ],
   "NO": [
    {
-    "name": "Kelvin Banks Jr.",
-    "pos": "OT",
-    "status": "Out",
-    "type": "out",
-    "detail": "Banks is expected to undergo surgery for a high-ankle sprain and is out indefinitely, Ian Rapoport of NFL Network reports.",
-    "date": "2026-09-21T21:21Z"
-   },
-   {
     "name": "Isaiah Stalbird",
     "pos": "LB",
     "status": "Questionable",
@@ -4478,6 +4470,14 @@
     "type": "questionable",
     "detail": "Coach Kellen Moore said Monday that Emerson is \"day-to-day\" after injuring his shoulder in Week 2 at Baltimore, Ross Jackson of WWL Louisiana reports.",
     "date": "2026-09-22T00:34Z"
+   },
+   {
+    "name": "Kelvin Banks Jr.",
+    "pos": "OT",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "ir",
+    "date": "2026-09-23T17:36Z"
    },
    {
     "name": "Zach Wood",
@@ -4516,7 +4516,7 @@
     "pos": "LB",
     "status": "Active",
     "type": "active",
-    "detail": "Werner recorded 11 tackles (eight solo) including 1.0 sacks during Sunday's 24-17 win at Baltimore.",
+    "detail": "Werner recorded 11 tackles (eight solo), including 1.0 sacks, during Sunday's 24-17 win at Baltimore.",
     "date": "2026-09-23T01:31Z"
    },
    {
@@ -4652,10 +4652,10 @@
    {
     "name": "Jaxson Dart",
     "pos": "QB",
-    "status": "Doubtful",
-    "type": "doubtful",
-    "detail": "Dart is facing the possibility of season-ending surgery after further testing Tuesday revealed that the left knee injury he sustained in Monday's 28-6 loss to the Rams is worse than originally anticipated, Adam Schefter of ESPN reports.",
-    "date": "2026-09-22T18:50Z"
+    "status": "Out",
+    "type": "out",
+    "detail": "Dart is expected to undergo knee surgery that will end his 2026 season but lead to a full recovery heading into 2027, Ian Rapoport and Mike Garafolo of NFL Network report.",
+    "date": "2026-09-23T16:04Z"
    },
    {
     "name": "Brian Burns",
@@ -4734,7 +4734,7 @@
     "pos": "PK",
     "status": "Active",
     "type": "active",
-    "detail": "Zvada made both of his field-goal attempts in Monday night's loss to the Rams.",
+    "detail": "Zvada made both of his field-goal attempts in Monday's 28-6 loss to the Rams.",
     "date": "2026-09-22T23:39Z"
    },
    {
@@ -4856,8 +4856,16 @@
     "pos": "TE",
     "status": "Doubtful",
     "type": "doubtful",
-    "detail": "Taylor (thumb) is considered week-to-week and will likely miss Sunday's game against the Lions, Ian Rapoport of NFL Network reports.",
-    "date": "2026-09-22T22:08Z"
+    "detail": "Jets head coach Aaron Glenn said that Taylor (thumb) won't participate in Wednesday's practice, Rich Cimini of ESPN.com reports.",
+    "date": "2026-09-23T17:42Z"
+   },
+   {
+    "name": "David Bailey",
+    "pos": "LB",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "questionable",
+    "date": "2026-09-23T17:13Z"
    },
    {
     "name": "Kene Nwangwu",
@@ -5042,14 +5050,6 @@
     "type": "active",
     "detail": "Hall rushed 16 times for 29 yards while catching all five of his targets for 63 yards in Sunday's 20-17 overtime loss to the Packers.",
     "date": "2026-09-20T21:06Z"
-   },
-   {
-    "name": "Will McDonald IV",
-    "pos": "DE",
-    "status": "Active",
-    "type": "active",
-    "detail": "McDonald (ankle) is active for Sunday's Week 2 matchup against the Packers.",
-    "date": "2026-09-20T15:41Z"
    }
   ],
   "PHI": [
@@ -5084,14 +5084,6 @@
     "type": "Injured Reserve",
     "detail": "The Eagles placed Dickerson (knee) on injured reserve Tuesday, Chris McPherson of the team's official site reports.",
     "date": "2026-09-16T00:56Z"
-   },
-   {
-    "name": "Zach Ertz",
-    "pos": "TE",
-    "status": "Active",
-    "type": "active",
-    "detail": "",
-    "date": "2026-09-23T07:01Z"
    },
    {
     "name": "Darius Cooper",
@@ -5132,6 +5124,14 @@
     "type": "active",
     "detail": "Campbell recorded 10 total tackles (six solo) and a forced fumble during Sunday's 24-20 win over the Titans.",
     "date": "2026-09-23T01:17Z"
+   },
+   {
+    "name": "Zach Ertz",
+    "pos": "TE",
+    "status": "Active",
+    "type": "active",
+    "detail": "Ertz signed with the Eagles' practice squad Tuesday, Chris McPherson of the team's official site reports.",
+    "date": "2026-09-22T17:21Z"
    },
    {
     "name": "Jake Elliott",
@@ -5260,16 +5260,24 @@
     "pos": "RB",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "Dowdle \"checked out relatively OK\" after undergoing testing on his toe injury Tuesday and is considered day-to-day, Ian Rapoport of NFL Network reports.",
-    "date": "2026-09-22T21:43Z"
+    "detail": "Dowdle (toe) isn't participating in practice Wednesday and was seen wearing a boot on his right foot, Mike DeFabo of The Athletic reports.",
+    "date": "2026-09-23T17:17Z"
+   },
+   {
+    "name": "Jaylen Warren",
+    "pos": "RB",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Warren wasn't involved in the open portion of Wednesday's practice and appears likely to be listed as a non-participant on the Steelers' first Week 3 injury report, Brooke Pryor of ESPN.com reports.",
+    "date": "2026-09-23T17:01Z"
    },
    {
     "name": "Michael Pittman Jr.",
     "pos": "WR",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
+    "detail": "Steelers head coach Mike McCarthy said Pittman (foot) will practice Wednesday and is likely to be a limited participant, Brooke Pryor of ESPN.com reports.",
+    "date": "2026-09-23T15:50Z"
    },
    {
     "name": "Joey Porter Jr.",
@@ -5392,14 +5400,6 @@
     "date": "2026-09-20T21:30Z"
    },
    {
-    "name": "Jaylen Warren",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Warren rushed 11 times for 43 yards and caught two of four targets for 34 yards in Sunday's 20-3 loss to the Patriots.",
-    "date": "2026-09-20T21:24Z"
-   },
-   {
     "name": "Troy Fautanu",
     "pos": "OT",
     "status": "Active",
@@ -5482,6 +5482,14 @@
     "date": "2026-09-21T23:34Z"
    },
    {
+    "name": "Mike Evans",
+    "pos": "WR",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Evans (hip) won't practice Wednesday, Vic Tafur of The Athletic reports.",
+    "date": "2026-09-23T19:49Z"
+   },
+   {
     "name": "Romello Height",
     "pos": "DE",
     "status": "Questionable",
@@ -5490,20 +5498,20 @@
     "date": "2026-09-22T00:47Z"
    },
    {
-    "name": "Mike Evans",
-    "pos": "WR",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "San Francisco head coach Kyle Shanahan said that Evans (hip) will \"have to be managed this week\" leading up to Sunday's game against the Cardinals, Nick Wagoner of ESPN.com reports.",
-    "date": "2026-09-21T20:33Z"
-   },
-   {
     "name": "Jack Jones",
     "pos": "CB",
     "status": "Questionable",
     "type": "questionable",
     "detail": "Jones (foot) is questionable to return to Sunday's game against the Dolphins, Nick Wagoner of ESPN.com reports.",
     "date": "2026-09-20T22:00Z"
+   },
+   {
+    "name": "C.J. West",
+    "pos": "DT",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "ir",
+    "date": "2026-09-23T19:23Z"
    },
    {
     "name": "De'Zhaun Stribling",
@@ -5550,7 +5558,7 @@
     "pos": "S",
     "status": "Active",
     "type": "active",
-    "detail": "Sigle recorded seven tackles (three solo) including 1.0 sacks during Sunday's 35-13 win versus the Dolphins.",
+    "detail": "Sigle recorded seven tackles (three solo), including 1.0 sacks, during Sunday's 35-13 win versus the Dolphins.",
     "date": "2026-09-23T01:12Z"
    },
    {
@@ -5648,14 +5656,6 @@
     "type": "active",
     "detail": "Rourke (coach's decision) is inactive for Sunday's game against the Dolphins but will serve as the emergency third quarterback.",
     "date": "2026-09-20T19:42Z"
-   },
-   {
-    "name": "Keion White",
-    "pos": "DE",
-    "status": "Active",
-    "type": "active",
-    "detail": "",
-    "date": "2026-09-18T22:28Z"
    }
   ],
   "SEA": [
@@ -5664,8 +5664,16 @@
     "pos": "RB",
     "status": "Out",
     "type": "out",
-    "detail": "Coach Mike Macdonald said Friday that the Seahawks are drawing closer to setting a date for Charbonnet (knee) to resume practicing, Gregg Bell of The Tacoma News Tribune reports.",
-    "date": "2026-09-18T20:50Z"
+    "detail": "Head coach Mike Macdonald said Wednesday that the Seahawks won't open Charbonnet's (knee) practice window this week, John Boyle of the team's official site reports.",
+    "date": "2026-09-23T19:41Z"
+   },
+   {
+    "name": "Jadarian Price",
+    "pos": "RB",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Price (shoulder) will practice this week, though coach Mike Macdonald said Wednesday, Curtis Crabtree of Fox 13 Seattle reports.",
+    "date": "2026-09-23T19:34Z"
    },
    {
     "name": "Sam Darnold",
@@ -5684,28 +5692,20 @@
     "date": "2026-09-22T20:56Z"
    },
    {
-    "name": "Anthony Bradford",
-    "pos": "G",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
-   },
-   {
-    "name": "Jadarian Price",
-    "pos": "RB",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Coach Mike Macdonald said Monday that Price suffered a shoulder injury during Sunday's win at Arizona, but \"it's intact and nothing serious, it seems like,\" Brady Henderson of ESPN.com reports.",
-    "date": "2026-09-21T17:38Z"
-   },
-   {
     "name": "Brandon Pili",
     "pos": "DT",
     "status": "Questionable",
     "type": "questionable",
     "detail": "Pili (concussion) has been ruled out for the remainder of Sunday's game against the Cardinals, John Boyle of the Seahawks' official site reports.",
     "date": "2026-09-20T22:11Z"
+   },
+   {
+    "name": "Anthony Bradford",
+    "pos": "G",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "ir",
+    "date": "2026-09-23T19:07Z"
    },
    {
     "name": "Nick Emmanwori",
@@ -6064,12 +6064,20 @@
   ],
   "TEN": [
    {
-    "name": "James Williams Sr.",
-    "pos": "LB",
+    "name": "Tyjae Spears",
+    "pos": "RB",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
+    "detail": "Titans head coach Robert Saleh said that Spears won't practice Wednesday due to unspecified soreness, Turron Davenport of ESPN.com reports.",
+    "date": "2026-09-23T16:37Z"
+   },
+   {
+    "name": "Tony Pollard",
+    "pos": "RB",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Titans head coach Robert Saleh said that Pollard won't practice Wednesday due to unspecified soreness, Turron Davenport of ESPN.com reports.",
+    "date": "2026-09-23T16:32Z"
    },
    {
     "name": "Cor'Dale Flott",
@@ -6080,12 +6088,20 @@
     "date": "2026-09-22T20:56Z"
    },
    {
+    "name": "James Williams Sr.",
+    "pos": "LB",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-23T16:39Z"
+   },
+   {
     "name": "Fernando Carmona",
     "pos": "G",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Carmona suffered a shoulder injury during Sunday's 24-20 loss to the Eagles, Terry McCormick of TitanInsider.com reports.",
-    "date": "2026-09-20T20:21Z"
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-23T16:30Z"
    },
    {
     "name": "Marcus Harris",
@@ -6134,14 +6150,6 @@
     "type": "active",
     "detail": "Ridley caught both of his targets for 35 yards during the Titans' 24-20 loss to the Eagles on Sunday.",
     "date": "2026-09-22T00:21Z"
-   },
-   {
-    "name": "Tyjae Spears",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Spears turned seven carries into 41 yards and brought in both of his targets for 29 yards during the Titans' 24-20 loss to the Eagles on Sunday.",
-    "date": "2026-09-22T00:14Z"
    },
    {
     "name": "Brandon Crenshaw-Dickson",
@@ -6208,14 +6216,6 @@
     "date": "2026-09-21T00:03Z"
    },
    {
-    "name": "Tony Pollard",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Pollard carried the ball 14 times for 64 yards and caught his only target for one yard in Sunday's 24-20 loss to the Eagles.",
-    "date": "2026-09-20T23:55Z"
-   },
-   {
     "name": "Cam Ward",
     "pos": "QB",
     "status": "Active",
@@ -6266,24 +6266,32 @@
   ],
   "WSH": [
    {
-    "name": "Jayden Daniels",
-    "pos": "QB",
-    "status": "Doubtful",
-    "type": "doubtful",
-    "detail": "Daniels (elbow) underwent imaging Monday and will consult with multiple experts over the next few days, Ian Rapoport of NFL Network reports.",
-    "date": "2026-09-21T19:15Z"
+    "name": "Nick Cross",
+    "pos": "S",
+    "status": "Out",
+    "type": "out",
+    "detail": "out",
+    "date": "2026-09-23T16:56Z"
    },
    {
-    "name": "Frankie Luvu",
-    "pos": "LB",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-09-22T20:56Z"
+    "name": "Jayden Daniels",
+    "pos": "QB",
+    "status": "Out",
+    "type": "out",
+    "detail": "Commanders head coach Dan Quinn confirmed that Daniels will be out for Sunday's game against the Seahawks, but the quarterback remains without a precise timeline for a return while he continues to receive more medical opinions on his left elbow injury, Ben Standig of The Team 980 Washington D.C. reports.",
+    "date": "2026-09-23T16:55Z"
    },
    {
     "name": "Chig Okonkwo",
     "pos": "TE",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Commanders head coach Dan Quinn implied that Okonkwo (hamstring) will be a non-participant for Wednesday's practice, Tashan Reed of The Washington Post reports.",
+    "date": "2026-09-23T18:08Z"
+   },
+   {
+    "name": "Frankie Luvu",
+    "pos": "LB",
     "status": "Questionable",
     "type": "questionable",
     "detail": "questionable",
@@ -6304,14 +6312,6 @@
     "type": "questionable",
     "detail": "Cosmi suffered a concussion in Sunday's 37-20 loss to the Cowboys, Nicki Jhabvala of The Athletic reports.",
     "date": "2026-09-22T00:25Z"
-   },
-   {
-    "name": "Nick Cross",
-    "pos": "S",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Cross (undisclosed) stayed in Dallas overnight Sunday due to an internal injury, and his status for Week 3 against the Seahawks is up in the air, Ben Standig of Big 100 Washington D.C. reports.",
-    "date": "2026-09-21T21:33Z"
    },
    {
     "name": "Javon Kinlaw",
