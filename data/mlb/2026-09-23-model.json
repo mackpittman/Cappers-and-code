@@ -1,0 +1,907 @@
+{
+ "date": "2026-09-23",
+ "marketWeight": 0.65,
+ "league": 8.9644,
+ "games": [
+  {
+   "id": "NYM@TEX",
+   "kickoff": "2026-09-24T00:05:00Z",
+   "minutes": 29,
+   "venue": "Globe Life Field",
+   "park": 0.949,
+   "rlShare": {
+    "pWin": 0.5011,
+    "market": 0.7544,
+    "model": 0.6661,
+    "gap": 0.0883
+   },
+   "weather": {
+    "temperature": 94,
+    "gust": 12,
+    "precipitation": 25,
+    "conditionId": "Mostly cloudy"
+   },
+   "away": "NYM",
+   "home": "TEX",
+   "pitchers": {
+    "away": "Nolan McLean (R)",
+    "home": "Cody Bradford (L)"
+   },
+   "market": {
+    "fairTotal": 7.996,
+    "favWinProb": 0.5011,
+    "away": 3.992,
+    "home": 4.003
+   },
+   "model": {
+    "away": 4.1081285755518735,
+    "home": 3.6042208599608623
+   },
+   "final": {
+    "away": 4.032645001443155,
+    "home": 3.8634273009863014
+   },
+   "priced": {
+    "runs": {
+     "away": 4.033,
+     "home": 3.863,
+     "total": 7.896
+    },
+    "ml": {
+     "away": 0.5173,
+     "home": 0.4827
+    },
+    "runLine": {
+     "homeMinus": 0.3154,
+     "awayMinus": 0.3474,
+     "homePlus": 0.6526,
+     "awayPlus": 0.6846
+    },
+    "total": {
+     "over": 0.3926,
+     "push": 0.1036,
+     "under": 0.5038
+    }
+   },
+   "legs": [
+    {
+     "key": "NYM ML",
+     "prob": 0.5173,
+     "floor": 0.5081,
+     "price": -109,
+     "push": 0,
+     "conditional": 0.5173,
+     "breakEven": 0.5215,
+     "edge": -0.0042,
+     "ev": -0.0081,
+     "fair": -107,
+     "robustEdge": -0.0134,
+     "trusted": true,
+     "game": "NYM@TEX"
+    },
+    {
+     "key": "TEX ML",
+     "prob": 0.4827,
+     "floor": 0.4726,
+     "price": -110,
+     "push": 0,
+     "conditional": 0.4827,
+     "breakEven": 0.5238,
+     "edge": -0.0411,
+     "ev": -0.0785,
+     "fair": 107,
+     "robustEdge": -0.0512,
+     "trusted": true,
+     "game": "NYM@TEX"
+    },
+    {
+     "kind": "runline",
+     "key": "NYM -1.5",
+     "prob": 0.3474,
+     "floor": 0.3339,
+     "price": 153,
+     "push": 0,
+     "conditional": 0.3474,
+     "breakEven": 0.3953,
+     "edge": -0.0479,
+     "ev": -0.1211,
+     "fair": 188,
+     "robustEdge": -0.0614,
+     "trusted": false,
+     "game": "NYM@TEX"
+    },
+    {
+     "kind": "runline",
+     "key": "TEX +1.5",
+     "prob": 0.6526,
+     "floor": 0.6379,
+     "price": -186,
+     "push": 0,
+     "conditional": 0.6526,
+     "breakEven": 0.6503,
+     "edge": 0.0023,
+     "ev": 0.0035,
+     "fair": -188,
+     "robustEdge": -0.0124,
+     "trusted": false,
+     "game": "NYM@TEX"
+    },
+    {
+     "key": "Over 8",
+     "prob": 0.3926,
+     "push": 0.1036,
+     "floor": 0.3495,
+     "pushFloor": 0.1078,
+     "price": -108,
+     "conditional": 0.438,
+     "breakEven": 0.5192,
+     "edge": -0.0813,
+     "ev": -0.1403,
+     "fair": 128,
+     "robustEdge": -0.1275,
+     "trusted": true,
+     "game": "NYM@TEX"
+    },
+    {
+     "key": "Under 8",
+     "prob": 0.5038,
+     "push": 0.1036,
+     "floor": 0.4813,
+     "pushFloor": 0.1078,
+     "price": -112,
+     "conditional": 0.562,
+     "breakEven": 0.5283,
+     "edge": 0.0337,
+     "ev": 0.0572,
+     "fair": -128,
+     "robustEdge": 0.0112,
+     "trusted": true,
+     "game": "NYM@TEX"
+    }
+   ],
+   "detail": {
+    "awayOff": {
+     "index": 0.9322882184993898,
+     "platoon": 0.963448783273759,
+     "base": 0.9676572690574304
+    },
+    "homeOff": {
+     "index": 0.9173661626234184,
+     "platoon": 0.9589845374905266,
+     "base": 0.9566016205266299
+    },
+    "awayPit": {
+     "index": 1.0359442588965688,
+     "sp": 1.0023353065250653,
+     "bp": 1.0893502654047111,
+     "share": 0.6137566137566137
+    },
+    "homePit": {
+     "index": 0.9236580831650599,
+     "sp": 0.9016964989052926,
+     "bp": 0.9626173319546473,
+     "share": 0.6395061728395062
+    }
+   }
+  },
+  {
+   "id": "ARI@COL",
+   "kickoff": "2026-09-24T00:40:00Z",
+   "minutes": 64,
+   "venue": "Coors Field",
+   "park": 1.0819,
+   "rlShare": {
+    "pWin": 0.5972,
+    "market": 0.8282,
+    "model": 0.7748,
+    "gap": 0.0534
+   },
+   "weather": {
+    "temperature": 70,
+    "gust": 8,
+    "precipitation": 40,
+    "conditionId": "15"
+   },
+   "away": "ARI",
+   "home": "COL",
+   "pitchers": {
+    "away": "Merrill Kelly (R)",
+    "home": "Mason Adams (R)"
+   },
+   "market": {
+    "fairTotal": 11.001,
+    "favWinProb": 0.5972,
+    "away": 6.109,
+    "home": 4.892
+   },
+   "model": {
+    "away": 4.71805374639494,
+    "home": 5.247728320661363
+   },
+   "final": {
+    "away": 5.622168811238229,
+    "home": 5.016504912231477
+   },
+   "priced": {
+    "runs": {
+     "away": 5.622,
+     "home": 5.017,
+     "total": 10.639
+    },
+    "ml": {
+     "away": 0.5499,
+     "home": 0.4501
+    },
+    "runLine": {
+     "homeMinus": 0.317,
+     "awayMinus": 0.4118,
+     "homePlus": 0.5882,
+     "awayPlus": 0.683
+    },
+    "total": {
+     "over": 0.3853,
+     "push": 0.0817,
+     "under": 0.533
+    }
+   },
+   "legs": [
+    {
+     "key": "ARI ML",
+     "prob": 0.5499,
+     "floor": 0.523,
+     "price": -167,
+     "push": 0,
+     "conditional": 0.5499,
+     "breakEven": 0.6255,
+     "edge": -0.0756,
+     "ev": -0.1208,
+     "fair": -122,
+     "robustEdge": -0.1025,
+     "trusted": true,
+     "game": "ARI@COL"
+    },
+    {
+     "key": "COL ML",
+     "prob": 0.4501,
+     "floor": 0.4246,
+     "price": 137,
+     "push": 0,
+     "conditional": 0.4501,
+     "breakEven": 0.4219,
+     "edge": 0.0282,
+     "ev": 0.0667,
+     "fair": 122,
+     "robustEdge": 0.0027,
+     "trusted": true,
+     "game": "ARI@COL"
+    },
+    {
+     "kind": "runline",
+     "key": "ARI -1.5",
+     "prob": 0.4118,
+     "floor": 0.3853,
+     "price": -107,
+     "push": 0,
+     "conditional": 0.4118,
+     "breakEven": 0.5169,
+     "edge": -0.1051,
+     "ev": -0.2033,
+     "fair": 143,
+     "robustEdge": -0.1316,
+     "trusted": false,
+     "game": "ARI@COL"
+    },
+    {
+     "kind": "runline",
+     "key": "COL +1.5",
+     "prob": 0.5882,
+     "floor": 0.5652,
+     "price": -112,
+     "push": 0,
+     "conditional": 0.5882,
+     "breakEven": 0.5283,
+     "edge": 0.0599,
+     "ev": 0.1134,
+     "fair": -143,
+     "robustEdge": 0.0369,
+     "trusted": false,
+     "game": "ARI@COL"
+    },
+    {
+     "key": "Over 11",
+     "prob": 0.3853,
+     "push": 0.0817,
+     "floor": 0.3387,
+     "pushFloor": 0.0859,
+     "price": -110,
+     "conditional": 0.4196,
+     "breakEven": 0.5238,
+     "edge": -0.1042,
+     "ev": -0.1827,
+     "fair": 138,
+     "robustEdge": -0.1533,
+     "trusted": true,
+     "game": "ARI@COL"
+    },
+    {
+     "key": "Under 11",
+     "prob": 0.533,
+     "push": 0.0817,
+     "floor": 0.4861,
+     "pushFloor": 0.0859,
+     "price": -109,
+     "conditional": 0.5804,
+     "breakEven": 0.5215,
+     "edge": 0.0589,
+     "ev": 0.1037,
+     "fair": -138,
+     "robustEdge": 0.0102,
+     "trusted": true,
+     "game": "ARI@COL"
+    }
+   ],
+   "detail": {
+    "awayOff": {
+     "index": 0.9352293355738843,
+     "platoon": 0.9445047328238436,
+     "base": 0.9901796180287757
+    },
+    "homeOff": {
+     "index": 1.0232191763002276,
+     "platoon": 1.0281628213341865,
+     "base": 0.9951917683353463
+    },
+    "awayPit": {
+     "index": 1.0403187137619012,
+     "sp": 0.9927165669789405,
+     "bp": 1.090084594489542,
+     "share": 0.5111111111111111
+    },
+    "homePit": {
+     "index": 1.0576070091453065,
+     "sp": 1.109848096117873,
+     "bp": 0.971756271812767,
+     "share": 0.6216931216931216
+    }
+   }
+  },
+  {
+   "id": "LAA@ATH",
+   "kickoff": "2026-09-24T01:40:00Z",
+   "minutes": 124,
+   "venue": "Sutter Health Park",
+   "park": 1.231,
+   "rlShare": {
+    "pWin": 0.5491,
+    "market": 0.7957,
+    "model": 0.7265,
+    "gap": 0.0691
+   },
+   "weather": null,
+   "away": "LAA",
+   "home": "ATH",
+   "pitchers": {
+    "away": "Walbert Ureña (R)",
+    "home": "Jeffrey Springs (L)"
+   },
+   "market": {
+    "fairTotal": 9.477,
+    "favWinProb": 0.5491,
+    "away": 5.012,
+    "home": 4.465
+   },
+   "model": {
+    "away": 6.088046076462749,
+    "home": 4.582331392479398
+   },
+   "final": {
+    "away": 5.388616126761962,
+    "home": 4.506065987367789
+   },
+   "priced": {
+    "runs": {
+     "away": 5.389,
+     "home": 4.506,
+     "total": 9.895
+    },
+    "ml": {
+     "away": 0.5765,
+     "home": 0.4235
+    },
+    "runLine": {
+     "homeMinus": 0.286,
+     "awayMinus": 0.4305,
+     "homePlus": 0.5695,
+     "awayPlus": 0.714
+    },
+    "total": {
+     "over": 0.4904,
+     "push": 0,
+     "under": 0.5096
+    }
+   },
+   "legs": [
+    {
+     "key": "LAA ML",
+     "prob": 0.5765,
+     "floor": 0.5582,
+     "price": -135,
+     "push": 0,
+     "conditional": 0.5765,
+     "breakEven": 0.5745,
+     "edge": 0.002,
+     "ev": 0.0035,
+     "fair": -136,
+     "robustEdge": -0.0163,
+     "trusted": true,
+     "game": "LAA@ATH"
+    },
+    {
+     "key": "ATH ML",
+     "prob": 0.4235,
+     "floor": 0.3989,
+     "price": 112,
+     "push": 0,
+     "conditional": 0.4235,
+     "breakEven": 0.4717,
+     "edge": -0.0482,
+     "ev": -0.1022,
+     "fair": 136,
+     "robustEdge": -0.0728,
+     "trusted": true,
+     "game": "LAA@ATH"
+    },
+    {
+     "kind": "runline",
+     "key": "LAA -1.5",
+     "prob": 0.4305,
+     "floor": 0.4078,
+     "price": 119,
+     "push": 0,
+     "conditional": 0.4305,
+     "breakEven": 0.4566,
+     "edge": -0.0261,
+     "ev": -0.0572,
+     "fair": 132,
+     "robustEdge": -0.0488,
+     "trusted": false,
+     "game": "LAA@ATH"
+    },
+    {
+     "kind": "runline",
+     "key": "ATH +1.5",
+     "prob": 0.5695,
+     "floor": 0.5305,
+     "price": -143,
+     "push": 0,
+     "conditional": 0.5695,
+     "breakEven": 0.5885,
+     "edge": -0.019,
+     "ev": -0.0322,
+     "fair": -132,
+     "robustEdge": -0.058,
+     "trusted": false,
+     "game": "LAA@ATH"
+    },
+    {
+     "key": "Over 9.5",
+     "prob": 0.4904,
+     "push": 0,
+     "floor": 0.4125,
+     "pushFloor": 0,
+     "price": 100,
+     "conditional": 0.4904,
+     "breakEven": 0.5,
+     "edge": -0.0096,
+     "ev": -0.0192,
+     "fair": 104,
+     "robustEdge": -0.0875,
+     "trusted": true,
+     "game": "LAA@ATH"
+    },
+    {
+     "key": "Under 9.5",
+     "prob": 0.5096,
+     "push": 0,
+     "floor": 0.3466,
+     "pushFloor": 0,
+     "price": -121,
+     "conditional": 0.5096,
+     "breakEven": 0.5475,
+     "edge": -0.0379,
+     "ev": -0.0692,
+     "fair": -104,
+     "robustEdge": -0.2009,
+     "trusted": true,
+     "game": "LAA@ATH"
+    }
+   ],
+   "detail": {
+    "awayOff": {
+     "index": 0.9632917101035485,
+     "platoon": 1.0245866068857052,
+     "base": 0.940175973050764
+    },
+    "homeOff": {
+     "index": 0.8649864732797462,
+     "platoon": 1,
+     "base": 0.8649864732797462
+    },
+    "awayPit": {
+     "index": 1.1454359872245323,
+     "sp": 1.1825088855381956,
+     "bp": 1.1003179438222732,
+     "share": 0.548941798941799
+    },
+    "homePit": {
+     "index": 0.9601252557875772,
+     "sp": 0.8420604424644853,
+     "bp": 1.1501701039990972,
+     "share": 0.6168091168091169
+    }
+   }
+  },
+  {
+   "id": "SD@LAD",
+   "kickoff": "2026-09-24T02:10:00Z",
+   "minutes": 154,
+   "venue": "UNIQLO Field at Dodger Stadium",
+   "park": 0.9868,
+   "rlShare": {
+    "pWin": 0.6621,
+    "market": 0.7388,
+    "model": 0.7463,
+    "gap": -0.0075
+   },
+   "weather": {
+    "temperature": 78,
+    "gust": 7,
+    "precipitation": 0,
+    "conditionId": "34"
+   },
+   "away": "SD",
+   "home": "LAD",
+   "pitchers": {
+    "away": "Robbie Ray (L)",
+    "home": "Yoshinobu Yamamoto (R)"
+   },
+   "market": {
+    "fairTotal": 8.01,
+    "favWinProb": 0.6621,
+    "away": 3.188,
+    "home": 4.822
+   },
+   "model": {
+    "away": 3.5070158099072284,
+    "home": 4.727861874572566
+   },
+   "final": {
+    "away": 3.29965553346753,
+    "home": 4.789051656100398
+   },
+   "priced": {
+    "runs": {
+     "away": 3.3,
+     "home": 4.789,
+     "total": 8.089
+    },
+    "ml": {
+     "away": 0.3527,
+     "home": 0.6473
+    },
+    "runLine": {
+     "homeMinus": 0.4797,
+     "awayMinus": 0.2065,
+     "homePlus": 0.7935,
+     "awayPlus": 0.5203
+    },
+    "total": {
+     "over": 0.412,
+     "push": 0.1029,
+     "under": 0.4851
+    }
+   },
+   "legs": [
+    {
+     "key": "SD ML",
+     "prob": 0.3527,
+     "floor": 0.3401,
+     "price": 183,
+     "push": 0,
+     "conditional": 0.3527,
+     "breakEven": 0.3534,
+     "edge": -0.0007,
+     "ev": -0.0019,
+     "fair": 184,
+     "robustEdge": -0.0133,
+     "trusted": true,
+     "game": "SD@LAD"
+    },
+    {
+     "key": "LAD ML",
+     "prob": 0.6473,
+     "floor": 0.6331,
+     "price": -225,
+     "push": 0,
+     "conditional": 0.6473,
+     "breakEven": 0.6923,
+     "edge": -0.045,
+     "ev": -0.065,
+     "fair": -184,
+     "robustEdge": -0.0592,
+     "trusted": true,
+     "game": "SD@LAD"
+    },
+    {
+     "kind": "runline",
+     "key": "SD +1.5",
+     "prob": 0.5203,
+     "floor": 0.5113,
+     "price": -115,
+     "push": 0,
+     "conditional": 0.5203,
+     "breakEven": 0.5349,
+     "edge": -0.0146,
+     "ev": -0.0273,
+     "fair": -108,
+     "robustEdge": -0.0236,
+     "trusted": false,
+     "game": "SD@LAD"
+    },
+    {
+     "kind": "runline",
+     "key": "LAD -1.5",
+     "prob": 0.4797,
+     "floor": 0.4692,
+     "price": -105,
+     "push": 0,
+     "conditional": 0.4797,
+     "breakEven": 0.5122,
+     "edge": -0.0325,
+     "ev": -0.0634,
+     "fair": 108,
+     "robustEdge": -0.043,
+     "trusted": false,
+     "game": "SD@LAD"
+    },
+    {
+     "key": "Over 8",
+     "prob": 0.412,
+     "push": 0.1029,
+     "floor": 0.4026,
+     "pushFloor": 0.1072,
+     "price": -114,
+     "conditional": 0.4593,
+     "breakEven": 0.5327,
+     "edge": -0.0735,
+     "ev": -0.1237,
+     "fair": 118,
+     "robustEdge": -0.0818,
+     "trusted": true,
+     "game": "SD@LAD"
+    },
+    {
+     "key": "Under 8",
+     "prob": 0.4851,
+     "push": 0.1029,
+     "floor": 0.47,
+     "pushFloor": 0.1072,
+     "price": -105,
+     "conditional": 0.5407,
+     "breakEven": 0.5122,
+     "edge": 0.0285,
+     "ev": 0.05,
+     "fair": -118,
+     "robustEdge": 0.0142,
+     "trusted": true,
+     "game": "SD@LAD"
+    }
+   ],
+   "detail": {
+    "awayOff": {
+     "index": 1.0387575930224053,
+     "platoon": 1.0104464964787372,
+     "base": 1.0280184024016397
+    },
+    "homeOff": {
+     "index": 1.1132660727099564,
+     "platoon": 0.9888701805750577,
+     "base": 1.1257959786617882
+    },
+    "awayPit": {
+     "index": 0.7633138460087237,
+     "sp": 0.6969899688925224,
+     "bp": 0.9488134398180991,
+     "share": 0.7366255144032922
+    },
+    "homePit": {
+     "index": 0.9601640339456967,
+     "sp": 0.9773477466420383,
+     "bp": 0.9318921823135401,
+     "share": 0.6219667943805876
+    }
+   }
+  },
+  {
+   "id": "HOU@SEA",
+   "kickoff": "2026-09-24T02:10:00Z",
+   "minutes": 154,
+   "venue": "T-Mobile Park",
+   "park": 0.9139,
+   "rlShare": {
+    "pWin": 0.5321,
+    "market": 0.6857,
+    "model": 0.682,
+    "gap": 0.0036
+   },
+   "weather": {
+    "temperature": 61,
+    "gust": 8,
+    "precipitation": 29,
+    "conditionId": "6"
+   },
+   "away": "HOU",
+   "home": "SEA",
+   "pitchers": {
+    "away": "Ethan Pecko (R)",
+    "home": "George Kirby (R)"
+   },
+   "market": {
+    "fairTotal": 7.982,
+    "favWinProb": 0.5321,
+    "away": 3.833,
+    "home": 4.149
+   },
+   "model": {
+    "away": 4.486126459419423,
+    "home": 3.9982007559957657
+   },
+   "final": {
+    "away": 4.061594260796799,
+    "home": 4.096220264598518
+   },
+   "priced": {
+    "runs": {
+     "away": 4.062,
+     "home": 4.096,
+     "total": 8.158
+    },
+    "ml": {
+     "away": 0.4965,
+     "home": 0.5035
+    },
+    "runLine": {
+     "homeMinus": 0.3383,
+     "awayMinus": 0.3318,
+     "homePlus": 0.6682,
+     "awayPlus": 0.6617
+    },
+    "total": {
+     "over": 0.4197,
+     "push": 0.1036,
+     "under": 0.4767
+    }
+   },
+   "legs": [
+    {
+     "key": "HOU ML",
+     "prob": 0.4965,
+     "floor": 0.4816,
+     "price": 104,
+     "push": 0,
+     "conditional": 0.4965,
+     "breakEven": 0.4902,
+     "edge": 0.0063,
+     "ev": 0.0129,
+     "fair": 101,
+     "robustEdge": -0.0086,
+     "trusted": true,
+     "game": "HOU@SEA"
+    },
+    {
+     "key": "SEA ML",
+     "prob": 0.5035,
+     "floor": 0.4891,
+     "price": -126,
+     "push": 0,
+     "conditional": 0.5035,
+     "breakEven": 0.5575,
+     "edge": -0.054,
+     "ev": -0.0969,
+     "fair": -101,
+     "robustEdge": -0.0684,
+     "trusted": true,
+     "game": "HOU@SEA"
+    },
+    {
+     "kind": "runline",
+     "key": "HOU +1.5",
+     "prob": 0.6617,
+     "floor": 0.6458,
+     "price": -198,
+     "push": 0,
+     "conditional": 0.6617,
+     "breakEven": 0.6644,
+     "edge": -0.0027,
+     "ev": -0.0041,
+     "fair": -196,
+     "robustEdge": -0.0186,
+     "trusted": false,
+     "game": "HOU@SEA"
+    },
+    {
+     "kind": "runline",
+     "key": "SEA -1.5",
+     "prob": 0.3383,
+     "floor": 0.3172,
+     "price": 162,
+     "push": 0,
+     "conditional": 0.3383,
+     "breakEven": 0.3817,
+     "edge": -0.0434,
+     "ev": -0.1137,
+     "fair": 196,
+     "robustEdge": -0.0645,
+     "trusted": false,
+     "game": "HOU@SEA"
+    },
+    {
+     "key": "Over 8",
+     "prob": 0.4197,
+     "push": 0.1036,
+     "floor": 0.3547,
+     "pushFloor": 0.1078,
+     "price": -102,
+     "conditional": 0.4682,
+     "breakEven": 0.505,
+     "edge": -0.0367,
+     "ev": -0.0652,
+     "fair": 114,
+     "robustEdge": -0.1074,
+     "trusted": true,
+     "game": "HOU@SEA"
+    },
+    {
+     "key": "Under 8",
+     "prob": 0.4767,
+     "push": 0.1036,
+     "floor": 0.4224,
+     "pushFloor": 0.1078,
+     "price": -119,
+     "conditional": 0.5318,
+     "breakEven": 0.5434,
+     "edge": -0.0116,
+     "ev": -0.0191,
+     "fair": -114,
+     "robustEdge": -0.0699,
+     "trusted": true,
+     "game": "HOU@SEA"
+    }
+   ],
+   "detail": {
+    "awayOff": {
+     "index": 1.0144641705383404,
+     "platoon": 1.0082711523452186,
+     "base": 1.0061422149971433
+    },
+    "homeOff": {
+     "index": 0.9776742811350101,
+     "platoon": 1.038448738936925,
+     "base": 0.9414757267035342
+    },
+    "awayPit": {
+     "index": 1.0795552908229642,
+     "sp": 1.0493836790620652,
+     "bp": 1.1356040148605466,
+     "share": 0.6500638569604087
+    },
+    "homePit": {
+     "index": 0.9983446561971865,
+     "sp": 0.9922773581214864,
+     "bp": 1.019855985738305,
+     "share": 0.78
+    }
+   }
+  }
+ ]
+}
