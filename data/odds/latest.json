@@ -1,14 +1,14 @@
 {
- "fetchedAt": "2026-09-22T19:27:54.734Z",
+ "fetchedAt": "2026-09-22T22:45:09.830Z",
  "region": "us",
  "usage": {
-  "remaining": 190,
-  "used": 310
+  "remaining": 183,
+  "used": 317
  },
  "policy": {
   "prekickHours": 9,
   "reserve": 40,
-  "maxPerRun": 80,
+  "maxPerRun": 8,
   "markets": {
    "open": [
     "player_anytime_td"
@@ -34,18 +34,18 @@
    "lines": null,
    "markets": {
     "player_anytime_td": {
-     "fetchedAt": "2026-09-22T19:29:08.885Z",
-     "phase": "desig",
+     "fetchedAt": "2026-09-22T22:45:08.906Z",
+     "phase": "open",
      "players": {
       "bijan robinson": {
        "name": "Bijan Robinson",
        "books": {
-        "draftkings": -160,
-        "fanduel": -160,
-        "betrivers": -175,
+        "draftkings": -155,
+        "fanduel": -155,
+        "betrivers": -165,
         "betonlineag": -167,
         "betmgm": -165,
-        "bovada": -162
+        "bovada": -157
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285257_13L88808Q1-1195523501Q20",
@@ -55,17 +55,17 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653846-5802899&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": -160,
+       "best": -155,
        "bestBook": "draftkings",
-       "consensus": -163
+       "consensus": -161
       },
       "christian watson": {
        "name": "Christian Watson",
        "books": {
         "draftkings": 140,
-        "fanduel": 135,
-        "betrivers": 143,
-        "betonlineag": 130,
+        "fanduel": 140,
+        "betrivers": 145,
+        "betonlineag": 140,
         "betmgm": 130,
         "bovada": 140
        },
@@ -77,19 +77,19 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653807-5802831&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 143,
+       "best": 145,
        "bestBook": "betrivers",
-       "consensus": 138
+       "consensus": 140
       },
       "tucker kraft": {
        "name": "Tucker Kraft",
        "books": {
-        "draftkings": 170,
-        "fanduel": 170,
-        "betrivers": 160,
+        "draftkings": 165,
+        "fanduel": 175,
+        "betrivers": 165,
         "betonlineag": 160,
         "betmgm": 175,
-        "bovada": 170
+        "bovada": 165
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285245_13L88808Q1-834011589Q20",
@@ -100,39 +100,17 @@
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
        "best": 175,
-       "bestBook": "betmgm",
-       "consensus": 170
-      },
-      "matthew golden": {
-       "name": "Matthew Golden",
-       "books": {
-        "draftkings": 170,
-        "fanduel": 175,
-        "betrivers": 180,
-        "betonlineag": 170,
-        "betmgm": 165,
-        "bovada": 170
-       },
-       "links": {
-        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285249_13L88808Q11480921309Q20",
-        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=48301335",
-        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345237078|{wagerAmount}",
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653815-5802847&type=Single",
-        "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-       },
-       "best": 180,
-       "bestBook": "betrivers",
-       "consensus": 170
+       "bestBook": "fanduel",
+       "consensus": 165
       },
       "drake london": {
        "name": "Drake London",
        "books": {
         "draftkings": 175,
-        "fanduel": 195,
-        "betrivers": 180,
+        "fanduel": 200,
+        "betrivers": 185,
         "betonlineag": 170,
-        "betmgm": 188,
+        "betmgm": 195,
         "bovada": 175
        },
        "links": {
@@ -143,18 +121,40 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653880-5802967&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 195,
+       "best": 200,
        "bestBook": "fanduel",
-       "consensus": 178
+       "consensus": 180
+      },
+      "matthew golden": {
+       "name": "Matthew Golden",
+       "books": {
+        "draftkings": 180,
+        "fanduel": 185,
+        "betrivers": 185,
+        "betonlineag": 180,
+        "betmgm": 165,
+        "bovada": 180
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285249_13L88808Q11480921309Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=48301335",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345237078|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653815-5802847&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
+       },
+       "best": 185,
+       "bestBook": "fanduel",
+       "consensus": 180
       },
       "kaleb johnson": {
        "name": "Kaleb Johnson",
        "books": {
-        "draftkings": 180,
-        "fanduel": 190,
-        "betrivers": 185,
+        "draftkings": 185,
+        "fanduel": 195,
+        "betrivers": 190,
         "betmgm": 195,
-        "bovada": 180
+        "bovada": 185
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285246_13L88808Q1-1984159220Q20",
@@ -164,18 +164,18 @@
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
        "best": 195,
-       "bestBook": "betmgm",
-       "consensus": 185
+       "bestBook": "fanduel",
+       "consensus": 190
       },
       "marshawn lloyd": {
        "name": "MarShawn Lloyd",
        "books": {
-        "draftkings": 185,
-        "fanduel": 165,
-        "betrivers": 170,
-        "betonlineag": 160,
+        "draftkings": 195,
+        "fanduel": 170,
+        "betrivers": 175,
+        "betonlineag": 170,
         "betmgm": 180,
-        "bovada": 185
+        "bovada": 195
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285248_13L88808Q1-135035926Q20",
@@ -185,19 +185,19 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653773-5802762&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 185,
+       "best": 195,
        "bestBook": "draftkings",
-       "consensus": 175
+       "consensus": 178
       },
       "chris brooks": {
        "name": "Chris Brooks",
        "books": {
-        "draftkings": 215,
+        "draftkings": 235,
         "fanduel": 200,
-        "betrivers": 220,
+        "betrivers": 225,
         "betonlineag": 200,
-        "betmgm": 210,
-        "bovada": 215
+        "betmgm": 220,
+        "bovada": 235
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285213_13L88808Q11118357375Q20",
@@ -207,19 +207,19 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653797-5802811&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 220,
-       "bestBook": "betrivers",
-       "consensus": 213
+       "best": 235,
+       "bestBook": "draftkings",
+       "consensus": 223
       },
       "kyle pitts": {
        "name": "Kyle Pitts",
        "books": {
-        "draftkings": 380,
-        "fanduel": 380,
-        "betrivers": 350,
+        "draftkings": 390,
+        "fanduel": 390,
+        "betrivers": 360,
         "betonlineag": 350,
         "betmgm": 310,
-        "bovada": 380
+        "bovada": 390
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285260_13L88808Q1999478588Q20",
@@ -229,17 +229,17 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653871-5802949&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 380,
+       "best": 390,
        "bestBook": "draftkings",
-       "consensus": 365
+       "consensus": 375
       },
       "skyy moore": {
        "name": "Skyy Moore",
        "books": {
         "draftkings": 425,
-        "fanduel": 390,
-        "betrivers": 450,
-        "betonlineag": 350,
+        "fanduel": 410,
+        "betrivers": 460,
+        "betonlineag": 400,
         "betmgm": 400,
         "bovada": 420
        },
@@ -251,18 +251,18 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653819-5802855&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 450,
+       "best": 460,
        "bestBook": "betrivers",
-       "consensus": 410
+       "consensus": 415
       },
       "brian robinson": {
        "name": "Brian Robinson Jr.",
        "books": {
         "draftkings": 475,
-        "fanduel": 440,
-        "betrivers": 375,
+        "fanduel": 460,
+        "betrivers": 380,
         "betonlineag": 400,
-        "betmgm": 320,
+        "betmgm": 310,
         "bovada": 460
        },
        "links": {
@@ -275,7 +275,7 @@
        },
        "best": 475,
        "bestBook": "draftkings",
-       "consensus": 420
+       "consensus": 430
       },
       "green bay packers dst": {
        "name": "Green Bay Packers D/ST",
@@ -313,8 +313,8 @@
        "name": "Jonnu Smith",
        "books": {
         "draftkings": 550,
-        "fanduel": 600,
-        "betrivers": 525,
+        "fanduel": 650,
+        "betrivers": 540,
         "betmgm": 675,
         "bovada": 525
        },
@@ -332,12 +332,12 @@
       "jordan love": {
        "name": "Jordan Love",
        "books": {
-        "draftkings": 650,
+        "draftkings": 600,
         "fanduel": 600,
-        "betrivers": 700,
+        "betrivers": 750,
         "betonlineag": 600,
         "betmgm": 525,
-        "bovada": 625
+        "bovada": 600
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285251_13L88808Q1-1213243313Q20",
@@ -347,37 +347,15 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653758-5802736&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 700,
+       "best": 750,
        "bestBook": "betrivers",
-       "consensus": 613
-      },
-      "jahan dotson": {
-       "name": "Jahan Dotson",
-       "books": {
-        "draftkings": 650,
-        "fanduel": 650,
-        "betrivers": 475,
-        "betonlineag": 650,
-        "betmgm": 500,
-        "bovada": 625
-       },
-       "links": {
-        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285261_13L88808Q1-419764349Q20",
-        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=26812206",
-        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231179|{wagerAmount}",
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653886-5802978&type=Single",
-        "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-       },
-       "best": 650,
-       "bestBook": "draftkings",
-       "consensus": 638
+       "consensus": 600
       },
       "bo melton": {
        "name": "Bo Melton",
        "books": {
         "draftkings": 750,
-        "betrivers": 700,
+        "betrivers": 750,
         "betonlineag": 550,
         "betmgm": 1250,
         "bovada": 725
@@ -391,13 +369,35 @@
        },
        "best": 1250,
        "bestBook": "betmgm",
-       "consensus": 725
+       "consensus": 750
+      },
+      "jahan dotson": {
+       "name": "Jahan Dotson",
+       "books": {
+        "draftkings": 750,
+        "fanduel": 650,
+        "betrivers": 480,
+        "betonlineag": 650,
+        "betmgm": 500,
+        "bovada": 725
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285261_13L88808Q1-419764349Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=26812206",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231179|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653886-5802978&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
+       },
+       "best": 750,
+       "bestBook": "draftkings",
+       "consensus": 650
       },
       "olamide zaccheaus": {
        "name": "Olamide Zaccheaus",
        "books": {
         "draftkings": 850,
-        "fanduel": 750,
+        "fanduel": 800,
         "betrivers": 750,
         "betonlineag": 750,
         "betmgm": 750,
@@ -413,17 +413,39 @@
        },
        "best": 850,
        "bestBook": "draftkings",
-       "consensus": 750
+       "consensus": 775
+      },
+      "zachariah branch": {
+       "name": "Zachariah Branch",
+       "books": {
+        "draftkings": 1000,
+        "fanduel": 1400,
+        "betrivers": 1200,
+        "betonlineag": 1000,
+        "betmgm": 1550,
+        "bovada": 1000
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285263_13L88808Q1-825672971Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=59869541",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231177|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653914-5803030&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
+       },
+       "best": 1550,
+       "bestBook": "betmgm",
+       "consensus": 1100
       },
       "michael penix": {
        "name": "Michael Penix Jr.",
        "books": {
-        "draftkings": 1000,
+        "draftkings": 1100,
         "fanduel": 1000,
-        "betrivers": 650,
+        "betrivers": 700,
         "betonlineag": 1000,
-        "betmgm": 1250,
-        "bovada": 1000
+        "betmgm": 1300,
+        "bovada": 1100
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293567608_13L88808Q1173183317Q20",
@@ -433,9 +455,9 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653854-5802915&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 1250,
+       "best": 1300,
        "bestBook": "betmgm",
-       "consensus": 1000
+       "consensus": 1050
       },
       "austin hooper": {
        "name": "Austin Hooper",
@@ -444,7 +466,7 @@
         "fanduel": 1100,
         "betrivers": 1300,
         "betonlineag": 1100,
-        "betmgm": 1600,
+        "betmgm": 1400,
         "bovada": 1300
        },
        "links": {
@@ -455,39 +477,17 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653905-5803012&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 1600,
+       "best": 1400,
        "bestBook": "betmgm",
        "consensus": 1300
-      },
-      "zachariah branch": {
-       "name": "Zachariah Branch",
-       "books": {
-        "draftkings": 1600,
-        "fanduel": 1200,
-        "betrivers": 1300,
-        "betonlineag": 1100,
-        "betmgm": 1550,
-        "bovada": 1600
-       },
-       "links": {
-        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285263_13L88808Q1-825672971Q20",
-        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=59869541",
-        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231177|{wagerAmount}",
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653914-5803030&type=Single",
-        "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-       },
-       "best": 1600,
-       "bestBook": "draftkings",
-       "consensus": 1425
       },
       "mark redman": {
        "name": "Mark Redman",
        "books": {
         "draftkings": 1700,
         "fanduel": 1400,
-        "betrivers": 1800,
-        "betmgm": 2200,
+        "betrivers": 1900,
+        "betmgm": 2000,
         "bovada": 1700
        },
        "links": {
@@ -497,7 +497,7 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653835-5802879&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 2200,
+       "best": 2000,
        "bestBook": "betmgm",
        "consensus": 1700
       },
@@ -508,7 +508,7 @@
         "fanduel": 1400,
         "betrivers": 2000,
         "betonlineag": 1100,
-        "betmgm": 2200,
+        "betmgm": 2500,
         "bovada": 1800
        },
        "links": {
@@ -519,7 +519,7 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653822-5802861&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 2200,
+       "best": 2500,
        "bestBook": "betmgm",
        "consensus": 1800
       },
@@ -548,11 +548,11 @@
       "nick muse": {
        "name": "Nick Muse",
        "books": {
-        "draftkings": 3500,
-        "betrivers": 2400,
-        "betonlineag": 2900,
+        "draftkings": 4000,
+        "betrivers": 2500,
+        "betonlineag": 3400,
         "betmgm": 4000,
-        "bovada": 3300
+        "bovada": 4000
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285269_13L88808Q11180641602Q20",
@@ -562,18 +562,18 @@
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
        "best": 4000,
-       "bestBook": "betmgm",
-       "consensus": 3300
+       "bestBook": "draftkings",
+       "consensus": 4000
       },
       "chris blair": {
        "name": "Chris Blair",
        "books": {
-        "draftkings": 4000,
-        "fanduel": 2200,
+        "draftkings": 5000,
+        "fanduel": 2500,
         "betrivers": 2000,
-        "betonlineag": 1900,
+        "betonlineag": 2400,
         "betmgm": 4500,
-        "bovada": 4000
+        "bovada": 5000
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285268_13L88808Q1-911892125Q20",
@@ -583,9 +583,9 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653918-5803036&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
        },
-       "best": 4500,
-       "bestBook": "betmgm",
-       "consensus": 3100
+       "best": 5000,
+       "bestBook": "draftkings",
+       "consensus": 3500
       },
       "atlanta falcons defense": {
        "name": "Atlanta Falcons Defense",
@@ -614,14 +614,14 @@
       "j michael sturdivant": {
        "name": "J. Michael Sturdivant",
        "books": {
-        "betrivers": 1100
+        "betrivers": 1200
        },
        "links": {
         "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345220021|{wagerAmount}"
        },
-       "best": 1100,
+       "best": 1200,
        "bestBook": "betrivers",
-       "consensus": 1100
+       "consensus": 1200
       }
      }
     },
@@ -1941,7 +1941,7 @@
     }
    },
    "pulls": {
-    "open": "2026-09-20T23:17:45.780Z",
+    "open": "2026-09-22T22:45:08.906Z",
     "desig": "2026-09-22T19:29:08.886Z"
    }
   },
@@ -1953,208 +1953,278 @@
    "lines": null,
    "markets": {
     "player_anytime_td": {
-     "fetchedAt": "2026-09-22T13:30:19.239Z",
+     "fetchedAt": "2026-09-22T22:45:09.002Z",
      "phase": "open",
      "players": {
       "james cook": {
        "name": "James Cook",
        "books": {
-        "draftkings": -175,
-        "fanduel": -210,
+        "draftkings": -200,
+        "fanduel": -220,
+        "betrivers": -190,
         "betonlineag": -250,
-        "betmgm": -175,
-        "bovada": -176
+        "betmgm": -165,
+        "bovada": -200
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278160_13L88808Q11826828834Q20",
         "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=42200635",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346511856|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654770-5805796&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
        },
-       "best": -175,
-       "bestBook": "draftkings",
-       "consensus": -176
+       "best": -165,
+       "bestBook": "betmgm",
+       "consensus": -200
       },
       "josh allen": {
        "name": "Josh Allen",
        "books": {
-        "draftkings": -145,
+        "draftkings": -155,
         "fanduel": -150,
+        "betrivers": -143,
         "betonlineag": -167,
-        "betmgm": -155,
-        "bovada": -148
+        "betmgm": -150,
+        "bovada": -157
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278161_13L88808Q1-677035407Q20",
         "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=12399650",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346544354|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654747-5805750&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
        },
-       "best": -145,
-       "bestBook": "draftkings",
-       "consensus": -150
+       "best": -143,
+       "bestBook": "betrivers",
+       "consensus": -152
       },
       "omarion hampton": {
        "name": "Omarion Hampton",
        "books": {
-        "draftkings": -140,
-        "fanduel": -130,
+        "draftkings": -135,
+        "fanduel": -125,
+        "betrivers": -122,
         "betonlineag": -143,
-        "betmgm": -110,
-        "bovada": -143
+        "betmgm": -111,
+        "bovada": -136
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278174_13L88808Q1218070662Q20",
         "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=48700658",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346527327|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654787-5805832&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
        },
-       "best": -110,
+       "best": -111,
        "bestBook": "betmgm",
-       "consensus": -140
-      },
-      "khalil shakir": {
-       "name": "Khalil Shakir",
-       "books": {
-        "draftkings": 175,
-        "fanduel": 165,
-        "betonlineag": 160,
-        "betmgm": 220,
-        "bovada": 175
-       },
-       "links": {
-        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278163_13L88808Q12079458734Q20",
-        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=43162252",
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654742-5805738&type=Single",
-        "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
-       },
-       "best": 220,
-       "bestBook": "betmgm",
-       "consensus": 175
+       "consensus": -130
       },
       "dj moore": {
        "name": "DJ Moore",
        "books": {
-        "draftkings": 175,
-        "fanduel": 165,
-        "betonlineag": 160,
-        "betmgm": 185,
-        "bovada": 175
+        "draftkings": 160,
+        "fanduel": 150,
+        "betrivers": 175,
+        "betonlineag": 150,
+        "betmgm": 175,
+        "bovada": 160
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278164_13L88808Q1-1945972036Q20",
         "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=35815367",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346527325|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654752-5805760&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
        },
-       "best": 185,
+       "best": 175,
+       "bestBook": "betrivers",
+       "consensus": 160
+      },
+      "khalil shakir": {
+       "name": "Khalil Shakir",
+       "books": {
+        "draftkings": 185,
+        "fanduel": 170,
+        "betrivers": 200,
+        "betonlineag": 170,
+        "betmgm": 210,
+        "bovada": 185
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278163_13L88808Q12079458734Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=43162252",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346544370|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654742-5805738&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
+       },
+       "best": 210,
        "bestBook": "betmgm",
-       "consensus": 175
+       "consensus": 185
       },
       "dalton kincaid": {
        "name": "Dalton Kincaid",
        "books": {
-        "draftkings": 220,
-        "fanduel": 210,
-        "betonlineag": 210,
-        "betmgm": 140,
-        "bovada": 220
+        "draftkings": 195,
+        "fanduel": 200,
+        "betrivers": 200,
+        "betonlineag": 190,
+        "betmgm": 135,
+        "bovada": 195
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278162_13L88808Q1-81077793Q20",
         "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=41915983",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346527265|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654763-5805788&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
        },
-       "best": 220,
-       "bestBook": "draftkings",
-       "consensus": 210
+       "best": 200,
+       "bestBook": "fanduel",
+       "consensus": 195
       },
       "ladd mcconkey": {
        "name": "Ladd McConkey",
        "books": {
         "draftkings": 220,
         "fanduel": 200,
+        "betrivers": 195,
         "betonlineag": 200,
+        "betmgm": 210,
         "bovada": 220
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278175_13L88808Q11240135444Q20",
         "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=42200637",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346511940|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654735-5805726&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
        },
        "best": 220,
        "bestBook": "draftkings",
-       "consensus": 210
+       "consensus": 205
       },
       "quentin johnston": {
        "name": "Quentin Johnston",
        "books": {
-        "draftkings": 240,
+        "draftkings": 250,
         "fanduel": 230,
+        "betrivers": 250,
         "betonlineag": 230,
-        "bovada": 240
+        "betmgm": 270,
+        "bovada": 250
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278176_13L88808Q1-1799172597Q20",
         "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=48141494",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346544307|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654782-5805820&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
        },
-       "best": 240,
-       "bestBook": "draftkings",
-       "consensus": 235
+       "best": 270,
+       "bestBook": "betmgm",
+       "consensus": 250
       },
       "oronde gadsden": {
        "name": "Oronde Gadsden II",
        "books": {
-        "draftkings": 310,
-        "fanduel": 320,
-        "betonlineag": 300,
-        "bovada": 310
+        "draftkings": 320,
+        "fanduel": 290,
+        "betrivers": 310,
+        "betonlineag": 290,
+        "betmgm": 220,
+        "bovada": 320
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278183_13L88808Q1-1146148657Q20",
         "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=87677021",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346511858|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654779-5805816&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
        },
        "best": 320,
-       "bestBook": "fanduel",
-       "consensus": 310
+       "bestBook": "draftkings",
+       "consensus": 300
       },
       "keaton mitchell": {
        "name": "Keaton Mitchell",
        "books": {
-        "draftkings": 450,
+        "draftkings": 400,
         "fanduel": 600,
+        "betrivers": 460,
         "betonlineag": 400,
-        "betmgm": 400,
-        "bovada": 440
+        "betmgm": 425,
+        "bovada": 400
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278177_13L88808Q1-1309537375Q20",
         "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=48124268",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346527239|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654740-5805728&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
        },
        "best": 600,
        "bestBook": "fanduel",
-       "consensus": 440
+       "consensus": 413
+      },
+      "tre harris": {
+       "name": "Tre Harris",
+       "books": {
+        "draftkings": 475,
+        "fanduel": 500,
+        "betrivers": 360,
+        "betonlineag": 450,
+        "betmgm": 310,
+        "bovada": 460
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278178_13L88808Q1327370581Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=49786793",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346511958|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654765-5805782&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
+       },
+       "best": 500,
+       "bestBook": "fanduel",
+       "consensus": 455
+      },
+      "dawson knox": {
+       "name": "Dawson Knox",
+       "books": {
+        "draftkings": 500,
+        "fanduel": 500,
+        "betrivers": 480,
+        "betonlineag": 500,
+        "betmgm": 425,
+        "bovada": 500
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278166_13L88808Q11470829306Q20",
+        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=23736047",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346511860|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654783-5805822&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
+       },
+       "best": 500,
+       "bestBook": "draftkings",
+       "consensus": 500
       },
       "buffalo bills dst": {
        "name": "Buffalo Bills D/ST",
        "books": {
         "draftkings": 550,
-        "betmgm": 525,
+        "betmgm": 425,
         "bovada": 525
        },
        "links": {
@@ -2166,59 +2236,43 @@
        "bestBook": "draftkings",
        "consensus": 525
       },
-      "tre harris": {
-       "name": "Tre Harris",
-       "books": {
-        "draftkings": 550,
-        "fanduel": 500,
-        "betonlineag": 450,
-        "bovada": 525
-       },
-       "links": {
-        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278178_13L88808Q1327370581Q20",
-        "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=49786793",
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
-        "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
-       },
-       "best": 550,
-       "bestBook": "draftkings",
-       "consensus": 513
-      },
       "justin herbert": {
        "name": "Justin Herbert",
        "books": {
         "draftkings": 550,
         "fanduel": 500,
-        "betonlineag": 350,
+        "betrivers": 425,
+        "betonlineag": 400,
         "betmgm": 380,
         "bovada": 525
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278179_13L88808Q1-2113329809Q20",
         "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610199592&selectionId=13355953",
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346527241|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654771-5805798&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
        },
        "best": 550,
        "bestBook": "draftkings",
-       "consensus": 500
+       "consensus": 463
       },
       "los angeles chargers dst": {
        "name": "Los Angeles Chargers D/ST",
        "books": {
-        "draftkings": 700,
-        "betmgm": 675,
-        "bovada": 700
+        "draftkings": 650,
+        "betmgm": 625,
+        "bovada": 625
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371976701%232293278107_14L88808Q11198339961Q20",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654753-5805762&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/los-angeles-chargers-buffalo-bills-202609271300"
        },
-       "best": 700,
+       "best": 650,
        "bestBook": "draftkings",
-       "consensus": 700
+       "consensus": 625
       },
       "buffalo bills defense": {
        "name": "Buffalo Bills Defense",
@@ -2244,179 +2298,199 @@
        "bestBook": "fanduel",
        "consensus": 1000
       },
-      "dawson knox": {
-       "name": "Dawson Knox",
+      "alec ingold": {
+       "name": "Alec Ingold",
        "books": {
-        "betonlineag": 550,
-        "betmgm": 450
+        "betrivers": 1700,
+        "betonlineag": 1400,
+        "betmgm": 2500
        },
        "links": {
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346527309|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654783-5805822&type=Single"
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654741-5805740&type=Single"
        },
-       "best": 550,
-       "bestBook": "betonlineag",
+       "best": 2500,
+       "bestBook": "betmgm",
+       "consensus": 1700
+      },
+      "derius davis": {
+       "name": "Derius Davis",
+       "books": {
+        "betrivers": 1000,
+        "betonlineag": 1100,
+        "betmgm": 1700
+       },
+       "links": {
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346527245|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654739-5805730&type=Single"
+       },
+       "best": 1700,
+       "bestBook": "betmgm",
+       "consensus": 1100
+      },
+      "joshua palmer": {
+       "name": "Joshua Palmer",
+       "books": {
+        "betrivers": 650,
+        "betonlineag": 500,
+        "betmgm": 375
+       },
+       "links": {
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346527243|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654738-5805732&type=Single"
+       },
+       "best": 650,
+       "bestBook": "betrivers",
        "consensus": 500
       },
       "ty johnson": {
        "name": "Ty Johnson",
        "books": {
-        "betonlineag": 350,
-        "betmgm": 400
+        "betrivers": 800,
+        "betonlineag": 800,
+        "betmgm": 425
        },
        "links": {
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346527250|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3655815-5810107&type=Single"
        },
-       "best": 400,
-       "bestBook": "betmgm",
-       "consensus": 375
-      },
-      "joshua palmer": {
-       "name": "Joshua Palmer",
-       "books": {
-        "betonlineag": 1100,
-        "betmgm": 333
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654738-5805732&type=Single"
-       },
-       "best": 1100,
-       "bestBook": "betonlineag",
-       "consensus": 717
-      },
-      "keon coleman": {
-       "name": "Keon Coleman",
-       "books": {
-        "betonlineag": 350,
-        "betmgm": 280
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654781-5805818&type=Single"
-       },
-       "best": 350,
-       "bestBook": "betonlineag",
-       "consensus": 315
-      },
-      "ray davis": {
-       "name": "Ray Davis",
-       "books": {
-        "betonlineag": 700,
-        "betmgm": 625
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654776-5805808&type=Single"
-       },
-       "best": 700,
-       "bestBook": "betonlineag",
-       "consensus": 663
-      },
-      "kimani vidal": {
-       "name": "Kimani Vidal",
-       "books": {
-        "betonlineag": 500
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555"
-       },
-       "best": 500,
-       "bestBook": "betonlineag",
-       "consensus": 500
-      },
-      "derius davis": {
-       "name": "Derius Davis",
-       "books": {
-        "betonlineag": 1100
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555"
-       },
-       "best": 1100,
-       "bestBook": "betonlineag",
-       "consensus": 1100
+       "best": 800,
+       "bestBook": "betrivers",
+       "consensus": 800
       },
       "keleki latu": {
        "name": "Keleki Latu",
        "books": {
+        "betrivers": 3500,
         "betonlineag": 3400
        },
        "links": {
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346527557|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555"
        },
-       "best": 3400,
-       "bestBook": "betonlineag",
-       "consensus": 3400
-      },
-      "alec ingold": {
-       "name": "Alec Ingold",
-       "books": {
-        "betonlineag": 1400
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555"
-       },
-       "best": 1400,
-       "bestBook": "betonlineag",
-       "consensus": 1400
+       "best": 3500,
+       "bestBook": "betrivers",
+       "consensus": 3450
       },
       "jackson hawes": {
        "name": "Jackson Hawes",
        "books": {
+        "betrivers": 1600,
         "betonlineag": 3400,
-        "betmgm": 1100
+        "betmgm": 1050
        },
        "links": {
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346511942|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654760-5805776&type=Single"
        },
        "best": 3400,
        "bestBook": "betonlineag",
-       "consensus": 2250
+       "consensus": 1600
       },
-      "skyler bell": {
-       "name": "Skyler Bell",
+      "keon coleman": {
+       "name": "Keon Coleman",
        "books": {
-        "betonlineag": 1400
+        "betrivers": 475,
+        "betonlineag": 450,
+        "betmgm": 300
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555"
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346544361|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654781-5805818&type=Single"
        },
-       "best": 1400,
+       "best": 475,
+       "bestBook": "betrivers",
+       "consensus": 450
+      },
+      "ray davis": {
+       "name": "Ray Davis",
+       "books": {
+        "betrivers": 800,
+        "betonlineag": 1100,
+        "betmgm": 750
+       },
+       "links": {
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346544306|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654776-5805808&type=Single"
+       },
+       "best": 1100,
        "bestBook": "betonlineag",
-       "consensus": 1400
+       "consensus": 800
       },
       "gary jennings": {
        "name": "Gary Jennings",
        "books": {
+        "betrivers": 2500,
         "betonlineag": 3400
        },
        "links": {
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346528728|{wagerAmount}",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555"
        },
        "best": 3400,
        "bestBook": "betonlineag",
-       "consensus": 3400
+       "consensus": 2950
+      },
+      "kimani vidal": {
+       "name": "Kimani Vidal",
+       "books": {
+        "betrivers": 650,
+        "betonlineag": 500,
+        "betmgm": 700
+       },
+       "links": {
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346513149|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654728-5805712&type=Single"
+       },
+       "best": 700,
+       "bestBook": "betmgm",
+       "consensus": 650
       },
       "brenen thompson": {
        "name": "Brenen Thompson",
        "books": {
-        "betonlineag": 1100
+        "betrivers": 950,
+        "betonlineag": 1100,
+        "betmgm": 1050
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555"
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346528497|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3654778-5805812&type=Single"
        },
        "best": 1100,
        "bestBook": "betonlineag",
-       "consensus": 1100
+       "consensus": 1050
+      },
+      "skyler bell": {
+       "name": "Skyler Bell",
+       "books": {
+        "betrivers": 1400,
+        "betonlineag": 1400,
+        "betmgm": 1550
+       },
+       "links": {
+        "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811701?coupon={pickType}|4346512173|{wagerAmount}",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129555",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43447-3673361-5835126&type=Single"
+       },
+       "best": 1550,
+       "bestBook": "betmgm",
+       "consensus": 1400
       }
      }
     }
    },
    "pulls": {
-    "open": "2026-09-22T13:30:19.239Z"
+    "open": "2026-09-22T22:45:09.002Z"
    }
   },
   {
@@ -2427,7 +2501,7 @@
    "lines": null,
    "markets": {
     "player_anytime_td": {
-     "fetchedAt": "2026-09-22T13:30:19.336Z",
+     "fetchedAt": "2026-09-22T22:45:09.073Z",
      "phase": "open",
      "players": {
       "chuba hubbard": {
@@ -2435,7 +2509,7 @@
        "books": {
         "draftkings": -130,
         "betonlineag": -143,
-        "betmgm": -135,
+        "betmgm": -140,
         "bovada": -132
        },
        "links": {
@@ -2446,15 +2520,15 @@
        },
        "best": -130,
        "bestBook": "draftkings",
-       "consensus": -133
+       "consensus": -136
       },
       "quinshon judkins": {
        "name": "Quinshon Judkins",
        "books": {
-        "draftkings": 140,
-        "betonlineag": 130,
-        "betmgm": 110,
-        "bovada": 140
+        "draftkings": 125,
+        "betonlineag": 120,
+        "betmgm": 105,
+        "bovada": 125
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717577_13L88808Q1-1895349765Q20",
@@ -2462,16 +2536,16 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672036-5833521&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
        },
-       "best": 140,
+       "best": 125,
        "bestBook": "draftkings",
-       "consensus": 135
+       "consensus": 123
       },
       "tetairoa mcmillan": {
        "name": "Tetairoa McMillan",
        "books": {
         "draftkings": 170,
         "betonlineag": 170,
-        "betmgm": 160,
+        "betmgm": 155,
         "bovada": 170
        },
        "links": {
@@ -2484,13 +2558,49 @@
        "bestBook": "draftkings",
        "consensus": 170
       },
+      "jalen coker": {
+       "name": "Jalen Coker",
+       "books": {
+        "draftkings": 235,
+        "betonlineag": 210,
+        "betmgm": 210,
+        "bovada": 235
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717595_13L88808Q1-537154100Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672013-5833475&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 235,
+       "bestBook": "draftkings",
+       "consensus": 223
+      },
+      "harold fannin": {
+       "name": "Harold Fannin Jr.",
+       "books": {
+        "draftkings": 260,
+        "betonlineag": 260,
+        "betmgm": 250,
+        "bovada": 260
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717578_13L88808Q1466829631Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672041-5833531&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 260,
+       "bestBook": "draftkings",
+       "consensus": 260
+      },
       "denzel boston": {
        "name": "Denzel Boston",
        "books": {
-        "draftkings": 330,
+        "draftkings": 310,
         "betonlineag": 280,
         "betmgm": 240,
-        "bovada": 330
+        "bovada": 310
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717579_13L88808Q1-1280421193Q20",
@@ -2498,43 +2608,243 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672031-5833509&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
        },
-       "best": 330,
+       "best": 310,
        "bestBook": "draftkings",
-       "consensus": 305
-      },
-      "tommy tremble": {
-       "name": "Tommy Tremble",
-       "books": {
-        "betonlineag": 650,
-        "betmgm": 650
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672023-5833495&type=Single"
-       },
-       "best": 650,
-       "bestBook": "betonlineag",
-       "consensus": 650
+       "consensus": 295
       },
       "deshaun watson": {
        "name": "Deshaun Watson",
        "books": {
-        "betonlineag": 325,
-        "betmgm": 300
+        "draftkings": 320,
+        "betonlineag": 300,
+        "betmgm": 320,
+        "bovada": 320
        },
        "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717582_13L88808Q1184390672Q20",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672032-5833513&type=Single"
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672032-5833513&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
        },
-       "best": 325,
-       "bestBook": "betonlineag",
-       "consensus": 313
+       "best": 320,
+       "bestBook": "draftkings",
+       "consensus": 320
+      },
+      "kc concepcion": {
+       "name": "KC Concepcion",
+       "books": {
+        "draftkings": 330,
+        "betonlineag": 325,
+        "betmgm": 270,
+        "bovada": 330
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717570_13L88808Q1254821704Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672021-5833491&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 330,
+       "bestBook": "draftkings",
+       "consensus": 328
+      },
+      "bryce young": {
+       "name": "Bryce Young",
+       "books": {
+        "draftkings": 400,
+        "betonlineag": 350,
+        "betmgm": 500,
+        "bovada": 400
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717596_13L88808Q11112660000Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672025-5833499&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 500,
+       "bestBook": "betmgm",
+       "consensus": 400
+      },
+      "jerry jeudy": {
+       "name": "Jerry Jeudy",
+       "books": {
+        "draftkings": 450,
+        "betonlineag": 450,
+        "betmgm": 375,
+        "bovada": 440
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717580_13L88808Q1526503198Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672028-5833503&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 450,
+       "bestBook": "draftkings",
+       "consensus": 445
+      },
+      "darren waller": {
+       "name": "Darren Waller",
+       "books": {
+        "draftkings": 475,
+        "betonlineag": 450,
+        "betmgm": 400,
+        "bovada": 460
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717598_13L88808Q1294436062Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672008-5833465&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 475,
+       "bestBook": "draftkings",
+       "consensus": 455
+      },
+      "raheim sanders": {
+       "name": "Raheim Sanders",
+       "books": {
+        "draftkings": 500,
+        "betonlineag": 500,
+        "betmgm": 500,
+        "bovada": 500
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717581_13L88808Q1-286456608Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672003-5833455&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 500,
+       "bestBook": "draftkings",
+       "consensus": 500
+      },
+      "carolina panthers dst": {
+       "name": "Carolina Panthers D/ST",
+       "books": {
+        "draftkings": 500,
+        "betmgm": 450,
+        "bovada": 500
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717606_14L88808Q1-674389695Q20",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3671998-5833445&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 500,
+       "bestBook": "draftkings",
+       "consensus": 500
+      },
+      "tommy tremble": {
+       "name": "Tommy Tremble",
+       "books": {
+        "draftkings": 600,
+        "betonlineag": 600,
+        "betmgm": 625,
+        "bovada": 600
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717597_13L88808Q1-813345382Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672023-5833495&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 625,
+       "bestBook": "betmgm",
+       "consensus": 600
+      },
+      "cleveland browns dst": {
+       "name": "Cleveland Browns D/ST",
+       "books": {
+        "draftkings": 600,
+        "betmgm": 500,
+        "bovada": 600
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717605_13L88808Q1-189247411Q20",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3671993-5833435&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 600,
+       "bestBook": "draftkings",
+       "consensus": 600
+      },
+      "xavier legette": {
+       "name": "Xavier Legette",
+       "books": {
+        "draftkings": 650,
+        "betonlineag": 450,
+        "betmgm": 450,
+        "bovada": 625
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717601_13L88808Q1922326735Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672042-5833533&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 650,
+       "bestBook": "draftkings",
+       "consensus": 538
+      },
+      "jaleel mclaughlin": {
+       "name": "Jaleel McLaughlin",
+       "books": {
+        "draftkings": 700,
+        "betmgm": 1050,
+        "bovada": 700
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717583_13L88808Q1-914474805Q20",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672006-5833461&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 1050,
+       "bestBook": "betmgm",
+       "consensus": 700
+      },
+      "mitchell evans": {
+       "name": "Mitchell Evans",
+       "books": {
+        "draftkings": 850,
+        "betonlineag": 800,
+        "betmgm": 750,
+        "bovada": 825
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717599_13L88808Q1-619052431Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672018-5833485&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 850,
+       "bestBook": "draftkings",
+       "consensus": 813
+      },
+      "michael burton": {
+       "name": "Michael Burton",
+       "books": {
+        "draftkings": 2200,
+        "betonlineag": 1900,
+        "betmgm": 6000,
+        "bovada": 2200
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372079243%232293717587_13L88808Q1-2105337583Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672094-5833603&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/carolina-panthers-cleveland-browns-202609271300"
+       },
+       "best": 6000,
+       "bestBook": "betmgm",
+       "consensus": 2200
       },
       "blake whiteheart": {
        "name": "Blake Whiteheart",
        "books": {
         "betonlineag": 2400,
-        "betmgm": 1300
+        "betmgm": 1350
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
@@ -2542,35 +2852,7 @@
        },
        "best": 2400,
        "bestBook": "betonlineag",
-       "consensus": 1850
-      },
-      "jalen coker": {
-       "name": "Jalen Coker",
-       "books": {
-        "betonlineag": 210,
-        "betmgm": 200
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672013-5833475&type=Single"
-       },
-       "best": 210,
-       "bestBook": "betonlineag",
-       "consensus": 205
-      },
-      "bryce young": {
-       "name": "Bryce Young",
-       "books": {
-        "betonlineag": 400,
-        "betmgm": 425
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672025-5833499&type=Single"
-       },
-       "best": 425,
-       "bestBook": "betmgm",
-       "consensus": 413
+       "consensus": 1875
       },
       "feleipe franks": {
        "name": "Feleipe Franks",
@@ -2584,61 +2866,17 @@
        "bestBook": "betonlineag",
        "consensus": 3400
       },
-      "xavier legette": {
-       "name": "Xavier Legette",
-       "books": {
-        "betonlineag": 450,
-        "betmgm": 500
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672042-5833533&type=Single"
-       },
-       "best": 500,
-       "bestBook": "betmgm",
-       "consensus": 475
-      },
-      "jerry jeudy": {
-       "name": "Jerry Jeudy",
-       "books": {
-        "betonlineag": 450,
-        "betmgm": 400
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672028-5833503&type=Single"
-       },
-       "best": 450,
-       "bestBook": "betonlineag",
-       "consensus": 425
-      },
       "jonathon brooks": {
        "name": "Jonathon Brooks",
        "books": {
-        "betonlineag": 280,
-        "betmgm": 280
+        "betonlineag": 290
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672100-5833613&type=Single"
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547"
        },
-       "best": 280,
+       "best": 290,
        "bestBook": "betonlineag",
-       "consensus": 280
-      },
-      "mitchell evans": {
-       "name": "Mitchell Evans",
-       "books": {
-        "betonlineag": 1000,
-        "betmgm": 800
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672018-5833485&type=Single"
-       },
-       "best": 1000,
-       "bestBook": "betonlineag",
-       "consensus": 900
+       "consensus": 290
       },
       "brycen tremayne": {
        "name": "Brycen Tremayne",
@@ -2658,29 +2896,15 @@
        "name": "Isaiah Bond",
        "books": {
         "betonlineag": 1900,
-        "betmgm": 1800
+        "betmgm": 2200
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672085-5833590&type=Single"
        },
-       "best": 1900,
-       "bestBook": "betonlineag",
-       "consensus": 1850
-      },
-      "harold fannin": {
-       "name": "Harold Fannin Jr.",
-       "books": {
-        "betonlineag": 260,
-        "betmgm": 250
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672041-5833531&type=Single"
-       },
-       "best": 260,
-       "bestBook": "betonlineag",
-       "consensus": 255
+       "best": 2200,
+       "bestBook": "betmgm",
+       "consensus": 2050
       },
       "malachi corley": {
        "name": "Malachi Corley",
@@ -2696,47 +2920,19 @@
        "bestBook": "betmgm",
        "consensus": 2600
       },
-      "raheim sanders": {
-       "name": "Raheim Sanders",
-       "books": {
-        "betonlineag": 500,
-        "betmgm": 500
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672003-5833455&type=Single"
-       },
-       "best": 500,
-       "bestBook": "betonlineag",
-       "consensus": 500
-      },
-      "michael burton": {
-       "name": "Michael Burton",
-       "books": {
-        "betonlineag": 1900,
-        "betmgm": 4000
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672094-5833603&type=Single"
-       },
-       "best": 4000,
-       "bestBook": "betmgm",
-       "consensus": 2950
-      },
       "john metchie": {
        "name": "John Metchie III",
        "books": {
         "betonlineag": 1100,
-        "betmgm": 1550
+        "betmgm": 1600
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672037-5833523&type=Single"
        },
-       "best": 1550,
+       "best": 1600,
        "bestBook": "betmgm",
-       "consensus": 1325
+       "consensus": 1350
       },
       "tylan wallace": {
        "name": "Tylan Wallace",
@@ -2752,20 +2948,6 @@
        "bestBook": "betmgm",
        "consensus": 2100
       },
-      "kc concepcion": {
-       "name": "KC Concepcion",
-       "books": {
-        "betonlineag": 350,
-        "betmgm": 270
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672021-5833491&type=Single"
-       },
-       "best": 350,
-       "bestBook": "betonlineag",
-       "consensus": 310
-      },
       "carsen ryan": {
        "name": "Carsen Ryan",
        "books": {
@@ -2779,62 +2961,12 @@
        "best": 2900,
        "bestBook": "betonlineag",
        "consensus": 2850
-      },
-      "darren waller": {
-       "name": "Darren Waller",
-       "books": {
-        "betonlineag": 400,
-        "betmgm": 400
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129547",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672008-5833465&type=Single"
-       },
-       "best": 400,
-       "bestBook": "betonlineag",
-       "consensus": 400
-      },
-      "cleveland browns dst": {
-       "name": "Cleveland Browns D/ST",
-       "books": {
-        "betmgm": 525
-       },
-       "links": {
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3671993-5833435&type=Single"
-       },
-       "best": 525,
-       "bestBook": "betmgm",
-       "consensus": 525
-      },
-      "carolina panthers dst": {
-       "name": "Carolina Panthers D/ST",
-       "books": {
-        "betmgm": 450
-       },
-       "links": {
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3671998-5833445&type=Single"
-       },
-       "best": 450,
-       "bestBook": "betmgm",
-       "consensus": 450
-      },
-      "jaleel mclaughlin": {
-       "name": "Jaleel McLaughlin",
-       "books": {
-        "betmgm": 1050
-       },
-       "links": {
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43442-3672006-5833461&type=Single"
-       },
-       "best": 1050,
-       "bestBook": "betmgm",
-       "consensus": 1050
       }
      }
     }
    },
    "pulls": {
-    "open": "2026-09-22T13:30:19.336Z"
+    "open": "2026-09-22T22:45:09.073Z"
    }
   },
   {
@@ -2845,16 +2977,16 @@
    "lines": null,
    "markets": {
     "player_anytime_td": {
-     "fetchedAt": "2026-09-22T13:30:19.428Z",
+     "fetchedAt": "2026-09-22T22:45:09.158Z",
      "phase": "open",
      "players": {
       "chase brown": {
        "name": "Chase Brown",
        "books": {
-        "draftkings": -125,
+        "draftkings": -130,
         "betonlineag": -143,
         "betmgm": -125,
-        "bovada": -125
+        "bovada": -132
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371988779%232293329205_13L88808Q1-203805330Q20",
@@ -2863,8 +2995,8 @@
         "bovada": "https://www.bovada.lv/sports/football/nfl/cincinnati-bengals-pittsburgh-steelers-202609271300"
        },
        "best": -125,
-       "bestBook": "draftkings",
-       "consensus": -125
+       "bestBook": "betmgm",
+       "consensus": -131
       },
       "jamarr chase": {
        "name": "Ja'Marr Chase",
@@ -2888,7 +3020,7 @@
        "name": "Tee Higgins",
        "books": {
         "draftkings": 190,
-        "betonlineag": 170,
+        "betonlineag": 180,
         "betmgm": 165,
         "bovada": 190
        },
@@ -2900,7 +3032,7 @@
        },
        "best": 190,
        "bestBook": "draftkings",
-       "consensus": 180
+       "consensus": 185
       },
       "samaje perine": {
        "name": "Samaje Perine",
@@ -2989,16 +3121,16 @@
       "dk metcalf": {
        "name": "DK Metcalf",
        "books": {
-        "betonlineag": 230,
-        "betmgm": 180
+        "betonlineag": 220,
+        "betmgm": 185
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129552",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43443-3655213-5807686&type=Single"
        },
-       "best": 230,
+       "best": 220,
        "bestBook": "betonlineag",
-       "consensus": 205
+       "consensus": 203
       },
       "ben skowronek": {
        "name": "Ben Skowronek",
@@ -3018,7 +3150,7 @@
        "name": "Roman Wilson",
        "books": {
         "betonlineag": 750,
-        "betmgm": 310
+        "betmgm": 375
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129552",
@@ -3026,7 +3158,7 @@
        },
        "best": 750,
        "bestBook": "betonlineag",
-       "consensus": 530
+       "consensus": 563
       },
       "erick all": {
        "name": "Erick All",
@@ -3045,16 +3177,16 @@
       "jaylen warren": {
        "name": "Jaylen Warren",
        "books": {
-        "betonlineag": 180,
-        "betmgm": 105
+        "betonlineag": 110,
+        "betmgm": 115
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129552",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43443-3655253-5807764&type=Single"
        },
-       "best": 180,
-       "bestBook": "betonlineag",
-       "consensus": 143
+       "best": 115,
+       "bestBook": "betmgm",
+       "consensus": 113
       },
       "mike gesicki": {
        "name": "Mike Gesicki",
@@ -3101,30 +3233,28 @@
       "eli heidenreich": {
        "name": "Eli Heidenreich",
        "books": {
-        "betonlineag": 2400,
-        "betmgm": 3300
+        "betonlineag": 1900
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129552",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43443-3655231-5807722&type=Single"
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129552"
        },
-       "best": 3300,
-       "bestBook": "betmgm",
-       "consensus": 2850
+       "best": 1900,
+       "bestBook": "betonlineag",
+       "consensus": 1900
       },
       "dohnte meyers": {
        "name": "Dohnte Meyers",
        "books": {
         "betonlineag": 1100,
-        "betmgm": 1200
+        "betmgm": 1300
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129552",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43443-3655261-5807780&type=Single"
        },
-       "best": 1200,
+       "best": 1300,
        "bestBook": "betmgm",
-       "consensus": 1150
+       "consensus": 1200
       },
       "colbie young": {
        "name": "Colbie Young",
@@ -3182,7 +3312,7 @@
        "name": "Germie Bernard",
        "books": {
         "betonlineag": 800,
-        "betmgm": 310
+        "betmgm": 375
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129552",
@@ -3190,13 +3320,13 @@
        },
        "best": 800,
        "bestBook": "betonlineag",
-       "consensus": 555
+       "consensus": 588
       },
       "robert tonyan": {
        "name": "Robert Tonyan",
        "books": {
         "betonlineag": 3400,
-        "betmgm": 1900
+        "betmgm": 1850
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129552",
@@ -3204,7 +3334,7 @@
        },
        "best": 3400,
        "bestBook": "betonlineag",
-       "consensus": 2650
+       "consensus": 2625
       },
       "riley nowakowski": {
        "name": "Riley Nowakowski",
@@ -3247,20 +3377,20 @@
       "cincinnati bengals dst": {
        "name": "Cincinnati Bengals D/ST",
        "books": {
-        "betmgm": 575
+        "betmgm": 525
        },
        "links": {
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43443-3655214-5807684&type=Single"
        },
-       "best": 575,
+       "best": 525,
        "bestBook": "betmgm",
-       "consensus": 575
+       "consensus": 525
       }
      }
     }
    },
    "pulls": {
-    "open": "2026-09-22T13:30:19.428Z"
+    "open": "2026-09-22T22:45:09.158Z"
    }
   },
   {
@@ -3271,16 +3401,16 @@
    "lines": null,
    "markets": {
     "player_anytime_td": {
-     "fetchedAt": "2026-09-22T13:30:19.509Z",
+     "fetchedAt": "2026-09-22T22:45:09.245Z",
      "phase": "open",
      "players": {
       "jahmyr gibbs": {
        "name": "Jahmyr Gibbs",
        "books": {
-        "draftkings": -260,
-        "betonlineag": -333,
+        "draftkings": -250,
+        "betonlineag": -250,
         "betmgm": -300,
-        "bovada": -265
+        "bovada": -250
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335063_13L88808Q1-1471319780Q20",
@@ -3288,17 +3418,17 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667895-5823396&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
        },
-       "best": -260,
+       "best": -250,
        "bestBook": "draftkings",
-       "consensus": -282
+       "consensus": -250
       },
       "amonra st brown": {
        "name": "Amon-Ra St. Brown",
        "books": {
-        "draftkings": -130,
+        "draftkings": -135,
         "betonlineag": -143,
-        "betmgm": 100,
-        "bovada": -132
+        "betmgm": -125,
+        "bovada": -136
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335129_13L88808Q1-1466210203Q20",
@@ -3306,16 +3436,16 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667908-5823422&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
        },
-       "best": 100,
+       "best": -125,
        "bestBook": "betmgm",
-       "consensus": -131
+       "consensus": -135
       },
       "breece hall": {
        "name": "Breece Hall",
        "books": {
         "draftkings": -120,
         "betonlineag": -125,
-        "betmgm": 100,
+        "betmgm": -105,
         "bovada": -122
        },
        "links": {
@@ -3324,17 +3454,17 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667914-5823432&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
        },
-       "best": 100,
+       "best": -105,
        "bestBook": "betmgm",
        "consensus": -121
       },
       "garrett wilson": {
        "name": "Garrett Wilson",
        "books": {
-        "draftkings": 150,
-        "betonlineag": 150,
-        "betmgm": 155,
-        "bovada": 150
+        "draftkings": 145,
+        "betonlineag": 140,
+        "betmgm": 150,
+        "bovada": 145
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335142_13L88808Q1322761913Q20",
@@ -3342,37 +3472,237 @@
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667917-5823438&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
        },
-       "best": 155,
+       "best": 150,
        "bestBook": "betmgm",
-       "consensus": 150
+       "consensus": 145
       },
-      "jared goff": {
-       "name": "Jared Goff",
+      "sam laporta": {
+       "name": "Sam LaPorta",
        "books": {
-        "betonlineag": 1400,
-        "betmgm": 1700
+        "draftkings": 165,
+        "betonlineag": 160,
+        "betmgm": 180,
+        "bovada": 165
        },
        "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335130_13L88808Q1472584472Q20",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667907-5823420&type=Single"
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667897-5823400&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
        },
-       "best": 1700,
+       "best": 180,
        "bestBook": "betmgm",
-       "consensus": 1550
+       "consensus": 165
+      },
+      "jameson williams": {
+       "name": "Jameson Williams",
+       "books": {
+        "draftkings": 170,
+        "betonlineag": 170,
+        "betmgm": 180,
+        "bovada": 170
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335131_13L88808Q1480222870Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667894-5823392&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
+       },
+       "best": 180,
+       "bestBook": "betmgm",
+       "consensus": 170
+      },
+      "braelon allen": {
+       "name": "Braelon Allen",
+       "books": {
+        "draftkings": 270,
+        "betonlineag": 270,
+        "betmgm": 310,
+        "bovada": 270
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335143_13L88808Q1-1853948704Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667905-5823416&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
+       },
+       "best": 310,
+       "bestBook": "betmgm",
+       "consensus": 270
+      },
+      "adonai mitchell": {
+       "name": "Adonai Mitchell",
+       "books": {
+        "draftkings": 340,
+        "betonlineag": 290,
+        "betmgm": 210,
+        "bovada": 340
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335144_13L88808Q1561250129Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667921-5823448&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
+       },
+       "best": 340,
+       "bestBook": "draftkings",
+       "consensus": 315
+      },
+      "isaac teslaa": {
+       "name": "Isaac TeSlaa",
+       "books": {
+        "draftkings": 425,
+        "betonlineag": 400,
+        "betmgm": 425,
+        "bovada": 420
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335132_13L88808Q11283746776Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667950-5823506&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
+       },
+       "best": 425,
+       "bestBook": "draftkings",
+       "consensus": 423
+      },
+      "kenyon sadiq": {
+       "name": "Kenyon Sadiq",
+       "books": {
+        "draftkings": 425,
+        "betonlineag": 400,
+        "bovada": 420
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335145_13L88808Q1-216139177Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
+       },
+       "best": 425,
+       "bestBook": "draftkings",
+       "consensus": 420
+      },
+      "isaiah williams": {
+       "name": "Isaiah Williams",
+       "books": {
+        "draftkings": 475,
+        "betonlineag": 450,
+        "betmgm": 450,
+        "bovada": 460
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335148_13L88808Q12123082164Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667910-5823426&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
+       },
+       "best": 475,
+       "bestBook": "draftkings",
+       "consensus": 455
+      },
+      "sione vaki": {
+       "name": "Sione Vaki",
+       "books": {
+        "draftkings": 500,
+        "betonlineag": 500,
+        "betmgm": 360,
+        "bovada": 500
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335133_13L88808Q1-1535713599Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667893-5823390&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
+       },
+       "best": 500,
+       "bestBook": "draftkings",
+       "consensus": 500
+      },
+      "detroit lions dst": {
+       "name": "Detroit Lions D/ST",
+       "books": {
+        "draftkings": 550,
+        "betmgm": 360,
+        "bovada": 525
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335156_13L88808Q1-1795313339Q20",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667891-5823388&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
+       },
+       "best": 550,
+       "bestBook": "draftkings",
+       "consensus": 525
       },
       "geno smith": {
        "name": "Geno Smith",
        "books": {
+        "draftkings": 700,
         "betonlineag": 700,
-        "betmgm": 625
+        "betmgm": 625,
+        "bovada": 700
        },
        "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335147_13L88808Q1-1340259376Q20",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667938-5823482&type=Single"
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667938-5823482&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
        },
        "best": 700,
-       "bestBook": "betonlineag",
-       "consensus": 663
+       "bestBook": "draftkings",
+       "consensus": 700
+      },
+      "new york jets dst": {
+       "name": "New York Jets D/ST",
+       "books": {
+        "draftkings": 700,
+        "betmgm": 625,
+        "bovada": 700
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335157_14L88808Q11160430042Q20",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667946-5823498&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
+       },
+       "best": 700,
+       "bestBook": "draftkings",
+       "consensus": 700
+      },
+      "jared goff": {
+       "name": "Jared Goff",
+       "books": {
+        "draftkings": 1000,
+        "betonlineag": 1000,
+        "betmgm": 1300,
+        "bovada": 1000
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335134_13L88808Q1-1939996255Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667907-5823420&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
+       },
+       "best": 1300,
+       "bestBook": "betmgm",
+       "consensus": 1000
+      },
+      "brock wright": {
+       "name": "Brock Wright",
+       "books": {
+        "draftkings": 1000,
+        "betonlineag": 1000,
+        "betmgm": 1800,
+        "bovada": 1000
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371990126%232293335135_13L88808Q1779951428Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667920-5823446&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-york-jets-detroit-lions-202609271300"
+       },
+       "best": 1800,
+       "bestBook": "betmgm",
+       "consensus": 1000
       },
       "tom kennedy": {
        "name": "Tom Kennedy",
@@ -3386,75 +3716,17 @@
        "bestBook": "betonlineag",
        "consensus": 2400
       },
-      "brock wright": {
-       "name": "Brock Wright",
-       "books": {
-        "betonlineag": 800,
-        "betmgm": 1850
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667920-5823446&type=Single"
-       },
-       "best": 1850,
-       "bestBook": "betmgm",
-       "consensus": 1325
-      },
       "jeremy ruckert": {
        "name": "Jeremy Ruckert",
        "books": {
-        "betonlineag": 1900,
-        "betmgm": 1100
+        "betonlineag": 1400
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667945-5823496&type=Single"
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551"
        },
-       "best": 1900,
+       "best": 1400,
        "bestBook": "betonlineag",
-       "consensus": 1500
-      },
-      "sione vaki": {
-       "name": "Sione Vaki",
-       "books": {
-        "betonlineag": 700,
-        "betmgm": 340
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667893-5823390&type=Single"
-       },
-       "best": 700,
-       "bestBook": "betonlineag",
-       "consensus": 520
-      },
-      "sam laporta": {
-       "name": "Sam LaPorta",
-       "books": {
-        "betonlineag": 180,
-        "betmgm": 185
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667897-5823400&type=Single"
-       },
-       "best": 185,
-       "bestBook": "betmgm",
-       "consensus": 183
-      },
-      "braelon allen": {
-       "name": "Braelon Allen",
-       "books": {
-        "betonlineag": 350,
-        "betmgm": 333
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667905-5823416&type=Single"
-       },
-       "best": 350,
-       "bestBook": "betonlineag",
-       "consensus": 342
+       "consensus": 1400
       },
       "isaiah davis": {
        "name": "Isaiah Davis",
@@ -3470,39 +3742,23 @@
        "bestBook": "betonlineag",
        "consensus": 1350
       },
-      "jameson williams": {
-       "name": "Jameson Williams",
-       "books": {
-        "betonlineag": 170,
-        "betmgm": 180
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667894-5823392&type=Single"
-       },
-       "best": 180,
-       "bestBook": "betmgm",
-       "consensus": 175
-      },
       "mason taylor": {
        "name": "Mason Taylor",
        "books": {
-        "betonlineag": 550,
-        "betmgm": 525
+        "betonlineag": 550
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667935-5823476&type=Single"
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551"
        },
        "best": 550,
        "bestBook": "betonlineag",
-       "consensus": 538
+       "consensus": 550
       },
       "jacob saylors": {
        "name": "Jacob Saylors",
        "books": {
         "betonlineag": 1100,
-        "betmgm": 825
+        "betmgm": 850
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
@@ -3510,7 +3766,7 @@
        },
        "best": 1100,
        "bestBook": "betonlineag",
-       "consensus": 963
+       "consensus": 975
       },
       "arian smith": {
        "name": "Arian Smith",
@@ -3527,16 +3783,14 @@
       "jelani woods": {
        "name": "Jelani Woods",
        "books": {
-        "betonlineag": 2900,
-        "betmgm": 2000
+        "betonlineag": 3400
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667926-5823454&type=Single"
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551"
        },
-       "best": 2900,
+       "best": 3400,
        "bestBook": "betonlineag",
-       "consensus": 2450
+       "consensus": 3400
       },
       "jackson meeks": {
        "name": "Jackson Meeks",
@@ -3550,75 +3804,33 @@
        "bestBook": "betonlineag",
        "consensus": 3400
       },
-      "isaiah williams": {
-       "name": "Isaiah Williams",
-       "books": {
-        "betonlineag": 450,
-        "betmgm": 475
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667910-5823426&type=Single"
-       },
-       "best": 475,
-       "bestBook": "betmgm",
-       "consensus": 463
-      },
-      "isaac teslaa": {
-       "name": "Isaac TeSlaa",
-       "books": {
-        "betonlineag": 350,
-        "betmgm": 400
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667950-5823506&type=Single"
-       },
-       "best": 400,
-       "bestBook": "betmgm",
-       "consensus": 375
-      },
       "andrew beck": {
        "name": "Andrew Beck",
        "books": {
         "betonlineag": 1900,
-        "betmgm": 3300
+        "betmgm": 4500
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667924-5823458&type=Single"
        },
-       "best": 3300,
+       "best": 4500,
        "bestBook": "betmgm",
-       "consensus": 2600
-      },
-      "adonai mitchell": {
-       "name": "Adonai Mitchell",
-       "books": {
-        "betonlineag": 300,
-        "betmgm": 220
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667921-5823448&type=Single"
-       },
-       "best": 300,
-       "bestBook": "betonlineag",
-       "consensus": 260
+       "consensus": 3200
       },
       "tyler conklin": {
        "name": "Tyler Conklin",
        "books": {
         "betonlineag": 1900,
-        "betmgm": 1850
+        "betmgm": 2000
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
         "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667886-5823378&type=Single"
        },
-       "best": 1900,
-       "bestBook": "betonlineag",
-       "consensus": 1875
+       "best": 2000,
+       "bestBook": "betmgm",
+       "consensus": 1950
       },
       "tay martin": {
        "name": "Tay Martin",
@@ -3631,50 +3843,12 @@
        "best": 3400,
        "bestBook": "betonlineag",
        "consensus": 3400
-      },
-      "kenyon sadiq": {
-       "name": "Kenyon Sadiq",
-       "books": {
-        "betonlineag": 700,
-        "betmgm": 375
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129551",
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667951-5823508&type=Single"
-       },
-       "best": 700,
-       "bestBook": "betonlineag",
-       "consensus": 538
-      },
-      "detroit lions dst": {
-       "name": "Detroit Lions D/ST",
-       "books": {
-        "betmgm": 475
-       },
-       "links": {
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667891-5823388&type=Single"
-       },
-       "best": 475,
-       "bestBook": "betmgm",
-       "consensus": 475
-      },
-      "new york jets dst": {
-       "name": "New York Jets D/ST",
-       "books": {
-        "betmgm": 625
-       },
-       "links": {
-        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43449-3667946-5823498&type=Single"
-       },
-       "best": 625,
-       "bestBook": "betmgm",
-       "consensus": 625
       }
      }
     }
    },
    "pulls": {
-    "open": "2026-09-22T13:30:19.509Z"
+    "open": "2026-09-22T22:45:09.245Z"
    }
   },
   {
@@ -3685,7 +3859,7 @@
    "lines": null,
    "markets": {},
    "pulls": {
-    "open": "2026-09-22T13:30:19.595Z"
+    "open": "2026-09-22T22:45:09.324Z"
    }
   },
   {
@@ -3696,7 +3870,7 @@
    "lines": null,
    "markets": {
     "player_anytime_td": {
-     "fetchedAt": "2026-09-22T13:30:20.011Z",
+     "fetchedAt": "2026-09-22T22:45:09.736Z",
      "phase": "open",
      "players": {
       "bhayshul tuten": {
@@ -3704,220 +3878,464 @@
        "books": {
         "draftkings": 115,
         "betonlineag": 110,
+        "betmgm": 110,
         "bovada": 115
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360401_13L88808Q11230695518Q20",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672396-5833998&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
        },
        "best": 115,
        "bestBook": "draftkings",
-       "consensus": 115
+       "consensus": 113
+      },
+      "rhamondre stevenson": {
+       "name": "Rhamondre Stevenson",
+       "books": {
+        "draftkings": 135,
+        "betonlineag": 130,
+        "betmgm": 150,
+        "bovada": 135
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360414_13L88808Q1-1828996474Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672431-5834068&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 150,
+       "bestBook": "betmgm",
+       "consensus": 135
       },
       "treveyon henderson": {
        "name": "TreVeyon Henderson",
        "books": {
         "draftkings": 145,
         "betonlineag": 140,
+        "betmgm": 160,
         "bovada": 145
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360416_13L88808Q1709721529Q20",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672444-5834094&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
        },
-       "best": 145,
-       "bestBook": "draftkings",
+       "best": 160,
+       "bestBook": "betmgm",
        "consensus": 145
       },
       "parker washington": {
        "name": "Parker Washington",
        "books": {
-        "draftkings": 170,
+        "draftkings": 175,
         "betonlineag": 160,
-        "bovada": 170
+        "betmgm": 155,
+        "bovada": 175
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360402_13L88808Q1-849064763Q20",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672441-5834088&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
        },
-       "best": 170,
+       "best": 175,
        "bestBook": "draftkings",
-       "consensus": 170
+       "consensus": 168
+      },
+      "chris rodriguez": {
+       "name": "Chris Rodriguez Jr.",
+       "books": {
+        "draftkings": 250,
+        "betonlineag": 220,
+        "betmgm": 165,
+        "bovada": 250
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360403_13L88808Q11137102484Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672443-5834092&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 250,
+       "bestBook": "draftkings",
+       "consensus": 235
+      },
+      "brian thomas": {
+       "name": "Brian Thomas Jr",
+       "books": {
+        "draftkings": 260,
+        "betonlineag": 250,
+        "betmgm": 270,
+        "bovada": 260
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360406_13L88808Q1-271780635Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672434-5834074&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 270,
+       "bestBook": "betmgm",
+       "consensus": 260
+      },
+      "jakobi meyers": {
+       "name": "Jakobi Meyers",
+       "books": {
+        "draftkings": 270,
+        "betonlineag": 270,
+        "betmgm": 300,
+        "bovada": 270
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360404_13L88808Q1-992648746Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672416-5834038&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 300,
+       "bestBook": "betmgm",
+       "consensus": 270
+      },
+      "brenton strange": {
+       "name": "Brenton Strange",
+       "books": {
+        "draftkings": 275,
+        "betonlineag": 270,
+        "betmgm": 280,
+        "bovada": 275
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360405_13L88808Q1-1393332464Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672466-5834138&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 280,
+       "bestBook": "betmgm",
+       "consensus": 275
+      },
+      "hunter henry": {
+       "name": "Hunter Henry",
+       "books": {
+        "draftkings": 280,
+        "betonlineag": 280,
+        "betmgm": 240,
+        "bovada": 280
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360415_13L88808Q1-1762786291Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672452-5834110&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 280,
+       "bestBook": "draftkings",
+       "consensus": 280
+      },
+      "romeo doubs": {
+       "name": "Romeo Doubs",
+       "books": {
+        "draftkings": 295,
+        "betonlineag": 290,
+        "betmgm": 250,
+        "bovada": 295
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360419_13L88808Q1-349638135Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672404-5834014&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 295,
+       "bestBook": "draftkings",
+       "consensus": 293
+      },
+      "mack hollins": {
+       "name": "Mack Hollins",
+       "books": {
+        "draftkings": 320,
+        "betonlineag": 300,
+        "betmgm": 310,
+        "bovada": 320
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360418_13L88808Q1950577073Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672447-5834102&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 320,
+       "bestBook": "draftkings",
+       "consensus": 315
       },
       "drake maye": {
        "name": "Drake Maye",
        "books": {
         "draftkings": 340,
         "betonlineag": 325,
+        "betmgm": 230,
         "bovada": 340
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360417_13L88808Q1-725127430Q20",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672439-5834084&type=Single",
         "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
        },
        "best": 340,
        "bestBook": "draftkings",
-       "consensus": 340
-      },
-      "demario douglas": {
-       "name": "DeMario Douglas",
-       "books": {
-        "betonlineag": 400
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 400,
-       "bestBook": "betonlineag",
-       "consensus": 400
-      },
-      "hunter henry": {
-       "name": "Hunter Henry",
-       "books": {
-        "betonlineag": 350
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 350,
-       "bestBook": "betonlineag",
-       "consensus": 350
-      },
-      "mack hollins": {
-       "name": "Mack Hollins",
-       "books": {
-        "betonlineag": 325
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 325,
-       "bestBook": "betonlineag",
-       "consensus": 325
-      },
-      "brian thomas": {
-       "name": "Brian Thomas Jr",
-       "books": {
-        "betonlineag": 240
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 240,
-       "bestBook": "betonlineag",
-       "consensus": 240
-      },
-      "rhamondre stevenson": {
-       "name": "Rhamondre Stevenson",
-       "books": {
-        "betonlineag": 140
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 140,
-       "bestBook": "betonlineag",
-       "consensus": 140
+       "consensus": 333
       },
       "trevor lawrence": {
        "name": "Trevor Lawrence",
        "books": {
-        "betonlineag": 325
+        "draftkings": 370,
+        "betonlineag": 350,
+        "betmgm": 360,
+        "bovada": 370
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360407_13L88808Q1-1192653454Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672465-5834134&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
        },
-       "best": 325,
-       "bestBook": "betonlineag",
-       "consensus": 325
+       "best": 370,
+       "bestBook": "draftkings",
+       "consensus": 365
       },
-      "brenton strange": {
-       "name": "Brenton Strange",
+      "demario douglas": {
+       "name": "DeMario Douglas",
        "books": {
-        "betonlineag": 270
+        "draftkings": 370,
+        "betonlineag": 350,
+        "betmgm": 333,
+        "bovada": 370
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360420_13L88808Q1-205213128Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672410-5834026&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
        },
-       "best": 270,
-       "bestBook": "betonlineag",
-       "consensus": 270
+       "best": 370,
+       "bestBook": "draftkings",
+       "consensus": 360
       },
-      "efton chism": {
-       "name": "Efton Chism III",
+      "ameer abdullah": {
+       "name": "Ameer Abdullah",
        "books": {
-        "betonlineag": 1400
+        "draftkings": 425,
+        "betonlineag": 400,
+        "betmgm": 775,
+        "bovada": 420
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360409_13L88808Q1352353478Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672464-5834136&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
        },
-       "best": 1400,
-       "bestBook": "betonlineag",
-       "consensus": 1400
-      },
-      "quintin morris": {
-       "name": "Quintin Morris",
-       "books": {
-        "betonlineag": 1400
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 1400,
-       "bestBook": "betonlineag",
-       "consensus": 1400
-      },
-      "travis hunter": {
-       "name": "Travis Hunter",
-       "books": {
-        "betonlineag": 1000
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 1000,
-       "bestBook": "betonlineag",
-       "consensus": 1000
-      },
-      "kyle williams": {
-       "name": "Kyle Williams",
-       "books": {
-        "betonlineag": 1100
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 1100,
-       "bestBook": "betonlineag",
-       "consensus": 1100
+       "best": 775,
+       "bestBook": "betmgm",
+       "consensus": 423
       },
       "lequint allen": {
        "name": "LeQuint Allen Jr.",
        "books": {
-        "betonlineag": 800
+        "draftkings": 600,
+        "betonlineag": 600,
+        "betmgm": 950,
+        "bovada": 600
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360408_13L88808Q1-2000471906Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672425-5834056&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 950,
+       "bestBook": "betmgm",
+       "consensus": 600
+      },
+      "kyle williams": {
+       "name": "Kyle Williams",
+       "books": {
+        "draftkings": 800,
+        "betonlineag": 800,
+        "betmgm": 800,
+        "bovada": 800
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360421_13L88808Q11958986630Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672414-5834034&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
        },
        "best": 800,
-       "bestBook": "betonlineag",
+       "bestBook": "draftkings",
        "consensus": 800
+      },
+      "eli raridon": {
+       "name": "Eli Raridon",
+       "books": {
+        "draftkings": 900,
+        "betonlineag": 900,
+        "betmgm": 675,
+        "bovada": 900
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360422_13L88808Q1-39347883Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672422-5834050&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 900,
+       "bestBook": "draftkings",
+       "consensus": 900
+      },
+      "travis hunter": {
+       "name": "Travis Hunter",
+       "books": {
+        "draftkings": 1000,
+        "betonlineag": 1000,
+        "betmgm": 1100,
+        "bovada": 1000
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360410_13L88808Q1-458881524Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672406-5834018&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 1100,
+       "bestBook": "betmgm",
+       "consensus": 1000
+      },
+      "corey kiner": {
+       "name": "Corey Kiner",
+       "books": {
+        "draftkings": 1000,
+        "betonlineag": 1000,
+        "betmgm": 2200,
+        "bovada": 1000
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360423_13L88808Q1-1553366467Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672403-5834012&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 2200,
+       "bestBook": "betmgm",
+       "consensus": 1000
+      },
+      "nate boerkircher": {
+       "name": "Nate Boerkircher",
+       "books": {
+        "draftkings": 1100,
+        "betonlineag": 800,
+        "betmgm": 950,
+        "bovada": 1100
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360411_13L88808Q1-292926888Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672445-5834096&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 1100,
+       "bestBook": "draftkings",
+       "consensus": 1025
+      },
+      "josh cameron": {
+       "name": "Josh Cameron",
+       "books": {
+        "draftkings": 1800,
+        "betonlineag": 1100,
+        "betmgm": 900,
+        "bovada": 1800
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360412_13L88808Q11380693923Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672451-5834108&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 1800,
+       "bestBook": "draftkings",
+       "consensus": 1450
+      },
+      "quintin morris": {
+       "name": "Quintin Morris",
+       "books": {
+        "draftkings": 1900,
+        "betonlineag": 1700,
+        "betmgm": 950,
+        "bovada": 1900
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360413_13L88808Q1-1307850565Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672408-5834022&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 1900,
+       "bestBook": "draftkings",
+       "consensus": 1800
+      },
+      "efton chism": {
+       "name": "Efton Chism III",
+       "books": {
+        "draftkings": 2000,
+        "betonlineag": 1400,
+        "betmgm": 2500,
+        "bovada": 2000
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360424_13L88808Q1-2056923875Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672429-5834064&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 2500,
+       "bestBook": "betmgm",
+       "consensus": 2000
+      },
+      "cameron latu": {
+       "name": "Cameron Latu",
+       "books": {
+        "draftkings": 2500,
+        "betmgm": 2200,
+        "bovada": 2500
+       },
+       "links": {
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360425_13L88808Q11182691913Q20",
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672402-5834010&type=Single",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
+       },
+       "best": 2500,
+       "bestBook": "draftkings",
+       "consensus": 2500
       },
       "reggie gilliam": {
        "name": "Reggie Gilliam",
        "books": {
-        "betonlineag": 2400
+        "draftkings": 3000,
+        "betonlineag": 2400,
+        "bovada": 2800
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
+        "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371995266%232293360427_13L88808Q1590386545Q20",
+        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549",
+        "bovada": "https://www.bovada.lv/sports/football/nfl/new-england-patriots-jacksonville-jaguars-202609271300"
        },
-       "best": 2400,
-       "bestBook": "betonlineag",
-       "consensus": 2400
+       "best": 3000,
+       "bestBook": "draftkings",
+       "consensus": 2800
       },
       "tanner arkin": {
        "name": "Tanner Arkin",
@@ -3931,107 +4349,47 @@
        "bestBook": "betonlineag",
        "consensus": 3400
       },
-      "jakobi meyers": {
-       "name": "Jakobi Meyers",
+      "new england patriots dst": {
+       "name": "New England Patriots D/ST",
        "books": {
-        "betonlineag": 270
+        "betmgm": 575
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672405-5834016&type=Single"
        },
-       "best": 270,
-       "bestBook": "betonlineag",
-       "consensus": 270
+       "best": 575,
+       "bestBook": "betmgm",
+       "consensus": 575
       },
-      "romeo doubs": {
-       "name": "Romeo Doubs",
+      "jacksonville jaguars dst": {
+       "name": "Jacksonville Jaguars D/ST",
        "books": {
-        "betonlineag": 325
+        "betmgm": 475
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672457-5834118&type=Single"
        },
-       "best": 325,
-       "bestBook": "betonlineag",
-       "consensus": 325
+       "best": 475,
+       "bestBook": "betmgm",
+       "consensus": 475
       },
-      "chris rodriguez": {
-       "name": "Chris Rodriguez Jr.",
+      "cj williams": {
+       "name": "CJ Williams",
        "books": {
-        "betonlineag": 220
+        "betmgm": 1400
        },
        "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
+        "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43445-3672463-5834132&type=Single"
        },
-       "best": 220,
-       "bestBook": "betonlineag",
-       "consensus": 220
-      },
-      "eli raridon": {
-       "name": "Eli Raridon",
-       "books": {
-        "betonlineag": 1100
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 1100,
-       "bestBook": "betonlineag",
-       "consensus": 1100
-      },
-      "ameer abdullah": {
-       "name": "Ameer Abdullah",
-       "books": {
-        "betonlineag": 750
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 750,
-       "bestBook": "betonlineag",
-       "consensus": 750
-      },
-      "corey kiner": {
-       "name": "Corey Kiner",
-       "books": {
-        "betonlineag": 1100
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 1100,
-       "bestBook": "betonlineag",
-       "consensus": 1100
-      },
-      "nate boerkircher": {
-       "name": "Nate Boerkircher",
-       "books": {
-        "betonlineag": 800
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 800,
-       "bestBook": "betonlineag",
-       "consensus": 800
-      },
-      "josh cameron": {
-       "name": "Josh Cameron",
-       "books": {
-        "betonlineag": 1100
-       },
-       "links": {
-        "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129549"
-       },
-       "best": 1100,
-       "bestBook": "betonlineag",
-       "consensus": 1100
+       "best": 1400,
+       "bestBook": "betmgm",
+       "consensus": 1400
       }
      }
     }
    },
    "pulls": {
-    "open": "2026-09-22T13:30:20.011Z"
+    "open": "2026-09-22T22:45:09.736Z"
    }
   },
   {
@@ -4042,84 +4400,84 @@
    "lines": null,
    "markets": {
     "player_anytime_td": {
-     "fetchedAt": "2026-09-22T13:30:20.108Z",
+     "fetchedAt": "2026-09-22T22:45:09.830Z",
      "phase": "open",
      "players": {
       "kenneth walker": {
        "name": "Kenneth Walker III",
        "books": {
-        "draftkings": -230,
+        "draftkings": -215,
         "betonlineag": -250,
-        "bovada": -235
+        "bovada": -218
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372090234%232293778713_13L88808Q11336808573Q20",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129548",
         "bovada": "https://www.bovada.lv/sports/football/nfl/kansas-city-chiefs-miami-dolphins-202609271300"
        },
-       "best": -230,
+       "best": -215,
        "bestBook": "draftkings",
-       "consensus": -235
+       "consensus": -218
       },
       "devon achane": {
        "name": "De'Von Achane",
        "books": {
-        "draftkings": -115,
+        "draftkings": -120,
         "betonlineag": -125,
-        "bovada": -117
+        "bovada": -122
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372090234%232293778584_13L88808Q1431588624Q20",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129548",
         "bovada": "https://www.bovada.lv/sports/football/nfl/kansas-city-chiefs-miami-dolphins-202609271300"
        },
-       "best": -115,
+       "best": -120,
        "bestBook": "draftkings",
-       "consensus": -117
+       "consensus": -122
       },
       "travis kelce": {
        "name": "Travis Kelce",
        "books": {
-        "draftkings": 170,
+        "draftkings": 165,
         "betonlineag": 150,
-        "bovada": 170
+        "bovada": 165
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372090234%232293778716_13L88808Q1-511040682Q20",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129548",
         "bovada": "https://www.bovada.lv/sports/football/nfl/kansas-city-chiefs-miami-dolphins-202609271300"
        },
-       "best": 170,
+       "best": 165,
        "bestBook": "draftkings",
-       "consensus": 170
+       "consensus": 165
       },
       "malik willis": {
        "name": "Malik Willis",
        "books": {
-        "draftkings": 300,
-        "betonlineag": 300,
-        "bovada": 300
+        "draftkings": 280,
+        "betonlineag": 280,
+        "bovada": 280
        },
        "links": {
         "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372090234%232293778701_13L88808Q11579636272Q20",
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129548",
         "bovada": "https://www.bovada.lv/sports/football/nfl/kansas-city-chiefs-miami-dolphins-202609271300"
        },
-       "best": 300,
+       "best": 280,
        "bestBook": "draftkings",
-       "consensus": 300
+       "consensus": 280
       },
       "patrick mahomes": {
        "name": "Patrick Mahomes",
        "books": {
-        "betonlineag": 325
+        "betonlineag": 350
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129548"
        },
-       "best": 325,
+       "best": 350,
        "bestBook": "betonlineag",
-       "consensus": 325
+       "consensus": 350
       },
       "rashee rice": {
        "name": "Rashee Rice",
@@ -4208,26 +4566,26 @@
       "jaylen wright": {
        "name": "Jaylen Wright",
        "books": {
-        "betonlineag": 650
+        "betonlineag": 900
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129548"
        },
-       "best": 650,
+       "best": 900,
        "bestBook": "betonlineag",
-       "consensus": 650
+       "consensus": 900
       },
       "xavier worthy": {
        "name": "Xavier Worthy",
        "books": {
-        "betonlineag": 190
+        "betonlineag": 200
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129548"
        },
-       "best": 190,
+       "best": 200,
        "bestBook": "betonlineag",
-       "consensus": 190
+       "consensus": 200
       },
       "jake briningstool": {
        "name": "Jake Briningstool",
@@ -4268,14 +4626,14 @@
       "caleb douglas": {
        "name": "Caleb Douglas",
        "books": {
-        "betonlineag": 325
+        "betonlineag": 350
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129548"
        },
-       "best": 325,
+       "best": 350,
        "bestBook": "betonlineag",
-       "consensus": 325
+       "consensus": 350
       },
       "chris bell": {
        "name": "Chris Bell",
@@ -4292,14 +4650,14 @@
       "will kacmarek": {
        "name": "Will Kacmarek",
        "books": {
-        "betonlineag": 1300
+        "betonlineag": 1400
        },
        "links": {
         "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129548"
        },
-       "best": 1300,
+       "best": 1400,
        "bestBook": "betonlineag",
-       "consensus": 1300
+       "consensus": 1400
       },
       "kevin coleman": {
        "name": "Kevin Coleman Jr.",
@@ -4365,7 +4723,7 @@
     }
    },
    "pulls": {
-    "open": "2026-09-22T13:30:20.108Z"
+    "open": "2026-09-22T22:45:09.830Z"
    }
   },
   {
@@ -5882,6 +6240,150 @@
    "commence": "2026-09-29T00:15:00Z",
    "home": "CHI",
    "away": "PHI",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "d55cb69fed50a09170560b5b75d8de86",
+   "commence": "2026-10-02T00:15:00Z",
+   "home": "CLE",
+   "away": "PIT",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "c9d8ed8aa4889486eaf10a630138ede0",
+   "commence": "2026-10-04T13:30:00Z",
+   "home": "WSH",
+   "away": "IND",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "664e6bda5721dc63be16bcf7d962a436",
+   "commence": "2026-10-04T17:00:00Z",
+   "home": "NYG",
+   "away": "ARI",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "f01589b0e7e6dd4f4ac1220a1db81f53",
+   "commence": "2026-10-04T17:00:00Z",
+   "home": "BAL",
+   "away": "TEN",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "573cc0ef39631a4f6673ec843a8bedd4",
+   "commence": "2026-10-04T17:00:00Z",
+   "home": "BUF",
+   "away": "NE",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "164e6eb68f31bac190381903c3cccd31",
+   "commence": "2026-10-04T17:00:00Z",
+   "home": "CHI",
+   "away": "NYJ",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "2ea94ddf20f66432b9024fe2e2eaba5f",
+   "commence": "2026-10-04T17:00:00Z",
+   "home": "CIN",
+   "away": "JAX",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "daf55e2df5341c007fee5a0fc5bbc2d4",
+   "commence": "2026-10-04T17:00:00Z",
+   "home": "HOU",
+   "away": "DAL",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "99a9bae4dc0dc2590496bd3102b211f2",
+   "commence": "2026-10-04T17:00:00Z",
+   "home": "TB",
+   "away": "GB",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "1b4f2e60ce83fa1d63a5dff83769d27c",
+   "commence": "2026-10-04T17:00:00Z",
+   "home": "PHI",
+   "away": "LAR",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "c327223d76a3b7b0db8c6c104442f44b",
+   "commence": "2026-10-04T20:05:00Z",
+   "home": "MIN",
+   "away": "MIA",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "a7e7efb75a9792ac63480ae6328dca18",
+   "commence": "2026-10-04T20:25:00Z",
+   "home": "SF",
+   "away": "DEN",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "e0cbd266dcf997089203a1b33ba0333d",
+   "commence": "2026-10-04T20:25:00Z",
+   "home": "LV",
+   "away": "KC",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "96d2373cda647873b971f268482bced0",
+   "commence": "2026-10-04T20:25:00Z",
+   "home": "SEA",
+   "away": "LAC",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "a73a76599a4f3422803e57bd8f61b626",
+   "commence": "2026-10-05T00:20:00Z",
+   "home": "CAR",
+   "away": "DET",
+   "lines": null,
+   "markets": {},
+   "pulls": {}
+  },
+  {
+   "id": "8bd90781e17e6d97df3941063cedae1e",
+   "commence": "2026-10-06T00:15:00Z",
+   "home": "NO",
+   "away": "ATL",
    "lines": null,
    "markets": {},
    "pulls": {}
