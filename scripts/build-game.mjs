@@ -116,17 +116,27 @@ const bestOf = (bk) => {
     .sort((a, b) => bk[b] - bk[a])[0];
   return k ? { price: bk[k], book: k === 'fanduel' ? 'FD' : k === 'draftkings' ? 'DK' : k } : null;
 };
+// The odds feed writes "Kyle Pitts" where the research writes "Kyle Pitts Sr.", so every lookup
+// between the two is keyed on the name with its generational suffix stripped. Without this the
+// desk's own estimate for Pitts never reached the card and he printed as "— · — · MARKET".
+const key = (name) =>
+  String(name)
+    .replace(/\s+(Jr|Sr|II|III|IV|V)\.?$/i, '')
+    .trim()
+    .toLowerCase();
 const modelBy = Object.fromEntries(
   atdLegs(board)
     .filter((l) => l.game === GAME)
-    .map((l) => [l.player, l]),
+    .map((l) => [key(l.player), l]),
 );
 // modelBy only covers the players the desk wrote an estimate for. Everyone else on the book's board
 // still has a team on the research board, and "— · —" under a name reads like missing data rather
 // than a name we simply did not write a number on.
-const teamBy = Object.fromEntries((game.atdBoard ?? []).map((p) => [p.name, p.team]));
+const teamBy = Object.fromEntries((game.atdBoard ?? []).map((p) => [key(p.name), p.team]));
 const posBy = Object.fromEntries(
-  [...(game.top3 ?? []), ...(game.value ?? [])].filter((p) => p.pos).map((p) => [p.name, p.pos]),
+  [...(game.top3 ?? []), ...(game.value ?? [])]
+    .filter((p) => p.pos)
+    .map((p) => [key(p.name), p.pos]),
 );
 const anytime = Object.values(evt.markets.player_anytime_td?.players ?? {})
   .map((p) => p.name)
@@ -135,15 +145,15 @@ const anytime = Object.values(evt.markets.player_anytime_td?.players ?? {})
   .map((name) => {
     const b = bestOf(bookOf('player_anytime_td', name));
     if (!b) return null;
-    const m = modelBy[name];
+    const m = modelBy[key(name)];
     const implied = impliedFromAmerican(b.price);
     const prob = m ? m.prob : implied * VIG;
     return {
       kind: 'atd',
       label: `${name} anytime TD`,
       name,
-      team: m?.team ?? teamBy[name] ?? null,
-      pos: m?.pos ?? posBy[name] ?? null,
+      team: m?.team ?? teamBy[key(name)] ?? null,
+      pos: m?.pos ?? posBy[key(name)] ?? null,
       price: b.price,
       book: b.book,
       implied,

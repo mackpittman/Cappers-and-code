@@ -1,0 +1,23 @@
+{
+ "note": "Shares blended from the starting QB's own 2025 red-zone/goal-line targets (Penix 9 starts: London 12 RZ tgts, 5 of 5 GL tgts, 8 TD; Bijan 9 RZ, 2 TD; Pitts 5 RZ, 1 TD. Love 16 games, current roster only: Kraft 12 RZ tgts/7 TD in 8 games, Watson 7 RZ/2 GL/6 TD, Golden 0 TD on 44 tgts) and 2026 usage through Week 2 (ATL: zero red-zone snaps, 1 TD; GB: 18 RZ snaps, 4 pass TD, Watson 3 of them and both GL targets, Kraft 0 RZ tgts, Golden 0 TD on 18 tgts). Rush shares from 2025 rushing TDs and 2026 RZ/GL carries; Jacobs (13 GL rushes in 2025) is on the exempt list so GB's rushing role is a committee that has not scored. Expected TDs from implied totals ATL 19 / GB 23.5 at ~0.11 TD per point, ATL shaded down for a field-goal-heavy profile, GB shaded down for two starting linemen out.",
+ "teams": {
+  "ATL": {
+   "expectedTd": 2.0,
+   "pass": {"fraction": 0.62, "shares": {"Drake London": 0.44, "Bijan Robinson": 0.22, "Kyle Pitts Sr.": 0.14, "Jahan Dotson": 0.09, "Austin Hooper": 0.05, "Olamide Zaccheaus": 0.03, "Zachariah Branch": 0.03}},
+   "rush": {"fraction": 0.38, "shares": {"Bijan Robinson": 0.74, "Brian Robinson Jr.": 0.19, "Michael Penix Jr.": 0.07}}
+  },
+  "GB": {
+   "expectedTd": 2.6,
+   "pass": {"fraction": 0.78, "shares": {"Christian Watson": 0.33, "Tucker Kraft": 0.22, "Matthew Golden": 0.14, "MarShawn Lloyd": 0.10, "Jonnu Smith": 0.07, "Chris Brooks": 0.04, "Skyy Moore": 0.04, "Bo Melton": 0.03, "Josh Whyle": 0.03}},
+   "rush": {"fraction": 0.22, "shares": {"MarShawn Lloyd": 0.40, "Chris Brooks": 0.35, "Kaleb Johnson": 0.20, "Jordan Love": 0.05}}
+  }
+ },
+ "prices": {
+  "Bijan Robinson": {"1": -145, "2": 440, "3": 2200}, "Christian Watson": {"1": 150, "2": 1200, "3": 8000},
+  "Matthew Golden": {"1": 200, "2": 1700}, "Drake London": {"1": 200, "2": 1800}, "Tucker Kraft": {"1": 210, "2": 2000},
+  "Kaleb Johnson": {"1": 210, "2": 1600}, "MarShawn Lloyd": {"1": 210, "2": 1600}, "Chris Brooks": {"1": 320, "2": 2700},
+  "Kyle Pitts Sr.": {"1": 400, "2": 4500}, "Brian Robinson Jr.": {"1": 420, "2": 4500}, "Skyy Moore": {"1": 550},
+  "Jonnu Smith": {"1": 600}, "Jordan Love": {"1": 600}, "Jahan Dotson": {"1": 700}, "Olamide Zaccheaus": {"1": 800},
+  "Bo Melton": {"1": 1000}, "Michael Penix Jr.": {"1": 1100}, "Josh Whyle": {"1": 1100}, "Zachariah Branch": {"1": 1400}, "Austin Hooper": {"1": 1500}
+ }
+}

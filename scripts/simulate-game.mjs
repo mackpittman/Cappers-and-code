@@ -461,11 +461,33 @@ function solveShare(dist, target) {
   }
   return (lo + hi) / 2;
 }
+// TD_PROB="Drake London:0.42||Christian Watson:0.49" replaces a scorer's market-derived anytime
+// probability with our own before his share is solved. The default calibrates every player to his
+// price, which is right when the book has seen what we have seen; when a quarterback change moves
+// the red-zone targets and the board has not caught up, the role model's number goes in here and
+// the sim's correlation machinery runs on top of it.
+const TD_PROB = new Map(
+  (process.env.TD_PROB ?? '')
+    .split('||')
+    .map((x) => x.trim())
+    .filter(Boolean)
+    .map((x) => {
+      const i = x.lastIndexOf(':');
+      return [x.slice(0, i).trim(), Number(x.slice(i + 1))];
+    }),
+);
 for (const side of ['away', 'home']) {
   const abbr = TEAMS[side];
   const dist = teamTdDistribution(side, side === 'home' ? 777 : 991);
   const pool = byTeam[abbr];
-  for (const pl of pool.players) pl.q = solveShare(dist, 1 - Math.exp(-pl.exp));
+  for (const pl of pool.players) {
+    const own = TD_PROB.get(pl.name);
+    pl.q = solveShare(dist, own != null ? own : 1 - Math.exp(-pl.exp));
+    if (own != null)
+      console.log(
+        `${abbr}: ${pl.name} anytime set to ${(own * 100).toFixed(1)}% by role (board ${((1 - Math.exp(-pl.exp)) * 100).toFixed(1)}%)`,
+      );
+  }
   const sum = pool.players.reduce((a, x) => a + x.q, 0);
   // More than the whole pie means the board's anytime prices imply more scorers than the score
   // supports. Scale back rather than silently double-count, and say so.

@@ -252,6 +252,71 @@ const since = (days) =>
     .filter((c) => Date.parse(c.t) > Date.now() - days * 86400000)
     .reduce((n, c) => n + (c.spent || 0), 0);
 
+// The cross-game stacks are written on Tuesday against Tuesday's numbers. By game day the market
+// has moved: the Thursday card went out under "GB -6" and "Under 44.5" while the live line read
+// -4.5 and 42.5. A stack label is a promise about a number, so each leg is rewritten to the live
+// line where the book has moved it — a spread leg ("GB -6") takes the live point on that side,
+// and a total leg ("ATL/GB Under 44.5") takes the live total. Legs that are not a side or total
+// are left alone.
+/** A bare "Under 44.5" or "GB -6" best-bet label, moved to the live line for its game. */
+function liveBet(bet, gameId, builtGames) {
+  const g = builtGames.find((x) => x.id === gameId);
+  if (!g) return bet;
+  const fmt = (n) => `${n > 0 ? '+' : ''}${n}`;
+  let m = /^(Over|Under) (\d+(?:\.\d)?)$/.exec(bet);
+  if (m && typeof g.live?.total?.point === 'number') return `${m[1]} ${g.live.total.point}`;
+  m = /^([A-Z]{2,3}) ([+-]\d+(?:\.\d)?)$/.exec(bet);
+  if (
+    m &&
+    typeof g.live?.spread?.homePoint === 'number' &&
+    (m[1] === g.home.abbr || m[1] === g.away.abbr)
+  ) {
+    const point = m[1] === g.home.abbr ? g.live.spread.homePoint : -g.live.spread.homePoint;
+    return `${m[1]} ${fmt(point)}`;
+  }
+  return bet;
+}
+function withLiveNumbers(stacks, researchGames, builtGames) {
+  const byAbbr = new Map();
+  for (const g of builtGames) {
+    byAbbr.set(g.away.abbr, g);
+    byAbbr.set(g.home.abbr, g);
+  }
+  const fmt = (n) => `${n > 0 ? '+' : ''}${n}`;
+  const rewrite = (leg) => {
+    let m = /^([A-Z]{2,3}) ([+-]\d+(?:\.\d)?)$/.exec(leg);
+    if (m) {
+      const g = byAbbr.get(m[1]);
+      const hp = g?.live?.spread?.homePoint;
+      if (typeof hp !== 'number') return leg;
+      const point = m[1] === g.home.abbr ? hp : -hp;
+      return `${m[1]} ${fmt(point)}`;
+    }
+    m = /^([A-Z]{2,3})\/([A-Z]{2,3}) (Over|Under) (\d+(?:\.\d)?)$/.exec(leg);
+    if (m) {
+      const g = byAbbr.get(m[2]);
+      const tp = g?.live?.total?.point;
+      if (typeof tp !== 'number') return leg;
+      return `${m[1]}/${m[2]} ${m[3]} ${tp}`;
+    }
+    return leg;
+  };
+  return stacks.map((st) => {
+    const legs = (st.legs ?? []).map(rewrite);
+    const moved = legs.some((l, i) => l !== st.legs[i]);
+    return moved
+      ? {
+          ...st,
+          legs,
+          why: `${st.why} (Numbers updated to the live line.)`.replace(
+            /\)\s*\(Numbers/,
+            '; numbers',
+          ),
+        }
+      : st;
+  });
+}
+
 const board = {
   season: research.season,
   week: schedule.week ?? research.week,
@@ -276,15 +341,17 @@ const board = {
   slateValue,
   bestBets: (research.bestBets || []).map((b) => ({
     ...b,
+    bet: liveBet(b.bet, b.game, games),
     gameLabel: (() => {
       const g = games.find((x) => x.id === b.game);
       return g ? `${g.away.abbr}@${g.home.abbr}` : b.game;
     })(),
   })),
-  crossStacks: research.crossStacks,
+  crossStacks: withLiveNumbers(research.crossStacks ?? [], research.games ?? [], games),
   upsetLeans: research.upsetLeans,
   maxConfidence: (research.maxConfidence || []).map((m) => ({
     ...m,
+    bet: liveBet(m.bet, m.game, games),
     gameLabel: (() => {
       const g = games.find((x) => x.id === m.game);
       return g ? `${g.away.abbr}@${g.home.abbr}` : m.game;

@@ -1,22 +1,48 @@
 {
- "builtAt": "2026-09-24T13:38:32.891Z",
+ "builtAt": "2026-09-24T22:57:40.435Z",
  "fades": [
   {
    "kind": "atd",
-   "label": "Bijan Robinson anytime TD",
-   "name": "Bijan Robinson",
-   "team": "ATL",
+   "label": "Kaleb Johnson anytime TD",
+   "name": "Kaleb Johnson",
+   "team": "GB",
    "pos": "RB",
-   "price": -155,
-   "book": "DK",
-   "implied": 0.6078431372549019,
-   "prob": 0.5,
+   "price": 205,
+   "book": "betrivers",
+   "implied": 0.32786885245901637,
+   "prob": 0.11,
    "source": "model",
-   "edge": -0.10784313725490191
+   "edge": -0.21786885245901638
+  },
+  {
+   "kind": "atd",
+   "label": "Jordan Love anytime TD",
+   "name": "Jordan Love",
+   "team": "GB",
+   "pos": "QB",
+   "price": 700,
+   "book": "betrivers",
+   "implied": 0.125,
+   "prob": 0.03,
+   "source": "model",
+   "edge": -0.095
+  },
+  {
+   "kind": "atd",
+   "label": "Matthew Golden anytime TD",
+   "name": "Matthew Golden",
+   "team": "GB",
+   "pos": "WR",
+   "price": 200,
+   "book": "FD",
+   "implied": 0.3333333333333333,
+   "prob": 0.25,
+   "source": "model",
+   "edge": -0.08333333333333331
   }
  ],
  "game": "atl-gb",
- "oddsFetchedAt": "2026-09-23T16:40:21.694Z",
+ "oddsFetchedAt": "2026-09-24T13:42:23.817Z",
  "side": {
   "kind": "side",
   "label": "GB -4.5",
@@ -44,12 +70,12 @@
    "name": "Bijan Robinson",
    "team": "ATL",
    "pos": "RB",
-   "price": -155,
-   "book": "DK",
-   "implied": 0.6078431372549019,
-   "prob": 0.5,
+   "price": -150,
+   "book": "FD",
+   "implied": 0.6,
+   "prob": 0.55,
    "source": "model",
-   "edge": -0.10784313725490191
+   "edge": -0.04999999999999993
   },
   {
    "kind": "atd",
@@ -57,12 +83,25 @@
    "name": "Christian Watson",
    "team": "GB",
    "pos": "WR",
-   "price": 145,
-   "book": "betrivers",
-   "implied": 0.40816326530612246,
+   "price": 155,
+   "book": "FD",
+   "implied": 0.39215686274509803,
+   "prob": 0.49,
+   "source": "model",
+   "edge": 0.09784313725490196
+  },
+  {
+   "kind": "atd",
+   "label": "Drake London anytime TD",
+   "name": "Drake London",
+   "team": "ATL",
+   "pos": "WR",
+   "price": 195,
+   "book": "FD",
+   "implied": 0.3389830508474576,
    "prob": 0.42,
    "source": "model",
-   "edge": 0.011836734693877526
+   "edge": 0.08101694915254237
   },
   {
    "kind": "atd",
@@ -70,116 +109,51 @@
    "name": "Tucker Kraft",
    "team": "GB",
    "pos": "TE",
-   "price": 175,
-   "book": "FD",
-   "implied": 0.36363636363636365,
-   "prob": 0.37,
+   "price": 210,
+   "book": "betmgm",
+   "implied": 0.3225806451612903,
+   "prob": 0.36,
    "source": "model",
-   "edge": 0.006363636363636349
-  },
-  {
-   "kind": "atd",
-   "label": "Matthew Golden anytime TD",
-   "name": "Matthew Golden",
-   "team": "GB",
-   "pos": null,
-   "price": 185,
-   "book": "FD",
-   "implied": 0.3508771929824561,
-   "prob": 0.3263157894736842,
-   "source": "market",
-   "edge": -0.024561403508771895
-  },
-  {
-   "kind": "atd",
-   "label": "Kaleb Johnson anytime TD",
-   "name": "Kaleb Johnson",
-   "team": "GB",
-   "pos": null,
-   "price": 195,
-   "book": "FD",
-   "implied": 0.3389830508474576,
-   "prob": 0.3152542372881356,
-   "source": "market",
-   "edge": -0.023728813559321993
+   "edge": 0.03741935483870967
   },
   {
    "kind": "atd",
    "label": "MarShawn Lloyd anytime TD",
    "name": "MarShawn Lloyd",
    "team": "GB",
-   "pos": null,
-   "price": 195,
-   "book": "DK",
-   "implied": 0.3389830508474576,
-   "prob": 0.3152542372881356,
-   "source": "market",
-   "edge": -0.023728813559321993
+   "pos": "RB",
+   "price": 220,
+   "book": "betrivers",
+   "implied": 0.3125,
+   "prob": 0.35,
+   "source": "model",
+   "edge": 0.03749999999999998
   },
   {
    "kind": "atd",
-   "label": "Drake London anytime TD",
-   "name": "Drake London",
-   "team": "ATL",
-   "pos": null,
+   "label": "Matthew Golden anytime TD",
+   "name": "Matthew Golden",
+   "team": "GB",
+   "pos": "WR",
    "price": 200,
    "book": "FD",
    "implied": 0.3333333333333333,
-   "prob": 0.31,
-   "source": "market",
-   "edge": -0.023333333333333317
+   "prob": 0.25,
+   "source": "model",
+   "edge": -0.08333333333333331
   },
   {
    "kind": "atd",
    "label": "Chris Brooks anytime TD",
    "name": "Chris Brooks",
-   "team": null,
+   "team": "GB",
    "pos": null,
-   "price": 235,
-   "book": "DK",
-   "implied": 0.29850746268656714,
-   "prob": 0.27761194029850744,
+   "price": 310,
+   "book": "FD",
+   "implied": 0.24390243902439024,
+   "prob": 0.22682926829268293,
    "source": "market",
-   "edge": -0.020895522388059695
-  },
-  {
-   "kind": "atd",
-   "label": "Kyle Pitts anytime TD",
-   "name": "Kyle Pitts",
-   "team": null,
-   "pos": null,
-   "price": 390,
-   "book": "DK",
-   "implied": 0.20408163265306123,
-   "prob": 0.18979591836734697,
-   "source": "market",
-   "edge": -0.014285714285714263
-  },
-  {
-   "kind": "atd",
-   "label": "Jahan Dotson anytime TD",
-   "name": "Jahan Dotson",
-   "team": "ATL",
-   "pos": "WR",
-   "price": 750,
-   "book": "DK",
-   "implied": 0.11764705882352941,
-   "prob": 0.18,
-   "source": "model",
-   "edge": 0.06235294117647058
-  },
-  {
-   "kind": "atd",
-   "label": "Skyy Moore anytime TD",
-   "name": "Skyy Moore",
-   "team": null,
-   "pos": null,
-   "price": 460,
-   "book": "betrivers",
-   "implied": 0.17857142857142858,
-   "prob": 0.1660714285714286,
-   "source": "market",
-   "edge": -0.012499999999999983
+   "edge": -0.017073170731707304
   },
   {
    "kind": "atd",
@@ -187,38 +161,77 @@
    "name": "Brian Robinson Jr.",
    "team": "ATL",
    "pos": null,
-   "price": 475,
+   "price": 425,
    "book": "DK",
-   "implied": 0.17391304347826086,
-   "prob": 0.1617391304347826,
+   "implied": 0.19047619047619047,
+   "prob": 0.17714285714285713,
    "source": "market",
-   "edge": -0.012173913043478257
+   "edge": -0.013333333333333336
+  },
+  {
+   "kind": "atd",
+   "label": "Kyle Pitts anytime TD",
+   "name": "Kyle Pitts",
+   "team": "ATL",
+   "pos": "TE",
+   "price": 390,
+   "book": "FD",
+   "implied": 0.20408163265306123,
+   "prob": 0.16,
+   "source": "model",
+   "edge": -0.044081632653061226
+  },
+  {
+   "kind": "atd",
+   "label": "Skyy Moore anytime TD",
+   "name": "Skyy Moore",
+   "team": "GB",
+   "pos": null,
+   "price": 550,
+   "book": "FD",
+   "implied": 0.15384615384615385,
+   "prob": 0.1430769230769231,
+   "source": "market",
+   "edge": -0.010769230769230753
   },
   {
    "kind": "atd",
    "label": "Jonnu Smith anytime TD",
    "name": "Jonnu Smith",
    "team": "GB",
-   "pos": "TE",
-   "price": 675,
-   "book": "betmgm",
-   "implied": 0.12903225806451613,
-   "prob": 0.14,
-   "source": "model",
-   "edge": 0.010967741935483888
+   "pos": null,
+   "price": 600,
+   "book": "FD",
+   "implied": 0.14285714285714285,
+   "prob": 0.13285714285714287,
+   "source": "market",
+   "edge": -0.009999999999999981
   },
   {
    "kind": "atd",
-   "label": "Jordan Love anytime TD",
-   "name": "Jordan Love",
+   "label": "Kaleb Johnson anytime TD",
+   "name": "Kaleb Johnson",
    "team": "GB",
-   "pos": null,
-   "price": 750,
+   "pos": "RB",
+   "price": 205,
    "book": "betrivers",
-   "implied": 0.11764705882352941,
-   "prob": 0.10941176470588236,
-   "source": "market",
-   "edge": -0.008235294117647049
+   "implied": 0.32786885245901637,
+   "prob": 0.11,
+   "source": "model",
+   "edge": -0.21786885245901638
+  },
+  {
+   "kind": "atd",
+   "label": "Jahan Dotson anytime TD",
+   "name": "Jahan Dotson",
+   "team": "ATL",
+   "pos": "WR",
+   "price": 700,
+   "book": "DK",
+   "implied": 0.125,
+   "prob": 0.11,
+   "source": "model",
+   "edge": -0.015
   },
   {
    "kind": "atd",
@@ -226,25 +239,12 @@
    "name": "Olamide Zaccheaus",
    "team": "ATL",
    "pos": null,
-   "price": 850,
-   "book": "DK",
-   "implied": 0.10526315789473684,
-   "prob": 0.09789473684210526,
+   "price": 900,
+   "book": "betmgm",
+   "implied": 0.1,
+   "prob": 0.09300000000000001,
    "source": "market",
-   "edge": -0.00736842105263158
-  },
-  {
-   "kind": "atd",
-   "label": "J. Michael Sturdivant anytime TD",
-   "name": "J. Michael Sturdivant",
-   "team": null,
-   "pos": null,
-   "price": 1200,
-   "book": "betrivers",
-   "implied": 0.07692307692307693,
-   "prob": 0.07153846153846155,
-   "source": "market",
-   "edge": -0.005384615384615377
+   "edge": -0.006999999999999992
   },
   {
    "kind": "atd",
@@ -252,12 +252,12 @@
    "name": "Bo Melton",
    "team": null,
    "pos": null,
-   "price": 1250,
-   "book": "betmgm",
-   "implied": 0.07407407407407407,
-   "prob": 0.06888888888888889,
+   "price": 1000,
+   "book": "FD",
+   "implied": 0.09090909090909091,
+   "prob": 0.08454545454545455,
    "source": "market",
-   "edge": -0.005185185185185182
+   "edge": -0.006363636363636363
   },
   {
    "kind": "atd",
@@ -265,12 +265,12 @@
    "name": "Michael Penix Jr.",
    "team": "ATL",
    "pos": null,
-   "price": 1300,
+   "price": 1200,
    "book": "betmgm",
-   "implied": 0.07142857142857142,
-   "prob": 0.06642857142857143,
+   "implied": 0.07692307692307693,
+   "prob": 0.07153846153846155,
    "source": "market",
-   "edge": -0.0049999999999999906
+   "edge": -0.005384615384615377
   },
   {
    "kind": "atd",
@@ -278,12 +278,12 @@
    "name": "Austin Hooper",
    "team": "ATL",
    "pos": null,
-   "price": 1400,
-   "book": "betmgm",
-   "implied": 0.06666666666666667,
-   "prob": 0.062,
+   "price": 1600,
+   "book": "betrivers",
+   "implied": 0.058823529411764705,
+   "prob": 0.05470588235294118,
    "source": "market",
-   "edge": -0.004666666666666666
+   "edge": -0.0041176470588235245
   },
   {
    "kind": "atd",
@@ -291,12 +291,12 @@
    "name": "Zachariah Branch",
    "team": null,
    "pos": null,
-   "price": 1550,
-   "book": "betmgm",
-   "implied": 0.06060606060606061,
-   "prob": 0.056363636363636366,
+   "price": 1700,
+   "book": "betrivers",
+   "implied": 0.05555555555555555,
+   "prob": 0.051666666666666666,
    "source": "market",
-   "edge": -0.004242424242424242
+   "edge": -0.003888888888888886
   },
   {
    "kind": "atd",
@@ -304,21 +304,8 @@
    "name": "Mark Redman",
    "team": null,
    "pos": null,
-   "price": 2000,
-   "book": "betmgm",
-   "implied": 0.047619047619047616,
-   "prob": 0.04428571428571428,
-   "source": "market",
-   "edge": -0.003333333333333334
-  },
-  {
-   "kind": "atd",
-   "label": "Charlie Woerner anytime TD",
-   "name": "Charlie Woerner",
-   "team": null,
-   "pos": null,
    "price": 2200,
-   "book": "DK",
+   "book": "betrivers",
    "implied": 0.043478260869565216,
    "prob": 0.04043478260869565,
    "source": "market",
@@ -330,8 +317,34 @@
    "name": "Josh Whyle",
    "team": null,
    "pos": null,
-   "price": 2500,
+   "price": 2200,
+   "book": "betrivers",
+   "implied": 0.043478260869565216,
+   "prob": 0.04043478260869565,
+   "source": "market",
+   "edge": -0.0030434782608695643
+  },
+  {
+   "kind": "atd",
+   "label": "J. Michael Sturdivant anytime TD",
+   "name": "J. Michael Sturdivant",
+   "team": null,
+   "pos": null,
+   "price": 2200,
    "book": "betmgm",
+   "implied": 0.043478260869565216,
+   "prob": 0.04043478260869565,
+   "source": "market",
+   "edge": -0.0030434782608695643
+  },
+  {
+   "kind": "atd",
+   "label": "Charlie Woerner anytime TD",
+   "name": "Charlie Woerner",
+   "team": null,
+   "pos": null,
+   "price": 2500,
+   "book": "DK",
    "implied": 0.038461538461538464,
    "prob": 0.035769230769230775,
    "source": "market",
@@ -339,21 +352,34 @@
   },
   {
    "kind": "atd",
-   "label": "Nick Muse anytime TD",
-   "name": "Nick Muse",
-   "team": null,
-   "pos": null,
-   "price": 4000,
-   "book": "DK",
-   "implied": 0.024390243902439025,
-   "prob": 0.022682926829268295,
-   "source": "market",
-   "edge": -0.0017073170731707298
+   "label": "Jordan Love anytime TD",
+   "name": "Jordan Love",
+   "team": "GB",
+   "pos": "QB",
+   "price": 700,
+   "book": "betrivers",
+   "implied": 0.125,
+   "prob": 0.03,
+   "source": "model",
+   "edge": -0.095
   },
   {
    "kind": "atd",
    "label": "Chris Blair anytime TD",
    "name": "Chris Blair",
+   "team": null,
+   "pos": null,
+   "price": 3300,
+   "book": "betmgm",
+   "implied": 0.029411764705882353,
+   "prob": 0.02735294117647059,
+   "source": "market",
+   "edge": -0.0020588235294117622
+  },
+  {
+   "kind": "atd",
+   "label": "Nick Muse anytime TD",
+   "name": "Nick Muse",
    "team": null,
    "pos": null,
    "price": 5000,
@@ -364,7 +390,68 @@
    "edge": -0.0013725490196078438
   }
  ],
- "twoPlus": [],
+ "twoPlus": [
+  {
+   "kind": "td2",
+   "label": "Bijan Robinson 2+ TDs",
+   "name": "Bijan Robinson",
+   "team": "ATL",
+   "pos": "RB",
+   "price": 440,
+   "book": "FD",
+   "implied": 0.185,
+   "prob": 0.248,
+   "source": "model",
+   "ev": 0.33920000000000017,
+   "fair": 303,
+   "breakEven": 0.18518518518518517
+  },
+  {
+   "kind": "td2",
+   "label": "MarShawn Lloyd 2+ TDs",
+   "name": "MarShawn Lloyd",
+   "team": "GB",
+   "pos": "RB",
+   "price": 1700,
+   "book": "DK",
+   "implied": 0.056,
+   "prob": 0.07,
+   "source": "model",
+   "ev": 0.26000000000000023,
+   "fair": 1329,
+   "breakEven": 0.05555555555555555
+  },
+  {
+   "kind": "td2",
+   "label": "Jordan Love 2+ TDs",
+   "name": "Jordan Love",
+   "team": "GB",
+   "pos": "QB",
+   "price": 8000,
+   "book": "FD",
+   "implied": 0.012,
+   "prob": 0,
+   "source": "model",
+   "ev": -1,
+   "fair": null,
+   "breakEven": 0.012345679012345678
+  },
+  {
+   "kind": "td2",
+   "label": "Kaleb Johnson 2+ TDs",
+   "name": "Kaleb Johnson",
+   "team": "GB",
+   "pos": "RB",
+   "price": 1500,
+   "book": "FD",
+   "implied": 0.063,
+   "prob": 0.006,
+   "source": "model",
+   "ev": -0.904,
+   "fair": 16567,
+   "breakEven": 0.0625
+  }
+ ],
  "stacks": [
   {
    "name": "The model stack",
@@ -401,7 +488,7 @@
   {
    "name": "Watson + GB -4.5",
    "corr": "positive",
-   "why": "Green Bay covering by a touchdown almost certainly means Love found Watson, who has three of the team's four passing scores.",
+   "why": "Green Bay covering by more than a field goal almost certainly means Love found Watson, who has three of the team's four passing scores and both goal-line targets.",
    "legs": [
     {
      "kind": "atd",
@@ -409,12 +496,12 @@
      "name": "Christian Watson",
      "team": "GB",
      "pos": "WR",
-     "price": 145,
-     "book": "betrivers",
-     "implied": 0.40816326530612246,
-     "prob": 0.42,
+     "price": 155,
+     "book": "FD",
+     "implied": 0.39215686274509803,
+     "prob": 0.49,
      "source": "model",
-     "edge": 0.011836734693877526
+     "edge": 0.09784313725490196
     },
     {
      "kind": "side",
@@ -427,14 +514,280 @@
      "source": "model"
     }
    ],
-   "dec": 4.677272727272728,
-   "price": 368,
-   "prob": 0.23604000000000003,
-   "implied": 0.2137998056365403,
-   "ev": 0.10402345454545481
+   "dec": 4.868181818181818,
+   "price": 387,
+   "prob": 0.27538,
+   "implied": 0.20541549953314658,
+   "ev": 0.3405999090909091
+  },
+  {
+   "name": "London + Watson",
+   "corr": "positive",
+   "why": "Each side's finisher in a 20-16 type game: Penix's goal-line read and Love's. The legs are close to independent, so the payout is close to honest.",
+   "legs": [
+    {
+     "kind": "atd",
+     "label": "Drake London anytime TD",
+     "name": "Drake London",
+     "team": "ATL",
+     "pos": "WR",
+     "price": 195,
+     "book": "FD",
+     "implied": 0.3389830508474576,
+     "prob": 0.42,
+     "source": "model",
+     "edge": 0.08101694915254237
+    },
+    {
+     "kind": "atd",
+     "label": "Christian Watson anytime TD",
+     "name": "Christian Watson",
+     "team": "GB",
+     "pos": "WR",
+     "price": 155,
+     "book": "FD",
+     "implied": 0.39215686274509803,
+     "prob": 0.49,
+     "source": "model",
+     "edge": 0.09784313725490196
+    }
+   ],
+   "dec": 7.5225,
+   "price": 652,
+   "prob": 0.20579999999999998,
+   "implied": 0.13293452974410103,
+   "ev": 0.5481304999999999
+  },
+  {
+   "name": "Robinson + Under 42.5",
+   "corr": "positive",
+   "why": "If Atlanta scores at all it very likely runs through Robinson, and pairing him with the under does not fight the script both bottom-five offences have shown.",
+   "legs": [
+    {
+     "kind": "atd",
+     "label": "Bijan Robinson anytime TD",
+     "name": "Bijan Robinson",
+     "team": "ATL",
+     "pos": "RB",
+     "price": -150,
+     "book": "FD",
+     "implied": 0.6,
+     "prob": 0.55,
+     "source": "model",
+     "edge": -0.04999999999999993
+    },
+    {
+     "kind": "total",
+     "label": "Under 42.5",
+     "name": "Under 42.5 ATL@GB",
+     "price": -110,
+     "book": "FD/DK",
+     "implied": 0.524,
+     "prob": 0.591,
+     "source": "model"
+    }
+   ],
+   "dec": 3.1818181818181817,
+   "price": 218,
+   "prob": 0.32505,
+   "implied": 0.3142857142857143,
+   "ev": 0.03424999999999989
   }
  ],
- "longs": [],
+ "longs": [
+  {
+   "legs": [
+    {
+     "kind": "td2",
+     "label": "Bijan Robinson 2+ TDs",
+     "name": "Bijan Robinson",
+     "team": "ATL",
+     "pos": "RB",
+     "price": 440,
+     "book": "FD",
+     "implied": 0.185,
+     "prob": 0.248,
+     "source": "model",
+     "ev": 0.33920000000000017,
+     "fair": 303,
+     "breakEven": 0.18518518518518517
+    },
+    {
+     "kind": "atd",
+     "label": "Tucker Kraft anytime TD",
+     "name": "Tucker Kraft",
+     "team": "GB",
+     "pos": "TE",
+     "price": 210,
+     "book": "betmgm",
+     "implied": 0.3225806451612903,
+     "prob": 0.36,
+     "source": "model",
+     "edge": 0.03741935483870967
+    },
+    {
+     "kind": "total",
+     "label": "Under 42.5",
+     "name": "Under 42.5 ATL@GB",
+     "price": -110,
+     "book": "FD/DK",
+     "implied": 0.524,
+     "prob": 0.591,
+     "source": "model"
+    }
+   ],
+   "dec": 31.958181818181824,
+   "price": 3096,
+   "prob": 0.052764479999999996,
+   "implied": 0.031290891505945266,
+   "ev": 0.6862568453818183
+  },
+  {
+   "legs": [
+    {
+     "kind": "td2",
+     "label": "Bijan Robinson 2+ TDs",
+     "name": "Bijan Robinson",
+     "team": "ATL",
+     "pos": "RB",
+     "price": 440,
+     "book": "FD",
+     "implied": 0.185,
+     "prob": 0.248,
+     "source": "model",
+     "ev": 0.33920000000000017,
+     "fair": 303,
+     "breakEven": 0.18518518518518517
+    },
+    {
+     "kind": "atd",
+     "label": "MarShawn Lloyd anytime TD",
+     "name": "MarShawn Lloyd",
+     "team": "GB",
+     "pos": "RB",
+     "price": 220,
+     "book": "betrivers",
+     "implied": 0.3125,
+     "prob": 0.35,
+     "source": "model",
+     "edge": 0.03749999999999998
+    },
+    {
+     "kind": "total",
+     "label": "Under 42.5",
+     "name": "Under 42.5 ATL@GB",
+     "price": -110,
+     "book": "FD/DK",
+     "implied": 0.524,
+     "prob": 0.591,
+     "source": "model"
+    }
+   ],
+   "dec": 32.98909090909091,
+   "price": 3199,
+   "prob": 0.05129879999999999,
+   "implied": 0.030313051146384478,
+   "ev": 0.6923007767272726
+  },
+  {
+   "legs": [
+    {
+     "kind": "td2",
+     "label": "Bijan Robinson 2+ TDs",
+     "name": "Bijan Robinson",
+     "team": "ATL",
+     "pos": "RB",
+     "price": 440,
+     "book": "FD",
+     "implied": 0.185,
+     "prob": 0.248,
+     "source": "model",
+     "ev": 0.33920000000000017,
+     "fair": 303,
+     "breakEven": 0.18518518518518517
+    },
+    {
+     "kind": "atd",
+     "label": "Christian Watson anytime TD",
+     "name": "Christian Watson",
+     "team": "GB",
+     "pos": "WR",
+     "price": 155,
+     "book": "FD",
+     "implied": 0.39215686274509803,
+     "prob": 0.49,
+     "source": "model",
+     "edge": 0.09784313725490196
+    },
+    {
+     "kind": "atd",
+     "label": "Drake London anytime TD",
+     "name": "Drake London",
+     "team": "ATL",
+     "pos": "WR",
+     "price": 195,
+     "book": "FD",
+     "implied": 0.3389830508474576,
+     "prob": 0.42,
+     "source": "model",
+     "edge": 0.08101694915254237
+    }
+   ],
+   "dec": 40.621500000000005,
+   "price": 3962,
+   "prob": 0.0510384,
+   "implied": 0.024617505508166854,
+   "ev": 1.0732563656000003
+  },
+  {
+   "legs": [
+    {
+     "kind": "atd",
+     "label": "Christian Watson anytime TD",
+     "name": "Christian Watson",
+     "team": "GB",
+     "pos": "WR",
+     "price": 155,
+     "book": "FD",
+     "implied": 0.39215686274509803,
+     "prob": 0.49,
+     "source": "model",
+     "edge": 0.09784313725490196
+    },
+    {
+     "kind": "atd",
+     "label": "Tucker Kraft anytime TD",
+     "name": "Tucker Kraft",
+     "team": "GB",
+     "pos": "TE",
+     "price": 210,
+     "book": "betmgm",
+     "implied": 0.3225806451612903,
+     "prob": 0.36,
+     "source": "model",
+     "edge": 0.03741935483870967
+    },
+    {
+     "kind": "atd",
+     "label": "Chris Brooks anytime TD",
+     "name": "Chris Brooks",
+     "team": "GB",
+     "pos": null,
+     "price": 310,
+     "book": "FD",
+     "implied": 0.24390243902439024,
+     "prob": 0.22682926829268293,
+     "source": "market",
+     "edge": -0.017073170731707304
+    }
+   ],
+   "dec": 32.41049999999999,
+   "price": 3141,
+   "prob": 0.04001268292682927,
+   "implied": 0.03085419848505886,
+   "ev": 0.2968310599999997
+  }
+ ],
  "props": [
   {
    "kind": "prop",
