@@ -54,7 +54,10 @@ const sunday = new Set(
 );
 // The weekday this sheet is actually for, used in the banner and the registered id so a Thursday
 // card built through this path does not go out labelled SUNDAY.
-const weekday = et(kickoffs.find((k) => dayName(k) === day), { weekday: 'long' }).toUpperCase();
+const weekday = et(
+  kickoffs.find((k) => dayName(k) === day),
+  { weekday: 'long' },
+).toUpperCase();
 const built = buildSheets(board, { games: sunday });
 writeJson(path.join(DATA, 'sheets', `${board.season}-${stem}.json`), built);
 

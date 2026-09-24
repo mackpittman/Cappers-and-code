@@ -80,6 +80,33 @@ const dogAbbr = favAbbr === game.home.abbr ? game.away.abbr : game.home.abbr;
 const favPts = (totalNum + sideNum) / 2;
 const dogPts = (totalNum - sideNum) / 2;
 
+// ---------- what changed since the research went out ----------
+// A card built on game day is not a research card. The desk prose was written on Tuesday and says
+// "closer to 39 than 44.5"; by kickoff the number itself has moved and the final injury report has
+// landed. Both belong on the card, because a reader comparing it to their book needs to know which
+// number we are on and a stale total reads as a mistake.
+const research = game.lines ?? {};
+const researchSide = research.spread ?? null;
+const researchTotal = research.total ?? null;
+const movedSide =
+  researchSide && researchSide !== spreadNow.label ? `${researchSide} → ${spreadNow.label}` : null;
+const movedTotal =
+  researchTotal != null && Number(researchTotal) !== totalNum
+    ? `${researchTotal} → ${totalNum}`
+    : null;
+const injuries = readJson(path.join(DATA, 'injuries.json'));
+const DESIGNATED = /^(out|doubtful|questionable|injured reserve)$/i;
+const designations = [game.away.abbr, game.home.abbr].flatMap((abbr) =>
+  (injuries?.teams?.[abbr] ?? [])
+    .filter((p) => DESIGNATED.test(p.status ?? ''))
+    .map((p) => ({ abbr, ...p })),
+);
+// Out and Doubtful first, then Questionable; IR last since it is not news on the day.
+const RANK = { out: 0, doubtful: 1, questionable: 2, 'injured reserve': 3 };
+designations.sort(
+  (a, b) => (RANK[a.status.toLowerCase()] ?? 9) - (RANK[b.status.toLowerCase()] ?? 9),
+);
+
 // ---------- legs ----------
 const bookOf = (market, name) =>
   Object.values(evt.markets[market]?.players ?? {}).find((p) => p.name === name)?.books ?? {};
@@ -420,6 +447,14 @@ ${css}
   table.td td.bad { color: #E06060; }
   table.td td.warn { color: #E0C040; }
   table.td td.w { font-size: 13.5px; color: #9DA59D; line-height: 1.45; padding-left: 18px; }
+  .moved { margin: 16px 0 0; padding: 14px 20px; border: 1px solid rgba(182,255,0,.35); border-left: 4px solid #B6FF00; border-radius: 10px; background: #0B0E0C; }
+  .moved b { font-family: 'JetBrains Mono'; font-weight: 700; font-size: 15px; letter-spacing: 3px; color: #B6FF00; margin-right: 22px; }
+  .moved .m { font-family: 'JetBrains Mono'; font-weight: 500; font-size: 14px; letter-spacing: 2px; color: #9DA59D; margin-right: 26px; }
+  .moved .m i { font-style: normal; font-weight: 700; color: #F5F7F2; }
+  .moved .inj { margin-top: 12px; font-family: 'Manrope'; font-size: 13.5px; color: #9DA59D; line-height: 1.7; }
+  .moved .inj .o { font-family: 'JetBrains Mono'; font-weight: 700; font-size: 11.5px; letter-spacing: 1.5px; color: #E06060; }
+  .moved .inj .q { font-family: 'JetBrains Mono'; font-weight: 700; font-size: 11.5px; letter-spacing: 1.5px; color: #E0C040; }
+  .read .note { display: block; margin-top: 12px; font-size: 13.5px; color: #79E000; font-family: 'JetBrains Mono'; font-weight: 500; letter-spacing: 0.5px; }
 </style></head>
 <body>
 <section class="card" id="game">
@@ -440,7 +475,26 @@ ${css}
     )}. Player prices are FanDuel/DraftKings as of ${pulledAt} ET${staleMin > 90 ? `, the last time this game's props were pulled; the line and total are current to ${linesAt} ET` : ''}. A same-game parlay engine reprices a stack; the model numbers hold. Units, not dollars.</p>
   ${SCRATCH.size ? `<div class="out"><b>OUT</b> ${esc([...SCRATCH].join(', '))} &mdash; removed from every list below. Prices for his team-mates are the book's pre-news numbers, so they understate the players absorbing the work.</div>` : ''}
   <div class="line"><span><b>${esc(spreadNow.label)}</b> SIDE ${spreadNow.conf}/5</span><span><b>${esc(total.label)}</b> TOTAL ${totalNow.conf}/5</span><span><b>${esc(favAbbr)} ${favPts}</b> · <b>${esc(dogAbbr)} ${dogPts}</b> IMPLIED</span></div>
-  <div class="read">${esc(game.market.why)}</div>
+  ${
+    movedSide || movedTotal || designations.length
+      ? `<div class="moved">
+    <b>SINCE TUESDAY</b>
+    ${movedSide ? `<span class="m">SIDE <i>${esc(movedSide)}</i></span>` : ''}
+    ${movedTotal ? `<span class="m">TOTAL <i>${esc(movedTotal)}</i></span>` : ''}
+    ${
+      designations.length
+        ? `<div class="inj">${designations
+            .map(
+              (p) =>
+                `<span class="${/^out|doubtful/i.test(p.status) ? 'o' : 'q'}">${esc(p.status.replace('Injured Reserve', 'IR').toUpperCase())}</span> ${esc(p.abbr)} ${esc(p.pos)} ${esc(p.name)}`,
+            )
+            .join(' &middot; ')}</div>`
+        : ''
+    }
+  </div>`
+      : ''
+  }
+  <div class="read">${esc(game.market.why)}${movedTotal || movedSide ? `<span class="note">Written Tuesday, before the market moved. The numbers in the header are the ones we are on.</span>` : ''}</div>
 
   <h2>Anytime TD <small>top 12 · model against the price</small></h2>
   <p class="rule">"Model" is our own number where the desk wrote one, and the book price with the hold stripped where it did not. Edge is the gap. A negative edge is a name the market likes more than we do.</p>

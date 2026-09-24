@@ -15,7 +15,11 @@ export const EMBED_COUNT = 10;
  * Join items into a description that fits, dropping whole items rather than cutting one in half.
  * The tail says what was left out, because a silently shortened list reads as a shorter board.
  */
-export function fitItems(items, limit = EMBED_DESCRIPTION, tail = (n) => `\n\n_+${n} more in the app._`) {
+export function fitItems(
+  items,
+  limit = EMBED_DESCRIPTION,
+  tail = (n) => `\n\n_+${n} more in the app._`,
+) {
   const kept = [];
   let used = 0;
   for (let i = 0; i < items.length; i++) {
@@ -63,7 +67,8 @@ export function validate(payload) {
   embeds.forEach((e, i) => {
     const d = String(e.description ?? '').length;
     const t = String(e.title ?? '').length;
-    if (d > EMBED_DESCRIPTION) problems.push(`embeds[${i}].description is ${d}, limit ${EMBED_DESCRIPTION}`);
+    if (d > EMBED_DESCRIPTION)
+      problems.push(`embeds[${i}].description is ${d}, limit ${EMBED_DESCRIPTION}`);
     if (t > EMBED_TITLE) problems.push(`embeds[${i}].title is ${t}, limit ${EMBED_TITLE}`);
     if (!d) problems.push(`embeds[${i}].description is empty`);
     total += d + t + String(e.footer?.text ?? '').length;

@@ -1,0 +1,115 @@
+<!doctype html>
+<html><head><meta charset="utf-8" /><title>Cappers &amp; Code · Week 3 Sunday</title>
+<style>
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 900; src: url(../promo/assets/fonts/BarlowCondensed_900Black.ttf); }
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 800; src: url(../promo/assets/fonts/BarlowCondensed_800ExtraBold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 700; src: url(../promo/assets/fonts/Manrope_700Bold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 500; src: url(../promo/assets/fonts/Manrope_500Medium.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 700; src: url(../promo/assets/fonts/JetBrainsMono_700Bold.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url(../promo/assets/fonts/JetBrainsMono_500Medium.ttf); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #050608; color: #F5F7F2; font-family: 'Manrope', sans-serif; }
+  .card { width: 1200px; padding: 48px 64px 64px; background: #050608 radial-gradient(ellipse at 50% 0%, rgba(182,255,0,.10), transparent 40%); position: relative; overflow: hidden; }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 6px; background: #B6FF00; }
+  .brand { display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono'; letter-spacing: 3px; font-size: 17px; color: #B6FF00; font-weight: 700; }
+  .brand img { width: 220px; display: block; }
+  h1 { font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; font-size: 84px; margin: 22px 0 6px; letter-spacing: 1px; line-height: .92; }
+  h1 span { color: #B6FF00; }
+  .sub { color: #C8CFC8; font-size: 20px; margin: 0 0 8px; line-height: 1.4; font-weight: 500; }
+  h2 { font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; font-size: 44px; margin: 40px 0 6px; letter-spacing: 1px; line-height: 1; display: flex; align-items: baseline; gap: 16px; }
+  h2 small { font-family: 'JetBrains Mono'; font-size: 14px; letter-spacing: 3px; color: #79E000; font-weight: 700; text-transform: uppercase; }
+  .rule { color: #9DA59D; font-size: 17px; margin: 0 0 16px; line-height: 1.4; }
+
+  table.board { width: 100%; border-collapse: collapse; }
+  table.board th { text-align: left; font-family: 'JetBrains Mono'; color: #B6FF00; letter-spacing: 3px; font-size: 13px; padding: 0 12px 10px; border-bottom: 1px solid #23282A; }
+  table.board td { padding: 10px 12px; border-bottom: 1px solid #14181A; vertical-align: top; }
+  table.board td.g { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 28px; text-transform: uppercase; white-space: nowrap; width: 190px; }
+  table.board td small { display: block; font-family: 'JetBrains Mono'; font-weight: 500; font-size: 12px; color: #9DA59D; letter-spacing: 1px; margin-top: 3px; text-transform: uppercase; }
+  table.board td.pick { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; color: #F5F7F2; }
+  table.board td.pick.hot { color: #B6FF00; }
+  table.board td.pick.muted { color: #3A4040; }
+
+  .tk { border: 1px solid rgba(182,255,0,.35); border-left: 5px solid #B6FF00; border-radius: 10px; background: #0B0E10; margin-bottom: 10px; }
+  .tk .hd { display: grid; grid-template-columns: 56px 1fr 150px; align-items: center; gap: 14px; padding: 12px 20px; }
+  .tk .tag { font-family: 'JetBrains Mono'; font-size: 16px; font-weight: 700; color: #B6FF00; letter-spacing: 2px; }
+  .tk .legs { display: flex; flex-direction: column; gap: 6px; }
+  .tk .leg { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; line-height: 1; display: flex; align-items: baseline; gap: 12px; }
+  .tk .leg b { font-family: 'JetBrains Mono'; font-size: 19px; color: #F5F7F2; }
+  .tk .leg i { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 500; font-size: 12px; color: #9DA59D; letter-spacing: 1px; text-transform: uppercase; }
+  .tk .odds { font-family: 'JetBrains Mono'; font-size: 34px; font-weight: 700; color: #B6FF00; text-align: right; }
+  .tk .ft { display: flex; gap: 30px; padding: 8px 20px 11px; border-top: 1px solid #1B2022; font-family: 'JetBrains Mono'; font-size: 12px; letter-spacing: 2px; color: #9DA59D; }
+  .tk .ft b { font-size: 20px; color: #F5F7F2; margin-right: 8px; letter-spacing: 0; }
+  .tk .ft .ev b { color: #B6FF00; }
+  .tk .ft .m b { color: #C8CFC8; }
+
+  table.td { width: 100%; border-collapse: collapse; }
+  table.td th { text-align: left; font-family: 'JetBrains Mono'; color: #B6FF00; letter-spacing: 3px; font-size: 13px; padding: 0 12px 10px; border-bottom: 1px solid #23282A; }
+  table.td th.r { text-align: right; }
+  table.td td { padding: 11px 12px; border-bottom: 1px solid #16191B; }
+  table.td td.n { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; }
+  table.td td.n small { display: block; font-family: 'JetBrains Mono'; font-weight: 500; font-size: 12px; color: #9DA59D; letter-spacing: 1px; margin-top: 3px; text-transform: uppercase; }
+  table.td td.r { text-align: right; font-family: 'JetBrains Mono'; font-weight: 700; font-size: 21px; white-space: nowrap; }
+  table.td td.p { color: #B6FF00; }
+  table.td td.e { color: #79E000; }
+
+  .teaser { border: 1px solid rgba(182,255,0,.45); box-shadow: 0 0 22px rgba(182,255,0,.12); border-radius: 12px; background: #0B0E10; padding: 20px 24px; }
+  .teaser .top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+  .teaser .top .k { font-family: 'JetBrains Mono'; letter-spacing: 3px; color: #B6FF00; font-weight: 700; font-size: 15px; }
+  .teaser .top .v { font-family: 'JetBrains Mono'; font-weight: 700; font-size: 22px; }
+  .teaser .top .v i { font-style: normal; color: #9DA59D; font-size: 15px; font-weight: 500; margin-left: 12px; }
+  .foot { margin-top: 30px; display: flex; justify-content: space-between; font-family: 'JetBrains Mono'; color: #79E000; font-size: 15px; letter-spacing: 4px; font-weight: 700; }
+</style></head>
+<body>
+<section class="card" id="sunday">
+  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code"><span>WEEK 3 · SUNDAY · ONE PAGE</span></div>
+  <h1>Sunday, <span>on one page</span></h1>
+  <p class="sub">Sunday, September 27. The board, five anytime-TD parlays, the 2+ TD list and the six-point teaser. Prices FanDuel/DraftKings as of WED 12:40 PM ET; the app carries live numbers. Units, not dollars.</p>
+
+  <h2>The board <small>14 sides · 14 totals · 13 at confidence 3 or higher, in green</small></h2>
+  <p class="rule">Model side and total for every Sunday game at the current number, all -110. "Was" is the number the desk posted Tuesday when the market has moved it since.</p>
+  <table class="board">
+    <tr><th>Game</th><th>Side</th><th>Total</th></tr>
+    <tr><td class="g">LAC @ BUF<small>1:00 PM</small></td><td class="pick hot">BUF -7<small>3/5 · model 57%</small></td><td class="pick">Over 50.5<small>2/5 · model 53%</small></td></tr>
+<tr><td class="g">CAR @ CLE<small>1:00 PM</small></td><td class="pick hot">CAR -2.5<small>3/5 · model 56%</small></td><td class="pick">Under 42.5<small>2/5 · model 50%</small></td></tr>
+<tr><td class="g">NYJ @ DET<small>1:00 PM · out: Taylor</small></td><td class="pick">NYJ +6.5<small>2/5 · model 53%</small></td><td class="pick">Under 47.5<small>2/5 · model 55% · was 48.5</small></td></tr>
+<tr><td class="g">HOU @ IND<small>1:00 PM</small></td><td class="pick">HOU -2.5<small>2/5 · model 53%</small></td><td class="pick">Under 42.5<small>2/5 · model 52% · was 43.5</small></td></tr>
+<tr><td class="g">KC @ MIA<small>1:00 PM</small></td><td class="pick hot">MIA +10.5<small>3/5 · model 50% · was +11.5</small></td><td class="pick">Under 46.5<small>2/5 · model 55% · was 45.5</small></td></tr>
+<tr><td class="g">TEN @ NYG<small>1:00 PM</small></td><td class="pick">TEN +3<small>2/5 · model 54%</small></td><td class="pick hot">Under 39.5<small>3/5 · model 59% · was 40.5</small></td></tr>
+<tr><td class="g">CIN @ PIT<small>1:00 PM · out: Iosivas</small></td><td class="pick">CIN -3.5<small>2/5 · model 58%</small></td><td class="pick hot">Under 42.5<small>3/5 · model 59%</small></td></tr>
+<tr><td class="g">SEA @ WSH<small>1:00 PM</small></td><td class="pick">SEA -7<small>2/5 · model 54%</small></td><td class="pick hot">Under 40.5<small>3/5 · model 55%</small></td></tr>
+<tr><td class="g">NE @ JAX<small>1:00 PM</small></td><td class="pick">NE +3<small>2/5 · model 53%</small></td><td class="pick hot">Under 45.5<small>3/5 · model 58%</small></td></tr>
+<tr><td class="g">ARI @ SF<small>4:05 PM</small></td><td class="pick hot">SF -8.5<small>3/5 · model 56%</small></td><td class="pick">Under 47.5<small>2/5 · model 55%</small></td></tr>
+<tr><td class="g">MIN @ TB<small>4:05 PM</small></td><td class="pick hot">MIN -1.5<small>3/5 · model 56%</small></td><td class="pick">Under 42.5<small>2/5 · model 55%</small></td></tr>
+<tr><td class="g">BAL @ DAL<small>4:25 PM</small></td><td class="pick hot">BAL -3.5<small>3/5 · model 53% · was -3</small></td><td class="pick">Over 52.5<small>2/5 · model 53%</small></td></tr>
+<tr><td class="g">LV @ NO<small>4:25 PM</small></td><td class="pick hot">NO -3<small>3/5 · model 56%</small></td><td class="pick">Under 43.5<small>2/5 · model 52% · was 44.5</small></td></tr>
+<tr><td class="g">LAR @ DEN<small>8:20 PM</small></td><td class="pick hot">LAR -2.5<small>3/5 · model 56%</small></td><td class="pick hot">Under 44.5<small>3/5 · model 55% · was 45.5</small></td></tr>
+  </table>
+
+  <h2>Anytime TD <small>five tickets · one scorer per game · under +1500</small></h2>
+  <p class="rule">Every leg beats its price in the model, and no leg is allowed to demand more of his team's touchdowns than his position can plausibly own. No leg appears twice.</p>
+  <div class="tk"><div class="hd"><span class="tag">#1</span><span class="legs"><span class="leg">Ja'Marr Chase <b>+145</b><i>CIN · CIN@PIT · 47% vs 41%</i></span><span class="leg">Chris Olave <b>+175</b><i>NO · LV@NO · 41% vs 36%</i></span></span><span class="odds">+574</span></div><div class="ft"><span><b>19%</b> MODEL HIT</span><span class="m"><b>15%</b> BOOK</span><span class="ev"><b>+30%</b> EV</span></div></div>
+
+  <h2>2+ touchdowns <small>backs and quarterbacks · the five that price</small></h2>
+  <p class="rule">Real FanDuel/DraftKings 2+ prices against the model's number for two or more. Fair is what the model would charge; play the book price or longer.</p>
+  <table class="td">
+    <tr><th>#</th><th>Player</th><th class="r">2+ price</th><th class="r">Model</th><th class="r">Implied</th><th class="r">Fair</th><th class="r">EV</th></tr>
+    
+  </table>
+
+  <h2>Six-point teaser <small>five legs · max confidence</small></h2>
+  <p class="rule">Each side or total moved six points in our favour, ranked by how often the model's own projection clears the teased number. One leg per game. A five-leg six-point teaser pays about +400 at FanDuel or DraftKings; check yours.</p>
+  <div class="teaser">
+    <div class="top"><span class="k">ALL FIVE HIT</span><span class="v">22% model<i>17% if every leg is a flat 70%</i></span></div>
+    <table class="td">
+      <tr><th>Leg</th><th class="r">Teased cover</th><th class="r">Conf</th></tr>
+      <tr><td class="n">CIN +2.5<small>from CIN -3.5 · CIN@PIT · 1:00 PM · crosses a key number</small></td><td class="r e">76%</td><td class="r">2/5</td></tr>
+<tr><td class="n">Under 45.5 TEN@NYG<small>from Under 39.5 · TEN@NYG · 1:00 PM</small></td><td class="r e">76%</td><td class="r">3/5</td></tr>
+<tr><td class="n">Under 51.5 NE@JAX<small>from Under 45.5 · NE@JAX · 1:00 PM</small></td><td class="r e">74%</td><td class="r">3/5</td></tr>
+<tr><td class="n">BUF -1<small>from BUF -7 · LAC@BUF · 1:00 PM · crosses a key number</small></td><td class="r e">72%</td><td class="r">3/5</td></tr>
+<tr><td class="n">SF -2.5<small>from SF -8.5 · ARI@SF · 4:05 PM · crosses 3 and 7</small></td><td class="r e">71%</td><td class="r">3/5</td></tr>
+    </table>
+  </div>
+
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>RE-PRICED BEFORE THE 1PM WINDOW · CAPPERSANDCODE.COM</span></div>
+</section>
+</body></html>
