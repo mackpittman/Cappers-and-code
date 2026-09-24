@@ -972,6 +972,77 @@ if (process.env.TARGET) {
 // LEGS="a || b || c" scores a set you name instead of the one the search picked, so a leg can be
 // swapped by hand (a fringe receiver the sim likes but a human would not write down) and the cost
 // of the swap read off the same run.
+// GIVEN="Christian Watson 2+ TD" conditions every other leg on that one having hit. This is the
+// question "what do we play around it": the legs whose survival rises most in the worlds where the
+// anchor lands are the ones that belong on the same ticket, and the ones that fall are the ones a
+// same-game engine will quietly charge you for. Lift is conditional over unconditional.
+if (process.env.GIVEN) {
+  const anchor = all.find((l) => l.label === process.env.GIVEN.trim());
+  if (!anchor) {
+    console.error(`no such leg: "${process.env.GIVEN}"`);
+    process.exit(1);
+  }
+  const idx = [];
+  for (let i = 0; i < SIMS; i++) if (anchor.arr[i]) idx.push(i);
+  const base = idx.length / SIMS;
+  const rows = [];
+  for (const l of all) {
+    if (l === anchor) continue;
+    const p = l.arr.reduce((a, b) => a + b, 0) / SIMS;
+    if (p < 0.03 || p > 0.97) continue;
+    let c = 0;
+    for (const i of idx) c += l.arr[i];
+    const cond = c / idx.length;
+    rows.push({ label: l.label, p, cond, lift: cond / p, price: KNOWN.get(l.label) ?? null });
+  }
+  const fmtP = (x) => `${(x * 100).toFixed(1)}%`;
+  const fmtA = (a) => (a == null ? '   —  ' : `${a > 0 ? '+' : ''}${a}`.padStart(6));
+  console.log(`\nGIVEN ${anchor.label} (${fmtP(base)} of sims):`);
+  console.log('  rises with it (priced legs, by lift):');
+  for (const r of rows
+    .filter((r) => r.price != null && r.lift > 1.1)
+    .sort((a, b) => b.lift - a.lift)
+    .slice(0, 18))
+    console.log(
+      `    ${r.label.padEnd(40)} ${fmtA(r.price)}  ${fmtP(r.p).padStart(6)} -> ${fmtP(r.cond).padStart(6)}  x${r.lift.toFixed(2)}`,
+    );
+  console.log('  falls with it:');
+  for (const r of rows
+    .filter((r) => r.price != null && r.lift < 0.9)
+    .sort((a, b) => a.lift - b.lift)
+    .slice(0, 10))
+    console.log(
+      `    ${r.label.padEnd(40)} ${fmtA(r.price)}  ${fmtP(r.p).padStart(6)} -> ${fmtP(r.cond).padStart(6)}  x${r.lift.toFixed(2)}`,
+    );
+  console.log(
+    '  unpriced legs that move most (the book has these; enter the price before playing):',
+  );
+  for (const r of rows
+    .filter((r) => r.price == null && r.p >= 0.15 && (r.lift > 1.15 || r.lift < 0.85))
+    .sort((a, b) => b.lift - a.lift)
+    .slice(0, 14))
+    console.log(
+      `    ${r.label.padEnd(40)} ${'      '}  ${fmtP(r.p).padStart(6)} -> ${fmtP(r.cond).padStart(6)}  x${r.lift.toFixed(2)}`,
+    );
+  console.log(
+    '  unpriced legs that become near-certain once it lands (>= 70% conditional, lift > 1.1):',
+  );
+  for (const r of rows
+    .filter((r) => r.price == null && r.cond >= 0.7 && r.lift > 1.1)
+    .sort((a, b) => b.cond - a.cond)
+    .slice(0, 16))
+    console.log(
+      `    ${r.label.padEnd(40)} ${'      '}  ${fmtP(r.p).padStart(6)} -> ${fmtP(r.cond).padStart(6)}  x${r.lift.toFixed(2)}`,
+    );
+  console.log('  near-free riders (>= 75% likely once it lands, priced):');
+  for (const r of rows
+    .filter((r) => r.price != null && r.cond >= 0.75 && r.lift > 1.05)
+    .sort((a, b) => b.cond - a.cond)
+    .slice(0, 12))
+    console.log(
+      `    ${r.label.padEnd(40)} ${fmtA(r.price)}  ${fmtP(r.p).padStart(6)} -> ${fmtP(r.cond).padStart(6)}  x${r.lift.toFixed(2)}`,
+    );
+}
 if (process.env.LEGS) {
   const want = process.env.LEGS.split('||').map((x) => x.trim());
   const chosen = want.map((label) => {
