@@ -17,26 +17,46 @@ if (!board) {
   process.exit(1);
 }
 const week = String(board.week).padStart(2, '0');
-const stem = `w${week}-sunday`;
+const stem = `w${week}-${(process.env.DAY ?? 'sunday').trim().toLowerCase()}`;
 const SHEETS = path.join(ROOT, 'site', 'sheets');
 const CHROME = process.env.CHROME || '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
 
-// Sunday only: the calendar day of the earliest un-started game, in US Eastern.
+// Which calendar day this sheet covers, in US Eastern. The default is the earliest un-started
+// game's day, which is right when the sheet is built on the morning of the slate. Built on a
+// Thursday it is not: the earliest game is that night's opener, and the sheet comes out as a
+// one-game Thursday card under a Sunday name. DAY=Sunday picks the next occurrence of a named
+// weekday instead, which is what publishing the weekend ahead of time needs.
 const et = (iso, o = {}) =>
   new Date(iso).toLocaleString('en-US', { timeZone: 'America/New_York', ...o });
+const dayName = (iso) => et(iso, { weekday: 'long', month: 'long', day: 'numeric' });
 const upcoming = board.games.filter((g) => g.status?.state !== 'STATUS_FINAL');
-const day = et(upcoming.map((g) => g.kickoff).sort()[0], {
-  weekday: 'long',
-  month: 'long',
-  day: 'numeric',
-});
+if (!upcoming.length) {
+  console.error('every game on the board has finished; nothing to build');
+  process.exit(1);
+}
+const kickoffs = upcoming.map((g) => g.kickoff).sort();
+const want = (process.env.DAY ?? '').trim().toLowerCase();
+const day = want
+  ? dayName(
+      kickoffs.find((k) => et(k, { weekday: 'long' }).toLowerCase() === want) ??
+        (() => {
+          console.error(
+            `no un-started game on a ${want}; the board has ${[...new Set(kickoffs.map((k) => et(k, { weekday: 'long' })))].join(', ')}`,
+          );
+          process.exit(1);
+        })(),
+    )
+  : dayName(kickoffs[0]);
 const sunday = new Set(
   upcoming
     .filter((g) => et(g.kickoff, { weekday: 'long', month: 'long', day: 'numeric' }) === day)
     .map((g) => g.id),
 );
+// The weekday this sheet is actually for, used in the banner and the registered id so a Thursday
+// card built through this path does not go out labelled SUNDAY.
+const weekday = et(kickoffs.find((k) => dayName(k) === day), { weekday: 'long' }).toUpperCase();
 const built = buildSheets(board, { games: sunday });
-writeJson(path.join(DATA, 'sheets', `${board.season}-w${week}-sunday.json`), built);
+writeJson(path.join(DATA, 'sheets', `${board.season}-${stem}.json`), built);
 
 const esc = (s) =>
   String(s)
@@ -170,7 +190,7 @@ const html = `<!doctype html>
 </style></head>
 <body>
 <section class="card" id="sunday">
-  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code"><span>WEEK ${board.week} · SUNDAY · ONE PAGE</span></div>
+  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code"><span>WEEK ${board.week} · ${weekday} · ONE PAGE</span></div>
   <h1>Sunday, <span>on one page</span></h1>
   <p class="sub">${esc(day)}. The board, five anytime-TD parlays, the 2+ TD list and the six-point teaser. Prices FanDuel/DraftKings as of ${pulledAt} ET; the app carries live numbers. Units, not dollars.</p>
 
@@ -242,7 +262,7 @@ cut = min(h, b + 40); im.crop((0, 0, w, cut)).save(${JSON.stringify(out)}); prin
 
 const indexFile = path.join(SHEETS, 'index.json');
 const index = readJson(indexFile, { updatedAt: null, sheets: [] });
-const id = `${board.season}-w${week}-sunday`;
+const id = `${board.season}-${stem}`;
 index.sheets = [
   {
     id,
@@ -252,7 +272,7 @@ index.sheets = [
     subtitle: `The board, five anytime-TD parlays, the 2+ TD list and the six-point teaser.`,
     postedAt: nowIso(),
     images: [{ title: 'Sunday, on one page', file: `${stem}.png`, h: height }],
-    tags: ['board', 'sunday', 'teaser', 'td2'],
+    tags: ['board', weekday.toLowerCase(), 'teaser', 'td2'],
   },
   ...index.sheets.filter((s) => s.id !== id),
 ];
@@ -260,7 +280,7 @@ index.updatedAt = nowIso();
 writeJson(indexFile, index);
 
 console.log(
-  `sunday: ${day}, ${sunday.size} games, ${sides.length} sides, ${totals.length} totals, ${hot} hot`,
+  `${stem}: ${day}, ${sunday.size} games, ${sides.length} sides, ${totals.length} totals, ${hot} hot`,
 );
 console.log(
   `teaser: ${T.legs.map((l) => l.label).join(' / ')}  model ${fmtPct(T.prob)} conservative ${fmtPct(T.conservative)}`,

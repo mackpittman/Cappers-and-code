@@ -1,4 +1,8 @@
 // Posts the daily board digest to Discord as brand-aligned embeds.
+//
+// Everything that goes out is trimmed to Discord's embed limits first — see discord-limits.mjs.
+// The digest went silent for a day because the LOCKED IN embed grew past 4096 characters as the
+// week's best-bet list got longer, and the only signal was a 400 naming embeds[0].
 // Requires DISCORD_WEBHOOK_URL (create a webhook on #daily-board, name it "CC Core", avatar brand/discord/server-icon.png).
 // Optional: DISCORD_MAX_BETS (default 8), DISCORD_MAX_TD (default 8), DISCORD_DRY_RUN=1 prints the payload instead of posting.
 // The full digest goes out at most once per UTC day. That is enforced here, in code, because the
@@ -6,6 +10,7 @@
 // pass before it reads the override message, and a prompt line saying "once per day" did not stop
 // it. DISCORD_FORCE=1 posts a second digest on purpose; parlay-only posts are never gated.
 import path from 'node:path';
+import { fitItems, fitEmbeds, validate } from './discord-limits.mjs';
 import { DATA, ROOT, readJson, impliedProb } from './lib.mjs';
 
 const url = process.env.DISCORD_WEBHOOK_URL;
@@ -127,7 +132,7 @@ const payload = parlaysOnly
       embeds: [
         {
           title: 'PARLAY BOARD',
-          description: `${parlayLines.join('\n\n') || 'No parlays qualified.'}\nUnits, not dollars. Model probabilities, not guarantees.`,
+          description: `${fitItems(parlayLines, 3900) || 'No parlays qualified.'}\nUnits, not dollars. Model probabilities, not guarantees.`,
           color: GREEN,
           footer: { text: 'Cappers & Code · @cappersandcode' },
         },
@@ -140,16 +145,16 @@ const payload = parlaysOnly
       embeds: [
         {
           title: 'LOCKED IN',
-          description: bets.join('\n\n') || 'No confidence 3+ plays posted yet.',
+          description: fitItems(bets, 2600) || 'No confidence 3+ plays posted yet.',
           color: GREEN,
           thumbnail: undefined,
         },
-        { title: 'TD BOARD', description: td.join('\n') || 'No TD board yet.', color: GREEN },
+        { title: 'TD BOARD', description: fitItems(td, 1200, (n) => `\n_+${n} more in the app._`) || 'No TD board yet.', color: GREEN },
         ...(parlayLines.length
           ? [
               {
                 title: 'PARLAY BOARD',
-                description: `${parlayLines.join('\n\n')}\nFull top-five per category in the app.`,
+                description: `${fitItems(parlayLines, 1200)}\nFull top-five per category in the app.`,
                 color: GREEN,
               },
             ]
@@ -162,6 +167,15 @@ const payload = parlaysOnly
         },
       ],
     };
+// Last line of defence: clamp to the total budget, then refuse to send something Discord will
+// reject. A loud failure here is worth more than a 400 that names an array index.
+payload.embeds = fitEmbeds(payload.embeds);
+const problems = validate(payload);
+if (problems.length) {
+  console.error(`discord: payload would be rejected:\n  ${problems.join('\n  ')}`);
+  process.exit(1);
+}
+
 // Preferred route: the discord-post edge function posts as the CC Core bot into the configured channel
 // (pipeline_config.discord_post_channel_id) and needs only the publish secret. The webhook is the fallback.
 const fnUrl = process.env.SUPABASE_URL;
