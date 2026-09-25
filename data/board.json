@@ -1,9 +1,9 @@
 {
  "season": 2026,
  "week": 3,
- "generatedAt": "2026-09-25T10:32:38.254Z",
+ "generatedAt": "2026-09-25T20:29:18.869Z",
  "researchAsOf": "2026-09-24T22:57:23.035Z",
- "oddsFetchedAt": "2026-09-24T23:02:23.311Z",
+ "oddsFetchedAt": "2026-09-25T16:40:25.014Z",
  "oddsCredits": {
   "remaining": 158,
   "used": 342,
@@ -31,7 +31,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": "ESPN/book",
- "injuriesFetchedAt": "2026-09-25T10:32:37.356Z",
+ "injuriesFetchedAt": "2026-09-25T20:29:17.384Z",
  "notes": "Researched one game at a time, then validated for de-vigged win probability, implied team points and board depth before assembly. Anytime-TD prices marked \"verify\" could not be confirmed at a live sportsbook and must be checked before they are played.",
  "completed": [],
  "games": [
@@ -559,10 +559,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
-     "home": -455,
-     "away": 350,
+     "home": -440,
+     "away": 340,
      "bestHome": null,
      "bestAway": null,
      "openHome": -650,
@@ -579,8 +579,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.213,
-     "home": 0.787
+     "away": 0.218,
+     "home": 0.782
     }
    },
    "scratched": [],
@@ -772,6 +772,14 @@
       "date": "2026-09-21T15:27Z"
      },
      {
+      "name": "Nick Bosa",
+      "pos": "DE",
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Bosa injured his calf during Thursday's practice and is expected to miss \"a few weeks,\" according to Adam Schefter of ESPN.",
+      "date": "2026-09-25T15:33Z"
+     },
+     {
       "name": "James Thompson Jr.",
       "pos": "DT",
       "status": "Doubtful",
@@ -780,28 +788,20 @@
       "date": "2026-09-21T23:34Z"
      },
      {
+      "name": "Mike Evans",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Evans (hip) is taking part in Friday's practice, David Lombardi of the San Francisco Standard reports.",
+      "date": "2026-09-25T19:59Z"
+     },
+     {
       "name": "Romello Height",
       "pos": "DE",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Height (hand) did not participate in Thursday's practice, Jennifer Lee Chan of NBC Sports Bay Area reports.",
       "date": "2026-09-25T03:01Z"
-     },
-     {
-      "name": "Nick Bosa",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Bosa (calf/knee) did not participate in Thursday's practice, Jennifer Lee Chan of NBC Sports Bay Area reports.",
-      "date": "2026-09-25T02:50Z"
-     },
-     {
-      "name": "Mike Evans",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Evans (hip) didn't participate in Thursday's practice, Harrison Rich of the San Francisco Chronicle reports.",
-      "date": "2026-09-24T23:38Z"
      },
      {
       "name": "Jack Jones",
@@ -820,7 +820,7 @@
       "date": "2026-09-23T23:15Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -868,11 +868,7 @@
      "price": -145,
      "implied": 0.592,
      "status": null,
-     "live": {
-      "best": -150,
-      "bestBook": "fanduel",
-      "consensus": -156
-     }
+     "live": null
     },
     {
      "name": "Drake London",
@@ -880,11 +876,7 @@
      "price": 200,
      "implied": 0.333,
      "status": null,
-     "live": {
-      "best": 195,
-      "bestBook": "fanduel",
-      "consensus": 182
-     }
+     "live": null
     },
     {
      "name": "Brian Robinson Jr.",
@@ -892,11 +884,7 @@
      "price": 420,
      "implied": 0.192,
      "status": null,
-     "live": {
-      "best": 425,
-      "bestBook": "draftkings",
-      "consensus": 400
-     }
+     "live": null
     },
     {
      "name": "Kyle Pitts Sr.",
@@ -904,11 +892,7 @@
      "price": 400,
      "implied": 0.2,
      "status": null,
-     "live": {
-      "best": 390,
-      "bestBook": "fanduel",
-      "consensus": 360
-     }
+     "live": null
     },
     {
      "name": "Jahan Dotson",
@@ -916,11 +900,7 @@
      "price": 700,
      "implied": 0.125,
      "status": null,
-     "live": {
-      "best": 700,
-      "bestBook": "draftkings",
-      "consensus": 650
-     }
+     "live": null
     },
     {
      "name": "Olamide Zaccheaus",
@@ -928,11 +908,7 @@
      "price": 800,
      "implied": 0.111,
      "status": null,
-     "live": {
-      "best": 900,
-      "bestBook": "betmgm",
-      "consensus": 800
-     }
+     "live": null
     },
     {
      "name": "Michael Penix Jr.",
@@ -940,11 +916,7 @@
      "price": 1100,
      "implied": 0.083,
      "status": null,
-     "live": {
-      "best": 1200,
-      "bestBook": "betmgm",
-      "consensus": 1000
-     }
+     "live": null
     },
     {
      "name": "Austin Hooper",
@@ -952,11 +924,7 @@
      "price": 1500,
      "implied": 0.062,
      "status": null,
-     "live": {
-      "best": 1600,
-      "bestBook": "betrivers",
-      "consensus": 1400
-     }
+     "live": null
     },
     {
      "name": "Christian Watson",
@@ -964,11 +932,7 @@
      "price": 150,
      "implied": 0.4,
      "status": null,
-     "live": {
-      "best": 155,
-      "bestBook": "fanduel",
-      "consensus": 150
-     }
+     "live": null
     },
     {
      "name": "MarShawn Lloyd",
@@ -976,11 +940,7 @@
      "price": 210,
      "implied": 0.323,
      "status": null,
-     "live": {
-      "best": 220,
-      "bestBook": "betrivers",
-      "consensus": 210
-     }
+     "live": null
     },
     {
      "name": "Matthew Golden",
@@ -988,11 +948,7 @@
      "price": 200,
      "implied": 0.333,
      "status": null,
-     "live": {
-      "best": 200,
-      "bestBook": "fanduel",
-      "consensus": 195
-     }
+     "live": null
     },
     {
      "name": "Tucker Kraft",
@@ -1000,11 +956,7 @@
      "price": 210,
      "implied": 0.323,
      "status": null,
-     "live": {
-      "best": 210,
-      "bestBook": "betmgm",
-      "consensus": 190
-     }
+     "live": null
     },
     {
      "name": "Kaleb Johnson",
@@ -1012,11 +964,7 @@
      "price": 210,
      "implied": 0.323,
      "status": null,
-     "live": {
-      "best": 205,
-      "bestBook": "betrivers",
-      "consensus": 195
-     }
+     "live": null
     },
     {
      "name": "Jordan Love",
@@ -1024,11 +972,7 @@
      "price": 600,
      "implied": 0.143,
      "status": null,
-     "live": {
-      "best": 700,
-      "bestBook": "betrivers",
-      "consensus": 575
-     }
+     "live": null
     },
     {
      "name": "Jonnu Smith",
@@ -1036,11 +980,7 @@
      "price": 600,
      "implied": 0.143,
      "status": null,
-     "live": {
-      "best": 600,
-      "bestBook": "fanduel",
-      "consensus": 550
-     }
+     "live": null
     },
     {
      "name": "Chris Brooks",
@@ -1048,11 +988,7 @@
      "price": 320,
      "implied": 0.238,
      "status": null,
-     "live": {
-      "best": 310,
-      "bestBook": "fanduel",
-      "consensus": 295
-     }
+     "live": null
     },
     {
      "name": "Skyy Moore",
@@ -1060,11 +996,7 @@
      "price": 550,
      "implied": 0.154,
      "status": null,
-     "live": {
-      "best": 550,
-      "bestBook": "fanduel",
-      "consensus": 493
-     }
+     "live": null
     }
    ],
    "top3": [
@@ -1077,54 +1009,8 @@
      "est": 0.49,
      "book": "FanDuel",
      "why": "The one name both seasons agree on: three of Green Bay's four passing touchdowns this year and both of its goal-line targets, six touchdowns in ten games from Love last year, and the two men ahead of him in Love's red-zone pecking order (Doubs, Reed) are gone or out.",
-     "live2": {
-      "best": 1300,
-      "bestBook": "fanduel",
-      "consensus": 1100,
-      "books": {
-       "draftkings": 1100,
-       "fanduel": 1300,
-       "betrivers": 1100,
-       "betonlineag": 650,
-       "betmgm": 825,
-       "bovada": 1100
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583108_13L88808Q1-1356601652Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=43162285",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345220203|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653806-5802827&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.0833,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "live": {
-      "best": 155,
-      "bestBook": "fanduel",
-      "consensus": 150,
-      "books": {
-       "draftkings": 150,
-       "fanduel": 155,
-       "betrivers": 150,
-       "betonlineag": 130,
-       "betmgm": 135,
-       "bovada": 150
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285247_13L88808Q1-1411527739Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=43162285",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231161|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653807-5802831&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.4,
-      "open": 140,
-      "move": 10,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
+     "live2": null,
+     "live": null,
      "edge": 0.09,
      "status": null
     },
@@ -1137,55 +1023,9 @@
      "est": 0.42,
      "book": "FanDuel",
      "why": "Priced off two games of Cooper Rush. In Penix's nine 2025 starts London caught eight of eleven touchdown passes and every one of the five goal-line targets; Bijan had two. The quarterback who feeds him is back tonight and the board has not moved.",
-     "live2": {
-      "best": 1800,
-      "bestBook": "fanduel",
-      "consensus": 1400,
-      "books": {
-       "draftkings": 1400,
-       "fanduel": 1800,
-       "betrivers": 1500,
-       "betonlineag": 900,
-       "betmgm": 1350,
-       "bovada": 1400
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583327_13L88808Q1-1818727041Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=37576213",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345236974|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653879-5802965&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.0667,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "live": {
-      "best": 195,
-      "bestBook": "fanduel",
-      "consensus": 182,
-      "books": {
-       "draftkings": 175,
-       "fanduel": 195,
-       "betrivers": 188,
-       "betonlineag": 170,
-       "betmgm": 195,
-       "bovada": 175
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285258_13L88808Q1689607609Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=37576213",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231173|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653880-5802967&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.3546,
-      "open": 180,
-      "move": 2,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "edge": 0.065,
+     "live2": null,
+     "live": null,
+     "edge": 0.087,
      "status": null
     },
     {
@@ -1197,55 +1037,9 @@
      "est": 0.55,
      "book": "FanDuel",
      "why": "Bell cow at 37 carries and 14 targets, but Atlanta has not run a red-zone snap all season and under Penix the goal-line looks went to London. The price is roughly fair; the role model flips sign across its own sensitivity sweep, so neither side is a play.",
-     "live2": {
-      "best": 440,
-      "bestBook": "fanduel",
-      "consensus": 380,
-      "books": {
-       "draftkings": 380,
-       "fanduel": 440,
-       "betrivers": 380,
-       "betonlineag": 300,
-       "betmgm": 320,
-       "bovada": 380
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583326_13L88808Q1-1354855512Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=38093938",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345220086|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653855-5802917&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.2083,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "live": {
-      "best": -150,
-      "bestBook": "fanduel",
-      "consensus": -156,
-      "books": {
-       "draftkings": -155,
-       "fanduel": -150,
-       "betrivers": -162,
-       "betonlineag": -167,
-       "betmgm": -155,
-       "bovada": -157
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285257_13L88808Q1-1195523501Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=38093938",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345237066|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653846-5802899&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.6094,
-      "open": -161,
-      "move": 5,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "edge": -0.059,
+     "live2": null,
+     "live": null,
+     "edge": -0.042,
      "status": null
     }
    ],
@@ -1259,55 +1053,9 @@
      "est": 0.36,
      "book": "FanDuel",
      "why": "Love's red-zone tight end last year (12 red-zone targets and seven touchdowns in eight games) has zero red-zone targets in two games this year. The two readings disagree; the price sits between them. Thin, not a hammer.",
-     "live2": {
-      "best": 1800,
-      "bestBook": "draftkings",
-      "consensus": 1700,
-      "books": {
-       "draftkings": 1800,
-       "fanduel": 1800,
-       "betrivers": 1600,
-       "betonlineag": 850,
-       "betmgm": 1550,
-       "bovada": 1800
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583111_13L88808Q1-755622256Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=53445708",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231163|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653794-5802805&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.0556,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "live": {
-      "best": 210,
-      "bestBook": "betmgm",
-      "consensus": 190,
-      "books": {
-       "draftkings": 190,
-       "fanduel": 200,
-       "betrivers": 190,
-       "betonlineag": 160,
-       "betmgm": 210,
-       "bovada": 190
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285245_13L88808Q1-834011589Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=53445708",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345237074|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653801-5802819&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.3448,
-      "open": 165,
-      "move": 25,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "edge": 0.015,
+     "live2": null,
+     "live": null,
+     "edge": 0.037,
      "status": null
     },
     {
@@ -1319,54 +1067,8 @@
      "est": 0.35,
      "book": "FanDuel",
      "why": "Leads the committee in carries and red-zone carries and has the backfield's only score. With Jacobs on the exempt list the goal-line role is his to keep, but Green Bay has run two goal-line snaps in two games and thrown both.",
-     "live2": {
-      "best": 1800,
-      "bestBook": "betrivers",
-      "consensus": 1650,
-      "books": {
-       "draftkings": 1700,
-       "fanduel": 1600,
-       "betrivers": 1800,
-       "betonlineag": 900,
-       "betmgm": 1600,
-       "bovada": 1700
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583109_13L88808Q1551366769Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=42198378",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345220198|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653780-5802778&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.0571,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "live": {
-      "best": 220,
-      "bestBook": "betrivers",
-      "consensus": 210,
-      "books": {
-       "draftkings": 210,
-       "fanduel": 200,
-       "betrivers": 220,
-       "betonlineag": 170,
-       "betmgm": 220,
-       "bovada": 210
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285248_13L88808Q1-135035926Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=42198378",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345237064|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653773-5802762&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.3226,
-      "open": 178,
-      "move": 32,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
+     "live2": null,
+     "live": null,
      "edge": 0.027,
      "status": null
     },
@@ -1379,55 +1081,9 @@
      "est": 0.25,
      "book": "FanDuel",
      "why": "Priced as a co-equal with Watson on volume. He is a yardage receiver: zero touchdowns on 62 targets across two seasons and no goal-line targets. Off at this number.",
-     "live2": {
-      "best": 1800,
-      "bestBook": "fanduel",
-      "consensus": 1600,
-      "books": {
-       "draftkings": 1600,
-       "fanduel": 1800,
-       "betrivers": 1600,
-       "betonlineag": 1000,
-       "betmgm": 1300,
-       "bovada": 1600
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583112_13L88808Q1905210328Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=48301335",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345237018|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653818-5802853&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.0588,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "live": {
-      "best": 200,
-      "bestBook": "fanduel",
-      "consensus": 195,
-      "books": {
-       "draftkings": 195,
-       "fanduel": 200,
-       "betrivers": 200,
-       "betonlineag": 180,
-       "betmgm": 185,
-       "bovada": 195
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285249_13L88808Q11480921309Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=48301335",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345237078|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653815-5802847&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.339,
-      "open": 180,
-      "move": 15,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "edge": -0.089,
+     "live2": null,
+     "live": null,
+     "edge": -0.083,
      "status": null
     },
     {
@@ -1439,51 +1095,9 @@
      "est": 0.11,
      "book": "FanDuel",
      "why": "The worst price on the board. Eight carries in one game, none inside the 20, and no touchdown on 28 attempts last year in Pittsburgh — priced at the same number as the back who actually has the role.",
-     "live2": {
-      "best": 1600,
-      "bestBook": "betrivers",
-      "consensus": 1500,
-      "books": {
-       "draftkings": 1500,
-       "fanduel": 1500,
-       "betrivers": 1600,
-       "betmgm": 1300,
-       "bovada": 1500
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583110_13L88808Q1-131936476Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=48926504",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345220106|{wagerAmount}",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653786-5802790&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.0625,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "live": {
-      "best": 205,
-      "bestBook": "betrivers",
-      "consensus": 195,
-      "books": {
-       "draftkings": 195,
-       "fanduel": 200,
-       "betrivers": 205,
-       "betmgm": 185,
-       "bovada": 195
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285246_13L88808Q1-1984159220Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=48926504",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345220039|{wagerAmount}",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653785-5802788&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.339,
-      "open": 190,
-      "move": 5,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "edge": -0.229,
+     "live2": null,
+     "live": null,
+     "edge": -0.213,
      "status": null
     },
     {
@@ -1495,55 +1109,9 @@
      "est": 0.11,
      "book": "FanDuel",
      "why": "Runs a lot of routes, but a rusty quarterback in his first start funnels the red-zone looks to London. Fair at the price, no longer a value play.",
-     "live2": {
-      "best": 8000,
-      "bestBook": "draftkings",
-      "consensus": 7000,
-      "books": {
-       "draftkings": 8000,
-       "fanduel": 8000,
-       "betrivers": 6000,
-       "betonlineag": 5400,
-       "betmgm": 6000,
-       "bovada": 8000
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583330_13L88808Q1258503148Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=26812206",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345220080|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653888-5802984&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.0141,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "live": {
-      "best": 700,
-      "bestBook": "draftkings",
-      "consensus": 650,
-      "books": {
-       "draftkings": 700,
-       "fanduel": 650,
-       "betrivers": 525,
-       "betonlineag": 650,
-       "betmgm": 600,
-       "bovada": 700
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285261_13L88808Q1-419764349Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=26812206",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231179|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653886-5802978&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.1333,
-      "open": 650,
-      "move": 0,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "edge": -0.023,
+     "live2": null,
+     "live": null,
+     "edge": -0.015,
      "status": null
     },
     {
@@ -1555,55 +1123,9 @@
      "est": 0.03,
      "book": "FanDuel",
      "why": "No rushing touchdown last season and none this year, and one goal-line carry in two seasons. Off.",
-     "live2": {
-      "best": 8000,
-      "bestBook": "fanduel",
-      "consensus": 6550,
-      "books": {
-       "draftkings": 6500,
-       "fanduel": 8000,
-       "betrivers": 7000,
-       "betonlineag": 4400,
-       "betmgm": 6600,
-       "bovada": 6500
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583115_13L88808Q1-95410103Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=22502311",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345236972|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653762-5802746&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.015,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "live": {
-      "best": 700,
-      "bestBook": "betrivers",
-      "consensus": 575,
-      "books": {
-       "draftkings": 550,
-       "fanduel": 600,
-       "betrivers": 700,
-       "betonlineag": 550,
-       "betmgm": 650,
-       "bovada": 525
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285251_13L88808Q1-1213243313Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=22502311",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231175|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653758-5802736&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.1481,
-      "open": 600,
-      "move": -25,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "edge": -0.118,
+     "live2": null,
+     "live": null,
+     "edge": -0.113,
      "status": null
     },
     {
@@ -1615,55 +1137,9 @@
      "est": 0.16,
      "book": "FanDuel",
      "why": "Five of Penix's 30 red-zone targets last year and one touchdown; London and Bijan take the rest. Slightly rich at +400.",
-     "live2": {
-      "best": 4000,
-      "bestBook": "draftkings",
-      "consensus": 4000,
-      "books": {
-       "draftkings": 4000,
-       "fanduel": 4000,
-       "betrivers": 4000,
-       "betonlineag": 2900,
-       "betmgm": 3300,
-       "bovada": 4000
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583328_13L88808Q1-703917339Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=36287746",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345237030|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653867-5802941&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.0244,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "live": {
-      "best": 390,
-      "bestBook": "fanduel",
-      "consensus": 360,
-      "books": {
-       "draftkings": 360,
-       "fanduel": 390,
-       "betrivers": 375,
-       "betonlineag": 350,
-       "betmgm": 340,
-       "bovada": 360
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285260_13L88808Q1999478588Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=36287746",
-       "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345237075|{wagerAmount}",
-       "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-       "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653871-5802949&type=Single",
-       "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-      },
-      "implied": 0.2174,
-      "open": 375,
-      "move": -15,
-      "fetchedAt": "2026-09-24T13:42:22.847Z"
-     },
-     "edge": -0.057,
+     "live2": null,
+     "live": null,
+     "edge": -0.04,
      "status": null
     }
    ],
@@ -1730,384 +1206,9 @@
    },
    "live": null,
    "scratched": [],
-   "liveBoard": [
-    {
-     "name": "Bijan Robinson",
-     "best": -150,
-     "bestBook": "fanduel",
-     "consensus": -156,
-     "implied": 0.6094
-    },
-    {
-     "name": "Christian Watson",
-     "best": 155,
-     "bestBook": "fanduel",
-     "consensus": 150,
-     "implied": 0.4
-    },
-    {
-     "name": "Drake London",
-     "best": 195,
-     "bestBook": "fanduel",
-     "consensus": 182,
-     "implied": 0.3546
-    },
-    {
-     "name": "Tucker Kraft",
-     "best": 210,
-     "bestBook": "betmgm",
-     "consensus": 190,
-     "implied": 0.3448
-    },
-    {
-     "name": "Kaleb Johnson",
-     "best": 205,
-     "bestBook": "betrivers",
-     "consensus": 195,
-     "implied": 0.339
-    },
-    {
-     "name": "Matthew Golden",
-     "best": 200,
-     "bestBook": "fanduel",
-     "consensus": 195,
-     "implied": 0.339
-    },
-    {
-     "name": "MarShawn Lloyd",
-     "best": 220,
-     "bestBook": "betrivers",
-     "consensus": 210,
-     "implied": 0.3226
-    },
-    {
-     "name": "Chris Brooks",
-     "best": 310,
-     "bestBook": "fanduel",
-     "consensus": 295,
-     "implied": 0.2532
-    },
-    {
-     "name": "Kyle Pitts",
-     "best": 390,
-     "bestBook": "fanduel",
-     "consensus": 360,
-     "implied": 0.2174
-    },
-    {
-     "name": "Brian Robinson Jr.",
-     "best": 425,
-     "bestBook": "draftkings",
-     "consensus": 400,
-     "implied": 0.2
-    },
-    {
-     "name": "Skyy Moore",
-     "best": 550,
-     "bestBook": "fanduel",
-     "consensus": 493,
-     "implied": 0.1686
-    },
-    {
-     "name": "Green Bay Packers D/ST",
-     "best": 500,
-     "bestBook": "draftkings",
-     "consensus": 500,
-     "implied": 0.1667
-    },
-    {
-     "name": "Jonnu Smith",
-     "best": 600,
-     "bestBook": "fanduel",
-     "consensus": 550,
-     "implied": 0.1538
-    },
-    {
-     "name": "Atlanta Falcons D/ST",
-     "best": 650,
-     "bestBook": "betmgm",
-     "consensus": 550,
-     "implied": 0.1538
-    },
-    {
-     "name": "Jordan Love",
-     "best": 700,
-     "bestBook": "betrivers",
-     "consensus": 575,
-     "implied": 0.1481
-    },
-    {
-     "name": "Jahan Dotson",
-     "best": 700,
-     "bestBook": "draftkings",
-     "consensus": 650,
-     "implied": 0.1333
-    }
-   ],
-   "propLines": [
-    {
-     "market": "player_pass_yds",
-     "label": "Pass yds",
-     "name": "Michael Penix Jr.",
-     "line": 205.5,
-     "over": -114,
-     "under": -114,
-     "bestOver": -112,
-     "bestUnder": -112,
-     "lineLow": 204.5,
-     "lineHigh": 206.5,
-     "fetchedAt": "2026-09-22T19:29:08.885Z",
-     "lean": {
-      "side": "under",
-      "line": 205.5,
-      "why": "Ten months off an ACL on a short week against a defense allowing 6.1 yards per attempt and a league-low 3.6 yards per pass play on early downs is a lot to ask in a first start.",
-      "delta": 0
-     }
-    },
-    {
-     "market": "player_pass_yds",
-     "label": "Pass yds",
-     "name": "Jordan Love",
-     "line": 228.5,
-     "over": -114,
-     "under": -115,
-     "bestOver": -111,
-     "bestUnder": -113,
-     "lineLow": 226.5,
-     "lineHigh": 229.5,
-     "fetchedAt": "2026-09-22T19:29:08.885Z",
-     "lean": null
-    },
-    {
-     "market": "player_reception_yds",
-     "label": "Rec yds",
-     "name": "Christian Watson",
-     "line": 66.5,
-     "over": -114,
-     "under": -114,
-     "bestOver": -108,
-     "bestUnder": -111,
-     "lineLow": 62.5,
-     "lineHigh": 66.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_reception_yds",
-     "label": "Rec yds",
-     "name": "Drake London",
-     "line": 64,
-     "over": -114,
-     "under": -114,
-     "bestOver": -114,
-     "bestUnder": -110,
-     "lineLow": 62.5,
-     "lineHigh": 65.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_reception_yds",
-     "label": "Rec yds",
-     "name": "Matthew Golden",
-     "line": 53,
-     "over": -114,
-     "under": -114,
-     "bestOver": -111,
-     "bestUnder": -105,
-     "lineLow": 51.5,
-     "lineHigh": 53.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_reception_yds",
-     "label": "Rec yds",
-     "name": "Tucker Kraft",
-     "line": 46.5,
-     "over": -114,
-     "under": -114,
-     "bestOver": -113,
-     "bestUnder": -111,
-     "lineLow": 44.5,
-     "lineHigh": 46.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_reception_yds",
-     "label": "Rec yds",
-     "name": "Bijan Robinson",
-     "line": 40.5,
-     "over": -115,
-     "under": -114,
-     "bestOver": -112,
-     "bestUnder": -112,
-     "lineLow": 40.5,
-     "lineHigh": 41.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_reception_yds",
-     "label": "Rec yds",
-     "name": "Kyle Pitts",
-     "line": 36.5,
-     "over": -114,
-     "under": -113,
-     "bestOver": -113,
-     "bestUnder": 110,
-     "lineLow": 34.5,
-     "lineHigh": 36.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_reception_yds",
-     "label": "Rec yds",
-     "name": "Jahan Dotson",
-     "line": 19.5,
-     "over": -114,
-     "under": -113,
-     "bestOver": -112,
-     "bestUnder": -111,
-     "lineLow": 19.5,
-     "lineHigh": 19.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_reception_yds",
-     "label": "Rec yds",
-     "name": "Chris Brooks",
-     "line": 7.5,
-     "over": -111,
-     "under": -116,
-     "bestOver": -108,
-     "bestUnder": -110,
-     "lineLow": 7.5,
-     "lineHigh": 7.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_reception_yds",
-     "label": "Rec yds",
-     "name": "MarShawn Lloyd",
-     "line": 5.5,
-     "over": -112,
-     "under": -117,
-     "bestOver": -104,
-     "bestUnder": -110,
-     "lineLow": 5.5,
-     "lineHigh": 6.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_rush_yds",
-     "label": "Rush yds",
-     "name": "Bijan Robinson",
-     "line": 78.5,
-     "over": -114,
-     "under": -114,
-     "bestOver": -113,
-     "bestUnder": -111,
-     "lineLow": 78.5,
-     "lineHigh": 78.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_rush_yds",
-     "label": "Rush yds",
-     "name": "Kaleb Johnson",
-     "line": 36.5,
-     "over": -114,
-     "under": -114,
-     "bestOver": -112,
-     "bestUnder": -112,
-     "lineLow": 35.5,
-     "lineHigh": 37.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_rush_yds",
-     "label": "Rush yds",
-     "name": "MarShawn Lloyd",
-     "line": 28.5,
-     "over": -114,
-     "under": -114,
-     "bestOver": -111,
-     "bestUnder": -111,
-     "lineLow": 28.5,
-     "lineHigh": 29.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_rush_yds",
-     "label": "Rush yds",
-     "name": "Brian Robinson Jr.",
-     "line": 22.5,
-     "over": -114,
-     "under": -114,
-     "bestOver": -111,
-     "bestUnder": -113,
-     "lineLow": 20.5,
-     "lineHigh": 23.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_rush_yds",
-     "label": "Rush yds",
-     "name": "Chris Brooks",
-     "line": 16.5,
-     "over": -112,
-     "under": -116,
-     "bestOver": -108,
-     "bestUnder": -110,
-     "lineLow": 16.5,
-     "lineHigh": 16.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_rush_yds",
-     "label": "Rush yds",
-     "name": "Jordan Love",
-     "line": 8.5,
-     "over": -114,
-     "under": -113,
-     "bestOver": -111,
-     "bestUnder": -110,
-     "lineLow": 7.5,
-     "lineHigh": 8.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    },
-    {
-     "market": "player_rush_yds",
-     "label": "Rush yds",
-     "name": "Michael Penix Jr.",
-     "line": 3.5,
-     "over": -118,
-     "under": -110,
-     "bestOver": 108,
-     "bestUnder": -103,
-     "lineLow": 3.5,
-     "lineHigh": 4.5,
-     "fetchedAt": "2026-09-22T19:29:08.886Z",
-     "lean": null
-    }
-   ],
-   "pulls": {
-    "open": "2026-09-22T22:45:08.906Z",
-    "desig": "2026-09-22T19:29:08.886Z",
-    "prekick": "2026-09-24T13:42:22.847Z"
-   },
+   "liveBoard": [],
+   "propLines": [],
+   "pulls": {},
    "injuryReport": {
     "away": [
      {
@@ -2209,6 +1310,14 @@
       "date": "2026-09-24T02:15Z"
      },
      {
+      "name": "Jacob Monk",
+      "pos": "C",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-25T14:56Z"
+     },
+     {
       "name": "Edgerrin Cooper",
       "pos": "LB",
       "status": "Questionable",
@@ -2217,7 +1326,7 @@
       "date": "2026-09-25T02:48Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -2733,7 +1842,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
      "home": 145,
      "away": -175,
@@ -2883,8 +1992,16 @@
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "The Ravens listed Flowers (hamstring) as a non-participant in Thursday's practice.",
-      "date": "2026-09-24T20:40Z"
+      "detail": "Flowers (hamstring) is listed as questionable for Sunday's game against the Cowboys in Brazil.",
+      "date": "2026-09-25T20:14Z"
+     },
+     {
+      "name": "Chris Moore",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-25T20:12Z"
      },
      {
       "name": "Ronnie Stanley",
@@ -2953,7 +2070,7 @@
       "date": "2026-09-25T01:28Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -3553,7 +2670,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
      "home": 124,
      "away": -148,
@@ -3700,12 +2817,36 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Nick Scott",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T17:07Z"
+     },
+     {
+      "name": "Claudin Cherelus",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T17:07Z"
+     },
+     {
       "name": "Devin Lloyd",
       "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
+      "status": "Out",
+      "type": "out",
       "detail": "Lloyd (calf) did not practice Thursday.",
       "date": "2026-09-24T22:24Z"
+     },
+     {
+      "name": "Jalen Coker",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Coker (ankle) is listed as questionable for Sunday's game, Steve Reed of the Associated Press reports.",
+      "date": "2026-09-25T16:42Z"
      },
      {
       "name": "Xavier Legette",
@@ -3714,30 +2855,6 @@
       "type": "questionable",
       "detail": "Legette (knee) was listed as a non-participant at Thursday's practice.",
       "date": "2026-09-24T20:24Z"
-     },
-     {
-      "name": "Jalen Coker",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Coker (ankle) was listed as a non-participant on Thursday's injury report.",
-      "date": "2026-09-24T19:30Z"
-     },
-     {
-      "name": "Nick Scott",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Scott (ribs) did not participate at the Panthers' practice Wednesday.",
-      "date": "2026-09-23T23:18Z"
-     },
-     {
-      "name": "Claudin Cherelus",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Cherelus (shoulder) is questionable to return to Sunday's game against the Falcons, Mike Kaye of ESPN.com reports.",
-      "date": "2026-09-20T18:13Z"
      },
      {
       "name": "Jonathon Brooks",
@@ -3782,7 +2899,7 @@
       "date": "2026-09-22T20:56Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -4442,10 +3559,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
-     "home": 154,
-     "away": -185,
+     "home": 145,
+     "away": -175,
      "bestHome": null,
      "bestAway": null,
      "openHome": -105,
@@ -4462,8 +3579,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.622,
-     "home": 0.378
+     "away": 0.609,
+     "home": 0.391
     }
    },
    "scratched": [
@@ -4605,36 +3722,36 @@
      {
       "name": "B.J. Hill",
       "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "doubtful",
+      "date": "2026-09-25T16:31Z"
      }
     ],
     "home": [
+     {
+      "name": "Rico Dowdle",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Dowdle (toe) has been ruled out for Sunday's gam at Cincinnati, Alan Saunders of Steelers Now reports.",
+      "date": "2026-09-25T20:01Z"
+     },
      {
       "name": "Michael Pittman Jr.",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Pittman (foot) was a limited participant at Thursday's practice, Alan Saunders of Steelers Now reports.",
-      "date": "2026-09-24T20:50Z"
-     },
-     {
-      "name": "Rico Dowdle",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Dowdle (toe) didn't practice Thursday, Alan Saunders of Steelers Now reports.",
-      "date": "2026-09-24T20:48Z"
+      "detail": "Pittman (foot) is listed as questionable for Sunday's game, according to Alan Saunders of Steelers Now.",
+      "date": "2026-09-25T20:06Z"
      },
      {
       "name": "Jaylen Warren",
       "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Warren (shoulder) was a limited participant at practice Thursday while Rico Dowdle (toe) didn't practice, Alan Saunders of Steelers Now reports.",
-      "date": "2026-09-24T20:43Z"
+      "detail": "Warren (shoulder) is listed as questionable for Sunday's game against the Bengals after being a limited participant in Friday's practice, Alan Saunders of Steelers Now reports.",
+      "date": "2026-09-25T19:55Z"
      },
      {
       "name": "Gennings Dunker",
@@ -4661,7 +3778,7 @@
       "date": "2026-09-23T23:37Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -5248,7 +4365,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
      "home": 105,
      "away": -125,
@@ -5395,6 +4512,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Nico Collins",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Collins (hamstring) will not play in Sunday's game at Indianapolis.",
+      "date": "2026-09-25T20:02Z"
+     },
+     {
       "name": "M.J. Stewart",
       "pos": "S",
       "status": "Out",
@@ -5409,14 +4534,6 @@
       "type": "questionable",
       "detail": "Clowney (knee) did not participate in practice Thursday.",
       "date": "2026-09-25T02:15Z"
-     },
-     {
-      "name": "Nico Collins",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Collins (hamstring) was listed as a non-participant at Thursday's practice.",
-      "date": "2026-09-24T21:07Z"
      },
      {
       "name": "Trent Brown",
@@ -5453,20 +4570,20 @@
     ],
     "home": [
      {
+      "name": "Ashton Dulin",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Dulin (ankle) did not practice Thursday.",
+      "date": "2026-09-24T21:53Z"
+     },
+     {
       "name": "Alec Pierce",
       "pos": "WR",
       "status": "Out",
       "type": "out",
       "detail": "Colts head coach Shane Steichen said Wednesday that Pierce (heel) will be placed on injured reserve and is without a timeline for a return, Kevin Bowen of 107.5 The Fan Indianapolis reports.",
       "date": "2026-09-23T15:37Z"
-     },
-     {
-      "name": "Ashton Dulin",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Dulin (ankle) did not practice Thursday.",
-      "date": "2026-09-24T21:53Z"
      },
      {
       "name": "Charvarius Ward",
@@ -5485,7 +4602,7 @@
       "date": "2026-09-23T00:30Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -5694,19 +4811,6 @@
       "best": 430,
       "bestBook": "betrivers",
       "consensus": 400
-     }
-    },
-    {
-     "name": "Caleb Douglas",
-     "team": "MIA",
-     "price": null,
-     "implied": null,
-     "priceNote": "verify",
-     "status": "Questionable",
-     "live": {
-      "best": 420,
-      "bestBook": "betrivers",
-      "consensus": 360
      }
     }
    ],
@@ -6093,10 +5197,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
-     "home": 470,
-     "away": -650,
+     "home": 425,
+     "away": -575,
      "bestHome": null,
      "bestAway": null,
      "openHome": 270,
@@ -6113,11 +5217,17 @@
      "under": null
     },
     "winProb": {
-     "away": 0.832,
-     "home": 0.168
+     "away": 0.817,
+     "home": 0.183
     }
    },
-   "scratched": [],
+   "scratched": [
+    {
+     "name": "Caleb Douglas",
+     "team": "MIA",
+     "status": "Out"
+    }
+   ],
    "liveBoard": [
     {
      "name": "Kenneth Walker III",
@@ -6266,12 +5376,20 @@
     ],
     "home": [
      {
+      "name": "Caleb Douglas",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Douglas (ankle) didn't practice Thursday, David Furones of the South Florida Sun Sentinel reports.",
+      "date": "2026-09-24T20:58Z"
+     },
+     {
       "name": "Jaylen Wright",
       "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Wright (foot) was a limited participant in Thursday's practice.",
-      "date": "2026-09-25T02:02Z"
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Wright (foot) is considered doubtful for Sunday's game against Kansas City, Travis Wingfield of the Dolphins' official site reports.",
+      "date": "2026-09-25T15:30Z"
      },
      {
       "name": "Ryan Miller",
@@ -6282,19 +5400,11 @@
       "date": "2026-09-25T01:53Z"
      },
      {
-      "name": "Caleb Douglas",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Douglas (ankle) didn't practice Thursday, David Furones of the South Florida Sun Sentinel reports.",
-      "date": "2026-09-24T20:58Z"
-     },
-     {
       "name": "Chris Bell",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Bell (knee) said Thursday that he'll be ready to play Sunday against the Chiefs, C. C. Isaiah Smalls II of the Miami Herald reports.",
+      "detail": "Bell (knee) said Thursday that he'll be ready to play Sunday against the Chiefs, C. Isaiah Smalls II of the Miami Herald reports.",
       "date": "2026-09-24T19:50Z"
      },
      {
@@ -6330,7 +5440,7 @@
       "date": "2026-09-19T21:21Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -6964,11 +6074,11 @@
     }
    },
    "live": {
-    "source": "ESPN/DraftKings",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "source": "ESPN/Draft Kings",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
-     "home": -340,
-     "away": 270,
+     "home": -325,
+     "away": 260,
      "bestHome": null,
      "bestAway": null,
      "openHome": -142,
@@ -6985,8 +6095,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.259,
-     "home": 0.741
+     "away": 0.266,
+     "home": 0.734
     }
    },
    "scratched": [],
@@ -7112,6 +6222,46 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Dalvin Tomlinson",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T18:30Z"
+     },
+     {
+      "name": "Elijah Molden",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T18:30Z"
+     },
+     {
+      "name": "Trey Pipkins III",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T18:30Z"
+     },
+     {
+      "name": "Kayode Awosika",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T18:30Z"
+     },
+     {
+      "name": "Brenen Thompson",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Thompson (quadriceps) did not practice Thursday.",
+      "date": "2026-09-25T02:25Z"
+     },
+     {
       "name": "Charlie Kolar",
       "pos": "TE",
       "status": "Out",
@@ -7120,44 +6270,12 @@
       "date": "2026-09-23T18:46Z"
      },
      {
-      "name": "Dalvin Tomlinson",
-      "pos": "DT",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Tomlinson (hamstring) did not participate at practice Wednesday.",
-      "date": "2026-09-24T01:22Z"
-     },
-     {
-      "name": "Kayode Awosika",
-      "pos": "G",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "doubtful",
-      "date": "2026-09-23T19:11Z"
-     },
-     {
-      "name": "Brenen Thompson",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Thompson (quadriceps) did not practice Thursday.",
-      "date": "2026-09-25T02:25Z"
-     },
-     {
-      "name": "Elijah Molden",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Molden (hamstring) did not participate at practice Wednesday.",
-      "date": "2026-09-24T01:17Z"
-     },
-     {
-      "name": "Tuli Tuipulotu",
-      "pos": "LB",
+      "name": "Trey Lance",
+      "pos": "QB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
-      "date": "2026-09-23T22:28Z"
+      "date": "2026-09-25T18:30Z"
      },
      {
       "name": "Rodney Shelley",
@@ -7166,14 +6284,6 @@
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-09-23T22:27Z"
-     },
-     {
-      "name": "Trey Pipkins III",
-      "pos": "OT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
      },
      {
       "name": "David Njoku",
@@ -7186,6 +6296,38 @@
     ],
     "home": [
      {
+      "name": "T.J. Sanders",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T18:36Z"
+     },
+     {
+      "name": "Jordan Hancock",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T18:35Z"
+     },
+     {
+      "name": "Keon Coleman",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Coleman (ankle) is listed as questionable for Sunday's game versus the Chargers.",
+      "date": "2026-09-25T18:32Z"
+     },
+     {
+      "name": "DJ Moore",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Head coach Joe Brady said Friday that Moore (shoulder) will be listed as questionable and a game-time decision for Sunday's contest against the Chargers, Katherine Fitzgerald of The Buffalo News reports.",
+      "date": "2026-09-25T18:09Z"
+     },
+     {
       "name": "Ed Oliver",
       "pos": "DT",
       "status": "Questionable",
@@ -7194,47 +6336,15 @@
       "date": "2026-09-25T01:14Z"
      },
      {
-      "name": "DJ Moore",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Moore (shoulder) was listed as a non-participant in Thursday's practice.",
-      "date": "2026-09-24T21:18Z"
-     },
-     {
-      "name": "Keon Coleman",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Coleman (ankle) wasn't spotted at the start of Thursday's practice, Joe Buscaglia of The Athletic reports.",
-      "date": "2026-09-24T18:45Z"
-     },
-     {
-      "name": "T.J. Sanders",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Sanders (appendix) did not participate in Wednesday's practice, Katherine Fitzgerald of The Buffalo News reports.",
-      "date": "2026-09-23T23:07Z"
-     },
-     {
       "name": "Ar'maj Reed-Adams",
       "pos": "G",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-09-23T22:36Z"
-     },
-     {
-      "name": "Jordan Hancock",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T22:35Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -7298,14 +6408,6 @@
      "price": 120,
      "implied": 0.455,
      "status": null,
-     "live": null
-    },
-    {
-     "name": "Puka Nacua",
-     "team": "LAR",
-     "price": 125,
-     "implied": 0.444,
-     "status": "Questionable",
      "live": null
     },
     {
@@ -7557,10 +6659,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
-     "home": 110,
-     "away": -130,
+     "home": 114,
+     "away": -135,
      "bestHome": null,
      "bestAway": null,
      "openHome": 120,
@@ -7572,16 +6674,22 @@
      "awayPrice": null
     },
     "total": {
-     "point": 44.5,
+     "point": 43.5,
      "over": null,
      "under": null
     },
     "winProb": {
-     "away": 0.543,
-     "home": 0.457
+     "away": 0.551,
+     "home": 0.449
     }
    },
-   "scratched": [],
+   "scratched": [
+    {
+     "name": "Puka Nacua",
+     "team": "LAR",
+     "status": "Doubtful"
+    }
+   ],
    "liveBoard": [],
    "propLines": [],
    "pulls": {
@@ -7589,6 +6697,14 @@
    },
    "injuryReport": {
     "away": [
+     {
+      "name": "Puka Nacua",
+      "pos": "WR",
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Coach Sean McVay said Friday that Nacua (hip) will be listed as doubtful for Sunday's game at Denver, Stu Jackson of the Rams' official site reports.",
+      "date": "2026-09-25T18:15Z"
+     },
      {
       "name": "Jordan Whittington",
       "pos": "WR",
@@ -7604,14 +6720,6 @@
       "type": "questionable",
       "detail": "Parkinson (knee) did not participate in practice Thursday, Nate Atkins of The Athletic reports.",
       "date": "2026-09-25T02:57Z"
-     },
-     {
-      "name": "Puka Nacua",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Nacua (hip) didn't take part in Thursday's practice, Sarah Barshop of ESPN.com reports.",
-      "date": "2026-09-24T23:22Z"
      },
      {
       "name": "Kamren Kinchens",
@@ -7680,7 +6788,7 @@
       "date": "2026-08-31T23:20Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -7757,7 +6865,7 @@
      "price": 140,
      "implied": 0.417,
      "book": "BetMGM",
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 155,
       "bestBook": "draftkings",
@@ -8007,7 +7115,7 @@
       "fetchedAt": "2026-09-22T13:30:20.694Z"
      },
      "edge": -0.032,
-     "status": "Questionable"
+     "status": null
     }
    ],
    "value": [
@@ -8165,10 +7273,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
-     "home": -185,
-     "away": 154,
+     "home": -192,
+     "away": 160,
      "bestHome": null,
      "bestAway": null,
      "openHome": -166,
@@ -8185,8 +7293,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.378,
-     "home": 0.622
+     "away": 0.369,
+     "home": 0.631
     }
    },
    "scratched": [],
@@ -8311,28 +7419,28 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Kwity Paye",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-24T21:42Z"
+      "name": "Treydan Stukes",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T19:02Z"
      },
      {
       "name": "Brock Bowers",
       "pos": "TE",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Bowers (knee) is practicing for a second straight day Thursday, Sam Warren of The Athletic reports.",
-      "date": "2026-09-24T19:20Z"
+      "detail": "Bowers (knee) is listed as questionable for Sunday's game against the Saints, with head coach Klint Kubiak telling reporters that the tight end's absence from Friday's practice was planned, Sam Warren of The Athletic reports.",
+      "date": "2026-09-25T18:54Z"
      },
      {
-      "name": "Treydan Stukes",
-      "pos": "S",
+      "name": "Kwity Paye",
+      "pos": "DE",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Stukes (concussion) did not participate at the Raiders' practice Wednesday, Ryan McFadden of ESPN.com reports.",
-      "date": "2026-09-24T01:01Z"
+      "detail": "questionable",
+      "date": "2026-09-24T21:42Z"
      },
      {
       "name": "Aidan O'Connell",
@@ -8345,36 +7453,20 @@
     ],
     "home": [
      {
-      "name": "Kendre Miller",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Miller was a non-participant in Thursday's practice due to an illness, Mike Triplett of NewOrleans.Football reports.",
-      "date": "2026-09-24T22:24Z"
-     },
-     {
-      "name": "Travis Etienne Jr.",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Etienne (hamstring) practiced in a limited capacity Thursday, Mike Triplett of NewOrleans.Football reports.",
-      "date": "2026-09-24T20:30Z"
-     },
-     {
       "name": "Christen Miller",
       "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Miller (toe) did not participate in Wednesday's practice.",
-      "date": "2026-09-24T01:07Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T19:34Z"
      },
      {
       "name": "Barion Brown",
       "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T21:34Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T19:34Z"
      },
      {
       "name": "Martin Emerson Jr.",
@@ -8401,7 +7493,7 @@
       "date": "2026-09-19T03:01Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -8460,7 +7552,7 @@
      "team": "MIN",
      "price": -110,
      "implied": 0.524,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": -122,
       "bestBook": "betrivers",
@@ -8749,7 +7841,7 @@
       "fetchedAt": "2026-09-24T13:42:23.817Z"
      },
      "edge": -0.136,
-     "status": "Questionable"
+     "status": null
     },
     {
      "name": "Justin Jefferson",
@@ -9028,7 +8120,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
      "home": 100,
      "away": -120,
@@ -9175,78 +8267,38 @@
    "injuryReport": {
     "away": [
      {
-      "name": "DeeJay Dallas",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Dallas (toe) was a limited participant in Thursday's practice.",
-      "date": "2026-09-24T22:30Z"
-     },
-     {
-      "name": "Aaron Jones Sr.",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Jones (knee) was a limited participant at Thursday's practice, Alec Lewis of The Athletic reports.",
-      "date": "2026-09-24T21:16Z"
-     },
-     {
-      "name": "Jalen Redmond",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T22:18Z"
-     },
-     {
       "name": "Nick Samac",
       "pos": "C",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T22:18Z"
-     },
-     {
-      "name": "Jake Golday",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T22:17Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T20:12Z"
      },
      {
       "name": "Brett Thorson",
       "pos": "P",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T18:02Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T20:12Z"
      }
     ],
     "home": [
      {
-      "name": "Josiah Trotter",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Trotter (shoulder) did not participate in Thursday's practice.",
-      "date": "2026-09-25T02:18Z"
-     },
-     {
       "name": "Rueben Bain Jr.",
       "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Bain (groin) was a non-participant at the Buccaneers' practice Wednesday.",
-      "date": "2026-09-24T01:11Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T17:04Z"
      },
      {
-      "name": "Anthony Nelson",
+      "name": "Josiah Trotter",
       "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T22:14Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Trotter (shoulder) did not participate in Thursday's practice.",
+      "date": "2026-09-25T02:18Z"
      },
      {
       "name": "Josh Hayes",
@@ -9257,7 +8309,7 @@
       "date": "2026-09-08T20:42Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -9403,7 +8455,7 @@
      "price": null,
      "implied": null,
      "priceNote": "verify",
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 260,
       "bestBook": "betmgm",
@@ -9880,7 +8932,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
      "home": -155,
      "away": 130,
@@ -9895,7 +8947,7 @@
      "awayPrice": null
     },
     "total": {
-     "point": 46.5,
+     "point": 45.5,
      "over": null,
      "under": null
     },
@@ -10109,14 +9161,6 @@
       "date": "2026-09-25T00:54Z"
      },
      {
-      "name": "Jakobi Meyers",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Meyers (thumb) was a limited participant Thursday.",
-      "date": "2026-09-24T22:15Z"
-     },
-     {
       "name": "DaVon Hamilton",
       "pos": "DT",
       "status": "Questionable",
@@ -10149,7 +9193,7 @@
       "date": "2026-09-17T00:17Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -10696,10 +9740,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
-     "home": -298,
-     "away": 240,
+     "home": -310,
+     "away": 250,
      "bestHome": null,
      "bestAway": null,
      "openHome": -440,
@@ -10711,20 +9755,20 @@
      "awayPrice": null
     },
     "total": {
-     "point": 47.5,
+     "point": 48.5,
      "over": null,
      "under": null
     },
     "winProb": {
-     "away": 0.282,
-     "home": 0.718
+     "away": 0.274,
+     "home": 0.726
     }
    },
    "scratched": [
     {
      "name": "Mason Taylor",
      "team": "NYJ",
-     "status": "Doubtful"
+     "status": "Out"
     }
    ],
    "liveBoard": [
@@ -10851,18 +9895,34 @@
      {
       "name": "Mason Taylor",
       "pos": "TE",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Taylor (thumb) didn't participate in Thursday's practice.",
-      "date": "2026-09-24T22:12Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Taylor (thumb) has been ruled out for Sunday's game at Detroit.",
+      "date": "2026-09-25T15:17Z"
+     },
+     {
+      "name": "Minkah Fitzpatrick",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T14:58Z"
      },
      {
       "name": "Kiko Mauigoa",
       "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
+      "status": "Out",
+      "type": "out",
       "detail": "Mauigoa (quadriceps) missed practice for the second day in a row Thursday.",
       "date": "2026-09-25T00:27Z"
+     },
+     {
+      "name": "Adonai Mitchell",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Mitchell (finger) will be limited in Friday's practice, according to the Jets' official X account.",
+      "date": "2026-09-25T15:15Z"
      },
      {
       "name": "Kene Nwangwu",
@@ -10871,22 +9931,6 @@
       "type": "questionable",
       "detail": "Nwangwu (back) did not participate in practice Thursday.",
       "date": "2026-09-25T00:13Z"
-     },
-     {
-      "name": "Adonai Mitchell",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Mitchell was a limited participant in Thursday's practice due to a finger injury, Rich Cimini of ESPN.com reports.",
-      "date": "2026-09-24T20:19Z"
-     },
-     {
-      "name": "Minkah Fitzpatrick",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Fitzpatrick (groin) did not participate in Wednesday's practice.",
-      "date": "2026-09-24T00:05Z"
      },
      {
       "name": "Joseph Ossai",
@@ -10971,7 +10015,7 @@
       "date": "2026-09-23T00:33Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -11122,7 +10166,7 @@
      "team": "CHI",
      "price": 180,
      "implied": 0.357,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 200,
       "bestBook": "draftkings",
@@ -11474,7 +10518,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
      "home": 185,
      "away": -225,
@@ -11628,6 +10672,22 @@
       "date": "2026-09-24T23:09Z"
      },
      {
+      "name": "DeVonta Smith",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Smith (hamstring) wasn't in uniform at the start of Friday's practice but eventually took part in individual drills before running on a side field, Brooks Kubena of The Athletic reports.",
+      "date": "2026-09-25T19:04Z"
+     },
+     {
+      "name": "Saquon Barkley",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Barkley (stinger) is taking part in the open portion of Friday's practice, Brooks Kubena of The Athletic reports.",
+      "date": "2026-09-25T18:56Z"
+     },
+     {
       "name": "Jonathan Greenard",
       "pos": "LB",
       "status": "Questionable",
@@ -11668,22 +10728,6 @@
       "date": "2026-09-24T23:14Z"
      },
      {
-      "name": "DeVonta Smith",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Smith didn't practice Thursday due to a hamstring injury.",
-      "date": "2026-09-24T23:02Z"
-     },
-     {
-      "name": "Saquon Barkley",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Barkley (stinger) practiced on a limited basis Thursday.",
-      "date": "2026-09-24T22:58Z"
-     },
-     {
       "name": "Landon Dickerson",
       "pos": "G",
       "status": "Injured Reserve",
@@ -11693,6 +10737,14 @@
      }
     ],
     "home": [
+     {
+      "name": "Anthony Johnson Jr.",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-09-25T20:12Z"
+     },
      {
       "name": "Shemar Turner",
       "pos": "DT",
@@ -11714,8 +10766,16 @@
       "pos": "QB",
       "status": "Doubtful",
       "type": "doubtful",
-      "detail": "Williams (hamstring) was listed as a non-participant on Thursday's estimated practice report.",
-      "date": "2026-09-24T20:11Z"
+      "detail": "Williams (hamstring) was a non-participant at Friday's practice.",
+      "date": "2026-09-25T19:46Z"
+     },
+     {
+      "name": "Tyson Bagent",
+      "pos": "QB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Bagent (concussion) didn't take part in practice Friday.",
+      "date": "2026-09-25T19:52Z"
      },
      {
       "name": "Tyrique Stevenson Sr.",
@@ -11730,35 +10790,11 @@
       "pos": "PK",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Santos was a non-participant in Thursday's practice estimate due to a right hip injury.",
+      "detail": "Santos was listed as a non-participant in Thursday's practice estimate due to a right hip injury.",
       "date": "2026-09-24T22:19Z"
-     },
-     {
-      "name": "Tyson Bagent",
-      "pos": "QB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Bagent (concussion) was listed as a non-participant on Thursday's practice estimate.",
-      "date": "2026-09-24T20:24Z"
-     },
-     {
-      "name": "Kyle Monangai",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Monangai (knee) was listed as a DNP on Thursday's practice estimate.",
-      "date": "2026-09-24T20:15Z"
-     },
-     {
-      "name": "Anthony Johnson Jr.",
-      "pos": "S",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-09-25T10:00Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -11954,18 +10990,6 @@
       "best": 350,
       "bestBook": "betmgm",
       "consensus": 330
-     }
-    },
-    {
-     "name": "Chig Okonkwo",
-     "team": "WSH",
-     "price": 440,
-     "implied": 0.185,
-     "status": "Questionable",
-     "live": {
-      "best": 500,
-      "bestBook": "betonlineag",
-      "consensus": 500
      }
     },
     {
@@ -12403,10 +11427,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
-     "home": 280,
-     "away": -355,
+     "home": 295,
+     "away": -375,
      "bestHome": null,
      "bestAway": null,
      "openHome": 164,
@@ -12423,11 +11447,17 @@
      "under": null
     },
     "winProb": {
-     "away": 0.748,
-     "home": 0.252
+     "away": 0.757,
+     "home": 0.243
     }
    },
-   "scratched": [],
+   "scratched": [
+    {
+     "name": "Chig Okonkwo",
+     "team": "WSH",
+     "status": "Doubtful"
+    }
+   ],
    "liveBoard": [
     {
      "name": "Jaxon Smith-Njigba",
@@ -12600,6 +11630,14 @@
     ],
     "home": [
      {
+      "name": "Jayden Daniels",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Daniels (elbow) won't be placed on injured reserve and is considered week-to-week, per Commanders head coach Dan Quinn.",
+      "date": "2026-09-25T17:00Z"
+     },
+     {
       "name": "Nick Cross",
       "pos": "S",
       "status": "Out",
@@ -12608,20 +11646,12 @@
       "date": "2026-09-23T22:00Z"
      },
      {
-      "name": "Jayden Daniels",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Commanders head coach Dan Quinn confirmed that Daniels will be out for Sunday's game against the Seahawks, but the quarterback remains without a precise timeline for a return while he continues to receive more medical opinions on his left elbow injury, Ben Standig of The Team 980 Washington D.C. reports.",
-      "date": "2026-09-23T16:55Z"
-     },
-     {
       "name": "Chig Okonkwo",
       "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Okonkwo (hamstring) remained sidelined at practice Thursday, Tashan Reed of the Washington Post reports.",
-      "date": "2026-09-24T16:39Z"
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Commanders coach Dan Quinn said Friday that Okonkwo (hamstring) is a long shot to play Sunday against the Seahawks, Tashan Reed of The Washington Post reports.",
+      "date": "2026-09-25T15:24Z"
      },
      {
       "name": "Leo Chenal",
@@ -12688,7 +11718,7 @@
       "date": "2026-09-22T00:25Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   },
   {
@@ -12827,7 +11857,7 @@
      "price": null,
      "implied": null,
      "priceNote": "verify",
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 150,
       "bestBook": "fanduel",
@@ -13092,7 +12122,7 @@
       "fetchedAt": "2026-09-24T13:42:23.550Z"
      },
      "edge": -0.097,
-     "status": "Questionable"
+     "status": null
     }
    ],
    "value": [
@@ -13345,7 +12375,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T10:32:37.098Z",
+    "fetchedAt": "2026-09-25T20:29:17.112Z",
     "ml": {
      "home": -135,
      "away": 114,
@@ -13492,6 +12522,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Tyjae Spears",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Spears (ankle) is listed as questionable for Sunday's game against the Giants, Turron Davenport of ESPN reports.",
+      "date": "2026-09-25T19:50Z"
+     },
+     {
       "name": "Daniel Bellinger",
       "pos": "TE",
       "status": "Questionable",
@@ -13500,28 +12538,12 @@
       "date": "2026-09-25T01:08Z"
      },
      {
-      "name": "Tony Pollard",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Pollard (ankle) was a limited participant in Thursday's practice, Turron Davenport of ESPN.com reports.",
-      "date": "2026-09-24T20:53Z"
-     },
-     {
       "name": "Micah Robinson",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-09-24T20:47Z"
-     },
-     {
-      "name": "Tyjae Spears",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Spears (ankle) wasn't seen on the field during the open portion of Thursday's practice, Turron Davenport of ESPN reports.",
-      "date": "2026-09-24T19:54Z"
      },
      {
       "name": "Cor'Dale Flott",
@@ -13590,7 +12612,7 @@
       "date": "2026-09-24T20:44Z"
      }
     ],
-    "fetchedAt": "2026-09-25T10:32:37.356Z"
+    "fetchedAt": "2026-09-25T20:29:17.384Z"
    }
   }
  ],
@@ -13950,55 +12972,9 @@
    "est": 0.55,
    "book": "FanDuel",
    "why": "Bell cow at 37 carries and 14 targets, but Atlanta has not run a red-zone snap all season and under Penix the goal-line looks went to London. The price is roughly fair; the role model flips sign across its own sensitivity sweep, so neither side is a play.",
-   "live2": {
-    "best": 440,
-    "bestBook": "fanduel",
-    "consensus": 380,
-    "books": {
-     "draftkings": 380,
-     "fanduel": 440,
-     "betrivers": 380,
-     "betonlineag": 300,
-     "betmgm": 320,
-     "bovada": 380
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583326_13L88808Q1-1354855512Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=38093938",
-     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345220086|{wagerAmount}",
-     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653855-5802917&type=Single",
-     "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-    },
-    "implied": 0.2083,
-    "fetchedAt": "2026-09-24T13:42:22.847Z"
-   },
-   "live": {
-    "best": -150,
-    "bestBook": "fanduel",
-    "consensus": -156,
-    "books": {
-     "draftkings": -155,
-     "fanduel": -150,
-     "betrivers": -162,
-     "betonlineag": -167,
-     "betmgm": -155,
-     "bovada": -157
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285257_13L88808Q1-1195523501Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=38093938",
-     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345237066|{wagerAmount}",
-     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653846-5802899&type=Single",
-     "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-    },
-    "implied": 0.6094,
-    "open": -161,
-    "move": 5,
-    "fetchedAt": "2026-09-24T13:42:22.847Z"
-   },
-   "edge": -0.059,
+   "live2": null,
+   "live": null,
+   "edge": -0.042,
    "status": null,
    "gameId": "atl-gb",
    "kickoff": "2026-09-25T00:15:00Z"
@@ -14318,54 +13294,8 @@
    "est": 0.49,
    "book": "FanDuel",
    "why": "The one name both seasons agree on: three of Green Bay's four passing touchdowns this year and both of its goal-line targets, six touchdowns in ten games from Love last year, and the two men ahead of him in Love's red-zone pecking order (Doubs, Reed) are gone or out.",
-   "live2": {
-    "best": 1300,
-    "bestBook": "fanduel",
-    "consensus": 1100,
-    "books": {
-     "draftkings": 1100,
-     "fanduel": 1300,
-     "betrivers": 1100,
-     "betonlineag": 650,
-     "betmgm": 825,
-     "bovada": 1100
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583108_13L88808Q1-1356601652Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=43162285",
-     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345220203|{wagerAmount}",
-     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653806-5802827&type=Single",
-     "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-    },
-    "implied": 0.0833,
-    "fetchedAt": "2026-09-24T13:42:22.847Z"
-   },
-   "live": {
-    "best": 155,
-    "bestBook": "fanduel",
-    "consensus": 150,
-    "books": {
-     "draftkings": 150,
-     "fanduel": 155,
-     "betrivers": 150,
-     "betonlineag": 130,
-     "betmgm": 135,
-     "bovada": 150
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285247_13L88808Q1-1411527739Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=43162285",
-     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231161|{wagerAmount}",
-     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653807-5802831&type=Single",
-     "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-    },
-    "implied": 0.4,
-    "open": 140,
-    "move": 10,
-    "fetchedAt": "2026-09-24T13:42:22.847Z"
-   },
+   "live2": null,
+   "live": null,
    "edge": 0.09,
    "status": null,
    "gameId": "atl-gb",
@@ -14716,55 +13646,25 @@
    "est": 0.49,
    "book": "FanDuel",
    "why": "The one name both seasons agree on: three of Green Bay's four passing touchdowns this year and both of its goal-line targets, six touchdowns in ten games from Love last year, and the two men ahead of him in Love's red-zone pecking order (Doubs, Reed) are gone or out.",
-   "live2": {
-    "best": 1300,
-    "bestBook": "fanduel",
-    "consensus": 1100,
-    "books": {
-     "draftkings": 1100,
-     "fanduel": 1300,
-     "betrivers": 1100,
-     "betonlineag": 650,
-     "betmgm": 825,
-     "bovada": 1100
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583108_13L88808Q1-1356601652Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=43162285",
-     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345220203|{wagerAmount}",
-     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653806-5802827&type=Single",
-     "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-    },
-    "implied": 0.0833,
-    "fetchedAt": "2026-09-24T13:42:22.847Z"
-   },
-   "live": {
-    "best": 155,
-    "bestBook": "fanduel",
-    "consensus": 150,
-    "books": {
-     "draftkings": 150,
-     "fanduel": 155,
-     "betrivers": 150,
-     "betonlineag": 130,
-     "betmgm": 135,
-     "bovada": 150
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285247_13L88808Q1-1411527739Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=43162285",
-     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231161|{wagerAmount}",
-     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653807-5802831&type=Single",
-     "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-    },
-    "implied": 0.4,
-    "open": 140,
-    "move": 10,
-    "fetchedAt": "2026-09-24T13:42:22.847Z"
-   },
+   "live2": null,
+   "live": null,
    "edge": 0.09,
+   "status": null,
+   "gameId": "atl-gb",
+   "kickoff": "2026-09-25T00:15:00Z"
+  },
+  {
+   "name": "Drake London",
+   "team": "ATL",
+   "pos": "WR",
+   "price": 200,
+   "implied": 0.333,
+   "est": 0.42,
+   "book": "FanDuel",
+   "why": "Priced off two games of Cooper Rush. In Penix's nine 2025 starts London caught eight of eleven touchdown passes and every one of the five goal-line targets; Bijan had two. The quarterback who feeds him is back tonight and the board has not moved.",
+   "live2": null,
+   "live": null,
+   "edge": 0.087,
    "status": null,
    "gameId": "atl-gb",
    "kickoff": "2026-09-25T00:15:00Z"
@@ -14929,68 +13829,6 @@
    "status": null,
    "gameId": "ten-nyg",
    "kickoff": "2026-09-27T17:00:00Z"
-  },
-  {
-   "name": "Drake London",
-   "team": "ATL",
-   "pos": "WR",
-   "price": 200,
-   "implied": 0.333,
-   "est": 0.42,
-   "book": "FanDuel",
-   "why": "Priced off two games of Cooper Rush. In Penix's nine 2025 starts London caught eight of eleven touchdown passes and every one of the five goal-line targets; Bijan had two. The quarterback who feeds him is back tonight and the board has not moved.",
-   "live2": {
-    "best": 1800,
-    "bestBook": "fanduel",
-    "consensus": 1400,
-    "books": {
-     "draftkings": 1400,
-     "fanduel": 1800,
-     "betrivers": 1500,
-     "betonlineag": 900,
-     "betmgm": 1350,
-     "bovada": 1400
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372039555%232293583327_13L88808Q1-1818727041Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925095&selectionId=37576213",
-     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345236974|{wagerAmount}",
-     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653879-5802965&type=Single",
-     "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-    },
-    "implied": 0.0667,
-    "fetchedAt": "2026-09-24T13:42:22.847Z"
-   },
-   "live": {
-    "best": 195,
-    "bestBook": "fanduel",
-    "consensus": 182,
-    "books": {
-     "draftkings": 175,
-     "fanduel": 195,
-     "betrivers": 188,
-     "betonlineag": 170,
-     "betmgm": 195,
-     "bovada": 175
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371978155%232293285258_13L88808Q1689607609Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.609925094&selectionId=37576213",
-     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811658?coupon={pickType}|4345231173|{wagerAmount}",
-     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129541",
-     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43436-3653880-5802967&type=Single",
-     "bovada": "https://www.bovada.lv/sports/football/nfl/atlanta-falcons-green-bay-packers-202609242015"
-    },
-    "implied": 0.3546,
-    "open": 180,
-    "move": 2,
-    "fetchedAt": "2026-09-24T13:42:22.847Z"
-   },
-   "edge": 0.065,
-   "status": null,
-   "gameId": "atl-gb",
-   "kickoff": "2026-09-25T00:15:00Z"
   },
   {
    "name": "Joshua Palmer",
@@ -15178,45 +14016,20 @@
    "kickoff": "2026-09-27T20:25:00Z"
   },
   {
-   "name": "Ben Sinnott",
-   "team": "WSH",
+   "name": "Tucker Kraft",
+   "team": "GB",
    "pos": "TE",
-   "price": 1300,
-   "implied": 0.071,
-   "est": 0.1,
-   "why": "He led Commanders tight ends with 68 percent of the snaps in Week 2 and both touchdowns Seattle has allowed this season went to tight ends.",
-   "live2": {
-    "best": 10000,
-    "bestBook": "betonlineag",
-    "consensus": 10000,
-    "books": {
-     "betonlineag": 10000
-    },
-    "links": {
-     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129553"
-    },
-    "implied": 0.0099,
-    "fetchedAt": "2026-09-24T13:42:23.649Z"
-   },
-   "live": {
-    "best": 1400,
-    "bestBook": "betonlineag",
-    "consensus": 1400,
-    "books": {
-     "betonlineag": 1400
-    },
-    "links": {
-     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129553"
-    },
-    "implied": 0.0667,
-    "open": 1400,
-    "move": 0,
-    "fetchedAt": "2026-09-24T13:42:23.648Z"
-   },
-   "edge": 0.033,
+   "price": 210,
+   "implied": 0.323,
+   "est": 0.36,
+   "book": "FanDuel",
+   "why": "Love's red-zone tight end last year (12 red-zone targets and seven touchdowns in eight games) has zero red-zone targets in two games this year. The two readings disagree; the price sits between them. Thin, not a hammer.",
+   "live2": null,
+   "live": null,
+   "edge": 0.037,
    "status": null,
-   "gameId": "sea-wsh",
-   "kickoff": "2026-09-27T17:00:00Z"
+   "gameId": "atl-gb",
+   "kickoff": "2026-09-25T00:15:00Z"
   }
  ],
  "bestBets": [
@@ -15292,7 +14105,7 @@
   },
   {
    "game": "lar-den",
-   "bet": "Under 44.5",
+   "bet": "Under 43.5",
    "conf": 3,
    "why": "Denver is last in EPA allowed per carry and is giving up 157.5 rushing yards per game, while the Rams average 142.5 on a near-even Williams/Corum split, which is the cleanest structural edge in the game. The Broncos' own offense has converted 26.1 percent of third downs and only 42.9 percent of red-zone trips into touchdowns, and Bo Nix has thrown an interception in each of his two starts. On the total, all four games these teams have played in 2026 finished at 41 points or fewer, and the Rams defense is allowing 281 total yards and 16.5 points per game. The main things arguing the other way are altitude, a Sunday night home crowd and the fact that a Nacua absence would let Surtain II devote full attention to Adams, which is why I am not going higher than a 3 on either side.",
    "gameLabel": "LAR@DEN"
@@ -15313,7 +14126,7 @@
   },
   {
    "game": "ne-jax",
-   "bet": "Under 46.5",
+   "bet": "Under 45.5",
    "conf": 3,
    "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high.",
    "gameLabel": "NE@JAX"
@@ -15361,7 +14174,7 @@
    "legs": [
     "ATL/GB Under 44.5",
     "CIN/PIT Under 42.5",
-    "LAR/DEN Under 44.5"
+    "LAR/DEN Under 43.5"
    ],
    "why": "Totals block: every game where the desk rates the number 3 or better. At standard juice this pays about +596, so it needs 14% — these are scoring-environment calls, not side calls, which is why they are grouped rather than mixed with spreads. (Numbers updated to the live line.)",
    "type": "cross"
@@ -15491,7 +14304,7 @@
   },
   {
    "game": "lar-den",
-   "bet": "Under 44.5",
+   "bet": "Under 43.5",
    "kind": "total",
    "price": -110,
    "book": "FD/DK",
@@ -15518,7 +14331,7 @@
   },
   {
    "game": "ne-jax",
-   "bet": "Under 46.5",
+   "bet": "Under 45.5",
    "kind": "total",
    "price": -110,
    "book": "FD/DK",
@@ -15527,7 +14340,7 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-09-25T10:32:38.053Z",
+  "gradedAt": "2026-09-25T20:29:18.759Z",
   "finals": 1,
   "games": 16,
   "summary": {
@@ -17999,7 +16812,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-09-25T10:32:38.055Z",
+  "updatedAt": "2026-09-25T20:29:18.761Z",
   "weeks": [
    {
     "week": 1,
@@ -18353,12 +17166,12 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-09-25T10:32:38.268Z",
+  "builtAt": "2026-09-25T20:29:18.882Z",
   "books": [
    "FD",
    "DK"
   ],
-  "oddsFetchedAt": "2026-09-24T23:02:23.311Z",
+  "oddsFetchedAt": "2026-09-25T16:40:25.014Z",
   "note": "Prices are the better of FanDuel and DraftKings at the last pull.",
   "categories": [
    {
@@ -19131,17 +17944,17 @@
        },
        {
         "type": "total",
-        "label": "Under 46.5 NE@JAX",
+        "label": "Under 45.5 NE@JAX",
         "game": "ne-jax",
         "gameLabel": "NE@JAX",
         "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.591,
+        "prob": 0.577,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.067,
+        "edge": 0.053,
         "conf": 3,
-        "moved": "model liked 45.5",
+        "moved": null,
         "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
        },
        {
@@ -19162,10 +17975,10 @@
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.202,
-      "ev": 0.402,
-      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 46.5 NE@JAX: 59% model, -110 FD/DK; Under 38.5 TEN@NYG: 58% model, -110 FD/DK.",
-      "score": 0.181
+      "prob": 0.197,
+      "ev": 0.369,
+      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK; Under 38.5 TEN@NYG: 58% model, -110 FD/DK.",
+      "score": 0.164
      },
      {
       "rank": 2,
@@ -19187,17 +18000,17 @@
        },
        {
         "type": "total",
-        "label": "Under 46.5 NE@JAX",
+        "label": "Under 45.5 NE@JAX",
         "game": "ne-jax",
         "gameLabel": "NE@JAX",
         "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.591,
+        "prob": 0.577,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.067,
+        "edge": 0.053,
         "conf": 3,
-        "moved": "model liked 45.5",
+        "moved": null,
         "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
        },
        {
@@ -19218,10 +18031,10 @@
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.201,
-      "ev": 0.4,
-      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 46.5 NE@JAX: 59% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK.",
-      "score": 0.179
+      "prob": 0.196,
+      "ev": 0.367,
+      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK.",
+      "score": 0.162
      },
      {
       "rank": 3,
@@ -19284,17 +18097,17 @@
       "legs": [
        {
         "type": "total",
-        "label": "Under 46.5 NE@JAX",
+        "label": "Under 45.5 NE@JAX",
         "game": "ne-jax",
         "gameLabel": "NE@JAX",
         "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.591,
+        "prob": 0.577,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.067,
+        "edge": 0.053,
         "conf": 3,
-        "moved": "model liked 45.5",
+        "moved": null,
         "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
        },
        {
@@ -19330,10 +18143,10 @@
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.196,
-      "ev": 0.367,
-      "why": "Model 20% vs 14% implied at +596. Under 46.5 NE@JAX: 59% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK; Under 38.5 TEN@NYG: 58% model, -110 FD/DK.",
-      "score": 0.162
+      "prob": 0.192,
+      "ev": 0.334,
+      "why": "Model 19% vs 14% implied at +596. Under 45.5 NE@JAX: 58% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK; Under 38.5 TEN@NYG: 58% model, -110 FD/DK.",
+      "score": 0.146
      },
      {
       "rank": 5,
@@ -19355,21 +18168,6 @@
        },
        {
         "type": "total",
-        "label": "Under 44.5 LAR@DEN",
-        "game": "lar-den",
-        "gameLabel": "LAR@DEN",
-        "kickoff": "2026-09-28T00:20:00Z",
-        "prob": 0.547,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.023,
-        "conf": 3,
-        "moved": "model liked 45.5",
-        "why": "Denver is last in EPA allowed per carry and is giving up 157.5 rushing yards per game, while the Rams average 142.5 on a near-even Williams/Corum split, which is the cleanest structural edge in the game. The Broncos' own offense has converted 26.1 percent of third downs and only 42.9 percent of red-zone trips into touchdowns, and Bo Nix has thrown an interception in each of his two starts. On the total, all four games these teams have played in 2026 finished at 41 points or fewer, and the Rams defense is allowing 281 total yards and 16.5 points per game. The main things arguing the other way are altitude, a Sunday night home crowd and the fact that a Nacua absence would let Surtain II devote full attention to Adams, which is why I am not going higher than a 3 on either side."
-       },
-       {
-        "type": "total",
         "label": "Under 42.5 MIN@TB",
         "game": "min-tb",
         "gameLabel": "MIN@TB",
@@ -19382,14 +18180,29 @@
         "conf": 2,
         "moved": null,
         "why": "Minnesota's defence is the clearest edge on the field: a league-best 33.6% pressure rate and the heaviest blitz rate in the NFL against a Baker Mayfield offence that has already taken seven sacks and produced three offensive touchdowns in two games. Tampa Bay is 0-2 and kicked four field goals in a home loss to Cleveland, which is the profile of a team that moves the ball and then stalls. The under is the softer of the two positions because Minnesota's own Week 1 game went 61 points and Kyler Murray's return could raise the Vikings' explosiveness, so it sits at a lower confidence. Getting Minnesota at only -1.5 on the road with the defence travelling better than the offence is the reason for a 3 on the side."
+       },
+       {
+        "type": "total",
+        "label": "Under 48.5 NYJ@DET",
+        "game": "nyj-det",
+        "gameLabel": "NYJ@DET",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": null,
+        "why": "Detroit is the better team and should win, but the number is priced off Detroit's offence rather than the defence the Jets bring: New York is first in total defence at 197 yards a game, third in yards per play, and first in time-of-possession differential, which is how a favourite this size fails to cover. Detroit's own defence is genuinely bad, 917 yards and 71 points allowed with both starting safeties on reserve, so this should stay competitive rather than become a runaway. On the total, the Jets' pace and three-and-out rate cut the play count enough to project roughly 46 combined points."
        }
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.164,
-      "ev": 0.139,
-      "why": "Model 16% vs 14% implied at +596. Under 47.5 ARI@SF: 55% model, -110 FD/DK; Under 44.5 LAR@DEN: 55% model, -110 FD/DK; Under 42.5 MIN@TB: 55% model, -110 FD/DK.",
-      "score": 0.056
+      "prob": 0.168,
+      "ev": 0.17,
+      "why": "Model 17% vs 14% implied at +596. Under 47.5 ARI@SF: 55% model, -110 FD/DK; Under 42.5 MIN@TB: 55% model, -110 FD/DK; Under 48.5 NYJ@DET: 56% model, -110 FD/DK.",
+      "score": 0.07
      }
     ]
    },
@@ -19692,7 +18505,7 @@
        },
        {
         "type": "text",
-        "label": "LAR/DEN Under 44.5",
+        "label": "LAR/DEN Under 43.5",
         "price": null,
         "book": "",
         "prob": null
