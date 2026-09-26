@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 3,
- "generatedAt": "2026-09-25T20:29:18.869Z",
+ "generatedAt": "2026-09-26T10:14:17.640Z",
  "researchAsOf": "2026-09-24T22:57:23.035Z",
  "oddsFetchedAt": "2026-09-25T16:40:25.014Z",
  "oddsCredits": {
@@ -31,7 +31,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": "ESPN/book",
- "injuriesFetchedAt": "2026-09-25T20:29:17.384Z",
+ "injuriesFetchedAt": "2026-09-26T10:14:16.939Z",
  "notes": "Researched one game at a time, then validated for de-vigged win probability, implied team points and board depth before assembly. Anytime-TD prices marked \"verify\" could not be confirmed at a live sportsbook and must be checked before they are played.",
  "completed": [],
  "games": [
@@ -559,10 +559,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
-     "home": -440,
-     "away": 340,
+     "home": -455,
+     "away": 350,
      "bestHome": null,
      "bestAway": null,
      "openHome": -650,
@@ -579,8 +579,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.218,
-     "home": 0.782
+     "away": 0.213,
+     "home": 0.787
     }
    },
    "scratched": [],
@@ -706,44 +706,28 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Max Melton",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Melton (toe) was a limited participant in Thursday's practice.",
-      "date": "2026-09-25T03:06Z"
-     },
-     {
       "name": "Dadrion Taylor-Demerson",
       "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Taylor-Demerson (back) was a limited participant in Thursday's practice.",
-      "date": "2026-09-25T03:04Z"
-     },
-     {
-      "name": "Garrett Williams",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Williams (Achilles) was a limited participant at the Cardinals' practice Wednesday, Josh Weinfuss of ESPN.com reports.",
-      "date": "2026-09-24T02:08Z"
-     },
-     {
-      "name": "Hjalte Froholdt",
-      "pos": "C",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-24T00:12Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Taylor-Demerson (back) is listed as out for Sunday's game against the 49ers, Darren Urban of the Cardinals' official site reports.",
+      "date": "2026-09-26T00:28Z"
      },
      {
       "name": "Roy Lopez",
       "pos": "DT",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-24T00:11Z"
+      "detail": "Lopez (groin) is listed as questionable for Sunday's game versus the 49ers, Darren Urban of the Cardinals' official site reports.",
+      "date": "2026-09-26T00:39Z"
+     },
+     {
+      "name": "Max Melton",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Melton (toe) is listed as questionable for Sunday's game versus San Francisco, Darren Urban of the Cardinals' official site reports.",
+      "date": "2026-09-26T00:29Z"
      },
      {
       "name": "Will Johnson",
@@ -755,6 +739,30 @@
      }
     ],
     "home": [
+     {
+      "name": "James Thompson Jr.",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Thompson (ankle) is listed as out for Sunday's game against Arizona.",
+      "date": "2026-09-26T02:03Z"
+     },
+     {
+      "name": "Romello Height",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Height (hand) has been ruled out ahead of Sunday's game against the Cardinals.",
+      "date": "2026-09-25T23:47Z"
+     },
+     {
+      "name": "Nick Bosa",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Bosa (calf) has been ruled out ahead of Sunday's game against the Cardinals.",
+      "date": "2026-09-25T23:44Z"
+     },
      {
       "name": "Demarcus Robinson",
       "pos": "WR",
@@ -772,36 +780,12 @@
       "date": "2026-09-21T15:27Z"
      },
      {
-      "name": "Nick Bosa",
-      "pos": "DE",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Bosa injured his calf during Thursday's practice and is expected to miss \"a few weeks,\" according to Adam Schefter of ESPN.",
-      "date": "2026-09-25T15:33Z"
-     },
-     {
-      "name": "James Thompson Jr.",
-      "pos": "DT",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Thompson suffered a high-ankle sprain during Sunday's 35-13 win over Miami, David Lombardi of SFStandard.com reports.",
-      "date": "2026-09-21T23:34Z"
-     },
-     {
       "name": "Mike Evans",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Evans (hip) is taking part in Friday's practice, David Lombardi of the San Francisco Standard reports.",
-      "date": "2026-09-25T19:59Z"
-     },
-     {
-      "name": "Romello Height",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Height (hand) did not participate in Thursday's practice, Jennifer Lee Chan of NBC Sports Bay Area reports.",
-      "date": "2026-09-25T03:01Z"
+      "detail": "Evans (hip) is listed as questionable for Sunday's game versus the Cardinals, Cam Inman of The San Jose Mercury News reports.",
+      "date": "2026-09-25T21:10Z"
      },
      {
       "name": "Jack Jones",
@@ -820,7 +804,7 @@
       "date": "2026-09-23T23:15Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -1314,8 +1298,8 @@
       "pos": "C",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-25T14:56Z"
+      "detail": "Monk picked up an undisclosed injury toward the tail end of the Packers' 35-14 loss to the Falcons on Thursday, Rob Demovsky of ESPN.com reports.",
+      "date": "2026-09-25T22:59Z"
      },
      {
       "name": "Edgerrin Cooper",
@@ -1326,7 +1310,7 @@
       "date": "2026-09-25T02:48Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -1842,10 +1826,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
-     "home": 145,
-     "away": -175,
+     "home": 140,
+     "away": -166,
      "bestHome": null,
      "bestAway": null,
      "openHome": 114,
@@ -1862,8 +1846,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.609,
-     "home": 0.391
+     "away": 0.6,
+     "home": 0.4
     }
    },
    "scratched": [],
@@ -1988,44 +1972,20 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Ronnie Stanley",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Stanley (toe) has been ruled out ahead of Sunday's game against the Cowboys.",
+      "date": "2026-09-26T01:21Z"
+     },
+     {
       "name": "Zay Flowers",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Flowers (hamstring) is listed as questionable for Sunday's game against the Cowboys in Brazil.",
       "date": "2026-09-25T20:14Z"
-     },
-     {
-      "name": "Chris Moore",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-25T20:12Z"
-     },
-     {
-      "name": "Ronnie Stanley",
-      "pos": "OT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Stanley (toe) did not participate in Wednesday's practice.",
-      "date": "2026-09-24T02:38Z"
-     },
-     {
-      "name": "Malaki Starks",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T20:51Z"
-     },
-     {
-      "name": "Trey Hendrickson",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T20:49Z"
      },
      {
       "name": "T.J. Tampa",
@@ -2070,7 +2030,7 @@
       "date": "2026-09-25T01:28Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -2670,10 +2630,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
-     "home": 124,
-     "away": -148,
+     "home": 120,
+     "away": -142,
      "bestHome": null,
      "bestAway": null,
      "openHome": 100,
@@ -2690,8 +2650,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.572,
-     "home": 0.428
+     "away": 0.563,
+     "home": 0.437
     }
    },
    "scratched": [],
@@ -2817,35 +2777,35 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Nick Scott",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T17:07Z"
-     },
-     {
       "name": "Claudin Cherelus",
       "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T17:07Z"
+      "detail": "Cherelus (shoulder) has been ruled out for Sunday's game against Cleveland.",
+      "date": "2026-09-25T21:24Z"
+     },
+     {
+      "name": "Nick Scott",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "Scott (ribs) has been ruled out for Sunday's game against the Browns.",
+      "date": "2026-09-25T21:20Z"
      },
      {
       "name": "Devin Lloyd",
       "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "Lloyd (calf) did not practice Thursday.",
-      "date": "2026-09-24T22:24Z"
+      "detail": "Lloyd (calf) has been ruled out for Sunday's game against the Browns.",
+      "date": "2026-09-25T21:18Z"
      },
      {
       "name": "Jalen Coker",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Coker (ankle) is listed as questionable for Sunday's game, Steve Reed of the Associated Press reports.",
+      "detail": "Coker (ankle) is listed as questionable for Sunday's game at Cleveland, Steve Reed of the Associated Press reports.",
       "date": "2026-09-25T16:42Z"
      },
      {
@@ -2867,39 +2827,31 @@
     ],
     "home": [
      {
-      "name": "Tyson Campbell",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Campbell (ankle/hip) was a limited participant at practice Wednesday, Daniel Oyefusi of ESPN.com reports.",
-      "date": "2026-09-23T23:15Z"
-     },
-     {
-      "name": "Quincy Williams",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T19:52Z"
+      "name": "Teven Jenkins",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "Jenkins (back) is listed as out for Sunday's game against the Panthers, Zac Jackson of The Athletic reports.",
+      "date": "2026-09-26T01:22Z"
      },
      {
       "name": "Grant Delpit",
       "pos": "S",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T19:51Z"
+      "detail": "Delpit (shoulder) is listed as questionable for Sunday's game against the Panthers, Zac Jackson of The Athletic reports.",
+      "date": "2026-09-25T22:38Z"
      },
      {
-      "name": "Teven Jenkins",
-      "pos": "G",
+      "name": "Tyson Campbell",
+      "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
+      "detail": "Campbell (ankle/hip/knee) is listed as questionable for Sunday's game against the Panthers, Zac Jackson of The Athletic reports.",
+      "date": "2026-09-25T22:35Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -3559,10 +3511,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
-     "home": 145,
-     "away": -175,
+     "home": 154,
+     "away": -185,
      "bestHome": null,
      "bestAway": null,
      "openHome": -105,
@@ -3579,8 +3531,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.609,
-     "home": 0.391
+     "away": 0.622,
+     "home": 0.378
     }
    },
    "scratched": [
@@ -3730,12 +3682,36 @@
     ],
     "home": [
      {
+      "name": "Gennings Dunker",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "Dunker (knee) has been ruled out ahead of Sunday's game against the Bengals, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-26T01:17Z"
+     },
+     {
       "name": "Rico Dowdle",
       "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "Dowdle (toe) has been ruled out for Sunday's gam at Cincinnati, Alan Saunders of Steelers Now reports.",
-      "date": "2026-09-25T20:01Z"
+      "detail": "Dowdle (toe) was not spotted during the open viewing window of Friday's practice, Ray Fittipaldo of the Pittsburgh Post-Gazette reports.",
+      "date": "2026-09-25T15:53Z"
+     },
+     {
+      "name": "Jamel Dean",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Dean (ankle) is listed as questionable for Sunday's game against the Bengals, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-25T22:45Z"
+     },
+     {
+      "name": "Joey Porter Jr.",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Porter (undisclosed) is listed as questionable for Sunday's game against the Bengals, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-25T22:35Z"
      },
      {
       "name": "Michael Pittman Jr.",
@@ -3752,33 +3728,9 @@
       "type": "questionable",
       "detail": "Warren (shoulder) is listed as questionable for Sunday's game against the Bengals after being a limited participant in Friday's practice, Alan Saunders of Steelers Now reports.",
       "date": "2026-09-25T19:55Z"
-     },
-     {
-      "name": "Gennings Dunker",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-24T20:15Z"
-     },
-     {
-      "name": "Jamel Dean",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Dean (ankle) did not participate in Wednesday's practice, Brooke Pryor of ESPN.com reports.",
-      "date": "2026-09-23T23:49Z"
-     },
-     {
-      "name": "Joey Porter Jr.",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Porter (undisclosed) was a limited participant at practice Wednesday, Mike DeFabo of The Athletic reports.",
-      "date": "2026-09-23T23:37Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -4365,7 +4317,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
      "home": 105,
      "away": -125,
@@ -4512,12 +4464,36 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Ed Ingram",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "Ingram (groin) has been ruled out ahead of Sunday's game against the Colts, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-26T01:16Z"
+     },
+     {
+      "name": "Jake Hummel",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Hummel (groin) has been ruled out for Sunday's game against the Colts, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-25T22:31Z"
+     },
+     {
+      "name": "Jadeveon Clowney",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Clowney (knee) has been ruled out for Sunday's game against the Colts, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-25T22:26Z"
+     },
+     {
       "name": "Nico Collins",
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "Collins (hamstring) will not play in Sunday's game at Indianapolis.",
-      "date": "2026-09-25T20:02Z"
+      "detail": "Collins (hamstring) is \"very much in doubt\" for Sunday's game against the Colts, Ian Rapoport of NFL Network reports.",
+      "date": "2026-09-25T13:15Z"
      },
      {
       "name": "M.J. Stewart",
@@ -4528,36 +4504,12 @@
       "date": "2026-09-24T01:56Z"
      },
      {
-      "name": "Jadeveon Clowney",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Clowney (knee) did not participate in practice Thursday.",
-      "date": "2026-09-25T02:15Z"
-     },
-     {
       "name": "Trent Brown",
       "pos": "OT",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-09-23T21:30Z"
-     },
-     {
-      "name": "Jake Hummel",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
-     },
-     {
-      "name": "Ed Ingram",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
      },
      {
       "name": "Henry To'oTo'o",
@@ -4574,8 +4526,8 @@
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "Dulin (ankle) did not practice Thursday.",
-      "date": "2026-09-24T21:53Z"
+      "detail": "Dulin (ankle) has been ruled out for Sunday's game against the Texans, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-25T22:19Z"
      },
      {
       "name": "Alec Pierce",
@@ -4590,8 +4542,8 @@
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Ward (groin) did not participate in Wednesday's practice.",
-      "date": "2026-09-23T23:25Z"
+      "detail": "Ward (groin) is listed as questionable for Sunday's game against the Texans, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-25T22:22Z"
      },
      {
       "name": "Micheal Clemons",
@@ -4602,7 +4554,7 @@
       "date": "2026-09-23T00:30Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -5197,17 +5149,17 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
-     "home": 425,
-     "away": -575,
+     "home": 470,
+     "away": -650,
      "bestHome": null,
      "bestAway": null,
      "openHome": 270,
      "openAway": -340
     },
     "spread": {
-     "homePoint": 10.5,
+     "homePoint": 10,
      "homePrice": null,
      "awayPrice": null
     },
@@ -5217,8 +5169,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.817,
-     "home": 0.183
+     "away": 0.832,
+     "home": 0.168
     }
    },
    "scratched": [
@@ -5350,22 +5302,6 @@
    "injuryReport": {
     "away": [
      {
-      "name": "L'Jarius Sneed",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T20:57Z"
-     },
-     {
-      "name": "Chris Jones",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T20:56Z"
-     },
-     {
       "name": "Cooper McDonald",
       "pos": "LB",
       "status": "Injured Reserve",
@@ -5375,6 +5311,14 @@
      }
     ],
     "home": [
+     {
+      "name": "Robert Beal Jr.",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Beal (hamstring) is listed as out for Sunday's game against the Chiefs, Matt McMullen of the Chiefs' official site reports.",
+      "date": "2026-09-26T01:40Z"
+     },
      {
       "name": "Caleb Douglas",
       "pos": "WR",
@@ -5388,32 +5332,16 @@
       "pos": "RB",
       "status": "Doubtful",
       "type": "doubtful",
-      "detail": "Wright (foot) is considered doubtful for Sunday's game against Kansas City, Travis Wingfield of the Dolphins' official site reports.",
-      "date": "2026-09-25T15:30Z"
+      "detail": "Wright (foot) was a limited participant in Thursday's practice.",
+      "date": "2026-09-25T02:02Z"
      },
      {
       "name": "Ryan Miller",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Miller (hip) did not practice Thursday.",
-      "date": "2026-09-25T01:53Z"
-     },
-     {
-      "name": "Chris Bell",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Bell (knee) said Thursday that he'll be ready to play Sunday against the Chiefs, C. Isaiah Smalls II of the Miami Herald reports.",
-      "date": "2026-09-24T19:50Z"
-     },
-     {
-      "name": "Robert Beal Jr.",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Beal (hamstring) did not participate in Wednesday's practice, C. Isaiah Smalls II of the Miami Herald reports.",
-      "date": "2026-09-24T02:40Z"
+      "detail": "Miller (hip) is listed as questionable ahead of Sunday's game against the Chiefs, Matt McMullen of the Chiefs' official site reports.",
+      "date": "2026-09-25T23:04Z"
      },
      {
       "name": "JuJu Brents",
@@ -5424,14 +5352,6 @@
       "date": "2026-09-23T21:15Z"
      },
      {
-      "name": "Tucker Addington",
-      "pos": "LS",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T21:11Z"
-     },
-     {
       "name": "Ronnie Harrison Jr.",
       "pos": "LB",
       "status": "Injured Reserve",
@@ -5440,7 +5360,7 @@
       "date": "2026-09-19T21:21Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -6074,11 +5994,11 @@
     }
    },
    "live": {
-    "source": "ESPN/Draft Kings",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "source": "ESPN/DraftKings",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
-     "home": -325,
-     "away": 260,
+     "home": -345,
+     "away": 275,
      "bestHome": null,
      "bestAway": null,
      "openHome": -142,
@@ -6095,8 +6015,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.266,
-     "home": 0.734
+     "away": 0.256,
+     "home": 0.744
     }
    },
    "scratched": [],
@@ -6222,44 +6142,44 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Dalvin Tomlinson",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T18:30Z"
-     },
-     {
-      "name": "Elijah Molden",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T18:30Z"
-     },
-     {
       "name": "Trey Pipkins III",
       "pos": "OT",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T18:30Z"
+      "detail": "Pipkins (knee) is listed as out for Sunday's game versus Buffalo.",
+      "date": "2026-09-26T01:17Z"
      },
      {
       "name": "Kayode Awosika",
       "pos": "G",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T18:30Z"
+      "detail": "Awosika (leg) is listed as out for Sunday's game against the Bills.",
+      "date": "2026-09-26T01:14Z"
+     },
+     {
+      "name": "Dalvin Tomlinson",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Tomlinson (hamstring) has been ruled out for Sunday's game against the Bills.",
+      "date": "2026-09-25T21:47Z"
+     },
+     {
+      "name": "Elijah Molden",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Molden (hamstring) has been ruled out for Sunday's game against the Bills.",
+      "date": "2026-09-25T21:43Z"
      },
      {
       "name": "Brenen Thompson",
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "Thompson (quadriceps) did not practice Thursday.",
-      "date": "2026-09-25T02:25Z"
+      "detail": "Thompson (quadriceps) has been ruled out for Sunday's game against the Bills.",
+      "date": "2026-09-25T21:36Z"
      },
      {
       "name": "Charlie Kolar",
@@ -6274,8 +6194,8 @@
       "pos": "QB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-25T18:30Z"
+      "detail": "Lance was a limited participant in Friday's practice due to a groin injury and is listed as questionable for Sunday's game against the Bills.",
+      "date": "2026-09-25T21:39Z"
      },
      {
       "name": "Rodney Shelley",
@@ -6300,16 +6220,16 @@
       "pos": "DT",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T18:36Z"
+      "detail": "Sanders (appendix) won't play in Sunday's game against the Chargers.",
+      "date": "2026-09-25T21:49Z"
      },
      {
-      "name": "Jordan Hancock",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T18:35Z"
+      "name": "Ed Oliver",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Oliver (hip) is listed as questionable for Sunday's game against the Chargers.",
+      "date": "2026-09-25T21:41Z"
      },
      {
       "name": "Keon Coleman",
@@ -6328,23 +6248,23 @@
       "date": "2026-09-25T18:09Z"
      },
      {
-      "name": "Ed Oliver",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Oliver (hip) was limited during Thursday's practice.",
-      "date": "2026-09-25T01:14Z"
-     },
-     {
       "name": "Ar'maj Reed-Adams",
       "pos": "G",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-09-23T22:36Z"
+     },
+     {
+      "name": "Jordan Hancock",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Bills placed Hancock (hamstring) on injured reserve Friday.",
+      "date": "2026-09-26T01:05Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -6408,14 +6328,6 @@
      "price": 120,
      "implied": 0.455,
      "status": null,
-     "live": null
-    },
-    {
-     "name": "Jonah Coleman",
-     "team": "DEN",
-     "price": 135,
-     "implied": 0.426,
-     "status": "Questionable",
      "live": null
     },
     {
@@ -6659,10 +6571,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
-     "home": 114,
-     "away": -135,
+     "home": 110,
+     "away": -130,
      "bestHome": null,
      "bestAway": null,
      "openHome": 120,
@@ -6674,13 +6586,13 @@
      "awayPrice": null
     },
     "total": {
-     "point": 43.5,
+     "point": 44.5,
      "over": null,
      "under": null
     },
     "winProb": {
-     "away": 0.551,
-     "home": 0.449
+     "away": 0.543,
+     "home": 0.457
     }
    },
    "scratched": [
@@ -6688,6 +6600,11 @@
      "name": "Puka Nacua",
      "team": "LAR",
      "status": "Doubtful"
+    },
+    {
+     "name": "Jonah Coleman",
+     "team": "DEN",
+     "status": "Out"
     }
    ],
    "liveBoard": [],
@@ -6698,6 +6615,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Kamren Kinchens",
+      "pos": "S",
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Kinchens (hamstring) is listed as doubtful for Sunday's game against Denver, Sarah Barshop of ESPN.com reports.",
+      "date": "2026-09-26T00:00Z"
+     },
+     {
       "name": "Puka Nacua",
       "pos": "WR",
       "status": "Doubtful",
@@ -6706,36 +6631,12 @@
       "date": "2026-09-25T18:15Z"
      },
      {
-      "name": "Jordan Whittington",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Whittington (quadriceps) was a limited participant in practice Thursday, Nate Atkins of The Athletic reports.",
-      "date": "2026-09-25T03:04Z"
-     },
-     {
       "name": "Colby Parkinson",
       "pos": "TE",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Parkinson (knee) did not participate in practice Thursday, Nate Atkins of The Athletic reports.",
-      "date": "2026-09-25T02:57Z"
-     },
-     {
-      "name": "Kamren Kinchens",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Kinchens (hamstring) did not participate in Wednesday's estimated practice session, Nate Atkins of The Athletic reports.",
-      "date": "2026-09-24T01:25Z"
-     },
-     {
-      "name": "Nate Landman",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Landman (shoulder) was a limited participant in Wednesday's estimated practice, Nate Atkins of The Athletic reports.",
-      "date": "2026-09-24T01:21Z"
+      "detail": "Parkinson (knee) is listed as questionable for Sunday's contest at Denver, Sarah Barshop of ESPN.com reports.",
+      "date": "2026-09-25T21:17Z"
      },
      {
       "name": "Ronnie Rivers",
@@ -6747,6 +6648,14 @@
      }
     ],
     "home": [
+     {
+      "name": "Jonah Coleman",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Coleman (ankle) returned to practice Friday, Zac Stevens of DNVR Sports reports.",
+      "date": "2026-09-25T20:33Z"
+     },
      {
       "name": "Jonathon Cooper",
       "pos": "LB",
@@ -6768,16 +6677,8 @@
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Mims (foot) logged another limited practice Thursday.",
-      "date": "2026-09-25T00:17Z"
-     },
-     {
-      "name": "Jonah Coleman",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Coleman (ankle) was listed as a non-participant on Thursday's injury report.",
-      "date": "2026-09-24T23:32Z"
+      "detail": "Mims (foot) is listed as questionable for Sunday's game against the Rams, Zac Stevens of TheDNVR.com reports.",
+      "date": "2026-09-26T02:25Z"
      },
      {
       "name": "Frank Crum",
@@ -6788,7 +6689,7 @@
       "date": "2026-08-31T23:20Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -7273,10 +7174,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
-     "home": -192,
-     "away": 160,
+     "home": -185,
+     "away": 154,
      "bestHome": null,
      "bestAway": null,
      "openHome": -166,
@@ -7293,8 +7194,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.369,
-     "home": 0.631
+     "away": 0.378,
+     "home": 0.622
     }
    },
    "scratched": [],
@@ -7423,8 +7324,16 @@
       "pos": "S",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T19:02Z"
+      "detail": "Stukes (concussion) has been ruled out for Sunday's game against the Saints, Ryan McFadden of ESPN.com reports.",
+      "date": "2026-09-25T21:53Z"
+     },
+     {
+      "name": "Aidan O'Connell",
+      "pos": "QB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "O'Connell (personal) is listed as questionable for Sunday's game against the Saints, Ryan McFadden of ESPN.com reports.",
+      "date": "2026-09-25T21:56Z"
      },
      {
       "name": "Brock Bowers",
@@ -7441,14 +7350,6 @@
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-09-24T21:42Z"
-     },
-     {
-      "name": "Aidan O'Connell",
-      "pos": "QB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-22T20:56Z"
      }
     ],
     "home": [
@@ -7457,32 +7358,32 @@
       "pos": "DT",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T19:34Z"
+      "detail": "Miller (toe) is listed as out for Sunday's game against the Raiders.",
+      "date": "2026-09-25T22:15Z"
      },
      {
       "name": "Barion Brown",
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T19:34Z"
+      "detail": "Brown (hamstring) is listed as out for Sunday's game versus Las Vegas.",
+      "date": "2026-09-25T22:09Z"
      },
      {
       "name": "Martin Emerson Jr.",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Coach Kellen Moore said Monday that Emerson is \"day-to-day\" after injuring his shoulder in Week 2 at Baltimore, Ross Jackson of WWL Louisiana reports.",
-      "date": "2026-09-22T00:34Z"
+      "detail": "Emerson (shoulder) is listed as questionable for Sunday's game versus the Raiders.",
+      "date": "2026-09-25T22:22Z"
      },
      {
       "name": "Kelvin Banks Jr.",
       "pos": "OT",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "The Saints placed Banks (ankle) on injured reserve Wednesday.",
-      "date": "2026-09-24T00:39Z"
+      "detail": "Banks (ankle) underwent surgery this week, Katherine Terrell of ESPN.com reports.",
+      "date": "2026-09-26T00:47Z"
      },
      {
       "name": "Zach Wood",
@@ -7493,7 +7394,7 @@
       "date": "2026-09-19T03:01Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -8120,7 +8021,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
      "home": 100,
      "away": -120,
@@ -8267,38 +8168,38 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Nick Samac",
-      "pos": "C",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T20:12Z"
-     },
-     {
       "name": "Brett Thorson",
       "pos": "P",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T20:12Z"
+      "detail": "Thorson (hamstring) has been ruled out ahead of Sunday's game against the Buccaneers, Craig Peters of the Vikings' official site reports.",
+      "date": "2026-09-26T01:13Z"
+     },
+     {
+      "name": "Nick Samac",
+      "pos": "C",
+      "status": "Out",
+      "type": "out",
+      "detail": "Samac (knee) has been ruled out ahead of Sunday's game against the Buccaneers, Craig Peters of the Vikings' official site reports.",
+      "date": "2026-09-26T01:10Z"
      }
     ],
     "home": [
-     {
-      "name": "Rueben Bain Jr.",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T17:04Z"
-     },
      {
       "name": "Josiah Trotter",
       "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "Trotter (shoulder) did not participate in Thursday's practice.",
-      "date": "2026-09-25T02:18Z"
+      "detail": "Trotter (shoulder) has been ruled out for Sunday's game against the Vikings.",
+      "date": "2026-09-25T21:31Z"
+     },
+     {
+      "name": "Rueben Bain Jr.",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Bain (groin) has been ruled out for Sunday's game against the Vikings.",
+      "date": "2026-09-25T21:28Z"
      },
      {
       "name": "Josh Hayes",
@@ -8309,7 +8210,7 @@
       "date": "2026-09-08T20:42Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -8932,7 +8833,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
      "home": -155,
      "away": 130,
@@ -8947,7 +8848,7 @@
      "awayPrice": null
     },
     "total": {
-     "point": 45.5,
+     "point": 46.5,
      "over": null,
      "under": null
     },
@@ -9079,6 +8980,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Dre'Mont Jones",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Jones (shoulder) has been ruled out ahead of Sunday's game against the Jaguars.",
+      "date": "2026-09-26T00:44Z"
+     },
+     {
       "name": "Brenden Schooler",
       "pos": "S",
       "status": "Out",
@@ -9087,52 +8996,28 @@
       "date": "2026-09-24T01:02Z"
      },
      {
-      "name": "Dre'Mont Jones",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Jones (shoulder) did not practice Thursday.",
-      "date": "2026-09-25T00:46Z"
-     },
-     {
       "name": "Craig Woodson",
       "pos": "S",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Woodson (shoulder) did not practice Thursday.",
-      "date": "2026-09-25T00:34Z"
+      "detail": "Woodson (shoulder) is listed as questionable for Sunday's game against the Jaguars.",
+      "date": "2026-09-26T00:53Z"
      },
      {
       "name": "Eli Raridon",
       "pos": "TE",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Raridon (thigh) did not practice Thursday.",
-      "date": "2026-09-25T00:26Z"
-     },
-     {
-      "name": "Reggie Gilliam",
-      "pos": "FB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Gilliam (knee) was a limited participant at the Patriots' practice Wednesday.",
-      "date": "2026-09-24T00:17Z"
-     },
-     {
-      "name": "Morgan Moses",
-      "pos": "OT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T20:34Z"
+      "detail": "Raridon (thigh) is listed as questionable ahead of Sunday's game against the Jaguars.",
+      "date": "2026-09-26T00:38Z"
      },
      {
       "name": "Quintayvious Hutchins",
       "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T20:32Z"
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Hutchins (knee) was placed on injured reserve Friday.",
+      "date": "2026-09-26T01:55Z"
      },
      {
       "name": "Dell Pettus",
@@ -9153,36 +9038,12 @@
     ],
     "home": [
      {
-      "name": "LeQuint Allen Jr.",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Allen (hip) was limited in practice Thursday.",
-      "date": "2026-09-25T00:54Z"
-     },
-     {
-      "name": "DaVon Hamilton",
+      "name": "Albert Regis",
       "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Hamilton (back) was a limited participant at the Jaguars' practice Wednesday.",
-      "date": "2026-09-24T00:30Z"
-     },
-     {
-      "name": "Cole Van Lanen",
-      "pos": "OT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T20:44Z"
-     },
-     {
-      "name": "Robert Hainsey",
-      "pos": "C",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T20:43Z"
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "doubtful",
+      "date": "2026-09-25T20:43Z"
      },
      {
       "name": "B.J. Green II",
@@ -9193,7 +9054,7 @@
       "date": "2026-09-17T00:17Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -9740,10 +9601,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
-     "home": -310,
-     "away": 250,
+     "home": -305,
+     "away": 245,
      "bestHome": null,
      "bestAway": null,
      "openHome": -440,
@@ -9760,8 +9621,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.274,
-     "home": 0.726
+     "away": 0.278,
+     "home": 0.722
     }
    },
    "scratched": [
@@ -9893,6 +9754,22 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Kiko Mauigoa",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Mauigoa (quadriceps) has been ruled out ahead of Sunday's game against the Lions, Rich Cimini of ESPN.com reports.",
+      "date": "2026-09-26T01:24Z"
+     },
+     {
+      "name": "Minkah Fitzpatrick",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "Fitzpatrick (groin) won't play in Sunday's game versus Detroit, Rich Cimini of ESPN.com reports.",
+      "date": "2026-09-25T21:17Z"
+     },
+     {
       "name": "Mason Taylor",
       "pos": "TE",
       "status": "Out",
@@ -9901,44 +9778,28 @@
       "date": "2026-09-25T15:17Z"
      },
      {
-      "name": "Minkah Fitzpatrick",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T14:58Z"
-     },
-     {
-      "name": "Kiko Mauigoa",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Mauigoa (quadriceps) missed practice for the second day in a row Thursday.",
-      "date": "2026-09-25T00:27Z"
-     },
-     {
-      "name": "Adonai Mitchell",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Mitchell (finger) will be limited in Friday's practice, according to the Jets' official X account.",
-      "date": "2026-09-25T15:15Z"
-     },
-     {
       "name": "Kene Nwangwu",
       "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Nwangwu (back) did not participate in practice Thursday.",
-      "date": "2026-09-25T00:13Z"
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Nwangwu (back) is doubtful for Sunday's game against the Lions, Antwan V. Staley of the New York Daily News reports.",
+      "date": "2026-09-25T21:15Z"
      },
      {
       "name": "Joseph Ossai",
       "pos": "DE",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Ossai (foot) was a limited participant in Wednesday's practice, Rich Cimini of ESPN.com reports.",
-      "date": "2026-09-23T23:57Z"
+      "detail": "Ossai (foot) is listed as questionable for Sunday's game against the Lions, Rich Cimini of ESPN.com reports.",
+      "date": "2026-09-26T01:28Z"
+     },
+     {
+      "name": "Adonai Mitchell",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Mitchell (finger) will be limited in Friday's practice.",
+      "date": "2026-09-25T15:15Z"
      },
      {
       "name": "Arian Smith",
@@ -9969,42 +9830,18 @@
      {
       "name": "Ben Bartch",
       "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Bartch (foot) did not participate in Thursday's practice.",
-      "date": "2026-09-25T03:38Z"
-     },
-     {
-      "name": "Tate Ratledge",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Ratledge (elbow) was a limited participant in Thursday's practice.",
-      "date": "2026-09-25T03:34Z"
-     },
-     {
-      "name": "Blake Miller",
-      "pos": "OT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Miller (knee) was a limited participant in Thursday's practice.",
-      "date": "2026-09-25T03:29Z"
-     },
-     {
-      "name": "Christian Mahogany",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Mahogany (hip) was a limited participant in Thursday's practice.",
-      "date": "2026-09-25T03:26Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Bartch (foot) has been ruled out ahead of Sunday's game against the Jets, Tim Twentyman of the Lions' official site reports.",
+      "date": "2026-09-26T01:47Z"
      },
      {
       "name": "Thomas Harper",
       "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Harper (ankle) did not practice Thursday, Nolan Bianchi of The Detroit News reports.",
-      "date": "2026-09-24T21:43Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Harper (ankle) has been ruled out for Sunday's game against the Jets, Tim Twentyman of the Lions' official site reports.",
+      "date": "2026-09-25T22:51Z"
      },
      {
       "name": "Avonte Maddox",
@@ -10015,7 +9852,7 @@
       "date": "2026-09-23T00:33Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -10062,7 +9899,7 @@
      "team": "PHI",
      "price": -120,
      "implied": 0.545,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": -115,
       "bestBook": "draftkings",
@@ -10268,7 +10105,7 @@
       "fetchedAt": "2026-09-23T16:40:21.694Z"
      },
      "edge": -0.095,
-     "status": "Questionable"
+     "status": null
     },
     {
      "name": "Jalen Hurts",
@@ -10518,10 +10355,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
-     "home": 185,
-     "away": -225,
+     "home": 195,
+     "away": -238,
      "bestHome": null,
      "bestAway": null,
      "openHome": -118,
@@ -10538,8 +10375,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.664,
-     "home": 0.336
+     "away": 0.675,
+     "home": 0.325
     }
    },
    "scratched": [],
@@ -10668,64 +10505,48 @@
       "pos": "TE",
       "status": "Doubtful",
       "type": "doubtful",
-      "detail": "Goedert (knee) was a non-participant at Thursday's practice.",
-      "date": "2026-09-24T23:09Z"
-     },
-     {
-      "name": "DeVonta Smith",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Smith (hamstring) wasn't in uniform at the start of Friday's practice but eventually took part in individual drills before running on a side field, Brooks Kubena of The Athletic reports.",
-      "date": "2026-09-25T19:04Z"
-     },
-     {
-      "name": "Saquon Barkley",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Barkley (stinger) is taking part in the open portion of Friday's practice, Brooks Kubena of The Athletic reports.",
-      "date": "2026-09-25T18:56Z"
+      "detail": "Goedert (knee) didn't practice Friday.",
+      "date": "2026-09-25T22:33Z"
      },
      {
       "name": "Jonathan Greenard",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Greenard (pectoral) was able to practice on a limited basis Thursday.",
-      "date": "2026-09-24T23:44Z"
+      "detail": "Greenard (pectoral) was a limited participant in Friday's practice.",
+      "date": "2026-09-26T00:18Z"
+     },
+     {
+      "name": "Hollywood Brown",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Brown (ankle) did not participate in Friday's practice.",
+      "date": "2026-09-26T00:14Z"
      },
      {
       "name": "Will Shipley",
       "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Shipley (foot) did not participate in practice Thursday.",
-      "date": "2026-09-24T23:38Z"
-     },
-     {
-      "name": "Andrew Mukuba",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Mukuba (knee) was limited in practice Thursday.",
-      "date": "2026-09-24T23:31Z"
-     },
-     {
-      "name": "Jalen Carter",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Carter (wrist) was a limited participant in practice Thursday.",
-      "date": "2026-09-24T23:26Z"
+      "detail": "Shipley (foot) was a limited participant in Friday's practice.",
+      "date": "2026-09-26T00:09Z"
      },
      {
       "name": "Tank Bigsby",
       "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Bigsby (hamstring) didn't participate in Thursday's practice.",
-      "date": "2026-09-24T23:14Z"
+      "detail": "Bigsby (abdomen) was limited at practice Friday.",
+      "date": "2026-09-25T22:39Z"
+     },
+     {
+      "name": "DeVonta Smith",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Smith (hamstring) practiced in a limited capacity Friday.",
+      "date": "2026-09-25T22:27Z"
      },
      {
       "name": "Landon Dickerson",
@@ -10737,14 +10558,6 @@
      }
     ],
     "home": [
-     {
-      "name": "Anthony Johnson Jr.",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-25T20:12Z"
-     },
      {
       "name": "Shemar Turner",
       "pos": "DT",
@@ -10770,6 +10583,22 @@
       "date": "2026-09-25T19:46Z"
      },
      {
+      "name": "Tyrique Stevenson Sr.",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Stevenson (hamstring) was a limited participant in Friday's practice.",
+      "date": "2026-09-25T22:47Z"
+     },
+     {
+      "name": "Cairo Santos",
+      "pos": "PK",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Santos (right hip) didn't practice Friday.",
+      "date": "2026-09-25T20:24Z"
+     },
+     {
       "name": "Tyson Bagent",
       "pos": "QB",
       "status": "Questionable",
@@ -10778,23 +10607,15 @@
       "date": "2026-09-25T19:52Z"
      },
      {
-      "name": "Tyrique Stevenson Sr.",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Stevenson (hamstring) did not participate in Thursday's practice.",
-      "date": "2026-09-25T02:15Z"
-     },
-     {
-      "name": "Cairo Santos",
-      "pos": "PK",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Santos was listed as a non-participant in Thursday's practice estimate due to a right hip injury.",
-      "date": "2026-09-24T22:19Z"
+      "name": "Anthony Johnson Jr.",
+      "pos": "S",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "ir",
+      "date": "2026-09-26T10:00Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -10853,7 +10674,7 @@
      "team": "SEA",
      "price": 120,
      "implied": 0.455,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 145,
       "bestBook": "fanduel",
@@ -11427,10 +11248,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
-     "home": 295,
-     "away": -375,
+     "home": 310,
+     "away": -395,
      "bestHome": null,
      "bestAway": null,
      "openHome": 164,
@@ -11447,15 +11268,15 @@
      "under": null
     },
     "winProb": {
-     "away": 0.757,
-     "home": 0.243
+     "away": 0.766,
+     "home": 0.234
     }
    },
    "scratched": [
     {
      "name": "Chig Okonkwo",
      "team": "WSH",
-     "status": "Doubtful"
+     "status": "Out"
     }
    ],
    "liveBoard": [
@@ -11580,36 +11401,28 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Zach Charbonnet",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Head coach Mike Macdonald said Wednesday that the Seahawks won't open Charbonnet's (knee) practice window this week, John Boyle of the team's official site reports.",
-      "date": "2026-09-23T19:41Z"
-     },
-     {
       "name": "Ty Okada",
       "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Okada (hamstring) did not practice Thursday, Brady Henderson of ESPN.com reports.",
-      "date": "2026-09-25T02:43Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Okada (hamstring) has been ruled out ahead of Sunday's game against the Commanders, John Boyle of the Seahawks' official site reports.",
+      "date": "2026-09-26T00:01Z"
      },
      {
       "name": "Julian Love",
       "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Love did not practice Thursday due to a calf injury, Brady Henderson of ESPN.com reports.",
-      "date": "2026-09-25T02:40Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Love (calf) has been ruled out ahead of Sunday's game against the Commanders, John Boyle of the Seahawks' official site reports.",
+      "date": "2026-09-25T23:56Z"
      },
      {
-      "name": "Jadarian Price",
+      "name": "Zach Charbonnet",
       "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Price (chest) was limited in practice Thursday, John Boyle of the Seahawks' official site reports.",
-      "date": "2026-09-24T23:33Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Head coach Mike Macdonald said Friday that Charbonnet (knee) returning to practice next week is potentially \"on the table,\" Corbin Smith of SI.com reports.",
+      "date": "2026-09-25T20:50Z"
      },
      {
       "name": "Brandon Pili",
@@ -11630,6 +11443,30 @@
     ],
     "home": [
      {
+      "name": "Sam Cosmi",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "Cosmi (concussion) has been ruled out ahead of Sunday's game against the Seahawks.",
+      "date": "2026-09-26T02:01Z"
+     },
+     {
+      "name": "Frankie Luvu",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Luvu (groin) has been ruled out ahead of Sunday's game against the Seahawks.",
+      "date": "2026-09-25T23:27Z"
+     },
+     {
+      "name": "Chig Okonkwo",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Okonkwo (hamstring) has been ruled out for Sunday's contest against the Seahawks.",
+      "date": "2026-09-25T21:26Z"
+     },
+     {
       "name": "Jayden Daniels",
       "pos": "QB",
       "status": "Out",
@@ -11644,81 +11481,9 @@
       "type": "out",
       "detail": "Commanders head coach Dan Quinn said that Cross (internal injury) won't play in Sunday's game versus the Seahawks, Tashan Reed of The Washington Post reports.",
       "date": "2026-09-23T22:00Z"
-     },
-     {
-      "name": "Chig Okonkwo",
-      "pos": "TE",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Commanders coach Dan Quinn said Friday that Okonkwo (hamstring) is a long shot to play Sunday against the Seahawks, Tashan Reed of The Washington Post reports.",
-      "date": "2026-09-25T15:24Z"
-     },
-     {
-      "name": "Leo Chenal",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Chenal (chest) was a limited participant in Wednesday's practice.",
-      "date": "2026-09-24T01:50Z"
-     },
-     {
-      "name": "Frankie Luvu",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Luvu (groin) did not participate in Wednesday's practice.",
-      "date": "2026-09-24T01:41Z"
-     },
-     {
-      "name": "Charles Omenihu",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T23:12Z"
-     },
-     {
-      "name": "Percy Butler",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T23:11Z"
-     },
-     {
-      "name": "Dorance Armstrong",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T23:10Z"
-     },
-     {
-      "name": "Javon Kinlaw",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Kinlaw (shoulder) did not practice Wednesday, John Keim of ESPN.com reports.",
-      "date": "2026-09-23T22:47Z"
-     },
-     {
-      "name": "Jaylin Lane",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Lane returned six kickoffs for 120 yards and one punt for 14 yards in Sunday's 37-20 loss to the Cowboys.",
-      "date": "2026-09-23T04:08Z"
-     },
-     {
-      "name": "Sam Cosmi",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Cosmi suffered a concussion in Sunday's 37-20 loss to the Cowboys, Nicki Jhabvala of The Athletic reports.",
-      "date": "2026-09-22T00:25Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   },
   {
@@ -12375,7 +12140,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-25T20:29:17.112Z",
+    "fetchedAt": "2026-09-26T10:14:16.686Z",
     "ml": {
      "home": -135,
      "away": 114,
@@ -12390,7 +12155,7 @@
      "awayPrice": null
     },
     "total": {
-     "point": 38.5,
+     "point": 37.5,
      "over": null,
      "under": null
     },
@@ -12522,86 +12287,46 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Tyjae Spears",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Spears (ankle) is listed as questionable for Sunday's game against the Giants, Turron Davenport of ESPN reports.",
-      "date": "2026-09-25T19:50Z"
-     },
-     {
-      "name": "Daniel Bellinger",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Bellinger (illness) did not participate in practice Thursday, Turron Davenport of ESPN.com reports.",
-      "date": "2026-09-25T01:08Z"
-     },
-     {
-      "name": "Micah Robinson",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-24T20:47Z"
-     },
-     {
       "name": "Cor'Dale Flott",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Flott (quadriceps) was a limited participant in Wednesday's practice.",
-      "date": "2026-09-24T00:25Z"
+      "detail": "Flott (quadriceps) is listed as questionable for Sunday's game against the Giants.",
+      "date": "2026-09-25T22:15Z"
      },
      {
-      "name": "Solomon Thomas",
-      "pos": "DT",
+      "name": "Tyjae Spears",
+      "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T20:38Z"
+      "detail": "Spears (ankle) was listed as limited for Friday's practice, Terry McCormick of TitanInsider reports.",
+      "date": "2026-09-25T16:14Z"
      }
     ],
     "home": [
-     {
-      "name": "Andrew Thomas",
-      "pos": "OT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Thomas (groin) did not practice Thursday, Dan Salomone of the Giants' official site reports.",
-      "date": "2026-09-25T03:13Z"
-     },
      {
       "name": "Deonte Banks",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Banks (calf) was estimated as a limited participant for the Giants' walkthrough practice Wednesday, Dan Salomone of the Giants' official site reports.",
-      "date": "2026-09-24T01:42Z"
+      "detail": "Banks (calf) is listed as questionable for Sunday's game versus the Titans, Mike Garafolo of NFL Network reports.",
+      "date": "2026-09-25T23:26Z"
      },
      {
       "name": "Tyler Nubin",
       "pos": "S",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Nubin (calf) was estimated as a limited participant for the Giants' walkthrough practice Wednesday, Dan Salomone of the Giants' official site reports.",
-      "date": "2026-09-24T01:38Z"
+      "detail": "Nubin (calf) is listed as questionable for Sunday's game versus Tennessee, Mike Garafolo of NFL Network reports.",
+      "date": "2026-09-25T23:21Z"
      },
      {
       "name": "Brian Burns",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Burns (ankle) was estimated as a non-participant for the Giants' walkthrough practice Wednesday, Dan Salomone of the Giants' official site reports.",
-      "date": "2026-09-24T01:34Z"
-     },
-     {
-      "name": "Shelby Harris",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-23T22:39Z"
+      "detail": "Burns (ankle) is listed as questionable for Sunday's game against the Titans, Mike Garafolo of NFL Network reports.",
+      "date": "2026-09-25T23:14Z"
      },
      {
       "name": "Jaxson Dart",
@@ -12612,7 +12337,7 @@
       "date": "2026-09-24T20:44Z"
      }
     ],
-    "fetchedAt": "2026-09-25T20:29:17.384Z"
+    "fetchedAt": "2026-09-26T10:14:16.939Z"
    }
   }
  ],
@@ -14084,7 +13809,7 @@
   },
   {
    "game": "kc-mia",
-   "bet": "MIA +10.5",
+   "bet": "MIA +10",
    "conf": 3,
    "why": "Kansas City is clearly the better team, but 11.5 is a price rather than a projection and this specific Chiefs team converts yards into field goals — Harrison Butker kicked five of them in Week 2 on 523 yards of offense, and Kansas City is 2-8 against the spread over its last 10 games. A 1:00 PM ET kickoff in Miami Gardens in late September is a genuine fatigue variable for a visiting team, and Miami's only two offensive touchdowns this year have both been chunk plays, which is exactly the shape of a late backdoor cover. On the total, Miami has scored exactly 13 in both games and sits 1-for-5 in the red zone, so even a 30-point Chiefs afternoon leaves the number in reach of the under. Confidence on the total is held lower because Kansas City is averaging 32.0 points and one Miami garbage-time score puts this right on the number.",
    "gameLabel": "KC@MIA"
@@ -14105,7 +13830,7 @@
   },
   {
    "game": "lar-den",
-   "bet": "Under 43.5",
+   "bet": "Under 44.5",
    "conf": 3,
    "why": "Denver is last in EPA allowed per carry and is giving up 157.5 rushing yards per game, while the Rams average 142.5 on a near-even Williams/Corum split, which is the cleanest structural edge in the game. The Broncos' own offense has converted 26.1 percent of third downs and only 42.9 percent of red-zone trips into touchdowns, and Bo Nix has thrown an interception in each of his two starts. On the total, all four games these teams have played in 2026 finished at 41 points or fewer, and the Rams defense is allowing 281 total yards and 16.5 points per game. The main things arguing the other way are altitude, a Sunday night home crowd and the fact that a Nacua absence would let Surtain II devote full attention to Adams, which is why I am not going higher than a 3 on either side.",
    "gameLabel": "LAR@DEN"
@@ -14126,7 +13851,7 @@
   },
   {
    "game": "ne-jax",
-   "bet": "Under 45.5",
+   "bet": "Under 46.5",
    "conf": 3,
    "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high.",
    "gameLabel": "NE@JAX"
@@ -14154,7 +13879,7 @@
   },
   {
    "game": "ten-nyg",
-   "bet": "Under 38.5",
+   "bet": "Under 37.5",
    "conf": 3,
    "why": "The premise that Jaxson Dart starts does not hold — he is doubtful with a sprained MCL and Jameis Winston, who completed 40.7% of his throws in relief, is in line to start behind a line missing a questionable Andrew Thomas and without a fully healthy Malik Nabers. That is why a number that opened at Giants -5.5 to -6 is now -3 and already -2.5 in places, and the dog side is worth taking while the key number is still available. ESPN's own predictor has Tennessee at 59.6% against a market that makes New York a 57.2% de-vigged favourite, though Dimers sits firmly the other way, so confidence on the side stays low. The under is the firmer position: the total has dropped from 43 to 39.5 in two days, Tennessee is averaging 15.0 points and New York 17.0, and a backup quarterback in a 25%-precipitation, 17-mph-gust afternoon is not the setup for a shootout.",
    "gameLabel": "TEN@NYG"
@@ -14174,7 +13899,7 @@
    "legs": [
     "ATL/GB Under 44.5",
     "CIN/PIT Under 42.5",
-    "LAR/DEN Under 43.5"
+    "LAR/DEN Under 44.5"
    ],
    "why": "Totals block: every game where the desk rates the number 3 or better. At standard juice this pays about +596, so it needs 14% — these are scoring-environment calls, not side calls, which is why they are grouped rather than mixed with spreads. (Numbers updated to the live line.)",
    "type": "cross"
@@ -14277,7 +14002,7 @@
   },
   {
    "game": "kc-mia",
-   "bet": "MIA +10.5",
+   "bet": "MIA +10",
    "kind": "side",
    "price": -110,
    "book": "FD/DK",
@@ -14304,7 +14029,7 @@
   },
   {
    "game": "lar-den",
-   "bet": "Under 43.5",
+   "bet": "Under 44.5",
    "kind": "total",
    "price": -110,
    "book": "FD/DK",
@@ -14331,7 +14056,7 @@
   },
   {
    "game": "ne-jax",
-   "bet": "Under 45.5",
+   "bet": "Under 46.5",
    "kind": "total",
    "price": -110,
    "book": "FD/DK",
@@ -14340,7 +14065,7 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-09-25T20:29:18.759Z",
+  "gradedAt": "2026-09-26T10:14:17.535Z",
   "finals": 1,
   "games": 16,
   "summary": {
@@ -16812,7 +16537,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-09-25T20:29:18.761Z",
+  "updatedAt": "2026-09-26T10:14:17.536Z",
   "weeks": [
    {
     "week": 1,
@@ -17166,7 +16891,7 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-09-25T20:29:18.882Z",
+  "builtAt": "2026-09-26T10:14:17.654Z",
   "books": [
    "FD",
    "DK"
@@ -17944,41 +17669,41 @@
        },
        {
         "type": "total",
-        "label": "Under 45.5 NE@JAX",
+        "label": "Under 46.5 NE@JAX",
         "game": "ne-jax",
         "gameLabel": "NE@JAX",
         "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.577,
+        "prob": 0.591,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.053,
+        "edge": 0.067,
         "conf": 3,
-        "moved": null,
+        "moved": "model liked 45.5",
         "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
        },
        {
         "type": "total",
-        "label": "Under 38.5 TEN@NYG",
-        "game": "ten-nyg",
-        "gameLabel": "TEN@NYG",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.577,
+        "label": "Under 41.5 PHI@CHI",
+        "game": "phi-chi",
+        "gameLabel": "PHI@CHI",
+        "kickoff": "2026-09-29T00:15:00Z",
+        "prob": 0.576,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.053,
-        "conf": 3,
-        "moved": "model liked 40.5",
-        "why": "The premise that Jaxson Dart starts does not hold — he is doubtful with a sprained MCL and Jameis Winston, who completed 40.7% of his throws in relief, is in line to start behind a line missing a questionable Andrew Thomas and without a fully healthy Malik Nabers. That is why a number that opened at Giants -5.5 to -6 is now -3 and already -2.5 in places, and the dog side is worth taking while the key number is still available. ESPN's own predictor has Tennessee at 59.6% against a market that makes New York a 57.2% de-vigged favourite, though Dimers sits firmly the other way, so confidence on the side stays low. The under is the firmer position: the total has dropped from 43 to 39.5 in two days, Tennessee is averaging 15.0 points and New York 17.0, and a backup quarterback in a 25%-precipitation, 17-mph-gust afternoon is not the setup for a shootout."
+        "edge": 0.052,
+        "conf": 2,
+        "moved": null,
+        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
        }
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.197,
-      "ev": 0.369,
-      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK; Under 38.5 TEN@NYG: 58% model, -110 FD/DK.",
-      "score": 0.164
+      "prob": 0.201,
+      "ev": 0.4,
+      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 46.5 NE@JAX: 59% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK.",
+      "score": 0.179
      },
      {
       "rank": 2,
@@ -18000,40 +17725,40 @@
        },
        {
         "type": "total",
-        "label": "Under 45.5 NE@JAX",
+        "label": "Under 46.5 NE@JAX",
         "game": "ne-jax",
         "gameLabel": "NE@JAX",
         "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.577,
+        "prob": 0.591,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.053,
+        "edge": 0.067,
         "conf": 3,
-        "moved": null,
+        "moved": "model liked 45.5",
         "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
        },
        {
         "type": "total",
-        "label": "Under 41.5 PHI@CHI",
-        "game": "phi-chi",
-        "gameLabel": "PHI@CHI",
-        "kickoff": "2026-09-29T00:15:00Z",
-        "prob": 0.576,
+        "label": "Under 48.5 NYJ@DET",
+        "game": "nyj-det",
+        "gameLabel": "NYJ@DET",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.562,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.052,
+        "edge": 0.038,
         "conf": 2,
         "moved": null,
-        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
+        "why": "Detroit is the better team and should win, but the number is priced off Detroit's offence rather than the defence the Jets bring: New York is first in total defence at 197 yards a game, third in yards per play, and first in time-of-possession differential, which is how a favourite this size fails to cover. Detroit's own defence is genuinely bad, 917 yards and 71 points allowed with both starting safeties on reserve, so this should stay competitive rather than become a runaway. On the total, the Jets' pace and three-and-out rate cut the play count enough to project roughly 46 combined points."
        }
       ],
       "decimal": 6.958,
       "price": 596,
       "prob": 0.196,
-      "ev": 0.367,
-      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK.",
+      "ev": 0.366,
+      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 46.5 NE@JAX: 59% model, -110 FD/DK; Under 48.5 NYJ@DET: 56% model, -110 FD/DK.",
       "score": 0.162
      },
      {
@@ -18056,30 +17781,30 @@
        },
        {
         "type": "total",
-        "label": "Under 41.5 PHI@CHI",
-        "game": "phi-chi",
-        "gameLabel": "PHI@CHI",
-        "kickoff": "2026-09-29T00:15:00Z",
-        "prob": 0.576,
+        "label": "Under 46.5 NE@JAX",
+        "game": "ne-jax",
+        "gameLabel": "NE@JAX",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.591,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.052,
-        "conf": 2,
-        "moved": null,
-        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
+        "edge": 0.067,
+        "conf": 3,
+        "moved": "model liked 45.5",
+        "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
        },
        {
         "type": "total",
-        "label": "Under 38.5 TEN@NYG",
+        "label": "Under 37.5 TEN@NYG",
         "game": "ten-nyg",
         "gameLabel": "TEN@NYG",
         "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.577,
+        "prob": 0.562,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.053,
+        "edge": 0.038,
         "conf": 3,
         "moved": "model liked 40.5",
         "why": "The premise that Jaxson Dart starts does not hold — he is doubtful with a sprained MCL and Jameis Winston, who completed 40.7% of his throws in relief, is in line to start behind a line missing a questionable Andrew Thomas and without a fully healthy Malik Nabers. That is why a number that opened at Giants -5.5 to -6 is now -3 and already -2.5 in places, and the dog side is worth taking while the key number is still available. ESPN's own predictor has Tennessee at 59.6% against a market that makes New York a 57.2% de-vigged favourite, though Dimers sits firmly the other way, so confidence on the side stays low. The under is the firmer position: the total has dropped from 43 to 39.5 in two days, Tennessee is averaging 15.0 points and New York 17.0, and a backup quarterback in a 25%-precipitation, 17-mph-gust afternoon is not the setup for a shootout."
@@ -18088,99 +17813,13 @@
       "decimal": 6.958,
       "price": 596,
       "prob": 0.196,
-      "ev": 0.367,
-      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK; Under 38.5 TEN@NYG: 58% model, -110 FD/DK.",
+      "ev": 0.366,
+      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 46.5 NE@JAX: 59% model, -110 FD/DK; Under 37.5 TEN@NYG: 56% model, -110 FD/DK.",
       "score": 0.162
      },
      {
       "rank": 4,
       "legs": [
-       {
-        "type": "total",
-        "label": "Under 45.5 NE@JAX",
-        "game": "ne-jax",
-        "gameLabel": "NE@JAX",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.577,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.053,
-        "conf": 3,
-        "moved": null,
-        "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
-       },
-       {
-        "type": "total",
-        "label": "Under 41.5 PHI@CHI",
-        "game": "phi-chi",
-        "gameLabel": "PHI@CHI",
-        "kickoff": "2026-09-29T00:15:00Z",
-        "prob": 0.576,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.052,
-        "conf": 2,
-        "moved": null,
-        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
-       },
-       {
-        "type": "total",
-        "label": "Under 38.5 TEN@NYG",
-        "game": "ten-nyg",
-        "gameLabel": "TEN@NYG",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.577,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.053,
-        "conf": 3,
-        "moved": "model liked 40.5",
-        "why": "The premise that Jaxson Dart starts does not hold — he is doubtful with a sprained MCL and Jameis Winston, who completed 40.7% of his throws in relief, is in line to start behind a line missing a questionable Andrew Thomas and without a fully healthy Malik Nabers. That is why a number that opened at Giants -5.5 to -6 is now -3 and already -2.5 in places, and the dog side is worth taking while the key number is still available. ESPN's own predictor has Tennessee at 59.6% against a market that makes New York a 57.2% de-vigged favourite, though Dimers sits firmly the other way, so confidence on the side stays low. The under is the firmer position: the total has dropped from 43 to 39.5 in two days, Tennessee is averaging 15.0 points and New York 17.0, and a backup quarterback in a 25%-precipitation, 17-mph-gust afternoon is not the setup for a shootout."
-       }
-      ],
-      "decimal": 6.958,
-      "price": 596,
-      "prob": 0.192,
-      "ev": 0.334,
-      "why": "Model 19% vs 14% implied at +596. Under 45.5 NE@JAX: 58% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK; Under 38.5 TEN@NYG: 58% model, -110 FD/DK.",
-      "score": 0.146
-     },
-     {
-      "rank": 5,
-      "legs": [
-       {
-        "type": "total",
-        "label": "Under 47.5 ARI@SF",
-        "game": "ari-sf",
-        "gameLabel": "ARI@SF",
-        "kickoff": "2026-09-27T20:05:00Z",
-        "prob": 0.547,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.023,
-        "conf": 2,
-        "moved": null,
-        "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low."
-       },
-       {
-        "type": "total",
-        "label": "Under 42.5 MIN@TB",
-        "game": "min-tb",
-        "gameLabel": "MIN@TB",
-        "kickoff": "2026-09-27T20:05:00Z",
-        "prob": 0.547,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.023,
-        "conf": 2,
-        "moved": null,
-        "why": "Minnesota's defence is the clearest edge on the field: a league-best 33.6% pressure rate and the heaviest blitz rate in the NFL against a Baker Mayfield offence that has already taken seven sacks and produced three offensive touchdowns in two games. Tampa Bay is 0-2 and kicked four field goals in a home loss to Cleveland, which is the profile of a team that moves the ball and then stalls. The under is the softer of the two positions because Minnesota's own Week 1 game went 61 points and Kyler Murray's return could raise the Vikings' explosiveness, so it sits at a lower confidence. Getting Minnesota at only -1.5 on the road with the defence travelling better than the offence is the reason for a 3 on the side."
-       },
        {
         "type": "total",
         "label": "Under 48.5 NYJ@DET",
@@ -18195,14 +17834,85 @@
         "conf": 2,
         "moved": null,
         "why": "Detroit is the better team and should win, but the number is priced off Detroit's offence rather than the defence the Jets bring: New York is first in total defence at 197 yards a game, third in yards per play, and first in time-of-possession differential, which is how a favourite this size fails to cover. Detroit's own defence is genuinely bad, 917 yards and 71 points allowed with both starting safeties on reserve, so this should stay competitive rather than become a runaway. On the total, the Jets' pace and three-and-out rate cut the play count enough to project roughly 46 combined points."
+       },
+       {
+        "type": "total",
+        "label": "Under 41.5 PHI@CHI",
+        "game": "phi-chi",
+        "gameLabel": "PHI@CHI",
+        "kickoff": "2026-09-29T00:15:00Z",
+        "prob": 0.576,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.052,
+        "conf": 2,
+        "moved": null,
+        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
+       },
+       {
+        "type": "total",
+        "label": "Under 37.5 TEN@NYG",
+        "game": "ten-nyg",
+        "gameLabel": "TEN@NYG",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 3,
+        "moved": "model liked 40.5",
+        "why": "The premise that Jaxson Dart starts does not hold — he is doubtful with a sprained MCL and Jameis Winston, who completed 40.7% of his throws in relief, is in line to start behind a line missing a questionable Andrew Thomas and without a fully healthy Malik Nabers. That is why a number that opened at Giants -5.5 to -6 is now -3 and already -2.5 in places, and the dog side is worth taking while the key number is still available. ESPN's own predictor has Tennessee at 59.6% against a market that makes New York a 57.2% de-vigged favourite, though Dimers sits firmly the other way, so confidence on the side stays low. The under is the firmer position: the total has dropped from 43 to 39.5 in two days, Tennessee is averaging 15.0 points and New York 17.0, and a backup quarterback in a 25%-precipitation, 17-mph-gust afternoon is not the setup for a shootout."
        }
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.168,
-      "ev": 0.17,
-      "why": "Model 17% vs 14% implied at +596. Under 47.5 ARI@SF: 55% model, -110 FD/DK; Under 42.5 MIN@TB: 55% model, -110 FD/DK; Under 48.5 NYJ@DET: 56% model, -110 FD/DK.",
-      "score": 0.07
+      "prob": 0.182,
+      "ev": 0.266,
+      "why": "Model 18% vs 14% implied at +596. Under 48.5 NYJ@DET: 56% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK; Under 37.5 TEN@NYG: 56% model, -110 FD/DK.",
+      "score": 0.113
+     },
+     {
+      "rank": 5,
+      "legs": [
+       {
+        "type": "total",
+        "label": "Under 48.5 NYJ@DET",
+        "game": "nyj-det",
+        "gameLabel": "NYJ@DET",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": null,
+        "why": "Detroit is the better team and should win, but the number is priced off Detroit's offence rather than the defence the Jets bring: New York is first in total defence at 197 yards a game, third in yards per play, and first in time-of-possession differential, which is how a favourite this size fails to cover. Detroit's own defence is genuinely bad, 917 yards and 71 points allowed with both starting safeties on reserve, so this should stay competitive rather than become a runaway. On the total, the Jets' pace and three-and-out rate cut the play count enough to project roughly 46 combined points."
+       },
+       {
+        "type": "total",
+        "label": "Under 41.5 PHI@CHI",
+        "game": "phi-chi",
+        "gameLabel": "PHI@CHI",
+        "kickoff": "2026-09-29T00:15:00Z",
+        "prob": 0.576,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.052,
+        "conf": 2,
+        "moved": null,
+        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
+       }
+      ],
+      "decimal": 3.645,
+      "price": 264,
+      "prob": 0.324,
+      "ev": 0.18,
+      "why": "Model 32% vs 27% implied at +264. Under 48.5 NYJ@DET: 56% model, -110 FD/DK; Under 41.5 PHI@CHI: 58% model, -110 FD/DK.",
+      "score": 0.102
      }
     ]
    },
@@ -18505,7 +18215,7 @@
        },
        {
         "type": "text",
-        "label": "LAR/DEN Under 43.5",
+        "label": "LAR/DEN Under 44.5",
         "price": null,
         "book": "",
         "prob": null
