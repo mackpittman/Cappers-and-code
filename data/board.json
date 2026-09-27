@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 3,
- "generatedAt": "2026-09-26T19:49:13.933Z",
+ "generatedAt": "2026-09-27T10:43:35.256Z",
  "researchAsOf": "2026-09-24T22:57:23.035Z",
  "oddsFetchedAt": "2026-09-26T16:41:19.076Z",
  "oddsCredits": {
@@ -31,7 +31,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": "ESPN/book",
- "injuriesFetchedAt": "2026-09-26T19:49:12.921Z",
+ "injuriesFetchedAt": "2026-09-27T10:43:34.607Z",
  "notes": "Researched one game at a time, then validated for de-vigged win probability, implied team points and board depth before assembly. Anytime-TD prices marked \"verify\" could not be confirmed at a live sportsbook and must be checked before they are played.",
  "completed": [],
  "games": [
@@ -559,28 +559,28 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
-     "home": -440,
-     "away": 340,
+     "home": -410,
+     "away": 320,
      "bestHome": null,
      "bestAway": null,
      "openHome": -650,
      "openAway": 470
     },
     "spread": {
-     "homePoint": -8.5,
+     "homePoint": -7.5,
      "homePrice": null,
      "awayPrice": null
     },
     "total": {
-     "point": 47.5,
+     "point": 48.5,
      "over": null,
      "under": null
     },
     "winProb": {
-     "away": 0.218,
-     "home": 0.782
+     "away": 0.228,
+     "home": 0.772
     }
    },
    "scratched": [],
@@ -764,14 +764,6 @@
       "date": "2026-09-25T23:44Z"
      },
      {
-      "name": "Demarcus Robinson",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "San Francisco head coach Kyle Shanahan said that Robinson is facing a recovery timeline of 3-to-6 weeks after sustaining a high-ankle sprain in Sunday's 35-13 win over the Dolphins, Nick Wagoner of ESPN.com reports.",
-      "date": "2026-09-21T20:35Z"
-     },
-     {
       "name": "Brandon Aiyuk",
       "pos": "WR",
       "status": "Out",
@@ -796,6 +788,14 @@
       "date": "2026-09-20T22:00Z"
      },
      {
+      "name": "Demarcus Robinson",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The 49ers placed Robinson (ankle) on injured reserve Saturday.",
+      "date": "2026-09-26T21:17Z"
+     },
+     {
       "name": "C.J. West",
       "pos": "DT",
       "status": "Injured Reserve",
@@ -804,7 +804,7 @@
       "date": "2026-09-23T23:15Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -1242,14 +1242,6 @@
       "type": "out",
       "detail": "Ebukam (hamstring) is officially listed as out for Thursday's game against the Packers, Tori McElhaney of the Falcons' official site reports.",
       "date": "2026-09-23T23:26Z"
-     },
-     {
-      "name": "A.J. Terrell Jr.",
-      "pos": "CB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Falcons placed Terrell (groin) on injured reserve Tuesday, Tori McElhaney of the team's official site reports.",
-      "date": "2026-09-22T17:09Z"
      }
     ],
     "home": [
@@ -1286,14 +1278,6 @@
       "date": "2026-09-24T02:20Z"
      },
      {
-      "name": "Warren Brinson",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "Brinson (calf) has been ruled out ahead of Thursday night's game against the Falcons, Wes Hodkiewicz of the Packers' official site reports.",
-      "date": "2026-09-24T02:15Z"
-     },
-     {
       "name": "Jacob Monk",
       "pos": "C",
       "status": "Questionable",
@@ -1310,7 +1294,7 @@
       "date": "2026-09-25T02:48Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -1852,17 +1836,17 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
-     "home": 140,
-     "away": -166,
+     "home": 142,
+     "away": -170,
      "bestHome": null,
      "bestAway": null,
      "openHome": 114,
      "openAway": -135
     },
     "spread": {
-     "homePoint": 3,
+     "homePoint": 3.5,
      "homePrice": null,
      "awayPrice": null
     },
@@ -1872,8 +1856,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.6,
-     "home": 0.4
+     "away": 0.604,
+     "home": 0.396
     }
    },
    "scratched": [],
@@ -2339,7 +2323,7 @@
       "date": "2026-09-26T18:27Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -2939,17 +2923,17 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
-     "home": 120,
-     "away": -142,
+     "home": 114,
+     "away": -135,
      "bestHome": null,
      "bestAway": null,
      "openHome": 100,
      "openAway": -120
     },
     "spread": {
-     "homePoint": 2.5,
+     "homePoint": 1.5,
      "homePrice": null,
      "awayPrice": null
     },
@@ -2959,8 +2943,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.563,
-     "home": 0.437
+     "away": 0.551,
+     "home": 0.449
     }
    },
    "scratched": [],
@@ -3160,7 +3144,7 @@
       "date": "2026-09-25T22:35Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -3820,7 +3804,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
      "home": 154,
      "away": -185,
@@ -3848,7 +3832,7 @@
     {
      "name": "Andrei Iosivas",
      "team": "CIN",
-     "status": "Out"
+     "status": "Injured Reserve"
     }
    ],
    "liveBoard": [
@@ -3973,31 +3957,23 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Andrei Iosivas",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "Bengals head coach Zac Taylor said Wednesday that Iosivas tore a ligament in his thumb and will be placed on injured reserve, Ben Baby of ESPN.com reports.",
-      "date": "2026-09-23T17:29Z"
-     },
-     {
       "name": "B.J. Hill",
       "pos": "DT",
       "status": "Doubtful",
       "type": "doubtful",
       "detail": "doubtful",
       "date": "2026-09-25T16:31Z"
+     },
+     {
+      "name": "Andrei Iosivas",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Bengals placed Iosivas (thumb) on injured reserve Saturday.",
+      "date": "2026-09-26T20:26Z"
      }
     ],
     "home": [
-     {
-      "name": "Gennings Dunker",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "Dunker (knee) has been ruled out ahead of Sunday's game against the Bengals, Adam Caplan of SiriusXM NFL Radio reports.",
-      "date": "2026-09-26T01:17Z"
-     },
      {
       "name": "Rico Dowdle",
       "pos": "RB",
@@ -4037,9 +4013,17 @@
       "type": "questionable",
       "detail": "Warren (shoulder) is listed as questionable for Sunday's game against the Bengals after being a limited participant in Friday's practice, Alan Saunders of Steelers Now reports.",
       "date": "2026-09-25T19:55Z"
+     },
+     {
+      "name": "Gennings Dunker",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Steelers placed Dunker (knee) on injured reserve Saturday, Tom Pelissero of Netflix reports.",
+      "date": "2026-09-26T21:23Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -4626,7 +4610,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
      "home": 105,
      "away": -125,
@@ -4863,7 +4847,7 @@
       "date": "2026-09-23T00:30Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -5458,10 +5442,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
-     "home": 455,
-     "away": -625,
+     "home": 425,
+     "away": -575,
      "bestHome": null,
      "bestAway": null,
      "openHome": 270,
@@ -5478,8 +5462,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.827,
-     "home": 0.173
+     "away": 0.817,
+     "home": 0.183
     }
    },
    "scratched": [
@@ -5669,7 +5653,7 @@
       "date": "2026-09-19T21:21Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -6304,10 +6288,10 @@
    },
    "live": {
     "source": "ESPN/DraftKings",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
-     "home": -345,
-     "away": 275,
+     "home": -340,
+     "away": 270,
      "bestHome": null,
      "bestAway": null,
      "openHome": -142,
@@ -6324,8 +6308,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.256,
-     "home": 0.744
+     "away": 0.259,
+     "home": 0.741
     }
    },
    "scratched": [],
@@ -6451,14 +6435,6 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Trey Pipkins III",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "Pipkins (knee) is listed as out for Sunday's game versus Buffalo.",
-      "date": "2026-09-26T01:17Z"
-     },
-     {
       "name": "Kayode Awosika",
       "pos": "G",
       "status": "Out",
@@ -6513,6 +6489,14 @@
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-09-23T22:27Z"
+     },
+     {
+      "name": "Trey Pipkins III",
+      "pos": "OT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Chargers placed Pipkins (knee) on injured reserve Saturday.",
+      "date": "2026-09-26T21:25Z"
      },
      {
       "name": "David Njoku",
@@ -6573,7 +6557,7 @@
       "date": "2026-09-26T01:05Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -7080,7 +7064,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
      "home": 110,
      "away": -130,
@@ -7095,7 +7079,7 @@
      "awayPrice": null
     },
     "total": {
-     "point": 44.5,
+     "point": 43.5,
      "over": null,
      "under": null
     },
@@ -7113,7 +7097,7 @@
     {
      "name": "Jonah Coleman",
      "team": "DEN",
-     "status": "Out"
+     "status": "Injured Reserve"
     }
    ],
    "liveBoard": [
@@ -7521,14 +7505,6 @@
     ],
     "home": [
      {
-      "name": "Jonah Coleman",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Coleman (ankle) has been ruled out for Sunday's game against the Rams.",
-      "date": "2026-09-25T20:39Z"
-     },
-     {
       "name": "Jonathon Cooper",
       "pos": "LB",
       "status": "Out",
@@ -7553,15 +7529,15 @@
       "date": "2026-09-26T02:25Z"
      },
      {
-      "name": "Frank Crum",
-      "pos": "OT",
+      "name": "Jonah Coleman",
+      "pos": "RB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Crum (undisclosed) was placed on injured reserve with a designation to return by the Broncos on Sunday, Aric DiLalla of the team's official site reports.",
-      "date": "2026-08-31T23:20Z"
+      "detail": "Coleman (ankle) is being placed on injured reserve Saturday, Adam Schefter of ESPN reports.",
+      "date": "2026-09-26T20:36Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -8098,17 +8074,17 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
-     "home": -185,
-     "away": 154,
+     "home": -198,
+     "away": 164,
      "bestHome": null,
      "bestAway": null,
      "openHome": -166,
      "openAway": 140
     },
     "spread": {
-     "homePoint": -3,
+     "homePoint": -3.5,
      "homePrice": null,
      "awayPrice": null
     },
@@ -8118,8 +8094,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.378,
-     "home": 0.622
+     "away": 0.363,
+     "home": 0.637
     }
    },
    "scratched": [],
@@ -8484,8 +8460,8 @@
       "pos": "QB",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-09-26T19:46Z"
+      "detail": "O'Connell (personal) has been ruled out ahead of Sunday's game against the Saints, Ryan McFadden of ESPN.com reports.",
+      "date": "2026-09-26T19:51Z"
      },
      {
       "name": "Treydan Stukes",
@@ -8544,17 +8520,9 @@
       "type": "Injured Reserve",
       "detail": "Banks (ankle) underwent surgery this week, Katherine Terrell of ESPN.com reports.",
       "date": "2026-09-26T00:47Z"
-     },
-     {
-      "name": "Zach Wood",
-      "pos": "LS",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Saints placed Wood (calf) on injured reserve Friday.",
-      "date": "2026-09-19T03:01Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -9181,10 +9149,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
-     "home": 100,
-     "away": -120,
+     "home": -105,
+     "away": -115,
      "bestHome": null,
      "bestAway": null,
      "openHome": -125,
@@ -9201,8 +9169,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.522,
-     "home": 0.478
+     "away": 0.511,
+     "home": 0.489
     }
    },
    "scratched": [],
@@ -9336,20 +9304,20 @@
       "date": "2026-09-26T01:13Z"
      },
      {
-      "name": "Nick Samac",
-      "pos": "C",
-      "status": "Out",
-      "type": "out",
-      "detail": "Samac (knee) has been ruled out ahead of Sunday's game against the Buccaneers, Craig Peters of the Vikings' official site reports.",
-      "date": "2026-09-26T01:10Z"
-     },
-     {
       "name": "Ivan Pace Jr.",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Pace (personal) has been tagged as questionable ahead of Sunday's game against the Buccaneers.",
       "date": "2026-09-26T18:05Z"
+     },
+     {
+      "name": "Nick Samac",
+      "pos": "C",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Vikings placed Samac (knee) on injured reserve Saturday, Craig Peters of the team's official site reports.",
+      "date": "2026-09-26T21:28Z"
      }
     ],
     "home": [
@@ -9378,7 +9346,7 @@
       "date": "2026-09-08T20:42Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -10001,7 +9969,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
      "home": -155,
      "away": 130,
@@ -10016,7 +9984,7 @@
      "awayPrice": null
     },
     "total": {
-     "point": 46.5,
+     "point": 45.5,
      "over": null,
      "under": null
     },
@@ -10222,7 +10190,7 @@
       "date": "2026-09-17T00:17Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -10769,7 +10737,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
      "home": -305,
      "away": 245,
@@ -11006,10 +10974,10 @@
      {
       "name": "Thomas Harper",
       "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "Harper (ankle) has been ruled out for Sunday's game against the Jets, Tim Twentyman of the Lions' official site reports.",
-      "date": "2026-09-25T22:51Z"
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Lions placed Harper (ankle) on injured reserve Saturday.",
+      "date": "2026-09-26T21:03Z"
      },
      {
       "name": "Avonte Maddox",
@@ -11020,7 +10988,7 @@
       "date": "2026-09-23T00:33Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -11091,7 +11059,7 @@
      "team": "PHI",
      "price": 175,
      "implied": 0.364,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 180,
       "bestBook": "betrivers",
@@ -11103,7 +11071,7 @@
      "team": "PHI",
      "price": 105,
      "implied": 0.488,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 550,
       "bestBook": "betmgm",
@@ -11533,10 +11501,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
-     "home": 160,
-     "away": -192,
+     "home": 164,
+     "away": -198,
      "bestHome": null,
      "bestAway": null,
      "openHome": -118,
@@ -11553,8 +11521,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.631,
-     "home": 0.369
+     "away": 0.637,
+     "home": 0.363
     }
    },
    "scratched": [],
@@ -11887,60 +11855,36 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Dallas Goedert",
-      "pos": "TE",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Goedert (knee) didn't practice Friday.",
-      "date": "2026-09-25T22:33Z"
+      "name": "Fred Johnson",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Johnson (knee) has been ruled out ahead of Monday's game against the Bears.",
+      "date": "2026-09-26T21:21Z"
      },
      {
-      "name": "DeVonta Smith",
+      "name": "Hollywood Brown",
       "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Smith (hamstring) is participating in Saturday's practice, Dave Zangaro of NBC Sports Philadelphia reports.",
-      "date": "2026-09-26T16:38Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Brown (ankle) has been ruled out ahead of Monday's game against the Bears.",
+      "date": "2026-09-26T20:25Z"
+     },
+     {
+      "name": "Dallas Goedert",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Goedert (knee) has been ruled out for Monday's game against the Bears.",
+      "date": "2026-09-26T20:01Z"
      },
      {
       "name": "Jonathan Greenard",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Greenard (pectoral) was a limited participant in Friday's practice.",
-      "date": "2026-09-26T00:18Z"
-     },
-     {
-      "name": "Hollywood Brown",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Brown (ankle) did not participate in Friday's practice.",
-      "date": "2026-09-26T00:14Z"
-     },
-     {
-      "name": "Will Shipley",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Shipley (foot) was a limited participant in Friday's practice.",
-      "date": "2026-09-26T00:09Z"
-     },
-     {
-      "name": "Tank Bigsby",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Bigsby (abdomen) was limited at practice Friday.",
-      "date": "2026-09-25T22:39Z"
-     },
-     {
-      "name": "Landon Dickerson",
-      "pos": "G",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Eagles placed Dickerson (knee) on injured reserve Tuesday, Chris McPherson of the team's official site reports.",
-      "date": "2026-09-16T00:56Z"
+      "detail": "Greenard (pectoral) is listed as questionable ahead of Monday's game against the Bears.",
+      "date": "2026-09-26T20:29Z"
      }
     ],
     "home": [
@@ -11982,10 +11926,10 @@
       "status": "Injured Reserve",
       "type": "Injured Reserve",
       "detail": "ir",
-      "date": "2026-09-26T19:16Z"
+      "date": "2026-09-27T10:01Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -12618,17 +12562,17 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
-     "home": 320,
-     "away": -410,
+     "home": 310,
+     "away": -395,
      "bestHome": null,
      "bestAway": null,
      "openHome": 164,
      "openAway": -198
     },
     "spread": {
-     "homePoint": 7.5,
+     "homePoint": 8.5,
      "homePrice": null,
      "awayPrice": null
     },
@@ -12638,8 +12582,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.772,
-     "home": 0.228
+     "away": 0.766,
+     "home": 0.234
     }
    },
    "scratched": [
@@ -12853,7 +12797,7 @@
       "date": "2026-09-23T22:00Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   },
   {
@@ -13510,10 +13454,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-09-26T19:49:12.710Z",
+    "fetchedAt": "2026-09-27T10:43:34.372Z",
     "ml": {
-     "home": -135,
-     "away": 114,
+     "home": -130,
+     "away": 110,
      "bestHome": null,
      "bestAway": null,
      "openHome": -175,
@@ -13530,8 +13474,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.449,
-     "home": 0.551
+     "away": 0.457,
+     "home": 0.543
     }
    },
    "scratched": [],
@@ -13707,7 +13651,7 @@
       "date": "2026-09-24T20:44Z"
      }
     ],
-    "fetchedAt": "2026-09-26T19:49:12.921Z"
+    "fetchedAt": "2026-09-27T10:43:34.607Z"
    }
   }
  ],
@@ -15228,7 +15172,7 @@
  "bestBets": [
   {
    "game": "ari-sf",
-   "bet": "SF -8.5",
+   "bet": "SF -7.5",
    "conf": 3,
    "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low.",
    "gameLabel": "ARI@SF"
@@ -15256,14 +15200,14 @@
   },
   {
    "game": "bal-dal",
-   "bet": "BAL -3",
+   "bet": "BAL -3.5",
    "conf": 3,
    "why": "Dallas will play this one without safeties Malik Hooker and P.J. Locke, cornerback Cobie Durant and linebacker DeMarvion Overshown against the league's most efficient offense by yards per play, and the number is still gettable at -3 while DraftKings and Fanatics have already moved to -3.5. Baltimore's own pass defense ranks 27th, so the fade is the total rather than the side, and 80-degree clear weather with 9 mph wind removes the usual international-game under argument. The projection lands at roughly 28-25, which clears the spread and the total by a modest margin rather than a wide one. The main brake on both is the Maracanã playing surface and a possible run-heavy, clock-shortening Baltimore script, which is why the total lean is held to a two.",
    "gameLabel": "BAL@DAL"
   },
   {
    "game": "car-cle",
-   "bet": "CAR -2.5",
+   "bet": "CAR -1.5",
    "conf": 3,
    "why": "Carolina holds a clear efficiency and volume edge: 6.7 yards per play and 61 snaps a game against a Cleveland offence at 16.5 points, 52 snaps and the worst yards before contact in the NFL. That gap justifies laying a short road number even with Carolina's 28th-ranked defence and a patched offensive line. The total is the softer side: Cleveland's pace and red-zone problems argue under, but Carolina has hung 71 points in two weeks. A 24-20 projection sits just under the number, so the under is a lean rather than a conviction play.",
    "gameLabel": "CAR@CLE"
@@ -15298,14 +15242,14 @@
   },
   {
    "game": "lar-den",
-   "bet": "Under 44.5",
+   "bet": "Under 43.5",
    "conf": 3,
    "why": "Denver is last in EPA allowed per carry and is giving up 157.5 rushing yards per game, while the Rams average 142.5 on a near-even Williams/Corum split, which is the cleanest structural edge in the game. The Broncos' own offense has converted 26.1 percent of third downs and only 42.9 percent of red-zone trips into touchdowns, and Bo Nix has thrown an interception in each of his two starts. On the total, all four games these teams have played in 2026 finished at 41 points or fewer, and the Rams defense is allowing 281 total yards and 16.5 points per game. The main things arguing the other way are altitude, a Sunday night home crowd and the fact that a Nacua absence would let Surtain II devote full attention to Adams, which is why I am not going higher than a 3 on either side.",
    "gameLabel": "LAR@DEN"
   },
   {
    "game": "lv-no",
-   "bet": "NO -3",
+   "bet": "NO -3.5",
    "conf": 3,
    "why": "New Orleans has out-gained its opponents by a wide margin (409 yards per game to Las Vegas' 300) and every public model lands on the Saints, from ESPN's FPI at 64.6% to SportsLine covering New Orleans in 57% of simulations. The Raiders' 13.5 points allowed per game was built against Miami and a depleted Chargers passing game, which is a meaningfully softer slate than the Superdome home opener. On the total, DraftKings' 44.5 is the highest number in the market with books as low as 42.5, and both Raiders games so far have landed on exactly 40 combined points. The counter-argument is real: New Orleans plays at the league's fastest pace and its Week 1 game produced 61 points, which is why this is a small lean rather than a strong one.",
    "gameLabel": "LV@NO"
@@ -15319,7 +15263,7 @@
   },
   {
    "game": "ne-jax",
-   "bet": "Under 46.5",
+   "bet": "Under 45.5",
    "conf": 3,
    "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high.",
    "gameLabel": "NE@JAX"
@@ -15367,18 +15311,18 @@
    "legs": [
     "ATL/GB Under 44.5",
     "CIN/PIT Under 42.5",
-    "LAR/DEN Under 44.5"
+    "LAR/DEN Under 43.5"
    ],
    "why": "Totals block: every game where the desk rates the number 3 or better. At standard juice this pays about +596, so it needs 14% — these are scoring-environment calls, not side calls, which is why they are grouped rather than mixed with spreads. (Numbers updated to the live line.)",
    "type": "cross"
   },
   {
    "legs": [
-    "SF -8.5",
-    "BAL -3",
-    "CAR -2.5"
+    "SF -7.5",
+    "BAL -3.5",
+    "CAR -1.5"
    ],
-   "why": "Sides block: the spreads the desk rates 3 or better. Pays about +596 at standard juice, so it needs 14%. Each leg's reasoning is on its own game card.",
+   "why": "Sides block: the spreads the desk rates 3 or better. Pays about +596 at standard juice, so it needs 14%. Each leg's reasoning is on its own game card. (Numbers updated to the live line.)",
    "type": "cross"
   },
   {
@@ -15407,7 +15351,7 @@
  "maxConfidence": [
   {
    "game": "ari-sf",
-   "bet": "SF -8.5",
+   "bet": "SF -7.5",
    "kind": "side",
    "price": -110,
    "book": "FD/DK",
@@ -15443,7 +15387,7 @@
   },
   {
    "game": "bal-dal",
-   "bet": "BAL -3",
+   "bet": "BAL -3.5",
    "kind": "side",
    "price": -110,
    "book": "FD/DK",
@@ -15452,7 +15396,7 @@
   },
   {
    "game": "car-cle",
-   "bet": "CAR -2.5",
+   "bet": "CAR -1.5",
    "kind": "side",
    "price": -110,
    "book": "FD/DK",
@@ -15497,7 +15441,7 @@
   },
   {
    "game": "lar-den",
-   "bet": "Under 44.5",
+   "bet": "Under 43.5",
    "kind": "total",
    "price": -110,
    "book": "FD/DK",
@@ -15506,7 +15450,7 @@
   },
   {
    "game": "lv-no",
-   "bet": "NO -3",
+   "bet": "NO -3.5",
    "kind": "side",
    "price": -110,
    "book": "FD/DK",
@@ -15524,7 +15468,7 @@
   },
   {
    "game": "ne-jax",
-   "bet": "Under 46.5",
+   "bet": "Under 45.5",
    "kind": "total",
    "price": -110,
    "book": "FD/DK",
@@ -15533,7 +15477,7 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-09-26T19:49:13.669Z",
+  "gradedAt": "2026-09-27T10:43:35.121Z",
   "finals": 1,
   "games": 16,
   "summary": {
@@ -18005,7 +17949,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-09-26T19:49:13.670Z",
+  "updatedAt": "2026-09-27T10:43:35.122Z",
   "weeks": [
    {
     "week": 1,
@@ -18359,7 +18303,7 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-09-26T19:49:13.943Z",
+  "builtAt": "2026-09-27T10:43:35.266Z",
   "books": [
    "FD",
    "DK"
@@ -18820,19 +18764,35 @@
       "legs": [
        {
         "type": "side",
-        "label": "SF -8.5",
+        "label": "SF -7.5",
         "team": "SF",
         "game": "ari-sf",
         "gameLabel": "ARI@SF",
         "kickoff": "2026-09-27T20:05:00Z",
-        "prob": 0.562,
+        "prob": 0.577,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.038,
+        "edge": 0.053,
         "conf": 3,
-        "moved": null,
+        "moved": "model liked -8.5",
         "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low."
+       },
+       {
+        "type": "side",
+        "label": "CAR -1.5",
+        "team": "CAR",
+        "game": "car-cle",
+        "gameLabel": "CAR@CLE",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.577,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.053,
+        "conf": 3,
+        "moved": "model liked -2.5",
+        "why": "Carolina holds a clear efficiency and volume edge: 6.7 yards per play and 61 snaps a game against a Cleveland offence at 16.5 points, 52 snaps and the worst yards before contact in the NFL. That gap justifies laying a short road number even with Carolina's 28th-ranked defence and a patched offensive line. The total is the softer side: Cleveland's pace and red-zone problems argue under, but Carolina has hung 71 points in two weeks. A 24-20 projection sits just under the number, so the under is a lean rather than a conviction play."
        },
        {
         "type": "side",
@@ -18849,65 +18809,49 @@
         "conf": 2,
         "moved": null,
         "why": "Pittsburgh ranks 31st in offensive EPA at -42.9 and converts just 20% of third downs, and Rodgers has not completed a pass over 20 air yards all season, which caps the Steelers' realistic ceiling against a Cincinnati defense that has not allowed a passing touchdown. That supports the Under strongly, and the total's move from 47.5 to 42.5 confirms the direction rather than contradicting it. The side is a thinner call: Cincinnati's edge is real, but the number has already run from -1.5 to -3.5, and laying points on the road into a Steelers defense that leads the league in defensive EPA with a league-high 13.7% sack rate is uncomfortable with Burrow nursing ribs after five sacks in Week 2. Pittsburgh +3.5 at home in a division game has legitimate merit, so the lean on the side is small and the Under is where the stronger case sits."
-       },
-       {
-        "type": "side",
-        "label": "BUF -7",
-        "team": "BUF",
-        "game": "lac-buf",
-        "gameLabel": "LAC@BUF",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.569,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.045,
-        "conf": 3,
-        "moved": null,
-        "why": "Buffalo is 2-0 averaging 38.5 points and 7.1 yards per play while the Chargers sit 28th in points per drive and have scored exactly 14 in each loss. The personnel gap is concrete this week: Los Angeles has both starting tight ends on IR, its starting left guard and starting defensive tackle expected out, and Derwin James Jr. in a cast, all on a 10am body-clock road trip against a Bills team on extra rest that led the NFL with 14 pressures in Week 2 against an offensive line that put the ball on the ground six times. The total is the softer call: Buffalo has allowed 31 points in both games and 300.5 pass yards per game with no interceptions, which is enough to lift a bad Chargers offense, but 14 points per game is a real drag and models lean marginally under. I make it Bills by nine with the total landing just above the number."
        }
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.184,
-      "ev": 0.282,
-      "why": "Model 18% vs 14% implied at +596. SF -8.5: 56% model, -110 FD/DK; CIN -3.5: 58% model, -110 FD/DK; BUF -7: 57% model, -110 FD/DK.",
-      "score": 0.121
+      "prob": 0.192,
+      "ev": 0.334,
+      "why": "Model 19% vs 14% implied at +596. SF -7.5: 58% model, -110 FD/DK; CAR -1.5: 58% model, -110 FD/DK; CIN -3.5: 58% model, -110 FD/DK. Line moved since the model call: SF -7.5 (model liked -8.5), CAR -1.5 (model liked -2.5).",
+      "score": 0.146
      },
      {
       "rank": 2,
       "legs": [
        {
         "type": "side",
-        "label": "CAR -2.5",
+        "label": "SF -7.5",
+        "team": "SF",
+        "game": "ari-sf",
+        "gameLabel": "ARI@SF",
+        "kickoff": "2026-09-27T20:05:00Z",
+        "prob": 0.577,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.053,
+        "conf": 3,
+        "moved": "model liked -8.5",
+        "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low."
+       },
+       {
+        "type": "side",
+        "label": "CAR -1.5",
         "team": "CAR",
         "game": "car-cle",
         "gameLabel": "CAR@CLE",
         "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.562,
+        "prob": 0.577,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.038,
+        "edge": 0.053,
         "conf": 3,
-        "moved": null,
+        "moved": "model liked -2.5",
         "why": "Carolina holds a clear efficiency and volume edge: 6.7 yards per play and 61 snaps a game against a Cleveland offence at 16.5 points, 52 snaps and the worst yards before contact in the NFL. That gap justifies laying a short road number even with Carolina's 28th-ranked defence and a patched offensive line. The total is the softer side: Cleveland's pace and red-zone problems argue under, but Carolina has hung 71 points in two weeks. A 24-20 projection sits just under the number, so the under is a lean rather than a conviction play."
-       },
-       {
-        "type": "side",
-        "label": "CIN -3.5",
-        "team": "CIN",
-        "game": "cin-pit",
-        "gameLabel": "CIN@PIT",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.576,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.052,
-        "conf": 2,
-        "moved": null,
-        "why": "Pittsburgh ranks 31st in offensive EPA at -42.9 and converts just 20% of third downs, and Rodgers has not completed a pass over 20 air yards all season, which caps the Steelers' realistic ceiling against a Cincinnati defense that has not allowed a passing touchdown. That supports the Under strongly, and the total's move from 47.5 to 42.5 confirms the direction rather than contradicting it. The side is a thinner call: Cincinnati's edge is real, but the number has already run from -1.5 to -3.5, and laying points on the road into a Steelers defense that leads the league in defensive EPA with a league-high 13.7% sack rate is uncomfortable with Burrow nursing ribs after five sacks in Week 2. Pittsburgh +3.5 at home in a division game has legitimate merit, so the lean on the side is small and the Under is where the stronger case sits."
        },
        {
         "type": "side",
@@ -18928,16 +18872,32 @@
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.184,
-      "ev": 0.282,
-      "why": "Model 18% vs 14% implied at +596. CAR -2.5: 56% model, -110 FD/DK; CIN -3.5: 58% model, -110 FD/DK; BUF -7: 57% model, -110 FD/DK.",
-      "score": 0.121
+      "prob": 0.189,
+      "ev": 0.318,
+      "why": "Model 19% vs 14% implied at +596. SF -7.5: 58% model, -110 FD/DK; CAR -1.5: 58% model, -110 FD/DK; BUF -7: 57% model, -110 FD/DK. Line moved since the model call: SF -7.5 (model liked -8.5), CAR -1.5 (model liked -2.5).",
+      "score": 0.138
      },
      {
       "rank": 3,
       "legs": [
        {
         "type": "side",
+        "label": "SF -7.5",
+        "team": "SF",
+        "game": "ari-sf",
+        "gameLabel": "ARI@SF",
+        "kickoff": "2026-09-27T20:05:00Z",
+        "prob": 0.577,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.053,
+        "conf": 3,
+        "moved": "model liked -8.5",
+        "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low."
+       },
+       {
+        "type": "side",
         "label": "CIN -3.5",
         "team": "CIN",
         "game": "cin-pit",
@@ -18967,66 +18927,77 @@
         "conf": 3,
         "moved": null,
         "why": "Buffalo is 2-0 averaging 38.5 points and 7.1 yards per play while the Chargers sit 28th in points per drive and have scored exactly 14 in each loss. The personnel gap is concrete this week: Los Angeles has both starting tight ends on IR, its starting left guard and starting defensive tackle expected out, and Derwin James Jr. in a cast, all on a 10am body-clock road trip against a Bills team on extra rest that led the NFL with 14 pressures in Week 2 against an offensive line that put the ball on the ground six times. The total is the softer call: Buffalo has allowed 31 points in both games and 300.5 pass yards per game with no interceptions, which is enough to lift a bad Chargers offense, but 14 points per game is a real drag and models lean marginally under. I make it Bills by nine with the total landing just above the number."
-       },
-       {
-        "type": "side",
-        "label": "LAR -2.5",
-        "team": "LAR",
-        "game": "lar-den",
-        "gameLabel": "LAR@DEN",
-        "kickoff": "2026-09-28T00:20:00Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
-        "conf": 3,
-        "moved": null,
-        "why": "Denver is last in EPA allowed per carry and is giving up 157.5 rushing yards per game, while the Rams average 142.5 on a near-even Williams/Corum split, which is the cleanest structural edge in the game. The Broncos' own offense has converted 26.1 percent of third downs and only 42.9 percent of red-zone trips into touchdowns, and Bo Nix has thrown an interception in each of his two starts. On the total, all four games these teams have played in 2026 finished at 41 points or fewer, and the Rams defense is allowing 281 total yards and 16.5 points per game. The main things arguing the other way are altitude, a Sunday night home crowd and the fact that a Nacua absence would let Surtain II devote full attention to Adams, which is why I am not going higher than a 3 on either side."
        }
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.184,
-      "ev": 0.282,
-      "why": "Model 18% vs 14% implied at +596. CIN -3.5: 58% model, -110 FD/DK; BUF -7: 57% model, -110 FD/DK; LAR -2.5: 56% model, -110 FD/DK.",
-      "score": 0.121
+      "prob": 0.189,
+      "ev": 0.316,
+      "why": "Model 19% vs 14% implied at +596. SF -7.5: 58% model, -110 FD/DK; CIN -3.5: 58% model, -110 FD/DK; BUF -7: 57% model, -110 FD/DK. Line moved since the model call: SF -7.5 (model liked -8.5).",
+      "score": 0.137
      },
      {
       "rank": 4,
       "legs": [
        {
         "type": "side",
-        "label": "SF -8.5",
-        "team": "SF",
-        "game": "ari-sf",
-        "gameLabel": "ARI@SF",
-        "kickoff": "2026-09-27T20:05:00Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
-        "conf": 3,
-        "moved": null,
-        "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low."
-       },
-       {
-        "type": "side",
-        "label": "CAR -2.5",
+        "label": "CAR -1.5",
         "team": "CAR",
         "game": "car-cle",
         "gameLabel": "CAR@CLE",
         "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.562,
+        "prob": 0.577,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.038,
+        "edge": 0.053,
         "conf": 3,
-        "moved": null,
+        "moved": "model liked -2.5",
         "why": "Carolina holds a clear efficiency and volume edge: 6.7 yards per play and 61 snaps a game against a Cleveland offence at 16.5 points, 52 snaps and the worst yards before contact in the NFL. That gap justifies laying a short road number even with Carolina's 28th-ranked defence and a patched offensive line. The total is the softer side: Cleveland's pace and red-zone problems argue under, but Carolina has hung 71 points in two weeks. A 24-20 projection sits just under the number, so the under is a lean rather than a conviction play."
        },
+       {
+        "type": "side",
+        "label": "CIN -3.5",
+        "team": "CIN",
+        "game": "cin-pit",
+        "gameLabel": "CIN@PIT",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.576,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.052,
+        "conf": 2,
+        "moved": null,
+        "why": "Pittsburgh ranks 31st in offensive EPA at -42.9 and converts just 20% of third downs, and Rodgers has not completed a pass over 20 air yards all season, which caps the Steelers' realistic ceiling against a Cincinnati defense that has not allowed a passing touchdown. That supports the Under strongly, and the total's move from 47.5 to 42.5 confirms the direction rather than contradicting it. The side is a thinner call: Cincinnati's edge is real, but the number has already run from -1.5 to -3.5, and laying points on the road into a Steelers defense that leads the league in defensive EPA with a league-high 13.7% sack rate is uncomfortable with Burrow nursing ribs after five sacks in Week 2. Pittsburgh +3.5 at home in a division game has legitimate merit, so the lean on the side is small and the Under is where the stronger case sits."
+       },
+       {
+        "type": "side",
+        "label": "BUF -7",
+        "team": "BUF",
+        "game": "lac-buf",
+        "gameLabel": "LAC@BUF",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.569,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.045,
+        "conf": 3,
+        "moved": null,
+        "why": "Buffalo is 2-0 averaging 38.5 points and 7.1 yards per play while the Chargers sit 28th in points per drive and have scored exactly 14 in each loss. The personnel gap is concrete this week: Los Angeles has both starting tight ends on IR, its starting left guard and starting defensive tackle expected out, and Derwin James Jr. in a cast, all on a 10am body-clock road trip against a Bills team on extra rest that led the NFL with 14 pressures in Week 2 against an offensive line that put the ball on the ground six times. The total is the softer call: Buffalo has allowed 31 points in both games and 300.5 pass yards per game with no interceptions, which is enough to lift a bad Chargers offense, but 14 points per game is a real drag and models lean marginally under. I make it Bills by nine with the total landing just above the number."
+       }
+      ],
+      "decimal": 6.958,
+      "price": 596,
+      "prob": 0.189,
+      "ev": 0.316,
+      "why": "Model 19% vs 14% implied at +596. CAR -1.5: 58% model, -110 FD/DK; CIN -3.5: 58% model, -110 FD/DK; BUF -7: 57% model, -110 FD/DK. Line moved since the model call: CAR -1.5 (model liked -2.5).",
+      "score": 0.137
+     },
+     {
+      "rank": 5,
+      "legs": [
        {
         "type": "side",
         "label": "LAR -2.5",
@@ -19042,49 +19013,6 @@
         "conf": 3,
         "moved": null,
         "why": "Denver is last in EPA allowed per carry and is giving up 157.5 rushing yards per game, while the Rams average 142.5 on a near-even Williams/Corum split, which is the cleanest structural edge in the game. The Broncos' own offense has converted 26.1 percent of third downs and only 42.9 percent of red-zone trips into touchdowns, and Bo Nix has thrown an interception in each of his two starts. On the total, all four games these teams have played in 2026 finished at 41 points or fewer, and the Rams defense is allowing 281 total yards and 16.5 points per game. The main things arguing the other way are altitude, a Sunday night home crowd and the fact that a Nacua absence would let Surtain II devote full attention to Adams, which is why I am not going higher than a 3 on either side."
-       }
-      ],
-      "decimal": 6.958,
-      "price": 596,
-      "prob": 0.178,
-      "ev": 0.235,
-      "why": "Model 18% vs 14% implied at +596. SF -8.5: 56% model, -110 FD/DK; CAR -2.5: 56% model, -110 FD/DK; LAR -2.5: 56% model, -110 FD/DK.",
-      "score": 0.099
-     },
-     {
-      "rank": 5,
-      "legs": [
-       {
-        "type": "side",
-        "label": "SF -8.5",
-        "team": "SF",
-        "game": "ari-sf",
-        "gameLabel": "ARI@SF",
-        "kickoff": "2026-09-27T20:05:00Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
-        "conf": 3,
-        "moved": null,
-        "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low."
-       },
-       {
-        "type": "side",
-        "label": "CAR -2.5",
-        "team": "CAR",
-        "game": "car-cle",
-        "gameLabel": "CAR@CLE",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
-        "conf": 3,
-        "moved": null,
-        "why": "Carolina holds a clear efficiency and volume edge: 6.7 yards per play and 61 snaps a game against a Cleveland offence at 16.5 points, 52 snaps and the worst yards before contact in the NFL. That gap justifies laying a short road number even with Carolina's 28th-ranked defence and a patched offensive line. The total is the softer side: Cleveland's pace and red-zone problems argue under, but Carolina has hung 71 points in two weeks. A 24-20 projection sits just under the number, so the under is a lean rather than a conviction play."
        },
        {
         "type": "side",
@@ -19103,12 +19031,12 @@
         "why": "Minnesota's defence is the clearest edge on the field: a league-best 33.6% pressure rate and the heaviest blitz rate in the NFL against a Baker Mayfield offence that has already taken seven sacks and produced three offensive touchdowns in two games. Tampa Bay is 0-2 and kicked four field goals in a home loss to Cleveland, which is the profile of a team that moves the ball and then stalls. The under is the softer of the two positions because Minnesota's own Week 1 game went 61 points and Kyler Murray's return could raise the Vikings' explosiveness, so it sits at a lower confidence. Getting Minnesota at only -1.5 on the road with the defence travelling better than the offence is the reason for a 3 on the side."
        }
       ],
-      "decimal": 6.958,
-      "price": 596,
-      "prob": 0.178,
-      "ev": 0.235,
-      "why": "Model 18% vs 14% implied at +596. SF -8.5: 56% model, -110 FD/DK; CAR -2.5: 56% model, -110 FD/DK; MIN -1.5: 56% model, -110 FD/DK.",
-      "score": 0.099
+      "decimal": 3.645,
+      "price": 264,
+      "prob": 0.316,
+      "ev": 0.151,
+      "why": "Model 32% vs 27% implied at +264. LAR -2.5: 56% model, -110 FD/DK; MIN -1.5: 56% model, -110 FD/DK.",
+      "score": 0.085
      }
     ]
    },
@@ -19137,17 +19065,17 @@
        },
        {
         "type": "total",
-        "label": "Under 46.5 NE@JAX",
+        "label": "Under 45.5 NE@JAX",
         "game": "ne-jax",
         "gameLabel": "NE@JAX",
         "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.591,
+        "prob": 0.577,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.067,
+        "edge": 0.053,
         "conf": 3,
-        "moved": "model liked 45.5",
+        "moved": null,
         "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
        },
        {
@@ -19168,14 +19096,29 @@
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.206,
-      "ev": 0.434,
-      "why": "Model 21% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 46.5 NE@JAX: 59% model, -110 FD/DK; Under 42.5 PHI@CHI: 59% model, -110 FD/DK.",
-      "score": 0.197
+      "prob": 0.201,
+      "ev": 0.4,
+      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK; Under 42.5 PHI@CHI: 59% model, -110 FD/DK.",
+      "score": 0.179
      },
      {
       "rank": 2,
       "legs": [
+       {
+        "type": "total",
+        "label": "Under 48.5 ARI@SF",
+        "game": "ari-sf",
+        "gameLabel": "ARI@SF",
+        "kickoff": "2026-09-27T20:05:00Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": "model liked 47.5",
+        "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low."
+       },
        {
         "type": "total",
         "label": "Under 42.5 CIN@PIT",
@@ -19193,41 +19136,26 @@
        },
        {
         "type": "total",
-        "label": "Under 46.5 NE@JAX",
-        "game": "ne-jax",
-        "gameLabel": "NE@JAX",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.591,
+        "label": "Under 42.5 PHI@CHI",
+        "game": "phi-chi",
+        "gameLabel": "PHI@CHI",
+        "kickoff": "2026-09-29T00:15:00Z",
+        "prob": 0.59,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.067,
-        "conf": 3,
-        "moved": "model liked 45.5",
-        "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
-       },
-       {
-        "type": "total",
-        "label": "Under 48.5 NYJ@DET",
-        "game": "nyj-det",
-        "gameLabel": "NYJ@DET",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
+        "edge": 0.066,
         "conf": 2,
-        "moved": null,
-        "why": "Detroit is the better team and should win, but the number is priced off Detroit's offence rather than the defence the Jets bring: New York is first in total defence at 197 yards a game, third in yards per play, and first in time-of-possession differential, which is how a favourite this size fails to cover. Detroit's own defence is genuinely bad, 917 yards and 71 points allowed with both starting safeties on reserve, so this should stay competitive rather than become a runaway. On the total, the Jets' pace and three-and-out rate cut the play count enough to project roughly 46 combined points."
+        "moved": "model liked 41.5",
+        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
        }
       ],
       "decimal": 6.958,
       "price": 596,
       "prob": 0.196,
-      "ev": 0.366,
-      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 46.5 NE@JAX: 59% model, -110 FD/DK; Under 48.5 NYJ@DET: 56% model, -110 FD/DK.",
-      "score": 0.162
+      "ev": 0.364,
+      "why": "Model 20% vs 14% implied at +596. Under 48.5 ARI@SF: 56% model, -110 FD/DK; Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 42.5 PHI@CHI: 59% model, -110 FD/DK.",
+      "score": 0.161
      },
      {
       "rank": 3,
@@ -19249,17 +19177,129 @@
        },
        {
         "type": "total",
-        "label": "Under 46.5 NE@JAX",
-        "game": "ne-jax",
-        "gameLabel": "NE@JAX",
+        "label": "Under 48.5 NYJ@DET",
+        "game": "nyj-det",
+        "gameLabel": "NYJ@DET",
         "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.591,
+        "prob": 0.562,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.067,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": null,
+        "why": "Detroit is the better team and should win, but the number is priced off Detroit's offence rather than the defence the Jets bring: New York is first in total defence at 197 yards a game, third in yards per play, and first in time-of-possession differential, which is how a favourite this size fails to cover. Detroit's own defence is genuinely bad, 917 yards and 71 points allowed with both starting safeties on reserve, so this should stay competitive rather than become a runaway. On the total, the Jets' pace and three-and-out rate cut the play count enough to project roughly 46 combined points."
+       },
+       {
+        "type": "total",
+        "label": "Under 42.5 PHI@CHI",
+        "game": "phi-chi",
+        "gameLabel": "PHI@CHI",
+        "kickoff": "2026-09-29T00:15:00Z",
+        "prob": 0.59,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.066,
+        "conf": 2,
+        "moved": "model liked 41.5",
+        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
+       }
+      ],
+      "decimal": 6.958,
+      "price": 596,
+      "prob": 0.196,
+      "ev": 0.364,
+      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 48.5 NYJ@DET: 56% model, -110 FD/DK; Under 42.5 PHI@CHI: 59% model, -110 FD/DK.",
+      "score": 0.161
+     },
+     {
+      "rank": 4,
+      "legs": [
+       {
+        "type": "total",
+        "label": "Under 48.5 ARI@SF",
+        "game": "ari-sf",
+        "gameLabel": "ARI@SF",
+        "kickoff": "2026-09-27T20:05:00Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": "model liked 47.5",
+        "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low."
+       },
+       {
+        "type": "total",
+        "label": "Under 45.5 NE@JAX",
+        "game": "ne-jax",
+        "gameLabel": "NE@JAX",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.577,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.053,
         "conf": 3,
-        "moved": "model liked 45.5",
+        "moved": null,
+        "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
+       },
+       {
+        "type": "total",
+        "label": "Under 48.5 NYJ@DET",
+        "game": "nyj-det",
+        "gameLabel": "NYJ@DET",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": null,
+        "why": "Detroit is the better team and should win, but the number is priced off Detroit's offence rather than the defence the Jets bring: New York is first in total defence at 197 yards a game, third in yards per play, and first in time-of-possession differential, which is how a favourite this size fails to cover. Detroit's own defence is genuinely bad, 917 yards and 71 points allowed with both starting safeties on reserve, so this should stay competitive rather than become a runaway. On the total, the Jets' pace and three-and-out rate cut the play count enough to project roughly 46 combined points."
+       }
+      ],
+      "decimal": 6.958,
+      "price": 596,
+      "prob": 0.182,
+      "ev": 0.268,
+      "why": "Model 18% vs 14% implied at +596. Under 48.5 ARI@SF: 56% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK; Under 48.5 NYJ@DET: 56% model, -110 FD/DK.",
+      "score": 0.114
+     },
+     {
+      "rank": 5,
+      "legs": [
+       {
+        "type": "total",
+        "label": "Under 48.5 ARI@SF",
+        "game": "ari-sf",
+        "gameLabel": "ARI@SF",
+        "kickoff": "2026-09-27T20:05:00Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": "model liked 47.5",
+        "why": "San Francisco is 2-0 with top-five scoring on both sides of the ball and a quarterback completing 80.4% of his throws, while Arizona just lost at home by 24 to Seattle for an eighth straight home defeat and ranks 24th in scoring. The concrete reason for the higher side confidence is the combination of that form gap and a series in which San Francisco's recent wins have repeatedly come by 16 or more, plus a look-ahead number of SF -11.5 that makes 8.5 a discount. The total is the softer read: my projection lands right around 46, since Arizona has no James Conner, has frozen out Marvin Harrison Jr., and faces a run-stuffing front, while San Francisco tends to shorten games once ahead. Models are genuinely split here — Dimers and Covers lean Under, CBS leans Over — so I am keeping that confidence low."
+       },
+       {
+        "type": "total",
+        "label": "Under 45.5 NE@JAX",
+        "game": "ne-jax",
+        "gameLabel": "NE@JAX",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "prob": 0.577,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.053,
+        "conf": 3,
+        "moved": null,
         "why": "The projection lands almost exactly on the number, so the side is close to a coin flip and the lean is a small one toward the points. New England's defense ranks second in EPA per play, has allowed one offensive touchdown and is 0-for-3 in opponent red-zone touchdowns, which is the sturdiest thing either team has shown. The total is the cleaner read: New England is averaging 15.0 points on 32.1% third-down conversions with only two offensive touchdowns all year, both teams rank top-10 in time of possession, and the under is 2-0 in Patriots games. The counterweight is Jacksonville's 29th-ranked 6.1 yards per play allowed, which keeps confidence moderate rather than high."
        },
        {
@@ -19280,107 +19320,10 @@
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.196,
-      "ev": 0.366,
-      "why": "Model 20% vs 14% implied at +596. Under 42.5 CIN@PIT: 59% model, -110 FD/DK; Under 46.5 NE@JAX: 59% model, -110 FD/DK; Under 37.5 TEN@NYG: 56% model, -110 FD/DK.",
-      "score": 0.162
-     },
-     {
-      "rank": 4,
-      "legs": [
-       {
-        "type": "total",
-        "label": "Under 48.5 NYJ@DET",
-        "game": "nyj-det",
-        "gameLabel": "NYJ@DET",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
-        "conf": 2,
-        "moved": null,
-        "why": "Detroit is the better team and should win, but the number is priced off Detroit's offence rather than the defence the Jets bring: New York is first in total defence at 197 yards a game, third in yards per play, and first in time-of-possession differential, which is how a favourite this size fails to cover. Detroit's own defence is genuinely bad, 917 yards and 71 points allowed with both starting safeties on reserve, so this should stay competitive rather than become a runaway. On the total, the Jets' pace and three-and-out rate cut the play count enough to project roughly 46 combined points."
-       },
-       {
-        "type": "total",
-        "label": "Under 42.5 PHI@CHI",
-        "game": "phi-chi",
-        "gameLabel": "PHI@CHI",
-        "kickoff": "2026-09-29T00:15:00Z",
-        "prob": 0.59,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.066,
-        "conf": 2,
-        "moved": "model liked 41.5",
-        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
-       },
-       {
-        "type": "total",
-        "label": "Under 37.5 TEN@NYG",
-        "game": "ten-nyg",
-        "gameLabel": "TEN@NYG",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
-        "conf": 3,
-        "moved": "model liked 40.5",
-        "why": "The premise that Jaxson Dart starts does not hold — he is doubtful with a sprained MCL and Jameis Winston, who completed 40.7% of his throws in relief, is in line to start behind a line missing a questionable Andrew Thomas and without a fully healthy Malik Nabers. That is why a number that opened at Giants -5.5 to -6 is now -3 and already -2.5 in places, and the dog side is worth taking while the key number is still available. ESPN's own predictor has Tennessee at 59.6% against a market that makes New York a 57.2% de-vigged favourite, though Dimers sits firmly the other way, so confidence on the side stays low. The under is the firmer position: the total has dropped from 43 to 39.5 in two days, Tennessee is averaging 15.0 points and New York 17.0, and a backup quarterback in a 25%-precipitation, 17-mph-gust afternoon is not the setup for a shootout."
-       }
-      ],
-      "decimal": 6.958,
-      "price": 596,
-      "prob": 0.186,
-      "ev": 0.297,
-      "why": "Model 19% vs 14% implied at +596. Under 48.5 NYJ@DET: 56% model, -110 FD/DK; Under 42.5 PHI@CHI: 59% model, -110 FD/DK; Under 37.5 TEN@NYG: 56% model, -110 FD/DK.",
-      "score": 0.128
-     },
-     {
-      "rank": 5,
-      "legs": [
-       {
-        "type": "total",
-        "label": "Under 48.5 NYJ@DET",
-        "game": "nyj-det",
-        "gameLabel": "NYJ@DET",
-        "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
-        "conf": 2,
-        "moved": null,
-        "why": "Detroit is the better team and should win, but the number is priced off Detroit's offence rather than the defence the Jets bring: New York is first in total defence at 197 yards a game, third in yards per play, and first in time-of-possession differential, which is how a favourite this size fails to cover. Detroit's own defence is genuinely bad, 917 yards and 71 points allowed with both starting safeties on reserve, so this should stay competitive rather than become a runaway. On the total, the Jets' pace and three-and-out rate cut the play count enough to project roughly 46 combined points."
-       },
-       {
-        "type": "total",
-        "label": "Under 42.5 PHI@CHI",
-        "game": "phi-chi",
-        "gameLabel": "PHI@CHI",
-        "kickoff": "2026-09-29T00:15:00Z",
-        "prob": 0.59,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.066,
-        "conf": 2,
-        "moved": "model liked 41.5",
-        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
-       }
-      ],
-      "decimal": 3.645,
-      "price": 264,
-      "prob": 0.332,
-      "ev": 0.208,
-      "why": "Model 33% vs 27% implied at +264. Under 48.5 NYJ@DET: 56% model, -110 FD/DK; Under 42.5 PHI@CHI: 59% model, -110 FD/DK.",
-      "score": 0.12
+      "prob": 0.182,
+      "ev": 0.268,
+      "why": "Model 18% vs 14% implied at +596. Under 48.5 ARI@SF: 56% model, -110 FD/DK; Under 45.5 NE@JAX: 58% model, -110 FD/DK; Under 37.5 TEN@NYG: 56% model, -110 FD/DK.",
+      "score": 0.114
      }
     ]
    },
@@ -19394,16 +19337,16 @@
       "legs": [
        {
         "type": "side",
-        "label": "SEA -7.5",
+        "label": "SEA -8.5",
         "team": "SEA",
         "game": "sea-wsh",
         "gameLabel": "SEA@WSH",
         "kickoff": "2026-09-27T17:00:00Z",
-        "prob": 0.532,
+        "prob": 0.518,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.008,
+        "edge": -0.006,
         "conf": 2,
         "moved": "model liked -7",
         "why": "Seattle's defense has allowed 17 points across two games and leads the league in yards per play allowed at 3.8, and it now faces a Commanders offense starting Marcus Mariota, who threw for 111 yards on 16 attempts in relief. Both Seattle games have stayed under and Washington's own scoring has come mostly in garbage time against Philadelphia and Dallas. The side is thinner than it looks: this line has travelled from Washington +1.5 to +7 purely on quarterback news, Washington is home for the first time this year, and Seattle's own offense is converting only 33 percent of third downs with a committee backfield. I project 24-16, which covers by a point and lands under the total, so the under is the stronger of the two positions."
@@ -19432,10 +19375,10 @@
       ],
       "decimal": 7.541,
       "price": 654,
-      "prob": 0.203,
-      "ev": 0.528,
-      "why": "Model 20% vs 13% implied at +654. SEA -7.5: 53% model, -110 FD/DK; AJ Barner: 34% model, +295 DK. Correlated: the side and the scorer ride the same script. Straight multiplication; FD/DK same-game pricing will differ. Research stack: These two have accounted for all five Seattle touchdowns this season, so a Seahawks scoring day is very likely to run through both.",
-      "score": 0.238
+      "prob": 0.197,
+      "ev": 0.487,
+      "why": "Model 20% vs 13% implied at +654. SEA -8.5: 52% model, -110 FD/DK; AJ Barner: 34% model, +295 DK. Correlated: the side and the scorer ride the same script. Straight multiplication; FD/DK same-game pricing will differ. Research stack: These two have accounted for all five Seattle touchdowns this season, so a Seahawks scoring day is very likely to run through both.",
+      "score": 0.216
      },
      {
       "rank": 2,
@@ -19683,7 +19626,7 @@
        },
        {
         "type": "text",
-        "label": "LAR/DEN Under 44.5",
+        "label": "LAR/DEN Under 43.5",
         "price": null,
         "book": "",
         "prob": null
@@ -19700,21 +19643,21 @@
       "legs": [
        {
         "type": "text",
-        "label": "SF -8.5",
+        "label": "SF -7.5",
         "price": null,
         "book": "",
         "prob": null
        },
        {
         "type": "text",
-        "label": "BAL -3",
+        "label": "BAL -3.5",
         "price": null,
         "book": "",
         "prob": null
        },
        {
         "type": "text",
-        "label": "CAR -2.5",
+        "label": "CAR -1.5",
         "price": null,
         "book": "",
         "prob": null
@@ -19724,7 +19667,7 @@
       "decimal": null,
       "prob": null,
       "ev": null,
-      "why": "Sides block: the spreads the desk rates 3 or better. Pays about +596 at standard juice, so it needs 14%. Each leg's reasoning is on its own game card."
+      "why": "Sides block: the spreads the desk rates 3 or better. Pays about +596 at standard juice, so it needs 14%. Each leg's reasoning is on its own game card. (Numbers updated to the live line.)"
      },
      {
       "rank": 4,
