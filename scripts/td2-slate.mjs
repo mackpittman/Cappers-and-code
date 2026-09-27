@@ -43,13 +43,38 @@ const upcoming = board.games.filter(
     g.status?.state !== 'STATUS_IN_PROGRESS' &&
     Date.parse(g.kickoff) > Date.now(),
 );
+// Game-day lines straight from ESPN's scoreboard: the board on disk is whatever the last pipeline
+// run left, and a team total that moved two points since Friday moves its expected scores.
+const liveLines = {};
+try {
+  const sb = await get(
+    `https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=${SEASON}&seasontype=2&week=${board.week}`,
+  );
+  for (const e of sb.events || []) {
+    const c = e.competitions[0];
+    const a = c.competitors.find((x) => x.homeAway === 'away').team.abbreviation;
+    const h = c.competitors.find((x) => x.homeAway === 'home').team.abbreviation;
+    const o = (c.odds || [])[0];
+    if (o && typeof o.spread === 'number' && typeof o.overUnder === 'number')
+      liveLines[`${a}-${h}`.toLowerCase()] = {
+        homePoint: o.spread,
+        total: o.overUnder,
+        state: c.status?.type?.state,
+      };
+  }
+} catch (e) {
+  console.error(`live lines unavailable, using board: ${e.message}`);
+}
 const teams = {};
 for (const g of upcoming) {
+  const L = liveLines[g.id];
+  if (L?.state === 'in' || L?.state === 'post') continue;
   const hp =
+    L?.homePoint ??
     g.live?.spread?.homePoint ??
     -Number(String(g.lines.spread).split(' ').pop()) *
       (String(g.lines.spread).startsWith(g.home.abbr) ? 1 : -1);
-  const tot = g.live?.total?.point ?? g.lines.total;
+  const tot = L?.total ?? g.live?.total?.point ?? g.lines.total;
   const homePts = (tot - hp) / 2,
     awayPts = (tot + hp) / 2;
   // Roughly (points - 1.5) / 7.5 touchdowns; a 23.5-point team scores about 2.7.
