@@ -1,13 +1,13 @@
 {
  "season": 2026,
- "week": 3,
- "generatedAt": "2026-09-28T22:31:51.539Z",
+ "week": 4,
+ "generatedAt": "2026-09-29T11:33:29.573Z",
  "researchAsOf": "2026-09-24T22:57:23.035Z",
  "oddsFetchedAt": "2026-09-28T16:40:18.128Z",
  "oddsCredits": {
   "remaining": 134,
   "used": 366,
-  "spent7d": 74,
+  "spent7d": 72,
   "spent30d": 254,
   "reserve": 40
  },
@@ -30,8 +30,8 @@
   "reserve": 40,
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
- "linesSource": "ESPN/DraftKings",
- "injuriesFetchedAt": "2026-09-28T22:31:50.396Z",
+ "linesSource": null,
+ "injuriesFetchedAt": "2026-09-29T11:33:28.719Z",
  "notes": "Researched one game at a time, then validated for de-vigged win probability, implied team points and board depth before assembly. Anytime-TD prices marked \"verify\" could not be confirmed at a live sportsbook and must be checked before they are played.",
  "completed": [],
  "games": [
@@ -287,14 +287,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 30,
-     "home": 36
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -321,20 +314,20 @@
     ],
     "home": [
      {
+      "name": "James Thompson Jr.",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Thompson (ankle) won't play in San Francisco's Week 4 matchup versus the Broncos, Jennifer Lee Chan of NBC Sports Bay Area reports.",
+      "date": "2026-09-29T00:46Z"
+     },
+     {
       "name": "Nick Bosa",
       "pos": "DE",
       "status": "Out",
       "type": "out",
       "detail": "Coach Kyle Shanahan said Monday that Bosa (calf) won't play this coming Sunday against the Broncos, Cam Inman of The San Jose Mercury News reports.",
       "date": "2026-09-28T21:16Z"
-     },
-     {
-      "name": "James Thompson Jr.",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-28T19:05Z"
      },
      {
       "name": "Romello Height",
@@ -393,7 +386,7 @@
       "date": "2026-09-23T23:15Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -769,14 +762,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 35,
-     "home": 14
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -795,20 +781,20 @@
     ],
     "home": [
      {
+      "name": "Zach Bako-Bewele",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Packers placed Bako-Bewele (knee) on injured reserve Monday, Adam Schefter of ESPN reports.",
+      "date": "2026-09-29T00:26Z"
+     },
+     {
       "name": "Jayden Reed",
       "pos": "WR",
       "status": "Out",
       "type": "out",
       "detail": "Packers head coach Matt LaFleur said Monday that he still has no update regarding how long Reed (neck) will be sidelined, Matt Schneidman of The Athletic reports.",
       "date": "2026-09-28T19:00Z"
-     },
-     {
-      "name": "Zach Bako-Bewele",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-28T18:28Z"
      },
      {
       "name": "Aaron Banks",
@@ -859,7 +845,7 @@
       "date": "2026-09-25T02:48Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -1181,14 +1167,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 34,
-     "home": 31
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -1196,6 +1175,22 @@
    "pulls": {},
    "injuryReport": {
     "away": [
+     {
+      "name": "Ethan Pocic",
+      "pos": "C",
+      "status": "Out",
+      "type": "out",
+      "detail": "Pocic (knee) is set to miss significant time, Clifton Brown of the Ravens' official site reports.",
+      "date": "2026-09-29T01:00Z"
+     },
+     {
+      "name": "Jovaughn Gwyn",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "Gwyn (ankle) is set to miss significant time, Clifton Brown of the Ravens' official site reports.",
+      "date": "2026-09-29T00:53Z"
+     },
      {
       "name": "Ronnie Stanley",
       "pos": "OT",
@@ -1206,6 +1201,14 @@
      }
     ],
     "home": [
+     {
+      "name": "Jalen Thompson",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "Cowboys executive vice president Stephen Jones said Monday that Thompson (hamstring) is expected to miss four-plus weeks, Patrik Walker of the team's official site reports.",
+      "date": "2026-09-28T23:13Z"
+     },
      {
       "name": "DeMarvion Overshown",
       "pos": "LB",
@@ -1231,14 +1234,6 @@
       "date": "2026-09-28T18:21Z"
      },
      {
-      "name": "Jalen Thompson",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Thompson (hamstring) has been ruled out for the remainder of Sunday's contest against Baltimore, Nick Harris of the Fort Worth Star-Telegram reports.",
-      "date": "2026-09-27T22:09Z"
-     },
-     {
       "name": "P.J. Locke",
       "pos": "S",
       "status": "Injured Reserve",
@@ -1247,7 +1242,7 @@
       "date": "2026-09-26T18:27Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -1498,14 +1493,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 18,
-     "home": 21
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -1520,6 +1508,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Devin Lloyd",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Head coach Dave Canales expressed confidence Monday that Lloyd (calf) would be back at practice ahead of the Panthers' Week 4 home game against the Lions, Mike Kaye of ESPN.com reports.",
+      "date": "2026-09-28T23:16Z"
+     },
+     {
       "name": "Nick Scott",
       "pos": "S",
       "status": "Out",
@@ -1530,14 +1526,6 @@
      {
       "name": "Xavier Legette",
       "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-28T18:17Z"
-     },
-     {
-      "name": "Devin Lloyd",
-      "pos": "LB",
       "status": "Out",
       "type": "out",
       "detail": "out",
@@ -1582,9 +1570,25 @@
       "type": "Injured Reserve",
       "detail": "The Panthers placed Cherelus (shoulder) on injured reserve Saturday, Darin Gantt of the team's official site reports.",
       "date": "2026-09-26T18:01Z"
+     },
+     {
+      "name": "Jonathon Brooks",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Brooks is expected to undergo surgery Wednesday to repair a core-muscle injury and is likely to miss at least six weeks, Ian Rapoport of NFL Network reports.",
+      "date": "2026-09-23T13:10Z"
      }
     ],
     "home": [
+     {
+      "name": "Tyson Campbell",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Campbell (knee) was estimated as a limited participant in Monday's practice, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-29T00:11Z"
+     },
      {
       "name": "Teven Jenkins",
       "pos": "G",
@@ -1594,15 +1598,39 @@
       "date": "2026-09-28T18:19Z"
      },
      {
-      "name": "Tyson Campbell",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-28T18:19Z"
+      "name": "Grant Delpit",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Delpit (shoulder) was estimated as a limited participant in Monday's practice, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-29T00:02Z"
+     },
+     {
+      "name": "Tylan Wallace",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Wallace (knee) did not participate in the Browns' estimated practice Monday, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-28T23:55Z"
+     },
+     {
+      "name": "Tytus Howard",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-28T22:20Z"
+     },
+     {
+      "name": "Elgton Jenkins",
+      "pos": "C",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-09-28T22:19Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -1922,14 +1950,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 27,
-     "home": 30
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -1948,8 +1969,8 @@
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-09-28T21:18Z"
+      "detail": "Young (knee) is not expected to play in Week 4 against the Jaguars, Jay Morrison of SI.com reports.",
+      "date": "2026-09-28T23:37Z"
      },
      {
       "name": "B.J. Hill",
@@ -1990,8 +2011,8 @@
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-28T22:12Z"
+      "detail": "Ramsey (wrist) was estimated as a limited participant on Monday's practice report, Adam Caplan of SiriusXM NFL Radio reports.",
+      "date": "2026-09-28T23:45Z"
      },
      {
       "name": "Brandin Echols",
@@ -2010,7 +2031,7 @@
       "date": "2026-09-26T21:23Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -2309,14 +2330,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 17,
-     "home": 19
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -2407,7 +2421,7 @@
       "date": "2026-09-23T00:30Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -2703,14 +2717,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 24,
-     "home": 10
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -2730,16 +2737,16 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Josh Simmons",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-09-28T18:35Z"
-     },
-     {
       "name": "Chamarri Conner",
       "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "Conner (knee) has a good chance to play in Sunday's game against the Raiders, Matt McMullen of the Chiefs' official site reported Monday.",
+      "date": "2026-09-28T23:11Z"
+     },
+     {
+      "name": "Josh Simmons",
+      "pos": "OT",
       "status": "Out",
       "type": "out",
       "detail": "out",
@@ -2788,7 +2795,7 @@
       "date": "2026-09-19T21:21Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -3081,14 +3088,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 16,
-     "home": 24
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -3151,14 +3151,6 @@
       "type": "Injured Reserve",
       "detail": "The Chargers placed Pipkins (knee) on injured reserve Saturday.",
       "date": "2026-09-26T21:25Z"
-     },
-     {
-      "name": "David Njoku",
-      "pos": "TE",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Chargers placed Njoku (fibula) on injured reserve Wednesday.",
-      "date": "2026-09-23T19:36Z"
      }
     ],
     "home": [
@@ -3203,7 +3195,7 @@
       "date": "2026-09-26T01:05Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -3294,14 +3286,6 @@
      "live": null
     },
     {
-     "name": "Terrance Ferguson",
-     "team": "LAR",
-     "price": 255,
-     "implied": 0.282,
-     "status": null,
-     "live": null
-    },
-    {
      "name": "Blake Corum",
      "team": "LAR",
      "price": 270,
@@ -3330,7 +3314,7 @@
      "team": "LAR",
      "price": 450,
      "implied": 0.182,
-     "status": null,
+     "status": "Questionable",
      "live": null
     },
     {
@@ -3392,19 +3376,6 @@
     }
    ],
    "value": [
-    {
-     "name": "Terrance Ferguson",
-     "team": "LAR",
-     "pos": "TE",
-     "price": 375,
-     "implied": 0.211,
-     "est": 0.26,
-     "why": "bet365 is 120 cents longer than the rest of the market on a rookie tight end who drew nine targets and scored the last time Nacua sat.",
-     "live2": null,
-     "live": null,
-     "edge": 0.049,
-     "status": null
-    },
     {
      "name": "Blake Corum",
      "team": "LAR",
@@ -3492,16 +3463,14 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 26,
-     "home": 30
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
+    {
+     "name": "Terrance Ferguson",
+     "team": "LAR",
+     "status": "Doubtful"
+    },
     {
      "name": "Puka Nacua",
      "team": "LAR",
@@ -3524,6 +3493,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Puka Nacua",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Head coach Sean McVay said Monday that the Rams are \"hopeful\" Nacua (hip) will return to action for Sunday's game at Philadelphia, Adam Grosbard of The Orange County Register reports.",
+      "date": "2026-09-28T22:38Z"
+     },
+     {
       "name": "Kamren Kinchens",
       "pos": "S",
       "status": "Out",
@@ -3532,20 +3509,28 @@
       "date": "2026-09-27T23:16Z"
      },
      {
-      "name": "Puka Nacua",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "Nacua (hip) is inactive for Sunday's game in Denver, Sarah Barshop of ESPN.com reports.",
-      "date": "2026-09-27T23:04Z"
-     },
-     {
       "name": "Jaylen Watson",
       "pos": "CB",
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Coach Sean McVay said Monday that Watson suffered a dislocated shoulder in Sunday night's loss to the Broncos, and he's likely to miss next Sunday's game against the Eagles, Adam Grosbard of The Orange County Register reports.",
+      "date": "2026-09-28T23:53Z"
+     },
+     {
+      "name": "Terrance Ferguson",
+      "pos": "TE",
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Coach Sean McVay said Monday that Ferguson \"likely\" will be sidelined for Sunday's game in Philadelphia, Adam Grosbard of The Orange County Register reports.",
+      "date": "2026-09-28T23:02Z"
+     },
+     {
+      "name": "Colby Parkinson",
+      "pos": "TE",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-28T04:05Z"
+      "detail": "Head coach Sean McVay said Monday that Parkinson is day-to-day due to an AC joint sprain in his shoulder that he picked up during the Rams' 30-26 loss to the Broncos on Sunday, Adam Grosbard of The Orange County Register reports.",
+      "date": "2026-09-28T23:06Z"
      },
      {
       "name": "Myles Garrett",
@@ -3582,7 +3567,7 @@
       "date": "2026-09-26T20:36Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -3862,14 +3847,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 35,
-     "home": 27
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -3917,8 +3895,8 @@
       "pos": "G",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Powers-Johnson (groin) is questionable to return to Sunday's game against the Saints.",
-      "date": "2026-09-27T23:40Z"
+      "detail": "Powers-Johnson (groin) is being evaluated to reveal the extent of his injury, Ryan McFadden of ESPN.com reports.",
+      "date": "2026-09-29T00:31Z"
      }
     ],
     "home": [
@@ -3979,7 +3957,7 @@
       "date": "2026-09-26T00:47Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -4258,14 +4236,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 23,
-     "home": 16
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -4285,6 +4256,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Charles Demmings",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Head coach Kevin O'Connell said Demmings will miss some time due to a hamstring injury, Ben Goessling of The Minnesota Star Tribune reports.",
+      "date": "2026-09-29T00:35Z"
+     },
+     {
       "name": "Brett Thorson",
       "pos": "P",
       "status": "Out",
@@ -4299,14 +4278,6 @@
       "type": "out",
       "detail": "Oliver was diagnosed with a torn biceps following an MRI on Monday and is expected to undergo surgery in the coming days, Jeremy Fowler of ESPN.com reports.",
       "date": "2026-09-28T18:21Z"
-     },
-     {
-      "name": "Charles Demmings",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Demmings (hamstring) has been ruled out for the remainder of Sunday's contest against the Buccaneers.",
-      "date": "2026-09-27T22:39Z"
      },
      {
       "name": "Justin Jefferson",
@@ -4326,6 +4297,14 @@
      }
     ],
     "home": [
+     {
+      "name": "Jalen McMillan",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "McMillan has been diagnosed with a PCL sprain in his left knee, Jenna Laine of ESPN.com reports.",
+      "date": "2026-09-29T00:03Z"
+     },
      {
       "name": "Josiah Trotter",
       "pos": "LB",
@@ -4349,17 +4328,9 @@
       "type": "out",
       "detail": "Buccaneers head coach Todd Bowles said Monday that Mayfield (thumb) is expected to miss three weeks, Adam Schefter of ESPN reports.",
       "date": "2026-09-28T16:41Z"
-     },
-     {
-      "name": "Jalen McMillan",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "McMillan is slated to undergo an MRI on his left knee Monday, Jenna Laine of ESPN.com reports.",
-      "date": "2026-09-28T15:01Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -4634,14 +4605,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 6,
-     "home": 35
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -4746,7 +4710,7 @@
       "date": "2026-09-17T00:17Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -5007,14 +4971,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 24,
-     "home": 31
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -5124,6 +5081,14 @@
       "date": "2026-09-28T18:26Z"
      },
      {
+      "name": "Cade Mays",
+      "pos": "C",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Mays (wrist) is targeting a Week 7 return from injured reserve, Dave Birkett of the Detroit Free Press reports.",
+      "date": "2026-09-29T01:05Z"
+     },
+     {
       "name": "Thomas Harper",
       "pos": "S",
       "status": "Injured Reserve",
@@ -5140,7 +5105,7 @@
       "date": "2026-09-23T00:33Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -5775,40 +5740,8 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_SCHEDULED",
-    "detail": "9/28 - 8:15 PM EDT",
-    "score": {
-     "away": 0,
-     "home": 0
-    }
-   },
-   "live": {
-    "source": "ESPN/DraftKings",
-    "fetchedAt": "2026-09-28T22:31:50.121Z",
-    "ml": {
-     "home": 164,
-     "away": -198,
-     "bestHome": null,
-     "bestAway": null,
-     "openHome": -118,
-     "openAway": -102
-    },
-    "spread": {
-     "homePoint": 3.5,
-     "homePrice": null,
-     "awayPrice": null
-    },
-    "total": {
-     "point": 42.5,
-     "over": null,
-     "under": null
-    },
-    "winProb": {
-     "away": 0.637,
-     "home": 0.363
-    }
-   },
+   "status": null,
+   "live": null,
    "scratched": [],
    "liveBoard": [
     {
@@ -6140,36 +6073,52 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Tanner McKee",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "McKee (coach's decision) is inactive but will serve as the team's emergency third quarterback Monday night against the Bears.",
+      "date": "2026-09-28T23:14Z"
+     },
+     {
       "name": "Fred Johnson",
       "pos": "OT",
       "status": "Out",
       "type": "out",
-      "detail": "Johnson (knee) has been ruled out ahead of Monday's game against the Bears.",
-      "date": "2026-09-26T21:21Z"
+      "detail": "inactive",
+      "date": "2026-09-28T22:47Z"
      },
      {
-      "name": "Hollywood Brown",
-      "pos": "WR",
+      "name": "Cole Payton",
+      "pos": "QB",
       "status": "Out",
       "type": "out",
-      "detail": "Brown (ankle) has been ruled out ahead of Monday's game against the Bears.",
-      "date": "2026-09-26T20:25Z"
+      "detail": "inactive",
+      "date": "2026-09-28T22:47Z"
+     },
+     {
+      "name": "AJ Epenesa",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-09-28T22:47Z"
      },
      {
       "name": "Dallas Goedert",
       "pos": "TE",
       "status": "Out",
       "type": "out",
-      "detail": "Goedert (knee) has been ruled out for Monday's game against the Bears.",
-      "date": "2026-09-26T20:01Z"
+      "detail": "inactive",
+      "date": "2026-09-28T22:47Z"
      },
      {
-      "name": "Jonathan Greenard",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Greenard (pectoral) is listed as questionable ahead of Monday's game against the Bears.",
-      "date": "2026-09-26T20:29Z"
+      "name": "Hollywood Brown",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-09-28T22:47Z"
      }
     ],
     "home": [
@@ -6178,8 +6127,40 @@
       "pos": "QB",
       "status": "Out",
       "type": "out",
-      "detail": "Williams, who is ruled out for Monday's game against the Eagles, has been diagnosed with a Grade 2 hamstring strain, which doctors consider a 3-to-4-week injury, Adam Schefter and Ian Rapoport of ESPN report.",
-      "date": "2026-09-27T12:12Z"
+      "detail": "inactive",
+      "date": "2026-09-28T22:49Z"
+     },
+     {
+      "name": "Ozzy Trapilo",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-09-28T22:49Z"
+     },
+     {
+      "name": "Jamree Kromah",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-09-28T22:49Z"
+     },
+     {
+      "name": "Jayden Loving",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-09-28T22:49Z"
+     },
+     {
+      "name": "Jordan McFadden",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-09-28T22:49Z"
      },
      {
       "name": "Shemar Turner",
@@ -6198,15 +6179,31 @@
       "date": "2026-09-23T22:34Z"
      },
      {
+      "name": "Cam Lewis",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Lewis (leg) exited Monday night's game against the Eagles early, Sean Hammond of the Chicago Tribune reports.",
+      "date": "2026-09-29T03:43Z"
+     },
+     {
+      "name": "Braxton Jones",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Jones (knee) is doubtful to return to Monday night's contest against the Eagles.",
+      "date": "2026-09-29T02:40Z"
+     },
+     {
       "name": "Anthony Johnson Jr.",
       "pos": "S",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
       "detail": "ir",
-      "date": "2026-09-28T22:20Z"
+      "date": "2026-09-29T11:00Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -6543,14 +6540,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 31,
-     "home": 33
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -6655,7 +6645,7 @@
       "date": "2026-09-28T19:21Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   },
   {
@@ -6972,14 +6962,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 7,
-     "home": 12
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -6992,16 +6975,16 @@
       "pos": "G",
       "status": "Doubtful",
       "type": "doubtful",
-      "detail": "doubtful",
-      "date": "2026-09-28T21:30Z"
+      "detail": "Carmona (ankle) is expected to miss a few weeks, NFL reporter Jordan Schultz reports.",
+      "date": "2026-09-29T00:40Z"
      },
      {
       "name": "Jackson Slater",
       "pos": "G",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-09-28T13:36Z"
+      "detail": "Slater suffered a significant foot injury during Tennessee's loss to the Giants on Sunday, Easton Freeze of AtoZSports.com reports.",
+      "date": "2026-09-29T00:11Z"
      }
     ],
     "home": [
@@ -7038,7 +7021,7 @@
       "date": "2026-09-24T20:44Z"
      }
     ],
-    "fetchedAt": "2026-09-28T22:31:50.396Z"
+    "fetchedAt": "2026-09-29T11:33:28.719Z"
    }
   }
  ],
@@ -7473,21 +7456,6 @@
    "kickoff": "2026-09-27T17:00:00Z"
   },
   {
-   "name": "Terrance Ferguson",
-   "team": "LAR",
-   "pos": "TE",
-   "price": 375,
-   "implied": 0.211,
-   "est": 0.26,
-   "why": "bet365 is 120 cents longer than the rest of the market on a rookie tight end who drew nine targets and scored the last time Nacua sat.",
-   "live2": null,
-   "live": null,
-   "edge": 0.049,
-   "status": null,
-   "gameId": "lar-den",
-   "kickoff": "2026-09-28T00:20:00Z"
-  },
-  {
    "name": "Blake Corum",
    "team": "LAR",
    "pos": "RB",
@@ -7669,6 +7637,67 @@
    "status": null,
    "gameId": "sea-wsh",
    "kickoff": "2026-09-27T17:00:00Z"
+  },
+  {
+   "name": "Rome Odunze",
+   "team": "CHI",
+   "pos": "WR",
+   "price": 450,
+   "implied": 0.182,
+   "est": 0.21,
+   "why": "Chicago's biggest boundary receiver is the natural red-zone fade target in a game plan built around fewer, higher-leverage throws, and his price drifted with the quarterback news rather than with his role.",
+   "live2": {
+    "best": 6000,
+    "bestBook": "draftkings",
+    "consensus": 5000,
+    "books": {
+     "draftkings": 6000,
+     "fanduel": 5500,
+     "betrivers": 4500,
+     "betonlineag": 3600,
+     "betmgm": 4000,
+     "bovada": 6000
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA372548603%232295566345_13L88808Q1-1587915923Q20",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463309&selectionId=48504773",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811749?coupon={pickType}|4349908348|{wagerAmount}",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687092-5849486&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+    },
+    "implied": 0.0196,
+    "fetchedAt": "2026-09-28T16:40:18.128Z"
+   },
+   "live": {
+    "best": 500,
+    "bestBook": "draftkings",
+    "consensus": 460,
+    "books": {
+     "draftkings": 500,
+     "fanduel": 470,
+     "betrivers": 430,
+     "betonlineag": 450,
+     "betmgm": 450,
+     "bovada": 500
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA371998135%232293372350_13L88808Q1-848465730Q20",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.610463308&selectionId=48504773",
+     "betrivers": "https://{state}.betrivers.com/?page=sportsbook#event/1028811749?coupon={pickType}|4349905535|{wagerAmount}",
+     "betonlineag": "https://sports.betonline.ag/sportsbook/football/nfl/game/491129558",
+     "betmgm": "https://sports.{state}.betmgm.com/en/sports?options=6:43462-3687080-5849464&type=Single",
+     "bovada": "https://www.bovada.lv/sports/football/nfl/philadelphia-eagles-chicago-bears-202609282015"
+    },
+    "implied": 0.1786,
+    "open": 425,
+    "move": 35,
+    "fetchedAt": "2026-09-28T16:40:18.128Z"
+   },
+   "edge": 0.031,
+   "status": null,
+   "gameId": "phi-chi",
+   "kickoff": "2026-09-29T00:15:00Z"
   }
  ],
  "bestBets": [
@@ -7979,15 +8008,15 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-09-28T22:31:51.184Z",
-  "finals": 15,
+  "gradedAt": "2026-09-29T11:33:29.491Z",
+  "finals": 16,
   "games": 16,
   "summary": {
    "all": {
-    "wins": 63,
-    "losses": 164,
+    "wins": 69,
+    "losses": 172,
     "pushes": 2,
-    "pending": 14
+    "pending": 0
    },
    "lockedIn": {
     "wins": 5,
@@ -7996,34 +8025,34 @@
     "pending": 0
    },
    "lean": {
-    "wins": 9,
+    "wins": 11,
     "losses": 20,
     "pushes": 1,
-    "pending": 2
+    "pending": 0
    },
    "top3": {
-    "wins": 17,
-    "losses": 28,
+    "wins": 18,
+    "losses": 30,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "td2": {
     "wins": 6,
-    "losses": 39,
+    "losses": 42,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "value": {
     "wins": 6,
-    "losses": 42,
+    "losses": 45,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "prop": {
-    "wins": 20,
+    "wins": 23,
     "losses": 23,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "calibration": {
     "td2": [
@@ -8036,7 +8065,7 @@
      },
      {
       "band": "8-15%",
-      "n": 19,
+      "n": 22,
       "model": 0.114,
       "actual": 0,
       "wins": 0
@@ -8066,10 +8095,10 @@
      },
      {
       "band": "40-50%",
-      "n": 19,
+      "n": 22,
       "model": 0.437,
-      "actual": 0.316,
-      "wins": 6
+      "actual": 0.318,
+      "wins": 7
      },
      {
       "band": "50-60%",
@@ -10072,139 +10101,142 @@
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "side",
     "label": "CHI +4.5",
-    "result": "pending",
     "conf": 2,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "total",
     "label": "Under 41.5",
-    "result": "pending",
     "conf": 2,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "atd",
     "label": "Saquon Barkley ATD",
-    "result": "pending",
     "est": 0.45,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "atd",
     "label": "Jalen Hurts ATD",
-    "result": "pending",
     "est": 0.44,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "win"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "atd",
     "label": "D'Andre Swift ATD",
-    "result": "pending",
     "est": 0.42,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "td2",
     "label": "Saquon Barkley 2+ TD",
-    "result": "pending",
     "est": 0.1211896495844087,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "td2",
     "label": "Jalen Hurts 2+ TD",
-    "result": "pending",
     "est": 0.1153016426583523,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "td2",
     "label": "D'Andre Swift 2+ TD",
-    "result": "pending",
     "est": 0.1040582382438302,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "atd",
     "label": "Rome Odunze ATD",
-    "result": "pending",
     "est": 0.21,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "atd",
     "label": "Johnny Mundt ATD",
-    "result": "pending",
     "est": 0.15,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "atd",
     "label": "Roschon Johnson ATD",
-    "result": "pending",
     "est": 0.05,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "prop",
     "label": "DeVonta Smith over 5.5 receptions",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 6,
+    "result": "win"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "prop",
     "label": "Colston Loveland over 27.5 reception yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 31,
+    "result": "win"
    },
    {
     "game": "phi-chi",
     "gameLabel": "PHI@CHI",
-    "final": null,
+    "final": "PHI 7, CHI 27",
     "type": "prop",
     "label": "Jalen Hurts under 218.5 pass yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 153,
+    "result": "win"
    },
    {
     "game": "sea-wsh",
@@ -10520,7 +10552,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-09-28T22:31:51.185Z",
+  "updatedAt": "2026-09-29T11:33:29.493Z",
   "weeks": [
    {
     "week": 1,
@@ -10746,14 +10778,14 @@
    },
    {
     "week": 3,
-    "finals": 15,
+    "finals": 16,
     "games": 16,
     "summary": {
      "all": {
-      "wins": 63,
-      "losses": 164,
+      "wins": 69,
+      "losses": 172,
       "pushes": 2,
-      "pending": 14
+      "pending": 0
      },
      "lockedIn": {
       "wins": 5,
@@ -10762,34 +10794,34 @@
       "pending": 0
      },
      "lean": {
-      "wins": 9,
+      "wins": 11,
       "losses": 20,
       "pushes": 1,
-      "pending": 2
+      "pending": 0
      },
      "top3": {
-      "wins": 17,
-      "losses": 28,
+      "wins": 18,
+      "losses": 30,
       "pushes": 0,
-      "pending": 3
+      "pending": 0
      },
      "td2": {
       "wins": 6,
-      "losses": 39,
+      "losses": 42,
       "pushes": 0,
-      "pending": 3
+      "pending": 0
      },
      "value": {
       "wins": 6,
-      "losses": 42,
+      "losses": 45,
       "pushes": 0,
-      "pending": 3
+      "pending": 0
      },
      "prop": {
-      "wins": 20,
+      "wins": 23,
       "losses": 23,
       "pushes": 0,
-      "pending": 3
+      "pending": 0
      },
      "calibration": {
       "td2": [
@@ -10802,7 +10834,7 @@
        },
        {
         "band": "8-15%",
-        "n": 19,
+        "n": 22,
         "model": 0.114,
         "actual": 0,
         "wins": 0
@@ -10832,10 +10864,10 @@
        },
        {
         "band": "40-50%",
-        "n": 19,
+        "n": 22,
         "model": 0.437,
-        "actual": 0.316,
-        "wins": 6
+        "actual": 0.318,
+        "wins": 7
        },
        {
         "band": "50-60%",
@@ -10858,10 +10890,10 @@
   ],
   "season_totals": {
    "all": {
-    "wins": 227,
-    "losses": 424,
+    "wins": 233,
+    "losses": 432,
     "pushes": 2,
-    "pending": 14
+    "pending": 0
    },
    "lockedIn": {
     "wins": 25,
@@ -10870,39 +10902,39 @@
     "pending": 0
    },
    "lean": {
-    "wins": 42,
+    "wins": 44,
     "losses": 46,
     "pushes": 1,
-    "pending": 2
+    "pending": 0
    },
    "top3": {
-    "wins": 59,
-    "losses": 79,
+    "wins": 60,
+    "losses": 81,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "td2": {
     "wins": 24,
-    "losses": 114,
+    "losses": 117,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "value": {
     "wins": 22,
-    "losses": 89,
+    "losses": 92,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "prop": {
-    "wins": 55,
+    "wins": 58,
     "losses": 69,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    }
   }
  },
  "parlays": {
-  "builtAt": "2026-09-28T22:31:51.541Z",
+  "builtAt": "2026-09-29T11:33:29.575Z",
   "books": [
    "FD",
    "DK"
@@ -10919,43 +10951,8 @@
    {
     "key": "twoPlus",
     "title": "2+ TD props",
-    "note": "Real FD/DK 2+ TD prices vs the model fair price. Unpriced players show fair and minimum playable price.",
-    "parlays": [
-     {
-      "rank": 1,
-      "legs": [
-       {
-        "type": "td2",
-        "td2": {
-         "price": 1200,
-         "book": "FD"
-        },
-        "status": null,
-        "label": "Jalen Hurts 2+ TDs",
-        "player": "Jalen Hurts",
-        "team": "PHI",
-        "pos": "QB",
-        "game": "phi-chi",
-        "gameLabel": "PHI@CHI",
-        "kickoff": "2026-09-29T00:15:00Z",
-        "prob": 0.115,
-        "price": 1200,
-        "book": "FD",
-        "implied": 0.077,
-        "edge": 0.038,
-        "why": "The sneak package remains Philadelphia's most reliable short-yardage answer and matters more with Dallas Goedert out and the backs averaging under three yards a carry."
-       }
-      ],
-      "price": 1200,
-      "decimal": 13,
-      "prob": 0.115,
-      "fairPrice": 770,
-      "minPrice": 813,
-      "ev": 0.495,
-      "why": "FD +1200 vs fair +770 (12% for two or more from a 44% anytime estimate). Priced with edge. The sneak package remains Philadelphia's most reliable short-yardage answer and matters more with Dallas Goedert out and the backs averaging under three yards a carry.",
-      "score": 0.168
-     }
-    ]
+    "note": "Model probability and fair price. No 2+ TD market pulled yet: confirm the FD/DK price before betting.",
+    "parlays": []
    },
    {
     "key": "sides",
@@ -10973,56 +10970,7 @@
     "key": "sameGame",
     "title": "Same-game stacks",
     "note": "Side plus scorer in one game. Book SGP pricing differs from straight multiplication.",
-    "parlays": [
-     {
-      "rank": 1,
-      "legs": [
-       {
-        "type": "side",
-        "label": "CHI +3.5",
-        "team": "CHI",
-        "game": "phi-chi",
-        "gameLabel": "PHI@CHI",
-        "kickoff": "2026-09-29T00:15:00Z",
-        "prob": 0.518,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": -0.006,
-        "conf": 2,
-        "moved": "model liked +4.5",
-        "why": "Philadelphia is 2-0 but has won by two and four while ranking 27th in success rate and 24th in first downs per game, and it now travels without Dallas Goedert, with Saquon Barkley banged up and with a reshuffled interior line that produced under three yards per carry in Tennessee. Chicago's defense held Minnesota to nine points and the Bears' Week 2 collapse was a red-zone and turnover story rather than a talent story. The spread has already moved six points and the total five since the look-ahead number, so most of the quarterback-news edge is priced in and taking the home points at 4.5 is the better side of a number that overshot. The Under is the cleaner of the two leans, but at 41.5 the margin is thin and a Caleb Williams return would argue the other way."
-       },
-       {
-        "type": "atd",
-        "td2": {
-         "price": 1200,
-         "book": "FD"
-        },
-        "status": null,
-        "label": "Jalen Hurts anytime TD",
-        "player": "Jalen Hurts",
-        "team": "PHI",
-        "pos": "QB",
-        "game": "phi-chi",
-        "gameLabel": "PHI@CHI",
-        "kickoff": "2026-09-29T00:15:00Z",
-        "prob": 0.44,
-        "price": 155,
-        "book": "FD",
-        "implied": 0.392,
-        "edge": 0.048,
-        "why": "The sneak package remains Philadelphia's most reliable short-yardage answer and matters more with Dallas Goedert out and the backs averaging under three yards a carry."
-       }
-      ],
-      "decimal": 4.868,
-      "price": 387,
-      "prob": 0.217,
-      "ev": 0.054,
-      "why": "Model 22% vs 21% implied at +387. CHI +3.5: 52% model, -110 FD/DK; Jalen Hurts: 44% model, +155 FD. Scorer on the other side of the number; treat as a hedge, not a stack. Straight multiplication; FD/DK same-game pricing will differ. Research stack: Chicago's realistic path to points with a backup quarterback is a grinding run-game script that keeps the clock moving and the scoreboard low.",
-      "score": 0.025
-     }
-    ]
+    "parlays": []
    },
    {
     "key": "model",
