@@ -99,7 +99,8 @@ export function twoPlusLegs(atd) {
   const out = [];
   for (const l of atd) {
     if (!l.td2) continue;
-    const prob = round(twoPlusProb(l.prob));
+    // The desk may write its own 2+ number (a role model gives one directly); derive only when it did not.
+    const prob = round(typeof l.prob2 === 'number' ? l.prob2 : twoPlusProb(l.prob));
     const implied = round(impliedFromAmerican(l.td2.price));
     out.push({
       ...l,

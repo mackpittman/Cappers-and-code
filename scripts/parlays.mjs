@@ -7,8 +7,8 @@
 // small correlation factor. 2+ TD props have no API market, so the builder publishes the model's
 // fair price and the minimum price that still carries edge; the book price is checked by hand.
 
-export const BOOKS = ['fanduel', 'draftkings'];
-const BOOK_LABEL = { fanduel: 'FD', draftkings: 'DK' };
+export const BOOKS = ['fanduel', 'draftkings', 'book'];
+const BOOK_LABEL = { fanduel: 'FD', draftkings: 'DK', book: 'BOOK' };
 const SIGMA_MARGIN = 13.5; // NFL point-margin standard deviation
 const SIGMA_TOTAL = 13.5;
 const CONF_PROB = { 1: 0.52, 2: 0.55, 3: 0.58, 4: 0.62 }; // what a Locked In confidence grade claims
@@ -148,9 +148,11 @@ export function atdLegs(board) {
       const bp = bookPrice(p.live?.books);
       if (!bp || typeof p.est !== 'number') continue;
       const td2 = bookPrice(p.live2?.books);
+      const prob2 = typeof p.est2 === 'number' ? p.est2 : null;
       legs.push({
         type: 'atd',
         td2,
+        prob2,
         status,
         label: `${p.name} anytime TD`,
         player: p.name,

@@ -982,8 +982,11 @@ if (process.env.GIVEN) {
     console.error(`no such leg: "${process.env.GIVEN}"`);
     process.exit(1);
   }
+  // GIVEN_NOT=1 flips it: the worlds where the anchor MISSED. That is the hedge question — what
+  // still pays when the leg you are holding does not.
+  const want = process.env.GIVEN_NOT === '1' ? 0 : 1;
   const idx = [];
-  for (let i = 0; i < SIMS; i++) if (anchor.arr[i]) idx.push(i);
+  for (let i = 0; i < SIMS; i++) if ((anchor.arr[i] ? 1 : 0) === want) idx.push(i);
   const base = idx.length / SIMS;
   const rows = [];
   for (const l of all) {
@@ -997,7 +1000,7 @@ if (process.env.GIVEN) {
   }
   const fmtP = (x) => `${(x * 100).toFixed(1)}%`;
   const fmtA = (a) => (a == null ? '   —  ' : `${a > 0 ? '+' : ''}${a}`.padStart(6));
-  console.log(`\nGIVEN ${anchor.label} (${fmtP(base)} of sims):`);
+  console.log(`\nGIVEN ${process.env.GIVEN_NOT === '1' ? 'NOT ' : ''}${anchor.label} (${fmtP(base)} of sims):`);
   console.log('  rises with it (priced legs, by lift):');
   for (const r of rows
     .filter((r) => r.price != null && r.lift > 1.1)
@@ -1034,6 +1037,15 @@ if (process.env.GIVEN) {
     console.log(
       `    ${r.label.padEnd(40)} ${'      '}  ${fmtP(r.p).padStart(6)} -> ${fmtP(r.cond).padStart(6)}  x${r.lift.toFixed(2)}`,
     );
+  // SHOW="leg||leg" prints named legs whatever their lift; for a hedge the interesting moves are small.
+  if (process.env.SHOW) {
+    console.log('  named legs:');
+    for (const label of process.env.SHOW.split('||').map((x) => x.trim())) {
+      const r = rows.find((x) => x.label === label);
+      if (r) console.log(`    ${r.label.padEnd(40)} ${fmtA(r.price)}  ${fmtP(r.p).padStart(6)} -> ${fmtP(r.cond).padStart(6)}  x${r.lift.toFixed(2)}`);
+      else console.log(`    ${label.padEnd(40)}  (not a leg or outside 3-97%)`);
+    }
+  }
   console.log('  near-free riders (>= 75% likely once it lands, priced):');
   for (const r of rows
     .filter((r) => r.price != null && r.cond >= 0.75 && r.lift > 1.05)

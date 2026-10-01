@@ -58,6 +58,10 @@ const soloNight = kickHour >= 19 && /THURSDAY|SUNDAY|MONDAY/.test(kickDay);
 const linesAt = stamp(board.oddsFetchedAt);
 const staleMin = Math.round((Date.parse(board.oddsFetchedAt) - Date.parse(marketAt)) / 60000);
 const evPct = (x) => `${x >= 0 ? '+' : ''}${Math.round(x * 100)}%`;
+// Where the player prices came from, for the header and the prop rows. A game priced from a
+// screenshot of one book is not "FanDuel/DraftKings".
+const PRICE_LABEL = process.env.PRICE_LABEL || 'FanDuel/DraftKings';
+const PRICE_SHORT = process.env.PRICE_SHORT || 'FD/DK';
 const VIG = 0.93; // a lone anytime price carries roughly 7% hold once the book's whole board is summed
 
 // The board's lines.implied has its away/home keys swapped on every game, so derive the split from
@@ -167,7 +171,9 @@ const anytime = Object.values(evt.markets.player_anytime_td?.players ?? {})
 const A = Object.fromEntries(anytime.map((l) => [l.name, l]));
 
 const twoPlus = twoPlusLegs(atdLegs(board).filter((l) => l.game === GAME && !SCRATCH.has(l.player)))
-  .filter((l) => TD2_POSITIONS.has(l.pos))
+  // A receiver the desk wrote its own 2+ number on belongs on the list too; the position filter
+  // is there to keep derived numbers off wideouts, not the role model's.
+  .filter((l) => TD2_POSITIONS.has(l.pos) || typeof l.prob2 === 'number')
   .map((l) => ({
     kind: 'td2',
     label: `${l.player} 2+ TDs`,
@@ -223,7 +229,7 @@ const props = (game.propLines ?? [])
       side: lean.side,
       label: `${p.name} ${over ? 'Over' : 'Under'} ${p.line}`,
       price: over ? p.over : p.under,
-      book: 'FD/DK',
+      book: PRICE_SHORT,
       // A prop that ends up inside a stack needs a probability like any other leg. Without one the
       // stack's hit rate and EV both came out NaN and printed that way.
       implied: over ? impliedFromAmerican(p.over) : impliedFromAmerican(p.under),
@@ -374,12 +380,30 @@ for (let i = 0; i < pool.length; i++)
       combos.push(t);
     }
 combos.sort((a, b) => b.prob - a.prob);
+// A card that reads "Smith + Bigsby" four times is one idea, not four tickets. Each player may
+// carry at most LONG_MAX tickets counting the desk stacks above, and no long shot may reuse a pair
+// of legs that already sits on any earlier ticket.
+const LONG_MAX = Number(process.env.LONG_MAX ?? 2);
+const legName = (l) => l.name ?? l.label;
+const pairsOf = (legs) => {
+  const n = legs.map(legName).sort();
+  const out = [];
+  for (let i = 0; i < n.length; i++) for (let j = i + 1; j < n.length; j++) out.push(`${n[i]}|${n[j]}`);
+  return out;
+};
 const longs = [];
 const used = new Map();
+const seenPairs = new Set();
+for (const t of stacks) {
+  for (const l of t.legs) used.set(legName(l), (used.get(legName(l)) ?? 0) + 1);
+  for (const p of pairsOf(t.legs)) seenPairs.add(p);
+}
 for (const t of combos) {
-  if (t.legs.some((l) => (used.get(l.name) ?? 0) >= 3)) continue;
+  if (t.legs.some((l) => (used.get(legName(l)) ?? 0) >= LONG_MAX)) continue;
+  if (pairsOf(t.legs).some((p) => seenPairs.has(p))) continue;
   longs.push(t);
-  for (const l of t.legs) used.set(l.name, (used.get(l.name) ?? 0) + 1);
+  for (const l of t.legs) used.set(legName(l), (used.get(legName(l)) ?? 0) + 1);
+  for (const p of pairsOf(t.legs)) seenPairs.add(p);
   if (longs.length === 4) break;
 }
 
@@ -482,7 +506,7 @@ ${css}
     .replace(
       /, ([^,]*)$/,
       ' and $1',
-    )}. Player prices are FanDuel/DraftKings as of ${pulledAt} ET${staleMin > 90 ? `, the last time this game's props were pulled; the line and total are current to ${linesAt} ET` : ''}. A same-game parlay engine reprices a stack; the model numbers hold. Units, not dollars.</p>
+    )}. Player prices are ${PRICE_LABEL} as of ${pulledAt} ET${staleMin > 90 ? `, the last time this game's props were pulled; the line and total are current to ${linesAt} ET` : ''}. A same-game parlay engine reprices a stack; the model numbers hold. Units, not dollars.</p>
   ${SCRATCH.size ? `<div class="out"><b>OUT</b> ${esc([...SCRATCH].join(', '))} &mdash; removed from every list below. Prices for his team-mates are the book's pre-news numbers, so they understate the players absorbing the work.</div>` : ''}
   <div class="line"><span><b>${esc(spreadNow.label)}</b> SIDE ${spreadNow.conf}/5</span><span><b>${esc(total.label)}</b> TOTAL ${totalNow.conf}/5</span><span><b>${esc(favAbbr)} ${favPts}</b> · <b>${esc(dogAbbr)} ${dogPts}</b> IMPLIED</span></div>
   ${
@@ -515,7 +539,7 @@ ${css}
 
   ${
     td2Rows
-      ? `<h2>2+ touchdowns <small>backs and quarterbacks · with the cushion</small></h2>
+      ? `<h2>2+ touchdowns <small>backs, quarterbacks and any receiver the desk wrote a number on · with the cushion</small></h2>
   <p class="rule">Break-even is what the price needs to be worth playing. Cushion is how many points of model edge sit above it. The 2+ model is 5-34 on the season and 0 for 3 in its top band, so a thin cushion is a pass, not a coin flip.</p>
   <table class="td">
     <tr><th>#</th><th>Player</th><th class="r">2+ price</th><th class="r">Model</th><th class="r">Break-even</th><th class="r">Cushion</th><th class="r">EV</th></tr>
@@ -531,7 +555,7 @@ ${css}
   ${
     longs.length
       ? `<h2>Long shots <small>${longs.length} tickets · ${fmtPrice(BAND[0])} to ${fmtPrice(BAND[1])}</small></h2>
-  <p class="rule">Three legs each, drawn from the lists above, ranked by how often the model hits them. No player carries more than three tickets.</p>
+  <p class="rule">Three legs each, drawn from the lists above, ranked by how often the model hits them. No player carries more than three tickets, the stacks included, and no pair of legs repeats.</p>
   ${longs.map((t, i) => stackHtml(t, `#${i + 1}`)).join('\n')}`
       : ''
   }
