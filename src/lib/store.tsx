@@ -68,6 +68,51 @@ type Ctx = {
 };
 const BoardContext = createContext<Ctx | null>(null);
 
+const bundledBoard = bundled as unknown as Board;
+/** True when `x` is an earlier week, or the same week built earlier, than `than`. */
+function isOlder(
+  x: { season?: number; week?: number; generatedAt?: string },
+  than: { season?: number; week?: number; generatedAt?: string },
+): boolean {
+  const k = (b: typeof x) => [b.season ?? 0, b.week ?? 0];
+  const [xs, xw] = k(x);
+  const [ts, tw] = k(than);
+  if (xs !== ts) return xs < ts;
+  if (xw !== tw) return xw < tw;
+  return String(x.generatedAt ?? '') < String(than.generatedAt ?? '');
+}
+/** The non-member preview, built the same way scripts/publish-board.mjs builds it. */
+function previewOf(b: Board): Preview {
+  const any = b as any;
+  const games = (any.games ?? []) as any[];
+  return {
+    season: any.season,
+    week: any.week,
+    generatedAt: any.generatedAt,
+    oddsFetchedAt: any.oddsFetchedAt ?? null,
+    lockedIn: (any.bestBets ?? []).slice(0, 5).map((x: any) => ({
+      gameLabel: x.gameLabel,
+      market: /over|under/i.test(x.bet) ? 'Total' : /ATD/.test(x.bet) ? 'Anytime TD' : 'Side',
+      conf: x.conf,
+    })),
+    tdBoard: (any.slateTop ?? [])
+      .slice(0, 10)
+      .map((p: any) => ({ name: p.name, team: p.team, pos: p.pos })),
+    games: games.map((x) => ({
+      id: x.id,
+      away: x.away.abbr,
+      home: x.home.abbr,
+      kickoff: x.kickoff,
+    })),
+    memberCount: {
+      games: games.length,
+      picks: games.reduce((n, x) => n + (x.top3?.length ?? 0) + (x.value?.length ?? 0), 0),
+      stacks:
+        games.reduce((n, x) => n + (x.stacks?.length ?? 0), 0) + (any.crossStacks?.length ?? 0),
+    },
+  };
+}
+
 export function BoardProvider({ children }: { children: React.ReactNode }) {
   const [board, setBoard] = useState<Board>(bundled as unknown as Board);
   const [preview, setPreview] = useState<Preview | null>(null);
@@ -105,17 +150,23 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
     setError(null);
     try {
       if (supabaseConfigured) {
+        // The bundled board ships with every deploy, so when the pipeline has not published for a
+        // while it can be newer than what the server holds. Never trade a newer board for an older
+        // one: the member board, the preview and the cache all follow the same rule.
         const pv = (await fetchBoardPreview().catch(() => null)) as Preview | null;
-        if (pv) setPreview(pv);
+        setPreview(pv && !isOlder(pv, bundledBoard) ? pv : previewOf(bundledBoard));
         if (session) {
           const ent = await fetchEntitlement();
           setEntitlement(ent);
           if (ent.active) {
             const full = (await fetchBoard()) as Board | null;
-            if (full?.games?.length) {
+            if (full?.games?.length && !isOlder(full, bundledBoard)) {
               setBoard(full);
               setSource('member');
               await AsyncStorage.setItem(KEY_BOARD, JSON.stringify(full));
+            } else if (full?.games?.length) {
+              setBoard(bundledBoard);
+              setSource('bundled');
             }
           }
         }
@@ -251,7 +302,7 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
         if (s) setSettings((prev) => ({ ...prev, ...JSON.parse(s) }));
         if (b) {
           const cached = JSON.parse(b) as Board;
-          if (cached.generatedAt >= (bundled as any).generatedAt) {
+          if (!isOlder(cached, bundledBoard)) {
             setBoard(cached);
             setSource('cache');
           }
