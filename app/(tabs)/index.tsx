@@ -12,6 +12,7 @@ import { FeaturedSheet, PlaySheets } from '@/components/Sheets';
 import { supabaseConfigured } from '@/lib/supabase';
 import { AddToSlip, betToSlip, pickToSlip } from '@/components/Slip';
 import { Primetime } from '@/components/Primetime';
+import { TopTen } from '@/components/TopTen';
 import { primetimeGame } from '@/lib/primetime';
 import { fonts, space } from '@/theme';
 
@@ -84,6 +85,7 @@ export default function BoardScreen() {
             <Primetime board={board} pt={pt} />
           ) : (
             <>
+              <TopTen board={board} />
               <FeaturedSheet week={board.week} />
               {!!board.maxConfidence?.length && (
                 <>

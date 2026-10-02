@@ -236,6 +236,27 @@ export type MaxPlay = {
   why: string;
   legs?: TicketLeg[];
 };
+/** One row of the front page's top-10 lists (scripts/top-ten.mjs). */
+export type TopTenPlay = {
+  game: string;
+  gameLabel: string;
+  kickoff?: string;
+  bet: string;
+  price: number | null;
+  prob: number | null;
+  implied: number | null;
+  edge: number | null;
+  conf?: number | null;
+  fair?: number | null;
+  /** "verify" or "est." when the price is not confirmed at a book. */
+  priceNote?: string | null;
+  why?: string;
+};
+export type TopTen = {
+  builtAt: string;
+  note?: string;
+  categories: { key: string; title: string; blurb: string; plays: TopTenPlay[] }[];
+};
 export type Board = {
   season: number;
   week: number;
@@ -282,4 +303,5 @@ export type Board = {
   parlays?: Parlays | null;
   upsetLeans: { team: string; price: number; winProb: number; why: string }[];
   maxConfidence?: MaxPlay[];
+  topTen?: TopTen | null;
 };
