@@ -1,0 +1,2358 @@
+{
+ "season": 2026,
+ "week": 4,
+ "gradedAt": "2026-10-02T11:20:01.210Z",
+ "finals": 1,
+ "games": 16,
+ "summary": {
+  "all": {
+   "wins": 6,
+   "losses": 10,
+   "pushes": 0,
+   "pending": 217
+  },
+  "lockedIn": {
+   "wins": 1,
+   "losses": 1,
+   "pushes": 0,
+   "pending": 10
+  },
+  "lean": {
+   "wins": 0,
+   "losses": 2,
+   "pushes": 0,
+   "pending": 27
+  },
+  "top3": {
+   "wins": 2,
+   "losses": 1,
+   "pushes": 0,
+   "pending": 45
+  },
+  "td2": {
+   "wins": 0,
+   "losses": 3,
+   "pushes": 0,
+   "pending": 45
+  },
+  "value": {
+   "wins": 2,
+   "losses": 1,
+   "pushes": 0,
+   "pending": 44
+  },
+  "prop": {
+   "wins": 1,
+   "losses": 2,
+   "pushes": 0,
+   "pending": 46
+  },
+  "calibration": {
+   "td2": [
+    {
+     "band": "0-8%",
+     "n": 3,
+     "model": 0.057,
+     "actual": 0,
+     "wins": 0
+    }
+   ],
+   "top3": [
+    {
+     "band": "0-40%",
+     "n": 3,
+     "model": 0.316,
+     "actual": 0.667,
+     "wins": 2
+    }
+   ]
+  }
+ },
+ "items": [
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "atd",
+   "label": "Trey McBride ATD +195",
+   "result": "pending",
+   "conf": 4,
+   "bucket": "lockedIn"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "atd",
+   "label": "Michael Wilson ATD +300",
+   "result": "pending",
+   "conf": 3,
+   "bucket": "lockedIn"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "side",
+   "label": "ARI -2.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "total",
+   "label": "Under 44.5",
+   "result": "pending",
+   "conf": 2,
+   "bucket": "lean"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "atd",
+   "label": "Trey McBride ATD",
+   "result": "pending",
+   "est": 0.45,
+   "bucket": "top3"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "atd",
+   "label": "Michael Wilson ATD",
+   "result": "pending",
+   "est": 0.33,
+   "bucket": "top3"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "atd",
+   "label": "Jeremiyah Love ATD",
+   "result": "pending",
+   "est": 0.5,
+   "bucket": "top3"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "td2",
+   "label": "Trey McBride 2+ TD",
+   "result": "pending",
+   "est": 0.1211896495844087,
+   "bucket": "td2"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "td2",
+   "label": "Michael Wilson 2+ TD",
+   "result": "pending",
+   "est": 0.06168003037992609,
+   "bucket": "td2"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "td2",
+   "label": "Jeremiyah Love 2+ TD",
+   "result": "pending",
+   "est": 0.1994543326360355,
+   "bucket": "td2"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "atd",
+   "label": "Najee Harris ATD",
+   "result": "pending",
+   "est": 0.23,
+   "bucket": "value"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "atd",
+   "label": "Jacoby Brissett ATD",
+   "result": "pending",
+   "est": 0.19,
+   "bucket": "value"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "atd",
+   "label": "Marvin Harrison Jr. ATD",
+   "result": "pending",
+   "est": 0.15,
+   "bucket": "value"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "prop",
+   "label": "Trey McBride over 6.5 receptions",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "prop",
+   "label": "Jameis Winston under 204.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "ari-nyg",
+   "gameLabel": "ARI@NYG",
+   "final": null,
+   "type": "prop",
+   "label": "Cam Skattebo over 59.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "atd",
+   "label": "Juwan Johnson ATD +240",
+   "result": "pending",
+   "conf": 3,
+   "bucket": "lockedIn"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "side",
+   "label": "ATL +2.5",
+   "result": "pending",
+   "conf": 2,
+   "bucket": "lean"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "atd",
+   "label": "Juwan Johnson ATD",
+   "result": "pending",
+   "est": 0.37,
+   "bucket": "top3"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "atd",
+   "label": "Drake London ATD",
+   "result": "pending",
+   "est": 0.45,
+   "bucket": "top3"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "atd",
+   "label": "Kendre Miller ATD",
+   "result": "pending",
+   "est": 0.26,
+   "bucket": "top3"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "td2",
+   "label": "Juwan Johnson 2+ TD",
+   "result": "pending",
+   "est": 0.07891766045416793,
+   "bucket": "td2"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "td2",
+   "label": "Drake London 2+ TD",
+   "result": "pending",
+   "est": 0.1211896495844087,
+   "bucket": "td2"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "td2",
+   "label": "Kendre Miller 2+ TD",
+   "result": "pending",
+   "est": 0.037182231339898064,
+   "bucket": "td2"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "atd",
+   "label": "Noah Fant ATD",
+   "result": "pending",
+   "est": 0.21,
+   "bucket": "value"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "atd",
+   "label": "Devaughn Vele ATD",
+   "result": "pending",
+   "est": 0.22,
+   "bucket": "value"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "atd",
+   "label": "Austin Hooper ATD",
+   "result": "pending",
+   "est": 0.13,
+   "bucket": "value"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "prop",
+   "label": "Bijan Robinson over 85.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "prop",
+   "label": "Chris Olave over 84.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "atl-no",
+   "gameLabel": "ATL@NO",
+   "final": null,
+   "type": "prop",
+   "label": "Juwan Johnson over 36.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "atd",
+   "label": "Jake Ferguson ATD +310",
+   "result": "pending",
+   "conf": 3,
+   "bucket": "lockedIn"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "side",
+   "label": "DAL +3",
+   "result": "pending",
+   "conf": 2,
+   "bucket": "lean"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "total",
+   "label": "Under 48.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "atd",
+   "label": "Jake Ferguson ATD",
+   "result": "pending",
+   "est": 0.316,
+   "bucket": "top3"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "atd",
+   "label": "Woody Marks ATD",
+   "result": "pending",
+   "est": 0.36,
+   "bucket": "top3"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "atd",
+   "label": "CeeDee Lamb ATD",
+   "result": "pending",
+   "est": 0.43,
+   "bucket": "top3"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "td2",
+   "label": "Jake Ferguson 2+ TD",
+   "result": "pending",
+   "est": 0.05621860483004282,
+   "bucket": "td2"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "td2",
+   "label": "Woody Marks 2+ TD",
+   "result": "pending",
+   "est": 0.07437625431781159,
+   "bucket": "td2"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "td2",
+   "label": "CeeDee Lamb 2+ TD",
+   "result": "pending",
+   "est": 0.10959221665248153,
+   "bucket": "td2"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "atd",
+   "label": "KaVontae Turpin ATD",
+   "result": "pending",
+   "est": 0.11,
+   "bucket": "value"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "atd",
+   "label": "Xavier Hutchinson ATD",
+   "result": "pending",
+   "est": 0.19,
+   "bucket": "value"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "atd",
+   "label": "Ryan Flournoy ATD",
+   "result": "pending",
+   "est": 0.17,
+   "bucket": "value"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "prop",
+   "label": "CeeDee Lamb over 77.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "prop",
+   "label": "David Montgomery over 45.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "DAL@HOU",
+   "final": null,
+   "type": "prop",
+   "label": "Dalton Schultz under 44.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "atd",
+   "label": "Courtland Sutton ATD +250",
+   "result": "pending",
+   "conf": 3,
+   "bucket": "lockedIn"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "side",
+   "label": "SF -3",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "atd",
+   "label": "George Kittle ATD",
+   "result": "pending",
+   "est": 0.44,
+   "bucket": "top3"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "atd",
+   "label": "Courtland Sutton ATD",
+   "result": "pending",
+   "est": 0.34,
+   "bucket": "top3"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "atd",
+   "label": "Bo Nix ATD",
+   "result": "pending",
+   "est": 0.29,
+   "bucket": "top3"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "td2",
+   "label": "George Kittle 2+ TD",
+   "result": "pending",
+   "est": 0.1153016426583523,
+   "bucket": "td2"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "td2",
+   "label": "Courtland Sutton 2+ TD",
+   "result": "pending",
+   "est": 0.0657598069853006,
+   "bucket": "td2"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "td2",
+   "label": "Bo Nix 2+ TD",
+   "result": "pending",
+   "est": 0.046831880647789204,
+   "bucket": "td2"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "atd",
+   "label": "Nate Adkins ATD",
+   "result": "pending",
+   "est": 0.22,
+   "bucket": "value"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "atd",
+   "label": "Kyle Juszczyk ATD",
+   "result": "pending",
+   "est": 0.18,
+   "bucket": "value"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "atd",
+   "label": "Jordan Watkins ATD",
+   "result": "pending",
+   "est": 0.12,
+   "bucket": "value"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "prop",
+   "label": "Brock Purdy over 231.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "prop",
+   "label": "RJ Harvey over 21.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "den-sf",
+   "gameLabel": "DEN@SF",
+   "final": null,
+   "type": "prop",
+   "label": "Bo Nix under 222.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "atd",
+   "label": "Darren Waller ATD +300",
+   "result": "pending",
+   "conf": 4,
+   "bucket": "lockedIn"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "side",
+   "label": "DET -3.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "total",
+   "label": "Over 50.5",
+   "result": "pending",
+   "conf": 2,
+   "bucket": "lean"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "atd",
+   "label": "Darren Waller ATD",
+   "result": "pending",
+   "est": 0.36,
+   "bucket": "top3"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "atd",
+   "label": "Jahmyr Gibbs ATD",
+   "result": "pending",
+   "est": 0.66,
+   "bucket": "top3"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "atd",
+   "label": "Amon-Ra St. Brown ATD",
+   "result": "pending",
+   "est": 0.47,
+   "bucket": "top3"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "td2",
+   "label": "Darren Waller 2+ TD",
+   "result": "pending",
+   "est": 0.07437625431781159,
+   "bucket": "td2"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "td2",
+   "label": "Jahmyr Gibbs 2+ TD",
+   "result": "pending",
+   "est": 0.38116612967360686,
+   "bucket": "td2"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "td2",
+   "label": "Amon-Ra St. Brown 2+ TD",
+   "result": "pending",
+   "est": 0.13351451560893612,
+   "bucket": "td2"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "atd",
+   "label": "Isaac TeSlaa ATD",
+   "result": "pending",
+   "est": 0.2,
+   "bucket": "value"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "atd",
+   "label": "Tommy Tremble ATD",
+   "result": "pending",
+   "est": 0.13,
+   "bucket": "value"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "atd",
+   "label": "Bryce Young ATD",
+   "result": "pending",
+   "est": 0.11,
+   "bucket": "value"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "prop",
+   "label": "Jahmyr Gibbs over 84.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "prop",
+   "label": "Jared Goff over 262.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "DET@CAR",
+   "final": null,
+   "type": "prop",
+   "label": "Darren Waller over 3.5 receptions",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "atd",
+   "label": "Christian Watson ATD +160",
+   "result": "pending",
+   "conf": 3,
+   "bucket": "lockedIn"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "side",
+   "label": "TB +3.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "total",
+   "label": "Under 38.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "atd",
+   "label": "Christian Watson ATD",
+   "result": "pending",
+   "est": 0.45,
+   "bucket": "top3"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "atd",
+   "label": "Bucky Irving ATD",
+   "result": "pending",
+   "est": 0.42,
+   "bucket": "top3"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "atd",
+   "label": "MarShawn Lloyd ATD",
+   "result": "pending",
+   "est": 0.31,
+   "bucket": "top3"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "td2",
+   "label": "Christian Watson 2+ TD",
+   "result": "pending",
+   "est": 0.1211896495844087,
+   "bucket": "td2"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "td2",
+   "label": "Bucky Irving 2+ TD",
+   "result": "pending",
+   "est": 0.1040582382438302,
+   "bucket": "td2"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "td2",
+   "label": "MarShawn Lloyd 2+ TD",
+   "result": "pending",
+   "est": 0.053966059840325875,
+   "bucket": "td2"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "atd",
+   "label": "Cade Otton ATD",
+   "result": "pending",
+   "est": 0.16,
+   "bucket": "value"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "atd",
+   "label": "Jalon Daniels ATD",
+   "result": "pending",
+   "est": 0.21,
+   "bucket": "value"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "atd",
+   "label": "Kenny Gainwell ATD",
+   "result": "pending",
+   "est": 0.24,
+   "bucket": "value"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "prop",
+   "label": "Jordan Love over 235.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "prop",
+   "label": "Emeka Egbuka over 38.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "prop",
+   "label": "Bucky Irving over 55.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "atd",
+   "label": "Tyler Warren ATD +160",
+   "result": "pending",
+   "conf": 3,
+   "bucket": "lockedIn"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "atd",
+   "label": "Stefon Diggs ATD +250",
+   "result": "pending",
+   "conf": 3,
+   "bucket": "lockedIn"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "side",
+   "label": "WSH +3.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "total",
+   "label": "Over 48.5",
+   "result": "pending",
+   "conf": 2,
+   "bucket": "lean"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "atd",
+   "label": "Tyler Warren ATD",
+   "result": "pending",
+   "est": 0.44,
+   "bucket": "top3"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "atd",
+   "label": "Stefon Diggs ATD",
+   "result": "pending",
+   "est": 0.35,
+   "bucket": "top3"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "atd",
+   "label": "Terry McLaurin ATD",
+   "result": "pending",
+   "est": 0.33,
+   "bucket": "top3"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "td2",
+   "label": "Tyler Warren 2+ TD",
+   "result": "pending",
+   "est": 0.1153016426583523,
+   "bucket": "td2"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "td2",
+   "label": "Stefon Diggs 2+ TD",
+   "result": "pending",
+   "est": 0.06999110453990476,
+   "bucket": "td2"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "td2",
+   "label": "Terry McLaurin 2+ TD",
+   "result": "pending",
+   "est": 0.06168003037992609,
+   "bucket": "td2"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "atd",
+   "label": "Kaytron Allen ATD",
+   "result": "pending",
+   "est": 0.21,
+   "bucket": "value"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "atd",
+   "label": "Antonio Williams ATD",
+   "result": "pending",
+   "est": 0.15,
+   "bucket": "value"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "atd",
+   "label": "Laquon Treadwell ATD",
+   "result": "pending",
+   "est": 0.14,
+   "bucket": "value"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "prop",
+   "label": "Jonathan Taylor under 90.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "prop",
+   "label": "Terry McLaurin over 54.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "ind-wsh",
+   "gameLabel": "IND@WSH",
+   "final": null,
+   "type": "prop",
+   "label": "Josh Downs over 62.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "side",
+   "label": "JAX +2.5",
+   "result": "pending",
+   "conf": 2,
+   "bucket": "lean"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "total",
+   "label": "Under 51.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "atd",
+   "label": "Ja'Marr Chase ATD",
+   "result": "pending",
+   "est": 0.49,
+   "bucket": "top3"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "atd",
+   "label": "Bhayshul Tuten ATD",
+   "result": "pending",
+   "est": 0.48,
+   "bucket": "top3"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "atd",
+   "label": "Mike Gesicki ATD",
+   "result": "pending",
+   "est": 0.27,
+   "bucket": "top3"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "td2",
+   "label": "Ja'Marr Chase 2+ TD",
+   "result": "pending",
+   "est": 0.14659427783547951,
+   "bucket": "td2"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "td2",
+   "label": "Bhayshul Tuten 2+ TD",
+   "result": "pending",
+   "est": 0.13995823694853482,
+   "bucket": "td2"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "td2",
+   "label": "Mike Gesicki 2+ TD",
+   "result": "pending",
+   "est": 0.04026115626701887,
+   "bucket": "td2"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "atd",
+   "label": "Josh Cameron ATD",
+   "result": "pending",
+   "est": 0.21,
+   "bucket": "value"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "atd",
+   "label": "Trevor Lawrence ATD",
+   "result": "pending",
+   "est": 0.21,
+   "bucket": "value"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "prop",
+   "label": "Chase Brown under 64.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "prop",
+   "label": "Trevor Lawrence under 263.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "jax-cin",
+   "gameLabel": "JAX@CIN",
+   "final": null,
+   "type": "prop",
+   "label": "Brenton Strange over 32.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "side",
+   "label": "LV +4.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "total",
+   "label": "Under 47.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "atd",
+   "label": "Kenneth Walker III ATD",
+   "result": "pending",
+   "est": 0.601,
+   "bucket": "top3"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "atd",
+   "label": "Brock Bowers ATD",
+   "result": "pending",
+   "est": 0.429,
+   "bucket": "top3"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "atd",
+   "label": "Rashee Rice ATD",
+   "result": "pending",
+   "est": 0.387,
+   "bucket": "top3"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "td2",
+   "label": "Kenneth Walker III 2+ TD",
+   "result": "pending",
+   "est": 0.30472162373273765,
+   "bucket": "td2"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "td2",
+   "label": "Brock Bowers 2+ TD",
+   "result": "pending",
+   "est": 0.1090309744147816,
+   "bucket": "td2"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "td2",
+   "label": "Rashee Rice 2+ TD",
+   "result": "pending",
+   "est": 0.0870037197128476,
+   "bucket": "td2"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "atd",
+   "label": "Patrick Mahomes ATD",
+   "result": "pending",
+   "est": 0.24,
+   "bucket": "value"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "atd",
+   "label": "Cody White ATD",
+   "result": "pending",
+   "est": 0.244,
+   "bucket": "value"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "atd",
+   "label": "Mike Washington Jr. ATD",
+   "result": "pending",
+   "est": 0.148,
+   "bucket": "value"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "prop",
+   "label": "Brock Bowers over 6.5 receptions",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "prop",
+   "label": "Ashton Jeanty under 76.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "KC@LV",
+   "final": null,
+   "type": "prop",
+   "label": "Kenneth Walker III over 89.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "atd",
+   "label": "AJ Barner ATD +240",
+   "result": "pending",
+   "conf": 3,
+   "bucket": "lockedIn"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "side",
+   "label": "SEA -7",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "total",
+   "label": "Under 42.5",
+   "result": "pending",
+   "conf": 2,
+   "bucket": "lean"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "atd",
+   "label": "Jaxon Smith-Njigba ATD",
+   "result": "pending",
+   "est": 0.55,
+   "bucket": "top3"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "atd",
+   "label": "Omarion Hampton ATD",
+   "result": "pending",
+   "est": 0.45,
+   "bucket": "top3"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "atd",
+   "label": "AJ Barner ATD",
+   "result": "pending",
+   "est": 0.35,
+   "bucket": "top3"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "td2",
+   "label": "Jaxon Smith-Njigba 2+ TD",
+   "result": "pending",
+   "est": 0.2478729977126036,
+   "bucket": "td2"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "td2",
+   "label": "Omarion Hampton 2+ TD",
+   "result": "pending",
+   "est": 0.1211896495844087,
+   "bucket": "td2"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "td2",
+   "label": "AJ Barner 2+ TD",
+   "result": "pending",
+   "est": 0.06999110453990476,
+   "bucket": "td2"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "atd",
+   "label": "Keaton Mitchell ATD",
+   "result": "pending",
+   "est": 0.19,
+   "bucket": "value"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "atd",
+   "label": "Oronde Gadsden ATD",
+   "result": "pending",
+   "est": 0.19,
+   "bucket": "value"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "atd",
+   "label": "Tre' Harris ATD",
+   "result": "pending",
+   "est": 0.2,
+   "bucket": "value"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "prop",
+   "label": "Jaxon Smith-Njigba over 7.5 receptions",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "prop",
+   "label": "Justin Herbert under 229.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "prop",
+   "label": "Omarion Hampton under 64.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "lac-sea",
+   "gameLabel": "LAC@SEA",
+   "final": null,
+   "type": "prop",
+   "label": "Sam Darnold over 244.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "side",
+   "label": "LAR -3.5",
+   "result": "pending",
+   "conf": 2,
+   "bucket": "lean"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "total",
+   "label": "Under 42.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "atd",
+   "label": "Kyren Williams ATD",
+   "result": "pending",
+   "est": 0.53,
+   "bucket": "top3"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "atd",
+   "label": "Davante Adams ATD",
+   "result": "pending",
+   "est": 0.454,
+   "bucket": "top3"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "atd",
+   "label": "Dontayvion Wicks ATD",
+   "result": "pending",
+   "est": 0.291,
+   "bucket": "top3"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "td2",
+   "label": "Kyren Williams 2+ TD",
+   "result": "pending",
+   "est": 0.227681201006122,
+   "bucket": "td2"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "td2",
+   "label": "Davante Adams 2+ TD",
+   "result": "pending",
+   "est": 0.12359557843247138,
+   "bucket": "td2"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "td2",
+   "label": "Dontayvion Wicks 2+ TD",
+   "result": "pending",
+   "est": 0.04717507551294331,
+   "bucket": "td2"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "atd",
+   "label": "Tyler Higbee ATD",
+   "result": "pending",
+   "est": 0.246,
+   "bucket": "value"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "atd",
+   "label": "Tank Bigsby ATD",
+   "result": "pending",
+   "est": 0.193,
+   "bucket": "value"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "atd",
+   "label": "Konata Mumpfield ATD",
+   "result": "pending",
+   "est": 0.149,
+   "bucket": "value"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "prop",
+   "label": "Jalen Hurts under 204.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "prop",
+   "label": "Matthew Stafford over 251.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "lar-phi",
+   "gameLabel": "LAR@PHI",
+   "final": null,
+   "type": "prop",
+   "label": "Saquon Barkley over 74.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "side",
+   "label": "MIA +10.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "total",
+   "label": "Under 38.5",
+   "result": "pending",
+   "conf": 2,
+   "bucket": "lean"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "atd",
+   "label": "Aaron Jones Sr. ATD",
+   "result": "pending",
+   "est": 0.58,
+   "bucket": "top3"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "atd",
+   "label": "Ollie Gordon II ATD",
+   "result": "pending",
+   "est": 0.29,
+   "bucket": "top3"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "atd",
+   "label": "T.J. Hockenson ATD",
+   "result": "pending",
+   "est": 0.31,
+   "bucket": "top3"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "td2",
+   "label": "Aaron Jones Sr. 2+ TD",
+   "result": "pending",
+   "est": 0.28034469003322116,
+   "bucket": "td2"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "td2",
+   "label": "Ollie Gordon II 2+ TD",
+   "result": "pending",
+   "est": 0.046831880647789204,
+   "bucket": "td2"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "td2",
+   "label": "T.J. Hockenson 2+ TD",
+   "result": "pending",
+   "est": 0.053966059840325875,
+   "bucket": "td2"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "atd",
+   "label": "Jauan Jennings ATD",
+   "result": "pending",
+   "est": 0.22,
+   "bucket": "value"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "atd",
+   "label": "Malik Willis ATD",
+   "result": "pending",
+   "est": 0.19,
+   "bucket": "value"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "atd",
+   "label": "Jaylen Wright ATD",
+   "result": "pending",
+   "est": 0.17,
+   "bucket": "value"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "prop",
+   "label": "Aaron Jones Sr. over 64.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "prop",
+   "label": "Malik Washington over 38.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "mia-min",
+   "gameLabel": "MIA@MIN",
+   "final": null,
+   "type": "prop",
+   "label": "Kyler Murray under 209.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "side",
+   "label": "BUF -7",
+   "result": "pending",
+   "conf": 2,
+   "bucket": "lean"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "total",
+   "label": "Under 48.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "atd",
+   "label": "James Cook III ATD",
+   "result": "pending",
+   "est": 0.554,
+   "bucket": "top3"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "atd",
+   "label": "Josh Allen ATD",
+   "result": "pending",
+   "est": 0.572,
+   "bucket": "top3"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "atd",
+   "label": "Mack Hollins ATD",
+   "result": "pending",
+   "est": 0.301,
+   "bucket": "top3"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "td2",
+   "label": "James Cook III 2+ TD",
+   "result": "pending",
+   "est": 0.25204841762739016,
+   "bucket": "td2"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "td2",
+   "label": "Josh Allen 2+ TD",
+   "result": "pending",
+   "est": 0.2714211087960506,
+   "bucket": "td2"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "td2",
+   "label": "Mack Hollins 2+ TD",
+   "result": "pending",
+   "est": 0.05068492881291953,
+   "bucket": "td2"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "atd",
+   "label": "Dawson Knox ATD",
+   "result": "pending",
+   "est": 0.162,
+   "bucket": "value"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "atd",
+   "label": "Hunter Henry ATD",
+   "result": "pending",
+   "est": 0.241,
+   "bucket": "value"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "atd",
+   "label": "Romeo Doubs ATD",
+   "result": "pending",
+   "est": 0.231,
+   "bucket": "value"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "prop",
+   "label": "James Cook III over 88.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "prop",
+   "label": "Mack Hollins over 46.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "ne-buf",
+   "gameLabel": "NE@BUF",
+   "final": null,
+   "type": "prop",
+   "label": "Hunter Henry under 34.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "side",
+   "label": "NYJ +3.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "total",
+   "label": "Under 43.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "atd",
+   "label": "D'Andre Swift ATD",
+   "result": "pending",
+   "est": 0.52,
+   "bucket": "top3"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "atd",
+   "label": "Braelon Allen ATD",
+   "result": "pending",
+   "est": 0.47,
+   "bucket": "top3"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "atd",
+   "label": "Luther Burden III ATD",
+   "result": "pending",
+   "est": 0.32,
+   "bucket": "top3"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "td2",
+   "label": "D'Andre Swift 2+ TD",
+   "result": "pending",
+   "est": 0.21800323474995498,
+   "bucket": "td2"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "td2",
+   "label": "Braelon Allen 2+ TD",
+   "result": "pending",
+   "est": 0.13351451560893612,
+   "bucket": "td2"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "td2",
+   "label": "Luther Burden III 2+ TD",
+   "result": "pending",
+   "est": 0.057749513047850365,
+   "bucket": "td2"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "atd",
+   "label": "Kalif Raymond ATD",
+   "result": "pending",
+   "est": 0.24,
+   "bucket": "value"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "atd",
+   "label": "Rome Odunze ATD",
+   "result": "pending",
+   "est": 0.19,
+   "bucket": "value"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "atd",
+   "label": "Jeremy Ruckert ATD",
+   "result": "pending",
+   "est": 0.17,
+   "bucket": "value"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "prop",
+   "label": "Garrett Wilson over 6.5 receptions",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "prop",
+   "label": "Braelon Allen over 55.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "nyj-chi",
+   "gameLabel": "NYJ@CHI",
+   "final": null,
+   "type": "prop",
+   "label": "Case Keenum under 224.5 pass yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "atd",
+   "label": "Pat Freiermuth ATD +390",
+   "conf": 3,
+   "bucket": "lockedIn",
+   "result": "win"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "atd",
+   "label": "DK Metcalf ATD +230",
+   "conf": 3,
+   "bucket": "lockedIn",
+   "result": "loss"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "side",
+   "label": "PIT -2.5",
+   "conf": 2,
+   "bucket": "lean",
+   "result": "loss"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "total",
+   "label": "Under 38.5",
+   "conf": 1,
+   "bucket": "lean",
+   "result": "loss"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "atd",
+   "label": "Pat Freiermuth ATD",
+   "est": 0.272,
+   "bucket": "top3",
+   "result": "win"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "atd",
+   "label": "DK Metcalf ATD",
+   "est": 0.36,
+   "bucket": "top3",
+   "result": "loss"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "atd",
+   "label": "Harold Fannin Jr. ATD",
+   "est": 0.317,
+   "bucket": "top3",
+   "result": "win"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "td2",
+   "label": "Pat Freiermuth 2+ TD",
+   "est": 0.04089331998819168,
+   "bucket": "td2",
+   "result": "loss"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "td2",
+   "label": "DK Metcalf 2+ TD",
+   "est": 0.07437625431781159,
+   "bucket": "td2",
+   "result": "loss"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "td2",
+   "label": "Harold Fannin Jr. 2+ TD",
+   "est": 0.05659913354204993,
+   "bucket": "td2",
+   "result": "loss"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "atd",
+   "label": "Roman Wilson ATD",
+   "est": 0.202,
+   "bucket": "value",
+   "result": "win"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "atd",
+   "label": "Darnell Washington ATD",
+   "est": 0.135,
+   "bucket": "value",
+   "result": "win"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "atd",
+   "label": "Raheim Sanders ATD",
+   "est": 0.142,
+   "bucket": "value",
+   "result": "loss"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "prop",
+   "label": "Harold Fannin Jr. over 4.5 receptions",
+   "bucket": "prop",
+   "actual": 3,
+   "result": "loss"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "prop",
+   "label": "Jaylen Warren over 65.5 rush yds",
+   "bucket": "prop",
+   "actual": 93,
+   "result": "win"
+  },
+  {
+   "game": "pit-cle",
+   "gameLabel": "PIT@CLE",
+   "final": "PIT 24, CLE 27",
+   "type": "prop",
+   "label": "Deshaun Watson over 31.5 rush yds",
+   "bucket": "prop",
+   "actual": 22,
+   "result": "loss"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "side",
+   "label": "TEN +11.5",
+   "result": "pending",
+   "conf": 1,
+   "bucket": "lean"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "atd",
+   "label": "Derrick Henry ATD",
+   "result": "pending",
+   "est": 0.66,
+   "bucket": "top3"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "atd",
+   "label": "Zay Flowers ATD",
+   "result": "pending",
+   "est": 0.369,
+   "bucket": "top3"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "atd",
+   "label": "Tony Pollard ATD",
+   "result": "pending",
+   "est": 0.358,
+   "bucket": "top3"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "td2",
+   "label": "Derrick Henry 2+ TD",
+   "result": "pending",
+   "est": 0.38116612967360686,
+   "bucket": "td2"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "td2",
+   "label": "Zay Flowers 2+ TD",
+   "result": "pending",
+   "est": 0.07845641822577709,
+   "bucket": "td2"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "td2",
+   "label": "Tony Pollard 2+ TD",
+   "result": "pending",
+   "est": 0.07348680186242307,
+   "bucket": "td2"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "atd",
+   "label": "Cam Ward ATD",
+   "result": "pending",
+   "est": 0.21,
+   "bucket": "value"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "atd",
+   "label": "Elic Ayomanor ATD",
+   "result": "pending",
+   "est": 0.21,
+   "bucket": "value"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "atd",
+   "label": "Wan'Dale Robinson ATD",
+   "result": "pending",
+   "est": 0.181,
+   "bucket": "value"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "prop",
+   "label": "Carnell Tate over 44.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "prop",
+   "label": "Wan'Dale Robinson over 37.5 reception yds",
+   "result": "pending",
+   "bucket": "prop"
+  },
+  {
+   "game": "ten-bal",
+   "gameLabel": "TEN@BAL",
+   "final": null,
+   "type": "prop",
+   "label": "Lamar Jackson over 32.5 rush yds",
+   "result": "pending",
+   "bucket": "prop"
+  }
+ ],
+ "legs": []
+}
