@@ -235,6 +235,10 @@ export type MaxPlay = {
   book?: string | null;
   why: string;
   legs?: TicketLeg[];
+  /** Lotto tickets only: the model's joint hit rate, fair price and expected value. */
+  prob?: number;
+  fair?: number;
+  ev?: number;
 };
 /** One row of the front page's top-10 lists (scripts/top-ten.mjs). */
 export type TopTenPlay = {
@@ -304,4 +308,5 @@ export type Board = {
   upsetLeans: { team: string; price: number; winProb: number; why: string }[];
   maxConfidence?: MaxPlay[];
   topTen?: TopTen | null;
+  lottos?: MaxPlay[];
 };

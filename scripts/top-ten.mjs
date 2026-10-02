@@ -283,3 +283,88 @@ export function buildTopTen(board) {
     ],
   };
 }
+
+// ---------- weekend lottos ----------
+// Four tickets built from the top-10 lists by rule, one leg per game so the legs are independent
+// and the joint probability is honest: the four likeliest totals, the max-confidence five (top
+// three sides plus top two totals), four value scorers at confirmed prices, and three long shots
+// priced +500 or longer. Each carries its own hit rate and the price multiplied out.
+const dec = (a) => (a > 0 ? 1 + a / 100 : 1 + 100 / -a);
+const toAm = (d) => (d >= 2 ? Math.round((d - 1) * 100) : Math.round(-100 / (d - 1)));
+function distinct(list, n, used = new Set()) {
+  const out = [];
+  for (const p of list) {
+    if (out.length === n) break;
+    if (used.has(p.game) || p.price == null || p.prob == null) continue;
+    used.add(p.game);
+    out.push(p);
+  }
+  return out;
+}
+function ticket(name, why, legs, n) {
+  if (legs.length < n) return null;
+  const prob = legs.reduce((x, l) => x * l.prob, 1);
+  const d = legs.reduce((x, l) => x * dec(l.price), 1);
+  return {
+    game: legs[0].game,
+    gameLabel: `${legs.length} games`,
+    bet: name,
+    kind: 'parlay',
+    price: toAm(d),
+    book: legs.some((l) => l.priceNote) ? 'check prices' : 'desk prices',
+    prob: round(prob, 4),
+    fair: toAm(1 / prob),
+    ev: round(prob * d - 1, 2),
+    why: `${why} Hits ${(prob * 100).toFixed(1)}% of the time by the model, fair ${toAm(1 / prob) > 0 ? '+' : ''}${toAm(1 / prob)}.`,
+    legs: legs.map((l) => ({
+      label: `${l.gameLabel} ${l.bet}${l.priceNote ? ` (${l.priceNote})` : ''}`,
+      price: l.price,
+      book: null,
+    })),
+  };
+}
+export function buildLottos(topTen) {
+  const C = Object.fromEntries((topTen?.categories ?? []).map((c) => [c.key, c.plays]));
+  const byProb = (xs) => [...(xs ?? [])].sort((a, b) => b.prob - a.prob);
+  const out = [
+    ticket(
+      'Sunday unders, 4 legs',
+      'The four totals the projection is most sure land under, one per game.',
+      distinct(
+        byProb(C.totals).filter((x) => /^Under/.test(x.bet)),
+        4,
+      ),
+      4,
+    ),
+    (() => {
+      const used = new Set();
+      const sides = distinct(byProb(C.sides), 3, used);
+      const totals = distinct(byProb(C.totals), 2, used);
+      return ticket(
+        'Max confidence five',
+        'The top three sides and top two totals on the board, every leg a different game.',
+        [...sides, ...totals],
+        5,
+      );
+    })(),
+    ticket(
+      'TD value four',
+      'Four scorers the price undersells most, all confirmed at a book, all different games.',
+      distinct(
+        (C.value ?? []).filter((x) => !x.priceNote),
+        4,
+      ),
+      4,
+    ),
+    ticket(
+      'Long-shot scorers',
+      'Three scorers at +500 or longer whose role says the book is short. Prices need a check before you fire.',
+      distinct(
+        (C.value ?? []).filter((x) => x.price >= 500),
+        3,
+      ),
+      3,
+    ),
+  ];
+  return out.filter(Boolean);
+}

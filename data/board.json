@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 4,
- "generatedAt": "2026-10-02T15:29:27.290Z",
+ "generatedAt": "2026-10-02T17:16:56.254Z",
  "researchAsOf": "2026-10-02T15:29:12.165Z",
  "oddsFetchedAt": "2026-09-28T16:40:18.128Z",
  "oddsCredits": {
@@ -11347,7 +11347,7 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-10-02T15:29:27.295Z",
+  "builtAt": "2026-10-02T17:16:56.259Z",
   "books": [
    "FD",
    "DK",
@@ -11895,7 +11895,7 @@
   ]
  },
  "topTen": {
-  "builtAt": "2026-10-02T15:29:27.299Z",
+  "builtAt": "2026-10-02T17:16:56.262Z",
   "note": "Sides, totals and moneylines are priced from the projected score with the simulator’s spreads (13.4 margin, 10.6 total). Touchdown lists use the desk’s role-built estimates. Prop leans are not graded by a probability and are listed by kickoff.",
   "categories": [
    {
@@ -12924,5 +12924,143 @@
     ]
    }
   ]
- }
+ },
+ "lottos": [
+  {
+   "game": "ari-nyg",
+   "gameLabel": "4 games",
+   "bet": "Sunday unders, 4 legs",
+   "kind": "parlay",
+   "price": 1228,
+   "book": "desk prices",
+   "prob": 0.1391,
+   "fair": 619,
+   "ev": 0.85,
+   "why": "The four totals the projection is most sure land under, one per game. Hits 13.9% of the time by the model, fair +619.",
+   "legs": [
+    {
+     "label": "ARI@NYG Under 44.5",
+     "price": -110,
+     "book": null
+    },
+    {
+     "label": "LAC@SEA Under 42.5",
+     "price": -110,
+     "book": null
+    },
+    {
+     "label": "MIA@MIN Under 38.5",
+     "price": -110,
+     "book": null
+    },
+    {
+     "label": "JAX@CIN Under 51.5",
+     "price": -110,
+     "book": null
+    }
+   ]
+  },
+  {
+   "game": "dal-hou",
+   "gameLabel": "5 games",
+   "bet": "Max confidence five",
+   "kind": "parlay",
+   "price": 2436,
+   "book": "desk prices",
+   "prob": 0.0758,
+   "fair": 1219,
+   "ev": 0.92,
+   "why": "The top three sides and top two totals on the board, every leg a different game. Hits 7.6% of the time by the model, fair +1219.",
+   "legs": [
+    {
+     "label": "DAL@HOU DAL +3",
+     "price": -110,
+     "book": null
+    },
+    {
+     "label": "LAR@PHI LAR -3.5",
+     "price": -110,
+     "book": null
+    },
+    {
+     "label": "ARI@NYG ARI -2.5",
+     "price": -110,
+     "book": null
+    },
+    {
+     "label": "LAC@SEA Under 42.5",
+     "price": -110,
+     "book": null
+    },
+    {
+     "label": "MIA@MIN Under 38.5",
+     "price": -110,
+     "book": null
+    }
+   ]
+  },
+  {
+   "game": "det-car",
+   "gameLabel": "4 games",
+   "bet": "TD value four",
+   "kind": "parlay",
+   "price": 13970,
+   "book": "desk prices",
+   "prob": 0.0179,
+   "fair": 5481,
+   "ev": 1.52,
+   "why": "Four scorers the price undersells most, all confirmed at a book, all different games. Hits 1.8% of the time by the model, fair +5481.",
+   "legs": [
+    {
+     "label": "DET@CAR Darren Waller anytime TD",
+     "price": 270,
+     "book": null
+    },
+    {
+     "label": "GB@TB Christian Watson anytime TD",
+     "price": 165,
+     "book": null
+    },
+    {
+     "label": "DAL@HOU Jake Ferguson anytime TD",
+     "price": 310,
+     "book": null
+    },
+    {
+     "label": "IND@WSH Stefon Diggs anytime TD",
+     "price": 250,
+     "book": null
+    }
+   ]
+  },
+  {
+   "game": "kc-lv",
+   "gameLabel": "3 games",
+   "bet": "Long-shot scorers",
+   "kind": "parlay",
+   "price": 49775,
+   "book": "check prices",
+   "prob": 0.0099,
+   "fair": 10012,
+   "ev": 3.93,
+   "why": "Three scorers at +500 or longer whose role says the book is short. Prices need a check before you fire. Hits 1.0% of the time by the model, fair +10012.",
+   "legs": [
+    {
+     "label": "KC@LV Cody White anytime TD (verify)",
+     "price": 600,
+     "book": null
+    },
+    {
+     "label": "LAR@PHI Tank Bigsby anytime TD (verify)",
+     "price": 850,
+     "book": null
+    },
+    {
+     "label": "TEN@BAL Elic Ayomanor anytime TD (verify)",
+     "price": 650,
+     "book": null
+    }
+   ]
+  }
+ ]
 }

@@ -86,6 +86,19 @@ export default function BoardScreen() {
           ) : (
             <>
               <TopTen board={board} />
+              {!!board.lottos?.length && (
+                <>
+                  <H2>Weekend lottos · Week {board.week}</H2>
+                  <Body small muted>
+                    Built from the top-10 lists, one leg per game. Small stakes: even the best of
+                    these misses far more often than it hits.
+                  </Body>
+                  <View style={{ height: space.sm }} />
+                  {board.lottos.map((m, i) => (
+                    <MaxCard key={`lotto-${i}`} m={m} />
+                  ))}
+                </>
+              )}
               <FeaturedSheet week={board.week} />
               {!!board.maxConfidence?.length && (
                 <>
@@ -274,7 +287,10 @@ function MaxCard({ m }: { m: MaxPlay }) {
       <Label>{m.gameLabel ?? m.game}</Label>
       <Text style={[type.h2, { color: t.ink, marginBottom: 6 }]}>{m.bet}</Text>
       <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
-        <Pill text="max confidence" tone="accent" />
+        <Pill
+          text={m.prob != null ? `hits ${(m.prob * 100).toFixed(1)}%` : 'max confidence'}
+          tone="accent"
+        />
         {m.price != null && <Pill text={`${fmtAm(m.price)} ${m.book ?? ''}`.trim()} tone="good" />}
         {m.price == null && !!m.book && <Pill text={m.book} tone="neutral" />}
         <AddToSlip item={slip} compact />

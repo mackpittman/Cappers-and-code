@@ -3,7 +3,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 import { DATA, ROOT, readJson, writeJson, nowIso, normName, impliedProb, devig } from './lib.mjs';
 import { buildParlays } from './parlays.mjs';
-import { buildTopTen } from './top-ten.mjs';
+import { buildLottos, buildTopTen } from './top-ten.mjs';
 
 const research = readJson(path.join(ROOT, 'src', 'data', 'research.json'));
 const schedule = readJson(path.join(DATA, 'schedule.json'), { games: [] });
@@ -375,6 +375,7 @@ const board = {
 board.parlays = buildParlays(board);
 // The front page leads with a top 10 per market, every row the model's own number.
 board.topTen = buildTopTen(board);
+board.lottos = buildLottos(board.topTen);
 writeJson(path.join(DATA, 'board.json'), board);
 console.log(
   `board: ${games.length} games, ${games.filter((g) => g.live).length} with live lines (${games.find((g) => g.live)?.live?.source || 'none'}), ${games.filter((g) => g.liveBoard.length).length} with live ATD, ${games.filter((g) => g.propLines.length).length} with prop lines`,
