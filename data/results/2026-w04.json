@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 4,
- "gradedAt": "2026-10-02T15:26:22.995Z",
+ "gradedAt": "2026-10-02T21:18:39.581Z",
  "finals": 1,
  "games": 16,
  "summary": {
@@ -9,19 +9,19 @@
    "wins": 6,
    "losses": 10,
    "pushes": 0,
-   "pending": 217
+   "pending": 213
   },
   "lockedIn": {
    "wins": 1,
    "losses": 1,
    "pushes": 0,
-   "pending": 10
+   "pending": 9
   },
   "lean": {
    "wins": 0,
    "losses": 2,
    "pushes": 0,
-   "pending": 27
+   "pending": 26
   },
   "top3": {
    "wins": 2,
@@ -45,7 +45,7 @@
    "wins": 1,
    "losses": 2,
    "pushes": 0,
-   "pending": 46
+   "pending": 44
   },
   "calibration": {
    "td2": [
@@ -69,26 +69,6 @@
   }
  },
  "items": [
-  {
-   "game": "ari-nyg",
-   "gameLabel": "ARI@NYG",
-   "final": null,
-   "type": "atd",
-   "label": "Trey McBride ATD +195",
-   "result": "pending",
-   "conf": 4,
-   "bucket": "lockedIn"
-  },
-  {
-   "game": "ari-nyg",
-   "gameLabel": "ARI@NYG",
-   "final": null,
-   "type": "atd",
-   "label": "Michael Wilson ATD +300",
-   "result": "pending",
-   "conf": 3,
-   "bucket": "lockedIn"
-  },
   {
    "game": "ari-nyg",
    "gameLabel": "ARI@NYG",
@@ -204,7 +184,7 @@
    "gameLabel": "ARI@NYG",
    "final": null,
    "type": "prop",
-   "label": "Trey McBride over 6.5 receptions",
+   "label": "Trey McBride over 7.5 receptions",
    "result": "pending",
    "bucket": "prop"
   },
@@ -213,7 +193,7 @@
    "gameLabel": "ARI@NYG",
    "final": null,
    "type": "prop",
-   "label": "Jameis Winston under 204.5 pass yds",
+   "label": "Jameis Winston under 208.5 pass yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -222,7 +202,7 @@
    "gameLabel": "ARI@NYG",
    "final": null,
    "type": "prop",
-   "label": "Cam Skattebo over 59.5 rush yds",
+   "label": "Cam Skattebo over 62.5 rush yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -231,7 +211,7 @@
    "gameLabel": "ATL@NO",
    "final": null,
    "type": "atd",
-   "label": "Juwan Johnson ATD +240",
+   "label": "Juwan Johnson ATD +220",
    "result": "pending",
    "conf": 3,
    "bucket": "lockedIn"
@@ -625,7 +605,7 @@
    "gameLabel": "DEN@SF",
    "final": null,
    "type": "prop",
-   "label": "Brock Purdy over 231.5 pass yds",
+   "label": "Brock Purdy over 234.5 pass yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -652,9 +632,9 @@
    "gameLabel": "DET@CAR",
    "final": null,
    "type": "atd",
-   "label": "Darren Waller ATD +300",
+   "label": "Darren Waller ATD +270",
    "result": "pending",
-   "conf": 4,
+   "conf": 3,
    "bucket": "lockedIn"
   },
   {
@@ -674,7 +654,7 @@
    "type": "total",
    "label": "Over 50.5",
    "result": "pending",
-   "conf": 2,
+   "conf": 1,
    "bucket": "lean"
   },
   {
@@ -772,15 +752,6 @@
    "gameLabel": "DET@CAR",
    "final": null,
    "type": "prop",
-   "label": "Jahmyr Gibbs over 84.5 rush yds",
-   "result": "pending",
-   "bucket": "prop"
-  },
-  {
-   "game": "det-car",
-   "gameLabel": "DET@CAR",
-   "final": null,
-   "type": "prop",
    "label": "Jared Goff over 262.5 pass yds",
    "result": "pending",
    "bucket": "prop"
@@ -799,7 +770,17 @@
    "gameLabel": "GB@TB",
    "final": null,
    "type": "atd",
-   "label": "Christian Watson ATD +160",
+   "label": "Christian Watson ATD +165",
+   "result": "pending",
+   "conf": 3,
+   "bucket": "lockedIn"
+  },
+  {
+   "game": "gb-tb",
+   "gameLabel": "GB@TB",
+   "final": null,
+   "type": "atd",
+   "label": "MarShawn Lloyd ATD +290",
    "result": "pending",
    "conf": 3,
    "bucket": "lockedIn"
@@ -919,7 +900,7 @@
    "gameLabel": "GB@TB",
    "final": null,
    "type": "prop",
-   "label": "Jordan Love over 235.5 pass yds",
+   "label": "Jordan Love over 246.5 pass yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -937,7 +918,7 @@
    "gameLabel": "GB@TB",
    "final": null,
    "type": "prop",
-   "label": "Bucky Irving over 55.5 rush yds",
+   "label": "Bucky Irving over 54.5 rush yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -1085,7 +1066,7 @@
    "gameLabel": "IND@WSH",
    "final": null,
    "type": "prop",
-   "label": "Terry McLaurin over 54.5 reception yds",
+   "label": "Terry McLaurin over 51.5 reception yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -1212,16 +1193,7 @@
    "gameLabel": "JAX@CIN",
    "final": null,
    "type": "prop",
-   "label": "Trevor Lawrence under 263.5 pass yds",
-   "result": "pending",
-   "bucket": "prop"
-  },
-  {
-   "game": "jax-cin",
-   "gameLabel": "JAX@CIN",
-   "final": null,
-   "type": "prop",
-   "label": "Brenton Strange over 32.5 reception yds",
+   "label": "Trevor Lawrence under 264.5 pass yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -1496,7 +1468,7 @@
    "gameLabel": "LAC@SEA",
    "final": null,
    "type": "prop",
-   "label": "Justin Herbert under 229.5 pass yds",
+   "label": "Justin Herbert under 200.5 pass yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -1505,7 +1477,7 @@
    "gameLabel": "LAC@SEA",
    "final": null,
    "type": "prop",
-   "label": "Omarion Hampton under 64.5 rush yds",
+   "label": "Omarion Hampton under 46.5 rush yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -1514,7 +1486,7 @@
    "gameLabel": "LAC@SEA",
    "final": null,
    "type": "prop",
-   "label": "Sam Darnold over 244.5 pass yds",
+   "label": "Sam Darnold over 232.5 pass yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -1925,7 +1897,7 @@
    "gameLabel": "NE@BUF",
    "final": null,
    "type": "prop",
-   "label": "Hunter Henry under 34.5 reception yds",
+   "label": "Hunter Henry under 30.5 reception yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -1935,16 +1907,6 @@
    "final": null,
    "type": "side",
    "label": "NYJ +3.5",
-   "result": "pending",
-   "conf": 1,
-   "bucket": "lean"
-  },
-  {
-   "game": "nyj-chi",
-   "gameLabel": "NYJ@CHI",
-   "final": null,
-   "type": "total",
-   "label": "Under 43.5",
    "result": "pending",
    "conf": 1,
    "bucket": "lean"
@@ -2331,7 +2293,7 @@
    "gameLabel": "TEN@BAL",
    "final": null,
    "type": "prop",
-   "label": "Carnell Tate over 44.5 reception yds",
+   "label": "Carnell Tate over 42.5 reception yds",
    "result": "pending",
    "bucket": "prop"
   },
@@ -2349,7 +2311,7 @@
    "gameLabel": "TEN@BAL",
    "final": null,
    "type": "prop",
-   "label": "Lamar Jackson over 32.5 rush yds",
+   "label": "Lamar Jackson over 31.5 rush yds",
    "result": "pending",
    "bucket": "prop"
   }
