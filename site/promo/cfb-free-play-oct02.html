@@ -1,0 +1,74 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Cappers & Code · TNF static</title>
+<style>
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 900; src: url(assets/fonts/BarlowCondensed_900Black.ttf); }
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 800; src: url(assets/fonts/BarlowCondensed_800ExtraBold.ttf); }
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 900; font-style: italic; src: url(assets/fonts/BarlowCondensed_900Black_Italic.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 700; src: url(assets/fonts/Manrope_700Bold.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 700; src: url(assets/fonts/JetBrainsMono_700Bold.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url(assets/fonts/JetBrainsMono_500Medium.ttf); }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html,body { width:1080px; height:1350px; overflow:hidden; background:#050608; color:#F5F7F2; font-family:'Manrope',sans-serif; }
+  #stage { position:relative; width:1080px; height:1350px; overflow:hidden; }
+  .carbon { position:absolute; inset:0; background:repeating-linear-gradient(0deg, rgba(255,255,255,.028) 0 1px, transparent 1px 28px),repeating-linear-gradient(90deg, rgba(255,255,255,.028) 0 1px, transparent 1px 28px); }
+  .glow { position:absolute; left:72%; top:64%; width:1300px; height:1300px; transform:translate(-50%,-50%); background:radial-gradient(circle, rgba(182,255,0,.30) 0%, rgba(182,255,0,.08) 30%, transparent 62%); }
+  .smoke { position:absolute; width:900px; height:600px; border-radius:50%; filter:blur(90px); background:radial-gradient(circle, rgba(121,224,0,.35), rgba(182,255,0,.06) 55%, transparent 70%); }
+  .scan { position:absolute; inset:0; background:repeating-linear-gradient(0deg, rgba(0,0,0,.35) 0 2px, transparent 2px 5px); mix-blend-mode:multiply; }
+  .vig { position:absolute; inset:0; background:radial-gradient(ellipse at center, transparent 45%, rgba(0,0,0,.8) 100%); }
+
+  .logo { position:absolute; left:64px; top:56px; width:340px; }
+  .kicker { position:absolute; right:64px; top:70px; font-family:'JetBrains Mono'; font-weight:700; font-size:22px; letter-spacing:5px; color:#B6FF00; text-align:right; line-height:1.6; }
+  .badge { display:inline-block; background:#B6FF00; color:#050608; padding:4px 12px; border-radius:6px; letter-spacing:4px; }
+  .robot { position:absolute; right:-230px; top:230px; width:600px; opacity:.9; filter:drop-shadow(0 0 40px rgba(182,255,0,.5)); }
+  .head { position:absolute; left:64px; top:205px; font-family:'Barlow Condensed'; font-weight:900; text-transform:uppercase; line-height:.86; font-size:116px; text-shadow:0 8px 30px rgba(0,0,0,.8); }
+  .energy { font-family:'Barlow Condensed'; font-weight:900; font-style:italic; color:#B6FF00; display:inline-block; transform:skew(-6deg); text-shadow:0 0 36px rgba(182,255,0,.7); }
+  .sub { position:absolute; left:64px; top:418px; font-family:'JetBrains Mono'; font-weight:500; font-size:22px; color:#9DA59D; letter-spacing:1px; }
+  .plays { position:absolute; left:64px; right:64px; top:468px; }
+  .card { position:relative; background:rgba(11,14,12,.92); border:1px solid rgba(182,255,0,.4); border-left:12px solid #B6FF00; border-radius:12px; padding:16px 26px 14px; margin-bottom:14px; box-shadow:0 0 26px rgba(182,255,0,.18); }
+  .card .g { font-family:'JetBrains Mono'; font-weight:700; font-size:20px; letter-spacing:3px; color:#B6FF00; }
+  .card .pk { display:flex; justify-content:space-between; align-items:baseline; margin-top:6px; }
+  .card .pk .t { font-family:'Barlow Condensed'; font-weight:900; font-size:68px; line-height:1; text-transform:uppercase; }
+  .card .pk .p { font-family:'JetBrains Mono'; font-weight:700; font-size:40px; color:#B6FF00; }
+  .card .why { font-family:'Manrope'; font-weight:700; font-size:21px; color:#F5F7F2; margin-top:8px; line-height:1.3; }
+  .card .m { font-family:'JetBrains Mono'; font-weight:500; font-size:19px; color:#9DA59D; margin-top:8px; letter-spacing:1px; }
+  .double { display:flex; justify-content:space-between; align-items:center; border:1px dashed rgba(182,255,0,.55); border-radius:12px; padding:14px 26px; background:rgba(5,6,8,.75); }
+  .double .t { font-family:'Barlow Condensed'; font-weight:800; font-size:40px; text-transform:uppercase; }
+  .double .t small { font-family:'JetBrains Mono'; font-weight:500; font-size:18px; color:#9DA59D; display:block; letter-spacing:1px; text-transform:none; margin-top:2px; }
+  .double .p { font-family:'JetBrains Mono'; font-weight:700; font-size:40px; color:#B6FF00; }
+  .offer { position:absolute; left:64px; right:64px; top:1060px; display:flex; align-items:center; gap:26px; }
+  .offer .txt { font-family:'Barlow Condensed'; font-weight:900; font-size:60px; text-transform:uppercase; line-height:.92; }
+  .offer .txt small { display:block; font-family:'JetBrains Mono'; font-weight:500; font-size:19px; color:#9DA59D; letter-spacing:1px; margin-top:12px; text-transform:none; line-height:1.4; }
+  .cta { margin-left:auto; background:#B6FF00; color:#050608; font-family:'Barlow Condensed'; font-weight:900; font-size:36px; letter-spacing:1px; text-transform:uppercase; padding:18px 26px; border-radius:10px; box-shadow:0 0 40px rgba(182,255,0,.5); white-space:nowrap; }
+  .foot { position:absolute; top:1290px; left:0; right:0; text-align:center; font-family:'JetBrains Mono'; font-weight:700; font-size:18px; letter-spacing:4px; color:#79E000; }
+</style></head>
+<body><div id="stage">
+  <div class="carbon"></div><div class="glow" style="left:80%;top:30%"></div>
+  <div class="smoke" style="left:380px;top:120px;opacity:.55"></div><div class="smoke" style="left:-260px;top:1020px;opacity:.5"></div>
+  <img class="robot" src="assets/robot.png">
+  <div class="scan"></div>
+  <img class="logo" src="assets/lockup.png">
+  <div class="kicker"><span class="badge">CFB FREE PLAY</span><br>FRIDAY · OCT 2</div>
+  <div class="head">Friday night<br><span class="energy">on the house</span></div>
+  <div class="sub">Two college plays from the model. Free, tonight only.</div>
+  <div class="plays">
+    <div class="card">
+      <div class="g">LIBERTY @ DELAWARE · 7:00 PM ET · CBSSN</div>
+      <div class="pk"><div class="t">Under 51.5</div><div class="p">-110</div></div>
+      <div class="why">Delaware is likely on its backup QB. The model lands this game near 48.</div>
+      <div class="m">MODEL HITS 61% · PLAY IT AT 51.5 OR 50.5, NOT 49.5</div>
+    </div>
+    <div class="card">
+      <div class="g">PENN STATE @ NORTHWESTERN · 8:00 PM ET · FOX</div>
+      <div class="pk"><div class="t">Penn State -2.5</div><div class="p">-110</div></div>
+      <div class="why">Our ratings make Penn State a bigger favorite than the number it is getting tonight.</div>
+      <div class="m">MODEL HITS 58% · TAKE -2.5, LEAN ONLY AT -3</div>
+    </div>
+    <div class="double">
+      <div class="t">The double<small>Both plays together · model hits about 35%</small></div>
+      <div class="p">+264</div>
+    </div>
+  </div>
+  
+  <div class="offer"><div class="txt">NFL is the<br><span class="energy">specialty</span><small>Every NFL game, every scorer,<br>priced by the model. Members get it all.</small></div><div class="cta">cappersandcode.com</div></div>
+  <div class="foot">FREE PLAY · NOT A GUARANTEE · UNITS, NOT DOLLARS · 21+</div>
+</div></body></html>
