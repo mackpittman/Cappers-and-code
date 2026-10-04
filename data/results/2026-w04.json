@@ -1,58 +1,72 @@
 {
  "season": 2026,
  "week": 4,
- "gradedAt": "2026-10-04T11:16:17.573Z",
- "finals": 1,
+ "gradedAt": "2026-10-04T20:09:27.935Z",
+ "finals": 4,
  "games": 16,
  "summary": {
   "all": {
-   "wins": 6,
-   "losses": 10,
+   "wins": 12,
+   "losses": 49,
    "pushes": 0,
-   "pending": 213
+   "pending": 168
   },
   "lockedIn": {
    "wins": 1,
-   "losses": 1,
+   "losses": 5,
    "pushes": 0,
-   "pending": 9
+   "pending": 5
   },
   "lean": {
-   "wins": 0,
-   "losses": 2,
+   "wins": 2,
+   "losses": 5,
    "pushes": 0,
-   "pending": 26
+   "pending": 21
   },
   "top3": {
    "wins": 2,
-   "losses": 1,
+   "losses": 10,
    "pushes": 0,
-   "pending": 45
+   "pending": 36
   },
   "td2": {
    "wins": 0,
-   "losses": 3,
+   "losses": 12,
    "pushes": 0,
-   "pending": 45
+   "pending": 36
   },
   "value": {
-   "wins": 2,
-   "losses": 1,
+   "wins": 3,
+   "losses": 9,
    "pushes": 0,
-   "pending": 44
+   "pending": 35
   },
   "prop": {
-   "wins": 1,
-   "losses": 2,
+   "wins": 4,
+   "losses": 8,
    "pushes": 0,
-   "pending": 44
+   "pending": 35
   },
   "calibration": {
    "td2": [
     {
      "band": "0-8%",
-     "n": 3,
-     "model": 0.057,
+     "n": 7,
+     "model": 0.059,
+     "actual": 0,
+     "wins": 0
+    },
+    {
+     "band": "8-15%",
+     "n": 4,
+     "model": 0.119,
+     "actual": 0,
+     "wins": 0
+    },
+    {
+     "band": "15-25%",
+     "n": 1,
+     "model": 0.218,
      "actual": 0,
      "wins": 0
     }
@@ -60,10 +74,24 @@
    "top3": [
     {
      "band": "0-40%",
-     "n": 3,
-     "model": 0.316,
-     "actual": 0.667,
+     "n": 7,
+     "model": 0.323,
+     "actual": 0.286,
      "wins": 2
+    },
+    {
+     "band": "40-50%",
+     "n": 4,
+     "model": 0.445,
+     "actual": 0,
+     "wins": 0
+    },
+    {
+     "band": "50-60%",
+     "n": 1,
+     "model": 0.52,
+     "actual": 0,
+     "wins": 0
     }
    ]
   }
@@ -768,316 +796,322 @@
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "atd",
    "label": "Christian Watson ATD +165",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "atd",
    "label": "MarShawn Lloyd ATD +290",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "side",
    "label": "TB +3.5",
-   "result": "pending",
    "conf": 1,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "win"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "total",
    "label": "Under 38.5",
-   "result": "pending",
    "conf": 1,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "win"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "atd",
    "label": "Christian Watson ATD",
-   "result": "pending",
    "est": 0.45,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "atd",
    "label": "Bucky Irving ATD",
-   "result": "pending",
    "est": 0.42,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "atd",
    "label": "MarShawn Lloyd ATD",
-   "result": "pending",
    "est": 0.31,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "td2",
    "label": "Christian Watson 2+ TD",
-   "result": "pending",
    "est": 0.1211896495844087,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "td2",
    "label": "Bucky Irving 2+ TD",
-   "result": "pending",
    "est": 0.1040582382438302,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "td2",
    "label": "MarShawn Lloyd 2+ TD",
-   "result": "pending",
    "est": 0.053966059840325875,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "atd",
    "label": "Cade Otton ATD",
-   "result": "pending",
    "est": 0.16,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "atd",
    "label": "Jalon Daniels ATD",
-   "result": "pending",
    "est": 0.21,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "atd",
    "label": "Kenny Gainwell ATD",
-   "result": "pending",
    "est": 0.24,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "win"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "prop",
    "label": "Jordan Love over 246.5 pass yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 197,
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "prop",
    "label": "Emeka Egbuka over 38.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 13,
+   "result": "loss"
   },
   {
    "game": "gb-tb",
    "gameLabel": "GB@TB",
-   "final": null,
+   "final": "GB 17, TB 14",
    "type": "prop",
    "label": "Bucky Irving over 54.5 rush yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 61,
+   "result": "win"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "atd",
    "label": "Tyler Warren ATD +160",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "atd",
    "label": "Stefon Diggs ATD +250",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "side",
    "label": "WSH +3.5",
-   "result": "pending",
    "conf": 1,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "total",
    "label": "Over 48.5",
-   "result": "pending",
    "conf": 2,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "atd",
    "label": "Tyler Warren ATD",
-   "result": "pending",
    "est": 0.44,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "atd",
    "label": "Stefon Diggs ATD",
-   "result": "pending",
    "est": 0.35,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "atd",
    "label": "Terry McLaurin ATD",
-   "result": "pending",
    "est": 0.33,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "td2",
    "label": "Tyler Warren 2+ TD",
-   "result": "pending",
    "est": 0.1153016426583523,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "td2",
    "label": "Stefon Diggs 2+ TD",
-   "result": "pending",
    "est": 0.06999110453990476,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "td2",
    "label": "Terry McLaurin 2+ TD",
-   "result": "pending",
    "est": 0.06168003037992609,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "atd",
    "label": "Kaytron Allen ATD",
-   "result": "pending",
    "est": 0.21,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "atd",
    "label": "Antonio Williams ATD",
-   "result": "pending",
    "est": 0.15,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "atd",
    "label": "Laquon Treadwell ATD",
-   "result": "pending",
    "est": 0.14,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "prop",
    "label": "Jonathan Taylor under 90.5 rush yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 95,
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "prop",
    "label": "Terry McLaurin over 51.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 0,
+   "result": "loss"
   },
   {
    "game": "ind-wsh",
    "gameLabel": "IND@WSH",
-   "final": null,
+   "final": "IND 30, WSH 13",
    "type": "prop",
    "label": "Josh Downs over 62.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 16,
+   "result": "loss"
   },
   {
    "game": "jax-cin",
@@ -1904,129 +1938,132 @@
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "side",
    "label": "NYJ +3.5",
-   "result": "pending",
    "conf": 1,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "atd",
    "label": "D'Andre Swift ATD",
-   "result": "pending",
    "est": 0.52,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "atd",
    "label": "Braelon Allen ATD",
-   "result": "pending",
    "est": 0.47,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "atd",
    "label": "Luther Burden III ATD",
-   "result": "pending",
    "est": 0.32,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "td2",
    "label": "D'Andre Swift 2+ TD",
-   "result": "pending",
    "est": 0.21800323474995498,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "td2",
    "label": "Braelon Allen 2+ TD",
-   "result": "pending",
    "est": 0.13351451560893612,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "td2",
    "label": "Luther Burden III 2+ TD",
-   "result": "pending",
    "est": 0.057749513047850365,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "atd",
    "label": "Kalif Raymond ATD",
-   "result": "pending",
    "est": 0.24,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "atd",
    "label": "Rome Odunze ATD",
-   "result": "pending",
    "est": 0.19,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "atd",
    "label": "Jeremy Ruckert ATD",
-   "result": "pending",
    "est": 0.17,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "prop",
    "label": "Garrett Wilson over 6.5 receptions",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 3,
+   "result": "loss"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "prop",
    "label": "Braelon Allen over 55.5 rush yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 59,
+   "result": "win"
   },
   {
    "game": "nyj-chi",
    "gameLabel": "NYJ@CHI",
-   "final": null,
+   "final": "NYJ 12, CHI 23",
    "type": "prop",
    "label": "Case Keenum under 224.5 pass yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 0,
+   "result": "win"
   },
   {
    "game": "pit-cle",
