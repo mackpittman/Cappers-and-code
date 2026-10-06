@@ -6,12 +6,15 @@ mechanical on purpose: the judgement goes into the projections, the ticket falls
 
 ## What goes on the ticket
 
-Volume props only. Receptions first, receiving yards second, rushing yards third.
+Volume props only. Receptions first, receiving yards second, rushing yards third, passing yards
+last.
 
 - No touchdown markets of any kind: no anytime, no 2+, no passing touchdowns. Touchdowns are the
   lowest-probability legs a book sells and they are what turned every Week 4 Monday ticket that had
   one from a winner into a loser.
-- No passing yards. A quarterback's yardage line is a coin flip at the price nearly every week.
+- Passing yards are allowed, but only at an alternate line well under the projection. A quarterback
+  swings about 65 yards either way on a 250-yard mean, so the main number is a coin flip and never
+  qualifies; a 200+ line under a 260 projection can.
 - No sides, totals or moneylines. They are priced tighter than any player market.
 - No line that rests on a one-game sample, no player with a game-day designation, and no leg whose
   model number sits on the other side of the book's line (fade it or leave it; never back it).
@@ -26,6 +29,7 @@ Volume props only. Receptions first, receiving yards second, rushing yards third
    - Receptions: Poisson on the mean. P(N+) = 1 - P(N-1 or fewer).
    - Receiving yards: normal, standard deviation the larger of 12 yards or 0.6 x mean.
    - Rushing yards: normal, standard deviation the larger of 15 yards or 0.55 x mean.
+   - Passing yards: normal, standard deviation the larger of 45 yards or 0.26 x mean.
    The yardage spreads are wide by design. A tight spread flattered Loveland's under in Week 4
    (92% on paper) and is why that leg was left off.
 3. Shrink the model toward the book before trusting it: `p = 0.7 x model + 0.3 x implied`. The

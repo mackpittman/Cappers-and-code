@@ -26,6 +26,9 @@ const MARKETS = {
   receptions: { key: 'player_receptions_alternate', main: 'player_receptions', field: 'receptions', dist: 'poisson' },
   rec_yds: { key: 'player_reception_yds_alternate', main: 'player_reception_yds', field: 'recYds', dist: 'normal', sd: (m) => Math.max(12, 0.6 * m) },
   rush_yds: { key: 'player_rush_yds_alternate', main: 'player_rush_yds', field: 'rushYds', dist: 'normal', sd: (m) => Math.max(15, 0.55 * m) },
+  // Quarterback yardage swings about 65 yards either way on a 250 mean, so only a line well below
+  // the projection qualifies; the main number never will.
+  pass_yds: { key: 'player_pass_yds_alternate', main: 'player_pass_yds', field: 'passYds', dist: 'normal', sd: (m) => Math.max(45, 0.26 * m) },
 };
 
 // --- distributions -------------------------------------------------------------------------

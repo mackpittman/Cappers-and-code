@@ -17,7 +17,9 @@ Do, in order:
      by targets seen),
    - projected catches, projected receiving yards (catches x regressed yards per catch x the
      opponent's factor against that position, capped between 0.85 and 1.15),
-   - for the lead backs, projected carries and rushing yards the same way.
+   - for the lead backs, projected carries and rushing yards the same way,
+   - for each starting quarterback, projected passing yards (attempts x completion rate x yards per
+     completion, regressed, with the opponent's pass-defence factor), as `passYds` on the QB's row.
 4. Flags on each player: `questionable`, `one-game-sample` (the role exists in a single game),
    `new-role` (a change of QB or scheme this week), `weather`, `revenge-narrative` (ignore it; flag
    it so the desk knows you did).
@@ -29,7 +31,7 @@ Do, in order:
   "players": [
     { "team": "DAL", "player": "CeeDee Lamb", "pos": "WR",
       "targets": 9.4, "catchRate": 0.66, "receptions": 6.2, "recYds": 84,
-      "carries": null, "rushYds": null, "flags": [], "why": "one line" }
+      "carries": null, "rushYds": null, "passYds": null, "flags": [], "why": "one line" }
   ],
   "sources": ["..."] }
 ```
