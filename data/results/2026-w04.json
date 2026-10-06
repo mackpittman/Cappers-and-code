@@ -1,64 +1,64 @@
 {
  "season": 2026,
  "week": 4,
- "gradedAt": "2026-10-05T23:09:07.659Z",
- "finals": 15,
+ "gradedAt": "2026-10-06T12:12:46.354Z",
+ "finals": 16,
  "games": 16,
  "summary": {
   "all": {
-   "wins": 59,
-   "losses": 155,
+   "wins": 64,
+   "losses": 164,
    "pushes": 1,
-   "pending": 14
+   "pending": 0
   },
   "lockedIn": {
    "wins": 1,
-   "losses": 9,
+   "losses": 10,
    "pushes": 0,
-   "pending": 1
+   "pending": 0
   },
   "lean": {
-   "wins": 12,
+   "wins": 13,
    "losses": 14,
    "pushes": 1,
-   "pending": 1
+   "pending": 0
   },
   "top3": {
    "wins": 17,
-   "losses": 28,
+   "losses": 31,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "td2": {
    "wins": 2,
-   "losses": 43,
+   "losses": 46,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "value": {
-   "wins": 6,
-   "losses": 38,
+   "wins": 7,
+   "losses": 40,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "prop": {
-   "wins": 21,
+   "wins": 24,
    "losses": 23,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "calibration": {
    "td2": [
     {
      "band": "0-8%",
-     "n": 21,
+     "n": 23,
      "model": 0.06,
      "actual": 0,
      "wins": 0
     },
     {
      "band": "8-15%",
-     "n": 14,
+     "n": 15,
      "model": 0.12,
      "actual": 0,
      "wins": 0
@@ -81,16 +81,16 @@
    "top3": [
     {
      "band": "0-40%",
-     "n": 22,
-     "model": 0.326,
-     "actual": 0.318,
+     "n": 24,
+     "model": 0.325,
+     "actual": 0.292,
      "wins": 7
     },
     {
      "band": "40-50%",
-     "n": 13,
+     "n": 14,
      "model": 0.452,
-     "actual": 0.308,
+     "actual": 0.286,
      "wins": 4
     },
     {
@@ -254,139 +254,142 @@
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "atd",
    "label": "Juwan Johnson ATD +220",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "loss"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "side",
    "label": "ATL +2.5",
-   "result": "pending",
    "conf": 2,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "win"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "atd",
    "label": "Juwan Johnson ATD",
-   "result": "pending",
    "est": 0.37,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "atd",
    "label": "Drake London ATD",
-   "result": "pending",
    "est": 0.45,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "atd",
    "label": "Kendre Miller ATD",
-   "result": "pending",
    "est": 0.26,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "td2",
    "label": "Juwan Johnson 2+ TD",
-   "result": "pending",
    "est": 0.07891766045416793,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "td2",
    "label": "Drake London 2+ TD",
-   "result": "pending",
    "est": 0.1211896495844087,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "td2",
    "label": "Kendre Miller 2+ TD",
-   "result": "pending",
    "est": 0.037182231339898064,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "atd",
    "label": "Noah Fant ATD",
-   "result": "pending",
    "est": 0.21,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "atd",
    "label": "Devaughn Vele ATD",
-   "result": "pending",
    "est": 0.22,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "win"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "atd",
    "label": "Austin Hooper ATD",
-   "result": "pending",
    "est": 0.13,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "prop",
    "label": "Bijan Robinson over 85.5 rush yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 145,
+   "result": "win"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "prop",
    "label": "Chris Olave over 84.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 116,
+   "result": "win"
   },
   {
    "game": "atl-no",
    "gameLabel": "ATL@NO",
-   "final": null,
+   "final": "ATL 45, NO 24",
    "type": "prop",
    "label": "Juwan Johnson over 36.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 59,
+   "result": "win"
   },
   {
    "game": "dal-hou",

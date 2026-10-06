@@ -1,7 +1,7 @@
 {
  "season": 2026,
- "week": 4,
- "generatedAt": "2026-10-05T23:09:07.761Z",
+ "week": 5,
+ "generatedAt": "2026-10-06T12:12:46.425Z",
  "researchAsOf": "2026-10-02T15:29:12.165Z",
  "oddsFetchedAt": "2026-10-05T20:51:11.702Z",
  "oddsCredits": {
@@ -33,7 +33,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": "Odds API (multi-book)",
- "injuriesFetchedAt": "2026-10-05T23:09:06.930Z",
+ "injuriesFetchedAt": "2026-10-06T12:12:45.698Z",
  "notes": "Week 4 research prepared Thursday Oct 1 and refreshed Friday Oct 2 with Friday-morning prices and practice reports; final Friday designations had not posted for most teams at refresh time. Touchdown estimates are built from role (red-zone and goal-line usage with the quarterback who starts), not from the posted price. Anytime prices are mostly BetMGM's Friday board, FanDuel where noted; any price marked verify or est. must be checked at a book before it is played.",
  "completed": [],
  "games": [
@@ -336,14 +336,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 24,
-     "home": 36
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -356,8 +349,8 @@
       "pos": "OT",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-10-05T21:42Z"
+      "detail": "Johnson (biceps) has been ruled out for the remainder of the 2026 season, Dani Sureck of the Cardinals' official site reports.",
+      "date": "2026-10-06T00:46Z"
      },
      {
       "name": "Dadrion Taylor-Demerson",
@@ -366,6 +359,14 @@
       "type": "out",
       "detail": "out",
       "date": "2026-10-05T18:27Z"
+     },
+     {
+      "name": "Andrew Wingard",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Wingard suffered a bone bruise in his knee during Sunday's 36-24 loss to the Giants, Jeremy Fowler of ESPN.com reports.",
+      "date": "2026-10-05T23:51Z"
      },
      {
       "name": "Jeremiyah Love",
@@ -390,14 +391,6 @@
       "type": "questionable",
       "detail": "Long (knee) is questionable to return against the Giants on Sunday.",
       "date": "2026-10-04T19:58Z"
-     },
-     {
-      "name": "Andrew Wingard",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Wingard (knee) has been ruled out for the rest of Sunday's game against the Giants.",
-      "date": "2026-10-04T19:42Z"
      }
     ],
     "home": [
@@ -424,17 +417,9 @@
       "type": "questionable",
       "detail": "Pinnock suffered a concussion during Sunday's 36-24 win over the Cardinals, Jordan Raanan of ESPN.com reports.",
       "date": "2026-10-05T00:59Z"
-     },
-     {
-      "name": "Jaxson Dart",
-      "pos": "QB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Dart recently underwent surgery to repair the meniscus and MCL in his left knee, Dan Duggan of The Athletic reports.",
-      "date": "2026-09-30T20:35Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -860,14 +845,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_SCHEDULED",
-    "detail": "10/5 - 8:15 PM EDT",
-    "score": {
-     "away": 0,
-     "home": 0
-    }
-   },
+   "status": null,
    "live": {
     "source": "Odds API (multi-book)",
     "fetchedAt": "2026-10-05T20:51:11.702Z",
@@ -1400,19 +1378,19 @@
       "status": "Out",
       "type": "out",
       "detail": "inactive",
-      "date": "2026-10-05T22:56Z"
-     },
-     {
-      "name": "Ethan Onianwa",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-05T22:53Z"
+      "date": "2026-10-06T12:00Z"
      },
      {
       "name": "Cooper Rush",
       "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Rush (coach's decision) is inactive for Thursday's game against the Saints but will serve as the emergency quarterback, Tori McElhaney of the Falcons' official site reports.",
+      "date": "2026-10-05T23:07Z"
+     },
+     {
+      "name": "Ethan Onianwa",
+      "pos": "OT",
       "status": "Out",
       "type": "out",
       "detail": "inactive",
@@ -1441,9 +1419,41 @@
       "type": "out",
       "detail": "inactive",
       "date": "2026-10-05T22:53Z"
+     },
+     {
+      "name": "Jake Matthews",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Matthews (groin) has been downgraded to out for the rest of Monday's game against the Saints, Tori McElhaney of the Falcons' official site reports.",
+      "date": "2026-10-06T02:13Z"
+     },
+     {
+      "name": "Za'Darius Smith",
+      "pos": "DE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Smith (concussion) has been ruled out for the remainder of Monday night's game against the Saints, Tori McElhaney of the Falcons' official site reports.",
+      "date": "2026-10-06T01:24Z"
      }
     ],
     "home": [
+     {
+      "name": "Christen Miller",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Miller (coach's decision) is inactive for Monday night's contest against the Falcons.",
+      "date": "2026-10-05T23:12Z"
+     },
+     {
+      "name": "Zach Wilson",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Wilson (coach's decision) is inactive but will serve as the Saints' emergency third quarterback for Monday night's contest against the Falcons.",
+      "date": "2026-10-05T23:06Z"
+     },
      {
       "name": "Noah Fant",
       "pos": "TE",
@@ -1453,24 +1463,8 @@
       "date": "2026-10-05T22:49Z"
      },
      {
-      "name": "Zach Wilson",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-05T22:47Z"
-     },
-     {
       "name": "Decamerion Richardson",
       "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-05T22:47Z"
-     },
-     {
-      "name": "Christen Miller",
-      "pos": "DT",
       "status": "Out",
       "type": "out",
       "detail": "inactive",
@@ -1501,6 +1495,14 @@
       "date": "2026-10-05T22:47Z"
      },
      {
+      "name": "Davon Godchaux",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Godchaux exited Monday night's game against the Falcons with a groin injury.",
+      "date": "2026-10-06T03:25Z"
+     },
+     {
       "name": "Jordyn Tyson",
       "pos": "WR",
       "status": "Injured Reserve",
@@ -1515,17 +1517,9 @@
       "type": "Injured Reserve",
       "detail": "The Saints are placing Etienne (hamstring) on injured reserve, Katherine Terrell of ESPN.com reports.",
       "date": "2026-10-01T20:44Z"
-     },
-     {
-      "name": "Kelvin Banks Jr.",
-      "pos": "OT",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Banks (ankle) underwent surgery this week, Katherine Terrell of ESPN.com reports.",
-      "date": "2026-09-26T00:47Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -1862,14 +1856,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 34,
-     "home": 30
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -1882,16 +1869,16 @@
       "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-10-05T18:38Z"
+      "detail": "Overshown (hamstring) was estimated as a non-participant on the Cowboys' official injury report Monday, Jon Machota of The Athletic reports.",
+      "date": "2026-10-06T00:08Z"
      },
      {
       "name": "Cobie Durant",
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-10-05T18:38Z"
+      "detail": "Durant (hamstring) is expected to miss Thursday's game against the Bucs, Patrik Walker of the Cowboys' official site reports.",
+      "date": "2026-10-05T23:41Z"
      },
      {
       "name": "Drew Shelton",
@@ -1906,8 +1893,8 @@
       "pos": "G",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "The Cowboys designated Smith (thumb) for return to practice Monday.",
-      "date": "2026-10-05T21:31Z"
+      "detail": "Smith (thumb) was a limited participant in Monday's estimated practice, Jon Machota of The Athletic reports.",
+      "date": "2026-10-06T01:04Z"
      },
      {
       "name": "Jonathan Bullard",
@@ -1934,14 +1921,6 @@
       "type": "out",
       "detail": "out",
       "date": "2026-10-05T18:43Z"
-     },
-     {
-      "name": "M.J. Stewart",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "Stewart (knee) practiced in full Thursday.",
-      "date": "2026-10-02T01:16Z"
      },
      {
       "name": "Jaden Crumedy",
@@ -1984,7 +1963,7 @@
       "date": "2026-10-03T00:35Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -2296,14 +2275,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 14,
-     "home": 24
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -2351,8 +2323,8 @@
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Moss (ribs) is questionable to return to Sunday's game against San Francisco, Parker Gabriel of The Denver Post reports.",
-      "date": "2026-10-04T22:27Z"
+      "detail": "Moss had imaging done on his ribs Monday, Ian Rapoport of NFL Network reports.",
+      "date": "2026-10-05T23:18Z"
      },
      {
       "name": "Jonah Coleman",
@@ -2369,16 +2341,24 @@
       "pos": "DT",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-10-05T19:03Z"
+      "detail": "Coach Kyle Shanahan said Monday that Thompson (ankle) is not expected back for Week 5, Cam Inman of The San Jose Mercury News reports.",
+      "date": "2026-10-06T00:40Z"
      },
      {
       "name": "Nick Bosa",
       "pos": "DE",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-10-05T19:03Z"
+      "detail": "Bosa (calf) is unlikely to be ready for the 49ers' Week 5 matchup against the Seahawks, Cam Inman of The San Jose Mercury News reports.",
+      "date": "2026-10-05T23:47Z"
+     },
+     {
+      "name": "Marques Sigle",
+      "pos": "S",
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Sigle is expected to miss multiple weeks due to a high-ankle injury that he sustained during the 49ers' 24-14 win over the Broncos on Sunday, Matt Barrows of The Athletic reports.",
+      "date": "2026-10-05T23:46Z"
      },
      {
       "name": "Kyle Juszczyk",
@@ -2389,14 +2369,6 @@
       "date": "2026-10-05T14:13Z"
      },
      {
-      "name": "Marques Sigle",
-      "pos": "S",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Sigle suffered an ankle injury during Sunday's 24-14 win over the Broncos.",
-      "date": "2026-10-05T00:10Z"
-     },
-     {
       "name": "Christian Kirk",
       "pos": "WR",
       "status": "Injured Reserve",
@@ -2405,7 +2377,7 @@
       "date": "2026-10-02T21:08Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -2730,14 +2702,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 26,
-     "home": 32
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -2772,8 +2737,8 @@
       "pos": "CB",
       "status": "Doubtful",
       "type": "doubtful",
-      "detail": "Ya-Sin (hamstring) has been ruled out for the rest of Sunday night's contest against the Panthers.",
-      "date": "2026-10-05T02:47Z"
+      "detail": "Ya-Sin (hamstring) is expected to be sidelined in Week 5 at Arizona, Richard Silva of The Detroit News reports.",
+      "date": "2026-10-06T00:54Z"
      },
      {
       "name": "Cade Mays",
@@ -2793,6 +2758,14 @@
      }
     ],
     "home": [
+     {
+      "name": "Ikem Ekwonu",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Coach Dave Canales said Monday that Ekwonu (knee) is still a considerable time away from returning to action, Mike Kaye of ESPN reports.",
+      "date": "2026-10-06T01:04Z"
+     },
      {
       "name": "Damien Lewis",
       "pos": "G",
@@ -2818,20 +2791,28 @@
       "date": "2026-10-04T23:00Z"
      },
      {
-      "name": "Jaelan Phillips",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Phillips (back) is questionable to return to Sunday night's contest against Detroit, Mike Kaye of ESPN.com reports.",
-      "date": "2026-10-05T03:33Z"
-     },
-     {
       "name": "Monroe Freeling",
       "pos": "OT",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Freeling (knee) has been ruled out for the remainder of Sunday night's contest against the Lions, Mike Kaye of ESPN.com reports.",
-      "date": "2026-10-05T02:56Z"
+      "detail": "Freeling (knee) could return to the field as soon as the Panthers' Week 6 game against the Buccaneers, Mike Kaye of ESPN.com reported Monday.",
+      "date": "2026-10-06T00:42Z"
+     },
+     {
+      "name": "Jaelan Phillips",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Phillips (hamstring) could return to the Panthers' lineup as early as the Week 6 game against the Buccaneers, Mike Kaye of ESPN.com reported Monday.",
+      "date": "2026-10-05T23:35Z"
+     },
+     {
+      "name": "Trevor Etienne",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Head coach Dave Canales said Etienne (ankle) will \"for sure\" be back following the Panthers' Week 5 bye, Mike Kaye of ESPN.com reports.",
+      "date": "2026-10-05T23:29Z"
      },
      {
       "name": "Xavier Legette",
@@ -2848,17 +2829,9 @@
       "type": "Injured Reserve",
       "detail": "Head coach Dave Canales said Wednesday that Jackson (groin) underwent core-muscle surgery and will be sidelined about eight weeks, Joe Person of The Athletic reports.",
       "date": "2026-09-30T19:44Z"
-     },
-     {
-      "name": "Jaycee Horn",
-      "pos": "CB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Panthers placed Horn (quadriceps) on injured reserve Wednesday.",
-      "date": "2026-09-30T15:25Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -3154,14 +3127,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 17,
-     "home": 14
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -3214,8 +3180,8 @@
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Cisse suffered a neck injury and was also evaluated for a concussion in Sunday's 17-14 win over the Buccaneers, Zach Jacobson of the team's official site reports. He finished with six total tackles (five solo).",
-      "date": "2026-10-04T20:52Z"
+      "detail": "Cisse (neck) was not placed in the league's concussion protocol following Sunday's 17-14 win over the Buccaneers, Weston Hodkiewicz of the Packers' official site reports.",
+      "date": "2026-10-05T23:50Z"
      },
      {
       "name": "Chris Brooks",
@@ -3284,31 +3250,23 @@
       "date": "2026-10-05T19:07Z"
      },
      {
-      "name": "Josiah Trotter",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-05T22:25Z"
-     },
-     {
       "name": "SirVocea Dennis",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Dennis (ankle) is questionable to return to Sunday's matchup against Green Bay, Brianna Dix of the Buccaneers' official site reports.",
-      "date": "2026-10-04T18:46Z"
+      "detail": "Dennis (ankle) underwent an MRI after the Buccaneers' Week 4 loss to the Packers, Jenna Laine of ESPN.com reported Monday.",
+      "date": "2026-10-06T00:51Z"
      },
      {
-      "name": "Jalen McMillan",
-      "pos": "WR",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Buccaneers placed McMillan (knee) on injured reserve Wednesday.",
-      "date": "2026-09-30T14:34Z"
+      "name": "Josiah Trotter",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Trotter (knee) was listed as a limited participant on the Buccaneers' estimated injury report Monday, Brianna Dix of the team's official site reports.",
+      "date": "2026-10-06T00:07Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -3594,14 +3552,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 30,
-     "home": 13
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -3631,6 +3582,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Arden Key",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Key (hamstring) has been ruled out for the Colts' matchup with Pittsburgh in Week 5, James Boyd of The Athletic reports.",
+      "date": "2026-10-06T00:02Z"
+     },
+     {
       "name": "Keenan Allen",
       "pos": "WR",
       "status": "Out",
@@ -3656,6 +3615,14 @@
      }
     ],
     "home": [
+     {
+      "name": "Jaylin Lane",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Head coach Dan Quinn confirmed Monday that Lane (ankle) will miss the remainder of the season.",
+      "date": "2026-10-05T23:04Z"
+     },
      {
       "name": "Rachaad White",
       "pos": "RB",
@@ -3697,14 +3664,6 @@
       "date": "2026-10-05T19:09Z"
      },
      {
-      "name": "Jaylin Lane",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "Lane was diagnosed with a fracture and dislocation of his left ankle after undergoing tests Monday and is expected to miss the remainder of the season, Ian Rapoport of NFL Network reports.",
-      "date": "2026-10-05T15:27Z"
-     },
-     {
       "name": "Marcus Mariota",
       "pos": "QB",
       "status": "Doubtful",
@@ -3737,7 +3696,7 @@
       "date": "2026-10-04T15:20Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -4056,14 +4015,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 22,
-     "home": 17
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -4170,7 +4122,7 @@
       "date": "2026-09-29T23:16Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -4496,14 +4448,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 30,
-     "home": 27
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -4522,7 +4467,7 @@
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "Thornton is slated to undergo surgery later this week to address the dislocated left ankle he sustained in Sunday's 30-27 win over the Raiders and is facing an expected recovery timeline of 3-to-4 weeks, Matt Zenitz of CBSSports.com reports.",
+      "detail": "Thornton is slated to undergo surgery later this week to address the dislocated left ankle he sustained in Sunday's 30-27 win over the Raiders and is facing an expected recovery timeline of 3-to-4 months, Matt Zenitz of CBSSports.com reports.",
       "date": "2026-10-05T20:51Z"
      },
      {
@@ -4584,7 +4529,7 @@
       "date": "2026-09-29T22:27Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -4907,14 +4852,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 23,
-     "home": 30
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -4928,6 +4866,22 @@
    "pulls": {},
    "injuryReport": {
     "away": [
+     {
+      "name": "Derwin James Jr.",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "James (hamstring) is considered week-to-week ahead of the team's Week 5 matchup with Denver, Alex Insdorf of BoltBeat.com reports.",
+      "date": "2026-10-05T23:57Z"
+     },
+     {
+      "name": "Rashawn Slater",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "Slater suffered a high-ankle sprain Sunday against the Seahawks, and he is expected to miss 4-to-6 weeks, Ian Rapoport of NFL Network reports.",
+      "date": "2026-10-05T23:24Z"
+     },
      {
       "name": "Brenen Thompson",
       "pos": "WR",
@@ -4953,28 +4907,12 @@
       "date": "2026-10-05T18:49Z"
      },
      {
-      "name": "Rashawn Slater",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "Slater (ankle) is questionable to return to Sunday's game against the Seahawks.",
-      "date": "2026-10-04T23:28Z"
-     },
-     {
       "name": "Kayode Awosika",
       "pos": "G",
       "status": "Out",
       "type": "out",
       "detail": "Awosika (leg) is inactive for Sunday's game against Seattle.",
       "date": "2026-10-04T19:43Z"
-     },
-     {
-      "name": "Derwin James Jr.",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "James (hamstring) is listed as out for Sunday's game versus the Seahawks.",
-      "date": "2026-10-04T19:25Z"
      },
      {
       "name": "Ladd McConkey",
@@ -5007,6 +4945,14 @@
       "type": "questionable",
       "detail": "Jackson (hamstring) is questionable to return to Sunday's game against Seattle.",
       "date": "2026-10-04T21:22Z"
+     },
+     {
+      "name": "Scott Matlock",
+      "pos": "FB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Chargers opened Matlock's (undisclosed) 21-day return window Monday, Alex Insdorf of BoltBeat.com reports.",
+      "date": "2026-10-06T00:02Z"
      }
     ],
     "home": [
@@ -5031,7 +4977,7 @@
       "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "Seahawks head coach Mike Macdonald said Monday that Charbonnet (knee) won't be activated from the PUP list in advance of Sunday's game against the 49ers, Gregg Bell of The Tacoma News Tribune reports.",
+      "detail": "Seahawks head coach Mike Macdonald said Monday that Charbonnet (knee) won't be activated from the reserve/PUP list in advance of Sunday's game against the 49ers, Gregg Bell of The Tacoma News Tribune reports.",
       "date": "2026-10-05T17:05Z"
      },
      {
@@ -5039,8 +4985,8 @@
       "pos": "DT",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Williams (ankle) is questionable to return to Sunday's game against the Chargers.",
-      "date": "2026-10-04T23:24Z"
+      "detail": "Head coach Mike Macdonald said Monday that he expects Williams (ankle) to be available for this Sunday's NFC West showdown against the 49ers, Tim Booth of The Seattle Times reports.",
+      "date": "2026-10-05T23:32Z"
      },
      {
       "name": "Jadarian Price",
@@ -5051,7 +4997,7 @@
       "date": "2026-10-03T20:02Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -5347,14 +5293,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 24,
-     "home": 20
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -5379,20 +5318,20 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Jaylen Watson",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "The Rams are hopeful that Watson (shoulder) will return to practice for Week 5 preparation, Adam Grosbard of The Orange County Register reported Monday.",
+      "date": "2026-10-05T23:55Z"
+     },
+     {
       "name": "Aaron Donald",
       "pos": "DT",
       "status": "Out",
       "type": "out",
       "detail": "Head coach Sean McVay is hopeful that Donald (back) will play in his team's Monday night matchup against the Bills in Week 5, Stu Jackson of the Rams' official site reports. \"That's the direction it looks like it's trending in,\" McVay said.",
       "date": "2026-10-05T21:39Z"
-     },
-     {
-      "name": "Jaylen Watson",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-10-05T18:50Z"
      },
      {
       "name": "Colby Parkinson",
@@ -5407,8 +5346,8 @@
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-05T21:25Z"
+      "detail": "Mumpfield suffered a rotator cuff contusion during Sunday's 24-20 win over the Eagles, Adam Grosbard of The Orange County Register reports.",
+      "date": "2026-10-05T23:40Z"
      },
      {
       "name": "Terrance Ferguson",
@@ -5493,12 +5432,28 @@
       "date": "2026-10-05T19:00Z"
      },
      {
+      "name": "Cam Jurgens",
+      "pos": "C",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Jurgens entered the NFL's five-step concussion protocol Monday, Mike Garafolo of NFL Network reports.",
+      "date": "2026-10-06T01:31Z"
+     },
+     {
       "name": "Saquon Barkley",
       "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Coach Nick Sirianni said, \"We'll see,\" Monday afternoon when asked about Barkley's new hamstring injury, Zach Berman of The Athletic reports. \"We'll have more answers Wednesday for you probably with that stuff,\" Sirianni added.",
-      "date": "2026-10-05T21:31Z"
+      "detail": "Barkley (hamstring) is considered week-to-week, though the Eagles don't view the injury as long term, Ian Rapoport of NFL Network reports.",
+      "date": "2026-10-06T00:37Z"
+     },
+     {
+      "name": "Jonathan Greenard",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Greenard (ankle) is considered day-to-day after exiting Sunday's game against the Rams, Ian Rapoport of NFL Network reports.",
+      "date": "2026-10-05T23:09Z"
      },
      {
       "name": "Quinyon Mitchell",
@@ -5507,17 +5462,9 @@
       "type": "questionable",
       "detail": "Mitchell is scheduled to undergo testing on his knee Monday after he was forced out of Sunday's 24-20 loss to the Rams, Ian Rapoport of NFL Network reports.",
       "date": "2026-10-05T14:20Z"
-     },
-     {
-      "name": "Jonathan Greenard",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Greenard (ankle) won't return to Sunday's game against the Rams.",
-      "date": "2026-10-04T20:11Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -5813,14 +5760,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 10,
-     "home": 15
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -5839,8 +5779,8 @@
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-10-05T22:15Z"
+      "detail": "Taylor (quadriceps) has been ruled out ahead of the Dolphins' Week 5 matchup with the Bengals, Barry Jackson of the Miami Herald reported Monday.",
+      "date": "2026-10-06T01:00Z"
      },
      {
       "name": "Caleb Douglas",
@@ -5867,20 +5807,20 @@
       "date": "2026-10-01T01:21Z"
      },
      {
+      "name": "Dante Trader Jr.",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Trader (knee) is considered day-to-day ahead of Week 5, C. Isaiah Smalls II of the Miami Herald reports.",
+      "date": "2026-10-05T23:45Z"
+     },
+     {
       "name": "Jackson Woodard",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Woodard suffered an ankle injury during Sunday's 15-10 loss to the Vikings.",
       "date": "2026-10-05T03:29Z"
-     },
-     {
-      "name": "Dante Trader Jr.",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Trader (knee) is questionable to return to Sunday's game against Minnesota.",
-      "date": "2026-10-04T21:13Z"
      },
      {
       "name": "Kenneth Grant",
@@ -5900,6 +5840,14 @@
      }
     ],
     "home": [
+     {
+      "name": "Donovan Jackson",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "Jackson suffered a torn meniscus during Sunday's game versus the Dolphins, Dane Mizutani of the St. Paul Pioneer Press reports.",
+      "date": "2026-10-06T00:30Z"
+     },
      {
       "name": "Brett Thorson",
       "pos": "P",
@@ -5925,20 +5873,12 @@
       "date": "2026-10-05T18:53Z"
      },
      {
-      "name": "Donovan Jackson",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "Jackson (knee) has been ruled out for the rest of Sunday's contest against the Dolphins.",
-      "date": "2026-10-04T21:09Z"
-     },
-     {
       "name": "Christian Darrisaw",
       "pos": "OT",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Darrisaw (head) is questionable to return to Sunday's game against Miami.",
-      "date": "2026-10-04T22:39Z"
+      "detail": "Darrisaw is in concussion protocol following Sunday's game versus the Dolphins, Dane Mizutani of the St. Paul Pioneer Press reports.",
+      "date": "2026-10-06T00:34Z"
      },
      {
       "name": "Josh Oliver",
@@ -5949,7 +5889,7 @@
       "date": "2026-09-30T00:26Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -6280,14 +6220,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 29,
-     "home": 26
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -6410,7 +6343,7 @@
       "date": "2026-10-04T18:51Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -6717,14 +6650,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 12,
-     "home": 23
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -6732,6 +6658,14 @@
    "pulls": {},
    "injuryReport": {
     "away": [
+     {
+      "name": "Braiden McGregor",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "McGregor (pectoral) suffered a season-ending injury during Sunday's loss to the Bears, Adam Schefter of ESPN reports.",
+      "date": "2026-10-06T00:30Z"
+     },
      {
       "name": "Mason Taylor",
       "pos": "TE",
@@ -6781,20 +6715,12 @@
       "date": "2026-10-05T18:58Z"
      },
      {
-      "name": "Braiden McGregor",
-      "pos": "DE",
-      "status": "Out",
-      "type": "out",
-      "detail": "McGregor exited Sunday's game against the Bears with a chest injury and did not return.",
-      "date": "2026-10-05T00:57Z"
-     },
-     {
       "name": "Jarvis Brownlee Jr.",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-05T03:25Z"
+      "detail": "Brownlee is in concussion protocol as Week 5 approaches, Antwan V. Staley of the New York Daily News reports.",
+      "date": "2026-10-05T23:17Z"
      },
      {
       "name": "Arian Smith",
@@ -6803,9 +6729,25 @@
       "type": "Injured Reserve",
       "detail": "Smith (knee) underwent surgery Wednesday to repair a torn ACL and will miss the rest of the season, Antwan V. Staley of the New York Daily News reports.",
       "date": "2026-09-23T21:53Z"
+     },
+     {
+      "name": "David Onyemata",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Onyemata (groin) underwent core-muscle surgery Wednesday, Antwan V. Staley of the New York Daily News reports.",
+      "date": "2026-09-23T21:40Z"
      }
     ],
     "home": [
+     {
+      "name": "Anthony Johnson Jr.",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-06T12:00Z"
+     },
      {
       "name": "Caleb Williams",
       "pos": "QB",
@@ -6855,14 +6797,6 @@
       "date": "2026-10-05T21:08Z"
      },
      {
-      "name": "Anthony Johnson Jr.",
-      "pos": "S",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-10-05T23:02Z"
-     },
-     {
       "name": "Braxton Jones",
       "pos": "OT",
       "status": "Injured Reserve",
@@ -6871,7 +6805,7 @@
       "date": "2026-10-04T01:02Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -7212,14 +7146,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 24,
-     "home": 27
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [],
    "liveBoard": [],
@@ -7288,7 +7215,7 @@
       "date": "2026-10-02T19:22Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   },
   {
@@ -7648,14 +7575,7 @@
      }
     ]
    },
-   "status": {
-    "state": "STATUS_FINAL",
-    "detail": "Final",
-    "score": {
-     "away": 18,
-     "home": 24
-    }
-   },
+   "status": null,
    "live": null,
    "scratched": [
     {
@@ -7693,7 +7613,7 @@
       "status": "Out",
       "type": "out",
       "detail": "out",
-      "date": "2026-10-05T23:02Z"
+      "date": "2026-10-06T12:00Z"
      },
      {
       "name": "Trey Hendrickson",
@@ -7708,7 +7628,7 @@
       "pos": "QB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Head coach Jesse Minter said Monday that he's uncertain whether Jackson (ankle) will be ready to play in Sunday's game against the Falcons, Jamison Hensley of ESPN.com reports. \"I don't know the chances yet,\" Minter said. \"We're still gathering a lot of the information and the imaging and things like that, just dealing with a little bit of an ankle and we'll kind of see where that shakes out.\"",
+      "detail": "Head coach Jesse Minter said Monday that he's uncertain whether Jackson (ankle) will be ready to play in Sunday's game against the Falcons, Jamison Hensley of ESPN.com reports. \"I don't know the chances yet,\" Minter said. \"We're still gathering a lot of the information and the imaging and things like that, just dealing with a little bit of an ankle, and we'll kind of see where that shakes out.\"",
       "date": "2026-10-05T20:57Z"
      },
      {
@@ -7760,7 +7680,7 @@
       "date": "2026-10-04T00:38Z"
      }
     ],
-    "fetchedAt": "2026-10-05T23:09:06.930Z"
+    "fetchedAt": "2026-10-06T12:12:45.698Z"
    }
   }
  ],
@@ -8531,64 +8451,64 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-10-05T23:09:07.659Z",
-  "finals": 15,
+  "gradedAt": "2026-10-06T12:12:46.354Z",
+  "finals": 16,
   "games": 16,
   "summary": {
    "all": {
-    "wins": 59,
-    "losses": 155,
+    "wins": 64,
+    "losses": 164,
     "pushes": 1,
-    "pending": 14
+    "pending": 0
    },
    "lockedIn": {
     "wins": 1,
-    "losses": 9,
+    "losses": 10,
     "pushes": 0,
-    "pending": 1
+    "pending": 0
    },
    "lean": {
-    "wins": 12,
+    "wins": 13,
     "losses": 14,
     "pushes": 1,
-    "pending": 1
+    "pending": 0
    },
    "top3": {
     "wins": 17,
-    "losses": 28,
+    "losses": 31,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "td2": {
     "wins": 2,
-    "losses": 43,
+    "losses": 46,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "value": {
-    "wins": 6,
-    "losses": 38,
+    "wins": 7,
+    "losses": 40,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "prop": {
-    "wins": 21,
+    "wins": 24,
     "losses": 23,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "calibration": {
     "td2": [
      {
       "band": "0-8%",
-      "n": 21,
+      "n": 23,
       "model": 0.06,
       "actual": 0,
       "wins": 0
      },
      {
       "band": "8-15%",
-      "n": 14,
+      "n": 15,
       "model": 0.12,
       "actual": 0,
       "wins": 0
@@ -8611,16 +8531,16 @@
     "top3": [
      {
       "band": "0-40%",
-      "n": 22,
-      "model": 0.326,
-      "actual": 0.318,
+      "n": 24,
+      "model": 0.325,
+      "actual": 0.292,
       "wins": 7
      },
      {
       "band": "40-50%",
-      "n": 13,
+      "n": 14,
       "model": 0.452,
-      "actual": 0.308,
+      "actual": 0.286,
       "wins": 4
      },
      {
@@ -8784,139 +8704,142 @@
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "atd",
     "label": "Juwan Johnson ATD +220",
-    "result": "pending",
     "conf": 3,
-    "bucket": "lockedIn"
+    "bucket": "lockedIn",
+    "result": "loss"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "side",
     "label": "ATL +2.5",
-    "result": "pending",
     "conf": 2,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "atd",
     "label": "Juwan Johnson ATD",
-    "result": "pending",
     "est": 0.37,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "atd",
     "label": "Drake London ATD",
-    "result": "pending",
     "est": 0.45,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "atd",
     "label": "Kendre Miller ATD",
-    "result": "pending",
     "est": 0.26,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "td2",
     "label": "Juwan Johnson 2+ TD",
-    "result": "pending",
     "est": 0.07891766045416793,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "td2",
     "label": "Drake London 2+ TD",
-    "result": "pending",
     "est": 0.1211896495844087,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "td2",
     "label": "Kendre Miller 2+ TD",
-    "result": "pending",
     "est": 0.037182231339898064,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "atd",
     "label": "Noah Fant ATD",
-    "result": "pending",
     "est": 0.21,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "atd",
     "label": "Devaughn Vele ATD",
-    "result": "pending",
     "est": 0.22,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "win"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "atd",
     "label": "Austin Hooper ATD",
-    "result": "pending",
     "est": 0.13,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "prop",
     "label": "Bijan Robinson over 85.5 rush yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 145,
+    "result": "win"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "prop",
     "label": "Chris Olave over 84.5 reception yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 116,
+    "result": "win"
    },
    {
     "game": "atl-no",
     "gameLabel": "ATL@NO",
-    "final": null,
+    "final": "ATL 45, NO 24",
     "type": "prop",
     "label": "Juwan Johnson over 36.5 reception yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 59,
+    "result": "win"
    },
    {
     "game": "dal-hou",
@@ -10932,7 +10855,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-10-05T23:09:07.662Z",
+  "updatedAt": "2026-10-06T12:12:46.355Z",
   "weeks": [
    {
     "week": 1,
@@ -11269,63 +11192,63 @@
    },
    {
     "week": 4,
-    "finals": 15,
+    "finals": 16,
     "games": 16,
     "summary": {
      "all": {
-      "wins": 59,
-      "losses": 155,
+      "wins": 64,
+      "losses": 164,
       "pushes": 1,
-      "pending": 14
+      "pending": 0
      },
      "lockedIn": {
       "wins": 1,
-      "losses": 9,
+      "losses": 10,
       "pushes": 0,
-      "pending": 1
+      "pending": 0
      },
      "lean": {
-      "wins": 12,
+      "wins": 13,
       "losses": 14,
       "pushes": 1,
-      "pending": 1
+      "pending": 0
      },
      "top3": {
       "wins": 17,
-      "losses": 28,
+      "losses": 31,
       "pushes": 0,
-      "pending": 3
+      "pending": 0
      },
      "td2": {
       "wins": 2,
-      "losses": 43,
+      "losses": 46,
       "pushes": 0,
-      "pending": 3
+      "pending": 0
      },
      "value": {
-      "wins": 6,
-      "losses": 38,
+      "wins": 7,
+      "losses": 40,
       "pushes": 0,
-      "pending": 3
+      "pending": 0
      },
      "prop": {
-      "wins": 21,
+      "wins": 24,
       "losses": 23,
       "pushes": 0,
-      "pending": 3
+      "pending": 0
      },
      "calibration": {
       "td2": [
        {
         "band": "0-8%",
-        "n": 21,
+        "n": 23,
         "model": 0.06,
         "actual": 0,
         "wins": 0
        },
        {
         "band": "8-15%",
-        "n": 14,
+        "n": 15,
         "model": 0.12,
         "actual": 0,
         "wins": 0
@@ -11348,16 +11271,16 @@
       "top3": [
        {
         "band": "0-40%",
-        "n": 22,
-        "model": 0.326,
-        "actual": 0.318,
+        "n": 24,
+        "model": 0.325,
+        "actual": 0.292,
         "wins": 7
        },
        {
         "band": "40-50%",
-        "n": 13,
+        "n": 14,
         "model": 0.452,
-        "actual": 0.308,
+        "actual": 0.286,
         "wins": 4
        },
        {
@@ -11381,51 +11304,51 @@
   ],
   "season_totals": {
    "all": {
-    "wins": 292,
-    "losses": 587,
+    "wins": 297,
+    "losses": 596,
     "pushes": 3,
-    "pending": 14
+    "pending": 0
    },
    "lockedIn": {
     "wins": 26,
-    "losses": 36,
+    "losses": 37,
     "pushes": 1,
-    "pending": 1
+    "pending": 0
    },
    "lean": {
-    "wins": 56,
+    "wins": 57,
     "losses": 60,
     "pushes": 2,
-    "pending": 1
+    "pending": 0
    },
    "top3": {
     "wins": 77,
-    "losses": 109,
+    "losses": 112,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "td2": {
     "wins": 26,
-    "losses": 160,
+    "losses": 163,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "value": {
-    "wins": 28,
-    "losses": 130,
+    "wins": 29,
+    "losses": 132,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "prop": {
-    "wins": 79,
+    "wins": 82,
     "losses": 92,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    }
   }
  },
  "parlays": {
-  "builtAt": "2026-10-05T23:09:07.764Z",
+  "builtAt": "2026-10-06T12:12:46.426Z",
   "books": [
    "FD",
    "DK",
@@ -11444,37 +11367,7 @@
     "key": "twoPlus",
     "title": "2+ TD props",
     "note": "Model probability and fair price. No 2+ TD market pulled yet: confirm the FD/DK price before betting.",
-    "parlays": [
-     {
-      "legs": [
-       {
-        "type": "td2",
-        "td2": null,
-        "prob2": 0.12,
-        "status": null,
-        "label": "Drake London 2+ TDs",
-        "player": "Drake London",
-        "team": "ATL",
-        "pos": "WR",
-        "game": "atl-no",
-        "gameLabel": "ATL@NO",
-        "kickoff": "2026-10-06T00:15:00Z",
-        "prob": 0.121,
-        "price": null,
-        "book": "check FD/DK",
-        "why": "Nine of ten targets for 194 yards in Penix's first start, a 35.7% target share with him under center, and the 2025 history that matters: 12 red-zone targets, all five goal-line targets and 8 of Penix's 11 touchdown passes. The Saints are 30th in success rate against the pass. The only reason the number is 45% and not higher is that Atlanta runs more than anyone in the league. Shortened to +135 Friday (43%), so the edge is now two points."
-       }
-      ],
-      "price": null,
-      "decimal": null,
-      "prob": 0.121,
-      "fairPrice": 726,
-      "minPrice": 768,
-      "ev": null,
-      "why": "45% anytime estimate gives 12% for two or more (Poisson). Fair +726; play at +768 or better on FD/DK. Nine of ten targets for 194 yards in Penix's first start, a 35.7% target share with him under center, and the 2025 history that matters: 12 red-zone targets, all five goal-line targets and 8 of Penix's 11 touchdown passes. The Saints are 30th in success rate against the pass. The only reason the number is 45% and not higher is that Atlanta runs more than anyone in the league. Shortened to +135 Friday (43%), so the edge is now two points.",
-      "rank": 1
-     }
-    ]
+    "parlays": []
    },
    {
     "key": "sides",
@@ -11492,100 +11385,7 @@
     "key": "sameGame",
     "title": "Same-game stacks",
     "note": "Side plus scorer in one game. Book SGP pricing differs from straight multiplication.",
-    "parlays": [
-     {
-      "rank": 1,
-      "legs": [
-       {
-        "type": "side",
-        "label": "ATL +1.5",
-        "team": "ATL",
-        "game": "atl-no",
-        "gameLabel": "ATL@NO",
-        "kickoff": "2026-10-06T00:15:00Z",
-        "prob": 0.532,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.008,
-        "conf": 2,
-        "moved": "model liked +2.5",
-        "why": "The Saints are laying points with a fill-in left tackle against the league's best pressure rate, without their lead back, and with a quarterback who leads the NFL in dropbacks and has 10 sacks, 3 interceptions and 5 fumbles in three games. Atlanta's defense is second in success rate and fifth in points per drive, and its run game (54.7% run rate, 5.3 a carry for Bijan) is the matchup against a Saints defense allowing 136.5 rushing yards a game with Elliss, Granderson, Jennings and Werner all sitting out Thursday. The counter is real: Penix has one start, Atlanta scored 3 and 13 in the other two, and the Saints run 74 plays a game at home with Olave against a secondary missing A.J. Terrell Jr. That caps this at a lean. The total is a pass; the sim lands within a point of 47.5 with the pace and the Falcons' defense cancelling."
-       },
-       {
-        "type": "atd",
-        "td2": null,
-        "prob2": 0.09,
-        "status": null,
-        "label": "Juwan Johnson anytime TD",
-        "player": "Juwan Johnson",
-        "team": "NO",
-        "pos": "TE",
-        "game": "atl-no",
-        "gameLabel": "ATL@NO",
-        "kickoff": "2026-10-06T00:15:00Z",
-        "prob": 0.37,
-        "price": 220,
-        "book": "FD",
-        "implied": 0.313,
-        "edge": 0.057,
-        "why": "Six red-zone targets, two at the goal line and three touchdowns in three games, and 29.4% of the Saints' red-zone targets with Etienne Jr. now out of the checkdown mix. New Orleans throws 72% of its touchdowns and Shough's red-zone reads go to the tight ends, not Olave. Priced as a 31% scorer at +220 (in from +240); the role says 37%, and it goes up if Fant sits."
-       }
-      ],
-      "decimal": 6.109,
-      "price": 511,
-      "prob": 0.187,
-      "ev": 0.142,
-      "why": "Model 19% vs 16% implied at +511. ATL +1.5: 53% model, -110 FD/DK; Juwan Johnson: 37% model, +220 FD. Scorer on the other side of the number; treat as a hedge, not a stack. Straight multiplication; FD/DK same-game pricing will differ. Research stack: The two biggest buys on the board, one per team, so the legs barely interfere: about 16.5% together against 16.7% if independent, and the pair should pay around +500. Both are the quarterback's red-zone first read.",
-      "score": 0.061
-     },
-     {
-      "rank": 2,
-      "legs": [
-       {
-        "type": "side",
-        "label": "ATL +1.5",
-        "team": "ATL",
-        "game": "atl-no",
-        "gameLabel": "ATL@NO",
-        "kickoff": "2026-10-06T00:15:00Z",
-        "prob": 0.532,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.008,
-        "conf": 2,
-        "moved": "model liked +2.5",
-        "why": "The Saints are laying points with a fill-in left tackle against the league's best pressure rate, without their lead back, and with a quarterback who leads the NFL in dropbacks and has 10 sacks, 3 interceptions and 5 fumbles in three games. Atlanta's defense is second in success rate and fifth in points per drive, and its run game (54.7% run rate, 5.3 a carry for Bijan) is the matchup against a Saints defense allowing 136.5 rushing yards a game with Elliss, Granderson, Jennings and Werner all sitting out Thursday. The counter is real: Penix has one start, Atlanta scored 3 and 13 in the other two, and the Saints run 74 plays a game at home with Olave against a secondary missing A.J. Terrell Jr. That caps this at a lean. The total is a pass; the sim lands within a point of 47.5 with the pace and the Falcons' defense cancelling."
-       },
-       {
-        "type": "atd",
-        "td2": null,
-        "prob2": 0.12,
-        "status": null,
-        "label": "Drake London anytime TD",
-        "player": "Drake London",
-        "team": "ATL",
-        "pos": "WR",
-        "game": "atl-no",
-        "gameLabel": "ATL@NO",
-        "kickoff": "2026-10-06T00:15:00Z",
-        "prob": 0.45,
-        "price": 115,
-        "book": "FD",
-        "implied": 0.465,
-        "edge": -0.015,
-        "why": "Nine of ten targets for 194 yards in Penix's first start, a 35.7% target share with him under center, and the 2025 history that matters: 12 red-zone targets, all five goal-line targets and 8 of Penix's 11 touchdown passes. The Saints are 30th in success rate against the pass. The only reason the number is 45% and not higher is that Atlanta runs more than anyone in the league. Shortened to +135 Friday (43%), so the edge is now two points."
-       }
-      ],
-      "decimal": 4.105,
-      "price": 310,
-      "prob": 0.268,
-      "ev": 0.101,
-      "why": "Model 27% vs 24% implied at +310. ATL +1.5: 53% model, -110 FD/DK; Drake London: 45% model, +115 FD. Correlated: the side and the scorer ride the same script. Straight multiplication; FD/DK same-game pricing will differ. Research stack: The two biggest buys on the board, one per team, so the legs barely interfere: about 16.5% together against 16.7% if independent, and the pair should pay around +500. Both are the quarterback's red-zone first read.",
-      "score": 0.052
-     }
-    ]
+    "parlays": []
    },
    {
     "key": "model",
@@ -11652,7 +11452,7 @@
   ]
  },
  "topTen": {
-  "builtAt": "2026-10-05T23:09:07.765Z",
+  "builtAt": "2026-10-06T12:12:46.426Z",
   "note": "Sides, totals and moneylines are priced from the projected score with the simulator’s spreads (13.4 margin, 10.6 total). Touchdown lists use the desk’s role-built estimates. Prop leans are not graded by a probability and are listed by kickoff.",
   "categories": [
    {
@@ -11671,310 +11471,31 @@
     "key": "moneyline",
     "title": "Moneyline",
     "blurb": "Most likely winners by the projected score.",
-    "plays": [
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "bet": "NO ML",
-      "price": -120,
-      "prob": 0.53,
-      "implied": 0.563,
-      "edge": -0.033,
-      "conf": null,
-      "why": "Projected ATL 23, NO 24."
-     }
-    ]
+    "plays": []
    },
    {
     "key": "atd",
     "title": "Anytime TD",
     "blurb": "Most likely scorers on the slate, priced.",
-    "plays": [
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Drake London",
-      "team": "ATL",
-      "pos": "WR",
-      "price": 115,
-      "priceNote": null,
-      "prob": 0.45,
-      "implied": 0.465,
-      "edge": -0.015,
-      "est2": 0.12,
-      "price2": null,
-      "why": "Nine of ten targets for 194 yards in Penix's first start, a 35.7% target share with him under center, and the 2025 history that matters: 12 red-zone targets, all five goal-line targets and 8 of Penix's 11 touchdown passes. The Saints are 30th in success rate against the pass. The only reason the number is 45% and not higher is that Atlanta runs more than anyone in the league. Shortened to +135 Friday (43%), so the edge is now two points.",
-      "bet": "Drake London anytime TD"
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Juwan Johnson",
-      "team": "NO",
-      "pos": "TE",
-      "price": 220,
-      "priceNote": null,
-      "prob": 0.37,
-      "implied": 0.313,
-      "edge": 0.057,
-      "est2": 0.09,
-      "price2": null,
-      "why": "Six red-zone targets, two at the goal line and three touchdowns in three games, and 29.4% of the Saints' red-zone targets with Etienne Jr. now out of the checkdown mix. New Orleans throws 72% of its touchdowns and Shough's red-zone reads go to the tight ends, not Olave. Priced as a 31% scorer at +220 (in from +240); the role says 37%, and it goes up if Fant sits.",
-      "bet": "Juwan Johnson anytime TD"
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Kendre Miller",
-      "team": "NO",
-      "pos": "RB",
-      "price": 300,
-      "priceNote": null,
-      "prob": 0.26,
-      "implied": 0.25,
-      "edge": 0.01,
-      "est2": 0.04,
-      "price2": null,
-      "why": "Etienne Jr. is on IR and took four of the Saints' 14 red-zone carries with him. Miller has the only running back rushing touchdown of the Saints' season (from the 8 in Detroit), played 31% of snaps after Etienne left Sunday, and Kamara has one rushing score on his last 131 carries. Now +325 (24%, in from +360) but still priced as a fourth option; the role has him at a quarter.",
-      "bet": "Kendre Miller anytime TD"
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Devaughn Vele",
-      "team": "NO",
-      "pos": "WR",
-      "price": 240,
-      "priceNote": "verify",
-      "prob": 0.22,
-      "implied": 0.294,
-      "edge": -0.074,
-      "est2": 0.03,
-      "price2": null,
-      "why": "Seven targets a game as the No. 2, a goal-line score in Detroit and three red-zone targets. BetOnline has him +220 (31%); nothing confirmed at a major book. Fair around +350; a buy if a book opens him north of +400.",
-      "bet": "Devaughn Vele anytime TD"
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Austin Hooper",
-      "team": "ATL",
-      "pos": "TE",
-      "price": 850,
-      "priceNote": null,
-      "prob": 0.13,
-      "implied": 0.105,
-      "edge": 0.025,
-      "est2": 0.01,
-      "price2": null,
-      "why": "Caught the only Falcons red-zone target of the season, from the 5 for a score, and had two red-zone touchdowns on 26 targets last year. Drifted to +750 (12%), a point under the role; a lean only because the goal-line tight end role in this offense is his, not Pitts Sr.'s.",
-      "bet": "Austin Hooper anytime TD"
-     }
-    ]
+    "plays": []
    },
    {
     "key": "value",
     "title": "TD value",
     "blurb": "Biggest gap between our number and the price.",
-    "plays": [
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Juwan Johnson",
-      "team": "NO",
-      "pos": "TE",
-      "price": 220,
-      "priceNote": null,
-      "prob": 0.37,
-      "implied": 0.313,
-      "edge": 0.057,
-      "est2": 0.09,
-      "price2": null,
-      "why": "Six red-zone targets, two at the goal line and three touchdowns in three games, and 29.4% of the Saints' red-zone targets with Etienne Jr. now out of the checkdown mix. New Orleans throws 72% of its touchdowns and Shough's red-zone reads go to the tight ends, not Olave. Priced as a 31% scorer at +220 (in from +240); the role says 37%, and it goes up if Fant sits.",
-      "bet": "Juwan Johnson anytime TD"
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Austin Hooper",
-      "team": "ATL",
-      "pos": "TE",
-      "price": 850,
-      "priceNote": null,
-      "prob": 0.13,
-      "implied": 0.105,
-      "edge": 0.025,
-      "est2": 0.01,
-      "price2": null,
-      "why": "Caught the only Falcons red-zone target of the season, from the 5 for a score, and had two red-zone touchdowns on 26 targets last year. Drifted to +750 (12%), a point under the role; a lean only because the goal-line tight end role in this offense is his, not Pitts Sr.'s.",
-      "bet": "Austin Hooper anytime TD"
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Kendre Miller",
-      "team": "NO",
-      "pos": "RB",
-      "price": 300,
-      "priceNote": null,
-      "prob": 0.26,
-      "implied": 0.25,
-      "edge": 0.01,
-      "est2": 0.04,
-      "price2": null,
-      "why": "Etienne Jr. is on IR and took four of the Saints' 14 red-zone carries with him. Miller has the only running back rushing touchdown of the Saints' season (from the 8 in Detroit), played 31% of snaps after Etienne left Sunday, and Kamara has one rushing score on his last 131 carries. Now +325 (24%, in from +360) but still priced as a fourth option; the role has him at a quarter.",
-      "bet": "Kendre Miller anytime TD"
-     }
-    ]
+    "plays": []
    },
    {
     "key": "td2",
     "title": "2+ TDs",
     "blurb": "Most likely multi-score players. Fair price shown where no book posted one.",
-    "plays": [
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Drake London",
-      "team": "ATL",
-      "pos": "WR",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.12,
-      "implied": null,
-      "edge": null,
-      "est2": 0.12,
-      "price2": null,
-      "why": "Nine of ten targets for 194 yards in Penix's first start, a 35.7% target share with him under center, and the 2025 history that matters: 12 red-zone targets, all five goal-line targets and 8 of Penix's 11 touchdown passes. The Saints are 30th in success rate against the pass. The only reason the number is 45% and not higher is that Atlanta runs more than anyone in the league. Shortened to +135 Friday (43%), so the edge is now two points.",
-      "bet": "Drake London 2+ TDs",
-      "fair": 733
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Juwan Johnson",
-      "team": "NO",
-      "pos": "TE",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.09,
-      "implied": null,
-      "edge": null,
-      "est2": 0.09,
-      "price2": null,
-      "why": "Six red-zone targets, two at the goal line and three touchdowns in three games, and 29.4% of the Saints' red-zone targets with Etienne Jr. now out of the checkdown mix. New Orleans throws 72% of its touchdowns and Shough's red-zone reads go to the tight ends, not Olave. Priced as a 31% scorer at +220 (in from +240); the role says 37%, and it goes up if Fant sits.",
-      "bet": "Juwan Johnson 2+ TDs",
-      "fair": 1011
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Kendre Miller",
-      "team": "NO",
-      "pos": "RB",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.04,
-      "implied": null,
-      "edge": null,
-      "est2": 0.04,
-      "price2": null,
-      "why": "Etienne Jr. is on IR and took four of the Saints' 14 red-zone carries with him. Miller has the only running back rushing touchdown of the Saints' season (from the 8 in Detroit), played 31% of snaps after Etienne left Sunday, and Kamara has one rushing score on his last 131 carries. Now +325 (24%, in from +360) but still priced as a fourth option; the role has him at a quarter.",
-      "bet": "Kendre Miller 2+ TDs",
-      "fair": 2400
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Devaughn Vele",
-      "team": "NO",
-      "pos": "WR",
-      "price": null,
-      "priceNote": "verify",
-      "prob": 0.03,
-      "implied": null,
-      "edge": null,
-      "est2": 0.03,
-      "price2": null,
-      "why": "Seven targets a game as the No. 2, a goal-line score in Detroit and three red-zone targets. BetOnline has him +220 (31%); nothing confirmed at a major book. Fair around +350; a buy if a book opens him north of +400.",
-      "bet": "Devaughn Vele 2+ TDs",
-      "fair": 3233
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "name": "Austin Hooper",
-      "team": "ATL",
-      "pos": "TE",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.01,
-      "implied": null,
-      "edge": null,
-      "est2": 0.01,
-      "price2": null,
-      "why": "Caught the only Falcons red-zone target of the season, from the 5 for a score, and had two red-zone touchdowns on 26 targets last year. Drifted to +750 (12%), a point under the role; a lean only because the goal-line tight end role in this offense is his, not Pitts Sr.'s.",
-      "bet": "Austin Hooper 2+ TDs",
-      "fair": 9900
-     }
-    ]
+    "plays": []
    },
    {
     "key": "props",
     "title": "Props",
     "blurb": "The desk’s written leans, one per game by kickoff. Not probability-graded.",
-    "plays": [
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "bet": "Bijan Robinson over 85.5 rush yds",
-      "price": null,
-      "prob": null,
-      "implied": null,
-      "edge": null,
-      "conf": null,
-      "why": "Sixty-six carries for 349 yards (5.3 a carry) and 29 for 194 with Penix starting, against a defense allowing 136.5 rushing yards a game that may be without Elliss, Granderson and Werner. Sim has 86+ at 58%."
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "bet": "Chris Olave over 85 rec yds",
-      "price": -113,
-      "prob": null,
-      "implied": null,
-      "edge": null,
-      "conf": null,
-      "why": "Thirty-six targets in three games (29% share), 182, 86 and 107 yards, and Atlanta is without A.J. Terrell Jr. The Saints' pace puts the volume there even on a bad night; the touchdown price is where to fade him, not the yards."
-     },
-     {
-      "game": "atl-no",
-      "gameLabel": "ATL@NO",
-      "kickoff": "2026-10-06T00:15:00Z",
-      "bet": "Juwan Johnson over 45 rec yds",
-      "price": -113,
-      "prob": null,
-      "implied": null,
-      "edge": null,
-      "conf": null,
-      "why": "Fifty-four, 66 and 53 yards on 19 targets, and Etienne Jr.'s nine Week 1 targets as the checkdown have to go somewhere. Lean, not a hammer: the Falcons are top-10 in yards per play allowed."
-     }
-    ]
+    "plays": []
    }
   ]
  },
