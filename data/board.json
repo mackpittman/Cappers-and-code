@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 5,
- "generatedAt": "2026-10-06T21:36:40.179Z",
+ "generatedAt": "2026-10-07T11:59:08.454Z",
  "researchAsOf": "2026-10-02T15:29:12.165Z",
  "oddsFetchedAt": "2026-10-05T20:51:11.702Z",
  "oddsCredits": {
@@ -33,7 +33,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": "Odds API (multi-book)",
- "injuriesFetchedAt": "2026-10-06T21:36:37.688Z",
+ "injuriesFetchedAt": "2026-10-07T11:59:06.879Z",
  "notes": "Week 4 research prepared Thursday Oct 1 and refreshed Friday Oct 2 with Friday-morning prices and practice reports; final Friday designations had not posted for most teams at refresh time. Touchdown estimates are built from role (red-zone and goal-line usage with the quarterback who starts), not from the posted price. Anytime prices are mostly BetMGM's Friday board, FanDuel where noted; any price marked verify or est. must be checked at a book before it is played.",
  "completed": [],
  "games": [
@@ -377,30 +377,30 @@
       "date": "2026-10-05T00:47Z"
      },
      {
-      "name": "Hunter Long",
-      "pos": "TE",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-10-06T20:29Z"
-     },
-     {
       "name": "Paris Johnson Jr.",
       "pos": "OT",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Johnson (biceps) has been ruled out for the remainder of the 2026 season, Dani Sureck of the Cardinals' official site reports.",
-      "date": "2026-10-06T00:46Z"
+      "detail": "The Cardinals placed Johnson (biceps) on injured reserve Tuesday.",
+      "date": "2026-10-07T00:29Z"
+     },
+     {
+      "name": "Hunter Long",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Cardinals placed Long (knee) on injured reserve Tuesday.",
+      "date": "2026-10-06T23:22Z"
      }
     ],
     "home": [
      {
       "name": "Braxton Berrios",
       "pos": "WR",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Giants head coach John Harbaugh confirmed Berrios is dealing with a foot/ankle injury, but a decision has yet to be made regarding whether the wideout will be placed on injured reserve, Paul Schwartz of the New York Post reports.",
-      "date": "2026-10-05T21:48Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Berrios announced Tuesday that he will undergo foot surgery and be out for the rest of the 2026 season, Ryan Dunleavy of the New York Post reports.",
+      "date": "2026-10-06T23:39Z"
      },
      {
       "name": "Chauncey Golston",
@@ -419,7 +419,7 @@
       "date": "2026-10-05T00:59Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -1480,7 +1480,7 @@
       "date": "2026-10-01T20:44Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -1826,6 +1826,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Drew Shelton",
+      "pos": "OT",
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Head coach Brian Schottenheimer told reporters Tuesday that Shelton is considered week-to-week due to a hamstring injury, Joe Hoyt of The Dallas Morning News reports.",
+      "date": "2026-10-06T23:47Z"
+     },
+     {
       "name": "DeMarvion Overshown",
       "pos": "LB",
       "status": "Doubtful",
@@ -1840,14 +1848,6 @@
       "type": "doubtful",
       "detail": "doubtful",
       "date": "2026-10-06T18:21Z"
-     },
-     {
-      "name": "Drew Shelton",
-      "pos": "OT",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "doubtful",
-      "date": "2026-10-06T18:11Z"
      },
      {
       "name": "Tyler Smith",
@@ -1904,8 +1904,8 @@
       "pos": "CB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-10-06T21:03Z"
+      "detail": "Smith (hamstring) was placed on injured reserve by the Texans on Tuesday.",
+      "date": "2026-10-07T00:29Z"
      },
      {
       "name": "Tank Dell",
@@ -1924,7 +1924,7 @@
       "date": "2026-10-03T00:35Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -2338,7 +2338,7 @@
       "date": "2026-10-02T21:08Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -2794,7 +2794,7 @@
       "date": "2026-09-30T19:44Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -3151,8 +3151,8 @@
       "pos": "LB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-10-06T20:38Z"
+      "detail": "Cooper (Achilles) was placed on injured reserve by the Packers on Tuesday.",
+      "date": "2026-10-06T23:22Z"
      },
      {
       "name": "Warren Brinson",
@@ -3197,6 +3197,22 @@
       "date": "2026-10-05T19:07Z"
      },
      {
+      "name": "Benjamin Morrison",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Morrison (quadriceps) did not participate in practice Tuesday.",
+      "date": "2026-10-06T21:48Z"
+     },
+     {
+      "name": "Ko Kieft",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Kieft (elbow) was a limited participant in practice Tuesday.",
+      "date": "2026-10-06T21:42Z"
+     },
+     {
       "name": "Chase McLaughlin",
       "pos": "PK",
       "status": "Questionable",
@@ -3213,22 +3229,6 @@
       "date": "2026-10-06T19:54Z"
      },
      {
-      "name": "Benjamin Morrison",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-06T18:21Z"
-     },
-     {
-      "name": "Ko Kieft",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-06T18:21Z"
-     },
-     {
       "name": "SirVocea Dennis",
       "pos": "LB",
       "status": "Questionable",
@@ -3237,7 +3237,7 @@
       "date": "2026-10-06T00:51Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -3584,6 +3584,14 @@
       "date": "2026-10-06T19:13Z"
      },
      {
+      "name": "Jaylon Carlies",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-10-07T02:45Z"
+     },
+     {
       "name": "Keenan Allen",
       "pos": "WR",
       "status": "Questionable",
@@ -3598,14 +3606,6 @@
       "type": "Injured Reserve",
       "detail": "Colts head coach Shane Steichen reiterated Monday that Pierce didn't undergo surgery on his left heel and is continuing to rehab the injury, James Boyd of The Athletic reports.",
       "date": "2026-09-28T18:38Z"
-     },
-     {
-      "name": "Micheal Clemons",
-      "pos": "DE",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Clemons (toe) was placed on injured reserve by the Colts on Tuesday.",
-      "date": "2026-09-23T00:30Z"
      }
     ],
     "home": [
@@ -3686,11 +3686,11 @@
       "pos": "WR",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-10-06T20:10Z"
+      "detail": "The Commanders placed Lane (ankle) on injured reserve Tuesday.",
+      "date": "2026-10-06T23:14Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -4018,14 +4018,6 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Christian Braswell",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-06T18:21Z"
-     },
-     {
       "name": "Montaric Brown",
       "pos": "CB",
       "status": "Questionable",
@@ -4046,8 +4038,8 @@
       "pos": "S",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-10-06T20:21Z"
+      "detail": "The Jaguars placed Ransaw (knee) on their injured reserve list Tuesday.",
+      "date": "2026-10-07T00:42Z"
      }
     ],
     "home": [
@@ -4116,7 +4108,7 @@
       "date": "2026-09-29T23:16Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -4523,7 +4515,7 @@
       "date": "2026-09-29T22:27Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -4941,6 +4933,14 @@
       "date": "2026-10-04T21:22Z"
      },
      {
+      "name": "Branson Taylor",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Chargers designated Taylor (undisclosed) for return to practice from their injured reserve list Tuesday.",
+      "date": "2026-10-07T00:23Z"
+     },
+     {
       "name": "Scott Matlock",
       "pos": "FB",
       "status": "Injured Reserve",
@@ -4991,7 +4991,7 @@
       "date": "2026-10-03T20:02Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -5311,7 +5311,7 @@
     {
      "name": "Tank Bigsby",
      "team": "PHI",
-     "status": "Out"
+     "status": "Injured Reserve"
     }
    ],
    "liveBoard": [],
@@ -5369,14 +5369,6 @@
      }
     ],
     "home": [
-     {
-      "name": "Tank Bigsby",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Bigsby will undergo core muscle surgery and be placed on injured reserve, Ian Rapoport of NFL Network reports.",
-      "date": "2026-10-05T21:17Z"
-     },
      {
       "name": "Dallas Goedert",
       "pos": "TE",
@@ -5456,9 +5448,17 @@
       "type": "questionable",
       "detail": "Mitchell is scheduled to undergo testing on his knee Monday after he was forced out of Sunday's 24-20 loss to the Rams, Ian Rapoport of NFL Network reports.",
       "date": "2026-10-05T14:20Z"
+     },
+     {
+      "name": "Tank Bigsby",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Eagles placed Bigsby (abdomen) on injured reserve Tuesday, Zach Berman of The Athletic reports.",
+      "date": "2026-10-06T23:17Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -5837,14 +5837,6 @@
     ],
     "home": [
      {
-      "name": "Donovan Jackson",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "Jackson suffered a torn meniscus during Sunday's game versus the Dolphins, Dane Mizutani of the St. Paul Pioneer Press reports.",
-      "date": "2026-10-06T00:30Z"
-     },
-     {
       "name": "Brett Thorson",
       "pos": "P",
       "status": "Questionable",
@@ -5877,6 +5869,14 @@
       "date": "2026-10-06T00:34Z"
      },
      {
+      "name": "Donovan Jackson",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Jackson (knee) was placed on injured reserve by the Vikings on Tuesday.",
+      "date": "2026-10-07T00:34Z"
+     },
+     {
       "name": "Josh Oliver",
       "pos": "TE",
       "status": "Injured Reserve",
@@ -5885,7 +5885,7 @@
       "date": "2026-09-30T00:26Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -6339,7 +6339,7 @@
       "date": "2026-10-04T18:51Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -6737,6 +6737,14 @@
     ],
     "home": [
      {
+      "name": "Anthony Johnson Jr.",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-07T05:00Z"
+     },
+     {
       "name": "Caleb Williams",
       "pos": "QB",
       "status": "Out",
@@ -6785,14 +6793,6 @@
       "date": "2026-10-05T21:08Z"
      },
      {
-      "name": "Anthony Johnson Jr.",
-      "pos": "S",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-10-06T21:31Z"
-     },
-     {
       "name": "Braxton Jones",
       "pos": "OT",
       "status": "Injured Reserve",
@@ -6801,7 +6801,7 @@
       "date": "2026-10-04T01:02Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -7211,6 +7211,14 @@
       "date": "2026-10-02T19:22Z"
      },
      {
+      "name": "Kalia Davis",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Browns opened Davis' (quadriceps) 21-day practice window Tuesday.",
+      "date": "2026-10-06T23:51Z"
+     },
+     {
       "name": "Dillon Gabriel",
       "pos": "QB",
       "status": "Injured Reserve",
@@ -7219,7 +7227,7 @@
       "date": "2026-10-06T19:35Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   },
   {
@@ -7625,7 +7633,7 @@
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
-      "date": "2026-10-06T21:19Z"
+      "date": "2026-10-07T05:00Z"
      },
      {
       "name": "Lamar Jackson",
@@ -7684,7 +7692,7 @@
       "date": "2026-10-04T00:38Z"
      }
     ],
-    "fetchedAt": "2026-10-06T21:36:37.688Z"
+    "fetchedAt": "2026-10-07T11:59:06.879Z"
    }
   }
  ],
@@ -8468,7 +8476,7 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-10-06T21:36:40.082Z",
+  "gradedAt": "2026-10-07T11:59:08.369Z",
   "finals": 16,
   "games": 16,
   "summary": {
@@ -10872,7 +10880,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-10-06T21:36:40.085Z",
+  "updatedAt": "2026-10-07T11:59:08.371Z",
   "weeks": [
    {
     "week": 1,
@@ -11365,14 +11373,14 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-10-06T21:36:40.181Z",
+  "builtAt": "2026-10-07T11:59:08.456Z",
   "books": [
    "FD",
    "DK",
    "BOOK"
   ],
   "oddsFetchedAt": "2026-10-05T20:51:11.702Z",
-  "note": "Prices are the better of FanDuel and DraftKings at the last pull.",
+  "note": "TD prices are more than 36 hours old; re-check FD/DK before betting.",
   "categories": [
    {
     "key": "anytime",
@@ -11469,7 +11477,7 @@
   ]
  },
  "topTen": {
-  "builtAt": "2026-10-06T21:36:40.182Z",
+  "builtAt": "2026-10-07T11:59:08.456Z",
   "note": "Sides, totals and moneylines are priced from the projected score with the simulator’s spreads (13.4 margin, 10.6 total). Touchdown lists use the desk’s role-built estimates. Prop leans are not graded by a probability and are listed by kickoff.",
   "categories": [
    {
