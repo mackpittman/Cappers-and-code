@@ -1,0 +1,264 @@
+{
+  "season": 2026,
+  "week": 5,
+  "builtAt": "2026-10-08T18:13:14Z",
+  "games": [
+    {
+      "game": "tb-dal",
+      "kick": "2026-10-09T00:15:00Z",
+      "weather": "Indoor: AT&T Stadium (retractable roof, ESPN lists venue indoor); outside 85F mostly sunny - no weather factor.",
+      "teams": {
+        "TB": {
+          "passAtt": 31,
+          "rushAtt": 26
+        },
+        "DAL": {
+          "passAtt": 34,
+          "rushAtt": 25
+        }
+      },
+      "players": [
+        {
+          "team": "DAL",
+          "player": "Dak Prescott",
+          "pos": "QB",
+          "targets": null,
+          "catchRate": null,
+          "receptions": null,
+          "recYds": null,
+          "carries": null,
+          "rushYds": null,
+          "passYds": 241,
+          "flags": [],
+          "why": "34 attempts (season 37.5, trimmed for a -9.5 home script); 70% completion regressed to 69%, 10.3 YPC; TB pass defence is league-average per attempt (factor 1.0)."
+        },
+        {
+          "team": "DAL",
+          "player": "CeeDee Lamb",
+          "pos": "WR",
+          "targets": 10.6,
+          "catchRate": 0.761,
+          "receptions": 8.0,
+          "recYds": 103,
+          "carries": null,
+          "rushYds": null,
+          "passYds": null,
+          "flags": [],
+          "why": "Target hog: 8/9/8/21 targets, 80% catch rate; 21-target W4 vs HOU inflates the blend so targets scaled to 34 DAL attempts; TB allows a below-average 12.1 YPR to WRs (factor 0.956)."
+        },
+        {
+          "team": "DAL",
+          "player": "George Pickens",
+          "pos": "WR",
+          "targets": 6.3,
+          "catchRate": 0.66,
+          "receptions": 4.1,
+          "recYds": 51,
+          "carries": null,
+          "rushYds": null,
+          "passYds": null,
+          "flags": [],
+          "why": "Clear WR2 at 6-8 targets most weeks but only 3 vs HOU; 64% catch rate regressed to 66%; 12.8 YPR regressed; TB WR factor 0.956."
+        },
+        {
+          "team": "DAL",
+          "player": "Ryan Flournoy",
+          "pos": "WR",
+          "targets": 5.3,
+          "catchRate": 0.625,
+          "receptions": 3.3,
+          "recYds": 34,
+          "carries": null,
+          "rushYds": null,
+          "passYds": null,
+          "flags": [],
+          "why": "WR3 with a steady 4-8 targets; low 57% catch rate regressed to 63% and 8.0 YPR regressed up to 10.8; if Mingo sits he and Turpin absorb the ~0.7 spare targets."
+        },
+        {
+          "team": "DAL",
+          "player": "Jake Ferguson",
+          "pos": "TE",
+          "targets": 3.5,
+          "catchRate": 0.75,
+          "receptions": 2.7,
+          "recYds": 23,
+          "carries": null,
+          "rushYds": null,
+          "passYds": null,
+          "flags": [],
+          "why": "TE1 at 2-5 targets per game, 80% catch rate regressed to 75%, 6.9 YPR regressed to 8.6; TB has allowed 10.5 YPR to TEs (factor 1.03)."
+        },
+        {
+          "team": "DAL",
+          "player": "Javonte Williams",
+          "pos": "RB",
+          "targets": 3.6,
+          "catchRate": 0.821,
+          "receptions": 3.0,
+          "recYds": 17,
+          "carries": 16.3,
+          "rushYds": 57,
+          "passYds": null,
+          "flags": [],
+          "why": "Lead back 66% of DAL carries (19 each of the last two games) plus 3-5 targets; 3.7 YPC regressed to 3.9 then x0.90 because TB allows 3.3 YPC to RBs; favorite script keeps carries up."
+        },
+        {
+          "team": "DAL",
+          "player": "Jonathan Mingo",
+          "pos": "WR",
+          "targets": null,
+          "catchRate": null,
+          "receptions": null,
+          "recYds": null,
+          "carries": null,
+          "rushYds": null,
+          "passYds": null,
+          "flags": [
+            "questionable"
+          ],
+          "why": "Questionable (illness, DNP Wed); 3 targets in 4 games, WR5, not projectable; listed so the desk sees the designation."
+        },
+        {
+          "team": "TB",
+          "player": "Jalon Daniels",
+          "pos": "QB",
+          "targets": null,
+          "catchRate": null,
+          "receptions": null,
+          "recYds": null,
+          "carries": 6.0,
+          "rushYds": 31,
+          "passYds": 216,
+          "flags": [
+            "one-game-sample",
+            "new-role"
+          ],
+          "why": "Second NFL start (UDFA rookie): 19/27 for 148 and 8 carries for 55 vs GB; 31 attempts assumed for a +9.5 road script; completion and YPC regressed about halfway to league, then x1.15 because DAL allows 8.0 net yards per attempt (capped)."
+        },
+        {
+          "team": "TB",
+          "player": "Emeka Egbuka",
+          "pos": "WR",
+          "targets": 5.7,
+          "catchRate": 0.653,
+          "receptions": 3.7,
+          "recYds": 45,
+          "carries": null,
+          "rushYds": null,
+          "passYds": null,
+          "flags": [
+            "new-role"
+          ],
+          "why": "TB target leader at 6.0 per game under Mayfield and Daniels alike but only 4 targets for 13 yards in the Daniels start; 63% catch rate regressed; DAL allows 14.0 YPR to WRs (factor 1.03)."
+        },
+        {
+          "team": "TB",
+          "player": "Cade Otton",
+          "pos": "TE",
+          "targets": 5.6,
+          "catchRate": 0.688,
+          "receptions": 3.8,
+          "recYds": 38,
+          "carries": null,
+          "rushYds": null,
+          "passYds": null,
+          "flags": [
+            "new-role"
+          ],
+          "why": "Most consistent TB target at 5-6 every week, led the team in receiving W4 with Daniels; 65% catch rate regressed to 69%; DAL TE factor 0.98."
+        },
+        {
+          "team": "TB",
+          "player": "Chris Godwin Jr.",
+          "pos": "WR",
+          "targets": 4.3,
+          "catchRate": 0.767,
+          "receptions": 3.3,
+          "recYds": 38,
+          "carries": null,
+          "rushYds": null,
+          "passYds": null,
+          "flags": [
+            "new-role"
+          ],
+          "why": "Daniels leaned on him W4 (7 targets, 6 catches, 31 yards); 89% catch rate regressed to 77%; short YPR (8.9) regressed up to 11.0; DAL WR factor 1.03."
+        },
+        {
+          "team": "TB",
+          "player": "Ted Hurst III",
+          "pos": "WR",
+          "targets": 4.2,
+          "catchRate": 0.595,
+          "receptions": 2.5,
+          "recYds": 37,
+          "carries": null,
+          "rushYds": null,
+          "passYds": null,
+          "flags": [
+            "new-role"
+          ],
+          "why": "Rookie WR3 at 3-7 targets with a 47% catch rate (regressed to 60%) and 16.0 YPR (regressed to 14.2); boom-bust deep role."
+        },
+        {
+          "team": "TB",
+          "player": "Bucky Irving",
+          "pos": "RB",
+          "targets": 3.0,
+          "catchRate": 0.812,
+          "receptions": 2.5,
+          "recYds": 15,
+          "carries": 15.0,
+          "rushYds": 63,
+          "passYds": null,
+          "flags": [
+            "new-role"
+          ],
+          "why": "Lead back at 15-17 carries in the last three games, 4.3 YPC regressed to 4.2, DAL rush factor 0.98; receiving role shrank to 0 targets with Daniels in W4 so the 3-target blend is soft."
+        },
+        {
+          "team": "TB",
+          "player": "Kenny Gainwell",
+          "pos": "RB",
+          "targets": 3.2,
+          "catchRate": 0.743,
+          "receptions": 2.4,
+          "recYds": 15,
+          "carries": null,
+          "rushYds": null,
+          "passYds": null,
+          "flags": [
+            "new-role"
+          ],
+          "why": "Pass-down back at 3-4 targets per game with Daniels and Mayfield; 67% catch rate regressed to 74%; carries not projected (3 per game)."
+        },
+        {
+          "team": "TB",
+          "player": "Baker Mayfield",
+          "pos": "QB",
+          "targets": null,
+          "catchRate": null,
+          "receptions": null,
+          "recYds": null,
+          "carries": null,
+          "rushYds": null,
+          "passYds": null,
+          "flags": [
+            "out"
+          ],
+          "why": "OUT (right thumb, DNP all week, ruled out Oct 7); no stat line projected."
+        }
+      ],
+      "sources": [
+        "https://www.buccaneers.com/news/buccaneers-cowboys-injury-report-oct-7-week-5 (final TB/DAL report, Oct 7: Mayfield, Winfield Jr., Morrison, Dennis OUT; Durant, Overshown, Shelton OUT; T. Smith, Mingo QUESTIONABLE)",
+        "https://www.dallascowboys.com/news/updates-october-2026 (Cowboys Oct 5-7 injury updates)",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-cowboys-to-activate-tyler-smith-for-thursday-nights-game (Rapoport: DAL activating LG Tyler Smith from IR, Oct 8)",
+        "https://www.cbssports.com/fantasy/football/news/cowboys-jonathan-mingo-under-the-weather-iffy-for-tnf/ (Mingo illness, questionable)",
+        "https://www.bucsnation.com/tampa-bay-buccaneers-injuries/68982/buccaneers-cowboys-final-injury-report-nfl-thursday-night-football (Daniels second start, Stick backup)",
+        "ESPN depth charts via sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2026/teams/{27,6}/depthcharts (McMillan, Sills V on IR; Daniels QB2 behind Mayfield[Out])",
+        "ESPN box scores via site.api.espn.com summary endpoint for events 401872925, 401872935, 401872959, 401872968 (TB) and 401872930, 401872944, 401872960, 401872967 (DAL), plus all 64 Weeks 1-4 games for league baselines",
+        "ESPN scoreboard odds (DraftKings): DAL -9.5, total 48.5, ML DAL -520; FanDuel research listed DAL -9.5 / 47.5",
+        "Method: targets = 50% last-3 + 50% season, scaled to projected attempts x 0.951 targets/attempt; catch rate regressed to 68/72/78 with 25-target prior; YPR regressed to league-by-position (WR 13.2, TE 9.9, RB 6.9) with 15-catch prior; opponent factors from 4-game samples shrunk 50% toward 1.0 (60% weight for pass D), capped 0.85-1.15; QB completion/YPC regressed with 30-att/20-comp priors."
+      ]
+    }
+  ]
+}
