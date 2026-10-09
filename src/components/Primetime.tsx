@@ -117,7 +117,11 @@ export function Primetime({ board, pt }: { board: Board; pt: PrimetimeGame }) {
   let lastKind: Ticket['kind'] | null = null;
   return (
     <>
-      <Pressable onPress={() => router.push({ pathname: '/game/[id]', params: { id: g.id } })}>
+      <Pressable
+        onPress={() =>
+          router.push({ pathname: '/games/[id]', params: { id: g.id } }, { withAnchor: true })
+        }
+      >
         <Card accent="green">
           <Label color={t.green}>{pt.title}</Label>
           <Text style={[type.h1, { color: t.ink, marginTop: 4 }]}>
@@ -238,7 +242,9 @@ export function Primetime({ board, pt }: { board: Board; pt: PrimetimeGame }) {
             key={`${p.name}-${i}`}
             p={p}
             rank={i + 1}
-            onPress={() => router.push({ pathname: '/game/[id]', params: { id: g.id } })}
+            onPress={() =>
+              router.push({ pathname: '/games/[id]', params: { id: g.id } }, { withAnchor: true })
+            }
             slip={pickToSlip(p, gameLabel, 'primetime')}
           />
         ))}

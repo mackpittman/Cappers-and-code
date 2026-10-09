@@ -3,7 +3,9 @@ import { Image, Linking, Pressable, Text, View } from 'react-native';
 import { Screen } from '@/components/Screen';
 import { Body, Card, H2, Label, Pill } from '@/components/ui';
 import { useBoard } from '@/lib/store';
-import { fetchFeed, subscribeFeed } from '@/lib/supabase';
+import { useFocusEffect } from 'expo-router';
+import { fetchFeed } from '@/lib/supabase';
+import { useFeedAlerts } from '@/lib/feedAlerts';
 import { palette, space, type, useTheme } from '@/theme';
 import type { FeedPost } from '@/lib/types';
 
@@ -132,6 +134,14 @@ export default function FeedScreen() {
   const [err, setErr] = useState<string | null>(null);
   const [done, setDone] = useState(false);
   const member = !!session && !!entitlement?.active;
+  const { setFeedFocused, version } = useFeedAlerts();
+  // While this screen is in front, arrivals are seen as they land: no badge, no banner.
+  useFocusEffect(
+    useCallback(() => {
+      setFeedFocused(true);
+      return () => setFeedFocused(false);
+    }, [setFeedFocused]),
+  );
 
   const load = useCallback(async (before?: string) => {
     setStatus('loading');
@@ -147,12 +157,12 @@ export default function FeedScreen() {
     }
   }, []);
 
+  // Live: inserts and edits arrive through the app-wide Realtime channel (lib/feedAlerts); refetch
+  // the head so channel labels come along.
   useEffect(() => {
     if (!member) return;
     load();
-    // Live: new rows arrive through Realtime; refetch the head so channel labels come along.
-    return subscribeFeed(() => load());
-  }, [member, load]);
+  }, [member, load, version]);
 
   return (
     <Screen

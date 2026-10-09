@@ -85,7 +85,9 @@ export function TopTen({ board }: { board: Board }) {
         {cat.plays.map((p, i) => (
           <Pressable
             key={`${cat.key}-${i}`}
-            onPress={() => router.push({ pathname: '/game/[id]', params: { id: p.game } })}
+            onPress={() =>
+              router.push({ pathname: '/games/[id]', params: { id: p.game } }, { withAnchor: true })
+            }
             style={{
               paddingVertical: 8,
               borderBottomWidth: i === cat.plays.length - 1 ? 0 : 1,

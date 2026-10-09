@@ -1,11 +1,26 @@
 import React from 'react';
 import { Tabs } from 'expo-router';
+import { View } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { fonts, palette } from '@/theme';
 import { useSlip } from '@/lib/slip';
+import { FeedAlertsProvider, FeedBanner, useFeedAlerts } from '@/lib/feedAlerts';
 
+// The tab bar is the app's frame: every member screen, the game pages included, renders inside it.
+// Alerts for the Discord feed live at this level so the badge and the banner survive tab changes.
 export default function TabLayout() {
+  return (
+    <FeedAlertsProvider>
+      <View style={{ flex: 1 }}>
+        <TabsInner />
+        <FeedBanner />
+      </View>
+    </FeedAlertsProvider>
+  );
+}
+function TabsInner() {
   const { todays } = useSlip();
+  const { unseen } = useFeedAlerts();
   const icon =
     (name: React.ComponentProps<typeof Ionicons>['name']) =>
     ({ color }: { color: import('react-native').ColorValue }) => (
@@ -37,7 +52,17 @@ export default function TabLayout() {
       />
       <Tabs.Screen
         name="feed"
-        options={{ title: 'Feed', tabBarIcon: icon('chatbubbles-outline') }}
+        options={{
+          title: 'Feed',
+          tabBarIcon: icon('chatbubbles-outline'),
+          tabBarBadge: unseen ? unseen : undefined,
+          tabBarBadgeStyle: {
+            backgroundColor: palette.green,
+            color: palette.onGreen,
+            fontFamily: fonts.dataBold,
+            fontSize: 11,
+          },
+        }}
       />
       <Tabs.Screen
         name="slip"

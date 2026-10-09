@@ -115,6 +115,13 @@ Done when: the Pages URL loads the landing page, `/app/` signs in and shows the 
 Needs from Mack: Apple Developer Program and Google Play Console memberships, Expo account.
 Done when: TestFlight build installs and the full paywall loop works on a real phone.
 
+## Checkpoint 8b — App frame and Discord alerts (Claude) — BUILT 2026-10-09, backend deploy pending
+
+- The bottom tab bar is now the app's frame: game pages live under the Games tab (`/games/<id>`) as a nested stack, so the bar stays on screen while a member reads, scrolls and adds picks. The old `/game/<id>` address redirects. The web shell uses the dynamic viewport height so Safari's toolbar cannot cover the bar.
+- Push alerts for the Discord feed: Settings → Alerts → **Turn on Discord alerts**. A service worker (`public/sw.js`), the `push` edge function and a `feed_posts` trigger deliver every mirrored post to entitled members' devices within a minute; inside the app a new post badges the Feed tab and shows a banner. Design and operating notes in `docs/PUSH_ALERTS.md`.
+
+Needs from Mack (two commands, once): `supabase db push --project-ref vcduwtgbclkwcxquqicl` to apply `supabase/migrations/20261009_push_alerts.sql`, then `supabase functions deploy push --no-verify-jwt --project-ref vcduwtgbclkwcxquqicl`. Then on the phone: open the app from the Home Screen, Settings → Turn on Discord alerts → Send a test alert.
+
 ## Checkpoint 9 — Ops hardening (Claude) — IN PROGRESS
 
 Done 2026-09-13: pipeline state (odds pulls, credit ledger, graded results) is mirrored to Supabase after every publish (`scripts/state-sync.mjs`) and restored at the start of every run, and `scripts/recover-odds.mjs` can rebuild the odds snapshot from the last published board, so a failed git push from the runner never costs credits twice. The daily Routine verifies its push and reports the commit hash. Parlay board (`scripts/parlays.mjs`) ships in the app's Parlays tab and the Discord digest.

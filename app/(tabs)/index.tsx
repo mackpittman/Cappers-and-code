@@ -25,7 +25,8 @@ export default function BoardScreen() {
     const g = board.games.find((x) => x.id === id);
     return g ? `${g.away.abbr}@${g.home.abbr}` : '';
   };
-  const open = (id?: string) => id && router.push({ pathname: '/game/[id]', params: { id } });
+  const open = (id?: string) =>
+    id && router.push({ pathname: '/games/[id]', params: { id } }, { withAnchor: true });
   const windows = slateWindows(board);
   const pt = primetimeGame(board);
   const [tab, setTab] = useState<'edge' | 'primetime'>('edge');

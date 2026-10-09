@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Cappers &amp; Code · free-2026-10-10-cfb</title>
+<style>
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 900; src: url(../promo/assets/fonts/BarlowCondensed_900Black.ttf); }
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 800; src: url(../promo/assets/fonts/BarlowCondensed_800ExtraBold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 700; src: url(../promo/assets/fonts/Manrope_700Bold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 500; src: url(../promo/assets/fonts/Manrope_500Medium.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 700; src: url(../promo/assets/fonts/JetBrainsMono_700Bold.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url(../promo/assets/fonts/JetBrainsMono_500Medium.ttf); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #050608; color: #F5F7F2; font-family: 'Manrope', sans-serif; }
+  .card { width: 1200px; padding: 48px 64px 64px; background: #050608 radial-gradient(ellipse at 50% 0%, rgba(182,255,0,.10), transparent 55%); position: relative; overflow: hidden; display: flex; flex-direction: column; }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 6px; background: #B6FF00; }
+  .brand { display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono'; letter-spacing: 3px; font-size: 16px; color: #B6FF00; font-weight: 700; }
+  .brand img { width: 220px; display: block; }
+  h1 { font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; font-size: 84px; margin: 22px 0 6px; letter-spacing: 1px; line-height: .92; }
+  h1 span { color: #B6FF00; }
+  .sub { color: #C8CFC8; font-size: 20px; margin: 0 0 26px; line-height: 1.4; font-weight: 500; }
+
+  .block { border: 1px solid rgba(182,255,0,.35); box-shadow: 0 0 18px rgba(182,255,0,.10); border-left: 5px solid #B6FF00; border-radius: 10px; background: #0B0E10; margin-bottom: 18px; overflow: hidden; }
+  .bh { display: flex; justify-content: space-between; align-items: center; padding: 14px 22px; border-bottom: 1px solid #1B2022; }
+  .tag { font-family: 'JetBrains Mono'; font-size: 15px; font-weight: 700; color: #B6FF00; letter-spacing: 3px; }
+  .cols { display: grid; grid-template-columns: 120px 110px 300px; gap: 14px; font-family: 'JetBrains Mono'; font-size: 12px; letter-spacing: 2px; color: #9DA59D; }
+  .cols i { font-style: normal; text-align: right; }
+  .cols i:last-child { text-align: left; }
+  .row { display: grid; grid-template-columns: 1fr 120px 110px 300px; gap: 14px; align-items: center; padding: 12px 22px; border-bottom: 1px solid #14181A; }
+  .row:last-child { border-bottom: 0; }
+  .nm { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; line-height: 1; }
+  .nm small { display: block; font-family: 'JetBrains Mono'; font-weight: 500; font-size: 12px; letter-spacing: 1.5px; color: #9DA59D; margin-top: 6px; text-transform: uppercase; }
+  .px { font-family: 'JetBrains Mono'; font-size: 24px; font-weight: 700; color: #B6FF00; text-align: right; white-space: nowrap; }
+  .un { font-family: 'JetBrains Mono'; font-size: 20px; font-weight: 700; color: #F5F7F2; text-align: right; white-space: nowrap; }
+  .meta { font-family: 'JetBrains Mono'; font-size: 13px; color: #9DA59D; letter-spacing: 1px; line-height: 1.5; }
+
+  .grid { padding: 16px 22px 6px; }
+  .ticket { border: 1px solid #1F2622; border-radius: 10px; background: #080B0D; margin-bottom: 14px; overflow: hidden; }
+  .ticket .hd { display: flex; align-items: center; gap: 18px; padding: 12px 20px; border-bottom: 1px solid #1B2022; }
+  .ticket .hd .tag { background: #B6FF00; color: #050608; border-radius: 4px; padding: 3px 10px; letter-spacing: 1px; font-size: 16px; }
+  .ticket .names { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; line-height: 1; }
+  .ticket .names i { font-style: normal; color: #79E000; padding: 0 4px; }
+  .trow { display: grid; grid-template-columns: 1fr 330px 150px; gap: 14px; align-items: center; padding: 9px 20px; border-bottom: 1px solid #14181A; }
+  .trow .nm { font-size: 24px; }
+  .trow .px { font-size: 22px; }
+  .trow .un { font-size: 17px; color: #C8CFC8; }
+  .ticket .ft { padding: 9px 20px 12px; font-family: 'JetBrains Mono'; font-size: 12.5px; letter-spacing: 1.5px; color: #9DA59D; text-transform: uppercase; }
+  .foot { margin-top: 10px; display: flex; justify-content: space-between; font-family: 'JetBrains Mono'; color: #79E000; font-size: 15px; letter-spacing: 4px; font-weight: 700; }
+</style>
+</head>
+<body>
+<section class="card" id="free-2026-10-10-cfb">
+  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code"><span>FREE PLAYS · COLLEGE FOOTBALL · FRI 10/9 &amp; SAT 10/10</span></div>
+  <h1>College football, <span>free plays</span></h1>
+  <p class="sub">Plays and unit sizes for Friday night and the Saturday slate. Units are a share of your bankroll, not dollars. Prices are Friday morning numbers and they move: play the price or longer, never shorter.</p>
+  <div class="block">
+  <div class="bh"><span class="tag">CORE SINGLES &amp; LADDERS</span><span class="cols"><i>ODDS</i><i>UNITS</i><i>GAME · TIME</i></span></div>
+  <div class="row">
+  <span class="nm">Jaleel Skinner (LOU) anytime TD</span>
+  <span class="px">+220</span>
+  <span class="un">0.5u</span>
+  <span class="meta">Florida State @ Louisville<br>Fri 7:00 PM ET</span>
+</div>
+<div class="row">
+  <span class="nm">Jaleel Skinner (LOU) 2+ TDs</span>
+  <span class="px">+2000</span>
+  <span class="un">0.2u</span>
+  <span class="meta">Florida State @ Louisville<br>Fri 7:00 PM ET</span>
+</div>
+<div class="row">
+  <span class="nm">Talyn Taylor (UGA) 27+ rec yds</span>
+  <span class="px">-120</span>
+  <span class="un">1.75u</span>
+  <span class="meta">Georgia @ Alabama<br>Sat 7:30 PM ET</span>
+</div>
+<div class="row">
+  <span class="nm">Talyn Taylor (UGA) 50+ rec yds</span>
+  <span class="px">+305</span>
+  <span class="un">0.5u</span>
+  <span class="meta">Georgia @ Alabama<br>Sat 7:30 PM ET</span>
+</div>
+<div class="row">
+  <span class="nm">Talyn Taylor (UGA) 70+ rec yds</span>
+  <span class="px">+790</span>
+  <span class="un">0.25u</span>
+  <span class="meta">Georgia @ Alabama<br>Sat 7:30 PM ET</span>
+</div>
+</div>
+<div class="block">
+  <div class="bh"><span class="tag">BOOSTS &amp; ALT PLAYS</span><span class="cols"><i>ODDS</i><i>UNITS</i><i>GAME · TIME</i></span></div>
+  <div class="row">
+  <span class="nm">Talyn Taylor ATD + Ryan Coleman-Williams ATD<small>boosted same-game parlay</small></span>
+  <span class="px">+1078</span>
+  <span class="un">0.3u</span>
+  <span class="meta">Georgia @ Alabama<br>Sat 7:30 PM ET</span>
+</div>
+<div class="row">
+  <span class="nm">Three QBs 2+ pass TDs<small>Lincoln Kienholz · CJ Bailey · Austin Simmons</small></span>
+  <span class="px">+919</span>
+  <span class="un">0.45u</span>
+  <span class="meta">Kienholz Fri 7:00 · Bailey Sat 12:00 · Simmons Sat 12:00 ET</span>
+</div>
+</div>
+<div class="block">
+  <div class="bh"><span class="tag">TD PARLAYS · SATURDAY</span></div>
+  <div class="grid"><div class="ticket">
+  <div class="hd"><span class="tag">A</span><span class="names">Lee Beebe Jr. <i>/</i> Conner Weigman <i>/</i> Deuce Alexander</span></div>
+  <div class="trow"><span class="nm">Anytime TD parlay</span><span class="px">+656</span><span class="un">0.5u</span></div>
+<div class="trow"><span class="nm">2 TD round robin, by twos</span><span class="px">+3735 / +5210 / +5750</span><span class="un">0.15u each (0.45u)</span></div>
+<div class="trow"><span class="nm">2 TD parlay</span><span class="px">+34415</span><span class="un">0.05u</span></div>
+  <div class="ft">Beebe Sat 12:00 ET · Weigman Sat 3:30 ET · Alexander Sat 3:30 ET</div>
+</div>
+<div class="ticket">
+  <div class="hd"><span class="tag">B</span><span class="names">Ty Clark III <i>/</i> DJ Epps <i>/</i> Avery Johnson</span></div>
+  <div class="trow"><span class="nm">Anytime TD parlay</span><span class="px">+847</span><span class="un">0.5u</span></div>
+<div class="trow"><span class="nm">2 TD round robin, by twos</span><span class="px">+4450 / +8350 / +9000</span><span class="un">0.15u each (0.45u)</span></div>
+<div class="trow"><span class="nm">2 TD parlay</span><span class="px">+59050</span><span class="un">0.05u</span></div>
+  <div class="ft">Clark Sat 12:00 ET · Epps Sat 12:00 ET · Johnson Sat 3:30 ET</div>
+</div>
+<div class="ticket">
+  <div class="hd"><span class="tag">C</span><span class="names">Jaleel Skinner (LOU) <i>/</i> Keenan Jackson (NCST)</span></div>
+  <div class="trow"><span class="nm">Anytime TD parlay</span><span class="px">+826</span><span class="un">0.5u</span></div>
+<div class="trow"><span class="nm">2+ TD parlay</span><span class="px">+31900</span><span class="un">0.05u</span></div>
+  <div class="ft">Skinner Fri 7:00 ET · Jackson Sat 12:00 ET</div>
+</div></div>
+</div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>PRICES AS OF FRI 10/9 · 21+ · BET RESPONSIBLY</span></div>
+</section>
+</body>
+</html>

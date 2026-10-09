@@ -11,9 +11,10 @@ const extra = (Constants.expoConfig?.extra ?? {}) as {
 };
 export const supabaseConfigured = !!(extra.supabaseUrl && extra.supabaseAnonKey);
 
+// Blank strings count as unset too (a build with empty secrets must not crash on createClient).
 export const supabase = createClient(
-  extra.supabaseUrl ?? 'https://invalid.supabase.co',
-  extra.supabaseAnonKey ?? 'anon',
+  extra.supabaseUrl || 'https://invalid.supabase.co',
+  extra.supabaseAnonKey || 'anon',
   {
     auth: {
       storage: AsyncStorage,
@@ -165,4 +166,45 @@ export async function redeemInviteCode(code: string): Promise<{ url: string; exp
     throw new Error((await error.context?.json?.().catch(() => null))?.error ?? error.message);
   if (!data?.url) throw new Error(data?.error ?? 'That code is not valid.');
   return data as { url: string; expires_at: string };
+}
+
+// ---- push alerts (edge function `push`) ----
+async function invokePush<T>(body: Record<string, unknown>): Promise<T> {
+  const { data, error } = await supabase.functions.invoke('push', { body });
+  if (error)
+    throw new Error((await error.context?.json?.().catch(() => null))?.error ?? error.message);
+  if (data?.error) throw new Error(String(data.error));
+  return data as T;
+}
+/** The VAPID public key the browser subscribes with. */
+export async function pushKey(): Promise<string> {
+  const d = await invokePush<{ publicKey?: string }>({ action: 'key' });
+  if (!d.publicKey) throw new Error('Push alerts are not set up on the server yet.');
+  return d.publicKey;
+}
+export async function pushSubscribe(subscription: unknown, userAgent: string): Promise<void> {
+  await invokePush({ action: 'subscribe', subscription, user_agent: userAgent });
+}
+export async function pushUnsubscribe(endpoint: string): Promise<void> {
+  await invokePush({ action: 'unsubscribe', endpoint });
+}
+export type PushDevice = {
+  id: string;
+  kind: string;
+  endpoint: string;
+  user_agent: string | null;
+  created_at: string;
+  last_seen_at: string;
+  failures: number;
+};
+export async function pushStatus(): Promise<{ entitled: boolean; subscriptions: PushDevice[] }> {
+  return invokePush({ action: 'status' });
+}
+export async function pushTest(): Promise<{
+  devices: number;
+  sent: number;
+  failed: number;
+  gone: number;
+}> {
+  return invokePush({ action: 'test' });
 }

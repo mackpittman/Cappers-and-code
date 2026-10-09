@@ -18,12 +18,14 @@ const tags = `
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Cappers & Code" />
-    <style>html,body{background:#050608;color:#F5F7F2}</style>
+    <style>html,body{background:#050608;color:#F5F7F2;overscroll-behavior:none}@supports(height:100dvh){html,body,#root{height:100dvh}}</style>
 `;
 if (!html.includes('rel="manifest"')) html = html.replace('</head>', `${tags}</head>`);
 // Deep links: a static host without SPA rewrites sends /app/<route> to the site's 404 page, which
 // bounces here as /app/?p=<route>. Restore the route before the bundle boots (the bundle is deferred).
-const restore = `<script>(function(){var p=new URLSearchParams(location.search).get('p');if(p&&p.indexOf('/')===0){history.replaceState(null,'',p)}})();</script>`;
+// Game pages moved from /game/<id> to /games/<id> (under the Games tab); old links are rewritten
+// here so they take the cold-start path and land with the slate beneath the game and a clean URL.
+const restore = `<script>(function(){var p=new URLSearchParams(location.search).get('p');if(p&&p.indexOf('/')===0){p=p.replace(/^((?:\\/[^/]+)?)\\/game\\//,'$1/games/');history.replaceState(null,'',p)}})();</script>`;
 if (!html.includes("get('p')"))
   html = html.replace('<div id="root"></div>', `${restore}<div id="root"></div>`);
 // viewport-fit=cover lets the dark shell run under the iPhone notch in standalone mode.
@@ -52,6 +54,7 @@ fs.writeFileSync(path.join(dist, '404.html'), html);
 fs.writeFileSync(path.join(dist, '.nojekyll'), '');
 for (const f of [
   'manifest.json',
+  'sw.js',
   'icons/icon-192.png',
   'icons/icon-512.png',
   'icons/apple-touch-icon.png',

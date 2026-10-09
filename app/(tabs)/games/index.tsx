@@ -37,7 +37,7 @@ export default function GamesScreen() {
               return (
                 <Pressable
                   key={g.id}
-                  onPress={() => router.push({ pathname: '/game/[id]', params: { id: g.id } })}
+                  onPress={() => router.push({ pathname: '/games/[id]', params: { id: g.id } })}
                 >
                   <Card>
                     <View

@@ -6,6 +6,7 @@ import type { Session } from '@supabase/supabase-js';
 import bundled from '../../data/board.json';
 import type { Board } from './types';
 import { refreshFromOddsApi, refreshLinesFromEspn } from './odds';
+import { disablePush } from './push';
 import {
   supabase,
   supabaseConfigured,
@@ -285,6 +286,7 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
     if (error) throw error;
   }, []);
   const signOut = useCallback(async () => {
+    await disablePush().catch(() => 'off');
     await supabase.auth.signOut();
     setEntitlement(null);
     setSource('bundled');

@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import { Alert, Linking, Pressable, Text, TextInput, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { Alert, Linking, Platform, Pressable, Text, TextInput, View } from 'react-native';
 import { router } from 'expo-router';
 import { Screen } from '@/components/Screen';
-import { openPortal } from '@/lib/supabase';
+import { openPortal, pushTest } from '@/lib/supabase';
+import { disablePush, enablePush, pushState, type PushState } from '@/lib/push';
 import { LegalLinks } from '@/components/LegalLinks';
 import { SITE_URL } from '@/lib/site';
 import { Body, Card, H2, Label } from '@/components/ui';
@@ -30,6 +31,29 @@ export default function SettingsScreen() {
   const [url, setUrl] = useState(settings.boardUrl);
   const [token, setToken] = useState(settings.boardToken);
   const [msg, setMsg] = useState<string | null>(null);
+  const [alerts, setAlerts] = useState<PushState | 'loading'>('loading');
+  const [alertMsg, setAlertMsg] = useState<string | null>(null);
+  const [alertBusy, setAlertBusy] = useState(false);
+  useEffect(() => {
+    let live = true;
+    pushState().then((s) => live && setAlerts(s));
+    return () => {
+      live = false;
+    };
+  }, [session?.user?.id]);
+  const runAlerts = async (work: () => Promise<PushState | void>, done: string) => {
+    setAlertBusy(true);
+    setAlertMsg(null);
+    try {
+      const next = await work();
+      if (next) setAlerts(next);
+      setAlertMsg(done);
+    } catch (e: any) {
+      setAlertMsg(e.message ?? String(e));
+    } finally {
+      setAlertBusy(false);
+    }
+  };
   const input = {
     borderWidth: 1,
     borderColor: t.line,
@@ -39,16 +63,16 @@ export default function SettingsScreen() {
     backgroundColor: t.surface,
     ...type.mono,
   } as const;
-  const button = (label: string, onPress: () => void, primary = false) => (
+  const button = (label: string, onPress: () => void, primary = false, disabled = false) => (
     <Pressable
       onPress={onPress}
-      disabled={loading}
+      disabled={loading || disabled}
       style={({ pressed }) => ({
         backgroundColor: primary ? t.green : t.surface2,
         padding: 12,
         borderRadius: 6,
         alignItems: 'center',
-        opacity: pressed || loading ? 0.6 : 1,
+        opacity: pressed || loading || disabled ? 0.6 : 1,
       })}
     >
       <Text style={[type.body, { color: primary ? t.onGreen : t.ink, fontWeight: '700' }]}>
@@ -72,6 +96,113 @@ export default function SettingsScreen() {
       title="Settings"
       subtitle="Where the daily board comes from and how live prices are pulled."
     >
+      <H2>Alerts</H2>
+      <Card accent={alerts === 'on' ? 'green' : undefined}>
+        <Label>Discord posts</Label>
+        {!session && alerts === 'on' ? (
+          <>
+            <Body small muted>
+              Alerts are still on for this device from an earlier sign-in. Sign in on the Edge tab
+              to keep them, or turn them off here.
+            </Body>
+            <View style={{ height: space.sm }} />
+            {button(
+              'Turn off alerts on this device',
+              () => runAlerts(disablePush, 'Alerts are off for this device.'),
+              false,
+              alertBusy,
+            )}
+          </>
+        ) : !session ? (
+          <Body small muted>
+            Sign in on the Edge tab to turn on alerts. Every post that lands in the members' Discord
+            can reach this device the minute it is posted.
+          </Body>
+        ) : alerts === 'loading' ? (
+          <Body small muted>
+            Checking this device…
+          </Body>
+        ) : alerts === 'needs-install' ? (
+          <Body small muted>
+            On iPhone and iPad, alerts only reach an app on your Home Screen. In Safari tap Share,
+            then Add to Home Screen, open Cappers &amp; Code from there and come back to this screen
+            to turn alerts on.
+          </Body>
+        ) : alerts === 'unsupported' ? (
+          <Body small muted>
+            {Platform.OS === 'web'
+              ? 'This browser cannot show push alerts. New posts still badge the Feed tab while the app is open.'
+              : 'Push alerts arrive with the App Store build. New posts badge the Feed tab while the app is open.'}
+          </Body>
+        ) : alerts === 'denied' ? (
+          <Body small muted>
+            Alerts are blocked for this site in your browser or system settings. Allow notifications
+            for cappersandcode.com, then come back here.
+          </Body>
+        ) : alerts === 'on' ? (
+          <>
+            <Body small muted>
+              Alerts are on for this device. Every post in the members' Discord shows up here within
+              a minute, even with the app closed.
+              {!entitlement?.active ? ' They start the moment your membership is active.' : ''}
+            </Body>
+            <View style={{ height: space.sm }} />
+            <View style={{ flexDirection: 'row', gap: 8 }}>
+              <View style={{ flex: 1 }}>
+                {button(
+                  'Send a test alert',
+                  () =>
+                    runAlerts(async () => {
+                      const r = await pushTest();
+                      if (!r.sent)
+                        throw new Error('The test could not be delivered to this device.');
+                    }, 'Test sent. It should show up on this device now.'),
+                  false,
+                  alertBusy,
+                )}
+              </View>
+              <View style={{ flex: 1 }}>
+                {button(
+                  'Turn off',
+                  () => runAlerts(disablePush, 'Alerts are off for this device.'),
+                  false,
+                  alertBusy,
+                )}
+              </View>
+            </View>
+          </>
+        ) : (
+          <>
+            <Body small muted>
+              Get a notification on this device the minute a post lands in the members' Discord.
+              {!entitlement?.active
+                ? ' Alerts go out to active members; turn them on now and they start with your membership.'
+                : ''}
+            </Body>
+            <View style={{ height: space.sm }} />
+            {button(
+              'Turn on Discord alerts',
+              () =>
+                runAlerts(async () => {
+                  const next = await enablePush();
+                  if (next === 'denied')
+                    throw new Error('Notifications were not allowed. Check your browser settings.');
+                  if (next !== 'on')
+                    throw new Error('Alerts could not be turned on on this device.');
+                  return next;
+                }, 'Alerts are on for this device.'),
+              true,
+              alertBusy,
+            )}
+          </>
+        )}
+        {alertBusy && (
+          <Body small muted>
+            Working…
+          </Body>
+        )}
+        {!!alertMsg && <Body small>{alertMsg}</Body>}
+      </Card>
       <H2>Membership</H2>
       <Card>
         {session ? (
