@@ -21,6 +21,9 @@ export const MIN_EDGE = 0; // model minus implied, before the shrink: never wors
 export const ANCHOR_EDGE = 0.05; // at least one leg on the ticket must carry a real edge
 export const WORST_PRICE = -250;
 export const MAX_PER_OFFENSE = 4;
+// A fringe receiving role can go to zero on volume alone (Hurst, Week 5 Thursday: 2.5 projected
+// catches, zero targets), so receiving legs need an established share of the targets.
+export const MIN_RECEPTIONS = 3.0;
 
 const MARKETS = {
   receptions: { key: 'player_receptions_alternate', main: 'player_receptions', field: 'receptions', dist: 'poisson' },
@@ -95,6 +98,7 @@ export function gradeLegs(projection, prices) {
     if (q.price < WORST_PRICE) continue;
     const flags = p.flags || [];
     if (flags.some((f) => /questionable|doubtful|out|one-game-sample/.test(f))) continue;
+    if ((q.market === 'receptions' || q.market === 'rec_yds') && (p.receptions ?? 0) < MIN_RECEPTIONS) continue;
     const model = legProb(q.market, q.side, q.point, mean);
     const implied = impliedProb(q.price);
     const shrunk = (1 - SHRINK) * model + SHRINK * implied;

@@ -18,6 +18,8 @@ last.
 - No sides, totals or moneylines. They are priced tighter than any player market.
 - No line that rests on a one-game sample, no player with a game-day designation, and no leg whose
   model number sits on the other side of the book's line (fade it or leave it; never back it).
+- No receiving leg on a player projected under 3.0 catches. A fringe role can go to zero on volume
+  alone: Ted Hurst was projected 2.5 catches for Week 5 Thursday and did not see a target.
 
 ## The number on each leg
 
@@ -64,8 +66,15 @@ for edge on every line. Monday night the anchor was Olave 7+ (model 76%, book 58
 | Week | Game | Legs | Price | Joint (shrunk) | Result |
 | ---- | ---- | ---- | ----- | -------------- | ------ |
 | 4 | ATL @ NO (MNF) | Olave 7+ rec, J. Johnson 4+ rec, Pitts 25+ rec yds, Kamara 3+ rec, Vele 4+ rec | +977 | 13% | Won (8, 6, 47, 5, 6) |
+| 5 | TB @ DAL (TNF), DK/FD | Hurst 10+ rec yds, Lamb 6+ rec, Egbuka 25+ rec yds, Otton 3+ rec, J. Williams 10+ rec yds | +569 | 25% | Lost 3/5 (0, 2, 38, 3, 17) |
+| 5 | TB @ DAL (TNF), Courtside | Lamb 6+ rec, Hurst 15+ rec yds, Egbuka 25+ rec yds, Godwin 25+ rec yds, Otton 25+ rec yds | +819 | 22% | Lost 3/5 (2, 0, 38, 37, 25) |
 
 Append every ticket here, win or lose, with the actual stat lines.
+
+Week 5 Thursday, what went wrong: Lamb left with a quad injury in the second half and came back
+for two catches on five targets (variance, not process). Hurst was not in the box score at all after
+a three-target game the week before; that was process, and it is why the 3.0-catch floor above now
+exists. The three legs on established roles (Egbuka, Godwin, Otton) all cleared.
 
 ## Running it
 
