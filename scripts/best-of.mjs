@@ -78,10 +78,19 @@ export function buildBestOf(board, now = new Date()) {
     });
   };
   const firstPositive = (xs) => (xs ?? []).find((p) => p.edge == null || p.edge > 0) ?? null;
-  // Spread and total: the lists are already confidence-then-probability ordered, positive edges only.
-  add('side', 'Spread of the day', C.sides?.[0]);
-  const total = C.totals?.[0];
-  if (total && (total.conf ?? 0) >= 3) add('total', 'Total of the day', total);
+  // The lead block only carries plays the model rates above their price: a likely bet at a price
+  // that overpays is not a best bet. Spread and total go by the projection's own cover rate.
+  const byProb = (xs) =>
+    [...(xs ?? [])]
+      .filter((p) => p.prob != null && p.edge != null && p.edge > 0)
+      .sort((a, b) => b.prob - a.prob);
+  add('side', 'Spread of the day', byProb(C.sides)[0]);
+  // Totals only when the number is loved: desk confidence 3+, or 62%+ by the projection.
+  add(
+    'total',
+    'Total of the day',
+    byProb(C.totals).find((p) => (p.conf ?? 0) >= 3 || p.prob >= 0.62),
+  );
   // Moneyline: the likeliest winner that the model also rates above its price; and the best dog.
   const mlFav = (C.moneyline ?? []).find(
     (p) => p.price != null && p.price < 0 && p.edge != null && p.edge > 0,
@@ -91,18 +100,24 @@ export function buildBestOf(board, now = new Date()) {
     .filter((p) => p.price != null && p.price > 0 && p.edge != null && p.edge > 0.03)
     .sort((a, b) => b.edge - a.edge)[0];
   add('dog', 'Underdog to win', dog);
-  // Touchdowns: the likeliest priced scorer, the biggest value, the best-priced 2+.
+  // Touchdowns: the likeliest scorer whose price the model beats, the biggest gap (a different
+  // name), and a posted 2+ price the model beats by two points or more, or nothing.
+  const priced = (p) => p.price != null && p.priceNote !== 'verify';
   add(
     'atd',
     'Anytime TD',
-    (C.atd ?? []).find((p) => p.price != null && p.priceNote !== 'verify'),
+    (C.atd ?? []).find((p) => priced(p) && p.edge != null && p.edge >= 0),
   );
-  const valueTop = (C.value ?? []).find(
-    (p) => p.price != null && p.priceNote !== 'verify' && !plays.some((x) => x.bet === p.bet),
+  add(
+    'value',
+    'TD value',
+    (C.value ?? []).find((p) => priced(p) && !plays.some((x) => x.bet === p.bet)),
   );
-  add('value', 'TD value', valueTop);
-  const td2 = (C.td2 ?? []).find((p) => p.price != null && p.edge != null && p.edge > 0) ?? null;
-  add('td2', '2+ TDs', td2);
+  add(
+    'td2',
+    '2+ TDs',
+    (C.td2 ?? []).find((p) => p.price != null && p.edge != null && p.edge >= 0.02),
+  );
   // The five-leg with the best joint hit rate that reaches the target, on this day.
   const five = (board.fiveLeg?.tickets ?? [])
     .filter((t) => onDay.has(t.game) && !t.short)

@@ -230,6 +230,9 @@ if (
     process.exit(1);
   }
   const altDir = path.join(DATA, 'odds', 'alts');
+  const outFile = path.join(DATA, 'five-leg', `${wk}.json`);
+  // A ticket is never rewritten once its game has kicked off: the published one is what gets graded.
+  const previous = readJson(outFile, { games: [] });
   const out = {
     season: SEASON,
     week: WEEK,
@@ -240,6 +243,12 @@ if (
   };
   for (const g of proj.games) {
     if (ONLY && g.game !== ONLY) continue;
+    const kept = previous.games?.find((x) => x.game === g.game);
+    if (kept && g.kick && Date.parse(g.kick) < Date.now()) {
+      out.games.push(kept);
+      console.log(`\n== ${g.game}  kept: kicked off, the published ticket stands`);
+      continue;
+    }
     // Alternate lines: a hand-entered or merged sheet in odds/alts, else the raw relay pull in odds/raw.
     const priceFile = [
       path.join(altDir, `${wk}-${g.game}.json`),
@@ -251,8 +260,25 @@ if (
     }
     const prices = flattenPrices(readJson(priceFile));
     const qualifying = gradeLegs(g, prices);
-    const { ticket, fallback } = buildTicket(qualifying);
-    out.games.push({ game: g.game, kick: g.kick, qualifying, ticket, fallback });
+    const { ticket } = buildTicket(qualifying);
+    let { fallback } = buildTicket(qualifying);
+    // Fewer than five players clear the bar: say so and show the best shorter ticket that exists,
+    // never a touchdown leg to make up the number (docs/FIVE_LEG_FORMULA.md).
+    const players = new Set(qualifying.map((l) => l.player)).size;
+    if (!ticket && !fallback && players >= 3) {
+      // A shorter ticket that still pays the target comes back as a ticket; either way it is
+      // published as short, because it is not the five the formula asks for.
+      const r = buildTicket(qualifying, { legs: Math.min(LEGS - 1, players) });
+      fallback = r.ticket || r.fallback;
+    }
+    out.games.push({
+      game: g.game,
+      kick: g.kick,
+      qualifying,
+      ticket,
+      fallback,
+      qualifyingPlayers: players,
+    });
     console.log(`\n== ${g.game}  (${qualifying.length} qualifying legs)`);
     const t = ticket || fallback;
     if (!t) {
@@ -260,12 +286,12 @@ if (
       continue;
     }
     console.log(
-      `   ${ticket ? 'ticket' : 'short of target'}: ${t.price > 0 ? '+' : ''}${t.price}  joint ${(t.joint * 100).toFixed(1)}%  book ${(t.bookJoint * 100).toFixed(1)}%`,
+      `   ${ticket ? 'ticket' : `short of target (${t.legs.length} legs, ${players} players qualify)`}: ${t.price > 0 ? '+' : ''}${t.price}  joint ${(t.joint * 100).toFixed(1)}%  book ${(t.bookJoint * 100).toFixed(1)}%`,
     );
     for (const l of t.legs)
       console.log(
         `     ${l.label.padEnd(40)} ${String(l.price).padStart(5)}  model ${(l.model * 100).toFixed(0)}%  shrunk ${(l.p * 100).toFixed(0)}%  ${l.book}`,
       );
   }
-  writeJson(path.join(DATA, 'five-leg', `${wk}.json`), out);
+  writeJson(outFile, out);
 }

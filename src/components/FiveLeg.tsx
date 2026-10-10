@@ -31,7 +31,16 @@ export function FiveLegCard({ t, showGame }: { t: FiveLegTicket; showGame?: bool
         <Text style={[type.h2, { color: th.green, fontSize: 22 }]}>{fmtAmerican(t.price)}</Text>
         <Pill text={`${pct(t.joint)} model`} tone="good" />
         <Pill text={`${pct(t.bookJoint)} book`} tone="neutral" />
-        {t.short && <Pill text="short of +500" tone="warn" />}
+        {t.short && (
+          <Pill
+            text={
+              t.legs.length < 5
+                ? `${t.legs.length} legs: only ${t.legs.length} qualify`
+                : 'short of +500'
+            }
+            tone="warn"
+          />
+        )}
       </View>
       <View style={{ gap: 6 }}>
         {t.legs.map((l, i) => (

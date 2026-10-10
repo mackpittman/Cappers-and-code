@@ -1,0 +1,202 @@
+{
+  "game": "min-no",
+  "kick": "2026-10-11T17:00:00Z",
+  "weather": "Indoor: Caesars Superdome (fixed dome; ESPN/AccuWeather show 82F outside, 0% precipitation, gusts to 7 mph) - no weather factor.",
+  "teams": {
+    "MIN": {
+      "passAtt": 31,
+      "rushAtt": 29
+    },
+    "NO": {
+      "passAtt": 40,
+      "rushAtt": 22
+    }
+  },
+  "players": [
+    {
+      "team": "MIN",
+      "player": "Kyler Murray",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": null,
+      "rushYds": null,
+      "passYds": 218,
+      "flags": [],
+      "why": "31 attempts (29 and 37 in his two starts, 32 and 41 dropbacks; Minnesota runs 29 times a game and teams have thrown only 31 times a game against New Orleans because they can run on it); 63.4% completions regressed to 64.5%, 9.6 yards a completion regressed to 10.3; New Orleans allows 7.4 yards an attempt, factor 1.06, with Jefferson's return the upside. Book main 213.5 DK (-113), about 212 FD (199.5 -158 / 224.5 +118)."
+    },
+    {
+      "team": "MIN",
+      "player": "Aaron Jones Sr.",
+      "pos": "RB",
+      "targets": 4.4,
+      "catchRate": 0.72,
+      "receptions": 3.2,
+      "recYds": 25,
+      "carries": 19.5,
+      "rushYds": 89,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 12/23/17/20 (season 18.0, last three 20.0, blend 19.0; 37 of 44 back carries in Murray's starts with Mason on IR), 19.5 of 29 team rushes as a 2.5-point favourite; 4.1 a carry regressed to 4.2; New Orleans allows 5.2 a carry to backs (factor 1.15 cap, trimmed to 1.10 for a backup LT and LG). Targets 1/0/6/8 (blend 4.2, scaled 4.4), 60% catch rate on 15 regressed to 72%, 7.0 a catch, Saints allow 6.8 yards a target to backs (factor 1.10). Rush 89 vs book 71.5 DK (+24%, the run-defence factor); rec 25 vs 17.5 DK / 19.5 FD (+35%: the book weights the two Wentz games with 1 and 0 targets, Murray threw him 6 and 8)."
+    },
+    {
+      "team": "MIN",
+      "player": "T.J. Hockenson",
+      "pos": "TE",
+      "targets": 6,
+      "catchRate": 0.76,
+      "receptions": 4.6,
+      "recYds": 48,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 5/4/4/13 (season 6.5, last three 7.0, blend 6.75, Josh Oliver's 1.7 a game now his), trimmed to 6.0 for Jefferson's return and scaled to 31 attempts; 84.6% catch rate on 26 targets regressed to 76%; 8.9 a catch regressed to 9.8; Saints allow 7.8 yards a target and a 74% catch rate to TEs, factor 1.08. Book 36.5 DK (-110) / 39.5 FD (+104), receptions 4.5: 48 is about 30% over because the book weights three games of 4-5 targets and 36 yards or fewer; last week's 13 came with both Jefferson and Oliver out."
+    },
+    {
+      "team": "MIN",
+      "player": "Justin Jefferson",
+      "pos": "WR",
+      "targets": 6.8,
+      "catchRate": 0.7,
+      "receptions": 4.8,
+      "recYds": 64,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "questionable"
+      ],
+      "why": "Questionable (ankle; limited Wed/Thu/Fri), team to test it Saturday; projected as active and shaded. 9 and 6 targets in his two full games (Week 3 he left after 7 snaps, Week 4 DNP): 7.5 a full game, shaded to 6.8 for a limited ankle and a quarterback he has not played a full game with; 76% catch rate on 17 targets regressed to 70%; 13.8 a catch regressed to 13.5; Saints allow 7.8 yards a target to WRs, factor 1.0. Book 79.5 (-110 both), receptions 6.5 (+104/+102): projection about 20% under for the ankle and Murray's 6.3 yards an attempt. If inactive, his targets go Hockenson, Addison, Jennings."
+    },
+    {
+      "team": "MIN",
+      "player": "Jordan Addison",
+      "pos": "WR",
+      "targets": 5.5,
+      "catchRate": 0.62,
+      "receptions": 3.4,
+      "recYds": 46,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "questionable"
+      ],
+      "why": "Questionable (hamstring; DNP Wed, limited Thu/Fri). Targets 2/5/9/6 (season 5.5, last three 6.7, blend 6.1), and the 9 and 6 in Murray's starts came with Jefferson out, so 5.5 with him back; 50% catch rate on 22 targets regressed to 62%; 14.8 a catch regressed to 13.5; Saints WR factor 1.0. Book 40.5 DK (-112) / 39.5 FD (-122), receptions 3.5 (+109/+110): 46 is 14% over."
+    },
+    {
+      "team": "NO",
+      "player": "Tyler Shough",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": null,
+      "rushYds": null,
+      "passYds": 254,
+      "flags": [],
+      "why": "40 attempts (season 45.0 on 56/34/42/48, the league high; trimmed because Minnesota's opponents have averaged 33 attempts and its pressure turns dropbacks into sacks, but a 2.5-point home underdog still throws); 67.2% completions regressed to 66.5%; 9.9 yards a completion regressed to 10.4; Minnesota allows 6.7 gross yards an attempt and 51% completions, factor 0.92. Book main 235.5 DK (-111), about 237 FD (224.5 -158 / 249.5 +118): +8%."
+    },
+    {
+      "team": "NO",
+      "player": "Chris Olave",
+      "pos": "WR",
+      "targets": 10.5,
+      "catchRate": 0.7,
+      "receptions": 7.4,
+      "recYds": 87,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 13/10/13/12 (season 12.0, last three 11.7, blend 11.8, the NFL lead) scaled to 40 attempts = 10.5; 72.9% catch rate on 48 targets regressed to 70%; 14.0 a catch regressed to 13.4; Minnesota allows 7.7 yards a target to WRs (6.5 without Green Bay's 81-yarder) and 56% catches, factor 0.88. Book 81.5 DK (-113) / about 84 FD, receptions 6.5 (-117/-112): 7-14% over; the catch count is the risk against a defense allowing 56% to wideouts."
+    },
+    {
+      "team": "NO",
+      "player": "Juwan Johnson",
+      "pos": "TE",
+      "targets": 6,
+      "catchRate": 0.74,
+      "receptions": 4.4,
+      "recYds": 47,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 7/4/8/8 (season 6.75, last three 6.7, blend 6.7) scaled to 40 attempts = 6.0; Fant's return is already in the blend (7 and 8 targets in Fant's two healthy games); 77.8% catch rate on 27 targets regressed to 74%; 11.0 a catch regressed to 10.7; Minnesota allows 7.9 yards a target to TEs but only a 44% catch rate, factor 1.0. Book 42.5 DK (-112) / FD 39.5 (-138) to 49.5 (+130), receptions 4.5 (+109/+114): +11%."
+    },
+    {
+      "team": "NO",
+      "player": "Devaughn Vele",
+      "pos": "WR",
+      "targets": 6.7,
+      "catchRate": 0.68,
+      "receptions": 4.6,
+      "recYds": 47,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 9/7/6/9 (season 7.75, last three 7.3, blend 7.5) scaled to 40 attempts = 6.7; 67.7% catch rate sits at the WR prior; 10.8 a catch regressed to 11.8; Minnesota WR factor 0.88. Book 40.5 DK (-114) / FD 39.5 (-122), receptions 3.5 (-162) / 4.5 (+135): 47 is 16% over, in line with his 56-yard season average."
+    },
+    {
+      "team": "NO",
+      "player": "Alvin Kamara",
+      "pos": "RB",
+      "targets": 4.5,
+      "catchRate": 0.78,
+      "receptions": 3.5,
+      "recYds": 20,
+      "carries": 10.5,
+      "rushYds": 37,
+      "passYds": null,
+      "flags": [
+        "questionable"
+      ],
+      "why": "Questionable (back; DNP Wed, limited Thu/Fri). The lead back since Etienne's IR move: 7 carries and 7 targets in a Week 4 blowout, 9 and 9 carries beside Etienne before that. 10.5 of 19 back carries (22 team rushes less about 3 for Shough); 3.0 a carry on 25 regressed to 3.9; Minnesota allows 3.9 a carry to backs, factor 0.91. Targets 6/1/7 (4.7) scaled to 4.5 at the 78% RB prior; 4.3 a catch regressed to 6.6; Minnesota allows 4.3 yards a target to backs, factor 0.85. Rush 37 vs 33.5 DK; rec 20 vs 14.5 (+35%: the book uses his 4.3-yard 2026 average on 11 catches, the regression assumes partial reversion). If inactive, Miller takes about 11 carries and 4 targets."
+    },
+    {
+      "team": "NO",
+      "player": "Kendre Miller",
+      "pos": "RB",
+      "targets": 2,
+      "catchRate": 0.78,
+      "receptions": 1.6,
+      "recYds": 9,
+      "carries": 5.7,
+      "rushYds": 20,
+      "passYds": null,
+      "flags": [],
+      "why": "Second back with Kamara active: 9/0/4/6 carries, 30% of the back carries since Etienne left = 5.7; 2.8 a carry on 19 regressed to 3.9, Minnesota factor 0.91. Targets 0/0/3/3 (2.0), RB prior catch rate, 6.5 a catch, factor 0.85. Below the three-target line, listed for the carries and as the Kamara-out pivot: about 11 carries, 40 rushing yards and 4 targets if Kamara sits. Book rush 22.5 DK (-115)."
+    },
+    {
+      "team": "NO",
+      "player": "Noah Fant",
+      "pos": "TE",
+      "targets": 3,
+      "catchRate": 0.71,
+      "receptions": 2.1,
+      "recYds": 21,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "No designation (abdomen; limited Wed/Thu, full Friday) after missing Week 4. Targets 8/0/4 in three games played (4.0), trimmed to 3.0 for a first game back with Johnson and Vele having absorbed Week 4's share; 66.7% catch rate on 12 targets regressed to 71%; 8.3 a catch regressed to 10.0; TE factor 1.0. Book 13.5 DK (-107) / 14.5 FD (-102), receptions 1.5 (-130/-146): 21 is about 50% over because the book appears to price a reduced snap count on his return, which the desk could not confirm (verify); the least reliable row here."
+    }
+  ],
+  "sources": [
+    "ESPN game summary 401872987 (lines, venue, weather, injuries, predictor 55.3% MIN)",
+    "ESPN box scores and play-by-play: MIN 401872927, 401872937, 401872959, 401872974; NO 401872923, 401872938, 401872961, 401872979 (targets, carries, red-zone and goal-line usage counted by the desk from play-by-play; opponent allowed-by-position from the same files)",
+    "vikings.com final Week 5 injury report (both teams, Wed/Thu/Fri participation)",
+    "SI All Saints: Saints final injury report vs Vikings",
+    "Yahoo Sports / Vikings final injury report (Van Demark at LT, Huber at LG, Tiernan if O'Neill sits, Beckham on practice squad)",
+    "NBC Sports / ESPN (Fowler): Vikings to test Jefferson ankle Saturday",
+    "vikings.com Week 5 game preview (Next Gen pressures: MIN 74; Shough 73 pressures, 12 sacks, 180 attempts; Chase Young 17 pressures, 18.7%)",
+    "Predictem and SI betting previews (EPA/DVOA ranks, ATS and over/under trends)",
+    "data/injuries.json (fetched 2026-10-10T13:53Z), data/schedule.json, data/odds/raw/2026-w05-min-no.json (DK 16:27:11Z, FD 16:27:55Z)"
+  ]
+}

@@ -136,6 +136,25 @@ test('a total under confidence 3 stays off the lead block; the dog needs a real 
   assert.equal(b.plays.find((p) => p.key === 'moneyline').bet, 'GB ML');
 });
 
+test('a likely scorer at a price the model does not beat stays off; a loved total gets in', () => {
+  const b2 = structuredClone(board);
+  b2.topTen.categories
+    .find((c) => c.key === 'totals')
+    .plays.push({
+      game: 'chi-gb',
+      gameLabel: 'CHI@GB',
+      kickoff: '2026-10-11T17:00Z',
+      bet: 'Under 41.5',
+      price: -110,
+      prob: 0.66,
+      edge: 0.14,
+      conf: 2,
+    });
+  const b = buildBestOf(b2, now);
+  assert.ok(!b.plays.some((p) => p.key === 'atd'), 'Jacobs at -150 is 58% against a 60% price');
+  assert.equal(b.plays.find((p) => p.key === 'total').bet, 'Under 41.5');
+});
+
 test('the five-leg and the Discord text come along', () => {
   const b = buildBestOf(board, now);
   assert.equal(b.plays.find((p) => p.key === 'fiveLeg').price, 610);

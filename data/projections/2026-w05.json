@@ -1,264 +1,3143 @@
 {
-  "season": 2026,
-  "week": 5,
-  "builtAt": "2026-10-08T18:13:14Z",
-  "games": [
-    {
-      "game": "tb-dal",
-      "kick": "2026-10-09T00:15:00Z",
-      "weather": "Indoor: AT&T Stadium (retractable roof, ESPN lists venue indoor); outside 85F mostly sunny - no weather factor.",
-      "teams": {
-        "TB": {
-          "passAtt": 31,
-          "rushAtt": 26
-        },
-        "DAL": {
-          "passAtt": 34,
-          "rushAtt": 25
-        }
-      },
-      "players": [
-        {
-          "team": "DAL",
-          "player": "Dak Prescott",
-          "pos": "QB",
-          "targets": null,
-          "catchRate": null,
-          "receptions": null,
-          "recYds": null,
-          "carries": null,
-          "rushYds": null,
-          "passYds": 241,
-          "flags": [],
-          "why": "34 attempts (season 37.5, trimmed for a -9.5 home script); 70% completion regressed to 69%, 10.3 YPC; TB pass defence is league-average per attempt (factor 1.0)."
-        },
-        {
-          "team": "DAL",
-          "player": "CeeDee Lamb",
-          "pos": "WR",
-          "targets": 10.6,
-          "catchRate": 0.761,
-          "receptions": 8.0,
-          "recYds": 103,
-          "carries": null,
-          "rushYds": null,
-          "passYds": null,
-          "flags": [],
-          "why": "Target hog: 8/9/8/21 targets, 80% catch rate; 21-target W4 vs HOU inflates the blend so targets scaled to 34 DAL attempts; TB allows a below-average 12.1 YPR to WRs (factor 0.956)."
-        },
-        {
-          "team": "DAL",
-          "player": "George Pickens",
-          "pos": "WR",
-          "targets": 6.3,
-          "catchRate": 0.66,
-          "receptions": 4.1,
-          "recYds": 51,
-          "carries": null,
-          "rushYds": null,
-          "passYds": null,
-          "flags": [],
-          "why": "Clear WR2 at 6-8 targets most weeks but only 3 vs HOU; 64% catch rate regressed to 66%; 12.8 YPR regressed; TB WR factor 0.956."
-        },
-        {
-          "team": "DAL",
-          "player": "Ryan Flournoy",
-          "pos": "WR",
-          "targets": 5.3,
-          "catchRate": 0.625,
-          "receptions": 3.3,
-          "recYds": 34,
-          "carries": null,
-          "rushYds": null,
-          "passYds": null,
-          "flags": [],
-          "why": "WR3 with a steady 4-8 targets; low 57% catch rate regressed to 63% and 8.0 YPR regressed up to 10.8; if Mingo sits he and Turpin absorb the ~0.7 spare targets."
-        },
-        {
-          "team": "DAL",
-          "player": "Jake Ferguson",
-          "pos": "TE",
-          "targets": 3.5,
-          "catchRate": 0.75,
-          "receptions": 2.7,
-          "recYds": 23,
-          "carries": null,
-          "rushYds": null,
-          "passYds": null,
-          "flags": [],
-          "why": "TE1 at 2-5 targets per game, 80% catch rate regressed to 75%, 6.9 YPR regressed to 8.6; TB has allowed 10.5 YPR to TEs (factor 1.03)."
-        },
-        {
-          "team": "DAL",
-          "player": "Javonte Williams",
-          "pos": "RB",
-          "targets": 3.6,
-          "catchRate": 0.821,
-          "receptions": 3.0,
-          "recYds": 17,
-          "carries": 16.3,
-          "rushYds": 57,
-          "passYds": null,
-          "flags": [],
-          "why": "Lead back 66% of DAL carries (19 each of the last two games) plus 3-5 targets; 3.7 YPC regressed to 3.9 then x0.90 because TB allows 3.3 YPC to RBs; favorite script keeps carries up."
-        },
-        {
-          "team": "DAL",
-          "player": "Jonathan Mingo",
-          "pos": "WR",
-          "targets": null,
-          "catchRate": null,
-          "receptions": null,
-          "recYds": null,
-          "carries": null,
-          "rushYds": null,
-          "passYds": null,
-          "flags": [
-            "questionable"
-          ],
-          "why": "Questionable (illness, DNP Wed); 3 targets in 4 games, WR5, not projectable; listed so the desk sees the designation."
-        },
-        {
-          "team": "TB",
-          "player": "Jalon Daniels",
-          "pos": "QB",
-          "targets": null,
-          "catchRate": null,
-          "receptions": null,
-          "recYds": null,
-          "carries": 6.0,
-          "rushYds": 31,
-          "passYds": 216,
-          "flags": [
-            "one-game-sample",
-            "new-role"
-          ],
-          "why": "Second NFL start (UDFA rookie): 19/27 for 148 and 8 carries for 55 vs GB; 31 attempts assumed for a +9.5 road script; completion and YPC regressed about halfway to league, then x1.15 because DAL allows 8.0 net yards per attempt (capped)."
-        },
-        {
-          "team": "TB",
-          "player": "Emeka Egbuka",
-          "pos": "WR",
-          "targets": 5.7,
-          "catchRate": 0.653,
-          "receptions": 3.7,
-          "recYds": 45,
-          "carries": null,
-          "rushYds": null,
-          "passYds": null,
-          "flags": [
-            "new-role"
-          ],
-          "why": "TB target leader at 6.0 per game under Mayfield and Daniels alike but only 4 targets for 13 yards in the Daniels start; 63% catch rate regressed; DAL allows 14.0 YPR to WRs (factor 1.03)."
-        },
-        {
-          "team": "TB",
-          "player": "Cade Otton",
-          "pos": "TE",
-          "targets": 5.6,
-          "catchRate": 0.688,
-          "receptions": 3.8,
-          "recYds": 38,
-          "carries": null,
-          "rushYds": null,
-          "passYds": null,
-          "flags": [
-            "new-role"
-          ],
-          "why": "Most consistent TB target at 5-6 every week, led the team in receiving W4 with Daniels; 65% catch rate regressed to 69%; DAL TE factor 0.98."
-        },
-        {
-          "team": "TB",
-          "player": "Chris Godwin Jr.",
-          "pos": "WR",
-          "targets": 4.3,
-          "catchRate": 0.767,
-          "receptions": 3.3,
-          "recYds": 38,
-          "carries": null,
-          "rushYds": null,
-          "passYds": null,
-          "flags": [
-            "new-role"
-          ],
-          "why": "Daniels leaned on him W4 (7 targets, 6 catches, 31 yards); 89% catch rate regressed to 77%; short YPR (8.9) regressed up to 11.0; DAL WR factor 1.03."
-        },
-        {
-          "team": "TB",
-          "player": "Ted Hurst III",
-          "pos": "WR",
-          "targets": 4.2,
-          "catchRate": 0.595,
-          "receptions": 2.5,
-          "recYds": 37,
-          "carries": null,
-          "rushYds": null,
-          "passYds": null,
-          "flags": [
-            "new-role"
-          ],
-          "why": "Rookie WR3 at 3-7 targets with a 47% catch rate (regressed to 60%) and 16.0 YPR (regressed to 14.2); boom-bust deep role."
-        },
-        {
-          "team": "TB",
-          "player": "Bucky Irving",
-          "pos": "RB",
-          "targets": 3.0,
-          "catchRate": 0.812,
-          "receptions": 2.5,
-          "recYds": 15,
-          "carries": 15.0,
-          "rushYds": 63,
-          "passYds": null,
-          "flags": [
-            "new-role"
-          ],
-          "why": "Lead back at 15-17 carries in the last three games, 4.3 YPC regressed to 4.2, DAL rush factor 0.98; receiving role shrank to 0 targets with Daniels in W4 so the 3-target blend is soft."
-        },
-        {
-          "team": "TB",
-          "player": "Kenny Gainwell",
-          "pos": "RB",
-          "targets": 3.2,
-          "catchRate": 0.743,
-          "receptions": 2.4,
-          "recYds": 15,
-          "carries": null,
-          "rushYds": null,
-          "passYds": null,
-          "flags": [
-            "new-role"
-          ],
-          "why": "Pass-down back at 3-4 targets per game with Daniels and Mayfield; 67% catch rate regressed to 74%; carries not projected (3 per game)."
-        },
-        {
-          "team": "TB",
-          "player": "Baker Mayfield",
-          "pos": "QB",
-          "targets": null,
-          "catchRate": null,
-          "receptions": null,
-          "recYds": null,
-          "carries": null,
-          "rushYds": null,
-          "passYds": null,
-          "flags": [
-            "out"
-          ],
-          "why": "OUT (right thumb, DNP all week, ruled out Oct 7); no stat line projected."
-        }
-      ],
-      "sources": [
-        "https://www.buccaneers.com/news/buccaneers-cowboys-injury-report-oct-7-week-5 (final TB/DAL report, Oct 7: Mayfield, Winfield Jr., Morrison, Dennis OUT; Durant, Overshown, Shelton OUT; T. Smith, Mingo QUESTIONABLE)",
-        "https://www.dallascowboys.com/news/updates-october-2026 (Cowboys Oct 5-7 injury updates)",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-cowboys-to-activate-tyler-smith-for-thursday-nights-game (Rapoport: DAL activating LG Tyler Smith from IR, Oct 8)",
-        "https://www.cbssports.com/fantasy/football/news/cowboys-jonathan-mingo-under-the-weather-iffy-for-tnf/ (Mingo illness, questionable)",
-        "https://www.bucsnation.com/tampa-bay-buccaneers-injuries/68982/buccaneers-cowboys-final-injury-report-nfl-thursday-night-football (Daniels second start, Stick backup)",
-        "ESPN depth charts via sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2026/teams/{27,6}/depthcharts (McMillan, Sills V on IR; Daniels QB2 behind Mayfield[Out])",
-        "ESPN box scores via site.api.espn.com summary endpoint for events 401872925, 401872935, 401872959, 401872968 (TB) and 401872930, 401872944, 401872960, 401872967 (DAL), plus all 64 Weeks 1-4 games for league baselines",
-        "ESPN scoreboard odds (DraftKings): DAL -9.5, total 48.5, ML DAL -520; FanDuel research listed DAL -9.5 / 47.5",
-        "Method: targets = 50% last-3 + 50% season, scaled to projected attempts x 0.951 targets/attempt; catch rate regressed to 68/72/78 with 25-target prior; YPR regressed to league-by-position (WR 13.2, TE 9.9, RB 6.9) with 15-catch prior; opponent factors from 4-game samples shrunk 50% toward 1.0 (60% weight for pass D), capped 0.85-1.15; QB completion/YPC regressed with 30-att/20-comp priors."
-      ]
+ "season": 2026,
+ "week": 5,
+ "builtAt": "2026-10-08T18:13:14Z",
+ "games": [
+  {
+   "game": "tb-dal",
+   "kick": "2026-10-09T00:15:00Z",
+   "weather": "Indoor: AT&T Stadium (retractable roof, ESPN lists venue indoor); outside 85F mostly sunny - no weather factor.",
+   "teams": {
+    "TB": {
+     "passAtt": 31,
+     "rushAtt": 26
+    },
+    "DAL": {
+     "passAtt": 34,
+     "rushAtt": 25
     }
-  ]
+   },
+   "players": [
+    {
+     "team": "DAL",
+     "player": "Dak Prescott",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": null,
+     "rushYds": null,
+     "passYds": 241,
+     "flags": [],
+     "why": "34 attempts (season 37.5, trimmed for a -9.5 home script); 70% completion regressed to 69%, 10.3 YPC; TB pass defence is league-average per attempt (factor 1.0)."
+    },
+    {
+     "team": "DAL",
+     "player": "CeeDee Lamb",
+     "pos": "WR",
+     "targets": 10.6,
+     "catchRate": 0.761,
+     "receptions": 8,
+     "recYds": 103,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Target hog: 8/9/8/21 targets, 80% catch rate; 21-target W4 vs HOU inflates the blend so targets scaled to 34 DAL attempts; TB allows a below-average 12.1 YPR to WRs (factor 0.956)."
+    },
+    {
+     "team": "DAL",
+     "player": "George Pickens",
+     "pos": "WR",
+     "targets": 6.3,
+     "catchRate": 0.66,
+     "receptions": 4.1,
+     "recYds": 51,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Clear WR2 at 6-8 targets most weeks but only 3 vs HOU; 64% catch rate regressed to 66%; 12.8 YPR regressed; TB WR factor 0.956."
+    },
+    {
+     "team": "DAL",
+     "player": "Ryan Flournoy",
+     "pos": "WR",
+     "targets": 5.3,
+     "catchRate": 0.625,
+     "receptions": 3.3,
+     "recYds": 34,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "WR3 with a steady 4-8 targets; low 57% catch rate regressed to 63% and 8.0 YPR regressed up to 10.8; if Mingo sits he and Turpin absorb the ~0.7 spare targets."
+    },
+    {
+     "team": "DAL",
+     "player": "Jake Ferguson",
+     "pos": "TE",
+     "targets": 3.5,
+     "catchRate": 0.75,
+     "receptions": 2.7,
+     "recYds": 23,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "TE1 at 2-5 targets per game, 80% catch rate regressed to 75%, 6.9 YPR regressed to 8.6; TB has allowed 10.5 YPR to TEs (factor 1.03)."
+    },
+    {
+     "team": "DAL",
+     "player": "Javonte Williams",
+     "pos": "RB",
+     "targets": 3.6,
+     "catchRate": 0.821,
+     "receptions": 3,
+     "recYds": 17,
+     "carries": 16.3,
+     "rushYds": 57,
+     "passYds": null,
+     "flags": [],
+     "why": "Lead back 66% of DAL carries (19 each of the last two games) plus 3-5 targets; 3.7 YPC regressed to 3.9 then x0.90 because TB allows 3.3 YPC to RBs; favorite script keeps carries up."
+    },
+    {
+     "team": "DAL",
+     "player": "Jonathan Mingo",
+     "pos": "WR",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "questionable"
+     ],
+     "why": "Questionable (illness, DNP Wed); 3 targets in 4 games, WR5, not projectable; listed so the desk sees the designation."
+    },
+    {
+     "team": "TB",
+     "player": "Jalon Daniels",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 6,
+     "rushYds": 31,
+     "passYds": 216,
+     "flags": [
+      "one-game-sample",
+      "new-role"
+     ],
+     "why": "Second NFL start (UDFA rookie): 19/27 for 148 and 8 carries for 55 vs GB; 31 attempts assumed for a +9.5 road script; completion and YPC regressed about halfway to league, then x1.15 because DAL allows 8.0 net yards per attempt (capped)."
+    },
+    {
+     "team": "TB",
+     "player": "Emeka Egbuka",
+     "pos": "WR",
+     "targets": 5.7,
+     "catchRate": 0.653,
+     "receptions": 3.7,
+     "recYds": 45,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "TB target leader at 6.0 per game under Mayfield and Daniels alike but only 4 targets for 13 yards in the Daniels start; 63% catch rate regressed; DAL allows 14.0 YPR to WRs (factor 1.03)."
+    },
+    {
+     "team": "TB",
+     "player": "Cade Otton",
+     "pos": "TE",
+     "targets": 5.6,
+     "catchRate": 0.688,
+     "receptions": 3.8,
+     "recYds": 38,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Most consistent TB target at 5-6 every week, led the team in receiving W4 with Daniels; 65% catch rate regressed to 69%; DAL TE factor 0.98."
+    },
+    {
+     "team": "TB",
+     "player": "Chris Godwin Jr.",
+     "pos": "WR",
+     "targets": 4.3,
+     "catchRate": 0.767,
+     "receptions": 3.3,
+     "recYds": 38,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Daniels leaned on him W4 (7 targets, 6 catches, 31 yards); 89% catch rate regressed to 77%; short YPR (8.9) regressed up to 11.0; DAL WR factor 1.03."
+    },
+    {
+     "team": "TB",
+     "player": "Ted Hurst III",
+     "pos": "WR",
+     "targets": 4.2,
+     "catchRate": 0.595,
+     "receptions": 2.5,
+     "recYds": 37,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Rookie WR3 at 3-7 targets with a 47% catch rate (regressed to 60%) and 16.0 YPR (regressed to 14.2); boom-bust deep role."
+    },
+    {
+     "team": "TB",
+     "player": "Bucky Irving",
+     "pos": "RB",
+     "targets": 3,
+     "catchRate": 0.812,
+     "receptions": 2.5,
+     "recYds": 15,
+     "carries": 15,
+     "rushYds": 63,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Lead back at 15-17 carries in the last three games, 4.3 YPC regressed to 4.2, DAL rush factor 0.98; receiving role shrank to 0 targets with Daniels in W4 so the 3-target blend is soft."
+    },
+    {
+     "team": "TB",
+     "player": "Kenny Gainwell",
+     "pos": "RB",
+     "targets": 3.2,
+     "catchRate": 0.743,
+     "receptions": 2.4,
+     "recYds": 15,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Pass-down back at 3-4 targets per game with Daniels and Mayfield; 67% catch rate regressed to 74%; carries not projected (3 per game)."
+    },
+    {
+     "team": "TB",
+     "player": "Baker Mayfield",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "out"
+     ],
+     "why": "OUT (right thumb, DNP all week, ruled out Oct 7); no stat line projected."
+    }
+   ],
+   "sources": [
+    "https://www.buccaneers.com/news/buccaneers-cowboys-injury-report-oct-7-week-5 (final TB/DAL report, Oct 7: Mayfield, Winfield Jr., Morrison, Dennis OUT; Durant, Overshown, Shelton OUT; T. Smith, Mingo QUESTIONABLE)",
+    "https://www.dallascowboys.com/news/updates-october-2026 (Cowboys Oct 5-7 injury updates)",
+    "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/report-cowboys-to-activate-tyler-smith-for-thursday-nights-game (Rapoport: DAL activating LG Tyler Smith from IR, Oct 8)",
+    "https://www.cbssports.com/fantasy/football/news/cowboys-jonathan-mingo-under-the-weather-iffy-for-tnf/ (Mingo illness, questionable)",
+    "https://www.bucsnation.com/tampa-bay-buccaneers-injuries/68982/buccaneers-cowboys-final-injury-report-nfl-thursday-night-football (Daniels second start, Stick backup)",
+    "ESPN depth charts via sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2026/teams/{27,6}/depthcharts (McMillan, Sills V on IR; Daniels QB2 behind Mayfield[Out])",
+    "ESPN box scores via site.api.espn.com summary endpoint for events 401872925, 401872935, 401872959, 401872968 (TB) and 401872930, 401872944, 401872960, 401872967 (DAL), plus all 64 Weeks 1-4 games for league baselines",
+    "ESPN scoreboard odds (DraftKings): DAL -9.5, total 48.5, ML DAL -520; FanDuel research listed DAL -9.5 / 47.5",
+    "Method: targets = 50% last-3 + 50% season, scaled to projected attempts x 0.951 targets/attempt; catch rate regressed to 68/72/78 with 25-target prior; YPR regressed to league-by-position (WR 13.2, TE 9.9, RB 6.9) with 15-catch prior; opponent factors from 4-game samples shrunk 50% toward 1.0 (60% weight for pass D), capped 0.85-1.15; QB completion/YPC regressed with 30-att/20-comp priors."
+   ]
+  },
+  {
+   "game": "phi-jax",
+   "kick": "2026-10-11T13:30:00Z",
+   "weather": "Tottenham Hotspur Stadium, London, open-air; 2:30 PM BST kickoff, about 58-59F, 0% precipitation chance, wind 5 mph gusting to 12 (Open-Meteo hourly). ESPN lists natural grass; the NFL field there is normally the synthetic surface beneath the retractable soccer pitch (verify). Non-factor.",
+   "teams": {
+    "PHI": {
+     "passAtt": 30,
+     "rushAtt": 23
+    },
+    "JAX": {
+     "passAtt": 27,
+     "rushAtt": 30
+    }
+   },
+   "players": [
+    {
+     "team": "JAX",
+     "player": "Trevor Lawrence",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 3,
+     "rushYds": 11,
+     "passYds": 200,
+     "flags": [],
+     "why": "27 attempts (23, 29, 29, 23 so far, a lead keeps it there) x 0.672 completions (69.2% on 104 regressed toward 65%) x 11.35 yards a completion (11.7 regressed toward 11.0) x 0.97 for Philadelphia's 10.5 yards a completion and 6.55 per attempt allowed = 200. DraftKings' 225.5 / FanDuel 224.5 sits about 11% above; he has cleared it in 2 of 4 games, both on 23 efficient attempts. Rushing: 11 carries for 34 this year, 3 for 11."
+    },
+    {
+     "team": "JAX",
+     "player": "Bhayshul Tuten",
+     "pos": "RB",
+     "targets": 2,
+     "catchRate": 0.82,
+     "receptions": 1.6,
+     "recYds": 11,
+     "carries": 17,
+     "rushYds": 73,
+     "passYds": null,
+     "flags": [],
+     "why": "15, 13, 15, 17 carries (blend 15) plus two for a 7.5-point favourite's script; 4.62 a carry on 60 regressed to 4.46, times 0.96 for Philadelphia's 4.13 a carry to backs on 30 rush attempts a game against = 73 against 66.5 (DK) / ~67.5 (FD). Receiving: 7 targets in 4 games, 7 catches for 54; Philadelphia's backs-allowed rate (5.6 a catch) caps the factor at 0.85."
+    },
+    {
+     "team": "JAX",
+     "player": "Chris Rodriguez Jr.",
+     "pos": "RB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 7.5,
+     "rushYds": 31,
+     "passYds": null,
+     "flags": [],
+     "why": "6, 6, 8, 6 carries (blend 6.6) plus one as the closer in a projected lead; 4.15 a carry on 26 regressed to 4.26, x 0.96 = 31 against 26.5. No target in four games, so receiving is left blank rather than guessed. Touchdowns the last two weeks, 6 red-zone carries."
+    },
+    {
+     "team": "JAX",
+     "player": "Parker Washington",
+     "pos": "WR",
+     "targets": 6.8,
+     "catchRate": 0.65,
+     "receptions": 4.4,
+     "recYds": 59,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "6, 12, 5, 3 targets: blend 6.6, scaled 1.04 for 27 attempts. 16 of 26 (61.5%) regressed to 65%; 14.3 yards a catch regressed to 13.4; Philadelphia allows 12.5 a catch to receivers (factor 1.00) = 59 against 62.5 (DK) / ~60 (FD). Target share has fallen from 41% in Week 2 to 13% at Cincinnati, which is the risk to the over."
+    },
+    {
+     "team": "JAX",
+     "player": "Brenton Strange",
+     "pos": "TE",
+     "targets": 4.9,
+     "catchRate": 0.74,
+     "receptions": 3.6,
+     "recYds": 38,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "3, 2, 5, 8 targets: blend 4.75, scaled to 4.9. 14 of 18 (78%) regressed to 74%; 11.9 a catch regressed to 11.2, x 0.93 for Philadelphia's 9.75 a catch to tight ends (16 for 156, no touchdowns) = 38 against 31.5 (DK). 3.6 catches straddles the 2.5/3.5 ladder (DK 3.5 at +136, FD +110)."
+    },
+    {
+     "team": "JAX",
+     "player": "Jakobi Meyers",
+     "pos": "WR",
+     "targets": 4.2,
+     "catchRate": 0.74,
+     "receptions": 3.1,
+     "recYds": 39,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "2, 1, 8, 4 targets: blend 4.0, scaled to 4.2. 13 of 15 regressed to 74%; 12.7 a catch regressed to 12.6, factor 1.00 = 39 against 41.5 and 3.1 catches against a 3.5 line (-117 over at DK). Full practices all week through the thumb."
+    },
+    {
+     "team": "JAX",
+     "player": "Brian Thomas Jr.",
+     "pos": "WR",
+     "targets": 4,
+     "catchRate": 0.65,
+     "receptions": 2.6,
+     "recYds": 32,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "3, 9, 1, 2 targets: blend 3.9, scaled to 4.0. 9 of 15 regressed to 65%; 11.7 a catch regressed to 12.2, factor 1.00 = 32 against 24.5, about 30% above the book. The reason: the book prices the 12-personnel snap cut (23 snaps in Week 3) and he was back to 38 in Week 4; the blend still credits the Week 2 nine-target game, so treat the over as volatile."
+    },
+    {
+     "team": "PHI",
+     "player": "Jalen Hurts",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 6,
+     "rushYds": 26,
+     "passYds": 191,
+     "flags": [],
+     "why": "30 attempts (25, 37, 25, 27; trailing by 7.5 adds a few, a rebuilt line and 12 sacks taken trim it) x 0.612 completions (59.6% on 114 regressed toward 63%) x 10.2 yards a completion (his completions to everyone but DeVonta Smith averaged 9.8) x 1.02 for Jacksonville's 12.3 a completion allowed, shaded hard for 6 interceptions and the line = 191 against 182.5 (DK) / ~190 (FD). Rushing: 21 for 105, 6 carries x 5.0 x 0.85 (quarterbacks have 70 yards on 19 carries against Jacksonville) = 26 against 28.5. Calf added to Friday's report as a full participant, no designation."
+    },
+    {
+     "team": "PHI",
+     "player": "Will Shipley",
+     "pos": "RB",
+     "targets": 3.1,
+     "catchRate": 0.76,
+     "receptions": 2.4,
+     "recYds": 16,
+     "carries": 11,
+     "rushYds": 39,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "First game as the lead back (Barkley out, Bigsby on IR). Eagles backs have averaged 19.75 carries; trailing trims that to 17, split 11 Shipley / 5 Pierce / 1 Steele. 3.4 a carry on 15 regressed to 4.12, x 0.85 (capped; Jacksonville allows 2.8 a carry to backs) = 39 against 35.5. Targets: 1.6 blend plus about half of Barkley's and Bigsby's 3.0 a game; 4 of 6 regressed to 76%, 7.2 a catch, x 0.97 = 16 against 15.5."
+    },
+    {
+     "team": "PHI",
+     "player": "Dameon Pierce",
+     "pos": "RB",
+     "targets": 1,
+     "catchRate": 0.78,
+     "receptions": 0.8,
+     "recYds": 5,
+     "carries": 5,
+     "rushYds": 17,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Signed off the practice squad Wednesday, third on ESPN's depth chart behind Barkley (out) and Shipley; no Eagles snaps yet, so the carry share (5 of 17) is a role estimate, not a stat. 4.0 a carry x 0.85 = 17 against 22.5 (DK) / ~24.5 (FD); the book expects a more even split than the team site's description of Shipley as the lead back (verify early usage)."
+    },
+    {
+     "team": "PHI",
+     "player": "Dallas Goedert",
+     "pos": "TE",
+     "targets": 5.5,
+     "catchRate": 0.7,
+     "receptions": 3.9,
+     "recYds": 45,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Back from the Week 2 MCL sprain, full practice Friday, no designation. 4.0 targets a game played, plus about a quarter of Smith's vacated 6.9 (the tight-end share Ertz took in Week 4), scaled to 30 attempts. 5 of 8 regressed to 70%; 16.2 a catch regressed to 11.9, x 0.97 for Jacksonville's 10.2 a catch to tight ends = 45 against 42.5 and 3.9 catches against 4.5 (+104)."
+    },
+    {
+     "team": "PHI",
+     "player": "Dontayvion Wicks",
+     "pos": "WR",
+     "targets": 5.5,
+     "catchRate": 0.65,
+     "receptions": 3.6,
+     "recYds": 53,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "4, 6, 5, 5 targets: blend 5.2, a small share of Smith's targets, scaled to 30 attempts. 12 of 20 regressed to 65%; 16.4 a catch regressed to 14.2, x 1.05 (Jacksonville's 15.0 a catch to receivers is 1.20, capped at 1.15 and shaded because Waddle, Higgins and Hollins built most of it) = 53 against 44.5 (DK) / ~45 (FD). Limited Thursday and Friday with a hamstring, no designation: 32 and 18 yards the last two weeks is the warning."
+    },
+    {
+     "team": "PHI",
+     "player": "Makai Lemon",
+     "pos": "WR",
+     "targets": 5.1,
+     "catchRate": 0.68,
+     "receptions": 3.4,
+     "recYds": 37,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "4, 1, 4, 6 targets: blend 3.7 plus about a quarter of Smith's share (he went from 4 to 6 in Week 4). 10 of 15 regressed to 68%; 6.5 a catch on a slot tree regressed to 10.1, x 1.05 = 37 against 34.5 and 3.4 catches against 3.5 (-118 over)."
+    },
+    {
+     "team": "PHI",
+     "player": "Darius Cooper",
+     "pos": "WR",
+     "targets": 4.4,
+     "catchRate": 0.64,
+     "receptions": 2.8,
+     "recYds": 36,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "one-game-sample"
+     ],
+     "why": "Targets only in Weeks 2 and 4 (3 and 7); the role as the No. 2 receiver exists in one game, Week 4 without Smith and Brown, so the blend (2.9) plus a share of Smith's vacated targets is trimmed to 4.4 for Goedert's return. 5 of 10 regressed to 64%; 11.8 a catch regressed to 12.3, x 1.05 = 36 against a 20.5 main number, about 75% above the book. The reason: the book prices him as a WR4, but with Smith and Brown out and Elijah Moore and Britain Covey without a target this season, he is a starter in 11 personnel."
+    }
+   ],
+   "sources": [
+    "ESPN game summary and box scores via site.api.espn.com (events 401872922, 401872929, 401872939, 401872940, 401872957, 401872963, 401872969, 401872970, 401872981): targets, carries, red-zone plays, opponent production",
+    "ESPN depth charts (sports.core.api.espn.com, teams 21 and 30, 2026)",
+    "philadelphiaeagles.com Week 5 injury report (Wed-Fri participation, final designations)",
+    "data/injuries.json (fetched 2026-10-10T13:53Z) for Jaguars designations (Murray doubtful per Florida Times-Union)",
+    "AP preview on ESPN: Johnson retirement, Jurgens trade, Bell and Lampkin starting, Kendall out",
+    "Philadelphia Inquirer Oct 8 odds and props; PhillyVoice Oct 5 odds; SI Betting Week 5 preview (ATS records, unit ranks); NBC Sports Philadelphia injury rundown; NBC Sports/Rotoworld on BTJ 12-personnel snaps",
+    "data/odds/raw/2026-w05-phi-jax.json (DraftKings and FanDuel alternate ladders) for sanity checks only",
+    "Open-Meteo hourly forecast for Tottenham Hotspur Stadium",
+    "Not verified: Eagles starting center with Kendall out (Jake Majors is next on ESPN's depth chart); Shipley/Pierce/Steele carry split: no game data in this backfield; Jaguars limited players' final designations beyond Murray and Montaric Brown, taken from the feed rather than the team release; Playing surface at Tottenham (ESPN says grass)"
+   ]
+  },
+  {
+   "game": "chi-gb",
+   "kick": "2026-10-11T17:00:00Z",
+   "weather": "Outdoor, grass: Lambeau Field. ESPN/AccuWeather shows 72F, 0% precipitation, gusts to 21 mph - not applied as a flag; re-check the wind Sunday morning for the deep targets (Watson, Golden, Odunze).",
+   "teams": {
+    "CHI": {
+     "passAtt": 31,
+     "rushAtt": 33
+    },
+    "GB": {
+     "passAtt": 35,
+     "rushAtt": 21
+    }
+   },
+   "players": [
+    {
+     "team": "CHI",
+     "player": "Tyson Bagent",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 3,
+     "rushYds": 8,
+     "passYds": 223,
+     "flags": [
+      "one-game-sample"
+     ],
+     "why": "31 attempts (Chicago season 33 a game on 29/35/34/34 with 39.75 rushes; trimmed because Green Bay allows 28 carries a game and Chicago is a 1.5-point favourite); 30 of 43 (69.8%) in two appearances regressed hard to 66%; 10.7 yards per completion held at 10.9; Green Bay allows 6.85 gross yards per attempt with Parsons and Cooper out, factor 1.0. Only one start as the Week 5 starter, hence the flag. Book main 222.5 DK / about 220 FD. Rush 4 for 1 last week; 3 carries for 8."
+    },
+    {
+     "team": "CHI",
+     "player": "D'Andre Swift",
+     "pos": "RB",
+     "targets": 3.5,
+     "catchRate": 0.8,
+     "receptions": 2.8,
+     "recYds": 24,
+     "carries": 20,
+     "rushYds": 88,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 18/16/20/15 (blend 17.1) plus about 3 of Monangai's vacated 15 a game, on 29.5 running-back carries of 33 team rushes; 4.51 a carry regressed to 4.42, Green Bay allows 4.19 a carry and 139 a game with Cooper on IR, factor 1.0. Targets 1/6/3/2 (blend 3.3, plus 0.4 of Monangai's 1.25, scaled to 31 attempts); 83% catch rate regressed to 80%; 8.4 a catch to 8.2 with Green Bay's RB factor 1.08 (11 of 12 for 113 allowed). Full practice Friday, no designation. Book 85.5 rush; 19.5 rec yds, 2.5 catches."
+    },
+    {
+     "team": "CHI",
+     "player": "Roschon Johnson",
+     "pos": "RB",
+     "targets": 0.9,
+     "catchRate": 0.78,
+     "receptions": 0.7,
+     "recYds": 5,
+     "carries": 8,
+     "rushYds": 34,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "No. 2 back with Kyle Monangai (toe) out: about 7 of Monangai's 15 carries a game on top of a 1-carry baseline (his only work this year was 4 for 16 in the Week 4 fourth quarter); 4.0 a carry regressed to 4.28, factor 1.0. Takes about 0.7 of Monangai's 1.25 targets. Zavier Scott (elevated) is the third back. No book line posted for him in the pull."
+    },
+    {
+     "team": "CHI",
+     "player": "Luther Burden III",
+     "pos": "WR",
+     "targets": 7.2,
+     "catchRate": 0.67,
+     "receptions": 4.8,
+     "recYds": 52,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 5/7/11/6 (season 7.25, last three 8.0, blend 7.6, scaled to 31 attempts); 65.5% catch rate on 29 targets regressed to 67%; 11.5 a catch held; Green Bay allows 7.7 yards per target to receivers, factor 0.94. Six red-zone targets lead the team. Book 48.5 DK / about 46 FD, receptions 4.5."
+    },
+    {
+     "team": "CHI",
+     "player": "Rome Odunze",
+     "pos": "WR",
+     "targets": 5,
+     "catchRate": 0.69,
+     "receptions": 3.5,
+     "recYds": 48,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 3/4/6/7 (season 5.0, last three 5.67, blend 5.3, scaled to 31 attempts); 70% catch rate regressed to 69%; 16.6 a catch on 14 catches regressed to 15.1; Green Bay WR factor 0.93. 18% above the 40.5 DK / 39.5 FD main because his last two games (6 and 7 targets, 94 yards last week) say the book is pricing the Week 1-2 role; receptions main 2.5 to 3.5."
+    },
+    {
+     "team": "CHI",
+     "player": "Kalif Raymond",
+     "pos": "WR",
+     "targets": 4.9,
+     "catchRate": 0.75,
+     "receptions": 3.6,
+     "recYds": 36,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 9/5/7/2 (season 5.75, last three 4.67, blend 5.2, scaled to 31 attempts); 91% catch rate on 23 targets regressed hard to 75%; 10.5 a catch held; Green Bay WR factor 0.94. 31% above the 27.5 DK main: the book has priced Bagent's 2-target Week 4 as his role, the blend weights it as one game of four. Short-area slot profile; receptions main 2.5 (-193) / 3.5 (+128)."
+    },
+    {
+     "team": "CHI",
+     "player": "Colston Loveland",
+     "pos": "TE",
+     "targets": 4.6,
+     "catchRate": 0.68,
+     "receptions": 3.1,
+     "recYds": 26,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "one-game-sample"
+     ],
+     "why": "Targets 2/3/4/9 (season 4.5, last three 5.33, blend 4.9, scaled to 31 attempts); 61% catch rate on 18 targets regressed toward the 72% TE prior to 68%; 8.3 a catch regressed to 9.3; Green Bay allows 5.5 yards per target to tight ends, factor 0.88. 31% under the 37.5 DK / about 38 FD main because the book prices Bagent's 9-target Week 4 (6 for 57), a role that exists in one game; receptions main 3.5 to 4.5."
+    },
+    {
+     "team": "GB",
+     "player": "Jordan Love",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 1.5,
+     "rushYds": 2,
+     "passYds": 244,
+     "flags": [],
+     "why": "35 attempts (season 38.5 on 42/29/53/30, trimmed because Chicago's ball control holds opponents to 48 plays a game and this is a one-score script, not Atlanta's blowout); 56.5% completions regressed to 60% (deep-target profile); 12.0 yards per completion regressed to 11.6; Chicago allows 7.5 gross yards per attempt (6.8 after Week 1) on 56% completions, factor 1.0. Book main 241.5 DK / about 237 FD. Rushing 6 for minus-8 this year."
+    },
+    {
+     "team": "GB",
+     "player": "Christian Watson",
+     "pos": "WR",
+     "targets": 7.3,
+     "catchRate": 0.65,
+     "receptions": 4.7,
+     "recYds": 77,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 8/11/10/3 (season and last three both 8.0, scaled to 35 attempts); 62.5% catch rate regressed to 65%; 16.6 a catch regressed to 16.0 (deep role); Chicago allows 9.2 yards per target to receivers and is without Kyler Gordon and Anthony Johnson Jr., factor 1.03. 21% above the 63.5 DK / about 64 FD main: 82.8 a game so far, two of four games over 95. Receptions main 4.5."
+    },
+    {
+     "team": "GB",
+     "player": "Matthew Golden",
+     "pos": "WR",
+     "targets": 8,
+     "catchRate": 0.57,
+     "receptions": 4.6,
+     "recYds": 68,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 12/6/12/7 (season 9.25, last three 8.33, blend 8.8, scaled to 35 attempts); 48.6% catch rate on 37 targets regressed to 57%; 15.2 a catch regressed to 14.4; Chicago WR factor 1.03. Book 57.5 DK / about 58 FD, receptions 4.5 (-124 / -125), which sits just above the 4.6 mean."
+    },
+    {
+     "team": "GB",
+     "player": "Tucker Kraft",
+     "pos": "TE",
+     "targets": 5.5,
+     "catchRate": 0.68,
+     "receptions": 3.7,
+     "recYds": 34,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 6/3/8/7 (season and last three both 6.0, scaled to 35 attempts); 62.5% catch rate regressed toward the 72% TE prior to 68%; 9.9 a catch regressed to 10.1; Chicago allows 6.3 yards per target to tight ends (13 of 22, 139 yards, no touchdowns), factor 0.92. 34% under the 51.5 DK / 49.5 FD main because the book prices his 2025 role; this season he is at 37 yards a game. Receptions main 4.5."
+    },
+    {
+     "team": "GB",
+     "player": "Skyy Moore",
+     "pos": "WR",
+     "targets": 3.3,
+     "catchRate": 0.61,
+     "receptions": 2,
+     "recYds": 17,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 1/3/7/2 (season 3.25, last three 4.0, blend 3.6, scaled to 35 attempts) in Jayden Reed's vacated slot role; 46% catch rate on 13 targets regressed to 61%; 5.8 a catch regressed to 8.4; Chicago WR factor 1.03. Book 13.5 DK, receptions 1.5."
+    },
+    {
+     "team": "GB",
+     "player": "MarShawn Lloyd",
+     "pos": "RB",
+     "targets": 3.2,
+     "catchRate": 0.79,
+     "receptions": 2.5,
+     "recYds": 17,
+     "carries": 9,
+     "rushYds": 34,
+     "passYds": null,
+     "flags": [],
+     "why": "Lead back with Chris Brooks (ankle) out: carries 13/6/4/7 (blend 6.6) plus about 1 of Brooks's 3.75, scaled to 19 running-back carries of 21 team rushes; 2.7 a carry regressed to 3.64; Chicago allows 4.9 a carry (4.7 after Week 1), factor 1.05. Targets 1/2/3/5 (blend 3.0, plus 0.5 of Brooks's 1.25, scaled to 35 attempts); 82% catch rate regressed to 79%; 5.4 a catch regressed to 6.3, Chicago RB factor 1.08. Pierre Strong Jr. (signed Thursday) takes about 2 carries. Book 28.5 rush DK / 29.5 FD; 13.5 rec yds."
+    },
+    {
+     "team": "GB",
+     "player": "Kaleb Johnson",
+     "pos": "RB",
+     "targets": 1.1,
+     "catchRate": 0.78,
+     "receptions": 0.85,
+     "recYds": 6,
+     "carries": 8,
+     "rushYds": 34,
+     "passYds": null,
+     "flags": [],
+     "why": "Co-lead back: carries 0/8/4/8 (blend 5.8) plus about 1 of Brooks's vacated carries, scaled to 19 running-back carries; 4.0 a carry regressed to 4.14, Chicago factor 1.05. Lost a fumble at the Tampa 3 last week, a small risk to the share. Book 34.5 DK; no receiving line posted."
+    }
+   ],
+   "sources": [
+    "ESPN summary API 401872990 (venue, DraftKings line and total 46.5 widget, matchup predictor, injuries, AccuWeather) and box scores 401872661, 401872937, 401872963, 401872972 (CHI W1-4), 401872927, 401872936, 401872948, 401872968 (GB W1-4) with drive-level red-zone and goal-line plays, fetched Oct 10",
+    "ESPN roster and depth-chart APIs (CHI, GB): Monangai Out, Williams Questionable, Brooks Out, Josh Jacobs Out (exempt list); Pierre Strong Jr. active",
+    "chicagobears.com Oct 9 injury update (Monangai out, Williams limited/questionable, Swift full, Roschon Johnson to No. 2), Oct 10 game preview and roster moves (Sewell activated, Zavier Scott elevated)",
+    "packers.com Week 5 injury report (Friday designations, Strong signed, guard plan, LaFleur quotes)",
+    "NBC Sports / Rotoworld, SI Betting, Covers and Dimers Week 5 previews (line history, 58.0 rushing yards a game, model projections)",
+    "Odds API pull data/odds/raw/2026-w05-chi-gb.json (DraftKings, FanDuel alternates) for book sanity checks only",
+    "Unverified: opponent position factors computed from four box scores each, not a league table; ESPN's depth chart still lists Williams and Jayden Reed, so starters follow the team announcements; Zavier Scott's share and Strong's share are estimates"
+   ]
+  },
+  {
+   "game": "cle-nyj",
+   "kick": "2026-10-11T17:00:00Z",
+   "weather": "Outdoor, turf at MetLife Stadium: 62F, 65% chance of rain, gusts to 9 mph (ESPN/AccuWeather, Saturday). Rain is the factor; passing yards and catch rates trimmed about 3%, run volume nudged up.",
+   "teams": {
+    "CLE": {
+     "passAtt": 31,
+     "rushAtt": 26
+    },
+    "NYJ": {
+     "passAtt": 30,
+     "rushAtt": 28
+    }
+   },
+   "players": [
+    {
+     "team": "CLE",
+     "player": "Deshaun Watson",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 7.5,
+     "rushYds": 27,
+     "passYds": 211,
+     "flags": [
+      "weather"
+     ],
+     "why": "31 attempts (22/30/30/33, season 28.8, last three 31; a 2.5-point road dog in a 39.5 total); 69.6% completions regressed to 67.5%, 10.7 yards per completion held at 10.8; Jets allow 6.5 yards per attempt but faced Ward, Love and Bagent (factor 0.96), rain 0.97. Book 205.5 DK (209.5 at -101) / 199.5 FD. Carries 6/7/11/7 for 127 yards, regressed for the rain; book 25.5."
+    },
+    {
+     "team": "CLE",
+     "player": "KC Concepcion",
+     "pos": "WR",
+     "targets": 7.5,
+     "catchRate": 0.645,
+     "receptions": 4.8,
+     "recYds": 42,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Targets 5/6/9/8 (season 7.0, last three 7.7, blend 7.3, scaled to 31 attempts); 17 of 28 (61%) regressed toward the 68% prior; 8.5 a catch regressed to 9.6 on a short slot role; Jets allow 7.4 yards per target to WRs (factor 0.95), rain 0.97. Book 40.5 DK / 39.5 FD, receptions 4.5 (over +105/+116)."
+    },
+    {
+     "team": "CLE",
+     "player": "Denzel Boston",
+     "pos": "WR",
+     "targets": 5.9,
+     "catchRate": 0.64,
+     "receptions": 3.8,
+     "recYds": 54,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Targets 4/7/4/7 (season 5.5, last three 6.0, blend 5.75, scaled to 31); 13 of 22 (59%) regressed to 64%; 21.8 a catch on 13 catches regressed hard to 15.5 (deep X role, catches of 46, 55 and 60); Jets WR factor 0.95, rain 0.97. Book 47.5-49.5 DK / 49.5 FD, receptions 3.5 (over +107/+108). Long-catch variance: the median is below the mean."
+    },
+    {
+     "team": "CLE",
+     "player": "Harold Fannin Jr.",
+     "pos": "TE",
+     "targets": 6.4,
+     "catchRate": 0.73,
+     "receptions": 4.7,
+     "recYds": 41,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Targets 3/6/9/5 (season 5.75, last three 6.7, blend 6.2, scaled to 31); Carsen Ryan (out) had no targets, so nothing vacated; 17 of 23 (74%) regressed to 73% at the TE prior; 9.0 a catch regressed to 9.4; Jets allow 6.6 yards per target to TEs and no TE touchdown (factor 0.95), rain 0.97. Book 36.5 DK / FD between 29.5 and 39.5, receptions 4.5 (over +104/+116)."
+    },
+    {
+     "team": "CLE",
+     "player": "Quinshon Judkins",
+     "pos": "RB",
+     "targets": 4.3,
+     "catchRate": 0.82,
+     "receptions": 3.5,
+     "recYds": 23,
+     "carries": 16,
+     "rushYds": 57,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Carries 12/12/18/17 (blend 15.2, lifted to 16 on 26 team rushes in the rain, Watson about 7.5); 3.0 a carry on 59 regressed to 3.5; Jets allowed 4.3 a carry for the season but 131 and 232 the last two weeks (factor 1.02). Targets 2/5/2/7 (blend 4.3); 15 of 16 regressed to 82%; 6.4 a catch regressed to 6.8. Receiving 39% above the 16.5 DK main (14.5 FD) because his own season average is 24 a game; rush book 60.5 DK / 59.5 FD."
+    },
+    {
+     "team": "NYJ",
+     "player": "Geno Smith",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 3,
+     "rushYds": 10,
+     "passYds": 215,
+     "flags": [
+      "weather"
+     ],
+     "why": "30 attempts (24/41/37/15, season 29.3; the 15 came in a 32-play game at Chicago; trimmed for a run-first home-favorite script with Cleveland's interior out); 72.6% completions regressed to 69%; 10.6 yards per completion regressed to 10.7; Cleveland allows 7.0 yards per attempt and nine passing touchdowns (factor 1.0), rain 0.97. Book 207.5 DK / FD main near 205 (199.5 at -138). Carries 6/5/2/0; book 10.5."
+    },
+    {
+     "team": "NYJ",
+     "player": "Garrett Wilson",
+     "pos": "WR",
+     "targets": 8.8,
+     "catchRate": 0.73,
+     "receptions": 6.4,
+     "recYds": 76,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Targets 7/7/13/4 (season 7.75, last three 8.0); Mitchell (out, third straight game) vacated targets: Wilson took 17 of 52 (33%) in the two games without him versus 22% with him, so 30 attempts at a 29% share with Taylor back = 8.8; 24 of 31 (77%) regressed to 73%; 11.25 a catch regressed to 11.6; Cleveland allows 8.8 yards per target to WRs (factor 1.06), rain 0.97. Book 68.5 DK / 69.5 FD, receptions 5.5 (-153) and 6.5 (+120/+125)."
+    },
+    {
+     "team": "NYJ",
+     "player": "Isaiah Williams",
+     "pos": "WR",
+     "targets": 3.3,
+     "catchRate": 0.72,
+     "receptions": 2.4,
+     "recYds": 27,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Targets 1/6/2/3 (season 3.0, last three 3.7, blend 3.3; WR2 with Mitchell out, but only 5 targets in the two games without him); 10 of 12 regressed to 72%; 13.5 a catch (a 58-yard score last week) regressed to 10.8; Cleveland WR factor 1.06, rain 0.97. Book 22.5 DK / 24.5 FD, receptions 2.5 (+104/+118)."
+    },
+    {
+     "team": "NYJ",
+     "player": "Kenyon Sadiq",
+     "pos": "TE",
+     "targets": 4.4,
+     "catchRate": 0.7,
+     "receptions": 3.1,
+     "recYds": 32,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Targets 3/3/8/4 (season 4.5, last three 5.0, blend 4.75, trimmed 0.35 because the last three came without Mason Taylor); 12 of 18 (67%) regressed to 70%; 11.9 a catch regressed to 11.0; Cleveland has allowed 36 TE targets but only 6.7 yards per target (factor 0.97), rain 0.97. Book 32.5 DK / FD between 29.5 and 39.5, receptions 3.5 (+100/+110). No injury designation this week (back last week)."
+    },
+    {
+     "team": "NYJ",
+     "player": "Mason Taylor",
+     "pos": "TE",
+     "targets": 2.8,
+     "catchRate": 0.72,
+     "receptions": 2,
+     "recYds": 16,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "one-game-sample",
+      "weather"
+     ],
+     "why": "Thumb; full practice Wednesday and Thursday, no designation, so active (verify at inactives). His 2026 role exists only in Week 1 (3 targets, 2 catches for -2); projected on that share of 30 attempts with the catch rate at the 72% TE prior and 8.5 yards a catch (prior, not his own), Cleveland TE factor 0.97. Book 14.5 at both books, receptions 1.5 (-154/-158). Snap share returning from three games without a target is unverified."
+    },
+    {
+     "team": "NYJ",
+     "player": "Braelon Allen",
+     "pos": "RB",
+     "targets": 3,
+     "catchRate": 0.79,
+     "receptions": 2.4,
+     "recYds": 12,
+     "carries": 19,
+     "rushYds": 80,
+     "passYds": null,
+     "flags": [
+      "one-game-sample",
+      "weather"
+     ],
+     "why": "Hall (quad) out: Allen had all 14 back carries at Chicago (the lead role exists in that one game); Hall averaged 17 carries, so 19 of 28 team rushes with Isaiah Davis (2 snaps last week, DK 12.5 rush line) and Geno about 3 taking the rest; 3.6 a carry on 33 regressed to 3.85; Cleveland allows 4.6 a carry and is without DTs Graham, Hall Jr. and Davis (factor 1.10). Targets: own 6% share plus about 60% of Hall's vacated 3.3 a game = 3.0; 6 of 7 regressed to 79%; 3.2 a catch regressed to 5.5, Cleveland allows 5.1 a catch to backs (0.90). Book 71.5 rush DK (FD 69.5 -128), 13.5-14.5 receiving, receptions 2.5."
+    }
+   ],
+   "sources": [
+    "ESPN game summary API, event 401872983 (venue, weather, injuries, FPI 54.7% NYJ, DraftKings line)",
+    "ESPN box scores and play-by-play: CLE 401872922, 401872935, 401872949, 401872964; NYJ 401872924, 401872936, 401872954, 401872972 (targets, carries, red-zone and goal-line usage, defense allowed by position)",
+    "ESPN depth charts, teams 5 and 20 (site.web.api.espn.com), fetched Oct 10",
+    "newyorkjets.com Week 5 Friday injury report (both teams, Oct 9)",
+    "data/injuries.json (ESPN / Daniel Oyefusi, Kelsey Russo, Brian Costello reports, Oct 9-10)",
+    "data/odds/raw/2026-w05-cle-nyj.json (DraftKings and FanDuel alternate lines, Oct 10 16:27 UTC)",
+    "data/schedule.json espnLine; SI, Covers and FanDuel Research Week 5 previews (line history, trends)",
+    "Unverified: Isaiah Davis's carry share as RB2 (2 offensive snaps in Week 4; not projected); Mason Taylor's snap share on return (no target since Week 1); Opponent-factor league baselines (WR 8.0, TE 7.0 yards per target, 4.3 per carry) are desk priors, not pulled; Raheim Sanders (2.7 targets a game) and Jerry Jeudy (1.7) are under the three-target bar and are not projected"
+   ]
+  },
+  {
+   "game": "hou-ten",
+   "kick": "2026-10-11T17:00:00Z",
+   "weather": "Outdoor: Nissan Stadium, artificial turf. ESPN/AccuWeather shows 66F, a 34% precipitation chance and gusts to 21 mph; flagged on both quarterbacks as a small trim to deep passing.",
+   "teams": {
+    "HOU": {
+     "passAtt": 34,
+     "rushAtt": 26
+    },
+    "TEN": {
+     "passAtt": 33,
+     "rushAtt": 22
+    }
+   },
+   "players": [
+    {
+     "team": "HOU",
+     "player": "C.J. Stroud",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 2.5,
+     "rushYds": 15,
+     "passYds": 261,
+     "flags": [
+      "weather"
+     ],
+     "why": "34 attempts (season 37.75 on 38/55/27/31, trimmed as a 7-point favourite; Tennessee's opponents have needed only 28 attempts a game while running 33.5 times); 61.6% completions regressed to 63%; 12.3 yards per completion regressed to 11.6; Tennessee allows 7.9 yards per attempt and 73% completions and is without S Amani Hooker, factor 1.05 (held under 1.10 for gusts to 21 mph). Book main 239.5 DK (-111) / about 240 FD. Carries 2/3/2/2 for 66 yards, rush main 9.5."
+    },
+    {
+     "team": "HOU",
+     "player": "Nico Collins",
+     "pos": "WR",
+     "targets": 8.7,
+     "catchRate": 0.7,
+     "receptions": 6.1,
+     "recYds": 96,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 10 and 8 in his two games (missed Weeks 2-3, grade 1 hamstring); 26% of attempts when active, scaled to 34 attempts = 8.8, blended with his one game in the last three (8) to 8.7; 77.8% catch rate on 18 targets regressed to 70%; 13.8 a catch regressed to 14.3 on a career near 15; Tennessee allows 10.4 yards per receiver target (668 on 64) with Hooker out, factor 1.10 (not the cap, wind). Book 76.5 DK / 79.5 FD, receptions 5.5; about 22% over because the book is still pricing his managed 69% snap share from the return."
+    },
+    {
+     "team": "HOU",
+     "player": "Dalton Schultz",
+     "pos": "TE",
+     "targets": 4.9,
+     "catchRate": 0.74,
+     "receptions": 3.6,
+     "recYds": 32,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 8/14/3/2 (season 6.75, last three 6.3, blend 6.5) moved down to 4.9 because Collins is back: 8 and 2 targets in Collins' games, 14 and 3 without; 77.8% catch rate on 27 targets regressed to 74%; 10.2 a catch held at 10.3; Tennessee allows 4.2 yards per TE target (109 on 26), factor at the 0.85 floor. Book 33.5 DK / about 34 FD, receptions 3.5-4.5."
+    },
+    {
+     "team": "HOU",
+     "player": "Kayshon Boutte",
+     "pos": "WR",
+     "targets": 3.5,
+     "catchRate": 0.68,
+     "receptions": 2.4,
+     "recYds": 33,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 2/5/2/4 (season 3.25, last three 3.7, blend 3.5) and 34 snaps last week as a third receiver; 69% catch rate on 13 targets at the 68% prior; 12.8 a catch regressed to 12.5; Tennessee receiver factor 1.10. Book 24.5 DK / about 27 FD, receptions 2.5 FD; 25-35% over because he is a full-time third receiver now that Hutchinson's snaps are cut."
+    },
+    {
+     "team": "HOU",
+     "player": "Jaylin Noel",
+     "pos": "WR",
+     "targets": 3.6,
+     "catchRate": 0.67,
+     "receptions": 2.4,
+     "recYds": 31,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Targets 2/5/2/3 (season 3.0, last three 3.3, blend 3.2) lifted to 3.6 for a 62% snap share last week, his first game over 20 snaps; 66.7% catch rate on 12 at the prior; 23.3 a catch on 8 catches regressed hard to 12.0; receiver factor 1.08. Book 19.5 DK / about 21 FD; about 50% over because the book prices a two-catch, 10-a-catch role while his two Collins games went for 53 and 85 yards (verify the snap share holds)."
+    },
+    {
+     "team": "HOU",
+     "player": "Xavier Hutchinson",
+     "pos": "WR",
+     "targets": 3,
+     "catchRate": 0.6,
+     "receptions": 1.8,
+     "recYds": 22,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "26 season targets (6/9/6/5, blend 6.6) but 17 snaps last week once Collins returned (one report, verify), so targets cut to 3.0; 46% catch rate on 26 targets regressed to 60%; 12.9 a catch regressed to 12.0; receiver factor 1.05. Book 14.5 DK / about 17 FD, receptions 1.5; 30-50% over only because he drew 5 targets on those 17 snaps; low floor."
+    },
+    {
+     "team": "HOU",
+     "player": "David Montgomery",
+     "pos": "RB",
+     "targets": 1.6,
+     "catchRate": 0.78,
+     "receptions": 1.3,
+     "recYds": 9,
+     "carries": 13,
+     "rushYds": 39,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 20/6/11/10 (season 11.75, last three 9.0, blend 10.4) lifted to 13 on 26 team rushes as a 7-point favourite at his 60% share of back carries; 2.7 a carry on 47 regressed to 3.5; Tennessee allows 3.6 a carry to backs with 21 tackles for loss in three weeks, factor at the 0.85 floor. Targets 3/2/2/0 (blend 1.5) at the 78% prior, 7.5 a catch. Book 43.5 DK / about 44 FD rush, 7.5 rec. Below the 3-target bar; included as the lead back."
+    },
+    {
+     "team": "HOU",
+     "player": "Woody Marks",
+     "pos": "RB",
+     "targets": 1.8,
+     "catchRate": 0.78,
+     "receptions": 1.4,
+     "recYds": 9,
+     "carries": 8.5,
+     "rushYds": 28,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 9/8/5/6 (blend 6.7) lifted to 8.5 at a 39% share of about 22 back carries; 3.1 a carry on 28 regressed to 3.85, factor 0.85. Targets 1/6/1/1 (the 6 came in the 55-attempt Week 2), projected 1.8, 6.5 a catch. Book 36.5 DK / about 39 FD rush, 8.5 rec; about 25% under the book's rushing number because the book is pricing a bigger Houston run day than 3.5 a carry against this front supports. Below the 3-target bar; included as the second lead back."
+    },
+    {
+     "team": "TEN",
+     "player": "Cam Ward",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 3.5,
+     "rushYds": 14,
+     "passYds": 213,
+     "flags": [
+      "weather"
+     ],
+     "why": "33 attempts (season 29.75 on 32/20/36/31, lifted as a 7-point home dog against a defense whose opponents have thrown 35 times a game); 63.0% completions regressed to 63.8%; 9.7 yards per completion regressed to 10.4; Houston allows 7.9 yards per attempt but did it against Allen, Burrow, Jones and Prescott and has 14 sacks, factor 0.97 including the wind. Book main 189.5 DK (-113) / about 195 FD; 10-12% over on the attempt count. Carries 4/4/1/4 for 57 yards, rush main 11.5."
+    },
+    {
+     "team": "TEN",
+     "player": "Carnell Tate",
+     "pos": "WR",
+     "targets": 8.5,
+     "catchRate": 0.66,
+     "receptions": 5.6,
+     "recYds": 68,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "questionable"
+     ],
+     "why": "Targets 6/5/9/12 (season 8.0, last three 8.7, blend 8.3, scaled to 33 attempts = 9.2) trimmed to 8.5 for the back (limited Thursday and Friday, Saleh says good to go) and Derek Stingley Jr.; 68.8% catch rate on 32 regressed to 66%; 12.2 a catch held; Houston allows 9.1 yards per receiver target, factor held at 1.0 for the wind and Stingley. Book 47.5 DK / about 49 FD, receptions 4.5; about 40% over because the book is pricing the back designation, while the role is 31% of Tennessee's targets over three weeks."
+    },
+    {
+     "team": "TEN",
+     "player": "Wan'Dale Robinson",
+     "pos": "WR",
+     "targets": 6.3,
+     "catchRate": 0.69,
+     "receptions": 4.3,
+     "recYds": 39,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 6/1/11/5 (season 5.75, last three 5.7, scaled to 33 attempts = 6.3); 69.6% catch rate on 23 regressed to 69%; 7.7 a catch regressed to 8.5 for a short slot role; Houston allows 9.1 yards per receiver target, factor 1.07. Book 32.5 DK / about 34 FD, receptions 3.5-4.5. First beneficiary if Tate is limited."
+    },
+    {
+     "team": "TEN",
+     "player": "Gunnar Helm",
+     "pos": "TE",
+     "targets": 3,
+     "catchRate": 0.73,
+     "receptions": 2.2,
+     "recYds": 18,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 5/2/4/1 (season 3.0, last three 2.3, scaled to 33 attempts = 3.0); 75% catch rate on 12 regressed to 73%; 6.7 a catch regressed to 8.0; Houston allows 8.6 yards per TE target (Kincaid's 130 inflates it), factor 1.05. Martin-Robinson (questionable) has no catches, so nothing moves. Book 15.5 DK / about 19.5 FD, receptions 2.5."
+    },
+    {
+     "team": "TEN",
+     "player": "Tony Pollard",
+     "pos": "RB",
+     "targets": 3.2,
+     "catchRate": 0.77,
+     "receptions": 2.5,
+     "recYds": 12,
+     "carries": 14,
+     "rushYds": 50,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 7/14/17/16 (season 13.5, last three 15.7, blend 14.6) trimmed to 14 for a trailing script at a 71% share of back carries; 4.1 a carry regressed to 4.2; Houston allows 3.5 a carry to backs, factor at the 0.85 floor. Targets 2/1/4/4 (blend 2.9, scaled 3.2), 73% regressed to 77%, 3.0 a catch regressed to 5.5, and Houston allows 2.9 yards per back target (factor 0.85). Book 48.5 DK / about 52 FD rush, 8.5 rec, 1.5 receptions."
+    },
+    {
+     "team": "TEN",
+     "player": "Tyjae Spears",
+     "pos": "RB",
+     "targets": 1.5,
+     "catchRate": 0.78,
+     "receptions": 1.2,
+     "recYds": 7,
+     "carries": 4,
+     "rushYds": 15,
+     "passYds": null,
+     "flags": [],
+     "why": "Change-of-pace back: carries 3/7/3/2 (blend 3.9), 4.3 a carry, factor 0.85; targets 4/2/0/1 (blend 1.4) at the 78% prior. Below the 3-target bar; included as the second back. Book 15.5 DK rush, 10.5 rec."
+    }
+   ],
+   "sources": [
+    "ESPN box scores and play-by-play, Texans events 401872660, 401872934, 401872951, 401872967 and Titans events 401872924, 401872939, 401872956, 401872973 (targets, carries, red-zone and goal-line splits computed from the drive logs)",
+    "ESPN depth charts and rosters (teams 34 and 10), pulled Oct 10",
+    "ESPN game summary 401872984 (injuries, DraftKings HOU -7 / 38.5, FPI 66.6%, AccuWeather)",
+    "data/injuries.json (fetched 2026-10-10T13:53Z)",
+    "tennesseetitans.com, Quick Hits on the Titans From Friday of Texans Week",
+    "SI Texans On SI, Texans-Titans Week 5 injury report",
+    "Athlon Sports and Yahoo, Texans Week 4 snap counts (Collins 69%, Noel 62-64%, Hutchinson 17 snaps from one report)",
+    "AP preview and ESPN (Davenport / Bien-Aime) game story, Oct 8-10",
+    "data/odds/raw/2026-w05-hou-ten.json (DraftKings and FanDuel, 2026-10-10T16:27Z) for sanity checks only"
+   ],
+   "unverified": [
+    "Hutchinson's 17 Week 4 snaps come from one report (another source omits it)",
+    "M.J. Stewart: team report questionable (quad), ESPN feed Out (knee)",
+    "Braden Smith and Kayden McDonald activation from IR",
+    "FanDuel main numbers marked 'about' are interpolated from its alternate ladder"
+   ]
+  },
+  {
+   "game": "ind-pit",
+   "kick": "2026-10-11T17:00:00Z",
+   "weather": "Acrisure Stadium, open air, grass. ESPN/AccuWeather (Sat Oct 10): 63F, 49% chance of precipitation, gusts to 15 mph. Every pass-game yardage number below carries a 3% weather trim (0.97); rushing is untrimmed. A wet ball also pushes both teams' rush rates up a little, already in the attempt split. Wind is not a factor at 15 mph.",
+   "teams": {
+    "IND": {
+     "passAtt": 32,
+     "rushAtt": 27
+    },
+    "PIT": {
+     "passAtt": 36,
+     "rushAtt": 23
+    }
+   },
+   "players": [
+    {
+     "team": "IND",
+     "player": "Daniel Jones",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 2.8,
+     "rushYds": 9,
+     "passYds": 201,
+     "flags": [
+      "weather"
+     ],
+     "why": "84 of 132 for 754 (63.6%, 9.0 a completion, 5.7 an attempt). 32 attempts (31, 31, 36, 34; a 3-point road dog, a 55% dropback rate against a Pittsburgh defence that has faced 54%, and the rain chance). Completion rate regressed to 63.8%, yards per completion to 9.4 (30-attempt and 20-completion priors toward the league's 64.3% and 11.1). Then x1.07 for Pittsburgh's 7.9 yards an attempt allowed (a 1.11 raw factor at 60% weight; Dean out, Elliott on IR and Ramsey questionable are not added on top) and x0.97 for weather. Top-down 198, bottom-up from the receiver rows 207, prints 201: 3-6% under the 207.5 (DK) / ~212 (FD) main, so no lean. Rushing: 11 carries for 21 yards; 2.8 carries at a regressed 3.1 a carry gives 9 against DK's 8.5."
+    },
+    {
+     "team": "IND",
+     "player": "Josh Downs",
+     "pos": "WR",
+     "targets": 7.8,
+     "catchRate": 0.64,
+     "receptions": 5,
+     "recYds": 61,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "4, 9, 11 and 4 targets, a 7.5 blend. Raised to 7.8 because in Week 3, the one game with Allen active and Pierce out, the vacated targets went to Downs (11), Warren (10) and Allen (9). Dulin (out) and Pierce (IR) leave 2.9 blended targets. 17 of 28 (61%) regressed to 64%; 11.9 yards a catch regressed to 12.5. x1.01 for Pittsburgh's 13.5 a catch allowed to wide receivers against a 13.2 league rate. 5.0 catches against a 4.5 main (DK -146, FD -148); 61 yards against 56.5 (DK) / 59.5 (FD). Small overs, no strong lean."
+    },
+    {
+     "team": "IND",
+     "player": "Tyler Warren",
+     "pos": "TE",
+     "targets": 7.1,
+     "catchRate": 0.79,
+     "receptions": 5.6,
+     "recYds": 43,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "5, 7, 10 and 5 targets: a 7.0 blend, 7.1 with a share of Dulin's targets. 23 of 27 (85%) regressed to 79%. His 5.7 yards a catch is the lowest of any regular in this game, regressed to 7.3, then x1.07 for Pittsburgh's 11.3 a catch allowed to tight ends (Gesicki and Fannin both scored). 5.6 catches against a 4.5 main (DK -153, FD -160) is the strongest receptions number in the game. 43 yards sits 6-10% under 45.5 (DK) / ~47.5 (FD) because the catches stay short."
+    },
+    {
+     "team": "IND",
+     "player": "Keenan Allen",
+     "pos": "WR",
+     "targets": 6.1,
+     "catchRate": 0.67,
+     "receptions": 4.1,
+     "recYds": 43,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "questionable",
+      "weather"
+     ],
+     "why": "Questionable (groin) but a full participant Friday, so projected active. 6, 5 and 9 targets in his three games (he missed Week 4 in London): a 6.7 blend, trimmed to 6.1 for the groin and a possible snap limit. Dulin's 6 Week 4 targets were Allen's role and go back to him. 13 of 20 (65%) regressed to 67%; 7.7 yards a catch regressed to 10.7 (15-catch prior to the wide-receiver baseline); x1.01. That yards-a-catch regression is why 43 is 44% over DK's 29.5 and 35% over FD's ~31.5: the books price his 33 a game and the groin. The Colts' receivers have produced 133 yards a game, and the Downs, Allen and Treadwell rows here sum to 128. If he sits, Treadwell goes to about 5 targets and Burks and Gould take the rest, as in Week 4."
+    },
+    {
+     "team": "IND",
+     "player": "Jonathan Taylor",
+     "pos": "RB",
+     "targets": 3.6,
+     "catchRate": 0.74,
+     "receptions": 2.7,
+     "recYds": 19,
+     "carries": 21.5,
+     "rushYds": 91,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "19, 24, 23 and 20 carries: a 21.9 blend, and 21.5 of the Colts' 27 projected rushes (McGowan 2.5, Jones 2.8). 4.10 a carry regressed to 4.12 (50-carry prior to the league's 4.14 for running backs), x1.03 for Pittsburgh's 4.37 a carry allowed to backs with Harmon on IR. 91 against 86.5 (DK) / 89.5 (FD) is a small over, not a big call. Receiving: 4, 4, 3 and 4 targets; 10 of 15 regressed to 74%; 6.9 a catch; x1.05. 2.7 catches against 2.5 (DK +100, FD -112); 19 yards against 14.5."
+    },
+    {
+     "team": "IND",
+     "player": "Laquon Treadwell",
+     "pos": "WR",
+     "targets": 2.5,
+     "catchRate": 0.72,
+     "receptions": 1.8,
+     "recYds": 24,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Below the three-target line but priced by DraftKings. 1, 3 and 1 targets with Allen active, 6 in Week 4 without him. ESPN's 3WR depth chart lists him WR3 behind Downs and Allen (not WR1 as the research draft has it), so he plays the outside snaps Pierce had. Week 3 shows those targets going to the top three, so he gets 2.5. 9 of 11 regressed to 72%; 13.7 a catch to 13.4. 24 yards is 44% over DK's 16.5. That line is the median of a role that can finish with nothing, while his mean has been 30.8 a game. 1.8 catches against a 1.5 at -101 is no edge."
+    },
+    {
+     "team": "PIT",
+     "player": "Aaron Rodgers",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 1.6,
+     "rushYds": 3,
+     "passYds": 253,
+     "flags": [
+      "weather"
+     ],
+     "why": "88 of 153 (57.5%) for 999 yards, 11.4 a completion, 13 sacks. 36 attempts (40, 39, 34, 40; McCarthy's offense drops back on 66% of plays, trimmed here for a 3-point home favourite and the rain chance). Completion rate regressed to 58.6%; yards a completion to 11.3. Then x1.08 for Indianapolis' 8.1 yards an attempt allowed (Jackson 324, Mahomes 382; a 1.14 raw factor at 60% weight) and x0.97 for weather. Top-down 251, bottom-up 259, prints 253: 12% over 225.5 (DK) / 224.5 (FD). The risk is sacks (5 at Cleveland), though Key is on IR and Buckner did not practise Friday. Rushing: 7 carries for 12 yards gives 1.6 carries for 3."
+    },
+    {
+     "team": "PIT",
+     "player": "DK Metcalf",
+     "pos": "WR",
+     "targets": 7.7,
+     "catchRate": 0.57,
+     "receptions": 4.4,
+     "recYds": 59,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "10, 9, 5 and 9 targets: an 8.0 blend, 7.7 once the team total is 33.5 targets on 36 attempts. Pittman's targets went to Bernard, not Metcalf, in Week 2. 16 of 33 (48.5%) regressed to 57%, which is most of the gap to his 53 a game. 13.3 a catch holds at 13.3. Indianapolis allows 16.0 a catch to wide receivers (a 1.11 factor), but the desk uses 1.05 for him because Sauce Gardner draws him, per the research draft (verify). 4.4 catches against a main near 4 (DK 3.5 at -191, 4.5 at +117; FD 4.5 at +114); 59 yards against 52.5 (DK) / ~54 (FD)."
+    },
+    {
+     "team": "PIT",
+     "player": "Roman Wilson",
+     "pos": "WR",
+     "targets": 5.9,
+     "catchRate": 0.63,
+     "receptions": 3.7,
+     "recYds": 53,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Exactly 6 targets in all four games; 5.9 here. 14 of 24 (58%) regressed to 63%; 13.4 a catch to 13.3 (60 and 74 yards the last two weeks on catches of 38 and 49). x1.11 for Indianapolis' 16.0 a catch allowed to wide receivers (Flowers 150, Thornton 86, Rice 83, Dyami Brown 65), and Gardner is on Metcalf. 3.7 catches against 2.5 (DK -203) / 3.5 (FD +106). 53 yards is 29% over DK's 41.5 and 21% over FD's ~44, the largest receiving-yards gap among the unflagged players."
+    },
+    {
+     "team": "PIT",
+     "player": "Germie Bernard",
+     "pos": "WR",
+     "targets": 4.5,
+     "catchRate": 0.67,
+     "receptions": 3,
+     "recYds": 38,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "one-game-sample",
+      "weather"
+     ],
+     "why": "Michael Pittman Jr. (foot) is out. In the one prior game without him (Week 2 at New England), Bernard started as the No. 3 receiver and took 8 targets (4 for 35). With Pittman active he had 1 and 2 targets and played 29 of 72 snaps in Week 4. His own blend is 3.2; with Pittman's 4.3 a game vacated the desk prints 4.5, below the Week 2 number. 7 of 11 regressed to 67%; 8.6 a catch regressed to 11.8 on a 7-catch sample; x1.11. 38 yards is 85-94% over 20.5 (DK) / 19.5 (FD): the books price his Weeks 3-4 role and the desk prices his Week 2 role. That role rests on one game, so he is flagged and kept off the ticket."
+    },
+    {
+     "team": "PIT",
+     "player": "Jaylen Warren",
+     "pos": "RB",
+     "targets": 4.6,
+     "catchRate": 0.72,
+     "receptions": 3.3,
+     "recYds": 33,
+     "carries": 14.5,
+     "rushYds": 73,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Rico Dowdle (toe) is questionable after three limited days. With Dowdle active in Weeks 1-2, Warren had 10 and 11 carries; without him, 17 and 17. The blend is 14.4. Assuming roughly a 65% chance that Dowdle plays a 6-8 carry early-down role (verify at inactives), 14.5 carries. 5.6 a carry regressed to 4.9 (50-carry prior), x1.03 for Indianapolis' 4.34 a carry allowed to backs, with Key on IR and Carlies out. 73 yards is 14-19% over 61.5 (DK) / ~64.5 (FD); if Dowdle is inactive, 17 carries and 86. Receiving: 6, 4, 4 and 6 targets and 27-plus yards every week. 13 of 20 regressed to 72%; 11.0 a catch to 8.8; x1.15 (capped; Indianapolis allows 11.1 a catch to backs). 3.3 catches and 33 yards, 67-87% over the 17.5 (DK) / 19.5 (FD) mains. Those mains price a Dowdle split that did not cut his receiving in Weeks 1-2 (27 and 34 yards)."
+    },
+    {
+     "team": "PIT",
+     "player": "Pat Freiermuth",
+     "pos": "TE",
+     "targets": 4.7,
+     "catchRate": 0.73,
+     "receptions": 3.4,
+     "recYds": 31,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "5, 5, 4 and 5 targets, including both of Pittsburgh's targets inside the 10; 4.7 here with a little of Pittman's share (he had 5 in the Week 2 absence). 14 of 19 (74%) regressed to 73%; 8.9 a catch to 9.4. x0.98 for Indianapolis' 9.5 a catch allowed to tight ends: the 52 tight-end yards a game come from volume (8 targets a game), not efficiency. 3.4 catches against a main near 3 (DK 2.5 at -194, 3.5 at +128); 31 yards against 26.5 (DK) / ~28 (FD)."
+    },
+    {
+     "team": "PIT",
+     "player": "Darnell Washington",
+     "pos": "TE",
+     "targets": 3.4,
+     "catchRate": 0.71,
+     "receptions": 2.4,
+     "recYds": 26,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "2, 2, 4 and 5 targets, rising, and ESPN's listed TE1: a 3.5 blend, 3.4 here. 9 of 13 regressed to 71%; 13.2 a catch (a 47-yarder at Cincinnati) regressed to 11.2; x0.98. 2.4 catches against 1.5 (DK -228, FD -260) / 2.5 (DK +132, FD +118); 26 yards against 21.5 (DK) / ~24 (FD)."
+    }
+   ],
+   "sources": [
+    "data/odds/raw/2026-w05-ind-pit.json (DraftKings and FanDuel alternate ladders; used only to sanity-check the means, main number read where the over is near -110)",
+    "research-draft/w05/ind-pit.json (Friday designations, roles, Gardner-on-Metcalf matchup)",
+    "ESPN box scores via site.api.espn.com summary: IND 401872659, 401872945, 401872951, 401872965; PIT 401872658, 401872946, 401872950, 401872964; plus all 64 Weeks 1-4 games with ESPN team rosters for league baselines (WR 62.7% / 13.2 a catch, TE 71.5% / 9.9, RB 78.2% / 6.9, RB 4.14 a carry, 64.3% completions, 11.08 a completion, 7.12 an attempt, 56.8% dropback rate, 61.8 plays a team-game)",
+    "ESPN depth charts and rosters, teams 11 and 23, fetched Oct 10 19:04 UTC: Pittman Jr. Out, Dulin Out, Slayton Out (ESPN updated him from questionable Oct 10 15:55 UTC; data/injuries.json still shows questionable), Allen and Dowdle Questionable, Pierce and Mallory on IR",
+    "ESPN game summary 401872985 (venue, AccuWeather forecast, DraftKings PIT -3 / 43.5, injury list) and data/injuries.json (fetched Oct 10 13:53 UTC)",
+    "https://www.yardbarker.com/nfl/articles/officially_germie_bernard_time_for_steelers/s1_16724_44404181 (Steelers on SI, Oct 8: Bernard 104 offensive snaps, 38% of the season; Pittsburgh in 11 personnel 63.8%)",
+    "https://www.thefantasyfootballers.com/news/638037/germie-bernard-set-for-larger-role-sunday/ (Week 2: Bernard set to start as the No. 3 receiver with Pittman out); thefantasyfootballers.com news 640382 and nbcsports.com player news 2026-09-20, read from search snippets only (29 of 72 snaps in Week 4; 8 targets in Week 2)",
+    "Method: targets = 50% last three games + 50% season (per game played), then vacated targets (Pittman, Dulin, Pierce) moved to whoever took them in the prior absence (Week 2 for Pittsburgh, Week 3 for Indianapolis), then scaled to attempts x 0.93 targets an attempt. Catch rate regressed to 68/72/78 with a 25-target prior. Yards a catch regressed to league by position with a 15-catch prior. Carries regressed with a 50-carry prior to 4.14. QB completion rate and yards a completion regressed with 30-attempt and 20-completion priors. Opponent factors from four box scores, shrunk 50% toward 1.0 (60% weight for pass defence), capped 0.85-1.15: Pittsburgh D WR 1.01, TE 1.07, RB rec 1.05, rush 1.03, pass 1.07; Indianapolis D WR 1.11 (Metcalf 1.05 for Gardner), TE 0.98, RB rec 1.15 (capped from 1.30), rush 1.02-1.03, pass 1.08. Weather 0.97 on pass-game yards.",
+    "revenge-narrative: Michael Pittman Jr. against the team that traded him is the only candidate, and he is out, so no projected player carries the flag",
+    "Unverified: pass rate over expected allowed was not available; the raw opponent dropback rates (Pittsburgh D 54.4%, Indianapolis D 57.1%, league 56.8%) stand in for it. Also unverified: Bernard's Week 2 snap or route share (the draft's 86% routes could not be confirmed; only the season 104 snaps and the Week 4 29 of 72 were found); Gardner shadowing Metcalf; Dowdle's active status and carry share; any snap limit on Allen; the 0.97 weather trim, which is a desk judgement, not a measured effect"
+   ]
+  },
+  {
+   "game": "lv-ne",
+   "kick": "2026-10-11T17:00:00Z",
+   "weather": "Gillette Stadium, outdoor, artificial turf; ESPN/AccuWeather 63F, 2% precipitation, gusts to 12 mph. Non-factor.",
+   "teams": {
+    "LV": {
+     "passAtt": 35,
+     "rushAtt": 25
+    },
+    "NE": {
+     "passAtt": 31,
+     "rushAtt": 28
+    }
+   },
+   "players": [
+    {
+     "team": "LV",
+     "player": "Kirk Cousins",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 2.5,
+     "rushYds": 2,
+     "passYds": 250,
+     "flags": [],
+     "why": "35 attempts (36 a game, 38 over the last three including 52 at KC; a 3.5-point dog in a close script) x 0.655 completions (64.6% season, lightly regressed) x 10.9 a completion (11.0 season, regressed) x 1.00 for New England: it allowed 10.0 a catch (factor 0.92) with its corners, and Gonzalez, Davis, Prunty and Canada are all out Sunday. 250 against DK 231.5 is the lean. Rushing: 12 carries for -2 this year, kneels and sneaks only."
+    },
+    {
+     "team": "LV",
+     "player": "Brock Bowers",
+     "pos": "TE",
+     "targets": 9.8,
+     "catchRate": 0.7,
+     "receptions": 6.9,
+     "recYds": 72,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "14 and 11 targets in the two games since the knee (missed Weeks 1-2), so the blend is 12.5; regressed to 9.8 for the two-game sample and a 35-attempt script, with a little of Nailor's share. 64% catch rate regressed toward 72%; 12.6 a catch regressed to 11.4, times 0.92: New England's 8.3 a catch to tight ends is a 0.79 factor, capped at 0.85 and eased up because LB Elliss and S Woodson are questionable. Full Thursday and Friday, no designation. 6.9 catches and 72 yards sit near DK 6.5 (over -130) and 76.5: no lean."
+    },
+    {
+     "team": "LV",
+     "player": "Michael Mayer",
+     "pos": "TE",
+     "targets": 5.4,
+     "catchRate": 0.77,
+     "receptions": 4.2,
+     "recYds": 36,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "7, 4, 3, 10 targets (blend 5.8); 15.5% of attempts with Bowers on the field, and Nailor out means more two-tight-end snaps. 83% catch rate on 24 targets regressed to 77%; 8.5 a catch regressed to 9.2, times 0.92. 4.2 catches against DK/FD 3.5 (over -111/-114) and 36 yards against 29.5 is a mild over; he has cleared 29.5 in three of four."
+    },
+    {
+     "team": "LV",
+     "player": "Tre Tucker",
+     "pos": "WR",
+     "targets": 6,
+     "catchRate": 0.67,
+     "receptions": 4,
+     "recYds": 55,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "4, 7, 4, 8 targets (blend 6.0, season 5.75, last three 6.33); Nailor's 2.75 a game and Bech's role split between Tucker, White and Benson, held at 6.0 for a 35-attempt game. 65% catch rate regressed to 67%; 15.5 a catch regressed to 13.8, times 1.00 (New England's 11.3 a catch to receivers is a 0.90 factor, set to neutral because its top four corners are out). 55 is 33% above DK's 41.5: the reason is the corner injuries; his 119 at the Chargers shows the ceiling. 4.0 catches against 3.5 (over -105)."
+    },
+    {
+     "team": "LV",
+     "player": "Cody White",
+     "pos": "WR",
+     "targets": 3.2,
+     "catchRate": 0.635,
+     "receptions": 2,
+     "recYds": 25,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "one-game-sample"
+     ],
+     "why": "1, 2, 3, 4 targets (blend 2.75); Nailor's spot in three-receiver sets adds about half a target, based on Week 4, when Nailor drew no target after a second-quarter hit and White had 4 of 50. 50% catch rate on 10 targets regressed to 63.5%; 12.8 a catch regressed to 12.6, times 1.00. 2.0 catches matches the book (O1.5 -162 DK); 25 yards against 19.5 is 28% higher because of the corner injuries. The full-time role without Nailor has no clean sample: part of one game at most."
+    },
+    {
+     "team": "LV",
+     "player": "Ashton Jeanty",
+     "pos": "RB",
+     "targets": 4,
+     "catchRate": 0.785,
+     "receptions": 3.1,
+     "recYds": 24,
+     "carries": 14,
+     "rushYds": 54,
+     "passYds": null,
+     "flags": [
+      "questionable"
+     ],
+     "why": "Projected only if he plays: questionable (ankle/foot), full Wednesday, limited Thursday, DNP Friday. 23, 21, 19, 15 carries (19.5 a game) cut to 14 for a limited return with Washington mixing in. 3.4 a carry regressed to 3.7, times 1.04 for New England's 4.5 a carry to backs. 6.0 targets a game cut to 4.0; 79% catch rate, 8.7 a catch regressed to 8.0, times 0.97. Neither book posts a yardage line for him, so these are means for the desk only."
+    },
+    {
+     "team": "LV",
+     "player": "Mike Washington Jr.",
+     "pos": "RB",
+     "targets": 2.5,
+     "catchRate": 0.7,
+     "receptions": 1.8,
+     "recYds": 12,
+     "carries": 11,
+     "rushYds": 50,
+     "passYds": null,
+     "flags": [],
+     "why": "A blended mean that assumes a 50% chance Jeanty sits: about 16 carries and 3.5 targets as the lead back, 6 carries and 1.5 targets behind him (7, 3, 5, 9 carries so far). 5.0 a carry on 24 regressed to 4.4, times 1.04. One catch on five targets regressed to 70%, about 7 a catch. No posted yardage props for him at either book; the scenario means are 16 carries / 73 yards as the starter and 6 / 27 as the backup."
+    },
+    {
+     "team": "NE",
+     "player": "Drake Maye",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 6,
+     "rushYds": 32,
+     "passYds": 221,
+     "flags": [],
+     "why": "31 attempts (29.25 a game as the starter, a 3.5-point favourite) x 0.63 completions (62.4%, regressed toward 64%) x 11.3 a completion (11.7, regressed) x 1.00: Las Vegas allows 12.1 a catch but 7.1 an attempt, so per attempt it is close to neutral. 221 against DK 227.5 / FD 224.5: no lean. Rushing: 7, 4, 4, 8 carries at 5.9 a carry, regressed to 5.4. 6 x 5.4 = 32 against DK 32.5: no lean."
+    },
+    {
+     "team": "NE",
+     "player": "Romeo Doubs",
+     "pos": "WR",
+     "targets": 6.9,
+     "catchRate": 0.65,
+     "receptions": 4.5,
+     "recYds": 63,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "3, 4, 4, 9 targets (blend 5.3) plus 1.6 of Mack Hollins's 5 a game (Hollins out, calf; A.J. Brown on IR), as in the Buffalo second half. 60% catch rate regressed to 65%; 16.9 a catch regressed to 14.0, times 1.00: Las Vegas allows 16.9 a catch to receivers but only 36 of 74 targets complete, so per target it is neutral. 63 against 49.5 (DK -110, FD -114) is 27% over; the reason is the vacated targets. 4.5 catches against 3.5 (over -148 DK, -136 FD)."
+    },
+    {
+     "team": "NE",
+     "player": "Hunter Henry",
+     "pos": "TE",
+     "targets": 4.3,
+     "catchRate": 0.75,
+     "receptions": 3.2,
+     "recYds": 29,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "3, 5, 2, 5 targets (blend 3.9) plus a little of Hollins's share. 80% catch rate on 15 targets regressed to 75%; 11.1 a catch regressed to 10.8, times 0.85 (capped): Las Vegas allows 7.7 a catch to tight ends (24 for 184 on 30 targets). 29 against DK 36.5 (over -115) and FD 39.5 (over -102) is the under lean; 3.2 catches against 3.5 (over -121 DK, -130 FD)."
+    },
+    {
+     "team": "NE",
+     "player": "DeMario Douglas",
+     "pos": "WR",
+     "targets": 4.4,
+     "catchRate": 0.63,
+     "receptions": 2.8,
+     "recYds": 29,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "7, 2, 5, 3 targets (blend 3.8) plus 0.6 of Hollins's share. 53% catch rate on 17 targets regressed to 63%; 9.1 a catch regressed to 10.3, times 1.00. 29 against DK 25.5 / FD 24.5 and 2.8 catches against 2.5 (over -124 DK, -125 FD): near the market."
+    },
+    {
+     "team": "NE",
+     "player": "Kyle Williams",
+     "pos": "WR",
+     "targets": 3.2,
+     "catchRate": 0.61,
+     "receptions": 1.9,
+     "recYds": 26,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "one-game-sample"
+     ],
+     "why": "0, 2, 3, 2 targets (blend 2.0) plus 1.2 of Hollins's share as the next outside receiver on ESPN's chart. Two catches on seven targets regressed to 61%; 22.0 a catch on two catches regressed hard to 13.5. No posted line. The bigger role exists only from the second half at Buffalo."
+    },
+    {
+     "team": "NE",
+     "player": "Efton Chism III",
+     "pos": "WR",
+     "targets": 3,
+     "catchRate": 0.66,
+     "receptions": 2,
+     "recYds": 23,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "one-game-sample"
+     ],
+     "why": "0, 1, 2, 4 targets (blend 2.0) plus 1.0 of Hollins's share; the 4-target, 42-yard, one-touchdown game at Buffalo came after Hollins went down. Four catches on seven targets regressed to 66%; 10.3 a catch regressed to 11.5, times 1.00. 23 against DK 26.5 / FD 24.5: no lean."
+    },
+    {
+     "team": "NE",
+     "player": "Rhamondre Stevenson",
+     "pos": "RB",
+     "targets": 3.6,
+     "catchRate": 0.77,
+     "receptions": 2.8,
+     "recYds": 20,
+     "carries": 9,
+     "rushYds": 37,
+     "passYds": null,
+     "flags": [
+      "questionable"
+     ],
+     "why": "Projected only if he plays: questionable (knee), limited all week. 18, 6, 7, 13 carries (blend 9.8) set at 9 in a split with Henderson; 3.7 a carry regressed to 4.0, times 1.04 (Las Vegas allows 5.0 a carry to backs, but 177 yards of it came from Kenneth Walker III in one game and it is 4.0 without him, so the factor is trimmed from 1.15). 37 against DK 36.5 / FD 39.5: no lean. 6, 2, 3, 5 targets (blend 3.7) as the passing-down back; 75% catch rate regressed to 77%, 7.5 a catch. 20 against DK 16.5 (over -112)."
+    },
+    {
+     "team": "NE",
+     "player": "TreVeyon Henderson",
+     "pos": "RB",
+     "targets": 1.4,
+     "catchRate": 0.78,
+     "receptions": 1.1,
+     "recYds": 7,
+     "carries": 12.8,
+     "rushYds": 53,
+     "passYds": null,
+     "flags": [],
+     "why": "A blended mean with a 75% chance Stevenson plays: about 11.7 carries in the split (53% of back carries the last three weeks) and 16 as the RB1 if Stevenson sits, per the team site. 16, 8, 14 carries; 3.7 a carry regressed to 4.0, times 1.04 for Las Vegas. 53 against DK 45.5 (-110) and FD 49.5 (+104): a lean over that is only as good as Stevenson's status; 49 if Stevenson plays a full share. Receiving: 3 targets in three games."
+    }
+   ],
+   "sources": [
+    "data/odds/raw/2026-w05-lv-ne.json (DraftKings and FanDuel, pulled 2026-10-10 16:27Z)",
+    "data/schedule.json (espnLine) and data/injuries.json (fetched 2026-10-10 13:53Z)",
+    "ESPN game summaries and play-by-play: 401872928, 401872941, 401872961, 401872976 (LV); 401872656, 401872946, 401872957, 401872971 (NE)",
+    "ESPN depth charts, team statistics and matchup summary for 401872986 (weather, predictor, DraftKings open/close)",
+    "patriots.com Week 5 injury report: Patriots vs. Raiders (final Friday designations and practice participation, both teams)",
+    "FanDuel Research: Patriots vs. Raiders predictions, odds, picks (numberFire 73.5% NE)",
+    "NFL.com / AP (Kubiak on Mendoza; Raiders 3-0 start), Boston Globe (A.J. Brown trade), Fantasy Footballers / SI (Doubs contract)"
+   ],
+   "unverified": [
+    "Jeanty's Sunday status (DNP Friday; Kubiak 'do his best to go'); the 50% sit estimate is the desk's",
+    "Stevenson's Sunday status (limited all week)",
+    "Which corners New England elevates from the practice squad",
+    "League-average baselines used in regression (WR 12.5 / TE 10.5 a catch) are desk constants, not pulled this week"
+   ]
+  },
+  {
+   "game": "min-no",
+   "kick": "2026-10-11T17:00:00Z",
+   "weather": "Indoor: Caesars Superdome (fixed dome; ESPN/AccuWeather show 82F outside, 0% precipitation, gusts to 7 mph) - no weather factor.",
+   "teams": {
+    "MIN": {
+     "passAtt": 31,
+     "rushAtt": 29
+    },
+    "NO": {
+     "passAtt": 40,
+     "rushAtt": 22
+    }
+   },
+   "players": [
+    {
+     "team": "MIN",
+     "player": "Kyler Murray",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": null,
+     "rushYds": null,
+     "passYds": 218,
+     "flags": [],
+     "why": "31 attempts (29 and 37 in his two starts, 32 and 41 dropbacks; Minnesota runs 29 times a game and teams have thrown only 31 times a game against New Orleans because they can run on it); 63.4% completions regressed to 64.5%, 9.6 yards a completion regressed to 10.3; New Orleans allows 7.4 yards an attempt, factor 1.06, with Jefferson's return the upside. Book main 213.5 DK (-113), about 212 FD (199.5 -158 / 224.5 +118)."
+    },
+    {
+     "team": "MIN",
+     "player": "Aaron Jones Sr.",
+     "pos": "RB",
+     "targets": 4.4,
+     "catchRate": 0.72,
+     "receptions": 3.2,
+     "recYds": 25,
+     "carries": 19.5,
+     "rushYds": 89,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 12/23/17/20 (season 18.0, last three 20.0, blend 19.0; 37 of 44 back carries in Murray's starts with Mason on IR), 19.5 of 29 team rushes as a 2.5-point favourite; 4.1 a carry regressed to 4.2; New Orleans allows 5.2 a carry to backs (factor 1.15 cap, trimmed to 1.10 for a backup LT and LG). Targets 1/0/6/8 (blend 4.2, scaled 4.4), 60% catch rate on 15 regressed to 72%, 7.0 a catch, Saints allow 6.8 yards a target to backs (factor 1.10). Rush 89 vs book 71.5 DK (+24%, the run-defence factor); rec 25 vs 17.5 DK / 19.5 FD (+35%: the book weights the two Wentz games with 1 and 0 targets, Murray threw him 6 and 8)."
+    },
+    {
+     "team": "MIN",
+     "player": "T.J. Hockenson",
+     "pos": "TE",
+     "targets": 6,
+     "catchRate": 0.76,
+     "receptions": 4.6,
+     "recYds": 48,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 5/4/4/13 (season 6.5, last three 7.0, blend 6.75, Josh Oliver's 1.7 a game now his), trimmed to 6.0 for Jefferson's return and scaled to 31 attempts; 84.6% catch rate on 26 targets regressed to 76%; 8.9 a catch regressed to 9.8; Saints allow 7.8 yards a target and a 74% catch rate to TEs, factor 1.08. Book 36.5 DK (-110) / 39.5 FD (+104), receptions 4.5: 48 is about 30% over because the book weights three games of 4-5 targets and 36 yards or fewer; last week's 13 came with both Jefferson and Oliver out."
+    },
+    {
+     "team": "MIN",
+     "player": "Justin Jefferson",
+     "pos": "WR",
+     "targets": 6.8,
+     "catchRate": 0.7,
+     "receptions": 4.8,
+     "recYds": 64,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "questionable"
+     ],
+     "why": "Questionable (ankle; limited Wed/Thu/Fri), team to test it Saturday; projected as active and shaded. 9 and 6 targets in his two full games (Week 3 he left after 7 snaps, Week 4 DNP): 7.5 a full game, shaded to 6.8 for a limited ankle and a quarterback he has not played a full game with; 76% catch rate on 17 targets regressed to 70%; 13.8 a catch regressed to 13.5; Saints allow 7.8 yards a target to WRs, factor 1.0. Book 79.5 (-110 both), receptions 6.5 (+104/+102): projection about 20% under for the ankle and Murray's 6.3 yards an attempt. If inactive, his targets go Hockenson, Addison, Jennings."
+    },
+    {
+     "team": "MIN",
+     "player": "Jordan Addison",
+     "pos": "WR",
+     "targets": 5.5,
+     "catchRate": 0.62,
+     "receptions": 3.4,
+     "recYds": 46,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "questionable"
+     ],
+     "why": "Questionable (hamstring; DNP Wed, limited Thu/Fri). Targets 2/5/9/6 (season 5.5, last three 6.7, blend 6.1), and the 9 and 6 in Murray's starts came with Jefferson out, so 5.5 with him back; 50% catch rate on 22 targets regressed to 62%; 14.8 a catch regressed to 13.5; Saints WR factor 1.0. Book 40.5 DK (-112) / 39.5 FD (-122), receptions 3.5 (+109/+110): 46 is 14% over."
+    },
+    {
+     "team": "NO",
+     "player": "Tyler Shough",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": null,
+     "rushYds": null,
+     "passYds": 254,
+     "flags": [],
+     "why": "40 attempts (season 45.0 on 56/34/42/48, the league high; trimmed because Minnesota's opponents have averaged 33 attempts and its pressure turns dropbacks into sacks, but a 2.5-point home underdog still throws); 67.2% completions regressed to 66.5%; 9.9 yards a completion regressed to 10.4; Minnesota allows 6.7 gross yards an attempt and 51% completions, factor 0.92. Book main 235.5 DK (-111), about 237 FD (224.5 -158 / 249.5 +118): +8%."
+    },
+    {
+     "team": "NO",
+     "player": "Chris Olave",
+     "pos": "WR",
+     "targets": 10.5,
+     "catchRate": 0.7,
+     "receptions": 7.4,
+     "recYds": 87,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 13/10/13/12 (season 12.0, last three 11.7, blend 11.8, the NFL lead) scaled to 40 attempts = 10.5; 72.9% catch rate on 48 targets regressed to 70%; 14.0 a catch regressed to 13.4; Minnesota allows 7.7 yards a target to WRs (6.5 without Green Bay's 81-yarder) and 56% catches, factor 0.88. Book 81.5 DK (-113) / about 84 FD, receptions 6.5 (-117/-112): 7-14% over; the catch count is the risk against a defense allowing 56% to wideouts."
+    },
+    {
+     "team": "NO",
+     "player": "Juwan Johnson",
+     "pos": "TE",
+     "targets": 6,
+     "catchRate": 0.74,
+     "receptions": 4.4,
+     "recYds": 47,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 7/4/8/8 (season 6.75, last three 6.7, blend 6.7) scaled to 40 attempts = 6.0; Fant's return is already in the blend (7 and 8 targets in Fant's two healthy games); 77.8% catch rate on 27 targets regressed to 74%; 11.0 a catch regressed to 10.7; Minnesota allows 7.9 yards a target to TEs but only a 44% catch rate, factor 1.0. Book 42.5 DK (-112) / FD 39.5 (-138) to 49.5 (+130), receptions 4.5 (+109/+114): +11%."
+    },
+    {
+     "team": "NO",
+     "player": "Devaughn Vele",
+     "pos": "WR",
+     "targets": 6.7,
+     "catchRate": 0.68,
+     "receptions": 4.6,
+     "recYds": 47,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 9/7/6/9 (season 7.75, last three 7.3, blend 7.5) scaled to 40 attempts = 6.7; 67.7% catch rate sits at the WR prior; 10.8 a catch regressed to 11.8; Minnesota WR factor 0.88. Book 40.5 DK (-114) / FD 39.5 (-122), receptions 3.5 (-162) / 4.5 (+135): 47 is 16% over, in line with his 56-yard season average."
+    },
+    {
+     "team": "NO",
+     "player": "Alvin Kamara",
+     "pos": "RB",
+     "targets": 4.5,
+     "catchRate": 0.78,
+     "receptions": 3.5,
+     "recYds": 20,
+     "carries": 10.5,
+     "rushYds": 37,
+     "passYds": null,
+     "flags": [
+      "questionable"
+     ],
+     "why": "Questionable (back; DNP Wed, limited Thu/Fri). The lead back since Etienne's IR move: 7 carries and 7 targets in a Week 4 blowout, 9 and 9 carries beside Etienne before that. 10.5 of 19 back carries (22 team rushes less about 3 for Shough); 3.0 a carry on 25 regressed to 3.9; Minnesota allows 3.9 a carry to backs, factor 0.91. Targets 6/1/7 (4.7) scaled to 4.5 at the 78% RB prior; 4.3 a catch regressed to 6.6; Minnesota allows 4.3 yards a target to backs, factor 0.85. Rush 37 vs 33.5 DK; rec 20 vs 14.5 (+35%: the book uses his 4.3-yard 2026 average on 11 catches, the regression assumes partial reversion). If inactive, Miller takes about 11 carries and 4 targets."
+    },
+    {
+     "team": "NO",
+     "player": "Kendre Miller",
+     "pos": "RB",
+     "targets": 2,
+     "catchRate": 0.78,
+     "receptions": 1.6,
+     "recYds": 9,
+     "carries": 5.7,
+     "rushYds": 20,
+     "passYds": null,
+     "flags": [],
+     "why": "Second back with Kamara active: 9/0/4/6 carries, 30% of the back carries since Etienne left = 5.7; 2.8 a carry on 19 regressed to 3.9, Minnesota factor 0.91. Targets 0/0/3/3 (2.0), RB prior catch rate, 6.5 a catch, factor 0.85. Below the three-target line, listed for the carries and as the Kamara-out pivot: about 11 carries, 40 rushing yards and 4 targets if Kamara sits. Book rush 22.5 DK (-115)."
+    },
+    {
+     "team": "NO",
+     "player": "Noah Fant",
+     "pos": "TE",
+     "targets": 3,
+     "catchRate": 0.71,
+     "receptions": 2.1,
+     "recYds": 21,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "No designation (abdomen; limited Wed/Thu, full Friday) after missing Week 4. Targets 8/0/4 in three games played (4.0), trimmed to 3.0 for a first game back with Johnson and Vele having absorbed Week 4's share; 66.7% catch rate on 12 targets regressed to 71%; 8.3 a catch regressed to 10.0; TE factor 1.0. Book 13.5 DK (-107) / 14.5 FD (-102), receptions 1.5 (-130/-146): 21 is about 50% over because the book appears to price a reduced snap count on his return, which the desk could not confirm (verify); the least reliable row here."
+    }
+   ],
+   "sources": [
+    "ESPN game summary 401872987 (lines, venue, weather, injuries, predictor 55.3% MIN)",
+    "ESPN box scores and play-by-play: MIN 401872927, 401872937, 401872959, 401872974; NO 401872923, 401872938, 401872961, 401872979 (targets, carries, red-zone and goal-line usage counted by the desk from play-by-play; opponent allowed-by-position from the same files)",
+    "vikings.com final Week 5 injury report (both teams, Wed/Thu/Fri participation)",
+    "SI All Saints: Saints final injury report vs Vikings",
+    "Yahoo Sports / Vikings final injury report (Van Demark at LT, Huber at LG, Tiernan if O'Neill sits, Beckham on practice squad)",
+    "NBC Sports / ESPN (Fowler): Vikings to test Jefferson ankle Saturday",
+    "vikings.com Week 5 game preview (Next Gen pressures: MIN 74; Shough 73 pressures, 12 sacks, 180 attempts; Chase Young 17 pressures, 18.7%)",
+    "Predictem and SI betting previews (EPA/DVOA ranks, ATS and over/under trends)",
+    "data/injuries.json (fetched 2026-10-10T13:53Z), data/schedule.json, data/odds/raw/2026-w05-min-no.json (DK 16:27:11Z, FD 16:27:55Z)"
+   ]
+  },
+  {
+   "game": "nyg-wsh",
+   "kick": "2026-10-11T17:00:00Z",
+   "weather": "Outdoor, natural grass (Northwest Stadium, Landover). NWS hourly (updated Oct 10 18:23Z): showers and thunderstorms through the game window, 78-97% precipitation chance 1-4 PM ET, 68-69F, east wind 13-15 mph; ESPN/AccuWeather shows 64F, 49%, gusts 10. Passing and receiving yards shaded down 5% (weather flag); a lightning delay is possible.",
+   "teams": {
+    "NYG": {
+     "passAtt": 30,
+     "rushAtt": 27
+    },
+    "WSH": {
+     "passAtt": 32,
+     "rushAtt": 29
+    }
+   },
+   "players": [
+    {
+     "team": "NYG",
+     "player": "Jameis Winston",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 1.5,
+     "rushYds": 4,
+     "passYds": 207,
+     "flags": [
+      "weather"
+     ],
+     "why": "30 attempts (27, 22, 29 in his three starts, lifted slightly as a 3.5-point road dog); 55% completions on 78 attempts regressed to 58.5%; 11.1 yards per completion regressed to 11.5 on a career near 12; Washington allows 7.5 yards an attempt and 66.9% completions and now starts backup safeties, factor 1.08; rain trims 5%. Book main 201.5 DK / 199.5 FD. Four carries for 15 yards in three starts."
+    },
+    {
+     "team": "NYG",
+     "player": "Isaiah Likely",
+     "pos": "TE",
+     "targets": 9,
+     "catchRate": 0.662,
+     "receptions": 6,
+     "recYds": 58,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Targets 8/10/5/12 (season 8.75, last three 9.0, about a third of a 28-target pool on 30 attempts); 62.9% catch rate on 35 targets regressed toward the 72% TE prior to 66%; 8.6 a catch regressed to 9.2; Washington allows tight ends 76% catches, 12.8 a catch and five touchdowns in four games, factor 1.12; rain trims 5%. 37% above the 42.5 DK main because the book prices his 5.4 yards a target, not the nine-target role against the softest TE defence on the slate; receptions main 4.5."
+    },
+    {
+     "team": "NYG",
+     "player": "Malik Nabers",
+     "pos": "WR",
+     "targets": 6.3,
+     "catchRate": 0.687,
+     "receptions": 4.3,
+     "recYds": 54,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Targets 9/4/6/7 (blend 6.1, scaled to 28 targets); 69% catch rate at the WR prior; 11.6 a catch regressed to 12.1 on a career near 12.5; Washington WR factor 1.08 (about 166 receiver yards a game allowed, three safeties out); rain trims 5%. Knee, no designation. Book 56.5 DK / about 54.5 FD, receptions 4.5 (over -160)."
+    },
+    {
+     "team": "NYG",
+     "player": "Malachi Fields",
+     "pos": "WR",
+     "targets": 3.8,
+     "catchRate": 0.617,
+     "receptions": 2.3,
+     "recYds": 33,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "weather"
+     ],
+     "why": "Targets 4/6/2/3 (blend 3.7, scaled to 28); 53% catch rate on 15 targets regressed to 62%; 15.8 a catch on 8 catches regressed hard to 13.5; Washington WR factor 1.08; rain trims 5%. 30% above the 25.5 DK / 24.5 FD main: the book prices a two-catch median and the 13-plus yards a catch makes the mean higher; high-variance profile."
+    },
+    {
+     "team": "NYG",
+     "player": "Cam Skattebo",
+     "pos": "RB",
+     "targets": 2.7,
+     "catchRate": 0.81,
+     "receptions": 2.2,
+     "recYds": 15,
+     "carries": 17,
+     "rushYds": 59,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 18/12/20/18 (66% of back carries; 17 of about 25.5 back carries on 27 team rushes, rain helps the volume); 3.46 a carry regressed to 3.73; Washington allows 3.98 a carry, factor 0.93. Targets 0/4/4/1 (blend 2.6), 8 of 9 caught regressed to the 78% RB prior, 8.4 a catch regressed to 7.9, Washington allows backs about 22 receiving yards a game, factor 0.9. Below the three-target bar; included as the lead back. Book rush 55.5 DK / about 57 FD, rec 13.5."
+    },
+    {
+     "team": "NYG",
+     "player": "Najee Harris",
+     "pos": "RB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 8,
+     "rushYds": 31,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 0/4/9/9 (blend 6.4, lifted to 8 because the last two weeks are the role and the rain favours a second back); 4.0 a carry regressed to 4.13, Washington factor 0.93. Zero targets in four games, so receiving is left blank rather than guessed. Book 27.5 DK / 29.5 FD."
+    },
+    {
+     "team": "WSH",
+     "player": "Jayden Daniels",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 5.5,
+     "rushYds": 35,
+     "passYds": 190,
+     "flags": [
+      "new-role",
+      "weather"
+     ],
+     "why": "32 attempts (season team 34.3, trimmed for the rain and a 3.5-point favourite's run share); his 56.9% on 51 attempts regressed to 63.5% (career near 67%); 9.0 yards per completion regressed to 10.1; Giants allow 6.2 yards an attempt and 64.7% completions, factor 0.97; rain trims 5%. new-role: first start since the elbow, and Diggs and probably McLaurin are gone. Book main 197.5 DK / 199.5 FD. Carries 5 and 7 for 100 yards, regressed to 6.7 a carry on fewer designed runs; book 28.5 rush."
+    },
+    {
+     "team": "WSH",
+     "player": "Antonio Williams",
+     "pos": "WR",
+     "targets": 6.6,
+     "catchRate": 0.656,
+     "receptions": 4.3,
+     "recYds": 45,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role",
+      "weather"
+     ],
+     "why": "Targets 4/3/4/8 (blend 4.9), plus about 1.7 of Diggs' 7.75 and McLaurin's 7.3 a game as the slot (he took 8 when McLaurin sat in Week 4); 63% catch rate on 19 targets regressed to 65.6%; 10.3 a catch regressed to 10.9; Giants WR factor 1.0 (about 143 receiver yards a game allowed); rain trims 5%. No book line posted for any Washington receiver, so unchecked. new-role: moves up with Diggs out; cut about 20% if McLaurin plays."
+    },
+    {
+     "team": "WSH",
+     "player": "Dyami Brown",
+     "pos": "WR",
+     "targets": 5.1,
+     "catchRate": 0.624,
+     "receptions": 3.2,
+     "recYds": 38,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role",
+      "weather"
+     ],
+     "why": "Targets 2/6/1/4 (blend 3.5) plus about 1.6 of the vacated outside targets; 54% catch rate on 13 targets regressed to 62%; 12.3 a catch regressed to 12.7; Giants WR factor 1.0; rain trims 5%. No book line posted. new-role: becomes the No. 1 outside receiver; cut about 20% if McLaurin plays."
+    },
+    {
+     "team": "WSH",
+     "player": "Treylon Burks",
+     "pos": "WR",
+     "targets": 3.9,
+     "catchRate": 0.638,
+     "receptions": 2.5,
+     "recYds": 32,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role",
+      "weather"
+     ],
+     "why": "Targets 0/1/2/3 (blend 1.75) plus about 2.1 of the vacated outside targets as the next receiver on the depth chart; 3 of 6 caught regressed to 64%; 20 a catch on three catches regressed hard to 13.75; Giants WR factor 1.0; rain trims 5%. Touchdowns the last two weeks on 5 targets. No book line posted. new-role: the role exists only because Diggs and McLaurin are out."
+    },
+    {
+     "team": "WSH",
+     "player": "Chig Okonkwo",
+     "pos": "TE",
+     "targets": 4.5,
+     "catchRate": 0.68,
+     "receptions": 3.1,
+     "recYds": 21,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role",
+      "weather"
+     ],
+     "why": "Targets 3/-/-/4 in the two games he played (3.5 a game) plus about 1 of the vacated receiver targets; 4 of 7 caught regressed to 68%; 5.25 a catch regressed to 8.6; the Giants hold tight ends to 4.9 yards a target and 6.9 a catch, factor 0.85 (the floor); rain trims 5%. Hamstring limited all week, no designation. No book line posted."
+    },
+    {
+     "team": "WSH",
+     "player": "Jacory Croskey-Merritt",
+     "pos": "RB",
+     "targets": 1.9,
+     "catchRate": 0.76,
+     "receptions": 1.4,
+     "recYds": 10,
+     "carries": 13,
+     "rushYds": 48,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 16/12/19/9 (blend 13.7; 13 of about 22.5 back carries now that Kaytron Allen is waived and White is back); 2.8 a carry on 56 carries regressed to 3.39; Giants allow 4.7 a carry, factor 1.09. Groin limited all week, no designation. Targets 1/1/1/4, 5 of 7 caught regressed to 76%. Below the three-target bar; included as the lead back. Book rush 51.5 DK / about 53 FD."
+    },
+    {
+     "team": "WSH",
+     "player": "Rachaad White",
+     "pos": "RB",
+     "targets": 2.6,
+     "catchRate": 0.85,
+     "receptions": 2.2,
+     "recYds": 13,
+     "carries": 6.5,
+     "rushYds": 30,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 7/7/8 in his three games (missed Week 4, shoulder, no designation now) for 4.5 a carry, regressed to 4.32; Giants factor 1.09; 6.5 carries with Allen's work gone and Ekeler taking about 3. Targets 2/6/1, 9 of 9 caught regressed to 85%, 5.7 a catch regressed to 6.6, Giants allow backs 19 receiving yards a game, factor 0.9. Rush 28% above the 23.5 DK / 24.5 FD main (the book prices five carries); receiving 13 against a 9.5 main is the mean of a skewed two-catch distribution whose median sits near the line."
+    }
+   ],
+   "notes": "Terry McLaurin (hamstring, Questionable, DNP Wed/Thu, game-time decision) is not projected because he is not confirmed active; if he plays, take about 20% off Williams, Brown and Burks targets and give him about 6 targets. No Washington receiver has a posted yardage or receptions line at DraftKings or FanDuel, so those projections are unchecked by a market. Darnell Mooney (2.6 targets), Theo Johnson (1.5), Luke McCaffrey (about 2), Austin Ekeler (about 1.4 targets, 3 carries) and John Bates fall below the three-target bar. Red-zone and inside-10 counts come from ESPN play-by-play parsing (approximate).",
+   "sources": [
+    "ESPN game summary 401872988 (venue, weather, FPI, DraftKings line)",
+    "ESPN box scores and play-by-play, 401872929/944/955/965 (WSH) and 401872930/947/956/966 (NYG)",
+    "ESPN depth charts and rosters, NYG and WSH, Oct 10 19:05Z",
+    "data/injuries.json (Friday designations) and commanders.com Week 5 injury report",
+    "Field Level Media / Rotoballer: Kaytron Allen waived Oct 8",
+    "api.weather.gov hourly forecast, Landover MD, Oct 10 18:23Z",
+    "data/odds/raw/2026-w05-nyg-wsh.json (DraftKings and FanDuel, Oct 10 16:27Z) for sanity checks only",
+    "FanDuel Research / numberFire and Dimers Week 5 previews"
+   ]
+  },
+  {
+   "game": "cin-mia",
+   "kick": "2026-10-11T17:00:00Z",
+   "weather": "Outdoor: Hard Rock Stadium (open-air with canopy), 1 p.m. ET kickoff; ESPN/AccuWeather 92F, 25% precipitation, gusts to 13 mph. Heat, not wind: no passing adjustment, small run-script trim for the favourite.",
+   "teams": {
+    "CIN": {
+     "passAtt": 36,
+     "rushAtt": 25
+    },
+    "MIA": {
+     "passAtt": 28,
+     "rushAtt": 23
+    }
+   },
+   "players": [
+    {
+     "team": "CIN",
+     "player": "Joe Burrow",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": null,
+     "rushYds": null,
+     "passYds": 284,
+     "flags": [],
+     "why": "36 attempts (season 39.3 on 35/31/37/54, trimmed for a 7-point-favourite script in 92F heat); 71.3% completions regressed to 68.9%, 10.46 yards per completion regressed to 10.6; Miami allows 77.9% and 8.3 Y/A with 4 sacks in four games, factor 1.10 (not the cap: four-game sample and opponents needed only 28 attempts), 2% trim for the late-lead run script. DK main 256.5, FD 249.5 (-122 over)."
+    },
+    {
+     "team": "CIN",
+     "player": "Ja'Marr Chase",
+     "pos": "WR",
+     "targets": 8.1,
+     "catchRate": 0.71,
+     "receptions": 5.8,
+     "recYds": 66,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "questionable"
+     ],
+     "why": "Concussion: DNP/limited/practiced, still needs Saturday independent-neurologist clearance; projected only if active. Targets 4/9/12/3 with Week 4 a half game (counted as 0.5): season 8.0 per full game, last three 9.6, blend 8.8 scaled to 36 attempts = 8.1. 21 of 28 regressed to 71%; 10.1 a catch regressed to 10.9; Miami allows 8.46 yards per WR target with three corners out, factor 1.06. No CIN receiver lines posted at DK or FD."
+    },
+    {
+     "team": "CIN",
+     "player": "Tee Higgins",
+     "pos": "WR",
+     "targets": 8.4,
+     "catchRate": 0.66,
+     "receptions": 5.5,
+     "recYds": 86,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "questionable"
+     ],
+     "why": "Groin/neck (Week 4 adductor): DNP, DNP, full Friday; questionable. Targets 6/10/7/16 (season 9.8, last three 11.0, blend 10.4, scaled to 36 attempts 9.5, then 8.4 because 9 of Week 4's 16 came after Chase left and the adductor). 25 of 39 regressed to 66%; 16.0 a catch regressed to 14.7; factor 1.06. If Chase sits, 10.5 targets."
+    },
+    {
+     "team": "CIN",
+     "player": "Chase Brown",
+     "pos": "RB",
+     "targets": 5.5,
+     "catchRate": 0.82,
+     "receptions": 4.5,
+     "recYds": 30,
+     "carries": 16.5,
+     "rushYds": 60,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 16/20/13/9 (blend 14.3) lifted to 16.5 on 25 team rushes as a 7-point favourite (82% of back carries). 3.57 YPC regressed to 3.94; Miami allows 3.85 a carry to backs, factor 0.92. Targets 6/5/2/11 (blend 6.0, scaled 5.5); 21 of 24 regressed to 82%; 4.9 a catch regressed to 6.0; Miami allows 6.9 yards per RB target and 4 RB receiving TDs, factor 1.10. Book 67.5 DK / 69.5 FD rush; no receiving line posted."
+    },
+    {
+     "team": "CIN",
+     "player": "Dohnte Meyers",
+     "pos": "WR",
+     "targets": 4.6,
+     "catchRate": 0.685,
+     "receptions": 3.2,
+     "recYds": 39,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 1/1/5/9 (season 4.0, last three 5.0, blend 4.5; Week 4's 9 came partly with Chase out, but Taylor says the WR3 reps are his regardless) = 4.6 at 36 attempts. 11 of 16 regressed to 68.5%; 11.7 a catch regressed to 11.6; factor 1.06. Goes to 6.5 targets if Chase or Higgins sits."
+    },
+    {
+     "team": "CIN",
+     "player": "Mike Gesicki",
+     "pos": "TE",
+     "targets": 3.6,
+     "catchRate": 0.72,
+     "receptions": 2.6,
+     "recYds": 36,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "revenge-narrative"
+     ],
+     "why": "Targets 7/0/3/5 (blend 3.2, scaled 2.9) lifted to 3.6 because Miami's opponents target tight ends 7.8 times a game and catch 94% of them. 11 of 15 regressed to 72%; 14.1 a catch regressed to 12.0; Miami allows 10.7 yards per TE target, factor at the 1.15 cap. Former Dolphin (2018-22): flagged, ignored. No line posted."
+    },
+    {
+     "team": "MIA",
+     "player": "Malik Willis",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 5,
+     "rushYds": 27,
+     "passYds": 201,
+     "flags": [],
+     "why": "28 attempts (season 25.8 on 27/23/36/17, up for a 7-point home-dog script; Cincinnati opponents average 35); 56.3% regressed to 60.1%, 12.3 yards per completion regressed to 11.7; Cincinnati allows 7.7 Y/A but 63.8% completions with 14 sacks, factor 1.02. Rushing 19 for 112 (4.75 a game), 5.9 a carry regressed to 5.4. Book 189.5 DK pass, 31.5 rush."
+    },
+    {
+     "team": "MIA",
+     "player": "Malik Washington",
+     "pos": "WR",
+     "targets": 7.4,
+     "catchRate": 0.645,
+     "receptions": 4.8,
+     "recYds": 55,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 8/5/10/5 (season 7.0, last three 6.7, blend 6.8) scaled to 28 attempts = 7.4; Douglas out a third week and Joly out leave the share at 27%. 17 of 28 regressed to 64.5%; 12.9 a catch regressed to 12.2; Cincinnati allows 7.5 yards per WR target and a 57% catch rate, factor 0.95. Book 4.5 receptions (DK -122 over), 45.5 yards."
+    },
+    {
+     "team": "MIA",
+     "player": "Chris Bell",
+     "pos": "WR",
+     "targets": 4.2,
+     "catchRate": 0.58,
+     "receptions": 2.4,
+     "recYds": 32,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Knee, no designation. Targets 2/1/8/3 (blend 3.8, scaled 4.1, +0.1 from Douglas's share) = 4.2. 5 of 14 regressed hard to 58%; 18.4 a catch regressed to 14.0; factor 0.95. Book 2.5 receptions, 34.5 yards."
+    },
+    {
+     "team": "MIA",
+     "player": "Greg Dulcich",
+     "pos": "TE",
+     "targets": 3.6,
+     "catchRate": 0.73,
+     "receptions": 2.6,
+     "recYds": 31,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 2/3/7/0 (blend 3.2, scaled 3.4) lifted to 3.6: Joly out and Cincinnati allows 10 TE targets and 102 yards a game. Zero targets on 20 snaps last week is the risk. 9 of 12 regressed to 73%; 10.0 a catch regressed to 10.3; factor at the 1.15 cap. Book 2.5 receptions, 26.5 yards."
+    },
+    {
+     "team": "MIA",
+     "player": "Kevin Coleman Jr.",
+     "pos": "WR",
+     "targets": 3,
+     "catchRate": 0.56,
+     "receptions": 1.7,
+     "recYds": 16,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "WR2 on ESPN's depth chart with Douglas out. Targets 2/0/4/4 (blend 2.6, scaled 2.8, +0.2 for the depth-chart role) = 3.0. 2 of 10 regressed to 56%; 3.0 a catch regressed to 10.1; factor 0.95. Book 1.5 receptions, 18.5 yards."
+    },
+    {
+     "team": "MIA",
+     "player": "Ollie Gordon II",
+     "pos": "RB",
+     "targets": 2.4,
+     "catchRate": 0.81,
+     "receptions": 1.9,
+     "recYds": 12,
+     "carries": 11.8,
+     "rushYds": 55,
+     "passYds": null,
+     "flags": [],
+     "why": "Lead back since Achane's ACL: 17 and 9 carries the last two weeks. 17 back carries a game x 64% with Wright active (85% if Wright sits) = 11.8 blended for Wright's questionable tag; 5.1 YPC (one 53-yarder) regressed to 4.56; Cincinnati allows 4.45 to backs, factor 1.03. Takes part of Achane's 5.5 targets a game: 2.4; 5 of 5 regressed to 81%, 2.8 a catch regressed to 6.3. Book 45.5 DK / 49.5 FD rush (20% over: Wright's status and volume), 1.5 receptions."
+    }
+   ],
+   "sources": [
+    "ESPN summary API 401872982 (venue, DraftKings line and open, matchup predictor, injuries, weather) and box scores 401872925, 401872934, 401872950, 401872969 (CIN W1-4), 401872928, 401872942, 401872952, 401872974 (MIA W1-4), fetched Oct 10; red-zone and goal-line usage from ESPN drive play-by-play",
+    "ESPN depth charts (core API, teams 4 and 15) and rosters for CIN, MIA and the eight opponents (positions for the opponent factors)",
+    "data/injuries.json (ESPN feed: Dehner/The Athletic, Furones/Sun Sentinel, Goldsmith/Fox 19) for Friday designations",
+    "bengals.com Quick Hits Oct 7 (Meyers WR3 reps, Chase in protocol); Yahoo Sports and NBC Sports/Rotoworld Oct 9 (Chase practiced Friday, needs Saturday clearance; Higgins full Friday per Rotoworld, Yahoo says no Friday practice)",
+    "Odds API pull data/odds/raw/2026-w05-cin-mia.json (DraftKings, FanDuel alternates, 16:28 UTC Oct 10) for sanity checks; no CIN receiving markets posted at either book",
+    "Unverified: Chase's Saturday clearance; Higgins' Friday participation (sources conflict); Wright's status; opponent factors are computed from four box scores per defense, not a league table"
+   ]
+  },
+  {
+   "game": "den-lac",
+   "kick": "2026-10-11T20:05:00Z",
+   "weather": "Indoor: SoFi Stadium (covered; ESPN/AccuWeather list 73F with gusts to 17 mph outside) - no weather factor.",
+   "teams": {
+    "DEN": {
+     "passAtt": 33,
+     "rushAtt": 27
+    },
+    "LAC": {
+     "passAtt": 32,
+     "rushAtt": 25
+    }
+   },
+   "players": [
+    {
+     "team": "DEN",
+     "player": "Bo Nix",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": null,
+     "rushYds": null,
+     "passYds": 228,
+     "flags": [],
+     "why": "33 attempts (season 33.8 on 28/31/34/42, trimmed for a 3.5-point favourite's script); 60.0% completions regressed to 61.5%; 10.1 yards a completion regressed to 10.2; the Chargers allow 7.9 yards per attempt and are without S Derwin James Jr. and CB Donte Jackson, factor 1.10. Book main 220.5 DK (-112) / 224.5 FD."
+    },
+    {
+     "team": "DEN",
+     "player": "Jaylen Waddle",
+     "pos": "WR",
+     "targets": 7.1,
+     "catchRate": 0.65,
+     "receptions": 4.6,
+     "recYds": 62,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 3/10/7/6 (season 6.5, last-3 7.7, blend 7.1: scaled to 33 attempts, plus about 0.4 of Pat Bryant's three a game with Bryant on IR); 16 of 26 (61.5%) regressed to 65%; 11.6 a catch regressed to 12.0; the Chargers allow 9.7 yards per target to WRs and are missing James and Jackson, factor 1.12. Book 56.5 DK (-110) / FD main about 55, receptions 4.5 (over -140)."
+    },
+    {
+     "team": "DEN",
+     "player": "RJ Harvey",
+     "pos": "RB",
+     "targets": 6,
+     "catchRate": 0.85,
+     "receptions": 5.1,
+     "recYds": 37,
+     "carries": 6,
+     "rushYds": 22,
+     "passYds": null,
+     "flags": [],
+     "why": "Three games played (missed Week 2, hamstring): targets 4/7/10, 7.0 a game both season and last three, trimmed to 6.0 as a favourite on 33 attempts; 20 of 21 (95%) regressed to 85%; 6.6 a catch regressed to 7.0; Chargers RB factor 1.05 (8.1 a catch allowed to backs). Carries 3/2/7: six of 27 team rushes at 4.1, Chargers run factor 0.90 (3.78 allowed). Book 28.5 rec / 25.5 rush DK, receptions 4.5 (over +122)."
+    },
+    {
+     "team": "DEN",
+     "player": "Courtland Sutton",
+     "pos": "WR",
+     "targets": 5.5,
+     "catchRate": 0.565,
+     "receptions": 3.1,
+     "recYds": 42,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 5/4/7/6 (season 5.5, last-3 5.7; scaled to 33 attempts with a share of Bryant's, 5.5); 9 of 22 (41%) regressed hard to 56.5% on a career near 60%; 9.6 a catch regressed to 12.0 on his career 13-14; factor 1.12. Book 37.5 DK (-109) / 39.5 FD (+102), receptions 3.5 (over +117)."
+    },
+    {
+     "team": "DEN",
+     "player": "J.K. Dobbins",
+     "pos": "RB",
+     "targets": 1.3,
+     "catchRate": 0.78,
+     "receptions": 1,
+     "recYds": 6,
+     "carries": 14,
+     "rushYds": 47,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 8/10/17/11 (season 11.5, last-3 12.7, blend 12.1), lifted to 14 of 27 team rushes with Jonah Coleman on IR and a lead script; 3.5 a carry regressed to 3.75; the Chargers allow 3.78 a carry, factor 0.90. Targets 0/0/2/2. Book 52.5 DK (-110) / 49.5 FD; he has not cleared 49 this season."
+    },
+    {
+     "team": "DEN",
+     "player": "Evan Engram",
+     "pos": "TE",
+     "targets": 3,
+     "catchRate": 0.64,
+     "receptions": 1.9,
+     "recYds": 20,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 5/1/2/5 (season 3.25, last-3 2.7, blend 3.0); 6 of 13 (46%) regressed to 64% toward the 72% TE prior; 11.0 a catch regressed to 10.0; Chargers TE factor 1.05 (Trey McBride 9 for 95). Book 17.5 DK / 19.5 FD, receptions 2.5 (over +115). Under the desk's 3.0-catch floor."
+    },
+    {
+     "team": "DEN",
+     "player": "Troy Franklin",
+     "pos": "WR",
+     "targets": 2.5,
+     "catchRate": 0.66,
+     "receptions": 1.7,
+     "recYds": 22,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Targets 1/2/1/0 (blend about 1.0), raised to 2.5 as the WR3 on ESPN's depth chart with Bryant (three targets a game) on IR; 2 of 4 regressed to 66%; 24.0 a catch regressed to 12.0; factor 1.12. Book 18.5 DK / 19.5 FD, receptions 1.5; 19% above the book on the vacated role. Below three targets: low confidence."
+    },
+    {
+     "team": "DEN",
+     "player": "Marvin Mims Jr.",
+     "pos": "WR",
+     "targets": 2,
+     "catchRate": 0.64,
+     "receptions": 1.3,
+     "recYds": 16,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "one-game-sample"
+     ],
+     "why": "Back from a foot injury in Week 4 only: 3 targets, 1 for 10 on 42 attempts. 2.0 targets on 33 attempts sharing Bryant's WR3 snaps with Franklin; 64% catch rate, 11.0 a catch regressed from his career, factor 1.10. Book 12.5 DK / 14.5 FD, receptions 1.5. Low confidence."
+    },
+    {
+     "team": "LAC",
+     "player": "Justin Herbert",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": null,
+     "rushYds": null,
+     "passYds": 211,
+     "flags": [],
+     "why": "32 attempts (season 29.8 on 27/27/34/31, raised for a 3.5-point underdog, less the sacks a rookie-tackle line will allow); 59.7% held at 60% (career near 66%, but no Alt, Slater, Penning, Awosika, Johnston or likely McConkey); 11.5 a completion regressed to 10.8 for the same receiver losses; Denver allows 7.0 yards per attempt but is without CBs Pat Surtain II and Riley Moss, factor 1.02. Book main 201.5 DK (-112) / 199.5 FD; four-game range 189-226."
+    },
+    {
+     "team": "LAC",
+     "player": "Tre' Harris",
+     "pos": "WR",
+     "targets": 7.3,
+     "catchRate": 0.655,
+     "receptions": 4.8,
+     "recYds": 68,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Targets 6/3/7/5 (season 5.25, last-3 5.0, blend 5.1), raised to 7.3 as the only healthy wideout with a real role: Quentin Johnston (4.75 a game) and Brenen Thompson are out and Ladd McConkey (4.25 a game) did not practice all week and is not projected; 13 of 21 regressed to 65.5%; 16.1 a catch regressed to 13.5; Denver allows 7.75 yards per target to WRs but is without Surtain and Moss, factor 1.05. No book line at pull time: verify."
+    },
+    {
+     "team": "LAC",
+     "player": "Oronde Gadsden",
+     "pos": "TE",
+     "targets": 6,
+     "catchRate": 0.68,
+     "receptions": 4.1,
+     "recYds": 46,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 2/2/3/8 (season 3.75, last-3 4.3); with David Njoku out the last two games he took 3 and 8, and the McConkey and Johnston targets push him to 6.0; 9 of 15 regressed to 68% toward the TE prior; 9.6 a catch regressed to 10.5; Denver TE factor 1.08 (Tyler Higbee 8-62, George Kittle 4-70, Travis Kelce 3-71). No book line at pull time: verify."
+    },
+    {
+     "team": "LAC",
+     "player": "Marquez Valdes-Scantling",
+     "pos": "WR",
+     "targets": 3.8,
+     "catchRate": 0.56,
+     "receptions": 2.1,
+     "recYds": 34,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Two targets in four games as the WR4; a starter by default with Johnston and Thompson out and McConkey not projected, 3.8 targets on 32 attempts. No 2026 catch, so his career rate near 52% regressed to 56% and his career 15-plus a catch at 15.5; factor 1.05. The role is projected, not observed: low confidence. No book line."
+    },
+    {
+     "team": "LAC",
+     "player": "Keaton Mitchell",
+     "pos": "RB",
+     "targets": 3.5,
+     "catchRate": 0.81,
+     "receptions": 2.8,
+     "recYds": 16,
+     "carries": 7.5,
+     "rushYds": 36,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 0/1/3/6 (season 2.5, last-3 3.3, blend 2.9), 3.5 with the receiver losses; 9 of 10 regressed to 81%; 3.8 a catch regressed to 5.5; Denver RB factor 1.05. Carries 4/5/8/10 (blend 7.2), 7.5 after leading the backs in snaps last week (36.6%); 4.6 a carry regressed to 4.4; Denver allows 4.76 a carry, factor 1.10. Book 31.5 rush DK (-111); no receiving line."
+    },
+    {
+     "team": "LAC",
+     "player": "Omarion Hampton",
+     "pos": "RB",
+     "targets": 1.3,
+     "catchRate": 0.78,
+     "receptions": 1,
+     "recYds": 7,
+     "carries": 11,
+     "rushYds": 47,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 12/23/15/9 (season 14.75, last-3 15.7, blend 15.2), cut to 11 for last week's three-way split and an interior line without Penning and Awosika; 4.03 a carry regressed to 4.1; Denver allows 4.76 a carry, factor held to 1.05 for the line. Targets 0/2/1/2. Book 39.5 DK (-110) / 39.5 FD (-102): 19% above it, and he has cleared 39.5 in all four games."
+    }
+   ],
+   "sources": [
+    "ESPN box scores, Weeks 1-4 (events 401872931, 401872940, 401872962, 401872975, 401872926, 401872941, 401872953, 401872977), including play-by-play red-zone counts",
+    "ESPN depth charts and rosters for DEN and LAC (site.api.espn.com), fetched Oct 10",
+    "Chargers.com Friday injury report, Week 5 vs Broncos",
+    "data/injuries.json (fetched 2026-10-10T13:53Z) for Broncos Friday statuses: Surtain and Moss Out, Bryant IR, Humphrey signed",
+    "NBC Sports / Rotoworld Broncos-Chargers preview (lines, ATS, Nix and Herbert totals)",
+    "Football Nation USA week 5 guide (TeamRankings stats, McConkey and Slater notes); Rotoballer/NBC on the Week 4 backfield snap split",
+    "data/odds/raw/2026-w05-den-lac.json (DraftKings, FanDuel) for every book line",
+    "Not projected: Ladd McConkey (Q, DNP Wed-Fri), Charlie Kolar (Q, limited all week, about 1.5 targets if active), Kimani Vidal (2.2 targets), Derius Davis (2.8 targets), Alec Ingold, Nate Adkins, Tyler Badie, Adam Trautman, Lil'Jordan Humphrey (all under three targets)",
+    "Unverified: FanDuel main numbers for Waddle and Mitchell (alternate ladders only); Broncos' Friday column for Tillman, Trautman and Badie; WR snap shares after Bryant's IR move; whether LAC elevates a practice-squad WR"
+   ]
+  },
+  {
+   "game": "det-ari",
+   "kick": "2026-10-11T20:25:00Z",
+   "weather": "Indoor: State Farm Stadium (retractable roof; ESPN/AccuWeather show 88F outside with a 47% precipitation chance and gusts to 25 mph, so the roof should be closed - verify) - no weather factor.",
+   "teams": {
+    "DET": {
+     "passAtt": 37,
+     "rushAtt": 27
+    },
+    "ARI": {
+     "passAtt": 40,
+     "rushAtt": 24
+    }
+   },
+   "players": [
+    {
+     "team": "DET",
+     "player": "Jared Goff",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": null,
+     "rushYds": null,
+     "passYds": 302,
+     "flags": [],
+     "why": "37 attempts (season 40.3 on 39/38/32/52, trimmed for a -5.5 road script and Arizona's 32-minute possession habit); 67.7% completions regressed to 67.5%, 11.1 yards per completion held at 11.0; Arizona allows 8.6 yards per attempt, worst in the league, factor 1.10 (not the 1.15 cap because its opponents have needed only 27 attempts a game). Book main 279.5 DK / 274.5 FD."
+    },
+    {
+     "team": "DET",
+     "player": "Jahmyr Gibbs",
+     "pos": "RB",
+     "targets": 6.6,
+     "catchRate": 0.785,
+     "receptions": 5.2,
+     "recYds": 44,
+     "carries": 20.5,
+     "rushYds": 94,
+     "passYds": null,
+     "flags": [],
+     "why": "80 of 98 team carries (29/16/20/15; blend 18.5, lifted to 20.5 on 27 team rushes as a 5.5-point favourite); 4.4 YPC regressed to 4.6, Arizona allows 4.2 a carry (factor 1.0). Targets 5/8/8/7 (blend 7.3, scaled to 37 attempts = 6.6), 78.6% catch rate at the RB prior, 8.5 a catch. Book 89.5 rush / 39.5 rec."
+    },
+    {
+     "team": "DET",
+     "player": "Amon-Ra St. Brown",
+     "pos": "WR",
+     "targets": 10.4,
+     "catchRate": 0.68,
+     "receptions": 7.1,
+     "recYds": 86,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 14/13/8/11 (blend 11.1, scaled to 37 attempts); 67.4% catch rate sits at the WR prior; 9.8 a catch regressed up to 10.5 on a career near 11.5; Arizona allows about 10.6 yards per target to WRs, factor capped at 1.15. Book 80.5 DK / 79.5 FD, receptions 7.5."
+    },
+    {
+     "team": "DET",
+     "player": "Jameson Williams",
+     "pos": "WR",
+     "targets": 5.5,
+     "catchRate": 0.665,
+     "receptions": 3.7,
+     "recYds": 62,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 9/4/4/8 (blend 5.8, scaled to 37); 64% catch rate regressed to 66.5%; 14.3 a catch held at 14.5 (deep role, career 15-16); Arizona WR factor 1.15 and it has allowed 82- and 80-yard receiver scores. Book 59.5 DK (56.5 at -111) / FD main about 55, receptions 3.5."
+    },
+    {
+     "team": "DET",
+     "player": "Sam LaPorta",
+     "pos": "TE",
+     "targets": 7.4,
+     "catchRate": 0.7,
+     "receptions": 5.2,
+     "recYds": 62,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 8/7/4/13 (season and last-3 both 8.0, scaled to 37 attempts = 7.4); 68.8% catch rate regressed toward the 72% TE prior; 10.4 a catch regressed to 10.8; Arizona allows 9.4 yards per target to TEs (Kittle 82, Likely 66, Njoku 58), factor 1.10. 20% above the 51.5 DK / 49.5 FD main because the 13-target Week 4 role and the TE factor both point up; receptions main 5.5."
+    },
+    {
+     "team": "DET",
+     "player": "Isaac TeSlaa",
+     "pos": "WR",
+     "targets": 4.4,
+     "catchRate": 0.64,
+     "receptions": 2.8,
+     "recYds": 43,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 1/5/3/8 (blend 4.8, scaled to 37); 53% catch rate on 17 targets regressed to 64%; 20.8 a catch on 9 catches regressed hard to 13.5; Arizona WR factor 1.15. Sits 45-70% above the 25.5 DK / 29.5 FD main because the book prices a two-catch player and the last two weeks (66 and 95 yards) say the deep role is real; low-catch, high-variance profile."
+    },
+    {
+     "team": "ARI",
+     "player": "Jacoby Brissett",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 4,
+     "rushYds": 11,
+     "passYds": 275,
+     "flags": [],
+     "why": "40 attempts (season 38 on 37/28/52/35, lifted as a 5.5-point home dog against a defense allowing 304 passing yards a game); 67.8% completions regressed to 66.5%; 7.9 yards per completion regressed to 9.0 (career near 10.5); Detroit allows 7.4 net yards per attempt and 82% red-zone touchdowns, factor 1.15. Book main 269.5 DK / 274.5 FD. Carries 6/1/4/4, the sneak from the 1 is his."
+    },
+    {
+     "team": "ARI",
+     "player": "Trey McBride",
+     "pos": "TE",
+     "targets": 11.8,
+     "catchRate": 0.72,
+     "receptions": 8.5,
+     "recYds": 81,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 13/10/11/12 (blend 11.25, scaled to 40 attempts, plus about half a target from Harrison's vacated 3.25); 71.7% catch rate at the TE prior; 7.3 a catch regressed to 8.8 (career near 10.5); Detroit allows 8.1 yards per target and 12.5 targets a game to TEs with six TE touchdowns in four games, factor 1.08. Book receptions 8.5, yards 84.5-89.5."
+    },
+    {
+     "team": "ARI",
+     "player": "Michael Wilson",
+     "pos": "WR",
+     "targets": 12.2,
+     "catchRate": 0.62,
+     "receptions": 7.6,
+     "recYds": 89,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Targets 7/7/17/13 (29% season share, 32% last three, blended to 30.5% plus about 2% of Harrison's vacated share, times 40 attempts); 56.8% catch rate regressed to 62% on 44 targets; 10.3 a catch regressed to 10.5; Detroit allows 10.1 yards per target to WRs with Ya-Sin out and Branch and Joseph still sidelined, factor 1.12. Book receptions 6.5, yards 79.5. new-role: Harrison inactive (trade pending) makes this a two-man tree."
+    },
+    {
+     "team": "ARI",
+     "player": "Kendrick Bourne",
+     "pos": "WR",
+     "targets": 4.2,
+     "catchRate": 0.72,
+     "receptions": 3,
+     "recYds": 35,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Targets 8/3/3/0 (blend 2.75, plus about 1.25 of Harrison's vacated 3.25 as the next outside receiver, scaled to 40 attempts); 86% catch rate on 14 targets regressed to 72%; 9.0 a catch regressed to 10.5; Detroit WR factor 1.12. Book 31.5 DK / 29.5 FD, receptions 3.5. new-role: steps into Harrison's outside snaps; zero targets last week is the floor risk."
+    },
+    {
+     "team": "ARI",
+     "player": "Jeremiyah Love",
+     "pos": "RB",
+     "targets": 3.3,
+     "catchRate": 0.8,
+     "receptions": 2.6,
+     "recYds": 17,
+     "carries": 13,
+     "rushYds": 55,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 11/9/21/14 (blend 14.2, trimmed to 13 on 24 team rushes as a dog and because his snaps are being managed around an ankle: no designation, full Friday, but Allgeier out-snapped him last week); 4.05 YPC regressed only to 4.15 behind a patched line, Detroit allows 4.4 a carry (factor 1.02). Targets 4/3/5/1, 85% catch rate regressed to 80%, 3.3 a catch regressed to 6.5. Book 44.5-49.5 rush (pricing the snap management), 11.5-14.5 rec."
+    },
+    {
+     "team": "ARI",
+     "player": "Tyler Allgeier",
+     "pos": "RB",
+     "targets": 2.4,
+     "catchRate": 0.8,
+     "receptions": 1.9,
+     "recYds": 10,
+     "carries": 7,
+     "rushYds": 29,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 17/5/2/8 (blend 6.5, lifted to 7 because he out-snapped Love last week and took the 22-yard score); 3.5 YPC regressed to 4.1 on a 4.5 career, Detroit factor 1.02. Targets 2/2/4/2, 10 of 10 caught, 3.5 a catch regressed to 5.5. Book 29.5 rush, 9.5 rec, 1.5 receptions. Included as the second lead back; his receiving line is below the 3-target bar."
+    }
+   ],
+   "sources": [
+    "ESPN summary API 401872991 (venue, DraftKings line, FPI, injuries) and box scores 401872923, 401872932, 401872954, 401872978 (DET W1-4), 401872926, 401872943, 401872958, 401872966 (ARI W1-4), fetched Oct 10",
+    "ESPN roster API (DET, ARI): Harrison Jr. Out, Kerby Joseph and Brian Branch Out on reserve; ESPN core team statistics 2026 (red-zone pct, attempts, plays)",
+    "azcardinals.com Week 5 injury report (Friday designations, Gaines II at RG, LaFleur on Love and Nolen III); arizonasports.com Cardinals-Lions injury report",
+    "ESPN/Schefter and NBC Sports Oct 10: Cardinals finalizing Harrison Jr. trade, inactive vs Lions; NBC Sports Oct 4: Love 15 touches, snaps managed",
+    "Detroit Lions Podcast Week 5 preview (ARI pass defense 8.6 Y/A, 114.9 rating; 4.5 yards per play); SI Lions OnSI (D.J. Reed PFF grades, points allowed)",
+    "Odds API pull data/odds/raw/2026-w05-det-ari.json (DraftKings, FanDuel alternates) for book sanity checks",
+    "Unverified: State Farm Stadium roof status; Kerby Joseph Saturday activation; opponent factors computed from four box scores, not a league table"
+   ]
+  },
+  {
+   "game": "sf-sea",
+   "kick": "2026-10-11T20:25:00Z",
+   "weather": "Lumen Field, open-air: 58F, gusts to 16 mph, no precipitation in the ESPN/AccuWeather forecast. Wind is worth watching on deep balls but not enough to move any projection.",
+   "teams": {
+    "SF": {
+     "passAtt": 30,
+     "rushAtt": 27
+    },
+    "SEA": {
+     "passAtt": 31,
+     "rushAtt": 27
+    }
+   },
+   "players": [
+    {
+     "team": "SF",
+     "player": "Brock Purdy",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 4.5,
+     "rushYds": 24,
+     "passYds": 194,
+     "flags": [],
+     "why": "34, 22, 27, 30 attempts (28.3 a game, all four games won with a lead); 30 as a 3-point road dog. 69.9% completions regressed to 0.67; 11.7 yards a completion with the 80-yard lateral removed, regressed to 11.4; x 0.85 (capped) for Seattle's 5.2 yards an attempt allowed (no QB past 189 in four games). 194 is 14% under DraftKings' 226.5. Rushing: 20 carries for 122, 29+ yards in all four games; Seattle allows 5.4 a carry to quarterbacks."
+    },
+    {
+     "team": "SF",
+     "player": "Christian McCaffrey",
+     "pos": "RB",
+     "targets": 5.9,
+     "catchRate": 0.76,
+     "receptions": 4.5,
+     "recYds": 29,
+     "carries": 14,
+     "rushYds": 51,
+     "passYds": null,
+     "flags": [],
+     "why": "Carries 10, 10, 15, 15 (blend 12.9) to 14 in a close game; 4.4 a carry regressed to 4.3 x 0.85 (capped) for Seattle's 3.35 a carry to running backs on 91 attempts. Targets 8, 4, 5, 5 blend 5.1 plus 0.4 of Juszczyk's vacated 2 a game, x 1.08 pace; 16 of 22 caught, regressed to 0.76; 7.7 a catch x 0.85 for Seattle's 5.8 a catch to backs. Main numbers 50.5 rushing, 4.5 catches, 35.5 receiving."
+    },
+    {
+     "team": "SF",
+     "player": "Kaelon Black",
+     "pos": "RB",
+     "targets": 0.5,
+     "catchRate": 0.78,
+     "receptions": 0.4,
+     "recYds": 2,
+     "carries": 6.5,
+     "rushYds": 22,
+     "passYds": null,
+     "flags": [],
+     "why": "Backup with a fixed share: 14, 7, 4, 6 carries (blend 6.7) at 3.9 a carry, regressed to 4.1 x 0.85 for Seattle's run defense. Full practice Thursday after an illness and no designation. Two targets all year, so receiving is a placeholder. DraftKings' 16.5 assumes about 5 carries."
+    },
+    {
+     "team": "SF",
+     "player": "George Kittle",
+     "pos": "TE",
+     "targets": 6.4,
+     "catchRate": 0.72,
+     "receptions": 4.6,
+     "recYds": 49,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 5, 4, 7, 6 (season 5.5, last three 5.7, blend 5.6) plus 0.3 of Juszczyk's vacated targets, x 1.08 pace. 16 of 22 caught, regressed to 0.72; 15.3 a catch regressed to 12.6; x 0.85 (capped) for Seattle's 6.1 yards a catch to tight ends (19 catches, 116 yards in four games). 49 against DraftKings' 54.5; 4.6 catches against 4.5."
+    },
+    {
+     "team": "SF",
+     "player": "Mike Evans",
+     "pos": "WR",
+     "targets": 6.3,
+     "catchRate": 0.69,
+     "receptions": 4.4,
+     "recYds": 47,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 7, 3, 6, 8 (blend 5.8) x 1.08 pace. 17 of 24 caught, regressed to 0.69; 12.5 a catch; x 0.86 for Seattle's 11.0 yards a catch to receivers. Ribs: limited Wednesday, did not practice Thursday, but no Friday designation (Nick Wagoner, ESPN), so he is projected at full role. 47 against a 49.5 main number at both books."
+    },
+    {
+     "team": "SF",
+     "player": "Deebo Samuel Sr.",
+     "pos": "WR",
+     "targets": 4.1,
+     "catchRate": 0.73,
+     "receptions": 3,
+     "recYds": 27,
+     "carries": 1.8,
+     "rushYds": 12,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 7, 4, 0, 6 (blend 3.8; the zero is the Arizona game where his 80 yards came on a lateral) x 1.08 pace. 14 of 17 caught, regressed to 0.73; 7.5 a catch without the lateral, regressed to 10.4; x 0.86 for Seattle. 27 is 22% under DraftKings' 34.5: the book appears to count the lateral, which the projection does not. Carries 1, 1, 2, 3 at 10.6 a carry, regressed to about 6.5."
+    },
+    {
+     "team": "SEA",
+     "player": "Sam Darnold",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 2,
+     "rushYds": 5,
+     "passYds": 220,
+     "flags": [],
+     "why": "Team attempts 24, 26, 46, 22 (Darnold started Weeks 3 and 4: 31 of 45 for 379, 13 of 22 for 168); 31 as a 3-point home favourite. Team 68.6% regressed to 0.67; 12.1 yards a completion regressed to 11.6; x 0.92 for San Francisco's 5.9 yards an attempt allowed (0.85 on the season, lifted for Bosa, Thompson and Sigle out). 220 against DraftKings' 234.5, so the Week 4 over lean does not repeat."
+    },
+    {
+     "team": "SEA",
+     "player": "Emanuel Wilson",
+     "pos": "RB",
+     "targets": 3,
+     "catchRate": 0.76,
+     "receptions": 2.3,
+     "recYds": 16,
+     "carries": 17,
+     "rushYds": 60,
+     "passYds": null,
+     "flags": [
+      "one-game-sample"
+     ],
+     "why": "Carries 2, 21, 9, 21; with Jadarian Price on IR and Charbonnet on PUP, Week 4 (21 of 28 back carries) is the template, so 17 of about 23.5 back carries with Holani questionable (about 20 and 67 yards if Holani sits). 3.6 a carry regressed to 3.85 x 0.91 for San Francisco's 3.9 a carry to backs. Receiving: Price's targets went to Wilson in his one absence (4 targets, 3 for 39 last week), hence the one-game-sample flag; 16 yards against 12.5 at DraftKings. 60 rushing against 64.5."
+    },
+    {
+     "team": "SEA",
+     "player": "George Holani",
+     "pos": "RB",
+     "targets": 2.2,
+     "catchRate": 0.8,
+     "receptions": 1.8,
+     "recYds": 12,
+     "carries": 6,
+     "rushYds": 21,
+     "passYds": null,
+     "flags": [
+      "questionable"
+     ],
+     "why": "Questionable (ribs/knee) after limited practices Wednesday and Thursday; projected as active in his Week 4 role (7 carries, 1 target). Carries 8, 4, 3, 7 at 3.2 a carry, regressed to 3.8 x 0.91. Targets 1, 1, 5, 1 (blend 2.2); the 5-for-48 game at Washington lifts the receiving blend, which is why 12 yards sits above the 9.5 main number. If he is inactive, zero him and move about 4 carries and 1 target to Wilson."
+    },
+    {
+     "team": "SEA",
+     "player": "Jaxon Smith-Njigba",
+     "pos": "WR",
+     "targets": 10.6,
+     "catchRate": 0.73,
+     "receptions": 7.7,
+     "recYds": 101,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 11, 11, 14, 6 (season 10.5, last three 10.3, blend 10.4) x 1.02 pace; 36% of Seattle's targets. 32 of 42 caught, regressed to 0.73; 15.0 a catch regressed to 14.1; x 0.93 for San Francisco's 11.9 yards a catch to receivers. Rested Wednesday (not injury), full Thursday. 101 against DraftKings' 97.5; 7.7 catches sits between the 6.5 (-141) and 7.5 (+132) alternates."
+    },
+    {
+     "team": "SEA",
+     "player": "Rashid Shaheed",
+     "pos": "WR",
+     "targets": 4,
+     "catchRate": 0.61,
+     "receptions": 2.4,
+     "recYds": 27,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 3, 6, 3, 3 (blend 3.9) x 1.02. Only 7 of 15 caught, regressed to 0.61; 10.4 a catch regressed toward a deep-role 12.0; x 0.93. 27 against DraftKings' 20.5 is the catch-rate regression talking; his 4, 35, 14, 20 game log is closer to the book. Also has 3 carries for 37 and an end-around touchdown, not projected."
+    },
+    {
+     "team": "SEA",
+     "player": "Cooper Kupp",
+     "pos": "WR",
+     "targets": 3.1,
+     "catchRate": 0.7,
+     "receptions": 2.1,
+     "recYds": 25,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 3, 2, 5, 2 (blend 3.0) x 1.02. 9 of 12 caught, regressed to 0.70; 12.7 a catch; x 0.93. 25 against DraftKings' 23.5 and 2.1 catches against 2.5: the third option in an offense that funnels to Smith-Njigba."
+    },
+    {
+     "team": "SEA",
+     "player": "AJ Barner",
+     "pos": "TE",
+     "targets": 4.1,
+     "catchRate": 0.68,
+     "receptions": 2.8,
+     "recYds": 26,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "Targets 2, 1, 9, 3 (season 3.75, last three 4.3, blend 4.0) x 1.02; the 9-target Washington game (Darnold's 46 attempts) carries the blend, and his median game is 12 yards. 9 of 15 caught, regressed to 0.68; 11.3 a catch regressed to 10.8; x 0.85 (capped) for San Francisco's 7.5 yards a catch to tight ends. 26 against DraftKings' 22.5."
+    }
+   ],
+   "sources": [
+    "ESPN box scores via site.api.espn.com summaries: SF 401872657, 401872942, 401872958, 401872975; SEA 401872656, 401872943, 401872955, 401872977 (targets, carries, red-zone and goal-line play-by-play)",
+    "ESPN depth charts and rosters, teams 25 and 26 (fetched Oct 10): Jadarian Price IR, Charbonnet out, Juszczyk out",
+    "ESPN game summary 401872992: injuries, weather, DraftKings line, matchup predictor",
+    "data/injuries.json (fetched 2026-10-10T13:53Z)",
+    "seahawks.com Week 5 injury report (Oct 9): Holani questionable, Leonard Williams no designation, Mykel Williams and Upton Stout questionable",
+    "data/odds/raw/2026-w05-sf-sea.json (DraftKings and FanDuel alternates, pulled 2026-10-10T16:27Z), sanity checks only",
+    "Unverified: Mykel Williams activation from PUP (team report questionable, ESPN feed out); Darnold's completion and per-completion rates use Seattle's team figures because Drew Lock started Weeks 1 and 2"
+   ]
+  },
+  {
+   "game": "bal-atl",
+   "kick": "2026-10-12T00:20:00Z",
+   "weather": "Mercedes-Benz Stadium, retractable roof (normally closed); 63F and dry outside per ESPN. Non-factor.",
+   "teams": {
+    "BAL": {
+     "passAtt": 27,
+     "rushAtt": 32
+    },
+    "ATL": {
+     "passAtt": 24,
+     "rushAtt": 35
+    }
+   },
+   "players": [
+    {
+     "team": "BAL",
+     "player": "Tyler Huntley",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 4.5,
+     "rushYds": 21,
+     "passYds": 165,
+     "flags": [
+      "new-role",
+      "one-game-sample"
+     ],
+     "why": "First start of the season after Lamar Jackson (ankle) was ruled out Friday. 27 attempts x 0.67 completions (career 66.6%, 77.6% in 67 attempts last year) x 9.9 yards a completion (career 8.9, lifted for Flowers/Andrews/Bateman) x 0.92 for Atlanta's 5.7 net yards per dropback allowed. Rushing: Henry takes the designed runs, so 4-5 scrambles at 4.8 a carry; the book's 28.5-29.5 assumes more designed work than this offense gave Jackson (4.75 a game)."
+    },
+    {
+     "team": "BAL",
+     "player": "Derrick Henry",
+     "pos": "RB",
+     "targets": 2.3,
+     "catchRate": 0.81,
+     "receptions": 1.9,
+     "recYds": 11,
+     "carries": 24,
+     "rushYds": 88,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "24, 16, 26, 23 carries with Jackson; the blend is 22 and Huntley starting adds two (Jackson's 19 carries vacate, half go to the backs). 4.2 a carry this year regressed to 4.3, times 0.85 (capped) for Atlanta's 3.1 yards a carry to running backs on 62 attempts. 88 against a main number of 78.5 (DK) / 79.5 (FD) is the volume lean; the risk is a loaded box and a trailing script. Receiving: 7 targets in 4 games, Atlanta allows 4.8 yards a catch to backs."
+    },
+    {
+     "team": "BAL",
+     "player": "Mark Andrews",
+     "pos": "TE",
+     "targets": 6.8,
+     "catchRate": 0.73,
+     "receptions": 5,
+     "recYds": 42,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "6, 7, 5, 6 targets, the steadiest tree in the offense; Huntley has leaned on his tight end in every prior stretch as the starter, so 6.0 becomes 6.8. 75% catch rate regressed to 73%; 8.3 yards a catch regressed to 9.3, times 0.90 for Atlanta's 9.0 yards a catch allowed to tight ends (24 catches on 33 targets, 3 scores). 5.0 catches against a 3.5 main number (DK over -168, FD -138) is the cleanest receptions lean in the game; 42 yards against 32.5 (DK) / 29.5 (FD)."
+    },
+    {
+     "team": "BAL",
+     "player": "Zay Flowers",
+     "pos": "WR",
+     "targets": 6.8,
+     "catchRate": 0.72,
+     "receptions": 4.9,
+     "recYds": 61,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "questionable",
+      "new-role"
+     ],
+     "why": "Questionable (foot), limited Wednesday through Friday; projected as active. 6, 6, 10 targets in his three games (no target in Week 2), blend 7.7, trimmed to 6.8 for the foot and a quarterback who throws shorter. 82% catch rate regressed to 72%; 19.6 yards a catch regressed hard to 12.5 (career about 12.5, Huntley's throws are shorter). 61 sits just under the 68.5 (DK) / 69.5 (FD) main number: no lean. If he is inactive, his targets go to Bateman first and Andrews second, which is what happened in Week 2 (Bateman 9 targets, Andrews 7)."
+    },
+    {
+     "team": "BAL",
+     "player": "Rashod Bateman",
+     "pos": "WR",
+     "targets": 3.4,
+     "catchRate": 0.69,
+     "receptions": 2.3,
+     "recYds": 33,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "1, 9, 3, 2 targets: a two-target role with Flowers on the field and the No. 1 target when he is off it. The book's main number (17.5 DK / 19.5 FD, about 1.9 catches) prices the two-target role. The desk is 70% above it on purpose: Flowers is limited by the foot, Huntley's one extended stretch this year (second half vs Tennessee) spread the ball, and the Week 2 sample is the one with Flowers out. 73% catch rate regressed to 69%; 15.5 yards a catch regressed to 14. If Flowers is inactive, move Bateman to 6.5 targets and 60 yards."
+    },
+    {
+     "team": "BAL",
+     "player": "Justice Hill",
+     "pos": "RB",
+     "targets": 1.9,
+     "catchRate": 0.78,
+     "receptions": 1.5,
+     "recYds": 10,
+     "carries": 3.5,
+     "rushYds": 13,
+     "passYds": null,
+     "flags": [
+      "new-role"
+     ],
+     "why": "Below the three-target threshold (6 targets, 14 carries in 4 games) but priced by both books (DK rush 11.5, receptions 1.5). Checkdown back for Huntley; Henry keeps the goal line and the volume. 4.3 a carry regressed to 4.2, times 0.85 for Atlanta."
+    },
+    {
+     "team": "ATL",
+     "player": "Michael Penix Jr.",
+     "pos": "QB",
+     "targets": null,
+     "catchRate": null,
+     "receptions": null,
+     "recYds": null,
+     "carries": 2,
+     "rushYds": 0,
+     "passYds": 200,
+     "flags": [],
+     "why": "Two starts: 18 of 25 for 256 and 15 of 20 for 223, 10.6 yards an attempt that will not hold. Atlanta runs 62% of its snaps with him under center, so 24 attempts. 73% completions regressed to 68%; 14.5 yards a completion regressed to 12.6, times 1.03 for Baltimore's 6.7 net yards an attempt allowed and Humphrey questionable. Top-down 212, bottom-up from the receiver rows 190; the desk prints 200, 9% under the 219.5 (DK) / 224.5 (FD) main number. Two carries for minus-4 this year; no rushing value."
+    },
+    {
+     "team": "ATL",
+     "player": "Bijan Robinson",
+     "pos": "RB",
+     "targets": 3,
+     "catchRate": 0.78,
+     "receptions": 2.3,
+     "recYds": 17,
+     "carries": 21.5,
+     "rushYds": 101,
+     "passYds": null,
+     "flags": [],
+     "why": "21, 16, 29, 19 carries; the blend is 21.3. 5.8 a carry regressed to 5.3, times 0.88 for Baltimore's 3.8 yards a carry to running backs (16th in EPA per rush per SI). 101 against 87.5 (DK) / 89.5 (FD) is a lean over. Receiving is the fade: 10 targets in Week 1 with Cooper Rush, 2 and 2 with Penix, and Baltimore has allowed 37 receiving yards to running backs all season (21 targets), so 17 yards sits 36% under the 26.5 main number by design."
+    },
+    {
+     "team": "ATL",
+     "player": "Brian Robinson Jr.",
+     "pos": "RB",
+     "targets": 0.9,
+     "catchRate": 0.78,
+     "receptions": 0.7,
+     "recYds": 5,
+     "carries": 11.5,
+     "rushYds": 44,
+     "passYds": null,
+     "flags": [],
+     "why": "9, 11, 10, 14 carries, the steadiest second-back role on the slate, and 4 scores in the last two games. 4.4 a carry regressed to 4.3, times 0.88 for Baltimore. 44 against a 35.5 main number (DK) is a lean on volume. Three targets all season; below the threshold, listed because he is priced."
+    },
+    {
+     "team": "ATL",
+     "player": "Drake London",
+     "pos": "WR",
+     "targets": 8,
+     "catchRate": 0.71,
+     "receptions": 5.7,
+     "recYds": 85,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "26 targets (5, 5, 10, 6); 16 of Penix's 45 attempts (35.6%) have gone to him, so 24 attempts gives 8.0 after blending with the season share. 77% catch rate regressed to 71%; 18.5 yards a catch regressed to 14.9 (career about 13.5). Baltimore's wide receiver factor is 1.0 (12.4 yards a catch allowed, Tate 145 and Lamb 112 against them; Humphrey questionable). 85 against 80.5 (DK) / 79.5 (FD) and 5.7 catches against 5.5: priced correctly, no lean."
+    },
+    {
+     "team": "ATL",
+     "player": "Jahan Dotson",
+     "pos": "WR",
+     "targets": 3.4,
+     "catchRate": 0.63,
+     "receptions": 2.1,
+     "recYds": 28,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "4, 4, 3, 3 targets, the only steady No. 2 target; 6 catches on 14 (43%) regressed toward 68% gives 63%. 15.8 yards a catch regressed to 13.5. 28 is 40% above the 20.5 (DK) / 19.5 (FD) main number: the book prices about 1.5 catches, the desk's 2.1 comes from the target count being stable across both quarterbacks. Low confidence either way; a 3-target player with a 43% catch rate is a coin flip on 19.5."
+    },
+    {
+     "team": "ATL",
+     "player": "Kyle Pitts Sr.",
+     "pos": "TE",
+     "targets": 2.6,
+     "catchRate": 0.7,
+     "receptions": 1.8,
+     "recYds": 20,
+     "carries": null,
+     "rushYds": null,
+     "passYds": null,
+     "flags": [],
+     "why": "1, 3, 2, 3 targets (9 total, 5 catches, 67 yards, 47 of them Monday). Below the three-target threshold; listed because both books price him (23.5 DK / 24.5 FD yards, 2.5 catches). 56% catch rate regressed to 70%; 13.4 yards a catch regressed to 12, times 0.92 for Baltimore's 9.7 yards a catch to tight ends. 20 against 23.5 is a mild under; Hooper, not Pitts, has the red-zone tight end role (the only Falcons red-zone tight end target this year, a 5-yard score)."
+    }
+   ],
+   "sources": [
+    "data/odds/raw/2026-w05-bal-atl.json (DraftKings and FanDuel alternates, pulled Sat Oct 10 16:28 UTC)",
+    "ESPN box scores 401872659, 401872938, 401872960, 401872973 (BAL Weeks 1-4) and 401872658, 401872933, 401872948, 401872979 (ATL Weeks 1-4) via site.api.espn.com summary",
+    "ESPN depth charts and rosters for BAL (team 33) and ATL (team 1), ESPN athlete career stats for Tyler Huntley",
+    "baltimoreravens.com and atlantafalcons.com injury reports (Friday Oct 9 designations) and data/injuries.json",
+    "ESPN game summary 401872993 (venue, weather, DraftKings line, FPI)",
+    "SI Betting Week 5 preview (Ravens 6-11 without Jackson, Penix EPA rank, Baltimore 16th in EPA per rush), Covers preview (rush-rate ranks, Atlanta time of possession)",
+    "Unverified: Atlanta pressure-rate and success-rate ranks are carried from the desk's Week 4 file; opponent position factors are computed from four box scores each and capped at 0.85-1.15"
+   ]
+  }
+ ],
+ "mergedAt": "2026-10-10T19:18:34.521Z"
 }

@@ -1,0 +1,199 @@
+{
+  "game": "cin-mia",
+  "kick": "2026-10-11T17:00:00Z",
+  "weather": "Outdoor: Hard Rock Stadium (open-air with canopy), 1 p.m. ET kickoff; ESPN/AccuWeather 92F, 25% precipitation, gusts to 13 mph. Heat, not wind: no passing adjustment, small run-script trim for the favourite.",
+  "teams": {
+    "CIN": {
+      "passAtt": 36,
+      "rushAtt": 25
+    },
+    "MIA": {
+      "passAtt": 28,
+      "rushAtt": 23
+    }
+  },
+  "players": [
+    {
+      "team": "CIN",
+      "player": "Joe Burrow",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": null,
+      "rushYds": null,
+      "passYds": 284,
+      "flags": [],
+      "why": "36 attempts (season 39.3 on 35/31/37/54, trimmed for a 7-point-favourite script in 92F heat); 71.3% completions regressed to 68.9%, 10.46 yards per completion regressed to 10.6; Miami allows 77.9% and 8.3 Y/A with 4 sacks in four games, factor 1.10 (not the cap: four-game sample and opponents needed only 28 attempts), 2% trim for the late-lead run script. DK main 256.5, FD 249.5 (-122 over)."
+    },
+    {
+      "team": "CIN",
+      "player": "Ja'Marr Chase",
+      "pos": "WR",
+      "targets": 8.1,
+      "catchRate": 0.71,
+      "receptions": 5.8,
+      "recYds": 66,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "questionable"
+      ],
+      "why": "Concussion: DNP/limited/practiced, still needs Saturday independent-neurologist clearance; projected only if active. Targets 4/9/12/3 with Week 4 a half game (counted as 0.5): season 8.0 per full game, last three 9.6, blend 8.8 scaled to 36 attempts = 8.1. 21 of 28 regressed to 71%; 10.1 a catch regressed to 10.9; Miami allows 8.46 yards per WR target with three corners out, factor 1.06. No CIN receiver lines posted at DK or FD."
+    },
+    {
+      "team": "CIN",
+      "player": "Tee Higgins",
+      "pos": "WR",
+      "targets": 8.4,
+      "catchRate": 0.66,
+      "receptions": 5.5,
+      "recYds": 86,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "questionable"
+      ],
+      "why": "Groin/neck (Week 4 adductor): DNP, DNP, full Friday; questionable. Targets 6/10/7/16 (season 9.8, last three 11.0, blend 10.4, scaled to 36 attempts 9.5, then 8.4 because 9 of Week 4's 16 came after Chase left and the adductor). 25 of 39 regressed to 66%; 16.0 a catch regressed to 14.7; factor 1.06. If Chase sits, 10.5 targets."
+    },
+    {
+      "team": "CIN",
+      "player": "Chase Brown",
+      "pos": "RB",
+      "targets": 5.5,
+      "catchRate": 0.82,
+      "receptions": 4.5,
+      "recYds": 30,
+      "carries": 16.5,
+      "rushYds": 60,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 16/20/13/9 (blend 14.3) lifted to 16.5 on 25 team rushes as a 7-point favourite (82% of back carries). 3.57 YPC regressed to 3.94; Miami allows 3.85 a carry to backs, factor 0.92. Targets 6/5/2/11 (blend 6.0, scaled 5.5); 21 of 24 regressed to 82%; 4.9 a catch regressed to 6.0; Miami allows 6.9 yards per RB target and 4 RB receiving TDs, factor 1.10. Book 67.5 DK / 69.5 FD rush; no receiving line posted."
+    },
+    {
+      "team": "CIN",
+      "player": "Dohnte Meyers",
+      "pos": "WR",
+      "targets": 4.6,
+      "catchRate": 0.685,
+      "receptions": 3.2,
+      "recYds": 39,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 1/1/5/9 (season 4.0, last three 5.0, blend 4.5; Week 4's 9 came partly with Chase out, but Taylor says the WR3 reps are his regardless) = 4.6 at 36 attempts. 11 of 16 regressed to 68.5%; 11.7 a catch regressed to 11.6; factor 1.06. Goes to 6.5 targets if Chase or Higgins sits."
+    },
+    {
+      "team": "CIN",
+      "player": "Mike Gesicki",
+      "pos": "TE",
+      "targets": 3.6,
+      "catchRate": 0.72,
+      "receptions": 2.6,
+      "recYds": 36,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "revenge-narrative"
+      ],
+      "why": "Targets 7/0/3/5 (blend 3.2, scaled 2.9) lifted to 3.6 because Miami's opponents target tight ends 7.8 times a game and catch 94% of them. 11 of 15 regressed to 72%; 14.1 a catch regressed to 12.0; Miami allows 10.7 yards per TE target, factor at the 1.15 cap. Former Dolphin (2018-22): flagged, ignored. No line posted."
+    },
+    {
+      "team": "MIA",
+      "player": "Malik Willis",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 5,
+      "rushYds": 27,
+      "passYds": 201,
+      "flags": [],
+      "why": "28 attempts (season 25.8 on 27/23/36/17, up for a 7-point home-dog script; Cincinnati opponents average 35); 56.3% regressed to 60.1%, 12.3 yards per completion regressed to 11.7; Cincinnati allows 7.7 Y/A but 63.8% completions with 14 sacks, factor 1.02. Rushing 19 for 112 (4.75 a game), 5.9 a carry regressed to 5.4. Book 189.5 DK pass, 31.5 rush."
+    },
+    {
+      "team": "MIA",
+      "player": "Malik Washington",
+      "pos": "WR",
+      "targets": 7.4,
+      "catchRate": 0.645,
+      "receptions": 4.8,
+      "recYds": 55,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 8/5/10/5 (season 7.0, last three 6.7, blend 6.8) scaled to 28 attempts = 7.4; Douglas out a third week and Joly out leave the share at 27%. 17 of 28 regressed to 64.5%; 12.9 a catch regressed to 12.2; Cincinnati allows 7.5 yards per WR target and a 57% catch rate, factor 0.95. Book 4.5 receptions (DK -122 over), 45.5 yards."
+    },
+    {
+      "team": "MIA",
+      "player": "Chris Bell",
+      "pos": "WR",
+      "targets": 4.2,
+      "catchRate": 0.58,
+      "receptions": 2.4,
+      "recYds": 32,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Knee, no designation. Targets 2/1/8/3 (blend 3.8, scaled 4.1, +0.1 from Douglas's share) = 4.2. 5 of 14 regressed hard to 58%; 18.4 a catch regressed to 14.0; factor 0.95. Book 2.5 receptions, 34.5 yards."
+    },
+    {
+      "team": "MIA",
+      "player": "Greg Dulcich",
+      "pos": "TE",
+      "targets": 3.6,
+      "catchRate": 0.73,
+      "receptions": 2.6,
+      "recYds": 31,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 2/3/7/0 (blend 3.2, scaled 3.4) lifted to 3.6: Joly out and Cincinnati allows 10 TE targets and 102 yards a game. Zero targets on 20 snaps last week is the risk. 9 of 12 regressed to 73%; 10.0 a catch regressed to 10.3; factor at the 1.15 cap. Book 2.5 receptions, 26.5 yards."
+    },
+    {
+      "team": "MIA",
+      "player": "Kevin Coleman Jr.",
+      "pos": "WR",
+      "targets": 3,
+      "catchRate": 0.56,
+      "receptions": 1.7,
+      "recYds": 16,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "WR2 on ESPN's depth chart with Douglas out. Targets 2/0/4/4 (blend 2.6, scaled 2.8, +0.2 for the depth-chart role) = 3.0. 2 of 10 regressed to 56%; 3.0 a catch regressed to 10.1; factor 0.95. Book 1.5 receptions, 18.5 yards."
+    },
+    {
+      "team": "MIA",
+      "player": "Ollie Gordon II",
+      "pos": "RB",
+      "targets": 2.4,
+      "catchRate": 0.81,
+      "receptions": 1.9,
+      "recYds": 12,
+      "carries": 11.8,
+      "rushYds": 55,
+      "passYds": null,
+      "flags": [],
+      "why": "Lead back since Achane's ACL: 17 and 9 carries the last two weeks. 17 back carries a game x 64% with Wright active (85% if Wright sits) = 11.8 blended for Wright's questionable tag; 5.1 YPC (one 53-yarder) regressed to 4.56; Cincinnati allows 4.45 to backs, factor 1.03. Takes part of Achane's 5.5 targets a game: 2.4; 5 of 5 regressed to 81%, 2.8 a catch regressed to 6.3. Book 45.5 DK / 49.5 FD rush (20% over: Wright's status and volume), 1.5 receptions."
+    }
+  ],
+  "sources": [
+    "ESPN summary API 401872982 (venue, DraftKings line and open, matchup predictor, injuries, weather) and box scores 401872925, 401872934, 401872950, 401872969 (CIN W1-4), 401872928, 401872942, 401872952, 401872974 (MIA W1-4), fetched Oct 10; red-zone and goal-line usage from ESPN drive play-by-play",
+    "ESPN depth charts (core API, teams 4 and 15) and rosters for CIN, MIA and the eight opponents (positions for the opponent factors)",
+    "data/injuries.json (ESPN feed: Dehner/The Athletic, Furones/Sun Sentinel, Goldsmith/Fox 19) for Friday designations",
+    "bengals.com Quick Hits Oct 7 (Meyers WR3 reps, Chase in protocol); Yahoo Sports and NBC Sports/Rotoworld Oct 9 (Chase practiced Friday, needs Saturday clearance; Higgins full Friday per Rotoworld, Yahoo says no Friday practice)",
+    "Odds API pull data/odds/raw/2026-w05-cin-mia.json (DraftKings, FanDuel alternates, 16:28 UTC Oct 10) for sanity checks; no CIN receiving markets posted at either book",
+    "Unverified: Chase's Saturday clearance; Higgins' Friday participation (sources conflict); Wright's status; opponent factors are computed from four box scores per defense, not a league table"
+  ]
+}

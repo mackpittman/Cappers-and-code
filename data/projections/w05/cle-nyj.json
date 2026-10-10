@@ -1,0 +1,205 @@
+{
+  "game": "cle-nyj",
+  "kick": "2026-10-11T17:00:00Z",
+  "weather": "Outdoor, turf at MetLife Stadium: 62F, 65% chance of rain, gusts to 9 mph (ESPN/AccuWeather, Saturday). Rain is the factor; passing yards and catch rates trimmed about 3%, run volume nudged up.",
+  "teams": {
+    "CLE": {
+      "passAtt": 31,
+      "rushAtt": 26
+    },
+    "NYJ": {
+      "passAtt": 30,
+      "rushAtt": 28
+    }
+  },
+  "players": [
+    {
+      "team": "CLE",
+      "player": "Deshaun Watson",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 7.5,
+      "rushYds": 27,
+      "passYds": 211,
+      "flags": [
+        "weather"
+      ],
+      "why": "31 attempts (22/30/30/33, season 28.8, last three 31; a 2.5-point road dog in a 39.5 total); 69.6% completions regressed to 67.5%, 10.7 yards per completion held at 10.8; Jets allow 6.5 yards per attempt but faced Ward, Love and Bagent (factor 0.96), rain 0.97. Book 205.5 DK (209.5 at -101) / 199.5 FD. Carries 6/7/11/7 for 127 yards, regressed for the rain; book 25.5."
+    },
+    {
+      "team": "CLE",
+      "player": "KC Concepcion",
+      "pos": "WR",
+      "targets": 7.5,
+      "catchRate": 0.645,
+      "receptions": 4.8,
+      "recYds": 42,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "weather"
+      ],
+      "why": "Targets 5/6/9/8 (season 7.0, last three 7.7, blend 7.3, scaled to 31 attempts); 17 of 28 (61%) regressed toward the 68% prior; 8.5 a catch regressed to 9.6 on a short slot role; Jets allow 7.4 yards per target to WRs (factor 0.95), rain 0.97. Book 40.5 DK / 39.5 FD, receptions 4.5 (over +105/+116)."
+    },
+    {
+      "team": "CLE",
+      "player": "Denzel Boston",
+      "pos": "WR",
+      "targets": 5.9,
+      "catchRate": 0.64,
+      "receptions": 3.8,
+      "recYds": 54,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "weather"
+      ],
+      "why": "Targets 4/7/4/7 (season 5.5, last three 6.0, blend 5.75, scaled to 31); 13 of 22 (59%) regressed to 64%; 21.8 a catch on 13 catches regressed hard to 15.5 (deep X role, catches of 46, 55 and 60); Jets WR factor 0.95, rain 0.97. Book 47.5-49.5 DK / 49.5 FD, receptions 3.5 (over +107/+108). Long-catch variance: the median is below the mean."
+    },
+    {
+      "team": "CLE",
+      "player": "Harold Fannin Jr.",
+      "pos": "TE",
+      "targets": 6.4,
+      "catchRate": 0.73,
+      "receptions": 4.7,
+      "recYds": 41,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "weather"
+      ],
+      "why": "Targets 3/6/9/5 (season 5.75, last three 6.7, blend 6.2, scaled to 31); Carsen Ryan (out) had no targets, so nothing vacated; 17 of 23 (74%) regressed to 73% at the TE prior; 9.0 a catch regressed to 9.4; Jets allow 6.6 yards per target to TEs and no TE touchdown (factor 0.95), rain 0.97. Book 36.5 DK / FD between 29.5 and 39.5, receptions 4.5 (over +104/+116)."
+    },
+    {
+      "team": "CLE",
+      "player": "Quinshon Judkins",
+      "pos": "RB",
+      "targets": 4.3,
+      "catchRate": 0.82,
+      "receptions": 3.5,
+      "recYds": 23,
+      "carries": 16,
+      "rushYds": 57,
+      "passYds": null,
+      "flags": [
+        "weather"
+      ],
+      "why": "Carries 12/12/18/17 (blend 15.2, lifted to 16 on 26 team rushes in the rain, Watson about 7.5); 3.0 a carry on 59 regressed to 3.5; Jets allowed 4.3 a carry for the season but 131 and 232 the last two weeks (factor 1.02). Targets 2/5/2/7 (blend 4.3); 15 of 16 regressed to 82%; 6.4 a catch regressed to 6.8. Receiving 39% above the 16.5 DK main (14.5 FD) because his own season average is 24 a game; rush book 60.5 DK / 59.5 FD."
+    },
+    {
+      "team": "NYJ",
+      "player": "Geno Smith",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 3,
+      "rushYds": 10,
+      "passYds": 215,
+      "flags": [
+        "weather"
+      ],
+      "why": "30 attempts (24/41/37/15, season 29.3; the 15 came in a 32-play game at Chicago; trimmed for a run-first home-favorite script with Cleveland's interior out); 72.6% completions regressed to 69%; 10.6 yards per completion regressed to 10.7; Cleveland allows 7.0 yards per attempt and nine passing touchdowns (factor 1.0), rain 0.97. Book 207.5 DK / FD main near 205 (199.5 at -138). Carries 6/5/2/0; book 10.5."
+    },
+    {
+      "team": "NYJ",
+      "player": "Garrett Wilson",
+      "pos": "WR",
+      "targets": 8.8,
+      "catchRate": 0.73,
+      "receptions": 6.4,
+      "recYds": 76,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "weather"
+      ],
+      "why": "Targets 7/7/13/4 (season 7.75, last three 8.0); Mitchell (out, third straight game) vacated targets: Wilson took 17 of 52 (33%) in the two games without him versus 22% with him, so 30 attempts at a 29% share with Taylor back = 8.8; 24 of 31 (77%) regressed to 73%; 11.25 a catch regressed to 11.6; Cleveland allows 8.8 yards per target to WRs (factor 1.06), rain 0.97. Book 68.5 DK / 69.5 FD, receptions 5.5 (-153) and 6.5 (+120/+125)."
+    },
+    {
+      "team": "NYJ",
+      "player": "Isaiah Williams",
+      "pos": "WR",
+      "targets": 3.3,
+      "catchRate": 0.72,
+      "receptions": 2.4,
+      "recYds": 27,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "weather"
+      ],
+      "why": "Targets 1/6/2/3 (season 3.0, last three 3.7, blend 3.3; WR2 with Mitchell out, but only 5 targets in the two games without him); 10 of 12 regressed to 72%; 13.5 a catch (a 58-yard score last week) regressed to 10.8; Cleveland WR factor 1.06, rain 0.97. Book 22.5 DK / 24.5 FD, receptions 2.5 (+104/+118)."
+    },
+    {
+      "team": "NYJ",
+      "player": "Kenyon Sadiq",
+      "pos": "TE",
+      "targets": 4.4,
+      "catchRate": 0.7,
+      "receptions": 3.1,
+      "recYds": 32,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "weather"
+      ],
+      "why": "Targets 3/3/8/4 (season 4.5, last three 5.0, blend 4.75, trimmed 0.35 because the last three came without Mason Taylor); 12 of 18 (67%) regressed to 70%; 11.9 a catch regressed to 11.0; Cleveland has allowed 36 TE targets but only 6.7 yards per target (factor 0.97), rain 0.97. Book 32.5 DK / FD between 29.5 and 39.5, receptions 3.5 (+100/+110). No injury designation this week (back last week)."
+    },
+    {
+      "team": "NYJ",
+      "player": "Mason Taylor",
+      "pos": "TE",
+      "targets": 2.8,
+      "catchRate": 0.72,
+      "receptions": 2,
+      "recYds": 16,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "one-game-sample",
+        "weather"
+      ],
+      "why": "Thumb; full practice Wednesday and Thursday, no designation, so active (verify at inactives). His 2026 role exists only in Week 1 (3 targets, 2 catches for -2); projected on that share of 30 attempts with the catch rate at the 72% TE prior and 8.5 yards a catch (prior, not his own), Cleveland TE factor 0.97. Book 14.5 at both books, receptions 1.5 (-154/-158). Snap share returning from three games without a target is unverified."
+    },
+    {
+      "team": "NYJ",
+      "player": "Braelon Allen",
+      "pos": "RB",
+      "targets": 3,
+      "catchRate": 0.79,
+      "receptions": 2.4,
+      "recYds": 12,
+      "carries": 19,
+      "rushYds": 80,
+      "passYds": null,
+      "flags": [
+        "one-game-sample",
+        "weather"
+      ],
+      "why": "Hall (quad) out: Allen had all 14 back carries at Chicago (the lead role exists in that one game); Hall averaged 17 carries, so 19 of 28 team rushes with Isaiah Davis (2 snaps last week, DK 12.5 rush line) and Geno about 3 taking the rest; 3.6 a carry on 33 regressed to 3.85; Cleveland allows 4.6 a carry and is without DTs Graham, Hall Jr. and Davis (factor 1.10). Targets: own 6% share plus about 60% of Hall's vacated 3.3 a game = 3.0; 6 of 7 regressed to 79%; 3.2 a catch regressed to 5.5, Cleveland allows 5.1 a catch to backs (0.90). Book 71.5 rush DK (FD 69.5 -128), 13.5-14.5 receiving, receptions 2.5."
+    }
+  ],
+  "sources": [
+    "ESPN game summary API, event 401872983 (venue, weather, injuries, FPI 54.7% NYJ, DraftKings line)",
+    "ESPN box scores and play-by-play: CLE 401872922, 401872935, 401872949, 401872964; NYJ 401872924, 401872936, 401872954, 401872972 (targets, carries, red-zone and goal-line usage, defense allowed by position)",
+    "ESPN depth charts, teams 5 and 20 (site.web.api.espn.com), fetched Oct 10",
+    "newyorkjets.com Week 5 Friday injury report (both teams, Oct 9)",
+    "data/injuries.json (ESPN / Daniel Oyefusi, Kelsey Russo, Brian Costello reports, Oct 9-10)",
+    "data/odds/raw/2026-w05-cle-nyj.json (DraftKings and FanDuel alternate lines, Oct 10 16:27 UTC)",
+    "data/schedule.json espnLine; SI, Covers and FanDuel Research Week 5 previews (line history, trends)",
+    "Unverified: Isaiah Davis's carry share as RB2 (2 offensive snaps in Week 4; not projected); Mason Taylor's snap share on return (no target since Week 1); Opponent-factor league baselines (WR 8.0, TE 7.0 yards per target, 4.3 per carry) are desk priors, not pulled; Raheim Sanders (2.7 targets a game) and Jerry Jeudy (1.7) are under the three-target bar and are not projected"
+  ]
+}

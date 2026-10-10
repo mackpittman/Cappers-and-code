@@ -1,0 +1,114 @@
+{
+  "game": "ind-pit",
+  "kick": "2026-10-11T17:00:00Z",
+  "weather": "Acrisure Stadium, open air, grass. ESPN/AccuWeather (Sat Oct 10): 63F, 49% chance of precipitation, gusts to 15 mph. Every pass-game yardage number below carries a 3% weather trim (0.97); rushing is untrimmed. A wet ball also pushes both teams' rush rates up a little, already in the attempt split. Wind is not a factor at 15 mph.",
+  "teams": {
+    "IND": { "passAtt": 32, "rushAtt": 27 },
+    "PIT": { "passAtt": 36, "rushAtt": 23 }
+  },
+  "players": [
+    {
+      "team": "IND", "player": "Daniel Jones", "pos": "QB",
+      "targets": null, "catchRate": null, "receptions": null, "recYds": null,
+      "carries": 2.8, "rushYds": 9, "passYds": 201,
+      "flags": ["weather"],
+      "why": "84 of 132 for 754 (63.6%, 9.0 a completion, 5.7 an attempt). 32 attempts (31, 31, 36, 34; a 3-point road dog, a 55% dropback rate against a Pittsburgh defence that has faced 54%, and the rain chance). Completion rate regressed to 63.8%, yards per completion to 9.4 (30-attempt and 20-completion priors toward the league's 64.3% and 11.1). Then x1.07 for Pittsburgh's 7.9 yards an attempt allowed (a 1.11 raw factor at 60% weight; Dean out, Elliott on IR and Ramsey questionable are not added on top) and x0.97 for weather. Top-down 198, bottom-up from the receiver rows 207, prints 201: 3-6% under the 207.5 (DK) / ~212 (FD) main, so no lean. Rushing: 11 carries for 21 yards; 2.8 carries at a regressed 3.1 a carry gives 9 against DK's 8.5."
+    },
+    {
+      "team": "IND", "player": "Josh Downs", "pos": "WR",
+      "targets": 7.8, "catchRate": 0.64, "receptions": 5.0, "recYds": 61,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["weather"],
+      "why": "4, 9, 11 and 4 targets, a 7.5 blend. Raised to 7.8 because in Week 3, the one game with Allen active and Pierce out, the vacated targets went to Downs (11), Warren (10) and Allen (9). Dulin (out) and Pierce (IR) leave 2.9 blended targets. 17 of 28 (61%) regressed to 64%; 11.9 yards a catch regressed to 12.5. x1.01 for Pittsburgh's 13.5 a catch allowed to wide receivers against a 13.2 league rate. 5.0 catches against a 4.5 main (DK -146, FD -148); 61 yards against 56.5 (DK) / 59.5 (FD). Small overs, no strong lean."
+    },
+    {
+      "team": "IND", "player": "Tyler Warren", "pos": "TE",
+      "targets": 7.1, "catchRate": 0.79, "receptions": 5.6, "recYds": 43,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["weather"],
+      "why": "5, 7, 10 and 5 targets: a 7.0 blend, 7.1 with a share of Dulin's targets. 23 of 27 (85%) regressed to 79%. His 5.7 yards a catch is the lowest of any regular in this game, regressed to 7.3, then x1.07 for Pittsburgh's 11.3 a catch allowed to tight ends (Gesicki and Fannin both scored). 5.6 catches against a 4.5 main (DK -153, FD -160) is the strongest receptions number in the game. 43 yards sits 6-10% under 45.5 (DK) / ~47.5 (FD) because the catches stay short."
+    },
+    {
+      "team": "IND", "player": "Keenan Allen", "pos": "WR",
+      "targets": 6.1, "catchRate": 0.67, "receptions": 4.1, "recYds": 43,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["questionable", "weather"],
+      "why": "Questionable (groin) but a full participant Friday, so projected active. 6, 5 and 9 targets in his three games (he missed Week 4 in London): a 6.7 blend, trimmed to 6.1 for the groin and a possible snap limit. Dulin's 6 Week 4 targets were Allen's role and go back to him. 13 of 20 (65%) regressed to 67%; 7.7 yards a catch regressed to 10.7 (15-catch prior to the wide-receiver baseline); x1.01. That yards-a-catch regression is why 43 is 44% over DK's 29.5 and 35% over FD's ~31.5: the books price his 33 a game and the groin. The Colts' receivers have produced 133 yards a game, and the Downs, Allen and Treadwell rows here sum to 128. If he sits, Treadwell goes to about 5 targets and Burks and Gould take the rest, as in Week 4."
+    },
+    {
+      "team": "IND", "player": "Jonathan Taylor", "pos": "RB",
+      "targets": 3.6, "catchRate": 0.74, "receptions": 2.7, "recYds": 19,
+      "carries": 21.5, "rushYds": 91, "passYds": null,
+      "flags": ["weather"],
+      "why": "19, 24, 23 and 20 carries: a 21.9 blend, and 21.5 of the Colts' 27 projected rushes (McGowan 2.5, Jones 2.8). 4.10 a carry regressed to 4.12 (50-carry prior to the league's 4.14 for running backs), x1.03 for Pittsburgh's 4.37 a carry allowed to backs with Harmon on IR. 91 against 86.5 (DK) / 89.5 (FD) is a small over, not a big call. Receiving: 4, 4, 3 and 4 targets; 10 of 15 regressed to 74%; 6.9 a catch; x1.05. 2.7 catches against 2.5 (DK +100, FD -112); 19 yards against 14.5."
+    },
+    {
+      "team": "IND", "player": "Laquon Treadwell", "pos": "WR",
+      "targets": 2.5, "catchRate": 0.72, "receptions": 1.8, "recYds": 24,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["weather"],
+      "why": "Below the three-target line but priced by DraftKings. 1, 3 and 1 targets with Allen active, 6 in Week 4 without him. ESPN's 3WR depth chart lists him WR3 behind Downs and Allen (not WR1 as the research draft has it), so he plays the outside snaps Pierce had. Week 3 shows those targets going to the top three, so he gets 2.5. 9 of 11 regressed to 72%; 13.7 a catch to 13.4. 24 yards is 44% over DK's 16.5. That line is the median of a role that can finish with nothing, while his mean has been 30.8 a game. 1.8 catches against a 1.5 at -101 is no edge."
+    },
+    {
+      "team": "PIT", "player": "Aaron Rodgers", "pos": "QB",
+      "targets": null, "catchRate": null, "receptions": null, "recYds": null,
+      "carries": 1.6, "rushYds": 3, "passYds": 253,
+      "flags": ["weather"],
+      "why": "88 of 153 (57.5%) for 999 yards, 11.4 a completion, 13 sacks. 36 attempts (40, 39, 34, 40; McCarthy's offense drops back on 66% of plays, trimmed here for a 3-point home favourite and the rain chance). Completion rate regressed to 58.6%; yards a completion to 11.3. Then x1.08 for Indianapolis' 8.1 yards an attempt allowed (Jackson 324, Mahomes 382; a 1.14 raw factor at 60% weight) and x0.97 for weather. Top-down 251, bottom-up 259, prints 253: 12% over 225.5 (DK) / 224.5 (FD). The risk is sacks (5 at Cleveland), though Key is on IR and Buckner did not practise Friday. Rushing: 7 carries for 12 yards gives 1.6 carries for 3."
+    },
+    {
+      "team": "PIT", "player": "DK Metcalf", "pos": "WR",
+      "targets": 7.7, "catchRate": 0.57, "receptions": 4.4, "recYds": 59,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["weather"],
+      "why": "10, 9, 5 and 9 targets: an 8.0 blend, 7.7 once the team total is 33.5 targets on 36 attempts. Pittman's targets went to Bernard, not Metcalf, in Week 2. 16 of 33 (48.5%) regressed to 57%, which is most of the gap to his 53 a game. 13.3 a catch holds at 13.3. Indianapolis allows 16.0 a catch to wide receivers (a 1.11 factor), but the desk uses 1.05 for him because Sauce Gardner draws him, per the research draft (verify). 4.4 catches against a main near 4 (DK 3.5 at -191, 4.5 at +117; FD 4.5 at +114); 59 yards against 52.5 (DK) / ~54 (FD)."
+    },
+    {
+      "team": "PIT", "player": "Roman Wilson", "pos": "WR",
+      "targets": 5.9, "catchRate": 0.63, "receptions": 3.7, "recYds": 53,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["weather"],
+      "why": "Exactly 6 targets in all four games; 5.9 here. 14 of 24 (58%) regressed to 63%; 13.4 a catch to 13.3 (60 and 74 yards the last two weeks on catches of 38 and 49). x1.11 for Indianapolis' 16.0 a catch allowed to wide receivers (Flowers 150, Thornton 86, Rice 83, Dyami Brown 65), and Gardner is on Metcalf. 3.7 catches against 2.5 (DK -203) / 3.5 (FD +106). 53 yards is 29% over DK's 41.5 and 21% over FD's ~44, the largest receiving-yards gap among the unflagged players."
+    },
+    {
+      "team": "PIT", "player": "Germie Bernard", "pos": "WR",
+      "targets": 4.5, "catchRate": 0.67, "receptions": 3.0, "recYds": 38,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["one-game-sample", "weather"],
+      "why": "Michael Pittman Jr. (foot) is out. In the one prior game without him (Week 2 at New England), Bernard started as the No. 3 receiver and took 8 targets (4 for 35). With Pittman active he had 1 and 2 targets and played 29 of 72 snaps in Week 4. His own blend is 3.2; with Pittman's 4.3 a game vacated the desk prints 4.5, below the Week 2 number. 7 of 11 regressed to 67%; 8.6 a catch regressed to 11.8 on a 7-catch sample; x1.11. 38 yards is 85-94% over 20.5 (DK) / 19.5 (FD): the books price his Weeks 3-4 role and the desk prices his Week 2 role. That role rests on one game, so he is flagged and kept off the ticket."
+    },
+    {
+      "team": "PIT", "player": "Jaylen Warren", "pos": "RB",
+      "targets": 4.6, "catchRate": 0.72, "receptions": 3.3, "recYds": 33,
+      "carries": 14.5, "rushYds": 73, "passYds": null,
+      "flags": ["weather"],
+      "why": "Rico Dowdle (toe) is questionable after three limited days. With Dowdle active in Weeks 1-2, Warren had 10 and 11 carries; without him, 17 and 17. The blend is 14.4. Assuming roughly a 65% chance that Dowdle plays a 6-8 carry early-down role (verify at inactives), 14.5 carries. 5.6 a carry regressed to 4.9 (50-carry prior), x1.03 for Indianapolis' 4.34 a carry allowed to backs, with Key on IR and Carlies out. 73 yards is 14-19% over 61.5 (DK) / ~64.5 (FD); if Dowdle is inactive, 17 carries and 86. Receiving: 6, 4, 4 and 6 targets and 27-plus yards every week. 13 of 20 regressed to 72%; 11.0 a catch to 8.8; x1.15 (capped; Indianapolis allows 11.1 a catch to backs). 3.3 catches and 33 yards, 67-87% over the 17.5 (DK) / 19.5 (FD) mains. Those mains price a Dowdle split that did not cut his receiving in Weeks 1-2 (27 and 34 yards)."
+    },
+    {
+      "team": "PIT", "player": "Pat Freiermuth", "pos": "TE",
+      "targets": 4.7, "catchRate": 0.73, "receptions": 3.4, "recYds": 31,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["weather"],
+      "why": "5, 5, 4 and 5 targets, including both of Pittsburgh's targets inside the 10; 4.7 here with a little of Pittman's share (he had 5 in the Week 2 absence). 14 of 19 (74%) regressed to 73%; 8.9 a catch to 9.4. x0.98 for Indianapolis' 9.5 a catch allowed to tight ends: the 52 tight-end yards a game come from volume (8 targets a game), not efficiency. 3.4 catches against a main near 3 (DK 2.5 at -194, 3.5 at +128); 31 yards against 26.5 (DK) / ~28 (FD)."
+    },
+    {
+      "team": "PIT", "player": "Darnell Washington", "pos": "TE",
+      "targets": 3.4, "catchRate": 0.71, "receptions": 2.4, "recYds": 26,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["weather"],
+      "why": "2, 2, 4 and 5 targets, rising, and ESPN's listed TE1: a 3.5 blend, 3.4 here. 9 of 13 regressed to 71%; 13.2 a catch (a 47-yarder at Cincinnati) regressed to 11.2; x0.98. 2.4 catches against 1.5 (DK -228, FD -260) / 2.5 (DK +132, FD +118); 26 yards against 21.5 (DK) / ~24 (FD)."
+    }
+  ],
+  "sources": [
+    "data/odds/raw/2026-w05-ind-pit.json (DraftKings and FanDuel alternate ladders; used only to sanity-check the means, main number read where the over is near -110)",
+    "research-draft/w05/ind-pit.json (Friday designations, roles, Gardner-on-Metcalf matchup)",
+    "ESPN box scores via site.api.espn.com summary: IND 401872659, 401872945, 401872951, 401872965; PIT 401872658, 401872946, 401872950, 401872964; plus all 64 Weeks 1-4 games with ESPN team rosters for league baselines (WR 62.7% / 13.2 a catch, TE 71.5% / 9.9, RB 78.2% / 6.9, RB 4.14 a carry, 64.3% completions, 11.08 a completion, 7.12 an attempt, 56.8% dropback rate, 61.8 plays a team-game)",
+    "ESPN depth charts and rosters, teams 11 and 23, fetched Oct 10 19:04 UTC: Pittman Jr. Out, Dulin Out, Slayton Out (ESPN updated him from questionable Oct 10 15:55 UTC; data/injuries.json still shows questionable), Allen and Dowdle Questionable, Pierce and Mallory on IR",
+    "ESPN game summary 401872985 (venue, AccuWeather forecast, DraftKings PIT -3 / 43.5, injury list) and data/injuries.json (fetched Oct 10 13:53 UTC)",
+    "https://www.yardbarker.com/nfl/articles/officially_germie_bernard_time_for_steelers/s1_16724_44404181 (Steelers on SI, Oct 8: Bernard 104 offensive snaps, 38% of the season; Pittsburgh in 11 personnel 63.8%)",
+    "https://www.thefantasyfootballers.com/news/638037/germie-bernard-set-for-larger-role-sunday/ (Week 2: Bernard set to start as the No. 3 receiver with Pittman out); thefantasyfootballers.com news 640382 and nbcsports.com player news 2026-09-20, read from search snippets only (29 of 72 snaps in Week 4; 8 targets in Week 2)",
+    "Method: targets = 50% last three games + 50% season (per game played), then vacated targets (Pittman, Dulin, Pierce) moved to whoever took them in the prior absence (Week 2 for Pittsburgh, Week 3 for Indianapolis), then scaled to attempts x 0.93 targets an attempt. Catch rate regressed to 68/72/78 with a 25-target prior. Yards a catch regressed to league by position with a 15-catch prior. Carries regressed with a 50-carry prior to 4.14. QB completion rate and yards a completion regressed with 30-attempt and 20-completion priors. Opponent factors from four box scores, shrunk 50% toward 1.0 (60% weight for pass defence), capped 0.85-1.15: Pittsburgh D WR 1.01, TE 1.07, RB rec 1.05, rush 1.03, pass 1.07; Indianapolis D WR 1.11 (Metcalf 1.05 for Gardner), TE 0.98, RB rec 1.15 (capped from 1.30), rush 1.02-1.03, pass 1.08. Weather 0.97 on pass-game yards.",
+    "revenge-narrative: Michael Pittman Jr. against the team that traded him is the only candidate, and he is out, so no projected player carries the flag",
+    "Unverified: pass rate over expected allowed was not available; the raw opponent dropback rates (Pittsburgh D 54.4%, Indianapolis D 57.1%, league 56.8%) stand in for it. Also unverified: Bernard's Week 2 snap or route share (the draft's 86% routes could not be confirmed; only the season 104 snaps and the Week 4 29 of 72 were found); Gardner shadowing Metcalf; Dowdle's active status and carry share; any snap limit on Allen; the 0.97 weather trim, which is a desk judgement, not a measured effect"
+  ]
+}

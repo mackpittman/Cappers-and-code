@@ -1,0 +1,252 @@
+{
+  "game": "lv-ne",
+  "kick": "2026-10-11T17:00:00Z",
+  "weather": "Gillette Stadium, outdoor, artificial turf; ESPN/AccuWeather 63F, 2% precipitation, gusts to 12 mph. Non-factor.",
+  "teams": {
+    "LV": {
+      "passAtt": 35,
+      "rushAtt": 25
+    },
+    "NE": {
+      "passAtt": 31,
+      "rushAtt": 28
+    }
+  },
+  "players": [
+    {
+      "team": "LV",
+      "player": "Kirk Cousins",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 2.5,
+      "rushYds": 2,
+      "passYds": 250,
+      "flags": [],
+      "why": "35 attempts (36 a game, 38 over the last three including 52 at KC; a 3.5-point dog in a close script) x 0.655 completions (64.6% season, lightly regressed) x 10.9 a completion (11.0 season, regressed) x 1.00 for New England: it allowed 10.0 a catch (factor 0.92) with its corners, and Gonzalez, Davis, Prunty and Canada are all out Sunday. 250 against DK 231.5 is the lean. Rushing: 12 carries for -2 this year, kneels and sneaks only."
+    },
+    {
+      "team": "LV",
+      "player": "Brock Bowers",
+      "pos": "TE",
+      "targets": 9.8,
+      "catchRate": 0.7,
+      "receptions": 6.9,
+      "recYds": 72,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "14 and 11 targets in the two games since the knee (missed Weeks 1-2), so the blend is 12.5; regressed to 9.8 for the two-game sample and a 35-attempt script, with a little of Nailor's share. 64% catch rate regressed toward 72%; 12.6 a catch regressed to 11.4, times 0.92: New England's 8.3 a catch to tight ends is a 0.79 factor, capped at 0.85 and eased up because LB Elliss and S Woodson are questionable. Full Thursday and Friday, no designation. 6.9 catches and 72 yards sit near DK 6.5 (over -130) and 76.5: no lean."
+    },
+    {
+      "team": "LV",
+      "player": "Michael Mayer",
+      "pos": "TE",
+      "targets": 5.4,
+      "catchRate": 0.77,
+      "receptions": 4.2,
+      "recYds": 36,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "7, 4, 3, 10 targets (blend 5.8); 15.5% of attempts with Bowers on the field, and Nailor out means more two-tight-end snaps. 83% catch rate on 24 targets regressed to 77%; 8.5 a catch regressed to 9.2, times 0.92. 4.2 catches against DK/FD 3.5 (over -111/-114) and 36 yards against 29.5 is a mild over; he has cleared 29.5 in three of four."
+    },
+    {
+      "team": "LV",
+      "player": "Tre Tucker",
+      "pos": "WR",
+      "targets": 6,
+      "catchRate": 0.67,
+      "receptions": 4,
+      "recYds": 55,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "4, 7, 4, 8 targets (blend 6.0, season 5.75, last three 6.33); Nailor's 2.75 a game and Bech's role split between Tucker, White and Benson, held at 6.0 for a 35-attempt game. 65% catch rate regressed to 67%; 15.5 a catch regressed to 13.8, times 1.00 (New England's 11.3 a catch to receivers is a 0.90 factor, set to neutral because its top four corners are out). 55 is 33% above DK's 41.5: the reason is the corner injuries; his 119 at the Chargers shows the ceiling. 4.0 catches against 3.5 (over -105)."
+    },
+    {
+      "team": "LV",
+      "player": "Cody White",
+      "pos": "WR",
+      "targets": 3.2,
+      "catchRate": 0.635,
+      "receptions": 2,
+      "recYds": 25,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "one-game-sample"
+      ],
+      "why": "1, 2, 3, 4 targets (blend 2.75); Nailor's spot in three-receiver sets adds about half a target, based on Week 4, when Nailor drew no target after a second-quarter hit and White had 4 of 50. 50% catch rate on 10 targets regressed to 63.5%; 12.8 a catch regressed to 12.6, times 1.00. 2.0 catches matches the book (O1.5 -162 DK); 25 yards against 19.5 is 28% higher because of the corner injuries. The full-time role without Nailor has no clean sample: part of one game at most."
+    },
+    {
+      "team": "LV",
+      "player": "Ashton Jeanty",
+      "pos": "RB",
+      "targets": 4,
+      "catchRate": 0.785,
+      "receptions": 3.1,
+      "recYds": 24,
+      "carries": 14,
+      "rushYds": 54,
+      "passYds": null,
+      "flags": [
+        "questionable"
+      ],
+      "why": "Projected only if he plays: questionable (ankle/foot), full Wednesday, limited Thursday, DNP Friday. 23, 21, 19, 15 carries (19.5 a game) cut to 14 for a limited return with Washington mixing in. 3.4 a carry regressed to 3.7, times 1.04 for New England's 4.5 a carry to backs. 6.0 targets a game cut to 4.0; 79% catch rate, 8.7 a catch regressed to 8.0, times 0.97. Neither book posts a yardage line for him, so these are means for the desk only."
+    },
+    {
+      "team": "LV",
+      "player": "Mike Washington Jr.",
+      "pos": "RB",
+      "targets": 2.5,
+      "catchRate": 0.7,
+      "receptions": 1.8,
+      "recYds": 12,
+      "carries": 11,
+      "rushYds": 50,
+      "passYds": null,
+      "flags": [],
+      "why": "A blended mean that assumes a 50% chance Jeanty sits: about 16 carries and 3.5 targets as the lead back, 6 carries and 1.5 targets behind him (7, 3, 5, 9 carries so far). 5.0 a carry on 24 regressed to 4.4, times 1.04. One catch on five targets regressed to 70%, about 7 a catch. No posted yardage props for him at either book; the scenario means are 16 carries / 73 yards as the starter and 6 / 27 as the backup."
+    },
+    {
+      "team": "NE",
+      "player": "Drake Maye",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 6,
+      "rushYds": 32,
+      "passYds": 221,
+      "flags": [],
+      "why": "31 attempts (29.25 a game as the starter, a 3.5-point favourite) x 0.63 completions (62.4%, regressed toward 64%) x 11.3 a completion (11.7, regressed) x 1.00: Las Vegas allows 12.1 a catch but 7.1 an attempt, so per attempt it is close to neutral. 221 against DK 227.5 / FD 224.5: no lean. Rushing: 7, 4, 4, 8 carries at 5.9 a carry, regressed to 5.4. 6 x 5.4 = 32 against DK 32.5: no lean."
+    },
+    {
+      "team": "NE",
+      "player": "Romeo Doubs",
+      "pos": "WR",
+      "targets": 6.9,
+      "catchRate": 0.65,
+      "receptions": 4.5,
+      "recYds": 63,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "3, 4, 4, 9 targets (blend 5.3) plus 1.6 of Mack Hollins's 5 a game (Hollins out, calf; A.J. Brown on IR), as in the Buffalo second half. 60% catch rate regressed to 65%; 16.9 a catch regressed to 14.0, times 1.00: Las Vegas allows 16.9 a catch to receivers but only 36 of 74 targets complete, so per target it is neutral. 63 against 49.5 (DK -110, FD -114) is 27% over; the reason is the vacated targets. 4.5 catches against 3.5 (over -148 DK, -136 FD)."
+    },
+    {
+      "team": "NE",
+      "player": "Hunter Henry",
+      "pos": "TE",
+      "targets": 4.3,
+      "catchRate": 0.75,
+      "receptions": 3.2,
+      "recYds": 29,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "3, 5, 2, 5 targets (blend 3.9) plus a little of Hollins's share. 80% catch rate on 15 targets regressed to 75%; 11.1 a catch regressed to 10.8, times 0.85 (capped): Las Vegas allows 7.7 a catch to tight ends (24 for 184 on 30 targets). 29 against DK 36.5 (over -115) and FD 39.5 (over -102) is the under lean; 3.2 catches against 3.5 (over -121 DK, -130 FD)."
+    },
+    {
+      "team": "NE",
+      "player": "DeMario Douglas",
+      "pos": "WR",
+      "targets": 4.4,
+      "catchRate": 0.63,
+      "receptions": 2.8,
+      "recYds": 29,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "7, 2, 5, 3 targets (blend 3.8) plus 0.6 of Hollins's share. 53% catch rate on 17 targets regressed to 63%; 9.1 a catch regressed to 10.3, times 1.00. 29 against DK 25.5 / FD 24.5 and 2.8 catches against 2.5 (over -124 DK, -125 FD): near the market."
+    },
+    {
+      "team": "NE",
+      "player": "Kyle Williams",
+      "pos": "WR",
+      "targets": 3.2,
+      "catchRate": 0.61,
+      "receptions": 1.9,
+      "recYds": 26,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "one-game-sample"
+      ],
+      "why": "0, 2, 3, 2 targets (blend 2.0) plus 1.2 of Hollins's share as the next outside receiver on ESPN's chart. Two catches on seven targets regressed to 61%; 22.0 a catch on two catches regressed hard to 13.5. No posted line. The bigger role exists only from the second half at Buffalo."
+    },
+    {
+      "team": "NE",
+      "player": "Efton Chism III",
+      "pos": "WR",
+      "targets": 3,
+      "catchRate": 0.66,
+      "receptions": 2,
+      "recYds": 23,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "one-game-sample"
+      ],
+      "why": "0, 1, 2, 4 targets (blend 2.0) plus 1.0 of Hollins's share; the 4-target, 42-yard, one-touchdown game at Buffalo came after Hollins went down. Four catches on seven targets regressed to 66%; 10.3 a catch regressed to 11.5, times 1.00. 23 against DK 26.5 / FD 24.5: no lean."
+    },
+    {
+      "team": "NE",
+      "player": "Rhamondre Stevenson",
+      "pos": "RB",
+      "targets": 3.6,
+      "catchRate": 0.77,
+      "receptions": 2.8,
+      "recYds": 20,
+      "carries": 9,
+      "rushYds": 37,
+      "passYds": null,
+      "flags": [
+        "questionable"
+      ],
+      "why": "Projected only if he plays: questionable (knee), limited all week. 18, 6, 7, 13 carries (blend 9.8) set at 9 in a split with Henderson; 3.7 a carry regressed to 4.0, times 1.04 (Las Vegas allows 5.0 a carry to backs, but 177 yards of it came from Kenneth Walker III in one game and it is 4.0 without him, so the factor is trimmed from 1.15). 37 against DK 36.5 / FD 39.5: no lean. 6, 2, 3, 5 targets (blend 3.7) as the passing-down back; 75% catch rate regressed to 77%, 7.5 a catch. 20 against DK 16.5 (over -112)."
+    },
+    {
+      "team": "NE",
+      "player": "TreVeyon Henderson",
+      "pos": "RB",
+      "targets": 1.4,
+      "catchRate": 0.78,
+      "receptions": 1.1,
+      "recYds": 7,
+      "carries": 12.8,
+      "rushYds": 53,
+      "passYds": null,
+      "flags": [],
+      "why": "A blended mean with a 75% chance Stevenson plays: about 11.7 carries in the split (53% of back carries the last three weeks) and 16 as the RB1 if Stevenson sits, per the team site. 16, 8, 14 carries; 3.7 a carry regressed to 4.0, times 1.04 for Las Vegas. 53 against DK 45.5 (-110) and FD 49.5 (+104): a lean over that is only as good as Stevenson's status; 49 if Stevenson plays a full share. Receiving: 3 targets in three games."
+    }
+  ],
+  "sources": [
+    "data/odds/raw/2026-w05-lv-ne.json (DraftKings and FanDuel, pulled 2026-10-10 16:27Z)",
+    "data/schedule.json (espnLine) and data/injuries.json (fetched 2026-10-10 13:53Z)",
+    "ESPN game summaries and play-by-play: 401872928, 401872941, 401872961, 401872976 (LV); 401872656, 401872946, 401872957, 401872971 (NE)",
+    "ESPN depth charts, team statistics and matchup summary for 401872986 (weather, predictor, DraftKings open/close)",
+    "patriots.com Week 5 injury report: Patriots vs. Raiders (final Friday designations and practice participation, both teams)",
+    "FanDuel Research: Patriots vs. Raiders predictions, odds, picks (numberFire 73.5% NE)",
+    "NFL.com / AP (Kubiak on Mendoza; Raiders 3-0 start), Boston Globe (A.J. Brown trade), Fantasy Footballers / SI (Doubs contract)"
+  ],
+  "unverified": [
+    "Jeanty's Sunday status (DNP Friday; Kubiak 'do his best to go'); the 50% sit estimate is the desk's",
+    "Stevenson's Sunday status (limited all week)",
+    "Which corners New England elevates from the practice squad",
+    "League-average baselines used in regression (WR 12.5 / TE 10.5 a catch) are desk constants, not pulled this week"
+  ]
+}

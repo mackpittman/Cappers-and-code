@@ -1,0 +1,230 @@
+{
+  "game": "phi-jax",
+  "kick": "2026-10-11T13:30:00Z",
+  "weather": "Tottenham Hotspur Stadium, London, open-air; 2:30 PM BST kickoff, about 58-59F, 0% precipitation chance, wind 5 mph gusting to 12 (Open-Meteo hourly). ESPN lists natural grass; the NFL field there is normally the synthetic surface beneath the retractable soccer pitch (verify). Non-factor.",
+  "teams": {
+    "PHI": {
+      "passAtt": 30,
+      "rushAtt": 23
+    },
+    "JAX": {
+      "passAtt": 27,
+      "rushAtt": 30
+    }
+  },
+  "players": [
+    {
+      "team": "JAX",
+      "player": "Trevor Lawrence",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 3,
+      "rushYds": 11,
+      "passYds": 200,
+      "flags": [],
+      "why": "27 attempts (23, 29, 29, 23 so far, a lead keeps it there) x 0.672 completions (69.2% on 104 regressed toward 65%) x 11.35 yards a completion (11.7 regressed toward 11.0) x 0.97 for Philadelphia's 10.5 yards a completion and 6.55 per attempt allowed = 200. DraftKings' 225.5 / FanDuel 224.5 sits about 11% above; he has cleared it in 2 of 4 games, both on 23 efficient attempts. Rushing: 11 carries for 34 this year, 3 for 11."
+    },
+    {
+      "team": "JAX",
+      "player": "Bhayshul Tuten",
+      "pos": "RB",
+      "targets": 2,
+      "catchRate": 0.82,
+      "receptions": 1.6,
+      "recYds": 11,
+      "carries": 17,
+      "rushYds": 73,
+      "passYds": null,
+      "flags": [],
+      "why": "15, 13, 15, 17 carries (blend 15) plus two for a 7.5-point favourite's script; 4.62 a carry on 60 regressed to 4.46, times 0.96 for Philadelphia's 4.13 a carry to backs on 30 rush attempts a game against = 73 against 66.5 (DK) / ~67.5 (FD). Receiving: 7 targets in 4 games, 7 catches for 54; Philadelphia's backs-allowed rate (5.6 a catch) caps the factor at 0.85."
+    },
+    {
+      "team": "JAX",
+      "player": "Chris Rodriguez Jr.",
+      "pos": "RB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 7.5,
+      "rushYds": 31,
+      "passYds": null,
+      "flags": [],
+      "why": "6, 6, 8, 6 carries (blend 6.6) plus one as the closer in a projected lead; 4.15 a carry on 26 regressed to 4.26, x 0.96 = 31 against 26.5. No target in four games, so receiving is left blank rather than guessed. Touchdowns the last two weeks, 6 red-zone carries."
+    },
+    {
+      "team": "JAX",
+      "player": "Parker Washington",
+      "pos": "WR",
+      "targets": 6.8,
+      "catchRate": 0.65,
+      "receptions": 4.4,
+      "recYds": 59,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "6, 12, 5, 3 targets: blend 6.6, scaled 1.04 for 27 attempts. 16 of 26 (61.5%) regressed to 65%; 14.3 yards a catch regressed to 13.4; Philadelphia allows 12.5 a catch to receivers (factor 1.00) = 59 against 62.5 (DK) / ~60 (FD). Target share has fallen from 41% in Week 2 to 13% at Cincinnati, which is the risk to the over."
+    },
+    {
+      "team": "JAX",
+      "player": "Brenton Strange",
+      "pos": "TE",
+      "targets": 4.9,
+      "catchRate": 0.74,
+      "receptions": 3.6,
+      "recYds": 38,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "3, 2, 5, 8 targets: blend 4.75, scaled to 4.9. 14 of 18 (78%) regressed to 74%; 11.9 a catch regressed to 11.2, x 0.93 for Philadelphia's 9.75 a catch to tight ends (16 for 156, no touchdowns) = 38 against 31.5 (DK). 3.6 catches straddles the 2.5/3.5 ladder (DK 3.5 at +136, FD +110)."
+    },
+    {
+      "team": "JAX",
+      "player": "Jakobi Meyers",
+      "pos": "WR",
+      "targets": 4.2,
+      "catchRate": 0.74,
+      "receptions": 3.1,
+      "recYds": 39,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "2, 1, 8, 4 targets: blend 4.0, scaled to 4.2. 13 of 15 regressed to 74%; 12.7 a catch regressed to 12.6, factor 1.00 = 39 against 41.5 and 3.1 catches against a 3.5 line (-117 over at DK). Full practices all week through the thumb."
+    },
+    {
+      "team": "JAX",
+      "player": "Brian Thomas Jr.",
+      "pos": "WR",
+      "targets": 4,
+      "catchRate": 0.65,
+      "receptions": 2.6,
+      "recYds": 32,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "3, 9, 1, 2 targets: blend 3.9, scaled to 4.0. 9 of 15 regressed to 65%; 11.7 a catch regressed to 12.2, factor 1.00 = 32 against 24.5, about 30% above the book. The reason: the book prices the 12-personnel snap cut (23 snaps in Week 3) and he was back to 38 in Week 4; the blend still credits the Week 2 nine-target game, so treat the over as volatile."
+    },
+    {
+      "team": "PHI",
+      "player": "Jalen Hurts",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 6,
+      "rushYds": 26,
+      "passYds": 191,
+      "flags": [],
+      "why": "30 attempts (25, 37, 25, 27; trailing by 7.5 adds a few, a rebuilt line and 12 sacks taken trim it) x 0.612 completions (59.6% on 114 regressed toward 63%) x 10.2 yards a completion (his completions to everyone but DeVonta Smith averaged 9.8) x 1.02 for Jacksonville's 12.3 a completion allowed, shaded hard for 6 interceptions and the line = 191 against 182.5 (DK) / ~190 (FD). Rushing: 21 for 105, 6 carries x 5.0 x 0.85 (quarterbacks have 70 yards on 19 carries against Jacksonville) = 26 against 28.5. Calf added to Friday's report as a full participant, no designation."
+    },
+    {
+      "team": "PHI",
+      "player": "Will Shipley",
+      "pos": "RB",
+      "targets": 3.1,
+      "catchRate": 0.76,
+      "receptions": 2.4,
+      "recYds": 16,
+      "carries": 11,
+      "rushYds": 39,
+      "passYds": null,
+      "flags": [
+        "new-role"
+      ],
+      "why": "First game as the lead back (Barkley out, Bigsby on IR). Eagles backs have averaged 19.75 carries; trailing trims that to 17, split 11 Shipley / 5 Pierce / 1 Steele. 3.4 a carry on 15 regressed to 4.12, x 0.85 (capped; Jacksonville allows 2.8 a carry to backs) = 39 against 35.5. Targets: 1.6 blend plus about half of Barkley's and Bigsby's 3.0 a game; 4 of 6 regressed to 76%, 7.2 a catch, x 0.97 = 16 against 15.5."
+    },
+    {
+      "team": "PHI",
+      "player": "Dameon Pierce",
+      "pos": "RB",
+      "targets": 1,
+      "catchRate": 0.78,
+      "receptions": 0.8,
+      "recYds": 5,
+      "carries": 5,
+      "rushYds": 17,
+      "passYds": null,
+      "flags": [
+        "new-role"
+      ],
+      "why": "Signed off the practice squad Wednesday, third on ESPN's depth chart behind Barkley (out) and Shipley; no Eagles snaps yet, so the carry share (5 of 17) is a role estimate, not a stat. 4.0 a carry x 0.85 = 17 against 22.5 (DK) / ~24.5 (FD); the book expects a more even split than the team site's description of Shipley as the lead back (verify early usage)."
+    },
+    {
+      "team": "PHI",
+      "player": "Dallas Goedert",
+      "pos": "TE",
+      "targets": 5.5,
+      "catchRate": 0.7,
+      "receptions": 3.9,
+      "recYds": 45,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Back from the Week 2 MCL sprain, full practice Friday, no designation. 4.0 targets a game played, plus about a quarter of Smith's vacated 6.9 (the tight-end share Ertz took in Week 4), scaled to 30 attempts. 5 of 8 regressed to 70%; 16.2 a catch regressed to 11.9, x 0.97 for Jacksonville's 10.2 a catch to tight ends = 45 against 42.5 and 3.9 catches against 4.5 (+104)."
+    },
+    {
+      "team": "PHI",
+      "player": "Dontayvion Wicks",
+      "pos": "WR",
+      "targets": 5.5,
+      "catchRate": 0.65,
+      "receptions": 3.6,
+      "recYds": 53,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "4, 6, 5, 5 targets: blend 5.2, a small share of Smith's targets, scaled to 30 attempts. 12 of 20 regressed to 65%; 16.4 a catch regressed to 14.2, x 1.05 (Jacksonville's 15.0 a catch to receivers is 1.20, capped at 1.15 and shaded because Waddle, Higgins and Hollins built most of it) = 53 against 44.5 (DK) / ~45 (FD). Limited Thursday and Friday with a hamstring, no designation: 32 and 18 yards the last two weeks is the warning."
+    },
+    {
+      "team": "PHI",
+      "player": "Makai Lemon",
+      "pos": "WR",
+      "targets": 5.1,
+      "catchRate": 0.68,
+      "receptions": 3.4,
+      "recYds": 37,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "4, 1, 4, 6 targets: blend 3.7 plus about a quarter of Smith's share (he went from 4 to 6 in Week 4). 10 of 15 regressed to 68%; 6.5 a catch on a slot tree regressed to 10.1, x 1.05 = 37 against 34.5 and 3.4 catches against 3.5 (-118 over)."
+    },
+    {
+      "team": "PHI",
+      "player": "Darius Cooper",
+      "pos": "WR",
+      "targets": 4.4,
+      "catchRate": 0.64,
+      "receptions": 2.8,
+      "recYds": 36,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "one-game-sample"
+      ],
+      "why": "Targets only in Weeks 2 and 4 (3 and 7); the role as the No. 2 receiver exists in one game, Week 4 without Smith and Brown, so the blend (2.9) plus a share of Smith's vacated targets is trimmed to 4.4 for Goedert's return. 5 of 10 regressed to 64%; 11.8 a catch regressed to 12.3, x 1.05 = 36 against a 20.5 main number, about 75% above the book. The reason: the book prices him as a WR4, but with Smith and Brown out and Elijah Moore and Britain Covey without a target this season, he is a starter in 11 personnel."
+    }
+  ],
+  "sources": [
+    "ESPN game summary and box scores via site.api.espn.com (events 401872922, 401872929, 401872939, 401872940, 401872957, 401872963, 401872969, 401872970, 401872981): targets, carries, red-zone plays, opponent production",
+    "ESPN depth charts (sports.core.api.espn.com, teams 21 and 30, 2026)",
+    "philadelphiaeagles.com Week 5 injury report (Wed-Fri participation, final designations)",
+    "data/injuries.json (fetched 2026-10-10T13:53Z) for Jaguars designations (Murray doubtful per Florida Times-Union)",
+    "AP preview on ESPN: Johnson retirement, Jurgens trade, Bell and Lampkin starting, Kendall out",
+    "Philadelphia Inquirer Oct 8 odds and props; PhillyVoice Oct 5 odds; SI Betting Week 5 preview (ATS records, unit ranks); NBC Sports Philadelphia injury rundown; NBC Sports/Rotoworld on BTJ 12-personnel snaps",
+    "data/odds/raw/2026-w05-phi-jax.json (DraftKings and FanDuel alternate ladders) for sanity checks only",
+    "Open-Meteo hourly forecast for Tottenham Hotspur Stadium",
+    "Not verified: Eagles starting center with Kendall out (Jake Majors is next on ESPN's depth chart); Shipley/Pierce/Steele carry split: no game data in this backfield; Jaguars limited players' final designations beyond Murray and Montaric Brown, taken from the feed rather than the team release; Playing surface at Tottenham (ESPN says grass)"
+  ]
+}

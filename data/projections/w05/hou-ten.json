@@ -1,0 +1,240 @@
+{
+  "game": "hou-ten",
+  "kick": "2026-10-11T17:00:00Z",
+  "weather": "Outdoor: Nissan Stadium, artificial turf. ESPN/AccuWeather shows 66F, a 34% precipitation chance and gusts to 21 mph; flagged on both quarterbacks as a small trim to deep passing.",
+  "teams": {
+    "HOU": {
+      "passAtt": 34,
+      "rushAtt": 26
+    },
+    "TEN": {
+      "passAtt": 33,
+      "rushAtt": 22
+    }
+  },
+  "players": [
+    {
+      "team": "HOU",
+      "player": "C.J. Stroud",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 2.5,
+      "rushYds": 15,
+      "passYds": 261,
+      "flags": [
+        "weather"
+      ],
+      "why": "34 attempts (season 37.75 on 38/55/27/31, trimmed as a 7-point favourite; Tennessee's opponents have needed only 28 attempts a game while running 33.5 times); 61.6% completions regressed to 63%; 12.3 yards per completion regressed to 11.6; Tennessee allows 7.9 yards per attempt and 73% completions and is without S Amani Hooker, factor 1.05 (held under 1.10 for gusts to 21 mph). Book main 239.5 DK (-111) / about 240 FD. Carries 2/3/2/2 for 66 yards, rush main 9.5."
+    },
+    {
+      "team": "HOU",
+      "player": "Nico Collins",
+      "pos": "WR",
+      "targets": 8.7,
+      "catchRate": 0.7,
+      "receptions": 6.1,
+      "recYds": 96,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 10 and 8 in his two games (missed Weeks 2-3, grade 1 hamstring); 26% of attempts when active, scaled to 34 attempts = 8.8, blended with his one game in the last three (8) to 8.7; 77.8% catch rate on 18 targets regressed to 70%; 13.8 a catch regressed to 14.3 on a career near 15; Tennessee allows 10.4 yards per receiver target (668 on 64) with Hooker out, factor 1.10 (not the cap, wind). Book 76.5 DK / 79.5 FD, receptions 5.5; about 22% over because the book is still pricing his managed 69% snap share from the return."
+    },
+    {
+      "team": "HOU",
+      "player": "Dalton Schultz",
+      "pos": "TE",
+      "targets": 4.9,
+      "catchRate": 0.74,
+      "receptions": 3.6,
+      "recYds": 32,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 8/14/3/2 (season 6.75, last three 6.3, blend 6.5) moved down to 4.9 because Collins is back: 8 and 2 targets in Collins' games, 14 and 3 without; 77.8% catch rate on 27 targets regressed to 74%; 10.2 a catch held at 10.3; Tennessee allows 4.2 yards per TE target (109 on 26), factor at the 0.85 floor. Book 33.5 DK / about 34 FD, receptions 3.5-4.5."
+    },
+    {
+      "team": "HOU",
+      "player": "Kayshon Boutte",
+      "pos": "WR",
+      "targets": 3.5,
+      "catchRate": 0.68,
+      "receptions": 2.4,
+      "recYds": 33,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 2/5/2/4 (season 3.25, last three 3.7, blend 3.5) and 34 snaps last week as a third receiver; 69% catch rate on 13 targets at the 68% prior; 12.8 a catch regressed to 12.5; Tennessee receiver factor 1.10. Book 24.5 DK / about 27 FD, receptions 2.5 FD; 25-35% over because he is a full-time third receiver now that Hutchinson's snaps are cut."
+    },
+    {
+      "team": "HOU",
+      "player": "Jaylin Noel",
+      "pos": "WR",
+      "targets": 3.6,
+      "catchRate": 0.67,
+      "receptions": 2.4,
+      "recYds": 31,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "new-role"
+      ],
+      "why": "Targets 2/5/2/3 (season 3.0, last three 3.3, blend 3.2) lifted to 3.6 for a 62% snap share last week, his first game over 20 snaps; 66.7% catch rate on 12 at the prior; 23.3 a catch on 8 catches regressed hard to 12.0; receiver factor 1.08. Book 19.5 DK / about 21 FD; about 50% over because the book prices a two-catch, 10-a-catch role while his two Collins games went for 53 and 85 yards (verify the snap share holds)."
+    },
+    {
+      "team": "HOU",
+      "player": "Xavier Hutchinson",
+      "pos": "WR",
+      "targets": 3,
+      "catchRate": 0.6,
+      "receptions": 1.8,
+      "recYds": 22,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "new-role"
+      ],
+      "why": "26 season targets (6/9/6/5, blend 6.6) but 17 snaps last week once Collins returned (one report, verify), so targets cut to 3.0; 46% catch rate on 26 targets regressed to 60%; 12.9 a catch regressed to 12.0; receiver factor 1.05. Book 14.5 DK / about 17 FD, receptions 1.5; 30-50% over only because he drew 5 targets on those 17 snaps; low floor."
+    },
+    {
+      "team": "HOU",
+      "player": "David Montgomery",
+      "pos": "RB",
+      "targets": 1.6,
+      "catchRate": 0.78,
+      "receptions": 1.3,
+      "recYds": 9,
+      "carries": 13,
+      "rushYds": 39,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 20/6/11/10 (season 11.75, last three 9.0, blend 10.4) lifted to 13 on 26 team rushes as a 7-point favourite at his 60% share of back carries; 2.7 a carry on 47 regressed to 3.5; Tennessee allows 3.6 a carry to backs with 21 tackles for loss in three weeks, factor at the 0.85 floor. Targets 3/2/2/0 (blend 1.5) at the 78% prior, 7.5 a catch. Book 43.5 DK / about 44 FD rush, 7.5 rec. Below the 3-target bar; included as the lead back."
+    },
+    {
+      "team": "HOU",
+      "player": "Woody Marks",
+      "pos": "RB",
+      "targets": 1.8,
+      "catchRate": 0.78,
+      "receptions": 1.4,
+      "recYds": 9,
+      "carries": 8.5,
+      "rushYds": 28,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 9/8/5/6 (blend 6.7) lifted to 8.5 at a 39% share of about 22 back carries; 3.1 a carry on 28 regressed to 3.85, factor 0.85. Targets 1/6/1/1 (the 6 came in the 55-attempt Week 2), projected 1.8, 6.5 a catch. Book 36.5 DK / about 39 FD rush, 8.5 rec; about 25% under the book's rushing number because the book is pricing a bigger Houston run day than 3.5 a carry against this front supports. Below the 3-target bar; included as the second lead back."
+    },
+    {
+      "team": "TEN",
+      "player": "Cam Ward",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 3.5,
+      "rushYds": 14,
+      "passYds": 213,
+      "flags": [
+        "weather"
+      ],
+      "why": "33 attempts (season 29.75 on 32/20/36/31, lifted as a 7-point home dog against a defense whose opponents have thrown 35 times a game); 63.0% completions regressed to 63.8%; 9.7 yards per completion regressed to 10.4; Houston allows 7.9 yards per attempt but did it against Allen, Burrow, Jones and Prescott and has 14 sacks, factor 0.97 including the wind. Book main 189.5 DK (-113) / about 195 FD; 10-12% over on the attempt count. Carries 4/4/1/4 for 57 yards, rush main 11.5."
+    },
+    {
+      "team": "TEN",
+      "player": "Carnell Tate",
+      "pos": "WR",
+      "targets": 8.5,
+      "catchRate": 0.66,
+      "receptions": 5.6,
+      "recYds": 68,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "questionable"
+      ],
+      "why": "Targets 6/5/9/12 (season 8.0, last three 8.7, blend 8.3, scaled to 33 attempts = 9.2) trimmed to 8.5 for the back (limited Thursday and Friday, Saleh says good to go) and Derek Stingley Jr.; 68.8% catch rate on 32 regressed to 66%; 12.2 a catch held; Houston allows 9.1 yards per receiver target, factor held at 1.0 for the wind and Stingley. Book 47.5 DK / about 49 FD, receptions 4.5; about 40% over because the book is pricing the back designation, while the role is 31% of Tennessee's targets over three weeks."
+    },
+    {
+      "team": "TEN",
+      "player": "Wan'Dale Robinson",
+      "pos": "WR",
+      "targets": 6.3,
+      "catchRate": 0.69,
+      "receptions": 4.3,
+      "recYds": 39,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 6/1/11/5 (season 5.75, last three 5.7, scaled to 33 attempts = 6.3); 69.6% catch rate on 23 regressed to 69%; 7.7 a catch regressed to 8.5 for a short slot role; Houston allows 9.1 yards per receiver target, factor 1.07. Book 32.5 DK / about 34 FD, receptions 3.5-4.5. First beneficiary if Tate is limited."
+    },
+    {
+      "team": "TEN",
+      "player": "Gunnar Helm",
+      "pos": "TE",
+      "targets": 3,
+      "catchRate": 0.73,
+      "receptions": 2.2,
+      "recYds": 18,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 5/2/4/1 (season 3.0, last three 2.3, scaled to 33 attempts = 3.0); 75% catch rate on 12 regressed to 73%; 6.7 a catch regressed to 8.0; Houston allows 8.6 yards per TE target (Kincaid's 130 inflates it), factor 1.05. Martin-Robinson (questionable) has no catches, so nothing moves. Book 15.5 DK / about 19.5 FD, receptions 2.5."
+    },
+    {
+      "team": "TEN",
+      "player": "Tony Pollard",
+      "pos": "RB",
+      "targets": 3.2,
+      "catchRate": 0.77,
+      "receptions": 2.5,
+      "recYds": 12,
+      "carries": 14,
+      "rushYds": 50,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 7/14/17/16 (season 13.5, last three 15.7, blend 14.6) trimmed to 14 for a trailing script at a 71% share of back carries; 4.1 a carry regressed to 4.2; Houston allows 3.5 a carry to backs, factor at the 0.85 floor. Targets 2/1/4/4 (blend 2.9, scaled 3.2), 73% regressed to 77%, 3.0 a catch regressed to 5.5, and Houston allows 2.9 yards per back target (factor 0.85). Book 48.5 DK / about 52 FD rush, 8.5 rec, 1.5 receptions."
+    },
+    {
+      "team": "TEN",
+      "player": "Tyjae Spears",
+      "pos": "RB",
+      "targets": 1.5,
+      "catchRate": 0.78,
+      "receptions": 1.2,
+      "recYds": 7,
+      "carries": 4,
+      "rushYds": 15,
+      "passYds": null,
+      "flags": [],
+      "why": "Change-of-pace back: carries 3/7/3/2 (blend 3.9), 4.3 a carry, factor 0.85; targets 4/2/0/1 (blend 1.4) at the 78% prior. Below the 3-target bar; included as the second back. Book 15.5 DK rush, 10.5 rec."
+    }
+  ],
+  "sources": [
+    "ESPN box scores and play-by-play, Texans events 401872660, 401872934, 401872951, 401872967 and Titans events 401872924, 401872939, 401872956, 401872973 (targets, carries, red-zone and goal-line splits computed from the drive logs)",
+    "ESPN depth charts and rosters (teams 34 and 10), pulled Oct 10",
+    "ESPN game summary 401872984 (injuries, DraftKings HOU -7 / 38.5, FPI 66.6%, AccuWeather)",
+    "data/injuries.json (fetched 2026-10-10T13:53Z)",
+    "tennesseetitans.com, Quick Hits on the Titans From Friday of Texans Week",
+    "SI Texans On SI, Texans-Titans Week 5 injury report",
+    "Athlon Sports and Yahoo, Texans Week 4 snap counts (Collins 69%, Noel 62-64%, Hutchinson 17 snaps from one report)",
+    "AP preview and ESPN (Davenport / Bien-Aime) game story, Oct 8-10",
+    "data/odds/raw/2026-w05-hou-ten.json (DraftKings and FanDuel, 2026-10-10T16:27Z) for sanity checks only"
+  ],
+  "unverified": [
+    "Hutchinson's 17 Week 4 snaps come from one report (another source omits it)",
+    "M.J. Stewart: team report questionable (quad), ESPN feed Out (knee)",
+    "Braden Smith and Kayden McDonald activation from IR",
+    "FanDuel main numbers marked 'about' are interpolated from its alternate ladder"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "game": "den-lac",
+  "kick": "2026-10-11T20:05:00Z",
+  "weather": "Indoor: SoFi Stadium (covered; ESPN/AccuWeather list 73F with gusts to 17 mph outside) - no weather factor.",
+  "teams": {
+    "DEN": { "passAtt": 33, "rushAtt": 27 },
+    "LAC": { "passAtt": 32, "rushAtt": 25 }
+  },
+  "players": [
+    {
+      "team": "DEN", "player": "Bo Nix", "pos": "QB",
+      "targets": null, "catchRate": null, "receptions": null, "recYds": null,
+      "carries": null, "rushYds": null, "passYds": 228, "flags": [],
+      "why": "33 attempts (season 33.8 on 28/31/34/42, trimmed for a 3.5-point favourite's script); 60.0% completions regressed to 61.5%; 10.1 yards a completion regressed to 10.2; the Chargers allow 7.9 yards per attempt and are without S Derwin James Jr. and CB Donte Jackson, factor 1.10. Book main 220.5 DK (-112) / 224.5 FD."
+    },
+    {
+      "team": "DEN", "player": "Jaylen Waddle", "pos": "WR",
+      "targets": 7.1, "catchRate": 0.65, "receptions": 4.6, "recYds": 62,
+      "carries": null, "rushYds": null, "passYds": null, "flags": [],
+      "why": "Targets 3/10/7/6 (season 6.5, last-3 7.7, blend 7.1: scaled to 33 attempts, plus about 0.4 of Pat Bryant's three a game with Bryant on IR); 16 of 26 (61.5%) regressed to 65%; 11.6 a catch regressed to 12.0; the Chargers allow 9.7 yards per target to WRs and are missing James and Jackson, factor 1.12. Book 56.5 DK (-110) / FD main about 55, receptions 4.5 (over -140)."
+    },
+    {
+      "team": "DEN", "player": "RJ Harvey", "pos": "RB",
+      "targets": 6.0, "catchRate": 0.85, "receptions": 5.1, "recYds": 37,
+      "carries": 6, "rushYds": 22, "passYds": null, "flags": [],
+      "why": "Three games played (missed Week 2, hamstring): targets 4/7/10, 7.0 a game both season and last three, trimmed to 6.0 as a favourite on 33 attempts; 20 of 21 (95%) regressed to 85%; 6.6 a catch regressed to 7.0; Chargers RB factor 1.05 (8.1 a catch allowed to backs). Carries 3/2/7: six of 27 team rushes at 4.1, Chargers run factor 0.90 (3.78 allowed). Book 28.5 rec / 25.5 rush DK, receptions 4.5 (over +122)."
+    },
+    {
+      "team": "DEN", "player": "Courtland Sutton", "pos": "WR",
+      "targets": 5.5, "catchRate": 0.565, "receptions": 3.1, "recYds": 42,
+      "carries": null, "rushYds": null, "passYds": null, "flags": [],
+      "why": "Targets 5/4/7/6 (season 5.5, last-3 5.7; scaled to 33 attempts with a share of Bryant's, 5.5); 9 of 22 (41%) regressed hard to 56.5% on a career near 60%; 9.6 a catch regressed to 12.0 on his career 13-14; factor 1.12. Book 37.5 DK (-109) / 39.5 FD (+102), receptions 3.5 (over +117)."
+    },
+    {
+      "team": "DEN", "player": "J.K. Dobbins", "pos": "RB",
+      "targets": 1.3, "catchRate": 0.78, "receptions": 1.0, "recYds": 6,
+      "carries": 14, "rushYds": 47, "passYds": null, "flags": [],
+      "why": "Carries 8/10/17/11 (season 11.5, last-3 12.7, blend 12.1), lifted to 14 of 27 team rushes with Jonah Coleman on IR and a lead script; 3.5 a carry regressed to 3.75; the Chargers allow 3.78 a carry, factor 0.90. Targets 0/0/2/2. Book 52.5 DK (-110) / 49.5 FD; he has not cleared 49 this season."
+    },
+    {
+      "team": "DEN", "player": "Evan Engram", "pos": "TE",
+      "targets": 3.0, "catchRate": 0.64, "receptions": 1.9, "recYds": 20,
+      "carries": null, "rushYds": null, "passYds": null, "flags": [],
+      "why": "Targets 5/1/2/5 (season 3.25, last-3 2.7, blend 3.0); 6 of 13 (46%) regressed to 64% toward the 72% TE prior; 11.0 a catch regressed to 10.0; Chargers TE factor 1.05 (Trey McBride 9 for 95). Book 17.5 DK / 19.5 FD, receptions 2.5 (over +115). Under the desk's 3.0-catch floor."
+    },
+    {
+      "team": "DEN", "player": "Troy Franklin", "pos": "WR",
+      "targets": 2.5, "catchRate": 0.66, "receptions": 1.7, "recYds": 22,
+      "carries": null, "rushYds": null, "passYds": null, "flags": ["new-role"],
+      "why": "Targets 1/2/1/0 (blend about 1.0), raised to 2.5 as the WR3 on ESPN's depth chart with Bryant (three targets a game) on IR; 2 of 4 regressed to 66%; 24.0 a catch regressed to 12.0; factor 1.12. Book 18.5 DK / 19.5 FD, receptions 1.5; 19% above the book on the vacated role. Below three targets: low confidence."
+    },
+    {
+      "team": "DEN", "player": "Marvin Mims Jr.", "pos": "WR",
+      "targets": 2.0, "catchRate": 0.64, "receptions": 1.3, "recYds": 16,
+      "carries": null, "rushYds": null, "passYds": null, "flags": ["one-game-sample"],
+      "why": "Back from a foot injury in Week 4 only: 3 targets, 1 for 10 on 42 attempts. 2.0 targets on 33 attempts sharing Bryant's WR3 snaps with Franklin; 64% catch rate, 11.0 a catch regressed from his career, factor 1.10. Book 12.5 DK / 14.5 FD, receptions 1.5. Low confidence."
+    },
+    {
+      "team": "LAC", "player": "Justin Herbert", "pos": "QB",
+      "targets": null, "catchRate": null, "receptions": null, "recYds": null,
+      "carries": null, "rushYds": null, "passYds": 211, "flags": [],
+      "why": "32 attempts (season 29.8 on 27/27/34/31, raised for a 3.5-point underdog, less the sacks a rookie-tackle line will allow); 59.7% held at 60% (career near 66%, but no Alt, Slater, Penning, Awosika, Johnston or likely McConkey); 11.5 a completion regressed to 10.8 for the same receiver losses; Denver allows 7.0 yards per attempt but is without CBs Pat Surtain II and Riley Moss, factor 1.02. Book main 201.5 DK (-112) / 199.5 FD; four-game range 189-226."
+    },
+    {
+      "team": "LAC", "player": "Tre' Harris", "pos": "WR",
+      "targets": 7.3, "catchRate": 0.655, "receptions": 4.8, "recYds": 68,
+      "carries": null, "rushYds": null, "passYds": null, "flags": ["new-role"],
+      "why": "Targets 6/3/7/5 (season 5.25, last-3 5.0, blend 5.1), raised to 7.3 as the only healthy wideout with a real role: Quentin Johnston (4.75 a game) and Brenen Thompson are out and Ladd McConkey (4.25 a game) did not practice all week and is not projected; 13 of 21 regressed to 65.5%; 16.1 a catch regressed to 13.5; Denver allows 7.75 yards per target to WRs but is without Surtain and Moss, factor 1.05. No book line at pull time: verify."
+    },
+    {
+      "team": "LAC", "player": "Oronde Gadsden", "pos": "TE",
+      "targets": 6.0, "catchRate": 0.68, "receptions": 4.1, "recYds": 46,
+      "carries": null, "rushYds": null, "passYds": null, "flags": [],
+      "why": "Targets 2/2/3/8 (season 3.75, last-3 4.3); with David Njoku out the last two games he took 3 and 8, and the McConkey and Johnston targets push him to 6.0; 9 of 15 regressed to 68% toward the TE prior; 9.6 a catch regressed to 10.5; Denver TE factor 1.08 (Tyler Higbee 8-62, George Kittle 4-70, Travis Kelce 3-71). No book line at pull time: verify."
+    },
+    {
+      "team": "LAC", "player": "Marquez Valdes-Scantling", "pos": "WR",
+      "targets": 3.8, "catchRate": 0.56, "receptions": 2.1, "recYds": 34,
+      "carries": null, "rushYds": null, "passYds": null, "flags": ["new-role"],
+      "why": "Two targets in four games as the WR4; a starter by default with Johnston and Thompson out and McConkey not projected, 3.8 targets on 32 attempts. No 2026 catch, so his career rate near 52% regressed to 56% and his career 15-plus a catch at 15.5; factor 1.05. The role is projected, not observed: low confidence. No book line."
+    },
+    {
+      "team": "LAC", "player": "Keaton Mitchell", "pos": "RB",
+      "targets": 3.5, "catchRate": 0.81, "receptions": 2.8, "recYds": 16,
+      "carries": 7.5, "rushYds": 36, "passYds": null, "flags": [],
+      "why": "Targets 0/1/3/6 (season 2.5, last-3 3.3, blend 2.9), 3.5 with the receiver losses; 9 of 10 regressed to 81%; 3.8 a catch regressed to 5.5; Denver RB factor 1.05. Carries 4/5/8/10 (blend 7.2), 7.5 after leading the backs in snaps last week (36.6%); 4.6 a carry regressed to 4.4; Denver allows 4.76 a carry, factor 1.10. Book 31.5 rush DK (-111); no receiving line."
+    },
+    {
+      "team": "LAC", "player": "Omarion Hampton", "pos": "RB",
+      "targets": 1.3, "catchRate": 0.78, "receptions": 1.0, "recYds": 7,
+      "carries": 11, "rushYds": 47, "passYds": null, "flags": [],
+      "why": "Carries 12/23/15/9 (season 14.75, last-3 15.7, blend 15.2), cut to 11 for last week's three-way split and an interior line without Penning and Awosika; 4.03 a carry regressed to 4.1; Denver allows 4.76 a carry, factor held to 1.05 for the line. Targets 0/2/1/2. Book 39.5 DK (-110) / 39.5 FD (-102): 19% above it, and he has cleared 39.5 in all four games."
+    }
+  ],
+  "sources": [
+    "ESPN box scores, Weeks 1-4 (events 401872931, 401872940, 401872962, 401872975, 401872926, 401872941, 401872953, 401872977), including play-by-play red-zone counts",
+    "ESPN depth charts and rosters for DEN and LAC (site.api.espn.com), fetched Oct 10",
+    "Chargers.com Friday injury report, Week 5 vs Broncos",
+    "data/injuries.json (fetched 2026-10-10T13:53Z) for Broncos Friday statuses: Surtain and Moss Out, Bryant IR, Humphrey signed",
+    "NBC Sports / Rotoworld Broncos-Chargers preview (lines, ATS, Nix and Herbert totals)",
+    "Football Nation USA week 5 guide (TeamRankings stats, McConkey and Slater notes); Rotoballer/NBC on the Week 4 backfield snap split",
+    "data/odds/raw/2026-w05-den-lac.json (DraftKings, FanDuel) for every book line",
+    "Not projected: Ladd McConkey (Q, DNP Wed-Fri), Charlie Kolar (Q, limited all week, about 1.5 targets if active), Kimani Vidal (2.2 targets), Derius Davis (2.8 targets), Alec Ingold, Nate Adkins, Tyler Badie, Adam Trautman, Lil'Jordan Humphrey (all under three targets)",
+    "Unverified: FanDuel main numbers for Waddle and Mitchell (alternate ladders only); Broncos' Friday column for Tillman, Trautman and Badie; WR snap shares after Bryant's IR move; whether LAC elevates a practice-squad WR"
+  ]
+}

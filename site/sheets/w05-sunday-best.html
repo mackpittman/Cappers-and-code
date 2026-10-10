@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Cappers &amp; Code · w05-sunday-best</title>
+<style>
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 900; src: url(../promo/assets/fonts/BarlowCondensed_900Black.ttf); }
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 800; src: url(../promo/assets/fonts/BarlowCondensed_800ExtraBold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 700; src: url(../promo/assets/fonts/Manrope_700Bold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 500; src: url(../promo/assets/fonts/Manrope_500Medium.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 700; src: url(../promo/assets/fonts/JetBrainsMono_700Bold.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url(../promo/assets/fonts/JetBrainsMono_500Medium.ttf); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #050608; color: #F5F7F2; font-family: 'Manrope', sans-serif; }
+  .card { width: 1200px; padding: 48px 64px 64px; background: #050608 radial-gradient(ellipse at 50% 0%, rgba(182,255,0,.10), transparent 55%); position: relative; overflow: hidden; display: flex; flex-direction: column; }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 6px; background: #B6FF00; }
+  .brand { display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono'; letter-spacing: 3px; font-size: 16px; color: #B6FF00; font-weight: 700; }
+  .brand img { width: 220px; display: block; }
+  h1 { font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; font-size: 84px; margin: 22px 0 6px; letter-spacing: 1px; line-height: .92; }
+  h1 span { color: #B6FF00; }
+  .sub { color: #C8CFC8; font-size: 20px; margin: 0 0 26px; line-height: 1.4; font-weight: 500; }
+
+  .block { border: 1px solid rgba(182,255,0,.35); box-shadow: 0 0 18px rgba(182,255,0,.10); border-left: 5px solid #B6FF00; border-radius: 10px; background: #0B0E10; margin-bottom: 18px; overflow: hidden; }
+  .bh { display: flex; justify-content: space-between; align-items: center; padding: 14px 22px; border-bottom: 1px solid #1B2022; }
+  .tag { font-family: 'JetBrains Mono'; font-size: 15px; font-weight: 700; color: #B6FF00; letter-spacing: 3px; }
+  .cols { display: grid; grid-template-columns: 120px 110px 300px; gap: 14px; font-family: 'JetBrains Mono'; font-size: 12px; letter-spacing: 2px; color: #9DA59D; }
+  .cols i { font-style: normal; text-align: right; }
+  .cols i:last-child { text-align: left; }
+  .row { display: grid; grid-template-columns: 1fr 120px 110px 300px; gap: 14px; align-items: center; padding: 12px 22px; border-bottom: 1px solid #14181A; }
+  .row:last-child { border-bottom: 0; }
+  .nm { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; line-height: 1; }
+  .nm small { display: block; font-family: 'JetBrains Mono'; font-weight: 500; font-size: 12px; letter-spacing: 1.5px; color: #9DA59D; margin-top: 6px; text-transform: uppercase; }
+  .px { font-family: 'JetBrains Mono'; font-size: 24px; font-weight: 700; color: #B6FF00; text-align: right; white-space: nowrap; }
+  .un { font-family: 'JetBrains Mono'; font-size: 20px; font-weight: 700; color: #F5F7F2; text-align: right; white-space: nowrap; }
+  .meta { font-family: 'JetBrains Mono'; font-size: 13px; color: #9DA59D; letter-spacing: 1px; line-height: 1.5; }
+
+  .grid { padding: 16px 22px 6px; }
+  .ticket { border: 1px solid #1F2622; border-radius: 10px; background: #080B0D; margin-bottom: 14px; overflow: hidden; }
+  .ticket .hd { display: flex; align-items: center; gap: 18px; padding: 12px 20px; border-bottom: 1px solid #1B2022; }
+  .ticket .hd .tag { background: #B6FF00; color: #050608; border-radius: 4px; padding: 3px 10px; letter-spacing: 1px; font-size: 16px; }
+  .ticket .names { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; line-height: 1; }
+  .ticket .names i { font-style: normal; color: #79E000; padding: 0 4px; }
+  .trow { display: grid; grid-template-columns: 1fr 330px 150px; gap: 14px; align-items: center; padding: 9px 20px; border-bottom: 1px solid #14181A; }
+  .trow .nm { font-size: 24px; }
+  .trow .px { font-size: 22px; }
+  .trow .un { font-size: 17px; color: #C8CFC8; }
+  .ticket .ft { padding: 9px 20px 12px; font-family: 'JetBrains Mono'; font-size: 12.5px; letter-spacing: 1.5px; color: #9DA59D; text-transform: uppercase; }
+  .foot { margin-top: 10px; display: flex; justify-content: space-between; font-family: 'JetBrains Mono'; color: #79E000; font-size: 15px; letter-spacing: 4px; font-weight: 700; }
+</style>
+</head>
+<body>
+<section class="card" id="w05-sunday-best">
+  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code"><span>WEEK 5 · SUNDAY, OCT 11 · 13 GAMES</span></div>
+  <h1>Sunday, <span>the best of the slate</span></h1>
+  <p class="sub">The model’s single best play in every market, each one priced above the book by our own number. Units are a share of bankroll, not dollars. Play the price or better.</p>
+  <div class="block">
+  <div class="bh"><span class="tag">THE CARD</span><span class="cols"><i>ODDS</i><i>UNITS</i><i>GAME · TIME</i></span></div>
+  <div class="row">
+  <span class="nm">ATL -3<small>Spread of the day · model 62% vs book 52%</small></span>
+  <span class="px">-110</span>
+  <span class="un">1u</span>
+  <span class="meta">BAL@ATL<br>Sun 8:20 PM ET</span>
+</div>
+<div class="row">
+  <span class="nm">Under 41.5<small>Total of the day · model 66% vs book 52%</small></span>
+  <span class="px">-110</span>
+  <span class="un">1u</span>
+  <span class="meta">DEN@LAC<br>Sun 4:05 PM ET</span>
+</div>
+<div class="row">
+  <span class="nm">CIN ML<small>Moneyline lock · model 79% vs book 75%</small></span>
+  <span class="px">-355</span>
+  <span class="un">1u</span>
+  <span class="meta">CIN@MIA<br>Sun 1:00 PM ET</span>
+</div>
+<div class="row">
+  <span class="nm">Chris Rodriguez Jr. anytime TD<small>TD value · model 28% vs book 22%</small></span>
+  <span class="px">+350</span>
+  <span class="un">0.5u</span>
+  <span class="meta">PHI@JAX<br>Sun 9:30 AM ET</span>
+</div>
+</div>
+<div class="block">
+  <div class="bh"><span class="tag">FIVE-LEG &amp; THE PARLAY</span></div>
+  <div class="grid"><div class="ticket">
+  <div class="hd"><span class="tag">5</span><span class="names">NYG@WSH five-leg, no TDs</span></div>
+  <div class="trow"><span class="nm">Isaiah Likely 4+ receptions</span><span class="px">-245</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Jayden Daniels 20+ rush yds</span><span class="px">-247</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Najee Harris 20+ rush yds</span><span class="px">-232</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Jameis Winston 175+ pass yds</span><span class="px">-230</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Rachaad White 20+ rush yds</span><span class="px">-167</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Ticket · model 23% vs book 15%</span><span class="px">+549</span><span class="un">0.25u</span></div>
+  <div class="ft">Sun 1:00 PM ET</div>
+</div>
+<div class="ticket">
+  <div class="hd"><span class="tag">P</span><span class="names">Sunday unders, 4 legs</span></div>
+  <div class="trow"><span class="nm">DEN@LAC Under 41.5</span><span class="px">-110</span><span class="un"></span></div>
+<div class="trow"><span class="nm">PHI@JAX Under 41.5</span><span class="px">-110</span><span class="un"></span></div>
+<div class="trow"><span class="nm">BAL@ATL Under 43.5</span><span class="px">-110</span><span class="un"></span></div>
+<div class="trow"><span class="nm">CHI@GB Under 45.5</span><span class="px">-110</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Ticket · model 15% vs book 8%</span><span class="px">+1228</span><span class="un">0.1u</span></div>
+  <div class="ft">One leg per game</div>
+</div></div>
+</div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>DK/FD PRICES SAT 10/10 · 21+ · BET RESPONSIBLY</span></div>
+</section>
+</body>
+</html>

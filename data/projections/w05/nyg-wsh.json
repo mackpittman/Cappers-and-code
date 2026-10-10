@@ -1,0 +1,233 @@
+{
+  "game": "nyg-wsh",
+  "kick": "2026-10-11T17:00:00Z",
+  "weather": "Outdoor, natural grass (Northwest Stadium, Landover). NWS hourly (updated Oct 10 18:23Z): showers and thunderstorms through the game window, 78-97% precipitation chance 1-4 PM ET, 68-69F, east wind 13-15 mph; ESPN/AccuWeather shows 64F, 49%, gusts 10. Passing and receiving yards shaded down 5% (weather flag); a lightning delay is possible.",
+  "teams": {
+    "NYG": {
+      "passAtt": 30,
+      "rushAtt": 27
+    },
+    "WSH": {
+      "passAtt": 32,
+      "rushAtt": 29
+    }
+  },
+  "players": [
+    {
+      "team": "NYG",
+      "player": "Jameis Winston",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 1.5,
+      "rushYds": 4,
+      "passYds": 207,
+      "flags": [
+        "weather"
+      ],
+      "why": "30 attempts (27, 22, 29 in his three starts, lifted slightly as a 3.5-point road dog); 55% completions on 78 attempts regressed to 58.5%; 11.1 yards per completion regressed to 11.5 on a career near 12; Washington allows 7.5 yards an attempt and 66.9% completions and now starts backup safeties, factor 1.08; rain trims 5%. Book main 201.5 DK / 199.5 FD. Four carries for 15 yards in three starts."
+    },
+    {
+      "team": "NYG",
+      "player": "Isaiah Likely",
+      "pos": "TE",
+      "targets": 9,
+      "catchRate": 0.662,
+      "receptions": 6,
+      "recYds": 58,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "weather"
+      ],
+      "why": "Targets 8/10/5/12 (season 8.75, last three 9.0, about a third of a 28-target pool on 30 attempts); 62.9% catch rate on 35 targets regressed toward the 72% TE prior to 66%; 8.6 a catch regressed to 9.2; Washington allows tight ends 76% catches, 12.8 a catch and five touchdowns in four games, factor 1.12; rain trims 5%. 37% above the 42.5 DK main because the book prices his 5.4 yards a target, not the nine-target role against the softest TE defence on the slate; receptions main 4.5."
+    },
+    {
+      "team": "NYG",
+      "player": "Malik Nabers",
+      "pos": "WR",
+      "targets": 6.3,
+      "catchRate": 0.687,
+      "receptions": 4.3,
+      "recYds": 54,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "weather"
+      ],
+      "why": "Targets 9/4/6/7 (blend 6.1, scaled to 28 targets); 69% catch rate at the WR prior; 11.6 a catch regressed to 12.1 on a career near 12.5; Washington WR factor 1.08 (about 166 receiver yards a game allowed, three safeties out); rain trims 5%. Knee, no designation. Book 56.5 DK / about 54.5 FD, receptions 4.5 (over -160)."
+    },
+    {
+      "team": "NYG",
+      "player": "Malachi Fields",
+      "pos": "WR",
+      "targets": 3.8,
+      "catchRate": 0.617,
+      "receptions": 2.3,
+      "recYds": 33,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "weather"
+      ],
+      "why": "Targets 4/6/2/3 (blend 3.7, scaled to 28); 53% catch rate on 15 targets regressed to 62%; 15.8 a catch on 8 catches regressed hard to 13.5; Washington WR factor 1.08; rain trims 5%. 30% above the 25.5 DK / 24.5 FD main: the book prices a two-catch median and the 13-plus yards a catch makes the mean higher; high-variance profile."
+    },
+    {
+      "team": "NYG",
+      "player": "Cam Skattebo",
+      "pos": "RB",
+      "targets": 2.7,
+      "catchRate": 0.81,
+      "receptions": 2.2,
+      "recYds": 15,
+      "carries": 17,
+      "rushYds": 59,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 18/12/20/18 (66% of back carries; 17 of about 25.5 back carries on 27 team rushes, rain helps the volume); 3.46 a carry regressed to 3.73; Washington allows 3.98 a carry, factor 0.93. Targets 0/4/4/1 (blend 2.6), 8 of 9 caught regressed to the 78% RB prior, 8.4 a catch regressed to 7.9, Washington allows backs about 22 receiving yards a game, factor 0.9. Below the three-target bar; included as the lead back. Book rush 55.5 DK / about 57 FD, rec 13.5."
+    },
+    {
+      "team": "NYG",
+      "player": "Najee Harris",
+      "pos": "RB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 8,
+      "rushYds": 31,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 0/4/9/9 (blend 6.4, lifted to 8 because the last two weeks are the role and the rain favours a second back); 4.0 a carry regressed to 4.13, Washington factor 0.93. Zero targets in four games, so receiving is left blank rather than guessed. Book 27.5 DK / 29.5 FD."
+    },
+    {
+      "team": "WSH",
+      "player": "Jayden Daniels",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 5.5,
+      "rushYds": 35,
+      "passYds": 190,
+      "flags": [
+        "new-role",
+        "weather"
+      ],
+      "why": "32 attempts (season team 34.3, trimmed for the rain and a 3.5-point favourite's run share); his 56.9% on 51 attempts regressed to 63.5% (career near 67%); 9.0 yards per completion regressed to 10.1; Giants allow 6.2 yards an attempt and 64.7% completions, factor 0.97; rain trims 5%. new-role: first start since the elbow, and Diggs and probably McLaurin are gone. Book main 197.5 DK / 199.5 FD. Carries 5 and 7 for 100 yards, regressed to 6.7 a carry on fewer designed runs; book 28.5 rush."
+    },
+    {
+      "team": "WSH",
+      "player": "Antonio Williams",
+      "pos": "WR",
+      "targets": 6.6,
+      "catchRate": 0.656,
+      "receptions": 4.3,
+      "recYds": 45,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "new-role",
+        "weather"
+      ],
+      "why": "Targets 4/3/4/8 (blend 4.9), plus about 1.7 of Diggs' 7.75 and McLaurin's 7.3 a game as the slot (he took 8 when McLaurin sat in Week 4); 63% catch rate on 19 targets regressed to 65.6%; 10.3 a catch regressed to 10.9; Giants WR factor 1.0 (about 143 receiver yards a game allowed); rain trims 5%. No book line posted for any Washington receiver, so unchecked. new-role: moves up with Diggs out; cut about 20% if McLaurin plays."
+    },
+    {
+      "team": "WSH",
+      "player": "Dyami Brown",
+      "pos": "WR",
+      "targets": 5.1,
+      "catchRate": 0.624,
+      "receptions": 3.2,
+      "recYds": 38,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "new-role",
+        "weather"
+      ],
+      "why": "Targets 2/6/1/4 (blend 3.5) plus about 1.6 of the vacated outside targets; 54% catch rate on 13 targets regressed to 62%; 12.3 a catch regressed to 12.7; Giants WR factor 1.0; rain trims 5%. No book line posted. new-role: becomes the No. 1 outside receiver; cut about 20% if McLaurin plays."
+    },
+    {
+      "team": "WSH",
+      "player": "Treylon Burks",
+      "pos": "WR",
+      "targets": 3.9,
+      "catchRate": 0.638,
+      "receptions": 2.5,
+      "recYds": 32,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "new-role",
+        "weather"
+      ],
+      "why": "Targets 0/1/2/3 (blend 1.75) plus about 2.1 of the vacated outside targets as the next receiver on the depth chart; 3 of 6 caught regressed to 64%; 20 a catch on three catches regressed hard to 13.75; Giants WR factor 1.0; rain trims 5%. Touchdowns the last two weeks on 5 targets. No book line posted. new-role: the role exists only because Diggs and McLaurin are out."
+    },
+    {
+      "team": "WSH",
+      "player": "Chig Okonkwo",
+      "pos": "TE",
+      "targets": 4.5,
+      "catchRate": 0.68,
+      "receptions": 3.1,
+      "recYds": 21,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "new-role",
+        "weather"
+      ],
+      "why": "Targets 3/-/-/4 in the two games he played (3.5 a game) plus about 1 of the vacated receiver targets; 4 of 7 caught regressed to 68%; 5.25 a catch regressed to 8.6; the Giants hold tight ends to 4.9 yards a target and 6.9 a catch, factor 0.85 (the floor); rain trims 5%. Hamstring limited all week, no designation. No book line posted."
+    },
+    {
+      "team": "WSH",
+      "player": "Jacory Croskey-Merritt",
+      "pos": "RB",
+      "targets": 1.9,
+      "catchRate": 0.76,
+      "receptions": 1.4,
+      "recYds": 10,
+      "carries": 13,
+      "rushYds": 48,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 16/12/19/9 (blend 13.7; 13 of about 22.5 back carries now that Kaytron Allen is waived and White is back); 2.8 a carry on 56 carries regressed to 3.39; Giants allow 4.7 a carry, factor 1.09. Groin limited all week, no designation. Targets 1/1/1/4, 5 of 7 caught regressed to 76%. Below the three-target bar; included as the lead back. Book rush 51.5 DK / about 53 FD."
+    },
+    {
+      "team": "WSH",
+      "player": "Rachaad White",
+      "pos": "RB",
+      "targets": 2.6,
+      "catchRate": 0.85,
+      "receptions": 2.2,
+      "recYds": 13,
+      "carries": 6.5,
+      "rushYds": 30,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 7/7/8 in his three games (missed Week 4, shoulder, no designation now) for 4.5 a carry, regressed to 4.32; Giants factor 1.09; 6.5 carries with Allen's work gone and Ekeler taking about 3. Targets 2/6/1, 9 of 9 caught regressed to 85%, 5.7 a catch regressed to 6.6, Giants allow backs 19 receiving yards a game, factor 0.9. Rush 28% above the 23.5 DK / 24.5 FD main (the book prices five carries); receiving 13 against a 9.5 main is the mean of a skewed two-catch distribution whose median sits near the line."
+    }
+  ],
+  "notes": "Terry McLaurin (hamstring, Questionable, DNP Wed/Thu, game-time decision) is not projected because he is not confirmed active; if he plays, take about 20% off Williams, Brown and Burks targets and give him about 6 targets. No Washington receiver has a posted yardage or receptions line at DraftKings or FanDuel, so those projections are unchecked by a market. Darnell Mooney (2.6 targets), Theo Johnson (1.5), Luke McCaffrey (about 2), Austin Ekeler (about 1.4 targets, 3 carries) and John Bates fall below the three-target bar. Red-zone and inside-10 counts come from ESPN play-by-play parsing (approximate).",
+  "sources": [
+    "ESPN game summary 401872988 (venue, weather, FPI, DraftKings line)",
+    "ESPN box scores and play-by-play, 401872929/944/955/965 (WSH) and 401872930/947/956/966 (NYG)",
+    "ESPN depth charts and rosters, NYG and WSH, Oct 10 19:05Z",
+    "data/injuries.json (Friday designations) and commanders.com Week 5 injury report",
+    "Field Level Media / Rotoballer: Kaytron Allen waived Oct 8",
+    "api.weather.gov hourly forecast, Landover MD, Oct 10 18:23Z",
+    "data/odds/raw/2026-w05-nyg-wsh.json (DraftKings and FanDuel, Oct 10 16:27Z) for sanity checks only",
+    "FanDuel Research / numberFire and Dimers Week 5 previews"
+  ]
+}
