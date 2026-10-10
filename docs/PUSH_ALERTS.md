@@ -35,7 +35,12 @@ Discord  ->  discord-sync (every minute)  ->  feed_posts INSERT
 Alerts collapse per channel on the device (`topic`/`tag` is the channel id), so five quick posts
 from one capper show as the newest one, not five.
 
-## One-time setup
+## One-time setup (done 2026-10-10)
+
+Applied and deployed from the session through the Supabase connector. Note for next time: the
+connector holds any statement containing DROP (even `drop ... if exists`) for a confirmation a
+headless session cannot give, so the call times out at 60 seconds and rolls back. Apply such
+migrations from the SQL editor, or without the DROP when the object does not exist yet.
 
 Run from the project root, signed in to the Supabase CLI (`supabase login`):
 

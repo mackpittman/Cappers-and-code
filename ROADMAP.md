@@ -115,12 +115,12 @@ Done when: the Pages URL loads the landing page, `/app/` signs in and shows the 
 Needs from Mack: Apple Developer Program and Google Play Console memberships, Expo account.
 Done when: TestFlight build installs and the full paywall loop works on a real phone.
 
-## Checkpoint 8b — App frame and Discord alerts (Claude) — BUILT 2026-10-09, backend deploy pending
+## Checkpoint 8b — App frame and Discord alerts (Claude) — LIVE 2026-10-10
 
 - The bottom tab bar is now the app's frame: game pages live under the Games tab (`/games/<id>`) as a nested stack, so the bar stays on screen while a member reads, scrolls and adds picks. The old `/game/<id>` address redirects. The web shell uses the dynamic viewport height so Safari's toolbar cannot cover the bar.
 - Push alerts for the Discord feed: Settings → Alerts → **Turn on Discord alerts**. A service worker (`public/sw.js`), the `push` edge function and a `feed_posts` trigger deliver every mirrored post to entitled members' devices within a minute; inside the app a new post badges the Feed tab and shows a banner. Design and operating notes in `docs/PUSH_ALERTS.md`.
 
-Needs from Mack (two commands, once): `supabase db push --project-ref vcduwtgbclkwcxquqicl` to apply `supabase/migrations/20261009_push_alerts.sql`, then `supabase functions deploy push --no-verify-jwt --project-ref vcduwtgbclkwcxquqicl`. Then on the phone: open the app from the Home Screen, Settings → Turn on Discord alerts → Send a test alert.
+Live 2026-10-10: the `push` function is deployed, the migration is applied and a notify call through the trigger path returns 200. Members turn alerts on in Settings, from the Home Screen app on iPhone.
 
 ## Checkpoint 9 — Ops hardening (Claude) — IN PROGRESS
 

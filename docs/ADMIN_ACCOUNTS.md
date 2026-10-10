@@ -23,6 +23,18 @@ to click through before seeing anything.
 rather than resetting it. Every comp row is written with `cancel_at_period_end`, so it expires on
 its own and never renews.
 
+## Usernames
+
+A provisioned account can sign in with a plain username: the app treats a login with no @ as that
+name on `cappersandcode.com` (`loginEmail` in `src/lib/store.tsx`). So create the account as
+`<username>@cappersandcode.com` and hand over just the username. No mail is ever sent to it.
+
+## Founders Pass
+
+A comp written by `create`/`comp` is plan `manual`. To show it as the Founders Pass, set the row's
+`plan` to `founder_season` (status `active`, `cancel_at_period_end` true); the app labels it
+Founders Pass. A later `comp` on that account rewrites it to `manual`, so extend it by date instead.
+
 ## Running one
 
 ```sql
