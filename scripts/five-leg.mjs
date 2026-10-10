@@ -7,7 +7,10 @@ import fs from 'node:fs';
 import { DATA, readJson, writeJson, impliedProb, normName, nowIso } from './lib.mjs';
 
 const args = Object.fromEntries(
-  process.argv.slice(2).map((a, i, all) => (a.startsWith('--') ? [a.slice(2), all[i + 1] ?? '1'] : [])).filter((x) => x.length),
+  process.argv
+    .slice(2)
+    .map((a, i, all) => (a.startsWith('--') ? [a.slice(2), all[i + 1] ?? '1'] : []))
+    .filter((x) => x.length),
 );
 const SEASON = Number(args.season || new Date().getUTCFullYear());
 const WEEK = Number(args.week);
@@ -26,12 +29,35 @@ export const MAX_PER_OFFENSE = 4;
 export const MIN_RECEPTIONS = 3.0;
 
 const MARKETS = {
-  receptions: { key: 'player_receptions_alternate', main: 'player_receptions', field: 'receptions', dist: 'poisson' },
-  rec_yds: { key: 'player_reception_yds_alternate', main: 'player_reception_yds', field: 'recYds', dist: 'normal', sd: (m) => Math.max(12, 0.6 * m) },
-  rush_yds: { key: 'player_rush_yds_alternate', main: 'player_rush_yds', field: 'rushYds', dist: 'normal', sd: (m) => Math.max(15, 0.55 * m) },
+  receptions: {
+    key: 'player_receptions_alternate',
+    main: 'player_receptions',
+    field: 'receptions',
+    dist: 'poisson',
+  },
+  rec_yds: {
+    key: 'player_reception_yds_alternate',
+    main: 'player_reception_yds',
+    field: 'recYds',
+    dist: 'normal',
+    sd: (m) => Math.max(12, 0.6 * m),
+  },
+  rush_yds: {
+    key: 'player_rush_yds_alternate',
+    main: 'player_rush_yds',
+    field: 'rushYds',
+    dist: 'normal',
+    sd: (m) => Math.max(15, 0.55 * m),
+  },
   // Quarterback yardage swings about 65 yards either way on a 250 mean, so only a line well below
   // the projection qualifies; the main number never will.
-  pass_yds: { key: 'player_pass_yds_alternate', main: 'player_pass_yds', field: 'passYds', dist: 'normal', sd: (m) => Math.max(45, 0.26 * m) },
+  pass_yds: {
+    key: 'player_pass_yds_alternate',
+    main: 'player_pass_yds',
+    field: 'passYds',
+    dist: 'normal',
+    sd: (m) => Math.max(45, 0.26 * m),
+  },
 };
 
 // --- distributions -------------------------------------------------------------------------
@@ -47,7 +73,11 @@ export function poissonAtLeast(n, mean) {
 }
 function erf(x) {
   const t = 1 / (1 + 0.3275911 * Math.abs(x));
-  const y = 1 - ((((1.061405429 * t - 1.453152027) * t + 1.421413741) * t - 0.284496736) * t + 0.254829592) * t * Math.exp(-x * x);
+  const y =
+    1 -
+    ((((1.061405429 * t - 1.453152027) * t + 1.421413741) * t - 0.284496736) * t + 0.254829592) *
+      t *
+      Math.exp(-x * x);
   return x >= 0 ? y : -y;
 }
 const Phi = (z) => 0.5 * (1 + erf(z / Math.SQRT2));
@@ -71,10 +101,19 @@ export function flattenPrices(body) {
   if (body?.bookmakers) {
     for (const b of body.bookmakers)
       for (const mk of b.markets || []) {
-        const market = Object.keys(MARKETS).find((k) => MARKETS[k].key === mk.key || MARKETS[k].main === mk.key);
+        const market = Object.keys(MARKETS).find(
+          (k) => MARKETS[k].key === mk.key || MARKETS[k].main === mk.key,
+        );
         if (!market) continue;
         for (const o of mk.outcomes || [])
-          out.push({ player: o.description, market, side: o.name.toLowerCase(), point: Number(o.point), price: Number(o.price), book: b.key });
+          out.push({
+            player: o.description,
+            market,
+            side: o.name.toLowerCase(),
+            point: Number(o.point),
+            price: Number(o.price),
+            book: b.key,
+          });
       }
     return out;
   }
@@ -82,7 +121,8 @@ export function flattenPrices(body) {
   for (const [player, markets] of Object.entries(body || {}))
     for (const [market, books] of Object.entries(markets))
       for (const [book, rows] of Object.entries(books))
-        for (const [point, price, side = 'over'] of rows) out.push({ player, market, side, point: Number(point), price: Number(price), book });
+        for (const [point, price, side = 'over'] of rows)
+          out.push({ player, market, side, point: Number(point), price: Number(price), book });
   return out;
 }
 
@@ -98,7 +138,11 @@ export function gradeLegs(projection, prices) {
     if (q.price < WORST_PRICE) continue;
     const flags = p.flags || [];
     if (flags.some((f) => /questionable|doubtful|out|one-game-sample/.test(f))) continue;
-    if ((q.market === 'receptions' || q.market === 'rec_yds') && (p.receptions ?? 0) < MIN_RECEPTIONS) continue;
+    if (
+      (q.market === 'receptions' || q.market === 'rec_yds') &&
+      (p.receptions ?? 0) < MIN_RECEPTIONS
+    )
+      continue;
     const model = legProb(q.market, q.side, q.point, mean);
     const implied = impliedProb(q.price);
     const shrunk = (1 - SHRINK) * model + SHRINK * implied;
@@ -125,14 +169,17 @@ export function gradeLegs(projection, prices) {
     const k = `${l.player}|${l.market}|${l.side}|${l.point}`;
     if (!best.has(k) || best.get(k).price < l.price) best.set(k, l);
   }
-  return [...best.values()].filter((l) => l.p >= MIN_P && l.edge >= MIN_EDGE).sort((a, b) => b.p - a.p);
+  return [...best.values()]
+    .filter((l) => l.p >= MIN_P && l.edge >= MIN_EDGE)
+    .sort((a, b) => b.p - a.p);
 }
 
 /** The LEGS-leg ticket paying at least TARGET with the highest joint shrunk probability. */
 export function buildTicket(qualifying, { legs = LEGS, target = TARGET } = {}) {
   // One leg per player: keep each player's highest-probability qualifying line.
   const perPlayer = new Map();
-  for (const l of qualifying) if (!perPlayer.has(l.player) || perPlayer.get(l.player).p < l.p) perPlayer.set(l.player, l);
+  for (const l of qualifying)
+    if (!perPlayer.has(l.player) || perPlayer.get(l.player).p < l.p) perPlayer.set(l.player, l);
   const pool = [...perPlayer.values()].sort((a, b) => b.p - a.p).slice(0, 18);
   let bestT = null,
     bestAny = null;
@@ -140,7 +187,13 @@ export function buildTicket(qualifying, { legs = LEGS, target = TARGET } = {}) {
     if (chosen.length === legs) {
       const teams = Object.keys(perTeam);
       const bothSides = teams.length > 1 || pool.every((l) => l.team === teams[0]);
-      const t = { legs: chosen.slice(), decimal: +prod.toFixed(2), price: american(prod), joint: +prob.toFixed(4), bookJoint: +chosen.reduce((a, l) => a * l.implied, 1).toFixed(4) };
+      const t = {
+        legs: chosen.slice(),
+        decimal: +prod.toFixed(2),
+        price: american(prod),
+        joint: +prob.toFixed(4),
+        bookJoint: +chosen.reduce((a, l) => a * l.implied, 1).toFixed(4),
+      };
       const anchored = chosen.some((l) => l.edge >= ANCHOR_EDGE);
       if (!bestAny || prob > bestAny.joint) bestAny = t;
       if (prod >= target && bothSides && anchored && (!bestT || prob > bestT.joint)) bestT = t;
@@ -161,7 +214,10 @@ export function buildTicket(qualifying, { legs = LEGS, target = TARGET } = {}) {
 }
 
 // --- run -----------------------------------------------------------------------------------
-if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname)) {
+if (
+  process.argv[1] &&
+  path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname)
+) {
   if (!WEEK) {
     console.error('usage: node scripts/five-leg.mjs --week N [--game id] [--target 6] [--legs 5]');
     process.exit(1);
@@ -174,12 +230,23 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
     process.exit(1);
   }
   const altDir = path.join(DATA, 'odds', 'alts');
-  const out = { season: SEASON, week: WEEK, builtAt: nowIso(), target: TARGET, legs: LEGS, games: [] };
+  const out = {
+    season: SEASON,
+    week: WEEK,
+    builtAt: nowIso(),
+    target: TARGET,
+    legs: LEGS,
+    games: [],
+  };
   for (const g of proj.games) {
     if (ONLY && g.game !== ONLY) continue;
-    const priceFile = path.join(altDir, `${wk}-${g.game}.json`);
-    if (!fs.existsSync(priceFile)) {
-      console.log(`${g.game}: no alt lines yet (${path.relative(DATA, priceFile)})`);
+    // Alternate lines: a hand-entered or merged sheet in odds/alts, else the raw relay pull in odds/raw.
+    const priceFile = [
+      path.join(altDir, `${wk}-${g.game}.json`),
+      path.join(DATA, 'odds', 'raw', `${wk}-${g.game}.json`),
+    ].find((f) => fs.existsSync(f));
+    if (!priceFile) {
+      console.log(`${g.game}: no alt lines yet (odds/alts or odds/raw ${wk}-${g.game}.json)`);
       continue;
     }
     const prices = flattenPrices(readJson(priceFile));
@@ -192,8 +259,13 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(im
       console.log('   nothing qualifies');
       continue;
     }
-    console.log(`   ${ticket ? 'ticket' : 'short of target'}: ${t.price > 0 ? '+' : ''}${t.price}  joint ${(t.joint * 100).toFixed(1)}%  book ${(t.bookJoint * 100).toFixed(1)}%`);
-    for (const l of t.legs) console.log(`     ${l.label.padEnd(40)} ${String(l.price).padStart(5)}  model ${(l.model * 100).toFixed(0)}%  shrunk ${(l.p * 100).toFixed(0)}%  ${l.book}`);
+    console.log(
+      `   ${ticket ? 'ticket' : 'short of target'}: ${t.price > 0 ? '+' : ''}${t.price}  joint ${(t.joint * 100).toFixed(1)}%  book ${(t.bookJoint * 100).toFixed(1)}%`,
+    );
+    for (const l of t.legs)
+      console.log(
+        `     ${l.label.padEnd(40)} ${String(l.price).padStart(5)}  model ${(l.model * 100).toFixed(0)}%  shrunk ${(l.p * 100).toFixed(0)}%  ${l.book}`,
+      );
   }
   writeJson(path.join(DATA, 'five-leg', `${wk}.json`), out);
 }

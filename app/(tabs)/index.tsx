@@ -14,6 +14,7 @@ import { AddToSlip, betToSlip, pickToSlip } from '@/components/Slip';
 import { Primetime } from '@/components/Primetime';
 import { TopTen } from '@/components/TopTen';
 import { primetimeGame } from '@/lib/primetime';
+import { BestOfBlock } from '@/components/BestOf';
 import { fonts, space } from '@/theme';
 
 export default function BoardScreen() {
@@ -47,6 +48,7 @@ export default function BoardScreen() {
         <Paywall />
       ) : (
         <>
+          {!!board.bestOf?.plays?.length && <BestOfBlock best={board.bestOf} />}
           {tabs.length > 0 && (
             <View style={{ flexDirection: 'row', gap: space.sm, marginBottom: space.md }}>
               {tabs.map((x) => {

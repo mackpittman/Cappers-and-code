@@ -142,6 +142,63 @@ export type Game = {
     implied: number;
   }[];
   injuryReport?: { away: InjuryEntry[]; home: InjuryEntry[]; fetchedAt: string | null };
+  fiveLeg?: FiveLegTicket | null;
+};
+/** One row of the front page's lead block (scripts/best-of.mjs): the best play in one market. */
+export type BestOfPlay = {
+  key: 'side' | 'total' | 'moneyline' | 'dog' | 'atd' | 'value' | 'td2' | 'fiveLeg' | 'lotto';
+  title: string;
+  game: string;
+  gameLabel: string;
+  kickoff: string | null;
+  kickoffLabel: string | null;
+  bet: string;
+  price: number | null;
+  prob: number | null;
+  implied: number | null;
+  edge: number | null;
+  conf: number | null;
+  units: number;
+  why: string;
+  legs?: { label: string; price: number | null; book?: string | null }[];
+};
+export type BestOf = {
+  builtAt: string;
+  day: string;
+  title: string;
+  games: number;
+  plays: BestOfPlay[];
+  /** Discord-ready markdown for the whole block. */
+  text: string;
+};
+/** One leg of the desk's five-leg ticket (docs/FIVE_LEG_FORMULA.md): a volume prop at an alternate line. */
+export type FiveLegLeg = {
+  player: string;
+  team: string;
+  label: string;
+  market: 'receptions' | 'rec_yds' | 'rush_yds' | 'pass_yds';
+  side: 'over' | 'under';
+  point: number;
+  price: number;
+  book: string;
+  /** Shrunk probability (0.7 model + 0.3 implied), model probability and the book's implied. */
+  p: number;
+  model: number;
+  implied: number;
+  mean: number;
+};
+export type FiveLegTicket = {
+  game: string;
+  gameLabel: string;
+  kickoff: string;
+  price: number;
+  decimal: number;
+  joint: number;
+  bookJoint: number;
+  legs: FiveLegLeg[];
+  /** True when no five legs reached the target price; this is the best ticket that exists. */
+  short: boolean;
+  builtAt: string;
 };
 export type ParlayLeg = {
   type: 'atd' | 'td2' | 'side' | 'total' | 'text';
@@ -309,4 +366,6 @@ export type Board = {
   maxConfidence?: MaxPlay[];
   topTen?: TopTen | null;
   lottos?: MaxPlay[];
+  fiveLeg?: { builtAt: string; target: number; tickets: FiveLegTicket[] } | null;
+  bestOf?: BestOf | null;
 };

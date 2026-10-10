@@ -1,0 +1,612 @@
+{
+ "date": "2026-10-07",
+ "season": 2026,
+ "fetchedAt": "2026-10-07T19:01:08.083Z",
+ "games": [
+  {
+   "gamePk": 849833,
+   "kickoff": "2026-10-07T20:00:00Z",
+   "status": "Preview",
+   "venue": "Rate Field",
+   "venueId": 4,
+   "doubleHeader": "N",
+   "gameNumber": 1,
+   "away": {
+    "id": 114,
+    "name": "Cleveland Guardians"
+   },
+   "home": {
+    "id": 145,
+    "name": "Chicago White Sox"
+   },
+   "probables": {
+    "away": {
+     "id": 682982,
+     "name": "Daniel Espino"
+    },
+    "home": {
+     "id": 656794,
+     "name": "Sean Newcomb"
+    }
+   }
+  },
+  {
+   "gamePk": 849822,
+   "kickoff": "2026-10-07T22:00:00Z",
+   "status": "Preview",
+   "venue": "Truist Park",
+   "venueId": 4705,
+   "doubleHeader": "N",
+   "gameNumber": 1,
+   "away": {
+    "id": 119,
+    "name": "Los Angeles Dodgers"
+   },
+   "home": {
+    "id": 144,
+    "name": "Atlanta Braves"
+   },
+   "probables": {
+    "away": {
+     "id": 607192,
+     "name": "Tyler Glasnow"
+    },
+    "home": {
+     "id": 641816,
+     "name": "Tyler Mahle"
+    }
+   }
+  },
+  {
+   "gamePk": 849838,
+   "kickoff": "2026-10-08T00:00:00Z",
+   "status": "Preview",
+   "venue": "Yankee Stadium",
+   "venueId": 3313,
+   "doubleHeader": "N",
+   "gameNumber": 1,
+   "away": {
+    "id": 139,
+    "name": "Tampa Bay Rays"
+   },
+   "home": {
+    "id": 147,
+    "name": "New York Yankees"
+   },
+   "probables": {
+    "away": {
+     "id": 607259,
+     "name": "Nick Martinez"
+    },
+    "home": {
+     "id": 608331,
+     "name": "Max Fried"
+    }
+   }
+  },
+  {
+   "gamePk": 849827,
+   "kickoff": "2026-10-08T02:00:00Z",
+   "status": "Preview",
+   "venue": "Petco Park",
+   "venueId": 2680,
+   "doubleHeader": "N",
+   "gameNumber": 1,
+   "away": {
+    "id": 158,
+    "name": "Milwaukee Brewers"
+   },
+   "home": {
+    "id": 135,
+    "name": "San Diego Padres"
+   },
+   "probables": {
+    "away": null,
+    "home": {
+     "id": 621111,
+     "name": "Walker Buehler"
+    }
+   }
+  }
+ ],
+ "odds": {
+  "CLE@CHW@2026-10-07T20:00Z": {
+   "book": "DraftKings",
+   "awayAbbr": "CLE",
+   "homeAbbr": "CHW",
+   "awayName": "Cleveland Guardians",
+   "homeName": "Chicago White Sox",
+   "start": "2026-10-07T20:00Z",
+   "ml": {
+    "away": 105,
+    "home": -126
+   },
+   "mlOpen": {
+    "away": -101,
+    "home": -120
+   },
+   "runLine": {
+    "away": {
+     "line": 1.5,
+     "price": -201
+    },
+    "home": {
+     "line": -1.5,
+     "price": 164
+    }
+   },
+   "total": {
+    "line": 8,
+    "open": 8,
+    "over": -105,
+    "under": -115
+   },
+   "roof": null
+  },
+  "LAD@ATL@2026-10-07T22:00Z": {
+   "book": "DraftKings",
+   "awayAbbr": "LAD",
+   "homeAbbr": "ATL",
+   "awayName": "Los Angeles Dodgers",
+   "homeName": "Atlanta Braves",
+   "start": "2026-10-07T22:00Z",
+   "ml": {
+    "away": -156,
+    "home": 129
+   },
+   "mlOpen": {
+    "away": -135,
+    "home": 112
+   },
+   "runLine": {
+    "away": {
+     "line": -1.5,
+     "price": 114
+    },
+    "home": {
+     "line": 1.5,
+     "price": -137
+    }
+   },
+   "total": {
+    "line": 7.5,
+    "open": 7,
+    "over": -110,
+    "under": -109
+   },
+   "roof": null
+  },
+  "TB@NYY@2026-10-08T00:00Z": {
+   "book": "DraftKings",
+   "awayAbbr": "TB",
+   "homeAbbr": "NYY",
+   "awayName": "Tampa Bay Rays",
+   "homeName": "New York Yankees",
+   "start": "2026-10-08T00:00Z",
+   "ml": {
+    "away": 142,
+    "home": -172
+   },
+   "mlOpen": {
+    "away": 122,
+    "home": -147
+   },
+   "runLine": {
+    "away": {
+     "line": 1.5,
+     "price": -157
+    },
+    "home": {
+     "line": -1.5,
+     "price": 130
+    }
+   },
+   "total": {
+    "line": 7,
+    "open": 7,
+    "over": -120,
+    "under": 100
+   },
+   "roof": null
+  },
+  "MIL@SD@2026-10-08T02:00Z": {
+   "book": "DraftKings",
+   "awayAbbr": "MIL",
+   "homeAbbr": "SD",
+   "awayName": "Milwaukee Brewers",
+   "homeName": "San Diego Padres",
+   "start": "2026-10-08T02:00Z",
+   "ml": {
+    "away": -107,
+    "home": -112
+   },
+   "mlOpen": {
+    "away": -103,
+    "home": -116
+   },
+   "runLine": {
+    "away": {
+     "line": -1.5,
+     "price": 163
+    },
+    "home": {
+     "line": 1.5,
+     "price": -200
+    }
+   },
+   "total": {
+    "line": 7.5,
+    "open": 7.5,
+    "over": -111,
+    "under": -108
+   },
+   "roof": null
+  }
+ },
+ "weather": {
+  "CLE@CHW@2026-10-07T20:00Z": {
+   "temperature": 79,
+   "gust": 16,
+   "precipitation": 0,
+   "conditionId": "2"
+  },
+  "LAD@ATL@2026-10-07T22:00Z": {
+   "temperature": 76,
+   "gust": 5,
+   "precipitation": 0,
+   "conditionId": "2"
+  },
+  "TB@NYY@2026-10-08T00:00Z": {
+   "temperature": 62,
+   "gust": 8,
+   "precipitation": 0,
+   "conditionId": "33"
+  },
+  "MIL@SD@2026-10-08T02:00Z": {
+   "temperature": 81,
+   "gust": 9,
+   "precipitation": 0,
+   "conditionId": "34"
+  }
+ },
+ "teams": {
+  "114": {
+   "id": 114,
+   "games": 162,
+   "runs": 678,
+   "ops": 0.696,
+   "vsL": {
+    "ops": 0.675,
+    "plateAppearances": 1948,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.706,
+    "plateAppearances": 4169,
+    "runs": null
+   },
+   "starters": {
+    "era": 3.93,
+    "ip": 863,
+    "er": 377,
+    "runs": 413
+   },
+   "bullpen": {
+    "era": 3.54,
+    "ip": 574.2,
+    "er": 226,
+    "runs": 254
+   }
+  },
+  "119": {
+   "id": 119,
+   "games": 162,
+   "runs": 801,
+   "ops": 0.762,
+   "vsL": {
+    "ops": 0.756,
+    "plateAppearances": 1947,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.766,
+    "plateAppearances": 4267,
+    "runs": null
+   },
+   "starters": {
+    "era": 3.43,
+    "ip": 879.2,
+    "er": 335,
+    "runs": 349
+   },
+   "bullpen": {
+    "era": 3.74,
+    "ip": 556,
+    "er": 231,
+    "runs": 251
+   }
+  },
+  "135": {
+   "id": 135,
+   "games": 162,
+   "runs": 722,
+   "ops": 0.717,
+   "vsL": {
+    "ops": 0.706,
+    "plateAppearances": 1526,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.722,
+    "plateAppearances": 4544,
+    "runs": null
+   },
+   "starters": {
+    "era": 4.42,
+    "ip": 752.2,
+    "er": 370,
+    "runs": 385
+   },
+   "bullpen": {
+    "era": 3.53,
+    "ip": 683.2,
+    "er": 268,
+    "runs": 296
+   }
+  },
+  "139": {
+   "id": 139,
+   "games": 162,
+   "runs": 736,
+   "ops": 0.728,
+   "vsL": {
+    "ops": 0.679,
+    "plateAppearances": 1972,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.752,
+    "plateAppearances": 4134,
+    "runs": null
+   },
+   "starters": {
+    "era": 3.51,
+    "ip": 811,
+    "er": 316,
+    "runs": 340
+   },
+   "bullpen": {
+    "era": 3.99,
+    "ip": 632,
+    "er": 280,
+    "runs": 310
+   }
+  },
+  "144": {
+   "id": 144,
+   "games": 162,
+   "runs": 742,
+   "ops": 0.718,
+   "vsL": {
+    "ops": 0.696,
+    "plateAppearances": 2039,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.73,
+    "plateAppearances": 4014,
+    "runs": null
+   },
+   "starters": {
+    "era": 3.76,
+    "ip": 839.1,
+    "er": 351,
+    "runs": 379
+   },
+   "bullpen": {
+    "era": 3.44,
+    "ip": 598.2,
+    "er": 229,
+    "runs": 247
+   }
+  },
+  "145": {
+   "id": 145,
+   "games": 162,
+   "runs": 776,
+   "ops": 0.726,
+   "vsL": {
+    "ops": 0.751,
+    "plateAppearances": 1818,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.716,
+    "plateAppearances": 4369,
+    "runs": null
+   },
+   "starters": {
+    "era": 4.6,
+    "ip": 674.2,
+    "er": 345,
+    "runs": 366
+   },
+   "bullpen": {
+    "era": 3.7,
+    "ip": 766,
+    "er": 315,
+    "runs": 354
+   }
+  },
+  "147": {
+   "id": 147,
+   "games": 161,
+   "runs": 739,
+   "ops": 0.72,
+   "vsL": {
+    "ops": 0.733,
+    "plateAppearances": 1963,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.714,
+    "plateAppearances": 4034,
+    "runs": null
+   },
+   "starters": {
+    "era": 3.3,
+    "ip": 867,
+    "er": 318,
+    "runs": 355
+   },
+   "bullpen": {
+    "era": 3.13,
+    "ip": 574.1,
+    "er": 200,
+    "runs": 246
+   }
+  },
+  "158": {
+   "id": 158,
+   "games": 162,
+   "runs": 832,
+   "ops": 0.744,
+   "vsL": {
+    "ops": 0.706,
+    "plateAppearances": 1925,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.759,
+    "plateAppearances": 4374,
+    "runs": null
+   },
+   "starters": {
+    "era": 3.61,
+    "ip": 806,
+    "er": 323,
+    "runs": 349
+   },
+   "bullpen": {
+    "era": 3.4,
+    "ip": 640.2,
+    "er": 242,
+    "runs": 269
+   }
+  }
+ },
+ "pitchers": {
+  "607192": {
+   "id": 607192,
+   "name": "Tyler Glasnow",
+   "throws": "R",
+   "starts": 13,
+   "ip": 74,
+   "era": 3.53,
+   "runs": 29,
+   "earnedRuns": 29,
+   "hits": 45,
+   "walks": 25,
+   "strikeOuts": 98,
+   "homeRuns": 7,
+   "whip": 0.95,
+   "battersFaced": 288
+  },
+  "607259": {
+   "id": 607259,
+   "name": "Nick Martinez",
+   "throws": "R",
+   "starts": 31,
+   "ip": 180,
+   "era": 3.1,
+   "runs": 62,
+   "earnedRuns": 62,
+   "hits": 171,
+   "walks": 26,
+   "strikeOuts": 109,
+   "homeRuns": 22,
+   "whip": 1.09,
+   "battersFaced": 722
+  },
+  "608331": {
+   "id": 608331,
+   "name": "Max Fried",
+   "throws": "L",
+   "starts": 20,
+   "ip": 112.2,
+   "era": 2.8,
+   "runs": 35,
+   "earnedRuns": 35,
+   "hits": 79,
+   "walks": 33,
+   "strikeOuts": 104,
+   "homeRuns": 4,
+   "whip": 0.99,
+   "battersFaced": 434
+  },
+  "621111": {
+   "id": 621111,
+   "name": "Walker Buehler",
+   "throws": "R",
+   "starts": 32,
+   "ip": 153.2,
+   "era": 4.63,
+   "runs": 81,
+   "earnedRuns": 79,
+   "hits": 150,
+   "walks": 57,
+   "strikeOuts": 131,
+   "homeRuns": 22,
+   "whip": 1.35,
+   "battersFaced": 651
+  },
+  "641816": {
+   "id": 641816,
+   "name": "Tyler Mahle",
+   "throws": "R",
+   "starts": 27,
+   "ip": 149,
+   "era": 3.99,
+   "runs": 69,
+   "earnedRuns": 66,
+   "hits": 138,
+   "walks": 46,
+   "strikeOuts": 137,
+   "homeRuns": 20,
+   "whip": 1.23,
+   "battersFaced": 614
+  },
+  "656794": {
+   "id": 656794,
+   "name": "Sean Newcomb",
+   "throws": "L",
+   "starts": 6,
+   "ip": 90.1,
+   "era": 3.09,
+   "runs": 35,
+   "earnedRuns": 31,
+   "hits": 73,
+   "walks": 34,
+   "strikeOuts": 84,
+   "homeRuns": 4,
+   "whip": 1.18,
+   "battersFaced": 372
+  },
+  "682982": {
+   "id": 682982,
+   "name": "Daniel Espino",
+   "throws": "R",
+   "starts": 3,
+   "ip": 15.1,
+   "era": 4.11,
+   "runs": 7,
+   "earnedRuns": 7,
+   "hits": 12,
+   "walks": 7,
+   "strikeOuts": 25,
+   "homeRuns": 3,
+   "whip": 1.24,
+   "battersFaced": 65
+  }
+ }
+}

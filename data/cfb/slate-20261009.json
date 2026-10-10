@@ -1,0 +1,2227 @@
+{
+ "fetchedAt": "2026-10-09T22:12:10.835Z",
+ "season": 2026,
+ "slate": "20261009",
+ "fit": {
+  "finals": 397,
+  "pricedFinals": 397,
+  "weeks": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "mu": 26.55,
+  "hfa": 2.4,
+  "sigma": 16,
+  "formWeight": 1,
+  "fitRmseVsPostedSpread": 4.2
+ },
+ "ratings": {
+  "USC": {
+   "off": 11.83,
+   "def": 3.7,
+   "net": 15.53,
+   "games": 6,
+   "sos": 3.38,
+   "form": {
+    "games": 6,
+    "offResid": -0.82,
+    "defResid": -3.52,
+    "rawOff": -1.38,
+    "rawDef": -5.88
+   }
+  },
+  "SJSU": {
+   "off": -5.8,
+   "def": -2.66,
+   "net": -8.46,
+   "games": 6,
+   "sos": -7.03,
+   "form": {
+    "games": 5,
+    "offResid": -1.31,
+    "defResid": 2.64,
+    "rawOff": -2.35,
+    "rawDef": 4.75
+   }
+  },
+  "TCU": {
+   "off": -0.72,
+   "def": 7.53,
+   "net": 6.81,
+   "games": 5,
+   "sos": -4.53,
+   "form": {
+    "games": 5,
+    "offResid": -3.94,
+    "defResid": 3,
+    "rawOff": -7.1,
+    "rawDef": 5.4
+   }
+  },
+  "UNC": {
+   "off": -1.12,
+   "def": 5.65,
+   "net": 4.53,
+   "games": 4,
+   "sos": 2.47,
+   "form": {
+    "games": 4,
+    "offResid": -0.38,
+    "defResid": 2,
+    "rawOff": -0.75,
+    "rawDef": 4
+   }
+  },
+  "UVA": {
+   "off": 3.3,
+   "def": 5.59,
+   "net": 8.89,
+   "games": 5,
+   "sos": -5.74,
+   "form": {
+    "games": 5,
+    "offResid": -0.42,
+    "defResid": -0.03,
+    "rawOff": -0.75,
+    "rawDef": -0.05
+   }
+  },
+  "NCSU": {
+   "off": 4.33,
+   "def": 0.04,
+   "net": 4.37,
+   "games": 5,
+   "sos": -4.24,
+   "form": {
+    "games": 5,
+    "offResid": 3.89,
+    "defResid": -1.39,
+    "rawOff": 7,
+    "rawDef": -2.5
+   }
+  },
+  "NDSU": {
+   "off": 1.21,
+   "def": 6.02,
+   "net": 7.23,
+   "games": 5,
+   "sos": -13.56,
+   "form": {
+    "games": 5,
+    "offResid": -0.11,
+    "defResid": 2.94,
+    "rawOff": -0.2,
+    "rawDef": 5.3
+   }
+  },
+  "JXST": {
+   "off": -4.98,
+   "def": -1.88,
+   "net": -6.86,
+   "games": 6,
+   "sos": -11.98,
+   "form": {
+    "games": 6,
+    "offResid": 0.15,
+    "defResid": -0.05,
+    "rawOff": 0.25,
+    "rawDef": -0.08
+   }
+  },
+  "EMU": {
+   "off": -7.33,
+   "def": -4.23,
+   "net": -11.56,
+   "games": 6,
+   "sos": -9.68,
+   "form": {
+    "games": 6,
+    "offResid": -1.3,
+    "defResid": 0.7,
+    "rawOff": -2.17,
+    "rawDef": 1.17
+   }
+  },
+  "SAC": {
+   "off": -10.63,
+   "def": -7.31,
+   "net": -17.94,
+   "games": 5,
+   "sos": -10.35,
+   "form": {
+    "games": 5,
+    "offResid": -3.08,
+    "defResid": -0.69,
+    "rawOff": -5.55,
+    "rawDef": -1.25
+   }
+  },
+  "STAN": {
+   "off": -5.5,
+   "def": -4.78,
+   "net": -10.28,
+   "games": 5,
+   "sos": 5.69,
+   "form": {
+    "games": 5,
+    "offResid": -1.58,
+    "defResid": -4.75,
+    "rawOff": -2.85,
+    "rawDef": -8.55
+   }
+  },
+  "HAW": {
+   "off": -7.39,
+   "def": -2.94,
+   "net": -10.33,
+   "games": 5,
+   "sos": -6.69,
+   "form": {
+    "games": 5,
+    "offResid": -4.44,
+    "defResid": -0.17,
+    "rawOff": -8,
+    "rawDef": -0.3
+   }
+  },
+  "FSU": {
+   "off": 4.81,
+   "def": 2.84,
+   "net": 7.65,
+   "games": 6,
+   "sos": 0.08,
+   "form": {
+    "games": 5,
+    "offResid": 0.47,
+    "defResid": 0.08,
+    "rawOff": 0.85,
+    "rawDef": 0.15
+   }
+  },
+  "NMSU": {
+   "off": -6.93,
+   "def": -3.19,
+   "net": -10.12,
+   "games": 6,
+   "sos": -7.8,
+   "form": {
+    "games": 6,
+    "offResid": 0.18,
+    "defResid": 1.17,
+    "rawOff": 0.29,
+    "rawDef": 1.96
+   }
+  },
+  "UNLV": {
+   "off": -1.12,
+   "def": 1.3,
+   "net": 0.18,
+   "games": 5,
+   "sos": -3.17,
+   "form": {
+    "games": 5,
+    "offResid": -2.69,
+    "defResid": 0.69,
+    "rawOff": -4.85,
+    "rawDef": 1.25
+   }
+  },
+  "MEM": {
+   "off": 3.41,
+   "def": -0.73,
+   "net": 2.68,
+   "games": 5,
+   "sos": -11.18,
+   "form": {
+    "games": 5,
+    "offResid": 3.56,
+    "defResid": 0.06,
+    "rawOff": 6.4,
+    "rawDef": 0.1
+   }
+  },
+  "UTAH": {
+   "off": 7.34,
+   "def": 6.8,
+   "net": 14.14,
+   "games": 4,
+   "sos": -11.29,
+   "form": {
+    "games": 4,
+    "offResid": 2.63,
+    "defResid": 3.13,
+    "rawOff": 5.25,
+    "rawDef": 6.25
+   }
+  },
+  "FCS": {
+   "off": -15.38,
+   "def": -20.7,
+   "net": -36.08,
+   "games": 119,
+   "sos": -1.68,
+   "form": {
+    "games": 119,
+    "offResid": -0.67,
+    "defResid": -2.54,
+    "rawOff": -0.69,
+    "rawDef": -2.62
+   }
+  },
+  "MIZ": {
+   "off": 7.64,
+   "def": 5.51,
+   "net": 13.15,
+   "games": 5,
+   "sos": -2.28,
+   "form": {
+    "games": 5,
+    "offResid": 1.08,
+    "defResid": 0.14,
+    "rawOff": 1.95,
+    "rawDef": 0.25
+   }
+  },
+  "RUTG": {
+   "off": 2.16,
+   "def": -2.88,
+   "net": -0.72,
+   "games": 5,
+   "sos": 0.04,
+   "form": {
+    "games": 5,
+    "offResid": -0.33,
+    "defResid": -3.5,
+    "rawOff": -0.6,
+    "rawDef": -6.3
+   }
+  },
+  "MASS": {
+   "off": -5.1,
+   "def": -1.34,
+   "net": -6.44,
+   "games": 5,
+   "sos": -17.55,
+   "form": {
+    "games": 5,
+    "offResid": 1.31,
+    "defResid": 2.47,
+    "rawOff": 2.35,
+    "rawDef": 4.45
+   }
+  },
+  "UCF": {
+   "off": 2.6,
+   "def": 5.88,
+   "net": 8.48,
+   "games": 5,
+   "sos": -2.5,
+   "form": {
+    "games": 5,
+    "offResid": 1.17,
+    "defResid": 2.67,
+    "rawOff": 2.1,
+    "rawDef": 4.8
+   }
+  },
+  "WAKE": {
+   "off": 7.32,
+   "def": 3.22,
+   "net": 10.54,
+   "games": 5,
+   "sos": 2.62,
+   "form": {
+    "games": 5,
+    "offResid": 4.67,
+    "defResid": 1.5,
+    "rawOff": 8.4,
+    "rawDef": 2.7
+   }
+  },
+  "AKR": {
+   "off": -9.34,
+   "def": -8.08,
+   "net": -17.42,
+   "games": 5,
+   "sos": -6.77,
+   "form": {
+    "games": 5,
+    "offResid": -0.61,
+    "defResid": -2.67,
+    "rawOff": -1.1,
+    "rawDef": -4.8
+   }
+  },
+  "DEL": {
+   "off": -6.39,
+   "def": -3.6,
+   "net": -9.99,
+   "games": 5,
+   "sos": -6.74,
+   "form": {
+    "games": 5,
+    "offResid": -2.58,
+    "defResid": 1.47,
+    "rawOff": -4.65,
+    "rawDef": 2.65
+   }
+  },
+  "KENN": {
+   "off": -7.71,
+   "def": -2.3,
+   "net": -10.01,
+   "games": 5,
+   "sos": -8.43,
+   "form": {
+    "games": 5,
+    "offResid": -1.53,
+    "defResid": 2.75,
+    "rawOff": -2.75,
+    "rawDef": 4.95
+   }
+  },
+  "BUFF": {
+   "off": -11.77,
+   "def": -7.57,
+   "net": -19.34,
+   "games": 5,
+   "sos": -12.75,
+   "form": {
+    "games": 5,
+    "offResid": -0.94,
+    "defResid": -3,
+    "rawOff": -1.7,
+    "rawDef": -5.4
+   }
+  },
+  "GT": {
+   "off": -1.18,
+   "def": -0.57,
+   "net": -1.75,
+   "games": 4,
+   "sos": -5.33,
+   "form": {
+    "games": 4,
+    "offResid": -2.22,
+    "defResid": -1.72,
+    "rawOff": -4.44,
+    "rawDef": -3.44
+   }
+  },
+  "COLO": {
+   "off": -4.9,
+   "def": 0.01,
+   "net": -4.89,
+   "games": 5,
+   "sos": -2.19,
+   "form": {
+    "games": 5,
+    "offResid": -4.67,
+    "defResid": 0.17,
+    "rawOff": -8.4,
+    "rawDef": 0.3
+   }
+  },
+  "MINN": {
+   "off": 1.66,
+   "def": 5.6,
+   "net": 7.26,
+   "games": 5,
+   "sos": -2.77,
+   "form": {
+    "games": 5,
+    "offResid": 1.94,
+    "defResid": 0.89,
+    "rawOff": 3.5,
+    "rawDef": 1.6
+   }
+  },
+  "ILL": {
+   "off": 1.44,
+   "def": 0.58,
+   "net": 2.02,
+   "games": 5,
+   "sos": -3.25,
+   "form": {
+    "games": 5,
+    "offResid": -1.14,
+    "defResid": -1.86,
+    "rawOff": -2.05,
+    "rawDef": -3.35
+   }
+  },
+  "UAB": {
+   "off": -6.26,
+   "def": -4.23,
+   "net": -10.49,
+   "games": 5,
+   "sos": -11.08,
+   "form": {
+    "games": 5,
+    "offResid": -1.58,
+    "defResid": 1.81,
+    "rawOff": -2.85,
+    "rawDef": 3.25
+   }
+  },
+  "MIA": {
+   "off": 16.73,
+   "def": 11.51,
+   "net": 28.24,
+   "games": 5,
+   "sos": -7.14,
+   "form": {
+    "games": 5,
+    "offResid": 3.64,
+    "defResid": 0.69,
+    "rawOff": 6.55,
+    "rawDef": 1.25
+   }
+  },
+  "OU": {
+   "off": 2.72,
+   "def": 11.15,
+   "net": 13.87,
+   "games": 4,
+   "sos": 5.22,
+   "form": {
+    "games": 4,
+    "offResid": -4,
+    "defResid": 0,
+    "rawOff": -8,
+    "rawDef": 0
+   }
+  },
+  "UTEP": {
+   "off": -9.01,
+   "def": -12.42,
+   "net": -21.43,
+   "games": 5,
+   "sos": -1.7,
+   "form": {
+    "games": 5,
+    "offResid": -0.61,
+    "defResid": -4.11,
+    "rawOff": -1.1,
+    "rawDef": -7.4
+   }
+  },
+  "FRES": {
+   "off": -2.01,
+   "def": 5.14,
+   "net": 3.13,
+   "games": 5,
+   "sos": -4.7,
+   "form": {
+    "games": 5,
+    "offResid": 2.08,
+    "defResid": 3.14,
+    "rawOff": 3.75,
+    "rawDef": 5.65
+   }
+  },
+  "PUR": {
+   "off": 2.44,
+   "def": -4.54,
+   "net": -2.1,
+   "games": 5,
+   "sos": 2.4,
+   "form": {
+    "games": 5,
+    "offResid": 2.28,
+    "defResid": -2.89,
+    "rawOff": 4.1,
+    "rawDef": -5.2
+   }
+  },
+  "GAST": {
+   "off": 2.13,
+   "def": -2.66,
+   "net": -0.53,
+   "games": 5,
+   "sos": -13.21,
+   "form": {
+    "games": 5,
+    "offResid": 6,
+    "defResid": 3.83,
+    "rawOff": 10.8,
+    "rawDef": 6.9
+   }
+  },
+  "KU": {
+   "off": 3.13,
+   "def": 3.97,
+   "net": 7.1,
+   "games": 4,
+   "sos": -7.32,
+   "form": {
+    "games": 4,
+    "offResid": 1.28,
+    "defResid": 1.16,
+    "rawOff": 2.56,
+    "rawDef": 2.31
+   }
+  },
+  "MSU": {
+   "off": -2.88,
+   "def": 3.63,
+   "net": 0.75,
+   "games": 5,
+   "sos": 5.49,
+   "form": {
+    "games": 5,
+    "offResid": -2.44,
+    "defResid": 1.39,
+    "rawOff": -4.4,
+    "rawDef": 2.5
+   }
+  },
+  "TOL": {
+   "off": 4.57,
+   "def": -3.23,
+   "net": 1.34,
+   "games": 5,
+   "sos": -12.44,
+   "form": {
+    "games": 5,
+    "offResid": 6.53,
+    "defResid": -3.19,
+    "rawOff": 11.75,
+    "rawDef": -5.75
+   }
+  },
+  "OSU": {
+   "off": 14.5,
+   "def": 11.48,
+   "net": 25.98,
+   "games": 5,
+   "sos": -0.96,
+   "form": {
+    "games": 5,
+    "offResid": 0.94,
+    "defResid": -0.11,
+    "rawOff": 1.7,
+    "rawDef": -0.2
+   }
+  },
+  "BALL": {
+   "off": -10.16,
+   "def": -12,
+   "net": -22.16,
+   "games": 5,
+   "sos": -6.9,
+   "form": {
+    "games": 5,
+    "offResid": 0.28,
+    "defResid": -2.33,
+    "rawOff": 0.5,
+    "rawDef": -4.2
+   }
+  },
+  "ORE": {
+   "off": 16.1,
+   "def": 7.59,
+   "net": 23.69,
+   "games": 4,
+   "sos": -0.41,
+   "form": {
+    "games": 4,
+    "offResid": 1.75,
+    "defResid": -3.5,
+    "rawOff": 3.5,
+    "rawDef": -7
+   }
+  },
+  "BOIS": {
+   "off": 2.99,
+   "def": 2.54,
+   "net": 5.53,
+   "games": 5,
+   "sos": -5.21,
+   "form": {
+    "games": 5,
+    "offResid": 1.78,
+    "defResid": 1.28,
+    "rawOff": 3.2,
+    "rawDef": 2.3
+   }
+  },
+  "UGA": {
+   "off": 16.15,
+   "def": 10.94,
+   "net": 27.09,
+   "games": 5,
+   "sos": -4.68,
+   "form": {
+    "games": 5,
+    "offResid": 5.78,
+    "defResid": -1.5,
+    "rawOff": 10.4,
+    "rawDef": -2.7
+   }
+  },
+  "TEX": {
+   "off": 9.69,
+   "def": 15.66,
+   "net": 25.35,
+   "games": 4,
+   "sos": 9.95,
+   "form": {
+    "games": 4,
+    "offResid": -1.63,
+    "defResid": 3.25,
+    "rawOff": -3.25,
+    "rawDef": 6.5
+   }
+  },
+  "TXST": {
+   "off": 4.78,
+   "def": -5.72,
+   "net": -0.94,
+   "games": 5,
+   "sos": -2.74,
+   "form": {
+    "games": 5,
+    "offResid": 1.06,
+    "defResid": -1.89,
+    "rawOff": 1.9,
+    "rawDef": -3.4
+   }
+  },
+  "IU": {
+   "off": 12.7,
+   "def": 10.7,
+   "net": 23.4,
+   "games": 5,
+   "sos": -8.77,
+   "form": {
+    "games": 5,
+    "offResid": -1.94,
+    "defResid": -0.22,
+    "rawOff": -3.5,
+    "rawDef": -0.4
+   }
+  },
+  "UNT": {
+   "off": 6.96,
+   "def": -4.04,
+   "net": 2.92,
+   "games": 5,
+   "sos": -1.53,
+   "form": {
+    "games": 5,
+    "offResid": 6.36,
+    "defResid": -1.69,
+    "rawOff": 11.45,
+    "rawDef": -3.05
+   }
+  },
+  "TA&M": {
+   "off": 5.99,
+   "def": 8.48,
+   "net": 14.47,
+   "games": 5,
+   "sos": 2.79,
+   "form": {
+    "games": 5,
+    "offResid": -0.83,
+    "defResid": -0.22,
+    "rawOff": -1.5,
+    "rawDef": -0.4
+   }
+  },
+  "MOST": {
+   "off": -7.52,
+   "def": -7.31,
+   "net": -14.83,
+   "games": 5,
+   "sos": -5.45,
+   "form": {
+    "games": 5,
+    "offResid": -0.19,
+    "defResid": 0.42,
+    "rawOff": -0.35,
+    "rawDef": 0.75
+   }
+  },
+  "LSU": {
+   "off": 13.83,
+   "def": 9.7,
+   "net": 23.53,
+   "games": 5,
+   "sos": 0.66,
+   "form": {
+    "games": 5,
+    "offResid": 2.78,
+    "defResid": 0.83,
+    "rawOff": 5,
+    "rawDef": 1.5
+   }
+  },
+  "CLEM": {
+   "off": -0.7,
+   "def": 5.67,
+   "net": 4.97,
+   "games": 5,
+   "sos": 9.34,
+   "form": {
+    "games": 5,
+    "offResid": -3.19,
+    "defResid": -0.58,
+    "rawOff": -5.75,
+    "rawDef": -1.05
+   }
+  },
+  "TTU": {
+   "off": 4.79,
+   "def": 6.23,
+   "net": 11.02,
+   "games": 5,
+   "sos": -9.2,
+   "form": {
+    "games": 5,
+    "offResid": -2.83,
+    "defResid": -0.89,
+    "rawOff": -5.1,
+    "rawDef": -1.6
+   }
+  },
+  "ALA": {
+   "off": 16.76,
+   "def": 8.67,
+   "net": 25.43,
+   "games": 5,
+   "sos": 4.35,
+   "form": {
+    "games": 5,
+    "offResid": 8.61,
+    "defResid": -0.89,
+    "rawOff": 15.5,
+    "rawDef": -1.6
+   }
+  },
+  "ECU": {
+   "off": -3.24,
+   "def": -2.06,
+   "net": -5.3,
+   "games": 4,
+   "sos": -6.53,
+   "form": {
+    "games": 4,
+    "offResid": -2.25,
+    "defResid": 0,
+    "rawOff": -4.5,
+    "rawDef": 0
+   }
+  },
+  "BYU": {
+   "off": 5.02,
+   "def": 6.99,
+   "net": 12.01,
+   "games": 5,
+   "sos": -6.69,
+   "form": {
+    "games": 4,
+    "offResid": 0.25,
+    "defResid": 1.25,
+    "rawOff": 0.5,
+    "rawDef": 2.5
+   }
+  },
+  "MICH": {
+   "off": 0.89,
+   "def": 8.49,
+   "net": 9.38,
+   "games": 5,
+   "sos": 1.59,
+   "form": {
+    "games": 5,
+    "offResid": -3.39,
+    "defResid": -0.11,
+    "rawOff": -6.1,
+    "rawDef": -0.2
+   }
+  },
+  "WMU": {
+   "off": -5.17,
+   "def": 0.16,
+   "net": -5.01,
+   "games": 5,
+   "sos": -9.31,
+   "form": {
+    "games": 5,
+    "offResid": -1.61,
+    "defResid": 2,
+    "rawOff": -2.9,
+    "rawDef": 3.6
+   }
+  },
+  "PSU": {
+   "off": 5.13,
+   "def": 6.06,
+   "net": 11.19,
+   "games": 5,
+   "sos": -5.31,
+   "form": {
+    "games": 5,
+    "offResid": -1.19,
+    "defResid": -1.03,
+    "rawOff": -2.15,
+    "rawDef": -1.85
+   }
+  },
+  "MRSH": {
+   "off": -6.21,
+   "def": -8.9,
+   "net": -15.11,
+   "games": 5,
+   "sos": -9.12,
+   "form": {
+    "games": 5,
+    "offResid": -3.03,
+    "defResid": -4.31,
+    "rawOff": -5.45,
+    "rawDef": -7.75
+   }
+  },
+  "TENN": {
+   "off": 9.02,
+   "def": 7.98,
+   "net": 17,
+   "games": 5,
+   "sos": -1.33,
+   "form": {
+    "games": 5,
+    "offResid": -1.19,
+    "defResid": 2.31,
+    "rawOff": -2.15,
+    "rawDef": 4.15
+   }
+  },
+  "IOWA": {
+   "off": 0.15,
+   "def": 9.58,
+   "net": 9.73,
+   "games": 6,
+   "sos": -1.33,
+   "form": {
+    "games": 5,
+    "offResid": 0.25,
+    "defResid": 1.75,
+    "rawOff": 0.45,
+    "rawDef": 3.15
+   }
+  },
+  "NIU": {
+   "off": -14,
+   "def": -11.46,
+   "net": -25.46,
+   "games": 4,
+   "sos": -7.58,
+   "form": {
+    "games": 4,
+    "offResid": -0.75,
+    "defResid": -0.88,
+    "rawOff": -1.5,
+    "rawDef": -1.75
+   }
+  },
+  "HOU": {
+   "off": 8.59,
+   "def": 4.58,
+   "net": 13.17,
+   "games": 5,
+   "sos": -5.7,
+   "form": {
+    "games": 5,
+    "offResid": 2.53,
+    "defResid": -1.08,
+    "rawOff": 4.55,
+    "rawDef": -1.95
+   }
+  },
+  "ORST": {
+   "off": 2.03,
+   "def": -1.67,
+   "net": 0.36,
+   "games": 5,
+   "sos": -7.13,
+   "form": {
+    "games": 5,
+    "offResid": 5.83,
+    "defResid": 2.78,
+    "rawOff": 10.5,
+    "rawDef": 5
+   }
+  },
+  "WVU": {
+   "off": 5.48,
+   "def": -2.21,
+   "net": 3.27,
+   "games": 5,
+   "sos": -4.79,
+   "form": {
+    "games": 5,
+    "offResid": 2.56,
+    "defResid": -3.39,
+    "rawOff": 4.6,
+    "rawDef": -6.1
+   }
+  },
+  "CCU": {
+   "off": -5.9,
+   "def": -3.26,
+   "net": -9.16,
+   "games": 5,
+   "sos": -9.6,
+   "form": {
+    "games": 5,
+    "offResid": -1.53,
+    "defResid": 0.75,
+    "rawOff": -2.75,
+    "rawDef": 1.35
+   }
+  },
+  "SYR": {
+   "off": 2.47,
+   "def": 1.69,
+   "net": 4.16,
+   "games": 4,
+   "sos": -5.96,
+   "form": {
+    "games": 4,
+    "offResid": 1.66,
+    "defResid": -0.22,
+    "rawOff": 3.31,
+    "rawDef": -0.44
+   }
+  },
+  "NEB": {
+   "off": 7.34,
+   "def": 4.52,
+   "net": 11.86,
+   "games": 5,
+   "sos": -11.78,
+   "form": {
+    "games": 5,
+    "offResid": 4.42,
+    "defResid": 0.47,
+    "rawOff": 7.95,
+    "rawDef": 0.85
+   }
+  },
+  "OHIO": {
+   "off": -6.04,
+   "def": -5.33,
+   "net": -11.37,
+   "games": 5,
+   "sos": -13.11,
+   "form": {
+    "games": 5,
+    "offResid": 0.64,
+    "defResid": -1.42,
+    "rawOff": 1.15,
+    "rawDef": -2.55
+   }
+  },
+  "CONN": {
+   "off": 0.61,
+   "def": -4.6,
+   "net": -3.99,
+   "games": 5,
+   "sos": -9.9,
+   "form": {
+    "games": 5,
+    "offResid": 5.17,
+    "defResid": -0.22,
+    "rawOff": 9.3,
+    "rawDef": -0.4
+   }
+  },
+  "ARMY": {
+   "off": -0.73,
+   "def": 1.22,
+   "net": 0.49,
+   "games": 4,
+   "sos": -11.72,
+   "form": {
+    "games": 4,
+    "offResid": 1.94,
+    "defResid": -0.56,
+    "rawOff": 3.88,
+    "rawDef": -1.13
+   }
+  },
+  "BGSU": {
+   "off": -15.09,
+   "def": -9.25,
+   "net": -24.34,
+   "games": 5,
+   "sos": -7.03,
+   "form": {
+    "games": 5,
+    "offResid": -2.11,
+    "defResid": -1.06,
+    "rawOff": -3.8,
+    "rawDef": -1.9
+   }
+  },
+  "JMU": {
+   "off": 7.81,
+   "def": 5.62,
+   "net": 13.43,
+   "games": 5,
+   "sos": -9.73,
+   "form": {
+    "games": 5,
+    "offResid": 6.86,
+    "defResid": 2.81,
+    "rawOff": 12.35,
+    "rawDef": 5.05
+   }
+  },
+  "LIB": {
+   "off": -2.41,
+   "def": 2.31,
+   "net": -0.1,
+   "games": 6,
+   "sos": -13.78,
+   "form": {
+    "games": 6,
+    "offResid": 0.2,
+    "defResid": 3.3,
+    "rawOff": 0.33,
+    "rawDef": 5.5
+   }
+  },
+  "PITT": {
+   "off": 8.14,
+   "def": 7.29,
+   "net": 15.43,
+   "games": 5,
+   "sos": -4.13,
+   "form": {
+    "games": 5,
+    "offResid": 1.39,
+    "defResid": 2.78,
+    "rawOff": 2.5,
+    "rawDef": 5
+   }
+  },
+  "M-OH": {
+   "off": -5.72,
+   "def": -4.52,
+   "net": -10.24,
+   "games": 5,
+   "sos": -9.98,
+   "form": {
+    "games": 5,
+    "offResid": 0.94,
+    "defResid": -3.67,
+    "rawOff": 1.7,
+    "rawDef": -6.6
+   }
+  },
+  "SC": {
+   "off": 5.73,
+   "def": -0.36,
+   "net": 5.37,
+   "games": 5,
+   "sos": -5.23,
+   "form": {
+    "games": 5,
+    "offResid": 1.53,
+    "defResid": -3.64,
+    "rawOff": 2.75,
+    "rawDef": -6.55
+   }
+  },
+  "KENT": {
+   "off": -13.17,
+   "def": -8.36,
+   "net": -21.53,
+   "games": 5,
+   "sos": -6.19,
+   "form": {
+    "games": 5,
+    "offResid": -1.64,
+    "defResid": 1.31,
+    "rawOff": -2.95,
+    "rawDef": 2.35
+   }
+  },
+  "UK": {
+   "off": 4.18,
+   "def": 0.14,
+   "net": 4.32,
+   "games": 5,
+   "sos": -0.72,
+   "form": {
+    "games": 5,
+    "offResid": 3.72,
+    "defResid": -1,
+    "rawOff": 6.7,
+    "rawDef": -1.8
+   }
+  },
+  "ISU": {
+   "off": 1,
+   "def": 1.21,
+   "net": 2.21,
+   "games": 6,
+   "sos": -3.89,
+   "form": {
+    "games": 5,
+    "offResid": 3.56,
+    "defResid": -0.39,
+    "rawOff": 6.4,
+    "rawDef": -0.7
+   }
+  },
+  "AFA": {
+   "off": -2.81,
+   "def": -0.65,
+   "net": -3.46,
+   "games": 4,
+   "sos": -11.65,
+   "form": {
+    "games": 4,
+    "offResid": -0.31,
+    "defResid": 0.19,
+    "rawOff": -0.63,
+    "rawDef": 0.38
+   }
+  },
+  "TEM": {
+   "off": -3.98,
+   "def": -2.15,
+   "net": -6.13,
+   "games": 5,
+   "sos": -4.63,
+   "form": {
+    "games": 5,
+    "offResid": 1.86,
+    "defResid": 1.36,
+    "rawOff": 3.35,
+    "rawDef": 2.45
+   }
+  },
+  "AUB": {
+   "off": 3.36,
+   "def": 6.69,
+   "net": 10.05,
+   "games": 5,
+   "sos": 5.1,
+   "form": {
+    "games": 5,
+    "offResid": -2.78,
+    "defResid": 1.28,
+    "rawOff": -5,
+    "rawDef": 2.3
+   }
+  },
+  "BAY": {
+   "off": 4.6,
+   "def": 6.74,
+   "net": 11.34,
+   "games": 5,
+   "sos": -3.81,
+   "form": {
+    "games": 5,
+    "offResid": 1.28,
+    "defResid": 3.89,
+    "rawOff": 2.3,
+    "rawDef": 7
+   }
+  },
+  "CIN": {
+   "off": 3.39,
+   "def": -0.66,
+   "net": 2.73,
+   "games": 5,
+   "sos": -5.62,
+   "form": {
+    "games": 5,
+    "offResid": 0.97,
+    "defResid": -0.08,
+    "rawOff": 1.75,
+    "rawDef": -0.15
+   }
+  },
+  "BC": {
+   "off": -6.32,
+   "def": 2,
+   "net": -4.32,
+   "games": 5,
+   "sos": -1.3,
+   "form": {
+    "games": 5,
+    "offResid": -3.78,
+    "defResid": 1.61,
+    "rawOff": -6.8,
+    "rawDef": 2.9
+   }
+  },
+  "DUKE": {
+   "off": 3.76,
+   "def": 5.5,
+   "net": 9.26,
+   "games": 4,
+   "sos": -8.95,
+   "form": {
+    "games": 4,
+    "offResid": 1.09,
+    "defResid": 4.47,
+    "rawOff": 2.19,
+    "rawDef": 8.94
+   }
+  },
+  "TULN": {
+   "off": -6.64,
+   "def": 0.76,
+   "net": -5.88,
+   "games": 4,
+   "sos": -3.56,
+   "form": {
+    "games": 4,
+    "offResid": -3.06,
+    "defResid": 1.19,
+    "rawOff": -6.13,
+    "rawDef": 2.38
+   }
+  },
+  "CLT": {
+   "off": -11.88,
+   "def": -13.36,
+   "net": -25.24,
+   "games": 5,
+   "sos": -6.87,
+   "form": {
+    "games": 5,
+    "offResid": -1.28,
+    "defResid": -4.11,
+    "rawOff": -2.3,
+    "rawDef": -7.4
+   }
+  },
+  "NAVY": {
+   "off": -5.14,
+   "def": 0.47,
+   "net": -4.67,
+   "games": 4,
+   "sos": -12.2,
+   "form": {
+    "games": 4,
+    "offResid": -2.75,
+    "defResid": -1,
+    "rawOff": -5.5,
+    "rawDef": -2
+   }
+  },
+  "UTSA": {
+   "off": 1.07,
+   "def": -1.8,
+   "net": -0.73,
+   "games": 6,
+   "sos": -6.03,
+   "form": {
+    "games": 6,
+    "offResid": 0.05,
+    "defResid": 0.35,
+    "rawOff": 0.08,
+    "rawDef": 0.58
+   }
+  },
+  "APP": {
+   "off": -1.13,
+   "def": -3.17,
+   "net": -4.3,
+   "games": 4,
+   "sos": -13.48,
+   "form": {
+    "games": 4,
+    "offResid": 2.59,
+    "defResid": 1.34,
+    "rawOff": 5.19,
+    "rawDef": 2.69
+   }
+  },
+  "TLSA": {
+   "off": -3.28,
+   "def": 1.14,
+   "net": -2.14,
+   "games": 5,
+   "sos": -8.2,
+   "form": {
+    "games": 5,
+    "offResid": -1.39,
+    "defResid": 1.67,
+    "rawOff": -2.5,
+    "rawDef": 3
+   }
+  },
+  "OKST": {
+   "off": 7.92,
+   "def": 4.23,
+   "net": 12.15,
+   "games": 4,
+   "sos": -1.44,
+   "form": {
+    "games": 4,
+    "offResid": 0.63,
+    "defResid": 2.63,
+    "rawOff": 1.25,
+    "rawDef": 5.25
+   }
+  },
+  "ARK": {
+   "off": -2.55,
+   "def": -0.82,
+   "net": -3.37,
+   "games": 5,
+   "sos": 2.28,
+   "form": {
+    "games": 5,
+    "offResid": -4.14,
+    "defResid": -0.19,
+    "rawOff": -7.45,
+    "rawDef": -0.35
+   }
+  },
+  "USM": {
+   "off": -5.35,
+   "def": -10.25,
+   "net": -15.6,
+   "games": 5,
+   "sos": -8.69,
+   "form": {
+    "games": 5,
+    "offResid": 2.22,
+    "defResid": -2.06,
+    "rawOff": 4,
+    "rawDef": -3.7
+   }
+  },
+  "CSU": {
+   "off": 1.34,
+   "def": -12.63,
+   "net": -11.29,
+   "games": 5,
+   "sos": -8.43,
+   "form": {
+    "games": 5,
+    "offResid": 6.47,
+    "defResid": -5.25,
+    "rawOff": 11.65,
+    "rawDef": -9.45
+   }
+  },
+  "WYO": {
+   "off": -14.24,
+   "def": -0.8,
+   "net": -15.04,
+   "games": 6,
+   "sos": -11.41,
+   "form": {
+    "games": 5,
+    "offResid": -4.39,
+    "defResid": -0.22,
+    "rawOff": -7.9,
+    "rawDef": -0.4
+   }
+  },
+  "ODU": {
+   "off": -7.37,
+   "def": -4.37,
+   "net": -11.74,
+   "games": 5,
+   "sos": -6.03,
+   "form": {
+    "games": 5,
+    "offResid": -3.58,
+    "defResid": -5.42,
+    "rawOff": -6.45,
+    "rawDef": -9.75
+   }
+  },
+  "VAN": {
+   "off": -0.9,
+   "def": 0.98,
+   "net": 0.08,
+   "games": 5,
+   "sos": -1.1,
+   "form": {
+    "games": 5,
+    "offResid": -1.67,
+    "defResid": -0.06,
+    "rawOff": -3,
+    "rawDef": -0.1
+   }
+  },
+  "KSU": {
+   "off": 6.19,
+   "def": 5.01,
+   "net": 11.2,
+   "games": 4,
+   "sos": -10.21,
+   "form": {
+    "games": 4,
+    "offResid": 1.84,
+    "defResid": 0.09,
+    "rawOff": 3.69,
+    "rawDef": 0.19
+   }
+  },
+  "USU": {
+   "off": -10.38,
+   "def": -1.78,
+   "net": -12.16,
+   "games": 6,
+   "sos": -4.22,
+   "form": {
+    "games": 5,
+    "offResid": -4.03,
+    "defResid": 4.14,
+    "rawOff": -7.25,
+    "rawDef": 7.45
+   }
+  },
+  "ARST": {
+   "off": -3.05,
+   "def": -5.92,
+   "net": -8.97,
+   "games": 6,
+   "sos": -9.47,
+   "form": {
+    "games": 6,
+    "offResid": 0.07,
+    "defResid": -1.22,
+    "rawOff": 0.13,
+    "rawDef": -2.04
+   }
+  },
+  "RICE": {
+   "off": -9.29,
+   "def": -3.48,
+   "net": -12.77,
+   "games": 5,
+   "sos": -3.04,
+   "form": {
+    "games": 5,
+    "offResid": -0.61,
+    "defResid": 1.44,
+    "rawOff": -1.1,
+    "rawDef": 2.6
+   }
+  },
+  "USF": {
+   "off": -3.87,
+   "def": 1.75,
+   "net": -2.12,
+   "games": 6,
+   "sos": -11.9,
+   "form": {
+    "games": 6,
+    "offResid": -2.97,
+    "defResid": 1.63,
+    "rawOff": -4.96,
+    "rawDef": 2.71
+   }
+  },
+  "FIU": {
+   "off": -9.21,
+   "def": 3.22,
+   "net": -5.99,
+   "games": 5,
+   "sos": -12.47,
+   "form": {
+    "games": 5,
+    "offResid": -6.08,
+    "defResid": 6.08,
+    "rawOff": -10.95,
+    "rawDef": 10.95
+   }
+  },
+  "GASO": {
+   "off": -3.36,
+   "def": -1.68,
+   "net": -5.04,
+   "games": 5,
+   "sos": -5.55,
+   "form": {
+    "games": 5,
+    "offResid": -0.5,
+    "defResid": 2.22,
+    "rawOff": -0.9,
+    "rawDef": 4
+   }
+  },
+  "USA": {
+   "off": 2.09,
+   "def": -10.96,
+   "net": -8.87,
+   "games": 6,
+   "sos": -12.04,
+   "form": {
+    "games": 6,
+    "offResid": 7.1,
+    "defResid": -4.5,
+    "rawOff": 11.83,
+    "rawDef": -7.5
+   }
+  },
+  "TROY": {
+   "off": -5.74,
+   "def": -3.31,
+   "net": -9.05,
+   "games": 5,
+   "sos": -13.03,
+   "form": {
+    "games": 5,
+    "offResid": 0.42,
+    "defResid": -0.31,
+    "rawOff": 0.75,
+    "rawDef": -0.55
+   }
+  },
+  "SHSU": {
+   "off": -7.05,
+   "def": -4.94,
+   "net": -11.99,
+   "games": 5,
+   "sos": -6.66,
+   "form": {
+    "games": 5,
+    "offResid": 1.14,
+    "defResid": 3.08,
+    "rawOff": 2.05,
+    "rawDef": 5.55
+   }
+  },
+  "MSST": {
+   "off": 11.33,
+   "def": 0.6,
+   "net": 11.93,
+   "games": 5,
+   "sos": 4.6,
+   "form": {
+    "games": 5,
+    "offResid": 4.25,
+    "defResid": -0.92,
+    "rawOff": 7.65,
+    "rawDef": -1.65
+   }
+  },
+  "ULM": {
+   "off": -9.29,
+   "def": -14.88,
+   "net": -24.17,
+   "games": 5,
+   "sos": -9.66,
+   "form": {
+    "games": 5,
+    "offResid": 1.11,
+    "defResid": -6.72,
+    "rawOff": 2,
+    "rawDef": -12.1
+   }
+  },
+  "VT": {
+   "off": 9.23,
+   "def": 4.97,
+   "net": 14.2,
+   "games": 5,
+   "sos": -4.52,
+   "form": {
+    "games": 5,
+    "offResid": 3.39,
+    "defResid": -1.56,
+    "rawOff": 6.1,
+    "rawDef": -2.8
+   }
+  },
+  "LT": {
+   "off": 2.91,
+   "def": -2.17,
+   "net": 0.74,
+   "games": 4,
+   "sos": -1.92,
+   "form": {
+    "games": 4,
+    "offResid": 5.56,
+    "defResid": -0.94,
+    "rawOff": 11.13,
+    "rawDef": -1.88
+   }
+  },
+  "FLA": {
+   "off": 14.32,
+   "def": 3.63,
+   "net": 17.95,
+   "games": 5,
+   "sos": 0.9,
+   "form": {
+    "games": 5,
+    "offResid": 4.25,
+    "defResid": -3.69,
+    "rawOff": 7.65,
+    "rawDef": -6.65
+   }
+  },
+  "FAU": {
+   "off": 4.57,
+   "def": -4.26,
+   "net": 0.31,
+   "games": 5,
+   "sos": -8.19,
+   "form": {
+    "games": 5,
+    "offResid": 2,
+    "defResid": 0.17,
+    "rawOff": 3.6,
+    "rawDef": 0.3
+   }
+  },
+  "MTSU": {
+   "off": -9.26,
+   "def": -7.26,
+   "net": -16.52,
+   "games": 5,
+   "sos": -12.03,
+   "form": {
+    "games": 5,
+    "offResid": -1.97,
+    "defResid": 0.31,
+    "rawOff": -3.55,
+    "rawDef": 0.55
+   }
+  },
+  "MD": {
+   "off": 2.15,
+   "def": -2.17,
+   "net": -0.02,
+   "games": 5,
+   "sos": -2.66,
+   "form": {
+    "games": 5,
+    "offResid": -0.17,
+    "defResid": -3.78,
+    "rawOff": -0.3,
+    "rawDef": -6.8
+   }
+  },
+  "NU": {
+   "off": 1.22,
+   "def": 6.47,
+   "net": 7.69,
+   "games": 4,
+   "sos": 1.43,
+   "form": {
+    "games": 4,
+    "offResid": 4.81,
+    "defResid": 4.06,
+    "rawOff": 9.63,
+    "rawDef": 8.13
+   }
+  },
+  "UL": {
+   "off": -4.33,
+   "def": 0.47,
+   "net": -3.86,
+   "games": 5,
+   "sos": -10.28,
+   "form": {
+    "games": 5,
+    "offResid": 1.08,
+    "defResid": 3.14,
+    "rawOff": 1.95,
+    "rawDef": 5.65
+   }
+  },
+  "ARIZ": {
+   "off": 1.45,
+   "def": 3.62,
+   "net": 5.07,
+   "games": 5,
+   "sos": -10.03,
+   "form": {
+    "games": 5,
+    "offResid": -1.08,
+    "defResid": 0.97,
+    "rawOff": -1.95,
+    "rawDef": 1.75
+   }
+  },
+  "SDSU": {
+   "off": -3.29,
+   "def": -2.45,
+   "net": -5.74,
+   "games": 5,
+   "sos": -4.41,
+   "form": {
+    "games": 5,
+    "offResid": -2.17,
+    "defResid": -1.89,
+    "rawOff": -3.9,
+    "rawDef": -3.4
+   }
+  },
+  "ASU": {
+   "off": 3.72,
+   "def": -1.07,
+   "net": 2.65,
+   "games": 4,
+   "sos": -1.63,
+   "form": {
+    "games": 4,
+    "offResid": 1.56,
+    "defResid": -5.44,
+    "rawOff": 3.13,
+    "rawDef": -10.88
+   }
+  },
+  "UNM": {
+   "off": 6.38,
+   "def": 6.22,
+   "net": 12.6,
+   "games": 5,
+   "sos": -11.03,
+   "form": {
+    "games": 5,
+    "offResid": 6.89,
+    "defResid": 3.83,
+    "rawOff": 12.4,
+    "rawDef": 6.9
+   }
+  },
+  "CMU": {
+   "off": -9.58,
+   "def": -3.47,
+   "net": -13.05,
+   "games": 5,
+   "sos": -6.33,
+   "form": {
+    "games": 5,
+    "offResid": -1.67,
+    "defResid": 0.61,
+    "rawOff": -3,
+    "rawDef": 1.1
+   }
+  },
+  "CAL": {
+   "off": 1.55,
+   "def": 0.05,
+   "net": 1.6,
+   "games": 5,
+   "sos": -2.01,
+   "form": {
+    "games": 5,
+    "offResid": -3.19,
+    "defResid": -1.92,
+    "rawOff": -5.75,
+    "rawDef": -3.45
+   }
+  },
+  "UCLA": {
+   "off": 11.34,
+   "def": 6.86,
+   "net": 18.2,
+   "games": 4,
+   "sos": 1.87,
+   "form": {
+    "games": 4,
+    "offResid": 6.88,
+    "defResid": 2.13,
+    "rawOff": 13.75,
+    "rawDef": 4.25
+   }
+  },
+  "NEV": {
+   "off": -8.87,
+   "def": -5.98,
+   "net": -14.85,
+   "games": 4,
+   "sos": -15.57,
+   "form": {
+    "games": 4,
+    "offResid": 1.31,
+    "defResid": 1.06,
+    "rawOff": 2.63,
+    "rawDef": 2.13
+   }
+  },
+  "WKU": {
+   "off": -5.3,
+   "def": -8.98,
+   "net": -14.28,
+   "games": 6,
+   "sos": -4.71,
+   "form": {
+    "games": 6,
+    "offResid": -1.2,
+    "defResid": -1.9,
+    "rawOff": -2,
+    "rawDef": -3.17
+   }
+  },
+  "ND": {
+   "off": 14.47,
+   "def": 12.32,
+   "net": 26.79,
+   "games": 5,
+   "sos": -0.65,
+   "form": {
+    "games": 5,
+    "offResid": 0.78,
+    "defResid": -0.28,
+    "rawOff": 1.4,
+    "rawDef": -0.5
+   }
+  },
+  "WIS": {
+   "off": 2.48,
+   "def": 8,
+   "net": 10.48,
+   "games": 5,
+   "sos": -0.47,
+   "form": {
+    "games": 5,
+    "offResid": 2.31,
+    "defResid": 1.03,
+    "rawOff": 4.15,
+    "rawDef": 1.85
+   }
+  },
+  "MISS": {
+   "off": 9.94,
+   "def": 2.7,
+   "net": 12.64,
+   "games": 4,
+   "sos": 6.55,
+   "form": {
+    "games": 4,
+    "offResid": 0.56,
+    "defResid": -3.69,
+    "rawOff": 1.13,
+    "rawDef": -7.38
+   }
+  },
+  "LOU": {
+   "off": 8.26,
+   "def": -0.17,
+   "net": 8.09,
+   "games": 6,
+   "sos": 0.88,
+   "form": {
+    "games": 5,
+    "offResid": 2.81,
+    "defResid": -3.47,
+    "rawOff": 5.05,
+    "rawDef": -6.25
+   }
+  },
+  "WASH": {
+   "off": 0.17,
+   "def": 5,
+   "net": 5.17,
+   "games": 6,
+   "sos": -3.15,
+   "form": {
+    "games": 5,
+    "offResid": -5.67,
+    "defResid": -0.83,
+    "rawOff": -10.2,
+    "rawDef": -1.5
+   }
+  },
+  "WSU": {
+   "off": -7.37,
+   "def": -0.49,
+   "net": -7.86,
+   "games": 6,
+   "sos": -3.52,
+   "form": {
+    "games": 5,
+    "offResid": -2.33,
+    "defResid": 0.28,
+    "rawOff": -4.2,
+    "rawDef": 0.5
+   }
+  },
+  "SMU": {
+   "off": 4.63,
+   "def": 1.46,
+   "net": 6.09,
+   "games": 5,
+   "sos": -6.85,
+   "form": {
+    "games": 5,
+    "offResid": -1.33,
+    "defResid": -1.61,
+    "rawOff": -2.4,
+    "rawDef": -2.9
+   }
+  }
+ },
+ "games": [
+  {
+   "espnId": "401858254",
+   "kickoff": "2026-10-09T23:00Z",
+   "name": "FSU @ LOU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "10/9 - 7:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "LOU",
+    "rated": "LOU",
+    "rank": 99,
+    "record": "2-3"
+   },
+   "away": {
+    "abbr": "FSU",
+    "rated": "FSU",
+    "rank": 99,
+    "record": "3-2"
+   },
+   "market": {
+    "provider": "DraftKings",
+    "spreadHome": -4,
+    "total": 60.5,
+    "mlHome": -192,
+    "mlAway": 160
+   },
+   "marketFit": {
+    "homePts": 30.4,
+    "awayPts": 26.4,
+    "margin": 4.1,
+    "spreadHome": -4.1,
+    "total": 56.8,
+    "homeWinProb": 0.6
+   },
+   "model": {
+    "homePts": 33.2,
+    "awayPts": 30.3,
+    "margin": 2.8,
+    "spreadHome": -2.8,
+    "total": 63.5,
+    "homeWinProb": 0.57
+   },
+   "edge": {
+    "spreadEdge": -1.2,
+    "totalEdge": 3,
+    "side": "away",
+    "sideCoverProb": 0.53
+   },
+   "fitGap": 0.1,
+   "formGap": -1.3
+  },
+  {
+   "espnId": "401858487",
+   "kickoff": "2026-10-10T01:00Z",
+   "name": "IOWA @ WASH",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "10/9 - 9:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "WASH",
+    "rated": "WASH",
+    "rank": 99,
+    "record": "3-2"
+   },
+   "away": {
+    "abbr": "IOWA",
+    "rated": "IOWA",
+    "rank": 20,
+    "record": "4-1"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -2.5,
+    "total": 41.5,
+    "mlHome": -148,
+    "mlAway": 124
+   },
+   "marketFit": {
+    "homePts": 25.8,
+    "awayPts": 19.4,
+    "margin": 6.3,
+    "spreadHome": -6.3,
+    "total": 45.2,
+    "homeWinProb": 0.654
+   },
+   "model": {
+    "homePts": 18.3,
+    "awayPts": 20.5,
+    "margin": -2.2,
+    "spreadHome": 2.2,
+    "total": 38.8,
+    "homeWinProb": 0.446
+   },
+   "edge": {
+    "spreadEdge": -4.7,
+    "totalEdge": -2.7,
+    "side": "away",
+    "sideCoverProb": 0.616
+   },
+   "fitGap": 3.8,
+   "formGap": -8.5
+  },
+  {
+   "espnId": "401860922",
+   "kickoff": "2026-10-10T01:00Z",
+   "name": "WSU @ USU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "10/9 - 9:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "USU",
+    "rated": "USU",
+    "rank": 99,
+    "record": "1-4"
+   },
+   "away": {
+    "abbr": "WSU",
+    "rated": "WSU",
+    "rank": 99,
+    "record": "1-4"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -4,
+    "total": 44.5,
+    "mlHome": -185,
+    "mlAway": 154
+   },
+   "marketFit": {
+    "homePts": 22.2,
+    "awayPts": 26.2,
+    "margin": -4.1,
+    "spreadHome": 4.1,
+    "total": 48.4,
+    "homeWinProb": 0.4
+   },
+   "model": {
+    "homePts": 17.9,
+    "awayPts": 19.8,
+    "margin": -1.9,
+    "spreadHome": 1.9,
+    "total": 37.6,
+    "homeWinProb": 0.453
+   },
+   "edge": {
+    "spreadEdge": -5.9,
+    "totalEdge": -6.9,
+    "side": "away",
+    "sideCoverProb": 0.644
+   },
+   "fitGap": -8.1,
+   "formGap": 2.2
+  },
+  {
+   "espnId": "401864519",
+   "kickoff": "2026-10-10T01:00Z",
+   "name": "WYO @ SJSU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "10/9 - 9:00 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "SJSU",
+    "rated": "SJSU",
+    "rank": 99,
+    "record": "3-2"
+   },
+   "away": {
+    "abbr": "WYO",
+    "rated": "WYO",
+    "rank": 99,
+    "record": "2-3"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -4.5,
+    "total": 42.5,
+    "mlHome": -185,
+    "mlAway": 154
+   },
+   "marketFit": {
+    "homePts": 23.8,
+    "awayPts": 20.8,
+    "margin": 3,
+    "spreadHome": -3,
+    "total": 44.6,
+    "homeWinProb": 0.575
+   },
+   "model": {
+    "homePts": 22.8,
+    "awayPts": 13.8,
+    "margin": 9,
+    "spreadHome": -9,
+    "total": 36.5,
+    "homeWinProb": 0.713
+   },
+   "edge": {
+    "spreadEdge": 4.5,
+    "totalEdge": -6,
+    "side": "home",
+    "sideCoverProb": 0.611
+   },
+   "fitGap": -1.5,
+   "formGap": 6
+  },
+  {
+   "espnId": "401856826",
+   "kickoff": "2026-10-10T02:15Z",
+   "name": "ISU @ BYU",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "10/9 - 10:15 PM EDT",
+   "neutral": false,
+   "home": {
+    "abbr": "BYU",
+    "rated": "BYU",
+    "rank": 8,
+    "record": "4-0"
+   },
+   "away": {
+    "abbr": "ISU",
+    "rated": "ISU",
+    "rank": 99,
+    "record": "3-2"
+   },
+   "market": {
+    "provider": null,
+    "spreadHome": -11.5,
+    "total": 46.5,
+    "mlHome": -470,
+    "mlAway": 360
+   },
+   "marketFit": {
+    "homePts": 30.9,
+    "awayPts": 17.1,
+    "margin": 13.9,
+    "spreadHome": -13.9,
+    "total": 48,
+    "homeWinProb": 0.807
+   },
+   "model": {
+    "homePts": 31.6,
+    "awayPts": 19.4,
+    "margin": 12.2,
+    "spreadHome": -12.2,
+    "total": 50.9,
+    "homeWinProb": 0.777
+   },
+   "edge": {
+    "spreadEdge": 0.7,
+    "totalEdge": 4.4,
+    "side": "home",
+    "sideCoverProb": 0.517
+   },
+   "fitGap": 2.4,
+   "formGap": -1.7
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+{
+  "game": "bal-atl",
+  "kick": "2026-10-12T00:20:00Z",
+  "weather": "Mercedes-Benz Stadium, retractable roof (normally closed); 63F and dry outside per ESPN. Non-factor.",
+  "teams": {
+    "BAL": { "passAtt": 27, "rushAtt": 32 },
+    "ATL": { "passAtt": 24, "rushAtt": 35 }
+  },
+  "players": [
+    {
+      "team": "BAL", "player": "Tyler Huntley", "pos": "QB",
+      "targets": null, "catchRate": null, "receptions": null, "recYds": null,
+      "carries": 4.5, "rushYds": 21, "passYds": 165,
+      "flags": ["new-role", "one-game-sample"],
+      "why": "First start of the season after Lamar Jackson (ankle) was ruled out Friday. 27 attempts x 0.67 completions (career 66.6%, 77.6% in 67 attempts last year) x 9.9 yards a completion (career 8.9, lifted for Flowers/Andrews/Bateman) x 0.92 for Atlanta's 5.7 net yards per dropback allowed. Rushing: Henry takes the designed runs, so 4-5 scrambles at 4.8 a carry; the book's 28.5-29.5 assumes more designed work than this offense gave Jackson (4.75 a game)."
+    },
+    {
+      "team": "BAL", "player": "Derrick Henry", "pos": "RB",
+      "targets": 2.3, "catchRate": 0.81, "receptions": 1.9, "recYds": 11,
+      "carries": 24, "rushYds": 88, "passYds": null,
+      "flags": ["new-role"],
+      "why": "24, 16, 26, 23 carries with Jackson; the blend is 22 and Huntley starting adds two (Jackson's 19 carries vacate, half go to the backs). 4.2 a carry this year regressed to 4.3, times 0.85 (capped) for Atlanta's 3.1 yards a carry to running backs on 62 attempts. 88 against a main number of 78.5 (DK) / 79.5 (FD) is the volume lean; the risk is a loaded box and a trailing script. Receiving: 7 targets in 4 games, Atlanta allows 4.8 yards a catch to backs."
+    },
+    {
+      "team": "BAL", "player": "Mark Andrews", "pos": "TE",
+      "targets": 6.8, "catchRate": 0.73, "receptions": 5.0, "recYds": 42,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["new-role"],
+      "why": "6, 7, 5, 6 targets, the steadiest tree in the offense; Huntley has leaned on his tight end in every prior stretch as the starter, so 6.0 becomes 6.8. 75% catch rate regressed to 73%; 8.3 yards a catch regressed to 9.3, times 0.90 for Atlanta's 9.0 yards a catch allowed to tight ends (24 catches on 33 targets, 3 scores). 5.0 catches against a 3.5 main number (DK over -168, FD -138) is the cleanest receptions lean in the game; 42 yards against 32.5 (DK) / 29.5 (FD)."
+    },
+    {
+      "team": "BAL", "player": "Zay Flowers", "pos": "WR",
+      "targets": 6.8, "catchRate": 0.72, "receptions": 4.9, "recYds": 61,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["questionable", "new-role"],
+      "why": "Questionable (foot), limited Wednesday through Friday; projected as active. 6, 6, 10 targets in his three games (no target in Week 2), blend 7.7, trimmed to 6.8 for the foot and a quarterback who throws shorter. 82% catch rate regressed to 72%; 19.6 yards a catch regressed hard to 12.5 (career about 12.5, Huntley's throws are shorter). 61 sits just under the 68.5 (DK) / 69.5 (FD) main number: no lean. If he is inactive, his targets go to Bateman first and Andrews second, which is what happened in Week 2 (Bateman 9 targets, Andrews 7)."
+    },
+    {
+      "team": "BAL", "player": "Rashod Bateman", "pos": "WR",
+      "targets": 3.4, "catchRate": 0.69, "receptions": 2.3, "recYds": 33,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": ["new-role"],
+      "why": "1, 9, 3, 2 targets: a two-target role with Flowers on the field and the No. 1 target when he is off it. The book's main number (17.5 DK / 19.5 FD, about 1.9 catches) prices the two-target role. The desk is 70% above it on purpose: Flowers is limited by the foot, Huntley's one extended stretch this year (second half vs Tennessee) spread the ball, and the Week 2 sample is the one with Flowers out. 73% catch rate regressed to 69%; 15.5 yards a catch regressed to 14. If Flowers is inactive, move Bateman to 6.5 targets and 60 yards."
+    },
+    {
+      "team": "BAL", "player": "Justice Hill", "pos": "RB",
+      "targets": 1.9, "catchRate": 0.78, "receptions": 1.5, "recYds": 10,
+      "carries": 3.5, "rushYds": 13, "passYds": null,
+      "flags": ["new-role"],
+      "why": "Below the three-target threshold (6 targets, 14 carries in 4 games) but priced by both books (DK rush 11.5, receptions 1.5). Checkdown back for Huntley; Henry keeps the goal line and the volume. 4.3 a carry regressed to 4.2, times 0.85 for Atlanta."
+    },
+    {
+      "team": "ATL", "player": "Michael Penix Jr.", "pos": "QB",
+      "targets": null, "catchRate": null, "receptions": null, "recYds": null,
+      "carries": 2, "rushYds": 0, "passYds": 200,
+      "flags": [],
+      "why": "Two starts: 18 of 25 for 256 and 15 of 20 for 223, 10.6 yards an attempt that will not hold. Atlanta runs 62% of its snaps with him under center, so 24 attempts. 73% completions regressed to 68%; 14.5 yards a completion regressed to 12.6, times 1.03 for Baltimore's 6.7 net yards an attempt allowed and Humphrey questionable. Top-down 212, bottom-up from the receiver rows 190; the desk prints 200, 9% under the 219.5 (DK) / 224.5 (FD) main number. Two carries for minus-4 this year; no rushing value."
+    },
+    {
+      "team": "ATL", "player": "Bijan Robinson", "pos": "RB",
+      "targets": 3.0, "catchRate": 0.78, "receptions": 2.3, "recYds": 17,
+      "carries": 21.5, "rushYds": 101, "passYds": null,
+      "flags": [],
+      "why": "21, 16, 29, 19 carries; the blend is 21.3. 5.8 a carry regressed to 5.3, times 0.88 for Baltimore's 3.8 yards a carry to running backs (16th in EPA per rush per SI). 101 against 87.5 (DK) / 89.5 (FD) is a lean over. Receiving is the fade: 10 targets in Week 1 with Cooper Rush, 2 and 2 with Penix, and Baltimore has allowed 37 receiving yards to running backs all season (21 targets), so 17 yards sits 36% under the 26.5 main number by design."
+    },
+    {
+      "team": "ATL", "player": "Brian Robinson Jr.", "pos": "RB",
+      "targets": 0.9, "catchRate": 0.78, "receptions": 0.7, "recYds": 5,
+      "carries": 11.5, "rushYds": 44, "passYds": null,
+      "flags": [],
+      "why": "9, 11, 10, 14 carries, the steadiest second-back role on the slate, and 4 scores in the last two games. 4.4 a carry regressed to 4.3, times 0.88 for Baltimore. 44 against a 35.5 main number (DK) is a lean on volume. Three targets all season; below the threshold, listed because he is priced."
+    },
+    {
+      "team": "ATL", "player": "Drake London", "pos": "WR",
+      "targets": 8.0, "catchRate": 0.71, "receptions": 5.7, "recYds": 85,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": [],
+      "why": "26 targets (5, 5, 10, 6); 16 of Penix's 45 attempts (35.6%) have gone to him, so 24 attempts gives 8.0 after blending with the season share. 77% catch rate regressed to 71%; 18.5 yards a catch regressed to 14.9 (career about 13.5). Baltimore's wide receiver factor is 1.0 (12.4 yards a catch allowed, Tate 145 and Lamb 112 against them; Humphrey questionable). 85 against 80.5 (DK) / 79.5 (FD) and 5.7 catches against 5.5: priced correctly, no lean."
+    },
+    {
+      "team": "ATL", "player": "Jahan Dotson", "pos": "WR",
+      "targets": 3.4, "catchRate": 0.63, "receptions": 2.1, "recYds": 28,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": [],
+      "why": "4, 4, 3, 3 targets, the only steady No. 2 target; 6 catches on 14 (43%) regressed toward 68% gives 63%. 15.8 yards a catch regressed to 13.5. 28 is 40% above the 20.5 (DK) / 19.5 (FD) main number: the book prices about 1.5 catches, the desk's 2.1 comes from the target count being stable across both quarterbacks. Low confidence either way; a 3-target player with a 43% catch rate is a coin flip on 19.5."
+    },
+    {
+      "team": "ATL", "player": "Kyle Pitts Sr.", "pos": "TE",
+      "targets": 2.6, "catchRate": 0.70, "receptions": 1.8, "recYds": 20,
+      "carries": null, "rushYds": null, "passYds": null,
+      "flags": [],
+      "why": "1, 3, 2, 3 targets (9 total, 5 catches, 67 yards, 47 of them Monday). Below the three-target threshold; listed because both books price him (23.5 DK / 24.5 FD yards, 2.5 catches). 56% catch rate regressed to 70%; 13.4 yards a catch regressed to 12, times 0.92 for Baltimore's 9.7 yards a catch to tight ends. 20 against 23.5 is a mild under; Hooper, not Pitts, has the red-zone tight end role (the only Falcons red-zone tight end target this year, a 5-yard score)."
+    }
+  ],
+  "sources": [
+    "data/odds/raw/2026-w05-bal-atl.json (DraftKings and FanDuel alternates, pulled Sat Oct 10 16:28 UTC)",
+    "ESPN box scores 401872659, 401872938, 401872960, 401872973 (BAL Weeks 1-4) and 401872658, 401872933, 401872948, 401872979 (ATL Weeks 1-4) via site.api.espn.com summary",
+    "ESPN depth charts and rosters for BAL (team 33) and ATL (team 1), ESPN athlete career stats for Tyler Huntley",
+    "baltimoreravens.com and atlantafalcons.com injury reports (Friday Oct 9 designations) and data/injuries.json",
+    "ESPN game summary 401872993 (venue, weather, DraftKings line, FPI)",
+    "SI Betting Week 5 preview (Ravens 6-11 without Jackson, Penix EPA rank, Baltimore 16th in EPA per rush), Covers preview (rush-rate ranks, Atlanta time of possession)",
+    "Unverified: Atlanta pressure-rate and success-rate ranks are carried from the desk's Week 4 file; opponent position factors are computed from four box scores each and capped at 0.85-1.15"
+  ]
+}

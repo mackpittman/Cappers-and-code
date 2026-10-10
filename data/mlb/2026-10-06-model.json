@@ -1,0 +1,188 @@
+{
+ "date": "2026-10-06",
+ "marketWeight": 0.65,
+ "league": 8.9644,
+ "games": [
+  {
+   "id": "MIL@SD",
+   "kickoff": "2026-10-07T01:30:00Z",
+   "minutes": 149,
+   "venue": "Petco Park",
+   "park": 0.9076,
+   "rlShare": {
+    "pWin": 0.562,
+    "market": 0.6702,
+    "model": 0.683,
+    "gap": -0.0128
+   },
+   "weather": {
+    "temperature": 91,
+    "gust": 10,
+    "precipitation": 0,
+    "conditionId": "1"
+   },
+   "away": "MIL",
+   "home": "SD",
+   "pitchers": {
+    "away": "Dustin May (R)",
+    "home": "Nick Pivetta (R)"
+   },
+   "market": {
+    "fairTotal": 7.501,
+    "favWinProb": 0.562,
+    "away": 3.458,
+    "home": 4.043
+   },
+   "model": {
+    "away": 4.465817325889203,
+    "home": 4.161180282336913
+   },
+   "final": {
+    "away": 3.810736064061221,
+    "home": 4.08436309881792
+   },
+   "priced": {
+    "runs": {
+     "away": 3.811,
+     "home": 4.084,
+     "total": 7.895
+    },
+    "ml": {
+     "away": 0.472,
+     "home": 0.528
+    },
+    "runLine": {
+     "homeMinus": 0.3575,
+     "awayMinus": 0.3057,
+     "homePlus": 0.6943,
+     "awayPlus": 0.6425
+    },
+    "total": {
+     "over": 0.4961,
+     "push": 0,
+     "under": 0.5039
+    }
+   },
+   "legs": [
+    {
+     "key": "MIL ML",
+     "prob": 0.472,
+     "floor": 0.4535,
+     "price": 118,
+     "push": 0,
+     "conditional": 0.472,
+     "breakEven": 0.4587,
+     "edge": 0.0133,
+     "ev": 0.029,
+     "fair": 112,
+     "robustEdge": -0.0052,
+     "trusted": true,
+     "game": "MIL@SD"
+    },
+    {
+     "key": "SD ML",
+     "prob": 0.528,
+     "floor": 0.5114,
+     "price": -143,
+     "push": 0,
+     "conditional": 0.528,
+     "breakEven": 0.5885,
+     "edge": -0.0605,
+     "ev": -0.1028,
+     "fair": -112,
+     "robustEdge": -0.0771,
+     "trusted": true,
+     "game": "MIL@SD"
+    },
+    {
+     "kind": "runline",
+     "key": "MIL +1.5",
+     "prob": 0.6425,
+     "floor": 0.627,
+     "price": -187,
+     "push": 0,
+     "conditional": 0.6425,
+     "breakEven": 0.6516,
+     "edge": -0.0091,
+     "ev": -0.0139,
+     "fair": -180,
+     "robustEdge": -0.0246,
+     "trusted": false,
+     "game": "MIL@SD"
+    },
+    {
+     "kind": "runline",
+     "key": "SD -1.5",
+     "prob": 0.3575,
+     "floor": 0.3354,
+     "price": 154,
+     "push": 0,
+     "conditional": 0.3575,
+     "breakEven": 0.3937,
+     "edge": -0.0362,
+     "ev": -0.092,
+     "fair": 180,
+     "robustEdge": -0.0583,
+     "trusted": false,
+     "game": "MIL@SD"
+    },
+    {
+     "key": "Over 7.5",
+     "prob": 0.4961,
+     "push": 0,
+     "floor": 0.429,
+     "pushFloor": 0,
+     "price": -110,
+     "conditional": 0.4961,
+     "breakEven": 0.5238,
+     "edge": -0.0277,
+     "ev": -0.0529,
+     "fair": 102,
+     "robustEdge": -0.0948,
+     "trusted": true,
+     "game": "MIL@SD"
+    },
+    {
+     "key": "Under 7.5",
+     "prob": 0.5039,
+     "push": 0,
+     "floor": 0.4353,
+     "pushFloor": 0,
+     "price": -109,
+     "conditional": 0.5039,
+     "breakEven": 0.5215,
+     "edge": -0.0176,
+     "ev": -0.0338,
+     "fair": -102,
+     "robustEdge": -0.0862,
+     "trusted": true,
+     "game": "MIL@SD"
+    }
+   ],
+   "detail": {
+    "awayOff": {
+     "index": 1.1810109001057256,
+     "platoon": 1.0302985127310949,
+     "base": 1.146280311494506
+    },
+    "homeOff": {
+     "index": 1.053441965024044,
+     "platoon": 1.010501543685781,
+     "base": 1.0424941669872556
+    },
+    "awayPit": {
+     "index": 0.9295255459263967,
+     "sp": 0.9224319731845354,
+     "bp": 0.9361124349009822,
+     "share": 0.48148148148148145
+    },
+    "homePit": {
+     "index": 0.9710021655560497,
+     "sp": 1.06052062121416,
+     "bp": 0.8732032527495642,
+     "share": 0.5221027479091994
+    }
+   }
+  }
+ ]
+}

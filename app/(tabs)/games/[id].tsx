@@ -22,6 +22,7 @@ import { fmtAmerican, pct } from '@/lib/odds';
 import { ago } from '@/lib/format';
 import { space, type, useTheme } from '@/theme';
 import { AddToSlip, pickToSlip } from '@/components/Slip';
+import { FiveLegCard } from '@/components/FiveLeg';
 
 export default function GameScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -318,6 +319,13 @@ export default function GameScreen() {
                 Consensus line and prices across books; pulled {ago(g.propLines[0].fetchedAt)}.
               </Body>
             </Card>
+          </>
+        )}
+
+        {g.fiveLeg && (
+          <>
+            <H2>Five-leg, no touchdowns</H2>
+            <FiveLegCard t={g.fiveLeg} />
           </>
         )}
 

@@ -1,0 +1,731 @@
+{
+ "date": "2026-10-07",
+ "marketWeight": 0.65,
+ "league": 8.9644,
+ "games": [
+  {
+   "id": "CLE@CHW",
+   "kickoff": "2026-10-07T20:00:00Z",
+   "minutes": 58,
+   "venue": "Rate Field",
+   "park": 0.9692,
+   "rlShare": {
+    "pWin": 0.5333,
+    "market": 0.6786,
+    "model": 0.6826,
+    "gap": -0.004
+   },
+   "weather": {
+    "temperature": 79,
+    "gust": 16,
+    "precipitation": 0,
+    "conditionId": "2"
+   },
+   "away": "CLE",
+   "home": "CHW",
+   "pitchers": {
+    "away": "Daniel Espino (R)",
+    "home": "Sean Newcomb (L)"
+   },
+   "market": {
+    "fairTotal": 7.989,
+    "favWinProb": 0.5333,
+    "away": 3.83,
+    "home": 4.159
+   },
+   "model": {
+    "away": 3.483627768987507,
+    "home": 4.345762549372601
+   },
+   "final": {
+    "away": 3.7087697191456273,
+    "home": 4.22436689228041
+   },
+   "priced": {
+    "runs": {
+     "away": 3.709,
+     "home": 4.224,
+     "total": 7.933
+    },
+    "ml": {
+     "away": 0.4475,
+     "home": 0.5525
+    },
+    "runLine": {
+     "homeMinus": 0.3815,
+     "awayMinus": 0.2844,
+     "homePlus": 0.7156,
+     "awayPlus": 0.6185
+    },
+    "total": {
+     "over": 0.3964,
+     "push": 0.1036,
+     "under": 0.5
+    }
+   },
+   "legs": [
+    {
+     "key": "CLE ML",
+     "prob": 0.4475,
+     "floor": 0.4359,
+     "price": 105,
+     "push": 0,
+     "conditional": 0.4475,
+     "breakEven": 0.4878,
+     "edge": -0.0403,
+     "ev": -0.0826,
+     "fair": 123,
+     "robustEdge": -0.0519,
+     "trusted": true,
+     "game": "CLE@CHW"
+    },
+    {
+     "key": "CHW ML",
+     "prob": 0.5525,
+     "floor": 0.5413,
+     "price": -126,
+     "push": 0,
+     "conditional": 0.5525,
+     "breakEven": 0.5575,
+     "edge": -0.005,
+     "ev": -0.009,
+     "fair": -123,
+     "robustEdge": -0.0162,
+     "trusted": true,
+     "game": "CLE@CHW"
+    },
+    {
+     "kind": "runline",
+     "key": "CLE +1.5",
+     "prob": 0.6185,
+     "floor": 0.6063,
+     "price": -201,
+     "push": 0,
+     "conditional": 0.6185,
+     "breakEven": 0.6678,
+     "edge": -0.0493,
+     "ev": -0.0738,
+     "fair": -162,
+     "robustEdge": -0.0615,
+     "trusted": false,
+     "game": "CLE@CHW"
+    },
+    {
+     "kind": "runline",
+     "key": "CHW -1.5",
+     "prob": 0.3815,
+     "floor": 0.3696,
+     "price": 164,
+     "push": 0,
+     "conditional": 0.3815,
+     "breakEven": 0.3788,
+     "edge": 0.0027,
+     "ev": 0.0072,
+     "fair": 162,
+     "robustEdge": -0.0092,
+     "trusted": false,
+     "game": "CLE@CHW"
+    },
+    {
+     "key": "Over 8",
+     "prob": 0.3964,
+     "push": 0.1036,
+     "floor": 0.3711,
+     "pushFloor": 0.1078,
+     "price": -105,
+     "conditional": 0.4422,
+     "breakEven": 0.5122,
+     "edge": -0.07,
+     "ev": -0.1225,
+     "fair": 126,
+     "robustEdge": -0.0963,
+     "trusted": true,
+     "game": "CLE@CHW"
+    },
+    {
+     "key": "Under 8",
+     "prob": 0.5,
+     "push": 0.1036,
+     "floor": 0.4844,
+     "pushFloor": 0.1078,
+     "price": -115,
+     "conditional": 0.5578,
+     "breakEven": 0.5349,
+     "edge": 0.0229,
+     "ev": 0.0384,
+     "fair": -126,
+     "robustEdge": 0.008,
+     "trusted": true,
+     "game": "CLE@CHW"
+    }
+   ],
+   "detail": {
+    "awayOff": {
+     "index": 0.887969255570883,
+     "platoon": 0.9631594142583064,
+     "base": 0.9219338381846949
+    },
+    "homeOff": {
+     "index": 1.0632021763687571,
+     "platoon": 0.9795355738539697,
+     "base": 1.0854145625213
+    },
+    "awayPit": {
+     "index": 0.9030861413979395,
+     "sp": 0.8885991154916453,
+     "bp": 0.9544492332475282,
+     "share": 0.78
+    },
+    "homePit": {
+     "index": 0.9409043996836293,
+     "sp": 0.9725775429682783,
+     "bp": 0.8992768399380905,
+     "share": 0.5679012345679013
+    }
+   }
+  },
+  {
+   "id": "LAD@ATL",
+   "kickoff": "2026-10-07T22:00:00Z",
+   "minutes": 178,
+   "venue": "Truist Park",
+   "park": 1.0288,
+   "rlShare": {
+    "pWin": 0.5825,
+    "market": 0.7674,
+    "model": 0.6936,
+    "gap": 0.0738
+   },
+   "weather": {
+    "temperature": 76,
+    "gust": 5,
+    "precipitation": 0,
+    "conditionId": "2"
+   },
+   "away": "LAD",
+   "home": "ATL",
+   "pitchers": {
+    "away": "Tyler Glasnow (R)",
+    "home": "Tyler Mahle (R)"
+   },
+   "market": {
+    "fairTotal": 7.501,
+    "favWinProb": 0.5825,
+    "away": 4.141,
+    "home": 3.36
+   },
+   "model": {
+    "away": 4.668556501704984,
+    "home": 4.3300526597664355
+   },
+   "final": {
+    "away": 4.325644775596745,
+    "home": 3.6995184309182525
+   },
+   "priced": {
+    "runs": {
+     "away": 4.326,
+     "home": 3.7,
+     "total": 8.025
+    },
+    "ml": {
+     "away": 0.5632,
+     "home": 0.4368
+    },
+    "runLine": {
+     "homeMinus": 0.2763,
+     "awayMinus": 0.3933,
+     "homePlus": 0.6067,
+     "awayPlus": 0.7237
+    },
+    "total": {
+     "over": 0.5094,
+     "push": 0,
+     "under": 0.4906
+    }
+   },
+   "legs": [
+    {
+     "key": "LAD ML",
+     "prob": 0.5632,
+     "floor": 0.5521,
+     "price": -156,
+     "push": 0,
+     "conditional": 0.5632,
+     "breakEven": 0.6094,
+     "edge": -0.0462,
+     "ev": -0.0758,
+     "fair": -129,
+     "robustEdge": -0.0573,
+     "trusted": true,
+     "game": "LAD@ATL"
+    },
+    {
+     "key": "ATL ML",
+     "prob": 0.4368,
+     "floor": 0.4256,
+     "price": 129,
+     "push": 0,
+     "conditional": 0.4368,
+     "breakEven": 0.4367,
+     "edge": 0.0001,
+     "ev": 0.0003,
+     "fair": 129,
+     "robustEdge": -0.0111,
+     "trusted": true,
+     "game": "LAD@ATL"
+    },
+    {
+     "kind": "runline",
+     "key": "LAD -1.5",
+     "prob": 0.3933,
+     "floor": 0.3854,
+     "price": 114,
+     "push": 0,
+     "conditional": 0.3933,
+     "breakEven": 0.4673,
+     "edge": -0.074,
+     "ev": -0.1583,
+     "fair": 154,
+     "robustEdge": -0.0819,
+     "trusted": false,
+     "game": "LAD@ATL"
+    },
+    {
+     "kind": "runline",
+     "key": "ATL +1.5",
+     "prob": 0.6067,
+     "floor": 0.5996,
+     "price": -137,
+     "push": 0,
+     "conditional": 0.6067,
+     "breakEven": 0.5781,
+     "edge": 0.0286,
+     "ev": 0.0495,
+     "fair": -154,
+     "robustEdge": 0.0215,
+     "trusted": false,
+     "game": "LAD@ATL"
+    },
+    {
+     "key": "Over 7.5",
+     "prob": 0.5094,
+     "push": 0,
+     "floor": 0.4748,
+     "pushFloor": 0,
+     "price": -110,
+     "conditional": 0.5094,
+     "breakEven": 0.5238,
+     "edge": -0.0144,
+     "ev": -0.0275,
+     "fair": -104,
+     "robustEdge": -0.049,
+     "trusted": true,
+     "game": "LAD@ATL"
+    },
+    {
+     "key": "Under 7.5",
+     "prob": 0.4906,
+     "push": 0,
+     "floor": 0.4392,
+     "pushFloor": 0,
+     "price": -109,
+     "conditional": 0.4906,
+     "breakEven": 0.5215,
+     "edge": -0.0309,
+     "ev": -0.0593,
+     "fair": 104,
+     "robustEdge": -0.0823,
+     "trusted": true,
+     "game": "LAD@ATL"
+    }
+   ],
+   "detail": {
+    "awayOff": {
+     "index": 1.1191378681658908,
+     "platoon": 1.0078165282905265,
+     "base": 1.1104579422448937
+    },
+    "homeOff": {
+     "index": 1.0322585107049764,
+     "platoon": 1.024707826505658,
+     "base": 1.0073686215758368
+    },
+    "awayPit": {
+     "index": 0.904642196428294,
+     "sp": 0.9387560428792042,
+     "bp": 0.8505681206710003,
+     "share": 0.6131687242798354
+    },
+    "homePit": {
+     "index": 0.9096671652648642,
+     "sp": 0.8964046968216595,
+     "bp": 0.9324909481671234,
+     "share": 0.6324786324786325
+    }
+   }
+  },
+  {
+   "id": "TB@NYY",
+   "kickoff": "2026-10-08T00:00:00Z",
+   "minutes": 298,
+   "venue": "Yankee Stadium",
+   "park": 1.0601,
+   "rlShare": {
+    "pWin": 0.6048,
+    "market": 0.6875,
+    "model": 0.69,
+    "gap": -0.0025
+   },
+   "weather": {
+    "temperature": 62,
+    "gust": 8,
+    "precipitation": 0,
+    "conditionId": "33"
+   },
+   "away": "TB",
+   "home": "NYY",
+   "pitchers": {
+    "away": "Nick Martinez (R)",
+    "home": "Max Fried (L)"
+   },
+   "market": {
+    "fairTotal": 7.022,
+    "favWinProb": 0.6048,
+    "away": 3.035,
+    "home": 3.986
+   },
+   "model": {
+    "away": 3.4814316093636406,
+    "home": 3.9654935478559126
+   },
+   "final": {
+    "away": 3.1912510632772744,
+    "home": 3.97882274174957
+   },
+   "priced": {
+    "runs": {
+     "away": 3.191,
+     "home": 3.979,
+     "total": 7.17
+    },
+    "ml": {
+     "away": 0.4142,
+     "home": 0.5858
+    },
+    "runLine": {
+     "homeMinus": 0.4015,
+     "awayMinus": 0.2447,
+     "homePlus": 0.7553,
+     "awayPlus": 0.5985
+    },
+    "total": {
+     "over": 0.4168,
+     "push": 0.1135,
+     "under": 0.4697
+    }
+   },
+   "legs": [
+    {
+     "key": "TB ML",
+     "prob": 0.4142,
+     "floor": 0.4023,
+     "price": 142,
+     "push": 0,
+     "conditional": 0.4142,
+     "breakEven": 0.4132,
+     "edge": 0.001,
+     "ev": 0.0024,
+     "fair": 141,
+     "robustEdge": -0.0109,
+     "trusted": true,
+     "game": "TB@NYY"
+    },
+    {
+     "key": "NYY ML",
+     "prob": 0.5858,
+     "floor": 0.5734,
+     "price": -172,
+     "push": 0,
+     "conditional": 0.5858,
+     "breakEven": 0.6324,
+     "edge": -0.0466,
+     "ev": -0.0736,
+     "fair": -141,
+     "robustEdge": -0.059,
+     "trusted": true,
+     "game": "TB@NYY"
+    },
+    {
+     "kind": "runline",
+     "key": "TB +1.5",
+     "prob": 0.5985,
+     "floor": 0.5889,
+     "price": -157,
+     "push": 0,
+     "conditional": 0.5985,
+     "breakEven": 0.6109,
+     "edge": -0.0124,
+     "ev": -0.0203,
+     "fair": -149,
+     "robustEdge": -0.022,
+     "trusted": false,
+     "game": "TB@NYY"
+    },
+    {
+     "kind": "runline",
+     "key": "NYY -1.5",
+     "prob": 0.4015,
+     "floor": 0.3898,
+     "price": 130,
+     "push": 0,
+     "conditional": 0.4015,
+     "breakEven": 0.4348,
+     "edge": -0.0333,
+     "ev": -0.0766,
+     "fair": 149,
+     "robustEdge": -0.045,
+     "trusted": false,
+     "game": "TB@NYY"
+    },
+    {
+     "key": "Over 7",
+     "prob": 0.4168,
+     "push": 0.1135,
+     "floor": 0.3984,
+     "pushFloor": 0.1179,
+     "price": -120,
+     "conditional": 0.4702,
+     "breakEven": 0.5455,
+     "edge": -0.0753,
+     "ev": -0.1224,
+     "fair": 113,
+     "robustEdge": -0.0938,
+     "trusted": true,
+     "game": "TB@NYY"
+    },
+    {
+     "key": "Under 7",
+     "prob": 0.4697,
+     "push": 0.1135,
+     "floor": 0.4161,
+     "pushFloor": 0.1179,
+     "price": 100,
+     "conditional": 0.5298,
+     "breakEven": 0.5,
+     "edge": 0.0298,
+     "ev": 0.0529,
+     "fair": -113,
+     "robustEdge": -0.0283,
+     "trusted": true,
+     "game": "TB@NYY"
+    }
+   ],
+   "detail": {
+    "awayOff": {
+     "index": 0.9280246177213223,
+     "platoon": 0.9183548218879116,
+     "base": 1.0105294768459232
+    },
+    "homeOff": {
+     "index": 0.9820297864315931,
+     "platoon": 0.9877695548050487,
+     "base": 0.9941891624969263
+    },
+    "awayPit": {
+     "index": 0.7895148543407124,
+     "sp": 0.7455416654059887,
+     "bp": 0.8630937546374285,
+     "share": 0.625925925925926
+    },
+    "homePit": {
+     "index": 0.849834819422727,
+     "sp": 0.7756041543285394,
+     "bp": 0.9847996650485226,
+     "share": 0.6451612903225806
+    }
+   }
+  },
+  {
+   "id": "MIL@SD",
+   "kickoff": "2026-10-08T02:00:00Z",
+   "minutes": 418,
+   "venue": "Petco Park",
+   "park": 0.9076,
+   "rlShare": {
+    "pWin": 0.5055,
+    "market": 0.7186,
+    "model": 0.6535,
+    "gap": 0.0651
+   },
+   "weather": {
+    "temperature": 81,
+    "gust": 9,
+    "precipitation": 0,
+    "conditionId": "34"
+   },
+   "away": "MIL",
+   "home": "SD",
+   "pitchers": {
+    "away": "TBD",
+    "home": "Walker Buehler (R)"
+   },
+   "market": {
+    "fairTotal": 7.503,
+    "favWinProb": 0.5055,
+    "away": 3.726,
+    "home": 3.777
+   },
+   "model": {
+    "away": 4.893271061098441,
+    "home": 3.960106371841504
+   },
+   "final": {
+    "away": 4.134544871384454,
+    "home": 3.8410872301445265
+   },
+   "priced": {
+    "runs": {
+     "away": 4.135,
+     "home": 3.841,
+     "total": 7.976
+    },
+    "ml": {
+     "away": 0.5298,
+     "home": 0.4702
+    },
+    "runLine": {
+     "homeMinus": 0.3052,
+     "awayMinus": 0.3604,
+     "homePlus": 0.6396,
+     "awayPlus": 0.6948
+    },
+    "total": {
+     "over": 0.5045,
+     "push": 0,
+     "under": 0.4955
+    }
+   },
+   "legs": [
+    {
+     "key": "MIL ML",
+     "prob": 0.5298,
+     "floor": 0.5114,
+     "price": -107,
+     "push": 0,
+     "conditional": 0.5298,
+     "breakEven": 0.5169,
+     "edge": 0.0129,
+     "ev": 0.0249,
+     "fair": -113,
+     "robustEdge": -0.0055,
+     "trusted": true,
+     "game": "MIL@SD"
+    },
+    {
+     "key": "SD ML",
+     "prob": 0.4702,
+     "floor": 0.451,
+     "price": -112,
+     "push": 0,
+     "conditional": 0.4702,
+     "breakEven": 0.5283,
+     "edge": -0.0581,
+     "ev": -0.11,
+     "fair": 113,
+     "robustEdge": -0.0773,
+     "trusted": true,
+     "game": "MIL@SD"
+    },
+    {
+     "kind": "runline",
+     "key": "MIL -1.5",
+     "prob": 0.3604,
+     "floor": 0.3321,
+     "price": 163,
+     "push": 0,
+     "conditional": 0.3604,
+     "breakEven": 0.3802,
+     "edge": -0.0198,
+     "ev": -0.0521,
+     "fair": 177,
+     "robustEdge": -0.0481,
+     "trusted": false,
+     "game": "MIL@SD"
+    },
+    {
+     "kind": "runline",
+     "key": "SD +1.5",
+     "prob": 0.6396,
+     "floor": 0.6113,
+     "price": -200,
+     "push": 0,
+     "conditional": 0.6396,
+     "breakEven": 0.6667,
+     "edge": -0.0271,
+     "ev": -0.0406,
+     "fair": -177,
+     "robustEdge": -0.0554,
+     "trusted": false,
+     "game": "MIL@SD"
+    },
+    {
+     "key": "Over 7.5",
+     "prob": 0.5045,
+     "push": 0,
+     "floor": 0.4388,
+     "pushFloor": 0,
+     "price": -111,
+     "conditional": 0.5045,
+     "breakEven": 0.5261,
+     "edge": -0.0216,
+     "ev": -0.041,
+     "fair": -102,
+     "robustEdge": -0.0873,
+     "trusted": true,
+     "game": "MIL@SD"
+    },
+    {
+     "key": "Under 7.5",
+     "prob": 0.4955,
+     "push": 0,
+     "floor": 0.4229,
+     "pushFloor": 0,
+     "price": -108,
+     "conditional": 0.4955,
+     "breakEven": 0.5192,
+     "edge": -0.0237,
+     "ev": -0.0457,
+     "fair": 102,
+     "robustEdge": -0.0963,
+     "trusted": true,
+     "game": "MIL@SD"
+    }
+   ],
+   "detail": {
+    "awayOff": {
+     "index": 1.1810109001057256,
+     "platoon": 1.0302985127310949,
+     "base": 1.146280311494506
+    },
+    "homeOff": {
+     "index": 1.053441965024044,
+     "platoon": 1.010501543685781,
+     "base": 1.0424941669872556
+    },
+    "awayPit": {
+     "index": 1.018496754908737,
+     "sp": 1.0905160194708305,
+     "bp": 0.9361124349009822,
+     "share": 0.5335648148148148
+    },
+    "homePit": {
+     "index": 0.9240820156753488,
+     "sp": 1.0004001600640255,
+     "bp": 0.8732032527495642,
+     "share": 0.4
+    }
+   }
+  }
+ ]
+}

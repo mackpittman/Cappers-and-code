@@ -1,0 +1,284 @@
+{
+ "date": "2026-10-06",
+ "season": 2026,
+ "fetchedAt": "2026-10-06T23:01:08.080Z",
+ "games": [
+  {
+   "gamePk": 849819,
+   "kickoff": "2026-10-06T22:00:00Z",
+   "status": "Live",
+   "venue": "Truist Park",
+   "venueId": 4705,
+   "doubleHeader": "N",
+   "gameNumber": 1,
+   "away": {
+    "id": 119,
+    "name": "Los Angeles Dodgers"
+   },
+   "home": {
+    "id": 144,
+    "name": "Atlanta Braves"
+   },
+   "probables": {
+    "away": {
+     "id": 808967,
+     "name": "Yoshinobu Yamamoto"
+    },
+    "home": {
+     "id": 519242,
+     "name": "Chris Sale"
+    }
+   }
+  },
+  {
+   "gamePk": 849826,
+   "kickoff": "2026-10-07T01:30:00Z",
+   "status": "Preview",
+   "venue": "Petco Park",
+   "venueId": 2680,
+   "doubleHeader": "N",
+   "gameNumber": 1,
+   "away": {
+    "id": 158,
+    "name": "Milwaukee Brewers"
+   },
+   "home": {
+    "id": 135,
+    "name": "San Diego Padres"
+   },
+   "probables": {
+    "away": {
+     "id": 669160,
+     "name": "Dustin May"
+    },
+    "home": {
+     "id": 601713,
+     "name": "Nick Pivetta"
+    }
+   }
+  }
+ ],
+ "odds": {
+  "MIL@SD@2026-10-07T01:30Z": {
+   "book": "DraftKings",
+   "awayAbbr": "MIL",
+   "homeAbbr": "SD",
+   "awayName": "Milwaukee Brewers",
+   "homeName": "San Diego Padres",
+   "start": "2026-10-07T01:30Z",
+   "ml": {
+    "away": 118,
+    "home": -143
+   },
+   "mlOpen": {
+    "away": 101,
+    "home": -121
+   },
+   "runLine": {
+    "away": {
+     "line": 1.5,
+     "price": -187
+    },
+    "home": {
+     "line": -1.5,
+     "price": 154
+    }
+   },
+   "total": {
+    "line": 7.5,
+    "open": 7,
+    "over": -110,
+    "under": -109
+   },
+   "roof": null
+  }
+ },
+ "weather": {
+  "MIL@SD@2026-10-07T01:30Z": {
+   "temperature": 91,
+   "gust": 10,
+   "precipitation": 0,
+   "conditionId": "1"
+  }
+ },
+ "teams": {
+  "119": {
+   "id": 119,
+   "games": 162,
+   "runs": 801,
+   "ops": 0.762,
+   "vsL": {
+    "ops": 0.756,
+    "plateAppearances": 1947,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.766,
+    "plateAppearances": 4267,
+    "runs": null
+   },
+   "starters": {
+    "era": 3.43,
+    "ip": 879.2,
+    "er": 335,
+    "runs": 349
+   },
+   "bullpen": {
+    "era": 3.74,
+    "ip": 556,
+    "er": 231,
+    "runs": 251
+   }
+  },
+  "135": {
+   "id": 135,
+   "games": 162,
+   "runs": 722,
+   "ops": 0.717,
+   "vsL": {
+    "ops": 0.706,
+    "plateAppearances": 1526,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.722,
+    "plateAppearances": 4544,
+    "runs": null
+   },
+   "starters": {
+    "era": 4.42,
+    "ip": 752.2,
+    "er": 370,
+    "runs": 385
+   },
+   "bullpen": {
+    "era": 3.53,
+    "ip": 683.2,
+    "er": 268,
+    "runs": 296
+   }
+  },
+  "144": {
+   "id": 144,
+   "games": 162,
+   "runs": 742,
+   "ops": 0.718,
+   "vsL": {
+    "ops": 0.696,
+    "plateAppearances": 2039,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.73,
+    "plateAppearances": 4014,
+    "runs": null
+   },
+   "starters": {
+    "era": 3.76,
+    "ip": 839.1,
+    "er": 351,
+    "runs": 379
+   },
+   "bullpen": {
+    "era": 3.44,
+    "ip": 598.2,
+    "er": 229,
+    "runs": 247
+   }
+  },
+  "158": {
+   "id": 158,
+   "games": 162,
+   "runs": 832,
+   "ops": 0.744,
+   "vsL": {
+    "ops": 0.706,
+    "plateAppearances": 1925,
+    "runs": null
+   },
+   "vsR": {
+    "ops": 0.759,
+    "plateAppearances": 4374,
+    "runs": null
+   },
+   "starters": {
+    "era": 3.61,
+    "ip": 806,
+    "er": 323,
+    "runs": 349
+   },
+   "bullpen": {
+    "era": 3.4,
+    "ip": 640.2,
+    "er": 242,
+    "runs": 269
+   }
+  }
+ },
+ "pitchers": {
+  "519242": {
+   "id": 519242,
+   "name": "Chris Sale",
+   "throws": "L",
+   "starts": 27,
+   "ip": 162.2,
+   "era": 2.16,
+   "runs": 44,
+   "earnedRuns": 39,
+   "hits": 129,
+   "walks": 31,
+   "strikeOuts": 200,
+   "homeRuns": 10,
+   "whip": 0.98,
+   "battersFaced": 648
+  },
+  "601713": {
+   "id": 601713,
+   "name": "Nick Pivetta",
+   "throws": "R",
+   "starts": 8,
+   "ip": 34.2,
+   "era": 2.86,
+   "runs": 11,
+   "earnedRuns": 11,
+   "hits": 27,
+   "walks": 8,
+   "strikeOuts": 42,
+   "homeRuns": 2,
+   "whip": 1.01,
+   "battersFaced": 140
+  },
+  "669160": {
+   "id": 669160,
+   "name": "Dustin May",
+   "throws": "R",
+   "starts": 31,
+   "ip": 145.2,
+   "era": 4.7,
+   "runs": 79,
+   "earnedRuns": 76,
+   "hits": 142,
+   "walks": 50,
+   "strikeOuts": 144,
+   "homeRuns": 14,
+   "whip": 1.32,
+   "battersFaced": 621
+  },
+  "808967": {
+   "id": 808967,
+   "name": "Yoshinobu Yamamoto",
+   "throws": "R",
+   "starts": 28,
+   "ip": 185,
+   "era": 2.53,
+   "runs": 55,
+   "earnedRuns": 52,
+   "hits": 119,
+   "walks": 42,
+   "strikeOuts": 182,
+   "homeRuns": 20,
+   "whip": 0.87,
+   "battersFaced": 708
+  }
+ }
+}

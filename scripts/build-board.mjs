@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import { DATA, ROOT, readJson, writeJson, nowIso, normName, impliedProb, devig } from './lib.mjs';
 import { buildParlays } from './parlays.mjs';
 import { buildLottos, buildTopTen } from './top-ten.mjs';
+import { buildBestOf } from './best-of.mjs';
 
 const research = readJson(path.join(ROOT, 'src', 'data', 'research.json'));
 const schedule = readJson(path.join(DATA, 'schedule.json'), { games: [] });
@@ -376,6 +377,54 @@ board.parlays = buildParlays(board);
 // The front page leads with a top 10 per market, every row the model's own number.
 board.topTen = buildTopTen(board);
 board.lottos = buildLottos(board.topTen);
+// The five-leg tickets (scripts/five-leg.mjs): one per game on the game page, and the week's
+// list on the Parlays tab ranked by joint hit rate. Games already final drop off the list.
+{
+  const wk = `${board.season}-w${String(board.week).padStart(2, '0')}`;
+  const fiveLeg = readJson(path.join(DATA, 'five-leg', `${wk}.json`), null);
+  const tickets = [];
+  for (const fg of fiveLeg?.games ?? []) {
+    const t = fg.ticket || fg.fallback;
+    const g = board.games.find((x) => x.id === fg.game);
+    if (!t || !g) continue;
+    const ticket = {
+      game: g.id,
+      gameLabel: `${g.away.abbr}@${g.home.abbr}`,
+      kickoff: g.kickoff,
+      price: t.price,
+      decimal: t.decimal,
+      joint: t.joint,
+      bookJoint: t.bookJoint,
+      short: !fg.ticket,
+      builtAt: fiveLeg.builtAt,
+      legs: t.legs.map((l) => ({
+        player: l.player,
+        team: l.team,
+        label: l.label,
+        market: l.market,
+        side: l.side,
+        point: l.point,
+        price: l.price,
+        book: l.book,
+        p: l.p,
+        model: l.model,
+        implied: l.implied,
+        mean: l.mean,
+      })),
+    };
+    g.fiveLeg = ticket;
+    if (g.status?.state !== 'STATUS_FINAL') tickets.push(ticket);
+  }
+  board.fiveLeg = fiveLeg
+    ? {
+        builtAt: fiveLeg.builtAt,
+        target: fiveLeg.target,
+        tickets: tickets.sort((a, b) => b.joint - a.joint),
+      }
+    : null;
+}
+// The front page's lead block: tomorrow's best play in every market, with Discord-ready text.
+board.bestOf = buildBestOf(board);
 writeJson(path.join(DATA, 'board.json'), board);
 console.log(
   `board: ${games.length} games, ${games.filter((g) => g.live).length} with live lines (${games.find((g) => g.live)?.live?.source || 'none'}), ${games.filter((g) => g.liveBoard.length).length} with live ATD, ${games.filter((g) => g.propLines.length).length} with prop lines`,

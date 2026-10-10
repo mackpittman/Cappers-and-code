@@ -1,0 +1,92 @@
+{
+  "game": "det-ari",
+  "kick": "2026-10-11T20:25:00Z",
+  "weather": "Indoor: State Farm Stadium (retractable roof; ESPN/AccuWeather show 88F outside with a 47% precipitation chance and gusts to 25 mph, so the roof should be closed - verify) - no weather factor.",
+  "teams": {
+    "DET": { "passAtt": 37, "rushAtt": 27 },
+    "ARI": { "passAtt": 40, "rushAtt": 24 }
+  },
+  "players": [
+    {
+      "team": "DET", "player": "Jared Goff", "pos": "QB",
+      "targets": null, "catchRate": null, "receptions": null, "recYds": null,
+      "carries": null, "rushYds": null, "passYds": 302, "flags": [],
+      "why": "37 attempts (season 40.3 on 39/38/32/52, trimmed for a -5.5 road script and Arizona's 32-minute possession habit); 67.7% completions regressed to 67.5%, 11.1 yards per completion held at 11.0; Arizona allows 8.6 yards per attempt, worst in the league, factor 1.10 (not the 1.15 cap because its opponents have needed only 27 attempts a game). Book main 279.5 DK / 274.5 FD."
+    },
+    {
+      "team": "DET", "player": "Jahmyr Gibbs", "pos": "RB",
+      "targets": 6.6, "catchRate": 0.785, "receptions": 5.2, "recYds": 44,
+      "carries": 20.5, "rushYds": 94, "passYds": null, "flags": [],
+      "why": "80 of 98 team carries (29/16/20/15; blend 18.5, lifted to 20.5 on 27 team rushes as a 5.5-point favourite); 4.4 YPC regressed to 4.6, Arizona allows 4.2 a carry (factor 1.0). Targets 5/8/8/7 (blend 7.3, scaled to 37 attempts = 6.6), 78.6% catch rate at the RB prior, 8.5 a catch. Book 89.5 rush / 39.5 rec."
+    },
+    {
+      "team": "DET", "player": "Amon-Ra St. Brown", "pos": "WR",
+      "targets": 10.4, "catchRate": 0.68, "receptions": 7.1, "recYds": 86,
+      "carries": null, "rushYds": null, "passYds": null, "flags": [],
+      "why": "Targets 14/13/8/11 (blend 11.1, scaled to 37 attempts); 67.4% catch rate sits at the WR prior; 9.8 a catch regressed up to 10.5 on a career near 11.5; Arizona allows about 10.6 yards per target to WRs, factor capped at 1.15. Book 80.5 DK / 79.5 FD, receptions 7.5."
+    },
+    {
+      "team": "DET", "player": "Jameson Williams", "pos": "WR",
+      "targets": 5.5, "catchRate": 0.665, "receptions": 3.7, "recYds": 62,
+      "carries": null, "rushYds": null, "passYds": null, "flags": [],
+      "why": "Targets 9/4/4/8 (blend 5.8, scaled to 37); 64% catch rate regressed to 66.5%; 14.3 a catch held at 14.5 (deep role, career 15-16); Arizona WR factor 1.15 and it has allowed 82- and 80-yard receiver scores. Book 59.5 DK (56.5 at -111) / FD main about 55, receptions 3.5."
+    },
+    {
+      "team": "DET", "player": "Sam LaPorta", "pos": "TE",
+      "targets": 7.4, "catchRate": 0.7, "receptions": 5.2, "recYds": 62,
+      "carries": null, "rushYds": null, "passYds": null, "flags": [],
+      "why": "Targets 8/7/4/13 (season and last-3 both 8.0, scaled to 37 attempts = 7.4); 68.8% catch rate regressed toward the 72% TE prior; 10.4 a catch regressed to 10.8; Arizona allows 9.4 yards per target to TEs (Kittle 82, Likely 66, Njoku 58), factor 1.10. 20% above the 51.5 DK / 49.5 FD main because the 13-target Week 4 role and the TE factor both point up; receptions main 5.5."
+    },
+    {
+      "team": "DET", "player": "Isaac TeSlaa", "pos": "WR",
+      "targets": 4.4, "catchRate": 0.64, "receptions": 2.8, "recYds": 43,
+      "carries": null, "rushYds": null, "passYds": null, "flags": [],
+      "why": "Targets 1/5/3/8 (blend 4.8, scaled to 37); 53% catch rate on 17 targets regressed to 64%; 20.8 a catch on 9 catches regressed hard to 13.5; Arizona WR factor 1.15. Sits 45-70% above the 25.5 DK / 29.5 FD main because the book prices a two-catch player and the last two weeks (66 and 95 yards) say the deep role is real; low-catch, high-variance profile."
+    },
+    {
+      "team": "ARI", "player": "Jacoby Brissett", "pos": "QB",
+      "targets": null, "catchRate": null, "receptions": null, "recYds": null,
+      "carries": 4, "rushYds": 11, "passYds": 275, "flags": [],
+      "why": "40 attempts (season 38 on 37/28/52/35, lifted as a 5.5-point home dog against a defense allowing 304 passing yards a game); 67.8% completions regressed to 66.5%; 7.9 yards per completion regressed to 9.0 (career near 10.5); Detroit allows 7.4 net yards per attempt and 82% red-zone touchdowns, factor 1.15. Book main 269.5 DK / 274.5 FD. Carries 6/1/4/4, the sneak from the 1 is his."
+    },
+    {
+      "team": "ARI", "player": "Trey McBride", "pos": "TE",
+      "targets": 11.8, "catchRate": 0.72, "receptions": 8.5, "recYds": 81,
+      "carries": null, "rushYds": null, "passYds": null, "flags": [],
+      "why": "Targets 13/10/11/12 (blend 11.25, scaled to 40 attempts, plus about half a target from Harrison's vacated 3.25); 71.7% catch rate at the TE prior; 7.3 a catch regressed to 8.8 (career near 10.5); Detroit allows 8.1 yards per target and 12.5 targets a game to TEs with six TE touchdowns in four games, factor 1.08. Book receptions 8.5, yards 84.5-89.5."
+    },
+    {
+      "team": "ARI", "player": "Michael Wilson", "pos": "WR",
+      "targets": 12.2, "catchRate": 0.62, "receptions": 7.6, "recYds": 89,
+      "carries": null, "rushYds": null, "passYds": null, "flags": ["new-role"],
+      "why": "Targets 7/7/17/13 (29% season share, 32% last three, blended to 30.5% plus about 2% of Harrison's vacated share, times 40 attempts); 56.8% catch rate regressed to 62% on 44 targets; 10.3 a catch regressed to 10.5; Detroit allows 10.1 yards per target to WRs with Ya-Sin out and Branch and Joseph still sidelined, factor 1.12. Book receptions 6.5, yards 79.5. new-role: Harrison inactive (trade pending) makes this a two-man tree."
+    },
+    {
+      "team": "ARI", "player": "Kendrick Bourne", "pos": "WR",
+      "targets": 4.2, "catchRate": 0.72, "receptions": 3.0, "recYds": 35,
+      "carries": null, "rushYds": null, "passYds": null, "flags": ["new-role"],
+      "why": "Targets 8/3/3/0 (blend 2.75, plus about 1.25 of Harrison's vacated 3.25 as the next outside receiver, scaled to 40 attempts); 86% catch rate on 14 targets regressed to 72%; 9.0 a catch regressed to 10.5; Detroit WR factor 1.12. Book 31.5 DK / 29.5 FD, receptions 3.5. new-role: steps into Harrison's outside snaps; zero targets last week is the floor risk."
+    },
+    {
+      "team": "ARI", "player": "Jeremiyah Love", "pos": "RB",
+      "targets": 3.3, "catchRate": 0.8, "receptions": 2.6, "recYds": 17,
+      "carries": 13, "rushYds": 55, "passYds": null, "flags": [],
+      "why": "Carries 11/9/21/14 (blend 14.2, trimmed to 13 on 24 team rushes as a dog and because his snaps are being managed around an ankle: no designation, full Friday, but Allgeier out-snapped him last week); 4.05 YPC regressed only to 4.15 behind a patched line, Detroit allows 4.4 a carry (factor 1.02). Targets 4/3/5/1, 85% catch rate regressed to 80%, 3.3 a catch regressed to 6.5. Book 44.5-49.5 rush (pricing the snap management), 11.5-14.5 rec."
+    },
+    {
+      "team": "ARI", "player": "Tyler Allgeier", "pos": "RB",
+      "targets": 2.4, "catchRate": 0.8, "receptions": 1.9, "recYds": 10,
+      "carries": 7, "rushYds": 29, "passYds": null, "flags": [],
+      "why": "Carries 17/5/2/8 (blend 6.5, lifted to 7 because he out-snapped Love last week and took the 22-yard score); 3.5 YPC regressed to 4.1 on a 4.5 career, Detroit factor 1.02. Targets 2/2/4/2, 10 of 10 caught, 3.5 a catch regressed to 5.5. Book 29.5 rush, 9.5 rec, 1.5 receptions. Included as the second lead back; his receiving line is below the 3-target bar."
+    }
+  ],
+  "sources": [
+    "ESPN summary API 401872991 (venue, DraftKings line, FPI, injuries) and box scores 401872923, 401872932, 401872954, 401872978 (DET W1-4), 401872926, 401872943, 401872958, 401872966 (ARI W1-4), fetched Oct 10",
+    "ESPN roster API (DET, ARI): Harrison Jr. Out, Kerby Joseph and Brian Branch Out on reserve; ESPN core team statistics 2026 (red-zone pct, attempts, plays)",
+    "azcardinals.com Week 5 injury report (Friday designations, Gaines II at RG, LaFleur on Love and Nolen III); arizonasports.com Cardinals-Lions injury report",
+    "ESPN/Schefter and NBC Sports Oct 10: Cardinals finalizing Harrison Jr. trade, inactive vs Lions; NBC Sports Oct 4: Love 15 touches, snaps managed",
+    "Detroit Lions Podcast Week 5 preview (ARI pass defense 8.6 Y/A, 114.9 rating; 4.5 yards per play); SI Lions OnSI (D.J. Reed PFF grades, points allowed)",
+    "Odds API pull data/odds/raw/2026-w05-det-ari.json (DraftKings, FanDuel alternates) for book sanity checks",
+    "Unverified: State Farm Stadium roof status; Kerby Joseph Saturday activation; opponent factors computed from four box scores, not a league table"
+  ]
+}

@@ -9,6 +9,7 @@ import type { ParlayCategory } from '@/lib/types';
 import { AddToSlip } from '@/components/Slip';
 import { StackCard } from '@/components/ui';
 import { ParlayCard } from '@/components/ParlayCard';
+import { FiveLegCard } from '@/components/FiveLeg';
 
 const CATEGORY_ORDER: ParlayCategory['key'][] = [
   'twoPlus',
@@ -22,11 +23,26 @@ const CATEGORY_ORDER: ParlayCategory['key'][] = [
 export default function ParlaysScreen() {
   const { board } = useBoard();
   const parlays = board.parlays;
+  const fiveLeg = board.fiveLeg?.tickets ?? [];
   return (
     <Screen
       title="Parlays"
       subtitle="Ranked one to five in every category from the model's numbers and the better of FanDuel and DraftKings. Units, not dollars."
     >
+      {fiveLeg.length > 0 && (
+        <>
+          <H2>Five-leg, no touchdowns</H2>
+          <Body small muted>
+            One ticket per game from the desk's volume projections: catches and yards at alternate
+            lines one notch under the main number, shrunk toward the book, the five that pay +500
+            with the highest joint hit rate. Ranked by that hit rate.
+          </Body>
+          <View style={{ height: space.sm }} />
+          {fiveLeg.map((t) => (
+            <FiveLegCard key={t.game} t={t} showGame />
+          ))}
+        </>
+      )}
       {!parlays ? (
         <Card>
           <Label>No parlay board yet</Label>
