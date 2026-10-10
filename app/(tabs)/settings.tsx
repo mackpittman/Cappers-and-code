@@ -4,6 +4,7 @@ import { router } from 'expo-router';
 import { Screen } from '@/components/Screen';
 import { openPortal, pushTest } from '@/lib/supabase';
 import { disablePush, enablePush, pushState, type PushState } from '@/lib/push';
+import { planLabel } from '@/lib/plans';
 import { LegalLinks } from '@/components/LegalLinks';
 import { SITE_URL } from '@/lib/site';
 import { Body, Card, H2, Label } from '@/components/ui';
@@ -210,7 +211,7 @@ export default function SettingsScreen() {
             <Label>{session.user.email}</Label>
             <Body small muted>
               {entitlement?.active
-                ? `Active · ${entitlement.plan}${entitlement.current_period_end ? ` · renews ${new Date(entitlement.current_period_end).toLocaleDateString()}` : ''}`
+                ? `Active · ${planLabel(entitlement.plan)}${entitlement.current_period_end ? ` · ${entitlement.cancel_at_period_end ? 'through' : 'renews'} ${new Date(entitlement.current_period_end).toLocaleDateString()}` : ''}`
                 : 'No active membership. Open the Edge tab to start one.'}
             </Body>
             <View style={{ height: space.sm }} />

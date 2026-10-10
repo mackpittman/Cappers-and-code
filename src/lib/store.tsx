@@ -18,6 +18,15 @@ import {
 } from './supabase';
 
 const KEY_BOARD = 'cappers.board.v2';
+/**
+ * Provisioned accounts (comps, founders, testers) can sign in with a plain username: a login with
+ * no @ is that name on the house domain, which is how scripts/admin-users creates them.
+ */
+export const LOGIN_DOMAIN = 'cappersandcode.com';
+export function loginEmail(id: string): string {
+  const v = id.trim().toLowerCase();
+  return v.includes('@') ? v : `${v}@${LOGIN_DOMAIN}`;
+}
 const KEY_SETTINGS = 'cappers.settings.v2';
 const extra = (Constants.expoConfig?.extra ?? {}) as { boardUrl?: string; checkoutUrl?: string };
 
@@ -264,7 +273,7 @@ export function BoardProvider({ children }: { children: React.ReactNode }) {
   }, []);
   const signInWithPassword = useCallback(async (email: string, password: string) => {
     const { error } = await supabase.auth.signInWithPassword({
-      email: email.trim().toLowerCase(),
+      email: loginEmail(email),
       password,
     });
     if (error) throw error;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { planLabel } from '@/lib/plans';
 import { Linking, Pressable, Text, TextInput, View } from 'react-native';
 import { copy, fonts, palette, radius, space, type } from '@/theme';
 import { useBoard } from '@/lib/store';
@@ -129,8 +130,8 @@ export function Paywall() {
             onChangeText={setEmail}
             autoCapitalize="none"
             autoCorrect={false}
-            keyboardType="email-address"
-            placeholder="you@email.com"
+            keyboardType={mode === 'signin' ? 'default' : 'email-address'}
+            placeholder={mode === 'signin' ? 'Email or username' : 'you@email.com'}
             placeholderTextColor={palette.mute}
             style={input}
           />
@@ -203,7 +204,7 @@ export function Paywall() {
           <Label>Signed in as {session.user.email}</Label>
           <View style={{ height: space.sm }} />
           {entitlement?.active ? (
-            <Pill text={`Member · ${entitlement.plan}`} tone="good" />
+            <Pill text={`Member · ${planLabel(entitlement.plan)}`} tone="good" />
           ) : (
             <>
               <Text style={[type.body, { color: palette.ink2 }]}>
