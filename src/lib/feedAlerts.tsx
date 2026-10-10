@@ -86,7 +86,9 @@ export function FeedAlertsProvider({ children }: { children: React.ReactNode }) 
             author_name?: string;
             content?: string;
             posted_at?: string;
+            silent?: boolean;
           };
+          if (row.silent) return; // sent @silent in Discord: it shows in the Feed, nothing more
           if (row.posted_at && Date.now() - Date.parse(row.posted_at) > FRESH_MS) return;
           if (focused.current) return; // the Feed screen reloads itself
           let title = row.author_name || 'The Discord';

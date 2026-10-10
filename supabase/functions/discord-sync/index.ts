@@ -100,6 +100,8 @@ Deno.serve(async (req) => {
             embeds: (m.embeds ?? []).map((e: any) => ({ title: e.title ?? null, description: e.description ?? null, url: e.url ?? null, image: e.image?.url ?? e.thumbnail?.url ?? null })),
             posted_at: m.timestamp,
             edited_at: m.edited_timestamp ?? null,
+            // Sent @silent in Discord (SUPPRESS_NOTIFICATIONS, 1 << 12): mirrored, but no push or banner.
+            silent: ((m.flags ?? 0) & 4096) !== 0,
             synced_at: new Date().toISOString(),
           });
         }

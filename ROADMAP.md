@@ -119,6 +119,7 @@ Done when: TestFlight build installs and the full paywall loop works on a real p
 
 - The bottom tab bar is now the app's frame: game pages live under the Games tab (`/games/<id>`) as a nested stack, so the bar stays on screen while a member reads, scrolls and adds picks. The old `/game/<id>` address redirects. The web shell uses the dynamic viewport height so Safari's toolbar cannot cover the bar.
 - Push alerts for the Discord feed: Settings → Alerts → **Turn on Discord alerts**. A service worker (`public/sw.js`), the `push` edge function and a `feed_posts` trigger deliver every mirrored post to entitled members' devices within a minute; inside the app a new post badges the Feed tab and shows a banner. Design and operating notes in `docs/PUSH_ALERTS.md`.
+- Silent posts and the ticket tracker: a post sent `@silent` in Discord is mirrored with `feed_posts.silent` and alerts no one (no push, no banner). The `ticket-tracker` function posts a silent status update for one live ticket every 30 minutes and stops itself once the ticket is decided. See `docs/TICKET_TRACKER.md`.
 
 Live 2026-10-10: the `push` function is deployed, the migration is applied and a notify call through the trigger path returns 200. Members turn alerts on in Settings, from the Home Screen app on iPhone.
 
