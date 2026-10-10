@@ -32,9 +32,10 @@ session with the desk's relay, one agent per game:
    `data/projections/w<wk>/<game>.json`.
 4. `node scripts/ingest-odds-raw.mjs --week N` turns the raw pulls into `data/odds/latest.json`
    in the runner's own format (alternates kept whole, a main line synthesized for the board).
-5. `node scripts/assemble-research.mjs --week N` builds `src/data/research.json` from the drafts
-   (best bets, cross stacks, upset leans and max-confidence fall out by rule), then
-   `node scripts/validate-research.mjs` and `node scripts/check-rosters.mjs`.
+5. `RESEARCH_DIR=research-draft/w<wk> WEEK=N node scripts/assemble-research.mjs` reports every
+   problem it finds (implied points order, de-vig, board depth); fix the drafts, then rerun with
+   `WRITE=1`. It refuses to write a partial week. Then `node scripts/validate-research.mjs` and
+   `node scripts/check-rosters.mjs`.
 6. Merge the projections into `data/projections/<season>-w<wk>.json`, then
    `node scripts/five-leg.mjs --week N` for the five-leg tickets.
 7. `node scripts/build-board.mjs` (attaches the five-leg tickets to each game and the Parlays
