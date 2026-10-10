@@ -140,17 +140,20 @@ export function buildBestOf(board, now = new Date()) {
       why: `Volume props at alternate lines one notch under the main number; the model has it ${pct(five.joint)} against the book's ${pct(five.bookJoint)}.`,
       legs: five.legs.map((l) => ({ label: l.label, price: l.price, book: l.book })),
     });
-  // The highest-hit-rate lotto whose legs all play on this day.
+  // The parlay: the weekend lotto with the best hit rate if every leg plays on this day and it hits
+  // 5% of the time or more; otherwise the day's own card (spread, total, moneyline), one leg per
+  // game, which is what a member asking "parlay the card" would build anyway.
+  const labelOf = (id) => {
+    const g = board.games.find((x) => x.id === id);
+    return g ? `${g.away.abbr}@${g.home.abbr}` : null;
+  };
+  const dayLabels = [...onDay].map(labelOf).filter(Boolean);
   const lotto = (board.lottos ?? [])
     .filter(
       (m) =>
+        (m.prob ?? 0) >= 0.05 &&
         (m.legs ?? []).length &&
-        (m.legs ?? []).every((l) =>
-          [...onDay].some((id) => {
-            const g = board.games.find((x) => x.id === id);
-            return g && l.label.startsWith(`${g.away.abbr}@${g.home.abbr}`);
-          }),
-        ),
+        (m.legs ?? []).every((l) => dayLabels.some((lab) => l.label.startsWith(lab))),
     )
     .sort((a, b) => (b.prob ?? 0) - (a.prob ?? 0))[0];
   if (lotto)
@@ -174,6 +177,36 @@ export function buildBestOf(board, now = new Date()) {
       why: lotto.why,
       legs: lotto.legs,
     });
+  else {
+    const card = [];
+    for (const p of plays.filter((x) => ['side', 'total', 'moneyline', 'dog'].includes(x.key)))
+      if (p.price != null && p.prob != null && !card.some((c) => c.game === p.game)) card.push(p);
+    if (card.length >= 2) {
+      const dec = card.reduce(
+        (d, p) => d * (p.price > 0 ? 1 + p.price / 100 : 1 + 100 / -p.price),
+        1,
+      );
+      const prob = card.reduce((q, p) => q * p.prob, 1);
+      const price = dec >= 2 ? Math.round((dec - 1) * 100) : Math.round(-100 / (dec - 1));
+      plays.push({
+        key: 'lotto',
+        title: 'The parlay',
+        game: card[0].game,
+        gameLabel: `${card.length} games`,
+        kickoff: null,
+        kickoffLabel: null,
+        bet: `The card, ${card.length} legs`,
+        price,
+        prob: +prob.toFixed(4),
+        implied: +(1 / dec).toFixed(4),
+        edge: +(prob - 1 / dec).toFixed(4),
+        conf: null,
+        units: UNITS.fiveLeg, // a ticket that lands a third of the time is not a lottery ticket
+        why: `The day's spread, total and moneyline picks parlayed, one leg per game so they land independently: the model has it ${pct(prob)} against the price's ${pct(1 / dec)}.`,
+        legs: card.map((p) => ({ label: `${p.gameLabel} ${p.bet}`, price: p.price, book: null })),
+      });
+    }
+  }
 
   const title = `${dayTitle(first.kickoff)}: the best of the slate`;
   const lines = [

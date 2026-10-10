@@ -1,0 +1,214 @@
+{
+  "game": "buf-lar",
+  "kick": "2026-10-13T00:15:00Z",
+  "weather": "Indoor: SoFi Stadium is roofed (artificial turf). ESPN/AccuWeather's Inglewood forecast (68F, 52% precipitation, gusts to 18 mph) does not apply; no weather flag.",
+  "teams": {
+    "BUF": {
+      "passAtt": 32,
+      "rushAtt": 26
+    },
+    "LAR": {
+      "passAtt": 38,
+      "rushAtt": 26
+    }
+  },
+  "players": [
+    {
+      "team": "BUF",
+      "player": "Josh Allen",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 8,
+      "rushYds": 35,
+      "passYds": 222,
+      "flags": [],
+      "why": "32 attempts (season 29.75 on 29/31/26/33, nudged up for a 3-point road underdog in a 54.5 total; Rams opponents average 31.75); 66.4% completion regressed to 65.3%; 13.2 a completion regressed to 12.5; the Rams allow 4.84 gross yards per attempt (615 on 127), factor capped at 0.85. Palmer out, Moore questionable. Book 244.5 DK / 249.5 FD, 9% under. Rush 6/14/8/5 (blend 8.6, scaled to 26 team rushes), 3.6 a carry with kneels regressed to 4.5, Rams QB factor 0.97; book 37.5."
+    },
+    {
+      "team": "BUF",
+      "player": "James Cook III",
+      "pos": "RB",
+      "targets": 2.4,
+      "catchRate": 0.74,
+      "receptions": 1.8,
+      "recYds": 10,
+      "carries": 17,
+      "rushYds": 80,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 13/21/24/12 (season 17.5, last three 19.0, blend 18.25, scaled to 26 team rushes = 17); 6.0 a carry regressed to 5.0; Rams allow 4.06 a carry to backs (factor 0.94). Targets 4/3/1/2 (blend 2.25, scaled to 32 attempts); 60% catch rate regressed toward 78% to 74%; 4.0 a catch regressed to 6.5, Rams RB factor capped at 0.85. Book 75.5 DK / 79.5 FD rush; 11.5 DK / 9.5 FD receiving, catches 1.5."
+    },
+    {
+      "team": "BUF",
+      "player": "Khalil Shakir",
+      "pos": "WR",
+      "targets": 6.4,
+      "catchRate": 0.67,
+      "receptions": 4.3,
+      "recYds": 42,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 6/6/3/8 (season 5.75, last three 5.67, blend 5.7, plus 0.3 of Palmer's 2.3, scaled to 32 attempts); 15 of 23 (65%) regressed to 67%; 11.7 a catch held at 11.6; the Rams allow 6.5 yards per target to receivers, factor capped at 0.85. Five red-zone targets lead Buffalo. Book 44.5 DK / about 45 FD, catches 4.5. Moore sitting would add about 1.5 targets."
+    },
+    {
+      "team": "BUF",
+      "player": "Keon Coleman",
+      "pos": "WR",
+      "targets": 5.5,
+      "catchRate": 0.72,
+      "receptions": 4,
+      "recYds": 47,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 1/6/2/7 (season 4.0, last three 5.0, blend 4.5, plus 0.6 of Palmer's targets, scaled to 32 attempts); 14 of 16 (88%) regressed hard to 72%; 15.5 a catch regressed to 13.9; Rams WR factor 0.85 (cap). 22% above the 38.5 DK / 39.5 FD main because that line was posted Saturday before Palmer was ruled out, and Coleman took 7 targets for 116 last week once Moore left. If Moore plays a full game, expect about 4.5 targets."
+    },
+    {
+      "team": "BUF",
+      "player": "DJ Moore",
+      "pos": "WR",
+      "targets": 5.5,
+      "catchRate": 0.65,
+      "receptions": 3.6,
+      "recYds": 41,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "questionable"
+      ],
+      "why": "Conditional on playing. Questionable (shoulder, AC joint sprain aggravated in Week 4); first practice of the week Saturday in a noncontact jersey. Healthy games 8 and 10 targets, partial games 0 and 2 (blend 4.5, moved up to 5.5 for a limited full game); 12 of 20 (60%) regressed to 65%; 14.8 a catch regressed to 13.5; Rams WR factor 0.85. Neither book posted a Moore prop. If he sits, his targets go mainly to Coleman and Shakir, then Bell."
+    },
+    {
+      "team": "BUF",
+      "player": "Skyler Bell",
+      "pos": "WR",
+      "targets": 3,
+      "catchRate": 0.68,
+      "receptions": 2,
+      "recYds": 20,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "new-role"
+      ],
+      "why": "Rookie NFL debut, confirmed active by Joe Brady with Palmer out; no NFL sample, so the role is Palmer's 2.3 targets a game plus a share of Moore's limited snaps. Catch rate is the 68% WR prior; 11.5 a catch assumed, Rams WR factor 0.85. Unverified role: no snap data. No book line for yards or catches (TD +2500 DK)."
+    },
+    {
+      "team": "BUF",
+      "player": "Dalton Kincaid",
+      "pos": "TE",
+      "targets": 5.1,
+      "catchRate": 0.75,
+      "receptions": 3.8,
+      "recYds": 46,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 6/8/3/2 (season 4.75, last three 4.33, blend 4.5, plus 0.2 of Palmer's, scaled to 32 attempts); 15 of 19 (79%) regressed toward 72% to 75%; 18.0 a catch regressed to 14.25; Rams allow 2.9 yards per target to tight ends (12 of 29 for 85), factor capped at 0.85. 21% under the 58.5 DK / 59.5 FD main, which prices his 130- and 95-yard first two weeks; catches main 4.5."
+    },
+    {
+      "team": "LAR",
+      "player": "Matthew Stafford",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 2.5,
+      "rushYds": 6,
+      "passYds": 292,
+      "flags": [],
+      "why": "38 attempts (team season 41.25 on 28/31/55/51, last three 45.7; trimmed for a 3-point home favourite, and Buffalo's opponents average 36.75); 61.1% completion regressed to 62%; 12.0 a completion regressed to 11.6; Buffalo allows 7.46 gross yards per attempt, factor 1.07. Nacua back, Ferguson on IR. Book about 284.5 DK (279.5 at -112) / 274.5-299.5 FD, 3% over. Rush 11 for 21 in four games."
+    },
+    {
+      "team": "LAR",
+      "player": "Kyren Williams",
+      "pos": "RB",
+      "targets": 6,
+      "catchRate": 0.8,
+      "receptions": 4.8,
+      "recYds": 32,
+      "carries": 14,
+      "rushYds": 58,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 11/12/15/16 (season 13.5, last three 14.3, blend 13.9, plus a little as the favourite); 5.44 a carry regressed to 4.70; Buffalo allows 3.79 a carry to backs, factor 0.88; 17% under the 69.5 main. Targets 3/2/7/13 (target share 15.2% season, 16% last three, times 38 attempts); 84% catch rate regressed to 80%; 8.2 a catch to 7.9; Buffalo RB factor capped at 0.85. 49% over the 21.5 DK / 19.5 FD receiving main because the book prices his 2025 role, while he has 20 targets in the two games since Ferguson's injury and Buffalo allows 6.8 back targets a game."
+    },
+    {
+      "team": "LAR",
+      "player": "Blake Corum",
+      "pos": "RB",
+      "targets": 1.5,
+      "catchRate": 0.78,
+      "receptions": 1.2,
+      "recYds": 7,
+      "carries": 8,
+      "rushYds": 31,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 10/12/6/5 (season 8.25, last three 7.7, blend 7.96); 4.9 a carry regressed to 4.45; Buffalo RB factor 0.88. No red-zone carries. Targets 0/1/4/2 (blend 1.6); 4 catches for 20 regressed. Book 32.5 DK rush; no receiving line."
+    },
+    {
+      "team": "LAR",
+      "player": "Puka Nacua",
+      "pos": "WR",
+      "targets": 10.3,
+      "catchRate": 0.68,
+      "receptions": 7,
+      "recYds": 100,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Two games played (missed Weeks 2-3, hip): 9 and 12 targets, 26.6% of attempts in those games, times 38 attempts = 10.1, rounded up for the blend weighting the 12-target return; 14 of 21 (67%) regressed to 68%; 14.2 a catch regressed to 13.1; Buffalo allows 8.86 yards per target to receivers, factor 1.09. No designation. Book 94.5 DK / 99.5 FD (about 96 main), catches 7.5."
+    },
+    {
+      "team": "LAR",
+      "player": "Davante Adams",
+      "pos": "WR",
+      "targets": 8,
+      "catchRate": 0.62,
+      "receptions": 5,
+      "recYds": 68,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 6/10/13/9 (season 9.5, last three 10.7, blend 10.1, scaled to 38 attempts = 8.8), then trimmed for Nacua's return: Adams had 19% of targets with Nacua active and 28% without. 22 of 38 (58%) regressed to 62%; 17.7 a catch regressed to 12.5 because his with-Nacua games ran 8.3 a catch; Buffalo WR factor 1.09. Book 63.5 DK / about 64 FD, 7% over; catches 4.5."
+    },
+    {
+      "team": "LAR",
+      "player": "Tyler Higbee",
+      "pos": "TE",
+      "targets": 4,
+      "catchRate": 0.75,
+      "receptions": 3,
+      "recYds": 27,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 2/DNP/11/6; the 11 came with Nacua out and the 6 with Ferguson and Parkinson both out. With Nacua back and Parkinson returning, his share is about 10% of 38 attempts. 15 of 19 (79%) regressed to 75%; 9.4 a catch regressed to 9.95; Buffalo allows 6.55 yards per target to tight ends, factor 0.91. Book 23.5 DK / 24.5 FD, catches 2.5."
+    }
+  ],
+  "sources": [
+    "data/odds/raw/2026-w05-buf-lar.json (DraftKings 2026-10-10T16:27Z, FanDuel 16:28Z)",
+    "ESPN game summaries and box scores: 401872657, 401872660, 401872932, 401872947, 401872953, 401872962, 401872970, 401872971 (play-by-play parsed for red-zone and goal-line usage)",
+    "ESPN depth charts (sports.core.api.espn.com, teams 2 and 14) and team rosters, 2026-10-10",
+    "ESPN game summary 401872994 (injuries, venue, DraftKings line, matchup predictor)",
+    "ESPN, Nick Suss, 'Bills rule out Ed Oliver, Joshua Palmer, wait on WR DJ Moore', 2026-10-10",
+    "data/injuries.json (fetched 2026-10-10)",
+    "therams.com injury update, 2026-10-05",
+    "SI Betting, Bills vs. Rams prediction, 2026-10-07",
+    "Not verified: Rams' Saturday final designations: taken from ESPN's injury listing; not cross-checked on the Rams' own Saturday report; DJ Moore active status (questionable, game-time); Skyler Bell role and snap share (NFL debut, no sample); League-average yards per target and per carry used as factor denominators (WR 8.1, TE 7.2, RB 5.8 per target; 4.3 a carry; 6.9 per attempt) are desk approximations"
+  ]
+}

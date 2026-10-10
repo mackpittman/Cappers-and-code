@@ -328,7 +328,7 @@ export function buildLottos(topTen) {
   const byProb = (xs) => [...(xs ?? [])].sort((a, b) => b.prob - a.prob);
   const out = [
     ticket(
-      'Sunday unders, 4 legs',
+      'Four unders',
       'The four totals the projection is most sure land under, one per game.',
       distinct(
         byProb(C.totals).filter((x) => /^Under/.test(x.bet)),

@@ -1,10 +1,10 @@
 # NFL Week 5 2026 — Touchdown Probability & Parlay Report
 
-**Prepared:** Saturday, October 10, 2026 at 2:19 PM CT.
-**Scope:** 13 games (TB 24, DAL 16 already final).
+**Prepared:** Saturday, October 10, 2026 at 2:33 PM CT.
+**Scope:** 14 games (TB 24, DAL 16 already final).
 **Method:** one researcher per game from Friday's practice reports, the current DraftKings and FanDuel board and ESPN's depth charts. Win probabilities are the moneyline with the vig removed. Touchdown estimates are the desk's own, from role; they are not the book's number with the hold stripped. Volume projections feed the five-leg tickets (docs/FIVE_LEG_FORMULA.md).
 
-> Week 5 research prepared Saturday, October 10, one researcher per game, from Friday's practice reports and designations and DraftKings and FanDuel prices pulled Saturday morning. Touchdown estimates are built from role, not from the posted price, and are shaded down after Week 4's grading showed the 40-60% band hitting 29-43%. Monday night (BUF@LAR) follows separately. Any price marked verify must be checked at a book before it is played.
+> Week 5 research prepared Saturday, October 10, one researcher per game, from Friday's practice reports and designations and DraftKings and FanDuel prices pulled Saturday morning. Touchdown estimates are built from role, not from the posted price, and are shaded down after Week 4's grading showed the 40-60% band hitting 29-43%. Any price marked verify must be checked at a book before it is played.
 
 ---
 
@@ -13,6 +13,7 @@
 | Kick                   | Game    | Spread   | Total | Away ML | Home ML | Away win% | Home win% | Projected | Side           | Total lean       |
 | ---------------------- | ------- | -------- | ----- | ------- | ------- | --------- | --------- | --------- | -------------- | ---------------- |
 | Sun, 10/11, 8:20 PM ET | BAL@ATL | ATL -3   | 43.5  | +150    | -180    | 38%       | 62%       | 17-24     | ATL -3 (1/5)   | Under 43.5 (2/5) |
+| Mon, 10/12, 8:15 PM ET | BUF@LAR | LAR -3   | 54.5  | +145    | -175    | 39%       | 61%       | 23-27     | LAR -3 (1/5)   | Under 54.5 (2/5) |
 | Sun, 10/11, 1:00 PM ET | CHI@GB  | CHI -1.5 | 45.5  | -125    | +105    | 53%       | 47%       | 23-20     | CHI -1.5 (2/5) | Under 45.5 (2/5) |
 | Sun, 10/11, 1:00 PM ET | CIN@MIA | CIN -7   | 43.5  | -355    | +280    | 75%       | 25%       | 26-15     | CIN -7 (1/5)   | Under 43.5 (2/5) |
 | Sun, 10/11, 1:00 PM ET | CLE@NYJ | NYJ -2.5 | 39.5  | +114    | -135    | 45%       | 55%       | 17-21     | NYJ -2.5 (1/5) | Under 39.5 (1/5) |
@@ -34,28 +35,28 @@ Ranked by the desk's own estimate, not by price.
 | --- | ------------------- | ---- | --- | ------- | --------- | ------- | --------- | ---- |
 | 1   | Jahmyr Gibbs        | DET  | RB  | DET@ARI | -450      | 82%     | 66%       | -16  |
 | 2   | Bijan Robinson      | ATL  | RB  | BAL@ATL | -225      | 69%     | 58%       | -11  |
-| 3   | Jonathan Taylor     | IND  | RB  | IND@PIT | -170      | 63%     | 56%       | -7   |
-| 4   | D'Andre Swift       | CHI  | RB  | CHI@GB  | -165      | 62%     | 53%       | -9   |
-| 5   | Aaron Jones Sr.     | MIN  | RB  | MIN@NO  | -115      | 54%     | 50%       | -4   |
-| 6   | Chase Brown         | CIN  | RB  | CIN@MIA | -165      | 62%     | 48%       | -14  |
-| 7   | Christian McCaffrey | SF   | RB  | SF@SEA  | -130      | 56%     | 48%       | -8   |
-| 8   | Amon-Ra St. Brown   | DET  | WR  | DET@ARI | -145      | 59%     | 47%       | -12  |
-| 9   | Braelon Allen       | NYJ  | RB  | CLE@NYJ | -105      | 51%     | 46%       | -5   |
-| 10  | Bhayshul Tuten      | JAX  | RB  | PHI@JAX | -110      | 52%     | 45%       | -7   |
-| 11  | Jaxon Smith-Njigba  | SEA  | WR  | SF@SEA  | -115      | 54%     | 45%       | -9   |
-| 12  | Derrick Henry       | BAL  | RB  | BAL@ATL | -140      | 58%     | 42%       | -16  |
-| 13  | Trey McBride        | ARI  | TE  | DET@ARI | +115      | 47%     | 42%       | -5   |
-| 14  | Nico Collins        | HOU  | WR  | HOU@TEN | +135      | 43%     | 42%       | -1   |
-| 15  | Quinshon Judkins    | CLE  | RB  | CLE@NYJ | +165      | 38%     | 40%       | +2   |
-| 16  | Cam Skattebo        | NYG  | RB  | NYG@WSH | +125      | 44%     | 40%       | -4   |
-| 17  | Brock Bowers        | LV   | TE  | LV@NE   | +140      | 42%     | 39%       | -3   |
-| 18  | Emanuel Wilson      | SEA  | RB  | SF@SEA  | -115      | 54%     | 39%       | -15  |
-| 19  | Christian Watson    | GB   | WR  | CHI@GB  | +180      | 36%     | 37%       | +1   |
-| 20  | Omarion Hampton     | LAC  | RB  | DEN@LAC | +165      | 38%     | 37%       | -1   |
-| 21  | J.K. Dobbins        | DEN  | RB  | DEN@LAC | +145      | 41%     | 37%       | -4   |
-| 22  | David Montgomery    | HOU  | RB  | HOU@TEN | +125      | 44%     | 37%       | -7   |
-| 23  | Ollie Gordon II     | MIA  | RB  | CIN@MIA | +150      | 40%     | 36%       | -4   |
-| 24  | Tee Higgins         | CIN  | WR  | CIN@MIA | -125      | 56%     | 35%       | -21  |
+| 3   | Kyren Williams      | LAR  | RB  | BUF@LAR | -165      | 62%     | 57%       | -5   |
+| 4   | Jonathan Taylor     | IND  | RB  | IND@PIT | -170      | 63%     | 56%       | -7   |
+| 5   | D'Andre Swift       | CHI  | RB  | CHI@GB  | -165      | 62%     | 53%       | -9   |
+| 6   | Josh Allen          | BUF  | QB  | BUF@LAR | -120      | 55%     | 50%       | -5   |
+| 7   | Aaron Jones Sr.     | MIN  | RB  | MIN@NO  | -115      | 54%     | 50%       | -4   |
+| 8   | Chase Brown         | CIN  | RB  | CIN@MIA | -165      | 62%     | 48%       | -14  |
+| 9   | Christian McCaffrey | SF   | RB  | SF@SEA  | -130      | 56%     | 48%       | -8   |
+| 10  | Amon-Ra St. Brown   | DET  | WR  | DET@ARI | -145      | 59%     | 47%       | -12  |
+| 11  | Braelon Allen       | NYJ  | RB  | CLE@NYJ | -105      | 51%     | 46%       | -5   |
+| 12  | Bhayshul Tuten      | JAX  | RB  | PHI@JAX | -110      | 52%     | 45%       | -7   |
+| 13  | Jaxon Smith-Njigba  | SEA  | WR  | SF@SEA  | -115      | 54%     | 45%       | -9   |
+| 14  | Derrick Henry       | BAL  | RB  | BAL@ATL | -140      | 58%     | 42%       | -16  |
+| 15  | Trey McBride        | ARI  | TE  | DET@ARI | +115      | 47%     | 42%       | -5   |
+| 16  | Nico Collins        | HOU  | WR  | HOU@TEN | +135      | 43%     | 42%       | -1   |
+| 17  | James Cook III      | BUF  | RB  | BUF@LAR | -120      | 55%     | 40%       | -15  |
+| 18  | Quinshon Judkins    | CLE  | RB  | CLE@NYJ | +165      | 38%     | 40%       | +2   |
+| 19  | Cam Skattebo        | NYG  | RB  | NYG@WSH | +125      | 44%     | 40%       | -4   |
+| 20  | Brock Bowers        | LV   | TE  | LV@NE   | +140      | 42%     | 39%       | -3   |
+| 21  | Emanuel Wilson      | SEA  | RB  | SF@SEA  | -115      | 54%     | 39%       | -15  |
+| 22  | Christian Watson    | GB   | WR  | CHI@GB  | +180      | 36%     | 37%       | +1   |
+| 23  | Omarion Hampton     | LAC  | RB  | DEN@LAC | +165      | 38%     | 37%       | -1   |
+| 24  | J.K. Dobbins        | DEN  | RB  | DEN@LAC | +145      | 41%     | 37%       | -4   |
 
 ### Where the desk is furthest above the price
 
@@ -108,6 +109,7 @@ One per game from the volume projections, docs/FIVE_LEG_FORMULA.md. Joint is the
 | det-ari                   | +521  | 20%   | 16%  | Michael Wilson 6+ receptions -225; Jared Goff 250+ pass yds -238; Tyler Allgeier 20+ rush yds -240; Sam LaPorta 40+ rec yds -218; Jameson Williams 40+ rec yds -215       |
 | sf-sea (short of target)  | +503  | 21%   | 17%  | Kaelon Black 10+ rush yds -250; Deebo Samuel Sr. 5+ rush yds -220; Mike Evans 4+ receptions -146; Jaxon Smith-Njigba 7+ receptions -132                                   |
 | bal-atl (short of target) | +530  | 21%   | 16%  | Mark Andrews 25+ rec yds -186; Brian Robinson Jr. 30+ rush yds -168; Bijan Robinson 80+ rush yds -165; Derrick Henry 70+ rush yds -167                                    |
+| buf-lar                   | +614  | 23%   | 14%  | Kyren Williams 3+ receptions -146; Keon Coleman 25+ rec yds -245; Tyler Higbee 15+ rec yds -232; Davante Adams 4+ receptions -215; Matthew Stafford 250+ pass yds -230    |
 
 ## 7. Game by game
 
@@ -120,6 +122,16 @@ ATL -3, total 43.5. Atlanta by seven in the projection. The side stays a 1: the 
 **Value:** Brian Robinson Jr. +240 (30%) · Matthew Hibner +900 (11%)
 
 **Prop leans:** Bijan Robinson over 87.5 rush yds · Michael Penix Jr. under 219.5 pass yds · Mark Andrews over 32.5 reception yds
+
+### Bills at Rams — Mon, 10/12, 8:15 PM ET
+
+LAR -3, total 54.5. The Rams by four in the projection, against a line that has already moved from -2.5 to -3 and from -148 to -175. Buffalo is without Palmer and Oliver and may be without Moore, and its defense (372 yards a game, 30th in EPA per play) draws an offense that gains 417 yards a game. The side stays a 1 because the Rams have turned it over eight times and scored on only 8 of 15 red-zone trips. The total is the lean: the Rams allow 247.5 yards a game and 4.8 yards per pass attempt, their games have totalled 34 to 56, and the projection is 50 against 54.5. Buffalo's games averaging 58.5 points and both teams going 7-3 to the over in their last ten are why it is a 2, not a 3.
+
+**Max-confidence scorers:** Kyren Williams -165 (57%) · Josh Allen -120 (50%) · James Cook III -120 (40%)
+
+**Value:** Keon Coleman +250 (28%) · Skyler Bell +2500 (5%)
+
+**Prop leans:** Josh Allen under 244.5 pass yds · Dalton Kincaid under 58.5 reception yds · Kyren Williams over 21.5 reception yds
 
 ### Bears at Packers — Sun, 10/11, 1:00 PM ET
 
