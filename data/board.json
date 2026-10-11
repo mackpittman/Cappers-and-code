@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 5,
- "generatedAt": "2026-10-10T20:33:41.257Z",
+ "generatedAt": "2026-10-11T11:35:26.098Z",
  "researchAsOf": "2026-10-10T19:33:41.682Z",
  "oddsFetchedAt": "2026-10-10T16:32:26.900Z",
  "oddsCredits": {
@@ -33,7 +33,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": "ESPN/book",
- "injuriesFetchedAt": "2026-10-10T20:33:39.523Z",
+ "injuriesFetchedAt": "2026-10-11T11:35:25.234Z",
  "notes": "Week 5 research prepared Saturday, October 10, one researcher per game, from Friday's practice reports and designations and DraftKings and FanDuel prices pulled Saturday morning. Touchdown estimates are built from role, not from the posted price, and are shaded down after Week 4's grading showed the 40-60% band hitting 29-43%. Any price marked verify must be checked at a book before it is played.",
  "completed": [
   {
@@ -626,17 +626,17 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
-     "home": -180,
-     "away": 150,
+     "home": -175,
+     "away": 145,
      "bestHome": null,
      "bestAway": null,
      "openHome": 180,
      "openAway": -218
     },
     "spread": {
-     "homePoint": -3,
+     "homePoint": -3.5,
      "homePrice": null,
      "awayPrice": null
     },
@@ -646,8 +646,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.384,
-     "home": 0.616
+     "away": 0.391,
+     "home": 0.609
     }
    },
    "scratched": [],
@@ -1266,12 +1266,12 @@
     ],
     "home": [
      {
-      "name": "Yasir Abdullah",
-      "pos": "LB",
+      "name": "Za'Darius Smith",
+      "pos": "DE",
       "status": "Out",
       "type": "out",
-      "detail": "Abdullah (hamstring) has been ruled out for Sunday's game against the Ravens, Will McFadden of the Falcons' official site reports.",
-      "date": "2026-10-10T02:06Z"
+      "detail": "Smith (concussion/neck) has been downgraded to out for Sunday's game against the Ravens, Tori McElhaney of the Falcons' official site reports.",
+      "date": "2026-10-11T01:12Z"
      },
      {
       "name": "Jake Matthews",
@@ -1280,14 +1280,6 @@
       "type": "questionable",
       "detail": "Matthews (groin) is questionable for Sunday's game against the Ravens.",
       "date": "2026-10-10T02:07Z"
-     },
-     {
-      "name": "Za'Darius Smith",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Smith (concussion/neck) is listed as questionable for Sunday's game against the Ravens, Will McFadden of the Falcons' official site  reports.",
-      "date": "2026-10-09T23:44Z"
      },
      {
       "name": "Divine Deablo",
@@ -1304,9 +1296,17 @@
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-10-08T19:36Z"
+     },
+     {
+      "name": "Yasir Abdullah",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Falcons placed Abdullah (hamstring) on injured reserve Saturday, Tori McElhaney of the team's official site reports.",
+      "date": "2026-10-11T03:43Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "bal-atl",
@@ -1962,17 +1962,17 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
-     "home": -175,
-     "away": 145,
+     "home": -180,
+     "away": 150,
      "bestHome": null,
      "bestAway": null,
      "openHome": -155,
      "openAway": 130
     },
     "spread": {
-     "homePoint": -3,
+     "homePoint": -3.5,
      "homePrice": null,
      "awayPrice": null
     },
@@ -1982,8 +1982,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.391,
-     "home": 0.609
+     "away": 0.384,
+     "home": 0.616
     }
    },
    "scratched": [],
@@ -2630,20 +2630,20 @@
       "date": "2026-10-10T18:00Z"
      },
      {
+      "name": "Landon Jackson",
+      "pos": "DE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Jackson (knee) is listed as questionable for Monday's game against the Rams, Joe Buscaglia of The Athletic reports.",
+      "date": "2026-10-11T02:38Z"
+     },
+     {
       "name": "Dee Alford",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Alford (ankle) is listed as questionable for Monday's game against the Rams, Joe Buscaglia of The Athletic reports.",
       "date": "2026-10-10T19:14Z"
-     },
-     {
-      "name": "Landon Jackson",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-10T18:07Z"
      },
      {
       "name": "DJ Moore",
@@ -2664,44 +2664,12 @@
     ],
     "home": [
      {
-      "name": "Nate Landman",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Landman (shoulder) was a limited participant in Friday's practice, Sarah Barshop of ESPN.com reports.",
-      "date": "2026-10-10T01:32Z"
-     },
-     {
-      "name": "Jaylen Watson",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Watson (shoulder) was a limited participant at practice Thursday, Sarah Barshop of ESPN.com reports.",
-      "date": "2026-10-09T00:39Z"
-     },
-     {
       "name": "Quentin Lake",
       "pos": "S",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Lake (hip) did not participate at practice Thursday, Sarah Barshop of ESPN.com reports.",
-      "date": "2026-10-09T00:29Z"
-     },
-     {
-      "name": "Grant Stuard",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-09T00:15Z"
-     },
-     {
-      "name": "Josaiah Stewart",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-09T00:14Z"
+      "detail": "Lake (hip) is listed as questionable for Monday's game against the Bills, Stu Jackson of the Rams' official site reports.",
+      "date": "2026-10-11T02:14Z"
      },
      {
       "name": "Myles Garrett",
@@ -2720,7 +2688,7 @@
       "date": "2026-10-07T17:52Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "buf-lar",
@@ -3378,7 +3346,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
      "home": 105,
      "away": -125,
@@ -3393,7 +3361,7 @@
      "awayPrice": null
     },
     "total": {
-     "point": 46.5,
+     "point": 47.5,
      "over": null,
      "under": null
     },
@@ -3974,6 +3942,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Anthony Johnson Jr.",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-11T11:01Z"
+     },
+     {
       "name": "Shemar Turner",
       "pos": "DT",
       "status": "Out",
@@ -4006,20 +3982,20 @@
       "date": "2026-10-09T17:06Z"
      },
      {
+      "name": "Noah Sewell",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Sewell (Achilles) was activated from the Bears' reserve/PUP list Saturday.",
+      "date": "2026-10-10T19:32Z"
+     },
+     {
       "name": "Caleb Williams",
       "pos": "QB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Williams (hamstring) was a limited practice participant Friday and is listed as questionable for Sunday's game at Green Bay.",
       "date": "2026-10-09T19:03Z"
-     },
-     {
-      "name": "Anthony Johnson Jr.",
-      "pos": "S",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-10-10T20:29Z"
      }
     ],
     "home": [
@@ -4096,7 +4072,7 @@
       "date": "2026-10-06T23:22Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "chi-gb",
@@ -4828,7 +4804,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
      "home": 280,
      "away": -355,
@@ -5300,6 +5276,14 @@
     ],
     "home": [
      {
+      "name": "Storm Duck",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Duck (knee) has been downgraded to out for Sunday's game against the Bengals, David Furones of the South Florida Sun Sentinel reports.",
+      "date": "2026-10-11T00:56Z"
+     },
+     {
       "name": "Robert Beal Jr.",
       "pos": "DE",
       "status": "Out",
@@ -5324,28 +5308,12 @@
       "date": "2026-10-09T20:46Z"
      },
      {
-      "name": "Storm Duck",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Duck (knee) practiced in full Thursday.",
-      "date": "2026-10-08T23:51Z"
-     },
-     {
       "name": "Reese Taylor",
       "pos": "CB",
       "status": "Out",
       "type": "out",
       "detail": "Taylor (quadriceps) has been ruled out ahead of the Dolphins' Week 5 matchup with the Bengals, Barry Jackson of the Miami Herald reported Monday.",
       "date": "2026-10-06T01:00Z"
-     },
-     {
-      "name": "Kenneth Grant",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-10T20:04Z"
      },
      {
       "name": "Jaylen Wright",
@@ -5364,7 +5332,7 @@
       "date": "2026-10-05T03:29Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "cin-mia",
@@ -5982,7 +5950,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
      "home": -135,
      "away": 114,
@@ -6664,7 +6632,7 @@
       "date": "2026-10-07T21:44Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "cle-nyj",
@@ -7367,7 +7335,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
      "home": 160,
      "away": -192,
@@ -7843,14 +7811,6 @@
     ],
     "home": [
      {
-      "name": "Trevor Penning",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "Penning (concussion) was been ruled out ahead of Sunday's game against Denver.",
-      "date": "2026-10-10T02:19Z"
-     },
-     {
       "name": "Kayode Awosika",
       "pos": "G",
       "status": "Out",
@@ -7899,28 +7859,20 @@
       "date": "2026-10-09T20:43Z"
      },
      {
-      "name": "Trey Lance",
-      "pos": "QB",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Lance (groin) is listed as doubtful for Sunday's game against the Broncos.",
-      "date": "2026-10-10T00:34Z"
-     },
-     {
       "name": "Branson Taylor",
       "pos": "G",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-10T20:25Z"
+      "detail": "The Chargers activated Taylor (neck) form injured reserve Saturday.",
+      "date": "2026-10-11T03:31Z"
      },
      {
       "name": "Scott Matlock",
       "pos": "FB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-10T20:25Z"
+      "detail": "The Chargers activated Matlock (foot) from injured reserve Saturday, but he's still listed as questionable for Sunday's game against the Broncos.",
+      "date": "2026-10-11T01:02Z"
      },
      {
       "name": "Charlie Kolar",
@@ -7937,9 +7889,25 @@
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-10-09T21:19Z"
+     },
+     {
+      "name": "Ladd McConkey",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "McConkey (foot) is listed as questionable for Sunday's game against Denver, while teammate Quentin Johnston (chest) has been ruled out.",
+      "date": "2026-10-09T20:40Z"
+     },
+     {
+      "name": "Trevor Penning",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Chargers placed Penning (concussion) on injured reserve Saturday.",
+      "date": "2026-10-11T03:33Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "den-lac",
@@ -8631,7 +8599,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
      "home": 205,
      "away": -250,
@@ -9251,14 +9219,6 @@
       "date": "2026-10-09T22:16Z"
      },
      {
-      "name": "Isaiah Adams",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "Cardinals head coach Mike LaFleur said that Adams (ankle) won't play in Sunday's game against Detroit, Darren Urban of the Cardinals' official site reports.",
-      "date": "2026-10-08T00:38Z"
-     },
-     {
       "name": "Walter Nolen III",
       "pos": "DT",
       "status": "Questionable",
@@ -9273,6 +9233,14 @@
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-10-08T23:20Z"
+     },
+     {
+      "name": "Isaiah Adams",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Cardinals placed Adams (ankle) on injured reserve Saturday, Darren Urban of the team's official site reports.",
+      "date": "2026-10-11T03:58Z"
      },
      {
       "name": "Paris Johnson Jr.",
@@ -9291,7 +9259,7 @@
       "date": "2026-10-06T23:22Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "det-ari",
@@ -9950,10 +9918,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
-     "home": 280,
-     "away": -355,
+     "home": 275,
+     "away": -345,
      "bestHome": null,
      "bestAway": null,
      "openHome": 160,
@@ -9965,13 +9933,13 @@
      "awayPrice": null
     },
     "total": {
-     "point": 38.5,
+     "point": 37.5,
      "over": null,
      "under": null
     },
     "winProb": {
-     "away": 0.748,
-     "home": 0.252
+     "away": 0.744,
+     "home": 0.256
     }
    },
    "scratched": [],
@@ -10616,20 +10584,20 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Kayden McDonald",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-10T19:21Z"
-     },
-     {
       "name": "M.J. Stewart",
       "pos": "S",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Stewart (knee) is listed as questionable for Sunday's game against Tennessee.",
-      "date": "2026-10-09T23:55Z"
+      "detail": "Stewart (knee) was activated from the reserve/PUP list Saturday but is still questionable for Sunday's game against the Titans.",
+      "date": "2026-10-11T00:24Z"
+     },
+     {
+      "name": "Kayden McDonald",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "The Texans activated McDonald (ankle) from injured reserve Saturday, though he's still questionable to play against the Titans on Sunday.",
+      "date": "2026-10-11T00:19Z"
      },
      {
       "name": "Aireontae Ersery",
@@ -10656,20 +10624,20 @@
       "date": "2026-10-08T21:52Z"
      },
      {
+      "name": "Braden Smith",
+      "pos": "OT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Smith (foot) has been downgraded to out for Sunday's game against the Titans.",
+      "date": "2026-10-11T03:19Z"
+     },
+     {
       "name": "Tank Dell",
       "pos": "WR",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
       "detail": "Dell (knee) has been ruled out for Sunday's game against the Titans.",
       "date": "2026-10-09T21:09Z"
-     },
-     {
-      "name": "Braden Smith",
-      "pos": "OT",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Smith (foot) was a full participant in Thursday's practice.",
-      "date": "2026-10-09T00:59Z"
      },
      {
       "name": "Jaylin Smith",
@@ -10710,11 +10678,11 @@
       "pos": "CB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "The Titans opened Williams' (pectoral) 21-day practice window Wednesday, Jim Wyatt of the team's official site reports.",
-      "date": "2026-10-08T00:11Z"
+      "detail": "Williams (pectoral) has been downgraded to out for Sunday's game against the Texans, Jim Wyatt of the Titans' official site reports.",
+      "date": "2026-10-10T23:21Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "hou-ten",
@@ -11379,7 +11347,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
      "home": -148,
      "away": 124,
@@ -11389,7 +11357,7 @@
      "openAway": 114
     },
     "spread": {
-     "homePoint": -3,
+     "homePoint": -2.5,
      "homePrice": null,
      "awayPrice": null
     },
@@ -11999,20 +11967,20 @@
       "date": "2026-10-09T23:27Z"
      },
      {
+      "name": "Rico Dowdle",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Dowdle (toe) is unlikely to play in Sunday's game against the Colts, but the Steelers will make a final decision after pregame warmups, Adam Schefter of ESPN reports.",
+      "date": "2026-10-11T11:16Z"
+     },
+     {
       "name": "Jalen Ramsey",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Ramsey (wrist) is listed as questionable ahead of Sunday's game against the Colts, Mark Kaboly of 93.7 The Fan Pittsburgh reports.",
       "date": "2026-10-09T23:20Z"
-     },
-     {
-      "name": "Rico Dowdle",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Dowdle (toe) is listed as questionable for Sunday's game against the Colts, Mike DeFabo reports.",
-      "date": "2026-10-09T20:14Z"
      },
      {
       "name": "Michael Pittman Jr.",
@@ -12039,7 +12007,7 @@
       "date": "2026-10-05T21:23Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "ind-pit",
@@ -12747,7 +12715,7 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
      "home": -192,
      "away": 160,
@@ -13293,8 +13261,8 @@
       "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Jeanty (ankle/foot) is questionable for Sunday's game against the Patriots, with Raiders coach Klint Kubiak saying Friday that the running back will \"do his best to go,\" Levi Edwards of the team's official site reports.",
-      "date": "2026-10-09T18:02Z"
+      "detail": "Jeanty (ankle/foot) is hopeful to play Sunday at New England, but he'll go through a pregame workout before a final determination is made, Ian Rapoport of NFL Network reports.",
+      "date": "2026-10-11T11:11Z"
      },
      {
       "name": "Dont'e Thornton Jr.",
@@ -13339,6 +13307,14 @@
       "date": "2026-10-09T23:03Z"
      },
      {
+      "name": "Rhamondre Stevenson",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Stevenson (knee) is expected to play in Sunday's game versus the Raiders, Ian Rapoport of NFL Network reports.",
+      "date": "2026-10-11T11:21Z"
+     },
+     {
       "name": "Charles Woods",
       "pos": "CB",
       "status": "Questionable",
@@ -13379,14 +13355,6 @@
       "date": "2026-10-09T23:18Z"
      },
      {
-      "name": "Rhamondre Stevenson",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Stevenson (knee) is listed as questionable for Sunday's game against the Raiders.",
-      "date": "2026-10-09T18:46Z"
-     },
-     {
       "name": "Morgan Moses",
       "pos": "OT",
       "status": "Questionable",
@@ -13399,11 +13367,11 @@
       "pos": "FB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-10-10T20:10Z"
+      "detail": "The Patriots placed Gilliam (ankle/knee) on injured reserve Saturday, Doug Kyed of the Boston Herald reports.",
+      "date": "2026-10-11T00:36Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "lv-ne",
@@ -14087,10 +14055,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
-     "home": 120,
-     "away": -142,
+     "home": 110,
+     "away": -130,
      "bestHome": null,
      "bestAway": null,
      "openHome": 100,
@@ -14107,8 +14075,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.563,
-     "home": 0.437
+     "away": 0.543,
+     "home": 0.457
     }
    },
    "scratched": [],
@@ -14615,6 +14583,22 @@
       "date": "2026-10-10T01:48Z"
      },
      {
+      "name": "Michael Jurgens",
+      "pos": "C",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "The Vikings activated Jurgens (elbow) from injured reserve Saturday, Craig Peters of the team's official site reports.",
+      "date": "2026-10-11T03:53Z"
+     },
+     {
+      "name": "Ben Yurosek",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "The Vikings activated Yurosek (ankle) from injured reserve Saturday, Craig Peters of the team's official site reports.",
+      "date": "2026-10-11T01:52Z"
+     },
+     {
       "name": "Brian O'Neill",
       "pos": "OT",
       "status": "Questionable",
@@ -14637,22 +14621,6 @@
       "type": "questionable",
       "detail": "Jefferson (ankle) and Jordan Addison (hamstring) were at practice Friday, Kevin Seifert of ESPN.com reports.",
       "date": "2026-10-09T17:08Z"
-     },
-     {
-      "name": "Ben Yurosek",
-      "pos": "TE",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Yurosek (ankle) is listed as questionable for Sunday's game against the Saints.",
-      "date": "2026-10-09T22:19Z"
-     },
-     {
-      "name": "Michael Jurgens",
-      "pos": "C",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Vikings designated Jurgens (elbow) for return from injured reserve Wednesday.",
-      "date": "2026-10-08T00:07Z"
      },
      {
       "name": "Donovan Jackson",
@@ -14697,6 +14665,46 @@
       "date": "2026-10-09T22:30Z"
      },
      {
+      "name": "Alvin Kamara",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Kamara (back) is expected to play in Sunday's contest against the Vikings, Ian Rapoport of NFL Network reports.",
+      "date": "2026-10-11T11:28Z"
+     },
+     {
+      "name": "Lorenzo Styles Jr.",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Styles (calf) was activated from the Saints' injured reserve Saturday.",
+      "date": "2026-10-11T03:47Z"
+     },
+     {
+      "name": "Jaylan Ford",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "The Saints activated Ford (ankle) from injured reserve Saturday.",
+      "date": "2026-10-11T03:45Z"
+     },
+     {
+      "name": "Nathan Shepherd",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Shepherd (illness) is now questionable for Sunday's game against the Vikings.",
+      "date": "2026-10-11T01:36Z"
+     },
+     {
+      "name": "Vernon Broughton",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-10-10T22:27Z"
+     },
+     {
       "name": "Christen Miller",
       "pos": "DT",
       "status": "Questionable",
@@ -14719,33 +14727,9 @@
       "type": "questionable",
       "detail": "Brown (thigh) is listed as questionable for Sunday's game against the Vikings, Emily Leiker of The Minnesota Star Tribune reports.",
       "date": "2026-10-09T22:25Z"
-     },
-     {
-      "name": "Alvin Kamara",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Kamara (back) is questionable for Sunday's game against the Vikings, Katherine Terrell of ESPN.com reports.",
-      "date": "2026-10-09T18:13Z"
-     },
-     {
-      "name": "Jaylan Ford",
-      "pos": "LB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Saints designated Ford (ankle) for return to practice from injured reserve Wednesday, Aaron Wilson of KPRC 2 Houston reports.",
-      "date": "2026-10-08T00:48Z"
-     },
-     {
-      "name": "Lorenzo Styles Jr.",
-      "pos": "S",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Saints designated Styles (calf) to return from injured reserve Wednesday, Aaron Wilson of KPRC 2 Houston reports.",
-      "date": "2026-10-08T00:41Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "min-no",
@@ -15441,10 +15425,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
-     "home": -185,
-     "away": 154,
+     "home": -175,
+     "away": 145,
      "bestHome": null,
      "bestAway": null,
      "openHome": -135,
@@ -15461,8 +15445,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.378,
-     "home": 0.622
+     "away": 0.391,
+     "home": 0.609
     }
    },
    "scratched": [],
@@ -15893,10 +15877,10 @@
      {
       "name": "Chauncey Golston",
       "pos": "DE",
-      "status": "Out",
-      "type": "out",
-      "detail": "Golston (neck) has been ruled out ahead of Sunday's game against the Commanders.",
-      "date": "2026-10-10T01:07Z"
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Giants placed Golston (neck) on injured reserve Saturday, Dan Salomone of the Giants' official site reports.",
+      "date": "2026-10-11T01:28Z"
      },
      {
       "name": "Braxton Berrios",
@@ -15957,36 +15941,28 @@
       "date": "2026-10-09T15:40Z"
      },
      {
-      "name": "Deatrich Wise Jr.",
-      "pos": "DE",
-      "status": "Out",
-      "type": "out",
-      "detail": "Wise (quadriceps) had his 21-day practice window opened Wednesday.",
-      "date": "2026-10-07T22:01Z"
-     },
-     {
       "name": "Terry McLaurin",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "McLaurin (hamstring), who officially is listed as questionable for Sunday's contest against the Giants, will be a game-time decision, as Jeremy Fowler of ESPN highlighted Friday in a Week 5 injury update on SportsCenter.",
-      "date": "2026-10-10T00:04Z"
+      "detail": "McLaurin (hamstring) remains a game-time decision for Sunday's game against the Giants, with a \"slight lean\" toward him playing, John Keim of ESPN.com reports.",
+      "date": "2026-10-11T00:32Z"
      },
      {
       "name": "Trey Amos",
       "pos": "CB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Amos (ankle) is listed as questionable for Sunday's game against the Giants.",
-      "date": "2026-10-10T01:26Z"
+      "detail": "Amos (ankle) has been downgraded to out for Sunday's game against the Giants.",
+      "date": "2026-10-11T01:02Z"
      },
      {
       "name": "Jeremy McNichols",
       "pos": "RB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "McNichols (quadriceps) is listed as questionable for Sunday's game against the Giants.",
-      "date": "2026-10-10T01:12Z"
+      "detail": "McNichols (quadriceps) has been ruled out for Sunday's game against the Giants.",
+      "date": "2026-10-11T01:00Z"
      },
      {
       "name": "Jaylin Lane",
@@ -15997,7 +15973,7 @@
       "date": "2026-10-06T23:14Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "nyg-wsh",
@@ -16688,10 +16664,10 @@
    },
    "live": {
     "source": "ESPN/DraftKings",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
-     "home": -410,
-     "away": 320,
+     "home": -380,
+     "away": 300,
      "bestHome": null,
      "bestAway": null,
      "openHome": 110,
@@ -16708,8 +16684,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.228,
-     "home": 0.772
+     "away": 0.24,
+     "home": 0.76
     }
    },
    "scratched": [],
@@ -17310,6 +17286,14 @@
       "date": "2026-10-09T15:32Z"
      },
      {
+      "name": "Chance Campbell",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-10-11T05:31Z"
+     },
+     {
       "name": "Jonathan Greenard",
       "pos": "LB",
       "status": "Questionable",
@@ -17336,14 +17320,6 @@
       "date": "2026-10-10T00:02Z"
      },
      {
-      "name": "Christian Braswell",
-      "pos": "CB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Braswell (knee) reverted from waivers to Jacksonville's injured reserve list Wednesday, Aaron Wilson of KPRC 2 Houston reports.",
-      "date": "2026-10-08T00:32Z"
-     },
-     {
       "name": "Caleb Ransaw",
       "pos": "S",
       "status": "Injured Reserve",
@@ -17352,7 +17328,7 @@
       "date": "2026-10-07T00:42Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "phi-jax",
@@ -18055,10 +18031,10 @@
    },
    "live": {
     "source": "ESPN/book",
-    "fetchedAt": "2026-10-10T20:33:39.157Z",
+    "fetchedAt": "2026-10-11T11:35:24.940Z",
     "ml": {
-     "home": -162,
-     "away": 136,
+     "home": -166,
+     "away": 140,
      "bestHome": null,
      "bestAway": null,
      "openHome": -198,
@@ -18075,8 +18051,8 @@
      "under": null
     },
     "winProb": {
-     "away": 0.407,
-     "home": 0.593
+     "away": 0.4,
+     "home": 0.6
     }
    },
    "scratched": [],
@@ -18659,14 +18635,6 @@
       "date": "2026-10-10T02:50Z"
      },
      {
-      "name": "Mykel Williams",
-      "pos": "DE",
-      "status": "Out",
-      "type": "out",
-      "detail": "Williams (knee) is listed as questionable ahead of Sunday's game against the Seahawks.",
-      "date": "2026-10-10T01:46Z"
-     },
-     {
       "name": "Nick Bosa",
       "pos": "DE",
       "status": "Out",
@@ -18697,14 +18665,6 @@
       "type": "questionable",
       "detail": "Stout (shoulder) is listed as questionable ahead of Sunday's game against the Seahawks.",
       "date": "2026-10-10T01:37Z"
-     },
-     {
-      "name": "Christian Kirk",
-      "pos": "WR",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Head coach Kyle Shanahan said Friday that the 49ers could open Kirk's (calf) practice window to return from injured reserve in two weeks, Matt Barrows of The Athletic reports.",
-      "date": "2026-10-02T21:08Z"
      }
     ],
     "home": [
@@ -18715,14 +18675,6 @@
       "type": "out",
       "detail": "Surratt (calf) has been ruled out ahead of Sunday's game against the 49ers, Bob Condotta of The Seattle Times reports.",
       "date": "2026-10-10T02:47Z"
-     },
-     {
-      "name": "Julian Neal",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Neal (hamstring) has been ruled out for Sunday's game against the 49ers, Bob Condotta of The Seattle Times reports.",
-      "date": "2026-10-10T01:27Z"
      },
      {
       "name": "Zach Charbonnet",
@@ -18741,15 +18693,23 @@
       "date": "2026-10-09T21:59Z"
      },
      {
+      "name": "Julian Neal",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Seahawks placed Neal (hamstring) on injured reserve Saturday, John Boyle of the team's official site reports.",
+      "date": "2026-10-11T02:04Z"
+     },
+     {
       "name": "Irv Charles",
       "pos": "WR",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Charles (undisclosed) practiced Wednesday, John Boyle of the team's official site reports.",
-      "date": "2026-10-07T22:45Z"
+      "detail": "Charles (knee) has been ruled out for Sunday's game against the 49ers, John Boyle of the Seahawks' official site reports.",
+      "date": "2026-10-11T02:02Z"
      }
     ],
-    "fetchedAt": "2026-10-10T20:33:39.523Z"
+    "fetchedAt": "2026-10-11T11:35:25.234Z"
    },
    "fiveLeg": {
     "game": "sf-sea",
@@ -20342,7 +20302,7 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-10-10T20:33:41.056Z",
+  "gradedAt": "2026-10-11T11:35:25.850Z",
   "finals": 0,
   "games": 14,
   "summary": {
@@ -22196,7 +22156,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-10-10T20:33:41.058Z",
+  "updatedAt": "2026-10-11T11:35:25.854Z",
   "weeks": [
    {
     "week": 1,
@@ -22742,7 +22702,7 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-10-10T20:33:41.260Z",
+  "builtAt": "2026-10-11T11:35:26.103Z",
   "books": [
    "FD",
    "DK",
@@ -23185,15 +23145,15 @@
        },
        {
         "type": "total",
-        "label": "Under 46.5 CHI@GB",
+        "label": "Under 47.5 CHI@GB",
         "game": "chi-gb",
         "gameLabel": "CHI@GB",
         "kickoff": "2026-10-11T17:00Z",
-        "prob": 0.576,
+        "prob": 0.59,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.052,
+        "edge": 0.066,
         "conf": 2,
         "moved": "model liked 45.5",
         "why": "Chicago by three in the projection. The Bears run for 196.3 yards a game and face a defense that allows 139.3 and has lost Cooper to IR with Parsons still on PUP, while Green Bay's own run game is last at 58.0 and its interior line is missing Banks and Monk. The number touched -3 midweek and is back to -1.5, which is the better price; Bagent's zero touchdown passes and Love's record against Chicago (113.2 career rating, 13 touchdown passes) keep the side at a 2. The total leans under: Chicago's possession game (36:35 a game) limits opponents to 48 plays, three of its four games went under, and Green Bay cannot run to sustain drives. Green Bay allowing touchdowns on 12 of 14 red-zone trips is the risk to the under. ESPN's DraftKings feed shows 46.5 Saturday; take the higher number where it is offered."
@@ -23216,13 +23176,69 @@
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.201,
-      "ev": 0.395,
-      "why": "Model 20% vs 14% implied at +596. Under 54.5 BUF@LAR: 59% model, -110 FD/DK; Under 46.5 CHI@GB: 58% model, -110 FD/DK; Under 41.5 DEN@LAC: 59% model, -110 FD/DK.",
-      "score": 0.177
+      "prob": 0.205,
+      "ev": 0.429,
+      "why": "Model 21% vs 14% implied at +596. Under 54.5 BUF@LAR: 59% model, -110 FD/DK; Under 47.5 CHI@GB: 59% model, -110 FD/DK; Under 41.5 DEN@LAC: 59% model, -110 FD/DK.",
+      "score": 0.194
      },
      {
       "rank": 2,
+      "legs": [
+       {
+        "type": "total",
+        "label": "Under 54.5 BUF@LAR",
+        "game": "buf-lar",
+        "gameLabel": "BUF@LAR",
+        "kickoff": "2026-10-13T00:15Z",
+        "prob": 0.59,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.066,
+        "conf": 2,
+        "moved": null,
+        "why": "The Rams by four in the projection, against a line that has already moved from -2.5 to -3 and from -148 to -175. Buffalo is without Palmer and Oliver and may be without Moore, and its defense (372 yards a game, 30th in EPA per play) draws an offense that gains 417 yards a game. The side stays a 1 because the Rams have turned it over eight times and scored on only 8 of 15 red-zone trips. The total is the lean: the Rams allow 247.5 yards a game and 4.8 yards per pass attempt, their games have totalled 34 to 56, and the projection is 50 against 54.5. Buffalo's games averaging 58.5 points and both teams going 7-3 to the over in their last ten are why it is a 2, not a 3."
+       },
+       {
+        "type": "total",
+        "label": "Under 47.5 CHI@GB",
+        "game": "chi-gb",
+        "gameLabel": "CHI@GB",
+        "kickoff": "2026-10-11T17:00Z",
+        "prob": 0.59,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.066,
+        "conf": 2,
+        "moved": "model liked 45.5",
+        "why": "Chicago by three in the projection. The Bears run for 196.3 yards a game and face a defense that allows 139.3 and has lost Cooper to IR with Parsons still on PUP, while Green Bay's own run game is last at 58.0 and its interior line is missing Banks and Monk. The number touched -3 midweek and is back to -1.5, which is the better price; Bagent's zero touchdown passes and Love's record against Chicago (113.2 career rating, 13 touchdown passes) keep the side at a 2. The total leans under: Chicago's possession game (36:35 a game) limits opponents to 48 plays, three of its four games went under, and Green Bay cannot run to sustain drives. Green Bay allowing touchdowns on 12 of 14 red-zone trips is the risk to the under. ESPN's DraftKings feed shows 46.5 Saturday; take the higher number where it is offered."
+       },
+       {
+        "type": "total",
+        "label": "Under 41.5 PHI@JAX",
+        "game": "phi-jax",
+        "gameLabel": "PHI@JAX",
+        "kickoff": "2026-10-11T13:30Z",
+        "prob": 0.576,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.052,
+        "conf": 2,
+        "moved": null,
+        "why": "Jacksonville by ten in the projection, but the line has already moved ten points (PHI -2.5 at open to JAX -7.5) for the Johnson retirement, the Jurgens trade and Barkley's hamstring, and -7.5 loses on a seven, so the side is a 1. What keeps it a lean is the travel (the Jaguars arrived a day earlier for a 10-day stay; the Eagles landed Saturday for a 9:30 AM ET kickoff) and an Eagles offense that was 29th in yards per play before it lost three starting linemen. The total is the stronger read: the Jaguars allow 13.3 points a game and have held four straight opponents to three or fewer first-half points, Lawrence has thrown 23 to 29 times a game, and the Eagles have not scored in two straight second halves. The risk to the under is turnovers by the rebuilt line giving Jacksonville short fields, and Jacksonville's 34 and 35 point games against Cleveland and New England, which is why it is a 2."
+       }
+      ],
+      "decimal": 6.958,
+      "price": 596,
+      "prob": 0.201,
+      "ev": 0.395,
+      "why": "Model 20% vs 14% implied at +596. Under 54.5 BUF@LAR: 59% model, -110 FD/DK; Under 47.5 CHI@GB: 59% model, -110 FD/DK; Under 41.5 PHI@JAX: 58% model, -110 FD/DK.",
+      "score": 0.177
+     },
+     {
+      "rank": 3,
       "legs": [
        {
         "type": "total",
@@ -23278,37 +23294,22 @@
       "score": 0.177
      },
      {
-      "rank": 3,
+      "rank": 4,
       "legs": [
        {
         "type": "total",
-        "label": "Under 43.5 BAL@ATL",
-        "game": "bal-atl",
-        "gameLabel": "BAL@ATL",
-        "kickoff": "2026-10-12T00:20Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
-        "conf": 2,
-        "moved": null,
-        "why": "Atlanta by seven in the projection. The side stays a 1: the market has moved 7.5 points through zero for Jackson, and the -122 on the 3 says the number is drifting to 3.5, so most of the edge is gone. The case for Atlanta is Henry against a defense allowing 2.7 a carry and two rushing touchdowns in four games, plus a Ravens line without Jurgens and possibly Vorhees against the league's pressure leader. The case against is Huntley's record as a fill-in, a Baltimore run defense that has not allowed a 100-yard rusher in 18 games, and an Atlanta team on a six-day turnaround after Monday night. The total is the stronger lean at 2: both teams want to run, the projection has 59 offensive plays a side, Baltimore loses its explosive passing (nine 25-yard completions from Jackson this year, one from Huntley in two 2025 starts), and Penix's 10.6 yards an attempt on 45 throws will not hold. Bijan's breakaway runs (55 and 59 yards the last two weeks) are the risk that keeps it a 2. Take 43.5 where it is offered; do not chase it below 42.5."
-       },
-       {
-        "type": "total",
-        "label": "Under 54.5 BUF@LAR",
-        "game": "buf-lar",
-        "gameLabel": "BUF@LAR",
-        "kickoff": "2026-10-13T00:15Z",
+        "label": "Under 47.5 CHI@GB",
+        "game": "chi-gb",
+        "gameLabel": "CHI@GB",
+        "kickoff": "2026-10-11T17:00Z",
         "prob": 0.59,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
         "edge": 0.066,
         "conf": 2,
-        "moved": null,
-        "why": "The Rams by four in the projection, against a line that has already moved from -2.5 to -3 and from -148 to -175. Buffalo is without Palmer and Oliver and may be without Moore, and its defense (372 yards a game, 30th in EPA per play) draws an offense that gains 417 yards a game. The side stays a 1 because the Rams have turned it over eight times and scored on only 8 of 15 red-zone trips. The total is the lean: the Rams allow 247.5 yards a game and 4.8 yards per pass attempt, their games have totalled 34 to 56, and the projection is 50 against 54.5. Buffalo's games averaging 58.5 points and both teams going 7-3 to the over in their last ten are why it is a 2, not a 3."
+        "moved": "model liked 45.5",
+        "why": "Chicago by three in the projection. The Bears run for 196.3 yards a game and face a defense that allows 139.3 and has lost Cooper to IR with Parsons still on PUP, while Green Bay's own run game is last at 58.0 and its interior line is missing Banks and Monk. The number touched -3 midweek and is back to -1.5, which is the better price; Bagent's zero touchdown passes and Love's record against Chicago (113.2 career rating, 13 touchdown passes) keep the side at a 2. The total leans under: Chicago's possession game (36:35 a game) limits opponents to 48 plays, three of its four games went under, and Green Bay cannot run to sustain drives. Green Bay allowing touchdowns on 12 of 14 red-zone trips is the risk to the under. ESPN's DraftKings feed shows 46.5 Saturday; take the higher number where it is offered."
        },
        {
         "type": "total",
@@ -23324,47 +23325,6 @@
         "conf": 2,
         "moved": null,
         "why": "Denver by five in the projection, but the market has already moved six points (LAC -2.5 to DEN -3.5) for the 0-4 start, Slater, Alt and the guards, and the receivers, and Denver plays without Surtain and Moss; ESPN's predictor still has it about even. That keeps the side at a 1. The total is the lean: Denver has scored 23 or fewer offensive points in all four games on 3.6 a carry, and the Chargers have reached 20 once, now with rookie tackles, a patched interior and a receiver room of Tre' Harris and backups. Both teams are 1-3 to the over. The two depleted secondaries are the risk, which is why it is a 2 and not a 3. The total has dropped from 44.5 to 41.5; do not chase it below 40.5."
-       }
-      ],
-      "decimal": 6.958,
-      "price": 596,
-      "prob": 0.196,
-      "ev": 0.361,
-      "why": "Model 20% vs 14% implied at +596. Under 43.5 BAL@ATL: 56% model, -110 FD/DK; Under 54.5 BUF@LAR: 59% model, -110 FD/DK; Under 41.5 DEN@LAC: 59% model, -110 FD/DK.",
-      "score": 0.16
-     },
-     {
-      "rank": 4,
-      "legs": [
-       {
-        "type": "total",
-        "label": "Under 43.5 BAL@ATL",
-        "game": "bal-atl",
-        "gameLabel": "BAL@ATL",
-        "kickoff": "2026-10-12T00:20Z",
-        "prob": 0.562,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.038,
-        "conf": 2,
-        "moved": null,
-        "why": "Atlanta by seven in the projection. The side stays a 1: the market has moved 7.5 points through zero for Jackson, and the -122 on the 3 says the number is drifting to 3.5, so most of the edge is gone. The case for Atlanta is Henry against a defense allowing 2.7 a carry and two rushing touchdowns in four games, plus a Ravens line without Jurgens and possibly Vorhees against the league's pressure leader. The case against is Huntley's record as a fill-in, a Baltimore run defense that has not allowed a 100-yard rusher in 18 games, and an Atlanta team on a six-day turnaround after Monday night. The total is the stronger lean at 2: both teams want to run, the projection has 59 offensive plays a side, Baltimore loses its explosive passing (nine 25-yard completions from Jackson this year, one from Huntley in two 2025 starts), and Penix's 10.6 yards an attempt on 45 throws will not hold. Bijan's breakaway runs (55 and 59 yards the last two weeks) are the risk that keeps it a 2. Take 43.5 where it is offered; do not chase it below 42.5."
-       },
-       {
-        "type": "total",
-        "label": "Under 46.5 CHI@GB",
-        "game": "chi-gb",
-        "gameLabel": "CHI@GB",
-        "kickoff": "2026-10-11T17:00Z",
-        "prob": 0.576,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.052,
-        "conf": 2,
-        "moved": "model liked 45.5",
-        "why": "Chicago by three in the projection. The Bears run for 196.3 yards a game and face a defense that allows 139.3 and has lost Cooper to IR with Parsons still on PUP, while Green Bay's own run game is last at 58.0 and its interior line is missing Banks and Monk. The number touched -3 midweek and is back to -1.5, which is the better price; Bagent's zero touchdown passes and Love's record against Chicago (113.2 career rating, 13 touchdown passes) keep the side at a 2. The total leans under: Chicago's possession game (36:35 a game) limits opponents to 48 plays, three of its four games went under, and Green Bay cannot run to sustain drives. Green Bay allowing touchdowns on 12 of 14 red-zone trips is the risk to the under. ESPN's DraftKings feed shows 46.5 Saturday; take the higher number where it is offered."
        },
        {
         "type": "total",
@@ -23384,28 +23344,28 @@
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.186,
-      "ev": 0.297,
-      "why": "Model 19% vs 14% implied at +596. Under 43.5 BAL@ATL: 56% model, -110 FD/DK; Under 46.5 CHI@GB: 58% model, -110 FD/DK; Under 41.5 PHI@JAX: 58% model, -110 FD/DK.",
-      "score": 0.128
+      "prob": 0.201,
+      "ev": 0.395,
+      "why": "Model 20% vs 14% implied at +596. Under 47.5 CHI@GB: 59% model, -110 FD/DK; Under 41.5 DEN@LAC: 59% model, -110 FD/DK; Under 41.5 PHI@JAX: 58% model, -110 FD/DK.",
+      "score": 0.177
      },
      {
       "rank": 5,
       "legs": [
        {
         "type": "total",
-        "label": "Under 46.5 CHI@GB",
-        "game": "chi-gb",
-        "gameLabel": "CHI@GB",
-        "kickoff": "2026-10-11T17:00Z",
-        "prob": 0.576,
+        "label": "Under 43.5 BAL@ATL",
+        "game": "bal-atl",
+        "gameLabel": "BAL@ATL",
+        "kickoff": "2026-10-12T00:20Z",
+        "prob": 0.562,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.052,
+        "edge": 0.038,
         "conf": 2,
-        "moved": "model liked 45.5",
-        "why": "Chicago by three in the projection. The Bears run for 196.3 yards a game and face a defense that allows 139.3 and has lost Cooper to IR with Parsons still on PUP, while Green Bay's own run game is last at 58.0 and its interior line is missing Banks and Monk. The number touched -3 midweek and is back to -1.5, which is the better price; Bagent's zero touchdown passes and Love's record against Chicago (113.2 career rating, 13 touchdown passes) keep the side at a 2. The total leans under: Chicago's possession game (36:35 a game) limits opponents to 48 plays, three of its four games went under, and Green Bay cannot run to sustain drives. Green Bay allowing touchdowns on 12 of 14 red-zone trips is the risk to the under. ESPN's DraftKings feed shows 46.5 Saturday; take the higher number where it is offered."
+        "moved": null,
+        "why": "Atlanta by seven in the projection. The side stays a 1: the market has moved 7.5 points through zero for Jackson, and the -122 on the 3 says the number is drifting to 3.5, so most of the edge is gone. The case for Atlanta is Henry against a defense allowing 2.7 a carry and two rushing touchdowns in four games, plus a Ravens line without Jurgens and possibly Vorhees against the league's pressure leader. The case against is Huntley's record as a fill-in, a Baltimore run defense that has not allowed a 100-yard rusher in 18 games, and an Atlanta team on a six-day turnaround after Monday night. The total is the stronger lean at 2: both teams want to run, the projection has 59 offensive plays a side, Baltimore loses its explosive passing (nine 25-yard completions from Jackson this year, one from Huntley in two 2025 starts), and Penix's 10.6 yards an attempt on 45 throws will not hold. Bijan's breakaway runs (55 and 59 yards the last two weeks) are the risk that keeps it a 2. Take 43.5 where it is offered; do not chase it below 42.5."
        },
        {
         "type": "total",
@@ -23424,26 +23384,26 @@
        },
        {
         "type": "total",
-        "label": "Under 41.5 PHI@JAX",
-        "game": "phi-jax",
-        "gameLabel": "PHI@JAX",
-        "kickoff": "2026-10-11T13:30Z",
-        "prob": 0.576,
+        "label": "Under 41.5 NYG@WSH",
+        "game": "nyg-wsh",
+        "gameLabel": "NYG@WSH",
+        "kickoff": "2026-10-11T17:00Z",
+        "prob": 0.562,
         "price": -110,
         "book": "FD/DK",
         "implied": 0.524,
-        "edge": 0.052,
+        "edge": 0.038,
         "conf": 2,
         "moved": null,
-        "why": "Jacksonville by ten in the projection, but the line has already moved ten points (PHI -2.5 at open to JAX -7.5) for the Johnson retirement, the Jurgens trade and Barkley's hamstring, and -7.5 loses on a seven, so the side is a 1. What keeps it a lean is the travel (the Jaguars arrived a day earlier for a 10-day stay; the Eagles landed Saturday for a 9:30 AM ET kickoff) and an Eagles offense that was 29th in yards per play before it lost three starting linemen. The total is the stronger read: the Jaguars allow 13.3 points a game and have held four straight opponents to three or fewer first-half points, Lawrence has thrown 23 to 29 times a game, and the Eagles have not scored in two straight second halves. The risk to the under is turnovers by the rebuilt line giving Jacksonville short fields, and Jacksonville's 34 and 35 point games against Cleveland and New England, which is why it is a 2."
+        "why": "Washington by three in the projection, so the dog gets half a point and nothing more: Daniels is worth the move from -135 to -170, but he is throwing to Williams, Brown and Burks in a storm, and the Giants are 3-1 against the spread. The total is the lean. Thunderstorms are forecast through the game window, the two receivers who caught half of Washington's touchdown passes are out or questionable, and Winston's offence has two red-zone touchdowns in seven trips. What keeps it at a 2: the number has already fallen from 44 to 41.5, and Washington's defence has allowed 30.5 points a game and is missing all three of its top safeties. FPI's 70.7% for Washington is the strongest argument against the dog."
        }
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.186,
-      "ev": 0.297,
-      "why": "Model 19% vs 14% implied at +596. Under 46.5 CHI@GB: 58% model, -110 FD/DK; Under 43.5 CIN@MIA: 56% model, -110 FD/DK; Under 41.5 PHI@JAX: 58% model, -110 FD/DK.",
-      "score": 0.128
+      "prob": 0.178,
+      "ev": 0.235,
+      "why": "Model 18% vs 14% implied at +596. Under 43.5 BAL@ATL: 56% model, -110 FD/DK; Under 43.5 CIN@MIA: 56% model, -110 FD/DK; Under 41.5 NYG@WSH: 56% model, -110 FD/DK.",
+      "score": 0.099
      }
     ]
    },
@@ -23617,7 +23577,7 @@
   ]
  },
  "topTen": {
-  "builtAt": "2026-10-10T20:33:41.261Z",
+  "builtAt": "2026-10-11T11:35:26.106Z",
   "note": "Sides, totals and moneylines are priced from the projected score with the simulator’s spreads (13.4 margin, 10.6 total). Touchdown lists use the desk’s role-built estimates. Prop leans are not graded by a probability and are listed by kickoff.",
   "categories": [
    {
@@ -23650,18 +23610,6 @@
       "why": "New England by two in the projection: home field and a market that still rates the 2025 Patriots, against a 2026 Raiders team that is 4-0 against the spread. On nearly identical yardage (5.1 yards a play to New England's 5.2) Las Vegas has scored 28.8 a game to 16.3, through red-zone touchdowns (8 of 15 to 4 of 9) and fewer interceptions (4 to 7); those gaps tend to shrink. The number has already dropped from -8.5 to -3.5, which is why this is a 2 and not a 3. Friday's report tipped the side further toward Las Vegas: New England has no Gonzalez and no Davis, and the only corners left on ESPN's chart are Marcus Jones and a questionable Charles Woods. Jeanty's Friday DNP is the counterweight, but his 3.4 yards a carry has not been the engine. The total is a pass: 46 projected against 45.5, New England's offense (16.3 a game, 7 Maye interceptions) is the under case and Las Vegas's porous red-zone defense (10 of 13) is the over case."
      },
      {
-      "game": "bal-atl",
-      "gameLabel": "BAL@ATL",
-      "kickoff": "2026-10-12T00:20Z",
-      "bet": "ATL -3",
-      "price": -110,
-      "prob": 0.617,
-      "implied": 0.524,
-      "edge": 0.094,
-      "conf": 1,
-      "why": "Atlanta by seven in the projection. The side stays a 1: the market has moved 7.5 points through zero for Jackson, and the -122 on the 3 says the number is drifting to 3.5, so most of the edge is gone. The case for Atlanta is Henry against a defense allowing 2.7 a carry and two rushing touchdowns in four games, plus a Ravens line without Jurgens and possibly Vorhees against the league's pressure leader. The case against is Huntley's record as a fill-in, a Baltimore run defense that has not allowed a 100-yard rusher in 18 games, and an Atlanta team on a six-day turnaround after Monday night. The total is the stronger lean at 2: both teams want to run, the projection has 59 offensive plays a side, Baltimore loses its explosive passing (nine 25-yard completions from Jackson this year, one from Huntley in two 2025 starts), and Penix's 10.6 yards an attempt on 45 throws will not hold. Bijan's breakaway runs (55 and 59 yards the last two weeks) are the risk that keeps it a 2. Take 43.5 where it is offered; do not chase it below 42.5."
-     },
-     {
       "game": "cin-mia",
       "gameLabel": "CIN@MIA",
       "kickoff": "2026-10-11T17:00Z",
@@ -23672,6 +23620,18 @@
       "edge": 0.094,
       "conf": 1,
       "why": "Projected 26-15 Cincinnati. Miami's offense has four touchdowns in four games, is 3 of 9 in the red zone and has taken 11 sacks, and now meets a pass rush with 14; the Dolphins' defense allows 77.9% completions and 8.3 yards an attempt, which is where the Bengals' points come from as long as one of Chase and Higgins plays. The side is a 1: the margin projects 11, but 7 is the key number, the Bengals have lost two straight and Saturday's Chase ruling can move the line half a point either way; take -7 now if you expect him cleared. The total is a 2: it opened 48.5, hit 41.5 Monday and is back to 43.5, and Miami has topped out at 13 points. A Bengals passing game that scored 33 and 27 in two of its four games is the risk, which is why it is not a 3."
+     },
+     {
+      "game": "bal-atl",
+      "gameLabel": "BAL@ATL",
+      "kickoff": "2026-10-12T00:20Z",
+      "bet": "ATL -3.5",
+      "price": -110,
+      "prob": 0.603,
+      "implied": 0.524,
+      "edge": 0.079,
+      "conf": 1,
+      "why": "Atlanta by seven in the projection. The side stays a 1: the market has moved 7.5 points through zero for Jackson, and the -122 on the 3 says the number is drifting to 3.5, so most of the edge is gone. The case for Atlanta is Henry against a defense allowing 2.7 a carry and two rushing touchdowns in four games, plus a Ravens line without Jurgens and possibly Vorhees against the league's pressure leader. The case against is Huntley's record as a fill-in, a Baltimore run defense that has not allowed a 100-yard rusher in 18 games, and an Atlanta team on a six-day turnaround after Monday night. The total is the stronger lean at 2: both teams want to run, the projection has 59 offensive plays a side, Baltimore loses its explosive passing (nine 25-yard completions from Jackson this year, one from Huntley in two 2025 starts), and Penix's 10.6 yards an attempt on 45 throws will not hold. Bijan's breakaway runs (55 and 59 yards the last two weeks) are the risk that keeps it a 2. Take 43.5 where it is offered; do not chase it below 42.5."
      },
      {
       "game": "det-ari",
@@ -23765,6 +23725,18 @@
       "why": "The Rams by four in the projection, against a line that has already moved from -2.5 to -3 and from -148 to -175. Buffalo is without Palmer and Oliver and may be without Moore, and its defense (372 yards a game, 30th in EPA per play) draws an offense that gains 417 yards a game. The side stays a 1 because the Rams have turned it over eight times and scored on only 8 of 15 red-zone trips. The total is the lean: the Rams allow 247.5 yards a game and 4.8 yards per pass attempt, their games have totalled 34 to 56, and the projection is 50 against 54.5. Buffalo's games averaging 58.5 points and both teams going 7-3 to the over in their last ten are why it is a 2, not a 3."
      },
      {
+      "game": "chi-gb",
+      "gameLabel": "CHI@GB",
+      "kickoff": "2026-10-11T17:00Z",
+      "bet": "Under 47.5",
+      "price": -110,
+      "prob": 0.664,
+      "implied": 0.524,
+      "edge": 0.141,
+      "conf": 2,
+      "why": "Chicago by three in the projection. The Bears run for 196.3 yards a game and face a defense that allows 139.3 and has lost Cooper to IR with Parsons still on PUP, while Green Bay's own run game is last at 58.0 and its interior line is missing Banks and Monk. The number touched -3 midweek and is back to -1.5, which is the better price; Bagent's zero touchdown passes and Love's record against Chicago (113.2 career rating, 13 touchdown passes) keep the side at a 2. The total leans under: Chicago's possession game (36:35 a game) limits opponents to 48 plays, three of its four games went under, and Green Bay cannot run to sustain drives. Green Bay allowing touchdowns on 12 of 14 red-zone trips is the risk to the under. ESPN's DraftKings feed shows 46.5 Saturday; take the higher number where it is offered."
+     },
+     {
       "game": "den-lac",
       "gameLabel": "DEN@LAC",
       "kickoff": "2026-10-11T20:05Z",
@@ -23775,18 +23747,6 @@
       "edge": 0.141,
       "conf": 2,
       "why": "Denver by five in the projection, but the market has already moved six points (LAC -2.5 to DEN -3.5) for the 0-4 start, Slater, Alt and the guards, and the receivers, and Denver plays without Surtain and Moss; ESPN's predictor still has it about even. That keeps the side at a 1. The total is the lean: Denver has scored 23 or fewer offensive points in all four games on 3.6 a carry, and the Chargers have reached 20 once, now with rookie tackles, a patched interior and a receiver room of Tre' Harris and backups. Both teams are 1-3 to the over. The two depleted secondaries are the risk, which is why it is a 2 and not a 3. The total has dropped from 44.5 to 41.5; do not chase it below 40.5."
-     },
-     {
-      "game": "chi-gb",
-      "gameLabel": "CHI@GB",
-      "kickoff": "2026-10-11T17:00Z",
-      "bet": "Under 46.5",
-      "price": -110,
-      "prob": 0.629,
-      "implied": 0.524,
-      "edge": 0.106,
-      "conf": 2,
-      "why": "Chicago by three in the projection. The Bears run for 196.3 yards a game and face a defense that allows 139.3 and has lost Cooper to IR with Parsons still on PUP, while Green Bay's own run game is last at 58.0 and its interior line is missing Banks and Monk. The number touched -3 midweek and is back to -1.5, which is the better price; Bagent's zero touchdown passes and Love's record against Chicago (113.2 career rating, 13 touchdown passes) keep the side at a 2. The total leans under: Chicago's possession game (36:35 a game) limits opponents to 48 plays, three of its four games went under, and Green Bay cannot run to sustain drives. Green Bay allowing touchdowns on 12 of 14 red-zone trips is the risk to the under. ESPN's DraftKings feed shows 46.5 Saturday; take the higher number where it is offered."
      },
      {
       "game": "phi-jax",
@@ -23896,7 +23856,7 @@
       "gameLabel": "PHI@JAX",
       "kickoff": "2026-10-11T13:30Z",
       "bet": "JAX ML",
-      "price": -410,
+      "price": -380,
       "prob": 0.772,
       "implied": 0.766,
       "edge": 0.006,
@@ -23920,7 +23880,7 @@
       "gameLabel": "BAL@ATL",
       "kickoff": "2026-10-12T00:20Z",
       "bet": "ATL ML",
-      "price": -180,
+      "price": -175,
       "prob": 0.699,
       "implied": 0.616,
       "edge": 0.083,
@@ -23932,7 +23892,7 @@
       "gameLabel": "HOU@TEN",
       "kickoff": "2026-10-11T17:00Z",
       "bet": "HOU ML",
-      "price": -355,
+      "price": -345,
       "prob": 0.673,
       "implied": 0.751,
       "edge": -0.078,
@@ -23956,7 +23916,7 @@
       "gameLabel": "BUF@LAR",
       "kickoff": "2026-10-13T00:15Z",
       "bet": "LAR ML",
-      "price": -175,
+      "price": -180,
       "prob": 0.617,
       "implied": 0.609,
       "edge": 0.008,
@@ -23980,7 +23940,7 @@
       "gameLabel": "MIN@NO",
       "kickoff": "2026-10-11T17:00Z",
       "bet": "MIN ML",
-      "price": -142,
+      "price": -130,
       "prob": 0.617,
       "implied": 0.564,
       "edge": 0.053,
@@ -24679,10 +24639,10 @@
    "kind": "parlay",
    "price": 1228,
    "book": "desk prices",
-   "prob": 0.1744,
-   "fair": 473,
-   "ev": 1.32,
-   "why": "The four totals the projection is most sure land under, one per game. Hits 17.4% of the time by the model, fair +473.",
+   "prob": 0.1841,
+   "fair": 443,
+   "ev": 1.45,
+   "why": "The four totals the projection is most sure land under, one per game. Hits 18.4% of the time by the model, fair +443.",
    "legs": [
     {
      "label": "BUF@LAR Under 54.5",
@@ -24690,12 +24650,12 @@
      "book": null
     },
     {
-     "label": "DEN@LAC Under 41.5",
+     "label": "CHI@GB Under 47.5",
      "price": -110,
      "book": null
     },
     {
-     "label": "CHI@GB Under 46.5",
+     "label": "DEN@LAC Under 41.5",
      "price": -110,
      "book": null
     },
@@ -24707,24 +24667,24 @@
    ]
   },
   {
-   "game": "bal-atl",
+   "game": "cin-mia",
    "gameLabel": "5 games",
    "bet": "Max confidence five",
    "kind": "parlay",
    "price": 2436,
    "book": "desk prices",
-   "prob": 0.0963,
-   "fair": 938,
-   "ev": 1.44,
-   "why": "The top three sides and top two totals on the board, every leg a different game. Hits 9.6% of the time by the model, fair +938.",
+   "prob": 0.0942,
+   "fair": 962,
+   "ev": 1.39,
+   "why": "The top three sides and top two totals on the board, every leg a different game. Hits 9.4% of the time by the model, fair +962.",
    "legs": [
     {
-     "label": "BAL@ATL ATL -3",
+     "label": "CIN@MIA CIN -7",
      "price": -110,
      "book": null
     },
     {
-     "label": "CIN@MIA CIN -7",
+     "label": "BAL@ATL ATL -3.5",
      "price": -110,
      "book": null
     },
@@ -24739,7 +24699,7 @@
      "book": null
     },
     {
-     "label": "DEN@LAC Under 41.5",
+     "label": "CHI@GB Under 47.5",
      "price": -110,
      "book": null
     }
@@ -25922,7 +25882,7 @@
   ]
  },
  "bestOf": {
-  "builtAt": "2026-10-10T20:33:41.263Z",
+  "builtAt": "2026-10-11T11:35:26.108Z",
   "day": "2026-10-11",
   "title": "Sunday, Oct 11: the best of the slate",
   "games": 13,
@@ -25930,34 +25890,34 @@
    {
     "key": "side",
     "title": "Spread of the day",
-    "game": "bal-atl",
-    "gameLabel": "BAL@ATL",
-    "kickoff": "2026-10-12T00:20Z",
-    "kickoffLabel": "Sun 8:20 PM ET",
-    "bet": "ATL -3",
+    "game": "cin-mia",
+    "gameLabel": "CIN@MIA",
+    "kickoff": "2026-10-11T17:00Z",
+    "kickoffLabel": "Sun 1:00 PM ET",
+    "bet": "CIN -7",
     "price": -110,
     "prob": 0.617,
     "implied": 0.524,
     "edge": 0.094,
     "conf": 1,
     "units": 1,
-    "why": "Atlanta by seven in the projection. The side stays a 1: the market has moved 7.5 points through zero for Jackson, and the -122 on the 3 says the number is drifting to 3.5, so most of the edge is gone. The case for Atlanta is Henry against a defense allowing 2.7 a carry and two rushing touchdowns in four games, plus a Ravens line without Jurgens and possibly Vorhees against the league's pressure leader. The case against is Huntley's record as a fill-in, a Baltimore run defense that has not allowed a 100-yard rusher in 18 games, and an Atlanta team on a six-day turnaround after Monday night. The total is the stronger lean at 2: both teams want to run, the projection has 59 offensive plays a side, Baltimore loses its explosive passing (nine 25-yard completions from Jackson this year, one from Huntley in two 2025 starts), and Penix's 10.6 yards an attempt on 45 throws will not hold. Bijan's breakaway runs (55 and 59 yards the last two weeks) are the risk that keeps it a 2. Take 43.5 where it is offered; do not chase it below 42.5."
+    "why": "Projected 26-15 Cincinnati. Miami's offense has four touchdowns in four games, is 3 of 9 in the red zone and has taken 11 sacks, and now meets a pass rush with 14; the Dolphins' defense allows 77.9% completions and 8.3 yards an attempt, which is where the Bengals' points come from as long as one of Chase and Higgins plays. The side is a 1: the margin projects 11, but 7 is the key number, the Bengals have lost two straight and Saturday's Chase ruling can move the line half a point either way; take -7 now if you expect him cleared. The total is a 2: it opened 48.5, hit 41.5 Monday and is back to 43.5, and Miami has topped out at 13 points. A Bengals passing game that scored 33 and 27 in two of its four games is the risk, which is why it is not a 3."
    },
    {
     "key": "total",
     "title": "Total of the day",
-    "game": "den-lac",
-    "gameLabel": "DEN@LAC",
-    "kickoff": "2026-10-11T20:05Z",
-    "kickoffLabel": "Sun 4:05 PM ET",
-    "bet": "Under 41.5",
+    "game": "chi-gb",
+    "gameLabel": "CHI@GB",
+    "kickoff": "2026-10-11T17:00Z",
+    "kickoffLabel": "Sun 1:00 PM ET",
+    "bet": "Under 47.5",
     "price": -110,
     "prob": 0.664,
     "implied": 0.524,
     "edge": 0.141,
     "conf": 2,
     "units": 1,
-    "why": "Denver by five in the projection, but the market has already moved six points (LAC -2.5 to DEN -3.5) for the 0-4 start, Slater, Alt and the guards, and the receivers, and Denver plays without Surtain and Moss; ESPN's predictor still has it about even. That keeps the side at a 1. The total is the lean: Denver has scored 23 or fewer offensive points in all four games on 3.6 a carry, and the Chargers have reached 20 once, now with rookie tackles, a patched interior and a receiver room of Tre' Harris and backups. Both teams are 1-3 to the over. The two depleted secondaries are the risk, which is why it is a 2 and not a 3. The total has dropped from 44.5 to 41.5; do not chase it below 40.5."
+    "why": "Chicago by three in the projection. The Bears run for 196.3 yards a game and face a defense that allows 139.3 and has lost Cooper to IR with Parsons still on PUP, while Green Bay's own run game is last at 58.0 and its interior line is missing Banks and Monk. The number touched -3 midweek and is back to -1.5, which is the better price; Bagent's zero touchdown passes and Love's record against Chicago (113.2 career rating, 13 touchdown passes) keep the side at a 2. The total leans under: Chicago's possession game (36:35 a game) limits opponents to 48 plays, three of its four games went under, and Green Bay cannot run to sustain drives. Green Bay allowing touchdowns on 12 of 14 red-zone trips is the risk to the under. ESPN's DraftKings feed shows 46.5 Saturday; take the higher number where it is offered."
    },
    {
     "key": "moneyline",
@@ -26037,37 +25997,32 @@
    {
     "key": "lotto",
     "title": "The parlay",
-    "game": "bal-atl",
-    "gameLabel": "3 games",
+    "game": "cin-mia",
+    "gameLabel": "2 games",
     "kickoff": null,
     "kickoffLabel": null,
-    "bet": "The card, 3 legs",
-    "price": 367,
-    "prob": 0.3253,
-    "implied": 0.2141,
-    "edge": 0.1112,
+    "bet": "The card, 2 legs",
+    "price": 264,
+    "prob": 0.4097,
+    "implied": 0.2744,
+    "edge": 0.1353,
     "conf": null,
     "units": 0.25,
-    "why": "The day's spread, total and moneyline picks parlayed, one leg per game so they land independently: the model has it 33% against the price's 21%.",
+    "why": "The day's spread, total and moneyline picks parlayed, one leg per game so they land independently: the model has it 41% against the price's 27%.",
     "legs": [
      {
-      "label": "BAL@ATL ATL -3",
+      "label": "CIN@MIA CIN -7",
       "price": -110,
       "book": null
      },
      {
-      "label": "DEN@LAC Under 41.5",
+      "label": "CHI@GB Under 47.5",
       "price": -110,
-      "book": null
-     },
-     {
-      "label": "CIN@MIA CIN ML",
-      "price": -355,
       "book": null
      }
     ]
    }
   ],
-  "text": "**Cappers & Code · Sunday, Oct 11 · Week 5**\nThe model's single best play in every market for 13 games. Units, not dollars.\n\n**Spread of the day:** ATL -3 -110 · 1u\n_BAL@ATL · Sun 8:20 PM ET · model 62% · book 52%_\n\n**Total of the day:** Under 41.5 -110 · 1u\n_DEN@LAC · Sun 4:05 PM ET · model 66% · book 52%_\n\n**Moneyline lock:** CIN ML -355 · 1u\n_CIN@MIA · Sun 1:00 PM ET · model 79% · book 75%_\n\n**TD value:** Chris Rodriguez Jr. anytime TD +350 · 0.5u\n_PHI@JAX · Sun 9:30 AM ET · model 28% · book 22%_\n\n**Five-leg, no TDs:** NYG@WSH five-leg +549 · 0.25u\n> Isaiah Likely 4+ receptions -245\n> Jayden Daniels 20+ rush yds -247\n> Najee Harris 20+ rush yds -232\n> Jameis Winston 175+ pass yds -230\n> Rachaad White 20+ rush yds -167\n_Sun 1:00 PM ET · model 23% · book 15%_\n\n**The parlay:** The card, 3 legs +367 · 0.25u\n> BAL@ATL ATL -3 -110\n> DEN@LAC Under 41.5 -110\n> CIN@MIA CIN ML -355\n_model 33% · book 21%_\n\nFull board, every game and the five-leg for each: https://cappersandcode.com/app\n21+. Gamble responsibly. Estimates are opinions, not guarantees."
+  "text": "**Cappers & Code · Sunday, Oct 11 · Week 5**\nThe model's single best play in every market for 13 games. Units, not dollars.\n\n**Spread of the day:** CIN -7 -110 · 1u\n_CIN@MIA · Sun 1:00 PM ET · model 62% · book 52%_\n\n**Total of the day:** Under 47.5 -110 · 1u\n_CHI@GB · Sun 1:00 PM ET · model 66% · book 52%_\n\n**Moneyline lock:** CIN ML -355 · 1u\n_CIN@MIA · Sun 1:00 PM ET · model 79% · book 75%_\n\n**TD value:** Chris Rodriguez Jr. anytime TD +350 · 0.5u\n_PHI@JAX · Sun 9:30 AM ET · model 28% · book 22%_\n\n**Five-leg, no TDs:** NYG@WSH five-leg +549 · 0.25u\n> Isaiah Likely 4+ receptions -245\n> Jayden Daniels 20+ rush yds -247\n> Najee Harris 20+ rush yds -232\n> Jameis Winston 175+ pass yds -230\n> Rachaad White 20+ rush yds -167\n_Sun 1:00 PM ET · model 23% · book 15%_\n\n**The parlay:** The card, 2 legs +264 · 0.25u\n> CIN@MIA CIN -7 -110\n> CHI@GB Under 47.5 -110\n_model 41% · book 27%_\n\nFull board, every game and the five-leg for each: https://cappersandcode.com/app\n21+. Gamble responsibly. Estimates are opinions, not guarantees."
  }
 }
