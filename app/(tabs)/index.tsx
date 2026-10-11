@@ -15,6 +15,7 @@ import { Primetime } from '@/components/Primetime';
 import { TopTen } from '@/components/TopTen';
 import { primetimeGame } from '@/lib/primetime';
 import { BestOfBlock } from '@/components/BestOf';
+import { MaxFiveBlock } from '@/components/MaxFive';
 import { fonts, space } from '@/theme';
 
 export default function BoardScreen() {
@@ -48,6 +49,7 @@ export default function BoardScreen() {
         <Paywall />
       ) : (
         <>
+          {!!board.maxFive?.tickets?.length && <MaxFiveBlock card={board.maxFive} />}
           {!!board.bestOf?.plays?.length && <BestOfBlock best={board.bestOf} />}
           {tabs.length > 0 && (
             <View style={{ flexDirection: 'row', gap: space.sm, marginBottom: space.md }}>

@@ -120,7 +120,7 @@ export function buildBestOf(board, now = new Date()) {
   );
   // The five-leg with the best joint hit rate that reaches the target, on this day.
   const five = (board.fiveLeg?.tickets ?? [])
-    .filter((t) => onDay.has(t.game) && !t.short)
+    .filter((t) => onDay.has(t.game) && !t.short && !t.pulled)
     .sort((a, b) => b.joint - a.joint)[0];
   if (five)
     plays.push({
@@ -238,6 +238,72 @@ export function buildBestOf(board, now = new Date()) {
     title,
     games: onDay.size,
     plays,
+    text: lines.join('\n'),
+  };
+}
+
+/**
+ * The day's max-confidence five-legs: the full five-leg tickets (no TDs) with the highest joint
+ * hit rate, after the morning check. Short tickets and tickets the check pulled stay off; a game
+ * already under way stays on until it is final, so members can follow what they bet.
+ */
+export function buildMaxFive(board, now = new Date(), count = 5) {
+  const open = (board.games ?? []).filter(
+    (g) => g.kickoff && Date.parse(g.kickoff) > now.getTime() && g.status?.state !== 'STATUS_FINAL',
+  );
+  if (!open.length) return null;
+  const first = open.reduce((a, g) => (Date.parse(g.kickoff) < Date.parse(a.kickoff) ? g : a));
+  const day = etDay(first.kickoff);
+  const final = new Set(
+    (board.games ?? []).filter((g) => g.status?.state === 'STATUS_FINAL').map((g) => g.id),
+  );
+  const all = (board.fiveLeg?.tickets ?? []).filter(
+    (t) => t.kickoff && etDay(t.kickoff) === day && !t.short && !final.has(t.game),
+  );
+  const pulled = all
+    .filter((t) => t.pulled)
+    .map((t) => ({ game: t.game, gameLabel: t.gameLabel, reason: t.pulled }));
+  const tickets = all
+    .filter((t) => !t.pulled)
+    .sort((a, b) => b.joint - a.joint)
+    .slice(0, count)
+    .map((t, i) => ({
+      rank: i + 1,
+      game: t.game,
+      gameLabel: t.gameLabel,
+      kickoff: t.kickoff,
+      kickoffLabel: etLabel(t.kickoff),
+      price: t.price,
+      joint: t.joint,
+      bookJoint: t.bookJoint,
+      check: t.check ?? null,
+      legs: t.legs.map((l) => ({ label: l.label, price: l.price, book: l.book, p: l.p })),
+    }));
+  if (!tickets.length) return null;
+  const title = `${dayTitle(first.kickoff)}: max-confidence five-legs`;
+  const lines = [
+    `**Cappers & Code · ${dayTitle(first.kickoff)} · Week ${board.week}**`,
+    `**Max-confidence five-legs, no TDs.** The ${tickets.length} tickets with the best hit rate on the slate, every leg checked this morning. 0.25u each.`,
+    '',
+  ];
+  for (const t of tickets) {
+    lines.push(
+      `**${t.rank}. ${t.gameLabel} ${am(t.price)}** · model ${pct(t.joint)} · book ${pct(t.bookJoint)}`,
+    );
+    for (const l of t.legs) lines.push(`> ${l.label} ${am(l.price)}`);
+    lines.push(`_${t.kickoffLabel}_`);
+    lines.push('');
+  }
+  lines.push('Every ticket, on every game page: https://cappersandcode.com/app');
+  lines.push('21+. Gamble responsibly. Estimates are opinions, not guarantees.');
+  return {
+    builtAt: now.toISOString(),
+    checkedAt: board.fiveLeg?.checkedAt ?? null,
+    pricedAt: board.fiveLeg?.pricedAt ?? null,
+    day,
+    title,
+    tickets,
+    pulled,
     text: lines.join('\n'),
   };
 }

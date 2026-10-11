@@ -199,6 +199,35 @@ export type FiveLegTicket = {
   /** True when no five legs reached the target price; this is the best ticket that exists. */
   short: boolean;
   builtAt: string;
+  /** Why the morning check left this ticket off the max-confidence card, or null. */
+  pulled?: string | null;
+  /** The morning check's note on the game (weather, who is out), or null. */
+  check?: string | null;
+};
+/** The front page's max-confidence five-legs (scripts/best-of.mjs buildMaxFive). */
+export type MaxFiveTicket = {
+  rank: number;
+  game: string;
+  gameLabel: string;
+  kickoff: string;
+  kickoffLabel: string;
+  price: number;
+  joint: number;
+  bookJoint: number;
+  check: string | null;
+  legs: { label: string; price: number; book: string; p: number }[];
+};
+export type MaxFive = {
+  builtAt: string;
+  checkedAt: string | null;
+  /** When the prices on the tickets were pulled. */
+  pricedAt: string | null;
+  day: string;
+  title: string;
+  tickets: MaxFiveTicket[];
+  pulled: { game: string; gameLabel: string; reason: string }[];
+  /** Discord-ready markdown for the whole block. */
+  text: string;
 };
 export type ParlayLeg = {
   type: 'atd' | 'td2' | 'side' | 'total' | 'text';
@@ -366,6 +395,13 @@ export type Board = {
   maxConfidence?: MaxPlay[];
   topTen?: TopTen | null;
   lottos?: MaxPlay[];
-  fiveLeg?: { builtAt: string; target: number; tickets: FiveLegTicket[] } | null;
+  fiveLeg?: {
+    builtAt: string;
+    target: number;
+    checkedAt?: string | null;
+    pricedAt?: string | null;
+    tickets: FiveLegTicket[];
+  } | null;
   bestOf?: BestOf | null;
+  maxFive?: MaxFive | null;
 };

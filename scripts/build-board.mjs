@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import { DATA, ROOT, readJson, writeJson, nowIso, normName, impliedProb, devig } from './lib.mjs';
 import { buildParlays } from './parlays.mjs';
 import { buildLottos, buildTopTen } from './top-ten.mjs';
-import { buildBestOf } from './best-of.mjs';
+import { buildBestOf, buildMaxFive } from './best-of.mjs';
 
 const research = readJson(path.join(ROOT, 'src', 'data', 'research.json'));
 const schedule = readJson(path.join(DATA, 'schedule.json'), { games: [] });
@@ -382,6 +382,8 @@ board.lottos = buildLottos(board.topTen);
 {
   const wk = `${board.season}-w${String(board.week).padStart(2, '0')}`;
   const fiveLeg = readJson(path.join(DATA, 'five-leg', `${wk}.json`), null);
+  // The morning check (data/five-leg/<wk>-checks.json): tickets it pulled and a note per game.
+  const checks = readJson(path.join(DATA, 'five-leg', `${wk}-checks.json`), null);
   const tickets = [];
   for (const fg of fiveLeg?.games ?? []) {
     const t = fg.ticket || fg.fallback;
@@ -397,6 +399,8 @@ board.lottos = buildLottos(board.topTen);
       bookJoint: t.bookJoint,
       short: !fg.ticket,
       builtAt: fiveLeg.builtAt,
+      pulled: checks?.pulled?.[g.id] ?? null,
+      check: checks?.notes?.[g.id] ?? null,
       legs: t.legs.map((l) => ({
         player: l.player,
         team: l.team,
@@ -419,12 +423,16 @@ board.lottos = buildLottos(board.topTen);
     ? {
         builtAt: fiveLeg.builtAt,
         target: fiveLeg.target,
+        checkedAt: checks?.checkedAt ?? null,
+        pricedAt: checks?.pricedAt ?? null,
         tickets: tickets.sort((a, b) => b.joint - a.joint),
       }
     : null;
 }
-// The front page's lead block: tomorrow's best play in every market, with Discord-ready text.
+// The front page's lead block: tomorrow's best play in every market, with Discord-ready text,
+// and above it the day's max-confidence five-legs.
 board.bestOf = buildBestOf(board);
+board.maxFive = buildMaxFive(board);
 writeJson(path.join(DATA, 'board.json'), board);
 console.log(
   `board: ${games.length} games, ${games.filter((g) => g.live).length} with live lines (${games.find((g) => g.live)?.live?.source || 'none'}), ${games.filter((g) => g.liveBoard.length).length} with live ATD, ${games.filter((g) => g.propLines.length).length} with prop lines`,

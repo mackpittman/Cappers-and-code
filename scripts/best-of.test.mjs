@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildBestOf } from './best-of.mjs';
+import { buildBestOf, buildMaxFive } from './best-of.mjs';
 
 const now = new Date('2026-10-10T16:00:00Z'); // Saturday morning
 const game = (id, kickoff) => ({
@@ -164,4 +164,94 @@ test('the five-leg and the Discord text come along', () => {
 
 test('nothing left to play gives no block', () => {
   assert.equal(buildBestOf(board, new Date('2026-10-14T00:00:00Z')), null);
+});
+
+test('max-five: full tickets on the day, best joint first, pulled and short ones left off', () => {
+  const sun = new Date('2026-10-11T16:30:00Z');
+  const g = (id, kickoff, extra = {}) => ({ ...game(id, kickoff), ...extra });
+  const t = (id, kickoff, joint, extra = {}) => ({
+    game: id,
+    gameLabel: id.toUpperCase(),
+    kickoff,
+    price: 550,
+    joint,
+    bookJoint: 0.15,
+    short: false,
+    pulled: null,
+    check: null,
+    legs: [{ label: `${id} leg`, price: -220, book: 'fanduel', p: 0.74 }],
+    ...extra,
+  });
+  const ids = ['a-b', 'c-d', 'e-f', 'g-h', 'i-j', 'k-l', 'm-n', 'o-p'];
+  const b = {
+    week: 5,
+    games: [
+      g('q-r', '2026-10-11T13:30Z', { status: { state: 'STATUS_FINAL' } }),
+      ...ids.map((id) => g(id, '2026-10-11T17:00Z')),
+      g('s-t', '2026-10-13T00:15Z'),
+    ],
+    fiveLeg: {
+      checkedAt: '2026-10-11T16:20Z',
+      tickets: [
+        t('q-r', '2026-10-11T13:30Z', 0.4), // final: gone
+        t('a-b', '2026-10-11T17:00Z', 0.25, { pulled: 'rain' }),
+        t('c-d', '2026-10-11T17:00Z', 0.3, { short: true }),
+        t('e-f', '2026-10-11T17:00Z', 0.2),
+        t('g-h', '2026-10-11T17:00Z', 0.22),
+        t('i-j', '2026-10-11T17:00Z', 0.21),
+        t('k-l', '2026-10-11T17:00Z', 0.19),
+        t('m-n', '2026-10-11T17:00Z', 0.18),
+        t('o-p', '2026-10-11T17:00Z', 0.17),
+        t('s-t', '2026-10-13T00:15Z', 0.5), // Monday: another day
+      ],
+    },
+  };
+  const m = buildMaxFive(b, sun);
+  assert.deepEqual(
+    m.tickets.map((x) => x.game),
+    ['g-h', 'i-j', 'e-f', 'k-l', 'm-n'],
+  );
+  assert.deepEqual(
+    m.tickets.map((x) => x.rank),
+    [1, 2, 3, 4, 5],
+  );
+  assert.deepEqual(m.pulled, [{ game: 'a-b', gameLabel: 'A-B', reason: 'rain' }]);
+  assert.match(m.text, /Max-confidence five-legs, no TDs/);
+  assert.ok(!/touchdown|anytime/i.test(m.text));
+});
+
+test('max-five: a game under way stays on until it is final', () => {
+  const b = {
+    week: 5,
+    games: [game('a-b', '2026-10-11T17:00Z'), game('c-d', '2026-10-11T20:25Z')],
+    fiveLeg: {
+      tickets: [
+        {
+          game: 'a-b',
+          gameLabel: 'A@B',
+          kickoff: '2026-10-11T17:00Z',
+          price: 500,
+          joint: 0.2,
+          bookJoint: 0.15,
+          short: false,
+          legs: [],
+        },
+        {
+          game: 'c-d',
+          gameLabel: 'C@D',
+          kickoff: '2026-10-11T20:25Z',
+          price: 500,
+          joint: 0.21,
+          bookJoint: 0.15,
+          short: false,
+          legs: [],
+        },
+      ],
+    },
+  };
+  const m = buildMaxFive(b, new Date('2026-10-11T18:00:00Z'));
+  assert.deepEqual(
+    m.tickets.map((x) => x.game),
+    ['c-d', 'a-b'],
+  );
 });

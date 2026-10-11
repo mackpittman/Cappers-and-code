@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 5,
- "generatedAt": "2026-10-11T11:35:26.098Z",
+ "generatedAt": "2026-10-11T16:25:13.693Z",
  "researchAsOf": "2026-10-10T19:33:41.682Z",
  "oddsFetchedAt": "2026-10-10T16:32:26.900Z",
  "oddsCredits": {
@@ -1317,7 +1317,9 @@
     "joint": 0.208,
     "bookJoint": 0.1587,
     "short": true,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Mark Andrews",
@@ -2699,7 +2701,9 @@
     "joint": 0.2287,
     "bookJoint": 0.1401,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Kyren Williams",
@@ -4078,13 +4082,29 @@
     "game": "chi-gb",
     "gameLabel": "CHI@GB",
     "kickoff": "2026-10-11T17:00Z",
-    "price": 608,
-    "decimal": 7.08,
-    "joint": 0.1994,
-    "bookJoint": 0.1414,
+    "price": 624,
+    "decimal": 7.24,
+    "joint": 0.2271,
+    "bookJoint": 0.1382,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": "Lambeau, dry. Inactives are out and all five are active. Caleb Williams sits (Bagent starts) and Monangai is out, so Roschon Johnson is RB2 behind Swift: the softest leg here. Jacobs is on the exempt list and Brooks on IR, so Lloyd leads Green Bay.",
     "legs": [
+     {
+      "player": "Roschon Johnson",
+      "team": "CHI",
+      "label": "Roschon Johnson 15+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 14.5,
+      "price": -225,
+      "book": "draftkings",
+      "p": 0.804,
+      "model": 0.851,
+      "implied": 0.692,
+      "mean": 34
+     },
      {
       "player": "MarShawn Lloyd",
       "team": "GB",
@@ -4092,11 +4112,11 @@
       "market": "rush_yds",
       "side": "over",
       "point": 19.5,
-      "price": -220,
+      "price": -205,
       "book": "draftkings",
-      "p": 0.753,
+      "p": 0.748,
       "model": 0.781,
-      "implied": 0.688,
+      "implied": 0.672,
       "mean": 34
      },
      {
@@ -4106,11 +4126,11 @@
       "market": "rec_yds",
       "side": "over",
       "point": 19.5,
-      "price": -200,
+      "price": -210,
       "book": "fanduel",
-      "p": 0.744,
+      "p": 0.747,
       "model": 0.778,
-      "implied": 0.667,
+      "implied": 0.677,
       "mean": 36
      },
      {
@@ -4120,11 +4140,11 @@
       "market": "rec_yds",
       "side": "over",
       "point": 29.5,
-      "price": -205,
+      "price": -200,
       "book": "fanduel",
-      "p": 0.719,
+      "p": 0.718,
       "model": 0.74,
-      "implied": 0.672,
+      "implied": 0.667,
       "mean": 48
      },
      {
@@ -4140,20 +4160,6 @@
       "model": 0.724,
       "implied": 0.658,
       "mean": 77
-     },
-     {
-      "player": "Luther Burden III",
-      "team": "CHI",
-      "label": "Luther Burden III 4+ receptions",
-      "market": "receptions",
-      "side": "over",
-      "point": 3.5,
-      "price": -230,
-      "book": "fanduel",
-      "p": 0.703,
-      "model": 0.706,
-      "implied": 0.697,
-      "mean": 4.8
      }
     ]
    }
@@ -5343,7 +5349,9 @@
     "joint": 0.2359,
     "bookJoint": 0.1665,
     "short": true,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Joe Burrow",
@@ -6638,12 +6646,14 @@
     "game": "cle-nyj",
     "gameLabel": "CLE@NYJ",
     "kickoff": "2026-10-11T17:00Z",
-    "price": 503,
-    "decimal": 6.03,
-    "joint": 0.2175,
-    "bookJoint": 0.1654,
+    "price": 585,
+    "decimal": 6.85,
+    "joint": 0.2274,
+    "bookJoint": 0.146,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": "MetLife, rain all game with gusts near 22 mph. Inactives are out and all five are active. Gabriel is out, so Watson starts; Carsen Ryan and Tylan Wallace are inactive, which funnels targets to Fannin. Boston's 3+ catches is the softest leg.",
     "legs": [
      {
       "player": "Quinshon Judkins",
@@ -6660,60 +6670,60 @@
       "mean": 23
      },
      {
+      "player": "Deshaun Watson",
+      "team": "CLE",
+      "label": "Deshaun Watson 170+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 169.5,
+      "price": -203,
+      "book": "draftkings",
+      "p": 0.744,
+      "model": 0.775,
+      "implied": 0.67,
+      "mean": 211
+     },
+     {
+      "player": "Geno Smith",
+      "team": "NYJ",
+      "label": "Geno Smith 175+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 174.5,
+      "price": -220,
+      "book": "fanduel",
+      "p": 0.742,
+      "model": 0.766,
+      "implied": 0.688,
+      "mean": 215
+     },
+     {
       "player": "Harold Fannin Jr.",
       "team": "CLE",
       "label": "Harold Fannin Jr. 25+ rec yds",
       "market": "rec_yds",
       "side": "over",
       "point": 24.5,
-      "price": -246,
+      "price": -223,
       "book": "draftkings",
-      "p": 0.737,
+      "p": 0.731,
       "model": 0.749,
-      "implied": 0.711,
+      "implied": 0.69,
       "mean": 41
      },
      {
-      "player": "Deshaun Watson",
+      "player": "Denzel Boston",
       "team": "CLE",
-      "label": "Deshaun Watson 175+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 174.5,
-      "price": -235,
-      "book": "fanduel",
-      "p": 0.733,
-      "model": 0.747,
-      "implied": 0.701,
-      "mean": 211
-     },
-     {
-      "player": "Geno Smith",
-      "team": "NYJ",
-      "label": "Geno Smith 180+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 179.5,
-      "price": -243,
-      "book": "draftkings",
-      "p": 0.729,
-      "model": 0.737,
-      "implied": 0.708,
-      "mean": 215
-     },
-     {
-      "player": "KC Concepcion",
-      "team": "CLE",
-      "label": "KC Concepcion 4+ receptions",
+      "label": "Denzel Boston 3+ receptions",
       "market": "receptions",
       "side": "over",
-      "point": 3.5,
-      "price": -198,
-      "book": "fanduel",
-      "p": 0.693,
-      "model": 0.706,
-      "implied": 0.664,
-      "mean": 4.8
+      "point": 2.5,
+      "price": -186,
+      "book": "draftkings",
+      "p": 0.707,
+      "model": 0.731,
+      "implied": 0.65,
+      "mean": 3.8
      }
     ]
    }
@@ -7913,12 +7923,14 @@
     "game": "den-lac",
     "gameLabel": "DEN@LAC",
     "kickoff": "2026-10-11T20:05Z",
-    "price": 593,
-    "decimal": 6.93,
-    "joint": 0.2064,
-    "bookJoint": 0.1443,
+    "price": 528,
+    "decimal": 6.28,
+    "joint": 0.2254,
+    "bookJoint": 0.1596,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": "SoFi, under the roof. Quentin Johnston is out and Ladd McConkey is not expected to play; Denver put Pat Bryant on IR. Inactives post about 2:35 PM ET.",
     "legs": [
      {
       "player": "RJ Harvey",
@@ -7935,18 +7947,46 @@
       "mean": 37
      },
      {
+      "player": "Oronde Gadsden",
+      "team": "LAC",
+      "label": "Oronde Gadsden 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -219,
+      "book": "draftkings",
+      "p": 0.753,
+      "model": 0.782,
+      "implied": 0.687,
+      "mean": 46
+     },
+     {
       "player": "Courtland Sutton",
       "team": "DEN",
       "label": "Courtland Sutton 25+ rec yds",
       "market": "rec_yds",
       "side": "over",
       "point": 24.5,
-      "price": -222,
+      "price": -233,
       "book": "draftkings",
-      "p": 0.736,
+      "p": 0.739,
       "model": 0.756,
-      "implied": 0.689,
+      "implied": 0.7,
       "mean": 42
+     },
+     {
+      "player": "Omarion Hampton",
+      "team": "LAC",
+      "label": "Omarion Hampton 30+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 29.5,
+      "price": -225,
+      "book": "fanduel",
+      "p": 0.733,
+      "model": 0.751,
+      "implied": 0.692,
+      "mean": 47
      },
      {
       "player": "Justin Herbert",
@@ -7961,34 +8001,6 @@
       "model": 0.747,
       "implied": 0.688,
       "mean": 211
-     },
-     {
-      "player": "Omarion Hampton",
-      "team": "LAC",
-      "label": "Omarion Hampton 30+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 29.5,
-      "price": -188,
-      "book": "fanduel",
-      "p": 0.721,
-      "model": 0.751,
-      "implied": 0.653,
-      "mean": 47
-     },
-     {
-      "player": "Keaton Mitchell",
-      "team": "LAC",
-      "label": "Keaton Mitchell 25+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 24.5,
-      "price": -202,
-      "book": "draftkings",
-      "p": 0.704,
-      "model": 0.719,
-      "implied": 0.669,
-      "mean": 36
      }
     ]
    }
@@ -9265,12 +9277,14 @@
     "game": "det-ari",
     "gameLabel": "DET@ARI",
     "kickoff": "2026-10-11T20:25Z",
-    "price": 521,
-    "decimal": 6.21,
-    "joint": 0.2013,
-    "bookJoint": 0.1611,
+    "price": 554,
+    "decimal": 6.54,
+    "joint": 0.1985,
+    "bookJoint": 0.1531,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": "Under the roof. Marvin Harrison Jr. is inactive, which pushes targets to Michael Wilson. Inactives post about 2:55 PM ET.",
     "legs": [
      {
       "player": "Michael Wilson",
@@ -9279,11 +9293,11 @@
       "market": "receptions",
       "side": "over",
       "point": 5.5,
-      "price": -225,
-      "book": "fanduel",
-      "p": 0.746,
+      "price": -204,
+      "book": "draftkings",
+      "p": 0.74,
       "model": 0.769,
-      "implied": 0.692,
+      "implied": 0.671,
       "mean": 7.6
      },
      {
@@ -9293,26 +9307,12 @@
       "market": "pass_yds",
       "side": "over",
       "point": 249.5,
-      "price": -238,
-      "book": "draftkings",
-      "p": 0.735,
-      "model": 0.748,
-      "implied": 0.704,
-      "mean": 302
-     },
-     {
-      "player": "Tyler Allgeier",
-      "team": "ARI",
-      "label": "Tyler Allgeier 20+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -240,
+      "price": -245,
       "book": "fanduel",
-      "p": 0.719,
-      "model": 0.724,
-      "implied": 0.706,
-      "mean": 29
+      "p": 0.737,
+      "model": 0.748,
+      "implied": 0.71,
+      "mean": 302
      },
      {
       "player": "Sam LaPorta",
@@ -9336,11 +9336,25 @@
       "side": "over",
       "point": 39.5,
       "price": -215,
-      "book": "fanduel",
+      "book": "draftkings",
       "p": 0.714,
       "model": 0.727,
       "implied": 0.683,
       "mean": 62
+     },
+     {
+      "player": "Tyler Allgeier",
+      "team": "ARI",
+      "label": "Tyler Allgeier 20+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -218,
+      "book": "draftkings",
+      "p": 0.713,
+      "model": 0.724,
+      "implied": 0.686,
+      "mean": 29
      }
     ]
    }
@@ -10693,7 +10707,9 @@
     "joint": 0.2911,
     "bookJoint": 0.2233,
     "short": true,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "C.J. Stroud",
@@ -12013,26 +12029,42 @@
     "game": "ind-pit",
     "gameLabel": "IND@PIT",
     "kickoff": "2026-10-11T17:00Z",
-    "price": 734,
-    "decimal": 8.34,
-    "joint": 0.1989,
-    "bookJoint": 0.1197,
+    "price": 530,
+    "decimal": 6.3,
+    "joint": 0.2477,
+    "bookJoint": 0.1587,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": "Heavy rain from the remnants of Isaias, and Tyler Warren's main receptions line fell to the alternate line we held. Pulled after the morning check.",
+    "check": null,
     "legs": [
      {
       "player": "Aaron Rodgers",
       "team": "PIT",
-      "label": "Aaron Rodgers 200+ pass yds",
+      "label": "Aaron Rodgers 190+ pass yds",
       "market": "pass_yds",
       "side": "over",
-      "point": 199.5,
-      "price": -210,
-      "book": "fanduel",
-      "p": 0.758,
-      "model": 0.792,
-      "implied": 0.677,
+      "point": 189.5,
+      "price": -224,
+      "book": "draftkings",
+      "p": 0.79,
+      "model": 0.833,
+      "implied": 0.691,
       "mean": 253
+     },
+     {
+      "player": "Roman Wilson",
+      "team": "PIT",
+      "label": "Roman Wilson 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -250,
+      "book": "draftkings",
+      "p": 0.785,
+      "model": 0.815,
+      "implied": 0.714,
+      "mean": 53
      },
      {
       "player": "Jaylen Warren",
@@ -12041,26 +12073,12 @@
       "market": "rec_yds",
       "side": "over",
       "point": 14.5,
-      "price": -149,
-      "book": "draftkings",
-      "p": 0.757,
-      "model": 0.825,
-      "implied": 0.598,
-      "mean": 33
-     },
-     {
-      "player": "Roman Wilson",
-      "team": "PIT",
-      "label": "Roman Wilson 30+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 29.5,
-      "price": -235,
+      "price": -200,
       "book": "fanduel",
-      "p": 0.749,
-      "model": 0.77,
-      "implied": 0.701,
-      "mean": 53
+      "p": 0.777,
+      "model": 0.825,
+      "implied": 0.667,
+      "mean": 33
      },
      {
       "player": "Pat Freiermuth",
@@ -12077,18 +12095,18 @@
       "mean": 31
      },
      {
-      "player": "Tyler Warren",
+      "player": "Josh Downs",
       "team": "IND",
-      "label": "Tyler Warren 5+ receptions",
-      "market": "receptions",
+      "label": "Josh Downs 40+ rec yds",
+      "market": "rec_yds",
       "side": "over",
-      "point": 4.5,
-      "price": -153,
+      "point": 39.5,
+      "price": -225,
       "book": "draftkings",
-      "p": 0.642,
-      "model": 0.658,
-      "implied": 0.605,
-      "mean": 5.6
+      "p": 0.713,
+      "model": 0.722,
+      "implied": 0.692,
+      "mean": 61
      }
     ]
    }
@@ -13382,7 +13400,9 @@
     "joint": 0.1876,
     "bookJoint": 0.1246,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Michael Mayer",
@@ -14735,41 +14755,15 @@
     "game": "min-no",
     "gameLabel": "MIN@NO",
     "kickoff": "2026-10-11T17:00Z",
-    "price": 584,
-    "decimal": 6.84,
-    "joint": 0.2124,
-    "bookJoint": 0.1462,
+    "price": 601,
+    "decimal": 7.01,
+    "joint": 0.1908,
+    "bookJoint": 0.1427,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": "Superdome. Inactives are out and all five are active; Olave and Shough practiced fully Friday with no designation.",
     "legs": [
-     {
-      "player": "T.J. Hockenson",
-      "team": "MIN",
-      "label": "T.J. Hockenson 25+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 24.5,
-      "price": -249,
-      "book": "draftkings",
-      "p": 0.769,
-      "model": 0.793,
-      "implied": 0.713,
-      "mean": 48
-     },
-     {
-      "player": "Tyler Shough",
-      "team": "NO",
-      "label": "Tyler Shough 210+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 209.5,
-      "price": -224,
-      "book": "draftkings",
-      "p": 0.732,
-      "model": 0.75,
-      "implied": 0.691,
-      "mean": 254
-     },
      {
       "player": "Chris Olave",
       "team": "NO",
@@ -14777,12 +14771,26 @@
       "market": "receptions",
       "side": "over",
       "point": 5.5,
-      "price": -220,
+      "price": -225,
       "book": "fanduel",
-      "p": 0.729,
+      "p": 0.731,
       "model": 0.747,
-      "implied": 0.688,
+      "implied": 0.692,
       "mean": 7.4
+     },
+     {
+      "player": "T.J. Hockenson",
+      "team": "MIN",
+      "label": "T.J. Hockenson 30+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 29.5,
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.727,
+      "model": 0.74,
+      "implied": 0.697,
+      "mean": 48
      },
      {
       "player": "Devaughn Vele",
@@ -14805,12 +14813,26 @@
       "market": "rec_yds",
       "side": "over",
       "point": 14.5,
-      "price": -157,
+      "price": -174,
       "book": "draftkings",
-      "p": 0.714,
+      "p": 0.721,
       "model": 0.758,
-      "implied": 0.611,
+      "implied": 0.635,
       "mean": 25
+     },
+     {
+      "player": "Tyler Shough",
+      "team": "NO",
+      "label": "Tyler Shough 220+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 219.5,
+      "price": -194,
+      "book": "draftkings",
+      "p": 0.687,
+      "model": 0.699,
+      "implied": 0.66,
+      "mean": 254
      }
     ]
    }
@@ -15979,12 +16001,14 @@
     "game": "nyg-wsh",
     "gameLabel": "NYG@WSH",
     "kickoff": "2026-10-11T17:00Z",
-    "price": 549,
-    "decimal": 6.49,
-    "joint": 0.2297,
-    "bookJoint": 0.1539,
+    "price": 594,
+    "decimal": 6.94,
+    "joint": 0.2081,
+    "bookJoint": 0.1439,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": "Rain with gusts to 26 mph at Northwest Stadium, a backup QB, and two committee backfields. Pulled after the morning check.",
+    "check": null,
     "legs": [
      {
       "player": "Isaiah Likely",
@@ -15993,26 +16017,12 @@
       "market": "receptions",
       "side": "over",
       "point": 3.5,
-      "price": -245,
+      "price": -240,
       "book": "fanduel",
-      "p": 0.807,
+      "p": 0.806,
       "model": 0.849,
-      "implied": 0.71,
+      "implied": 0.706,
       "mean": 6
-     },
-     {
-      "player": "Jayden Daniels",
-      "team": "WSH",
-      "label": "Jayden Daniels 20+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -247,
-      "book": "draftkings",
-      "p": 0.766,
-      "model": 0.79,
-      "implied": 0.712,
-      "mean": 35
      },
      {
       "player": "Najee Harris",
@@ -16021,11 +16031,11 @@
       "market": "rush_yds",
       "side": "over",
       "point": 19.5,
-      "price": -232,
-      "book": "draftkings",
-      "p": 0.735,
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.734,
       "model": 0.75,
-      "implied": 0.699,
+      "implied": 0.697,
       "mean": 31
      },
      {
@@ -16049,12 +16059,26 @@
       "market": "rush_yds",
       "side": "over",
       "point": 19.5,
-      "price": -167,
-      "book": "draftkings",
-      "p": 0.704,
+      "price": -172,
+      "book": "fanduel",
+      "p": 0.706,
       "model": 0.738,
-      "implied": 0.625,
+      "implied": 0.632,
       "mean": 30
+     },
+     {
+      "player": "Jayden Daniels",
+      "team": "WSH",
+      "label": "Jayden Daniels 25+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -198,
+      "book": "fanduel",
+      "p": 0.694,
+      "model": 0.707,
+      "implied": 0.664,
+      "mean": 35
      }
     ]
    }
@@ -17339,7 +17363,9 @@
     "joint": 0.1851,
     "bookJoint": 0.1294,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Will Shipley",
@@ -18720,7 +18746,9 @@
     "joint": 0.2087,
     "bookJoint": 0.1658,
     "short": true,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Kaelon Black",
@@ -22702,7 +22730,7 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-10-11T11:35:26.103Z",
+  "builtAt": "2026-10-11T16:25:13.697Z",
   "books": [
    "FD",
    "DK",
@@ -23186,6 +23214,21 @@
       "legs": [
        {
         "type": "total",
+        "label": "Under 43.5 BAL@ATL",
+        "game": "bal-atl",
+        "gameLabel": "BAL@ATL",
+        "kickoff": "2026-10-12T00:20Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": null,
+        "why": "Atlanta by seven in the projection. The side stays a 1: the market has moved 7.5 points through zero for Jackson, and the -122 on the 3 says the number is drifting to 3.5, so most of the edge is gone. The case for Atlanta is Henry against a defense allowing 2.7 a carry and two rushing touchdowns in four games, plus a Ravens line without Jurgens and possibly Vorhees against the league's pressure leader. The case against is Huntley's record as a fill-in, a Baltimore run defense that has not allowed a 100-yard rusher in 18 games, and an Atlanta team on a six-day turnaround after Monday night. The total is the stronger lean at 2: both teams want to run, the projection has 59 offensive plays a side, Baltimore loses its explosive passing (nine 25-yard completions from Jackson this year, one from Huntley in two 2025 starts), and Penix's 10.6 yards an attempt on 45 throws will not hold. Bijan's breakaway runs (55 and 59 yards the last two weeks) are the risk that keeps it a 2. Take 43.5 where it is offered; do not chase it below 42.5."
+       },
+       {
+        "type": "total",
         "label": "Under 54.5 BUF@LAR",
         "game": "buf-lar",
         "gameLabel": "BUF@LAR",
@@ -23213,144 +23256,17 @@
         "conf": 2,
         "moved": "model liked 45.5",
         "why": "Chicago by three in the projection. The Bears run for 196.3 yards a game and face a defense that allows 139.3 and has lost Cooper to IR with Parsons still on PUP, while Green Bay's own run game is last at 58.0 and its interior line is missing Banks and Monk. The number touched -3 midweek and is back to -1.5, which is the better price; Bagent's zero touchdown passes and Love's record against Chicago (113.2 career rating, 13 touchdown passes) keep the side at a 2. The total leans under: Chicago's possession game (36:35 a game) limits opponents to 48 plays, three of its four games went under, and Green Bay cannot run to sustain drives. Green Bay allowing touchdowns on 12 of 14 red-zone trips is the risk to the under. ESPN's DraftKings feed shows 46.5 Saturday; take the higher number where it is offered."
-       },
-       {
-        "type": "total",
-        "label": "Under 41.5 PHI@JAX",
-        "game": "phi-jax",
-        "gameLabel": "PHI@JAX",
-        "kickoff": "2026-10-11T13:30Z",
-        "prob": 0.576,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.052,
-        "conf": 2,
-        "moved": null,
-        "why": "Jacksonville by ten in the projection, but the line has already moved ten points (PHI -2.5 at open to JAX -7.5) for the Johnson retirement, the Jurgens trade and Barkley's hamstring, and -7.5 loses on a seven, so the side is a 1. What keeps it a lean is the travel (the Jaguars arrived a day earlier for a 10-day stay; the Eagles landed Saturday for a 9:30 AM ET kickoff) and an Eagles offense that was 29th in yards per play before it lost three starting linemen. The total is the stronger read: the Jaguars allow 13.3 points a game and have held four straight opponents to three or fewer first-half points, Lawrence has thrown 23 to 29 times a game, and the Eagles have not scored in two straight second halves. The risk to the under is turnovers by the rebuilt line giving Jacksonville short fields, and Jacksonville's 34 and 35 point games against Cleveland and New England, which is why it is a 2."
        }
       ],
       "decimal": 6.958,
       "price": 596,
-      "prob": 0.201,
-      "ev": 0.395,
-      "why": "Model 20% vs 14% implied at +596. Under 54.5 BUF@LAR: 59% model, -110 FD/DK; Under 47.5 CHI@GB: 59% model, -110 FD/DK; Under 41.5 PHI@JAX: 58% model, -110 FD/DK.",
-      "score": 0.177
+      "prob": 0.196,
+      "ev": 0.361,
+      "why": "Model 20% vs 14% implied at +596. Under 43.5 BAL@ATL: 56% model, -110 FD/DK; Under 54.5 BUF@LAR: 59% model, -110 FD/DK; Under 47.5 CHI@GB: 59% model, -110 FD/DK.",
+      "score": 0.16
      },
      {
       "rank": 3,
-      "legs": [
-       {
-        "type": "total",
-        "label": "Under 54.5 BUF@LAR",
-        "game": "buf-lar",
-        "gameLabel": "BUF@LAR",
-        "kickoff": "2026-10-13T00:15Z",
-        "prob": 0.59,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.066,
-        "conf": 2,
-        "moved": null,
-        "why": "The Rams by four in the projection, against a line that has already moved from -2.5 to -3 and from -148 to -175. Buffalo is without Palmer and Oliver and may be without Moore, and its defense (372 yards a game, 30th in EPA per play) draws an offense that gains 417 yards a game. The side stays a 1 because the Rams have turned it over eight times and scored on only 8 of 15 red-zone trips. The total is the lean: the Rams allow 247.5 yards a game and 4.8 yards per pass attempt, their games have totalled 34 to 56, and the projection is 50 against 54.5. Buffalo's games averaging 58.5 points and both teams going 7-3 to the over in their last ten are why it is a 2, not a 3."
-       },
-       {
-        "type": "total",
-        "label": "Under 41.5 DEN@LAC",
-        "game": "den-lac",
-        "gameLabel": "DEN@LAC",
-        "kickoff": "2026-10-11T20:05Z",
-        "prob": 0.59,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.066,
-        "conf": 2,
-        "moved": null,
-        "why": "Denver by five in the projection, but the market has already moved six points (LAC -2.5 to DEN -3.5) for the 0-4 start, Slater, Alt and the guards, and the receivers, and Denver plays without Surtain and Moss; ESPN's predictor still has it about even. That keeps the side at a 1. The total is the lean: Denver has scored 23 or fewer offensive points in all four games on 3.6 a carry, and the Chargers have reached 20 once, now with rookie tackles, a patched interior and a receiver room of Tre' Harris and backups. Both teams are 1-3 to the over. The two depleted secondaries are the risk, which is why it is a 2 and not a 3. The total has dropped from 44.5 to 41.5; do not chase it below 40.5."
-       },
-       {
-        "type": "total",
-        "label": "Under 41.5 PHI@JAX",
-        "game": "phi-jax",
-        "gameLabel": "PHI@JAX",
-        "kickoff": "2026-10-11T13:30Z",
-        "prob": 0.576,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.052,
-        "conf": 2,
-        "moved": null,
-        "why": "Jacksonville by ten in the projection, but the line has already moved ten points (PHI -2.5 at open to JAX -7.5) for the Johnson retirement, the Jurgens trade and Barkley's hamstring, and -7.5 loses on a seven, so the side is a 1. What keeps it a lean is the travel (the Jaguars arrived a day earlier for a 10-day stay; the Eagles landed Saturday for a 9:30 AM ET kickoff) and an Eagles offense that was 29th in yards per play before it lost three starting linemen. The total is the stronger read: the Jaguars allow 13.3 points a game and have held four straight opponents to three or fewer first-half points, Lawrence has thrown 23 to 29 times a game, and the Eagles have not scored in two straight second halves. The risk to the under is turnovers by the rebuilt line giving Jacksonville short fields, and Jacksonville's 34 and 35 point games against Cleveland and New England, which is why it is a 2."
-       }
-      ],
-      "decimal": 6.958,
-      "price": 596,
-      "prob": 0.201,
-      "ev": 0.395,
-      "why": "Model 20% vs 14% implied at +596. Under 54.5 BUF@LAR: 59% model, -110 FD/DK; Under 41.5 DEN@LAC: 59% model, -110 FD/DK; Under 41.5 PHI@JAX: 58% model, -110 FD/DK.",
-      "score": 0.177
-     },
-     {
-      "rank": 4,
-      "legs": [
-       {
-        "type": "total",
-        "label": "Under 47.5 CHI@GB",
-        "game": "chi-gb",
-        "gameLabel": "CHI@GB",
-        "kickoff": "2026-10-11T17:00Z",
-        "prob": 0.59,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.066,
-        "conf": 2,
-        "moved": "model liked 45.5",
-        "why": "Chicago by three in the projection. The Bears run for 196.3 yards a game and face a defense that allows 139.3 and has lost Cooper to IR with Parsons still on PUP, while Green Bay's own run game is last at 58.0 and its interior line is missing Banks and Monk. The number touched -3 midweek and is back to -1.5, which is the better price; Bagent's zero touchdown passes and Love's record against Chicago (113.2 career rating, 13 touchdown passes) keep the side at a 2. The total leans under: Chicago's possession game (36:35 a game) limits opponents to 48 plays, three of its four games went under, and Green Bay cannot run to sustain drives. Green Bay allowing touchdowns on 12 of 14 red-zone trips is the risk to the under. ESPN's DraftKings feed shows 46.5 Saturday; take the higher number where it is offered."
-       },
-       {
-        "type": "total",
-        "label": "Under 41.5 DEN@LAC",
-        "game": "den-lac",
-        "gameLabel": "DEN@LAC",
-        "kickoff": "2026-10-11T20:05Z",
-        "prob": 0.59,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.066,
-        "conf": 2,
-        "moved": null,
-        "why": "Denver by five in the projection, but the market has already moved six points (LAC -2.5 to DEN -3.5) for the 0-4 start, Slater, Alt and the guards, and the receivers, and Denver plays without Surtain and Moss; ESPN's predictor still has it about even. That keeps the side at a 1. The total is the lean: Denver has scored 23 or fewer offensive points in all four games on 3.6 a carry, and the Chargers have reached 20 once, now with rookie tackles, a patched interior and a receiver room of Tre' Harris and backups. Both teams are 1-3 to the over. The two depleted secondaries are the risk, which is why it is a 2 and not a 3. The total has dropped from 44.5 to 41.5; do not chase it below 40.5."
-       },
-       {
-        "type": "total",
-        "label": "Under 41.5 PHI@JAX",
-        "game": "phi-jax",
-        "gameLabel": "PHI@JAX",
-        "kickoff": "2026-10-11T13:30Z",
-        "prob": 0.576,
-        "price": -110,
-        "book": "FD/DK",
-        "implied": 0.524,
-        "edge": 0.052,
-        "conf": 2,
-        "moved": null,
-        "why": "Jacksonville by ten in the projection, but the line has already moved ten points (PHI -2.5 at open to JAX -7.5) for the Johnson retirement, the Jurgens trade and Barkley's hamstring, and -7.5 loses on a seven, so the side is a 1. What keeps it a lean is the travel (the Jaguars arrived a day earlier for a 10-day stay; the Eagles landed Saturday for a 9:30 AM ET kickoff) and an Eagles offense that was 29th in yards per play before it lost three starting linemen. The total is the stronger read: the Jaguars allow 13.3 points a game and have held four straight opponents to three or fewer first-half points, Lawrence has thrown 23 to 29 times a game, and the Eagles have not scored in two straight second halves. The risk to the under is turnovers by the rebuilt line giving Jacksonville short fields, and Jacksonville's 34 and 35 point games against Cleveland and New England, which is why it is a 2."
-       }
-      ],
-      "decimal": 6.958,
-      "price": 596,
-      "prob": 0.201,
-      "ev": 0.395,
-      "why": "Model 20% vs 14% implied at +596. Under 47.5 CHI@GB: 59% model, -110 FD/DK; Under 41.5 DEN@LAC: 59% model, -110 FD/DK; Under 41.5 PHI@JAX: 58% model, -110 FD/DK.",
-      "score": 0.177
-     },
-     {
-      "rank": 5,
       "legs": [
        {
         "type": "total",
@@ -23367,6 +23283,103 @@
         "moved": null,
         "why": "Atlanta by seven in the projection. The side stays a 1: the market has moved 7.5 points through zero for Jackson, and the -122 on the 3 says the number is drifting to 3.5, so most of the edge is gone. The case for Atlanta is Henry against a defense allowing 2.7 a carry and two rushing touchdowns in four games, plus a Ravens line without Jurgens and possibly Vorhees against the league's pressure leader. The case against is Huntley's record as a fill-in, a Baltimore run defense that has not allowed a 100-yard rusher in 18 games, and an Atlanta team on a six-day turnaround after Monday night. The total is the stronger lean at 2: both teams want to run, the projection has 59 offensive plays a side, Baltimore loses its explosive passing (nine 25-yard completions from Jackson this year, one from Huntley in two 2025 starts), and Penix's 10.6 yards an attempt on 45 throws will not hold. Bijan's breakaway runs (55 and 59 yards the last two weeks) are the risk that keeps it a 2. Take 43.5 where it is offered; do not chase it below 42.5."
        },
+       {
+        "type": "total",
+        "label": "Under 54.5 BUF@LAR",
+        "game": "buf-lar",
+        "gameLabel": "BUF@LAR",
+        "kickoff": "2026-10-13T00:15Z",
+        "prob": 0.59,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.066,
+        "conf": 2,
+        "moved": null,
+        "why": "The Rams by four in the projection, against a line that has already moved from -2.5 to -3 and from -148 to -175. Buffalo is without Palmer and Oliver and may be without Moore, and its defense (372 yards a game, 30th in EPA per play) draws an offense that gains 417 yards a game. The side stays a 1 because the Rams have turned it over eight times and scored on only 8 of 15 red-zone trips. The total is the lean: the Rams allow 247.5 yards a game and 4.8 yards per pass attempt, their games have totalled 34 to 56, and the projection is 50 against 54.5. Buffalo's games averaging 58.5 points and both teams going 7-3 to the over in their last ten are why it is a 2, not a 3."
+       },
+       {
+        "type": "total",
+        "label": "Under 41.5 DEN@LAC",
+        "game": "den-lac",
+        "gameLabel": "DEN@LAC",
+        "kickoff": "2026-10-11T20:05Z",
+        "prob": 0.59,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.066,
+        "conf": 2,
+        "moved": null,
+        "why": "Denver by five in the projection, but the market has already moved six points (LAC -2.5 to DEN -3.5) for the 0-4 start, Slater, Alt and the guards, and the receivers, and Denver plays without Surtain and Moss; ESPN's predictor still has it about even. That keeps the side at a 1. The total is the lean: Denver has scored 23 or fewer offensive points in all four games on 3.6 a carry, and the Chargers have reached 20 once, now with rookie tackles, a patched interior and a receiver room of Tre' Harris and backups. Both teams are 1-3 to the over. The two depleted secondaries are the risk, which is why it is a 2 and not a 3. The total has dropped from 44.5 to 41.5; do not chase it below 40.5."
+       }
+      ],
+      "decimal": 6.958,
+      "price": 596,
+      "prob": 0.196,
+      "ev": 0.361,
+      "why": "Model 20% vs 14% implied at +596. Under 43.5 BAL@ATL: 56% model, -110 FD/DK; Under 54.5 BUF@LAR: 59% model, -110 FD/DK; Under 41.5 DEN@LAC: 59% model, -110 FD/DK.",
+      "score": 0.16
+     },
+     {
+      "rank": 4,
+      "legs": [
+       {
+        "type": "total",
+        "label": "Under 43.5 BAL@ATL",
+        "game": "bal-atl",
+        "gameLabel": "BAL@ATL",
+        "kickoff": "2026-10-12T00:20Z",
+        "prob": 0.562,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.038,
+        "conf": 2,
+        "moved": null,
+        "why": "Atlanta by seven in the projection. The side stays a 1: the market has moved 7.5 points through zero for Jackson, and the -122 on the 3 says the number is drifting to 3.5, so most of the edge is gone. The case for Atlanta is Henry against a defense allowing 2.7 a carry and two rushing touchdowns in four games, plus a Ravens line without Jurgens and possibly Vorhees against the league's pressure leader. The case against is Huntley's record as a fill-in, a Baltimore run defense that has not allowed a 100-yard rusher in 18 games, and an Atlanta team on a six-day turnaround after Monday night. The total is the stronger lean at 2: both teams want to run, the projection has 59 offensive plays a side, Baltimore loses its explosive passing (nine 25-yard completions from Jackson this year, one from Huntley in two 2025 starts), and Penix's 10.6 yards an attempt on 45 throws will not hold. Bijan's breakaway runs (55 and 59 yards the last two weeks) are the risk that keeps it a 2. Take 43.5 where it is offered; do not chase it below 42.5."
+       },
+       {
+        "type": "total",
+        "label": "Under 47.5 CHI@GB",
+        "game": "chi-gb",
+        "gameLabel": "CHI@GB",
+        "kickoff": "2026-10-11T17:00Z",
+        "prob": 0.59,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.066,
+        "conf": 2,
+        "moved": "model liked 45.5",
+        "why": "Chicago by three in the projection. The Bears run for 196.3 yards a game and face a defense that allows 139.3 and has lost Cooper to IR with Parsons still on PUP, while Green Bay's own run game is last at 58.0 and its interior line is missing Banks and Monk. The number touched -3 midweek and is back to -1.5, which is the better price; Bagent's zero touchdown passes and Love's record against Chicago (113.2 career rating, 13 touchdown passes) keep the side at a 2. The total leans under: Chicago's possession game (36:35 a game) limits opponents to 48 plays, three of its four games went under, and Green Bay cannot run to sustain drives. Green Bay allowing touchdowns on 12 of 14 red-zone trips is the risk to the under. ESPN's DraftKings feed shows 46.5 Saturday; take the higher number where it is offered."
+       },
+       {
+        "type": "total",
+        "label": "Under 41.5 DEN@LAC",
+        "game": "den-lac",
+        "gameLabel": "DEN@LAC",
+        "kickoff": "2026-10-11T20:05Z",
+        "prob": 0.59,
+        "price": -110,
+        "book": "FD/DK",
+        "implied": 0.524,
+        "edge": 0.066,
+        "conf": 2,
+        "moved": null,
+        "why": "Denver by five in the projection, but the market has already moved six points (LAC -2.5 to DEN -3.5) for the 0-4 start, Slater, Alt and the guards, and the receivers, and Denver plays without Surtain and Moss; ESPN's predictor still has it about even. That keeps the side at a 1. The total is the lean: Denver has scored 23 or fewer offensive points in all four games on 3.6 a carry, and the Chargers have reached 20 once, now with rookie tackles, a patched interior and a receiver room of Tre' Harris and backups. Both teams are 1-3 to the over. The two depleted secondaries are the risk, which is why it is a 2 and not a 3. The total has dropped from 44.5 to 41.5; do not chase it below 40.5."
+       }
+      ],
+      "decimal": 6.958,
+      "price": 596,
+      "prob": 0.196,
+      "ev": 0.361,
+      "why": "Model 20% vs 14% implied at +596. Under 43.5 BAL@ATL: 56% model, -110 FD/DK; Under 47.5 CHI@GB: 59% model, -110 FD/DK; Under 41.5 DEN@LAC: 59% model, -110 FD/DK.",
+      "score": 0.16
+     },
+     {
+      "rank": 5,
+      "legs": [
        {
         "type": "total",
         "label": "Under 43.5 CIN@MIA",
@@ -23398,12 +23411,12 @@
         "why": "Washington by three in the projection, so the dog gets half a point and nothing more: Daniels is worth the move from -135 to -170, but he is throwing to Williams, Brown and Burks in a storm, and the Giants are 3-1 against the spread. The total is the lean. Thunderstorms are forecast through the game window, the two receivers who caught half of Washington's touchdown passes are out or questionable, and Winston's offence has two red-zone touchdowns in seven trips. What keeps it at a 2: the number has already fallen from 44 to 41.5, and Washington's defence has allowed 30.5 points a game and is missing all three of its top safeties. FPI's 70.7% for Washington is the strongest argument against the dog."
        }
       ],
-      "decimal": 6.958,
-      "price": 596,
-      "prob": 0.178,
-      "ev": 0.235,
-      "why": "Model 18% vs 14% implied at +596. Under 43.5 BAL@ATL: 56% model, -110 FD/DK; Under 43.5 CIN@MIA: 56% model, -110 FD/DK; Under 41.5 NYG@WSH: 56% model, -110 FD/DK.",
-      "score": 0.099
+      "decimal": 3.645,
+      "price": 264,
+      "prob": 0.316,
+      "ev": 0.151,
+      "why": "Model 32% vs 27% implied at +264. Under 43.5 CIN@MIA: 56% model, -110 FD/DK; Under 41.5 NYG@WSH: 56% model, -110 FD/DK.",
+      "score": 0.085
      }
     ]
    },
@@ -23577,7 +23590,7 @@
   ]
  },
  "topTen": {
-  "builtAt": "2026-10-11T11:35:26.106Z",
+  "builtAt": "2026-10-11T16:25:13.700Z",
   "note": "Sides, totals and moneylines are priced from the projected score with the simulator’s spreads (13.4 margin, 10.6 total). Touchdown lists use the desk’s role-built estimates. Prop leans are not graded by a probability and are listed by kickoff.",
   "categories": [
    {
@@ -23646,18 +23659,6 @@
       "why": "Detroit by eight in the projection: 29.8 points a game and 405 yards against a defense allowing 29.3 and 8.6 yards an attempt, with Harrison's exit and a right side of the Arizona line starting Gaines and Wills against a 15-sack rush. The side is a 1, not more, because the market already moved three points toward Arizona, Detroit is 0-2 on the road, and the Cardinals hold the ball (opponents average 27 pass attempts) while the Lions' defense has allowed touchdowns on 14 of 17 red-zone trips. The total is a 1 the same way: every Lions game has cleared 54.5 and both defenses are bottom-three, but 54.5 already prices the shootout and Arizona's 4.6 yards a play is the drag; the projection lands at 56. Take -5.5 and 54.5 only where those numbers hold."
      },
      {
-      "game": "phi-jax",
-      "gameLabel": "PHI@JAX",
-      "kickoff": "2026-10-11T13:30Z",
-      "bet": "JAX -7.5",
-      "price": -110,
-      "prob": 0.574,
-      "implied": 0.524,
-      "edge": 0.05,
-      "conf": 1,
-      "why": "Jacksonville by ten in the projection, but the line has already moved ten points (PHI -2.5 at open to JAX -7.5) for the Johnson retirement, the Jurgens trade and Barkley's hamstring, and -7.5 loses on a seven, so the side is a 1. What keeps it a lean is the travel (the Jaguars arrived a day earlier for a 10-day stay; the Eagles landed Saturday for a 9:30 AM ET kickoff) and an Eagles offense that was 29th in yards per play before it lost three starting linemen. The total is the stronger read: the Jaguars allow 13.3 points a game and have held four straight opponents to three or fewer first-half points, Lawrence has thrown 23 to 29 times a game, and the Eagles have not scored in two straight second halves. The risk to the under is turnovers by the rebuilt line giving Jacksonville short fields, and Jacksonville's 34 and 35 point games against Cleveland and New England, which is why it is a 2."
-     },
-     {
       "game": "sf-sea",
       "gameLabel": "SF@SEA",
       "kickoff": "2026-10-11T20:25Z",
@@ -23704,6 +23705,18 @@
       "edge": 0.021,
       "conf": 1,
       "why": "Projected 22-18 Minnesota. The side is a 1 on the Vikings: Aaron Jones Sr. against a run defense allowing 5.2 a carry to backs and missing Elliss and Anfernee Jennings is the best matchup on the field, the Saints are on a six-day week after Monday night, and Minnesota's defense (51 points allowed, 2 of 11 in the red zone, 16 sacks, 74 pressures) meets a quarterback with 12 sacks and five fumbles. It stays a 1 because the Vikings' offense has one touchdown in three games, starts a backup left tackle and guard against Chase Young, and Jefferson is questionable. The total is a 1 under: Minnesota's games have totaled 61, 12, 39 and 25 and it held the ball 39 minutes last week, but every Saints game has reached 41 and New Orleans scores touchdowns on 80% of its red-zone trips, so 41.5 is close to fair after the move down from 42.5."
+     },
+     {
+      "game": "hou-ten",
+      "gameLabel": "HOU@TEN",
+      "kickoff": "2026-10-11T17:00Z",
+      "bet": "TEN +7",
+      "price": -110,
+      "prob": 0.53,
+      "implied": 0.524,
+      "edge": 0.006,
+      "conf": 1,
+      "why": "Houston by six in the projection, one short of the number. The Texans' passing game should move the ball against a secondary missing Hooker, but Houston runs for 3.5 a carry, is 8 of 14 in the red zone and scores 21 a game, a profile that wins by a field goal or a touchdown rather than by eight. Tennessee has lost its last three by 4, 5 and 6, is at home, and gets 7 after a three-point move; ESPN's FPI (66.6% Houston) is closer to a 4.5-point number. The case against is real: Houston sacked Ward 12 times in the two meetings last season and won them 23-0 and 16-13, and Tennessee has five turnovers in four games. That is why the lean is a 1. The total is a pass at 38 projected against 38.5: gusts to 21 mph and Tennessee's 13.8 points a game on one side, a Houston defense allowing 27.3 on the other."
      }
     ]
    },
@@ -23747,18 +23760,6 @@
       "edge": 0.141,
       "conf": 2,
       "why": "Denver by five in the projection, but the market has already moved six points (LAC -2.5 to DEN -3.5) for the 0-4 start, Slater, Alt and the guards, and the receivers, and Denver plays without Surtain and Moss; ESPN's predictor still has it about even. That keeps the side at a 1. The total is the lean: Denver has scored 23 or fewer offensive points in all four games on 3.6 a carry, and the Chargers have reached 20 once, now with rookie tackles, a patched interior and a receiver room of Tre' Harris and backups. Both teams are 1-3 to the over. The two depleted secondaries are the risk, which is why it is a 2 and not a 3. The total has dropped from 44.5 to 41.5; do not chase it below 40.5."
-     },
-     {
-      "game": "phi-jax",
-      "gameLabel": "PHI@JAX",
-      "kickoff": "2026-10-11T13:30Z",
-      "bet": "Under 41.5",
-      "price": -110,
-      "prob": 0.629,
-      "implied": 0.524,
-      "edge": 0.106,
-      "conf": 2,
-      "why": "Jacksonville by ten in the projection, but the line has already moved ten points (PHI -2.5 at open to JAX -7.5) for the Johnson retirement, the Jurgens trade and Barkley's hamstring, and -7.5 loses on a seven, so the side is a 1. What keeps it a lean is the travel (the Jaguars arrived a day earlier for a 10-day stay; the Eagles landed Saturday for a 9:30 AM ET kickoff) and an Eagles offense that was 29th in yards per play before it lost three starting linemen. The total is the stronger read: the Jaguars allow 13.3 points a game and have held four straight opponents to three or fewer first-half points, Lawrence has thrown 23 to 29 times a game, and the Eagles have not scored in two straight second halves. The risk to the under is turnovers by the rebuilt line giving Jacksonville short fields, and Jacksonville's 34 and 35 point games against Cleveland and New England, which is why it is a 2."
      },
      {
       "game": "bal-atl",
@@ -23850,18 +23851,6 @@
       "edge": 0.046,
       "conf": null,
       "why": "Projected CIN 26, MIA 15."
-     },
-     {
-      "game": "phi-jax",
-      "gameLabel": "PHI@JAX",
-      "kickoff": "2026-10-11T13:30Z",
-      "bet": "JAX ML",
-      "price": -380,
-      "prob": 0.772,
-      "implied": 0.766,
-      "edge": 0.006,
-      "conf": null,
-      "why": "Projected PHI 14, JAX 24."
      },
      {
       "game": "det-ari",
@@ -23958,6 +23947,18 @@
       "edge": 0.057,
       "conf": null,
       "why": "Projected CHI 23, GB 20."
+     },
+     {
+      "game": "ind-pit",
+      "gameLabel": "IND@PIT",
+      "kickoff": "2026-10-11T17:00Z",
+      "bet": "PIT ML",
+      "price": -148,
+      "prob": 0.589,
+      "implied": 0.572,
+      "edge": 0.017,
+      "conf": null,
+      "why": "Projected IND 20, PIT 23."
      }
     ]
    },
@@ -24144,40 +24145,6 @@
     "blurb": "Biggest gap between our number and the price.",
     "plays": [
      {
-      "game": "phi-jax",
-      "gameLabel": "PHI@JAX",
-      "kickoff": "2026-10-11T13:30Z",
-      "name": "Chris Rodriguez Jr.",
-      "team": "JAX",
-      "pos": "RB",
-      "price": 350,
-      "priceNote": null,
-      "prob": 0.28,
-      "implied": 0.222,
-      "edge": 0.058,
-      "est2": 0.04,
-      "price2": 3500,
-      "why": "The closer: 6 red-zone carries, 2 inside the 5, and touchdowns the last two weeks from the 5 and the 25. Jacksonville is favored by 7.5, and a lead hands him the fourth-quarter carries against a front that allows 4.1 a carry to backs. DraftKings' +350 (22.2%) against a 28% read is the best price-to-role in the game; FanDuel is +340.",
-      "bet": "Chris Rodriguez Jr. anytime TD"
-     },
-     {
-      "game": "phi-jax",
-      "gameLabel": "PHI@JAX",
-      "kickoff": "2026-10-11T13:30Z",
-      "name": "Darius Cooper",
-      "team": "PHI",
-      "pos": "WR",
-      "price": 650,
-      "priceNote": null,
-      "prob": 0.19,
-      "implied": 0.133,
-      "edge": 0.057,
-      "est2": 0.019,
-      "price2": 8000,
-      "why": "Three touchdowns on 10 targets in his two games (from the 3, 18 and 10), 4 red-zone targets and 2 inside the 5. In Week 4, the only game without Smith and Brown, he led the Eagles with 7 targets. FanDuel's +650 (13.3%) against a 19% read is the clearest gap on the board; DraftKings is +550.",
-      "bet": "Darius Cooper anytime TD"
-     },
-     {
       "game": "hou-ten",
       "gameLabel": "HOU@TEN",
       "kickoff": "2026-10-11T17:00Z",
@@ -24312,6 +24279,40 @@
       "price2": 17000,
       "why": "Two touchdowns on three looks inside the 10 (from the 7 against Jacksonville and the 8 against the Rams) as Payton's goal-line tight end, on five targets all season. FanDuel's +1500 (6.3%) against an 8.5% read is the best long price in the game; DraftKings is +1300.",
       "bet": "Nate Adkins anytime TD"
+     },
+     {
+      "game": "lv-ne",
+      "gameLabel": "LV@NE",
+      "kickoff": "2026-10-11T17:00Z",
+      "name": "Cody White",
+      "team": "LV",
+      "pos": "WR",
+      "price": 500,
+      "priceNote": null,
+      "prob": 0.19,
+      "implied": 0.167,
+      "edge": 0.023,
+      "est2": 0.019,
+      "price2": 5500,
+      "why": "Three touchdowns on 10 targets, all from inside the 13 (two at the Chargers, one from the 4 at New Orleans), four red-zone targets, and targets rising 1-2-3-4. Nailor being out puts him in every three-receiver set against a corner room of Marcus Jones and Charles Woods (questionable). The scoring rate will regress, which is why the read is 19% and not higher; DK's +500 (16.7%) still clears it. FanDuel is +480.",
+      "bet": "Cody White anytime TD"
+     },
+     {
+      "game": "nyg-wsh",
+      "gameLabel": "NYG@WSH",
+      "kickoff": "2026-10-11T17:00Z",
+      "name": "Antonio Williams",
+      "team": "WSH",
+      "pos": "WR",
+      "price": 320,
+      "priceNote": null,
+      "prob": 0.26,
+      "implied": 0.238,
+      "edge": 0.022,
+      "est2": 0.037,
+      "price2": 3000,
+      "why": "With Diggs out and McLaurin unlikely, the slot receiver is Washington's most-targeted healthy receiver (19 targets, 8 last week) and caught Daniels' 1-yard touchdown in Week 1. Diggs' four red-zone targets have to go somewhere and the slot is first in line. DraftKings' +320 (23.8%) is under a 26% read.",
+      "bet": "Antonio Williams anytime TD"
      }
     ]
    },
@@ -24508,18 +24509,6 @@
     "blurb": "The desk’s written leans, one per game by kickoff. Not probability-graded.",
     "plays": [
      {
-      "game": "phi-jax",
-      "gameLabel": "PHI@JAX",
-      "kickoff": "2026-10-11T13:30Z",
-      "bet": "Trevor Lawrence under 225 pass yds",
-      "price": null,
-      "prob": null,
-      "implied": null,
-      "edge": null,
-      "conf": null,
-      "why": "245, 189, 182 and 227 yards on 23, 29, 29 and 23 attempts; as a 7.5-point favorite against a defense allowing 6.55 yards per attempt, the projection is 27 attempts, 67% completions and 200 yards. DraftKings' 225.5 (-113 over) sits 25 yards above that; FanDuel is 224.5."
-     },
-     {
       "game": "chi-gb",
       "gameLabel": "CHI@GB",
       "kickoff": "2026-10-11T17:00Z",
@@ -24626,6 +24615,18 @@
       "edge": null,
       "conf": null,
       "why": "43, 94, 56 and 45 yards: over 39.5 in every game, including last week's 9-carry committee day. Denver allows 4.76 a carry (Kenneth Walker III ran for 173). The desk projects 11 carries and 47 yards. The risk is Mitchell's snap share and an interior line without Penning and Awosika. DraftKings 39.5 at -110, FanDuel 39.5 at -102."
+     },
+     {
+      "game": "det-ari",
+      "gameLabel": "DET@ARI",
+      "kickoff": "2026-10-11T20:25Z",
+      "bet": "Jared Goff over 277 pass yds",
+      "price": -121,
+      "prob": null,
+      "implied": null,
+      "edge": null,
+      "conf": null,
+      "why": "Arizona allows 8.6 yards an attempt and a 114.9 passer rating, worst in the league; Goff has 327, 269 and 412 in his last three with 32 to 52 attempts, 67.7% completions and 11.1 a completion. The desk projects 302 on 37 throws; DraftKings' main is 279.5 (over -111), FanDuel's 274.5. The risk is Arizona's possession habit holding Detroit to the low 30s in attempts."
      }
     ]
    }
@@ -24639,10 +24640,10 @@
    "kind": "parlay",
    "price": 1228,
    "book": "desk prices",
-   "prob": 0.1841,
-   "fair": 443,
-   "ev": 1.45,
-   "why": "The four totals the projection is most sure land under, one per game. Hits 18.4% of the time by the model, fair +443.",
+   "prob": 0.1736,
+   "fair": 476,
+   "ev": 1.31,
+   "why": "The four totals the projection is most sure land under, one per game. Hits 17.4% of the time by the model, fair +476.",
    "legs": [
     {
      "label": "BUF@LAR Under 54.5",
@@ -24660,7 +24661,7 @@
      "book": null
     },
     {
-     "label": "PHI@JAX Under 41.5",
+     "label": "BAL@ATL Under 43.5",
      "price": -110,
      "book": null
     }
@@ -24706,22 +24707,17 @@
    ]
   },
   {
-   "game": "phi-jax",
+   "game": "hou-ten",
    "gameLabel": "4 games",
    "bet": "TD value four",
    "kind": "parlay",
-   "price": 97870,
+   "price": 130526,
    "book": "desk prices",
-   "prob": 0.0025,
-   "fair": 40392,
-   "ev": 1.42,
-   "why": "Four scorers the price undersells most, all confirmed at a book, all different games. Hits 0.2% of the time by the model, fair +40392.",
+   "prob": 0.0018,
+   "fair": 56589,
+   "ev": 1.3,
+   "why": "Four scorers the price undersells most, all confirmed at a book, all different games. Hits 0.2% of the time by the model, fair +56589.",
    "legs": [
-    {
-     "label": "PHI@JAX Chris Rodriguez Jr. anytime TD",
-     "price": 350,
-     "book": null
-    },
     {
      "label": "HOU@TEN Wan'Dale Robinson anytime TD",
      "price": 490,
@@ -24736,26 +24732,26 @@
      "label": "IND@PIT Pat Freiermuth anytime TD",
      "price": 310,
      "book": null
+    },
+    {
+     "label": "CHI@GB Roschon Johnson anytime TD",
+     "price": 500,
+     "book": null
     }
    ]
   },
   {
-   "game": "phi-jax",
+   "game": "min-no",
    "gameLabel": "3 games",
    "bet": "Long-shot scorers",
    "kind": "parlay",
-   "price": 40400,
+   "price": 86300,
    "book": "desk prices",
-   "prob": 0.0057,
-   "fair": 17444,
-   "ev": 1.31,
-   "why": "Three scorers at +500 or longer whose role says the book is short. Prices need a check before you fire. Hits 0.6% of the time by the model, fair +17444.",
+   "prob": 0.0026,
+   "fair": 39116,
+   "ev": 1.2,
+   "why": "Three scorers at +500 or longer whose role says the book is short. Prices need a check before you fire. Hits 0.3% of the time by the model, fair +39116.",
    "legs": [
-    {
-     "label": "PHI@JAX Darius Cooper anytime TD",
-     "price": 650,
-     "book": null
-    },
     {
      "label": "MIN@NO Noah Fant anytime TD",
      "price": 800,
@@ -24765,13 +24761,20 @@
      "label": "CHI@GB Roschon Johnson anytime TD",
      "price": 500,
      "book": null
+    },
+    {
+     "label": "DEN@LAC Nate Adkins anytime TD",
+     "price": 1500,
+     "book": null
     }
    ]
   }
  ],
  "fiveLeg": {
-  "builtAt": "2026-10-10T19:33:42.394Z",
+  "builtAt": "2026-10-11T16:15:29.309Z",
   "target": 6,
+  "checkedAt": "2026-10-11T16:25:00Z",
+  "pricedAt": "2026-10-11T14:41:00Z",
   "tickets": [
    {
     "game": "hou-ten",
@@ -24782,7 +24785,9 @@
     "joint": 0.2911,
     "bookJoint": 0.2233,
     "short": true,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "C.J. Stroud",
@@ -24843,6 +24848,91 @@
     ]
    },
    {
+    "game": "ind-pit",
+    "gameLabel": "IND@PIT",
+    "kickoff": "2026-10-11T17:00Z",
+    "price": 530,
+    "decimal": 6.3,
+    "joint": 0.2477,
+    "bookJoint": 0.1587,
+    "short": false,
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": "Heavy rain from the remnants of Isaias, and Tyler Warren's main receptions line fell to the alternate line we held. Pulled after the morning check.",
+    "check": null,
+    "legs": [
+     {
+      "player": "Aaron Rodgers",
+      "team": "PIT",
+      "label": "Aaron Rodgers 190+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 189.5,
+      "price": -224,
+      "book": "draftkings",
+      "p": 0.79,
+      "model": 0.833,
+      "implied": 0.691,
+      "mean": 253
+     },
+     {
+      "player": "Roman Wilson",
+      "team": "PIT",
+      "label": "Roman Wilson 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -250,
+      "book": "draftkings",
+      "p": 0.785,
+      "model": 0.815,
+      "implied": 0.714,
+      "mean": 53
+     },
+     {
+      "player": "Jaylen Warren",
+      "team": "PIT",
+      "label": "Jaylen Warren 15+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 14.5,
+      "price": -200,
+      "book": "fanduel",
+      "p": 0.777,
+      "model": 0.825,
+      "implied": 0.667,
+      "mean": 33
+     },
+     {
+      "player": "Pat Freiermuth",
+      "team": "PIT",
+      "label": "Pat Freiermuth 20+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.721,
+      "model": 0.732,
+      "implied": 0.697,
+      "mean": 31
+     },
+     {
+      "player": "Josh Downs",
+      "team": "IND",
+      "label": "Josh Downs 40+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 39.5,
+      "price": -225,
+      "book": "draftkings",
+      "p": 0.713,
+      "model": 0.722,
+      "implied": 0.692,
+      "mean": 61
+     }
+    ]
+   },
+   {
     "game": "cin-mia",
     "gameLabel": "CIN@MIA",
     "kickoff": "2026-10-11T17:00Z",
@@ -24851,7 +24941,9 @@
     "joint": 0.2359,
     "bookJoint": 0.1665,
     "short": true,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Joe Burrow",
@@ -24912,89 +25004,6 @@
     ]
    },
    {
-    "game": "nyg-wsh",
-    "gameLabel": "NYG@WSH",
-    "kickoff": "2026-10-11T17:00Z",
-    "price": 549,
-    "decimal": 6.49,
-    "joint": 0.2297,
-    "bookJoint": 0.1539,
-    "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
-    "legs": [
-     {
-      "player": "Isaiah Likely",
-      "team": "NYG",
-      "label": "Isaiah Likely 4+ receptions",
-      "market": "receptions",
-      "side": "over",
-      "point": 3.5,
-      "price": -245,
-      "book": "fanduel",
-      "p": 0.807,
-      "model": 0.849,
-      "implied": 0.71,
-      "mean": 6
-     },
-     {
-      "player": "Jayden Daniels",
-      "team": "WSH",
-      "label": "Jayden Daniels 20+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -247,
-      "book": "draftkings",
-      "p": 0.766,
-      "model": 0.79,
-      "implied": 0.712,
-      "mean": 35
-     },
-     {
-      "player": "Najee Harris",
-      "team": "NYG",
-      "label": "Najee Harris 20+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -232,
-      "book": "draftkings",
-      "p": 0.735,
-      "model": 0.75,
-      "implied": 0.699,
-      "mean": 31
-     },
-     {
-      "player": "Jameis Winston",
-      "team": "NYG",
-      "label": "Jameis Winston 175+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 174.5,
-      "price": -230,
-      "book": "fanduel",
-      "p": 0.718,
-      "model": 0.727,
-      "implied": 0.697,
-      "mean": 207
-     },
-     {
-      "player": "Rachaad White",
-      "team": "WSH",
-      "label": "Rachaad White 20+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -167,
-      "book": "draftkings",
-      "p": 0.704,
-      "model": 0.738,
-      "implied": 0.625,
-      "mean": 30
-     }
-    ]
-   },
-   {
     "game": "buf-lar",
     "gameLabel": "BUF@LAR",
     "kickoff": "2026-10-13T00:15Z",
@@ -25003,7 +25012,9 @@
     "joint": 0.2287,
     "bookJoint": 0.1401,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Kyren Williams",
@@ -25081,12 +25092,14 @@
     "game": "cle-nyj",
     "gameLabel": "CLE@NYJ",
     "kickoff": "2026-10-11T17:00Z",
-    "price": 503,
-    "decimal": 6.03,
-    "joint": 0.2175,
-    "bookJoint": 0.1654,
+    "price": 585,
+    "decimal": 6.85,
+    "joint": 0.2274,
+    "bookJoint": 0.146,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": "MetLife, rain all game with gusts near 22 mph. Inactives are out and all five are active. Gabriel is out, so Watson starts; Carsen Ryan and Tylan Wallace are inactive, which funnels targets to Fannin. Boston's 3+ catches is the softest leg.",
     "legs": [
      {
       "player": "Quinshon Judkins",
@@ -25103,143 +25116,230 @@
       "mean": 23
      },
      {
+      "player": "Deshaun Watson",
+      "team": "CLE",
+      "label": "Deshaun Watson 170+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 169.5,
+      "price": -203,
+      "book": "draftkings",
+      "p": 0.744,
+      "model": 0.775,
+      "implied": 0.67,
+      "mean": 211
+     },
+     {
+      "player": "Geno Smith",
+      "team": "NYJ",
+      "label": "Geno Smith 175+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 174.5,
+      "price": -220,
+      "book": "fanduel",
+      "p": 0.742,
+      "model": 0.766,
+      "implied": 0.688,
+      "mean": 215
+     },
+     {
       "player": "Harold Fannin Jr.",
       "team": "CLE",
       "label": "Harold Fannin Jr. 25+ rec yds",
       "market": "rec_yds",
       "side": "over",
       "point": 24.5,
-      "price": -246,
+      "price": -223,
       "book": "draftkings",
-      "p": 0.737,
+      "p": 0.731,
       "model": 0.749,
-      "implied": 0.711,
+      "implied": 0.69,
       "mean": 41
      },
      {
-      "player": "Deshaun Watson",
+      "player": "Denzel Boston",
       "team": "CLE",
-      "label": "Deshaun Watson 175+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 174.5,
-      "price": -235,
-      "book": "fanduel",
-      "p": 0.733,
-      "model": 0.747,
-      "implied": 0.701,
-      "mean": 211
-     },
-     {
-      "player": "Geno Smith",
-      "team": "NYJ",
-      "label": "Geno Smith 180+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 179.5,
-      "price": -243,
-      "book": "draftkings",
-      "p": 0.729,
-      "model": 0.737,
-      "implied": 0.708,
-      "mean": 215
-     },
-     {
-      "player": "KC Concepcion",
-      "team": "CLE",
-      "label": "KC Concepcion 4+ receptions",
+      "label": "Denzel Boston 3+ receptions",
       "market": "receptions",
       "side": "over",
-      "point": 3.5,
-      "price": -198,
-      "book": "fanduel",
-      "p": 0.693,
-      "model": 0.706,
-      "implied": 0.664,
-      "mean": 4.8
+      "point": 2.5,
+      "price": -186,
+      "book": "draftkings",
+      "p": 0.707,
+      "model": 0.731,
+      "implied": 0.65,
+      "mean": 3.8
      }
     ]
    },
    {
-    "game": "min-no",
-    "gameLabel": "MIN@NO",
+    "game": "chi-gb",
+    "gameLabel": "CHI@GB",
     "kickoff": "2026-10-11T17:00Z",
-    "price": 584,
-    "decimal": 6.84,
-    "joint": 0.2124,
-    "bookJoint": 0.1462,
+    "price": 624,
+    "decimal": 7.24,
+    "joint": 0.2271,
+    "bookJoint": 0.1382,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": "Lambeau, dry. Inactives are out and all five are active. Caleb Williams sits (Bagent starts) and Monangai is out, so Roschon Johnson is RB2 behind Swift: the softest leg here. Jacobs is on the exempt list and Brooks on IR, so Lloyd leads Green Bay.",
     "legs": [
      {
-      "player": "T.J. Hockenson",
-      "team": "MIN",
-      "label": "T.J. Hockenson 25+ rec yds",
+      "player": "Roschon Johnson",
+      "team": "CHI",
+      "label": "Roschon Johnson 15+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 14.5,
+      "price": -225,
+      "book": "draftkings",
+      "p": 0.804,
+      "model": 0.851,
+      "implied": 0.692,
+      "mean": 34
+     },
+     {
+      "player": "MarShawn Lloyd",
+      "team": "GB",
+      "label": "MarShawn Lloyd 20+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -205,
+      "book": "draftkings",
+      "p": 0.748,
+      "model": 0.781,
+      "implied": 0.672,
+      "mean": 34
+     },
+     {
+      "player": "Kalif Raymond",
+      "team": "CHI",
+      "label": "Kalif Raymond 20+ rec yds",
       "market": "rec_yds",
       "side": "over",
-      "point": 24.5,
-      "price": -249,
-      "book": "draftkings",
-      "p": 0.769,
-      "model": 0.793,
-      "implied": 0.713,
+      "point": 19.5,
+      "price": -210,
+      "book": "fanduel",
+      "p": 0.747,
+      "model": 0.778,
+      "implied": 0.677,
+      "mean": 36
+     },
+     {
+      "player": "Rome Odunze",
+      "team": "CHI",
+      "label": "Rome Odunze 30+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 29.5,
+      "price": -200,
+      "book": "fanduel",
+      "p": 0.718,
+      "model": 0.74,
+      "implied": 0.667,
       "mean": 48
      },
      {
-      "player": "Tyler Shough",
-      "team": "NO",
-      "label": "Tyler Shough 210+ pass yds",
-      "market": "pass_yds",
+      "player": "Christian Watson",
+      "team": "GB",
+      "label": "Christian Watson 50+ rec yds",
+      "market": "rec_yds",
       "side": "over",
-      "point": 209.5,
-      "price": -224,
-      "book": "draftkings",
-      "p": 0.732,
-      "model": 0.75,
-      "implied": 0.691,
-      "mean": 254
+      "point": 49.5,
+      "price": -192,
+      "book": "fanduel",
+      "p": 0.704,
+      "model": 0.724,
+      "implied": 0.658,
+      "mean": 77
+     }
+    ]
+   },
+   {
+    "game": "den-lac",
+    "gameLabel": "DEN@LAC",
+    "kickoff": "2026-10-11T20:05Z",
+    "price": 528,
+    "decimal": 6.28,
+    "joint": 0.2254,
+    "bookJoint": 0.1596,
+    "short": false,
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": "SoFi, under the roof. Quentin Johnston is out and Ladd McConkey is not expected to play; Denver put Pat Bryant on IR. Inactives post about 2:35 PM ET.",
+    "legs": [
+     {
+      "player": "RJ Harvey",
+      "team": "DEN",
+      "label": "RJ Harvey 20+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.758,
+      "model": 0.785,
+      "implied": 0.697,
+      "mean": 37
      },
      {
-      "player": "Chris Olave",
-      "team": "NO",
-      "label": "Chris Olave 6+ receptions",
-      "market": "receptions",
+      "player": "Oronde Gadsden",
+      "team": "LAC",
+      "label": "Oronde Gadsden 25+ rec yds",
+      "market": "rec_yds",
       "side": "over",
-      "point": 5.5,
+      "point": 24.5,
+      "price": -219,
+      "book": "draftkings",
+      "p": 0.753,
+      "model": 0.782,
+      "implied": 0.687,
+      "mean": 46
+     },
+     {
+      "player": "Courtland Sutton",
+      "team": "DEN",
+      "label": "Courtland Sutton 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -233,
+      "book": "draftkings",
+      "p": 0.739,
+      "model": 0.756,
+      "implied": 0.7,
+      "mean": 42
+     },
+     {
+      "player": "Omarion Hampton",
+      "team": "LAC",
+      "label": "Omarion Hampton 30+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 29.5,
+      "price": -225,
+      "book": "fanduel",
+      "p": 0.733,
+      "model": 0.751,
+      "implied": 0.692,
+      "mean": 47
+     },
+     {
+      "player": "Justin Herbert",
+      "team": "LAC",
+      "label": "Justin Herbert 175+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 174.5,
       "price": -220,
       "book": "fanduel",
       "p": 0.729,
       "model": 0.747,
       "implied": 0.688,
-      "mean": 7.4
-     },
-     {
-      "player": "Devaughn Vele",
-      "team": "NO",
-      "label": "Devaughn Vele 30+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 29.5,
-      "price": -240,
-      "book": "fanduel",
-      "p": 0.725,
-      "model": 0.733,
-      "implied": 0.706,
-      "mean": 47
-     },
-     {
-      "player": "Aaron Jones Sr.",
-      "team": "MIN",
-      "label": "Aaron Jones Sr. 15+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 14.5,
-      "price": -157,
-      "book": "draftkings",
-      "p": 0.714,
-      "model": 0.758,
-      "implied": 0.611,
-      "mean": 25
+      "mean": 211
      }
     ]
    },
@@ -25252,7 +25352,9 @@
     "joint": 0.2087,
     "bookJoint": 0.1658,
     "short": true,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Kaelon Black",
@@ -25313,6 +25415,91 @@
     ]
    },
    {
+    "game": "nyg-wsh",
+    "gameLabel": "NYG@WSH",
+    "kickoff": "2026-10-11T17:00Z",
+    "price": 594,
+    "decimal": 6.94,
+    "joint": 0.2081,
+    "bookJoint": 0.1439,
+    "short": false,
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": "Rain with gusts to 26 mph at Northwest Stadium, a backup QB, and two committee backfields. Pulled after the morning check.",
+    "check": null,
+    "legs": [
+     {
+      "player": "Isaiah Likely",
+      "team": "NYG",
+      "label": "Isaiah Likely 4+ receptions",
+      "market": "receptions",
+      "side": "over",
+      "point": 3.5,
+      "price": -240,
+      "book": "fanduel",
+      "p": 0.806,
+      "model": 0.849,
+      "implied": 0.706,
+      "mean": 6
+     },
+     {
+      "player": "Najee Harris",
+      "team": "NYG",
+      "label": "Najee Harris 20+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.734,
+      "model": 0.75,
+      "implied": 0.697,
+      "mean": 31
+     },
+     {
+      "player": "Jameis Winston",
+      "team": "NYG",
+      "label": "Jameis Winston 175+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 174.5,
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.718,
+      "model": 0.727,
+      "implied": 0.697,
+      "mean": 207
+     },
+     {
+      "player": "Rachaad White",
+      "team": "WSH",
+      "label": "Rachaad White 20+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -172,
+      "book": "fanduel",
+      "p": 0.706,
+      "model": 0.738,
+      "implied": 0.632,
+      "mean": 30
+     },
+     {
+      "player": "Jayden Daniels",
+      "team": "WSH",
+      "label": "Jayden Daniels 25+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -198,
+      "book": "fanduel",
+      "p": 0.694,
+      "model": 0.707,
+      "implied": 0.664,
+      "mean": 35
+     }
+    ]
+   },
+   {
     "game": "bal-atl",
     "gameLabel": "BAL@ATL",
     "kickoff": "2026-10-12T00:20Z",
@@ -25321,7 +25508,9 @@
     "joint": 0.208,
     "bookJoint": 0.1587,
     "short": true,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Mark Andrews",
@@ -25382,98 +25571,17 @@
     ]
    },
    {
-    "game": "den-lac",
-    "gameLabel": "DEN@LAC",
-    "kickoff": "2026-10-11T20:05Z",
-    "price": 593,
-    "decimal": 6.93,
-    "joint": 0.2064,
-    "bookJoint": 0.1443,
-    "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
-    "legs": [
-     {
-      "player": "RJ Harvey",
-      "team": "DEN",
-      "label": "RJ Harvey 20+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -230,
-      "book": "fanduel",
-      "p": 0.758,
-      "model": 0.785,
-      "implied": 0.697,
-      "mean": 37
-     },
-     {
-      "player": "Courtland Sutton",
-      "team": "DEN",
-      "label": "Courtland Sutton 25+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 24.5,
-      "price": -222,
-      "book": "draftkings",
-      "p": 0.736,
-      "model": 0.756,
-      "implied": 0.689,
-      "mean": 42
-     },
-     {
-      "player": "Justin Herbert",
-      "team": "LAC",
-      "label": "Justin Herbert 175+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 174.5,
-      "price": -220,
-      "book": "fanduel",
-      "p": 0.729,
-      "model": 0.747,
-      "implied": 0.688,
-      "mean": 211
-     },
-     {
-      "player": "Omarion Hampton",
-      "team": "LAC",
-      "label": "Omarion Hampton 30+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 29.5,
-      "price": -188,
-      "book": "fanduel",
-      "p": 0.721,
-      "model": 0.751,
-      "implied": 0.653,
-      "mean": 47
-     },
-     {
-      "player": "Keaton Mitchell",
-      "team": "LAC",
-      "label": "Keaton Mitchell 25+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 24.5,
-      "price": -202,
-      "book": "draftkings",
-      "p": 0.704,
-      "model": 0.719,
-      "implied": 0.669,
-      "mean": 36
-     }
-    ]
-   },
-   {
     "game": "det-ari",
     "gameLabel": "DET@ARI",
     "kickoff": "2026-10-11T20:25Z",
-    "price": 521,
-    "decimal": 6.21,
-    "joint": 0.2013,
-    "bookJoint": 0.1611,
+    "price": 554,
+    "decimal": 6.54,
+    "joint": 0.1985,
+    "bookJoint": 0.1531,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": "Under the roof. Marvin Harrison Jr. is inactive, which pushes targets to Michael Wilson. Inactives post about 2:55 PM ET.",
     "legs": [
      {
       "player": "Michael Wilson",
@@ -25482,11 +25590,11 @@
       "market": "receptions",
       "side": "over",
       "point": 5.5,
-      "price": -225,
-      "book": "fanduel",
-      "p": 0.746,
+      "price": -204,
+      "book": "draftkings",
+      "p": 0.74,
       "model": 0.769,
-      "implied": 0.692,
+      "implied": 0.671,
       "mean": 7.6
      },
      {
@@ -25496,26 +25604,12 @@
       "market": "pass_yds",
       "side": "over",
       "point": 249.5,
-      "price": -238,
-      "book": "draftkings",
-      "p": 0.735,
-      "model": 0.748,
-      "implied": 0.704,
-      "mean": 302
-     },
-     {
-      "player": "Tyler Allgeier",
-      "team": "ARI",
-      "label": "Tyler Allgeier 20+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -240,
+      "price": -245,
       "book": "fanduel",
-      "p": 0.719,
-      "model": 0.724,
-      "implied": 0.706,
-      "mean": 29
+      "p": 0.737,
+      "model": 0.748,
+      "implied": 0.71,
+      "mean": 302
      },
      {
       "player": "Sam LaPorta",
@@ -25539,177 +25633,110 @@
       "side": "over",
       "point": 39.5,
       "price": -215,
-      "book": "fanduel",
+      "book": "draftkings",
       "p": 0.714,
       "model": 0.727,
       "implied": 0.683,
       "mean": 62
-     }
-    ]
-   },
-   {
-    "game": "chi-gb",
-    "gameLabel": "CHI@GB",
-    "kickoff": "2026-10-11T17:00Z",
-    "price": 608,
-    "decimal": 7.08,
-    "joint": 0.1994,
-    "bookJoint": 0.1414,
-    "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
-    "legs": [
+     },
      {
-      "player": "MarShawn Lloyd",
-      "team": "GB",
-      "label": "MarShawn Lloyd 20+ rush yds",
+      "player": "Tyler Allgeier",
+      "team": "ARI",
+      "label": "Tyler Allgeier 20+ rush yds",
       "market": "rush_yds",
       "side": "over",
       "point": 19.5,
-      "price": -220,
+      "price": -218,
       "book": "draftkings",
-      "p": 0.753,
-      "model": 0.781,
-      "implied": 0.688,
-      "mean": 34
-     },
-     {
-      "player": "Kalif Raymond",
-      "team": "CHI",
-      "label": "Kalif Raymond 20+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -200,
-      "book": "fanduel",
-      "p": 0.744,
-      "model": 0.778,
-      "implied": 0.667,
-      "mean": 36
-     },
-     {
-      "player": "Rome Odunze",
-      "team": "CHI",
-      "label": "Rome Odunze 30+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 29.5,
-      "price": -205,
-      "book": "fanduel",
-      "p": 0.719,
-      "model": 0.74,
-      "implied": 0.672,
-      "mean": 48
-     },
-     {
-      "player": "Christian Watson",
-      "team": "GB",
-      "label": "Christian Watson 50+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 49.5,
-      "price": -192,
-      "book": "fanduel",
-      "p": 0.704,
+      "p": 0.713,
       "model": 0.724,
-      "implied": 0.658,
-      "mean": 77
-     },
-     {
-      "player": "Luther Burden III",
-      "team": "CHI",
-      "label": "Luther Burden III 4+ receptions",
-      "market": "receptions",
-      "side": "over",
-      "point": 3.5,
-      "price": -230,
-      "book": "fanduel",
-      "p": 0.703,
-      "model": 0.706,
-      "implied": 0.697,
-      "mean": 4.8
+      "implied": 0.686,
+      "mean": 29
      }
     ]
    },
    {
-    "game": "ind-pit",
-    "gameLabel": "IND@PIT",
+    "game": "min-no",
+    "gameLabel": "MIN@NO",
     "kickoff": "2026-10-11T17:00Z",
-    "price": 734,
-    "decimal": 8.34,
-    "joint": 0.1989,
-    "bookJoint": 0.1197,
+    "price": 601,
+    "decimal": 7.01,
+    "joint": 0.1908,
+    "bookJoint": 0.1427,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": "Superdome. Inactives are out and all five are active; Olave and Shough practiced fully Friday with no designation.",
     "legs": [
      {
-      "player": "Aaron Rodgers",
-      "team": "PIT",
-      "label": "Aaron Rodgers 200+ pass yds",
-      "market": "pass_yds",
+      "player": "Chris Olave",
+      "team": "NO",
+      "label": "Chris Olave 6+ receptions",
+      "market": "receptions",
       "side": "over",
-      "point": 199.5,
-      "price": -210,
+      "point": 5.5,
+      "price": -225,
       "book": "fanduel",
-      "p": 0.758,
-      "model": 0.792,
-      "implied": 0.677,
-      "mean": 253
+      "p": 0.731,
+      "model": 0.747,
+      "implied": 0.692,
+      "mean": 7.4
      },
      {
-      "player": "Jaylen Warren",
-      "team": "PIT",
-      "label": "Jaylen Warren 15+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 14.5,
-      "price": -149,
-      "book": "draftkings",
-      "p": 0.757,
-      "model": 0.825,
-      "implied": 0.598,
-      "mean": 33
-     },
-     {
-      "player": "Roman Wilson",
-      "team": "PIT",
-      "label": "Roman Wilson 30+ rec yds",
+      "player": "T.J. Hockenson",
+      "team": "MIN",
+      "label": "T.J. Hockenson 30+ rec yds",
       "market": "rec_yds",
       "side": "over",
       "point": 29.5,
-      "price": -235,
-      "book": "fanduel",
-      "p": 0.749,
-      "model": 0.77,
-      "implied": 0.701,
-      "mean": 53
-     },
-     {
-      "player": "Pat Freiermuth",
-      "team": "PIT",
-      "label": "Pat Freiermuth 20+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 19.5,
       "price": -230,
       "book": "fanduel",
-      "p": 0.721,
-      "model": 0.732,
+      "p": 0.727,
+      "model": 0.74,
       "implied": 0.697,
-      "mean": 31
+      "mean": 48
      },
      {
-      "player": "Tyler Warren",
-      "team": "IND",
-      "label": "Tyler Warren 5+ receptions",
-      "market": "receptions",
+      "player": "Devaughn Vele",
+      "team": "NO",
+      "label": "Devaughn Vele 30+ rec yds",
+      "market": "rec_yds",
       "side": "over",
-      "point": 4.5,
-      "price": -153,
+      "point": 29.5,
+      "price": -240,
+      "book": "fanduel",
+      "p": 0.725,
+      "model": 0.733,
+      "implied": 0.706,
+      "mean": 47
+     },
+     {
+      "player": "Aaron Jones Sr.",
+      "team": "MIN",
+      "label": "Aaron Jones Sr. 15+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 14.5,
+      "price": -174,
       "book": "draftkings",
-      "p": 0.642,
-      "model": 0.658,
-      "implied": 0.605,
-      "mean": 5.6
+      "p": 0.721,
+      "model": 0.758,
+      "implied": 0.635,
+      "mean": 25
+     },
+     {
+      "player": "Tyler Shough",
+      "team": "NO",
+      "label": "Tyler Shough 220+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 219.5,
+      "price": -194,
+      "book": "draftkings",
+      "p": 0.687,
+      "model": 0.699,
+      "implied": 0.66,
+      "mean": 254
      }
     ]
    },
@@ -25722,7 +25749,9 @@
     "joint": 0.1876,
     "bookJoint": 0.1246,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Michael Mayer",
@@ -25805,7 +25834,9 @@
     "joint": 0.1851,
     "bookJoint": 0.1294,
     "short": false,
-    "builtAt": "2026-10-10T19:33:42.394Z",
+    "builtAt": "2026-10-11T16:15:29.309Z",
+    "pulled": null,
+    "check": null,
     "legs": [
      {
       "player": "Will Shipley",
@@ -25882,10 +25913,10 @@
   ]
  },
  "bestOf": {
-  "builtAt": "2026-10-11T11:35:26.108Z",
+  "builtAt": "2026-10-11T16:25:13.702Z",
   "day": "2026-10-11",
   "title": "Sunday, Oct 11: the best of the slate",
-  "games": 13,
+  "games": 12,
   "plays": [
    {
     "key": "side",
@@ -25938,58 +25969,58 @@
    {
     "key": "value",
     "title": "TD value",
-    "game": "phi-jax",
-    "gameLabel": "PHI@JAX",
-    "kickoff": "2026-10-11T13:30Z",
-    "kickoffLabel": "Sun 9:30 AM ET",
-    "bet": "Chris Rodriguez Jr. anytime TD",
-    "price": 350,
-    "prob": 0.28,
-    "implied": 0.222,
-    "edge": 0.058,
+    "game": "hou-ten",
+    "gameLabel": "HOU@TEN",
+    "kickoff": "2026-10-11T17:00Z",
+    "kickoffLabel": "Sun 1:00 PM ET",
+    "bet": "Wan'Dale Robinson anytime TD",
+    "price": 490,
+    "prob": 0.21,
+    "implied": 0.169,
+    "edge": 0.041,
     "conf": null,
     "units": 0.5,
-    "why": "The closer: 6 red-zone carries, 2 inside the 5, and touchdowns the last two weeks from the 5 and the 25. Jacksonville is favored by 7.5, and a lead hands him the fourth-quarter carries against a front that allows 4.1 a carry to backs. DraftKings' +350 (22.2%) against a 28% read is the best price-to-role in the game; FanDuel is +340."
+    "why": "Tennessee's short-area receiver: 4 red-zone targets, 3 inside the 10, 2 inside the 5, and both Titans receiving touchdowns of the last two weeks (4 and 3 yards). Houston has allowed six receiver touchdowns, Keenan Allen's 6-yarder among them, and Tennessee will be throwing from behind. If Tate's back limits him, Robinson is the first target to move up. FanDuel's +490 (16.9%) against a 21% read is the best price-to-role gap on the board."
    },
    {
     "key": "fiveLeg",
     "title": "Five-leg, no TDs",
-    "game": "nyg-wsh",
-    "gameLabel": "NYG@WSH",
+    "game": "cle-nyj",
+    "gameLabel": "CLE@NYJ",
     "kickoff": "2026-10-11T17:00Z",
     "kickoffLabel": "Sun 1:00 PM ET",
-    "bet": "Isaiah Likely 4+ receptions + Jayden Daniels 20+ rush yds + Najee Harris 20+ rush yds + Jameis Winston 175+ pass yds + Rachaad White 20+ rush yds",
-    "price": 549,
-    "prob": 0.2297,
-    "implied": 0.1539,
-    "edge": 0.076,
+    "bet": "Quinshon Judkins 10+ rec yds + Deshaun Watson 170+ pass yds + Geno Smith 175+ pass yds + Harold Fannin Jr. 25+ rec yds + Denzel Boston 3+ receptions",
+    "price": 585,
+    "prob": 0.2274,
+    "implied": 0.146,
+    "edge": 0.081,
     "conf": null,
     "units": 0.25,
     "why": "Volume props at alternate lines one notch under the main number; the model has it 23% against the book's 15%.",
     "legs": [
      {
-      "label": "Isaiah Likely 4+ receptions",
-      "price": -245,
+      "label": "Quinshon Judkins 10+ rec yds",
+      "price": -240,
       "book": "fanduel"
      },
      {
-      "label": "Jayden Daniels 20+ rush yds",
-      "price": -247,
+      "label": "Deshaun Watson 170+ pass yds",
+      "price": -203,
       "book": "draftkings"
      },
      {
-      "label": "Najee Harris 20+ rush yds",
-      "price": -232,
-      "book": "draftkings"
-     },
-     {
-      "label": "Jameis Winston 175+ pass yds",
-      "price": -230,
+      "label": "Geno Smith 175+ pass yds",
+      "price": -220,
       "book": "fanduel"
      },
      {
-      "label": "Rachaad White 20+ rush yds",
-      "price": -167,
+      "label": "Harold Fannin Jr. 25+ rec yds",
+      "price": -223,
+      "book": "draftkings"
+     },
+     {
+      "label": "Denzel Boston 3+ receptions",
+      "price": -186,
       "book": "draftkings"
      }
     ]
@@ -26023,6 +26054,243 @@
     ]
    }
   ],
-  "text": "**Cappers & Code · Sunday, Oct 11 · Week 5**\nThe model's single best play in every market for 13 games. Units, not dollars.\n\n**Spread of the day:** CIN -7 -110 · 1u\n_CIN@MIA · Sun 1:00 PM ET · model 62% · book 52%_\n\n**Total of the day:** Under 47.5 -110 · 1u\n_CHI@GB · Sun 1:00 PM ET · model 66% · book 52%_\n\n**Moneyline lock:** CIN ML -355 · 1u\n_CIN@MIA · Sun 1:00 PM ET · model 79% · book 75%_\n\n**TD value:** Chris Rodriguez Jr. anytime TD +350 · 0.5u\n_PHI@JAX · Sun 9:30 AM ET · model 28% · book 22%_\n\n**Five-leg, no TDs:** NYG@WSH five-leg +549 · 0.25u\n> Isaiah Likely 4+ receptions -245\n> Jayden Daniels 20+ rush yds -247\n> Najee Harris 20+ rush yds -232\n> Jameis Winston 175+ pass yds -230\n> Rachaad White 20+ rush yds -167\n_Sun 1:00 PM ET · model 23% · book 15%_\n\n**The parlay:** The card, 2 legs +264 · 0.25u\n> CIN@MIA CIN -7 -110\n> CHI@GB Under 47.5 -110\n_model 41% · book 27%_\n\nFull board, every game and the five-leg for each: https://cappersandcode.com/app\n21+. Gamble responsibly. Estimates are opinions, not guarantees."
+  "text": "**Cappers & Code · Sunday, Oct 11 · Week 5**\nThe model's single best play in every market for 12 games. Units, not dollars.\n\n**Spread of the day:** CIN -7 -110 · 1u\n_CIN@MIA · Sun 1:00 PM ET · model 62% · book 52%_\n\n**Total of the day:** Under 47.5 -110 · 1u\n_CHI@GB · Sun 1:00 PM ET · model 66% · book 52%_\n\n**Moneyline lock:** CIN ML -355 · 1u\n_CIN@MIA · Sun 1:00 PM ET · model 79% · book 75%_\n\n**TD value:** Wan'Dale Robinson anytime TD +490 · 0.5u\n_HOU@TEN · Sun 1:00 PM ET · model 21% · book 17%_\n\n**Five-leg, no TDs:** CLE@NYJ five-leg +585 · 0.25u\n> Quinshon Judkins 10+ rec yds -240\n> Deshaun Watson 170+ pass yds -203\n> Geno Smith 175+ pass yds -220\n> Harold Fannin Jr. 25+ rec yds -223\n> Denzel Boston 3+ receptions -186\n_Sun 1:00 PM ET · model 23% · book 15%_\n\n**The parlay:** The card, 2 legs +264 · 0.25u\n> CIN@MIA CIN -7 -110\n> CHI@GB Under 47.5 -110\n_model 41% · book 27%_\n\nFull board, every game and the five-leg for each: https://cappersandcode.com/app\n21+. Gamble responsibly. Estimates are opinions, not guarantees."
+ },
+ "maxFive": {
+  "builtAt": "2026-10-11T16:25:13.713Z",
+  "checkedAt": "2026-10-11T16:25:00Z",
+  "pricedAt": "2026-10-11T14:41:00Z",
+  "day": "2026-10-11",
+  "title": "Sunday, Oct 11: max-confidence five-legs",
+  "tickets": [
+   {
+    "rank": 1,
+    "game": "cle-nyj",
+    "gameLabel": "CLE@NYJ",
+    "kickoff": "2026-10-11T17:00Z",
+    "kickoffLabel": "Sun 1:00 PM ET",
+    "price": 585,
+    "joint": 0.2274,
+    "bookJoint": 0.146,
+    "check": "MetLife, rain all game with gusts near 22 mph. Inactives are out and all five are active. Gabriel is out, so Watson starts; Carsen Ryan and Tylan Wallace are inactive, which funnels targets to Fannin. Boston's 3+ catches is the softest leg.",
+    "legs": [
+     {
+      "label": "Quinshon Judkins 10+ rec yds",
+      "price": -240,
+      "book": "fanduel",
+      "p": 0.797
+     },
+     {
+      "label": "Deshaun Watson 170+ pass yds",
+      "price": -203,
+      "book": "draftkings",
+      "p": 0.744
+     },
+     {
+      "label": "Geno Smith 175+ pass yds",
+      "price": -220,
+      "book": "fanduel",
+      "p": 0.742
+     },
+     {
+      "label": "Harold Fannin Jr. 25+ rec yds",
+      "price": -223,
+      "book": "draftkings",
+      "p": 0.731
+     },
+     {
+      "label": "Denzel Boston 3+ receptions",
+      "price": -186,
+      "book": "draftkings",
+      "p": 0.707
+     }
+    ]
+   },
+   {
+    "rank": 2,
+    "game": "chi-gb",
+    "gameLabel": "CHI@GB",
+    "kickoff": "2026-10-11T17:00Z",
+    "kickoffLabel": "Sun 1:00 PM ET",
+    "price": 624,
+    "joint": 0.2271,
+    "bookJoint": 0.1382,
+    "check": "Lambeau, dry. Inactives are out and all five are active. Caleb Williams sits (Bagent starts) and Monangai is out, so Roschon Johnson is RB2 behind Swift: the softest leg here. Jacobs is on the exempt list and Brooks on IR, so Lloyd leads Green Bay.",
+    "legs": [
+     {
+      "label": "Roschon Johnson 15+ rush yds",
+      "price": -225,
+      "book": "draftkings",
+      "p": 0.804
+     },
+     {
+      "label": "MarShawn Lloyd 20+ rush yds",
+      "price": -205,
+      "book": "draftkings",
+      "p": 0.748
+     },
+     {
+      "label": "Kalif Raymond 20+ rec yds",
+      "price": -210,
+      "book": "fanduel",
+      "p": 0.747
+     },
+     {
+      "label": "Rome Odunze 30+ rec yds",
+      "price": -200,
+      "book": "fanduel",
+      "p": 0.718
+     },
+     {
+      "label": "Christian Watson 50+ rec yds",
+      "price": -192,
+      "book": "fanduel",
+      "p": 0.704
+     }
+    ]
+   },
+   {
+    "rank": 3,
+    "game": "den-lac",
+    "gameLabel": "DEN@LAC",
+    "kickoff": "2026-10-11T20:05Z",
+    "kickoffLabel": "Sun 4:05 PM ET",
+    "price": 528,
+    "joint": 0.2254,
+    "bookJoint": 0.1596,
+    "check": "SoFi, under the roof. Quentin Johnston is out and Ladd McConkey is not expected to play; Denver put Pat Bryant on IR. Inactives post about 2:35 PM ET.",
+    "legs": [
+     {
+      "label": "RJ Harvey 20+ rec yds",
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.758
+     },
+     {
+      "label": "Oronde Gadsden 25+ rec yds",
+      "price": -219,
+      "book": "draftkings",
+      "p": 0.753
+     },
+     {
+      "label": "Courtland Sutton 25+ rec yds",
+      "price": -233,
+      "book": "draftkings",
+      "p": 0.739
+     },
+     {
+      "label": "Omarion Hampton 30+ rush yds",
+      "price": -225,
+      "book": "fanduel",
+      "p": 0.733
+     },
+     {
+      "label": "Justin Herbert 175+ pass yds",
+      "price": -220,
+      "book": "fanduel",
+      "p": 0.729
+     }
+    ]
+   },
+   {
+    "rank": 4,
+    "game": "det-ari",
+    "gameLabel": "DET@ARI",
+    "kickoff": "2026-10-11T20:25Z",
+    "kickoffLabel": "Sun 4:25 PM ET",
+    "price": 554,
+    "joint": 0.1985,
+    "bookJoint": 0.1531,
+    "check": "Under the roof. Marvin Harrison Jr. is inactive, which pushes targets to Michael Wilson. Inactives post about 2:55 PM ET.",
+    "legs": [
+     {
+      "label": "Michael Wilson 6+ receptions",
+      "price": -204,
+      "book": "draftkings",
+      "p": 0.74
+     },
+     {
+      "label": "Jared Goff 250+ pass yds",
+      "price": -245,
+      "book": "fanduel",
+      "p": 0.737
+     },
+     {
+      "label": "Sam LaPorta 40+ rec yds",
+      "price": -218,
+      "book": "draftkings",
+      "p": 0.715
+     },
+     {
+      "label": "Jameson Williams 40+ rec yds",
+      "price": -215,
+      "book": "draftkings",
+      "p": 0.714
+     },
+     {
+      "label": "Tyler Allgeier 20+ rush yds",
+      "price": -218,
+      "book": "draftkings",
+      "p": 0.713
+     }
+    ]
+   },
+   {
+    "rank": 5,
+    "game": "min-no",
+    "gameLabel": "MIN@NO",
+    "kickoff": "2026-10-11T17:00Z",
+    "kickoffLabel": "Sun 1:00 PM ET",
+    "price": 601,
+    "joint": 0.1908,
+    "bookJoint": 0.1427,
+    "check": "Superdome. Inactives are out and all five are active; Olave and Shough practiced fully Friday with no designation.",
+    "legs": [
+     {
+      "label": "Chris Olave 6+ receptions",
+      "price": -225,
+      "book": "fanduel",
+      "p": 0.731
+     },
+     {
+      "label": "T.J. Hockenson 30+ rec yds",
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.727
+     },
+     {
+      "label": "Devaughn Vele 30+ rec yds",
+      "price": -240,
+      "book": "fanduel",
+      "p": 0.725
+     },
+     {
+      "label": "Aaron Jones Sr. 15+ rec yds",
+      "price": -174,
+      "book": "draftkings",
+      "p": 0.721
+     },
+     {
+      "label": "Tyler Shough 220+ pass yds",
+      "price": -194,
+      "book": "draftkings",
+      "p": 0.687
+     }
+    ]
+   }
+  ],
+  "pulled": [
+   {
+    "game": "ind-pit",
+    "gameLabel": "IND@PIT",
+    "reason": "Heavy rain from the remnants of Isaias, and Tyler Warren's main receptions line fell to the alternate line we held. Pulled after the morning check."
+   },
+   {
+    "game": "nyg-wsh",
+    "gameLabel": "NYG@WSH",
+    "reason": "Rain with gusts to 26 mph at Northwest Stadium, a backup QB, and two committee backfields. Pulled after the morning check."
+   }
+  ],
+  "text": "**Cappers & Code · Sunday, Oct 11 · Week 5**\n**Max-confidence five-legs, no TDs.** The 5 tickets with the best hit rate on the slate, every leg checked this morning. 0.25u each.\n\n**1. CLE@NYJ +585** · model 23% · book 15%\n> Quinshon Judkins 10+ rec yds -240\n> Deshaun Watson 170+ pass yds -203\n> Geno Smith 175+ pass yds -220\n> Harold Fannin Jr. 25+ rec yds -223\n> Denzel Boston 3+ receptions -186\n_Sun 1:00 PM ET_\n\n**2. CHI@GB +624** · model 23% · book 14%\n> Roschon Johnson 15+ rush yds -225\n> MarShawn Lloyd 20+ rush yds -205\n> Kalif Raymond 20+ rec yds -210\n> Rome Odunze 30+ rec yds -200\n> Christian Watson 50+ rec yds -192\n_Sun 1:00 PM ET_\n\n**3. DEN@LAC +528** · model 23% · book 16%\n> RJ Harvey 20+ rec yds -230\n> Oronde Gadsden 25+ rec yds -219\n> Courtland Sutton 25+ rec yds -233\n> Omarion Hampton 30+ rush yds -225\n> Justin Herbert 175+ pass yds -220\n_Sun 4:05 PM ET_\n\n**4. DET@ARI +554** · model 20% · book 15%\n> Michael Wilson 6+ receptions -204\n> Jared Goff 250+ pass yds -245\n> Sam LaPorta 40+ rec yds -218\n> Jameson Williams 40+ rec yds -215\n> Tyler Allgeier 20+ rush yds -218\n_Sun 4:25 PM ET_\n\n**5. MIN@NO +601** · model 19% · book 14%\n> Chris Olave 6+ receptions -225\n> T.J. Hockenson 30+ rec yds -230\n> Devaughn Vele 30+ rec yds -240\n> Aaron Jones Sr. 15+ rec yds -174\n> Tyler Shough 220+ pass yds -194\n_Sun 1:00 PM ET_\n\nEvery ticket, on every game page: https://cappersandcode.com/app\n21+. Gamble responsibly. Estimates are opinions, not guarantees."
  }
 }

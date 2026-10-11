@@ -249,9 +249,11 @@ if (
       console.log(`\n== ${g.game}  kept: kicked off, the published ticket stands`);
       continue;
     }
-    // Alternate lines: a hand-entered or merged sheet in odds/alts, else the raw relay pull in odds/raw.
+    // Alternate lines: a hand-entered or merged sheet in odds/alts, else a pre-kick refresh in
+    // odds/raw/prekick (Sunday morning), else the Saturday relay pull in odds/raw.
     const priceFile = [
       path.join(altDir, `${wk}-${g.game}.json`),
+      path.join(DATA, 'odds', 'raw', 'prekick', `${wk}-${g.game}.json`),
       path.join(DATA, 'odds', 'raw', `${wk}-${g.game}.json`),
     ].find((f) => fs.existsSync(f));
     if (!priceFile) {
@@ -293,5 +295,7 @@ if (
         `     ${l.label.padEnd(40)} ${String(l.price).padStart(5)}  model ${(l.model * 100).toFixed(0)}%  shrunk ${(l.p * 100).toFixed(0)}%  ${l.book}`,
       );
   }
+  // One game rebuilt: every other game keeps its published ticket.
+  if (ONLY) out.games = [...(previous.games ?? []).filter((x) => x.game !== ONLY), ...out.games];
   writeJson(outFile, out);
 }

@@ -32,8 +32,8 @@ last.
    - Receiving yards: normal, standard deviation the larger of 12 yards or 0.6 x mean.
    - Rushing yards: normal, standard deviation the larger of 15 yards or 0.55 x mean.
    - Passing yards: normal, standard deviation the larger of 45 yards or 0.26 x mean.
-   The yardage spreads are wide by design. A tight spread flattered Loveland's under in Week 4
-   (92% on paper) and is why that leg was left off.
+     The yardage spreads are wide by design. A tight spread flattered Loveland's under in Week 4
+     (92% on paper) and is why that leg was left off.
 3. Shrink the model toward the book before trusting it: `p = 0.7 x model + 0.3 x implied`. The
    model has run a few points high all season; the shrink is what makes the hit rate honest.
 
@@ -63,11 +63,11 @@ for edge on every line. Monday night the anchor was Olave 7+ (model 76%, book 58
 
 ## The record
 
-| Week | Game | Legs | Price | Joint (shrunk) | Result |
-| ---- | ---- | ---- | ----- | -------------- | ------ |
-| 4 | ATL @ NO (MNF) | Olave 7+ rec, J. Johnson 4+ rec, Pitts 25+ rec yds, Kamara 3+ rec, Vele 4+ rec | +977 | 13% | Won (8, 6, 47, 5, 6) |
-| 5 | TB @ DAL (TNF), DK/FD | Hurst 10+ rec yds, Lamb 6+ rec, Egbuka 25+ rec yds, Otton 3+ rec, J. Williams 10+ rec yds | +569 | 25% | Lost 3/5 (0, 2, 38, 3, 17) |
-| 5 | TB @ DAL (TNF), Courtside | Lamb 6+ rec, Hurst 15+ rec yds, Egbuka 25+ rec yds, Godwin 25+ rec yds, Otton 25+ rec yds | +819 | 22% | Lost 3/5 (2, 0, 38, 37, 25) |
+| Week | Game                      | Legs                                                                                      | Price | Joint (shrunk) | Result                      |
+| ---- | ------------------------- | ----------------------------------------------------------------------------------------- | ----- | -------------- | --------------------------- |
+| 4    | ATL @ NO (MNF)            | Olave 7+ rec, J. Johnson 4+ rec, Pitts 25+ rec yds, Kamara 3+ rec, Vele 4+ rec            | +977  | 13%            | Won (8, 6, 47, 5, 6)        |
+| 5    | TB @ DAL (TNF), DK/FD     | Hurst 10+ rec yds, Lamb 6+ rec, Egbuka 25+ rec yds, Otton 3+ rec, J. Williams 10+ rec yds | +569  | 25%            | Lost 3/5 (0, 2, 38, 3, 17)  |
+| 5    | TB @ DAL (TNF), Courtside | Lamb 6+ rec, Hurst 15+ rec yds, Egbuka 25+ rec yds, Godwin 25+ rec yds, Otton 25+ rec yds | +819  | 22%            | Lost 3/5 (2, 0, 38, 37, 25) |
 
 Append every ticket here, win or lose, with the actual stat lines.
 
@@ -89,3 +89,27 @@ brief in `docs/briefs/receiver-props-brief.md`) and `data/odds/alts/<season>-w<w
 (the raw Odds API event body for `player_receptions_alternate`, `player_reception_yds_alternate`
 and `player_rush_yds_alternate`, or the compact `{ player: { book: [[point, price], ...] } }` form).
 Output: `data/five-leg/<season>-w<week>.json` and a readable summary on stdout.
+
+A pre-kick refresh in `data/odds/raw/prekick/<season>-w<week>-<game>.json` (same Odds API body,
+only the alternate markets the game's ticket uses) takes precedence over the Saturday pull in
+`data/odds/raw/`, so rerunning the formula on Sunday morning rebuilds every game that has not
+kicked off on current prices. A game that has kicked off keeps the ticket it was published with.
+
+## The max-confidence card (Sunday morning)
+
+The front page leads with the day's five full five-leg tickets with the best joint hit rate, and
+the same five go out as a sheet. Before they publish:
+
+1. Pull fresh alternate lines for the candidate games into `data/odds/raw/prekick/` (3-4 credits a
+   game) and rerun `node scripts/five-leg.mjs --week N`.
+2. Check every leg on the top tickets, plus two reserves: injury report and inactives, role news,
+   the current main line (a main line at or below our alternate is a drop), and kickoff weather.
+   Use an independent verifier, then a skeptic who tries to refute each kept leg. Any leg the
+   rebuild swapped in gets the same check.
+3. Record the result in `data/five-leg/<season>-w<week>-checks.json`. `pulled` holds the tickets
+   the check left off, with the reason. `notes` holds one line per game (weather, who is out).
+   `pricedAt` is the time of the pull.
+4. `node scripts/build-board.mjs` builds `board.maxFive` (`buildMaxFive` in `scripts/best-of.mjs`).
+   It takes full tickets only, never short ones or pulled ones. Then
+   `node scripts/max-five-sheet.mjs` renders `site/sheets/w<wk>-<day>-max-five.png` with its `.txt`.
+   The `.txt` holds the same Discord text as the app's COPY FOR DISCORD button.
