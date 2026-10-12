@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Cappers &amp; Code · w05-2026-10-12-mnf-card</title>
+<style>
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 900; src: url(../promo/assets/fonts/BarlowCondensed_900Black.ttf); }
+  @font-face { font-family: 'Barlow Condensed'; font-weight: 800; src: url(../promo/assets/fonts/BarlowCondensed_800ExtraBold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 700; src: url(../promo/assets/fonts/Manrope_700Bold.ttf); }
+  @font-face { font-family: 'Manrope'; font-weight: 500; src: url(../promo/assets/fonts/Manrope_500Medium.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 700; src: url(../promo/assets/fonts/JetBrainsMono_700Bold.ttf); }
+  @font-face { font-family: 'JetBrains Mono'; font-weight: 500; src: url(../promo/assets/fonts/JetBrainsMono_500Medium.ttf); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #050608; color: #F5F7F2; font-family: 'Manrope', sans-serif; }
+  .card { width: 1200px; padding: 48px 64px 64px; background: #050608 radial-gradient(ellipse at 50% 0%, rgba(182,255,0,.10), transparent 55%); position: relative; overflow: hidden; display: flex; flex-direction: column; }
+  .card::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 6px; background: #B6FF00; }
+  .brand { display: flex; justify-content: space-between; align-items: center; font-family: 'JetBrains Mono'; letter-spacing: 3px; font-size: 16px; color: #B6FF00; font-weight: 700; }
+  .brand img { width: 220px; display: block; }
+  h1 { font-family: 'Barlow Condensed'; font-weight: 900; text-transform: uppercase; font-size: 84px; margin: 22px 0 6px; letter-spacing: 1px; line-height: .92; }
+  h1 span { color: #B6FF00; }
+  .sub { color: #C8CFC8; font-size: 20px; margin: 0 0 26px; line-height: 1.4; font-weight: 500; }
+
+  .block { border: 1px solid rgba(182,255,0,.35); box-shadow: 0 0 18px rgba(182,255,0,.10); border-left: 5px solid #B6FF00; border-radius: 10px; background: #0B0E10; margin-bottom: 18px; overflow: hidden; }
+  .bh { display: flex; justify-content: space-between; align-items: center; padding: 14px 22px; border-bottom: 1px solid #1B2022; }
+  .tag { font-family: 'JetBrains Mono'; font-size: 15px; font-weight: 700; color: #B6FF00; letter-spacing: 3px; }
+  .cols { display: grid; grid-template-columns: 120px 110px 300px; gap: 14px; font-family: 'JetBrains Mono'; font-size: 12px; letter-spacing: 2px; color: #9DA59D; }
+  .cols i { font-style: normal; text-align: right; }
+  .cols i:last-child { text-align: left; }
+  .row { display: grid; grid-template-columns: 1fr 120px 110px 300px; gap: 14px; align-items: center; padding: 12px 22px; border-bottom: 1px solid #14181A; }
+  .row:last-child { border-bottom: 0; }
+  .nm { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; line-height: 1; }
+  .nm small { display: block; font-family: 'JetBrains Mono'; font-weight: 500; font-size: 12px; letter-spacing: 1.5px; color: #9DA59D; margin-top: 6px; text-transform: uppercase; }
+  .px { font-family: 'JetBrains Mono'; font-size: 24px; font-weight: 700; color: #B6FF00; text-align: right; white-space: nowrap; }
+  .un { font-family: 'JetBrains Mono'; font-size: 20px; font-weight: 700; color: #F5F7F2; text-align: right; white-space: nowrap; }
+  .meta { font-family: 'JetBrains Mono'; font-size: 13px; color: #9DA59D; letter-spacing: 1px; line-height: 1.5; }
+
+  .grid { padding: 16px 22px 6px; }
+  .ticket { border: 1px solid #1F2622; border-radius: 10px; background: #080B0D; margin-bottom: 14px; overflow: hidden; }
+  .ticket .hd { display: flex; align-items: center; gap: 18px; padding: 12px 20px; border-bottom: 1px solid #1B2022; }
+  .ticket .hd .tag { background: #B6FF00; color: #050608; border-radius: 4px; padding: 3px 10px; letter-spacing: 1px; font-size: 16px; }
+  .ticket .names { font-family: 'Barlow Condensed'; font-weight: 800; font-size: 30px; text-transform: uppercase; line-height: 1; }
+  .ticket .names i { font-style: normal; color: #79E000; padding: 0 4px; }
+  .trow { display: grid; grid-template-columns: 1fr 330px 150px; gap: 14px; align-items: center; padding: 9px 20px; border-bottom: 1px solid #14181A; }
+  .trow .nm { font-size: 24px; }
+  .trow .px { font-size: 22px; }
+  .trow .un { font-size: 17px; color: #C8CFC8; }
+  .ticket .ft { padding: 9px 20px 12px; font-family: 'JetBrains Mono'; font-size: 12.5px; letter-spacing: 1.5px; color: #9DA59D; text-transform: uppercase; }
+  .foot { margin-top: 10px; display: flex; justify-content: space-between; font-family: 'JetBrains Mono'; color: #79E000; font-size: 15px; letter-spacing: 4px; font-weight: 700; }
+</style>
+</head>
+<body>
+<section class="card" id="w05-2026-10-12-mnf-card">
+  <div class="brand"><img src="../promo/assets/lockup.png" alt="Cappers &amp; Code"><span>WEEK 5 · MONDAY NIGHT · BUF @ LAR · 5 TICKETS</span></div>
+  <h1>Monday night, <span>five shots at +3000</span></h1>
+  <p class="sub">Five longshot tickets, one game script each, every leg on a player confirmed active after inactives (DJ Moore and Josh Palmer are out). Each one lands about 1 time in 45 to 55, so they are lottery tickets: 0.1u each. Same-game legs price as an SGP, so check the payout in the app before you place it.</p>
+  <div class="block">
+  <div class="bh"><span class="tag">THE CARD</span></div>
+  <div class="grid"><div class="ticket">
+  <div class="hd"><span class="tag">1</span><span class="names">Rams air it out</span></div>
+  <div class="trow"><span class="nm">Matthew Stafford 300+ pass yds</span><span class="px">+126</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Puka Nacua 110+ rec yds</span><span class="px">+128</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Kyren Williams 4+ receptions</span><span class="px">+133</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Josh Allen anytime TD</span><span class="px">-120</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Khalil Shakir 50+ rec yds</span><span class="px">+101</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Ticket · about 1 in 55</span><span class="px">+4324</span><span class="un">0.1u</span></div>
+  <div class="ft">Mon 8:15 PM ET · SoFi</div>
+</div>
+<div class="ticket">
+  <div class="hd"><span class="tag">2</span><span class="names">Bills answer back</span></div>
+  <div class="trow"><span class="nm">Josh Allen 260+ pass yds</span><span class="px">+126</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Keon Coleman 4+ receptions</span><span class="px">+119</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Khalil Shakir 5+ receptions</span><span class="px">-110</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Matthew Stafford 290+ pass yds</span><span class="px">+101</span><span class="un"></span></div>
+<div class="trow"><span class="nm">James Cook anytime TD</span><span class="px">-115</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Ticket · about 1 in 44</span><span class="px">+3451</span><span class="un">0.1u</span></div>
+  <div class="ft">Mon 8:15 PM ET · SoFi</div>
+</div>
+<div class="ticket">
+  <div class="hd"><span class="tag">3</span><span class="names">Both backs run wild</span></div>
+  <div class="trow"><span class="nm">James Cook 90+ rush yds</span><span class="px">+158</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Kyren Williams 80+ rush yds</span><span class="px">+136</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Josh Allen anytime TD</span><span class="px">-120</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Puka Nacua anytime TD</span><span class="px">-125</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Keon Coleman 4+ receptions</span><span class="px">+119</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Ticket · about 1 in 55</span><span class="px">+4300</span><span class="un">0.1u</span></div>
+  <div class="ft">Mon 8:15 PM ET · SoFi</div>
+</div>
+<div class="ticket">
+  <div class="hd"><span class="tag">4</span><span class="names">Touchdown shootout</span></div>
+  <div class="trow"><span class="nm">Puka Nacua anytime TD</span><span class="px">-125</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Josh Allen anytime TD</span><span class="px">-120</span><span class="un"></span></div>
+<div class="trow"><span class="nm">James Cook anytime TD</span><span class="px">-115</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Keon Coleman anytime TD</span><span class="px">+265</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Matthew Stafford 290+ pass yds</span><span class="px">+101</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Ticket · about 1 in 56</span><span class="px">+4426</span><span class="un">0.1u</span></div>
+  <div class="ft">Mon 8:15 PM ET · SoFi</div>
+</div>
+<div class="ticket">
+  <div class="hd"><span class="tag">5</span><span class="names">Puka and Kyren eat</span></div>
+  <div class="trow"><span class="nm">Puka Nacua 9+ receptions</span><span class="px">+166</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Kyren Williams 4+ receptions</span><span class="px">+133</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Matthew Stafford 284+ pass yds</span><span class="px">-112</span><span class="un"></span></div>
+<div class="trow"><span class="nm">James Cook 80+ rush yds</span><span class="px">+102</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Khalil Shakir 5+ receptions</span><span class="px">-110</span><span class="un"></span></div>
+<div class="trow"><span class="nm">Ticket · about 1 in 56</span><span class="px">+4424</span><span class="un">0.1u</span></div>
+  <div class="ft">Mon 8:15 PM ET · SoFi</div>
+</div></div>
+</div>
+  <div class="foot"><span>UNITS, NOT DOLLARS</span><span>COURTSIDE PRICES 10/12, 3:32 PM CT · 21+ · BET RESPONSIBLY</span></div>
+</section>
+</body>
+</html>
