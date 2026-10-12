@@ -49,9 +49,11 @@ export function MaxFiveBlock({ card }: { card: MaxFive }) {
     <>
       <H2>{card.title}</H2>
       <Body small muted>
-        The {card.tickets.length} five-leg tickets with the best hit rate on the slate. Every leg is
-        a volume prop at an alternate line, no touchdowns, and every one was checked this morning
-        against the injury report, the main line and the weather. 0.25u each.
+        {card.tickets.length === 1
+          ? 'The five-leg ticket with the best hit rate on the slate.'
+          : `The ${card.tickets.length} five-leg tickets with the best hit rate on the slate.`}{' '}
+        Every leg is a volume prop at an alternate line, no touchdowns, and every one was checked
+        before kickoff against the injury report, the main line and the conditions. 0.25u each.
       </Body>
       <View style={{ height: space.sm }} />
       <Card accent="green">

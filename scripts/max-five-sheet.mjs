@@ -29,14 +29,14 @@ const priced = new Date(m.pricedAt ?? m.checkedAt ?? m.builtAt).toLocaleString('
 const id = `w${String(board.week).padStart(2, '0')}-${m.day}-max-five`;
 const spec = {
   id,
-  kicker: `WEEK ${board.week} · ${dayUpper} · ${m.tickets.length} TICKETS`,
+  kicker: `WEEK ${board.week} · ${dayUpper} · ${m.tickets.length} TICKET${m.tickets.length === 1 ? '' : 'S'}`,
   title: 'Max-confidence <span>five-legs</span>',
-  sub: 'No touchdowns: every leg is a volume prop at an alternate line under the main number. These are the five tickets with the best hit rate on the slate, and every leg was checked this morning against the injury report, the main line and the weather. 0.25u each.',
+  sub: 'No touchdowns: every leg is a volume prop at an alternate line under the main number. These are the tickets with the best hit rate on the slate, and every leg was checked before kickoff against the injury report, the main line and the conditions. 0.25u each.',
   footRight: `DK/FD PRICES ${priced} CT · 21+ · BET RESPONSIBLY`,
   sections: [
     {
       kind: 'tickets',
-      label: 'THE FIVE, BEST HIT RATE FIRST',
+      label: m.tickets.length === 1 ? 'THE TICKET' : 'BEST HIT RATE FIRST',
       tickets: m.tickets.map((t) => ({
         tag: String(t.rank),
         players: [`${t.gameLabel} five-leg, no TDs`],

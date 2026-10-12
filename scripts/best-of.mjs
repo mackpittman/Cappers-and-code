@@ -283,7 +283,7 @@ export function buildMaxFive(board, now = new Date(), count = 5) {
   const title = `${dayTitle(first.kickoff)}: max-confidence five-legs`;
   const lines = [
     `**Cappers & Code · ${dayTitle(first.kickoff)} · Week ${board.week}**`,
-    `**Max-confidence five-legs, no TDs.** The ${tickets.length} tickets with the best hit rate on the slate, every leg checked this morning. 0.25u each.`,
+    `**Max-confidence five-legs, no TDs.** ${tickets.length === 1 ? 'The ticket' : `The ${tickets.length} tickets`} with the best hit rate on the slate, every leg checked before kickoff. 0.25u each.`,
     '',
   ];
   for (const t of tickets) {

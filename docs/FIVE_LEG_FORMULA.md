@@ -63,11 +63,24 @@ for edge on every line. Monday night the anchor was Olave 7+ (model 76%, book 58
 
 ## The record
 
-| Week | Game                      | Legs                                                                                      | Price | Joint (shrunk) | Result                      |
-| ---- | ------------------------- | ----------------------------------------------------------------------------------------- | ----- | -------------- | --------------------------- |
-| 4    | ATL @ NO (MNF)            | Olave 7+ rec, J. Johnson 4+ rec, Pitts 25+ rec yds, Kamara 3+ rec, Vele 4+ rec            | +977  | 13%            | Won (8, 6, 47, 5, 6)        |
-| 5    | TB @ DAL (TNF), DK/FD     | Hurst 10+ rec yds, Lamb 6+ rec, Egbuka 25+ rec yds, Otton 3+ rec, J. Williams 10+ rec yds | +569  | 25%            | Lost 3/5 (0, 2, 38, 3, 17)  |
-| 5    | TB @ DAL (TNF), Courtside | Lamb 6+ rec, Hurst 15+ rec yds, Egbuka 25+ rec yds, Godwin 25+ rec yds, Otton 25+ rec yds | +819  | 22%            | Lost 3/5 (2, 0, 38, 37, 25) |
+| Week | Game                      | Legs                                                                                                      | Price | Joint (shrunk) | Result                         |
+| ---- | ------------------------- | --------------------------------------------------------------------------------------------------------- | ----- | -------------- | ------------------------------ |
+| 4    | ATL @ NO (MNF)            | Olave 7+ rec, J. Johnson 4+ rec, Pitts 25+ rec yds, Kamara 3+ rec, Vele 4+ rec                            | +977  | 13%            | Won (8, 6, 47, 5, 6)           |
+| 5    | TB @ DAL (TNF), DK/FD     | Hurst 10+ rec yds, Lamb 6+ rec, Egbuka 25+ rec yds, Otton 3+ rec, J. Williams 10+ rec yds                 | +569  | 25%            | Lost 3/5 (0, 2, 38, 3, 17)     |
+| 5    | TB @ DAL (TNF), Courtside | Lamb 6+ rec, Hurst 15+ rec yds, Egbuka 25+ rec yds, Godwin 25+ rec yds, Otton 25+ rec yds                 | +819  | 22%            | Lost 3/5 (2, 0, 38, 37, 25)    |
+| 5    | PHI @ JAX                 | Shipley 25+ rush yds, Rodriguez 20+ rush yds, Hurts 160+ pass yds, Lemon 25+ rec yds, Strange 25+ rec yds | +673  | 19%            | Lost 3/5 (6, 5, 220, 43, 68)   |
+| 5    | CHI @ GB (card)           | Johnson 15+ rush yds, Lloyd 20+ rush yds, Raymond 20+ rec yds, Odunze 30+ rec yds, Watson 50+ rec yds     | +624  | 23%            | Lost 3/5 (6, 31, 6, 40, 143)   |
+| 5    | CLE @ NYJ (card)          | Judkins 10+ rec yds, Watson 170+ pass yds, Smith 175+ pass yds, Fannin 25+ rec yds, Boston 3+ rec         | +585  | 23%            | Lost 2/5 (6, 155, 182, 4, 3)   |
+| 5    | HOU @ TEN (4 legs)        | Stroud 210+ pass yds, Ward 170+ pass yds, Collins 5+ rec, Robinson 25+ rec yds                            | +348  | 29%            | Won (261, 170, 5, 53)          |
+| 5    | IND @ PIT (pulled)        | Rodgers 190+ pass yds, Wilson 25+ rec yds, Warren 15+ rec yds, Freiermuth 20+ rec yds, Downs 40+ rec yds  | +530  | 25%            | Lost 4/5 (235, 0, 87, 44, 47)  |
+| 5    | LV @ NE                   | Mayer 20+ rec yds, Tucker 30+ rec yds, Cousins 210+ pass yds, Doubs 40+ rec yds, Henderson 40+ rush yds   | +702  | 19%            | Lost 2/5 (2, 41, 243, 16, 22)  |
+| 5    | MIN @ NO (card)           | Olave 6+ rec, Hockenson 30+ rec yds, Vele 30+ rec yds, Jones 15+ rec yds, Shough 220+ pass yds            | +601  | 19%            | Lost 0/5 (4, 7, 26, 4, 96)     |
+| 5    | NYG @ WSH (pulled)        | Likely 4+ rec, Harris 20+ rush yds, Winston 175+ pass yds, White 20+ rush yds, Daniels 25+ rush yds       | +594  | 21%            | Lost 3/5 (11, 9, 326, 18, 103) |
+| 5    | CIN @ MIA (4 legs)        | Burrow 225+ pass yds, Willis 170+ pass yds, Gordon 40+ rush yds, Washington 40+ rec yds                   | +501  | 24%            | Lost 2/4 (190, 137, 88, 43)    |
+| 5    | DEN @ LAC (card)          | Harvey 20+ rec yds, Gadsden 25+ rec yds, Sutton 25+ rec yds, Hampton 30+ rush yds, Herbert 175+ pass yds  | +528  | 23%            | Lost 1/5 (0, 0, 18, 33, 121)   |
+| 5    | DET @ ARI (card)          | Wilson 6+ rec, Goff 250+ pass yds, LaPorta 40+ rec yds, Williams 40+ rec yds, Allgeier 20+ rush yds       | +554  | 20%            | Lost 3/5 (4, 271, 88, 47, 7)   |
+| 5    | SF @ SEA (4 legs)         | Black 10+ rush yds, Samuel 5+ rush yds, Evans 4+ rec, Smith-Njigba 7+ rec                                 | +503  | 21%            | Lost 2/4 (16, 4, 7, 5)         |
+| 5    | BAL @ ATL (4 legs)        | Andrews 25+ rec yds, Brian Robinson 30+ rush yds, Bijan Robinson 80+ rush yds, Henry 70+ rush yds         | +530  | 21%            | Lost 3/4 (28, 16, 86, 102)     |
 
 Append every ticket here, win or lose, with the actual stat lines.
 
@@ -75,6 +88,26 @@ Week 5 Thursday, what went wrong: Lamb left with a quad injury in the second hal
 for two catches on five targets (variance, not process). Hurst was not in the box score at all after
 a three-target game the week before; that was process, and it is why the 3.0-catch floor above now
 exists. The three legs on established roles (Egbuka, Godwin, Otton) all cleared.
+
+Week 5 Sunday: 1 of 13 tickets won (HOU @ TEN, the four-leg short ticket). The max-confidence card,
+marked (card), went 0 for 5, and the two the morning check pulled, marked (pulled), lost as well.
+Legs hit 32 of 61 (52%) against 44.1 expected from the shrunk probabilities (72% average). By
+market: rush yards 7/16, receiving yards 13/25, receptions 4/7, passing yards 8/13. A starred stat
+was missing from the box score; none were this week. Harvey and Gadsden were in the box score with
+zero catches.
+
+What went wrong: the projections ran hot, and it was not one bad game. 46 of 61 legs finished under
+our projected mean, and the median leg finished at 73% of its projection (rush yards 51%,
+receiving yards 67%, receptions 79%, passing yards 85%). Part of it was the slate: rain at
+MetLife, Pittsburgh and Washington, and low totals. Part of it is built in. The formula picks the
+legs where our number beats the book's by the most, so it selects for the projections that are
+too high. A shrink of 0.3 toward the book is not enough to correct for that. Before Week 6, the
+projections and the shrink get recalibrated against this record (see the to-do below), and until
+then the book's joint number is the honest one to quote next to ours.
+
+To do before Week 6: refit SHRINK and the per-market projection haircut on Weeks 4 and 5 (61+
+graded legs), and add the rule that a leg's projection must clear its alternate line by a
+market-specific cushion, not just price above the book.
 
 ## Running it
 
