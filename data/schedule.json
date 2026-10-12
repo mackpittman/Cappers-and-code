@@ -1,53 +1,48 @@
 {
- "fetchedAt": "2026-10-11T20:57:22.754Z",
+ "fetchedAt": "2026-10-12T13:29:53.878Z",
  "season": 2026,
  "week": 5,
  "games": [
   {
-   "espnId": "401872989",
-   "kickoff": "2026-10-11T20:05Z",
-   "name": "DEN @ LAC",
-   "status": "STATUS_IN_PROGRESS",
-   "statusDetail": "8:18 - 2nd",
+   "espnId": "401872994",
+   "kickoff": "2026-10-13T00:15Z",
+   "name": "BUF @ LAR",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "10/12 - 8:15 PM EDT",
    "home": {
-    "abbr": "LAC",
-    "score": 3
-   },
-   "away": {
-    "abbr": "DEN",
-    "score": 7
-   },
-   "espnLine": null
-  },
-  {
-   "espnId": "401872991",
-   "kickoff": "2026-10-11T20:25Z",
-   "name": "DET @ ARI",
-   "status": "STATUS_END_PERIOD",
-   "statusDetail": "End of 1st",
-   "home": {
-    "abbr": "ARI",
-    "score": 7
-   },
-   "away": {
-    "abbr": "DET",
+    "abbr": "LAR",
     "score": 0
    },
-   "espnLine": null
+   "away": {
+    "abbr": "BUF",
+    "score": 0
+   },
+   "espnLine": {
+    "provider": "DraftKings",
+    "details": "LAR -3.5",
+    "spreadHome": -3.5,
+    "total": 54.5,
+    "ml": {
+     "home": -180,
+     "away": 150,
+     "openHome": -155,
+     "openAway": 130
+    }
+   }
   },
   {
-   "espnId": "401872992",
-   "kickoff": "2026-10-11T20:25Z",
-   "name": "SF @ SEA",
-   "status": "STATUS_IN_PROGRESS",
-   "statusDetail": "3:17 - 1st",
+   "espnId": "401872980",
+   "kickoff": "2026-10-09T00:15Z",
+   "name": "TB @ DAL",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
    "home": {
-    "abbr": "SEA",
-    "score": 7
+    "abbr": "DAL",
+    "score": 16
    },
    "away": {
-    "abbr": "SF",
-    "score": 7
+    "abbr": "TB",
+    "score": 24
    },
    "espnLine": null
   },
@@ -196,74 +191,68 @@
    "espnLine": null
   },
   {
-   "espnId": "401872993",
-   "kickoff": "2026-10-12T00:20Z",
-   "name": "BAL @ ATL",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "10/11 - 8:20 PM EDT",
-   "home": {
-    "abbr": "ATL",
-    "score": 0
-   },
-   "away": {
-    "abbr": "BAL",
-    "score": 0
-   },
-   "espnLine": {
-    "provider": "DraftKings",
-    "details": "ATL -3",
-    "spreadHome": -3,
-    "total": 43.5,
-    "ml": {
-     "home": -175,
-     "away": 145,
-     "openHome": 180,
-     "openAway": -218
-    }
-   }
-  },
-  {
-   "espnId": "401872980",
-   "kickoff": "2026-10-09T00:15Z",
-   "name": "TB @ DAL",
+   "espnId": "401872989",
+   "kickoff": "2026-10-11T20:05Z",
+   "name": "DEN @ LAC",
    "status": "STATUS_FINAL",
    "statusDetail": "Final",
    "home": {
-    "abbr": "DAL",
-    "score": 16
+    "abbr": "LAC",
+    "score": 17
    },
    "away": {
-    "abbr": "TB",
-    "score": 24
+    "abbr": "DEN",
+    "score": 23
    },
    "espnLine": null
   },
   {
-   "espnId": "401872994",
-   "kickoff": "2026-10-13T00:15Z",
-   "name": "BUF @ LAR",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "10/12 - 8:15 PM EDT",
+   "espnId": "401872991",
+   "kickoff": "2026-10-11T20:25Z",
+   "name": "DET @ ARI",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
    "home": {
-    "abbr": "LAR",
-    "score": 0
+    "abbr": "ARI",
+    "score": 21
    },
    "away": {
-    "abbr": "BUF",
-    "score": 0
+    "abbr": "DET",
+    "score": 45
    },
-   "espnLine": {
-    "provider": null,
-    "details": "LAR -3",
-    "spreadHome": -3,
-    "total": 54.5,
-    "ml": {
-     "home": -175,
-     "away": 145,
-     "openHome": -155,
-     "openAway": 130
-    }
-   }
+   "espnLine": null
+  },
+  {
+   "espnId": "401872992",
+   "kickoff": "2026-10-11T20:25Z",
+   "name": "SF @ SEA",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
+   "home": {
+    "abbr": "SEA",
+    "score": 29
+   },
+   "away": {
+    "abbr": "SF",
+    "score": 32
+   },
+   "espnLine": null
+  },
+  {
+   "espnId": "401872993",
+   "kickoff": "2026-10-12T00:20Z",
+   "name": "BAL @ ATL",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final/OT",
+   "home": {
+    "abbr": "ATL",
+    "score": 23
+   },
+   "away": {
+    "abbr": "BAL",
+    "score": 30
+   },
+   "espnLine": null
   }
  ]
 }
