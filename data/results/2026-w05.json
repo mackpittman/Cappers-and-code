@@ -1,15 +1,15 @@
 {
  "season": 2026,
  "week": 5,
- "gradedAt": "2026-10-12T23:36:44.837Z",
- "finals": 13,
+ "gradedAt": "2026-10-13T12:56:18.258Z",
+ "finals": 14,
  "games": 14,
  "summary": {
   "all": {
-   "wins": 52,
-   "losses": 118,
+   "wins": 60,
+   "losses": 123,
    "pushes": 1,
-   "pending": 13
+   "pending": 0
   },
   "lockedIn": {
    "wins": 0,
@@ -19,33 +19,33 @@
   },
   "lean": {
    "wins": 12,
-   "losses": 10,
+   "losses": 12,
    "pushes": 1,
-   "pending": 2
+   "pending": 0
   },
   "top3": {
-   "wins": 17,
+   "wins": 20,
    "losses": 22,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "td2": {
-   "wins": 3,
-   "losses": 36,
+   "wins": 4,
+   "losses": 38,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "value": {
-   "wins": 2,
-   "losses": 28,
+   "wins": 3,
+   "losses": 29,
    "pushes": 0,
-   "pending": 2
+   "pending": 0
   },
   "prop": {
-   "wins": 18,
+   "wins": 21,
    "losses": 21,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "calibration": {
    "td2": [
@@ -58,22 +58,22 @@
     },
     {
      "band": "8-15%",
-     "n": 13,
-     "model": 0.112,
-     "actual": 0,
-     "wins": 0
+     "n": 14,
+     "model": 0.111,
+     "actual": 0.071,
+     "wins": 1
     },
     {
      "band": "15-25%",
-     "n": 2,
-     "model": 0.214,
+     "n": 3,
+     "model": 0.209,
      "actual": 0,
      "wins": 0
     },
     {
      "band": "25-100%",
-     "n": 3,
-     "model": 0.307,
+     "n": 4,
+     "model": 0.297,
      "actual": 0,
      "wins": 0
     }
@@ -88,17 +88,17 @@
     },
     {
      "band": "40-50%",
-     "n": 11,
-     "model": 0.441,
-     "actual": 0.455,
-     "wins": 5
+     "n": 12,
+     "model": 0.437,
+     "actual": 0.5,
+     "wins": 6
     },
     {
      "band": "50-60%",
-     "n": 4,
-     "model": 0.542,
-     "actual": 0.5,
-     "wins": 2
+     "n": 6,
+     "model": 0.54,
+     "actual": 0.667,
+     "wins": 4
     },
     {
      "band": "60-100%",
@@ -244,129 +244,132 @@
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "side",
    "label": "LAR -3",
-   "result": "pending",
    "conf": 1,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "total",
    "label": "Under 54.5",
-   "result": "pending",
    "conf": 2,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "atd",
    "label": "Kyren Williams ATD",
-   "result": "pending",
    "est": 0.57,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "atd",
    "label": "Josh Allen ATD",
-   "result": "pending",
    "est": 0.5,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "atd",
    "label": "James Cook III ATD",
-   "result": "pending",
    "est": 0.4,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "td2",
    "label": "Kyren Williams 2+ TD",
-   "result": "pending",
    "est": 0.2692207307053583,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "td2",
    "label": "Josh Allen 2+ TD",
-   "result": "pending",
    "est": 0.1994543326360355,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "td2",
    "label": "James Cook III 2+ TD",
-   "result": "pending",
    "est": 0.09350462574040563,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "win"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "atd",
    "label": "Keon Coleman ATD",
-   "result": "pending",
    "est": 0.28,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "win"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "atd",
    "label": "Skyler Bell ATD",
-   "result": "pending",
    "est": 0.05,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "prop",
    "label": "Josh Allen under 244.5 pass yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 210,
+   "result": "win"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "prop",
    "label": "Dalton Kincaid under 58.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 7,
+   "result": "win"
   },
   {
    "game": "buf-lar",
    "gameLabel": "BUF@LAR",
-   "final": null,
+   "final": "BUF 37, LAR 34",
    "type": "prop",
    "label": "Kyren Williams over 21.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 27,
+   "result": "win"
   },
   {
    "game": "chi-gb",

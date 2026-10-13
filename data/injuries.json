@@ -1,6 +1,6 @@
 {
- "fetchedAt": "2026-10-12T23:36:44.019Z",
- "sourceTimestamp": "2026-10-12T23:36:33Z",
+ "fetchedAt": "2026-10-13T12:56:16.910Z",
+ "sourceTimestamp": "2026-10-13T12:56:07Z",
  "teams": {
   "ARI": [
    {
@@ -42,6 +42,14 @@
     "type": "Injured Reserve",
     "detail": "The Cardinals placed Long (knee) on injured reserve Tuesday.",
     "date": "2026-10-06T23:22Z"
+   },
+   {
+    "name": "Tyler Allgeier",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Allgeier rushed three times for seven yards and caught both of his targets for nine yards during Sunday's 45-21 loss to the Lions.",
+    "date": "2026-10-13T00:32Z"
    },
    {
     "name": "Andrew Billings",
@@ -194,14 +202,6 @@
     "type": "active",
     "detail": "",
     "date": "2026-10-05T18:27Z"
-   },
-   {
-    "name": "Cameron Robertson",
-    "pos": "LB",
-    "status": "Active",
-    "type": "active",
-    "detail": "",
-    "date": "2026-10-05T18:27Z"
    }
   ],
   "ATL": [
@@ -218,8 +218,8 @@
     "pos": "QB",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "The Falcons have optimism that Penix's rib injury isn't overly serious and that he'll be available to play Sunday against the Bears, Jonathan Jones and Josh Kendall of The Athletic report.",
-    "date": "2026-10-12T19:17Z"
+    "detail": "Penix is scheduled to undergo an MRI on Monday after exiting Sunday's 30-23 overtime loss to the Ravens due to a rib injury, Adam Schefter of ESPN reports.",
+    "date": "2026-10-12T13:22Z"
    },
    {
     "name": "C.J. Henderson",
@@ -236,6 +236,14 @@
     "type": "Injured Reserve",
     "detail": "The Falcons placed Abdullah (hamstring) on injured reserve Saturday, Tori McElhaney of the team's official site reports.",
     "date": "2026-10-11T03:43Z"
+   },
+   {
+    "name": "Brian Robinson Jr.",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Robinson handled seven carries for 16 yards and did not catch his only target during Sunday's 30-23 overtime loss versus the Ravens. He also returned two kickoffs for 61 return yards.",
+    "date": "2026-10-13T01:14Z"
    },
    {
     "name": "Jack Strand",
@@ -396,17 +404,17 @@
     "type": "active",
     "detail": "Zaccheaus failed to haul in his lone target during the Falcons' 45-24 win over the Saints on Monday.",
     "date": "2026-10-07T00:01Z"
-   },
-   {
-    "name": "Jahan Dotson",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Dotson caught two of three passes for 54 yards and a touchdown during the Falcons' 45-24 win over the Saints on Monday.",
-    "date": "2026-10-06T23:56Z"
    }
   ],
   "BAL": [
+   {
+    "name": "Cam Jurgens",
+    "pos": "C",
+    "status": "Out",
+    "type": "out",
+    "detail": "Head coach Jesse Minter said Monday that Jurgens is in the \"finishing stages\" of the league's concussion protocol, Jamison Hensley of ESPN.com reports.",
+    "date": "2026-10-12T23:49Z"
+   },
    {
     "name": "Lamar Jackson",
     "pos": "QB",
@@ -414,14 +422,6 @@
     "type": "out",
     "detail": "Head coach Jesse Minter said Monday that Jackson is \"definitely doing better\" in his recovery from a sprained left ankle, Jamison Hensley of ESPN.com reports.",
     "date": "2026-10-12T19:13Z"
-   },
-   {
-    "name": "Cam Jurgens",
-    "pos": "C",
-    "status": "Out",
-    "type": "out",
-    "detail": "out",
-    "date": "2026-10-12T18:57Z"
    },
    {
     "name": "Trey Hendrickson",
@@ -666,12 +666,52 @@
     "date": "2026-10-12T22:49Z"
    },
    {
+    "name": "Spencer Brown",
+    "pos": "OT",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Brown (back) has been ruled out for the remainder of Monday night's game versus the Rams.",
+    "date": "2026-10-13T02:54Z"
+   },
+   {
     "name": "Te'Cory Couch",
     "pos": "CB",
     "status": "Questionable",
     "type": "questionable",
     "detail": "Couch suffered a hamstring injury Sunday versus New England and is doubtful to return.",
     "date": "2026-10-04T18:51Z"
+   },
+   {
+    "name": "Dalton Kincaid",
+    "pos": "TE",
+    "status": "Active",
+    "type": "active",
+    "detail": "Kincaid brought in one of two targets for seven yards and recorded a two-point conversion catch in the Bills' 37-34 overtime win over the Rams on Monday night.",
+    "date": "2026-10-13T05:27Z"
+   },
+   {
+    "name": "Khalil Shakir",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "Shakir brought in all three targets for 80 yards in the Bills' 37-34 overtime win over the Rams on Monday night.",
+    "date": "2026-10-13T05:22Z"
+   },
+   {
+    "name": "Josh Allen",
+    "pos": "QB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Allen completed 12 of 19 passes for 210 yards with one touchdown and one interception while adding 10 carries for 121 yards and another score and a two-point conversion pass in the Bills' 37-34 overtime win against the Rams on Monday night.",
+    "date": "2026-10-13T04:50Z"
+   },
+   {
+    "name": "James Cook III",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Cook rushed 10 times for 121 yards and a touchdown and brought in his only target for seven yards in the Bills' 37-34 overtime win over the Rams on Monday night. He also committed two fumbles, losing one.",
+    "date": "2026-10-13T04:15Z"
    },
    {
     "name": "Trent Sherfield",
@@ -738,28 +778,12 @@
     "date": "2026-10-06T02:41Z"
    },
    {
-    "name": "Khalil Shakir",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Shakir turned seven catches (on eight targets) into 82 yards during the Bills' 29-26 loss to the Patriots on Sunday. He also lost a fumble.",
-    "date": "2026-10-06T00:13Z"
-   },
-   {
     "name": "Ray Davis",
     "pos": "RB",
     "status": "Active",
     "type": "active",
     "detail": "Davis logged a four-yard carry, a three-yard reception and returned one kickoff for 29 yards during the Bills' 29-26 loss to the Patriots in Week 4.",
     "date": "2026-10-06T00:06Z"
-   },
-   {
-    "name": "Mike Danna",
-    "pos": "DE",
-    "status": "Active",
-    "type": "active",
-    "detail": "",
-    "date": "2026-10-05T18:30Z"
    },
    {
     "name": "Jalon Kilgore",
@@ -778,36 +802,12 @@
     "date": "2026-10-05T02:01Z"
    },
    {
-    "name": "Dalton Kincaid",
-    "pos": "TE",
-    "status": "Active",
-    "type": "active",
-    "detail": "Kincaid brought in one of two targets for seven yards in the Bills' 29-26 loss to the Patriots on Sunday.",
-    "date": "2026-10-04T23:59Z"
-   },
-   {
     "name": "Keon Coleman",
     "pos": "WR",
     "status": "Active",
     "type": "active",
     "detail": "Coleman secured six of seven targets for 116 yards and a touchdown in the Bills' 29-26 loss to the Patriots on Sunday.",
     "date": "2026-10-04T23:53Z"
-   },
-   {
-    "name": "Josh Allen",
-    "pos": "QB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Allen completed 23 of 33 passes for 253 yards with a touchdown and an interception and added five carries for four yards and another score in the Bills' 29-26 loss to the Patriots on Sunday.",
-    "date": "2026-10-04T21:34Z"
-   },
-   {
-    "name": "James Cook III",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Cook rushed 12 times for 75 yards and a touchdown and brought in both targets for eight yards in the Bills' 29-26 loss to the Patriots on Sunday.",
-    "date": "2026-10-04T21:27Z"
    }
   ],
   "CAR": [
@@ -1014,6 +1014,14 @@
   ],
   "CHI": [
    {
+    "name": "Anthony Johnson Jr.",
+    "pos": "S",
+    "status": "Out",
+    "type": "out",
+    "detail": "out",
+    "date": "2026-10-13T12:00Z"
+   },
+   {
     "name": "Kyle Monangai",
     "pos": "RB",
     "status": "Out",
@@ -1054,14 +1062,6 @@
     "date": "2026-10-10T19:40Z"
    },
    {
-    "name": "Jonathan Garvin",
-    "pos": "DE",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "questionable",
-    "date": "2026-10-12T21:55Z"
-   },
-   {
     "name": "Dayo Odeyingbo",
     "pos": "DE",
     "status": "Questionable",
@@ -1084,14 +1084,6 @@
     "type": "questionable",
     "detail": "Edwards (hamstring) has been ruled out for the remainder of Sunday's game against the Packers.",
     "date": "2026-10-11T18:44Z"
-   },
-   {
-    "name": "Anthony Johnson Jr.",
-    "pos": "S",
-    "status": "Injured Reserve",
-    "type": "Injured Reserve",
-    "detail": "ir",
-    "date": "2026-10-12T23:13Z"
    },
    {
     "name": "Case Keenum",
@@ -1182,14 +1174,6 @@
     "date": "2026-10-11T16:35Z"
    },
    {
-    "name": "Zavier Scott",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Bears elevated Scott from the practice squad to the active roster Saturday.",
-    "date": "2026-10-10T19:29Z"
-   },
-   {
     "name": "Darnell Wright",
     "pos": "OT",
     "status": "Active",
@@ -1212,6 +1196,22 @@
     "type": "active",
     "detail": "",
     "date": "2026-10-09T19:08Z"
+   },
+   {
+    "name": "Cam Lewis",
+    "pos": "CB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Lewis (hip) was a full participant in Wednesday's practice.",
+    "date": "2026-10-07T23:13Z"
+   },
+   {
+    "name": "Dillon Thieneman",
+    "pos": "S",
+    "status": "Active",
+    "type": "active",
+    "detail": "Thieneman recorded seven total tackles during Sunday's 23-12 win over the Jets.",
+    "date": "2026-10-07T02:49Z"
    }
   ],
   "CIN": [
@@ -1522,6 +1522,14 @@
     "date": "2026-10-10T00:37Z"
    },
    {
+    "name": "Jerry Jeudy",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "Jeudy hauled in three of seven targets for 19 yards during Sunday's 17-12 loss against the Jets.",
+    "date": "2026-10-13T01:42Z"
+   },
+   {
     "name": "Taylen Green",
     "pos": "QB",
     "status": "Active",
@@ -1608,14 +1616,6 @@
     "type": "active",
     "detail": "",
     "date": "2026-10-05T18:37Z"
-   },
-   {
-    "name": "Denzel Ward",
-    "pos": "CB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Ward logged four tackles (three solo) and had one pass defensed for an interception in the Browns' 27-24 win over the Steelers on Thursday.",
-    "date": "2026-10-03T02:17Z"
    }
   ],
   "DAL": [
@@ -1822,6 +1822,14 @@
   ],
   "DEN": [
    {
+    "name": "Riley Moss",
+    "pos": "CB",
+    "status": "Out",
+    "type": "out",
+    "detail": "Moss (ribs) was listed as a limited participant on the Broncos' estimated practice report Monday, Aric DiLalla of the team's official website reports.",
+    "date": "2026-10-12T23:26Z"
+   },
+   {
     "name": "Pat Surtain II",
     "pos": "CB",
     "status": "Out",
@@ -1830,12 +1838,12 @@
     "date": "2026-10-12T19:05Z"
    },
    {
-    "name": "Riley Moss",
-    "pos": "CB",
-    "status": "Out",
-    "type": "out",
-    "detail": "out",
-    "date": "2026-10-12T19:05Z"
+    "name": "Talanoa Hufanga",
+    "pos": "S",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Hufanga (ankle) was listed as a non-participant on the Broncos' estimated injury report Monday, Aric DiLalla of the team's official website reports.",
+    "date": "2026-10-12T23:21Z"
    },
    {
     "name": "Sai'vion Jones",
@@ -1844,14 +1852,6 @@
     "type": "questionable",
     "detail": "questionable",
     "date": "2026-10-12T20:52Z"
-   },
-   {
-    "name": "Talanoa Hufanga",
-    "pos": "S",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Hufanga (ankle) has been ruled out for the rest of Sunday's contest against the Chargers, Parker Gabriel of The Denver Post reports.",
-    "date": "2026-10-11T22:42Z"
    },
    {
     "name": "Pat Bryant",
@@ -2060,8 +2060,8 @@
     "pos": "LB",
     "status": "Doubtful",
     "type": "doubtful",
-    "detail": "White suffered a broken forearm during Sunday's 45-21 win over the Cardinals, Eric Woodyard of ESPN.com reports.",
-    "date": "2026-10-12T00:11Z"
+    "detail": "Head coach Dan Campbell confirmed Monday that White (forearm) will need surgery but is expected to return \"at some point\" later this season, Richard Silva of The Detroit News reports.",
+    "date": "2026-10-12T23:37Z"
    },
    {
     "name": "Cade Mays",
@@ -2452,6 +2452,14 @@
     "date": "2026-10-11T03:19Z"
    },
    {
+    "name": "Kayshon Boutte",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "Boutte caught three of five targets for 38 yards during Sunday's 26-3 win over the Titans.",
+    "date": "2026-10-13T01:42Z"
+   },
+   {
     "name": "Marlin Klein",
     "pos": "TE",
     "status": "Active",
@@ -2618,14 +2626,6 @@
     "type": "active",
     "detail": "Anderson (ankle) does not have an injury tag against the Titans on Sunday.",
     "date": "2026-10-09T23:51Z"
-   },
-   {
-    "name": "Azeez Al-Shaair",
-    "pos": "LB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Al-Shaair (groin) does not carry an injury designation into Sunday's game against the Titans.",
-    "date": "2026-10-09T23:50Z"
    }
   ],
   "IND": [
@@ -2668,6 +2668,22 @@
     "type": "Injured Reserve",
     "detail": "Mallory (thumb) has been ruled out ahead of Sunday's game against the Steelers.",
     "date": "2026-10-09T23:56Z"
+   },
+   {
+    "name": "Alec Pierce",
+    "pos": "WR",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "Colts head coach Shane Steichen reiterated Monday that Pierce didn't undergo surgery on his left heel and is continuing to rehab the injury, James Boyd of The Athletic reports.",
+    "date": "2026-09-28T18:38Z"
+   },
+   {
+    "name": "Keenan Allen",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "Allen caught five of nine targets for 45 yards in Sunday's Week 5 loss to Pittsburgh.",
+    "date": "2026-10-13T03:31Z"
    },
    {
     "name": "Dalton Tucker",
@@ -2732,22 +2748,6 @@
     "type": "active",
     "detail": "Ward (groin) is active for Sunday's game against Pittsburgh.",
     "date": "2026-10-11T16:07Z"
-   },
-   {
-    "name": "Keenan Allen",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Allen (groin) is expected to play Sunday against the Steelers, Jeremy Fowler of ESPN reports.",
-    "date": "2026-10-11T11:42Z"
-   },
-   {
-    "name": "Nick Westbrook-Ikhine",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Colts elevated Westbrook-Ikhine from the practice squad to the active roster Saturday.",
-    "date": "2026-10-10T17:48Z"
    },
    {
     "name": "Tanor Bortolini",
@@ -3276,16 +3276,24 @@
     "date": "2026-10-09T23:15Z"
    },
    {
-    "name": "Aidan O'Connell",
-    "pos": "QB",
+    "name": "Michael Mayer",
+    "pos": "TE",
     "status": "Active",
     "type": "active",
-    "detail": "",
-    "date": "2026-10-12T19:16Z"
+    "detail": "Mayer caught his only target for two yards during Sunday's 45-17 loss to the Patriots.",
+    "date": "2026-10-13T01:16Z"
    },
    {
-    "name": "Roman Hemby",
+    "name": "Mike Washington Jr.",
     "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Washington logged a five-yard carry and caught his lone target for five yards during the Raiders' 45-17 loss to the Patriots on Sunday.",
+    "date": "2026-10-12T23:55Z"
+   },
+   {
+    "name": "Aidan O'Connell",
+    "pos": "QB",
     "status": "Active",
     "type": "active",
     "detail": "",
@@ -3372,22 +3380,6 @@
     "date": "2026-10-12T00:47Z"
    },
    {
-    "name": "Mike Washington Jr.",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Washington should be in line for his regular role Sunday against New England with Ashton Jeanty (foot/ankle) listed as active for the contest.",
-    "date": "2026-10-11T15:50Z"
-   },
-   {
-    "name": "Deven Thompkins",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Raiders elevated Thompkins from the practice squad to the active roster Saturday.",
-    "date": "2026-10-11T00:49Z"
-   },
-   {
     "name": "Cody White",
     "pos": "WR",
     "status": "Active",
@@ -3430,6 +3422,14 @@
    {
     "name": "Darrell Luter Jr.",
     "pos": "CB",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-10-05T18:47Z"
+   },
+   {
+    "name": "Jonah Laulu",
+    "pos": "DT",
     "status": "Active",
     "type": "active",
     "detail": "",
@@ -3542,6 +3542,22 @@
     "date": "2026-10-10T02:51Z"
    },
    {
+    "name": "Charlie Kolar",
+    "pos": "TE",
+    "status": "Active",
+    "type": "active",
+    "detail": "Kolar reeled in three of four targets for 37 yards during Sunday's 23-17 loss versus the Broncos. He also lost a fumble.",
+    "date": "2026-10-13T01:51Z"
+   },
+   {
+    "name": "Keaton Mitchell",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Mitchell took six carries for 11 yards and caught three of four targets for 18 yards during Sunday's 23-17 loss versus the Broncos.",
+    "date": "2026-10-13T01:05Z"
+   },
+   {
     "name": "Cameron Dicker",
     "pos": "PK",
     "status": "Active",
@@ -3590,14 +3606,6 @@
     "date": "2026-10-11T19:06Z"
    },
    {
-    "name": "Charlie Kolar",
-    "pos": "TE",
-    "status": "Active",
-    "type": "active",
-    "detail": "Kolar (forearm) is active for Sunday's game against Denver, Eric Smith of the team's official site reports.",
-    "date": "2026-10-11T19:02Z"
-   },
-   {
     "name": "Theo Wease Jr.",
     "pos": "WR",
     "status": "Active",
@@ -3624,14 +3632,6 @@
    {
     "name": "Cam Hart",
     "pos": "CB",
-    "status": "Active",
-    "type": "active",
-    "detail": "",
-    "date": "2026-10-09T21:17Z"
-   },
-   {
-    "name": "Alec Ingold",
-    "pos": "FB",
     "status": "Active",
     "type": "active",
     "detail": "",
@@ -3694,6 +3694,54 @@
     "type": "Injured Reserve",
     "detail": "Ferguson (ankle) is expected to be ready to return after his four-game stint on injured reserve, Cameron DaSilva of USA Today reports.",
     "date": "2026-10-07T17:52Z"
+   },
+   {
+    "name": "Tyler Higbee",
+    "pos": "TE",
+    "status": "Active",
+    "type": "active",
+    "detail": "Higbee brought in five of six targets for 83 yards in the Rams' 37-34 overtime loss to the Bills on Monday night.",
+    "date": "2026-10-13T05:17Z"
+   },
+   {
+    "name": "Blake Corum",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Corum rushed five times for 19 yards and a touchdown and brought in three of four targets for 53 yards in the Rams' 37-34 overtime loss to the Bills on Monday night.",
+    "date": "2026-10-13T05:13Z"
+   },
+   {
+    "name": "Davante Adams",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "Adams brought in five of seven targets for 51 yards and two touchdowns in the Rams' 37-34 overtime loss to the Bills on Monday night.",
+    "date": "2026-10-13T05:08Z"
+   },
+   {
+    "name": "Kyren Williams",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Williams rushed 16 times for 49 yards and a touchdown and brought in six of eight targets for 27 yards in the Rams' 37-34 overtime loss to the Bills on Monday night.",
+    "date": "2026-10-13T05:04Z"
+   },
+   {
+    "name": "Matthew Stafford",
+    "pos": "QB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Stafford completed 40 of 54 passes for 383 yards with three touchdowns and no interceptions in the Rams' 37-34 overtime loss to the Bills on Monday night.",
+    "date": "2026-10-13T04:58Z"
+   },
+   {
+    "name": "Puka Nacua",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "Nacua brought in 17 of 24 targets for 138 yards and a touchdown and rushed twice for nine yards in the Rams' 37-34 overtime loss to the Bills on Monday night.",
+    "date": "2026-10-13T04:08Z"
    },
    {
     "name": "Quentin Lake",
@@ -3768,14 +3816,6 @@
     "date": "2026-10-08T01:10Z"
    },
    {
-    "name": "Tyler Higbee",
-    "pos": "TE",
-    "status": "Active",
-    "type": "active",
-    "detail": "Higbee caught five of six targets for 67 yards in Sunday's 24-20 win over the Eagles.",
-    "date": "2026-10-06T02:00Z"
-   },
-   {
     "name": "Cam Lampkin",
     "pos": "CB",
     "status": "Active",
@@ -3790,46 +3830,6 @@
     "type": "active",
     "detail": "Mevis went 1-for-2 on field-goal tries and made all three of his PATs in Sunday's 24-20 win over Philadelphia.",
     "date": "2026-10-05T03:17Z"
-   },
-   {
-    "name": "Blake Corum",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Corum rushed five times for 14 yards in Sunday's 24-20 win over the Eagles. He added one catch for seven yards on two targets.",
-    "date": "2026-10-05T03:15Z"
-   },
-   {
-    "name": "Matthew Stafford",
-    "pos": "QB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Stafford completed 32 of 51 passes for 317 yards, no touchdowns and two interceptions in Sunday's 24-20 win over the Eagles. He also rushed three times for 10 yards.",
-    "date": "2026-10-04T21:08Z"
-   },
-   {
-    "name": "Davante Adams",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Adams caught four of nine targets for 32 yards in Sunday's 24-20 win over the Eagles.",
-    "date": "2026-10-04T21:06Z"
-   },
-   {
-    "name": "Puka Nacua",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Nacua (hip) caught nine of 12 targets for 125 yards and added a two-yard rushing touchdown in Sunday's 24-20 win over the Eagles.",
-    "date": "2026-10-04T20:39Z"
-   },
-   {
-    "name": "Kyren Williams",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Williams rushed 16 times for 80 yards and two touchdowns while catching 10 of 13 targets for 67 yards in Sunday's 24-20 win over the Eagles.",
-    "date": "2026-10-04T20:37Z"
    },
    {
     "name": "Alex Bachman",
@@ -3904,6 +3904,14 @@
     "type": "questionable",
     "detail": "Savaiinaea is questionable to return to Sunday's game against the Bengals due to an ankle injury.",
     "date": "2026-10-11T18:19Z"
+   },
+   {
+    "name": "Greg Dulcich",
+    "pos": "TE",
+    "status": "Active",
+    "type": "active",
+    "detail": "Dulcich caught four of five targets for 37 yards during Sunday's 31-24 loss to the Bengals.",
+    "date": "2026-10-13T01:01Z"
    },
    {
     "name": "DJ Campbell",
@@ -3992,14 +4000,6 @@
     "type": "active",
     "detail": "Wright (foot) is active for Sunday's game against the Bengals.",
     "date": "2026-10-11T16:01Z"
-   },
-   {
-    "name": "Carlos Washington Jr.",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Dolphins elevated Washington from the practice squad to the active roster Saturday.",
-    "date": "2026-10-11T00:38Z"
    },
    {
     "name": "Kenneth Grant",
@@ -4092,16 +4092,16 @@
     "date": "2026-09-30T00:26Z"
    },
    {
-    "name": "Elijah Williams",
-    "pos": "DE",
+    "name": "Jauan Jennings",
+    "pos": "WR",
     "status": "Active",
     "type": "active",
-    "detail": "",
-    "date": "2026-10-12T19:22Z"
+    "detail": "Jennings did not reel in his only target during Sunday's 23-13 win at New Orleans.",
+    "date": "2026-10-13T00:43Z"
    },
    {
-    "name": "Odell Beckham Jr.",
-    "pos": "WR",
+    "name": "Elijah Williams",
+    "pos": "DE",
     "status": "Active",
     "type": "active",
     "detail": "",
@@ -4180,14 +4180,6 @@
     "date": "2026-10-11T16:20Z"
    },
    {
-    "name": "Jeshaun Jones",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Vikings elevated Jones from the practice squad to the active roster Saturday, Craig Peters of the team's official site reports.",
-    "date": "2026-10-11T01:42Z"
-   },
-   {
     "name": "Brett Thorson",
     "pos": "P",
     "status": "Active",
@@ -4212,14 +4204,6 @@
     "date": "2026-10-06T03:41Z"
    },
    {
-    "name": "Jauan Jennings",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Jennings caught his lone target for eight yards in Sunday's 15-10 win over the Dolphins.",
-    "date": "2026-10-06T01:01Z"
-   },
-   {
     "name": "Joshua Metellus",
     "pos": "S",
     "status": "Active",
@@ -4242,6 +4226,22 @@
     "type": "active",
     "detail": "Wilson finished Sunday's 23-16 victory over Tampa Bay with 10 tackles, including 1.5 sacks, and one defensed pass.",
     "date": "2026-09-30T04:04Z"
+   },
+   {
+    "name": "Kyle Van Noy",
+    "pos": "LB",
+    "status": "Active",
+    "type": "active",
+    "detail": "The Vikings signed Van Noy from the practice squad to the active roster Tuesday, Craig Peters of the team's official site reports.",
+    "date": "2026-09-30T00:20Z"
+   },
+   {
+    "name": "Zemaiah Vaughn",
+    "pos": "CB",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-09-28T18:52Z"
    }
   ],
   "NE": [
@@ -4492,7 +4492,7 @@
     "pos": "WR",
     "status": "Injured Reserve",
     "type": "Injured Reserve",
-    "detail": "Saints head coach Kellen Moore said Monday that Tyson (hamstring) is \"progressing well\" but isn't on track to return to practice this week, Jeff Nowak reports.",
+    "detail": "Saints head coach Kellen Moore said Monday that Tyson (hamstring) is \"progressing well\" but isn't on track to return to practice this week, Jeff Nowak of WWL New Orleans reports.",
     "date": "2026-10-12T18:59Z"
    },
    {
@@ -4600,14 +4600,6 @@
     "date": "2026-10-11T16:22Z"
    },
    {
-    "name": "Cedric Tillman",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Saints elevated Tillman from the practice squad to the active roster Saturday.",
-    "date": "2026-10-11T01:28Z"
-   },
-   {
     "name": "Davon Godchaux",
     "pos": "DT",
     "status": "Active",
@@ -4646,6 +4638,14 @@
     "type": "active",
     "detail": "Delp was not targeted during Monday's 45-24 loss versus the Falcons.",
     "date": "2026-10-07T00:19Z"
+   },
+   {
+    "name": "Kendre Miller",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Miller rushed six time for nine yards and caught two of three targets while losing a fumble in Monday night's 45-24 loss to Atlanta.",
+    "date": "2026-10-07T00:08Z"
    }
   ],
   "NYG": [
@@ -4663,7 +4663,15 @@
     "status": "Questionable",
     "type": "questionable",
     "detail": "questionable",
-    "date": "2026-10-12T23:13Z"
+    "date": "2026-10-13T12:00Z"
+   },
+   {
+    "name": "Colton Hood",
+    "pos": "CB",
+    "status": "Questionable",
+    "type": "questionable",
+    "detail": "Hood (concussion) is considered day-to-day ahead of the Giants' matchup with the Saints in Week 6, Pat Leonard of the New York Daily News reports.",
+    "date": "2026-10-12T23:52Z"
    },
    {
     "name": "Tyler Nubin",
@@ -4672,14 +4680,6 @@
     "type": "questionable",
     "detail": "Nubin (neck) is considered day-to-day ahead of the team's Week 6 matchup with the Saints, Pat Leonard of the New York Daily News reports.",
     "date": "2026-10-12T23:10Z"
-   },
-   {
-    "name": "Colton Hood",
-    "pos": "CB",
-    "status": "Questionable",
-    "type": "questionable",
-    "detail": "Hood is being evaluated for a concussion and is questionable to return to Sunday's game against the Commanders, Pat Leonard of the New York Daily News reports.",
-    "date": "2026-10-11T19:38Z"
    },
    {
     "name": "Chauncey Golston",
@@ -4786,14 +4786,6 @@
     "date": "2026-10-11T16:07Z"
    },
    {
-    "name": "Dalen Cambre",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Giants have elevated Cambre from the practice squad ahead of Sunday's game against the Commanders, Dan Salomone of the Giants' official site reports.",
-    "date": "2026-10-11T01:26Z"
-   },
-   {
     "name": "Andrew Thomas",
     "pos": "OT",
     "status": "Active",
@@ -4848,6 +4840,14 @@
     "type": "active",
     "detail": "Johnson caught his lone target for an 11-yard touchdown in Sunday's 36-24 win over the Cardinals.",
     "date": "2026-10-06T02:38Z"
+   },
+   {
+    "name": "Najee Harris",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Harris logged nine carries for 30 yards and lost a fumble in the Giants' 36-24 win over the Cardinals on Sunday.",
+    "date": "2026-10-06T02:20Z"
    }
   ],
   "NYJ": [
@@ -4906,6 +4906,14 @@
     "type": "Injured Reserve",
     "detail": "McGregor (pectoral) was placed on the Jets' injured reserve list Wednesday, Eric Allen of the team's official site reports.",
     "date": "2026-10-07T21:44Z"
+   },
+   {
+    "name": "Isaiah Davis",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Davis rushed twice for eight yards while catching one of two targets for nine yards during Sunday's 17-12 win over the Browns.",
+    "date": "2026-10-13T00:50Z"
    },
    {
     "name": "Nate Lynn",
@@ -5036,14 +5044,6 @@
     "date": "2026-10-08T03:46Z"
    },
    {
-    "name": "Isaiah Davis",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Davis played just two offensive snaps in Sunday's loss to the Bears.",
-    "date": "2026-10-06T01:05Z"
-   },
-   {
     "name": "Minkah Fitzpatrick",
     "pos": "S",
     "status": "Active",
@@ -5058,7 +5058,7 @@
     "pos": "WR",
     "status": "Out",
     "type": "out",
-    "detail": "Head coach Nick Sirianni expressed hope Monday that Smith (hamstring) would return for this Sunday's game against the Panthers, Zach Berman of The Athletic reports.",
+    "detail": "Head coach Nick Sirianni expressed hope Monday that Smith (hamstring) will return for this Sunday's game against the Panthers, Zach Berman of The Athletic reports.",
     "date": "2026-10-12T19:59Z"
    },
    {
@@ -5066,7 +5066,7 @@
     "pos": "RB",
     "status": "Out",
     "type": "out",
-    "detail": "Head coach Nick Sirianni said Monday that he's \"hopeful\" that both Barkley (hamstring) and DeVonta Smith (hamstring) will both be cleared to play against the Panthers on Sunday, Zach Berman of The Athletic reports.",
+    "detail": "Head coach Nick Sirianni said Monday that he's \"hopeful\" that both Barkley (hamstring) and DeVonta Smith (hamstring) will both be cleared to play against the Panthers this coming Sunday, Zach Berman of The Athletic reports.",
     "date": "2026-10-12T19:54Z"
    },
    {
@@ -5132,6 +5132,14 @@
     "type": "questionable",
     "detail": "questionable",
     "date": "2026-10-11T05:31Z"
+   },
+   {
+    "name": "Zach Ertz",
+    "pos": "TE",
+    "status": "Active",
+    "type": "active",
+    "detail": "Ertz reverted to the Eagles' practice squad Monday, per the NFL's transaction log.",
+    "date": "2026-10-13T03:59Z"
    },
    {
     "name": "Jalen Carter",
@@ -5222,14 +5230,6 @@
     "date": "2026-10-11T12:47Z"
    },
    {
-    "name": "Zach Ertz",
-    "pos": "TE",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Eagles elevated Ertz from the practice squad to the active roster Saturday ahead of Sunday's game against the Jaguars in London.",
-    "date": "2026-10-10T20:24Z"
-   },
-   {
     "name": "Fred Johnson",
     "pos": "OT",
     "status": "Active",
@@ -5268,7 +5268,7 @@
     "pos": "RB",
     "status": "Out",
     "type": "out",
-    "detail": "Steelers offensive coordinator Brian Angelichio said Monday that he anticipates Dowdle (toe) returning to action Week 6 against the Buccaneers, Mike DeFabo of The Athletic reports.",
+    "detail": "Steelers offensive coordinator Brian Angelichio said Monday that he anticipates Dowdle (toe) returning to action in Week 6 against the Buccaneers, Mike DeFabo of The Athletic reports.",
     "date": "2026-10-12T20:07Z"
    },
    {
@@ -5408,22 +5408,6 @@
     "date": "2026-10-11T16:23Z"
    },
    {
-    "name": "Brandon Smith",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Steelers elevated Smith from the practice squad ahead of Sunday's game against the Colts.",
-    "date": "2026-10-11T00:29Z"
-   },
-   {
-    "name": "Lew Nichols",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Steelers elevated Nichols from the practice squad ahead of Sunday's game against the Colts.",
-    "date": "2026-10-11T00:27Z"
-   },
-   {
     "name": "Yahya Black",
     "pos": "DE",
     "status": "Active",
@@ -5454,9 +5438,33 @@
     "type": "active",
     "detail": "",
     "date": "2026-10-05T19:01Z"
+   },
+   {
+    "name": "Jaquan Brisker",
+    "pos": "S",
+    "status": "Active",
+    "type": "active",
+    "detail": "Brisker made seven tackles (four solo) in Thursday night's 27-24 loss to the Browns.",
+    "date": "2026-10-03T01:53Z"
+   },
+   {
+    "name": "Patrick Queen",
+    "pos": "LB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Queen made five tackles (three solo) in Thursday night's 27-24 loss to the Browns.",
+    "date": "2026-10-03T01:51Z"
    }
   ],
   "SF": [
+   {
+    "name": "James Thompson Jr.",
+    "pos": "DT",
+    "status": "Out",
+    "type": "out",
+    "detail": "Thompson (ankle) could return to action in Week 6 against Washington, Matt Barrows of The Athletic reports.",
+    "date": "2026-10-12T23:44Z"
+   },
    {
     "name": "Kyle Juszczyk",
     "pos": "FB",
@@ -5498,20 +5506,20 @@
     "date": "2026-10-12T19:37Z"
    },
    {
-    "name": "James Thompson Jr.",
-    "pos": "DT",
-    "status": "Out",
-    "type": "out",
-    "detail": "out",
-    "date": "2026-10-12T19:36Z"
-   },
-   {
     "name": "Dre Greenlaw",
     "pos": "LB",
     "status": "Suspension",
     "type": "Suspension",
     "detail": "Greenlaw was handed a one-game suspension without pay Monday for an act of unsportsmanlike conduct during Sunday's 32-29 win over the Seahawks, Tom Pelissero of Netflix reports.",
     "date": "2026-10-12T18:25Z"
+   },
+   {
+    "name": "Nick Martin",
+    "pos": "LB",
+    "status": "Injured Reserve",
+    "type": "Injured Reserve",
+    "detail": "Head coach Kyle Shanahan said Monday that Martin's (hamstring) status will be evaluated \"in these next couple of days,\" Nick Wagoner of ESPN.com reports.",
+    "date": "2026-10-13T00:00Z"
    },
    {
     "name": "Christian Kirk",
@@ -5602,14 +5610,6 @@
     "date": "2026-10-11T19:21Z"
    },
    {
-    "name": "Jack Stoll",
-    "pos": "TE",
-    "status": "Active",
-    "type": "active",
-    "detail": "The 49ers elevated Stoll from the practice squad to the active roster Saturday.",
-    "date": "2026-10-11T01:23Z"
-   },
-   {
     "name": "Mykel Williams",
     "pos": "DE",
     "status": "Active",
@@ -5688,7 +5688,7 @@
     "pos": "LB",
     "status": "Questionable",
     "type": "questionable",
-    "detail": "Thomas (ankle) was listed as a limited practice participant on Monday's estimated report, John Boyle of the Seahawks' official site reports.",
+    "detail": "Thomas (ankle) was listed as a non-participant on Monday's estimated injury report, John Boyle of the Seahawks' official site reports.",
     "date": "2026-10-12T23:22Z"
    },
    {
@@ -5730,6 +5730,38 @@
     "type": "Injured Reserve",
     "detail": "The Seahawks placed Neal (hamstring) on injured reserve Saturday, John Boyle of the team's official site reports.",
     "date": "2026-10-11T02:04Z"
+   },
+   {
+    "name": "George Holani",
+    "pos": "RB",
+    "status": "Active",
+    "type": "active",
+    "detail": "Holani rushed four times for seven yards and lost a fumble while reeling in all four of his targets for 24 yards during Sunday's 32-29 loss to the 49ers.",
+    "date": "2026-10-13T02:04Z"
+   },
+   {
+    "name": "Tory Horton",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "Horton did not draw any targets during Sunday's 32-29 loss versus the 49ers.",
+    "date": "2026-10-13T01:33Z"
+   },
+   {
+    "name": "Rashid Shaheed",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "Shaheed caught two of four targets for 23 yards while also adding 86 kickoff-return yards during Sunday's 32-29 loss to the 49ers.",
+    "date": "2026-10-13T00:57Z"
+   },
+   {
+    "name": "AJ Barner",
+    "pos": "TE",
+    "status": "Active",
+    "type": "active",
+    "detail": "Barner caught three of five targets for 20 yards during Sunday's 32-29 loss versus the 49ers.",
+    "date": "2026-10-13T00:53Z"
    },
    {
     "name": "Nick Kallerup",
@@ -5788,14 +5820,6 @@
     "date": "2026-10-12T01:05Z"
    },
    {
-    "name": "George Holani",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "Holani (ribs/knee) is active for Sunday's Week 5 matchup against the 49ers.",
-    "date": "2026-10-11T19:12Z"
-   },
-   {
     "name": "Nehemiah Pritchett",
     "pos": "CB",
     "status": "Active",
@@ -5834,30 +5858,6 @@
     "type": "active",
     "detail": "Jones recorded 12 total tackles (six solo), including 1.0 sacks, and added an interception during Sunday's 30-23 win over the Chargers.",
     "date": "2026-10-07T01:16Z"
-   },
-   {
-    "name": "Cooper Kupp",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Kupp caught one of two targets for 13 yards in Sunday's 30-23 win over the Chargers.",
-    "date": "2026-10-06T04:05Z"
-   },
-   {
-    "name": "Elijah Arroyo",
-    "pos": "TE",
-    "status": "Active",
-    "type": "active",
-    "detail": "Arroyo didn't record any catches during Seattle's win over the Chargers on Sunday.",
-    "date": "2026-10-06T03:50Z"
-   },
-   {
-    "name": "Tory Horton",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Horton brought in his lone target for a six-yard touchdown during Sunday's 30-23 win over the Chargers.",
-    "date": "2026-10-06T01:24Z"
    }
   ],
   "TB": [
@@ -6104,6 +6104,22 @@
     "date": "2026-10-10T23:21Z"
    },
    {
+    "name": "Calvin Ridley",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "Ridley caught two of three targets for 33 yards during Sunday's 26-3 loss to the Texans.",
+    "date": "2026-10-13T01:31Z"
+   },
+   {
+    "name": "Gunnar Helm",
+    "pos": "TE",
+    "status": "Active",
+    "type": "active",
+    "detail": "Helm failed to catch his only target during Sunday's 26-3 loss to the Texans.",
+    "date": "2026-10-13T00:21Z"
+   },
+   {
     "name": "Brandon Crenshaw-Dickson",
     "pos": "OT",
     "status": "Active",
@@ -6192,22 +6208,6 @@
     "date": "2026-10-11T23:20Z"
    },
    {
-    "name": "Kalel Mullings",
-    "pos": "RB",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Titans elevated Mullings from the practice squad to the active roster Saturday, Jim Wyatt of the team's official site reports.",
-    "date": "2026-10-11T00:28Z"
-   },
-   {
-    "name": "Gunnar Helm",
-    "pos": "TE",
-    "status": "Active",
-    "type": "active",
-    "detail": "Helm (knee) does not carry an injury designation for Sunday's AFC South showdown against the Texans, Jim Wyatt of the Titans' official site reports.",
-    "date": "2026-10-09T21:03Z"
-   },
-   {
     "name": "John Franklin-Myers",
     "pos": "DE",
     "status": "Active",
@@ -6248,16 +6248,16 @@
     "date": "2026-10-06T02:32Z"
    },
    {
-    "name": "Calvin Ridley",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "Ridley caught one pass (on two targets) for 13 yards during Sunday's 24-18 loss to the Ravens.",
-    "date": "2026-10-06T00:55Z"
-   },
-   {
     "name": "Drew Moss",
     "pos": "G",
+    "status": "Active",
+    "type": "active",
+    "detail": "",
+    "date": "2026-10-05T19:07Z"
+   },
+   {
+    "name": "Kylen Granson",
+    "pos": "TE",
     "status": "Active",
     "type": "active",
     "detail": "",
@@ -6338,6 +6338,22 @@
     "date": "2026-10-06T23:14Z"
    },
    {
+    "name": "Van Jefferson",
+    "pos": "WR",
+    "status": "Active",
+    "type": "active",
+    "detail": "The Commanders reverted Jefferson to their practice squad Monday, per the NFL's transaction log.",
+    "date": "2026-10-13T04:19Z"
+   },
+   {
+    "name": "Chig Okonkwo",
+    "pos": "TE",
+    "status": "Active",
+    "type": "active",
+    "detail": "Okonkwo caught four of six targets for 60 yards during Sunday's 27-27 tie against the Giants.",
+    "date": "2026-10-13T00:41Z"
+   },
+   {
     "name": "Tanoa Togiai",
     "pos": "G",
     "status": "Active",
@@ -6394,14 +6410,6 @@
     "date": "2026-10-11T03:39Z"
    },
    {
-    "name": "Van Jefferson",
-    "pos": "WR",
-    "status": "Active",
-    "type": "active",
-    "detail": "The Commanders elevated Jefferson from the practice squad ahead of Sunday's game against the Giants.",
-    "date": "2026-10-11T00:58Z"
-   },
-   {
     "name": "Sam Cosmi",
     "pos": "G",
     "status": "Active",
@@ -6424,14 +6432,6 @@
     "type": "active",
     "detail": "",
     "date": "2026-10-09T21:45Z"
-   },
-   {
-    "name": "Chig Okonkwo",
-    "pos": "TE",
-    "status": "Active",
-    "type": "active",
-    "detail": "Okonkwo (hamstring) does not carry an injury designation for Sunday's game against the Giants.",
-    "date": "2026-10-09T21:29Z"
    },
    {
     "name": "Sonny Styles",
