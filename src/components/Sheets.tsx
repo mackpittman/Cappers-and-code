@@ -58,7 +58,7 @@ export function FeaturedSheet({ week }: { week?: number }) {
   return (
     <Pressable onPress={() => Linking.openURL(url(img.file))} accessibilityRole="button">
       <Card accent="green">
-        <Label color={t.green}>Tonight&rsquo;s sheet</Label>
+        <Label color={t.green}>The sheet</Label>
         <Text style={[type.h2, { color: t.ink, marginBottom: 4 }]}>{sheet.title}</Text>
         {!!sheet.subtitle && (
           <Body small muted>

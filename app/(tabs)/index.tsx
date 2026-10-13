@@ -49,6 +49,7 @@ export default function BoardScreen() {
         <Paywall />
       ) : (
         <>
+          <FeaturedSheet week={board.week} />
           {!!board.maxFive?.tickets?.length && <MaxFiveBlock card={board.maxFive} />}
           {!!board.bestOf?.plays?.length && <BestOfBlock best={board.bestOf} />}
           {tabs.length > 0 && (
@@ -104,7 +105,6 @@ export default function BoardScreen() {
                   ))}
                 </>
               )}
-              <FeaturedSheet week={board.week} />
               {!!board.maxConfidence?.length && (
                 <>
                   <H2>Max confidence · Week {board.week}</H2>
