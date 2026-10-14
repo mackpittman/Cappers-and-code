@@ -16,8 +16,12 @@ name: Sync data from Supabase
 #
 # Note on layering: a push made with GITHUB_TOKEN deliberately does not trigger other workflows, so
 # this never starts a deploy and cannot loop. The bundled data/board.json that the app falls back to
-# before sign-in therefore refreshes on the next ordinary push, not on this one. Members read the
-# live board from Supabase, so that fallback is cosmetic.
+# refreshes on the next ordinary push (or a manual deploy-web dispatch), not on this one.
+#
+# Since the Routine stopped shipping (2026-09-28) the weeks have been built by hand in sessions and
+# committed here, so this workflow also publishes the rebuilt board to Supabase and mirrors the
+# state back: the repo is the system of record until the Routine is healthy again, and either way
+# a board that was rebuilt here should be the one members read.
 
 on:
   schedule:
@@ -26,12 +30,18 @@ on:
     # A second pass late enough to pick up the Sunday and Monday night re-prices and the grading.
     - cron: '45 5 * * *'
   workflow_dispatch:
+    inputs:
+      force_publish:
+        description: 'Publish data/board.json to Supabase even if this run did not rebuild it (catches Supabase up to a hand-built week).'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
 
+# Shared with daily-board.yml: both commit the same data/ files, and a group is repository-wide.
 concurrency:
-  group: sync-data
+  group: board-data
   cancel-in-progress: false
 
 jobs:
@@ -94,6 +104,27 @@ jobs:
       - name: Rebuild the board
         if: steps.state.outputs.restored == 'true'
         run: node scripts/build-board.mjs
+
+      # Publishing re-stamps published_at (which ops-health reads as freshness), so publish only
+      # when this run produced a new board, or when a dispatch asks for it to catch Supabase up
+      # after a hand-built week. The state push mirrors the paid files so the Routine's next pull
+      # starts from what the repo holds instead of an older copy.
+      - name: Publish the board and mirror the state to Supabase
+        if: steps.state.outputs.restored == 'true'
+        env:
+          SUPABASE_URL: ${{ steps.cfg.outputs.url }}
+          SUPABASE_ANON_KEY: ${{ steps.cfg.outputs.anon }}
+          BOARD_PUBLISH_SECRET: ${{ secrets.BOARD_PUBLISH_SECRET }}
+          FORCE_PUBLISH: ${{ github.event.inputs.force_publish }}
+        run: |
+          BOARD_PUBLISH_SECRET="$(printf '%s' "$BOARD_PUBLISH_SECRET" | tr -d '[:space:]')"
+          export BOARD_PUBLISH_SECRET
+          if [ "$FORCE_PUBLISH" = "true" ] || ! git diff --quiet -- data/board.json; then
+            node scripts/publish-board.mjs
+          else
+            echo "data/board.json did not change this run; not re-publishing."
+          fi
+          node scripts/state-sync.mjs push
 
       - name: Commit whatever moved
         run: |

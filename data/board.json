@@ -1,7 +1,7 @@
 {
  "season": 2026,
- "week": 6,
- "generatedAt": "2026-10-14T10:35:27.892Z",
+ "week": 5,
+ "generatedAt": "2026-10-14T17:15:11.031Z",
  "researchAsOf": "2026-10-10T19:33:41.682Z",
  "oddsFetchedAt": "2026-10-10T16:32:26.900Z",
  "oddsCredits": {
@@ -616,7 +616,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final/OT",
+    "score": {
+     "away": 30,
+     "home": 23
+    }
+   },
    "live": null,
    "scratched": [],
    "liveBoard": [
@@ -1267,6 +1274,77 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "bal-atl",
+    "gameLabel": "BAL@ATL",
+    "kickoff": "2026-10-12T00:20Z",
+    "price": 530,
+    "decimal": 6.3,
+    "joint": 0.208,
+    "bookJoint": 0.1587,
+    "short": true,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": null,
+    "check": null,
+    "legs": [
+     {
+      "player": "Mark Andrews",
+      "team": "BAL",
+      "label": "Mark Andrews 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -186,
+      "book": "fanduel",
+      "p": 0.725,
+      "model": 0.756,
+      "implied": 0.65,
+      "mean": 42
+     },
+     {
+      "player": "Brian Robinson Jr.",
+      "team": "ATL",
+      "label": "Brian Robinson Jr. 30+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 29.5,
+      "price": -168,
+      "book": "draftkings",
+      "p": 0.696,
+      "model": 0.725,
+      "implied": 0.627,
+      "mean": 44
+     },
+     {
+      "player": "Bijan Robinson",
+      "team": "ATL",
+      "label": "Bijan Robinson 80+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 79.5,
+      "price": -165,
+      "book": "draftkings",
+      "p": 0.642,
+      "model": 0.651,
+      "implied": 0.623,
+      "mean": 101
+     },
+     {
+      "player": "Derrick Henry",
+      "team": "BAL",
+      "label": "Derrick Henry 70+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 69.5,
+      "price": -167,
+      "book": "draftkings",
+      "p": 0.642,
+      "model": 0.649,
+      "implied": 0.625,
+      "mean": 88
+     }
+    ]
    }
   },
   {
@@ -1843,7 +1921,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final/OT",
+    "score": {
+     "away": 37,
+     "home": 34
+    }
+   },
    "live": null,
    "scratched": [],
    "liveBoard": [
@@ -2556,6 +2641,91 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "buf-lar",
+    "gameLabel": "BUF@LAR",
+    "kickoff": "2026-10-13T00:15Z",
+    "price": 663,
+    "decimal": 7.63,
+    "joint": 0.2026,
+    "bookJoint": 0.1311,
+    "short": false,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": "Kyren Williams 3+ catches sits on the main line (2.5) with no cushion, Coleman's role hangs on DJ Moore, Adams has 3 and 4 catches with Puka back, and Higbee's volume came with Parkinson out. Pulled after the Monday check.",
+    "check": null,
+    "legs": [
+     {
+      "player": "Kyren Williams",
+      "team": "LAR",
+      "label": "Kyren Williams 3+ receptions",
+      "market": "receptions",
+      "side": "over",
+      "point": 2.5,
+      "price": -178,
+      "book": "draftkings",
+      "p": 0.792,
+      "model": 0.857,
+      "implied": 0.64,
+      "mean": 4.8
+     },
+     {
+      "player": "Keon Coleman",
+      "team": "BUF",
+      "label": "Keon Coleman 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -205,
+      "book": "draftkings",
+      "p": 0.753,
+      "model": 0.788,
+      "implied": 0.672,
+      "mean": 47
+     },
+     {
+      "player": "Davante Adams",
+      "team": "LAR",
+      "label": "Davante Adams 4+ receptions",
+      "market": "receptions",
+      "side": "over",
+      "point": 3.5,
+      "price": -187,
+      "book": "draftkings",
+      "p": 0.71,
+      "model": 0.735,
+      "implied": 0.652,
+      "mean": 5
+     },
+     {
+      "player": "Matthew Stafford",
+      "team": "LAR",
+      "label": "Matthew Stafford 250+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 249.5,
+      "price": -235,
+      "book": "fanduel",
+      "p": 0.709,
+      "model": 0.712,
+      "implied": 0.701,
+      "mean": 292
+     },
+     {
+      "player": "Tyler Higbee",
+      "team": "LAR",
+      "label": "Tyler Higbee 20+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -200,
+      "book": "fanduel",
+      "p": 0.675,
+      "model": 0.678,
+      "implied": 0.667,
+      "mean": 27
+     }
+    ]
    }
   },
   {
@@ -3120,7 +3290,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final",
+    "score": {
+     "away": 7,
+     "home": 31
+    }
+   },
    "live": null,
    "scratched": [],
    "liveBoard": [
@@ -3849,6 +4026,91 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "chi-gb",
+    "gameLabel": "CHI@GB",
+    "kickoff": "2026-10-11T17:00Z",
+    "price": 624,
+    "decimal": 7.24,
+    "joint": 0.2271,
+    "bookJoint": 0.1382,
+    "short": false,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": null,
+    "check": "Lambeau, dry. Inactives are out and all five are active. Caleb Williams sits (Bagent starts) and Monangai is out, so Roschon Johnson is RB2 behind Swift: the softest leg here. Jacobs is on the exempt list and Brooks on IR, so Lloyd leads Green Bay.",
+    "legs": [
+     {
+      "player": "Roschon Johnson",
+      "team": "CHI",
+      "label": "Roschon Johnson 15+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 14.5,
+      "price": -225,
+      "book": "draftkings",
+      "p": 0.804,
+      "model": 0.851,
+      "implied": 0.692,
+      "mean": 34
+     },
+     {
+      "player": "MarShawn Lloyd",
+      "team": "GB",
+      "label": "MarShawn Lloyd 20+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -205,
+      "book": "draftkings",
+      "p": 0.748,
+      "model": 0.781,
+      "implied": 0.672,
+      "mean": 34
+     },
+     {
+      "player": "Kalif Raymond",
+      "team": "CHI",
+      "label": "Kalif Raymond 20+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -210,
+      "book": "fanduel",
+      "p": 0.747,
+      "model": 0.778,
+      "implied": 0.677,
+      "mean": 36
+     },
+     {
+      "player": "Rome Odunze",
+      "team": "CHI",
+      "label": "Rome Odunze 30+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 29.5,
+      "price": -200,
+      "book": "fanduel",
+      "p": 0.718,
+      "model": 0.74,
+      "implied": 0.667,
+      "mean": 48
+     },
+     {
+      "player": "Christian Watson",
+      "team": "GB",
+      "label": "Christian Watson 50+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 49.5,
+      "price": -192,
+      "book": "fanduel",
+      "p": 0.704,
+      "model": 0.724,
+      "implied": 0.658,
+      "mean": 77
+     }
+    ]
    }
   },
   {
@@ -4475,7 +4737,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final",
+    "score": {
+     "away": 31,
+     "home": 24
+    }
+   },
    "live": null,
    "scratched": [
     {
@@ -4972,6 +5241,77 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "cin-mia",
+    "gameLabel": "CIN@MIA",
+    "kickoff": "2026-10-11T17:00Z",
+    "price": 501,
+    "decimal": 6.01,
+    "joint": 0.2359,
+    "bookJoint": 0.1665,
+    "short": true,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": null,
+    "check": null,
+    "legs": [
+     {
+      "player": "Joe Burrow",
+      "team": "CIN",
+      "label": "Joe Burrow 225+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 224.5,
+      "price": -220,
+      "book": "fanduel",
+      "p": 0.759,
+      "model": 0.79,
+      "implied": 0.688,
+      "mean": 284
+     },
+     {
+      "player": "Malik Willis",
+      "team": "MIA",
+      "label": "Malik Willis 170+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 169.5,
+      "price": -193,
+      "book": "draftkings",
+      "p": 0.706,
+      "model": 0.727,
+      "implied": 0.659,
+      "mean": 201
+     },
+     {
+      "player": "Ollie Gordon II",
+      "team": "MIA",
+      "label": "Ollie Gordon II 40+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 39.5,
+      "price": -154,
+      "book": "fanduel",
+      "p": 0.669,
+      "model": 0.696,
+      "implied": 0.606,
+      "mean": 55
+     },
+     {
+      "player": "Malik Washington",
+      "team": "MIA",
+      "label": "Malik Washington 40+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 39.5,
+      "price": -154,
+      "book": "draftkings",
+      "p": 0.658,
+      "model": 0.681,
+      "implied": 0.606,
+      "mean": 55
+     }
+    ]
    }
   },
   {
@@ -5498,7 +5838,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final",
+    "score": {
+     "away": 12,
+     "home": 17
+    }
+   },
    "live": null,
    "scratched": [
     {
@@ -6205,6 +6552,91 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "cle-nyj",
+    "gameLabel": "CLE@NYJ",
+    "kickoff": "2026-10-11T17:00Z",
+    "price": 585,
+    "decimal": 6.85,
+    "joint": 0.2274,
+    "bookJoint": 0.146,
+    "short": false,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": null,
+    "check": "MetLife, rain all game with gusts near 22 mph. Inactives are out and all five are active. Gabriel is out, so Watson starts; Carsen Ryan and Tylan Wallace are inactive, which funnels targets to Fannin. Boston's 3+ catches is the softest leg.",
+    "legs": [
+     {
+      "player": "Quinshon Judkins",
+      "team": "CLE",
+      "label": "Quinshon Judkins 10+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 9.5,
+      "price": -240,
+      "book": "fanduel",
+      "p": 0.797,
+      "model": 0.836,
+      "implied": 0.706,
+      "mean": 23
+     },
+     {
+      "player": "Deshaun Watson",
+      "team": "CLE",
+      "label": "Deshaun Watson 170+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 169.5,
+      "price": -203,
+      "book": "draftkings",
+      "p": 0.744,
+      "model": 0.775,
+      "implied": 0.67,
+      "mean": 211
+     },
+     {
+      "player": "Geno Smith",
+      "team": "NYJ",
+      "label": "Geno Smith 175+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 174.5,
+      "price": -220,
+      "book": "fanduel",
+      "p": 0.742,
+      "model": 0.766,
+      "implied": 0.688,
+      "mean": 215
+     },
+     {
+      "player": "Harold Fannin Jr.",
+      "team": "CLE",
+      "label": "Harold Fannin Jr. 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -223,
+      "book": "draftkings",
+      "p": 0.731,
+      "model": 0.749,
+      "implied": 0.69,
+      "mean": 41
+     },
+     {
+      "player": "Denzel Boston",
+      "team": "CLE",
+      "label": "Denzel Boston 3+ receptions",
+      "market": "receptions",
+      "side": "over",
+      "point": 2.5,
+      "price": -186,
+      "book": "draftkings",
+      "p": 0.707,
+      "model": 0.731,
+      "implied": 0.65,
+      "mean": 3.8
+     }
+    ]
    }
   },
   {
@@ -6802,7 +7234,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final",
+    "score": {
+     "away": 23,
+     "home": 17
+    }
+   },
    "live": null,
    "scratched": [
     {
@@ -7359,6 +7798,91 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "den-lac",
+    "gameLabel": "DEN@LAC",
+    "kickoff": "2026-10-11T20:05Z",
+    "price": 528,
+    "decimal": 6.28,
+    "joint": 0.2254,
+    "bookJoint": 0.1596,
+    "short": false,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": null,
+    "check": "SoFi, under the roof. Inactives are out and all five are active. Quentin Johnston is inactive; Ladd McConkey is active but not expected to play meaningful snaps, so Gadsden's bump shrinks a little. Denver is without CBs Surtain and Moss.",
+    "legs": [
+     {
+      "player": "RJ Harvey",
+      "team": "DEN",
+      "label": "RJ Harvey 20+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.758,
+      "model": 0.785,
+      "implied": 0.697,
+      "mean": 37
+     },
+     {
+      "player": "Oronde Gadsden",
+      "team": "LAC",
+      "label": "Oronde Gadsden 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -219,
+      "book": "draftkings",
+      "p": 0.753,
+      "model": 0.782,
+      "implied": 0.687,
+      "mean": 46
+     },
+     {
+      "player": "Courtland Sutton",
+      "team": "DEN",
+      "label": "Courtland Sutton 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -233,
+      "book": "draftkings",
+      "p": 0.739,
+      "model": 0.756,
+      "implied": 0.7,
+      "mean": 42
+     },
+     {
+      "player": "Omarion Hampton",
+      "team": "LAC",
+      "label": "Omarion Hampton 30+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 29.5,
+      "price": -225,
+      "book": "fanduel",
+      "p": 0.733,
+      "model": 0.751,
+      "implied": 0.692,
+      "mean": 47
+     },
+     {
+      "player": "Justin Herbert",
+      "team": "LAC",
+      "label": "Justin Herbert 175+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 174.5,
+      "price": -220,
+      "book": "fanduel",
+      "p": 0.729,
+      "model": 0.747,
+      "implied": 0.688,
+      "mean": 211
+     }
+    ]
    }
   },
   {
@@ -7957,7 +8481,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final",
+    "score": {
+     "away": 45,
+     "home": 21
+    }
+   },
    "live": null,
    "scratched": [],
    "liveBoard": [
@@ -8588,6 +9119,91 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "det-ari",
+    "gameLabel": "DET@ARI",
+    "kickoff": "2026-10-11T20:25Z",
+    "price": 554,
+    "decimal": 6.54,
+    "joint": 0.1985,
+    "bookJoint": 0.1531,
+    "short": false,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": null,
+    "check": "Under the roof. Inactives are out and all five are active. Marvin Harrison Jr. is inactive, which makes Michael Wilson the WR1.",
+    "legs": [
+     {
+      "player": "Michael Wilson",
+      "team": "ARI",
+      "label": "Michael Wilson 6+ receptions",
+      "market": "receptions",
+      "side": "over",
+      "point": 5.5,
+      "price": -204,
+      "book": "draftkings",
+      "p": 0.74,
+      "model": 0.769,
+      "implied": 0.671,
+      "mean": 7.6
+     },
+     {
+      "player": "Jared Goff",
+      "team": "DET",
+      "label": "Jared Goff 250+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 249.5,
+      "price": -245,
+      "book": "fanduel",
+      "p": 0.737,
+      "model": 0.748,
+      "implied": 0.71,
+      "mean": 302
+     },
+     {
+      "player": "Sam LaPorta",
+      "team": "DET",
+      "label": "Sam LaPorta 40+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 39.5,
+      "price": -218,
+      "book": "draftkings",
+      "p": 0.715,
+      "model": 0.727,
+      "implied": 0.686,
+      "mean": 62
+     },
+     {
+      "player": "Jameson Williams",
+      "team": "DET",
+      "label": "Jameson Williams 40+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 39.5,
+      "price": -215,
+      "book": "draftkings",
+      "p": 0.714,
+      "model": 0.727,
+      "implied": 0.683,
+      "mean": 62
+     },
+     {
+      "player": "Tyler Allgeier",
+      "team": "ARI",
+      "label": "Tyler Allgeier 20+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -218,
+      "book": "draftkings",
+      "p": 0.713,
+      "model": 0.724,
+      "implied": 0.686,
+      "mean": 29
+     }
+    ]
    }
   },
   {
@@ -9097,7 +9713,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final",
+    "score": {
+     "away": 26,
+     "home": 3
+    }
+   },
    "live": null,
    "scratched": [
     {
@@ -9814,6 +10437,77 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "hou-ten",
+    "gameLabel": "HOU@TEN",
+    "kickoff": "2026-10-11T17:00Z",
+    "price": 348,
+    "decimal": 4.48,
+    "joint": 0.2911,
+    "bookJoint": 0.2233,
+    "short": true,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": null,
+    "check": null,
+    "legs": [
+     {
+      "player": "C.J. Stroud",
+      "team": "HOU",
+      "label": "C.J. Stroud 210+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 209.5,
+      "price": -238,
+      "book": "draftkings",
+      "p": 0.754,
+      "model": 0.776,
+      "implied": 0.704,
+      "mean": 261
+     },
+     {
+      "player": "Cam Ward",
+      "team": "TEN",
+      "label": "Cam Ward 170+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 169.5,
+      "price": -199,
+      "book": "draftkings",
+      "p": 0.748,
+      "model": 0.784,
+      "implied": 0.666,
+      "mean": 213
+     },
+     {
+      "player": "Nico Collins",
+      "team": "HOU",
+      "label": "Nico Collins 5+ receptions",
+      "market": "receptions",
+      "side": "over",
+      "point": 4.5,
+      "price": -250,
+      "book": "fanduel",
+      "p": 0.724,
+      "model": 0.728,
+      "implied": 0.714,
+      "mean": 6.1
+     },
+     {
+      "player": "Wan'Dale Robinson",
+      "team": "TEN",
+      "label": "Wan'Dale Robinson 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -200,
+      "book": "draftkings",
+      "p": 0.713,
+      "model": 0.732,
+      "implied": 0.667,
+      "mean": 39
+     }
+    ]
    }
   },
   {
@@ -10375,7 +11069,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final",
+    "score": {
+     "away": 22,
+     "home": 34
+    }
+   },
    "live": null,
    "scratched": [
     {
@@ -11017,6 +11718,91 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "ind-pit",
+    "gameLabel": "IND@PIT",
+    "kickoff": "2026-10-11T17:00Z",
+    "price": 530,
+    "decimal": 6.3,
+    "joint": 0.2477,
+    "bookJoint": 0.1587,
+    "short": false,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": "Heavy rain from the remnants of Isaias, and Tyler Warren's main receptions line fell to the alternate line we held. Pulled after the morning check.",
+    "check": null,
+    "legs": [
+     {
+      "player": "Aaron Rodgers",
+      "team": "PIT",
+      "label": "Aaron Rodgers 190+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 189.5,
+      "price": -224,
+      "book": "draftkings",
+      "p": 0.79,
+      "model": 0.833,
+      "implied": 0.691,
+      "mean": 253
+     },
+     {
+      "player": "Roman Wilson",
+      "team": "PIT",
+      "label": "Roman Wilson 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -250,
+      "book": "draftkings",
+      "p": 0.785,
+      "model": 0.815,
+      "implied": 0.714,
+      "mean": 53
+     },
+     {
+      "player": "Jaylen Warren",
+      "team": "PIT",
+      "label": "Jaylen Warren 15+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 14.5,
+      "price": -200,
+      "book": "fanduel",
+      "p": 0.777,
+      "model": 0.825,
+      "implied": 0.667,
+      "mean": 33
+     },
+     {
+      "player": "Pat Freiermuth",
+      "team": "PIT",
+      "label": "Pat Freiermuth 20+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.721,
+      "model": 0.732,
+      "implied": 0.697,
+      "mean": 31
+     },
+     {
+      "player": "Josh Downs",
+      "team": "IND",
+      "label": "Josh Downs 40+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 39.5,
+      "price": -225,
+      "book": "draftkings",
+      "p": 0.713,
+      "model": 0.722,
+      "implied": 0.692,
+      "mean": 61
+     }
+    ]
    }
   },
   {
@@ -11619,7 +12405,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final",
+    "score": {
+     "away": 17,
+     "home": 45
+    }
+   },
    "live": null,
    "scratched": [
     {
@@ -12244,6 +13037,91 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "lv-ne",
+    "gameLabel": "LV@NE",
+    "kickoff": "2026-10-11T17:00Z",
+    "price": 702,
+    "decimal": 8.02,
+    "joint": 0.1876,
+    "bookJoint": 0.1246,
+    "short": false,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": null,
+    "check": null,
+    "legs": [
+     {
+      "player": "Michael Mayer",
+      "team": "LV",
+      "label": "Michael Mayer 20+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -250,
+      "book": "fanduel",
+      "p": 0.759,
+      "model": 0.778,
+      "implied": 0.714,
+      "mean": 36
+     },
+     {
+      "player": "Tre Tucker",
+      "team": "LV",
+      "label": "Tre Tucker 30+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 29.5,
+      "price": -220,
+      "book": "fanduel",
+      "p": 0.752,
+      "model": 0.78,
+      "implied": 0.688,
+      "mean": 55
+     },
+     {
+      "player": "Kirk Cousins",
+      "team": "LV",
+      "label": "Kirk Cousins 210+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 209.5,
+      "price": -198,
+      "book": "draftkings",
+      "p": 0.713,
+      "model": 0.733,
+      "implied": 0.664,
+      "mean": 250
+     },
+     {
+      "player": "Romeo Doubs",
+      "team": "NE",
+      "label": "Romeo Doubs 40+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 39.5,
+      "price": -177,
+      "book": "draftkings",
+      "p": 0.705,
+      "model": 0.733,
+      "implied": 0.639,
+      "mean": 63
+     },
+     {
+      "player": "TreVeyon Henderson",
+      "team": "NE",
+      "label": "TreVeyon Henderson 40+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 39.5,
+      "price": -149,
+      "book": "draftkings",
+      "p": 0.654,
+      "model": 0.678,
+      "implied": 0.598,
+      "mean": 53
+     }
+    ]
    }
   },
   {
@@ -12834,7 +13712,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final",
+    "score": {
+     "away": 23,
+     "home": 13
+    }
+   },
    "live": null,
    "scratched": [],
    "liveBoard": [
@@ -13423,6 +14308,91 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "min-no",
+    "gameLabel": "MIN@NO",
+    "kickoff": "2026-10-11T17:00Z",
+    "price": 601,
+    "decimal": 7.01,
+    "joint": 0.1908,
+    "bookJoint": 0.1427,
+    "short": false,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": null,
+    "check": "Superdome. Inactives are out and all five are active; Olave and Shough practiced fully Friday with no designation.",
+    "legs": [
+     {
+      "player": "Chris Olave",
+      "team": "NO",
+      "label": "Chris Olave 6+ receptions",
+      "market": "receptions",
+      "side": "over",
+      "point": 5.5,
+      "price": -225,
+      "book": "fanduel",
+      "p": 0.731,
+      "model": 0.747,
+      "implied": 0.692,
+      "mean": 7.4
+     },
+     {
+      "player": "T.J. Hockenson",
+      "team": "MIN",
+      "label": "T.J. Hockenson 30+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 29.5,
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.727,
+      "model": 0.74,
+      "implied": 0.697,
+      "mean": 48
+     },
+     {
+      "player": "Devaughn Vele",
+      "team": "NO",
+      "label": "Devaughn Vele 30+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 29.5,
+      "price": -240,
+      "book": "fanduel",
+      "p": 0.725,
+      "model": 0.733,
+      "implied": 0.706,
+      "mean": 47
+     },
+     {
+      "player": "Aaron Jones Sr.",
+      "team": "MIN",
+      "label": "Aaron Jones Sr. 15+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 14.5,
+      "price": -174,
+      "book": "draftkings",
+      "p": 0.721,
+      "model": 0.758,
+      "implied": 0.635,
+      "mean": 25
+     },
+     {
+      "player": "Tyler Shough",
+      "team": "NO",
+      "label": "Tyler Shough 220+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 219.5,
+      "price": -194,
+      "book": "draftkings",
+      "p": 0.687,
+      "model": 0.699,
+      "implied": 0.66,
+      "mean": 254
+     }
+    ]
    }
   },
   {
@@ -14025,7 +14995,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final/OT",
+    "score": {
+     "away": 27,
+     "home": 27
+    }
+   },
    "live": null,
    "scratched": [],
    "liveBoard": [
@@ -14560,6 +15537,91 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "nyg-wsh",
+    "gameLabel": "NYG@WSH",
+    "kickoff": "2026-10-11T17:00Z",
+    "price": 594,
+    "decimal": 6.94,
+    "joint": 0.2081,
+    "bookJoint": 0.1439,
+    "short": false,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": "Rain with gusts to 26 mph at Northwest Stadium, a backup QB, and two committee backfields. Pulled after the morning check.",
+    "check": null,
+    "legs": [
+     {
+      "player": "Isaiah Likely",
+      "team": "NYG",
+      "label": "Isaiah Likely 4+ receptions",
+      "market": "receptions",
+      "side": "over",
+      "point": 3.5,
+      "price": -240,
+      "book": "fanduel",
+      "p": 0.806,
+      "model": 0.849,
+      "implied": 0.706,
+      "mean": 6
+     },
+     {
+      "player": "Najee Harris",
+      "team": "NYG",
+      "label": "Najee Harris 20+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.734,
+      "model": 0.75,
+      "implied": 0.697,
+      "mean": 31
+     },
+     {
+      "player": "Jameis Winston",
+      "team": "NYG",
+      "label": "Jameis Winston 175+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 174.5,
+      "price": -230,
+      "book": "fanduel",
+      "p": 0.718,
+      "model": 0.727,
+      "implied": 0.697,
+      "mean": 207
+     },
+     {
+      "player": "Rachaad White",
+      "team": "WSH",
+      "label": "Rachaad White 20+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -172,
+      "book": "fanduel",
+      "p": 0.706,
+      "model": 0.738,
+      "implied": 0.632,
+      "mean": 30
+     },
+     {
+      "player": "Jayden Daniels",
+      "team": "WSH",
+      "label": "Jayden Daniels 25+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -198,
+      "book": "fanduel",
+      "p": 0.694,
+      "model": 0.707,
+      "implied": 0.664,
+      "mean": 35
+     }
+    ]
    }
   },
   {
@@ -15145,7 +16207,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final",
+    "score": {
+     "away": 17,
+     "home": 19
+    }
+   },
    "live": null,
    "scratched": [
     {
@@ -15826,6 +16895,91 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "phi-jax",
+    "gameLabel": "PHI@JAX",
+    "kickoff": "2026-10-11T13:30Z",
+    "price": 673,
+    "decimal": 7.73,
+    "joint": 0.1851,
+    "bookJoint": 0.1294,
+    "short": false,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": null,
+    "check": null,
+    "legs": [
+     {
+      "player": "Will Shipley",
+      "team": "PHI",
+      "label": "Will Shipley 25+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -212,
+      "book": "draftkings",
+      "p": 0.729,
+      "model": 0.75,
+      "implied": 0.679,
+      "mean": 39
+     },
+     {
+      "player": "Chris Rodriguez Jr.",
+      "team": "JAX",
+      "label": "Chris Rodriguez Jr. 20+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 19.5,
+      "price": -203,
+      "book": "draftkings",
+      "p": 0.726,
+      "model": 0.75,
+      "implied": 0.67,
+      "mean": 31
+     },
+     {
+      "player": "Jalen Hurts",
+      "team": "PHI",
+      "label": "Jalen Hurts 160+ pass yds",
+      "market": "pass_yds",
+      "side": "over",
+      "point": 159.5,
+      "price": -216,
+      "book": "draftkings",
+      "p": 0.721,
+      "model": 0.737,
+      "implied": 0.684,
+      "mean": 191
+     },
+     {
+      "player": "Makai Lemon",
+      "team": "PHI",
+      "label": "Makai Lemon 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -192,
+      "book": "fanduel",
+      "p": 0.697,
+      "model": 0.713,
+      "implied": 0.658,
+      "mean": 37
+     },
+     {
+      "player": "Brenton Strange",
+      "team": "JAX",
+      "label": "Brenton Strange 25+ rec yds",
+      "market": "rec_yds",
+      "side": "over",
+      "point": 24.5,
+      "price": -172,
+      "book": "draftkings",
+      "p": 0.696,
+      "model": 0.723,
+      "implied": 0.632,
+      "mean": 38
+     }
+    ]
    }
   },
   {
@@ -16380,7 +17534,14 @@
      }
     ]
    },
-   "status": null,
+   "status": {
+    "state": "STATUS_FINAL",
+    "detail": "Final",
+    "score": {
+     "away": 32,
+     "home": 29
+    }
+   },
    "live": null,
    "scratched": [
     {
@@ -17091,6 +18252,77 @@
      }
     ],
     "fetchedAt": "2026-10-14T10:35:26.690Z"
+   },
+   "fiveLeg": {
+    "game": "sf-sea",
+    "gameLabel": "SF@SEA",
+    "kickoff": "2026-10-11T20:25Z",
+    "price": 503,
+    "decimal": 6.03,
+    "joint": 0.2087,
+    "bookJoint": 0.1658,
+    "short": true,
+    "builtAt": "2026-10-12T20:24:02.140Z",
+    "pulled": null,
+    "check": null,
+    "legs": [
+     {
+      "player": "Kaelon Black",
+      "team": "SF",
+      "label": "Kaelon Black 10+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 9.5,
+      "price": -250,
+      "book": "fanduel",
+      "p": 0.773,
+      "model": 0.798,
+      "implied": 0.714,
+      "mean": 22
+     },
+     {
+      "player": "Deebo Samuel Sr.",
+      "team": "SF",
+      "label": "Deebo Samuel Sr. 5+ rush yds",
+      "market": "rush_yds",
+      "side": "over",
+      "point": 4.5,
+      "price": -220,
+      "book": "fanduel",
+      "p": 0.69,
+      "model": 0.691,
+      "implied": 0.688,
+      "mean": 12
+     },
+     {
+      "player": "Mike Evans",
+      "team": "SF",
+      "label": "Mike Evans 4+ receptions",
+      "market": "receptions",
+      "side": "over",
+      "point": 3.5,
+      "price": -146,
+      "book": "draftkings",
+      "p": 0.626,
+      "model": 0.641,
+      "implied": 0.593,
+      "mean": 4.4
+     },
+     {
+      "player": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "label": "Jaxon Smith-Njigba 7+ receptions",
+      "market": "receptions",
+      "side": "over",
+      "point": 6.5,
+      "price": -132,
+      "book": "fanduel",
+      "p": 0.625,
+      "model": 0.649,
+      "implied": 0.569,
+      "mean": 7.7
+     }
+    ]
    }
   }
  ],
@@ -21172,7 +22404,7 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-10-14T10:35:27.893Z",
+  "builtAt": "2026-10-14T17:15:11.033Z",
   "books": [
    "FD",
    "DK",
@@ -21276,7 +22508,7 @@
   ]
  },
  "topTen": {
-  "builtAt": "2026-10-14T10:35:27.893Z",
+  "builtAt": "2026-10-14T17:15:11.034Z",
   "note": "Sides, totals and moneylines are priced from the projected score with the simulator’s spreads (13.4 margin, 10.6 total). Touchdown lists use the desk’s role-built estimates. Prop leans are not graded by a probability and are listed by kickoff.",
   "categories": [
    {
@@ -21324,7 +22556,13 @@
   ]
  },
  "lottos": [],
- "fiveLeg": null,
+ "fiveLeg": {
+  "builtAt": "2026-10-12T20:24:02.140Z",
+  "target": 6,
+  "checkedAt": "2026-10-11T16:25:00Z",
+  "pricedAt": "2026-10-11T14:41:00Z",
+  "tickets": []
+ },
  "bestOf": null,
  "maxFive": null
 }

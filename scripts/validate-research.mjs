@@ -12,6 +12,10 @@ const need = (cond, msg) => {
 need(r && typeof r === 'object', 'research.json is not an object');
 need(Number.isInteger(r?.season), 'season must be an integer');
 need(Number.isInteger(r?.week), 'week must be an integer');
+need(
+  !schedule.games?.length || !schedule.week || r?.week === schedule.week,
+  `week ${r?.week} does not match schedule.json week ${schedule.week} (run assemble-research with WEEK=${schedule.week})`,
+);
 need(typeof r?.researchAsOf === 'string', 'researchAsOf must be an ISO string');
 need(Array.isArray(r?.games) && r.games.length > 0, 'games must be a non-empty array');
 need(Array.isArray(r?.bestBets), 'bestBets must be an array');

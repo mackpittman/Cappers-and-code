@@ -7,7 +7,33 @@ import { buildLottos, buildTopTen } from './top-ten.mjs';
 import { buildBestOf, buildMaxFive } from './best-of.mjs';
 
 const research = readJson(path.join(ROOT, 'src', 'data', 'research.json'));
-const schedule = readJson(path.join(DATA, 'schedule.json'), { games: [] });
+let schedule = readJson(path.join(DATA, 'schedule.json'), { games: [] });
+// ESPN rolls the live schedule to the next week on Tuesday; the research for that week lands on
+// Saturday. In between, building against the rolled file relabels last week's research as a blank
+// new week (which is what reached main on 2026-10-13), so build the research week from its archived
+// schedule instead (data/schedules/, written by fetch-schedule.mjs with every game final): the
+// Monday-night grade and the updated record still have to reach the board that week.
+if (schedule.week && research.week && schedule.week !== research.week) {
+  const archived = readJson(
+    path.join(
+      DATA,
+      'schedules',
+      `${research.season}-w${String(research.week).padStart(2, '0')}.json`,
+    ),
+    null,
+  );
+  if (archived?.games?.length) {
+    console.log(
+      `build-board: schedule.json is week ${schedule.week} but research.json is week ${research.week}; building week ${research.week} from its archived schedule`,
+    );
+    schedule = archived;
+  } else {
+    console.log(
+      `build-board: schedule.json is week ${schedule.week} but research.json is week ${research.week} and no archived schedule exists for week ${research.week}; keeping the last board.json untouched. For the new week, run assemble-research with WEEK=${schedule.week}.`,
+    );
+    process.exit(0);
+  }
+}
 const injuries = readJson(path.join(DATA, 'injuries.json'), { teams: {} });
 const odds = readJson(path.join(DATA, 'odds', 'latest.json'), { events: [] });
 const history = readLines(path.join(DATA, 'odds', 'history.jsonl'));
@@ -433,7 +459,16 @@ board.lottos = buildLottos(board.topTen);
 // and above it the day's max-confidence five-legs.
 board.bestOf = buildBestOf(board);
 board.maxFive = buildMaxFive(board);
-writeJson(path.join(DATA, 'board.json'), board);
+// A rebuild that changed nothing but its own timestamps is not written: a fresh generatedAt would
+// re-publish an identical board and re-stamp the freshness that ops-health watches, every run.
+const previous = readJson(path.join(DATA, 'board.json'), null);
+const stamp = (b) =>
+  JSON.stringify(b, (k, v) => (k === 'generatedAt' || k === 'builtAt' ? undefined : v));
+if (previous && stamp(previous) === stamp(board)) {
+  console.log(`board: unchanged since ${previous.generatedAt}; not rewritten`);
+} else {
+  writeJson(path.join(DATA, 'board.json'), board);
+}
 console.log(
   `board: ${games.length} games, ${games.filter((g) => g.live).length} with live lines (${games.find((g) => g.live)?.live?.source || 'none'}), ${games.filter((g) => g.liveBoard.length).length} with live ATD, ${games.filter((g) => g.propLines.length).length} with prop lines`,
 );

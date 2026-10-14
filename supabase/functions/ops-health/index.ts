@@ -70,21 +70,27 @@ Deno.serve(async (req) => {
 
   const credits = Number(board?.data?.oddsCredits?.remaining ?? NaN);
   const report = String(run?.value?.report ?? '');
-  const issues: string[] = [];
+  // Each issue carries a stable code and a human line. The dedupe fingerprint is built from the
+  // codes only: the lines embed hour counts and credit totals that change every run, and
+  // fingerprinting on them meant "the same problem, one hour older" read as a new problem and the
+  // owner was DMed every hour instead of every repeatHours.
+  const found: { code: string; text: string }[] = [];
+  const issue = (code: string, text: string) => found.push({ code, text });
 
   const boardAge = hoursSince(board?.published_at);
   if (boardAge > t.boardStaleHours)
-    issues.push(`Board is ${boardAge.toFixed(0)}h old (limit ${t.boardStaleHours}h).`);
+    issue('board-stale', `Board is ${boardAge.toFixed(0)}h old (limit ${t.boardStaleHours}h).`);
 
   const runAge = hoursSince(run?.updated_at);
   if (runAge > t.runStaleHours)
-    issues.push(`No pipeline run for ${runAge.toFixed(0)}h (limit ${t.runStaleHours}h).`);
+    issue('run-stale', `No pipeline run for ${runAge.toFixed(0)}h (limit ${t.runStaleHours}h).`);
 
   if (Number.isFinite(credits) && credits < t.creditsFloor)
-    issues.push(`Odds API credits down to ${credits} (floor ${t.creditsFloor}).`);
+    issue('credits-low', `Odds API credits down to ${credits} (floor ${t.creditsFloor}).`);
 
   // The runner writes its own failures into the report; surface them rather than re-deriving.
-  if (/Script errors: (?!no)/i.test(report)) issues.push('Last run reported script errors.');
+  if (/Script errors: (?!no)/i.test(report))
+    issue('script-errors', 'Last run reported script errors.');
   // Routine sessions run without git credentials by design; the data mirror in Supabase is the
   // system of record and the handoff brings files back to the repo. Only alert when that mirror
   // failed too, which is the case that actually loses work.
@@ -92,13 +98,18 @@ Deno.serve(async (req) => {
     /push to origin main was rejected|access denied by the git proxy/i.test(report) &&
     !/state push: \d+ files/i.test(report)
   )
-    issues.push('Last run could not push to the repo and the Supabase mirror failed too.');
+    issue('push-failed', 'Last run could not push to the repo and the Supabase mirror failed too.');
   // The run report prints the script's own line, e.g. `publish-board: publish: 200 "2026-w02"`,
   // so look for the status code anywhere on that line rather than right after the label.
   const publishLine = report.match(/publish-board:[^\n]*/i)?.[0];
-  if (publishLine && !/\b200\b/.test(publishLine)) issues.push('Last run failed to publish the board.');
+  if (publishLine && !/\b200\b/.test(publishLine))
+    issue('publish-failed', 'Last run failed to publish the board.');
 
-  const fingerprint = issues.slice().sort().join(' | ');
+  const issues = found.map((f) => f.text);
+  const fingerprint = found
+    .map((f) => f.code)
+    .sort()
+    .join(' | ');
   const { data: prev } = await admin
     .from('pipeline_state')
     .select('value')

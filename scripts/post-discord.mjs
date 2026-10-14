@@ -70,6 +70,14 @@ const parlayLines = (board.parlays?.categories || [])
 // DISCORD_PARLAYS_ONLY=1 posts just the parlay board (used when the digest already went out today).
 const parlaysOnly = process.env.DISCORD_PARLAYS_ONLY === '1';
 const force = process.env.DISCORD_FORCE === '1';
+// A board whose games have all been played is last week's: ESPN rolls the schedule on Tuesday and
+// the new research lands on Saturday. However fresh the file, it is not today's edge.
+if (!force && board.games.length && board.games.every((g) => g.status?.state === 'STATUS_FINAL')) {
+  console.log(
+    `discord: every game on the week ${board.week} board is final; no digest until the new week's research lands. DISCORD_FORCE=1 overrides.`,
+  );
+  process.exit(0);
+}
 const DIGEST_KEY = 'discord-digest';
 const today = new Date().toISOString().slice(0, 10);
 // The once-a-day record lives in pipeline_state next to the odds pulls, so every session that can
@@ -149,7 +157,12 @@ const payload = parlaysOnly
           color: GREEN,
           thumbnail: undefined,
         },
-        { title: 'TD BOARD', description: fitItems(td, 1200, (n) => `\n_+${n} more in the app._`) || 'No TD board yet.', color: GREEN },
+        {
+          title: 'TD BOARD',
+          description:
+            fitItems(td, 1200, (n) => `\n_+${n} more in the app._`) || 'No TD board yet.',
+          color: GREEN,
+        },
         ...(parlayLines.length
           ? [
               {

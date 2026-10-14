@@ -1,12 +1,11 @@
 name: Cappers & Code daily board
 
-# The schedule is OFF. This workflow has no secrets set, so every scheduled run rebuilt the board
-# from whatever stale snapshot happened to be in the repo and pushed it over main, while reporting
-# success. The Claude Routine is the live scheduler and it has the real keys.
+# The schedule is OFF. The Claude Routine "Cappers & Code daily board update" is the live scheduler
+# and carries the real keys; two schedulers would spend the same credit budget twice.
 #
-# To make this the scheduler instead: add ODDS_API_KEY, SUPABASE_URL, SUPABASE_ANON_KEY and
-# BOARD_PUBLISH_SECRET as repository secrets, uncomment the schedule below, and disable the
-# Routine so two schedulers are never spending the same credit budget.
+# To make this the scheduler instead: add ODDS_API_KEY as a repository secret (BOARD_PUBLISH_SECRET
+# is already there for sync-data.yml; the Supabase URL and anon key are public and read from
+# app.json below), uncomment the schedule, and disable the Routine.
 on:
   # schedule:
   #   - cron: '0 11 * * *'   # daily 7am ET: free feeds
@@ -26,25 +25,40 @@ on:
 permissions:
   contents: write
 
+# Shared with sync-data.yml: both commit the same data/ files, and a group is repository-wide.
+concurrency:
+  group: board-data
+  cancel-in-progress: false
+
 jobs:
   update:
+    # The commit step pushes to main, so only a run on main may do the work: a dispatch from a
+    # branch would otherwise land that branch on main.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
+
+      # Public by design: both values ship inside the web bundle, so reading them from app.json
+      # keeps one source of truth and leaves two real secrets for this workflow to need.
+      - name: Read the public Supabase config from app.json
+        id: cfg
+        run: |
+          echo "url=$(node -p "require('./app.json').expo.extra.supabaseUrl")" >> "$GITHUB_OUTPUT"
+          echo "anon=$(node -p "require('./app.json').expo.extra.supabaseAnonKey")" >> "$GITHUB_OUTPUT"
+
       # Refuse to run without inputs. Without this the scripts no-op, the board is rebuilt from a
       # stale snapshot, and the commit step pushes it over main with a green check.
       - name: Require the secrets this pipeline actually needs
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
           BOARD_PUBLISH_SECRET: ${{ secrets.BOARD_PUBLISH_SECRET }}
         run: |
           missing=""
-          for v in ODDS_API_KEY SUPABASE_URL SUPABASE_ANON_KEY BOARD_PUBLISH_SECRET; do
+          for v in ODDS_API_KEY BOARD_PUBLISH_SECRET; do
             [ -n "${!v}" ] || missing="$missing $v"
           done
           if [ -n "$missing" ]; then
@@ -52,53 +66,91 @@ jobs:
             echo "Set them in Settings > Secrets and variables > Actions, or leave this workflow off."
             exit 1
           fi
+          # A pasted secret often carries a trailing newline; the RPC compares exactly.
+          len=$(printf '%s' "$BOARD_PUBLISH_SECRET" | tr -d '[:space:]' | wc -c)
+          if [ "$len" -ne 48 ]; then
+            echo "::error::BOARD_PUBLISH_SECRET is $len characters after trimming whitespace, expected 48. Re-copy it from Supabase (pipeline_config, key 'publish_secret')."
+            exit 1
+          fi
 
       - name: Restore pipeline state so credits are never spent twice
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          SUPABASE_URL: ${{ steps.cfg.outputs.url }}
+          SUPABASE_ANON_KEY: ${{ steps.cfg.outputs.anon }}
           BOARD_PUBLISH_SECRET: ${{ secrets.BOARD_PUBLISH_SECRET }}
-        run: node scripts/state-sync.mjs pull
+        run: |
+          BOARD_PUBLISH_SECRET="$(printf '%s' "$BOARD_PUBLISH_SECRET" | tr -d '[:space:]')"
+          export BOARD_PUBLISH_SECRET
+          node scripts/state-sync.mjs pull
 
-      - name: Fetch schedule, injuries and props, rebuild board
+      # Each script runs even if the one before it failed, so a paid odds pull is never stranded by
+      # a later ESPN hiccup; failures are collected and fail the job at the end, after the state has
+      # been mirrored and the data committed.
+      - name: Fetch schedule, injuries and props, grade, rebuild the board
+        id: build
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-          BOARD_PUBLISH_SECRET: ${{ secrets.BOARD_PUBLISH_SECRET }}
           FORCE_PHASE: ${{ github.event.inputs.force_phase }}
           CREDIT_RESERVE: '40'
           MAX_CREDITS_PER_RUN: '80'
         run: |
-          node scripts/fetch-schedule.mjs
-          node scripts/fetch-injuries.mjs
-          node scripts/fetch-odds.mjs
-          node scripts/grade-results.mjs
-          node scripts/build-board.mjs
-          node scripts/publish-board.mjs
+          failed=""
+          run() { "$@" || { echo "::warning::$2 failed"; failed="$failed $2"; }; }
+          run node scripts/fetch-schedule.mjs
+          run node scripts/fetch-injuries.mjs
+          run node scripts/fetch-odds.mjs
+          run node scripts/grade-results.mjs
+          run node scripts/build-board.mjs
+          # build-board leaves board.json alone when nothing changed (or when the live schedule has
+          # rolled past the research week and no archive exists); only a rebuilt board is published.
+          if git diff --quiet -- data/board.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+          echo "failed=$failed" >> "$GITHUB_OUTPUT"
+
+      - name: Publish the board, mirror the state, post the digest
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          SUPABASE_URL: ${{ steps.cfg.outputs.url }}
+          SUPABASE_ANON_KEY: ${{ steps.cfg.outputs.anon }}
+          BOARD_PUBLISH_SECRET: ${{ secrets.BOARD_PUBLISH_SECRET }}
+          CHANGED: ${{ steps.build.outputs.changed }}
+        run: |
+          BOARD_PUBLISH_SECRET="$(printf '%s' "$BOARD_PUBLISH_SECRET" | tr -d '[:space:]')"
+          export BOARD_PUBLISH_SECRET
+          if [ "$CHANGED" = "true" ]; then
+            node scripts/publish-board.mjs || echo "::warning::publish-board failed"
+          else
+            echo "data/board.json did not change this run; not re-publishing."
+          fi
           node scripts/state-sync.mjs push
-          node scripts/post-discord.mjs
+          if [ "$CHANGED" = "true" ]; then
+            node scripts/post-discord.mjs || echo "::warning::post-discord failed"
+          else
+            echo "No new board; no digest."
+          fi
+
       - name: Commit updated data
         run: |
-          git config user.name "cappers-bot"
-          git config user.email "cappers-bot@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data
-          git diff --cached --quiet || git commit -m "data: board update $(date -u +%FT%H:%MZ)"
-          git pull --rebase
-          git push
-      - name: Publish board.json to a public Gist (optional, gives the app a keyless URL)
-        if: ${{ env.GIST_ID != '' && env.GIST_TOKEN != '' }}
-        env:
-          GIST_ID: ${{ secrets.BOARD_GIST_ID }}
-          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+          if git diff --cached --quiet; then
+            echo "data/ is already current; nothing to commit."
+            exit 0
+          fi
+          git commit -m "data: board update $(date -u +%FT%H:%MZ)"
+          for i in 1 2 3; do
+            git push origin HEAD:main && exit 0
+            git pull --rebase origin main || exit 1
+          done
+          echo "::error::Could not push after three attempts."
+          exit 1
+
+      - name: Fail the run if any script failed
+        if: steps.build.outputs.failed != ''
         run: |
-          node -e '
-            const fs = require("fs");
-            const body = { files: { "board.json": { content: fs.readFileSync("data/board.json", "utf8") } } };
-            fetch(`https://api.github.com/gists/${process.env.GIST_ID}`, {
-              method: "PATCH",
-              headers: { Authorization: `Bearer ${process.env.GIST_TOKEN}`, Accept: "application/vnd.github+json", "Content-Type": "application/json" },
-              body: JSON.stringify(body),
-            }).then(async (r) => { console.log("gist", r.status); if (!r.ok) { console.log(await r.text()); process.exit(1); } });
-          '
+          echo "::error::Scripts that failed:${{ steps.build.outputs.failed }}"
+          exit 1
