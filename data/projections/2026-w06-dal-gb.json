@@ -1,0 +1,604 @@
+[
+  {
+    "method": "Method A, usage first. (1) Plays and pass rate. DAL is projected for 61.5 offensive plays: season 61.0/g, neutral pace 2nd-fastest, GB opponents run 65.6/g. That is trimmed slightly because a bad Dallas defense keeps the GB offense on the field. With a ~65% dropback rate this gives 38.5 pass attempts, 1.5 sacks and 22 rushes (including 2.6 Dak carries). GB is projected for 60.5 plays: own 58.8/g, DAL opponents 62.0/g. Its 66% league-high pass rate is blended with the 46.8% pass rate DAL opponents use (DAL is a run funnel), giving 35 attempts, 1.5 sacks and 24 rushes (2 Love). (2) Shares. DAL targets (37.2) use season shares rebuilt for a healthy Lamb, whose Week 5 quad game is thrown out: Lamb 28%, Pickens 22% (his 7.0 targets/g with Lamb healthy, plus a weak GB outside CB group), Flournoy 14%, Ferguson 12.5%, Javonte 10.5%. GB targets (33.6) reallocate the shares of Skyy Moore (OUT), Reed (IR) and Brooks (IR): Golden 24.5%, Watson 22.5%, Kraft 18.5% (DAL allows an 89.7% catch rate to TEs, and GB's 12-personnel use is rising), Strong, Lloyd and Melton about 7% each. Carries: Javonte 16.5 of 19.5 DAL RB/WR carries (78% season share). GB: Lloyd 12.5, Strong 6, K. Johnson 2.5 (based on the Week 5 pre-garbage split, Lloyd ~2:1 over Strong, with Johnson benched for fumbles). (3) Efficiency. Each player's rate is blended with the opponent's allowed rate. GB YPC = 3.05 + (5.1 DAL allowed - ~4.3 league) ≈ 3.85; Lloyd 3.7. DAL Javonte 4.0: 3.7 season, and GB allows 4.1 but its interior is gutted (Hargrave and Ford OUT, Cooper on IR). Love 8.0 Y/A (7.6 own vs 8.3 allowed, small wind haircut); Dak 6.95 Y/A (7.2 own vs GB's 6.4, inflated by games against backup QBs). (4) Scoring. GB 27 = 3.1 TD + 1.8 FG; DAL 25 = 2.85 TD + 1.7 FG. Market is ~27.25-25.75 on a total of 53-53.5; I am about 1 point under, because GB converts only 50% in the red zone and Smack/Aubrey are shaky in gusty SSW wind. TD split: GB ~71% pass (Love 2.2 pass TD), DAL ~55% pass (Dak 1.6). Player TD rates come from red-zone and end-zone share, converted with a dispersion-adjusted Poisson. Team checks: DAL receptions 24.9 against 24.8 Dak completions, receiving yds 267 = Dak 267; GB receptions 22.7 = 22.7 completions, receiving yds 279 = Love 279. Lines are read from the DraftKings alt-ladder Over prices in data/odds/raw/w06/2026-w06-dal-gb.json (pulled 2026-10-16 13:52Z). The file has no Under prices, so my unders cannot be priced from it. Roster/status basis. Most of it comes from the supplied research, whose claims were marked 'not checked' by the skeptic, so treat it as reported rather than independently verified. Jacobs: Commissioner's Exempt List, to be removed Mon Oct 19, out Week 6 (NBC Sports/CBS, 2026-10-16). Brooks: IR (2026-10-10). Packers Friday report (packers.com, 2026-10-16): OUT Skyy Moore, Ford, Hargrave, St-Juste; Doubtful Riley; Questionable Savion Williams (not yet activated from IR; my web search found no activation report as of 2026-10-16), Cisse, Banks, Monk, Campbell; Nixon will play (LaFleur, 2026-10-16). Cowboys (PFT, 2026-10-16): OUT Durant, Shelton; Questionable Porter Jr., Overshown ('long shot'), Speed, Overton; Lamb full Wed/Thu. Camden Brown: Dallas UDFA WR (KCBD 2026-08-16; inactive Week 1 per a September 2026 report). I found no 2026 offensive snaps, so he is likely inactive (unverified). Savion Williams is projected on a probability-weighted basis (~50% active). Kickoff and inactives (~5:50 PM CT Sunday) need re-checking.",
+    "script": {
+      "dalPoints": 25,
+      "gbPoints": 27,
+      "dalPassAtt": 38.5,
+      "gbPassAtt": 35,
+      "dalRushAtt": 22,
+      "gbRushAtt": 24,
+      "likeliest": "A one-score game that tilts slightly to Green Bay. Love moves the ball efficiently against the league-worst Dallas pass defense through Watson, Golden and Kraft, and Lloyd gets extra carries and the goal-line work against the Dallas run funnel, though at a modest per-carry rate. Dallas stays pass-heavy (38-39 Dak attempts) through a healthy Lamb and Pickens against a GB secondary missing St-Juste, but GB's two-high shells and ballhawking safeties hold Prescott a little under his yardage line, and Javonte Williams turns ~16-17 carries into roughly 65 yards with the bulk of the Dallas touchdown equity.",
+      "alternates": [
+        "GB blowout (GB 31-20, ~25%): Dallas's defense collapses early, as it did against TB and NYG. Love's 4th-quarter pass rate drops to ~27% (as in Week 5), so his attempts land at ~31 while yards still clear on efficiency. Lloyd reaches 15+ carries and K. Johnson gets garbage-time carries (over on his small lines). Dak goes to 44+ attempts, so Lamb and Pickens receptions and yards go over, Javonte rushing falls under (his carries have dropped to 12 when trailing), and Javonte receptions go over. Watson's and Golden's TD equity rises.",
+        "True shootout, 60+ total (~20%, like the 2025 40-40 tie): both QBs clear 300 yards and 2+ pass TDs. Lamb, Pickens, Watson and Golden yardage and TD overs hit together, Dak over 1.5 pass TDs cashes, and Ferguson's and Kraft's TD odds rise. RB rushing yards stay near or under projection because play share shifts to the pass, but Lloyd and Javonte TD odds rise with more red-zone trips.",
+        "Dallas grinds it out (DAL 27-20, ~25%): Dallas leads, Javonte gets 20+ carries against GB's depleted DL and clears 70.5 with real 2+ TD equity, and Dak stays near 33 attempts and under his yardage line. GB's last-ranked third-down offense stalls, so Love throws 40+ times at lower efficiency: Kraft, Strong and Golden reception overs, a Love yardage push, and Lloyd rushing well under (~8 carries). A field-goal-heavy version of this script, with wind on the north end, pushes the total under 50 and hurts every TD prop."
+      ]
+    },
+    "players": [
+      {
+        "name": "Dak Prescott",
+        "team": "DAL",
+        "pos": "QB",
+        "passYds": 259,
+        "passTds": 1.6,
+        "rushAtt": 2.6,
+        "rushYds": 12,
+        "tdProb": 0.07,
+        "floor": "GB's two-high shell (62%) and stingy 20+ yard completion rate force check-downs. Against the blitz his EPA falls from +0.27 to +0.05, and his CPOE has been negative over the last three games. The sub-230 floor: an early Dallas lead that shrinks attempts to ~32, or McKinney-style takeaways (GB has 7 INTs) ending drives. Pass TDs: he has thrown exactly 1 in three straight games, and Dallas may finish red-zone trips on the ground with Javonte. Rush yards die with zero scrambles, as in Week 5."
+      },
+      {
+        "name": "Javonte Williams",
+        "team": "DAL",
+        "pos": "RB",
+        "rushAtt": 16.5,
+        "rushYds": 66,
+        "targets": 3.9,
+        "receptions": 3.1,
+        "recYds": 18,
+        "tdProb": 0.65,
+        "floor": "He is at 3.7 YPC and has cleared 70.5 rushing yards once in five games. A trailing script cuts his carries to ~12 (Dallas ran only 13 times in Week 5), and excluding Week 3, GB holds RBs to 3.1 YPC. His TD floor is low because he has 13 of 13 Dallas carries inside the 5. What kills it: a pass-first red-zone call sheet, or Dallas settling for Aubrey field goals."
+      },
+      {
+        "name": "Tyler Goodson",
+        "team": "DAL",
+        "pos": "RB",
+        "rushAtt": 2,
+        "rushYds": 7.5,
+        "targets": 0.3,
+        "receptions": 0.25,
+        "recYds": 2,
+        "tdProb": 0.06,
+        "floor": "Pure change-of-pace back: 3 snaps in Week 5 and 9 carries all season. A competitive game means 0-2 carries, and Javonte's exclusive goal-line role (13 of 13 inside the 5) leaves him almost no TD path. Only a lopsided game in either direction or a Javonte injury gets him to 8.5+."
+      },
+      {
+        "name": "Hunter Luepke",
+        "team": "DAL",
+        "pos": "FB",
+        "rushAtt": 0.3,
+        "rushYds": 1,
+        "targets": 0.6,
+        "receptions": 0.5,
+        "recYds": 3,
+        "tdProb": 0.05,
+        "floor": "Blocking fullback on 7-15 snaps. Most games he has zero touches, and his only TD path is a goal-line leak pass or a short-yardage dive."
+      },
+      {
+        "name": "Emari Demercado",
+        "team": "DAL",
+        "pos": "RB",
+        "rushAtt": 0.2,
+        "rushYds": 0.8,
+        "targets": 0.1,
+        "receptions": 0.1,
+        "recYds": 0.5,
+        "tdProb": 0.02,
+        "floor": "Re-signed Oct 13 and has not taken an offensive snap since Week 2. A healthy scratch or a special-teams-only role is the base case, so he projects near zero unless Javonte or Goodson gets hurt."
+      },
+      {
+        "name": "CeeDee Lamb",
+        "team": "DAL",
+        "pos": "WR",
+        "rushAtt": 0.1,
+        "rushYds": 0.5,
+        "targets": 10.3,
+        "receptions": 6.7,
+        "recYds": 84.4,
+        "tdProb": 0.38,
+        "floor": "His slot snaps run into GB's league-low 4.2 yards per target allowed to slot WRs and nickel Javon Bullard, and two-high safeties take away his deep crossers. The low line is ~5-55: a quad re-aggravation that cuts his snaps (as in Week 5's 57%), or Dak spreading targets to Pickens outside against St-Juste-less corners."
+      },
+      {
+        "name": "George Pickens",
+        "team": "DAL",
+        "pos": "WR",
+        "targets": 8.1,
+        "receptions": 5,
+        "recYds": 69.8,
+        "tdProb": 0.31,
+        "floor": "With Lamb healthy, his targets fall back to ~7 (Week 4: 3 targets). Low separation (2.2 yards) and 3 drops make his catch rate volatile, and GB allows a 4.8% rate of 20+ yard completions, capping the splash plays his yardage relies on. A 2-3 catch, sub-40 game happens when a Porter-less matchup doesn't matter because GB rolls coverage to him."
+      },
+      {
+        "name": "Ryan Flournoy",
+        "team": "DAL",
+        "pos": "WR",
+        "targets": 5.2,
+        "receptions": 3.2,
+        "recYds": 34,
+        "tdProb": 0.13,
+        "floor": "Slot-heavy (52% inside) against GB's best coverage area. He has cleared 32.5 only twice, and one of those needed a 48-yard catch. With Lamb back to a full route share he goes to ~4 targets. Mingo or Turpin snaps in 3-WR sets, or one busted catch, decides his game."
+      },
+      {
+        "name": "Jake Ferguson",
+        "team": "DAL",
+        "pos": "TE",
+        "targets": 4.7,
+        "receptions": 3.4,
+        "recYds": 26,
+        "tdProb": 0.22,
+        "floor": "4.5 aDOT and only one game over 26.5 yards. He gets stuck blocking if GB's interior pressure gets home, and he had 2 drops and the game-sealing INT target in Week 5. His value is TD-driven (3 TDs on 4 red-zone targets), so a red-zone game plan that goes to Javonte or Lamb leaves him at ~2-15."
+      },
+      {
+        "name": "KaVontae Turpin",
+        "team": "DAL",
+        "pos": "WR",
+        "rushAtt": 0.4,
+        "rushYds": 2.5,
+        "targets": 1,
+        "receptions": 0.75,
+        "recYds": 7,
+        "tdProb": 0.09,
+        "floor": "His Week 5 snap spike (40%) came only because Lamb was hurt. With Lamb healthy he played 9-16% of snaps with 3 targets in four games, so zero catches is roughly a coin flip. He also lost a kick-return fumble, which could cost him returns. His TD path is a return, a gadget run, or a red-zone jet sweep."
+      },
+      {
+        "name": "Jonathan Mingo",
+        "team": "DAL",
+        "pos": "WR",
+        "targets": 1.1,
+        "receptions": 0.55,
+        "recYds": 7,
+        "tdProb": 0.04,
+        "floor": "11-14 snap rotational WR4 whose Week 5 targets all came with Lamb off the field. Healthy Lamb plus Flournoy means 0-1 catches on a 13-yard aDOT."
+      },
+      {
+        "name": "Brevyn Spann-Ford",
+        "team": "DAL",
+        "pos": "TE",
+        "targets": 1.2,
+        "receptions": 0.85,
+        "recYds": 7,
+        "tdProb": 0.05,
+        "floor": "Blocking TE2 who runs a route on only ~15% of his snaps. Zero targets is common, and his only upside is a red-zone leak."
+      },
+      {
+        "name": "Luke Schoonmaker",
+        "team": "DAL",
+        "pos": "TE",
+        "targets": 0.6,
+        "receptions": 0.4,
+        "recYds": 3,
+        "tdProb": 0.03,
+        "floor": "Down to 5-6 snaps (8%) the last two weeks. He is close to a non-factor unless Ferguson gets hurt."
+      },
+      {
+        "name": "Camden Brown",
+        "team": "DAL",
+        "pos": "WR",
+        "targets": 0.1,
+        "receptions": 0.05,
+        "recYds": 0.5,
+        "tdProb": 0.01,
+        "floor": "UDFA rookie WR (Georgia Southern/Auburn; Cowboys per KCBD 2026-08-16). I found no 2026 offensive snaps and he was inactive in Week 1, so he is likely inactive or special-teams only (unverified). He has essentially no path to production unless multiple WRs go down."
+      },
+      {
+        "name": "Jordan Love",
+        "team": "GB",
+        "pos": "QB",
+        "passYds": 271,
+        "passTds": 2.2,
+        "rushAtt": 2,
+        "rushYds": 6,
+        "tdProb": 0.05,
+        "floor": "Low-completion deep-ball profile (60.5%) in gusty SSW wind (NWS gusts ~22 mph, GFS up to 30). A GB lead turns the game run-heavy late (27% 4th-quarter pass rate in Week 5), and DAL opponents average only 28 attempts a game. His sub-200 games (145, 197) came with fewer than 30 attempts. Pass-TD risk: GB's 50% red-zone TD rate, with drives ending in Lloyd runs or Smack field goals. Rush yards: he has -2 on 7 carries this season."
+      },
+      {
+        "name": "MarShawn Lloyd",
+        "team": "GB",
+        "pos": "RB",
+        "rushAtt": 12.5,
+        "rushYds": 36,
+        "targets": 2.4,
+        "receptions": 1.8,
+        "recYds": 11,
+        "tdProb": 0.47,
+        "floor": "2.8 YPC, and he has never reached 42.5 rushing yards in 2026 (season high 37). He shares the work with Strong (44% vs 41% of snaps), so a pass-heavy or trailing script leaves him with ~8 carries. GB is 32nd in rushing and its guard spots are unsettled (Banks/Monk questionable). A fumble (he had one in Week 4) could hand goal-line work to Johnson or Strong, which hits his TD odds hardest."
+      },
+      {
+        "name": "Pierre Strong Jr.",
+        "team": "GB",
+        "pos": "RB",
+        "rushAtt": 6,
+        "rushYds": 22,
+        "targets": 2.4,
+        "receptions": 1.9,
+        "recYds": 11,
+        "tdProb": 0.19,
+        "floor": "Passing-down back (44% route rate) with only 5 carries for 7 yards in his GB debut. If GB leads, Lloyd and Johnson take the rushing work. His catches are short check-downs (11 yards on 3), and he gets 1 or fewer red-zone carries. He reaches 18.5 rushing yards only if he takes ~6+ carries or one Dallas run defense breakdown."
+      },
+      {
+        "name": "Kaleb Johnson",
+        "team": "GB",
+        "pos": "RB",
+        "rushAtt": 2.5,
+        "rushYds": 10,
+        "targets": 0.4,
+        "receptions": 0.3,
+        "recYds": 2,
+        "tdProb": 0.09,
+        "floor": "Benched for fumbles (LaFleur: 'a great teacher is the bench'). In Week 5 he got no snaps until garbage time. In a close game he gets 0-2 carries, so his floor is zero. Only a GB blowout or another Lloyd fumble opens volume or goal-line looks."
+      },
+      {
+        "name": "Christian Watson",
+        "team": "GB",
+        "pos": "WR",
+        "rushAtt": 0.2,
+        "rushYds": 1.5,
+        "targets": 7.6,
+        "receptions": 5,
+        "recYds": 81.5,
+        "tdProb": 0.47,
+        "floor": "His yardage depends on big plays (12.5 aDOT; 474 yards on 26 catches), and he went 41 and 47 yards in two of five games. Wind gusts on deep balls, Porter Jr. playing despite questionable tag, or a run-heavy GB script against the Dallas run funnel can leave him at 3-40. His TD odds rest on an NFL-leading 7 end-zone targets."
+      },
+      {
+        "name": "Matthew Golden",
+        "team": "GB",
+        "pos": "WR",
+        "rushAtt": 0.3,
+        "rushYds": 2,
+        "targets": 8.3,
+        "receptions": 4.9,
+        "recYds": 73.7,
+        "tdProb": 0.37,
+        "floor": "54.5% catch rate on a 13.4 aDOT means 3-catch games even with 8 targets. Against single-high coverage (Dallas has used it 68% of the time recently) his YPRR falls to 1.78, and Porter's man coverage is expected to follow him if he plays. Deep-ball incompletions in gusty wind are the main path to a sub-45 game."
+      },
+      {
+        "name": "Bo Melton",
+        "team": "GB",
+        "pos": "WR",
+        "rushAtt": 0.2,
+        "rushYds": 1,
+        "targets": 2.4,
+        "receptions": 1.5,
+        "recYds": 16,
+        "tdProb": 0.1,
+        "floor": "Fills in as WR3 in the slot for Skyy Moore (OUT) despite little slot experience, with 4 catches on 8 targets this season. If Savion Williams is activated, Melton's snaps get split. Heavier 12-personnel use (Kraft, Smith, Redman) also removes WR3 snaps, leaving 0-1 catches."
+      },
+      {
+        "name": "J. Michael Sturdivant",
+        "team": "GB",
+        "pos": "WR",
+        "targets": 1,
+        "receptions": 0.65,
+        "recYds": 7,
+        "tdProb": 0.05,
+        "floor": "Has played 0-21 snaps a week. He is behind Melton, and Savion Williams' possible activation pushes him back to WR5. Return duties are a small extra path, but a zero-catch game is the median."
+      },
+      {
+        "name": "Savion Williams",
+        "team": "GB",
+        "pos": "WR",
+        "targets": 0.6,
+        "receptions": 0.4,
+        "recYds": 4,
+        "tdProb": 0.04,
+        "floor": "Questionable and still on IR. His projection is probability-weighted at ~50% active. If he is not activated by Saturday his line is zero, and if he is, he is easing back from an ankle injury on a limited snap count. A kick return TD is his main scoring path."
+      },
+      {
+        "name": "Tucker Kraft",
+        "team": "GB",
+        "pos": "TE",
+        "rushAtt": 0.2,
+        "rushYds": 0.5,
+        "targets": 6.2,
+        "receptions": 4.6,
+        "recYds": 51,
+        "tdProb": 0.33,
+        "floor": "Low 4.9 aDOT makes his yards YAC-dependent, and he had 15-42 yards in his first three games. He picks up pass-pro snaps when GB's guards are in flux (7 in Week 5). Since Caleb Downs moved to FS, Dallas has allowed no TE TDs in two games. Watson and Golden draining targets on explosive plays could hold him to 3 catches and ~30 yards."
+      },
+      {
+        "name": "Jonnu Smith",
+        "team": "GB",
+        "pos": "TE",
+        "targets": 1.3,
+        "receptions": 0.95,
+        "recYds": 10,
+        "tdProb": 0.08,
+        "floor": "Splits TE2 with Redman (21 snaps each in Week 5) and has 0 targets over the last two games. A zero-catch game is likely, and his only upside is a designed screen or a red-zone look in 12 personnel."
+      },
+      {
+        "name": "Mark Redman",
+        "team": "GB",
+        "pos": "TE",
+        "targets": 0.7,
+        "receptions": 0.5,
+        "recYds": 5,
+        "tdProb": 0.06,
+        "floor": "Primarily a blocker with 2 targets all season. Zero catches is the median, and his only path is a play-action leak near the goal line."
+      },
+      {
+        "name": "Josh Whyle",
+        "team": "GB",
+        "pos": "TE",
+        "targets": 0.3,
+        "receptions": 0.2,
+        "recYds": 2,
+        "tdProb": 0.04,
+        "floor": "TE4 with 0 targets this season and 2-23% of snaps. He is effectively a no-production player outside a heavy-package goal-line snap."
+      }
+    ]
+  },
+  {
+    "method": "Method B, market first. I read data/odds/raw/w06/2026-w06-dal-gb.json (pulled 2026-10-16 13:52Z) with node. The yardage and reception ladders are Over-only, with no Under prices. I took each player's median as the interpolated point where the Over is about -110 (implied 0.524), rather than 0.50, to strip the vig. I then turned medians into means with a small right-skew uplift: about +5-8% for receiving yards, +3-4 yds for rushing, +2 for passing. Anytime-TD prices were vig-stripped to fair probabilities. The pass-TD markets have both sides and were de-vigged directly: Love fair P(2+) is 0.61, about lambda 2.05; Dak fair P(2+) is about 0.585, lambda about 1.95.\n\nGame anchor: consensus total about 53 (DK 53.5, MGM 53, FD/ESPN 52.5) and GB -1.5, which implies about GB 27.25 / DAL 25.75. The market has drifted toward DAL since the pull.\n\nRosters were re-checked on 2026-10-16:\n- packers.com injury report: Skyy Moore, Jonathan Ford, Javon Hargrave and Benjamin St-Juste are OUT. Jordon Riley is DOUBTFUL. Savion Williams (needs IR activation), Brandon Cisse (hip, new Friday), Banks, Monk and Campbell are QUESTIONABLE. Nixon carries no designation.\n- PFT, 2026-10-16: Joey Porter Jr. is QUESTIONABLE after a limited Friday. Overshown is QUESTIONABLE ('long shot'). Speed and L.T. Overton are QUESTIONABLE. Durant and Shelton are OUT.\n- Josh Jacobs has been on the Commissioner's Exempt List since 2026-08-30 (WBAY), so he is out. Reports of his Week 7 removal conflict, so that part is unverified.\n- Camden Brown is not projected: his team and role are unverified.\n\nMoves from the market, as my mean minus the market mean:\n- Prescott pass yds about 279 to 268 (-11) and pass TDs 1.95 to 1.75. Reasons: GB allows 6.4 Y/A and 6 pass TDs with 7 INTs. Dak has 1 TD pass in each of his last 3 games. Javonte has 13 of 13 inside-5 carries. Lamb's return pulls Pickens and Flournoy back to their Weeks 1-4 levels. FP has 260.5 and Dimers 272.6. This is partly offset by Parsons, Hargrave and St-Juste being out.\n- Love pass yds 276 to 279 (+3) and pass TDs unchanged at 2.05. Durant is out, Porter Jr. is downgraded, and Dallas has 0 INTs. Dallas faces only 28 attempts a game, which caps the move.\n- Javonte rush yds 74 to 70 (-4). He averages 3.7 YPC and has cleared 70.5 once in five games, and GB allows 3.1 YPC to RBs outside Week 3. This is partly offset by Ford being ruled out Friday.\n- Lloyd rush yds 46 to 45 (-1). Receiving goes from 2.2 catches / 13 yds to 1.7 / 11, because Strong took the passing-down routes (44% vs 29%).\n- Lamb rec yds 86 to 92 (+6) and catches 6.6 to 7.0. Healthy, he averaged 11.5 targets, St-Juste is out, and he is good against two-high. FP has 87.6.\n- Pickens 74 to 71 (-3): with Lamb healthy, Pickens averaged 4.5 catches for 56 yds in Weeks 1-4.\n- Flournoy 36 to 32 (-4): he runs slot-heavy into GB's league-low 4.2 YPT to the slot.\n- Ferguson 29 to 26 (-3): 20.4 yds a game and a 4.5 aDOT.\n- Turpin 0.8 to 0.6 catches: his role shrinks with Lamb back.\n- Watson 80 to 84 (+4): Dallas allows 9.7 YPT to WRs, Durant is out and Porter is questionable.\n- Golden yds 70 to 72 (+2) but catches 5.2 to 4.8: he has a 54.5% catch rate.\n- Melton 17 to 19 yds and 1.7 to 1.9 catches: Moore is officially OUT.\n- Love rush 8 to 5: he has -2 yds on 7 carries this season.\n\nTD moves, from fair market to mine:\n- Lloyd 0.55 to 0.49. GB has 2 rushing TDs against 10 passing all season, and Dimers has 48.8%.\n- Strong 0.27 to 0.22.\n- Kaleb Johnson 0.14 to 0.09. He has been benched since the Week 4 fumble.\n- Melton 0.17 to 0.13. He has 0 red-zone targets.\n- Javonte 0.63 to 0.65. GB has allowed 9 RB TDs and an 81% red-zone TD rate, and Ford is out.\n- Watson 0.43 to 0.45. He leads the NFL with 7 end-zone targets.\n- Dak rush TD 0.12 to 0.08. He has 0 rushing TDs this season.\n\nEveryone else stays at about market. The TD lambdas sum to about 2.9-3.0 offensive TDs per team, which fits 26.5 and 25.5. Receptions sum to about completions (GB 23.1 vs 23.0; DAL 24.4 vs 24.5), and receiving yards sum to about passing yards (GB 279; DAL 267 vs 268).",
+    "script": {
+      "dalPoints": 25.5,
+      "gbPoints": 26.5,
+      "dalPassAtt": 38,
+      "gbPassAtt": 35.5,
+      "dalRushAtt": 23,
+      "gbRushAtt": 23,
+      "likeliest": "A close, high-efficiency game decided late, with GB about 1 point better. Love hits Watson and Golden for big plays against the league's worst EPA/pass defense, while Dallas feeds Lamb about 10 targets and finishes red-zone trips with Javonte, which keeps Prescott near 1-2 TD passes despite 38 attempts. GB leans a bit more on the run than usual against Dallas's run funnel (about 23 rushes), but Lloyd and Strong are inefficient, so GB's TDs come mostly through the air.",
+      "alternates": [
+        "GB leads by 10+ (about 30%): repeats the Week 5 pattern. Love drops to about 28-30 attempts, and Lloyd and Kaleb Johnson carries rise late (Johnson's garbage-time touches appear, Lloyd rush yds about 55). Prescott climbs to 43-46 attempts and 300+ yds, Lamb and Pickens go over on yardage and catches, and Javonte falls to about 13 carries (rush under) while keeping most of his TD equity.",
+        "Dallas leads (about 30%): repeats the Week 3 ATL pattern, where Love threw 53 times. Love goes 40+ attempts and 300+ yds, Watson, Golden and Kraft go over on catches and yards, Strong's passing-down role grows (3-4 catches), and Lloyd drops to about 9 carries for about 30 yds. Javonte gets 20+ carries, pushing his rush over and his 2+ TD chance toward 30%.",
+        "Full shootout, 60+ points (about 20%): both QBs go 300+ with 2-3 TDs, and the WR1/WR2 and Kraft TD chances rise about 8-10 points each. Alternatively, a wind-suppressed game (SSW gusts of 22-30 mph along the field's long axis, north-end kicking misses) with under 46 points (about 15%): fewer explosive plays and long field goals, a bigger share of TDs to the goal-line backs (Javonte, Lloyd), and Watson, Golden and Pickens yardage unders."
+      ]
+    },
+    "players": [
+      {
+        "name": "Dak Prescott",
+        "team": "DAL",
+        "pos": "QB",
+        "passYds": 260,
+        "passTds": 1.75,
+        "rushAtt": 2.8,
+        "rushYds": 12,
+        "tdProb": 0.08,
+        "floor": "Low line if GB's two-high shell (62%) and 6.4 Y/A allowed hold and Dallas leads, cutting attempts to about 32. His EPA vs the blitz is only +0.047, and McKinney (3 INTs) leads a ball-hawking secondary. Pass TDs stall at 1 because Javonte owns every inside-5 carry. He has 0 rushing TDs and 0 scrambles in Week 5."
+      },
+      {
+        "name": "Javonte Williams",
+        "team": "DAL",
+        "pos": "RB",
+        "rushAtt": 17,
+        "rushYds": 70,
+        "targets": 3.8,
+        "receptions": 3,
+        "recYds": 17,
+        "tdProb": 0.65,
+        "floor": "He averages 3.7 YPC and has cleared 70.5 once in five games. A trailing script (13 team rushes in Week 5) cuts him to about 12 carries for about 45 yds. The TD floor is protected by 13 of 13 inside-5 carries. The killer is Dallas stalling outside the red zone or settling for Aubrey field goals."
+      },
+      {
+        "name": "Tyler Goodson",
+        "team": "DAL",
+        "pos": "RB",
+        "rushAtt": 2.5,
+        "rushYds": 9,
+        "targets": 0.5,
+        "receptions": 0.4,
+        "recYds": 3,
+        "tdProb": 0.07,
+        "floor": "Change-of-pace RB2 who played 3 snaps in Week 5 and has 0 third-down targets. His floor is zero carries; the only real upside path is a Javonte injury."
+      },
+      {
+        "name": "Hunter Luepke",
+        "team": "DAL",
+        "pos": "FB",
+        "rushAtt": 0.3,
+        "rushYds": 1,
+        "targets": 0.5,
+        "receptions": 0.4,
+        "recYds": 3,
+        "tdProb": 0.05,
+        "floor": "Fullback with 7-15 snaps a week; his floor is zero touches."
+      },
+      {
+        "name": "CeeDee Lamb",
+        "team": "DAL",
+        "pos": "WR",
+        "targets": 10,
+        "receptions": 7,
+        "recYds": 89.2,
+        "tdProb": 0.41,
+        "floor": "GB allows a league-low 4.2 yds per target to the slot, and healthy nickel Javon Bullard covers it. A third hit to the twice-bruised quad (Weeks 4-5) is the killer. Otherwise his healthy-game floor is about 5 catches for 45 yds (Week 1: 5-44)."
+      },
+      {
+        "name": "George Pickens",
+        "team": "DAL",
+        "pos": "WR",
+        "targets": 7.8,
+        "receptions": 5,
+        "recYds": 68.9,
+        "tdProb": 0.36,
+        "floor": "With Lamb healthy he falls back to about 7 targets (Weeks 1-4: 4.5 catches, 56 yds a game). His 2.2 yds of separation, 3 drops and GB's 62% two-high shell limit his deep shots. Upside comes from St-Juste being out and Cisse (hip) being questionable."
+      },
+      {
+        "name": "Ryan Flournoy",
+        "team": "DAL",
+        "pos": "WR",
+        "targets": 4.5,
+        "receptions": 3,
+        "recYds": 32,
+        "tdProb": 0.15,
+        "floor": "He lines up inside 52% of the time, into GB's best coverage area, and averaged 26 yds a game in Weeks 1-4. With Lamb at a full route share he gets 3-4 targets and about 20 yds. He has 0 TDs on 5 red-zone targets."
+      },
+      {
+        "name": "KaVontae Turpin",
+        "team": "DAL",
+        "pos": "WR",
+        "rushAtt": 0.4,
+        "rushYds": 3,
+        "targets": 0.9,
+        "receptions": 0.6,
+        "recYds": 6,
+        "tdProb": 0.09,
+        "floor": "With Lamb healthy he drops back to a 9-16% snap share, and he had 0 catches in 2 of 4 healthy-Lamb games. His TD paths are a return or a gadget run. He lost a fumble on a Week 5 kick return."
+      },
+      {
+        "name": "Jonathan Mingo",
+        "team": "DAL",
+        "pos": "WR",
+        "targets": 1.1,
+        "receptions": 0.6,
+        "recYds": 9,
+        "tdProb": 0.05,
+        "floor": "Plays 11-14 snaps a week with a high aDOT, and his Week 5 targets came with Lamb out. His floor is zero catches."
+      },
+      {
+        "name": "Jake Ferguson",
+        "team": "DAL",
+        "pos": "TE",
+        "targets": 4.5,
+        "receptions": 3.3,
+        "recYds": 26,
+        "tdProb": 0.25,
+        "floor": "4.5 aDOT, and he has cleared 26.5 yds once in five games, so his floor is about 2 catches for 12 yds. His value is TD-dependent (3 TDs on 4 red-zone targets). The killer is Javonte taking every goal-line touch; he also had 2 drops in Week 5."
+      },
+      {
+        "name": "Brevyn Spann-Ford",
+        "team": "DAL",
+        "pos": "TE",
+        "targets": 1.1,
+        "receptions": 0.8,
+        "recYds": 6,
+        "tdProb": 0.05,
+        "floor": "Blocking TE who runs routes on about 15% of snaps; his floor is zero catches."
+      },
+      {
+        "name": "Luke Schoonmaker",
+        "team": "DAL",
+        "pos": "TE",
+        "targets": 0.4,
+        "receptions": 0.3,
+        "recYds": 2,
+        "tdProb": 0.03,
+        "floor": "Down to 5-6 snaps a week; his floor is zero."
+      },
+      {
+        "name": "Jordan Love",
+        "team": "GB",
+        "pos": "QB",
+        "passYds": 271,
+        "passTds": 2.05,
+        "rushAtt": 2,
+        "rushYds": 5,
+        "tdProb": 0.05,
+        "floor": "Dallas faces only 28 pass attempts a game because opponents run on it. A GB lead plus clock-killing runs (26.7% pass rate in Week 5's fourth quarter) cuts him to about 28 attempts and about 200 yds. He completes only 60.5% and is boom-bust (145 and 197 yds in two games). SSW gusts of 22-30 mph can hurt the deep shots, and his rushing is negligible (-2 yds this season)."
+      },
+      {
+        "name": "MarShawn Lloyd",
+        "team": "GB",
+        "pos": "RB",
+        "rushAtt": 12.5,
+        "rushYds": 36,
+        "targets": 2.2,
+        "receptions": 1.7,
+        "recYds": 11,
+        "tdProb": 0.49,
+        "floor": "2.8 YPC, and he has never topped 37 rush yds in a 2026 game. He splits early downs about 52/48 with Strong, and Strong has taken the passing-down routes. Killers: a fumble (he had one in Week 4) or Kaleb Johnson or Kraft getting short-yardage work. GB has only 2 rushing TDs all season."
+      },
+      {
+        "name": "Pierre Strong Jr.",
+        "team": "GB",
+        "pos": "RB",
+        "rushAtt": 5.5,
+        "rushYds": 20,
+        "targets": 2.9,
+        "receptions": 2.3,
+        "recYds": 13,
+        "tdProb": 0.22,
+        "floor": "Ran 5 times for 7 yds in his Week 5 debut, with a 22% carry share and 1 red-zone carry. His floor is about 3 carries and 2 catches for under 20 total yds. Upside requires a trailing, pass-heavy script."
+      },
+      {
+        "name": "Kaleb Johnson",
+        "team": "GB",
+        "pos": "RB",
+        "rushAtt": 2.5,
+        "rushYds": 10,
+        "targets": 0.4,
+        "receptions": 0.3,
+        "recYds": 2,
+        "tdProb": 0.09,
+        "floor": "Benched after his Week 4 goal-line fumble and used only in garbage time in Week 5. His floor is zero touches, and his TD path needs a GB blowout lead."
+      },
+      {
+        "name": "Christian Watson",
+        "team": "GB",
+        "pos": "WR",
+        "targets": 7.6,
+        "receptions": 5,
+        "recYds": 81.5,
+        "tdProb": 0.45,
+        "floor": "Boom-bust, with a 12.5 aDOT and a 65% catch rate, and he had 41 and 47 yds in two of five games. Gusting wind on deep balls, and Porter Jr. playing at full health, are what keep him under. His 7 end-zone targets support the TD floor."
+      },
+      {
+        "name": "Matthew Golden",
+        "team": "GB",
+        "pos": "WR",
+        "targets": 8.2,
+        "receptions": 4.8,
+        "recYds": 69.8,
+        "tdProb": 0.36,
+        "floor": "54.5% catch rate on a 13.4 aDOT, so missed deep shots leave about 3 catches for 35 yds. Porter Jr. (questionable, limited Friday) is the projected shadow if he plays. Dallas's single-high looks have held him to 1.78 yds per route run."
+      },
+      {
+        "name": "Bo Melton",
+        "team": "GB",
+        "pos": "WR",
+        "targets": 3.3,
+        "receptions": 1.9,
+        "recYds": 19,
+        "tdProb": 0.13,
+        "floor": "He inherits the slot with Skyy Moore OUT (official Oct 16) but has rarely played there and has 0 red-zone targets. If Savion Williams is activated, he splits WR3 snaps, giving a floor of 0-1 catches."
+      },
+      {
+        "name": "J. Michael Sturdivant",
+        "team": "GB",
+        "pos": "WR",
+        "targets": 1,
+        "receptions": 0.6,
+        "recYds": 6,
+        "tdProb": 0.06,
+        "floor": "Plays 0-21 snaps a week and is a possible return man with Moore out. His floor is zero."
+      },
+      {
+        "name": "Savion Williams",
+        "team": "GB",
+        "pos": "WR",
+        "targets": 0.8,
+        "receptions": 0.5,
+        "recYds": 6,
+        "tdProb": 0.05,
+        "floor": "QUESTIONABLE (ankle) and must be activated from IR, which had not happened as of Oct 16. If he is not activated, he posts zero. His only TD path is as a kick returner."
+      },
+      {
+        "name": "Tucker Kraft",
+        "team": "GB",
+        "pos": "TE",
+        "targets": 5.6,
+        "receptions": 4.6,
+        "recYds": 52,
+        "tdProb": 0.33,
+        "floor": "4.9 aDOT and YAC-dependent, with a 10.3% drop rate. With Caleb Downs at free safety, Dallas has held TEs to 7.3 yds per target and 0 TDs over the last two games. Extra pass-protection snaps (7 in Week 5) leave a floor of about 3 catches for 25 yds."
+      },
+      {
+        "name": "Jonnu Smith",
+        "team": "GB",
+        "pos": "TE",
+        "targets": 0.8,
+        "receptions": 0.6,
+        "recYds": 5,
+        "tdProb": 0.08,
+        "floor": "Splits TE2 with Redman and has 0 targets in the last two games; his floor is zero."
+      },
+      {
+        "name": "Mark Redman",
+        "team": "GB",
+        "pos": "TE",
+        "targets": 0.7,
+        "receptions": 0.5,
+        "recYds": 5,
+        "tdProb": 0.06,
+        "floor": "TE2 who mostly blocks (21 snaps in Week 5) and has 2 targets all season; his floor is zero."
+      },
+      {
+        "name": "Josh Whyle",
+        "team": "GB",
+        "pos": "TE",
+        "targets": 0.4,
+        "receptions": 0.3,
+        "recYds": 3,
+        "tdProb": 0.04,
+        "floor": "TE4 with 0 targets this season; his floor is zero."
+      }
+    ]
+  }
+]
