@@ -51,8 +51,10 @@ for edge on every line. Monday night the anchor was Olave 7+ (model 76%, book 58
 
 ## Building the five
 
-- One leg per player, no touchdown markets, at most four legs from one offense, and at least one leg
-  from the other team when one qualifies.
+- One leg per player, no touchdown markets, and no team limit. A ticket may sit entirely on one
+  offense when the game script points there; Week 6 Thursday the legs that hit were all Seattle's
+  passing game, and the old rule (at most four from one offense, at least one from the other team)
+  would have ruled that ticket out. Vary the scripts across a card instead of inside each ticket.
 - Correlation is welcome: four Saints catches legs all ride the same passing volume, which lifts the
   joint hit rate above straight multiplication. It also means one bad pass-protection night sinks
   them together. Say so when the ticket goes out.

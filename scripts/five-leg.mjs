@@ -23,7 +23,9 @@ export const MIN_P = 0.58; // shrunk probability floor per leg
 export const MIN_EDGE = 0; // model minus implied, before the shrink: never worse than the book
 export const ANCHOR_EDGE = 0.05; // at least one leg on the ticket must carry a real edge
 export const WORST_PRICE = -250;
-export const MAX_PER_OFFENSE = 4;
+// No team limit. A ticket may sit entirely on one offense when the game script points there: on
+// Week 6 Thursday the combination that hit was all Seattle passing game (Darnold, Smith-Njigba,
+// Kupp, Shaheed), and the old cap of four per offense plus a leg from the other team ruled it out.
 // A fringe receiving role can go to zero on volume alone (Hurst, Week 5 Thursday: 2.5 projected
 // catches, zero targets), so receiving legs need an established share of the targets.
 export const MIN_RECEPTIONS = 3.0;
@@ -183,10 +185,8 @@ export function buildTicket(qualifying, { legs = LEGS, target = TARGET } = {}) {
   const pool = [...perPlayer.values()].sort((a, b) => b.p - a.p).slice(0, 18);
   let bestT = null,
     bestAny = null;
-  const rec = (i, chosen, prod, prob, perTeam) => {
+  const rec = (i, chosen, prod, prob) => {
     if (chosen.length === legs) {
-      const teams = Object.keys(perTeam);
-      const bothSides = teams.length > 1 || pool.every((l) => l.team === teams[0]);
       const t = {
         legs: chosen.slice(),
         decimal: +prod.toFixed(2),
@@ -196,20 +196,17 @@ export function buildTicket(qualifying, { legs = LEGS, target = TARGET } = {}) {
       };
       const anchored = chosen.some((l) => l.edge >= ANCHOR_EDGE);
       if (!bestAny || prob > bestAny.joint) bestAny = t;
-      if (prod >= target && bothSides && anchored && (!bestT || prob > bestT.joint)) bestT = t;
+      if (prod >= target && anchored && (!bestT || prob > bestT.joint)) bestT = t;
       return;
     }
     for (let k = i; k < pool.length; k++) {
       const l = pool[k];
-      if ((perTeam[l.team] || 0) >= MAX_PER_OFFENSE) continue;
       chosen.push(l);
-      perTeam[l.team] = (perTeam[l.team] || 0) + 1;
-      rec(k + 1, chosen, prod * dec(l.price), prob * l.p, perTeam);
+      rec(k + 1, chosen, prod * dec(l.price), prob * l.p);
       chosen.pop();
-      perTeam[l.team] -= 1;
     }
   };
-  rec(0, [], 1, 1, {});
+  rec(0, [], 1, 1);
   return { ticket: bestT, fallback: bestT ? null : bestAny };
 }
 
