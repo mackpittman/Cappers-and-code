@@ -76,8 +76,11 @@ for (const id of ORDER) {
   games.push(g);
 }
 
-// bestBets: every side or total the desk rates 3 or better, plus the touchdown calls where our own
-// estimate beats the posted price by a real margin. Sorted by confidence.
+// bestBets: every side or total the desk rates 3 or better, plus the touchdown calls. Probability
+// comes before price (docs/WEEKLY_RESEARCH_PLAYBOOK.md): a scorer we give 35% or better is promoted
+// unless the price is badly short (the book's implied probability more than 5 points above ours);
+// a lower-probability scorer is promoted only when our estimate beats the price by 5 points or more.
+// Sorted by confidence.
 const implied = (a) => (a > 0 ? 100 / (a + 100) : -a / (-a + 100));
 const bestBets = [];
 for (const g of games) {
@@ -89,11 +92,12 @@ for (const g of games) {
   for (const p of g.top3 ?? []) {
     if (p.price == null) continue;
     const edge = p.est - implied(p.price);
-    if (edge >= 0.05)
+    const likely = p.est >= 0.35 && edge >= -0.05;
+    if (likely || edge >= 0.05)
       bestBets.push({
         game: g.id,
         bet: `${p.name} ATD ${p.price > 0 ? '+' : ''}${p.price}`,
-        conf: edge >= 0.1 ? 4 : 3,
+        conf: p.est >= 0.45 || edge >= 0.1 ? 4 : 3,
         why: p.why,
       });
   }

@@ -45,6 +45,9 @@ session with the desk's relay, one agent per game:
 ## Guardrails
 
 - Never publish a fabricated price, result, or record. If a number is unverified, label it.
+- Probability before price (owner's rule, 2026-10-15). Rank touchdown scorers, props and card legs by how likely they are to hit. A high-probability pick whose price is a few points short of our number stays the pick: never swap it for a less likely player because his price sits closer to fair. Step down only when the price is badly short, meaning the book's implied probability is more than 5 points above our estimate, and say so. Show the price and the fair price next to every pick. (Why: on Thursday of Week 6 the desk named Dobbins the likeliest Denver scorer at the SEA 19, recommended Sutton for his price, and Dobbins scored on the next snaps.)
 - Estimates are probabilities between 0 and 1; keep the calibration honest: a 78% call should hit about 78% of the time over the season.
+- Card tickets are props only (owner's rule, 2026-10-15). Longshot and max-confidence cards are 4- or 5-leg tickets of yardage and reception props with no touchdown legs. On the Week 6 Thursday card the six touchdown legs went 0 for 6, while plus-money props priced +100 to +200 hit 43% of the time against 41% priced across the whole board (data/five-leg/2026-w06-tnf-card-results.json).
+- Replay of the probability rule on Week 5: promoting every top-three scorer we gave 35% or better, unless the price was more than 5 points short, would have made 12 Locked In touchdown calls that went 7-5 for +4.0u at 1u each. The old edge-only rule made one call, which lost.
 - No guaranteed-win language anywhere in `why` fields or Discord copy. Units, not dollars.
 - Keep credit spend inside the policy in `scripts/fetch-odds.mjs`; the Tuesday run costs about 16 credits.
