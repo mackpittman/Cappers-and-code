@@ -162,6 +162,47 @@ export type BestOfPlay = {
   why: string;
   legs?: { label: string; price: number | null; book?: string | null }[];
 };
+/** One game in the front page's spreads-and-moneylines block (scripts/sides.mjs). */
+export type SideRow = {
+  game: string;
+  gameLabel: string;
+  kickoff: string;
+  kickoffLabel: string | null;
+  projected: { away: number; home: number };
+  spread: {
+    team: string;
+    bet: string;
+    point: number;
+    price: number;
+    /** How often the projected score covers this number. */
+    prob: number;
+    /** Desk confidence 0 to 5, only when the desk's own side is this side. */
+    conf: number;
+    desk: string | null;
+    agrees: boolean;
+  };
+  ml: MoneylinePick;
+  /** The underdog, when the projection beats its de-vigged price by three points or more. */
+  dog: MoneylinePick | null;
+  why: string;
+};
+export type MoneylinePick = {
+  team: string;
+  bet: string;
+  price: number | null;
+  prob: number;
+  implied: number | null;
+  edge: number | null;
+};
+export type Sides = {
+  builtAt: string;
+  day: string;
+  title: string;
+  games: number;
+  rows: SideRow[];
+  /** Discord-ready markdown for the whole block. */
+  text: string;
+};
 export type BestOf = {
   builtAt: string;
   day: string;
@@ -403,5 +444,6 @@ export type Board = {
     tickets: FiveLegTicket[];
   } | null;
   bestOf?: BestOf | null;
+  sides?: Sides | null;
   maxFive?: MaxFive | null;
 };

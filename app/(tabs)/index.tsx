@@ -16,6 +16,7 @@ import { TopTen } from '@/components/TopTen';
 import { primetimeGame } from '@/lib/primetime';
 import { BestOfBlock } from '@/components/BestOf';
 import { MaxFiveBlock } from '@/components/MaxFive';
+import { SidesBlock } from '@/components/Sides';
 import { fonts, space } from '@/theme';
 
 export default function BoardScreen() {
@@ -49,6 +50,7 @@ export default function BoardScreen() {
         <Paywall />
       ) : (
         <>
+          {!!board.sides?.rows?.length && <SidesBlock card={board.sides} />}
           <FeaturedSheet week={board.week} />
           {!!board.maxFive?.tickets?.length && <MaxFiveBlock card={board.maxFive} />}
           {!!board.bestOf?.plays?.length && <BestOfBlock best={board.bestOf} />}

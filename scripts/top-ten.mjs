@@ -8,12 +8,12 @@
 // kickoff and labelled as leans rather than ranked as if they were graded.
 import { impliedProb } from './lib.mjs';
 
-const SD_MARGIN = 13.4;
+export const SD_MARGIN = 13.4;
 const SD_TOTAL = 10.6;
 const TOP = 10;
 
 // Abramowitz-Stegun 7.1.26; plenty for a ranking.
-function phi(z) {
+export function phi(z) {
   const t = 1 / (1 + (0.3275911 * Math.abs(z)) / Math.SQRT2);
   const y =
     1 -
@@ -34,7 +34,7 @@ const label = (g) => `${g.away.abbr}@${g.home.abbr}`;
 const RULED_OUT = /^(out|doubtful|injured reserve|ir|suspended)$/i;
 
 /** Spread and total currently on the board: the live feed when it has one, else the research line. */
-function lineOf(g) {
+export function lineOf(g) {
   const spreadLabel = g.lines?.spread ?? '';
   const [favAbbr, numStr] = spreadLabel.split(' ');
   const fav = Number(numStr); // negative: the favourite's handicap

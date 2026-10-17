@@ -5,6 +5,7 @@ import { DATA, ROOT, readJson, writeJson, nowIso, normName, impliedProb, devig }
 import { buildParlays } from './parlays.mjs';
 import { buildLottos, buildTopTen } from './top-ten.mjs';
 import { buildBestOf, buildMaxFive } from './best-of.mjs';
+import { buildSides } from './sides.mjs';
 
 const research = readJson(path.join(ROOT, 'src', 'data', 'research.json'));
 let schedule = readJson(path.join(DATA, 'schedule.json'), { games: [] });
@@ -457,6 +458,8 @@ board.lottos = buildLottos(board.topTen);
 }
 // The front page's lead block: tomorrow's best play in every market, with Discord-ready text,
 // and above it the day's max-confidence five-legs.
+// The lead block: every game on the next slate day, spread and moneyline, most likely cover first.
+board.sides = buildSides(board);
 board.bestOf = buildBestOf(board);
 board.maxFive = buildMaxFive(board);
 // A rebuild that changed nothing but its own timestamps is not written: a fresh generatedAt would
