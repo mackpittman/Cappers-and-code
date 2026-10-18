@@ -1,55 +1,71 @@
 {
  "season": 2026,
  "week": 6,
- "gradedAt": "2026-10-18T14:49:51.068Z",
- "finals": 0,
+ "gradedAt": "2026-10-18T19:24:53.920Z",
+ "finals": 1,
  "games": 13,
  "summary": {
   "all": {
-   "wins": 0,
-   "losses": 0,
+   "wins": 7,
+   "losses": 7,
    "pushes": 0,
-   "pending": 142
+   "pending": 128
   },
   "lockedIn": {
-   "wins": 0,
+   "wins": 1,
    "losses": 0,
    "pushes": 0,
-   "pending": 1
+   "pending": 0
   },
   "lean": {
    "wins": 0,
-   "losses": 0,
+   "losses": 2,
    "pushes": 0,
-   "pending": 18
+   "pending": 16
   },
   "top3": {
-   "wins": 0,
-   "losses": 0,
+   "wins": 1,
+   "losses": 2,
    "pushes": 0,
-   "pending": 39
+   "pending": 36
   },
   "td2": {
-   "wins": 0,
-   "losses": 0,
+   "wins": 1,
+   "losses": 2,
    "pushes": 0,
-   "pending": 39
+   "pending": 36
   },
   "value": {
-   "wins": 0,
-   "losses": 0,
+   "wins": 1,
+   "losses": 1,
    "pushes": 0,
-   "pending": 27
+   "pending": 25
   },
   "prop": {
-   "wins": 0,
+   "wins": 3,
    "losses": 0,
    "pushes": 0,
-   "pending": 18
+   "pending": 15
   },
   "calibration": {
-   "td2": [],
-   "top3": []
+   "td2": [
+    {
+     "band": "0-8%",
+     "n": 3,
+     "model": 0.069,
+     "actual": 0.333,
+     "wins": 1
+    }
+   ],
+   "top3": [
+    {
+     "band": "0-40%",
+     "n": 3,
+     "model": 0.347,
+     "actual": 0.333,
+     "wins": 1
+    }
+   ]
   }
  },
  "items": [
@@ -781,139 +797,142 @@
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "atd",
    "label": "Bhayshul Tuten ATD +145",
-   "result": "pending",
    "conf": 3,
-   "bucket": "lockedIn"
+   "bucket": "lockedIn",
+   "result": "win"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "side",
    "label": "JAX -2.5",
-   "result": "pending",
    "conf": 1,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "total",
    "label": "Under 42.5",
-   "result": "pending",
    "conf": 2,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "atd",
    "label": "Bhayshul Tuten ATD",
-   "result": "pending",
    "est": 0.37,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "atd",
    "label": "Woody Marks ATD",
-   "result": "pending",
    "est": 0.34,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "atd",
    "label": "Nico Collins ATD",
-   "result": "pending",
    "est": 0.33,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "td2",
    "label": "Bhayshul Tuten 2+ TD",
-   "result": "pending",
    "est": 0.07891766045416793,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "win"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "td2",
    "label": "Woody Marks 2+ TD",
-   "result": "pending",
    "est": 0.0657598069853006,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "td2",
    "label": "Nico Collins 2+ TD",
-   "result": "pending",
    "est": 0.06168003037992609,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "atd",
    "label": "Josh Cameron ATD",
-   "result": "pending",
    "est": 0.13,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "atd",
    "label": "Foster Moreau ATD",
-   "result": "pending",
    "est": 0.08,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "win"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "prop",
    "label": "C.J. Stroud over 255.5 pass yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 312,
+   "result": "win"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "prop",
    "label": "Nico Collins over 73.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 74,
+   "result": "win"
   },
   {
    "game": "hou-jax",
    "gameLabel": "HOU@JAX",
-   "final": null,
+   "final": "HOU 34, JAX 31",
    "type": "prop",
    "label": "Brenton Strange over 38.5 reception yds",
-   "result": "pending",
-   "bucket": "prop"
+   "bucket": "prop",
+   "actual": 44,
+   "result": "win"
   },
   {
    "game": "lac-kc",
