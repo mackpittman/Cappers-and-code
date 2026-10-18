@@ -1,0 +1,270 @@
+{
+ "game": "hou-jax",
+ "kick": "2026-10-18T13:30:00Z",
+ "weather": "Wembley Stadium, London, natural grass; the roof covers the stands, not the field. Open-Meteo forecast for the 2:30 p.m. BST kickoff: about 57F, an 11-16% rain chance, 12-13 mph wind with gusts of 25-27 mph. Flagged on both quarterbacks as a small trim to deep passing.",
+ "teams": {
+  "HOU": {
+   "passAtt": 35,
+   "rushAtt": 22
+  },
+  "JAX": {
+   "passAtt": 30,
+   "rushAtt": 27
+  }
+ },
+ "players": [
+  {
+   "team": "HOU",
+   "player": "C.J. Stroud",
+   "pos": "QB",
+   "targets": null,
+   "catchRate": null,
+   "receptions": null,
+   "recYds": null,
+   "carries": 3.2,
+   "rushYds": 13,
+   "passYds": 272,
+   "flags": [
+    "weather"
+   ],
+   "why": "35 attempts (38/56/27/31/34: season 37.2, last three 30.7, blend 34, plus one as a 2.5-point dog that cannot run on a 2.5-a-carry defense; Jacksonville's opponents have thrown 35.6 times a game); 64.0% completions regressed to 65.5%; 11.8 yards per completion regressed to 11.5; Jacksonville allows 7.8 yards per attempt, 266.2 passing yards a game and the league's worst explosive-pass rate with CB Montaric Brown out, factor 1.05 trimmed to 1.03 for gusts to 27 mph. Book main 255.5 DK (-111) / about 252 FD; 6% over. Carries 2/3/2/2/6 (blend 3.2) at 4.7 a carry, Jacksonville factor 0.85 (floor); rush main 9.5."
+  },
+  {
+   "team": "HOU",
+   "player": "Nico Collins",
+   "pos": "WR",
+   "targets": 8,
+   "catchRate": 0.71,
+   "receptions": 5.7,
+   "recYds": 87,
+   "carries": null,
+   "rushYds": null,
+   "passYds": null,
+   "flags": [],
+   "why": "Targets 10/8/7 in his three games (missed Weeks 2-3, hamstring): season-in-games 8.3, last three 7.5, blend 7.9; 26% of targets when active against about 32 team targets is 8.3, trimmed for Harrison to 8.0. 76% catch rate on 25 targets regressed to 71%; 13.1 a catch regressed to 14.0 toward his career mark near 15; Jacksonville allows 9.5 yards per receiver target (1,019 on 107), factor 1.10 (not the cap, wind). Book 73.5 DK (-110) / about 75 FD, receptions 5.5 (-135 DK); 18% over. Five straight 100-yard games against Jacksonville (ESPN)."
+  },
+  {
+   "team": "HOU",
+   "player": "Dalton Schultz",
+   "pos": "TE",
+   "targets": 4.2,
+   "catchRate": 0.75,
+   "receptions": 3.2,
+   "recYds": 27,
+   "carries": null,
+   "rushYds": null,
+   "passYds": null,
+   "flags": [],
+   "why": "Targets 8/14/3/2/4: season 6.2, last three 3.0, blend 4.6, held to 4.2 because Collins is active (8, 2 and 4 in Collins' games; 14 and 3 without); 77% catch rate on 31 regressed to 75%; 10.2 a catch held at 10.0; Jacksonville allows 6.0 yards per tight-end target (169 on 28), factor at the 0.85 floor. Book 30.5 DK (-114) / about 29 FD, receptions 3.5 (-102)."
+  },
+  {
+   "team": "HOU",
+   "player": "Marvin Harrison Jr.",
+   "pos": "WR",
+   "targets": 3.2,
+   "catchRate": 0.58,
+   "receptions": 1.9,
+   "recYds": 29,
+   "carries": null,
+   "rushYds": null,
+   "passYds": null,
+   "flags": [
+    "new-role"
+   ],
+   "why": "First game for Houston after the Oct. 12 trade; one week of practice and Ryans says he will not play every snap. Arizona targets 3/1/5/4 (3.25 a game), held at 3.2 for a partial share of the outside snaps Hutchinson and Boutte had. Career catch rate about 54% (5 of 13 this year, 41 of 73 in 2025) regressed to 58%; 14.6 a catch for his career regressed to 14.0; receiver factor 1.10. Book 20.5 DK (-114) / about 21 FD, receptions 1.5 (-147). About 40% over the book's median: the book prices a limited debut, and a 14-a-catch receiver's mean sits well above his median on two catches. Snap share unknown: verify."
+  },
+  {
+   "team": "HOU",
+   "player": "Jaylin Noel",
+   "pos": "WR",
+   "targets": 3.2,
+   "catchRate": 0.71,
+   "receptions": 2.3,
+   "recYds": 29,
+   "carries": null,
+   "rushYds": null,
+   "passYds": null,
+   "flags": [],
+   "why": "Targets 2/5/2/3/5 (season 3.4, last three 3.3, blend 3.4), trimmed to 3.2 for Harrison although Noel's slot role is the one Harrison is least likely to take (RotoBaller: steady slot snaps after Collins returned); 13 of 17 caught regressed to 71%; 17.5 a catch on 13 catches regressed hard to 11.5; receiver factor 1.10. Book 17.5 DK (-114), receptions 1.5 (-118). About 65% over the book's 17.5: his game log is 53, 31, 17, 85 and 41 yards, and the book appears to price a reduced share with Harrison in; this is the projection most exposed to the new receiver (verify)."
+  },
+  {
+   "team": "HOU",
+   "player": "Kayshon Boutte",
+   "pos": "WR",
+   "targets": 2.8,
+   "catchRate": 0.68,
+   "receptions": 1.9,
+   "recYds": 26,
+   "carries": null,
+   "rushYds": null,
+   "passYds": null,
+   "flags": [
+    "new-role"
+   ],
+   "why": "Targets 2/5/2/4/5 (season 3.6, last three 3.7) cut to 2.8 because Harrison takes outside snaps from him and Hutchinson; 12 of 18 caught at the 68% prior; 12.75 a catch regressed to 12.5; receiver factor 1.10. Book 23.5 DK (-111) / 24.5 FD (-112), receptions 1.5-2.5. Below the 3-target bar after the Harrison cut; kept because he has drawn 4-5 targets in three of five games."
+  },
+  {
+   "team": "HOU",
+   "player": "Xavier Hutchinson",
+   "pos": "WR",
+   "targets": 2.8,
+   "catchRate": 0.6,
+   "receptions": 1.7,
+   "recYds": 22,
+   "carries": null,
+   "rushYds": null,
+   "passYds": null,
+   "flags": [
+    "new-role"
+   ],
+   "why": "Targets 6/9/6/5/5 (blend 5.8) on 31% of the snaps in Week 4, cut to 2.8 because Harrison is most likely to take his outside snaps; 16 of 31 caught regressed to 60%; 14.4 a catch regressed to 12.0; receiver factor 1.10. Book 14.5 DK (-108), receptions 1.5 (-115). About 50% over the book because he has drawn 5 or more targets every week even on part-time snaps; the book is pricing him off the field, which is possible (verify the snap split)."
+  },
+  {
+   "team": "HOU",
+   "player": "Woody Marks",
+   "pos": "RB",
+   "targets": 3.6,
+   "catchRate": 0.8,
+   "receptions": 2.9,
+   "recYds": 17,
+   "carries": 15,
+   "rushYds": 48,
+   "passYds": null,
+   "flags": [
+    "one-game-sample"
+   ],
+   "why": "Carries 9/8/5/6/15 (blend 8.6) moved to 15 of about 19 back carries with Montgomery out (10.4 a game), matching the 15 he took once Montgomery left Week 5, the only game of the lead role this year; Ogunbowale is the No. 2. 3.47 a carry on 43 regressed to 3.8; Jacksonville allows 2.5 a carry to backs, factor at the 0.85 floor. The cap binds: the uncapped factor (0.60) gives 34, and no back has run for 40 yards against Jacksonville in five games, so do not build an over leg on 48. Targets 1/6/1/1/4 (blend 2.3) plus Montgomery's 1.4 and a defense that gives backs 7 targets a game: 3.6; 11 of 13 caught regressed to 80%; 4.9 a catch regressed to 6.0; Jacksonville factor 1.00 (5.6 yards per back target). Book rush 45.5 DK (-110) / about 45 FD; receptions 2.5 (-132 DK); receiving 14.5 (-114)."
+  },
+  {
+   "team": "JAX",
+   "player": "Trevor Lawrence",
+   "pos": "QB",
+   "targets": null,
+   "catchRate": null,
+   "receptions": null,
+   "recYds": null,
+   "carries": 3,
+   "rushYds": 12,
+   "passYds": 221,
+   "flags": [
+    "weather"
+   ],
+   "why": "30 attempts (23/29/29/23/39: season 28.6, last three 30.3, held at 30 as a 2.5-point favorite; Houston's opponents throw 35.4 times a game but run a 62% pass rate); 67.1% completions regressed to 65.5%; 12.2 yards per completion regressed to 11.6; Houston allows 7.2 yards per attempt with 18 sacks (second) against a backup left tackle and 77% zone, factor 0.97 including the wind. Book main 225.5 DK (-111) / about 228 FD. Carries 2/2/4/3/3 (14 for 59, 4.2) at 3.0 for 12; rush main 13.5."
+  },
+  {
+   "team": "JAX",
+   "player": "Parker Washington",
+   "pos": "WR",
+   "targets": 6.6,
+   "catchRate": 0.65,
+   "receptions": 4.3,
+   "recYds": 60,
+   "carries": null,
+   "rushYds": null,
+   "passYds": null,
+   "flags": [],
+   "why": "Targets 6/12/5/3/9 (season 7.0, last three 5.7, blend 6.3) lifted to 6.6 at his 25% season share of 28 team targets; 22 of 35 caught regressed to 65%; 16.0 a catch regressed to 13.5 (three of his four scores came from 27 yards or more); Houston allows 8.6 yards per receiver target with Pitre out, factor 1.04. Book 62.5 DK (-110) / about 63 FD, receptions 4.5 (-112)."
+  },
+  {
+   "team": "JAX",
+   "player": "Brenton Strange",
+   "pos": "TE",
+   "targets": 5.8,
+   "catchRate": 0.76,
+   "receptions": 4.4,
+   "recYds": 49,
+   "carries": null,
+   "rushYds": null,
+   "passYds": null,
+   "flags": [],
+   "why": "Targets 3/2/5/8/8 (season 5.2, last three 7.0, blend 6.1), trimmed to 5.8 because the 8 at Cincinnati came on 23 team attempts; 21 of 26 caught regressed to 76%; 11.2 a catch regressed to 10.8; Houston allows 7.6 yards per tight-end target (229 on 30) and no tight-end touchdowns, factor 1.03. Book 38.5 DK (-110) / 39.5 FD (+100), receptions 3.5 (-138 DK); 27% over on the two-week role."
+  },
+  {
+   "team": "JAX",
+   "player": "Jakobi Meyers",
+   "pos": "WR",
+   "targets": 4.2,
+   "catchRate": 0.74,
+   "receptions": 3.1,
+   "recYds": 41,
+   "carries": null,
+   "rushYds": null,
+   "passYds": null,
+   "flags": [],
+   "why": "Targets 2/1/8/4/3 (season 3.6, last three 5.0, blend 4.3); 15 of 18 caught regressed to 74%; 13.5 a catch regressed to 12.8; receiver factor 1.04. Book 31.5 DK (-114) / about 34 FD, receptions 2.5-3.5; about 25% over, mostly the median-versus-mean gap on a three-catch receiver."
+  },
+  {
+   "team": "JAX",
+   "player": "Josh Cameron",
+   "pos": "WR",
+   "targets": 2.6,
+   "catchRate": 0.68,
+   "receptions": 1.8,
+   "recYds": 23,
+   "carries": null,
+   "rushYds": null,
+   "passYds": null,
+   "flags": [],
+   "why": "Targets 2/DNP/2/2/6 (season 3.0 in four games, last three 3.3) held at 2.6 behind Washington, Meyers and Strange; 8 of 12 caught at the 68% prior; 14.6 a catch regressed to 12.5; receiver factor 1.04. Book 15.5 DK (-111) / about 17 FD, receptions 1.5 (-110). Below the 3-target bar; kept because the book posts him. About 45% over the book's median, which prices a one-catch role; 42 and 43 yards the last two weeks."
+  },
+  {
+   "team": "JAX",
+   "player": "Brian Thomas Jr.",
+   "pos": "WR",
+   "targets": 2.8,
+   "catchRate": 0.61,
+   "receptions": 1.7,
+   "recYds": 22,
+   "carries": null,
+   "rushYds": null,
+   "passYds": null,
+   "flags": [],
+   "why": "Targets 3/9/1/2/3 (season 3.6, last three 2.0, blend 2.8) in Coen's 12-personnel offense; 9 of 18 caught regressed to 61%; 11.7 a catch regressed to 12.5; receiver factor 1.04. Book 17.5 DK (-109) / about 18 FD, receptions 1.5 (-120). Below the 3-target bar; kept because the book posts him. Trade speculation is a non-factor for Sunday."
+  },
+  {
+   "team": "JAX",
+   "player": "Bhayshul Tuten",
+   "pos": "RB",
+   "targets": 2.4,
+   "catchRate": 0.81,
+   "receptions": 1.9,
+   "recYds": 12,
+   "carries": 17,
+   "rushYds": 61,
+   "passYds": null,
+   "flags": [],
+   "why": "Carries 15/13/15/17/22 (season 16.4, last three 18.0, blend 17.2) at 17 of about 24 back carries; 4.26 a carry on 82 held at 4.25; Houston allows 3.5 a carry to backs (3.3 overall), factor at the 0.85 floor (uncapped 0.81 gives 58). Targets 1/2/2/2/3 (blend 2.2) lifted to 2.4 because Houston's opponents throw to backs 5.8 times a game; 9 of 10 caught regressed to 81%; 8.7 a catch regressed to 7.5; Houston allows 2.9 yards per back target, factor at the 0.85 floor. Book rush 63.5 DK (-115) / about 64 FD; receiving 10.5 (-110)."
+  },
+  {
+   "team": "JAX",
+   "player": "Chris Rodriguez Jr.",
+   "pos": "RB",
+   "targets": 0.4,
+   "catchRate": 0.78,
+   "receptions": 0.3,
+   "recYds": 2,
+   "carries": 4.5,
+   "rushYds": 16,
+   "passYds": null,
+   "flags": [],
+   "why": "Carries 6/6/8/6/2 (season 5.6, last three 5.3) cut to 4.5 after two carries last week while Tuten took 22; 113 yards on 28 (4.0) regressed to 4.1; Houston back factor 0.85 (floor). One target all season. Book rush 14.5 DK (-110) / about 15 FD. Below the 3-target bar; included as the second back."
+  }
+ ],
+ "sources": [
+  "ESPN game summaries and box scores for all ten 2026 games of both teams (site.api.espn.com summary endpoint; usage and red-zone splits derived from ESPN play-by-play)",
+  "ESPN depth charts and rosters for HOU and JAX (core and site APIs), pulled 2026-10-17 21:51 UTC",
+  "ESPN NFL transactions feed, pulled 2026-10-17 21:52 UTC",
+  "data/injuries.json (ESPN injuries feed, fetched 2026-10-17 21:45 UTC)",
+  "data/odds/raw/2026-w06-hou-jax.json (DraftKings and FanDuel alternate ladders, pulled 2026-10-17 21:48-21:50 UTC)",
+  "data/schedule.json (DraftKings line via ESPN)",
+  "ESPN: 'Marvin Harrison Jr. will play for Texans on Sunday in London, coach says' (2026-10-15); 'Texans RB Montgomery, S Pitre out for London affair vs. Jaguars' (2026-10-15); AP preview via ESPN (2026-10-15); 'NFL Week 6 betting guide' (2026-10-16)",
+  "Field Level Media: Jaguars await Texans in London-based AFC South showdown",
+  "RotoBaller Week 5 snap notes (Hutchinson 31% in Week 4; Noel slot role)",
+  "Open-Meteo hourly forecast for Wembley (51.556, -0.280), 2026-10-18"
+ ],
+ "unverified": [
+  "Week 5 snap counts for Houston's receivers and Harrison's planned snap share",
+  "Jawhar Jordan elevation (not projected)",
+  "Opponent factors use 2026 per-target rates against a league baseline of about 8.2 yards per receiver target, 7.2 per tight-end target and 5.6 per back target (estimated, not pulled)"
+ ]
+}

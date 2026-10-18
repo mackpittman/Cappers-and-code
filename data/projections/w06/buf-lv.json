@@ -1,0 +1,197 @@
+{
+  "game": "buf-lv",
+  "kick": "2026-10-18T20:25:00Z",
+  "weather": "Allegiant Stadium has a fixed roof (indoor). ESPN/AccuWeather outside: 75F, no precipitation, gusts to 7 mph. Non-factor; no weather flag.",
+  "teams": {
+    "BUF": {
+      "passAtt": 28,
+      "rushAtt": 31
+    },
+    "LV": {
+      "passAtt": 37,
+      "rushAtt": 23
+    }
+  },
+  "players": [
+    {
+      "team": "BUF",
+      "player": "Josh Allen",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 8,
+      "rushYds": 38,
+      "passYds": 246,
+      "flags": [],
+      "why": "28 attempts (season 27.6 on 29/31/26/33/19, last three 26; a 5.5-point road favourite that ran 37 times Monday); 91 of 138 (65.9%) regressed to 65.5%; 13.7 a completion regressed to 12.8; Las Vegas factor 1.05 (253.2 passing yards a game allowed, highest success rate and third-highest EPA per play allowed over the last three per Covers). Book 239.5 DK (-113) / 249.5 FD: no lean. Rush 6/14/8/5/10 (season 8.6, last three 7.7, blend 8.1); about 119 yards on 33 through Week 4 plus 121 on 10 Monday is 5.6 a carry, regressed to 4.8, neutral factor (Raiders QB-rush allowed not verified). Book 32.5 DK."
+    },
+    {
+      "team": "BUF",
+      "player": "James Cook III",
+      "pos": "RB",
+      "targets": 1.8,
+      "catchRate": 0.73,
+      "receptions": 1.3,
+      "recYds": 9,
+      "carries": 20,
+      "rushYds": 110,
+      "passYds": null,
+      "flags": [],
+      "why": "Carries 13/21/24/12/25 (season 19.0, last three 20.3, blend 19.7, about 20 of 31 team rushes); 532 on 95 (5.6) regressed to 5.1; Las Vegas allows 140.6 rushing yards a game, factor 1.08 (carries allowed not verified). 110 is 16% over DK's 94.5 (FD 99.5 at +116). Targets 4/3/1/2/1 (season 2.2, last three 1.3, blend 1.8); 7 of 11 regressed toward 78% to 73%; 4.4 a catch regressed to 6.5, neutral factor. Book 8.5 DK receiving, 1.5 catches."
+    },
+    {
+      "team": "BUF",
+      "player": "Khalil Shakir",
+      "pos": "WR",
+      "targets": 5.2,
+      "catchRate": 0.69,
+      "receptions": 3.6,
+      "recYds": 46,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 6/6/3/8/3 (season 5.2, last three 4.7, blend 4.9, nudged to 5.2 with Moore and Palmer questionable); 18 of 26 (69%) held at 69% after regression; 14.2 a catch (inflated by a 57-yarder Monday) regressed to 12.5; Las Vegas allowed 8.2 yards per target to receivers through Week 4, factor 1.03. Neither book has posted a Shakir yardage or catches line (verify). Moore sitting adds about 1 target."
+    },
+    {
+      "team": "BUF",
+      "player": "Keon Coleman",
+      "pos": "WR",
+      "targets": 4.2,
+      "catchRate": 0.74,
+      "receptions": 3.1,
+      "recYds": 43,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 1/6/2/7/2 (season 3.6, last three 3.7, blend 3.6, plus 0.6 for the Moore/Palmer uncertainty: 7 targets in Week 4 after Moore left, 2 on 19 attempts Monday with both out); 15 of 18 (83%) regressed to 74%; 14.9 a catch regressed to 13.5; Las Vegas WR factor 1.03. No posted yardage or catches line at either book (TD +290 FD). If Moore is active and healthy, expect about 3.5 targets."
+    },
+    {
+      "team": "BUF",
+      "player": "DJ Moore",
+      "pos": "WR",
+      "targets": 4.8,
+      "catchRate": 0.65,
+      "receptions": 3.1,
+      "recYds": 43,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [
+        "questionable"
+      ],
+      "why": "Conditional on playing. Questionable (shoulder, AC joint): no practice Thursday, noncontact jersey Friday, a game-time decision; missed Monday at the Rams. Healthy games 8 and 10 targets, partial games 0 and 2 (blend about 5), cut to 4.8 for a limited return; 12 of 20 (60%) regressed to 65%; 14.8 a catch regressed to 13.5; factor 1.03. 43 against 49.5 DK/FD (catches 3.5, over -132 DK), 13% under because the book prices a full game. If he sits, his targets spread to Shakir, Coleman, Ty Johnson and Knox as on Monday."
+    },
+    {
+      "team": "BUF",
+      "player": "Dalton Kincaid",
+      "pos": "TE",
+      "targets": 3.4,
+      "catchRate": 0.74,
+      "receptions": 2.5,
+      "recYds": 35,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 6/8/3/2/2 (season 4.2, last three 2.3, blend 3.3, scaled to 28 attempts); 16 of 21 (76%) regressed toward 72% to 74%; 17.3 a catch regressed to 13.5; Las Vegas has allowed six touchdowns to tight ends (yardage to the position not verified), factor 1.05. 29% under DK's 49.5 (-110; FD -122) because the line prices his 130- and 95-yard first two weeks; he has 7 targets in three games since. Catches main 4.5 (DK +115)."
+    },
+    {
+      "team": "LV",
+      "player": "Kirk Cousins",
+      "pos": "QB",
+      "targets": null,
+      "catchRate": null,
+      "receptions": null,
+      "recYds": null,
+      "carries": 2.5,
+      "rushYds": 1,
+      "passYds": 270,
+      "flags": [],
+      "why": "35 Cousins attempts of 37 team (season 36 team on 180, with Mendoza's 8 at New England; a 5.5-point home underdog in a 53.5 total); 112 of 172 (65.1%) regressed to 65%; 11.3 a completion regressed to 11.0; Buffalo allows 295.8 passing yards a game (7.5 an attempt through Week 4, 377 net to the Rams), factor 1.08. 270 is 8% over DK's 250.5 (-111; FD 249.5 at -114). Blowout risk: Mendoza replaced him late last week. Rush: 12 carries for -2 through Week 4, none since; kneels and sneaks only (book 1.5)."
+    },
+    {
+      "team": "LV",
+      "player": "Ashton Jeanty",
+      "pos": "RB",
+      "targets": 5.5,
+      "catchRate": 0.76,
+      "receptions": 4.2,
+      "recYds": 35,
+      "carries": 15.5,
+      "rushYds": 51,
+      "passYds": null,
+      "flags": [],
+      "why": "Kubiak: \"He's playing\"; full Wednesday, no designation. Carries 23/21/19/15/10 (season 17.6, last three 14.7, blend 16.1, trimmed to 15.5 for a trailing script); 291 on 88 (3.3) regressed to 3.6; Buffalo allows 108.2 rushing yards a game and about 3.8 a carry to backs through Week 4, factor 0.92. 51 against DK 55.5 (-112) / FD 59.5: 9% under, no lean. Targets 30 in five games (6.0; weekly split for Weeks 2-4 not verified), trimmed to 5.5 with Nailor back; 22 of 30 (73%) regressed toward 78% to 76%; 9.8 a catch regressed to 8.0; Buffalo gave backs 6.8 targets a game and three receiving touchdowns, factor 1.05. 35 is 32% over DK's 26.5 (FD 29.5): the reason is Buffalo's leak to backs and his 3-for-50 on 6 targets last week. Catches main 3.5 (-118 DK)."
+    },
+    {
+      "team": "LV",
+      "player": "Brock Bowers",
+      "pos": "TE",
+      "targets": 10.4,
+      "catchRate": 0.7,
+      "receptions": 7.3,
+      "recYds": 89,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "14/11/10 targets since the knee (missed Weeks 1-2): season and last three both 11.7, trimmed to 10.4 (28% of 37 attempts, his Week 5 share) with Nailor back; 24 of 35 (69%) regressed toward 72% to 70%; 13.0 a catch regressed to 12.2; Buffalo has allowed one touchdown to a tight end (yardage to the position not verified), neutral factor. 89 against DK 81.5 (-110) / FD 79.5: 9% over. Catches 7.3 against DK 6.5 (-136) / 7.5 (+131). Full practice Thursday, no designation."
+    },
+    {
+      "team": "LV",
+      "player": "Michael Mayer",
+      "pos": "TE",
+      "targets": 3.8,
+      "catchRate": 0.77,
+      "receptions": 2.9,
+      "recYds": 26,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 7/4/3/10/1 (season 5.0, last three 4.7, blend 4.8), cut to 3.8 because Bowers took 10 and Mayer 1 last week and Nailor's return trims two-tight-end snaps (Runyon out keeps him the No. 2); 21 of 25 (84%) regressed toward 72% to 77%; 8.2 a catch regressed to 9.0; neutral factor. 26 matches DK 26.5 (FD 29.5): no lean."
+    },
+    {
+      "team": "LV",
+      "player": "Tre Tucker",
+      "pos": "WR",
+      "targets": 5.3,
+      "catchRate": 0.68,
+      "receptions": 3.6,
+      "recYds": 50,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Targets 4/7/4/8/5 (season 5.6, last three 5.7, blend 5.6, trimmed to 5.3 with Nailor back); 19 of 28 (68%) held at 68%; 14.4 a catch regressed to 13.3; Buffalo has allowed nine touchdowns to receivers and 295.8 passing yards a game, factor 1.05. 50 is 27% over the 39.5 at both books: his season mean is 54.8 a game but one 119-yard game at the Chargers inflates it, so the median sits nearer the line. Catches 3.6 against 3.5 (-129 DK)."
+    },
+    {
+      "team": "LV",
+      "player": "Jalen Nailor",
+      "pos": "WR",
+      "targets": 3.4,
+      "catchRate": 0.68,
+      "receptions": 2.3,
+      "recYds": null,
+      "carries": null,
+      "rushYds": null,
+      "passYds": null,
+      "flags": [],
+      "why": "Back from the concussion with no designation and a starter on the Raiders' unofficial Week 6 depth chart. 11 targets in Weeks 1-3 (about 3.7 a game), none after the Week 4 hit, missed Week 5; projected 3.4. His own catch rate and yards per catch were not verified, so the catch rate is the 68% WR prior and receiving yards are left blank. Book 24.5 DK (-102), catches 2.5 (+120)."
+    }
+  ],
+  "sources": [
+    "ESPN game summary API, event 401873005 (injuries, team stats, leaders, last five, AccuWeather)",
+    "ESPN box scores: BUF 37-34 OT at LAR (401872994), LV 17-45 at NE (401872986)",
+    "data/injuries.json (fetched 2026-10-18T14:07Z; Sam Warren, The Athletic; Jay Skurski, Buffalo News)",
+    "data/projections/w05/buf-lar.json and lv-ne.json, research-draft/w05 (Weeks 1-4 target, carry and catch splits)",
+    "data/odds/raw/2026-w06-buf-lv.json (DraftKings and FanDuel, 2026-10-17 22:11-22:12 UTC)",
+    "Covers Week 6 preview (DVOA, EPA, Raiders' last-three scoring allowed)",
+    "raiders.com unofficial Week 6 depth chart and injury report; ESPN 'Jeanty feels great' (search snippets)",
+    "Unverified: Shakir and Coleman book lines (none posted); Nailor catch and yardage rates; Jeanty Weeks 2-4 target split; Las Vegas carries allowed; position yardage allowed to tight ends by both defenses; Allen's rushing yards through Week 4 (derived from 3.6 a carry on 33)"
+  ]
+}

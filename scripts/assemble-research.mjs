@@ -55,9 +55,10 @@ for (const id of ORDER) {
     );
   const wp = L.winProb.away + L.winProb.home;
   if (Math.abs(wp - 1) > 0.02) problems.push(`${id}: winProb sums to ${wp.toFixed(3)}`);
-  if (!favIsHome && L.winProb.away < L.winProb.home)
-    problems.push(`${id}: ${favAbbr} is favoured but winProb favours the other side`);
-  if (favIsHome && L.winProb.home < L.winProb.away)
+  // A short spread can sit against a near-even moneyline when the spread juice does the work
+  // (NO -1.5 at +105 with NYG -112 on the moneyline), so only a real gap counts as flipped data.
+  const favWp = favIsHome ? L.winProb.home : L.winProb.away;
+  if (favWp < 0.5 && (margin > 2.5 || favWp < 0.47))
     problems.push(`${id}: ${favAbbr} is favoured but winProb favours the other side`);
   if ((g.atdBoard ?? []).length < 6)
     problems.push(`${id}: only ${(g.atdBoard ?? []).length} atdBoard entries`);
