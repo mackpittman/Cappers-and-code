@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 6,
- "generatedAt": "2026-10-18T19:24:54.025Z",
+ "generatedAt": "2026-10-19T11:14:24.216Z",
  "researchAsOf": "2026-10-18T14:48:04.940Z",
  "oddsFetchedAt": "2026-10-18T14:48:04.303Z",
  "oddsCredits": {
@@ -10,7 +10,7 @@
   "last": 78,
   "at": "2026-10-18T14:48:04.303Z",
   "spent7d": 0,
-  "spent30d": 214,
+  "spent30d": 154,
   "reserve": 40
  },
  "creditPlan": {
@@ -33,7 +33,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": "ESPN/DraftKings",
- "injuriesFetchedAt": "2026-10-18T19:24:53.455Z",
+ "injuriesFetchedAt": "2026-10-19T11:14:23.448Z",
  "notes": "Researched one game at a time, then validated for de-vigged win probability, implied team points and board depth before assembly. Anytime-TD prices marked \"verify\" could not be confirmed at a live sportsbook and must be checked before they are played.",
  "completed": [
   {
@@ -595,39 +595,14 @@
     ]
    },
    "status": {
-    "state": "STATUS_SCHEDULED",
-    "detail": "10/18 - 4:05 PM EDT",
+    "state": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "away": 0,
-     "home": 0
+     "away": 18,
+     "home": 16
     }
    },
-   "live": {
-    "source": "ESPN/DraftKings",
-    "fetchedAt": "2026-10-18T19:24:53.173Z",
-    "ml": {
-     "home": -700,
-     "away": 500,
-     "bestHome": null,
-     "bestAway": null,
-     "openHome": -700,
-     "openAway": 500
-    },
-    "spread": {
-     "homePoint": -12.5,
-     "homePrice": null,
-     "awayPrice": null
-    },
-    "total": {
-     "point": 51.5,
-     "over": null,
-     "under": null
-    },
-    "winProb": {
-     "away": 0.16,
-     "home": 0.84
-    }
-   },
+   "live": null,
    "scratched": [
     {
      "name": "Tutu Atwell",
@@ -1325,6 +1300,14 @@
       "date": "2026-10-18T18:47Z"
      },
      {
+      "name": "Blake Grupe",
+      "pos": "PK",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Grupe (knee) has been ruled out for the remainder of Sunday's game against the Cardinals, Sarah Barshop of ESPN.com reports.",
+      "date": "2026-10-18T22:19Z"
+     },
+     {
       "name": "Alaric Jackson",
       "pos": "OT",
       "status": "Suspension",
@@ -1341,7 +1324,7 @@
       "date": "2026-10-14T01:14Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    },
    "fiveLeg": {
     "game": "ari-lar",
@@ -1574,6 +1557,18 @@
       "best": 500,
       "bestBook": "fanduel",
       "consensus": 488
+     }
+    },
+    {
+     "name": "Rashod Bateman",
+     "team": "BAL",
+     "price": 550,
+     "implied": 0.154,
+     "status": "Questionable",
+     "live": {
+      "best": 550,
+      "bestBook": "draftkings",
+      "consensus": 525
      }
     },
     {
@@ -1973,11 +1968,11 @@
     ]
    },
    "status": {
-    "state": "STATUS_IN_PROGRESS",
-    "detail": "8:33 - 4th",
+    "state": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
      "away": 10,
-     "home": 9
+     "home": 13
     }
    },
    "live": null,
@@ -1985,11 +1980,6 @@
     {
      "name": "Quinshon Judkins",
      "team": "CLE",
-     "status": "Out"
-    },
-    {
-     "name": "Rashod Bateman",
-     "team": "BAL",
      "status": "Out"
     },
     {
@@ -2499,14 +2489,6 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Rashod Bateman",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "Bateman (shoulder) has been ruled out of Sunday's game in Cleveland.",
-      "date": "2026-10-18T18:45Z"
-     },
-     {
       "name": "Andrew Vorhees",
       "pos": "G",
       "status": "Out",
@@ -2561,17 +2543,17 @@
       "type": "out",
       "detail": "inactive",
       "date": "2026-10-18T15:33Z"
+     },
+     {
+      "name": "Rashod Bateman",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Bateman (shoulder) has been ruled out of Sunday's game in Cleveland.",
+      "date": "2026-10-18T18:45Z"
      }
     ],
     "home": [
-     {
-      "name": "Grant Delpit",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "Delpit (concussion) has been ruled out for the remainder of Sunday's game against the Ravens.",
-      "date": "2026-10-18T17:41Z"
-     },
      {
       "name": "Taylen Green",
       "pos": "QB",
@@ -2633,8 +2615,16 @@
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-18T18:48Z"
+      "detail": "Jefferson (hip) is questionable to return to Sunday's game against the Ravens.",
+      "date": "2026-10-18T19:28Z"
+     },
+     {
+      "name": "Grant Delpit",
+      "pos": "S",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Delpit (concussion) has been ruled out for the remainder of Sunday's game against the Ravens.",
+      "date": "2026-10-18T17:41Z"
      },
      {
       "name": "Kalia Davis",
@@ -2651,17 +2641,9 @@
       "type": "Injured Reserve",
       "detail": "Sampson (knee) won't be activated from injured reserve ahead of Sunday's contest against the Ravens, Zac Jackson of The Athletic reports.",
       "date": "2026-10-16T18:20Z"
-     },
-     {
-      "name": "Raheim Sanders",
-      "pos": "RB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Browns placed Sanders (hip) on injured reserve Tuesday.",
-      "date": "2026-10-13T21:00Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    },
    "fiveLeg": {
     "game": "bal-cle",
@@ -2841,7 +2823,7 @@
      "team": "BUF",
      "price": 170,
      "implied": 0.37,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 170,
       "bestBook": "fanduel",
@@ -3230,39 +3212,14 @@
     ]
    },
    "status": {
-    "state": "STATUS_SCHEDULED",
-    "detail": "10/18 - 4:25 PM EDT",
+    "state": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "away": 0,
-     "home": 0
+     "away": 33,
+     "home": 30
     }
    },
-   "live": {
-    "source": "ESPN/book",
-    "fetchedAt": "2026-10-18T19:24:53.173Z",
-    "ml": {
-     "home": 195,
-     "away": -238,
-     "bestHome": null,
-     "bestAway": null,
-     "openHome": 230,
-     "openAway": -285
-    },
-    "spread": {
-     "homePoint": 5.5,
-     "homePrice": null,
-     "awayPrice": null
-    },
-    "total": {
-     "point": 53.5,
-     "over": null,
-     "under": null
-    },
-    "winProb": {
-     "away": 0.675,
-     "home": 0.325
-    }
-   },
+   "live": null,
    "scratched": [
     {
      "name": "DJ Moore",
@@ -3811,12 +3768,12 @@
       "date": "2026-10-18T18:57Z"
      },
      {
-      "name": "Te'Cory Couch",
-      "pos": "CB",
+      "name": "Dalton Kincaid",
+      "pos": "TE",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Couch suffered a hamstring injury Sunday versus New England and is doubtful to return.",
-      "date": "2026-10-04T18:51Z"
+      "detail": "Kincaid (ribs) is questionable to return to Sunday's game against the Raiders.",
+      "date": "2026-10-18T22:39Z"
      }
     ],
     "home": [
@@ -3885,7 +3842,7 @@
       "date": "2026-10-16T22:08Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    },
    "fiveLeg": {
     "game": "buf-lv",
@@ -4418,11 +4375,11 @@
     ]
    },
    "status": {
-    "state": "STATUS_IN_PROGRESS",
-    "detail": "6:26 - 3rd",
+    "state": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "away": 13,
-     "home": 7
+     "away": 25,
+     "home": 14
     }
    },
    "live": null,
@@ -4984,28 +4941,12 @@
       "date": "2026-10-18T15:44Z"
      },
      {
-      "name": "Ikem Ekwonu",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "Coach Dave Canales said Monday that Ekwonu (knee) is still a considerable time away from returning to action, Mike Kaye of ESPN reports.",
-      "date": "2026-10-06T01:04Z"
-     },
-     {
       "name": "Thomas Incoom",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Incoom (calf) is questionable to return to Sunday's game against the Eagles, Kassidy Hill of the Panthers' official site reports.",
-      "date": "2026-10-18T18:15Z"
-     },
-     {
-      "name": "Jaelan Phillips",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Phillips (hamstring) is questionable to return to Sunday's game against the Eagles, Kassidy Hill of the Panthers' official site reports.",
-      "date": "2026-10-18T17:54Z"
+      "detail": "Incoom (calf) has been ruled out for the remainder of Sunday's game against the Eagles, Kassidy Hill of the Panthers' official site reports.",
+      "date": "2026-10-18T19:20Z"
      },
      {
       "name": "Jonathon Brooks",
@@ -5082,20 +5023,20 @@
       "date": "2026-10-18T15:33Z"
      },
      {
-      "name": "Carson Steele",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Steele (shoulder) has been ruled out for the remainder of Sunday's game against the Panthers.",
-      "date": "2026-10-18T19:01Z"
-     },
-     {
       "name": "Nolan Smith Jr.",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Smith (concussion) won't return to Sunday's game against Carolina.",
       "date": "2026-10-18T18:22Z"
+     },
+     {
+      "name": "Carson Steele",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Steele is questionable to return to Sunday's game against the Panthers due to a right shoulder injury.",
+      "date": "2026-10-18T17:43Z"
      },
      {
       "name": "Jakorian Bennett",
@@ -5122,7 +5063,7 @@
       "date": "2026-10-18T02:36Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    },
    "fiveLeg": {
     "game": "car-phi",
@@ -5754,11 +5695,11 @@
     ]
    },
    "status": {
-    "state": "STATUS_IN_PROGRESS",
-    "detail": "1:48 - 3rd",
+    "state": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "away": 28,
-     "home": 7
+     "away": 31,
+     "home": 23
     }
    },
    "live": null,
@@ -6390,6 +6331,14 @@
       "date": "2026-10-18T15:49Z"
      },
      {
+      "name": "Jonah Jackson",
+      "pos": "G",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Jackson (hip) is doubtful to return to Sunday's game against the Falcons.",
+      "date": "2026-10-18T19:39Z"
+     },
+     {
       "name": "Montez Sweat",
       "pos": "DE",
       "status": "Suspension",
@@ -6403,7 +6352,7 @@
       "status": "Injured Reserve",
       "type": "Injured Reserve",
       "detail": "ir",
-      "date": "2026-10-18T19:13Z"
+      "date": "2026-10-19T11:00Z"
      },
      {
       "name": "Dayo Odeyingbo",
@@ -6415,14 +6364,6 @@
      }
     ],
     "home": [
-     {
-      "name": "Kendal Daniels",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-10-18T19:12Z"
-     },
      {
       "name": "Cooper Rush",
       "pos": "QB",
@@ -6480,12 +6421,20 @@
       "date": "2026-10-18T15:51Z"
      },
      {
-      "name": "Avieon Terrell",
+      "name": "Kendal Daniels",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Daniels (neck) was alert and had movement in all his extremities while being evaluated at Grady Memorial Hospital.",
+      "date": "2026-10-18T19:51Z"
+     },
+     {
+      "name": "Billy Bowman Jr.",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Terrell (head) is questionable to return to Sunday's game versus Chicago, William McFadden of the Falcons' official site reports.",
-      "date": "2026-10-18T18:55Z"
+      "detail": "Bowman (hamstring) is doubtful to return to Sunday's game against Atlanta, William McFadden of the Falcons' official site reports.",
+      "date": "2026-10-18T19:38Z"
      },
      {
       "name": "Divine Deablo",
@@ -6504,7 +6453,7 @@
       "date": "2026-10-11T03:43Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    },
    "fiveLeg": {
     "game": "chi-atl",
@@ -6987,39 +6936,14 @@
     "propLeans": []
    },
    "status": {
-    "state": "STATUS_SCHEDULED",
-    "detail": "10/18 - 8:20 PM EDT",
+    "state": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "away": 0,
-     "home": 0
+     "away": 13,
+     "home": 23
     }
    },
-   "live": {
-    "source": "ESPN/book",
-    "fetchedAt": "2026-10-18T19:24:53.173Z",
-    "ml": {
-     "home": -112,
-     "away": -108,
-     "bestHome": null,
-     "bestAway": null,
-     "openHome": -166,
-     "openAway": 140
-    },
-    "spread": {
-     "homePoint": -1.5,
-     "homePrice": null,
-     "awayPrice": null
-    },
-    "total": {
-     "point": 53.5,
-     "over": null,
-     "under": null
-    },
-    "winProb": {
-     "away": 0.496,
-     "home": 0.504
-    }
-   },
+   "live": null,
    "scratched": [],
    "liveBoard": [
     {
@@ -7703,62 +7627,110 @@
    "injuryReport": {
     "away": [
      {
-      "name": "DeMarvion Overshown",
-      "pos": "LB",
+      "name": "Emari Demercado",
+      "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "Dallas has downgraded Overshown (hamstring) to out for Sunday night's game against the Packers, Mike Garafolo of NFL Network reports.",
-      "date": "2026-10-18T00:03Z"
+      "detail": "Demercado (coach's decision) is inactive for Sunday night's matchup with the Packers, Patrik Walker of the Cowboys' official site reports.",
+      "date": "2026-10-18T23:06Z"
      },
      {
       "name": "Drew Shelton",
       "pos": "OT",
       "status": "Out",
       "type": "out",
-      "detail": "Shelton (hamstring) has ben ruled out for Sunday's game against the Packers, Patrik Walker of the Cowboys' official site reports.",
-      "date": "2026-10-17T04:54Z"
+      "detail": "inactive",
+      "date": "2026-10-18T22:55Z"
+     },
+     {
+      "name": "DeMarvion Overshown",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-18T22:55Z"
      },
      {
       "name": "Cobie Durant",
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "Durant (hamstring) has been ruled out for Sunday's game against the Packers, Patrik Walker of the Cowboys' official site reports.",
-      "date": "2026-10-17T02:39Z"
+      "detail": "inactive",
+      "date": "2026-10-18T22:55Z"
      },
      {
-      "name": "Joey Porter Jr.",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Porter (ankle) is questionable but on track to play in Sunday's game against the Packers, Jeremy Fowler of ESPN reports.",
-      "date": "2026-10-18T11:17Z"
+      "name": "James Houston",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-18T22:55Z"
      },
      {
-      "name": "LT Overton",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-16T21:23Z"
+      "name": "Camden Brown",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-18T22:55Z"
      },
      {
-      "name": "Ameer Speed",
-      "pos": "CB",
+      "name": "Alijah Clark",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-18T22:55Z"
+     },
+     {
+      "name": "KaVontae Turpin",
+      "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-14T23:05Z"
+      "detail": "Turpin (ribs) has been ruled out for the rest of Sunday night's contest versus the Packers, Tommy Yarrish of the Cowboys' official site reports.",
+      "date": "2026-10-19T02:25Z"
+     },
+     {
+      "name": "Dee Winters",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Winters (ankle) is questionable to return to Sunday night's contest against Green Bay, Nick Harris of the Fort Worth Star-Telegram reports.",
+      "date": "2026-10-19T01:25Z"
      }
     ],
     "home": [
+     {
+      "name": "Aaron Banks",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "Banks (toe) is inactive for Sunday night's game against Dallas.",
+      "date": "2026-10-18T23:11Z"
+     },
      {
       "name": "Benjamin St-Juste",
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "St-Juste (hamstring) has been ruled out for Sunday's game against Dallas.",
-      "date": "2026-10-17T04:23Z"
+      "detail": "inactive",
+      "date": "2026-10-18T22:52Z"
+     },
+     {
+      "name": "Donovan Jennings",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-18T22:52Z"
+     },
+     {
+      "name": "Jager Burton",
+      "pos": "C",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-18T22:52Z"
      },
      {
       "name": "Josh Jacobs",
@@ -7785,44 +7757,12 @@
       "date": "2026-10-12T17:41Z"
      },
      {
-      "name": "Savion Williams",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "The Packers activated Williams (ankle) from injured reserve Saturday.",
-      "date": "2026-10-18T01:53Z"
-     },
-     {
-      "name": "Jacob Monk",
-      "pos": "C",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Monk (quadriceps) is questionable for Sunday's game against the Cowboys.",
-      "date": "2026-10-17T04:27Z"
-     },
-     {
-      "name": "Aaron Banks",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Banks (knee/toe) is questionable for Sunday's game against Dallas.",
-      "date": "2026-10-17T04:24Z"
-     },
-     {
       "name": "Brandon Cisse",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Cisse (hip) is listed as questionable for Sunday's game against the Cowboys, Wes Hodkiewicz of the Packers' official site reports.",
-      "date": "2026-10-17T02:13Z"
-     },
-     {
-      "name": "Anthony Campbell",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-13T17:10Z"
+      "detail": "Cisse (neck) is questionable to return to Sunday night's contest against Dallas.",
+      "date": "2026-10-19T03:36Z"
      },
      {
       "name": "Jonathan Ford",
@@ -7849,7 +7789,7 @@
       "date": "2026-10-17T21:54Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    },
    "fiveLeg": {
     "game": "dal-gb",
@@ -9273,7 +9213,7 @@
       "date": "2026-10-13T19:12Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    },
    "fiveLeg": {
     "game": "hou-jax",
@@ -9453,7 +9393,7 @@
      "team": "LAC",
      "price": 380,
      "implied": 0.208,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 380,
       "bestBook": "draftkings",
@@ -9667,7 +9607,7 @@
       "fetchedAt": "2026-10-18T14:48:04.303Z"
      },
      "edge": -0.033,
-     "status": null
+     "status": "Questionable"
     }
    ],
    "stacks": [
@@ -9701,39 +9641,14 @@
     "propLeans": []
    },
    "status": {
-    "state": "STATUS_SCHEDULED",
-    "detail": "10/18 - 4:25 PM EDT",
+    "state": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "away": 0,
-     "home": 0
+     "away": 6,
+     "home": 22
     }
    },
-   "live": {
-    "source": "ESPN/book",
-    "fetchedAt": "2026-10-18T19:24:53.173Z",
-    "ml": {
-     "home": -410,
-     "away": 320,
-     "bestHome": null,
-     "bestAway": null,
-     "openHome": -135,
-     "openAway": 114
-    },
-    "spread": {
-     "homePoint": -7.5,
-     "homePrice": null,
-     "awayPrice": null
-    },
-    "total": {
-     "point": 41.5,
-     "over": null,
-     "under": null
-    },
-    "winProb": {
-     "away": 0.228,
-     "home": 0.772
-    }
-   },
+   "live": null,
    "scratched": [],
    "liveBoard": [
     {
@@ -10379,8 +10294,16 @@
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:01Z"
+      "detail": "Shelley (hamstring) won't suit up for Sunday's game against the Chiefs.",
+      "date": "2026-10-18T19:18Z"
+     },
+     {
+      "name": "Bud Dupree",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Dupree (neck) won't play in Sunday's game against Kansas City.",
+      "date": "2026-10-18T19:13Z"
      },
      {
       "name": "Tre' Harris",
@@ -10415,20 +10338,20 @@
       "date": "2026-10-18T19:01Z"
      },
      {
-      "name": "Bud Dupree",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:01Z"
-     },
-     {
       "name": "Joe Alt",
       "pos": "OT",
       "status": "Out",
       "type": "out",
       "detail": "Alt (neck), who has been ruled out for Sunday's game against the Chiefs, received favorable news after recently being evaluated by a specialist and is expected to ramp up his activity during the Chargers' Week 7 bye, Ian Rapoport of NFL Network reports.",
       "date": "2026-10-18T12:31Z"
+     },
+     {
+      "name": "Ladd McConkey",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "McConkey won't return to Sunday's game at Kansas City due to a concussion.",
+      "date": "2026-10-18T21:14Z"
      },
      {
       "name": "Alec Ingold",
@@ -10505,6 +10428,14 @@
       "date": "2026-10-18T19:07Z"
      },
      {
+      "name": "Jaylon Moore",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Moore (concussion) has been ruled out for the remainder of Sunday's game against the Chargers.",
+      "date": "2026-10-18T22:41Z"
+     },
+     {
       "name": "Tyquan Thornton",
       "pos": "WR",
       "status": "Injured Reserve",
@@ -10513,7 +10444,7 @@
       "date": "2026-10-13T18:29Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    }
   },
   {
@@ -10856,11 +10787,11 @@
     "propLeans": []
    },
    "status": {
-    "state": "STATUS_IN_PROGRESS",
-    "detail": "1:08 - 3rd",
+    "state": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "away": 27,
-     "home": 10
+     "away": 34,
+     "home": 27
     }
    },
    "live": null,
@@ -11511,12 +11442,28 @@
       "date": "2026-10-18T15:46Z"
      },
      {
+      "name": "Kool-Aid McKinstry",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Saints head coach Kellen Moore stated McKinstry (illness) exited Sunday's 34-27 win over the Giants due to a migraine, Jeff Nowak of The Big 870 New Orleans reports.",
+      "date": "2026-10-18T21:06Z"
+     },
+     {
+      "name": "Quincy Riley",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Riley sustained a neck injury in the Saints' 34-27 win over the Giants on Sunday, Ross Jackson of WWL Louisiana reports.",
+      "date": "2026-10-18T20:59Z"
+     },
+     {
       "name": "Cesar Ruiz",
       "pos": "G",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Ruiz (knee) is questionable to return to Sunday's game against the Giants, Jeff Nowak of The Big 870 New Orleans reports.",
-      "date": "2026-10-18T18:34Z"
+      "detail": "Ruiz (knee) won't return to Sunday's game against the Giants, Katherine Terrell of ESPN.com reports.",
+      "date": "2026-10-18T19:42Z"
      },
      {
       "name": "Jordyn Tyson",
@@ -11534,7 +11481,7 @@
       "status": "Out",
       "type": "out",
       "detail": "inactive",
-      "date": "2026-10-18T19:16Z"
+      "date": "2026-10-19T11:00Z"
      },
      {
       "name": "Jake Haener",
@@ -11577,12 +11524,28 @@
       "date": "2026-10-18T15:54Z"
      },
      {
+      "name": "Tremaine Edmunds",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Edmuns (shoulder) suffered an injury on the final Saints' offensive play of Sunday's game, Dan Duggan of The Athletic reports.",
+      "date": "2026-10-18T21:47Z"
+     },
+     {
+      "name": "Darnell Mooney",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Mooney (neck) is questionable to return to Sunday's game against the Saints, Ross Jackson of WWL Louisiana reports.",
+      "date": "2026-10-18T19:33Z"
+     },
+     {
       "name": "Greg Newsome II",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-18T19:02Z"
+      "detail": "Newsome (concussion) has been ruled out for the remainder of Sunday's game against the Saints, Jordan Raanan of ESPN.com reports.",
+      "date": "2026-10-18T19:26Z"
      },
      {
       "name": "Braxton Berrios",
@@ -11593,7 +11556,7 @@
       "date": "2026-10-14T21:17Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    }
   },
   {
@@ -11705,6 +11668,18 @@
       "best": 255,
       "bestBook": "draftkings",
       "consensus": 248
+     }
+    },
+    {
+     "name": "Romeo Doubs",
+     "team": "NE",
+     "price": 275,
+     "implied": 0.267,
+     "status": "Questionable",
+     "live": {
+      "best": 275,
+      "bestBook": "draftkings",
+      "consensus": 273
      }
     },
     {
@@ -11924,21 +11899,15 @@
     "propLeans": []
    },
    "status": {
-    "state": "STATUS_IN_PROGRESS",
-    "detail": "14:10 - 4th",
+    "state": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "away": 13,
-     "home": 23
+     "away": 19,
+     "home": 26
     }
    },
    "live": null,
-   "scratched": [
-    {
-     "name": "Romeo Doubs",
-     "team": "NE",
-     "status": "Out"
-    }
-   ],
+   "scratched": [],
    "liveBoard": [
     {
      "name": "Rhamondre Stevenson",
@@ -12595,14 +12564,6 @@
     ],
     "home": [
      {
-      "name": "Romeo Doubs",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "Doubs (shoulder) has been ruled out for the rest of Sunday's game against the Jets, Doug Kyed of the Boston Herald reports.",
-      "date": "2026-10-18T18:54Z"
-     },
-     {
       "name": "Channing Canada",
       "pos": "CB",
       "status": "Out",
@@ -12651,31 +12612,39 @@
       "date": "2026-10-18T15:51Z"
      },
      {
-      "name": "Alijah Vera-Tucker",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Vera-Tucker (hamstring) is questionable to return to Sunday's game against the Jets.",
-      "date": "2026-10-18T18:23Z"
-     },
-     {
       "name": "Morgan Moses",
       "pos": "OT",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Moses (ankle) is questionable to return to Sunday's game versus the Jets.",
-      "date": "2026-10-18T18:06Z"
+      "detail": "Moses (ankle) was spotted wearing a walking boot after Sunday's 26-19 win over the Jets, Andrew Callahan of the Boston Herald reports.",
+      "date": "2026-10-18T20:43Z"
      },
      {
-      "name": "Marcus Bryant",
-      "pos": "OT",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Patriots opened the 21-day practice window Wednesday for Bryant (ankle) to return from injured reserve.",
-      "date": "2026-10-15T00:55Z"
+      "name": "Ben Brown",
+      "pos": "C",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Brown (knee) won't return to Sunday's game against the Jets.",
+      "date": "2026-10-18T19:58Z"
+     },
+     {
+      "name": "Alijah Vera-Tucker",
+      "pos": "G",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Vera-Tucker (hamstring) has been ruled out for the remainder of Sunday's game against the Jets.",
+      "date": "2026-10-18T19:31Z"
+     },
+     {
+      "name": "Romeo Doubs",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Doubs (shoulder) has been ruled out for the rest of Sunday's game against the Jets, Doug Kyed of the Boston Herald reports.",
+      "date": "2026-10-18T18:54Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    }
   },
   {
@@ -13018,11 +12987,11 @@
     "propLeans": []
    },
    "status": {
-    "state": "STATUS_IN_PROGRESS",
-    "detail": "15:00 - 4th",
+    "state": "STATUS_FINAL",
+    "detail": "Final/OT",
     "score": {
-     "away": 3,
-     "home": 16
+     "away": 26,
+     "home": 19
     }
    },
    "live": null,
@@ -13709,7 +13678,7 @@
       "date": "2026-10-17T01:18Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    }
   },
   {
@@ -14011,11 +13980,11 @@
     "propLeans": []
    },
    "status": {
-    "state": "STATUS_IN_PROGRESS",
-    "detail": "13:00 - 4th",
+    "state": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "away": 13,
-     "home": 13
+     "away": 26,
+     "home": 20
     }
    },
    "live": null,
@@ -14702,6 +14671,14 @@
       "date": "2026-10-18T15:34Z"
      },
      {
+      "name": "Rigoberto Sanchez",
+      "pos": "P",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Sanchez (foot) is questionable to return to Sunday's game against the Titans, Jake Arthur of Roundtable.io reports.",
+      "date": "2026-10-18T19:42Z"
+     },
+     {
       "name": "Sauce Gardner",
       "pos": "CB",
       "status": "Questionable",
@@ -14734,7 +14711,7 @@
       "date": "2026-10-10T17:51Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    }
   },
   {
@@ -15085,8 +15062,8 @@
     }
    },
    "live": {
-    "source": "ESPN/book",
-    "fetchedAt": "2026-10-18T19:24:53.173Z",
+    "source": "ESPN/DraftKings",
+    "fetchedAt": "2026-10-19T11:14:23.154Z",
     "ml": {
      "home": -455,
      "away": 350,
@@ -15101,7 +15078,7 @@
      "awayPrice": null
     },
     "total": {
-     "point": 52.5,
+     "point": 51.5,
      "over": null,
      "under": null
     },
@@ -15763,7 +15740,7 @@
       "date": "2026-10-15T19:50Z"
      }
     ],
-    "fetchedAt": "2026-10-18T19:24:53.455Z"
+    "fetchedAt": "2026-10-19T11:14:23.448Z"
    }
   }
  ],
@@ -16776,7 +16753,7 @@
     "fetchedAt": "2026-10-18T14:48:04.303Z"
    },
    "edge": -0.033,
-   "status": null,
+   "status": "Questionable",
    "gameId": "lac-kc",
    "kickoff": "2026-10-18T20:25Z"
   },
@@ -16866,15 +16843,15 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-10-18T19:24:53.920Z",
-  "finals": 1,
+  "gradedAt": "2026-10-19T11:14:24.106Z",
+  "finals": 12,
   "games": 13,
   "summary": {
    "all": {
-    "wins": 7,
-    "losses": 7,
+    "wins": 41,
+    "losses": 92,
     "pushes": 0,
-    "pending": 128
+    "pending": 9
    },
    "lockedIn": {
     "wins": 1,
@@ -16883,51 +16860,93 @@
     "pending": 0
    },
    "lean": {
-    "wins": 0,
-    "losses": 2,
+    "wins": 9,
+    "losses": 8,
     "pushes": 0,
-    "pending": 16
+    "pending": 1
    },
    "top3": {
-    "wins": 1,
-    "losses": 2,
+    "wins": 9,
+    "losses": 27,
     "pushes": 0,
-    "pending": 36
+    "pending": 3
    },
    "td2": {
-    "wins": 1,
-    "losses": 2,
+    "wins": 3,
+    "losses": 33,
     "pushes": 0,
-    "pending": 36
+    "pending": 3
    },
    "value": {
-    "wins": 1,
-    "losses": 1,
+    "wins": 8,
+    "losses": 17,
     "pushes": 0,
-    "pending": 25
+    "pending": 2
    },
    "prop": {
-    "wins": 3,
-    "losses": 0,
+    "wins": 11,
+    "losses": 7,
     "pushes": 0,
-    "pending": 15
+    "pending": 0
    },
    "calibration": {
     "td2": [
      {
       "band": "0-8%",
-      "n": 3,
-      "model": 0.069,
-      "actual": 0.333,
+      "n": 18,
+      "model": 0.058,
+      "actual": 0.056,
       "wins": 1
+     },
+     {
+      "band": "8-15%",
+      "n": 10,
+      "model": 0.106,
+      "actual": 0,
+      "wins": 0
+     },
+     {
+      "band": "15-25%",
+      "n": 5,
+      "model": 0.227,
+      "actual": 0.4,
+      "wins": 2
+     },
+     {
+      "band": "25-100%",
+      "n": 3,
+      "model": 0.29,
+      "actual": 0,
+      "wins": 0
      }
     ],
     "top3": [
      {
       "band": "0-40%",
-      "n": 3,
-      "model": 0.347,
+      "n": 22,
+      "model": 0.329,
+      "actual": 0.136,
+      "wins": 3
+     },
+     {
+      "band": "40-50%",
+      "n": 6,
+      "model": 0.45,
       "actual": 0.333,
+      "wins": 2
+     },
+     {
+      "band": "50-60%",
+      "n": 6,
+      "model": 0.534,
+      "actual": 0.5,
+      "wins": 3
+     },
+     {
+      "band": "60-100%",
+      "n": 2,
+      "model": 0.601,
+      "actual": 0.5,
       "wins": 1
      }
     ]
@@ -16937,727 +16956,742 @@
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "side",
     "label": "ARI +12.5",
-    "result": "pending",
     "conf": 1,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "total",
     "label": "Under 51.5",
-    "result": "pending",
     "conf": 1,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "atd",
     "label": "Kyren Williams ATD",
-    "result": "pending",
     "est": 0.55,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "atd",
     "label": "Davante Adams ATD",
-    "result": "pending",
     "est": 0.4,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "atd",
     "label": "Puka Nacua ATD",
-    "result": "pending",
     "est": 0.38,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "td2",
     "label": "Kyren Williams 2+ TD",
-    "result": "pending",
     "est": 0.2478729977126036,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "td2",
     "label": "Davante Adams 2+ TD",
-    "result": "pending",
     "est": 0.09350462574040563,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "td2",
     "label": "Puka Nacua 2+ TD",
-    "result": "pending",
     "est": 0.0836178034153402,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "atd",
     "label": "Teagan Quitoriano ATD",
-    "result": "pending",
     "est": 0.08,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "atd",
     "label": "Elijah Higgins ATD",
-    "result": "pending",
     "est": 0.095,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "atd",
     "label": "Jordan Whittington ATD",
-    "result": "pending",
     "est": 0.07,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "prop",
     "label": "Jacoby Brissett under 235.5 pass yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 218,
+    "result": "win"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "prop",
     "label": "Davante Adams under 60.5 reception yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 39,
+    "result": "win"
    },
    {
     "game": "ari-lar",
     "gameLabel": "ARI@LAR",
-    "final": null,
+    "final": "ARI 18, LAR 16",
     "type": "prop",
     "label": "Kyren Williams over 68.5 rush yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 50,
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "side",
     "label": "BAL -3",
-    "result": "pending",
     "conf": 2,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "total",
     "label": "Under 39.5",
-    "result": "pending",
     "conf": 1,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "atd",
     "label": "Derrick Henry ATD",
-    "result": "pending",
     "est": 0.5,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "atd",
     "label": "Harold Fannin Jr. ATD",
-    "result": "pending",
     "est": 0.27,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "atd",
     "label": "Zay Flowers ATD",
-    "result": "pending",
     "est": 0.24,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "td2",
     "label": "Derrick Henry 2+ TD",
-    "result": "pending",
     "est": 0.1994543326360355,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "td2",
     "label": "Harold Fannin Jr. 2+ TD",
-    "result": "pending",
     "est": 0.04026115626701887,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "td2",
     "label": "Zay Flowers 2+ TD",
-    "result": "pending",
     "est": 0.03142799726666212,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "atd",
     "label": "Mark Andrews ATD",
-    "result": "pending",
     "est": 0.22,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "atd",
     "label": "Tyler Huntley ATD",
-    "result": "pending",
     "est": 0.14,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "prop",
     "label": "Derrick Henry over 92.5 rush yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 58,
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "prop",
     "label": "Mark Andrews over 3.5 receptions",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 1,
+    "result": "loss"
    },
    {
     "game": "bal-cle",
     "gameLabel": "BAL@CLE",
-    "final": null,
+    "final": "BAL 10, CLE 13",
     "type": "prop",
     "label": "Zay Flowers over 59.5 reception yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 66,
+    "result": "win"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "side",
     "label": "BUF -5.5",
-    "result": "pending",
     "conf": 1,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "loss"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "total",
     "label": "Over 53.5",
-    "result": "pending",
     "conf": 2,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "atd",
     "label": "Josh Allen ATD",
-    "result": "pending",
     "est": 0.54,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "atd",
     "label": "James Cook III ATD",
-    "result": "pending",
     "est": 0.49,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "win"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "atd",
     "label": "Brock Bowers ATD",
-    "result": "pending",
     "est": 0.4,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "td2",
     "label": "Josh Allen 2+ TD",
-    "result": "pending",
     "est": 0.23763578387960035,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "td2",
     "label": "James Cook III 2+ TD",
-    "result": "pending",
     "est": 0.14659427783547951,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "td2",
     "label": "Brock Bowers 2+ TD",
-    "result": "pending",
     "est": 0.09350462574040563,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "atd",
     "label": "Keon Coleman ATD",
-    "result": "pending",
     "est": 0.22,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "win"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "atd",
     "label": "Dylan Laube ATD",
-    "result": "pending",
     "est": 0.1,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "prop",
     "label": "James Cook III over 94.5 rush yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 95,
+    "result": "win"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "prop",
     "label": "Dalton Kincaid under 49.5 reception yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 38,
+    "result": "win"
    },
    {
     "game": "buf-lv",
     "gameLabel": "BUF@LV",
-    "final": null,
+    "final": "BUF 33, LV 30",
     "type": "prop",
     "label": "Kirk Cousins over 250.5 pass yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 313,
+    "result": "win"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "side",
     "label": "CAR -3",
-    "result": "pending",
     "conf": 1,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "atd",
     "label": "Chuba Hubbard ATD",
-    "result": "pending",
     "est": 0.47,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "win"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "atd",
     "label": "Tetairoa McMillan ATD",
-    "result": "pending",
     "est": 0.3,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "atd",
     "label": "Dameon Pierce ATD",
-    "result": "pending",
     "est": 0.29,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "win"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "td2",
     "label": "Chuba Hubbard 2+ TD",
-    "result": "pending",
     "est": 0.13351451560893612,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "td2",
     "label": "Tetairoa McMillan 2+ TD",
-    "result": "pending",
     "est": 0.050327539242887354,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "td2",
     "label": "Dameon Pierce 2+ TD",
-    "result": "pending",
     "est": 0.046831880647789204,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "atd",
     "label": "Darius Cooper ATD",
-    "result": "pending",
     "est": 0.13,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "atd",
     "label": "Dallas Goedert ATD",
-    "result": "pending",
     "est": 0.24,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "prop",
     "label": "Tetairoa McMillan over 63.5 reception yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 86,
+    "result": "win"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "prop",
     "label": "Darren Waller over 26.5 reception yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 0,
+    "result": "loss"
    },
    {
     "game": "car-phi",
     "gameLabel": "CAR@PHI",
-    "final": null,
+    "final": "CAR 25, PHI 14",
     "type": "prop",
     "label": "Chuba Hubbard over 70.5 rush yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 120,
+    "result": "win"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "side",
     "label": "ATL +1.5",
-    "result": "pending",
     "conf": 2,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "loss"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "total",
     "label": "Under 52.5",
-    "result": "pending",
     "conf": 1,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "loss"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "atd",
     "label": "Bijan Robinson ATD",
-    "result": "pending",
     "est": 0.6,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "atd",
     "label": "D'Andre Swift ATD",
-    "result": "pending",
     "est": 0.53,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "win"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "atd",
     "label": "Drake London ATD",
-    "result": "pending",
     "est": 0.3,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "td2",
     "label": "Bijan Robinson 2+ TD",
-    "result": "pending",
     "est": 0.30352881942543936,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "td2",
     "label": "D'Andre Swift 2+ TD",
-    "result": "pending",
     "est": 0.227681201006122,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "win"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "td2",
     "label": "Drake London 2+ TD",
-    "result": "pending",
     "est": 0.050327539242887354,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "atd",
     "label": "Austin Hooper ATD",
-    "result": "pending",
     "est": 0.07,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "atd",
     "label": "Roschon Johnson ATD",
-    "result": "pending",
     "est": 0.15,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "win"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "prop",
     "label": "Bijan Robinson over 93.5 rush yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 61,
+    "result": "loss"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "prop",
     "label": "Kalif Raymond over 26.5 reception yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 18,
+    "result": "loss"
    },
    {
     "game": "chi-atl",
     "gameLabel": "CHI@ATL",
-    "final": null,
+    "final": "CHI 31, ATL 23",
     "type": "prop",
     "label": "Colston Loveland under 39.5 reception yds",
-    "result": "pending",
-    "bucket": "prop"
+    "bucket": "prop",
+    "actual": 65,
+    "result": "loss"
    },
    {
     "game": "dal-gb",
     "gameLabel": "DAL@GB",
-    "final": null,
+    "final": "DAL 13, GB 23",
     "type": "side",
     "label": "GB -1.5",
-    "result": "pending",
     "conf": 1,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "dal-gb",
     "gameLabel": "DAL@GB",
-    "final": null,
+    "final": "DAL 13, GB 23",
     "type": "atd",
     "label": "Javonte Williams ATD",
-    "result": "pending",
     "est": 0.56,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "win"
    },
    {
     "game": "dal-gb",
     "gameLabel": "DAL@GB",
-    "final": null,
+    "final": "DAL 13, GB 23",
     "type": "atd",
     "label": "MarShawn Lloyd ATD",
-    "result": "pending",
     "est": 0.489,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "dal-gb",
     "gameLabel": "DAL@GB",
-    "final": null,
+    "final": "DAL 13, GB 23",
     "type": "atd",
     "label": "Christian Watson ATD",
-    "result": "pending",
     "est": 0.382,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "dal-gb",
     "gameLabel": "DAL@GB",
-    "final": null,
+    "final": "DAL 13, GB 23",
     "type": "td2",
     "label": "Javonte Williams 2+ TD",
-    "result": "pending",
     "est": 0.2583991242160572,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "dal-gb",
     "gameLabel": "DAL@GB",
-    "final": null,
+    "final": "DAL 13, GB 23",
     "type": "td2",
     "label": "MarShawn Lloyd 2+ TD",
-    "result": "pending",
     "est": 0.14592191303422086,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "dal-gb",
     "gameLabel": "DAL@GB",
-    "final": null,
+    "final": "DAL 13, GB 23",
     "type": "td2",
     "label": "Christian Watson 2+ TD",
-    "result": "pending",
     "est": 0.08457710429789211,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "dal-gb",
     "gameLabel": "DAL@GB",
-    "final": null,
+    "final": "DAL 13, GB 23",
     "type": "atd",
     "label": "CeeDee Lamb ATD",
-    "result": "pending",
     "est": 0.382,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "dal-gb",
     "gameLabel": "DAL@GB",
-    "final": null,
+    "final": "DAL 13, GB 23",
     "type": "atd",
     "label": "George Pickens ATD",
-    "result": "pending",
     "est": 0.336,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "hou-jax",
@@ -17802,452 +17836,452 @@
    {
     "game": "lac-kc",
     "gameLabel": "LAC@KC",
-    "final": null,
+    "final": "LAC 6, KC 22",
     "type": "side",
     "label": "KC -7.5",
-    "result": "pending",
     "conf": 1,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "lac-kc",
     "gameLabel": "LAC@KC",
-    "final": null,
+    "final": "LAC 6, KC 22",
     "type": "atd",
     "label": "Kenneth Walker III ATD",
-    "result": "pending",
     "est": 0.523,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "win"
    },
    {
     "game": "lac-kc",
     "gameLabel": "LAC@KC",
-    "final": null,
+    "final": "LAC 6, KC 22",
     "type": "atd",
     "label": "Travis Kelce ATD",
-    "result": "pending",
     "est": 0.358,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "lac-kc",
     "gameLabel": "LAC@KC",
-    "final": null,
+    "final": "LAC 6, KC 22",
     "type": "atd",
     "label": "Xavier Worthy ATD",
-    "result": "pending",
     "est": 0.329,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "lac-kc",
     "gameLabel": "LAC@KC",
-    "final": null,
+    "final": "LAC 6, KC 22",
     "type": "td2",
     "label": "Kenneth Walker III 2+ TD",
-    "result": "pending",
     "est": 0.22087792750303734,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "win"
    },
    {
     "game": "lac-kc",
     "gameLabel": "LAC@KC",
-    "final": null,
+    "final": "LAC 6, KC 22",
     "type": "td2",
     "label": "Travis Kelce 2+ TD",
-    "result": "pending",
     "est": 0.07348680186242307,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "lac-kc",
     "gameLabel": "LAC@KC",
-    "final": null,
+    "final": "LAC 6, KC 22",
     "type": "td2",
     "label": "Xavier Worthy 2+ TD",
-    "result": "pending",
     "est": 0.061280298710984504,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "lac-kc",
     "gameLabel": "LAC@KC",
-    "final": null,
+    "final": "LAC 6, KC 22",
     "type": "atd",
     "label": "Omarion Hampton ATD",
-    "result": "pending",
     "est": 0.227,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "lac-kc",
     "gameLabel": "LAC@KC",
-    "final": null,
+    "final": "LAC 6, KC 22",
     "type": "atd",
     "label": "Ladd McConkey ATD",
-    "result": "pending",
     "est": 0.175,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "no-nyg",
     "gameLabel": "NO@NYG",
-    "final": null,
+    "final": "NO 34, NYG 27",
     "type": "side",
     "label": "NO -1.5",
-    "result": "pending",
     "conf": 1,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "no-nyg",
     "gameLabel": "NO@NYG",
-    "final": null,
+    "final": "NO 34, NYG 27",
     "type": "atd",
     "label": "Cam Skattebo ATD",
-    "result": "pending",
     "est": 0.373,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "no-nyg",
     "gameLabel": "NO@NYG",
-    "final": null,
+    "final": "NO 34, NYG 27",
     "type": "atd",
     "label": "Chris Olave ATD",
-    "result": "pending",
     "est": 0.336,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "win"
    },
    {
     "game": "no-nyg",
     "gameLabel": "NO@NYG",
-    "final": null,
+    "final": "NO 34, NYG 27",
     "type": "atd",
     "label": "Malik Nabers ATD",
-    "result": "pending",
     "est": 0.329,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "no-nyg",
     "gameLabel": "NO@NYG",
-    "final": null,
+    "final": "NO 34, NYG 27",
     "type": "td2",
     "label": "Cam Skattebo 2+ TD",
-    "result": "pending",
     "est": 0.08031092105504134,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "no-nyg",
     "gameLabel": "NO@NYG",
-    "final": null,
+    "final": "NO 34, NYG 27",
     "type": "td2",
     "label": "Chris Olave 2+ TD",
-    "result": "pending",
     "est": 0.06410984200821312,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "no-nyg",
     "gameLabel": "NO@NYG",
-    "final": null,
+    "final": "NO 34, NYG 27",
     "type": "td2",
     "label": "Malik Nabers 2+ TD",
-    "result": "pending",
     "est": 0.061280298710984504,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "no-nyg",
     "gameLabel": "NO@NYG",
-    "final": null,
+    "final": "NO 34, NYG 27",
     "type": "atd",
     "label": "Isaiah Likely ATD",
-    "result": "pending",
     "est": 0.323,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "win"
    },
    {
     "game": "no-nyg",
     "gameLabel": "NO@NYG",
-    "final": null,
+    "final": "NO 34, NYG 27",
     "type": "atd",
     "label": "Kendre Miller ATD",
-    "result": "pending",
     "est": 0.305,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "nyj-ne",
     "gameLabel": "NYJ@NE",
-    "final": null,
+    "final": "NYJ 19, NE 26",
     "type": "side",
     "label": "NE -7.5",
-    "result": "pending",
     "conf": 2,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "loss"
    },
    {
     "game": "nyj-ne",
     "gameLabel": "NYJ@NE",
-    "final": null,
+    "final": "NYJ 19, NE 26",
     "type": "atd",
     "label": "Rhamondre Stevenson ATD",
-    "result": "pending",
     "est": 0.449,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "nyj-ne",
     "gameLabel": "NYJ@NE",
-    "final": null,
+    "final": "NYJ 19, NE 26",
     "type": "atd",
     "label": "Braelon Allen ATD",
-    "result": "pending",
     "est": 0.35,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "nyj-ne",
     "gameLabel": "NYJ@NE",
-    "final": null,
+    "final": "NYJ 19, NE 26",
     "type": "atd",
     "label": "A.J. Brown ATD",
-    "result": "pending",
     "est": 0.35,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "nyj-ne",
     "gameLabel": "NYJ@NE",
-    "final": null,
+    "final": "NYJ 19, NE 26",
     "type": "td2",
     "label": "Rhamondre Stevenson 2+ TD",
-    "result": "pending",
     "est": 0.12059272112409847,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "nyj-ne",
     "gameLabel": "NYJ@NE",
-    "final": null,
+    "final": "NYJ 19, NE 26",
     "type": "td2",
     "label": "Braelon Allen 2+ TD",
-    "result": "pending",
     "est": 0.06999110453990476,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "nyj-ne",
     "gameLabel": "NYJ@NE",
-    "final": null,
+    "final": "NYJ 19, NE 26",
     "type": "td2",
     "label": "A.J. Brown 2+ TD",
-    "result": "pending",
     "est": 0.06999110453990476,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "nyj-ne",
     "gameLabel": "NYJ@NE",
-    "final": null,
+    "final": "NYJ 19, NE 26",
     "type": "atd",
     "label": "Hunter Henry ATD",
-    "result": "pending",
     "est": 0.258,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "win"
    },
    {
     "game": "nyj-ne",
     "gameLabel": "NYJ@NE",
-    "final": null,
+    "final": "NYJ 19, NE 26",
     "type": "atd",
     "label": "Garrett Wilson ATD",
-    "result": "pending",
     "est": 0.258,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "pit-tb",
     "gameLabel": "PIT@TB",
-    "final": null,
+    "final": "PIT 26, TB 19",
     "type": "side",
     "label": "PIT -2.5",
-    "result": "pending",
     "conf": 1,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "win"
    },
    {
     "game": "pit-tb",
     "gameLabel": "PIT@TB",
-    "final": null,
+    "final": "PIT 26, TB 19",
     "type": "atd",
     "label": "Jaylen Warren ATD",
-    "result": "pending",
     "est": 0.373,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "pit-tb",
     "gameLabel": "PIT@TB",
-    "final": null,
+    "final": "PIT 26, TB 19",
     "type": "atd",
     "label": "Bucky Irving ATD",
-    "result": "pending",
     "est": 0.305,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "pit-tb",
     "gameLabel": "PIT@TB",
-    "final": null,
+    "final": "PIT 26, TB 19",
     "type": "atd",
     "label": "DK Metcalf ATD",
-    "result": "pending",
     "est": 0.271,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "pit-tb",
     "gameLabel": "PIT@TB",
-    "final": null,
+    "final": "PIT 26, TB 19",
     "type": "td2",
     "label": "Jaylen Warren 2+ TD",
-    "result": "pending",
     "est": 0.08031092105504134,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "pit-tb",
     "gameLabel": "PIT@TB",
-    "final": null,
+    "final": "PIT 26, TB 19",
     "type": "td2",
     "label": "Bucky Irving 2+ TD",
-    "result": "pending",
     "est": 0.05212881377494527,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "pit-tb",
     "gameLabel": "PIT@TB",
-    "final": null,
+    "final": "PIT 26, TB 19",
     "type": "td2",
     "label": "DK Metcalf 2+ TD",
-    "result": "pending",
     "est": 0.04057655225633383,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "pit-tb",
     "gameLabel": "PIT@TB",
-    "final": null,
+    "final": "PIT 26, TB 19",
     "type": "atd",
     "label": "Emeka Egbuka ATD",
-    "result": "pending",
     "est": 0.215,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "win"
    },
    {
     "game": "pit-tb",
     "gameLabel": "PIT@TB",
-    "final": null,
+    "final": "PIT 26, TB 19",
     "type": "atd",
     "label": "Germie Bernard ATD",
-    "result": "pending",
     "est": 0.2,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "win"
    },
    {
     "game": "ten-ind",
     "gameLabel": "TEN@IND",
-    "final": null,
+    "final": "TEN 26, IND 20",
     "type": "side",
     "label": "IND -6.5",
-    "result": "pending",
     "conf": 1,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "loss"
    },
    {
     "game": "ten-ind",
     "gameLabel": "TEN@IND",
-    "final": null,
+    "final": "TEN 26, IND 20",
     "type": "atd",
     "label": "Jonathan Taylor ATD",
-    "result": "pending",
     "est": 0.603,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "win"
    },
    {
     "game": "ten-ind",
     "gameLabel": "TEN@IND",
-    "final": null,
+    "final": "TEN 26, IND 20",
     "type": "atd",
     "label": "Tony Pollard ATD",
-    "result": "pending",
     "est": 0.329,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "ten-ind",
     "gameLabel": "TEN@IND",
-    "final": null,
+    "final": "TEN 26, IND 20",
     "type": "atd",
     "label": "Tyler Warren ATD",
-    "result": "pending",
     "est": 0.323,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "ten-ind",
     "gameLabel": "TEN@IND",
-    "final": null,
+    "final": "TEN 26, IND 20",
     "type": "td2",
     "label": "Jonathan Taylor 2+ TD",
-    "result": "pending",
     "est": 0.307117014979978,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "ten-ind",
     "gameLabel": "TEN@IND",
-    "final": null,
+    "final": "TEN 26, IND 20",
     "type": "td2",
     "label": "Tony Pollard 2+ TD",
-    "result": "pending",
     "est": 0.061280298710984504,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "ten-ind",
     "gameLabel": "TEN@IND",
-    "final": null,
+    "final": "TEN 26, IND 20",
     "type": "td2",
     "label": "Tyler Warren 2+ TD",
-    "result": "pending",
     "est": 0.058913127890703354,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "ten-ind",
     "gameLabel": "TEN@IND",
-    "final": null,
+    "final": "TEN 26, IND 20",
     "type": "atd",
     "label": "Josh Downs ATD",
-    "result": "pending",
     "est": 0.279,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    },
    {
     "game": "ten-ind",
     "gameLabel": "TEN@IND",
-    "final": null,
+    "final": "TEN 26, IND 20",
     "type": "atd",
     "label": "Carnell Tate ATD",
-    "result": "pending",
     "est": 0.215,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "win"
    },
    {
     "game": "wsh-sf",
@@ -18343,7 +18377,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-10-18T19:24:53.924Z",
+  "updatedAt": "2026-10-19T11:14:24.108Z",
   "weeks": [
    {
     "week": 1,
@@ -18902,14 +18936,14 @@
    },
    {
     "week": 6,
-    "finals": 1,
+    "finals": 12,
     "games": 13,
     "summary": {
      "all": {
-      "wins": 7,
-      "losses": 7,
+      "wins": 41,
+      "losses": 92,
       "pushes": 0,
-      "pending": 128
+      "pending": 9
      },
      "lockedIn": {
       "wins": 1,
@@ -18918,51 +18952,93 @@
       "pending": 0
      },
      "lean": {
-      "wins": 0,
-      "losses": 2,
+      "wins": 9,
+      "losses": 8,
       "pushes": 0,
-      "pending": 16
+      "pending": 1
      },
      "top3": {
-      "wins": 1,
-      "losses": 2,
+      "wins": 9,
+      "losses": 27,
       "pushes": 0,
-      "pending": 36
+      "pending": 3
      },
      "td2": {
-      "wins": 1,
-      "losses": 2,
+      "wins": 3,
+      "losses": 33,
       "pushes": 0,
-      "pending": 36
+      "pending": 3
      },
      "value": {
-      "wins": 1,
-      "losses": 1,
+      "wins": 8,
+      "losses": 17,
       "pushes": 0,
-      "pending": 25
+      "pending": 2
      },
      "prop": {
-      "wins": 3,
-      "losses": 0,
+      "wins": 11,
+      "losses": 7,
       "pushes": 0,
-      "pending": 15
+      "pending": 0
      },
      "calibration": {
       "td2": [
        {
         "band": "0-8%",
-        "n": 3,
-        "model": 0.069,
-        "actual": 0.333,
+        "n": 18,
+        "model": 0.058,
+        "actual": 0.056,
         "wins": 1
+       },
+       {
+        "band": "8-15%",
+        "n": 10,
+        "model": 0.106,
+        "actual": 0,
+        "wins": 0
+       },
+       {
+        "band": "15-25%",
+        "n": 5,
+        "model": 0.227,
+        "actual": 0.4,
+        "wins": 2
+       },
+       {
+        "band": "25-100%",
+        "n": 3,
+        "model": 0.29,
+        "actual": 0,
+        "wins": 0
        }
       ],
       "top3": [
        {
         "band": "0-40%",
-        "n": 3,
-        "model": 0.347,
+        "n": 22,
+        "model": 0.329,
+        "actual": 0.136,
+        "wins": 3
+       },
+       {
+        "band": "40-50%",
+        "n": 6,
+        "model": 0.45,
         "actual": 0.333,
+        "wins": 2
+       },
+       {
+        "band": "50-60%",
+        "n": 6,
+        "model": 0.534,
+        "actual": 0.5,
+        "wins": 3
+       },
+       {
+        "band": "60-100%",
+        "n": 2,
+        "model": 0.601,
+        "actual": 0.5,
         "wins": 1
        }
       ]
@@ -18972,10 +19048,10 @@
   ],
   "season_totals": {
    "all": {
-    "wins": 364,
-    "losses": 726,
+    "wins": 398,
+    "losses": 811,
     "pushes": 4,
-    "pending": 128
+    "pending": 9
    },
    "lockedIn": {
     "wins": 27,
@@ -18984,39 +19060,39 @@
     "pending": 0
    },
    "lean": {
-    "wins": 69,
-    "losses": 74,
+    "wins": 78,
+    "losses": 80,
     "pushes": 3,
-    "pending": 16
+    "pending": 1
    },
    "top3": {
-    "wins": 98,
-    "losses": 136,
+    "wins": 106,
+    "losses": 161,
     "pushes": 0,
-    "pending": 36
+    "pending": 3
    },
    "td2": {
-    "wins": 31,
-    "losses": 203,
+    "wins": 33,
+    "losses": 234,
     "pushes": 0,
-    "pending": 36
+    "pending": 3
    },
    "value": {
-    "wins": 33,
-    "losses": 162,
+    "wins": 40,
+    "losses": 178,
     "pushes": 0,
-    "pending": 25
+    "pending": 2
    },
    "prop": {
-    "wins": 106,
-    "losses": 113,
+    "wins": 114,
+    "losses": 120,
     "pushes": 0,
-    "pending": 15
+    "pending": 0
    }
   }
  },
  "parlays": {
-  "builtAt": "2026-10-18T19:24:54.027Z",
+  "builtAt": "2026-10-19T11:14:24.219Z",
   "books": [
    "FD",
    "DK",
@@ -19120,7 +19196,7 @@
   ]
  },
  "topTen": {
-  "builtAt": "2026-10-18T19:24:54.029Z",
+  "builtAt": "2026-10-19T11:14:24.220Z",
   "note": "Sides, totals and moneylines are priced from the projected score with the simulator’s spreads (13.4 margin, 10.6 total). Touchdown lists use the desk’s role-built estimates. Prop leans are not graded by a probability and are listed by kickoff.",
   "categories": [
    {
@@ -19139,42 +19215,6 @@
       "edge": 0.188,
       "conf": 2,
       "why": "Quick build from ESPN's matchup predictor (SF 86%) against the posted spread."
-     },
-     {
-      "game": "ari-lar",
-      "gameLabel": "ARI@LAR",
-      "kickoff": "2026-10-18T20:05:00Z",
-      "bet": "ARI +12.5",
-      "price": -110,
-      "prob": 0.545,
-      "implied": 0.524,
-      "edge": 0.021,
-      "conf": 1,
-      "why": "The Rams by 11 in the projection, so both leans are 1s. For Arizona: the Rams have won once by more than 4, scored 23.8 a game on 433.8 yards, and come in on a short week after Monday's overtime loss with a backup left tackle (Quessenberry) and a kicker change after two missed field goals. Brissett's volume (41 attempts projected) keeps a late backdoor touchdown live. Against it: Arizona has allowed 36, 36 and 45 in its last three games, has two safeties out and Baker questionable, and the Rams have the league's most passing yards. For the under: the Rams' pass defense allows 165 a game and Brissett throws for 5.6 an attempt, so Arizona's 19.5 is a reach. The risk is the 76.5% red-zone touchdown rate Arizona allows. Do not chase the under below 50.5."
-     },
-     {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "bet": "BUF -5.5",
-      "price": -110,
-      "prob": 0.545,
-      "implied": 0.524,
-      "edge": 0.021,
-      "conf": 1,
-      "why": "Buffalo by seven in the projection. The side stays a 1: the moneyline has moved from -285 to -245 and some books are at 4.5, the Bills play on six days' rest after a Monday overtime game, and their defense allows 295.8 passing yards a game. The case for Buffalo is the best offense in EPA per play (Covers) against a defense allowing 34 points a game over its last three, and 13 rushing touchdowns against a run defense allowing 140.6 a game. The total is a 2: Buffalo games have gone over 53.5 in four of five, both defenses allow touchdowns on 76% or more of red-zone trips, the roof is closed, and the over is seven straight in this series. The risk is Buffalo's clock-killing run game (37 rushes Monday, 30:08 possession) and Allen throwing only 19 times. Take 53.5; do not chase it past 54.5."
-     },
-     {
-      "game": "lac-kc",
-      "gameLabel": "LAC@KC",
-      "kickoff": "2026-10-18T20:25Z",
-      "bet": "KC -7.5",
-      "price": -110,
-      "prob": 0.545,
-      "implied": 0.524,
-      "edge": 0.021,
-      "conf": 1,
-      "why": "Quick build from ESPN's matchup predictor (KC 74%) against the posted spread."
      }
     ]
    },
@@ -19182,32 +19222,7 @@
     "key": "totals",
     "title": "Totals",
     "blurb": "Ranked by desk confidence, then how often the projection lands on our side.",
-    "plays": [
-     {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "bet": "Over 53.5",
-      "price": -110,
-      "prob": 0.556,
-      "implied": 0.524,
-      "edge": 0.032,
-      "conf": 2,
-      "why": "Buffalo by seven in the projection. The side stays a 1: the moneyline has moved from -285 to -245 and some books are at 4.5, the Bills play on six days' rest after a Monday overtime game, and their defense allows 295.8 passing yards a game. The case for Buffalo is the best offense in EPA per play (Covers) against a defense allowing 34 points a game over its last three, and 13 rushing touchdowns against a run defense allowing 140.6 a game. The total is a 2: Buffalo games have gone over 53.5 in four of five, both defenses allow touchdowns on 76% or more of red-zone trips, the roof is closed, and the over is seven straight in this series. The risk is Buffalo's clock-killing run game (37 rushes Monday, 30:08 possession) and Allen throwing only 19 times. Take 53.5; do not chase it past 54.5."
-     },
-     {
-      "game": "ari-lar",
-      "gameLabel": "ARI@LAR",
-      "kickoff": "2026-10-18T20:05:00Z",
-      "bet": "Under 51.5",
-      "price": -110,
-      "prob": 0.664,
-      "implied": 0.524,
-      "edge": 0.141,
-      "conf": 1,
-      "why": "The Rams by 11 in the projection, so both leans are 1s. For Arizona: the Rams have won once by more than 4, scored 23.8 a game on 433.8 yards, and come in on a short week after Monday's overtime loss with a backup left tackle (Quessenberry) and a kicker change after two missed field goals. Brissett's volume (41 attempts projected) keeps a late backdoor touchdown live. Against it: Arizona has allowed 36, 36 and 45 in its last three games, has two safeties out and Baker questionable, and the Rams have the league's most passing yards. For the under: the Rams' pass defense allows 165 a game and Brissett throws for 5.6 an attempt, so Arizona's 19.5 is a reach. The risk is the 76.5% red-zone touchdown rate Arizona allows. Do not chase the under below 50.5."
-     }
-    ]
+    "plays": []
    },
    {
     "key": "moneyline",
@@ -19225,54 +19240,6 @@
       "edge": 0.082,
       "conf": null,
       "why": "Projected WSH 19, SF 34."
-     },
-     {
-      "game": "ari-lar",
-      "gameLabel": "ARI@LAR",
-      "kickoff": "2026-10-18T20:05:00Z",
-      "bet": "LAR ML",
-      "price": -700,
-      "prob": 0.794,
-      "implied": 0.852,
-      "edge": -0.058,
-      "conf": null,
-      "why": "Projected ARI 18, LAR 29."
-     },
-     {
-      "game": "lac-kc",
-      "gameLabel": "LAC@KC",
-      "kickoff": "2026-10-18T20:25Z",
-      "bet": "KC ML",
-      "price": -410,
-      "prob": 0.749,
-      "implied": 0.772,
-      "edge": -0.023,
-      "conf": null,
-      "why": "Projected LAC 16, KC 25."
-     },
-     {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "bet": "BUF ML",
-      "price": -238,
-      "prob": 0.699,
-      "implied": 0.681,
-      "edge": 0.018,
-      "conf": null,
-      "why": "Projected BUF 31, LV 24."
-     },
-     {
-      "game": "dal-gb",
-      "gameLabel": "DAL@GB",
-      "kickoff": "2026-10-19T00:20Z",
-      "bet": "GB ML",
-      "price": -112,
-      "prob": 0.559,
-      "implied": 0.511,
-      "edge": 0.048,
-      "conf": null,
-      "why": "Projected DAL 25, GB 27."
      }
     ]
    },
@@ -19299,108 +19266,6 @@
       "bet": "Christian McCaffrey anytime TD"
      },
      {
-      "game": "dal-gb",
-      "gameLabel": "DAL@GB",
-      "kickoff": "2026-10-19T00:20Z",
-      "name": "Javonte Williams",
-      "team": "DAL",
-      "pos": "RB",
-      "price": -185,
-      "priceNote": null,
-      "prob": 0.56,
-      "implied": 0.649,
-      "edge": -0.089,
-      "est2": 0.199,
-      "price2": 280,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 56% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "Javonte Williams anytime TD"
-     },
-     {
-      "game": "ari-lar",
-      "gameLabel": "ARI@LAR",
-      "kickoff": "2026-10-18T20:05:00Z",
-      "name": "Kyren Williams",
-      "team": "LAR",
-      "pos": "RB",
-      "price": -185,
-      "priceNote": null,
-      "prob": 0.55,
-      "implied": 0.649,
-      "edge": -0.099,
-      "est2": 0.191,
-      "price2": null,
-      "why": "The Rams' goal-line back: 4 rushing touchdowns and 5 total in five games, 13 red-zone carries through Week 4 and a score last week, with 15.5 carries projected as a 12.5-point home favourite. Arizona has allowed 21 touchdowns (most in the league), 76.5% red-zone touchdowns and 151 rushing yards to Gibbs last week, and the Rams' implied total is 32. The read is 55% (fair -122) against -185 at DraftKings (FanDuel -195), which asks 64.9%: about 10 points short, so he is the likeliest scorer and the SGP anchor, not a straight bet.",
-      "bet": "Kyren Williams anytime TD"
-     },
-     {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "name": "Josh Allen",
-      "team": "BUF",
-      "pos": "QB",
-      "price": -175,
-      "priceNote": null,
-      "prob": 0.54,
-      "implied": 0.636,
-      "edge": -0.096,
-      "est2": 0.183,
-      "price2": null,
-      "why": "Eight rushing touchdowns in five games, seven from the 1 or the 2, including the 1-yard score Monday; he is Buffalo's goal-line back. Las Vegas allows 140.6 rushing yards a game and touchdowns on 77.8% of red-zone trips, and Buffalo's implied total is 29.5. The read is 54% after the Week 4 shading (fair -117); -175 at both books asks 63.6%, so he is the likeliest scorer on the field and an SGP anchor, not a straight bet.",
-      "bet": "Josh Allen anytime TD"
-     },
-     {
-      "game": "lac-kc",
-      "gameLabel": "LAC@KC",
-      "kickoff": "2026-10-18T20:25Z",
-      "name": "Kenneth Walker III",
-      "team": "KC",
-      "pos": "RB",
-      "price": -165,
-      "priceNote": null,
-      "prob": 0.523,
-      "implied": 0.623,
-      "edge": -0.1,
-      "est2": 0.17,
-      "price2": null,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 52% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "Kenneth Walker III anytime TD"
-     },
-     {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "name": "James Cook III",
-      "team": "BUF",
-      "pos": "RB",
-      "price": -165,
-      "priceNote": null,
-      "prob": 0.49,
-      "implied": 0.623,
-      "edge": -0.133,
-      "est2": 0.147,
-      "price2": null,
-      "why": "Five rushing touchdowns, two Monday (from the 17 and the 5), on 25 carries; 95 carries for 532 yards (5.6 a carry) this season. The Raiders allow 140.6 rushing yards a game and three-quarters of red-zone trips end in touchdowns, but Allen takes the 1- and 2-yard carries. The read is 49% (fair +104) against -165 at DraftKings (62.3%; FanDuel -170): the second-likeliest scorer, priced past his role.",
-      "bet": "James Cook III anytime TD"
-     },
-     {
-      "game": "dal-gb",
-      "gameLabel": "DAL@GB",
-      "kickoff": "2026-10-19T00:20Z",
-      "name": "MarShawn Lloyd",
-      "team": "GB",
-      "pos": "RB",
-      "price": -140,
-      "priceNote": null,
-      "prob": 0.489,
-      "implied": 0.583,
-      "edge": -0.094,
-      "est2": 0.146,
-      "price2": 440,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 49% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "MarShawn Lloyd anytime TD"
-     },
-     {
       "game": "wsh-sf",
       "gameLabel": "WSH@SF",
       "kickoff": "2026-10-20T00:15Z",
@@ -19418,38 +19283,55 @@
       "bet": "Mike Evans anytime TD"
      },
      {
-      "game": "ari-lar",
-      "gameLabel": "ARI@LAR",
-      "kickoff": "2026-10-18T20:05:00Z",
-      "name": "Davante Adams",
-      "team": "LAR",
-      "pos": "WR",
-      "price": -135,
+      "game": "wsh-sf",
+      "gameLabel": "WSH@SF",
+      "kickoff": "2026-10-20T00:15Z",
+      "name": "George Kittle",
+      "team": "SF",
+      "pos": "TE",
+      "price": 110,
       "priceNote": null,
-      "prob": 0.4,
-      "implied": 0.574,
-      "edge": -0.174,
-      "est2": 0.094,
+      "prob": 0.399,
+      "implied": 0.476,
+      "edge": -0.077,
+      "est2": 0.093,
       "price2": null,
-      "why": "Four touchdowns on 45 targets, including two scores last week with Nacua on the field, and the team lead in red-zone targets through Week 4. Arizona gave up eight touchdowns to receivers in the first four games and has the league's worst opponent passer rating (117.3). The read is 40% (fair +150) against -135 at both books (57.4%), 17 points short. The touchdown role is near the goal line, which is why his yardage projection sits under the book.",
-      "bet": "Davante Adams anytime TD"
+      "why": "Quick build: one of the three likeliest scorers by the posted price, 40% after the calibration haircut. Role not hand-checked; confirm at inactives.",
+      "bet": "George Kittle anytime TD"
      },
      {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "name": "Brock Bowers",
-      "team": "LV",
-      "pos": "TE",
-      "price": -115,
+      "game": "wsh-sf",
+      "gameLabel": "WSH@SF",
+      "kickoff": "2026-10-20T00:15Z",
+      "name": "Rachaad White",
+      "team": "WSH",
+      "pos": "RB",
+      "price": 115,
       "priceNote": null,
-      "prob": 0.4,
-      "implied": 0.535,
-      "edge": -0.135,
-      "est2": 0.094,
+      "prob": 0.39,
+      "implied": 0.465,
+      "edge": -0.075,
+      "est2": 0.088,
       "price2": null,
-      "why": "Three touchdowns in three games since the knee (from the 4, 20 and 13), 35 targets, and 12 of the Raiders' 14 offensive touchdowns are passes. Against him: Buffalo has allowed one touchdown to a tight end, and nine of its 13 passing touchdowns allowed went to receivers. The read is 40% (fair +150) against -115 at both books (53.5%): the likeliest Raiders scorer and the best SGP anchor on their side.",
-      "bet": "Brock Bowers anytime TD"
+      "why": "Quick build: next on the board by price; listed for coverage, not as a value claim.",
+      "bet": "Rachaad White anytime TD"
+     },
+     {
+      "game": "wsh-sf",
+      "gameLabel": "WSH@SF",
+      "kickoff": "2026-10-20T00:15Z",
+      "name": "Terry McLaurin",
+      "team": "WSH",
+      "pos": "WR",
+      "price": 200,
+      "priceNote": null,
+      "prob": 0.279,
+      "implied": 0.333,
+      "edge": -0.054,
+      "est2": 0.043,
+      "price2": null,
+      "why": "Quick build: next on the board by price; listed for coverage, not as a value claim.",
+      "bet": "Terry McLaurin anytime TD"
      }
     ]
    },
@@ -19457,25 +19339,7 @@
     "key": "value",
     "title": "TD value",
     "blurb": "Biggest gap between our number and the price.",
-    "plays": [
-     {
-      "game": "ari-lar",
-      "gameLabel": "ARI@LAR",
-      "kickoff": "2026-10-18T20:05:00Z",
-      "name": "Jordan Whittington",
-      "team": "LAR",
-      "pos": "WR",
-      "price": 1500,
-      "priceNote": null,
-      "prob": 0.07,
-      "implied": 0.063,
-      "edge": 0.008,
-      "est2": 0.003,
-      "price2": null,
-      "why": "The Rams' starting slot receiver in three-receiver sets on ESPN's depth chart, in the offense with the league's most passing yards, against the defense that has allowed the most touchdowns. His target count is not verified. +1500 at DraftKings (6.3%; FanDuel +1400) against a 7% read: a thin long-shot edge.",
-      "bet": "Jordan Whittington anytime TD"
-     }
-    ]
+    "plays": []
    },
    {
     "key": "td2",
@@ -19501,114 +19365,6 @@
       "fair": 298
      },
      {
-      "game": "dal-gb",
-      "gameLabel": "DAL@GB",
-      "kickoff": "2026-10-19T00:20Z",
-      "name": "Javonte Williams",
-      "team": "DAL",
-      "pos": "RB",
-      "price": 280,
-      "priceNote": null,
-      "prob": 0.199,
-      "implied": 0.263,
-      "edge": -0.064,
-      "est2": 0.199,
-      "price2": 280,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 56% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "Javonte Williams 2+ TDs",
-      "fair": 403
-     },
-     {
-      "game": "ari-lar",
-      "gameLabel": "ARI@LAR",
-      "kickoff": "2026-10-18T20:05:00Z",
-      "name": "Kyren Williams",
-      "team": "LAR",
-      "pos": "RB",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.191,
-      "implied": null,
-      "edge": null,
-      "est2": 0.191,
-      "price2": null,
-      "why": "The Rams' goal-line back: 4 rushing touchdowns and 5 total in five games, 13 red-zone carries through Week 4 and a score last week, with 15.5 carries projected as a 12.5-point home favourite. Arizona has allowed 21 touchdowns (most in the league), 76.5% red-zone touchdowns and 151 rushing yards to Gibbs last week, and the Rams' implied total is 32. The read is 55% (fair -122) against -185 at DraftKings (FanDuel -195), which asks 64.9%: about 10 points short, so he is the likeliest scorer and the SGP anchor, not a straight bet.",
-      "bet": "Kyren Williams 2+ TDs",
-      "fair": 424
-     },
-     {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "name": "Josh Allen",
-      "team": "BUF",
-      "pos": "QB",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.183,
-      "implied": null,
-      "edge": null,
-      "est2": 0.183,
-      "price2": null,
-      "why": "Eight rushing touchdowns in five games, seven from the 1 or the 2, including the 1-yard score Monday; he is Buffalo's goal-line back. Las Vegas allows 140.6 rushing yards a game and touchdowns on 77.8% of red-zone trips, and Buffalo's implied total is 29.5. The read is 54% after the Week 4 shading (fair -117); -175 at both books asks 63.6%, so he is the likeliest scorer on the field and an SGP anchor, not a straight bet.",
-      "bet": "Josh Allen 2+ TDs",
-      "fair": 446
-     },
-     {
-      "game": "lac-kc",
-      "gameLabel": "LAC@KC",
-      "kickoff": "2026-10-18T20:25Z",
-      "name": "Kenneth Walker III",
-      "team": "KC",
-      "pos": "RB",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.17,
-      "implied": null,
-      "edge": null,
-      "est2": 0.17,
-      "price2": null,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 52% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "Kenneth Walker III 2+ TDs",
-      "fair": 488
-     },
-     {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "name": "James Cook III",
-      "team": "BUF",
-      "pos": "RB",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.147,
-      "implied": null,
-      "edge": null,
-      "est2": 0.147,
-      "price2": null,
-      "why": "Five rushing touchdowns, two Monday (from the 17 and the 5), on 25 carries; 95 carries for 532 yards (5.6 a carry) this season. The Raiders allow 140.6 rushing yards a game and three-quarters of red-zone trips end in touchdowns, but Allen takes the 1- and 2-yard carries. The read is 49% (fair +104) against -165 at DraftKings (62.3%; FanDuel -170): the second-likeliest scorer, priced past his role.",
-      "bet": "James Cook III 2+ TDs",
-      "fair": 580
-     },
-     {
-      "game": "dal-gb",
-      "gameLabel": "DAL@GB",
-      "kickoff": "2026-10-19T00:20Z",
-      "name": "MarShawn Lloyd",
-      "team": "GB",
-      "pos": "RB",
-      "price": 440,
-      "priceNote": null,
-      "prob": 0.146,
-      "implied": 0.185,
-      "edge": -0.039,
-      "est2": 0.146,
-      "price2": 440,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 49% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "MarShawn Lloyd 2+ TDs",
-      "fair": 585
-     },
-     {
       "game": "wsh-sf",
       "gameLabel": "WSH@SF",
       "kickoff": "2026-10-20T00:15Z",
@@ -19627,40 +19383,58 @@
       "fair": 658
      },
      {
-      "game": "ari-lar",
-      "gameLabel": "ARI@LAR",
-      "kickoff": "2026-10-18T20:05:00Z",
-      "name": "Davante Adams",
-      "team": "LAR",
-      "pos": "WR",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.094,
-      "implied": null,
-      "edge": null,
-      "est2": 0.094,
-      "price2": null,
-      "why": "Four touchdowns on 45 targets, including two scores last week with Nacua on the field, and the team lead in red-zone targets through Week 4. Arizona gave up eight touchdowns to receivers in the first four games and has the league's worst opponent passer rating (117.3). The read is 40% (fair +150) against -135 at both books (57.4%), 17 points short. The touchdown role is near the goal line, which is why his yardage projection sits under the book.",
-      "bet": "Davante Adams 2+ TDs",
-      "fair": 964
-     },
-     {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "name": "Brock Bowers",
-      "team": "LV",
+      "game": "wsh-sf",
+      "gameLabel": "WSH@SF",
+      "kickoff": "2026-10-20T00:15Z",
+      "name": "George Kittle",
+      "team": "SF",
       "pos": "TE",
       "price": null,
       "priceNote": null,
-      "prob": 0.094,
+      "prob": 0.093,
       "implied": null,
       "edge": null,
-      "est2": 0.094,
+      "est2": 0.093,
       "price2": null,
-      "why": "Three touchdowns in three games since the knee (from the 4, 20 and 13), 35 targets, and 12 of the Raiders' 14 offensive touchdowns are passes. Against him: Buffalo has allowed one touchdown to a tight end, and nine of its 13 passing touchdowns allowed went to receivers. The read is 40% (fair +150) against -115 at both books (53.5%): the likeliest Raiders scorer and the best SGP anchor on their side.",
-      "bet": "Brock Bowers 2+ TDs",
-      "fair": 964
+      "why": "Quick build: one of the three likeliest scorers by the posted price, 40% after the calibration haircut. Role not hand-checked; confirm at inactives.",
+      "bet": "George Kittle 2+ TDs",
+      "fair": 975
+     },
+     {
+      "game": "wsh-sf",
+      "gameLabel": "WSH@SF",
+      "kickoff": "2026-10-20T00:15Z",
+      "name": "Rachaad White",
+      "team": "WSH",
+      "pos": "RB",
+      "price": null,
+      "priceNote": null,
+      "prob": 0.088,
+      "implied": null,
+      "edge": null,
+      "est2": 0.088,
+      "price2": null,
+      "why": "Quick build: next on the board by price; listed for coverage, not as a value claim.",
+      "bet": "Rachaad White 2+ TDs",
+      "fair": 1036
+     },
+     {
+      "game": "wsh-sf",
+      "gameLabel": "WSH@SF",
+      "kickoff": "2026-10-20T00:15Z",
+      "name": "Terry McLaurin",
+      "team": "WSH",
+      "pos": "WR",
+      "price": null,
+      "priceNote": null,
+      "prob": 0.043,
+      "implied": null,
+      "edge": null,
+      "est2": 0.043,
+      "price2": null,
+      "why": "Quick build: next on the board by price; listed for coverage, not as a value claim.",
+      "bet": "Terry McLaurin 2+ TDs",
+      "fair": 2226
      }
     ]
    },
@@ -19668,80 +19442,7 @@
     "key": "props",
     "title": "Props",
     "blurb": "The desk’s written leans, one per game by kickoff. Not probability-graded.",
-    "plays": [
-     {
-      "game": "ari-lar",
-      "gameLabel": "ARI@LAR",
-      "kickoff": "2026-10-18T20:05:00Z",
-      "bet": "Jacoby Brissett under 230 pass yds",
-      "price": null,
-      "prob": null,
-      "implied": null,
-      "edge": null,
-      "conf": null,
-      "why": "132 of 199 for 1,110 yards (222 a game, 5.6 an attempt). The desk projects 41 attempts, 65.5% completions and 9.3 a completion against a Rams pass defense allowing 165 yards a game (factor 0.88): 220 against DraftKings' 235.5 (-111; FanDuel's main is between 224.5 and 249.5). The risk is volume: 47 and 52 attempts in two of his five games."
-     },
-     {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "bet": "James Cook III over 94.5 rush yds",
-      "price": null,
-      "prob": null,
-      "implied": null,
-      "edge": null,
-      "conf": null,
-      "why": "25, 12 and 24 carries the last three games and 5.6 a carry on 95 this season; Las Vegas allows 140.6 rushing yards a game and Buffalo is a 5.5-point favourite. The desk projects 20 carries and 110 yards against DraftKings' 94.5 (over -111; FanDuel 99.5 at +116). The risk is Allen's own carries near the goal line and a Raiders lead that forces Buffalo to throw."
-     },
-     {
-      "game": "ari-lar",
-      "gameLabel": "ARI@LAR",
-      "kickoff": "2026-10-18T20:05:00Z",
-      "bet": "Davante Adams under 60 rec yds",
-      "price": null,
-      "prob": null,
-      "implied": null,
-      "edge": null,
-      "conf": null,
-      "why": "With Nacua active Adams has 12 catches for 109 yards on 22 targets in three games; without him, 15 for 332. The desk projects 6.1 targets, 3.9 catches and 52 yards, using Arizona's receiver factor of 1.12, against DraftKings' 60.5 (-112; FanDuel 59.5, -104). The risk is one deep ball against a secondary missing two safeties."
-     },
-     {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "bet": "Dalton Kincaid under 49.5 rec yds",
-      "price": null,
-      "prob": null,
-      "implied": null,
-      "edge": null,
-      "conf": null,
-      "why": "3, 2 and 2 targets the last three games; his 277 yards came mostly from the 130- and 95-yard first two weeks, and Buffalo threw 19 times Monday. The desk projects 3.4 targets, 2.5 catches and 35 yards against DraftKings' 49.5 (-110; FanDuel -122). The risk is a Moore and Palmer scratch that pushes targets back to him, as in Week 2 (8 targets)."
-     },
-     {
-      "game": "ari-lar",
-      "gameLabel": "ARI@LAR",
-      "kickoff": "2026-10-18T20:05:00Z",
-      "bet": "Kyren Williams over 69.5 rush yds",
-      "price": -111,
-      "prob": null,
-      "implied": null,
-      "edge": null,
-      "conf": null,
-      "why": "11, 12, 15, 16 and 16 carries at 4.9 a carry. As a 12.5-point favourite the desk projects 15.5 carries at a regressed 4.6 against an Arizona defense allowing 126.6 rushing yards a game (factor 1.06): 76 against DraftKings' 68.5 (-113; FanDuel 69.5, -114). The risk is Corum taking the late-game carries and last week's 49 yards on 16."
-     },
-     {
-      "game": "buf-lv",
-      "gameLabel": "BUF@LV",
-      "kickoff": "2026-10-18T20:25:00Z",
-      "bet": "Kirk Cousins over 250 pass yds",
-      "price": -112,
-      "prob": null,
-      "implied": null,
-      "edge": null,
-      "conf": null,
-      "why": "A 5.5-point home underdog in a 53.5 total, 112 of 172 for 1,269 yards (11.3 a completion), against a Buffalo defense allowing 295.8 passing yards a game (7.5 an attempt through Week 4). The desk projects 35 attempts and 270 yards against DraftKings' 250.5 (-111; FanDuel 249.5 at -114). The risk is a blowout: Mendoza took eight attempts in the 45-17 loss at New England."
-     }
-    ]
+    "plays": []
    }
   ]
  },
@@ -19751,1023 +19452,87 @@
   "target": 6,
   "checkedAt": null,
   "pricedAt": null,
-  "tickets": [
-   {
-    "game": "chi-atl",
-    "gameLabel": "CHI@ATL",
-    "kickoff": "2026-10-18T17:00:00Z",
-    "price": 501,
-    "decimal": 6.01,
-    "joint": 0.2304,
-    "bookJoint": 0.1661,
-    "short": false,
-    "builtAt": "2026-10-18T14:48:06.029Z",
-    "pulled": null,
-    "check": null,
-    "legs": [
-     {
-      "player": "Brian Robinson Jr.",
-      "team": "ATL",
-      "label": "Brian Robinson Jr. 25+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 24.5,
-      "price": -249,
-      "book": "draftkings",
-      "p": 0.771,
-      "model": 0.796,
-      "implied": 0.713,
-      "mean": 45
-     },
-     {
-      "player": "Rome Odunze",
-      "team": "CHI",
-      "label": "Rome Odunze 30+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 29.5,
-      "price": -230,
-      "book": "fanduel",
-      "p": 0.758,
-      "model": 0.785,
-      "implied": 0.697,
-      "mean": 56
-     },
-     {
-      "player": "Kalif Raymond",
-      "team": "CHI",
-      "label": "Kalif Raymond 20+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -198,
-      "book": "fanduel",
-      "p": 0.749,
-      "model": 0.785,
-      "implied": 0.664,
-      "mean": 37
-     },
-     {
-      "player": "Michael Penix Jr.",
-      "team": "ATL",
-      "label": "Michael Penix Jr. 210+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 209.5,
-      "price": -244,
-      "book": "draftkings",
-      "p": 0.726,
-      "model": 0.733,
-      "implied": 0.709,
-      "mean": 250
-     },
-     {
-      "player": "Bijan Robinson",
-      "team": "ATL",
-      "label": "Bijan Robinson 20+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -245,
-      "book": "fanduel",
-      "p": 0.725,
-      "model": 0.732,
-      "implied": 0.71,
-      "mean": 31
-     }
-    ]
-   },
-   {
-    "game": "buf-lv",
-    "gameLabel": "BUF@LV",
-    "kickoff": "2026-10-18T20:25:00Z",
-    "price": 545,
-    "decimal": 6.45,
-    "joint": 0.2124,
-    "bookJoint": 0.1549,
-    "short": false,
-    "builtAt": "2026-10-18T14:48:06.029Z",
-    "pulled": null,
-    "check": null,
-    "legs": [
-     {
-      "player": "Kirk Cousins",
-      "team": "LV",
-      "label": "Kirk Cousins 220+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 219.5,
-      "price": -248,
-      "book": "draftkings",
-      "p": 0.749,
-      "model": 0.764,
-      "implied": 0.713,
-      "mean": 270
-     },
-     {
-      "player": "Ashton Jeanty",
-      "team": "LV",
-      "label": "Ashton Jeanty 20+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -200,
-      "book": "fanduel",
-      "p": 0.739,
-      "model": 0.77,
-      "implied": 0.667,
-      "mean": 35
-     },
-     {
-      "player": "Tre Tucker",
-      "team": "LV",
-      "label": "Tre Tucker 30+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 29.5,
-      "price": -205,
-      "book": "fanduel",
-      "p": 0.729,
-      "model": 0.753,
-      "implied": 0.672,
-      "mean": 50
-     },
-     {
-      "player": "Brock Bowers",
-      "team": "LV",
-      "label": "Brock Bowers 6+ receptions",
-      "market": "receptions",
-      "side": "over",
-      "point": 5.5,
-      "price": -250,
-      "book": "fanduel",
-      "p": 0.729,
-      "model": 0.736,
-      "implied": 0.714,
-      "mean": 7.3
-     },
-     {
-      "player": "Josh Allen",
-      "team": "BUF",
-      "label": "Josh Allen 25+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 24.5,
-      "price": -212,
-      "book": "draftkings",
-      "p": 0.722,
-      "model": 0.741,
-      "implied": 0.679,
-      "mean": 38
-     }
-    ]
-   },
-   {
-    "game": "car-phi",
-    "gameLabel": "CAR@PHI",
-    "kickoff": "2026-10-18T17:00:00Z",
-    "price": 631,
-    "decimal": 7.31,
-    "joint": 0.2042,
-    "bookJoint": 0.1367,
-    "short": false,
-    "builtAt": "2026-10-18T14:48:06.029Z",
-    "pulled": null,
-    "check": null,
-    "legs": [
-     {
-      "player": "Tanner McKee",
-      "team": "PHI",
-      "label": "Tanner McKee 175+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 174.5,
-      "price": -205,
-      "book": "fanduel",
-      "p": 0.752,
-      "model": 0.787,
-      "implied": 0.672,
-      "mean": 220
-     },
-     {
-      "player": "Bryce Young",
-      "team": "CAR",
-      "label": "Bryce Young 210+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 209.5,
-      "price": -238,
-      "book": "draftkings",
-      "p": 0.747,
-      "model": 0.765,
-      "implied": 0.704,
-      "mean": 258
-     },
-     {
-      "player": "Dallas Goedert",
-      "team": "PHI",
-      "label": "Dallas Goedert 25+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 24.5,
-      "price": -209,
-      "book": "draftkings",
-      "p": 0.715,
-      "model": 0.732,
-      "implied": 0.676,
-      "mean": 39
-     },
-     {
-      "player": "Darren Waller",
-      "team": "CAR",
-      "label": "Darren Waller 20+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -166,
-      "book": "fanduel",
-      "p": 0.714,
-      "model": 0.752,
-      "implied": 0.624,
-      "mean": 33
-     },
-     {
-      "player": "Tetairoa McMillan",
-      "team": "CAR",
-      "label": "Tetairoa McMillan 50+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 49.5,
-      "price": -217,
-      "book": "draftkings",
-      "p": 0.712,
-      "model": 0.724,
-      "implied": 0.685,
-      "mean": 77
-     }
-    ]
-   },
-   {
-    "game": "ari-lar",
-    "gameLabel": "ARI@LAR",
-    "kickoff": "2026-10-18T20:05:00Z",
-    "price": 919,
-    "decimal": 10.19,
-    "joint": 0.1879,
-    "bookJoint": 0.0982,
-    "short": false,
-    "builtAt": "2026-10-18T14:48:06.029Z",
-    "pulled": null,
-    "check": null,
-    "legs": [
-     {
-      "player": "Kyren Williams",
-      "team": "LAR",
-      "label": "Kyren Williams 3+ receptions",
-      "market": "receptions",
-      "side": "over",
-      "point": 2.5,
-      "price": -142,
-      "book": "draftkings",
-      "p": 0.762,
-      "model": 0.837,
-      "implied": 0.587,
-      "mean": 4.6
-     },
-     {
-      "player": "Kendrick Bourne",
-      "team": "ARI",
-      "label": "Kendrick Bourne 3+ receptions",
-      "market": "receptions",
-      "side": "over",
-      "point": 2.5,
-      "price": -198,
-      "book": "fanduel",
-      "p": 0.733,
-      "model": 0.762,
-      "implied": 0.664,
-      "mean": 4
-     },
-     {
-      "player": "Tyler Higbee",
-      "team": "LAR",
-      "label": "Tyler Higbee 25+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 24.5,
-      "price": -188,
-      "book": "fanduel",
-      "p": 0.714,
-      "model": 0.741,
-      "implied": 0.653,
-      "mean": 40
-     },
-     {
-      "player": "Trey McBride",
-      "team": "ARI",
-      "label": "Trey McBride 7+ receptions",
-      "market": "receptions",
-      "side": "over",
-      "point": 6.5,
-      "price": -153,
-      "book": "draftkings",
-      "p": 0.695,
-      "model": 0.733,
-      "implied": 0.605,
-      "mean": 8.4
-     },
-     {
-      "player": "Tyler Allgeier",
-      "team": "ARI",
-      "label": "Tyler Allgeier 40+ rush yds",
-      "market": "rush_yds",
-      "side": "over",
-      "point": 39.5,
-      "price": -176,
-      "book": "draftkings",
-      "p": 0.678,
-      "model": 0.696,
-      "implied": 0.638,
-      "mean": 55
-     }
-    ]
-   },
-   {
-    "game": "bal-cle",
-    "gameLabel": "BAL@CLE",
-    "kickoff": "2026-10-18T17:00:00Z",
-    "price": 567,
-    "decimal": 6.67,
-    "joint": 0.1812,
-    "bookJoint": 0.1501,
-    "short": false,
-    "builtAt": "2026-10-18T14:48:06.029Z",
-    "pulled": null,
-    "check": null,
-    "legs": [
-     {
-      "player": "Mark Andrews",
-      "team": "BAL",
-      "label": "Mark Andrews 20+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 19.5,
-      "price": -225,
-      "book": "fanduel",
-      "p": 0.766,
-      "model": 0.798,
-      "implied": 0.692,
-      "mean": 39
-     },
-     {
-      "player": "Harold Fannin Jr.",
-      "team": "CLE",
-      "label": "Harold Fannin Jr. 25+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 24.5,
-      "price": -248,
-      "book": "draftkings",
-      "p": 0.713,
-      "model": 0.713,
-      "implied": 0.713,
-      "mean": 37
-     },
-     {
-      "player": "Deshaun Watson",
-      "team": "CLE",
-      "label": "Deshaun Watson 180+ pass yds",
-      "market": "pass_yds",
-      "side": "over",
-      "point": 179.5,
-      "price": -215,
-      "book": "draftkings",
-      "p": 0.703,
-      "model": 0.712,
-      "implied": 0.683,
-      "mean": 210
-     },
-     {
-      "player": "Zay Flowers",
-      "team": "BAL",
-      "label": "Zay Flowers 5+ receptions",
-      "market": "receptions",
-      "side": "over",
-      "point": 4.5,
-      "price": -192,
-      "book": "fanduel",
-      "p": 0.688,
-      "model": 0.701,
-      "implied": 0.658,
-      "mean": 5.9
-     },
-     {
-      "player": "KC Concepcion",
-      "team": "CLE",
-      "label": "KC Concepcion 30+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 29.5,
-      "price": -210,
-      "book": "fanduel",
-      "p": 0.686,
-      "model": 0.69,
-      "implied": 0.677,
-      "mean": 42
-     }
-    ]
-   },
-   {
-    "game": "dal-gb",
-    "gameLabel": "DAL@GB",
-    "kickoff": "2026-10-19T00:20Z",
-    "price": 661,
-    "decimal": 7.61,
-    "joint": 0.1554,
-    "bookJoint": 0.1315,
-    "short": false,
-    "builtAt": "2026-10-18T14:48:06.029Z",
-    "pulled": null,
-    "check": null,
-    "legs": [
-     {
-      "player": "Javonte Williams",
-      "team": "DAL",
-      "label": "Javonte Williams 10+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 9.5,
-      "price": -220,
-      "book": "fanduel",
-      "p": 0.739,
-      "model": 0.761,
-      "implied": 0.688,
-      "mean": 18
-     },
-     {
-      "player": "Matthew Golden",
-      "team": "GB",
-      "label": "Matthew Golden 50+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 49.5,
-      "price": -218,
-      "book": "draftkings",
-      "p": 0.695,
-      "model": 0.699,
-      "implied": 0.686,
-      "mean": 72
-     },
-     {
-      "player": "Christian Watson",
-      "team": "GB",
-      "label": "Christian Watson 60+ rec yds",
-      "market": "rec_yds",
-      "side": "over",
-      "point": 59.5,
-      "price": -196,
-      "book": "draftkings",
-      "p": 0.672,
-      "model": 0.676,
-      "implied": 0.662,
-      "mean": 82
-     },
-     {
-      "player": "CeeDee Lamb",
-      "team": "DAL",
-      "label": "CeeDee Lamb 6+ receptions",
-      "market": "receptions",
-      "side": "over",
-      "point": 5.5,
-      "price": -174,
-      "book": "draftkings",
-      "p": 0.671,
-      "model": 0.686,
-      "implied": 0.635,
-      "mean": 6.9
-     },
-     {
-      "player": "Tucker Kraft",
-      "team": "GB",
-      "label": "Tucker Kraft 4+ receptions",
-      "market": "receptions",
-      "side": "over",
-      "point": 3.5,
-      "price": -197,
-      "book": "draftkings",
-      "p": 0.671,
-      "model": 0.674,
-      "implied": 0.663,
-      "mean": 4.6
-     }
-    ]
-   }
-  ]
+  "tickets": []
  },
  "sides": {
-  "builtAt": "2026-10-18T19:24:54.030Z",
-  "day": "2026-10-18",
-  "title": "Spreads and moneylines · Sunday, Oct 18",
-  "games": 4,
+  "builtAt": "2026-10-19T11:14:24.221Z",
+  "day": "2026-10-19",
+  "title": "Spreads and moneylines · Monday, Oct 19",
+  "games": 1,
   "rows": [
    {
-    "game": "ari-lar",
-    "gameLabel": "ARI@LAR",
-    "kickoff": "2026-10-18T20:05:00Z",
-    "kickoffLabel": "Sun 4:05 PM ET",
+    "game": "wsh-sf",
+    "gameLabel": "WSH@SF",
+    "kickoff": "2026-10-20T00:15Z",
+    "kickoffLabel": "Mon 8:15 PM ET",
     "projected": {
-     "away": 18,
-     "home": 29
+     "away": 19,
+     "home": 34
     },
     "spread": {
-     "team": "ARI",
-     "bet": "ARI +12.5",
-     "point": 12.5,
-     "price": -110,
-     "prob": 0.545,
-     "conf": 1,
-     "desk": "ARI +12.5",
-     "agrees": true
-    },
-    "ml": {
-     "team": "LAR",
-     "bet": "LAR ML",
-     "price": -700,
-     "prob": 0.794,
-     "implied": 0.84,
-     "edge": -0.046
-    },
-    "dog": {
-     "team": "ARI",
-     "bet": "ARI ML",
-     "price": 500,
-     "prob": 0.206,
-     "implied": 0.16,
-     "edge": 0.046
-    },
-    "why": "The Rams by 11 in the projection, so both leans are 1s. For Arizona: the Rams have won once by more than 4, scored 23.8 a game on 433.8 yards, and come in on a short week after Monday's overtime loss with a backup left tackle (Quessenberry) and a kicker change after two missed field goals. Brissett's volume (41 attempts projected) keeps a late backdoor touchdown live. Against it: Arizona has allowed 36, 36 and 45 in its last three games, has two safeties out and Baker questionable, and the Rams have the league's most passing yards. For the under: the Rams' pass defense allows 165 a game and Brissett throws for 5.6 an attempt, so Arizona's 19.5 is a reach. The risk is the 76.5% red-zone touchdown rate Arizona allows. Do not chase the under below 50.5."
-   },
-   {
-    "game": "buf-lv",
-    "gameLabel": "BUF@LV",
-    "kickoff": "2026-10-18T20:25:00Z",
-    "kickoffLabel": "Sun 4:25 PM ET",
-    "projected": {
-     "away": 31,
-     "home": 24
-    },
-    "spread": {
-     "team": "BUF",
-     "bet": "BUF -5.5",
-     "point": -5.5,
-     "price": -110,
-     "prob": 0.545,
-     "conf": 1,
-     "desk": "BUF -5.5",
-     "agrees": true
-    },
-    "ml": {
-     "team": "BUF",
-     "bet": "BUF ML",
-     "price": -238,
-     "prob": 0.699,
-     "implied": 0.675,
-     "edge": 0.024
-    },
-    "dog": null,
-    "why": "Buffalo by seven in the projection. The side stays a 1: the moneyline has moved from -285 to -245 and some books are at 4.5, the Bills play on six days' rest after a Monday overtime game, and their defense allows 295.8 passing yards a game. The case for Buffalo is the best offense in EPA per play (Covers) against a defense allowing 34 points a game over its last three, and 13 rushing touchdowns against a run defense allowing 140.6 a game. The total is a 2: Buffalo games have gone over 53.5 in four of five, both defenses allow touchdowns on 76% or more of red-zone trips, the roof is closed, and the over is seven straight in this series. The risk is Buffalo's clock-killing run game (37 rushes Monday, 30:08 possession) and Allen throwing only 19 times. Take 53.5; do not chase it past 54.5."
-   },
-   {
-    "game": "lac-kc",
-    "gameLabel": "LAC@KC",
-    "kickoff": "2026-10-18T20:25Z",
-    "kickoffLabel": "Sun 4:25 PM ET",
-    "projected": {
-     "away": 16,
-     "home": 25
-    },
-    "spread": {
-     "team": "KC",
-     "bet": "KC -7.5",
+     "team": "SF",
+     "bet": "SF -7.5",
      "point": -7.5,
      "price": -110,
-     "prob": 0.545,
-     "conf": 1,
-     "desk": "KC -7.5",
+     "prob": 0.712,
+     "conf": 2,
+     "desk": "SF -7.5",
      "agrees": true
     },
     "ml": {
-     "team": "KC",
-     "bet": "KC ML",
-     "price": -410,
-     "prob": 0.749,
-     "implied": 0.772,
-     "edge": -0.022
+     "team": "SF",
+     "bet": "SF ML",
+     "price": -455,
+     "prob": 0.869,
+     "implied": 0.787,
+     "edge": 0.082
     },
     "dog": null,
-    "why": "Quick build from ESPN's matchup predictor (KC 74%) against the posted spread."
-   },
-   {
-    "game": "dal-gb",
-    "gameLabel": "DAL@GB",
-    "kickoff": "2026-10-19T00:20Z",
-    "kickoffLabel": "Sun 8:20 PM ET",
-    "projected": {
-     "away": 25,
-     "home": 27
-    },
-    "spread": {
-     "team": "GB",
-     "bet": "GB -1.5",
-     "point": -1.5,
-     "price": -110,
-     "prob": 0.515,
-     "conf": 1,
-     "desk": "GB -1.5",
-     "agrees": true
-    },
-    "ml": {
-     "team": "GB",
-     "bet": "GB ML",
-     "price": -112,
-     "prob": 0.559,
-     "implied": 0.504,
-     "edge": 0.055
-    },
-    "dog": null,
-    "why": "Friday hyper-analysis: two projection methods averaged put Green Bay 27, Dallas 25 (docs/week-06-2026-dal-gb.md). Jacobs is out; Lloyd has the early downs and the goal line."
+    "why": "Quick build from ESPN's matchup predictor (SF 86%) against the posted spread."
    }
   ],
-  "text": "**SPREADS AND MONEYLINES · SUNDAY, OCT 18**\nEvery game on the slate, most likely cover first. Our projected score against the posted number. Units, not dollars.\n\n**ARI +12.5** 55% to cover ▮▯▯▯▯ · LAR ML -700 (79%) · dog ARI +500 (21% vs 16%) · ARI@LAR, Sun 4:05 PM ET\n**BUF -5.5** 55% to cover ▮▯▯▯▯ · BUF ML -238 (70%) · BUF@LV, Sun 4:25 PM ET\n**KC -7.5** 55% to cover ▮▯▯▯▯ · KC ML -410 (75%) · LAC@KC, Sun 4:25 PM ET\n**GB -1.5** 52% to cover ▮▯▯▯▯ · GB ML -112 (56%) · DAL@GB, Sun 8:20 PM ET"
+  "text": "**SPREADS AND MONEYLINES · MONDAY, OCT 19**\nEvery game on the slate, most likely cover first. Our projected score against the posted number. Units, not dollars.\n\n**SF -7.5** 71% to cover ▮▮▯▯▯ · SF ML -455 (87%) · WSH@SF, Mon 8:15 PM ET"
  },
  "bestOf": {
-  "builtAt": "2026-10-18T19:24:54.062Z",
-  "day": "2026-10-18",
-  "title": "Sunday, Oct 18: the best of the slate",
-  "games": 4,
+  "builtAt": "2026-10-19T11:14:24.257Z",
+  "day": "2026-10-19",
+  "title": "Monday, Oct 19: the best of the slate",
+  "games": 1,
   "plays": [
    {
     "key": "side",
     "title": "Spread of the day",
-    "game": "ari-lar",
-    "gameLabel": "ARI@LAR",
-    "kickoff": "2026-10-18T20:05:00Z",
-    "kickoffLabel": "Sun 4:05 PM ET",
-    "bet": "ARI +12.5",
+    "game": "wsh-sf",
+    "gameLabel": "WSH@SF",
+    "kickoff": "2026-10-20T00:15Z",
+    "kickoffLabel": "Mon 8:15 PM ET",
+    "bet": "SF -7.5",
     "price": -110,
-    "prob": 0.545,
+    "prob": 0.712,
     "implied": 0.524,
-    "edge": 0.021,
-    "conf": 1,
+    "edge": 0.188,
+    "conf": 2,
     "units": 1,
-    "why": "The Rams by 11 in the projection, so both leans are 1s. For Arizona: the Rams have won once by more than 4, scored 23.8 a game on 433.8 yards, and come in on a short week after Monday's overtime loss with a backup left tackle (Quessenberry) and a kicker change after two missed field goals. Brissett's volume (41 attempts projected) keeps a late backdoor touchdown live. Against it: Arizona has allowed 36, 36 and 45 in its last three games, has two safeties out and Baker questionable, and the Rams have the league's most passing yards. For the under: the Rams' pass defense allows 165 a game and Brissett throws for 5.6 an attempt, so Arizona's 19.5 is a reach. The risk is the 76.5% red-zone touchdown rate Arizona allows. Do not chase the under below 50.5."
-   },
-   {
-    "key": "total",
-    "title": "Total of the day",
-    "game": "ari-lar",
-    "gameLabel": "ARI@LAR",
-    "kickoff": "2026-10-18T20:05:00Z",
-    "kickoffLabel": "Sun 4:05 PM ET",
-    "bet": "Under 51.5",
-    "price": -110,
-    "prob": 0.664,
-    "implied": 0.524,
-    "edge": 0.141,
-    "conf": 1,
-    "units": 1,
-    "why": "The Rams by 11 in the projection, so both leans are 1s. For Arizona: the Rams have won once by more than 4, scored 23.8 a game on 433.8 yards, and come in on a short week after Monday's overtime loss with a backup left tackle (Quessenberry) and a kicker change after two missed field goals. Brissett's volume (41 attempts projected) keeps a late backdoor touchdown live. Against it: Arizona has allowed 36, 36 and 45 in its last three games, has two safeties out and Baker questionable, and the Rams have the league's most passing yards. For the under: the Rams' pass defense allows 165 a game and Brissett throws for 5.6 an attempt, so Arizona's 19.5 is a reach. The risk is the 76.5% red-zone touchdown rate Arizona allows. Do not chase the under below 50.5."
+    "why": "Quick build from ESPN's matchup predictor (SF 86%) against the posted spread."
    },
    {
     "key": "moneyline",
     "title": "Moneyline lock",
-    "game": "buf-lv",
-    "gameLabel": "BUF@LV",
-    "kickoff": "2026-10-18T20:25:00Z",
-    "kickoffLabel": "Sun 4:25 PM ET",
-    "bet": "BUF ML",
-    "price": -238,
-    "prob": 0.699,
-    "implied": 0.681,
-    "edge": 0.018,
+    "game": "wsh-sf",
+    "gameLabel": "WSH@SF",
+    "kickoff": "2026-10-20T00:15Z",
+    "kickoffLabel": "Mon 8:15 PM ET",
+    "bet": "SF ML",
+    "price": -455,
+    "prob": 0.869,
+    "implied": 0.787,
+    "edge": 0.082,
     "conf": null,
     "units": 1,
-    "why": "Projected BUF 31, LV 24."
-   },
-   {
-    "key": "value",
-    "title": "TD value",
-    "game": "ari-lar",
-    "gameLabel": "ARI@LAR",
-    "kickoff": "2026-10-18T20:05:00Z",
-    "kickoffLabel": "Sun 4:05 PM ET",
-    "bet": "Jordan Whittington anytime TD",
-    "price": 1500,
-    "prob": 0.07,
-    "implied": 0.063,
-    "edge": 0.008,
-    "conf": null,
-    "units": 0.5,
-    "why": "The Rams' starting slot receiver in three-receiver sets on ESPN's depth chart, in the offense with the league's most passing yards, against the defense that has allowed the most touchdowns. His target count is not verified. +1500 at DraftKings (6.3%; FanDuel +1400) against a 7% read: a thin long-shot edge."
-   },
-   {
-    "key": "fiveLeg",
-    "title": "Five-leg, no TDs",
-    "game": "buf-lv",
-    "gameLabel": "BUF@LV",
-    "kickoff": "2026-10-18T20:25:00Z",
-    "kickoffLabel": "Sun 4:25 PM ET",
-    "bet": "Kirk Cousins 220+ pass yds + Ashton Jeanty 20+ rec yds + Tre Tucker 30+ rec yds + Brock Bowers 6+ receptions + Josh Allen 25+ rush yds",
-    "price": 545,
-    "prob": 0.2124,
-    "implied": 0.1549,
-    "edge": 0.057,
-    "conf": null,
-    "units": 0.25,
-    "why": "Volume props at alternate lines one notch under the main number; the model has it 21% against the book's 15%.",
-    "legs": [
-     {
-      "label": "Kirk Cousins 220+ pass yds",
-      "price": -248,
-      "book": "draftkings"
-     },
-     {
-      "label": "Ashton Jeanty 20+ rec yds",
-      "price": -200,
-      "book": "fanduel"
-     },
-     {
-      "label": "Tre Tucker 30+ rec yds",
-      "price": -205,
-      "book": "fanduel"
-     },
-     {
-      "label": "Brock Bowers 6+ receptions",
-      "price": -250,
-      "book": "fanduel"
-     },
-     {
-      "label": "Josh Allen 25+ rush yds",
-      "price": -212,
-      "book": "draftkings"
-     }
-    ]
-   },
-   {
-    "key": "lotto",
-    "title": "The parlay",
-    "game": "ari-lar",
-    "gameLabel": "2 games",
-    "kickoff": null,
-    "kickoffLabel": null,
-    "bet": "The card, 2 legs",
-    "price": 171,
-    "prob": 0.381,
-    "implied": 0.3688,
-    "edge": 0.0121,
-    "conf": null,
-    "units": 0.25,
-    "why": "The day's spread, total and moneyline picks parlayed, one leg per game so they land independently: the model has it 38% against the price's 37%.",
-    "legs": [
-     {
-      "label": "ARI@LAR ARI +12.5",
-      "price": -110,
-      "book": null
-     },
-     {
-      "label": "BUF@LV BUF ML",
-      "price": -238,
-      "book": null
-     }
-    ]
+    "why": "Projected WSH 19, SF 34."
    }
   ],
-  "text": "**Cappers & Code · Sunday, Oct 18 · Week 6**\nThe model's single best play in every market for 4 games. Units, not dollars.\n\n**Spread of the day:** ARI +12.5 -110 · 1u\n_ARI@LAR · Sun 4:05 PM ET · model 55% · book 52%_\n\n**Total of the day:** Under 51.5 -110 · 1u\n_ARI@LAR · Sun 4:05 PM ET · model 66% · book 52%_\n\n**Moneyline lock:** BUF ML -238 · 1u\n_BUF@LV · Sun 4:25 PM ET · model 70% · book 68%_\n\n**TD value:** Jordan Whittington anytime TD +1500 · 0.5u\n_ARI@LAR · Sun 4:05 PM ET · model 7% · book 6%_\n\n**Five-leg, no TDs:** BUF@LV five-leg +545 · 0.25u\n> Kirk Cousins 220+ pass yds -248\n> Ashton Jeanty 20+ rec yds -200\n> Tre Tucker 30+ rec yds -205\n> Brock Bowers 6+ receptions -250\n> Josh Allen 25+ rush yds -212\n_Sun 4:25 PM ET · model 21% · book 15%_\n\n**The parlay:** The card, 2 legs +171 · 0.25u\n> ARI@LAR ARI +12.5 -110\n> BUF@LV BUF ML -238\n_model 38% · book 37%_\n\nFull board, every game and the five-leg for each: https://cappersandcode.com/app\n21+. Gamble responsibly. Estimates are opinions, not guarantees."
+  "text": "**Cappers & Code · Monday, Oct 19 · Week 6**\nThe model's single best play in every market for 1 games. Units, not dollars.\n\n**Spread of the day:** SF -7.5 -110 · 1u\n_WSH@SF · Mon 8:15 PM ET · model 71% · book 52%_\n\n**Moneyline lock:** SF ML -455 · 1u\n_WSH@SF · Mon 8:15 PM ET · model 87% · book 79%_\n\nFull board, every game and the five-leg for each: https://cappersandcode.com/app\n21+. Gamble responsibly. Estimates are opinions, not guarantees."
  },
- "maxFive": {
-  "builtAt": "2026-10-18T19:24:54.064Z",
-  "checkedAt": null,
-  "pricedAt": null,
-  "day": "2026-10-18",
-  "title": "Sunday, Oct 18: max-confidence five-legs",
-  "tickets": [
-   {
-    "rank": 1,
-    "game": "chi-atl",
-    "gameLabel": "CHI@ATL",
-    "kickoff": "2026-10-18T17:00:00Z",
-    "kickoffLabel": "Sun 1:00 PM ET",
-    "price": 501,
-    "joint": 0.2304,
-    "bookJoint": 0.1661,
-    "check": null,
-    "legs": [
-     {
-      "label": "Brian Robinson Jr. 25+ rush yds",
-      "price": -249,
-      "book": "draftkings",
-      "p": 0.771
-     },
-     {
-      "label": "Rome Odunze 30+ rec yds",
-      "price": -230,
-      "book": "fanduel",
-      "p": 0.758
-     },
-     {
-      "label": "Kalif Raymond 20+ rec yds",
-      "price": -198,
-      "book": "fanduel",
-      "p": 0.749
-     },
-     {
-      "label": "Michael Penix Jr. 210+ pass yds",
-      "price": -244,
-      "book": "draftkings",
-      "p": 0.726
-     },
-     {
-      "label": "Bijan Robinson 20+ rec yds",
-      "price": -245,
-      "book": "fanduel",
-      "p": 0.725
-     }
-    ]
-   },
-   {
-    "rank": 2,
-    "game": "buf-lv",
-    "gameLabel": "BUF@LV",
-    "kickoff": "2026-10-18T20:25:00Z",
-    "kickoffLabel": "Sun 4:25 PM ET",
-    "price": 545,
-    "joint": 0.2124,
-    "bookJoint": 0.1549,
-    "check": null,
-    "legs": [
-     {
-      "label": "Kirk Cousins 220+ pass yds",
-      "price": -248,
-      "book": "draftkings",
-      "p": 0.749
-     },
-     {
-      "label": "Ashton Jeanty 20+ rec yds",
-      "price": -200,
-      "book": "fanduel",
-      "p": 0.739
-     },
-     {
-      "label": "Tre Tucker 30+ rec yds",
-      "price": -205,
-      "book": "fanduel",
-      "p": 0.729
-     },
-     {
-      "label": "Brock Bowers 6+ receptions",
-      "price": -250,
-      "book": "fanduel",
-      "p": 0.729
-     },
-     {
-      "label": "Josh Allen 25+ rush yds",
-      "price": -212,
-      "book": "draftkings",
-      "p": 0.722
-     }
-    ]
-   },
-   {
-    "rank": 3,
-    "game": "car-phi",
-    "gameLabel": "CAR@PHI",
-    "kickoff": "2026-10-18T17:00:00Z",
-    "kickoffLabel": "Sun 1:00 PM ET",
-    "price": 631,
-    "joint": 0.2042,
-    "bookJoint": 0.1367,
-    "check": null,
-    "legs": [
-     {
-      "label": "Tanner McKee 175+ pass yds",
-      "price": -205,
-      "book": "fanduel",
-      "p": 0.752
-     },
-     {
-      "label": "Bryce Young 210+ pass yds",
-      "price": -238,
-      "book": "draftkings",
-      "p": 0.747
-     },
-     {
-      "label": "Dallas Goedert 25+ rec yds",
-      "price": -209,
-      "book": "draftkings",
-      "p": 0.715
-     },
-     {
-      "label": "Darren Waller 20+ rec yds",
-      "price": -166,
-      "book": "fanduel",
-      "p": 0.714
-     },
-     {
-      "label": "Tetairoa McMillan 50+ rec yds",
-      "price": -217,
-      "book": "draftkings",
-      "p": 0.712
-     }
-    ]
-   },
-   {
-    "rank": 4,
-    "game": "ari-lar",
-    "gameLabel": "ARI@LAR",
-    "kickoff": "2026-10-18T20:05:00Z",
-    "kickoffLabel": "Sun 4:05 PM ET",
-    "price": 919,
-    "joint": 0.1879,
-    "bookJoint": 0.0982,
-    "check": null,
-    "legs": [
-     {
-      "label": "Kyren Williams 3+ receptions",
-      "price": -142,
-      "book": "draftkings",
-      "p": 0.762
-     },
-     {
-      "label": "Kendrick Bourne 3+ receptions",
-      "price": -198,
-      "book": "fanduel",
-      "p": 0.733
-     },
-     {
-      "label": "Tyler Higbee 25+ rec yds",
-      "price": -188,
-      "book": "fanduel",
-      "p": 0.714
-     },
-     {
-      "label": "Trey McBride 7+ receptions",
-      "price": -153,
-      "book": "draftkings",
-      "p": 0.695
-     },
-     {
-      "label": "Tyler Allgeier 40+ rush yds",
-      "price": -176,
-      "book": "draftkings",
-      "p": 0.678
-     }
-    ]
-   },
-   {
-    "rank": 5,
-    "game": "bal-cle",
-    "gameLabel": "BAL@CLE",
-    "kickoff": "2026-10-18T17:00:00Z",
-    "kickoffLabel": "Sun 1:00 PM ET",
-    "price": 567,
-    "joint": 0.1812,
-    "bookJoint": 0.1501,
-    "check": null,
-    "legs": [
-     {
-      "label": "Mark Andrews 20+ rec yds",
-      "price": -225,
-      "book": "fanduel",
-      "p": 0.766
-     },
-     {
-      "label": "Harold Fannin Jr. 25+ rec yds",
-      "price": -248,
-      "book": "draftkings",
-      "p": 0.713
-     },
-     {
-      "label": "Deshaun Watson 180+ pass yds",
-      "price": -215,
-      "book": "draftkings",
-      "p": 0.703
-     },
-     {
-      "label": "Zay Flowers 5+ receptions",
-      "price": -192,
-      "book": "fanduel",
-      "p": 0.688
-     },
-     {
-      "label": "KC Concepcion 30+ rec yds",
-      "price": -210,
-      "book": "fanduel",
-      "p": 0.686
-     }
-    ]
-   }
-  ],
-  "pulled": [],
-  "text": "**Cappers & Code · Sunday, Oct 18 · Week 6**\n**Max-confidence five-legs, no TDs.** The 5 tickets with the best hit rate on the slate, every leg checked before kickoff. 0.25u each.\n\n**1. CHI@ATL +501** · model 23% · book 17%\n> Brian Robinson Jr. 25+ rush yds -249\n> Rome Odunze 30+ rec yds -230\n> Kalif Raymond 20+ rec yds -198\n> Michael Penix Jr. 210+ pass yds -244\n> Bijan Robinson 20+ rec yds -245\n_Sun 1:00 PM ET_\n\n**2. BUF@LV +545** · model 21% · book 15%\n> Kirk Cousins 220+ pass yds -248\n> Ashton Jeanty 20+ rec yds -200\n> Tre Tucker 30+ rec yds -205\n> Brock Bowers 6+ receptions -250\n> Josh Allen 25+ rush yds -212\n_Sun 4:25 PM ET_\n\n**3. CAR@PHI +631** · model 20% · book 14%\n> Tanner McKee 175+ pass yds -205\n> Bryce Young 210+ pass yds -238\n> Dallas Goedert 25+ rec yds -209\n> Darren Waller 20+ rec yds -166\n> Tetairoa McMillan 50+ rec yds -217\n_Sun 1:00 PM ET_\n\n**4. ARI@LAR +919** · model 19% · book 10%\n> Kyren Williams 3+ receptions -142\n> Kendrick Bourne 3+ receptions -198\n> Tyler Higbee 25+ rec yds -188\n> Trey McBride 7+ receptions -153\n> Tyler Allgeier 40+ rush yds -176\n_Sun 4:05 PM ET_\n\n**5. BAL@CLE +567** · model 18% · book 15%\n> Mark Andrews 20+ rec yds -225\n> Harold Fannin Jr. 25+ rec yds -248\n> Deshaun Watson 180+ pass yds -215\n> Zay Flowers 5+ receptions -192\n> KC Concepcion 30+ rec yds -210\n_Sun 1:00 PM ET_\n\nEvery ticket, on every game page: https://cappersandcode.com/app\n21+. Gamble responsibly. Estimates are opinions, not guarantees."
- }
+ "maxFive": null
 }
