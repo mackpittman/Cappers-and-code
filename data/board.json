@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 6,
- "generatedAt": "2026-10-19T13:37:25.896Z",
+ "generatedAt": "2026-10-19T21:30:58.395Z",
  "researchAsOf": "2026-10-18T14:48:04.940Z",
  "oddsFetchedAt": "2026-10-18T14:48:04.303Z",
  "oddsCredits": {
@@ -10,7 +10,7 @@
   "last": 78,
   "at": "2026-10-18T14:48:04.303Z",
   "spent7d": 0,
-  "spent30d": 126,
+  "spent30d": 125,
   "reserve": 40
  },
  "creditPlan": {
@@ -33,7 +33,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": "ESPN/DraftKings",
- "injuriesFetchedAt": "2026-10-19T13:37:24.947Z",
+ "injuriesFetchedAt": "2026-10-19T21:30:57.372Z",
  "notes": "Researched one game at a time, then validated for de-vigged win probability, implied team points and board depth before assembly. Anytime-TD prices marked \"verify\" could not be confirmed at a live sportsbook and must be checked before they are played.",
  "completed": [
   {
@@ -110,18 +110,6 @@
       "best": -150,
       "bestBook": "draftkings",
       "consensus": -152
-     }
-    },
-    {
-     "name": "Davante Adams",
-     "team": "LAR",
-     "price": -135,
-     "implied": 0.574,
-     "status": null,
-     "live": {
-      "best": -135,
-      "bestBook": "draftkings",
-      "consensus": -135
      }
     },
     {
@@ -281,6 +269,18 @@
      }
     },
     {
+     "name": "Tutu Atwell",
+     "team": "LAR",
+     "price": 950,
+     "implied": 0.095,
+     "status": null,
+     "live": {
+      "best": 950,
+      "bestBook": "fanduel",
+      "consensus": 925
+     }
+    },
+    {
      "name": "Teagan Quitoriano",
      "team": "ARI",
      "price": 1100,
@@ -302,6 +302,18 @@
       "best": 1500,
       "bestBook": "draftkings",
       "consensus": 1500
+     }
+    },
+    {
+     "name": "CJ Daniels",
+     "team": "LAR",
+     "price": 1500,
+     "implied": 0.063,
+     "status": null,
+     "live": {
+      "best": 1500,
+      "bestBook": "draftkings",
+      "consensus": 1225
      }
     },
     {
@@ -381,35 +393,6 @@
       "fetchedAt": "2026-10-18T14:48:04.303Z"
      },
      "edge": -0.105,
-     "status": null
-    },
-    {
-     "name": "Davante Adams",
-     "team": "LAR",
-     "pos": "WR",
-     "price": -135,
-     "implied": 0.574,
-     "est": 0.4,
-     "why": "Four touchdowns on 45 targets, including two scores last week with Nacua on the field, and the team lead in red-zone targets through Week 4. Arizona gave up eight touchdowns to receivers in the first four games and has the league's worst opponent passer rating (117.3). The read is 40% (fair +150) against -135 at both books (57.4%), 17 points short. The touchdown role is near the goal line, which is why his yardage projection sits under the book.",
-     "live2": null,
-     "live": {
-      "best": -135,
-      "bestBook": "draftkings",
-      "consensus": -135,
-      "books": {
-       "draftkings": -135,
-       "fanduel": -135
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378229561%232317816402_13L88808Q1-1719984573Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616225575&selectionId=8882932"
-      },
-      "implied": 0.5745,
-      "open": null,
-      "move": null,
-      "fetchedAt": "2026-10-18T14:48:04.303Z"
-     },
-     "edge": -0.174,
      "status": null
     },
     {
@@ -605,12 +588,7 @@
    "live": null,
    "scratched": [
     {
-     "name": "Tutu Atwell",
-     "team": "LAR",
-     "status": "Out"
-    },
-    {
-     "name": "CJ Daniels",
+     "name": "Davante Adams",
      "team": "LAR",
      "status": "Out"
     }
@@ -1186,60 +1164,28 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Carson Beck",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Beck (coach's decision) is inactive and is designated as Arizona's emergency third quarterback for Sunday's matchup versus the Rams, Darren Urban of the Cardinals' official site reports.",
-      "date": "2026-10-18T18:45Z"
-     },
-     {
       "name": "Wydett Williams Jr.",
       "pos": "S",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T18:37Z"
+      "detail": "out",
+      "date": "2026-10-19T16:19Z"
      },
      {
       "name": "Andrew Wingard",
       "pos": "S",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T18:37Z"
-     },
-     {
-      "name": "Jerrick Reed II",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T18:37Z"
-     },
-     {
-      "name": "Starling Thomas V",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T18:37Z"
+      "detail": "out",
+      "date": "2026-10-19T16:19Z"
      },
      {
       "name": "Jeremiyah Love",
       "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T18:37Z"
-     },
-     {
-      "name": "Andrew Billings",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T18:37Z"
+      "detail": "out",
+      "date": "2026-10-19T16:19Z"
      },
      {
       "name": "James Conner",
@@ -1252,12 +1198,28 @@
     ],
     "home": [
      {
-      "name": "Ty Simpson",
-      "pos": "QB",
+      "name": "Poona Ford",
+      "pos": "DT",
       "status": "Out",
       "type": "out",
-      "detail": "Simpson (coach's decision) is inactive but will serve as the Rams' emergency third quarterback against the Cardinals on Sunday.",
-      "date": "2026-10-18T18:56Z"
+      "detail": "out",
+      "date": "2026-10-19T21:11Z"
+     },
+     {
+      "name": "Kobie Turner",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T21:09Z"
+     },
+     {
+      "name": "Davante Adams",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "Adams caught three of four targets for 39 yards during Sunday's 18-16 defeat against the Cardinals.",
+      "date": "2026-10-19T01:18Z"
      },
      {
       "name": "Trent McDuffie",
@@ -1268,52 +1230,20 @@
       "date": "2026-10-18T18:54Z"
      },
      {
-      "name": "Tutu Atwell",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "Atwell (coach's decision) is inactive for Sunday's game against the Cardinals.",
-      "date": "2026-10-18T18:52Z"
-     },
-     {
-      "name": "Larrell Murchison",
-      "pos": "DE",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T18:47Z"
-     },
-     {
-      "name": "Bill Murray",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T18:47Z"
-     },
-     {
-      "name": "CJ Daniels",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T18:47Z"
-     },
-     {
-      "name": "Blake Grupe",
-      "pos": "PK",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Grupe (knee) has been ruled out for the remainder of Sunday's game against the Cardinals, Sarah Barshop of ESPN.com reports.",
-      "date": "2026-10-18T22:19Z"
-     },
-     {
       "name": "Alaric Jackson",
       "pos": "OT",
       "status": "Suspension",
       "type": "Suspension",
       "detail": "Jackson's suspension for an act of unsportsmanlike conduct during Monday's game versus the Bills has been reduced to one game, Tom Pelissero of Netflix reports.",
       "date": "2026-10-15T01:36Z"
+     },
+     {
+      "name": "Blake Grupe",
+      "pos": "PK",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Rams placed Grupe (knee) on injured reserve Monday.",
+      "date": "2026-10-19T19:57Z"
      },
      {
       "name": "Myles Garrett",
@@ -1324,7 +1254,7 @@
       "date": "2026-10-14T01:14Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    },
    "fiveLeg": {
     "game": "ari-lar",
@@ -1668,6 +1598,18 @@
      }
     },
     {
+     "name": "Elijah Sarratt",
+     "team": "BAL",
+     "price": 1500,
+     "implied": 0.063,
+     "status": null,
+     "live": {
+      "best": 1500,
+      "bestBook": "draftkings",
+      "consensus": 1450
+     }
+    },
+    {
      "name": "LaJohntay Wester",
      "team": "BAL",
      "price": 2000,
@@ -1980,11 +1922,6 @@
     {
      "name": "Quinshon Judkins",
      "team": "CLE",
-     "status": "Out"
-    },
-    {
-     "name": "Elijah Sarratt",
-     "team": "BAL",
      "status": "Out"
     }
    ],
@@ -2489,6 +2426,38 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Lamar Jackson",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Ravens head coach Jesse Minter said Monday that Jackson (ankle) could \"potentially\" practice in Week 7 and is still being considered day-to-day, Ryan Mink of the team's official site reports.",
+      "date": "2026-10-19T19:08Z"
+     },
+     {
+      "name": "Broderick Washington Jr.",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T16:22Z"
+     },
+     {
+      "name": "Cam Jurgens",
+      "pos": "C",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T16:22Z"
+     },
+     {
+      "name": "Matt Hibner",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T16:22Z"
+     },
+     {
       "name": "Andrew Vorhees",
       "pos": "G",
       "status": "Out",
@@ -2497,118 +2466,46 @@
       "date": "2026-10-18T16:44Z"
      },
      {
-      "name": "Elijah Sarratt",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "Sarratt (coach's decision) is listed as inactive for Sunday's game against the Browns.",
-      "date": "2026-10-18T16:22Z"
-     },
-     {
-      "name": "K'Von Wallace",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:33Z"
-     },
-     {
-      "name": "Broderick Washington Jr.",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:33Z"
-     },
-     {
-      "name": "Cam Jurgens",
-      "pos": "C",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:33Z"
-     },
-     {
-      "name": "Matt Hibner",
-      "pos": "TE",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:33Z"
-     },
-     {
-      "name": "Lamar Jackson",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:33Z"
-     },
-     {
       "name": "Rashod Bateman",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Bateman (shoulder) has been ruled out of Sunday's game in Cleveland.",
-      "date": "2026-10-18T18:45Z"
+      "detail": "Ravens head coach Jesse Minter said Monday that Bateman (shoulder) \"should be OK\" after exiting late in the second quarter of Sunday's 13-10 loss to the Browns, Jeff Zrebiec of The Athletic reports.",
+      "date": "2026-10-19T19:16Z"
      }
     ],
     "home": [
      {
-      "name": "Taylen Green",
-      "pos": "QB",
+      "name": "Teven Jenkins",
+      "pos": "G",
       "status": "Out",
       "type": "out",
-      "detail": "Green (coach's decision) is listed as inactive but will serve as the Browns' emergency third quarterback for Sunday's game against the Ravens, Kelsey Russo of the Browns' official site reports.",
-      "date": "2026-10-18T16:33Z"
-     },
-     {
-      "name": "Mason Graham",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "Graham (knee/ankle) is inactive for Sunday's game against the Ravens.",
-      "date": "2026-10-18T16:24Z"
+      "detail": "out",
+      "date": "2026-10-19T16:30Z"
      },
      {
       "name": "Quinshon Judkins",
       "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "Judkins (ankle) is inactive for Sunday's game against the Ravens.",
-      "date": "2026-10-18T15:41Z"
+      "detail": "out",
+      "date": "2026-10-19T16:30Z"
+     },
+     {
+      "name": "Mason Graham",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T16:30Z"
      },
      {
       "name": "Mike Hall Jr.",
       "pos": "DT",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:35Z"
-     },
-     {
-      "name": "Noah Igbinoghene",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:35Z"
-     },
-     {
-      "name": "Teven Jenkins",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:35Z"
-     },
-     {
-      "name": "Parker Brailsford",
-      "pos": "C",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:35Z"
+      "detail": "out",
+      "date": "2026-10-19T16:30Z"
      },
      {
       "name": "Justin Jefferson",
@@ -2643,7 +2540,7 @@
       "date": "2026-10-16T18:20Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    },
    "fiveLeg": {
     "game": "bal-cle",
@@ -3736,30 +3633,6 @@
       "date": "2026-10-18T19:10Z"
      },
      {
-      "name": "Ar'maj Reed-Adams",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:00Z"
-     },
-     {
-      "name": "Mike Danna",
-      "pos": "DE",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:00Z"
-     },
-     {
-      "name": "Jude Bowry",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:00Z"
-     },
-     {
       "name": "DJ Moore",
       "pos": "WR",
       "status": "Out",
@@ -3774,56 +3647,24 @@
       "type": "questionable",
       "detail": "Kincaid (ribs) is questionable to return to Sunday's game against the Raiders.",
       "date": "2026-10-18T22:39Z"
+     },
+     {
+      "name": "C.J. Gardner-Johnson",
+      "pos": "S",
+      "status": "Suspension",
+      "type": "Suspension",
+      "detail": "reserve-sus",
+      "date": "2026-10-19T21:24Z"
      }
     ],
     "home": [
-     {
-      "name": "Aidan O'Connell",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "O'Connell (coach's decision) is inactive but will serve as the Raiders' emergency third quarterback against the Bills on Sunday.",
-      "date": "2026-10-18T19:13Z"
-     },
-     {
-      "name": "Cian Slone",
-      "pos": "DE",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:04Z"
-     },
-     {
-      "name": "Tristin McCollum",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:04Z"
-     },
      {
       "name": "Tonka Hemingway",
       "pos": "DT",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:04Z"
-     },
-     {
-      "name": "Dalton Johnson",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:04Z"
-     },
-     {
-      "name": "Bryce Cabeldue",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:04Z"
+      "detail": "out",
+      "date": "2026-10-19T16:46Z"
      },
      {
       "name": "Carter Runyon",
@@ -3842,7 +3683,7 @@
       "date": "2026-10-16T22:08Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    },
    "fiveLeg": {
     "game": "buf-lv",
@@ -4885,60 +4726,20 @@
    "injuryReport": {
     "away": [
      {
+      "name": "AJ Dillon",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T16:27Z"
+     },
+     {
       "name": "Monroe Freeling",
       "pos": "OT",
       "status": "Out",
       "type": "out",
       "detail": "Freeling (knee) is inactive for Sunday's game against the Eagles, Darin Gantt of the Panthers' official site reports.",
       "date": "2026-10-18T16:35Z"
-     },
-     {
-      "name": "Haynes King",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "King (coach's decision) is inactive but will be the emergency third quarterback against the Eagles on Sunday, Darin Gantt of the Panthers' official site reports.",
-      "date": "2026-10-18T16:10Z"
-     },
-     {
-      "name": "Ja'Tavion Sanders",
-      "pos": "TE",
-      "status": "Out",
-      "type": "out",
-      "detail": "Sanders (coach's decision) is inactive against the Eagles on Sunday, Darin Gantt of the Panthers' official site reports.",
-      "date": "2026-10-18T16:06Z"
-     },
-     {
-      "name": "Albert Reese IV",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:44Z"
-     },
-     {
-      "name": "Torricelli Simpkins III",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:44Z"
-     },
-     {
-      "name": "TeRah Edwards",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:44Z"
-     },
-     {
-      "name": "AJ Dillon",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:44Z"
      },
      {
       "name": "Thomas Incoom",
@@ -4971,24 +4772,32 @@
       "pos": "DE",
       "status": "Out",
       "type": "out",
-      "detail": "Epenesa (back) is inactive for Sunday's game against the Panthers.",
-      "date": "2026-10-18T15:49Z"
+      "detail": "out",
+      "date": "2026-10-19T17:14Z"
      },
      {
-      "name": "Hollywood Brown",
-      "pos": "WR",
+      "name": "Jalyx Hunt",
+      "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "Brown (coach's decision) is inactive for Sunday's game against the Panthers.",
-      "date": "2026-10-18T15:45Z"
+      "detail": "out",
+      "date": "2026-10-19T17:14Z"
      },
      {
-      "name": "Joe Milton",
-      "pos": "QB",
+      "name": "Saquon Barkley",
+      "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "Milton (coach's decision) is inactive but will serve as the Eagles' emergency third quarterback against the Panthers on Sunday.",
-      "date": "2026-10-18T15:43Z"
+      "detail": "out",
+      "date": "2026-10-19T17:14Z"
+     },
+     {
+      "name": "Michael Carter II",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T17:14Z"
      },
      {
       "name": "Lane Johnson",
@@ -4997,30 +4806,6 @@
       "type": "out",
       "detail": "out",
       "date": "2026-10-18T15:34Z"
-     },
-     {
-      "name": "Jalyx Hunt",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:33Z"
-     },
-     {
-      "name": "Saquon Barkley",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:33Z"
-     },
-     {
-      "name": "Michael Carter II",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:33Z"
      },
      {
       "name": "Nolan Smith Jr.",
@@ -5037,6 +4822,14 @@
       "type": "questionable",
       "detail": "Steele is questionable to return to Sunday's game against the Panthers due to a right shoulder injury.",
       "date": "2026-10-18T17:43Z"
+     },
+     {
+      "name": "Jalen Hurts",
+      "pos": "QB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Hurts (calf) is expected to be held out of football activities for multiple months and miss the rest of the season after new imaging over the weekend revealed several blood clots in his lungs, Tom Pelissero of Netflix reports.",
+      "date": "2026-10-19T14:18Z"
      },
      {
       "name": "Jakorian Bennett",
@@ -5061,9 +4854,17 @@
       "type": "Injured Reserve",
       "detail": "The Eagles have downgraded Stowers (quadriceps) to out for Sunday's game against the Panthers.",
       "date": "2026-10-18T02:36Z"
+     },
+     {
+      "name": "Grant Calcaterra",
+      "pos": "TE",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Eagles downgraded Calcaterra (back) to out Saturday for Sunday's game against the Panthers.",
+      "date": "2026-10-18T02:34Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    },
    "fiveLeg": {
     "game": "car-phi",
@@ -6275,60 +6076,36 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Case Keenum",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Keenum (coach's decision) is inactive but will serve as the Bears' emergency third quarterback against the Falcons on Sunday.",
-      "date": "2026-10-18T16:02Z"
-     },
-     {
       "name": "Tyrique Stevenson Sr.",
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "Stevenson (hip) is inactive for Sunday's game against the Falcons.",
-      "date": "2026-10-18T15:59Z"
+      "detail": "out",
+      "date": "2026-10-19T16:28Z"
      },
      {
       "name": "Kyle Monangai",
       "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:49Z"
-     },
-     {
-      "name": "Jayden Loving",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:49Z"
-     },
-     {
-      "name": "Jordan McFadden",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:49Z"
+      "detail": "out",
+      "date": "2026-10-19T16:28Z"
      },
      {
       "name": "T.J. Edwards",
       "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:49Z"
+      "detail": "out",
+      "date": "2026-10-19T16:28Z"
      },
      {
       "name": "Keyshaun Elliott",
       "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:49Z"
+      "detail": "out",
+      "date": "2026-10-19T16:28Z"
      },
      {
       "name": "Jonah Jackson",
@@ -6352,7 +6129,7 @@
       "status": "Injured Reserve",
       "type": "Injured Reserve",
       "detail": "ir",
-      "date": "2026-10-19T13:16Z"
+      "date": "2026-10-19T21:14Z"
      },
      {
       "name": "Dayo Odeyingbo",
@@ -6365,67 +6142,19 @@
     ],
     "home": [
      {
-      "name": "Cooper Rush",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Rush (coach's decision) is listed as inactive but will serve as the Falcons' emergency third quarterback for Sunday's game against the Bears.",
-      "date": "2026-10-18T16:08Z"
-     },
-     {
-      "name": "Jack Strand",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:51Z"
-     },
-     {
-      "name": "Ethan Onianwa",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:51Z"
-     },
-     {
-      "name": "Christian Harris",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:51Z"
-     },
-     {
       "name": "C.J. Henderson",
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:51Z"
-     },
-     {
-      "name": "Drake Jackson",
-      "pos": "DE",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:51Z"
-     },
-     {
-      "name": "Malcolm DeWalt IV",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:51Z"
+      "detail": "out",
+      "date": "2026-10-19T16:20Z"
      },
      {
       "name": "Kendal Daniels",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Daniels (neck) was alert and had movement in all his extremities while being evaluated at Grady Memorial Hospital.",
+      "detail": "The Falcons announced after Sunday's 31-23 loss to the Bears that Daniels (neck) was alert and had movement in all his extremities after being carted off the field in the third quarter and transported to Grady Memorial Hospital.",
       "date": "2026-10-18T19:51Z"
      },
      {
@@ -6453,7 +6182,7 @@
       "date": "2026-10-11T03:43Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    },
    "fiveLeg": {
     "game": "chi-atl",
@@ -7627,60 +7356,36 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Emari Demercado",
-      "pos": "RB",
+      "name": "DeMarvion Overshown",
+      "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "Demercado (coach's decision) is inactive for Sunday night's matchup with the Packers, Patrik Walker of the Cowboys' official site reports.",
-      "date": "2026-10-18T23:06Z"
+      "detail": "out",
+      "date": "2026-10-19T16:31Z"
      },
      {
       "name": "Drew Shelton",
       "pos": "OT",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T22:55Z"
-     },
-     {
-      "name": "DeMarvion Overshown",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T22:55Z"
+      "detail": "out",
+      "date": "2026-10-19T16:31Z"
      },
      {
       "name": "Cobie Durant",
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T22:55Z"
+      "detail": "out",
+      "date": "2026-10-19T16:31Z"
      },
      {
-      "name": "James Houston",
+      "name": "Dee Winters",
       "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T22:55Z"
-     },
-     {
-      "name": "Camden Brown",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T22:55Z"
-     },
-     {
-      "name": "Alijah Clark",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T22:55Z"
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Winters (ankle) is questionable to return to Sunday night's contest against Green Bay, Nick Harris of the Fort Worth Star-Telegram reports.",
+      "date": "2026-10-19T01:25Z"
      },
      {
       "name": "KaVontae Turpin",
@@ -7689,17 +7394,33 @@
       "type": "questionable",
       "detail": "Turpin (ribs) has been ruled out for the rest of Sunday night's contest versus the Packers, Tommy Yarrish of the Cowboys' official site reports.",
       "date": "2026-10-19T02:25Z"
-     },
-     {
-      "name": "Dee Winters",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Winters (ankle) is questionable to return to Sunday night's contest against Green Bay, Nick Harris of the Fort Worth Star-Telegram reports.",
-      "date": "2026-10-19T01:25Z"
      }
     ],
     "home": [
+     {
+      "name": "Micah Parsons",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Packers head coach Matt LaFleur said that Parsons (knee) won't practice in Week 7, Weston Hodkiewicz of the team's official site reports.",
+      "date": "2026-10-19T21:14Z"
+     },
+     {
+      "name": "Josh Jacobs",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Head coach Matt LaFleur said that Jacobs (personal) will get in a full week of practice, but the practice, but the Packers have yet to determine whether he'll be able to make his season debut Sunday in Detroit, Weston Hodkiewicz of the team's official site reports. \"We feel he's in a pretty good spot,\" LaFleur said. \"He's been training but he's missed the exposure to football.\"",
+      "date": "2026-10-19T20:58Z"
+     },
+     {
+      "name": "Benjamin St-Juste",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T16:36Z"
+     },
      {
       "name": "Aaron Banks",
       "pos": "G",
@@ -7709,52 +7430,12 @@
       "date": "2026-10-18T23:11Z"
      },
      {
-      "name": "Benjamin St-Juste",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T22:52Z"
-     },
-     {
-      "name": "Donovan Jennings",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T22:52Z"
-     },
-     {
-      "name": "Jager Burton",
-      "pos": "C",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T22:52Z"
-     },
-     {
-      "name": "Josh Jacobs",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Jacobs (personal) will be removed from the Commissioner's Exempt List on Monday and be eligible to play as soon as the Packers' Week 7 game at Detroit, Tom Pelissero of Netflix reports.",
-      "date": "2026-10-16T19:57Z"
-     },
-     {
       "name": "Jordon Riley",
       "pos": "DT",
       "status": "Out",
       "type": "out",
       "detail": "Riley (Achilles) had his 21-day practice window opened by the Packers on Wednesday, Mike Spofford of the team's official site reports.",
       "date": "2026-10-15T01:53Z"
-     },
-     {
-      "name": "Micah Parsons",
-      "pos": "DE",
-      "status": "Out",
-      "type": "out",
-      "detail": "The Packers aren't planning on opening Parsons' (knee) 21-day practice window this week ahead of Sunday's game against the Cowboys, Adam Schefter of ESPN reports.",
-      "date": "2026-10-12T17:41Z"
      },
      {
       "name": "Brandon Cisse",
@@ -7789,7 +7470,7 @@
       "date": "2026-10-17T21:54Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    },
    "fiveLeg": {
     "game": "dal-gb",
@@ -9079,56 +8760,16 @@
       "pos": "S",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:03Z"
-     },
-     {
-      "name": "Braden Smith",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:03Z"
-     },
-     {
-      "name": "Nate Thomas",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:03Z"
-     },
-     {
-      "name": "Marlin Klein",
-      "pos": "TE",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:03Z"
+      "detail": "out",
+      "date": "2026-10-19T16:40Z"
      },
      {
       "name": "David Montgomery",
       "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:03Z"
-     },
-     {
-      "name": "Febechi Nwaiwu",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:03Z"
-     },
-     {
-      "name": "Sabastian Harsh",
-      "pos": "DE",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:03Z"
+      "detail": "out",
+      "date": "2026-10-19T16:40Z"
      },
      {
       "name": "Reed Blankenship",
@@ -9143,58 +8784,26 @@
       "pos": "WR",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "The Texans ruled out Dell (knee) for Sunday's game against the Jaguars in London.",
-      "date": "2026-10-15T21:43Z"
+      "detail": "Texans head coach DeMeco Ryans said Monday that Dell (knee) is on track to return from injured reserve to make his season debut in Week 7 versus the Giants, Aaron Wilson of KPRC 2 Houston reports.",
+      "date": "2026-10-19T19:45Z"
      }
     ],
     "home": [
-     {
-      "name": "CJ Williams",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:02Z"
-     },
-     {
-      "name": "Wesley Williams",
-      "pos": "DE",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:02Z"
-     },
-     {
-      "name": "Albert Regis",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:02Z"
-     },
      {
       "name": "Ross Matiscik",
       "pos": "LS",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:02Z"
-     },
-     {
-      "name": "Jalen Huskey",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:02Z"
+      "detail": "out",
+      "date": "2026-10-19T16:43Z"
      },
      {
       "name": "Montaric Brown",
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T12:01Z"
+      "detail": "out",
+      "date": "2026-10-19T16:43Z"
      },
      {
       "name": "Antonio Johnson",
@@ -9213,7 +8822,7 @@
       "date": "2026-10-13T19:12Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    },
    "fiveLeg": {
     "game": "hou-jax",
@@ -10294,56 +9903,56 @@
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "Shelley (hamstring) won't suit up for Sunday's game against the Chiefs.",
-      "date": "2026-10-18T19:18Z"
-     },
-     {
-      "name": "Bud Dupree",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Dupree (neck) won't play in Sunday's game against Kansas City.",
-      "date": "2026-10-18T19:13Z"
+      "detail": "out",
+      "date": "2026-10-19T16:50Z"
      },
      {
       "name": "Tre' Harris",
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:01Z"
+      "detail": "out",
+      "date": "2026-10-19T16:50Z"
      },
      {
       "name": "Donte Jackson",
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:01Z"
+      "detail": "out",
+      "date": "2026-10-19T16:50Z"
      },
      {
       "name": "Derwin James Jr.",
       "pos": "S",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:01Z"
-     },
-     {
-      "name": "Kayode Awosika",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:01Z"
+      "detail": "out",
+      "date": "2026-10-19T16:50Z"
      },
      {
       "name": "Joe Alt",
       "pos": "OT",
       "status": "Out",
       "type": "out",
-      "detail": "Alt (neck), who has been ruled out for Sunday's game against the Chiefs, received favorable news after recently being evaluated by a specialist and is expected to ramp up his activity during the Chargers' Week 7 bye, Ian Rapoport of NFL Network reports.",
-      "date": "2026-10-18T12:31Z"
+      "detail": "out",
+      "date": "2026-10-19T16:50Z"
+     },
+     {
+      "name": "Kayode Awosika",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T16:50Z"
+     },
+     {
+      "name": "Bud Dupree",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T16:50Z"
      },
      {
       "name": "Ladd McConkey",
@@ -10372,60 +9981,20 @@
     ],
     "home": [
      {
-      "name": "Josh Simmons",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:07Z"
-     },
-     {
-      "name": "Jared Wiley",
-      "pos": "TE",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:07Z"
-     },
-     {
-      "name": "Garrett Nussmeier",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:07Z"
-     },
-     {
-      "name": "Diego Pounds",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:07Z"
-     },
-     {
-      "name": "Jack Pyburn",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:07Z"
-     },
-     {
       "name": "Rashee Rice",
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:07Z"
+      "detail": "out",
+      "date": "2026-10-19T16:45Z"
      },
      {
-      "name": "Jadon Canady",
-      "pos": "CB",
+      "name": "Josh Simmons",
+      "pos": "OT",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T19:07Z"
+      "detail": "out",
+      "date": "2026-10-19T16:45Z"
      },
      {
       "name": "Jaylon Moore",
@@ -10444,7 +10013,7 @@
       "date": "2026-10-13T18:29Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    }
   },
   {
@@ -11398,48 +10967,24 @@
       "pos": "DT",
       "status": "Out",
       "type": "out",
-      "detail": "Shepherd (illness) is inactive for Sunday's game against the Giants.",
-      "date": "2026-10-18T15:55Z"
-     },
-     {
-      "name": "Zach Wilson",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Wilson (coach's decision) is inactive but will serve as the Saints' emergency third quarterback against the Giants on Sunday.",
-      "date": "2026-10-18T15:53Z"
-     },
-     {
-      "name": "Mike Reid",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:46Z"
-     },
-     {
-      "name": "John Ridgeway III",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:46Z"
-     },
-     {
-      "name": "Kaden Elliss",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:46Z"
+      "detail": "out",
+      "date": "2026-10-19T17:09Z"
      },
      {
       "name": "Anfernee Jennings",
       "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:46Z"
+      "detail": "out",
+      "date": "2026-10-19T17:09Z"
+     },
+     {
+      "name": "Kaden Elliss",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T17:09Z"
      },
      {
       "name": "Kool-Aid McKinstry",
@@ -11480,48 +11025,32 @@
       "pos": "OT",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-19T13:16Z"
-     },
-     {
-      "name": "Jake Haener",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Haener is inactive for Sunday's game against the Saints but is listed as the Giants' emergency quarterback, Dan Salomone of the team's official site reports.",
-      "date": "2026-10-18T16:15Z"
-     },
-     {
-      "name": "Tyler Nubin",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:54Z"
-     },
-     {
-      "name": "CJ Okoye",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:54Z"
-     },
-     {
-      "name": "Colton Hood",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:54Z"
+      "detail": "out",
+      "date": "2026-10-19T21:24Z"
      },
      {
       "name": "Theo Johnson",
       "pos": "TE",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:54Z"
+      "detail": "out",
+      "date": "2026-10-19T17:10Z"
+     },
+     {
+      "name": "Tyler Nubin",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T17:10Z"
+     },
+     {
+      "name": "Colton Hood",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T17:10Z"
      },
      {
       "name": "Tremaine Edmunds",
@@ -11556,7 +11085,7 @@
       "date": "2026-10-14T21:17Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    }
   },
   {
@@ -11668,18 +11197,6 @@
       "best": 255,
       "bestBook": "draftkings",
       "consensus": 248
-     }
-    },
-    {
-     "name": "Romeo Doubs",
-     "team": "NE",
-     "price": 275,
-     "implied": 0.267,
-     "status": "Questionable",
-     "live": {
-      "best": 275,
-      "bestBook": "draftkings",
-      "consensus": 273
      }
     },
     {
@@ -11907,7 +11424,13 @@
     }
    },
    "live": null,
-   "scratched": [],
+   "scratched": [
+    {
+     "name": "Romeo Doubs",
+     "team": "NE",
+     "status": "Injured Reserve"
+    }
+   ],
    "liveBoard": [
     {
      "name": "Rhamondre Stevenson",
@@ -12506,52 +12029,36 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Nahshon Wright",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:35Z"
-     },
-     {
       "name": "Adonai Mitchell",
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:35Z"
+      "detail": "out",
+      "date": "2026-10-19T17:12Z"
      },
      {
       "name": "Joseph Ossai",
       "pos": "DE",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:35Z"
+      "detail": "out",
+      "date": "2026-10-19T17:12Z"
      },
      {
       "name": "Dylan Parham",
       "pos": "G",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:35Z"
+      "detail": "out",
+      "date": "2026-10-19T17:12Z"
      },
      {
       "name": "Breece Hall",
       "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:35Z"
-     },
-     {
-      "name": "Jack Heflin",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:35Z"
+      "detail": "out",
+      "date": "2026-10-19T17:12Z"
      },
      {
       "name": "Kiko Mauigoa",
@@ -12564,52 +12071,28 @@
     ],
     "home": [
      {
-      "name": "Channing Canada",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Canada (hamstring) is inactive for Sunday's game against the Jets.",
-      "date": "2026-10-18T16:38Z"
-     },
-     {
-      "name": "Behren Morton",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Morton (coach's decision) is inactive but will serve as the Patriots' emergency third quarterback against the Jets on Sunday.",
-      "date": "2026-10-18T16:08Z"
-     },
-     {
       "name": "Karon Prunty",
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:51Z"
+      "detail": "out",
+      "date": "2026-10-19T17:09Z"
      },
      {
-      "name": "Tanner Arkin",
-      "pos": "TE",
+      "name": "Channing Canada",
+      "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:51Z"
-     },
-     {
-      "name": "Dametrious Crownover",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:51Z"
+      "detail": "out",
+      "date": "2026-10-19T17:09Z"
      },
      {
       "name": "Carlton Davis III",
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:51Z"
+      "detail": "out",
+      "date": "2026-10-19T17:09Z"
      },
      {
       "name": "Morgan Moses",
@@ -12638,13 +12121,13 @@
      {
       "name": "Romeo Doubs",
       "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Doubs (shoulder) has been ruled out for the rest of Sunday's game against the Jets, Doug Kyed of the Boston Herald reports.",
-      "date": "2026-10-18T18:54Z"
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Patriots placed Doubs (shoulder) on injured reserve Monday.",
+      "date": "2026-10-19T20:33Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    }
   },
   {
@@ -13524,60 +13007,12 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Eli Heidenreich",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Heidenreich (coach's decision) is inactive for Sunday's game against the Buccaneers.",
-      "date": "2026-10-18T15:59Z"
-     },
-     {
-      "name": "Drew Allar",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Allar (coach's decision) is inactive for Sunday's game against the Buccaneers.",
-      "date": "2026-10-18T15:55Z"
-     },
-     {
-      "name": "Will Howard",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Howard (coach's decision) is inactive for Sunday's game against the Buccaneers, though he is listed as the team's emergency quarterback.",
-      "date": "2026-10-18T15:52Z"
-     },
-     {
       "name": "Ben Skowronek",
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:42Z"
-     },
-     {
-      "name": "Terell Smith",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:42Z"
-     },
-     {
-      "name": "Sean Murphy-Bunting",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:42Z"
-     },
-     {
-      "name": "Kevin Jobity Jr.",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:42Z"
+      "detail": "out",
+      "date": "2026-10-19T17:15Z"
      },
      {
       "name": "Brandin Echols",
@@ -13614,60 +13049,36 @@
     ],
     "home": [
      {
+      "name": "Antoine Winfield Jr.",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T17:18Z"
+     },
+     {
       "name": "Sean Tucker",
       "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "Tucker (quadriceps) is inactive for Sunday's game against the Steelers.",
-      "date": "2026-10-18T16:21Z"
+      "detail": "out",
+      "date": "2026-10-19T17:18Z"
      },
      {
       "name": "Benjamin Morrison",
       "pos": "CB",
       "status": "Out",
       "type": "out",
-      "detail": "Morrison (quadriceps) is inactive for Sunday's game against the Steelers.",
-      "date": "2026-10-18T16:11Z"
-     },
-     {
-      "name": "Antoine Winfield Jr.",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:52Z"
-     },
-     {
-      "name": "Billy Schrauth",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:52Z"
+      "detail": "out",
+      "date": "2026-10-19T17:18Z"
      },
      {
       "name": "Baker Mayfield",
       "pos": "QB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:52Z"
-     },
-     {
-      "name": "Luke Haggard",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:52Z"
-     },
-     {
-      "name": "DeMonte Capehart",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:52Z"
+      "detail": "Buccaneers head coach Todd Bowles said that Mayfield (thumb) is \"supposed to practice\" Wednesday, Brianna Dix of the team's official site reports.",
+      "date": "2026-10-19T16:41Z"
      },
      {
       "name": "David Sills V",
@@ -13678,7 +13089,7 @@
       "date": "2026-10-17T01:18Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    }
   },
   {
@@ -14565,60 +13976,20 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Kylen Granson",
-      "pos": "TE",
-      "status": "Out",
-      "type": "out",
-      "detail": "Granson (coach's decision) is inactive for Sunday's game against the Colts.",
-      "date": "2026-10-18T15:44Z"
-     },
-     {
-      "name": "Nicholas Singleton",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Singleton (coach's decision) is inactive for Sunday's game against the Colts.",
-      "date": "2026-10-18T15:41Z"
-     },
-     {
-      "name": "Alontae Taylor",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Taylor (coach's decision) is inactive for Sunday's game against the Colts, Paul Kuharsky of PaulKuharsky.com reports.",
-      "date": "2026-10-18T15:37Z"
-     },
-     {
       "name": "Kevin Winston Jr.",
       "pos": "S",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:32Z"
-     },
-     {
-      "name": "Jackie Marshall",
-      "pos": "DT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:32Z"
-     },
-     {
-      "name": "Brandon Crenshaw-Dickson",
-      "pos": "OT",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:32Z"
+      "detail": "out",
+      "date": "2026-10-19T17:18Z"
      },
      {
       "name": "Jordan Elliott",
       "pos": "DT",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:32Z"
+      "detail": "out",
+      "date": "2026-10-19T17:18Z"
      },
      {
       "name": "Tony Adams",
@@ -14631,44 +14002,36 @@
     ],
     "home": [
      {
-      "name": "Riley Leonard",
-      "pos": "QB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Leonard (coach's decision) is inactive but will serve as the Colts' emergency third quarterback against the Titans on Sunday.",
-      "date": "2026-10-18T15:50Z"
-     },
-     {
       "name": "Tyler Warren",
       "pos": "TE",
       "status": "Out",
       "type": "out",
-      "detail": "Warren (groin) is inactive for Sunday's game against the Titans.",
-      "date": "2026-10-18T15:38Z"
-     },
-     {
-      "name": "Dalton Tucker",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:34Z"
-     },
-     {
-      "name": "Ashton Dulin",
-      "pos": "WR",
-      "status": "Out",
-      "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:34Z"
+      "detail": "out",
+      "date": "2026-10-19T16:41Z"
      },
      {
       "name": "Jaylon Carlies",
       "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "inactive",
-      "date": "2026-10-18T15:34Z"
+      "detail": "out",
+      "date": "2026-10-19T16:41Z"
+     },
+     {
+      "name": "Ashton Dulin",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "out",
+      "date": "2026-10-19T16:41Z"
+     },
+     {
+      "name": "Sauce Gardner",
+      "pos": "CB",
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "Gardner was diagnosed with a mild left calf strain following an MRI on Monday and is considered week-to-week, Ian Rapoport of NFL Network reports.",
+      "date": "2026-10-19T16:48Z"
      },
      {
       "name": "Rigoberto Sanchez",
@@ -14679,19 +14042,11 @@
       "date": "2026-10-18T19:42Z"
      },
      {
-      "name": "Sauce Gardner",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Gardner (calf) is questionable to return to Sunday's game against the Titans, Jake Arthur of Roundtable.io reports.",
-      "date": "2026-10-18T18:49Z"
-     },
-     {
       "name": "Anthony Gould",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Gould (concussion) won't return to Sunday's game against the Titans, Mike Chappell of Fox 59 News Indianapolis reports.",
+      "detail": "Gould won't return to Sunday's game against the Titans after being diagnosed with a concussion, Mike Chappell of Fox 59 News Indianapolis reports.",
       "date": "2026-10-18T18:46Z"
      },
      {
@@ -14699,8 +14054,8 @@
       "pos": "WR",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Pierce was spotted without a cast on his left ankle/heel Wednesday, James Boyd of The Athletic reports.",
-      "date": "2026-10-15T00:54Z"
+      "detail": "Colts head coach Shane Steichen said Monday that Pierce (heel) won't have his 21-day practice window opened in Week 7, Nathan Brown of The Indianapolis Star reports.",
+      "date": "2026-10-19T18:32Z"
      },
      {
       "name": "Arden Key",
@@ -14711,7 +14066,7 @@
       "date": "2026-10-10T17:51Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    }
   },
   {
@@ -15063,10 +14418,10 @@
    },
    "live": {
     "source": "ESPN/DraftKings",
-    "fetchedAt": "2026-10-19T13:37:24.698Z",
+    "fetchedAt": "2026-10-19T21:30:57.051Z",
     "ml": {
-     "home": -410,
-     "away": 320,
+     "home": -395,
+     "away": 310,
      "bestHome": null,
      "bestAway": null,
      "openHome": -250,
@@ -15078,13 +14433,13 @@
      "awayPrice": null
     },
     "total": {
-     "point": 51.5,
+     "point": 52.5,
      "over": null,
      "under": null
     },
     "winProb": {
-     "away": 0.228,
-     "home": 0.772
+     "away": 0.234,
+     "home": 0.766
     }
    },
    "scratched": [],
@@ -15546,14 +14901,6 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Javontae Jean-Baptiste",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Jean-Baptiste (pectoral) will be sidelined for Monday's clash against the 49ers, Tashan Reed of The Washington Post reports.",
-      "date": "2026-10-18T02:51Z"
-     },
-     {
       "name": "Charles Omenihu",
       "pos": "DE",
       "status": "Out",
@@ -15570,28 +14917,20 @@
       "date": "2026-10-17T16:55Z"
      },
      {
-      "name": "Jacory Croskey-Merritt",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Croskey-Merritt (groin) has been ruled out for Monday night's game against the 49ers, Tashan Reed of The Washington Post reports.",
-      "date": "2026-10-17T16:46Z"
-     },
-     {
       "name": "Stefon Diggs",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Diggs (hamstring) is listed as questionable for Monday's game against San Francisco.",
-      "date": "2026-10-17T19:24Z"
+      "detail": "Diggs (hamstring) is in line to play in Monday's game at San Francisco, Adam Schefter of ESPN reports.",
+      "date": "2026-10-19T20:14Z"
      },
      {
       "name": "Nick Cross",
       "pos": "S",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-17T19:10Z"
+      "detail": "Commanders general manager Adam Peters said that Cross (illness), who is listed as questionable for Monday's game against the 49ers, is \"trending in the right direction\" to be available to play, Nicki Jhabvala of The Athletic reports.",
+      "date": "2026-10-19T18:50Z"
      },
      {
       "name": "Lucas Patrick",
@@ -15626,20 +14965,20 @@
       "date": "2026-10-13T17:10Z"
      },
      {
-      "name": "Jeremy McNichols",
+      "name": "Jacory Croskey-Merritt",
       "pos": "RB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "McNichols (quadriceps) is questionable for Monday night's game against the 49ers.",
-      "date": "2026-10-18T01:45Z"
+      "detail": "The Commanders placed Croskey-Merritt (groin) on injured reserve Monday.",
+      "date": "2026-10-19T20:28Z"
      },
      {
-      "name": "Jordan Magee",
+      "name": "Javontae Jean-Baptiste",
       "pos": "LB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Magee (hamstring) was designated to return from injured reserve Thursday.",
-      "date": "2026-10-15T22:38Z"
+      "detail": "ir",
+      "date": "2026-10-19T20:08Z"
      }
     ],
     "home": [
@@ -15676,6 +15015,14 @@
       "date": "2026-10-12T21:19Z"
      },
      {
+      "name": "Mike Evans",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Evans (ribs/Achilles), who is listed as questionable for Monday's contest against the Commanders, is viewed as a game-time decision, Cam Inman of The San Jose Mercury News reports.",
+      "date": "2026-10-19T15:21Z"
+     },
+     {
       "name": "Mykel Williams",
       "pos": "DE",
       "status": "Questionable",
@@ -15690,14 +15037,6 @@
       "type": "questionable",
       "detail": "Stout (shoulder) is questionable for Monday night's game against the Commanders.",
       "date": "2026-10-18T02:38Z"
-     },
-     {
-      "name": "Mike Evans",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Evans (ribs) is listed as questionable for Monday's game against Washington, Vic Tafur of The Athletic reports.",
-      "date": "2026-10-17T20:58Z"
      },
      {
       "name": "Siran Neal",
@@ -15728,8 +15067,8 @@
       "pos": "WR",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Head coach Kyle Shanahan said Saturday that the 49ers may activate Kirk (calf) from injured reserve ahead of Monday's game against the Commanders, Nick Wagoner of ESPN.com reports.",
-      "date": "2026-10-17T21:02Z"
+      "detail": "The 49ers downgraded Kirk (calf) to out for Monday's game against the Commanders, Matt Maiocco of NBC Sports Bay Area reports.",
+      "date": "2026-10-19T20:47Z"
      },
      {
       "name": "Demarcus Robinson",
@@ -15740,7 +15079,7 @@
       "date": "2026-10-15T19:50Z"
      }
     ],
-    "fetchedAt": "2026-10-19T13:37:24.947Z"
+    "fetchedAt": "2026-10-19T21:30:57.372Z"
    }
   }
  ],
@@ -16205,37 +15544,6 @@
    "kickoff": "2026-10-18T17:00Z"
   },
   {
-   "name": "Davante Adams",
-   "team": "LAR",
-   "pos": "WR",
-   "price": -135,
-   "implied": 0.574,
-   "est": 0.4,
-   "why": "Four touchdowns on 45 targets, including two scores last week with Nacua on the field, and the team lead in red-zone targets through Week 4. Arizona gave up eight touchdowns to receivers in the first four games and has the league's worst opponent passer rating (117.3). The read is 40% (fair +150) against -135 at both books (57.4%), 17 points short. The touchdown role is near the goal line, which is why his yardage projection sits under the book.",
-   "live2": null,
-   "live": {
-    "best": -135,
-    "bestBook": "draftkings",
-    "consensus": -135,
-    "books": {
-     "draftkings": -135,
-     "fanduel": -135
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378229561%232317816402_13L88808Q1-1719984573Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616225575&selectionId=8882932"
-    },
-    "implied": 0.5745,
-    "open": null,
-    "move": null,
-    "fetchedAt": "2026-10-18T14:48:04.303Z"
-   },
-   "edge": -0.174,
-   "status": null,
-   "gameId": "ari-lar",
-   "kickoff": "2026-10-18T20:05:00Z"
-  },
-  {
    "name": "Brock Bowers",
    "team": "LV",
    "pos": "TE",
@@ -16411,6 +15719,37 @@
    "status": null,
    "gameId": "dal-gb",
    "kickoff": "2026-10-19T00:20Z"
+  },
+  {
+   "name": "Puka Nacua",
+   "team": "LAR",
+   "pos": "WR",
+   "price": -150,
+   "implied": 0.6,
+   "est": 0.38,
+   "why": "45 targets in three games, including 17 catches on 24 targets for 138 yards and a touchdown on Monday, and a rushing score at Philadelphia. That is about a third of Stafford's throws, against a secondary missing two safeties with Baker questionable. Two touchdowns in three games and few red-zone targets keep the read at 38% (fair +163). -150 at DraftKings (FanDuel -155) asks 60%: more than 20 points short, so he is a probability call, not a price call.",
+   "live2": null,
+   "live": {
+    "best": -150,
+    "bestBook": "draftkings",
+    "consensus": -152,
+    "books": {
+     "draftkings": -150,
+     "fanduel": -155
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378229561%232317816401_13L88808Q1-1261907500Q20",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616225575&selectionId=42127532"
+    },
+    "implied": 0.6032,
+    "open": null,
+    "move": null,
+    "fetchedAt": "2026-10-18T14:48:04.303Z"
+   },
+   "edge": -0.223,
+   "status": null,
+   "gameId": "ari-lar",
+   "kickoff": "2026-10-18T20:05:00Z"
   }
  ],
  "slateValue": [
@@ -16843,7 +16182,7 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-10-19T13:37:25.794Z",
+  "gradedAt": "2026-10-19T21:30:58.289Z",
   "finals": 12,
   "games": 13,
   "summary": {
@@ -18377,7 +17716,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-10-19T13:37:25.797Z",
+  "updatedAt": "2026-10-19T21:30:58.292Z",
   "weeks": [
    {
     "week": 1,
@@ -19092,7 +18431,7 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-10-19T13:37:25.899Z",
+  "builtAt": "2026-10-19T21:30:58.397Z",
   "books": [
    "FD",
    "DK",
@@ -19196,7 +18535,7 @@
   ]
  },
  "topTen": {
-  "builtAt": "2026-10-19T13:37:25.900Z",
+  "builtAt": "2026-10-19T21:30:58.399Z",
   "note": "Sides, totals and moneylines are priced from the projected score with the simulator’s spreads (13.4 margin, 10.6 total). Touchdown lists use the desk’s role-built estimates. Prop leans are not graded by a probability and are listed by kickoff.",
   "categories": [
    {
@@ -19234,7 +18573,7 @@
       "gameLabel": "WSH@SF",
       "kickoff": "2026-10-20T00:15Z",
       "bet": "SF ML",
-      "price": -410,
+      "price": -395,
       "prob": 0.869,
       "implied": 0.787,
       "edge": 0.082,
@@ -19455,7 +18794,7 @@
   "tickets": []
  },
  "sides": {
-  "builtAt": "2026-10-19T13:37:25.901Z",
+  "builtAt": "2026-10-19T21:30:58.400Z",
   "day": "2026-10-19",
   "title": "Spreads and moneylines · Monday, Oct 19",
   "games": 1,
@@ -19482,19 +18821,19 @@
     "ml": {
      "team": "SF",
      "bet": "SF ML",
-     "price": -410,
+     "price": -395,
      "prob": 0.869,
-     "implied": 0.772,
-     "edge": 0.097
+     "implied": 0.766,
+     "edge": 0.103
     },
     "dog": null,
     "why": "Quick build from ESPN's matchup predictor (SF 86%) against the posted spread."
    }
   ],
-  "text": "**SPREADS AND MONEYLINES · MONDAY, OCT 19**\nEvery game on the slate, most likely cover first. Our projected score against the posted number. Units, not dollars.\n\n**SF -7.5** 71% to cover ▮▮▯▯▯ · SF ML -410 (87%) · WSH@SF, Mon 8:15 PM ET"
+  "text": "**SPREADS AND MONEYLINES · MONDAY, OCT 19**\nEvery game on the slate, most likely cover first. Our projected score against the posted number. Units, not dollars.\n\n**SF -7.5** 71% to cover ▮▮▯▯▯ · SF ML -395 (87%) · WSH@SF, Mon 8:15 PM ET"
  },
  "bestOf": {
-  "builtAt": "2026-10-19T13:37:25.931Z",
+  "builtAt": "2026-10-19T21:30:58.432Z",
   "day": "2026-10-19",
   "title": "Monday, Oct 19: the best of the slate",
   "games": 1,
@@ -19523,7 +18862,7 @@
     "kickoff": "2026-10-20T00:15Z",
     "kickoffLabel": "Mon 8:15 PM ET",
     "bet": "SF ML",
-    "price": -410,
+    "price": -395,
     "prob": 0.869,
     "implied": 0.787,
     "edge": 0.082,
@@ -19532,7 +18871,7 @@
     "why": "Projected WSH 19, SF 34."
    }
   ],
-  "text": "**Cappers & Code · Monday, Oct 19 · Week 6**\nThe model's single best play in every market for 1 games. Units, not dollars.\n\n**Spread of the day:** SF -7.5 -110 · 1u\n_WSH@SF · Mon 8:15 PM ET · model 71% · book 52%_\n\n**Moneyline lock:** SF ML -410 · 1u\n_WSH@SF · Mon 8:15 PM ET · model 87% · book 79%_\n\nFull board, every game and the five-leg for each: https://cappersandcode.com/app\n21+. Gamble responsibly. Estimates are opinions, not guarantees."
+  "text": "**Cappers & Code · Monday, Oct 19 · Week 6**\nThe model's single best play in every market for 1 games. Units, not dollars.\n\n**Spread of the day:** SF -7.5 -110 · 1u\n_WSH@SF · Mon 8:15 PM ET · model 71% · book 52%_\n\n**Moneyline lock:** SF ML -395 · 1u\n_WSH@SF · Mon 8:15 PM ET · model 87% · book 79%_\n\nFull board, every game and the five-leg for each: https://cappersandcode.com/app\n21+. Gamble responsibly. Estimates are opinions, not guarantees."
  },
  "maxFive": null
 }
