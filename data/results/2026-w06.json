@@ -1,15 +1,15 @@
 {
  "season": 2026,
  "week": 6,
- "gradedAt": "2026-10-19T21:30:58.289Z",
- "finals": 12,
+ "gradedAt": "2026-10-20T10:24:08.840Z",
+ "finals": 13,
  "games": 13,
  "summary": {
   "all": {
-   "wins": 41,
-   "losses": 92,
+   "wins": 45,
+   "losses": 97,
    "pushes": 0,
-   "pending": 9
+   "pending": 0
   },
   "lockedIn": {
    "wins": 1,
@@ -19,27 +19,27 @@
   },
   "lean": {
    "wins": 9,
-   "losses": 8,
+   "losses": 9,
    "pushes": 0,
-   "pending": 1
+   "pending": 0
   },
   "top3": {
-   "wins": 9,
-   "losses": 27,
+   "wins": 11,
+   "losses": 28,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "td2": {
-   "wins": 3,
-   "losses": 33,
+   "wins": 4,
+   "losses": 35,
    "pushes": 0,
-   "pending": 3
+   "pending": 0
   },
   "value": {
-   "wins": 8,
-   "losses": 17,
+   "wins": 9,
+   "losses": 18,
    "pushes": 0,
-   "pending": 2
+   "pending": 0
   },
   "prop": {
    "wins": 11,
@@ -58,8 +58,8 @@
     },
     {
      "band": "8-15%",
-     "n": 10,
-     "model": 0.106,
+     "n": 12,
+     "model": 0.107,
      "actual": 0,
      "wins": 0
     },
@@ -72,25 +72,25 @@
     },
     {
      "band": "25-100%",
-     "n": 3,
-     "model": 0.29,
-     "actual": 0,
-     "wins": 0
+     "n": 4,
+     "model": 0.299,
+     "actual": 0.25,
+     "wins": 1
     }
    ],
    "top3": [
     {
      "band": "0-40%",
-     "n": 22,
-     "model": 0.329,
-     "actual": 0.136,
-     "wins": 3
+     "n": 23,
+     "model": 0.332,
+     "actual": 0.174,
+     "wins": 4
     },
     {
      "band": "40-50%",
-     "n": 6,
-     "model": 0.45,
-     "actual": 0.333,
+     "n": 7,
+     "model": 0.452,
+     "actual": 0.286,
      "wins": 2
     },
     {
@@ -102,10 +102,10 @@
     },
     {
      "band": "60-100%",
-     "n": 2,
-     "model": 0.601,
-     "actual": 0.5,
-     "wins": 1
+     "n": 3,
+     "model": 0.607,
+     "actual": 0.667,
+     "wins": 2
     }
    ]
   }
@@ -1444,92 +1444,92 @@
   {
    "game": "wsh-sf",
    "gameLabel": "WSH@SF",
-   "final": null,
+   "final": "WSH 17, SF 23",
    "type": "side",
    "label": "SF -7.5",
-   "result": "pending",
    "conf": 2,
-   "bucket": "lean"
+   "bucket": "lean",
+   "result": "loss"
   },
   {
    "game": "wsh-sf",
    "gameLabel": "WSH@SF",
-   "final": null,
+   "final": "WSH 17, SF 23",
    "type": "atd",
    "label": "Christian McCaffrey ATD",
-   "result": "pending",
    "est": 0.619,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "wsh-sf",
    "gameLabel": "WSH@SF",
-   "final": null,
+   "final": "WSH 17, SF 23",
    "type": "atd",
    "label": "Mike Evans ATD",
-   "result": "pending",
    "est": 0.467,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "loss"
   },
   {
    "game": "wsh-sf",
    "gameLabel": "WSH@SF",
-   "final": null,
+   "final": "WSH 17, SF 23",
    "type": "atd",
    "label": "George Kittle ATD",
-   "result": "pending",
    "est": 0.399,
-   "bucket": "top3"
+   "bucket": "top3",
+   "result": "win"
   },
   {
    "game": "wsh-sf",
    "gameLabel": "WSH@SF",
-   "final": null,
+   "final": "WSH 17, SF 23",
    "type": "td2",
    "label": "Christian McCaffrey 2+ TD",
-   "result": "pending",
    "est": 0.32675734082040253,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "win"
   },
   {
    "game": "wsh-sf",
    "gameLabel": "WSH@SF",
-   "final": null,
+   "final": "WSH 17, SF 23",
    "type": "td2",
    "label": "Mike Evans 2+ TD",
-   "result": "pending",
    "est": 0.13161835538291622,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "wsh-sf",
    "gameLabel": "WSH@SF",
-   "final": null,
+   "final": "WSH 17, SF 23",
    "type": "td2",
    "label": "George Kittle 2+ TD",
-   "result": "pending",
    "est": 0.09299463298739541,
-   "bucket": "td2"
+   "bucket": "td2",
+   "result": "loss"
   },
   {
    "game": "wsh-sf",
    "gameLabel": "WSH@SF",
-   "final": null,
+   "final": "WSH 17, SF 23",
    "type": "atd",
    "label": "Rachaad White ATD",
-   "result": "pending",
    "est": 0.39,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "win"
   },
   {
    "game": "wsh-sf",
    "gameLabel": "WSH@SF",
-   "final": null,
+   "final": "WSH 17, SF 23",
    "type": "atd",
    "label": "Terry McLaurin ATD",
-   "result": "pending",
    "est": 0.279,
-   "bucket": "value"
+   "bucket": "value",
+   "result": "loss"
   }
  ],
  "legs": []

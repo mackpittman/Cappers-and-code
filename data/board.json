@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 6,
- "generatedAt": "2026-10-19T21:30:58.395Z",
+ "generatedAt": "2026-10-20T10:24:08.922Z",
  "researchAsOf": "2026-10-18T14:48:04.940Z",
  "oddsFetchedAt": "2026-10-18T14:48:04.303Z",
  "oddsCredits": {
@@ -32,8 +32,8 @@
   "reserve": 40,
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
- "linesSource": "ESPN/DraftKings",
- "injuriesFetchedAt": "2026-10-19T21:30:57.372Z",
+ "linesSource": null,
+ "injuriesFetchedAt": "2026-10-20T10:24:07.771Z",
  "notes": "Researched one game at a time, then validated for de-vigged win probability, implied team points and board depth before assembly. Anytime-TD prices marked \"verify\" could not be confirmed at a live sportsbook and must be checked before they are played.",
  "completed": [
   {
@@ -1164,6 +1164,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Jeremiyah Love",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Head coach Mike LaFleur said Monday that Love (ankle) is expected to do some running Tuesday, Tyler Drake of ArizonaSports.com reports.",
+      "date": "2026-10-19T23:21Z"
+     },
+     {
       "name": "Wydett Williams Jr.",
       "pos": "S",
       "status": "Out",
@@ -1174,14 +1182,6 @@
      {
       "name": "Andrew Wingard",
       "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-10-19T16:19Z"
-     },
-     {
-      "name": "Jeremiyah Love",
-      "pos": "RB",
       "status": "Out",
       "type": "out",
       "detail": "out",
@@ -1202,24 +1202,24 @@
       "pos": "DT",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-10-19T21:11Z"
+      "detail": "Ford (triceps) will miss the remainder of the 2026 season, Greg Beacham of the Associated Press reported Monday.",
+      "date": "2026-10-20T00:00Z"
      },
      {
       "name": "Kobie Turner",
       "pos": "DE",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-10-19T21:09Z"
+      "detail": "Rams head coach Sean McVay said Monday that Turner is expected to go on injured reserve after sustaining a groin strain in Sunday's 18-16 loss to the Cardinals, Nate Atkins of The Athletic reports.",
+      "date": "2026-10-19T21:57Z"
      },
      {
       "name": "Davante Adams",
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "Adams caught three of four targets for 39 yards during Sunday's 18-16 defeat against the Cardinals.",
-      "date": "2026-10-19T01:18Z"
+      "detail": "Adams sustained a ruptured left hamstring in Sunday's 18-16 loss to the Cardinals and is slated to undergo a procedure that he hopes will allow him to return a little after the Rams' Week 11 bye, Ian Rapoport of NFL Network reports.",
+      "date": "2026-10-19T21:31Z"
      },
      {
       "name": "Trent McDuffie",
@@ -1230,31 +1230,23 @@
       "date": "2026-10-18T18:54Z"
      },
      {
-      "name": "Alaric Jackson",
-      "pos": "OT",
-      "status": "Suspension",
-      "type": "Suspension",
-      "detail": "Jackson's suspension for an act of unsportsmanlike conduct during Monday's game versus the Bills has been reduced to one game, Tom Pelissero of Netflix reports.",
-      "date": "2026-10-15T01:36Z"
-     },
-     {
       "name": "Blake Grupe",
       "pos": "PK",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "The Rams placed Grupe (knee) on injured reserve Monday.",
-      "date": "2026-10-19T19:57Z"
+      "detail": "Rams head coach Sean McVay announced Monday that Grupe will miss the remainder of the season after sustaining a torn ACL in Sunday's 18-16 loss to the Cardinals, Greg Beacham of the Associated Press reports.",
+      "date": "2026-10-19T22:01Z"
      },
      {
       "name": "Myles Garrett",
       "pos": "DE",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Head coach Sean McVay told reporters Tuesday that Garrett (knee) will not return to practice this week and will not play against the Cardinals on Sunday, Cameron DaSilva of USA Today reports.",
-      "date": "2026-10-14T01:14Z"
+      "detail": "Rams head coach Sean McVay said Monday that Garrett (knee) won't have his 21-day practice window opened this week, Adam Grosbard of The Orange County Register reports.",
+      "date": "2026-10-19T21:45Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    },
    "fiveLeg": {
     "game": "ari-lar",
@@ -2540,7 +2532,7 @@
       "date": "2026-10-16T18:20Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    },
    "fiveLeg": {
     "game": "bal-cle",
@@ -2720,7 +2712,7 @@
      "team": "BUF",
      "price": 170,
      "implied": 0.37,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 170,
       "bestBook": "fanduel",
@@ -3641,20 +3633,12 @@
       "date": "2026-10-18T18:57Z"
      },
      {
-      "name": "Dalton Kincaid",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Kincaid (ribs) is questionable to return to Sunday's game against the Raiders.",
-      "date": "2026-10-18T22:39Z"
-     },
-     {
       "name": "C.J. Gardner-Johnson",
       "pos": "S",
       "status": "Suspension",
       "type": "Suspension",
       "detail": "reserve-sus",
-      "date": "2026-10-19T21:24Z"
+      "date": "2026-10-20T10:00Z"
      }
     ],
     "home": [
@@ -3683,7 +3667,7 @@
       "date": "2026-10-16T22:08Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    },
    "fiveLeg": {
     "game": "buf-lv",
@@ -4864,7 +4848,7 @@
       "date": "2026-10-18T02:34Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    },
    "fiveLeg": {
     "game": "car-phi",
@@ -6076,44 +6060,36 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Tyrique Stevenson Sr.",
-      "pos": "CB",
+      "name": "T.J. Edwards",
+      "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-10-19T16:28Z"
+      "detail": "Edwards (hamstring) was estimated as a non-participant on the Bears' official injury report Monday.",
+      "date": "2026-10-20T00:21Z"
      },
      {
       "name": "Kyle Monangai",
       "pos": "RB",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-10-19T16:28Z"
-     },
-     {
-      "name": "T.J. Edwards",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-10-19T16:28Z"
-     },
-     {
-      "name": "Keyshaun Elliott",
-      "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-10-19T16:28Z"
+      "detail": "Monangai (thumb/toe) was listed as a non-participant on Monday's estimated injury report.",
+      "date": "2026-10-20T00:05Z"
      },
      {
       "name": "Jonah Jackson",
       "pos": "G",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Jackson (hip) is doubtful to return to Sunday's game against the Falcons.",
-      "date": "2026-10-18T19:39Z"
+      "detail": "Jackson is dealing with a hip flexor, Jeremy Fowler of ESPN.com reports.",
+      "date": "2026-10-20T02:39Z"
+     },
+     {
+      "name": "Jack Sanborn",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-10-20T00:14Z"
      },
      {
       "name": "Montez Sweat",
@@ -6129,7 +6105,7 @@
       "status": "Injured Reserve",
       "type": "Injured Reserve",
       "detail": "ir",
-      "date": "2026-10-19T21:14Z"
+      "date": "2026-10-20T10:00Z"
      },
      {
       "name": "Dayo Odeyingbo",
@@ -6172,17 +6148,9 @@
       "type": "questionable",
       "detail": "Deablo (arm) has been ruled out for the remainder of Sunday's game against the Bears, William McFadden of the Falcons' official site reports.",
       "date": "2026-10-18T18:07Z"
-     },
-     {
-      "name": "Yasir Abdullah",
-      "pos": "LB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Falcons placed Abdullah (hamstring) on injured reserve Saturday, Tori McElhaney of the team's official site reports.",
-      "date": "2026-10-11T03:43Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    },
    "fiveLeg": {
     "game": "chi-atl",
@@ -7360,8 +7328,8 @@
       "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "out",
-      "date": "2026-10-19T16:31Z"
+      "detail": "Overshown (hamstring) is on track to play in Week 7 against the Eagles, Joe Hoyt of The Dallas Morning News reports.",
+      "date": "2026-10-19T23:29Z"
      },
      {
       "name": "Drew Shelton",
@@ -7384,16 +7352,16 @@
       "pos": "LB",
       "status": "Doubtful",
       "type": "doubtful",
-      "detail": "Winters (ankle) is questionable to return to Sunday night's contest against Green Bay, Nick Harris of the Fort Worth Star-Telegram reports.",
-      "date": "2026-10-19T01:25Z"
+      "detail": "Winters sprained his Achilles during Sunday night's game against the Packers and will likely miss at least a week, Joe Hoyt of The Dallas Morning News reports.",
+      "date": "2026-10-19T23:31Z"
      },
      {
       "name": "KaVontae Turpin",
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Turpin (ribs) has been ruled out for the rest of Sunday night's contest versus the Packers, Tommy Yarrish of the Cowboys' official site reports.",
-      "date": "2026-10-19T02:25Z"
+      "detail": "Turpin (ribs) is expected to miss the team's Week 7 matchup with the Eagles, Joe Hoyt of The Dallas Morning News reports.",
+      "date": "2026-10-20T00:07Z"
      }
     ],
     "home": [
@@ -7402,16 +7370,8 @@
       "pos": "DE",
       "status": "Out",
       "type": "out",
-      "detail": "Packers head coach Matt LaFleur said that Parsons (knee) won't practice in Week 7, Weston Hodkiewicz of the team's official site reports.",
+      "detail": "Packers head coach Matt LaFleur said that Parsons (knee) won't practice in Week 7, Weston Hodkiewicz of the team's official site reports. \"He has to clear some hurdles yet before we get to that point,\" LaFleur said.",
       "date": "2026-10-19T21:14Z"
-     },
-     {
-      "name": "Josh Jacobs",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Head coach Matt LaFleur said that Jacobs (personal) will get in a full week of practice, but the practice, but the Packers have yet to determine whether he'll be able to make his season debut Sunday in Detroit, Weston Hodkiewicz of the team's official site reports. \"We feel he's in a pretty good spot,\" LaFleur said. \"He's been training but he's missed the exposure to football.\"",
-      "date": "2026-10-19T20:58Z"
      },
      {
       "name": "Benjamin St-Juste",
@@ -7470,7 +7430,7 @@
       "date": "2026-10-17T21:54Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    },
    "fiveLeg": {
     "game": "dal-gb",
@@ -8822,7 +8782,7 @@
       "date": "2026-10-13T19:12Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    },
    "fiveLeg": {
     "game": "hou-jax",
@@ -10013,7 +9973,7 @@
       "date": "2026-10-13T18:29Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    }
   },
   {
@@ -10987,6 +10947,14 @@
       "date": "2026-10-19T17:09Z"
      },
      {
+      "name": "Cesar Ruiz",
+      "pos": "G",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Ruiz (knee) made the trip to Paris ahead of the Saints' game against the Eagles in Week 7, Nick Underhill of NewOrleans.Football reports.",
+      "date": "2026-10-20T00:17Z"
+     },
+     {
       "name": "Kool-Aid McKinstry",
       "pos": "CB",
       "status": "Questionable",
@@ -11001,14 +10969,6 @@
       "type": "questionable",
       "detail": "Riley sustained a neck injury in the Saints' 34-27 win over the Giants on Sunday, Ross Jackson of WWL Louisiana reports.",
       "date": "2026-10-18T20:59Z"
-     },
-     {
-      "name": "Cesar Ruiz",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Ruiz (knee) won't return to Sunday's game against the Giants, Katherine Terrell of ESPN.com reports.",
-      "date": "2026-10-18T19:42Z"
      },
      {
       "name": "Jordyn Tyson",
@@ -11026,7 +10986,7 @@
       "status": "Out",
       "type": "out",
       "detail": "out",
-      "date": "2026-10-19T21:24Z"
+      "date": "2026-10-20T10:00Z"
      },
      {
       "name": "Theo Johnson",
@@ -11085,7 +11045,7 @@
       "date": "2026-10-14T21:17Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    }
   },
   {
@@ -11156,7 +11116,7 @@
      "team": "NE",
      "price": 140,
      "implied": 0.417,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 140,
       "bestBook": "draftkings",
@@ -11322,7 +11282,7 @@
       "fetchedAt": "2026-10-18T14:48:04.303Z"
      },
      "edge": -0.067,
-     "status": null
+     "status": "Questionable"
     }
    ],
    "value": [
@@ -12071,6 +12031,14 @@
     ],
     "home": [
      {
+      "name": "Carlton Davis III",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Davis (neck) did not participate in Monday's estimated practice.",
+      "date": "2026-10-20T00:32Z"
+     },
+     {
       "name": "Karon Prunty",
       "pos": "CB",
       "status": "Out",
@@ -12087,12 +12055,12 @@
       "date": "2026-10-19T17:09Z"
      },
      {
-      "name": "Carlton Davis III",
-      "pos": "CB",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-10-19T17:09Z"
+      "name": "A.J. Brown",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Brown (ankle) was listed as limited on Monday's estimated practice report.",
+      "date": "2026-10-20T00:12Z"
      },
      {
       "name": "Morgan Moses",
@@ -12123,11 +12091,11 @@
       "pos": "WR",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "The Patriots placed Doubs (shoulder) on injured reserve Monday.",
-      "date": "2026-10-19T20:33Z"
+      "detail": "Doubs (shoulder) is hopeful to return after the Patriots' Week 11 bye and isn't expected to face a long-term absence, Jeremy Fowler of ESPN.com reports.",
+      "date": "2026-10-19T23:53Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    }
   },
   {
@@ -13089,7 +13057,7 @@
       "date": "2026-10-17T01:18Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    }
   },
   {
@@ -14066,7 +14034,7 @@
       "date": "2026-10-10T17:51Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    }
   },
   {
@@ -14121,18 +14089,6 @@
      }
     },
     {
-     "name": "Mike Evans",
-     "team": "SF",
-     "price": -125,
-     "implied": 0.556,
-     "status": "Questionable",
-     "live": {
-      "best": -125,
-      "bestBook": "draftkings",
-      "consensus": -130
-     }
-    },
-    {
      "name": "George Kittle",
      "team": "SF",
      "price": 110,
@@ -14157,23 +14113,11 @@
      }
     },
     {
-     "name": "Terry McLaurin",
-     "team": "WSH",
-     "price": 200,
-     "implied": 0.333,
-     "status": null,
-     "live": {
-      "best": 200,
-      "bestBook": "draftkings",
-      "consensus": 200
-     }
-    },
-    {
      "name": "Stefon Diggs",
      "team": "WSH",
      "price": 220,
      "implied": 0.313,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 220,
       "bestBook": "draftkings",
@@ -14260,35 +14204,6 @@
      "status": null
     },
     {
-     "name": "Mike Evans",
-     "team": "SF",
-     "pos": "WR",
-     "price": -125,
-     "implied": 0.556,
-     "est": 0.467,
-     "why": "Quick build: one of the three likeliest scorers by the posted price, 47% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-     "live2": null,
-     "live": {
-      "best": -125,
-      "bestBook": "draftkings",
-      "consensus": -130,
-      "books": {
-       "draftkings": -125,
-       "fanduel": -135
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378218690%232317773835_13L88808Q11665839176Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.615840488&selectionId=48244063"
-      },
-      "implied": 0.5652,
-      "open": null,
-      "move": null,
-      "fetchedAt": "2026-10-18T14:48:04.303Z"
-     },
-     "edge": -0.098,
-     "status": "Questionable"
-    },
-    {
      "name": "George Kittle",
      "team": "SF",
      "pos": "TE",
@@ -14347,35 +14262,6 @@
      },
      "edge": -0.075,
      "status": null
-    },
-    {
-     "name": "Terry McLaurin",
-     "team": "WSH",
-     "pos": "WR",
-     "price": 200,
-     "implied": 0.333,
-     "est": 0.279,
-     "why": "Quick build: next on the board by price; listed for coverage, not as a value claim.",
-     "live2": null,
-     "live": {
-      "best": 200,
-      "bestBook": "draftkings",
-      "consensus": 200,
-      "books": {
-       "draftkings": 200,
-       "fanduel": 200
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378218690%232317773848_13L88808Q11101654981Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.615840488&selectionId=12302590"
-      },
-      "implied": 0.3333,
-      "open": null,
-      "move": null,
-      "fetchedAt": "2026-10-18T14:48:04.303Z"
-     },
-     "edge": -0.054,
-     "status": null
     }
    ],
    "stacks": [
@@ -14409,40 +14295,26 @@
     "propLeans": []
    },
    "status": {
-    "state": "STATUS_SCHEDULED",
-    "detail": "10/19 - 8:15 PM EDT",
+    "state": "STATUS_FINAL",
+    "detail": "Final",
     "score": {
-     "away": 0,
-     "home": 0
+     "away": 17,
+     "home": 23
     }
    },
-   "live": {
-    "source": "ESPN/DraftKings",
-    "fetchedAt": "2026-10-19T21:30:57.051Z",
-    "ml": {
-     "home": -395,
-     "away": 310,
-     "bestHome": null,
-     "bestAway": null,
-     "openHome": -250,
-     "openAway": 205
+   "live": null,
+   "scratched": [
+    {
+     "name": "Mike Evans",
+     "team": "SF",
+     "status": "Doubtful"
     },
-    "spread": {
-     "homePoint": -7.5,
-     "homePrice": null,
-     "awayPrice": null
-    },
-    "total": {
-     "point": 52.5,
-     "over": null,
-     "under": null
-    },
-    "winProb": {
-     "away": 0.234,
-     "home": 0.766
+    {
+     "name": "Terry McLaurin",
+     "team": "WSH",
+     "status": "Out"
     }
-   },
-   "scratched": [],
+   ],
    "liveBoard": [
     {
      "name": "Christian McCaffrey",
@@ -14901,68 +14773,76 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Terry McLaurin",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "McLaurin left Monday night's game against the 49ers in the first quarter with a left knee injury, Nicki Jhabvala of The Athletic reports.",
+      "date": "2026-10-20T00:58Z"
+     },
+     {
+      "name": "Isaac Yiadom",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-19T22:52Z"
+     },
+     {
       "name": "Charles Omenihu",
       "pos": "DE",
       "status": "Out",
       "type": "out",
-      "detail": "Omenihu (groin/ankle) has been ruled out for Monday's Week 6 matchup against San Francisco, Tashan Reed of The Washington Post reports.",
-      "date": "2026-10-18T02:46Z"
+      "detail": "inactive",
+      "date": "2026-10-19T22:52Z"
+     },
+     {
+      "name": "Tanoa Togiai",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-19T22:52Z"
+     },
+     {
+      "name": "T.J. Maguranyanga",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-19T22:52Z"
      },
      {
       "name": "Marcus Mariota",
       "pos": "QB",
       "status": "Out",
       "type": "out",
-      "detail": "Mariota (knee) has been ruled out for Monday's game against the 49ers, Tashan Reed of The Washington Post reports.",
-      "date": "2026-10-17T16:55Z"
+      "detail": "inactive",
+      "date": "2026-10-19T22:52Z"
      },
      {
-      "name": "Stefon Diggs",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Diggs (hamstring) is in line to play in Monday's game at San Francisco, Adam Schefter of ESPN reports.",
-      "date": "2026-10-19T20:14Z"
-     },
-     {
-      "name": "Nick Cross",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Commanders general manager Adam Peters said that Cross (illness), who is listed as questionable for Monday's game against the 49ers, is \"trending in the right direction\" to be available to play, Nicki Jhabvala of The Athletic reports.",
-      "date": "2026-10-19T18:50Z"
-     },
-     {
-      "name": "Lucas Patrick",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-16T22:18Z"
+      "name": "Fabian Moreau",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-19T22:52Z"
      },
      {
       "name": "Javon Kinlaw",
       "pos": "DT",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-16T22:17Z"
+      "detail": "Kinlaw (knee) won't return to Washington's matchup versus the 49ers on Monday, John Keim of ESPN reports.",
+      "date": "2026-10-20T02:16Z"
      },
      {
-      "name": "Tyler Owens",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-13T17:10Z"
-     },
-     {
-      "name": "Percy Butler",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-13T17:10Z"
+      "name": "Javontae Jean-Baptiste",
+      "pos": "LB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Commanders placed Jean-Baptiste (pectoral) on injured reserve Monday.",
+      "date": "2026-10-19T23:14Z"
      },
      {
       "name": "Jacory Croskey-Merritt",
@@ -14971,96 +14851,80 @@
       "type": "Injured Reserve",
       "detail": "The Commanders placed Croskey-Merritt (groin) on injured reserve Monday.",
       "date": "2026-10-19T20:28Z"
-     },
-     {
-      "name": "Javontae Jean-Baptiste",
-      "pos": "LB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "ir",
-      "date": "2026-10-19T20:08Z"
      }
     ],
     "home": [
      {
-      "name": "Marques Sigle",
-      "pos": "S",
+      "name": "Garret Wallow",
+      "pos": "LB",
       "status": "Out",
       "type": "out",
-      "detail": "Sigle (ankle) won't play in Monday's Week 6 matchup against Washington, Cam Inman of The San Jose Mercury News reports.",
-      "date": "2026-10-18T02:23Z"
+      "detail": "inactive",
+      "date": "2026-10-19T22:56Z"
      },
      {
-      "name": "Nick Bosa",
-      "pos": "DE",
+      "name": "Kurtis Rourke",
+      "pos": "QB",
       "status": "Out",
       "type": "out",
-      "detail": "Bosa (knee/calf) has been ruled out for Monday's Week 6 matchup against the Commanders, Cam Inman of The San Jose Mercury News reports.",
-      "date": "2026-10-18T02:19Z"
+      "detail": "inactive",
+      "date": "2026-10-19T22:56Z"
      },
      {
       "name": "Deebo Samuel Sr.",
       "pos": "WR",
       "status": "Out",
       "type": "out",
-      "detail": "Head coach Kyle Shanahan said Thursday that the 49ers will \"hold off\" on placing Samuel (hamstring) on IR due to the team's bye in Week 8, Vic Tafur of the Athletic reports.",
-      "date": "2026-10-15T19:54Z"
+      "detail": "inactive",
+      "date": "2026-10-19T22:56Z"
      },
      {
-      "name": "Garret Wallow",
-      "pos": "LB",
+      "name": "Marques Sigle",
+      "pos": "S",
       "status": "Out",
       "type": "out",
-      "detail": "San Francisco head coach Kyle Shanahan said Monday that Wallow will miss \"at least a couple of weeks\" due to a hamstring strain, Nick Wagoner of ESPN.com reports.",
-      "date": "2026-10-12T21:19Z"
+      "detail": "inactive",
+      "date": "2026-10-19T22:56Z"
+     },
+     {
+      "name": "Naquan Jones",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-19T22:56Z"
+     },
+     {
+      "name": "Nick Bosa",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-19T22:56Z"
+     },
+     {
+      "name": "Enrique Cruz Jr.",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-10-19T22:56Z"
      },
      {
       "name": "Mike Evans",
       "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Evans (ribs/Achilles), who is listed as questionable for Monday's contest against the Commanders, is viewed as a game-time decision, Cam Inman of The San Jose Mercury News reports.",
-      "date": "2026-10-19T15:21Z"
+      "status": "Doubtful",
+      "type": "doubtful",
+      "detail": "doubtful",
+      "date": "2026-10-20T03:40Z"
      },
      {
-      "name": "Mykel Williams",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Williams (knee) is questionable for Monday night's game against the Commanders.",
-      "date": "2026-10-18T02:40Z"
-     },
-     {
-      "name": "Upton Stout",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Stout (shoulder) is questionable for Monday night's game against the Commanders.",
-      "date": "2026-10-18T02:38Z"
-     },
-     {
-      "name": "Siran Neal",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-15T23:27Z"
-     },
-     {
-      "name": "Gracen Halton",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-10-15T23:26Z"
-     },
-     {
-      "name": "Dre Greenlaw",
+      "name": "Luke Gifford",
       "pos": "LB",
-      "status": "Suspension",
-      "type": "Suspension",
-      "detail": "Greenlaw's appeal of a one-game suspension was denied by the NFL on Tuesday, Adam Schefter of ESPN reports.",
-      "date": "2026-10-14T01:22Z"
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Gifford (groin) is questionable to return to Monday's game against the Commanders, Nick Wagoner of ESPN.com reports.",
+      "date": "2026-10-20T02:08Z"
      },
      {
       "name": "Christian Kirk",
@@ -15069,17 +14933,9 @@
       "type": "Injured Reserve",
       "detail": "The 49ers downgraded Kirk (calf) to out for Monday's game against the Commanders, Matt Maiocco of NBC Sports Bay Area reports.",
       "date": "2026-10-19T20:47Z"
-     },
-     {
-      "name": "Demarcus Robinson",
-      "pos": "WR",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Head coach Kyle Shanahan said Thursday that Robinson (ankle) has an \"outside chance\" to return from injured reserve for the 49ers' Week 7 game versus the Falcons but is more likely to be activated following the team's Week 8 bye, David Lombardi of SFStandard.com reports.",
-      "date": "2026-10-15T19:50Z"
      }
     ],
-    "fetchedAt": "2026-10-19T21:30:57.372Z"
+    "fetchedAt": "2026-10-20T10:24:07.771Z"
    }
   }
  ],
@@ -15482,37 +15338,6 @@
    "kickoff": "2026-10-18T17:00:00Z"
   },
   {
-   "name": "Mike Evans",
-   "team": "SF",
-   "pos": "WR",
-   "price": -125,
-   "implied": 0.556,
-   "est": 0.467,
-   "why": "Quick build: one of the three likeliest scorers by the posted price, 47% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-   "live2": null,
-   "live": {
-    "best": -125,
-    "bestBook": "draftkings",
-    "consensus": -130,
-    "books": {
-     "draftkings": -125,
-     "fanduel": -135
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378218690%232317773835_13L88808Q11665839176Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.615840488&selectionId=48244063"
-    },
-    "implied": 0.5652,
-    "open": null,
-    "move": null,
-    "fetchedAt": "2026-10-18T14:48:04.303Z"
-   },
-   "edge": -0.098,
-   "status": "Questionable",
-   "gameId": "wsh-sf",
-   "kickoff": "2026-10-20T00:15Z"
-  },
-  {
    "name": "Rhamondre Stevenson",
    "team": "NE",
    "pos": "RB",
@@ -15750,6 +15575,37 @@
    "status": null,
    "gameId": "ari-lar",
    "kickoff": "2026-10-18T20:05:00Z"
+  },
+  {
+   "name": "Cam Skattebo",
+   "team": "NYG",
+   "pos": "RB",
+   "price": 125,
+   "implied": 0.444,
+   "est": 0.373,
+   "why": "Quick build: one of the three likeliest scorers by the posted price, 37% after the calibration haircut. Role not hand-checked; confirm at inactives.",
+   "live2": null,
+   "live": {
+    "best": 125,
+    "bestBook": "fanduel",
+    "consensus": 118,
+    "books": {
+     "draftkings": 110,
+     "fanduel": 125
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378209599%232317730688_13L88808Q1-477446093Q20",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616123024&selectionId=78488478"
+    },
+    "implied": 0.4587,
+    "open": null,
+    "move": null,
+    "fetchedAt": "2026-10-18T14:48:04.303Z"
+   },
+   "edge": -0.086,
+   "status": null,
+   "gameId": "no-nyg",
+   "kickoff": "2026-10-18T17:00Z"
   }
  ],
  "slateValue": [
@@ -16182,15 +16038,15 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-10-19T21:30:58.289Z",
-  "finals": 12,
+  "gradedAt": "2026-10-20T10:24:08.840Z",
+  "finals": 13,
   "games": 13,
   "summary": {
    "all": {
-    "wins": 41,
-    "losses": 92,
+    "wins": 45,
+    "losses": 97,
     "pushes": 0,
-    "pending": 9
+    "pending": 0
    },
    "lockedIn": {
     "wins": 1,
@@ -16200,27 +16056,27 @@
    },
    "lean": {
     "wins": 9,
-    "losses": 8,
+    "losses": 9,
     "pushes": 0,
-    "pending": 1
+    "pending": 0
    },
    "top3": {
-    "wins": 9,
-    "losses": 27,
+    "wins": 11,
+    "losses": 28,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "td2": {
-    "wins": 3,
-    "losses": 33,
+    "wins": 4,
+    "losses": 35,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "value": {
-    "wins": 8,
-    "losses": 17,
+    "wins": 9,
+    "losses": 18,
     "pushes": 0,
-    "pending": 2
+    "pending": 0
    },
    "prop": {
     "wins": 11,
@@ -16239,8 +16095,8 @@
      },
      {
       "band": "8-15%",
-      "n": 10,
-      "model": 0.106,
+      "n": 12,
+      "model": 0.107,
       "actual": 0,
       "wins": 0
      },
@@ -16253,25 +16109,25 @@
      },
      {
       "band": "25-100%",
-      "n": 3,
-      "model": 0.29,
-      "actual": 0,
-      "wins": 0
+      "n": 4,
+      "model": 0.299,
+      "actual": 0.25,
+      "wins": 1
      }
     ],
     "top3": [
      {
       "band": "0-40%",
-      "n": 22,
-      "model": 0.329,
-      "actual": 0.136,
-      "wins": 3
+      "n": 23,
+      "model": 0.332,
+      "actual": 0.174,
+      "wins": 4
      },
      {
       "band": "40-50%",
-      "n": 6,
-      "model": 0.45,
-      "actual": 0.333,
+      "n": 7,
+      "model": 0.452,
+      "actual": 0.286,
       "wins": 2
      },
      {
@@ -16283,10 +16139,10 @@
      },
      {
       "band": "60-100%",
-      "n": 2,
-      "model": 0.601,
-      "actual": 0.5,
-      "wins": 1
+      "n": 3,
+      "model": 0.607,
+      "actual": 0.667,
+      "wins": 2
      }
     ]
    }
@@ -17625,98 +17481,98 @@
    {
     "game": "wsh-sf",
     "gameLabel": "WSH@SF",
-    "final": null,
+    "final": "WSH 17, SF 23",
     "type": "side",
     "label": "SF -7.5",
-    "result": "pending",
     "conf": 2,
-    "bucket": "lean"
+    "bucket": "lean",
+    "result": "loss"
    },
    {
     "game": "wsh-sf",
     "gameLabel": "WSH@SF",
-    "final": null,
+    "final": "WSH 17, SF 23",
     "type": "atd",
     "label": "Christian McCaffrey ATD",
-    "result": "pending",
     "est": 0.619,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "win"
    },
    {
     "game": "wsh-sf",
     "gameLabel": "WSH@SF",
-    "final": null,
+    "final": "WSH 17, SF 23",
     "type": "atd",
     "label": "Mike Evans ATD",
-    "result": "pending",
     "est": 0.467,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "loss"
    },
    {
     "game": "wsh-sf",
     "gameLabel": "WSH@SF",
-    "final": null,
+    "final": "WSH 17, SF 23",
     "type": "atd",
     "label": "George Kittle ATD",
-    "result": "pending",
     "est": 0.399,
-    "bucket": "top3"
+    "bucket": "top3",
+    "result": "win"
    },
    {
     "game": "wsh-sf",
     "gameLabel": "WSH@SF",
-    "final": null,
+    "final": "WSH 17, SF 23",
     "type": "td2",
     "label": "Christian McCaffrey 2+ TD",
-    "result": "pending",
     "est": 0.32675734082040253,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "win"
    },
    {
     "game": "wsh-sf",
     "gameLabel": "WSH@SF",
-    "final": null,
+    "final": "WSH 17, SF 23",
     "type": "td2",
     "label": "Mike Evans 2+ TD",
-    "result": "pending",
     "est": 0.13161835538291622,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "wsh-sf",
     "gameLabel": "WSH@SF",
-    "final": null,
+    "final": "WSH 17, SF 23",
     "type": "td2",
     "label": "George Kittle 2+ TD",
-    "result": "pending",
     "est": 0.09299463298739541,
-    "bucket": "td2"
+    "bucket": "td2",
+    "result": "loss"
    },
    {
     "game": "wsh-sf",
     "gameLabel": "WSH@SF",
-    "final": null,
+    "final": "WSH 17, SF 23",
     "type": "atd",
     "label": "Rachaad White ATD",
-    "result": "pending",
     "est": 0.39,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "win"
    },
    {
     "game": "wsh-sf",
     "gameLabel": "WSH@SF",
-    "final": null,
+    "final": "WSH 17, SF 23",
     "type": "atd",
     "label": "Terry McLaurin ATD",
-    "result": "pending",
     "est": 0.279,
-    "bucket": "value"
+    "bucket": "value",
+    "result": "loss"
    }
   ]
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-10-19T21:30:58.292Z",
+  "updatedAt": "2026-10-20T10:24:08.841Z",
   "weeks": [
    {
     "week": 1,
@@ -18275,14 +18131,14 @@
    },
    {
     "week": 6,
-    "finals": 12,
+    "finals": 13,
     "games": 13,
     "summary": {
      "all": {
-      "wins": 41,
-      "losses": 92,
+      "wins": 45,
+      "losses": 97,
       "pushes": 0,
-      "pending": 9
+      "pending": 0
      },
      "lockedIn": {
       "wins": 1,
@@ -18292,27 +18148,27 @@
      },
      "lean": {
       "wins": 9,
-      "losses": 8,
+      "losses": 9,
       "pushes": 0,
-      "pending": 1
+      "pending": 0
      },
      "top3": {
-      "wins": 9,
-      "losses": 27,
+      "wins": 11,
+      "losses": 28,
       "pushes": 0,
-      "pending": 3
+      "pending": 0
      },
      "td2": {
-      "wins": 3,
-      "losses": 33,
+      "wins": 4,
+      "losses": 35,
       "pushes": 0,
-      "pending": 3
+      "pending": 0
      },
      "value": {
-      "wins": 8,
-      "losses": 17,
+      "wins": 9,
+      "losses": 18,
       "pushes": 0,
-      "pending": 2
+      "pending": 0
      },
      "prop": {
       "wins": 11,
@@ -18331,8 +18187,8 @@
        },
        {
         "band": "8-15%",
-        "n": 10,
-        "model": 0.106,
+        "n": 12,
+        "model": 0.107,
         "actual": 0,
         "wins": 0
        },
@@ -18345,25 +18201,25 @@
        },
        {
         "band": "25-100%",
-        "n": 3,
-        "model": 0.29,
-        "actual": 0,
-        "wins": 0
+        "n": 4,
+        "model": 0.299,
+        "actual": 0.25,
+        "wins": 1
        }
       ],
       "top3": [
        {
         "band": "0-40%",
-        "n": 22,
-        "model": 0.329,
-        "actual": 0.136,
-        "wins": 3
+        "n": 23,
+        "model": 0.332,
+        "actual": 0.174,
+        "wins": 4
        },
        {
         "band": "40-50%",
-        "n": 6,
-        "model": 0.45,
-        "actual": 0.333,
+        "n": 7,
+        "model": 0.452,
+        "actual": 0.286,
         "wins": 2
        },
        {
@@ -18375,10 +18231,10 @@
        },
        {
         "band": "60-100%",
-        "n": 2,
-        "model": 0.601,
-        "actual": 0.5,
-        "wins": 1
+        "n": 3,
+        "model": 0.607,
+        "actual": 0.667,
+        "wins": 2
        }
       ]
      }
@@ -18387,10 +18243,10 @@
   ],
   "season_totals": {
    "all": {
-    "wins": 398,
-    "losses": 811,
+    "wins": 402,
+    "losses": 816,
     "pushes": 4,
-    "pending": 9
+    "pending": 0
    },
    "lockedIn": {
     "wins": 27,
@@ -18400,27 +18256,27 @@
    },
    "lean": {
     "wins": 78,
-    "losses": 80,
+    "losses": 81,
     "pushes": 3,
-    "pending": 1
+    "pending": 0
    },
    "top3": {
-    "wins": 106,
-    "losses": 161,
+    "wins": 108,
+    "losses": 162,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "td2": {
-    "wins": 33,
-    "losses": 234,
+    "wins": 34,
+    "losses": 236,
     "pushes": 0,
-    "pending": 3
+    "pending": 0
    },
    "value": {
-    "wins": 40,
-    "losses": 178,
+    "wins": 41,
+    "losses": 179,
     "pushes": 0,
-    "pending": 2
+    "pending": 0
    },
    "prop": {
     "wins": 114,
@@ -18431,14 +18287,14 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-10-19T21:30:58.397Z",
+  "builtAt": "2026-10-20T10:24:08.924Z",
   "books": [
    "FD",
    "DK",
    "BOOK"
   ],
   "oddsFetchedAt": "2026-10-18T14:48:04.303Z",
-  "note": "Prices are the better of FanDuel and DraftKings at the last pull.",
+  "note": "TD prices are more than 36 hours old; re-check FD/DK before betting.",
   "categories": [
    {
     "key": "anytime",
@@ -18535,27 +18391,14 @@
   ]
  },
  "topTen": {
-  "builtAt": "2026-10-19T21:30:58.399Z",
+  "builtAt": "2026-10-20T10:24:08.924Z",
   "note": "Sides, totals and moneylines are priced from the projected score with the simulator’s spreads (13.4 margin, 10.6 total). Touchdown lists use the desk’s role-built estimates. Prop leans are not graded by a probability and are listed by kickoff.",
   "categories": [
    {
     "key": "sides",
     "title": "Spreads",
     "blurb": "Ranked by desk confidence, then the projection’s cover rate.",
-    "plays": [
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "bet": "SF -7.5",
-      "price": -110,
-      "prob": 0.712,
-      "implied": 0.524,
-      "edge": 0.188,
-      "conf": 2,
-      "why": "Quick build from ESPN's matchup predictor (SF 86%) against the posted spread."
-     }
-    ]
+    "plays": []
    },
    {
     "key": "totals",
@@ -18567,112 +18410,13 @@
     "key": "moneyline",
     "title": "Moneyline",
     "blurb": "Most likely winners by the projected score.",
-    "plays": [
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "bet": "SF ML",
-      "price": -395,
-      "prob": 0.869,
-      "implied": 0.787,
-      "edge": 0.082,
-      "conf": null,
-      "why": "Projected WSH 19, SF 34."
-     }
-    ]
+    "plays": []
    },
    {
     "key": "atd",
     "title": "Anytime TD",
     "blurb": "Most likely scorers on the slate, priced.",
-    "plays": [
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "name": "Christian McCaffrey",
-      "team": "SF",
-      "pos": "RB",
-      "price": -280,
-      "priceNote": null,
-      "prob": 0.619,
-      "implied": 0.737,
-      "edge": -0.118,
-      "est2": 0.251,
-      "price2": null,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 62% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "Christian McCaffrey anytime TD"
-     },
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "name": "Mike Evans",
-      "team": "SF",
-      "pos": "WR",
-      "price": -125,
-      "priceNote": null,
-      "prob": 0.467,
-      "implied": 0.556,
-      "edge": -0.089,
-      "est2": 0.132,
-      "price2": null,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 47% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "Mike Evans anytime TD"
-     },
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "name": "George Kittle",
-      "team": "SF",
-      "pos": "TE",
-      "price": 110,
-      "priceNote": null,
-      "prob": 0.399,
-      "implied": 0.476,
-      "edge": -0.077,
-      "est2": 0.093,
-      "price2": null,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 40% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "George Kittle anytime TD"
-     },
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "name": "Rachaad White",
-      "team": "WSH",
-      "pos": "RB",
-      "price": 115,
-      "priceNote": null,
-      "prob": 0.39,
-      "implied": 0.465,
-      "edge": -0.075,
-      "est2": 0.088,
-      "price2": null,
-      "why": "Quick build: next on the board by price; listed for coverage, not as a value claim.",
-      "bet": "Rachaad White anytime TD"
-     },
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "name": "Terry McLaurin",
-      "team": "WSH",
-      "pos": "WR",
-      "price": 200,
-      "priceNote": null,
-      "prob": 0.279,
-      "implied": 0.333,
-      "edge": -0.054,
-      "est2": 0.043,
-      "price2": null,
-      "why": "Quick build: next on the board by price; listed for coverage, not as a value claim.",
-      "bet": "Terry McLaurin anytime TD"
-     }
-    ]
+    "plays": []
    },
    {
     "key": "value",
@@ -18684,98 +18428,7 @@
     "key": "td2",
     "title": "2+ TDs",
     "blurb": "Most likely multi-score players. Fair price shown where no book posted one.",
-    "plays": [
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "name": "Christian McCaffrey",
-      "team": "SF",
-      "pos": "RB",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.251,
-      "implied": null,
-      "edge": null,
-      "est2": 0.251,
-      "price2": null,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 62% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "Christian McCaffrey 2+ TDs",
-      "fair": 298
-     },
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "name": "Mike Evans",
-      "team": "SF",
-      "pos": "WR",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.132,
-      "implied": null,
-      "edge": null,
-      "est2": 0.132,
-      "price2": null,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 47% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "Mike Evans 2+ TDs",
-      "fair": 658
-     },
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "name": "George Kittle",
-      "team": "SF",
-      "pos": "TE",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.093,
-      "implied": null,
-      "edge": null,
-      "est2": 0.093,
-      "price2": null,
-      "why": "Quick build: one of the three likeliest scorers by the posted price, 40% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-      "bet": "George Kittle 2+ TDs",
-      "fair": 975
-     },
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "name": "Rachaad White",
-      "team": "WSH",
-      "pos": "RB",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.088,
-      "implied": null,
-      "edge": null,
-      "est2": 0.088,
-      "price2": null,
-      "why": "Quick build: next on the board by price; listed for coverage, not as a value claim.",
-      "bet": "Rachaad White 2+ TDs",
-      "fair": 1036
-     },
-     {
-      "game": "wsh-sf",
-      "gameLabel": "WSH@SF",
-      "kickoff": "2026-10-20T00:15Z",
-      "name": "Terry McLaurin",
-      "team": "WSH",
-      "pos": "WR",
-      "price": null,
-      "priceNote": null,
-      "prob": 0.043,
-      "implied": null,
-      "edge": null,
-      "est2": 0.043,
-      "price2": null,
-      "why": "Quick build: next on the board by price; listed for coverage, not as a value claim.",
-      "bet": "Terry McLaurin 2+ TDs",
-      "fair": 2226
-     }
-    ]
+    "plays": []
    },
    {
     "key": "props",
@@ -18793,85 +18446,7 @@
   "pricedAt": null,
   "tickets": []
  },
- "sides": {
-  "builtAt": "2026-10-19T21:30:58.400Z",
-  "day": "2026-10-19",
-  "title": "Spreads and moneylines · Monday, Oct 19",
-  "games": 1,
-  "rows": [
-   {
-    "game": "wsh-sf",
-    "gameLabel": "WSH@SF",
-    "kickoff": "2026-10-20T00:15Z",
-    "kickoffLabel": "Mon 8:15 PM ET",
-    "projected": {
-     "away": 19,
-     "home": 34
-    },
-    "spread": {
-     "team": "SF",
-     "bet": "SF -7.5",
-     "point": -7.5,
-     "price": -110,
-     "prob": 0.712,
-     "conf": 2,
-     "desk": "SF -7.5",
-     "agrees": true
-    },
-    "ml": {
-     "team": "SF",
-     "bet": "SF ML",
-     "price": -395,
-     "prob": 0.869,
-     "implied": 0.766,
-     "edge": 0.103
-    },
-    "dog": null,
-    "why": "Quick build from ESPN's matchup predictor (SF 86%) against the posted spread."
-   }
-  ],
-  "text": "**SPREADS AND MONEYLINES · MONDAY, OCT 19**\nEvery game on the slate, most likely cover first. Our projected score against the posted number. Units, not dollars.\n\n**SF -7.5** 71% to cover ▮▮▯▯▯ · SF ML -395 (87%) · WSH@SF, Mon 8:15 PM ET"
- },
- "bestOf": {
-  "builtAt": "2026-10-19T21:30:58.432Z",
-  "day": "2026-10-19",
-  "title": "Monday, Oct 19: the best of the slate",
-  "games": 1,
-  "plays": [
-   {
-    "key": "side",
-    "title": "Spread of the day",
-    "game": "wsh-sf",
-    "gameLabel": "WSH@SF",
-    "kickoff": "2026-10-20T00:15Z",
-    "kickoffLabel": "Mon 8:15 PM ET",
-    "bet": "SF -7.5",
-    "price": -110,
-    "prob": 0.712,
-    "implied": 0.524,
-    "edge": 0.188,
-    "conf": 2,
-    "units": 1,
-    "why": "Quick build from ESPN's matchup predictor (SF 86%) against the posted spread."
-   },
-   {
-    "key": "moneyline",
-    "title": "Moneyline lock",
-    "game": "wsh-sf",
-    "gameLabel": "WSH@SF",
-    "kickoff": "2026-10-20T00:15Z",
-    "kickoffLabel": "Mon 8:15 PM ET",
-    "bet": "SF ML",
-    "price": -395,
-    "prob": 0.869,
-    "implied": 0.787,
-    "edge": 0.082,
-    "conf": null,
-    "units": 1,
-    "why": "Projected WSH 19, SF 34."
-   }
-  ],
-  "text": "**Cappers & Code · Monday, Oct 19 · Week 6**\nThe model's single best play in every market for 1 games. Units, not dollars.\n\n**Spread of the day:** SF -7.5 -110 · 1u\n_WSH@SF · Mon 8:15 PM ET · model 71% · book 52%_\n\n**Moneyline lock:** SF ML -395 · 1u\n_WSH@SF · Mon 8:15 PM ET · model 87% · book 79%_\n\nFull board, every game and the five-leg for each: https://cappersandcode.com/app\n21+. Gamble responsibly. Estimates are opinions, not guarantees."
- },
+ "sides": null,
+ "bestOf": null,
  "maxFive": null
 }
