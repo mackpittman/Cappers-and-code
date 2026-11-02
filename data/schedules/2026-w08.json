@@ -1,17 +1,60 @@
 {
- "fetchedAt": "2026-11-01T21:09:57.001Z",
+ "fetchedAt": "2026-11-02T13:49:50.137Z",
  "season": 2026,
  "week": 8,
  "games": [
   {
+   "espnId": "401873036",
+   "kickoff": "2026-11-03T01:15Z",
+   "name": "CHI @ SEA",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "11/2 - 8:15 PM EST",
+   "home": {
+    "abbr": "SEA",
+    "score": 0
+   },
+   "away": {
+    "abbr": "CHI",
+    "score": 0
+   },
+   "espnLine": {
+    "provider": "Draft Kings",
+    "details": "SEA -3",
+    "spreadHome": -3,
+    "total": 46.5,
+    "ml": {
+     "home": -175,
+     "away": 145,
+     "openHome": -218,
+     "openAway": 180
+    }
+   }
+  },
+  {
+   "espnId": "401873023",
+   "kickoff": "2026-10-30T00:15Z",
+   "name": "CAR @ GB",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
+   "home": {
+    "abbr": "GB",
+    "score": 27
+   },
+   "away": {
+    "abbr": "CAR",
+    "score": 19
+   },
+   "espnLine": null
+  },
+  {
    "espnId": "401873026",
    "kickoff": "2026-11-01T18:00Z",
    "name": "BAL @ BUF",
-   "status": "STATUS_IN_PROGRESS",
-   "statusDetail": "5:58 - 4th",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
    "home": {
     "abbr": "BUF",
-    "score": 35
+    "score": 36
    },
    "away": {
     "abbr": "BAL",
@@ -23,11 +66,11 @@
    "espnId": "401873031",
    "kickoff": "2026-11-01T18:00Z",
    "name": "TEN @ CIN",
-   "status": "STATUS_IN_PROGRESS",
-   "statusDetail": "3:46 - 4th",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final/OT",
    "home": {
     "abbr": "CIN",
-    "score": 29
+    "score": 43
    },
    "away": {
     "abbr": "TEN",
@@ -39,15 +82,15 @@
    "espnId": "401873024",
    "kickoff": "2026-11-01T18:00Z",
    "name": "ARI @ DAL",
-   "status": "STATUS_IN_PROGRESS",
-   "statusDetail": "1:57 - 4th",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final/OT",
    "home": {
     "abbr": "DAL",
-    "score": 27
+    "score": 30
    },
    "away": {
     "abbr": "ARI",
-    "score": 24
+    "score": 33
    },
    "espnLine": null
   },
@@ -100,22 +143,6 @@
    "espnLine": null
   },
   {
-   "espnId": "401873028",
-   "kickoff": "2026-11-01T18:00Z",
-   "name": "IND @ JAX",
-   "status": "STATUS_FINAL",
-   "statusDetail": "Final",
-   "home": {
-    "abbr": "JAX",
-    "score": 42
-   },
-   "away": {
-    "abbr": "IND",
-    "score": 7
-   },
-   "espnLine": null
-  },
-  {
    "espnId": "401873025",
    "kickoff": "2026-11-01T18:00Z",
    "name": "ATL @ TB",
@@ -132,18 +159,34 @@
    "espnLine": null
   },
   {
+   "espnId": "401873028",
+   "kickoff": "2026-11-01T18:00Z",
+   "name": "IND @ JAX",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
+   "home": {
+    "abbr": "JAX",
+    "score": 42
+   },
+   "away": {
+    "abbr": "IND",
+    "score": 7
+   },
+   "espnLine": null
+  },
+  {
    "espnId": "401873032",
    "kickoff": "2026-11-01T21:05Z",
    "name": "LAC @ LAR",
-   "status": "STATUS_IN_PROGRESS",
-   "statusDetail": "13:18 - 1st",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
    "home": {
     "abbr": "LAR",
-    "score": 0
+    "score": 24
    },
    "away": {
     "abbr": "LAC",
-    "score": 0
+    "score": 9
    },
    "espnLine": null
   },
@@ -151,125 +194,49 @@
    "espnId": "401873033",
    "kickoff": "2026-11-01T21:25Z",
    "name": "KC @ DEN",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "11/1 - 4:25 PM EST",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
    "home": {
     "abbr": "DEN",
-    "score": 0
+    "score": 28
    },
    "away": {
     "abbr": "KC",
-    "score": 0
+    "score": 24
    },
-   "espnLine": {
-    "provider": "Draft Kings",
-    "details": "DEN -1.5",
-    "spreadHome": -1.5,
-    "total": 41.5,
-    "ml": {
-     "home": -112,
-     "away": -108,
-     "openHome": -118,
-     "openAway": -102
-    }
-   }
+   "espnLine": null
   },
   {
    "espnId": "401873034",
    "kickoff": "2026-11-01T21:25Z",
    "name": "NE @ MIA",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "11/1 - 4:25 PM EST",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
    "home": {
     "abbr": "MIA",
-    "score": 0
+    "score": 19
    },
    "away": {
     "abbr": "NE",
-    "score": 0
+    "score": 24
    },
-   "espnLine": {
-    "provider": null,
-    "details": "NE -7",
-    "spreadHome": 7,
-    "total": 41.5,
-    "ml": {
-     "home": 275,
-     "away": -345,
-     "openHome": 260,
-     "openAway": -325
-    }
-   }
+   "espnLine": null
   },
   {
    "espnId": "401873035",
    "kickoff": "2026-11-02T01:20Z",
    "name": "PHI @ WSH",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "11/1 - 8:20 PM EST",
-   "home": {
-    "abbr": "WSH",
-    "score": 0
-   },
-   "away": {
-    "abbr": "PHI",
-    "score": 0
-   },
-   "espnLine": {
-    "provider": null,
-    "details": "WSH -6",
-    "spreadHome": -6,
-    "total": 40.5,
-    "ml": {
-     "home": -270,
-     "away": 220,
-     "openHome": 114,
-     "openAway": -135
-    }
-   }
-  },
-  {
-   "espnId": "401873023",
-   "kickoff": "2026-10-30T00:15Z",
-   "name": "CAR @ GB",
    "status": "STATUS_FINAL",
    "statusDetail": "Final",
    "home": {
-    "abbr": "GB",
+    "abbr": "WSH",
     "score": 27
    },
    "away": {
-    "abbr": "CAR",
-    "score": 19
+    "abbr": "PHI",
+    "score": 10
    },
    "espnLine": null
-  },
-  {
-   "espnId": "401873036",
-   "kickoff": "2026-11-03T01:15Z",
-   "name": "CHI @ SEA",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "11/2 - 8:15 PM EST",
-   "home": {
-    "abbr": "SEA",
-    "score": 0
-   },
-   "away": {
-    "abbr": "CHI",
-    "score": 0
-   },
-   "espnLine": {
-    "provider": null,
-    "details": "SEA -3",
-    "spreadHome": -3,
-    "total": 46.5,
-    "ml": {
-     "home": -166,
-     "away": 140,
-     "openHome": -218,
-     "openAway": 180
-    }
-   }
   }
  ]
 }
