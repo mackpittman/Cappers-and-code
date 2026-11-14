@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 6,
- "generatedAt": "2026-11-14T12:28:40.986Z",
+ "generatedAt": "2026-11-14T21:26:18.229Z",
  "researchAsOf": "2026-10-18T14:48:04.940Z",
  "oddsFetchedAt": "2026-10-18T14:48:04.303Z",
  "oddsCredits": {
@@ -33,7 +33,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": null,
- "injuriesFetchedAt": "2026-11-14T12:28:39.763Z",
+ "injuriesFetchedAt": "2026-11-14T21:26:17.120Z",
  "notes": "Researched one game at a time, then validated for de-vigged win probability, implied team points and board depth before assembly. Anytime-TD prices marked \"verify\" could not be confirmed at a live sportsbook and must be checked before they are played.",
  "completed": [
   {
@@ -1101,6 +1101,14 @@
       "date": "2026-11-14T01:31Z"
      },
      {
+      "name": "Hunter Long",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-14T21:19Z"
+     },
+     {
       "name": "Jayden Williams",
       "pos": "OT",
       "status": "Questionable",
@@ -1139,14 +1147,6 @@
       "type": "Injured Reserve",
       "detail": "Carter (knee) has been ruled out ahead of Sunday's game against the Rams, Zach Gershman of the Cardinals' official site reports.",
       "date": "2026-11-14T02:22Z"
-     },
-     {
-      "name": "Hunter Long",
-      "pos": "TE",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Cardinals designated Long (knee) for return from injured reserve Wednesday.",
-      "date": "2026-11-11T22:25Z"
      },
      {
       "name": "Gardner Minshew II",
@@ -1247,7 +1247,7 @@
       "date": "2026-11-10T15:34Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    },
    "fiveLeg": {
     "game": "ari-lar",
@@ -1915,7 +1915,7 @@
     {
      "name": "Michael Burton",
      "team": "CLE",
-     "status": "Out"
+     "status": "Injured Reserve"
     }
    ],
    "liveBoard": [
@@ -2421,10 +2421,10 @@
      {
       "name": "Jaylinn Hawkins",
       "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Hawkins (knee) was limited during Thursday's practice.",
-      "date": "2026-11-13T00:49Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Hawkins (knee) has been ruled out for Monday's game against the Chargers.",
+      "date": "2026-11-14T19:16Z"
      },
      {
       "name": "Adisa Isaac",
@@ -2445,14 +2445,6 @@
     ],
     "home": [
      {
-      "name": "Michael Burton",
-      "pos": "FB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Burton (calf) has been ruled out for Sunday's game against Houston, Daniel Oyefusi of ESPN.com reports.",
-      "date": "2026-11-13T23:09Z"
-     },
-     {
       "name": "Ronnie Hickman",
       "pos": "S",
       "status": "Out",
@@ -2467,9 +2459,17 @@
       "type": "questionable",
       "detail": "Boston (toe), who is listed as questionable for Sunday's game against the Texans, per Daniel Oyefusi of ESPN,  is trending in the right direction ahead of the contest.",
       "date": "2026-11-13T18:34Z"
+     },
+     {
+      "name": "Michael Burton",
+      "pos": "FB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Browns placed Burton (calf) on injured reserve Saturday, Chris Easterling of the Akron Beacon Journal reports.",
+      "date": "2026-11-14T18:01Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    },
    "fiveLeg": {
     "game": "bal-cle",
@@ -3576,6 +3576,14 @@
       "date": "2026-11-14T02:29Z"
      },
      {
+      "name": "Jordan Hancock",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-14T21:01Z"
+     },
+     {
       "name": "Christian Benford",
       "pos": "CB",
       "status": "Questionable",
@@ -3610,7 +3618,7 @@
       "date": "2026-11-14T00:14Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    },
    "fiveLeg": {
     "game": "buf-lv",
@@ -4648,6 +4656,14 @@
       "date": "2026-11-12T20:39Z"
      },
      {
+      "name": "Xavier Legette",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "The Panthers activated Legette (knee) from injured reserve Saturday, Alex Zietlow of The Charlotte Observer reports.",
+      "date": "2026-11-14T18:56Z"
+     },
+     {
       "name": "Will Lee III",
       "pos": "CB",
       "status": "Questionable",
@@ -4664,28 +4680,28 @@
       "date": "2026-11-13T17:40Z"
      },
      {
+      "name": "Brady Christensen",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Christensen (hamstring) has been downgraded to out for Sunday's game against the Saints, Joe Person of The Athletic reports.",
+      "date": "2026-11-14T19:38Z"
+     },
+     {
       "name": "Mike Jackson",
       "pos": "CB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Jackson (groin) is listed as doubtful for Sunday's game against New Orleans.",
-      "date": "2026-11-13T22:43Z"
-     },
-     {
-      "name": "Xavier Legette",
-      "pos": "WR",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Legette (knee) is listed as questionable for Sunday's game at New Orleans.",
-      "date": "2026-11-13T17:43Z"
+      "detail": "Jackson (groin) has been downgraded from doubtful to out for Sunday's game against the Saints, Joe Person of The Athletic reports.",
+      "date": "2026-11-14T19:23Z"
      },
      {
       "name": "Jonathon Brooks",
       "pos": "RB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Brooks (groin) is listed as doubtful for Sunday's game at New Orleans after being limited in practice throughout the week, Kassidy Hill of the Panthers' official site reports.",
-      "date": "2026-11-13T17:38Z"
+      "detail": "Brooks (groin) has been downgraded from doubtful to out for Sunday's game against the Saints, Joe Person of The Athletic reports.",
+      "date": "2026-11-14T19:01Z"
      },
      {
       "name": "Jaycee Horn",
@@ -4754,7 +4770,7 @@
       "date": "2026-11-08T20:21Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    },
    "fiveLeg": {
     "game": "car-phi",
@@ -6004,20 +6020,20 @@
     ],
     "home": [
      {
+      "name": "Divine Deablo",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Deablo (forearm) is listed as doubtful for Sunday's game against the Chiefs, Marc Raimondi of ESPN.com reports.",
+      "date": "2026-11-13T22:59Z"
+     },
+     {
       "name": "Zachariah Branch",
       "pos": "WR",
       "status": "Out",
       "type": "out",
       "detail": "Branch (hamstring) has been ruled out for Sunday's game against the Chiefs.",
       "date": "2026-11-13T19:42Z"
-     },
-     {
-      "name": "Divine Deablo",
-      "pos": "LB",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Deablo (forearm) is listed as doubtful for Sunday's game against the Chiefs, Marc Raimondi of ESPN.com reports.",
-      "date": "2026-11-13T22:59Z"
      },
      {
       "name": "Josh Woods",
@@ -6060,7 +6076,7 @@
       "date": "2026-11-04T00:37Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    },
    "fiveLeg": {
     "game": "chi-atl",
@@ -7244,14 +7260,6 @@
       "date": "2026-11-14T00:51Z"
      },
      {
-      "name": "Tyler Goodson",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Goodson sustained ACL and MCL sprains in his knee during Sunday's 27-23 win over the Colts, a source tells Todd Archer of ESPN.com.",
-      "date": "2026-11-10T15:05Z"
-     },
-     {
       "name": "P.J. Locke",
       "pos": "S",
       "status": "Out",
@@ -7274,6 +7282,14 @@
       "type": "doubtful",
       "detail": "doubtful",
       "date": "2026-11-13T22:51Z"
+     },
+     {
+      "name": "Jonathan Bullard",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "The Cowboys activated Bullard (calf) from injured reserve Saturday.",
+      "date": "2026-11-14T19:35Z"
      },
      {
       "name": "Joey Porter Jr.",
@@ -7300,6 +7316,14 @@
       "date": "2026-11-12T22:41Z"
      },
      {
+      "name": "Tyler Goodson",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Cowboys placed Goodson (knee) on injured reserve Saturday, Tommy Yarrish of the team's official site reports.",
+      "date": "2026-11-14T18:50Z"
+     },
+     {
       "name": "Devin Moore",
       "pos": "CB",
       "status": "Injured Reserve",
@@ -7310,6 +7334,14 @@
     ],
     "home": [
      {
+      "name": "Josh Jacobs",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Jacobs underwent surgery on his fractured right ring finger Friday and \"should be back in the next few weeks,\" Tom Pelissero of Netflix reports.",
+      "date": "2026-11-14T14:26Z"
+     },
+     {
       "name": "Sean Rhyan",
       "pos": "G",
       "status": "Out",
@@ -7318,28 +7350,12 @@
       "date": "2026-11-14T02:18Z"
      },
      {
-      "name": "Josh Whyle",
-      "pos": "TE",
-      "status": "Out",
-      "type": "out",
-      "detail": "Whyle (concussion) has been ruled out ahead of Sunday's game against the Vikings, Wes Hodkiewicz of the Packers' official site reports.",
-      "date": "2026-11-14T00:32Z"
-     },
-     {
       "name": "Micah Parsons",
       "pos": "DE",
       "status": "Out",
       "type": "out",
       "detail": "Parsons (knee/illness) has been ruled out for Sunday's game against the Vikings, Wes Hodkiewicz of the Packers' official site reports.",
       "date": "2026-11-13T21:49Z"
-     },
-     {
-      "name": "Josh Jacobs",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Jacobs will undergo finger surgery Friday, and the Packers will have a better sense of his recovery timetable afterward, Matt Schneidman of The Athletic reports.",
-      "date": "2026-11-12T17:02Z"
      },
      {
       "name": "Zaire Franklin",
@@ -7382,6 +7398,22 @@
       "date": "2026-11-14T00:41Z"
      },
      {
+      "name": "Skyy Moore",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Moore (ankle) is listed as questionable for Sunday's game against the Vikings, Wes Hodkiewicz of the Packers' official site reports.",
+      "date": "2026-11-14T00:25Z"
+     },
+     {
+      "name": "Chris Brooks",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Brooks (ankle) is listed as questionable for Sunday's game against the Vikings, Wes Hodkiewicz of the Packers' official site reports.",
+      "date": "2026-11-14T00:22Z"
+     },
+     {
       "name": "Xavier McKinney",
       "pos": "S",
       "status": "Questionable",
@@ -7390,23 +7422,15 @@
       "date": "2026-11-13T22:56Z"
      },
      {
-      "name": "Skyy Moore",
-      "pos": "WR",
+      "name": "Josh Whyle",
+      "pos": "TE",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Moore (ankle) is listed as questionable for Sunday's game against the Vikings, Wes Hodkiewicz of the Packers' official site reports.",
-      "date": "2026-11-14T00:25Z"
-     },
-     {
-      "name": "Chris Brooks",
-      "pos": "RB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Brooks (ankle) is listed as questionable for Sunday's game against the Vikings, Wes Hodkiewicz of the Packers' official site reports.",
-      "date": "2026-11-14T00:22Z"
+      "detail": "Whyle (concussion) has been ruled out ahead of Sunday's game against the Vikings, Wes Hodkiewicz of the Packers' official site reports.",
+      "date": "2026-11-14T00:32Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    },
    "fiveLeg": {
     "game": "dal-gb",
@@ -8686,6 +8710,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "David Montgomery",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Montgomery (groin) has been downgraded from questionable to out for Sunday's game against the Browns.",
+      "date": "2026-11-14T18:18Z"
+     },
+     {
       "name": "Keylan Rutledge",
       "pos": "G",
       "status": "Out",
@@ -8726,12 +8758,28 @@
       "date": "2026-11-13T21:13Z"
      },
      {
+      "name": "Jake Hummel",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "The Texans activated Hummel (groin) from injured reserve Saturday.",
+      "date": "2026-11-14T19:27Z"
+     },
+     {
+      "name": "Braden Smith",
+      "pos": "OT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Smith is now questionable for Sunday's game against the Browns due to an illness.",
+      "date": "2026-11-14T19:25Z"
+     },
+     {
       "name": "Will Anderson Jr.",
       "pos": "DE",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Anderson (ankle) is listed as questionable for Sunday's game against the Browns.",
-      "date": "2026-11-13T23:43Z"
+      "detail": "Anderson (ankle), who is listed as questionable, is planning to suit up Sunday against the Browns, Aaron Wilson of KPRC 2 Houston reports.",
+      "date": "2026-11-14T18:33Z"
      },
      {
       "name": "Wyatt Teller",
@@ -8750,28 +8798,12 @@
       "date": "2026-11-13T21:26Z"
      },
      {
-      "name": "David Montgomery",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Montgomery (groin) is listed as questionable for Sunday's game against the Browns, while Woody Marks (knee) doesn't have an injury designation.",
-      "date": "2026-11-13T21:08Z"
-     },
-     {
       "name": "Jaylin Smith",
       "pos": "CB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
       "detail": "The Texans designated Smith (hamstring) to return from injured reserve Wednesday.",
       "date": "2026-11-12T01:15Z"
-     },
-     {
-      "name": "Jake Hummel",
-      "pos": "LB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Texans opened Hummel's (groin) 21-day practice window Wednesday.",
-      "date": "2026-11-12T01:09Z"
      }
     ],
     "home": [
@@ -8784,14 +8816,6 @@
       "date": "2026-11-13T16:23Z"
      },
      {
-      "name": "Robert Hainsey",
-      "pos": "C",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-11-11T21:25Z"
-     },
-     {
       "name": "B.J. Green II",
       "pos": "DE",
       "status": "Injured Reserve",
@@ -8800,7 +8824,7 @@
       "date": "2026-11-14T02:12Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    },
    "fiveLeg": {
     "game": "hou-jax",
@@ -8928,18 +8952,6 @@
    },
    "atdBoard": [
     {
-     "name": "Kenneth Walker III",
-     "team": "KC",
-     "price": -165,
-     "implied": 0.623,
-     "status": "Questionable",
-     "live": {
-      "best": -165,
-      "bestBook": "draftkings",
-      "consensus": -165
-     }
-    },
-    {
      "name": "Travis Kelce",
      "team": "KC",
      "price": 135,
@@ -9049,35 +9061,6 @@
     }
    ],
    "top3": [
-    {
-     "name": "Kenneth Walker III",
-     "team": "KC",
-     "pos": "RB",
-     "price": -165,
-     "implied": 0.623,
-     "est": 0.523,
-     "why": "Quick build: one of the three likeliest scorers by the posted price, 52% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-     "live2": null,
-     "live": {
-      "best": -165,
-      "bestBook": "draftkings",
-      "consensus": -165,
-      "books": {
-       "draftkings": -165,
-       "fanduel": -165
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378203645%232317706077_13L88808Q11336808573Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.615921213&selectionId=40845134"
-      },
-      "implied": 0.6226,
-      "open": null,
-      "move": null,
-      "fetchedAt": "2026-10-18T14:48:04.303Z"
-     },
-     "edge": -0.1,
-     "status": "Questionable"
-    },
     {
      "name": "Travis Kelce",
      "team": "KC",
@@ -9236,7 +9219,13 @@
     }
    },
    "live": null,
-   "scratched": [],
+   "scratched": [
+    {
+     "name": "Kenneth Walker III",
+     "team": "KC",
+     "status": "Out"
+    }
+   ],
    "liveBoard": [
     {
      "name": "Kenneth Walker III",
@@ -9959,6 +9948,14 @@
     ],
     "home": [
      {
+      "name": "Kenneth Walker III",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Walker (groin) has been ruled out for Sunday's game against the Falcons, Jordan Schultz of Fox Sports reports.",
+      "date": "2026-11-14T16:33Z"
+     },
+     {
       "name": "Jaylon Moore",
       "pos": "OT",
       "status": "Out",
@@ -9989,17 +9986,9 @@
       "type": "questionable",
       "detail": "Delane (shoulder) is listed as questionable for Sunday's game against Atlanta.",
       "date": "2026-11-13T23:25Z"
-     },
-     {
-      "name": "Kenneth Walker III",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Walker (groin) is listed as questionable for Sunday's game against the Falcons.",
-      "date": "2026-11-13T20:32Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    }
   },
   {
@@ -10981,20 +10970,20 @@
       "date": "2026-11-13T19:46Z"
      },
      {
+      "name": "Travis Etienne Jr.",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "The Saints activated Etienne (hamstring) from injured reserve Saturday, but he remains questionable for Sunday's game against the Panthers, Nick Underhill of NewOrleans.Football reports.",
+      "date": "2026-11-14T21:11Z"
+     },
+     {
       "name": "Martin Emerson Jr.",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Emerson (shin) is listed as questionable for Sunday's game against the Saints, Ross Jackson of WWL-TV reports.",
       "date": "2026-11-13T23:17Z"
-     },
-     {
-      "name": "Travis Etienne Jr.",
-      "pos": "RB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Etienne (hamstring) said Friday that \"the week of practice went well,\" and that he hopes to be active for Sunday's game against the Panthers, Jeff Nowak of WWL Radio reports.",
-      "date": "2026-11-13T19:38Z"
      }
     ],
     "home": [
@@ -11063,7 +11052,7 @@
       "date": "2026-11-13T03:10Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    }
   },
   {
@@ -11406,7 +11395,7 @@
     {
      "name": "TreVeyon Henderson",
      "team": "NE",
-     "status": "Out"
+     "status": "Injured Reserve"
     }
    ],
    "liveBoard": [
@@ -12015,6 +12004,30 @@
       "date": "2026-11-13T23:52Z"
      },
      {
+      "name": "Adonai Mitchell",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Mitchell (knee) is listed as questionable for Sunday's game against the Bills but is expected to play, Matt Zenitz of CBS Sports reports.",
+      "date": "2026-11-14T17:20Z"
+     },
+     {
+      "name": "Garrett Wilson",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Wilson (concussion) is expected to be cleared to play against the Bills on Sunday, Matt Zenitz of CBS Sports reports.",
+      "date": "2026-11-14T17:18Z"
+     },
+     {
+      "name": "Omar Cooper Jr.",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Cooper (ankle), who is listed as questionable for Sunday's game against the Bills, is expected to be available, Matt Zenitz of CBS Sports reports.",
+      "date": "2026-11-14T17:15Z"
+     },
+     {
       "name": "Nahshon Wright",
       "pos": "CB",
       "status": "Questionable",
@@ -12047,30 +12060,6 @@
       "date": "2026-11-13T23:54Z"
      },
      {
-      "name": "Omar Cooper Jr.",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Cooper (ankle), who was a full participant in Friday's practice, is listed as questionable for Sunday's game against the Bills.",
-      "date": "2026-11-13T21:19Z"
-     },
-     {
-      "name": "Adonai Mitchell",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Mitchell (knee) is listed as questionable for Sunday's game against the Bills after he was a full participant in Friday's practice.",
-      "date": "2026-11-13T21:18Z"
-     },
-     {
-      "name": "Garrett Wilson",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Wilson (concussion) has one more step to complete in concussion protocol, and Jets coach Aaron Glenn believes that will happen before Sunday's game against the Bills, Brian Costello of the New York Post reports.",
-      "date": "2026-11-13T16:11Z"
-     },
-     {
       "name": "VJ Payne",
       "pos": "S",
       "status": "Injured Reserve",
@@ -12080,14 +12069,6 @@
      }
     ],
     "home": [
-     {
-      "name": "TreVeyon Henderson",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Coach Mike Vrabel said Friday that Henderson (illness) is working hard to get back, while acknowledging that he doesn't have a timetable for when that may occur, Mark Daniels of MassLive.com reports.",
-      "date": "2026-11-13T13:18Z"
-     },
      {
       "name": "Ben Brown",
       "pos": "C",
@@ -12103,6 +12084,22 @@
       "type": "out",
       "detail": "Davis (knee) has been ruled out for Sunday's game against the Lions in Munich, Evan Lazar of the Patriots' official site reports.",
       "date": "2026-11-12T00:05Z"
+     },
+     {
+      "name": "Greg Van Roten",
+      "pos": "G",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-14T21:10Z"
+     },
+     {
+      "name": "Reggie Gilliam",
+      "pos": "FB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-14T21:10Z"
      },
      {
       "name": "Brenden Schooler",
@@ -12161,15 +12158,15 @@
       "date": "2026-11-11T23:13Z"
      },
      {
-      "name": "Reggie Gilliam",
-      "pos": "FB",
+      "name": "TreVeyon Henderson",
+      "pos": "RB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Gilliam (ankle) was designated for return from injured reserve Wednesday, Mike Reiss of ESPN.com reports.",
-      "date": "2026-11-11T22:36Z"
+      "detail": "Henderson (illness) was placed on injured reserve Saturday, Mike Reiss of ESPN.com reports.",
+      "date": "2026-11-14T21:14Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    }
   },
   {
@@ -12300,7 +12297,7 @@
      "team": "PIT",
      "price": 400,
      "implied": 0.2,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 400,
       "bestBook": "fanduel",
@@ -13051,10 +13048,18 @@
      {
       "name": "Derrick Harmon",
       "pos": "DT",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Harmon (foot) is listed as questionable for Sunday's game against the Bengals, Nick Farabaugh of PennLive.com reports.",
-      "date": "2026-11-13T23:19Z"
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "The Steelers activated Harmon (foot) from injured reserve Saturday, Mike DeFabo of The Athletic reports.",
+      "date": "2026-11-14T20:05Z"
+     },
+     {
+      "name": "Pat Freiermuth",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Freiermuth (illness) was added to Saturday's injury report and is listed as questionable for Sunday's game against Cincinnati.",
+      "date": "2026-11-14T17:39Z"
      },
      {
       "name": "Michael Pittman Jr.",
@@ -13063,6 +13068,14 @@
       "type": "Injured Reserve",
       "detail": "Pittman (foot) is warmed up with his teammates Thursday, though he remains on IR and wasn't wearing a helmet, Nick Farabaugh of PennLive.com reports.",
       "date": "2026-11-12T18:08Z"
+     },
+     {
+      "name": "Sebastian Joseph-Day",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Joseph-Day (triceps) was placed on injured reserve by the Steelers on Thursday, Teresa Varley of the team's official website reports.",
+      "date": "2026-10-23T00:28Z"
      }
     ],
     "home": [
@@ -13091,7 +13104,7 @@
       "date": "2026-11-09T19:19Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    }
   },
   {
@@ -13978,22 +13991,6 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Tommy Townsend",
-      "pos": "P",
-      "status": "Out",
-      "type": "out",
-      "detail": "Townsend (knee/Achilles) has been ruled out for Sunday's game against the Jaguars, Jim Wyatt of the Titans' official site reports.",
-      "date": "2026-11-14T01:29Z"
-     },
-     {
-      "name": "Peter Skoronski",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "Skoronski (hamstring) has been ruled out for Sunday's game against the Jaguars, Jim Wyatt of the Titans' official site reports.",
-      "date": "2026-11-14T01:24Z"
-     },
-     {
       "name": "Cody Barton",
       "pos": "LB",
       "status": "Out",
@@ -14026,6 +14023,22 @@
       "date": "2026-11-13T20:43Z"
      },
      {
+      "name": "Tommy Townsend",
+      "pos": "P",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Townsend (knee/Achilles) has been ruled out for Sunday's game against the Jaguars, Jim Wyatt of the Titans' official site reports.",
+      "date": "2026-11-14T01:29Z"
+     },
+     {
+      "name": "Peter Skoronski",
+      "pos": "G",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Skoronski (hamstring) has been ruled out for Sunday's game against the Jaguars, Jim Wyatt of the Titans' official site reports.",
+      "date": "2026-11-14T01:24Z"
+     },
+     {
       "name": "James Williams Sr.",
       "pos": "LB",
       "status": "Injured Reserve",
@@ -14035,6 +14048,14 @@
      }
     ],
     "home": [
+     {
+      "name": "Will Mallory",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Mallory (hamstring) has been downgraded from questionable to out for Sunday's game against the Dolphins.",
+      "date": "2026-11-14T17:22Z"
+     },
      {
       "name": "Jalen Travis",
       "pos": "OT",
@@ -14070,34 +14091,18 @@
      {
       "name": "Akeem Davis-Gaither",
       "pos": "LB",
-      "status": "Out",
-      "type": "out",
-      "detail": "Davis-Gaither (knee) has been ruled out for Sunday's game against the Dolphins, Abby Halpin of the Colts' official site reports.",
-      "date": "2026-11-13T22:52Z"
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Colts placed Davis-Gaither (knee) on injured reserve Saturday.",
+      "date": "2026-11-14T17:34Z"
      },
      {
       "name": "Mo Alie-Cox",
       "pos": "TE",
-      "status": "Out",
-      "type": "out",
-      "detail": "Alie-Cox (groin) has been ruled out for Sunday's game against the Dolphins, Abby Halpin of the Colts' official site reports.",
-      "date": "2026-11-13T22:48Z"
-     },
-     {
-      "name": "Will Mallory",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Mallory (hamstring) is listed as questionable for Sunday's game against Miami.",
-      "date": "2026-11-14T00:12Z"
-     },
-     {
-      "name": "Arden Key",
-      "pos": "DE",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "The Colts are opening Key's (hamstring) 21-day practice window, Joel A. Erickson of The Indianapolis Star reports.",
-      "date": "2026-11-11T19:36Z"
+      "detail": "The Colts placed Alie-Cox (groin) on injured reserve Saturday.",
+      "date": "2026-11-14T17:24Z"
      },
      {
       "name": "Alec Pierce",
@@ -14108,7 +14113,7 @@
       "date": "2026-11-11T17:38Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    }
   },
   {
@@ -14997,23 +15002,23 @@
       "date": "2026-11-12T00:19Z"
      },
      {
+      "name": "Gracen Halton",
+      "pos": "DT",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Halton underwent surgery to repair a broken leg and dislocated ankle that he suffered during the 49ers' Week 9 win over the Raiders, Adam Schefter of ESPN reports.",
+      "date": "2026-11-14T19:20Z"
+     },
+     {
       "name": "C.J. West",
       "pos": "DT",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
       "detail": "West (knee) was a limited participant in Wednesday's practice, Matt Barrows of The Athletic reports.",
       "date": "2026-11-12T00:46Z"
-     },
-     {
-      "name": "Gracen Halton",
-      "pos": "DT",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The 49ers placed Halton (ankle) on injured reserve Tuesday.",
-      "date": "2026-11-11T01:23Z"
      }
     ],
-    "fetchedAt": "2026-11-14T12:28:39.763Z"
+    "fetchedAt": "2026-11-14T21:26:17.120Z"
    }
   }
  ],
@@ -15247,37 +15252,6 @@
    "status": null,
    "gameId": "chi-atl",
    "kickoff": "2026-10-18T17:00:00Z"
-  },
-  {
-   "name": "Kenneth Walker III",
-   "team": "KC",
-   "pos": "RB",
-   "price": -165,
-   "implied": 0.623,
-   "est": 0.523,
-   "why": "Quick build: one of the three likeliest scorers by the posted price, 52% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-   "live2": null,
-   "live": {
-    "best": -165,
-    "bestBook": "draftkings",
-    "consensus": -165,
-    "books": {
-     "draftkings": -165,
-     "fanduel": -165
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378203645%232317706077_13L88808Q11336808573Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.615921213&selectionId=40845134"
-    },
-    "implied": 0.6226,
-    "open": null,
-    "move": null,
-    "fetchedAt": "2026-10-18T14:48:04.303Z"
-   },
-   "edge": -0.1,
-   "status": "Questionable",
-   "gameId": "lac-kc",
-   "kickoff": "2026-10-18T20:25Z"
   },
   {
    "name": "Derrick Henry",
@@ -15684,6 +15658,38 @@
    "status": null,
    "gameId": "pit-tb",
    "kickoff": "2026-10-18T17:00Z"
+  },
+  {
+   "name": "Bhayshul Tuten",
+   "team": "JAX",
+   "pos": "RB",
+   "price": 145,
+   "implied": 0.408,
+   "est": 0.37,
+   "est2": 0.079,
+   "why": "The lead back on the higher team total (22.5): 82 carries in five games (17 a game the last three, 22 last week), 12 of Jacksonville's 18 red-zone carries by backs, 3 of its 5 carries inside the 5 and both of his touchdowns from the 1 (one on a direct snap), with a third wiped out by holding at Cincinnati. Houston allows 3.5 a carry to backs but gave Javonte Williams three short scores in Week 4, and allows touchdowns on 7 of 12 red-zone trips. The read is 37% after the calibration trim (the desk's 45% on him last week lost). +145 at both books (40.8%) is about 4 points short of fair (+170): the likeliest scorer and a stack leg, not a straight bet.",
+   "live2": null,
+   "live": {
+    "best": 145,
+    "bestBook": "draftkings",
+    "consensus": 145,
+    "books": {
+     "draftkings": 145,
+     "fanduel": 145
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378200505%232317691305_13L88808Q11230695518Q20",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.615812801&selectionId=60238401"
+    },
+    "implied": 0.4082,
+    "open": null,
+    "move": null,
+    "fetchedAt": "2026-10-18T14:48:04.303Z"
+   },
+   "edge": -0.038,
+   "status": null,
+   "gameId": "hou-jax",
+   "kickoff": "2026-10-18T13:30:00Z"
   }
  ],
  "slateValue": [
@@ -16117,7 +16123,7 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-11-14T12:28:40.924Z",
+  "gradedAt": "2026-11-14T21:26:18.108Z",
   "finals": 13,
   "games": 13,
   "summary": {
@@ -17651,7 +17657,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-11-14T12:28:40.926Z",
+  "updatedAt": "2026-11-14T21:26:18.110Z",
   "weeks": [
    {
     "week": 1,
@@ -18366,7 +18372,7 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-11-14T12:28:40.987Z",
+  "builtAt": "2026-11-14T21:26:18.231Z",
   "books": [
    "FD",
    "DK",
@@ -18470,7 +18476,7 @@
   ]
  },
  "topTen": {
-  "builtAt": "2026-11-14T12:28:40.987Z",
+  "builtAt": "2026-11-14T21:26:18.231Z",
   "note": "Sides, totals and moneylines are priced from the projected score with the simulator’s spreads (13.4 margin, 10.6 total). Touchdown lists use the desk’s role-built estimates. Prop leans are not graded by a probability and are listed by kickoff.",
   "categories": [
    {
