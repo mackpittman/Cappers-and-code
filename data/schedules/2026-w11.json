@@ -1,52 +1,47 @@
 {
- "fetchedAt": "2026-11-22T22:26:44.509Z",
+ "fetchedAt": "2026-11-23T16:27:36.131Z",
  "season": 2026,
  "week": 11,
  "games": [
   {
-   "espnId": "401873074",
-   "kickoff": "2026-11-22T21:05Z",
-   "name": "NYJ @ LAC",
-   "status": "STATUS_HALFTIME",
-   "statusDetail": "Halftime",
+   "espnId": "401873078",
+   "kickoff": "2026-11-24T01:15Z",
+   "name": "CIN @ WSH",
+   "status": "STATUS_SCHEDULED",
+   "statusDetail": "11/23 - 8:15 PM EST",
    "home": {
-    "abbr": "LAC",
-    "score": 10
-   },
-   "away": {
-    "abbr": "NYJ",
-    "score": 17
-   },
-   "espnLine": null
-  },
-  {
-   "espnId": "401873075",
-   "kickoff": "2026-11-22T21:25Z",
-   "name": "LV @ DEN",
-   "status": "STATUS_IN_PROGRESS",
-   "statusDetail": "8:53 - 2nd",
-   "home": {
-    "abbr": "DEN",
-    "score": 17
-   },
-   "away": {
-    "abbr": "LV",
+    "abbr": "WSH",
     "score": 0
    },
-   "espnLine": null
+   "away": {
+    "abbr": "CIN",
+    "score": 0
+   },
+   "espnLine": {
+    "provider": "Draft Kings",
+    "details": "CIN -6",
+    "spreadHome": 6,
+    "total": 54.5,
+    "ml": {
+     "home": 246,
+     "away": -302,
+     "openHome": 105,
+     "openAway": -125
+    }
+   }
   },
   {
-   "espnId": "401873069",
-   "kickoff": "2026-11-22T21:25Z",
-   "name": "JAX @ NYG",
-   "status": "STATUS_IN_PROGRESS",
-   "statusDetail": "13:10 - 2nd",
+   "espnId": "401873066",
+   "kickoff": "2026-11-20T01:15Z",
+   "name": "IND @ HOU",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
    "home": {
-    "abbr": "NYG",
-    "score": 10
+    "abbr": "HOU",
+    "score": 26
    },
    "away": {
-    "abbr": "JAX",
+    "abbr": "IND",
     "score": 3
    },
    "espnLine": null
@@ -164,74 +159,68 @@
    "espnLine": null
   },
   {
-   "espnId": "401873077",
-   "kickoff": "2026-11-23T01:20Z",
-   "name": "MIN VS SF",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "11/22 - 8:20 PM EST",
-   "home": {
-    "abbr": "SF",
-    "score": 0
-   },
-   "away": {
-    "abbr": "MIN",
-    "score": 0
-   },
-   "espnLine": {
-    "provider": "DraftKings",
-    "details": "SF -3.5",
-    "spreadHome": -3.5,
-    "total": 46.5,
-    "ml": {
-     "home": -190,
-     "away": 159,
-     "openHome": -205,
-     "openAway": 170
-    }
-   }
-  },
-  {
-   "espnId": "401873066",
-   "kickoff": "2026-11-20T01:15Z",
-   "name": "IND @ HOU",
+   "espnId": "401873074",
+   "kickoff": "2026-11-22T21:05Z",
+   "name": "NYJ @ LAC",
    "status": "STATUS_FINAL",
    "statusDetail": "Final",
    "home": {
-    "abbr": "HOU",
-    "score": 26
+    "abbr": "LAC",
+    "score": 24
    },
    "away": {
-    "abbr": "IND",
-    "score": 3
+    "abbr": "NYJ",
+    "score": 27
    },
    "espnLine": null
   },
   {
-   "espnId": "401873078",
-   "kickoff": "2026-11-24T01:15Z",
-   "name": "CIN @ WSH",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "11/23 - 8:15 PM EST",
+   "espnId": "401873075",
+   "kickoff": "2026-11-22T21:25Z",
+   "name": "LV @ DEN",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
    "home": {
-    "abbr": "WSH",
-    "score": 0
+    "abbr": "DEN",
+    "score": 38
    },
    "away": {
-    "abbr": "CIN",
-    "score": 0
+    "abbr": "LV",
+    "score": 24
    },
-   "espnLine": {
-    "provider": null,
-    "details": "CIN -6",
-    "spreadHome": 6,
-    "total": 54.5,
-    "ml": {
-     "home": 241,
-     "away": -296,
-     "openHome": 105,
-     "openAway": -125
-    }
-   }
+   "espnLine": null
+  },
+  {
+   "espnId": "401873069",
+   "kickoff": "2026-11-22T21:25Z",
+   "name": "JAX @ NYG",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
+   "home": {
+    "abbr": "NYG",
+    "score": 23
+   },
+   "away": {
+    "abbr": "JAX",
+    "score": 18
+   },
+   "espnLine": null
+  },
+  {
+   "espnId": "401873077",
+   "kickoff": "2026-11-23T01:20Z",
+   "name": "MIN VS SF",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
+   "home": {
+    "abbr": "SF",
+    "score": 35
+   },
+   "away": {
+    "abbr": "MIN",
+    "score": 10
+   },
+   "espnLine": null
   }
  ]
 }
