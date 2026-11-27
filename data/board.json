@@ -1,7 +1,7 @@
 {
  "season": 2026,
  "week": 6,
- "generatedAt": "2026-11-26T15:45:44.775Z",
+ "generatedAt": "2026-11-27T00:59:52.306Z",
  "researchAsOf": "2026-10-18T14:48:04.940Z",
  "oddsFetchedAt": "2026-10-18T14:48:04.303Z",
  "oddsCredits": {
@@ -33,7 +33,7 @@
   "note": "Game lines come free from ESPN. Tuesday openers (about 16), Friday full bundle after designations (about 64), Sunday pre-kick ATD refresh (about 16): roughly 96 a week, 415 a month, leaving the rest for manual game-day pulls."
  },
  "linesSource": null,
- "injuriesFetchedAt": "2026-11-26T15:45:43.454Z",
+ "injuriesFetchedAt": "2026-11-27T00:59:51.320Z",
  "notes": "Researched one game at a time, then validated for de-vigged win probability, implied team points and board depth before assembly. Anytime-TD prices marked \"verify\" could not be confirmed at a live sportsbook and must be checked before they are played.",
  "completed": [
   {
@@ -98,6 +98,30 @@
       "best": -185,
       "bestBook": "draftkings",
       "consensus": -190
+     }
+    },
+    {
+     "name": "Puka Nacua",
+     "team": "LAR",
+     "price": -150,
+     "implied": 0.6,
+     "status": null,
+     "live": {
+      "best": -150,
+      "bestBook": "draftkings",
+      "consensus": -152
+     }
+    },
+    {
+     "name": "Davante Adams",
+     "team": "LAR",
+     "price": -135,
+     "implied": 0.574,
+     "status": null,
+     "live": {
+      "best": -135,
+      "bestBook": "draftkings",
+      "consensus": -135
      }
     },
     {
@@ -382,6 +406,64 @@
      },
      "edge": -0.105,
      "status": null
+    },
+    {
+     "name": "Davante Adams",
+     "team": "LAR",
+     "pos": "WR",
+     "price": -135,
+     "implied": 0.574,
+     "est": 0.4,
+     "why": "Four touchdowns on 45 targets, including two scores last week with Nacua on the field, and the team lead in red-zone targets through Week 4. Arizona gave up eight touchdowns to receivers in the first four games and has the league's worst opponent passer rating (117.3). The read is 40% (fair +150) against -135 at both books (57.4%), 17 points short. The touchdown role is near the goal line, which is why his yardage projection sits under the book.",
+     "live2": null,
+     "live": {
+      "best": -135,
+      "bestBook": "draftkings",
+      "consensus": -135,
+      "books": {
+       "draftkings": -135,
+       "fanduel": -135
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378229561%232317816402_13L88808Q1-1719984573Q20",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616225575&selectionId=8882932"
+      },
+      "implied": 0.5745,
+      "open": null,
+      "move": null,
+      "fetchedAt": "2026-10-18T14:48:04.303Z"
+     },
+     "edge": -0.174,
+     "status": null
+    },
+    {
+     "name": "Puka Nacua",
+     "team": "LAR",
+     "pos": "WR",
+     "price": -150,
+     "implied": 0.6,
+     "est": 0.38,
+     "why": "45 targets in three games, including 17 catches on 24 targets for 138 yards and a touchdown on Monday, and a rushing score at Philadelphia. That is about a third of Stafford's throws, against a secondary missing two safeties with Baker questionable. Two touchdowns in three games and few red-zone targets keep the read at 38% (fair +163). -150 at DraftKings (FanDuel -155) asks 60%: more than 20 points short, so he is a probability call, not a price call.",
+     "live2": null,
+     "live": {
+      "best": -150,
+      "bestBook": "draftkings",
+      "consensus": -152,
+      "books": {
+       "draftkings": -150,
+       "fanduel": -155
+      },
+      "links": {
+       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378229561%232317816401_13L88808Q1-1261907500Q20",
+       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616225575&selectionId=42127532"
+      },
+      "implied": 0.6032,
+      "open": null,
+      "move": null,
+      "fetchedAt": "2026-10-18T14:48:04.303Z"
+     },
+     "edge": -0.223,
+     "status": null
     }
    ],
    "value": [
@@ -545,18 +627,7 @@
     }
    },
    "live": null,
-   "scratched": [
-    {
-     "name": "Davante Adams",
-     "team": "LAR",
-     "status": "Injured Reserve"
-    },
-    {
-     "name": "Puka Nacua",
-     "team": "LAR",
-     "status": "Injured Reserve"
-    }
-   ],
+   "scratched": [],
    "liveBoard": [
     {
      "name": "Kyren Williams",
@@ -1128,12 +1199,28 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Karson Sharar",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-26T20:31Z"
+     },
+     {
+      "name": "Hunter Long",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-26T20:30Z"
+     },
+     {
       "name": "Carson Beck",
       "pos": "QB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Head coach Mike LaFleur said Beck (back) won't practice Wednesday, Darren Urban of the Cardinals' official site reports.",
-      "date": "2026-11-25T19:21Z"
+      "detail": "Beck (back) was listed as a non-participant on Thursday's injury report, Darren Urban of the Cardinals' official site reports.",
+      "date": "2026-11-26T20:11Z"
      },
      {
       "name": "Jon Gaines II",
@@ -1232,33 +1319,9 @@
       "type": "questionable",
       "detail": "Allen (ankle) has been ruled out for the remainder of Wednesday night's game against the Packers.",
       "date": "2026-11-26T03:24Z"
-     },
-     {
-      "name": "Terrance Ferguson",
-      "pos": "TE",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Rams head coach Sean McVay said Monday that Ferguson (hamstring) won't be activated from injured reserve this season and will require surgery to address the ankle injury he aggravated in Week 3, Stu Jackson of the team's official site reports.",
-      "date": "2026-11-23T19:35Z"
-     },
-     {
-      "name": "Davante Adams",
-      "pos": "WR",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Adams (hamstring) has an \"outside chance\" to return from injured reserve for the Rams' Week 13 matchup with the Chiefs but is more likely to be activated around mid-December, Ian Rapoport of NFL Network reports.",
-      "date": "2026-11-22T14:32Z"
-     },
-     {
-      "name": "Puka Nacua",
-      "pos": "WR",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Nacua (knee/toe) is expected to be sidelined 4-to-5 months after undergoing surgery Tuesday to repair his right MCL, which means he won't be on track to return at any point during the playoffs, Adam Schefter of ESPN reports.",
-      "date": "2026-11-22T01:25Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    },
    "fiveLeg": {
     "game": "ari-lar",
@@ -1438,7 +1501,7 @@
      "team": "BAL",
      "price": 210,
      "implied": 0.323,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 210,
       "bestBook": "draftkings",
@@ -1450,7 +1513,7 @@
      "team": "CLE",
      "price": 230,
      "implied": 0.303,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 230,
       "bestBook": "draftkings",
@@ -1510,7 +1573,7 @@
      "team": "BAL",
      "price": 550,
      "implied": 0.154,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 550,
       "bestBook": "draftkings",
@@ -1570,7 +1633,7 @@
      "team": "CLE",
      "price": 1200,
      "implied": 0.077,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 1200,
       "bestBook": "draftkings",
@@ -1769,7 +1832,7 @@
       "fetchedAt": "2026-10-18T14:48:04.303Z"
      },
      "edge": -0.033,
-     "status": "Questionable"
+     "status": null
     },
     {
      "name": "Zay Flowers",
@@ -1799,7 +1862,7 @@
       "fetchedAt": "2026-10-18T14:48:04.303Z"
      },
      "edge": -0.088,
-     "status": "Questionable"
+     "status": null
     }
    ],
    "value": [
@@ -2436,20 +2499,36 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Mike Green",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Green (knee) was a limited participant during Wednesday's practice.",
-      "date": "2026-11-26T02:15Z"
-     },
-     {
       "name": "Jaylinn Hawkins",
       "pos": "S",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Hawkins (knee) didn't participate in Wednesday's practice, Jamison Hensley of ESPN.com reports.",
-      "date": "2026-11-26T02:12Z"
+      "detail": "Hawkins (knee) was a limited participant in Thursday's practice, Jonas Shaffer of TheBaltimoreBanner.com reports.",
+      "date": "2026-11-26T23:14Z"
+     },
+     {
+      "name": "Derrick Henry",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Henry (concussion) was listed as a full participant in Thursday's practice.",
+      "date": "2026-11-26T21:50Z"
+     },
+     {
+      "name": "Olaivavega Ioane",
+      "pos": "G",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-26T21:39Z"
+     },
+     {
+      "name": "Chidobe Awuzie",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-26T21:37Z"
      },
      {
       "name": "Nnamdi Madubuike",
@@ -2458,49 +2537,17 @@
       "type": "questionable",
       "detail": "Madubuike (hamstring) did not participate in Wednesday's practice, Jamison Hensley of ESPN.com reports.",
       "date": "2026-11-26T02:09Z"
-     },
-     {
-      "name": "Rashod Bateman",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Bateman (groin) was limited in Wednesday's practice.",
-      "date": "2026-11-25T23:42Z"
-     },
-     {
-      "name": "Zay Flowers",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Flowers (ankle) was listed as a limited participant in Wednesday's practice.",
-      "date": "2026-11-25T23:25Z"
-     },
-     {
-      "name": "Aeneas Peebles",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-11-25T23:20Z"
-     },
-     {
-      "name": "John Simpson",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-11-25T23:20Z"
-     },
-     {
-      "name": "Derrick Henry",
-      "pos": "RB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Ravens head coach Jesse Minter said that Henry was a limited participant in Wednesday's practice after being placed back in concussion protocol, but the running back is expected to be available for Sunday's game against the Texans, Cordell Woodland of 105.7 The Fan Baltimore reports.",
-      "date": "2026-11-25T19:55Z"
      }
     ],
     "home": [
+     {
+      "name": "Denzel Boston",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Boston (quadriceps) was listed as a non-participant on Thursday's practice estimate, Sam Warren of The Athleticreports.",
+      "date": "2026-11-26T22:31Z"
+     },
      {
       "name": "Quincy Williams",
       "pos": "LB",
@@ -2508,14 +2555,6 @@
       "type": "questionable",
       "detail": "Williams (knee) was a limited participant in Wednesday's practice, Ryan McFadden of ESPN.com reports.",
       "date": "2026-11-26T02:05Z"
-     },
-     {
-      "name": "Blake Whiteheart",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Whiteheart (hip) was a limited participant in Wednesday's practice, Ryan McFadden of ESPN.com reports.",
-      "date": "2026-11-26T02:00Z"
      },
      {
       "name": "Isaiah McGuire",
@@ -2558,22 +2597,6 @@
       "date": "2026-11-25T22:38Z"
      },
      {
-      "name": "Harold Fannin Jr.",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Fannin (groin) was listed as a limited participant in Wednesday's practice, Ryan McFadden of ESPN reports.",
-      "date": "2026-11-25T22:30Z"
-     },
-     {
-      "name": "Denzel Boston",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Boston wasn't spotted at Wednesday's practice, Daniel Oyefusi of ESPN reports.",
-      "date": "2026-11-25T18:16Z"
-     },
-     {
       "name": "Raheim Sanders",
       "pos": "RB",
       "status": "Injured Reserve",
@@ -2582,7 +2605,7 @@
       "date": "2026-11-26T01:48Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    },
    "fiveLeg": {
     "game": "bal-cle",
@@ -2762,7 +2785,7 @@
      "team": "BUF",
      "price": 170,
      "implied": 0.37,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 170,
       "bestBook": "fanduel",
@@ -2879,18 +2902,6 @@
     },
     {
      "name": "Dawson Knox",
-     "team": "BUF",
-     "price": 500,
-     "implied": 0.167,
-     "status": null,
-     "live": {
-      "best": 500,
-      "bestBook": "draftkings",
-      "consensus": 500
-     }
-    },
-    {
-     "name": "Skyler Bell",
      "team": "BUF",
      "price": 500,
      "implied": 0.167,
@@ -3171,7 +3182,13 @@
     }
    },
    "live": null,
-   "scratched": [],
+   "scratched": [
+    {
+     "name": "Skyler Bell",
+     "team": "BUF",
+     "status": "Out"
+    }
+   ],
    "liveBoard": [
     {
      "name": "Josh Allen",
@@ -3673,44 +3690,52 @@
    "injuryReport": {
     "away": [
      {
-      "name": "T.J. Sanders",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Sanders (shoulder) is listed as questionable for Thursday night's game against the Chiefs.",
-      "date": "2026-11-26T03:11Z"
-     },
-     {
-      "name": "Dorian Williams",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Williams (calf) is questionable for Thursday night's game against the Chiefs.",
-      "date": "2026-11-25T22:46Z"
-     },
-     {
       "name": "Christian Benford",
       "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Benford (groin) is questionable for Thursday night's game against the Chiefs.",
-      "date": "2026-11-25T22:39Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Benford (groin) is inactive for Thursday's game against the Chiefs.",
+      "date": "2026-11-26T23:54Z"
      },
      {
-      "name": "Dalton Kincaid",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Kincaid (thumb/ankle) is listed as questionable for Thursday night's contest against the Chiefs.",
-      "date": "2026-11-25T18:53Z"
+      "name": "Jalon Kilgore",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T23:53Z"
      },
      {
-      "name": "O'Cyrus Torrence",
-      "pos": "G",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-11-23T23:11Z"
+      "name": "Jude Bowry",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T23:53Z"
+     },
+     {
+      "name": "Mike Danna",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T23:53Z"
+     },
+     {
+      "name": "Greg Gaines",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T23:53Z"
+     },
+     {
+      "name": "Skyler Bell",
+      "pos": "WR",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T23:53Z"
      }
     ],
     "home": [
@@ -3719,8 +3744,16 @@
       "pos": "DT",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Hemingway (upper body) was a limited participant in Wednesday's practice, Ryan McFadden of ESPN.com reports.",
-      "date": "2026-11-26T03:37Z"
+      "detail": "Hemingway (upper body) was listed as a non-participant in Las Vegas' practice estimate Thursday, Sam Warren of The Athletic reports.",
+      "date": "2026-11-27T00:36Z"
+     },
+     {
+      "name": "Brock Bowers",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Bowers (ankle) remained a limited participant in Thursday's practice, Sam Warren of The Athletic reports.",
+      "date": "2026-11-26T22:23Z"
      },
      {
       "name": "Adam Butler",
@@ -3729,14 +3762,6 @@
       "type": "questionable",
       "detail": "Butler (concussion) did not participate in Wednesday's practice, Ryan McFadden of ESPN.com reports.",
       "date": "2026-11-26T03:34Z"
-     },
-     {
-      "name": "Brock Bowers",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Head coach Klint Kubiak said that Bowers (ankle/quadriceps) remained a limited participant in Wednesday's practice, but the Raiders are optimistic that the tight end will play Sunday against the Browns, Sam Warren of The Athletic reports.",
-      "date": "2026-11-25T21:29Z"
      },
      {
       "name": "Tim Keenan III",
@@ -3755,7 +3780,7 @@
       "date": "2026-11-26T03:07Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    },
    "fiveLeg": {
     "game": "buf-lv",
@@ -3943,27 +3968,27 @@
      }
     },
     {
-     "name": "Dallas Goedert",
-     "team": "PHI",
-     "price": 330,
-     "implied": 0.233,
-     "status": null,
-     "live": {
-      "best": 330,
-      "bestBook": "fanduel",
-      "consensus": 315
-     }
-    },
-    {
      "name": "Darren Waller",
      "team": "CAR",
      "price": 380,
      "implied": 0.208,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 380,
       "bestBook": "draftkings",
       "consensus": 365
+     }
+    },
+    {
+     "name": "Dontayvion Wicks",
+     "team": "PHI",
+     "price": 460,
+     "implied": 0.179,
+     "status": null,
+     "live": {
+      "best": 460,
+      "bestBook": "fanduel",
+      "consensus": 455
      }
     },
     {
@@ -4019,7 +4044,7 @@
      "team": "CAR",
      "price": 800,
      "implied": 0.111,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 800,
       "bestBook": "draftkings",
@@ -4181,35 +4206,6 @@
      },
      "edge": 0.056,
      "status": null
-    },
-    {
-     "name": "Dallas Goedert",
-     "team": "PHI",
-     "pos": "TE",
-     "price": 330,
-     "implied": 0.233,
-     "est": 0.24,
-     "why": "Stowers and Calcaterra were downgraded to out and Ertz was not elevated, so he plays nearly every snap; 9 targets in London. Tight ends have 4 of the 12 touchdowns Carolina has allowed (Kmet, Fannin twice, LaPorta), and a backup quarterback leans on the tight end. The read is 24% (fair +317) against +330 at FanDuel (23.3%; DraftKings +300): fair, a point of edge.",
-     "live2": null,
-     "live": {
-      "best": 330,
-      "bestBook": "fanduel",
-      "consensus": 315,
-      "books": {
-       "draftkings": 300,
-       "fanduel": 330
-      },
-      "links": {
-       "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378331043%232318198568_13L88808Q1-1879851941Q20",
-       "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616394506&selectionId=18545062"
-      },
-      "implied": 0.241,
-      "open": null,
-      "move": null,
-      "fetchedAt": "2026-10-18T14:48:04.303Z"
-     },
-     "edge": -0.001,
-     "status": null
     }
    ],
    "stacks": [
@@ -4286,9 +4282,9 @@
    "live": null,
    "scratched": [
     {
-     "name": "Dontayvion Wicks",
+     "name": "Dallas Goedert",
      "team": "PHI",
-     "status": "Injured Reserve"
+     "status": "Out"
     }
    ],
    "liveBoard": [
@@ -4792,20 +4788,84 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Tetairoa McMillan",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Head coach Dave Canales said Wednesday that the Panthers are \"optimistic\" that McMillan (foot) will play Monday in Tampa Bay, Mike Kaye of ESPN.com reports.",
-      "date": "2026-11-25T20:18Z"
-     },
-     {
       "name": "Bobby Okereke",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
+      "detail": "Okereke (foot) was listed as a non-participant in Carolina's practice estimate Thursday, Mike Kaye of ESPN.com reports.",
+      "date": "2026-11-27T00:23Z"
+     },
+     {
+      "name": "Mitchell Evans",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Evans (Achilles) was listed as a DNP on Thursday's estimated practice report, Mike Kaye of ESPN.com reports.",
+      "date": "2026-11-26T22:20Z"
+     },
+     {
+      "name": "Tommy Tremble",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Tremble (knee) was listed as a limited participant on Thursday's estimated practice report, Mike Kaye of ESPN.com reports.",
+      "date": "2026-11-26T22:18Z"
+     },
+     {
+      "name": "Darren Waller",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Waller (knee) was listed as limited on Thursday's estimated injury report, Mike Kaye of ESPN.com reports.",
+      "date": "2026-11-26T21:43Z"
+     },
+     {
+      "name": "Jaelan Phillips",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
       "detail": "questionable",
-      "date": "2026-11-24T12:39Z"
+      "date": "2026-11-26T21:36Z"
+     },
+     {
+      "name": "Feleipe Franks",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-26T21:36Z"
+     },
+     {
+      "name": "Jackson Kuwatch",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-26T21:35Z"
+     },
+     {
+      "name": "Patrick Jones II",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-26T21:35Z"
+     },
+     {
+      "name": "Tetairoa McMillan",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "McMillan (foot) was listed as a DNP on Thursday's practice estimate, Mike Kaye of ESPN.com reports.",
+      "date": "2026-11-26T21:26Z"
+     },
+     {
+      "name": "Jonathon Brooks",
+      "pos": "RB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "Brooks (groin) was estimated as a full practice participant on Thursday's report, Mike Kaye of ESPN.com reports.",
+      "date": "2026-11-26T22:16Z"
      },
      {
       "name": "Thomas Incoom",
@@ -4816,31 +4876,63 @@
       "date": "2026-11-26T02:55Z"
      },
      {
-      "name": "Jonathon Brooks",
-      "pos": "RB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Head coach Dave Canales suggested Wednesday that a decision on Brooks (core) being activated from injured reserve before his 21-day window expires next week will hinge on the Panthers having a role available to him, Mike Kaye of ESPN.com reports.",
-      "date": "2026-11-25T22:54Z"
-     },
-     {
       "name": "Brady Christensen",
       "pos": "G",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
       "detail": "Christensen (hamstring) reverted to season-ending injured reserve after his 21-day practice window closed Tuesday, Mike Kaye of ESPN.com reports.",
       "date": "2026-11-25T02:01Z"
-     },
-     {
-      "name": "Jaycee Horn",
-      "pos": "CB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Horn is progressing well in his recovery from a quadriceps injury, Joe Person of The Athletic reports.",
-      "date": "2026-11-23T21:53Z"
      }
     ],
     "home": [
+     {
+      "name": "Marcus Epps",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "Epps (foot) has been ruled out for the remainder of Philadelphia's matchup versus the Cowboys on Thursday, Mike Kaye of ESPN.com reports.",
+      "date": "2026-11-27T00:13Z"
+     },
+     {
+      "name": "Dallas Goedert",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "Goedert (shoulder) has been ruled out of Thursday's contest at Dallas.",
+      "date": "2026-11-26T23:03Z"
+     },
+     {
+      "name": "Cole Payton",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Payton (coach's decision) is inactive for Thursday's game at Dallas but is available as the Eagles' emergency third quarterback.",
+      "date": "2026-11-26T20:20Z"
+     },
+     {
+      "name": "Grant Calcaterra",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T20:14Z"
+     },
+     {
+      "name": "Ajani Cornelius",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T20:14Z"
+     },
+     {
+      "name": "AJ Epenesa",
+      "pos": "DE",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T20:14Z"
+     },
      {
       "name": "Arnold Ebiketie",
       "pos": "LB",
@@ -4858,23 +4950,31 @@
       "date": "2026-11-25T22:23Z"
      },
      {
-      "name": "Zack Baun",
-      "pos": "LB",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "Baun (back) was placed on the Eagles' injured reserve Saturday.",
-      "date": "2026-11-22T00:14Z"
+      "name": "Gabe Hall",
+      "pos": "DT",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Hall (shoulder) is questionable to return to the Eagles' matchup against the Cowboys on Sunday.",
+      "date": "2026-11-27T00:46Z"
      },
      {
-      "name": "Dontayvion Wicks",
-      "pos": "WR",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Eagles placed Wicks (ankle/foot) on injured reserve Saturday.",
-      "date": "2026-11-21T21:09Z"
+      "name": "Saquon Barkley",
+      "pos": "RB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Barkley suffered a stinger during Thursday's game in Dallas.",
+      "date": "2026-11-26T22:49Z"
+     },
+     {
+      "name": "Cooper DeJean",
+      "pos": "CB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "DeJean has entered the league's concussion protocol and has been ruled out for the rest of Thursday's game against the Cowboys.",
+      "date": "2026-11-26T22:08Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    },
    "fiveLeg": {
     "game": "car-phi",
@@ -5054,7 +5154,7 @@
      "team": "CHI",
      "price": 175,
      "implied": 0.364,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 175,
       "bestBook": "fanduel",
@@ -5114,7 +5214,7 @@
      "team": "CHI",
      "price": 360,
      "implied": 0.217,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 360,
       "bestBook": "draftkings",
@@ -6051,6 +6151,46 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Case Keenum",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Keenum (coach's decision) is inactive and tabbed as the Bears' emergency third quarterback Thursday in Detroit.",
+      "date": "2026-11-26T16:53Z"
+     },
+     {
+      "name": "Isaac Yiadom",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T16:36Z"
+     },
+     {
+      "name": "Jayden Loving",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T16:36Z"
+     },
+     {
+      "name": "Jordan McFadden",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T16:36Z"
+     },
+     {
+      "name": "Elijah Hicks",
+      "pos": "S",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T16:36Z"
+     },
+     {
       "name": "Kyler Gordon",
       "pos": "CB",
       "status": "Out",
@@ -6067,38 +6207,54 @@
       "date": "2026-11-25T20:15Z"
      },
      {
-      "name": "Elijah Hicks",
-      "pos": "S",
-      "status": "Out",
-      "type": "out",
-      "detail": "Hicks is in the league's concussion protocol and has been ruled out for Thursday's game against the Lions on Thanksgiving Day, Courtney Cronin of ESPN.com reports.",
-      "date": "2026-11-25T01:36Z"
-     },
-     {
-      "name": "D'Marco Jackson",
-      "pos": "LB",
+      "name": "Caleb Williams",
+      "pos": "QB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Jackson (elbow) is listed as questionable for Thursday's game against the Lions, Larry Mayer of the Bears' official site reports.",
-      "date": "2026-11-26T03:14Z"
+      "detail": "Williams said after Thursday's 39-35 win in Detroit that he's \"fine\" and likely just has \"a bruise on his abdomen,\" Jason Lieser of the Chicago Sun-Times reports.",
+      "date": "2026-11-26T22:41Z"
      },
      {
-      "name": "Tyrique Stevenson Sr.",
-      "pos": "CB",
+      "name": "Colston Loveland",
+      "pos": "TE",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Stevenson (groin) is questionable for Thursday's game against the Lions.",
-      "date": "2026-11-25T23:56Z"
+      "detail": "Loveland (knee) has been ruled out from returning to Thursday's game in Detroit.",
+      "date": "2026-11-26T18:45Z"
      }
     ],
     "home": [
      {
-      "name": "James Pearce Jr.",
+      "name": "Kendal Daniels",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Pearce (back) was a limited participant in Wednesday's practice, Will McFadden of the Falcons' official site reports.",
-      "date": "2026-11-26T01:29Z"
+      "detail": "Daniels (Achilles) was limited during Thursday's practice, Tori McElhaney of the Falcons' official site reports.",
+      "date": "2026-11-26T18:46Z"
+     },
+     {
+      "name": "Jahan Dotson",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Dotson (hamstring) did not participate in Thursday's practice, Tori McElhaney of the Falcons' official site reports.",
+      "date": "2026-11-26T18:35Z"
+     },
+     {
+      "name": "Za'Darius Smith",
+      "pos": "DE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-26T18:26Z"
+     },
+     {
+      "name": "Cameron Thomas",
+      "pos": "DE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-26T18:26Z"
      },
      {
       "name": "Zachariah Branch",
@@ -6107,14 +6263,6 @@
       "type": "questionable",
       "detail": "Branch (hamstring) didn't participate in Wednesday's practice, Will McFadden of the Falcons' official site reports.",
       "date": "2026-11-25T22:30Z"
-     },
-     {
-      "name": "Jahan Dotson",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Dotson was a non-participant in Wednesday's practice due to a hamstring injury, Will McFadden of the Falcons' official site reports.",
-      "date": "2026-11-25T22:19Z"
      },
      {
       "name": "DeMarcco Hellams",
@@ -6141,7 +6289,7 @@
       "date": "2026-11-25T21:36Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    },
    "fiveLeg": {
     "game": "chi-atl",
@@ -7309,6 +7457,38 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Jake Ferguson",
+      "pos": "TE",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T20:13Z"
+     },
+     {
+      "name": "Tyler Booker",
+      "pos": "G",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T20:13Z"
+     },
+     {
+      "name": "Jonathan Bullard",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-26T20:13Z"
+     },
+     {
+      "name": "Jaishawn Barham",
+      "pos": "LB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Barham (hip/groin) does not carry an injury designation into Thursday's game against the Eagles.",
+      "date": "2026-11-26T03:17Z"
+     },
+     {
       "name": "P.J. Locke",
       "pos": "S",
       "status": "Out",
@@ -7323,30 +7503,6 @@
       "type": "out",
       "detail": "Mingo (ankle) has been ruled out for Thursday's game against the Eagles.",
       "date": "2026-11-26T00:36Z"
-     },
-     {
-      "name": "Jake Ferguson",
-      "pos": "TE",
-      "status": "Out",
-      "type": "out",
-      "detail": "The Cowboys ruled Ferguson (knee/ankle) out for Thursday's game against the Eagles, Patrik Walker of the team's official site reports.",
-      "date": "2026-11-25T19:14Z"
-     },
-     {
-      "name": "Tyler Booker",
-      "pos": "G",
-      "status": "Out",
-      "type": "out",
-      "detail": "out",
-      "date": "2026-11-23T15:26Z"
-     },
-     {
-      "name": "Jalen Thompson",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "The Cowboys activated Thompson (hamstring) from injured reserve Wednesday.",
-      "date": "2026-11-25T22:49Z"
      },
      {
       "name": "Devin Moore",
@@ -7431,7 +7587,7 @@
       "date": "2026-11-26T03:09Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    },
    "fiveLeg": {
     "game": "dal-gb",
@@ -7587,7 +7743,7 @@
      "team": "JAX",
      "price": 160,
      "implied": 0.385,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 160,
       "bestBook": "fanduel",
@@ -7635,7 +7791,7 @@
      "team": "HOU",
      "price": 360,
      "implied": 0.217,
-     "status": null,
+     "status": "Questionable",
      "live": {
       "best": 360,
       "bestBook": "draftkings",
@@ -7683,7 +7839,7 @@
      "team": "HOU",
      "price": 500,
      "implied": 0.167,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 500,
       "bestBook": "draftkings",
@@ -8717,12 +8873,20 @@
    "injuryReport": {
     "away": [
      {
-      "name": "Logan Hall",
-      "pos": "DE",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "doubtful",
-      "date": "2026-11-25T23:08Z"
+      "name": "Dalton Schultz",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Schultz (illness) was a limited participant in Thursday's practice.",
+      "date": "2026-11-26T22:10Z"
+     },
+     {
+      "name": "Kayshon Boutte",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Boutte (hip) did not participate in Thursday's practice session.",
+      "date": "2026-11-26T22:06Z"
      },
      {
       "name": "Sheldon Rankins",
@@ -8741,36 +8905,12 @@
       "date": "2026-11-26T01:55Z"
      },
      {
-      "name": "Kayshon Boutte",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Boutte (hip) didn't participate in Wednesday's practice.",
-      "date": "2026-11-25T23:50Z"
-     },
-     {
-      "name": "Marvin Harrison Jr.",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Harrison (hamstring) was listed as a limited participant in Wednesday's practice.",
-      "date": "2026-11-25T23:34Z"
-     },
-     {
       "name": "Woody Marks",
       "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Marks (concussion) was listed as a full participant in Wednesday's practice.",
       "date": "2026-11-25T23:16Z"
-     },
-     {
-      "name": "Jake Hummel",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-11-25T23:08Z"
      },
      {
       "name": "Wyatt Teller",
@@ -8803,8 +8943,16 @@
       "pos": "RB",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Tuten (ankle/foot) didn't practice Wednesday, Adam Schefter of ESPN reports.",
-      "date": "2026-11-25T21:25Z"
+      "detail": "Tuten (ankle/foot) didn't practice Thursday, Ryan O'Halloran of The Florida Times-Union reports.",
+      "date": "2026-11-26T20:35Z"
+     },
+     {
+      "name": "Parker Washington",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Washington (shoulder) was listed as a limited participant in Thursday's practice, Ryan O'Halloran of The Florida Times-Union reports.",
+      "date": "2026-11-26T20:29Z"
      },
      {
       "name": "Jakobi Meyers",
@@ -8839,14 +8987,6 @@
       "date": "2026-11-25T21:19Z"
      },
      {
-      "name": "Danny Striggow",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-11-24T12:39Z"
-     },
-     {
       "name": "Matt Dickerson",
       "pos": "DE",
       "status": "Questionable",
@@ -8871,7 +9011,7 @@
       "date": "2026-11-26T02:46Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    },
    "fiveLeg": {
     "game": "hou-jax",
@@ -9099,7 +9239,7 @@
      "team": "KC",
      "price": 500,
      "implied": 0.167,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 500,
       "bestBook": "draftkings",
@@ -9913,6 +10053,22 @@
    "injuryReport": {
     "away": [
      {
+      "name": "David Njoku",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Njoku (shoulder) was listed as a non-participant in Thursday's practice.",
+      "date": "2026-11-26T21:33Z"
+     },
+     {
+      "name": "Justin Herbert",
+      "pos": "QB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Herbert (concussion) was officially deemed a non-participant  in Thursday's practice.",
+      "date": "2026-11-26T21:00Z"
+     },
+     {
       "name": "Akheem Mesidor",
       "pos": "LB",
       "status": "Questionable",
@@ -9961,22 +10117,6 @@
       "date": "2026-11-26T02:07Z"
      },
      {
-      "name": "Deane Leonard",
-      "pos": "CB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-11-25T23:54Z"
-     },
-     {
-      "name": "David Njoku",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Njoku (shoulder) did not practice Wednesday.",
-      "date": "2026-11-25T23:45Z"
-     },
-     {
       "name": "Keaton Mitchell",
       "pos": "RB",
       "status": "Questionable",
@@ -9985,23 +10125,63 @@
       "date": "2026-11-25T23:44Z"
      },
      {
-      "name": "Justin Herbert",
-      "pos": "QB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Chargers coach Jim Harbaugh said that Herbert (concussion) won't practice Wednesday, Noah Furtado of The Athletic reports.",
-      "date": "2026-11-25T20:27Z"
-     },
-     {
       "name": "Kendall Williamson",
       "pos": "S",
       "status": "Questionable",
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-11-24T12:39Z"
+     },
+     {
+      "name": "Deane Leonard",
+      "pos": "CB",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "The Chargers placed Leonard (groin) on injured reserve Thursday.",
+      "date": "2026-11-26T19:00Z"
      }
     ],
     "home": [
+     {
+      "name": "Garrett Nussmeier",
+      "pos": "QB",
+      "status": "Out",
+      "type": "out",
+      "detail": "Nussmeier (coach's decision) is inactive but will serve as the Chiefs' emergency third quarterback against the Bills on Thursday.",
+      "date": "2026-11-27T00:05Z"
+     },
+     {
+      "name": "Diego Pounds",
+      "pos": "OT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-27T00:01Z"
+     },
+     {
+      "name": "Melvin Smith Jr.",
+      "pos": "CB",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-27T00:01Z"
+     },
+     {
+      "name": "Kenneth Walker III",
+      "pos": "RB",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-27T00:01Z"
+     },
+     {
+      "name": "Marcus Harris",
+      "pos": "DT",
+      "status": "Out",
+      "type": "out",
+      "detail": "inactive",
+      "date": "2026-11-27T00:01Z"
+     },
      {
       "name": "Omarr Norman-Lott",
       "pos": "DT",
@@ -10019,47 +10199,15 @@
       "date": "2026-11-26T02:51Z"
      },
      {
-      "name": "Kenneth Walker III",
-      "pos": "RB",
-      "status": "Out",
-      "type": "out",
-      "detail": "The Chiefs ruled out Walker (groin) for Thursday's game against the Bills.",
-      "date": "2026-11-25T16:48Z"
-     },
-     {
-      "name": "Peter Woods",
-      "pos": "DT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Woods (neck) is listed as questionable for Thursday night's game against the Bills.",
-      "date": "2026-11-26T02:59Z"
-     },
-     {
-      "name": "Noah Gray",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Gray (ribs) is listed as questionable for Thursday night's game against the Bills.",
-      "date": "2026-11-25T17:36Z"
-     },
-     {
       "name": "Ben VanSumeren",
       "pos": "FB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
       "detail": "The Chiefs placed VanSumeren (knee) on the reserve/injured list Tuesday.",
       "date": "2026-11-24T21:28Z"
-     },
-     {
-      "name": "Jared Wiley",
-      "pos": "TE",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Chiefs placed Wiley (ankle) on injured reserve Wednesday, Matt Derrick of ChiefsDigest.com reports.",
-      "date": "2026-11-19T01:06Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    }
   },
   {
@@ -11009,6 +11157,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Juwan Johnson",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Coach Kellen Moore said Thursday that Johnson (hamstring/wrist) is considered day-to-day ahead of Sunday's game against the Bengals, Katherine Terrell of ESPN reports.",
+      "date": "2026-11-26T20:05Z"
+     },
+     {
       "name": "Martin Emerson Jr.",
       "pos": "CB",
       "status": "Questionable",
@@ -11041,22 +11197,6 @@
       "date": "2026-11-25T22:04Z"
      },
      {
-      "name": "Juwan Johnson",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Johnson (hamstring) did not practice Wednesday due to a hamstring/wrist issue, Katherine Terrell of ESPN reports.",
-      "date": "2026-11-25T21:32Z"
-     },
-     {
-      "name": "Erik McCoy",
-      "pos": "C",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "questionable",
-      "date": "2026-11-24T12:39Z"
-     },
-     {
       "name": "Taliese Fuaga",
       "pos": "OT",
       "status": "Questionable",
@@ -11067,6 +11207,22 @@
     ],
     "home": [
      {
+      "name": "Abdul Carter",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Carter (calf/illness) did not participate in Thursday's practice, Pat Leonard of the New York Daily News reports.",
+      "date": "2026-11-26T23:09Z"
+     },
+     {
+      "name": "Isaiah Likely",
+      "pos": "TE",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Likely (groin) was listed as limited on Thursday's practice report, Dan Salomone of the Giants' official site reports.",
+      "date": "2026-11-26T21:09Z"
+     },
+     {
       "name": "Dru Phillips",
       "pos": "CB",
       "status": "Questionable",
@@ -11075,28 +11231,12 @@
       "date": "2026-11-26T01:22Z"
      },
      {
-      "name": "Abdul Carter",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Carter (ankle) did not participate in Wednesday's practice, Dan Salomone of the Giants' official site reports.",
-      "date": "2026-11-26T01:17Z"
-     },
-     {
       "name": "Arvell Reese",
       "pos": "LB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Reese (back) was a limited participant in Wednesday's practice, Dan Salomone of the Giants' official site reports.",
       "date": "2026-11-26T01:13Z"
-     },
-     {
-      "name": "Isaiah Likely",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Likely (groin) was limited in practice Wednesday, Dan Salomone of the Giants' official site reports.",
-      "date": "2026-11-25T21:14Z"
      },
      {
       "name": "Shelby Harris",
@@ -11115,7 +11255,7 @@
       "date": "2026-11-25T00:42Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    }
   },
   {
@@ -12016,20 +12156,20 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Omar Cooper Jr.",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Cooper (ankle/groin) was listed as a  non-participant in practice Thursday.",
+      "date": "2026-11-26T20:43Z"
+     },
+     {
       "name": "Harrison Phillips",
       "pos": "DT",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Phillips (ankle) was listed as a DNP on Wednesday's estimated practice report.",
       "date": "2026-11-26T00:55Z"
-     },
-     {
-      "name": "Isaiah Williams",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Williams (ribs) was listed as a limited participant on Wednesday's estimated practice report.",
-      "date": "2026-11-25T21:09Z"
      },
      {
       "name": "Joseph Ossai",
@@ -12046,14 +12186,6 @@
       "type": "questionable",
       "detail": "questionable",
       "date": "2026-11-25T21:07Z"
-     },
-     {
-      "name": "Omar Cooper Jr.",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Jets head coach Aaron Glenn said that Cooper (ankle/hip) won't practice Wednesday and is considered day-to-day.",
-      "date": "2026-11-25T17:05Z"
      },
      {
       "name": "David Onyemata",
@@ -12086,8 +12218,8 @@
       "pos": "WR",
       "status": "Doubtful",
       "type": "doubtful",
-      "detail": "Brown (hamstring) didn't take part in practice Wednesday, Evan Lazar of the Patriots' official site reports.",
-      "date": "2026-11-25T19:47Z"
+      "detail": "Brown (hamstring) was listed as a non-participant on Thursday's practice estimate.",
+      "date": "2026-11-26T20:52Z"
      },
      {
       "name": "Walter Rouse",
@@ -12126,8 +12258,8 @@
       "pos": "WR",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Doubs (shoulder) was limited in Wednesday's practice.",
-      "date": "2026-11-25T23:47Z"
+      "detail": "Doubs (shoulder) was listed as a limited practice participant on Thursday's estimated report.",
+      "date": "2026-11-26T22:41Z"
      },
      {
       "name": "Alijah Vera-Tucker",
@@ -12138,7 +12270,7 @@
       "date": "2026-11-24T01:00Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    }
   },
   {
@@ -13020,18 +13152,10 @@
      {
       "name": "Alex Highsmith",
       "pos": "LB",
-      "status": "Doubtful",
-      "type": "doubtful",
-      "detail": "Steelers head coach Mike McCarthy suggested Monday that Highsmith (ankle) is likely to be sidelined for Friday's game against the Broncos, Brooke Pryor of ESPN.com reports. \"It's going to be tough for him to make it this week,\" McCarthy said.",
-      "date": "2026-11-23T20:06Z"
-     },
-     {
-      "name": "DeShon Elliott",
-      "pos": "S",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Elliott (knee) was a limited participant in Wednesday's practice, Alan Saunders of SteelersNow.com reports.",
-      "date": "2026-11-26T00:51Z"
+      "status": "Out",
+      "type": "out",
+      "detail": "Highsmith (ankle) has been ruled out for Friday's game against the Broncos, Teresa Varley of the Steelers' official site reports.",
+      "date": "2026-11-26T22:46Z"
      },
      {
       "name": "Cole Holcomb",
@@ -13042,28 +13166,12 @@
       "date": "2026-11-25T20:52Z"
      },
      {
-      "name": "Nick Herbig",
-      "pos": "LB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Herbig (hip) was limited in practice Tuesday.",
-      "date": "2026-11-24T22:54Z"
-     },
-     {
       "name": "Ben Skowronek",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Skowronek (calf) did not practice Tuesday.",
-      "date": "2026-11-24T22:47Z"
-     },
-     {
-      "name": "Michael Pittman Jr.",
       "pos": "WR",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
-      "detail": "Pittman (foot) was listed as a full participant in Wednesday's practice,Alan Saunders of SteelersNow.com reports.",
-      "date": "2026-11-25T20:59Z"
+      "detail": "The Steelers placed Skowronek (calf) on injured reserve Thursday, Teresa Varley of the team's official site reports.",
+      "date": "2026-11-26T22:43Z"
      },
      {
       "name": "Gennings Dunker",
@@ -13075,6 +13183,14 @@
      }
     ],
     "home": [
+     {
+      "name": "Josiah Trotter",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-26T22:17Z"
+     },
      {
       "name": "Antoine Winfield Jr.",
       "pos": "S",
@@ -13108,23 +13224,23 @@
       "date": "2026-11-23T20:54Z"
      },
      {
+      "name": "Jalen McMillan",
+      "pos": "WR",
+      "status": "Injured Reserve",
+      "type": "Injured Reserve",
+      "detail": "McMillan (knee) was a full participant in Thursday's practice.",
+      "date": "2026-11-26T22:27Z"
+     },
+     {
       "name": "Christian Rozeboom",
       "pos": "LB",
       "status": "Injured Reserve",
       "type": "Injured Reserve",
       "detail": "The Buccaneers opened the 21-day practice window for Rozeboom (finger) on Wednesday, Scott Smith of the team's official site reports.",
       "date": "2026-11-26T02:46Z"
-     },
-     {
-      "name": "Jalen McMillan",
-      "pos": "WR",
-      "status": "Injured Reserve",
-      "type": "Injured Reserve",
-      "detail": "The Buccaneers designated McMillan (knee) for return from injured reserve Wednesday, Scott Smith of the team's official site reports.",
-      "date": "2026-11-25T15:55Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    }
   },
   {
@@ -14046,28 +14162,20 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Dorian Mausi",
+      "pos": "LB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "questionable",
+      "date": "2026-11-26T21:08Z"
+     },
+     {
       "name": "Cor'Dale Flott",
       "pos": "CB",
       "status": "Questionable",
       "type": "questionable",
       "detail": "Flott (neck) did not participate in Wednesday's practice, Turron Davenport of ESPN.com reports.",
       "date": "2026-11-26T01:44Z"
-     },
-     {
-      "name": "John Franklin-Myers",
-      "pos": "DE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Franklin-Meyers (back) was a limited participant in Wednesday's practice, Turron Davenport of ESPN.com reports.",
-      "date": "2026-11-26T01:39Z"
-     },
-     {
-      "name": "Dan Moore Jr.",
-      "pos": "OT",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Moore (knee) is questionable to return to Sunday's game against the Cowboys.",
-      "date": "2026-11-22T20:34Z"
      }
     ],
     "home": [
@@ -14086,14 +14194,6 @@
       "type": "questionable",
       "detail": "Ward (knee) was a limited participant in Wednesday's practice.",
       "date": "2026-11-26T00:44Z"
-     },
-     {
-      "name": "Drew Ogletree",
-      "pos": "TE",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Ogletree (knee) did not practice Wednesday.",
-      "date": "2026-11-26T00:37Z"
      },
      {
       "name": "Bernhard Raimann",
@@ -14152,7 +14252,7 @@
       "date": "2026-11-25T18:36Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    }
   },
   {
@@ -14259,7 +14359,7 @@
      "team": "WSH",
      "price": 220,
      "implied": 0.313,
-     "status": "Questionable",
+     "status": null,
      "live": {
       "best": 220,
       "bestBook": "draftkings",
@@ -14962,6 +15062,14 @@
    "injuryReport": {
     "away": [
      {
+      "name": "Treylon Burks",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Burks (foot) was listed as limited on Thursday's injury report.",
+      "date": "2026-11-26T20:35Z"
+     },
+     {
       "name": "Amik Robertson",
       "pos": "CB",
       "status": "Questionable",
@@ -14978,22 +15086,6 @@
       "date": "2026-11-26T00:12Z"
      },
      {
-      "name": "Treylon Burks",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Burks (foot) was listed as a limited participant in Wednesday's practice.",
-      "date": "2026-11-25T22:58Z"
-     },
-     {
-      "name": "Stefon Diggs",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Diggs was absent from Wednesday's practice and was excused, Ben Standig of The Team 980 reports.",
-      "date": "2026-11-25T20:25Z"
-     },
-     {
       "name": "Laremy Tunsil",
       "pos": "OT",
       "status": "Injured Reserve",
@@ -15008,8 +15100,24 @@
       "pos": "WR",
       "status": "Questionable",
       "type": "questionable",
-      "detail": "Watkins (groin) did not participate in Wednesday's practice.",
-      "date": "2026-11-26T02:57Z"
+      "detail": "Watkins (groin) was estimated as a 'DNP' on Thursday's injury report, Matt Maiocco of NBC Sports Bay Area reports.",
+      "date": "2026-11-26T22:29Z"
+     },
+     {
+      "name": "Mike Evans",
+      "pos": "WR",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Evans (Achilles) was listed as limited on Thursday's practice report, Matt Maiocco of NBC Sports Bay Area reports.",
+      "date": "2026-11-26T22:08Z"
+     },
+     {
+      "name": "Brock Purdy",
+      "pos": "QB",
+      "status": "Questionable",
+      "type": "questionable",
+      "detail": "Purdy (ankle) was listed as a non-participant on Thursday's injury report, Eric Branch of the San Francisco Chronicle reports.",
+      "date": "2026-11-26T22:01Z"
      },
      {
       "name": "Deommodore Lenoir",
@@ -15052,22 +15160,6 @@
       "date": "2026-11-26T02:31Z"
      },
      {
-      "name": "Mike Evans",
-      "pos": "WR",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Evans (Achilles) won't practice Wednesday, Harrison Rich of the San Francisco Chronicle reports.",
-      "date": "2026-11-25T20:07Z"
-     },
-     {
-      "name": "Brock Purdy",
-      "pos": "QB",
-      "status": "Questionable",
-      "type": "questionable",
-      "detail": "Purdy didn't practice Wednesday due to an ankle injury, Vic Tafur of The Athletic reports.",
-      "date": "2026-11-25T19:57Z"
-     },
-     {
       "name": "Austen Pleasants",
       "pos": "OT",
       "status": "Injured Reserve",
@@ -15100,7 +15192,7 @@
       "date": "2026-11-25T20:43Z"
      }
     ],
-    "fetchedAt": "2026-11-26T15:45:43.454Z"
+    "fetchedAt": "2026-11-27T00:59:51.320Z"
    }
   }
  ],
@@ -15534,6 +15626,37 @@
    "kickoff": "2026-10-18T17:00Z"
   },
   {
+   "name": "Davante Adams",
+   "team": "LAR",
+   "pos": "WR",
+   "price": -135,
+   "implied": 0.574,
+   "est": 0.4,
+   "why": "Four touchdowns on 45 targets, including two scores last week with Nacua on the field, and the team lead in red-zone targets through Week 4. Arizona gave up eight touchdowns to receivers in the first four games and has the league's worst opponent passer rating (117.3). The read is 40% (fair +150) against -135 at both books (57.4%), 17 points short. The touchdown role is near the goal line, which is why his yardage projection sits under the book.",
+   "live2": null,
+   "live": {
+    "best": -135,
+    "bestBook": "draftkings",
+    "consensus": -135,
+    "books": {
+     "draftkings": -135,
+     "fanduel": -135
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378229561%232317816402_13L88808Q1-1719984573Q20",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616225575&selectionId=8882932"
+    },
+    "implied": 0.5745,
+    "open": null,
+    "move": null,
+    "fetchedAt": "2026-10-18T14:48:04.303Z"
+   },
+   "edge": -0.174,
+   "status": null,
+   "gameId": "ari-lar",
+   "kickoff": "2026-10-18T20:05:00Z"
+  },
+  {
    "name": "Brock Bowers",
    "team": "LV",
    "pos": "TE",
@@ -15711,66 +15834,35 @@
    "kickoff": "2026-10-19T00:20Z"
   },
   {
-   "name": "Cam Skattebo",
-   "team": "NYG",
-   "pos": "RB",
-   "price": 125,
-   "implied": 0.444,
-   "est": 0.373,
-   "why": "Quick build: one of the three likeliest scorers by the posted price, 37% after the calibration haircut. Role not hand-checked; confirm at inactives.",
+   "name": "Puka Nacua",
+   "team": "LAR",
+   "pos": "WR",
+   "price": -150,
+   "implied": 0.6,
+   "est": 0.38,
+   "why": "45 targets in three games, including 17 catches on 24 targets for 138 yards and a touchdown on Monday, and a rushing score at Philadelphia. That is about a third of Stafford's throws, against a secondary missing two safeties with Baker questionable. Two touchdowns in three games and few red-zone targets keep the read at 38% (fair +163). -150 at DraftKings (FanDuel -155) asks 60%: more than 20 points short, so he is a probability call, not a price call.",
    "live2": null,
    "live": {
-    "best": 125,
-    "bestBook": "fanduel",
-    "consensus": 118,
-    "books": {
-     "draftkings": 110,
-     "fanduel": 125
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378209599%232317730688_13L88808Q1-477446093Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616123024&selectionId=78488478"
-    },
-    "implied": 0.4587,
-    "open": null,
-    "move": null,
-    "fetchedAt": "2026-10-18T14:48:04.303Z"
-   },
-   "edge": -0.086,
-   "status": null,
-   "gameId": "no-nyg",
-   "kickoff": "2026-10-18T17:00Z"
-  },
-  {
-   "name": "Jaylen Warren",
-   "team": "PIT",
-   "pos": "RB",
-   "price": 125,
-   "implied": 0.444,
-   "est": 0.373,
-   "why": "Quick build: one of the three likeliest scorers by the posted price, 37% after the calibration haircut. Role not hand-checked; confirm at inactives.",
-   "live2": null,
-   "live": {
-    "best": 125,
+    "best": -150,
     "bestBook": "draftkings",
-    "consensus": 125,
+    "consensus": -152,
     "books": {
-     "draftkings": 125,
-     "fanduel": 125
+     "draftkings": -150,
+     "fanduel": -155
     },
     "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378209959%232317732123_13L88808Q1-709958170Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616419379&selectionId=42225581"
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378229561%232317816401_13L88808Q1-1261907500Q20",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616225575&selectionId=42127532"
     },
-    "implied": 0.4444,
+    "implied": 0.6032,
     "open": null,
     "move": null,
     "fetchedAt": "2026-10-18T14:48:04.303Z"
    },
-   "edge": -0.071,
+   "edge": -0.223,
    "status": null,
-   "gameId": "pit-tb",
-   "kickoff": "2026-10-18T17:00Z"
+   "gameId": "ari-lar",
+   "kickoff": "2026-10-18T20:05:00Z"
   }
  ],
  "slateValue": [
@@ -15900,37 +15992,6 @@
    "kickoff": "2026-10-18T13:30:00Z"
   },
   {
-   "name": "Dallas Goedert",
-   "team": "PHI",
-   "pos": "TE",
-   "price": 330,
-   "implied": 0.233,
-   "est": 0.24,
-   "why": "Stowers and Calcaterra were downgraded to out and Ertz was not elevated, so he plays nearly every snap; 9 targets in London. Tight ends have 4 of the 12 touchdowns Carolina has allowed (Kmet, Fannin twice, LaPorta), and a backup quarterback leans on the tight end. The read is 24% (fair +317) against +330 at FanDuel (23.3%; DraftKings +300): fair, a point of edge.",
-   "live2": null,
-   "live": {
-    "best": 330,
-    "bestBook": "fanduel",
-    "consensus": 315,
-    "books": {
-     "draftkings": 300,
-     "fanduel": 330
-    },
-    "links": {
-     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378331043%232318198568_13L88808Q1-1879851941Q20",
-     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.616394506&selectionId=18545062"
-    },
-    "implied": 0.241,
-    "open": null,
-    "move": null,
-    "fetchedAt": "2026-10-18T14:48:04.303Z"
-   },
-   "edge": -0.001,
-   "status": null,
-   "gameId": "car-phi",
-   "kickoff": "2026-10-18T17:00:00Z"
-  },
-  {
    "name": "Teagan Quitoriano",
    "team": "ARI",
    "pos": "TE",
@@ -16051,7 +16112,7 @@
     "fetchedAt": "2026-10-18T14:48:04.303Z"
    },
    "edge": -0.033,
-   "status": "Questionable",
+   "status": null,
    "gameId": "bal-cle",
    "kickoff": "2026-10-18T17:00:00Z"
   },
@@ -16147,6 +16208,38 @@
    "status": "Questionable",
    "gameId": "car-phi",
    "kickoff": "2026-10-18T17:00:00Z"
+  },
+  {
+   "name": "Bhayshul Tuten",
+   "team": "JAX",
+   "pos": "RB",
+   "price": 145,
+   "implied": 0.408,
+   "est": 0.37,
+   "est2": 0.079,
+   "why": "The lead back on the higher team total (22.5): 82 carries in five games (17 a game the last three, 22 last week), 12 of Jacksonville's 18 red-zone carries by backs, 3 of its 5 carries inside the 5 and both of his touchdowns from the 1 (one on a direct snap), with a third wiped out by holding at Cincinnati. Houston allows 3.5 a carry to backs but gave Javonte Williams three short scores in Week 4, and allows touchdowns on 7 of 12 red-zone trips. The read is 37% after the calibration trim (the desk's 45% on him last week lost). +145 at both books (40.8%) is about 4 points short of fair (+170): the likeliest scorer and a stack leg, not a straight bet.",
+   "live2": null,
+   "live": {
+    "best": 145,
+    "bestBook": "draftkings",
+    "consensus": 145,
+    "books": {
+     "draftkings": 145,
+     "fanduel": 145
+    },
+    "links": {
+     "draftkings": "https://sportsbook.draftkings.com/?outcomes=0QA378200505%232317691305_13L88808Q11230695518Q20",
+     "fanduel": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.615812801&selectionId=60238401"
+    },
+    "implied": 0.4082,
+    "open": null,
+    "move": null,
+    "fetchedAt": "2026-10-18T14:48:04.303Z"
+   },
+   "edge": -0.038,
+   "status": "Questionable",
+   "gameId": "hou-jax",
+   "kickoff": "2026-10-18T13:30:00Z"
   }
  ],
  "bestBets": [
@@ -16203,7 +16296,7 @@
   }
  ],
  "results": {
-  "gradedAt": "2026-11-26T15:45:44.696Z",
+  "gradedAt": "2026-11-27T00:59:52.210Z",
   "finals": 13,
   "games": 13,
   "summary": {
@@ -17737,7 +17830,7 @@
  },
  "record": {
   "season": 2026,
-  "updatedAt": "2026-11-26T15:45:44.698Z",
+  "updatedAt": "2026-11-27T00:59:52.212Z",
   "weeks": [
    {
     "week": 1,
@@ -18452,7 +18545,7 @@
   }
  },
  "parlays": {
-  "builtAt": "2026-11-26T15:45:44.777Z",
+  "builtAt": "2026-11-27T00:59:52.308Z",
   "books": [
    "FD",
    "DK",
@@ -18556,7 +18649,7 @@
   ]
  },
  "topTen": {
-  "builtAt": "2026-11-26T15:45:44.777Z",
+  "builtAt": "2026-11-27T00:59:52.308Z",
   "note": "Sides, totals and moneylines are priced from the projected score with the simulator’s spreads (13.4 margin, 10.6 total). Touchdown lists use the desk’s role-built estimates. Prop leans are not graded by a probability and are listed by kickoff.",
   "categories": [
    {

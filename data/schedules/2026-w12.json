@@ -1,61 +1,39 @@
 {
- "fetchedAt": "2026-11-26T15:45:43.228Z",
+ "fetchedAt": "2026-11-27T00:59:51.061Z",
  "season": 2026,
  "week": 12,
  "games": [
   {
-   "espnId": "401873081",
-   "kickoff": "2026-11-26T18:00Z",
-   "name": "CHI @ DET",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "11/26 - 1:00 PM EST",
-   "home": {
-    "abbr": "DET",
-    "score": 0
-   },
-   "away": {
-    "abbr": "CHI",
-    "score": 0
-   },
-   "espnLine": {
-    "provider": "DraftKings",
-    "details": "CHI -1.5",
-    "spreadHome": 1.5,
-    "total": 56.5,
-    "ml": {
-     "home": 101,
-     "away": -119,
-     "openHome": -135,
-     "openAway": 114
-    }
-   }
-  },
-  {
    "espnId": "401873080",
    "kickoff": "2026-11-26T21:30Z",
    "name": "PHI @ DAL",
-   "status": "STATUS_SCHEDULED",
-   "statusDetail": "11/26 - 4:30 PM EST",
+   "status": "STATUS_IN_PROGRESS",
+   "statusDetail": "7:30 - 4th",
    "home": {
     "abbr": "DAL",
-    "score": 0
+    "score": 38
    },
    "away": {
     "abbr": "PHI",
-    "score": 0
+    "score": 30
    },
-   "espnLine": {
-    "provider": null,
-    "details": "DAL -8.5",
-    "spreadHome": -8.5,
-    "total": 49.5,
-    "ml": {
-     "home": -479,
-     "away": 370,
-     "openHome": -120,
-     "openAway": 100
-    }
-   }
+   "espnLine": null
+  },
+  {
+   "espnId": "401873081",
+   "kickoff": "2026-11-26T18:00Z",
+   "name": "CHI @ DET",
+   "status": "STATUS_FINAL",
+   "statusDetail": "Final",
+   "home": {
+    "abbr": "DET",
+    "score": 35
+   },
+   "away": {
+    "abbr": "CHI",
+    "score": 39
+   },
+   "espnLine": null
   },
   {
    "espnId": "401873082",
@@ -72,13 +50,13 @@
     "score": 0
    },
    "espnLine": {
-    "provider": null,
+    "provider": "DraftKings",
     "details": "BUF -3",
     "spreadHome": -3,
-    "total": 45.5,
+    "total": 46.5,
     "ml": {
-     "home": -154,
-     "away": 130,
+     "home": -155,
+     "away": 131,
      "openHome": -135,
      "openAway": 114
     }
@@ -116,12 +94,12 @@
    },
    "espnLine": {
     "provider": null,
-    "details": "DEN -4.5",
-    "spreadHome": 4.5,
+    "details": "DEN -5.5",
+    "spreadHome": 5.5,
     "total": 36.5,
     "ml": {
-     "home": 190,
-     "away": -229,
+     "home": 211,
+     "away": -256,
      "openHome": -102,
      "openAway": -118
     }
@@ -147,7 +125,7 @@
     "spreadHome": -10,
     "total": 49.5,
     "ml": {
-     "home": -563,
+     "home": -562,
      "away": 423,
      "openHome": -290,
      "openAway": 235
@@ -199,10 +177,10 @@
     "provider": null,
     "details": "NYJ -4.5",
     "spreadHome": 4.5,
-    "total": 40.5,
+    "total": 39.5,
     "ml": {
-     "home": 183,
-     "away": -220,
+     "home": 201,
+     "away": -243,
      "openHome": -125,
      "openAway": 105
     }
@@ -228,7 +206,7 @@
     "spreadHome": -7,
     "total": 41.5,
     "ml": {
-     "home": -311,
+     "home": -310,
      "away": 252,
      "openHome": -218,
      "openAway": 180
@@ -255,8 +233,8 @@
     "spreadHome": -14.5,
     "total": 49.5,
     "ml": {
-     "home": -1180,
-     "away": 740,
+     "home": -1260,
+     "away": 780,
      "openHome": -258,
      "openAway": 210
     }
@@ -305,12 +283,12 @@
    },
    "espnLine": {
     "provider": null,
-    "details": "NE -1.5",
-    "spreadHome": 1.5,
+    "details": "NE -2.5",
+    "spreadHome": 2.5,
     "total": 35.5,
     "ml": {
-     "home": -101,
-     "away": -117,
+     "home": 116,
+     "away": -137,
      "openHome": -135,
      "openAway": 114
     }
@@ -359,12 +337,12 @@
    },
    "espnLine": {
     "provider": null,
-    "details": "SF -2.5",
-    "spreadHome": -2.5,
-    "total": 44.5,
+    "details": "SF -3",
+    "spreadHome": -3,
+    "total": 43.5,
     "ml": {
-     "home": -147,
-     "away": 124,
+     "home": -152,
+     "away": 129,
      "openHome": -112,
      "openAway": -108
     }
